@@ -199,14 +199,11 @@ vij_north_conquest = {
 			1448 = {
 				is_strongest_trade_power = ROOT
 			}
-			custom_trigger_tooltip = {
-				tooltip = vij_zanzibar_tooltip
-				num_of_owned_provinces_with = {
-					value = 5
-					region = east_africa_region
-					has_building = tradecompany
-					is_owned_by_trade_company = yes
-				}
+			num_of_owned_provinces_with = {
+				value = 5
+				region = east_africa_region
+				has_building = tradecompany
+				is_owned_by_trade_company = yes
 			}
 			custom_trigger_tooltip = {
 				tooltip = vij_zanzibar_tooltip_2
@@ -859,21 +856,22 @@ vij_religious_missions = {
 					influence = 100
 				}
 			}
-			NOT = {
-				any_owned_province = {
-					has_estate = estate_jains
-					devastation = 1
-					NOT = {
-						controlled_by = ROOT
-					}
-				}
-			}		
+			estate_loyalty = {
+				estate = estate_jains
+				loyalty = 60
+			}
+			num_of_estate_privileges = {
+				estate = estate_jains
+				value = 2
+			}
 		}
 		effect = {
 			add_adm_power = 50
-			add_estate_loyalty = {
+			add_estate_loyalty_modifier = {
 				estate = estate_jains
-				loyalty = 30
+				desc = EST_VAL_VIJ_PROTECT_JAINS
+				loyalty = 10
+				duration = 10950
 			}
 		}
 	}
@@ -894,7 +892,11 @@ vij_religious_missions = {
 			}
 			estate_loyalty = {
 				estate = estate_brahmins
-				loyalty = 80
+				loyalty = 60
+			}
+			num_of_estate_privileges = {
+				estate = estate_brahmins
+				value = 2
 			}
 			religious_unity = 1
 		}
@@ -956,14 +958,14 @@ vij_religious_missions = {
 					key = rajendra_modifier
 				}
 			}
-			north_tenasserim_area = {
+			lower_burma_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_claim = ROOT
 			}
-			lower_burma_area = {
+			arakan_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}

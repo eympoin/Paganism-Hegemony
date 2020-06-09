@@ -172,7 +172,6 @@ gc_tunis_1 = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				discover_country = ROOT
 				add_permanent_claim = ROOT
 			}
 			kanem_area = {
@@ -565,7 +564,7 @@ gc_tunis_4 = {
 		
 		provinces_to_highlight = {	
 			OR = {
-				province_id = 1297
+				province_id = 1298
 				AND = {
 					province_id = 338
 					NOT = {
@@ -587,7 +586,7 @@ gc_tunis_4 = {
 					has_building = grand_shipyard
 				}
 			}
-			1297 = {
+			1298 = {
 				privateer_power = {
 					country = ROOT
 					share = 25

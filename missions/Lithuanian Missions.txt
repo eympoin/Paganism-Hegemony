@@ -18,25 +18,18 @@ lithuanian_missions_1 = {
 			}
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = develop_ukraine_tooltip
-				num_of_owned_provinces_with = {
-					region = ruthenia_region
-					development = 10
-					value = 10
-				}
+			num_of_owned_provinces_with = {
+				region = ruthenia_region
+				development = 10
+				value = 10
 			}
 		}
 		effect = {
-			hidden_effect = {
-				every_owned_province = {
-					limit = {
-						region = ruthenia_region
-					}
-					add_province_modifier = {
-						name = restored_ruthenia
-						duration = -1
-					}
+			ruthenia_region = {
+				limit = { owned_by = root }
+				add_province_modifier = {
+					name = restored_ruthenia
+					duration = -1
 				}
 			}
 		}
@@ -279,18 +272,10 @@ lithuanian_missions_slot = {
 					estate = estate_cossacks
 					influence = 40
 				}
-				282 = {
-					has_estate = estate_cossacks
-					owned_by = ROOT
-				}
-				2406 = {
-					has_estate = estate_cossacks
-					owned_by = ROOT
-				}
-				283 = {
-					has_estate = estate_cossacks
-					owned_by = ROOT
-				}
+				has_estate_privilege = estate_cossacks_establish_the_cossack_regiments
+				owns_core_province = 282
+				owns_core_province = 2406
+				owns_core_province = 283
 			}
 			else = {
 				282 = {
@@ -496,10 +481,8 @@ lithuanian_missions_slot = {
 			}
 			if = {
 				limit = {
-					government = monarchy
 					exists = POL
-					is_subject = no
-					religion_group = christian
+					valid_for_personal_unions_trigger = yes
 					POL = {
 						is_subject = no
 						government = monarchy
@@ -582,13 +565,10 @@ lithuanian_missions_slot = {
 		effect = {
 			if = {
 				limit = {
-					government = monarchy
 					exists = RUS
-					is_subject = no
-					religion_group = christian
+					valid_for_personal_unions_trigger = yes
 					RUS = {
-						is_subject = no
-						government = monarchy
+						valid_for_personal_unions_trigger = yes
 					}
 				}
 				add_casus_belli = {
@@ -599,13 +579,10 @@ lithuanian_missions_slot = {
 			}
 			else_if = {
 				limit = {
-					government = monarchy
 					exists = MOS
-					is_subject = no
-					religion_group = christian
+					valid_for_personal_unions_trigger = yes
 					MOS = {
-						is_subject = no
-						government = monarchy
+						valid_for_personal_unions_trigger = yes
 					}
 				}
 				add_casus_belli = {

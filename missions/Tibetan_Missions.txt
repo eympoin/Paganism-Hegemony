@@ -67,12 +67,9 @@ tib_slot_2 = {
 						total_development = 100
 					}
 				}
-				custom_trigger_tooltip = {
-					tooltip = tib_steppe_alliance_tooltip_2
-					num_of_owned_provinces_with = {
-						value = 10
-						culture_group = altaic
-					}
+				num_of_owned_provinces_with = {
+					value = 10
+					culture_group = altaic
 				}
 			}
 		}

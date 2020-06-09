@@ -776,12 +776,9 @@ russia_siberian_missions_slot = {
 			}
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = russia_westsiberia.tooltip
-				num_of_owned_provinces_with = {
-					region = west_siberia_region
-					value = 15
-				}
+			num_of_owned_provinces_with = {
+				region = west_siberia_region
+				value = 15
 			}
 		}
 		effect = {
@@ -824,12 +821,9 @@ russia_siberian_missions_slot = {
 			}
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = russia_eastsiberia.tooltip
-				num_of_owned_provinces_with = {
-					region = east_siberia_region
-					value = 10
-				}
+			num_of_owned_provinces_with = {
+				region = east_siberia_region
+				value = 10
 			}
 			owns_core_province = 1043
 		}
