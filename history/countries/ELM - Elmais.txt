@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = luri
+religion = zoroastrian
+technology_group = muslim
+capital = 4289
+
+1428.1.1 = {
+	monarch = {
+		name = "Ebarat"
+		dynasty = "Khuzi"
+		birth_date = 1403.1.1
+		DIP = 5
+		ADM = 4
+		MIL = 3
+	}
+}

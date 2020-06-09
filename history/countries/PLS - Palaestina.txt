@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = syrian
+add_accepted_culture = canaan
+religion = olympoi
+technology_group = muslim
+capital = 1854 # Damascus
+government_rank = 1
+
+1397.1.1 = {
+	monarch = {
+		name = "Helias"
+		dynasty = "Tzympenos"
+		birth_date = 1385.1.1
+		dip = 3
+		adm = 4
+		mil = 1
+	}
+}

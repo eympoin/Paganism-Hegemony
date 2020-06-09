@@ -1,0 +1,22 @@
+#2754 - La Mancha
+
+owner = BAE		#Juan II of Castille
+controller = BAE
+add_core = BAE
+add_core = TOL
+culture = cartaginensian 
+religion = jupiterian
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = gold #Almad�n
+base_manpower = 3
+capital = "Ciudad Real"
+is_city = yes
+
+
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

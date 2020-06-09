@@ -1,0 +1,28 @@
+#1878 - Aachen
+
+latent_trade_goods = {
+	coal
+}
+
+owner = FRR
+controller = FRR
+add_permanent_claim = FRP
+add_permanent_claim = FRV
+add_permanent_claim = FRO
+culture = rhenan
+religion = germanic
+trade_goods = grain
+capital = "Aachen"
+base_tax = 5
+base_production = 5
+is_city = yes
+add_core = FRR
+base_manpower = 2
+hre = no
+
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+

@@ -1,0 +1,26 @@
+# 197 Roussillon - Principal cities: Perpignan
+
+owner = NAR
+controller = NAR
+add_core = CAT
+capital = "Ruscino"
+is_city = yes
+culture = narbonnais
+religion = jupiterian
+hre = no
+base_tax = 3 
+base_production = 3
+trade_goods = wine
+base_manpower = 2
+add_core = NAR
+fort_15th = yes
+
+
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+
+

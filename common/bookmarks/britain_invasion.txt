@@ -1,0 +1,14 @@
+bookmark =
+{
+	name = "BRITAIN_NAME"
+	desc = "BRITAIN_DESC"
+	date = 1444.11.11
+	country = MTH
+	country = PCT
+	country = GWY
+	country = LDN
+	country = SEA
+	country = EAA
+	country = MIE
+	country = NRT
+}

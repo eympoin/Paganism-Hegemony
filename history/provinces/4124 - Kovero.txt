@@ -1,0 +1,17 @@
+#4124 - North Karelia
+
+owner = FIN
+controller = FIN
+add_core = FIN
+culture = karelian
+religion = suomenusko
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fur
+base_manpower = 1
+capital = "Lieksa"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = nomad_group

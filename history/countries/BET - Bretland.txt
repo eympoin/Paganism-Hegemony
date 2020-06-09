@@ -1,0 +1,6 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = western
+primary_culture = northymbrian
+religion = norse_pagan_reformed
+capital = 245	

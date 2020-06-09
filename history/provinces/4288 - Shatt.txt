@@ -1,0 +1,19 @@
+# - Cezair i-Arab -> al-Qurna, Zihiya, Rahmaniya
+
+owner = BAB
+controller = BAB
+culture = babylonian
+religion = mesopotamian
+capital = "al-Qurna"
+trade_goods = spices #Dates
+hre = no
+base_tax = 4
+base_production = 4
+base_manpower = 5
+is_city = yes
+add_core = BAB
+discovered_by = east_african
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = indian
+discovered_by = nomad_group

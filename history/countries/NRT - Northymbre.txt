@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = western
+primary_culture = northymbrian
+religion = norse_pagan_reformed
+capital = 245	
+
+1435.11.6 = { #Coronation
+	monarch = {
+		name = "Siefried"
+		dynasty = "Ragnarsson"
+		birth_date = 1410.12.6
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}

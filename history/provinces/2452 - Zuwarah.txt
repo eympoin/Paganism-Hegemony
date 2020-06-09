@@ -1,0 +1,21 @@
+# - Zuwarah
+
+owner = TRP
+controller = TRP
+culture = carthaginian
+religion = jupiterian
+capital = "Zuwarah"
+trade_goods = fish
+hre = no
+base_tax = 4
+base_production = 3
+base_manpower = 3
+is_city = yes
+add_core = TRP
+
+
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

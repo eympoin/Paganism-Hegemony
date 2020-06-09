@@ -1,0 +1,52 @@
+vassal = {
+	first = PER
+	second = FRS
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+
+vassal = {
+	first = PER
+	second = SIS
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+vassal = {
+	first = PER
+	second = KRM
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+
+vassal = {
+	first = PER
+	second = DIH
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+
+vassal = {
+	first = PER
+	second = ABA
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+
+vassal = {
+	first = PER
+	second = GOR
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+vassal = {
+	first = PER
+	second = HRV
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+vassal = {
+	first = PER
+	second = MRV
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}

@@ -1,0 +1,32 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = greek
+religion = olympoi
+technology_group = eastern
+capital = 2750# Constantinople
+fixed_capital = 2750# Cannot move capital away from this province & no power cost to move to it
+
+1425.7.21 = {
+	monarch = {
+		name = "Ioannes"
+		dynasty = "Karphitzes"
+		birth_date = 1410.12.18
+		adm = 5
+		dip = 5
+		mil = 4
+	}
+}
+
+1433.7.21 = {
+	heir = {
+		name = "Pelagios"
+		dynasty = "Karphitzes"
+		birth_date = 1433.2.8
+		claim = 95
+		adm = 5
+		dip = 2
+		mil = 4
+	}
+}
+

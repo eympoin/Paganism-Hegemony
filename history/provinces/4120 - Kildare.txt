@@ -1,0 +1,18 @@
+#4120 - Kildare
+
+owner = KID
+controller = KID
+culture = irish
+religion = celt
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = grain
+base_manpower = 3
+capital = "Naas"
+is_city = yes
+add_core = KID
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern

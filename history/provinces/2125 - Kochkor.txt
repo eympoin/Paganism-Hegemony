@@ -1,0 +1,19 @@
+# 2125 - Kochkor
+
+owner = TIM
+controller = TIM
+add_core = TIM
+culture = kirgiz
+religion = tengri_pagan_reformed
+capital = "Kochkor"
+trade_goods = wool
+hre = no
+base_tax = 2
+base_production = 2
+base_manpower = 3
+estate = estate_nomadic_tribes
+is_city = yes
+discovered_by = chinese
+discovered_by = indian
+discovered_by = nomad_group
+discovered_by = muslim

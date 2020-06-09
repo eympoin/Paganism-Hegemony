@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = persian
+add_accepted_culture = turkmeni
+religion = zoroastrian
+technology_group = muslim
+capital = 445
+
+1440.1.1 = { 
+	monarch = {
+		name = "Abed"
+		dynasty = "Jamshid"
+		adm = 3
+		dip = 1
+		mil = 4
+	}
+}

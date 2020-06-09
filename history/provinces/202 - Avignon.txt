@@ -1,0 +1,24 @@
+# 202 Avignon - Principal cities: Avignon
+
+owner = NAR
+controller = NAR
+capital = "Avennio"
+is_city = yes
+culture = narbonnais
+religion = jupiterian
+hre = no
+base_tax = 5 
+base_production = 5
+trade_goods = cloth
+base_manpower = 6
+add_core = NAR
+extra_cost = 8
+center_of_trade = 1
+
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+

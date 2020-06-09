@@ -1,0 +1,16 @@
+government = monarchy
+primary_culture = aquileian
+religion = jupiterian
+technology_group = western
+capital = 111	# Friuli
+historical_rival = LOM
+1444.1.1 = {
+    monarch = {
+        name = "Marcus"
+	dynasty = "Flavius"
+        birth_date = 1394.8.12
+        adm = 4
+        dip = 4
+        mil = 3
+    }
+}

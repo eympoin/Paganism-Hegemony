@@ -1,0 +1,22 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = irish
+religion = celt
+capital = 374	# Waterford
+
+
+
+1417.1.1 = {
+	monarch = {
+		name = "Donnchad"
+		dynasty = "MacMurrough-Kavanagh"
+		adm = 1
+		dip = 2
+		mil = 2
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = naive_personality
+}

@@ -1,0 +1,16 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = basque
+religion = jupiterian
+technology_group = western
+capital = 210
+1444.1.1 = {
+    monarch = {
+        name = "Patxi"
+	dynasty = "Abaigar"
+        birth_date = 1424.2.10
+        adm = 3
+        dip = 5
+        mil = 4
+    }
+}

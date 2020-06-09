@@ -1,0 +1,508 @@
+naval_power{
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = CTH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	a_new_navy_cth = {
+		position = 1
+		icon = mission_dominate_home_trade_node
+		required_missions = { }
+		trigger = {
+			galley_fraction = 0.5
+			navy_size_percentage = 0.9
+		}
+		effect = {
+			add_mercantilism = 2
+			add_country_modifier = {
+				name = "naval_enthusiasm_mission"
+				duration = 3650
+			}
+		}
+	}
+}
+
+hispania_unification_1_cth{
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = CTH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	victory_of_the_coalition_CTH = {
+		icon = mission_eastern_european_city
+		required_missions = {  } #None
+		position = 1
+		trigger = {
+			owns_or_non_sovereign_subject_of = 220
+			owns_or_non_sovereign_subject_of = 4549
+			owns_or_non_sovereign_subject_of = 1750
+			owns_or_non_sovereign_subject_of = 221
+		}
+		effect = {
+			castille_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = CTH
+			}
+			toledo_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = CTH
+			}
+			catalonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = CTH
+			}
+		}
+	}
+ control_of_the_eastern_coast_cth = {
+		icon = mission_eastern_european_city
+		required_missions = {victory_of_the_coalition_CTH a_new_navy}
+		position = 2
+		trigger = {
+			catalonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = CTH
+			}
+		}
+		effect = {
+			basque_country = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = CTH
+			}
+			aragon_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = CTH
+			}
+			corsica_sardinia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = CTH
+			}
+		}
+	}
+	control_the_mountains{
+		icon = mission_eastern_european_city
+		required_missions = {control_of_the_eastern_coast_cth}
+		position = 3
+		trigger = {
+			aragon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = CTH
+			}
+			basque_country = {
+				type = all
+				country_or_non_sovereign_subject_holds = CTH
+			}
+		}
+		effect = {
+			asturias_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = CTH
+			}
+			galicia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = CTH
+			}
+		}
+	}
+	take_galicia_cth = {
+		icon = mission_eastern_european_city
+		required_missions = {control_the_mountains}
+		position = 5
+		trigger = {
+			asturias_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = CTH
+			}
+			galicia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = CTH
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "through_the_atlantic"
+				duration = 5475
+			}
+		}
+	}
+}
+
+hispania_unification_2_CTH{
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = CTH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	secure_central_spain = {
+		icon = mission_eastern_european_city
+		required_missions = {victory_of_the_coalition_CTH}
+		position = 2
+		trigger = {
+			toledo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = CTH
+			}
+			castille_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = CTH
+			}
+		}
+		effect = {
+			lower_andalucia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = CTH
+			}
+			upper_andalucia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = CTH
+			}
+		}
+	}
+	finish_baetica_cth = {
+		icon = mission_eastern_european_city
+		required_missions = {secure_central_spain}
+		position = 4
+		trigger = {
+			lower_andalucia_area = {
+				country_or_non_sovereign_subject_holds = BAE
+			}
+			upper_andalucia_area = {
+				country_or_non_sovereign_subject_holds = BAE
+			}
+		}
+		effect = {
+			beieras_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = TRC
+			}
+			alentejo_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = TRC
+			}
+		}
+	}
+	road_to_the_atlantic_cth{
+		icon = mission_eastern_european_city
+		required_missions = {finish_baetica_cth}
+		position = 4
+		trigger = {
+			leon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = CTH
+			}
+		}
+		effect = {
+			alentejo_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = CTH
+			}
+		}
+	}
+	strike_lusitania_cth = {
+		icon = mission_eastern_european_city
+		required_missions = {finish_baetica road_to_the_atlantic_cth}
+		position = 5
+		trigger = {
+			leon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = CTH
+			}
+			alentejo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = CTH
+			}
+		}
+		effect = {
+			beieras_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = CTH
+			}
+		}
+	}
+}
+
+hispania_unification_3_CTH{
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = CTH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+}
+
+
+hispania_unification_final{
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = CTH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	unify_hispania_CTH = {
+		icon = mission_eastern_european_city
+		required_missions = {take_galicia_cth strike_lusitania_cth}
+		position = 7
+		trigger = {
+			iberia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				country_or_non_sovereign_subject_holds = CTH
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_stability = 1
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+		}
+	}
+}
+
+expand_eastward{
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = CTH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	a_stable_foothold_cth{
+		icon = mission_eastern_european_city
+		required_missions = {control_of_the_eastern_coast_cth a_new_navy_cth}
+		position = 3
+		trigger = {
+			corsica_sardinia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = CTH
+			}
+		}
+		effect = {
+			sicily_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = CTH
+			}
+			languedoc_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = CTH
+			}
+			provence_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = CTH
+			}
+		}
+	}
+	the_next_step_cth{
+		icon = mission_eastern_european_city
+		required_missions = {a_stable_foothold_cth}
+		position = 4
+		trigger = {
+			sicily_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = CTH
+			}
+		}
+		effect = {
+			tunisia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = CTH
+			}
+			calabria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = CTH
+			}
+		}
+	}
+	the_true_carthago{
+		icon = mission_eastern_european_city
+		required_missions = { the_next_step_cth } #None
+		position = 5
+		trigger = {
+			tunisia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = BAE
+			}
+		}
+		effect{
+			add_dip_power = 100
+			add_country_modifier = {
+				name = "dominant_trade_hub"
+				duration = -1
+			}
+		}
+	}
+}
+
+
+expand_eastward{
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = CTH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	crush_narbonensis_cth{
+		icon = mission_eastern_european_city
+		required_missions = {a_stable_foothold}
+		position = 4
+		trigger = {
+			languedoc_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = CTH
+			}
+			provence_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = CTH
+			}
+		}
+		effect = {
+			liguria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = CTH
+			}
+			piedmont_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = CTH
+			}
+			tuscany_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = CTH
+			}
+		}
+	}
+	take_the_rich_cities_CTH{
+		icon = mission_eastern_european_city
+		required_missions = { crush_narbonensis_cth } #None
+		position = 5
+		trigger = {
+			liguria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = CTH
+			}
+			tuscany_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = CTH
+			}
+		}
+		effect{
+			emilia_romagna_area = {
+				type = all
+				add_permanent_claim = CTH
+			}
+			central_italy_area{
+				type = all
+				add_permanent_claim = CTH
+			}
+		}
+	}
+
+
+	the_eternal_city_CTH{
+		icon = mission_eastern_european_city
+		required_missions = { take_the_rich_cities_CTH } #None
+		position = 6
+		trigger = {
+			owns_or_non_sovereign_subject_of = 118
+		}
+		effect{
+			add_adm_power	= 100
+			add_dip_power	= 100
+			add_mil_power	= 100
+			add_country_modifier = {
+				name = "the_eternal_city_mod"
+				duration = -1
+			}
+		}
+	}
+}

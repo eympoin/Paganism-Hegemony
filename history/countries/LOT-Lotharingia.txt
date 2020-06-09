@@ -1,0 +1,31 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = lotharingian
+add_accepted_culture = rhenan
+religion = germanic
+technology_group = western
+capital = 188
+fixed_capital = 188
+historical_rival = FRK
+
+
+1444.1.1 = {
+    monarch = {
+        name = "Marcel"
+	dynasty = "de Dabo"
+        birth_date = 1419.7.24
+        adm = 6
+        dip = 6
+        mil = 6
+    }
+    queen = {
+        country_of_origin = LOT
+        name = "Odette"
+        dynasty = "de Richemont"
+        birth_date = 1424.10.14
+        female = yes
+        adm = 6
+        dip = 6
+        mil = 6
+    }
+}

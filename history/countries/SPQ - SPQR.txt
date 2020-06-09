@@ -1,0 +1,18 @@
+government = republic
+add_government_reform = feudalism_reform
+primary_culture = roman
+religion = jupiterian
+technology_group = western
+capital = 118
+government_rank = 2
+
+1444.1.1 = {
+    monarch = {
+        name = "Publius"
+	dynasty = "Junius"
+        birth_date = 1390.2.9
+        adm = 3
+        dip = 5
+        mil = 4
+    }
+}

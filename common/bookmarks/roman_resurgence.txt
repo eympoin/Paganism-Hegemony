@@ -1,0 +1,10 @@
+bookmark =
+{
+	name = "ITALIA_NAME"
+	desc = "ITALIA_DESC"
+	date = 1444.11.11
+	country = SPQ
+	country = PAV
+	country = AQU
+	country = CTG
+}

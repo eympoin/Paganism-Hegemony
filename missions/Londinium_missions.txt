@@ -1,0 +1,274 @@
+Londinium_Unification_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = LDN
+		NOT = { map_setup = map_setup_random }
+	}
+
+	Reclam_The_Province_of_Britannia_Prima = {
+		icon = mission_eastern_european_city
+		required_missions = {  } #None
+		position = 1
+		trigger = {
+		east_anglia_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = LDN
+            }
+		home_counties_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = LDN
+            }
+		wessex_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = LDN
+            }
+
+
+
+		}
+		effect = {
+		add_country_modifier = {
+				name = "morale_boost"
+				duration = 5475
+			}
+		east_midlands_area = {
+                type = all
+                add_permanent_claim = LDN
+            }
+		yorkshire_area = {
+                type = all
+                add_permanent_claim = LDN
+            }
+		west_midlands_area = {
+                type = all
+                add_permanent_claim = LDN
+            }
+
+			}
+		}
+		Rebuild_The_city_of_Londinium = {
+		icon = mission_eastern_european_city
+		required_missions = {Reclam_The_Province_of_Britannia_Prima}
+		position = 2
+		trigger = {
+		}
+		effect = {
+		236 = {
+					add_base_tax = 3
+					add_base_production = 3
+					add_base_manpower = 5
+				}
+		add_country_modifier = {
+				name = "growth_of_capital"
+				duration = 5475
+			}
+			}
+		}
+		Conquest_of_the_Isle = {
+		icon = mission_eastern_european_city
+		required_missions = {All_Hail_Britannia}
+		position = 3
+		trigger = {
+		owns_or_non_sovereign_subject_of = 369
+		owns_or_non_sovereign_subject_of = 1978
+		owns_or_non_sovereign_subject_of = 1476
+		}
+		effect = {
+		add_prestige = 10
+			}
+		}
+
+
+
+
+}
+
+Londinium_Unification_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = LDN
+		NOT = { map_setup = map_setup_random }
+	}
+	Reclam_The_Province_of_Flavia_Carsariensis = {
+		icon = mission_eastern_european_city
+		required_missions = {  } #None
+		position = 1
+		trigger = {
+		east_midlands_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = LDN
+            }
+		yorkshire_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = LDN
+            }
+		west_midlands_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = LDN
+            }
+
+
+
+
+		}
+		effect = {
+		add_country_modifier = {
+				name = "army_enthusiasm"
+				duration = 5475
+			}
+
+			}
+		}
+
+	All_Hail_Britannia = {
+		icon = mission_eastern_european_city
+		required_missions = {Reclam_The_Province_of_Flavia_Carsariensis Reclam_The_Province_of_Britannia_Prima Reclam_The_Province_of_Maxima_Caesariensis }
+		trigger = {
+
+		}
+		effect = {
+			add_adm_power = 150
+			add_dip_power = 150
+			add_mil_power = 150
+			add_country_modifier = {
+				name = "expansionist_country"
+				duration = 5475
+			}
+
+
+			}
+		}
+
+	Glory_for_the_britannian_people = {
+		icon = mission_eastern_european_city
+		required_missions = { All_Hail_Britannia}
+		position = 3
+		trigger = {
+
+		}
+		effect = {
+		east_midlands_area = {
+                type = all
+                change_culture = britannian
+            }
+		yorkshire_area = {
+                type = all
+                change_culture = britannian
+            }
+		west_midlands_area = {
+                type = all
+                change_culture = britannian
+            }
+		east_anglia_area = {
+                type = all
+                change_culture = britannian
+            }
+		home_counties_area = {
+                type = all
+                change_culture = britannian
+            }
+		scottish_marches_area = {
+                type = all
+                change_culture = britannian
+            }
+		wessex_area = {
+                type = all
+                change_culture = britannian
+            }
+
+
+			}
+		}
+}
+
+Londinium_Unification_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = LDN
+		NOT = { map_setup = map_setup_random }
+	}
+
+	Reclam_The_Province_of_Maxima_Caesariensis = {
+		icon = mission_eastern_european_city
+		required_missions = {  } #None
+		position = 1
+		trigger = {
+		scottish_marches_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = LDN
+            }
+
+
+		}
+		effect = {
+		add_country_modifier = {
+				name = "expansionist_country"
+				duration = 5475
+			}
+			}
+		}
+		Reclam_The_Province_of_Britannia_Secunda = {
+		icon = mission_eastern_european_city
+		required_missions = { Reclam_The_Province_of_Maxima_Caesariensis }
+		position = 2
+		trigger = {
+		wales_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = LDN
+            }
+
+
+		}
+		effect = {
+
+		add_province_modifier = {
+					name = "naval_enthusiasm_mission"
+					duration = 5475
+				}
+
+
+			}
+		}
+
+		Conquest_of_Ireland = {
+		icon = mission_eastern_european_city
+		required_missions = { All_Hail_Britannia  }
+		position = 3
+		trigger = {
+		munster_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = LDN
+            }
+		leinster_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = LDN
+            }
+		ulster_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = LDN
+            }
+		connacht_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = LDN
+            }
+
+
+		}
+		effect = {
+
+		add_province_modifier = {
+					name = "eng_irish_revolts"
+					duration = 5475
+				}
+
+
+			}
+		}
+
+}

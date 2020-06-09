@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = babylonian
+religion = mesopotamian
+technology_group = muslim
+capital = 2311
+
+1428.1.1 = {
+	monarch = {
+		name = "Misa-nana-kal-ammi"
+		dynasty = "Arua"
+		birth_date = 1405.1.1
+		DIP = 4
+		ADM = 5
+		MIL = 4
+	}
+}

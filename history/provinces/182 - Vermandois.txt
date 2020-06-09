@@ -1,0 +1,24 @@
+# 182 Vermandois - Principal cities: Compiègne + Soissons
+
+owner = FRV
+controller = FRV
+add_permanent_claim = FRP
+add_permanent_claim = FRR
+add_permanent_claim = FRO
+capital = "Soissons"
+is_city = yes
+culture = salian
+religion = germanic
+hre = no
+base_tax = 8 
+base_production = 8
+trade_goods = livestock
+base_manpower = 6
+#fort_15th = yes
+add_core = FRV
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+

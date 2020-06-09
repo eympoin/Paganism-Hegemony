@@ -1,0 +1,18 @@
+#1748 - La Mancha
+
+owner = BAE
+controller = BAE
+add_core = BAE
+culture = baetician
+religion = jupiterian
+hre = no
+base_tax = 3
+base_production = 4
+trade_goods = livestock
+base_manpower = 2
+capital = "Ja�n"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

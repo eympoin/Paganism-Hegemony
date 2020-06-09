@@ -1,0 +1,18 @@
+#372 - Tyrone
+
+owner = TYR
+controller = TYR
+culture = irish
+religion = celt
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = wool
+base_manpower = 2
+capital = "Dungannon"
+is_city = yes
+add_core = TYR
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern

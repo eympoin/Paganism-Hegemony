@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = persian
+religion = zoroastrian
+technology_group = muslim
+capital = 414
+
+1400.1.1 = {
+	monarch = {
+		name = "Joneid"
+		dynasty = "Saffarid"
+		birth_date = 1380.3.30
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}

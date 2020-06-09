@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = western
+religion = jupiterian
+primary_culture = salernian
+capital = 2983
+government_rank = 1
+
+1435.2.3 = {
+	monarch = { 
+		name = "Renatus"
+		dynasty = "Magnus"
+		dip = 3
+		mil = 4
+		adm = 4
+	}
+}

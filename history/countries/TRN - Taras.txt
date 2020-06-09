@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = western
+religion = olympoi
+primary_culture = greek
+capital = 122
+
+1423.2.3 = {
+	monarch = {
+		name = "Alexios"
+		dynasty = "Leos"
+		dip = 3
+		mil = 3
+		adm = 1
+		birth_date = 1390.1.1
+	}
+}

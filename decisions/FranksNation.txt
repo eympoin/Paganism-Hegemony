@@ -1,0 +1,122 @@
+country_decisions = {
+
+	franks_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = HLR }
+			NOT = { tag = FRK }
+			NOT = { tag = LOM }
+			OR = {
+				ai = no
+				NOT = { exists = FRK }
+			}
+			OR = {
+				primary_culture = salian
+				primary_culture = rhenan
+				primary_culture = lingerian
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = loire_area
+				area = ile_de_france_area
+				area = champagne_area
+				area = normandy_area
+				area = picardy_area
+				area = wallonia_area
+				area = flanders_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no			
+			NOT = { exists = FRK }
+			loire_area = {
+				type = all
+				owned_by = ROOT
+			}
+			normandy_area = {
+				type = all
+				owned_by = ROOT
+			}
+			picardy_area = {
+				type = all
+				owned_by = ROOT
+			}
+			champagne_area = {
+				type = all
+				owned_by = ROOT
+			}
+			ile_de_france_area = {
+				type = all
+				owned_by = ROOT
+			}
+			wallonia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			flanders_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			change_tag = FRK
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			france_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = FRA
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							has_idea_group = default_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

@@ -1,0 +1,16 @@
+bookmark =
+{
+	name = "PERSIA_NAME"
+	desc = "PERSIA_DESC"
+	date = 1444.11.11
+	
+	country = PER
+	country = ARM
+	country = BAB
+	country = ASY
+	country = ELM
+	country = SND
+	country = TIM
+	country = AFG
+
+}

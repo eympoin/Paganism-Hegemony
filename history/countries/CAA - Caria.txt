@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = greek
+religion = olympoi
+technology_group = eastern
+capital = 319
+fixed_capital = 319
+government_rank = 1
+1390.1.1 = {
+	monarch = {
+		name = "Prokopios"
+		dynasty = "Kanakaris"
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+}

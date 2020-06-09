@@ -1,0 +1,21 @@
+# 84 - Berg
+
+owner = LOT #In reality Kleves and Berg are not united before 1510.
+controller = LOT
+add_core = LOT
+culture = rhenan
+religion = germanic
+trade_goods = cloth
+capital = "Düsseldorf"
+base_tax = 4
+base_production = 4
+base_manpower = 1
+is_city = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+hre = no
+
+

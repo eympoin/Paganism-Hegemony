@@ -1,0 +1,24 @@
+# 169 Armor
+
+owner = FRP
+controller = FRP
+add_permanent_claim = FRO
+add_permanent_claim = FRR
+add_permanent_claim = FRV
+add_core = BRI
+capital = "Saint-Malo"
+is_city = yes
+culture = breton
+religion = celt
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = cloth
+base_manpower = 4
+estate = estate_church
+add_core = FRP
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+

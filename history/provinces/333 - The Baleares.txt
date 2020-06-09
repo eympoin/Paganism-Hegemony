@@ -1,0 +1,18 @@
+#333 - The Baleares
+
+owner = CTH		# Alfons V of Aragon
+controller = CTH
+add_core = CTH
+culture = cartaginensian 
+religion = jupiterian
+hre = no
+base_tax = 7
+base_production = 5
+trade_goods = fish
+base_manpower = 5
+capital = "Palma"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

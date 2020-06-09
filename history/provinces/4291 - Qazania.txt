@@ -1,0 +1,20 @@
+#4391 - Qazaniya
+
+owner = BAB
+controller = BAB
+culture = babylonian
+religion = mesopotamian
+capital = "Qazaniya"
+trade_goods = cotton
+hre = no
+base_tax = 5
+base_production = 5
+base_manpower = 4
+is_city = yes
+add_core = BAB
+discovered_by = east_african
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = indian
+discovered_by = nomad_group

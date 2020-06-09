@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = narbonnais
+religion = catholic
+technology_group = western
+capital = 203
+fixed_capital = 203
+

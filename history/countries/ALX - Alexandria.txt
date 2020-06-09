@@ -1,0 +1,19 @@
+government = republic
+add_government_reform = free_city
+primary_culture = ptolemaic
+religion = olympoi
+technology_group = muslim
+capital = 358# Cairo
+government_rank = 1
+
+
+1440.1.1 = {
+	monarch = {
+		name = "Hierotheos"
+		dynasty = "Kyritzios"
+		birth_date = 1385.1.1
+		dip = 1
+		adm = 2
+		mil = 1
+	}
+}

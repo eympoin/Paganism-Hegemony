@@ -1,0 +1,17 @@
+#368 - Madeira
+
+religion = jupiterian
+capital = "Funchal"
+trade_goods = sugar
+hre = no
+base_tax = 4 
+base_production = 4
+base_manpower = 1
+
+owner = LUS
+controller = LUS
+add_core = LUS
+culture = lusitanian
+discovered_by = muslim
+discovered_by = ottoman
+

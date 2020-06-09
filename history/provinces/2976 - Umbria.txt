@@ -1,0 +1,19 @@
+# - Umbria
+
+owner = SPQ
+controller = SPQ
+culture = roman 
+religion = jupiterian 
+hre = no
+base_tax = 6
+base_production = 6
+trade_goods = wine
+base_manpower = 1
+capital = "Perugia" 
+is_city = yes
+add_core = SPQ
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+

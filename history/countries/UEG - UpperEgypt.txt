@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = al_misr_arabic
+add_accepted_culture = ptolemaic
+religion = ancient_egyptian_rl
+technology_group = muslim
+capital = 4320 # Cairo
+government_rank = 1
+
+1443.1.1 = {
+	monarch = {
+		name = "Seka"
+		dynasty = "Itjtawy"
+		birth_date = 1420.1.1
+		dip = 5
+		adm = 5
+		mil = 5
+	}
+}

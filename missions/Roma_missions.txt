@@ -1,0 +1,285 @@
+Roma_Unification_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = SPQ
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	Crush_Tuscany = {
+		icon = mission_eastern_european_city
+		required_missions = {  } #None
+		position = 1
+		trigger = {
+			owns_or_non_sovereign_subject_of = 117
+			owns_or_non_sovereign_subject_of = 2978
+			owns_or_non_sovereign_subject_of = 116
+			owns_or_non_sovereign_subject_of = 115
+		}
+		effect = {
+
+			add_adm_power = 50
+
+			}
+		}
+		Subjugate_Salerno = {
+		icon = mission_eastern_european_city
+		required_missions = {Crush_Tuscany}
+		position = 1
+		trigger = {
+			owns_or_non_sovereign_subject_of = 121
+			owns_or_non_sovereign_subject_of = 2983
+			owns_or_non_sovereign_subject_of = 2985
+			owns_or_non_sovereign_subject_of = 1933
+			owns_or_non_sovereign_subject_of = 1934
+		}
+		effect = {
+		add_permanent_claim = 2984
+		add_permanent_claim = 123
+		add_permanent_claim = 122
+		add_permanent_claim = 124
+		add_permanent_claim = 125
+		add_permanent_claim = 2982
+		add_permanent_claim = 2986
+		add_permanent_claim = 127
+		add_permanent_claim = 1247
+		add_permanent_claim = 126
+
+
+		}
+	}
+
+	}
+
+ROM_Unification_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = SPQ
+		NOT = { map_setup = map_setup_random }
+	}
+
+		has_country_shield = yes
+
+
+	Annex_Urbino = {
+		icon = mission_eastern_european_city
+		required_missions = {  } #None
+		position = 1
+		trigger = {
+			owns = 114
+			owns = 2977
+		}
+		effect = {
+		 add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 3650 #10 years
+			}
+
+		}
+
+	}
+	Integrate_The_Toscans = {
+		icon = mission_eastern_european_city
+		required_missions = {Annex_Urbino The_True_Republic Crush_Tuscany }
+		position = 2
+		trigger = {
+			tuscany_area = {
+				NOT = {pure_unrest = 0}
+				country_or_non_sovereign_subject_holds = SPQ
+			}
+			2980 = {
+				NOT = {pure_unrest = 0}
+				country_or_non_sovereign_subject_holds = SPQ
+			}
+			114 = {
+				NOT = {pure_unrest = 0}
+				country_or_non_sovereign_subject_holds = SPQ
+			}
+			2977 = {
+				NOT = {pure_unrest = 0}
+				country_or_non_sovereign_subject_holds = SPQ
+			}
+		}
+		effect = {
+			add_accepted_culture	= tuscan
+		}
+	}
+
+
+	Unify_The_Peninsula = {
+		icon = mission_eastern_european_city
+		required_missions = {Subjugate_Salerno Integrate_The_Toscans Crush_The_Lombard }
+		position = 3
+		trigger = {
+			apulia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			calabria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sicily_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			naples_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			central_italy_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tuscany_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			emilia_romagna_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			venetia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			piedmont_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			liguria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 3650 #10 years
+			}
+		}
+
+		}
+		Pax_Italica = {
+		icon = mission_eastern_european_city
+		required_missions = {Unify_The_Peninsula}
+		position = 4
+		trigger = {
+			italy_region = {
+				NOT = {pure_unrest = 0}
+				country_or_non_sovereign_subject_holds = SPQ
+			}
+		}
+		effect = {
+		capital_scope = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+		add_prestige = 20
+		add_stability = 1
+		italy_region = {
+			type = all
+			change_culture = roman
+		}
+		}
+
+	}
+}
+	ROM_Unification_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = SPQ
+		NOT = { map_setup = map_setup_random }
+	}
+
+		has_country_shield = yes
+
+
+
+	The_True_Republic = {
+		icon = mission_eastern_european_city
+		required_missions = {  } #None
+		position = 1
+		trigger = {
+		owns_or_non_sovereign_subject_of = 101
+		owns_or_non_sovereign_subject_of = 2992
+		owns_or_non_sovereign_subject_of = 2980
+		}
+		effect = {
+		add_permanent_claim = 1862
+		add_permanent_claim = 2979
+		add_permanent_claim = 2981
+		add_permanent_claim = 1875
+		add_permanent_claim = 108
+		add_permanent_claim = 107
+		add_prestige = 10
+		}
+
+	}
+	Crush_The_Lombard = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { The_True_Republic rekindle_an_old_alliance }
+		position = 2
+		trigger = {
+		owns_or_non_sovereign_subject_of = 1862
+		owns_or_non_sovereign_subject_of = 2979
+		owns_or_non_sovereign_subject_of = 2981
+		owns_or_non_sovereign_subject_of = 1875
+		owns_or_non_sovereign_subject_of = 108
+		owns_or_non_sovereign_subject_of = 107
+
+
+
+		}
+		effect = {
+		add_permanent_claim = 103
+		add_permanent_claim = 104
+		add_permanent_claim = 110
+		add_permanent_claim = 1774
+		add_permanent_claim = 111
+
+		}
+
+	}
+
+}
+ROM_Unification_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = SPQ
+		NOT = { map_setup = map_setup_random }
+	}
+	rekindle_an_old_alliance = {
+		icon = mission_eastern_european_city
+		required_missions = {  } #None
+		position = 1
+		trigger = {
+			alliance_with = NAR
+		}
+		effect = {
+			add_country_modifier = {
+				name = "influential_diplomacy"
+				duration = 5475
+			}
+		}
+
+	}
+}
+ROM_Unification_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = SPQ
+		NOT = { map_setup = map_setup_random }
+	}
+}

@@ -1,0 +1,402 @@
+
+hispania_unification_1_bae{
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = BAE
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	defeat_of_the_coalition = {
+		icon = mission_eastern_european_city
+		required_missions = {  } #None
+		position = 1
+		trigger = {
+
+			is_year	= 1445
+			is_at_war = no
+			toledo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = BAE
+			}
+			castille_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = BAE
+			}
+			valencia_area{
+				type = all
+				country_or_non_sovereign_subject_holds = BAE
+			}
+			lower_andalucia_area = {
+			type = all
+				country_or_non_sovereign_subject_holds = BAE
+			}
+			upper_andalucia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = BAE
+			}
+			owns_or_non_sovereign_subject_of = 2990
+			owns_or_non_sovereign_subject_of = 218
+			owns_or_non_sovereign_subject_of = 1747
+			owns_or_non_sovereign_subject_of = 216
+			owns_or_non_sovereign_subject_of = 229
+			owns_or_non_sovereign_subject_of = 4150
+			owns_or_non_sovereign_subject_of = 230
+		}
+		effect = {
+			add_permanent_claim = 232
+			add_permanent_claim = 231
+			beieras_area = {
+				type = all
+				add_permanent_claim = BAE
+			}
+			add_permanent_claim = 227
+			castille_area = {
+				type = all
+				add_permanent_claim = BAE
+			}
+			leon_area = {
+				type = all
+				add_permanent_claim = BAE
+			}
+			asturias_area = {
+				type = all
+				add_permanent_claim = BAE
+			}
+			aragon_area = {
+				type = all
+				add_permanent_claim = BAE
+			}
+			catalonia_area = {
+				type = all
+				add_permanent_claim = BAE
+			}
+			basque_country = {
+				type = all
+				add_permanent_claim = BAE
+			}
+			baleares_area = {
+				type = all
+				add_permanent_claim = BAE
+			}
+			}
+		}
+		allies_needed = {
+		icon = mission_eastern_european_city
+		required_missions = { defeat_of_the_coalition } #None
+		position = 2
+		trigger = {
+			num_of_allies = 2
+		}
+		effect{
+			add_country_modifier = {
+				name = "influential_diplomacy"
+				duration = 5475
+			}
+		}
+		}
+		eastern_counter_attack{
+		icon = mission_eastern_european_city
+		required_missions = { allies_needed } #None
+		position = 3
+		trigger = {
+			catalonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = BAE
+			}
+			aragon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = BAE
+			}
+			baleares_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = BAE
+			}
+		}
+		effect{
+			add_country_modifier = {
+				name = "western_mediterranean"
+				duration = 5475
+			}
+			corsica_sardinia_area = {
+				type = all
+				add_permanent_claim = BAE
+			}
+		}
+	}
+}
+
+
+hispania_unification_final_bae{
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = BAE
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+		unify_hispania_bae = {
+		icon = mission_eastern_european_city
+		required_missions = {eastern_counter_attack western_counter_attack}
+		position = 4
+		trigger = {
+			iberia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = BAE
+			}
+		}
+		effect = {
+		add_prestige = 20
+		add_stability = 1
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+		}
+	}
+}
+
+hispania_unification_2_bae{
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = BAE
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	western_counter_attack{
+		icon = mission_eastern_european_city
+		required_missions = { allies_needed } #None
+		position = 3
+		trigger = {
+			leon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = BAE
+			}
+			asturias_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = BAE
+			}
+			alentejo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = BAE
+			}
+			beieras_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = BAE
+			}
+			galicia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = BAE
+			}
+	}
+	effect{
+		add_country_modifier = {
+		name = "through_the_atlantic"
+		duration = 5475
+			}
+		}
+	}
+}
+
+
+
+western_control{
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = BAE
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	a_first_foot_hold{
+		icon = mission_eastern_european_city
+		required_missions = { eastern_counter_attack } #None
+		position = 4
+		trigger = {
+			corsica_sardinia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = BAE
+			}
+	}
+	effect{
+			sicily_area = {
+				type = all
+				add_permanent_claim = BAE
+			}
+			liguria_area{
+				type = all
+				add_permanent_claim = BAE
+			}
+		}
+	}
+
+	take_the_rich_cities{
+		icon = mission_eastern_european_city
+		required_missions = { a_first_foot_hold } #None
+		position = 6
+		trigger = {
+			liguria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = BAE
+			}
+			tuscany_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = BAE
+			}
+	}
+	effect{
+			emilia_romagna_area = {
+				type = all
+				add_permanent_claim = BAE
+			}
+			central_italy_area{
+				type = all
+				add_permanent_claim = BAE
+			}
+		}
+	}
+
+
+	the_eternal_city{
+		icon = mission_eastern_european_city
+		required_missions = { invade_south_italy take_the_rich_cities } #None
+		position = 7
+		trigger = {
+			naples_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = BAE
+			}
+	}
+	effect{
+			add_adm_power	= 100
+			add_dip_power	= 100
+			add_mil_power	= 100
+			add_country_modifier = {
+				name = "the_eternal_city_mod"
+				duration = -1
+			}
+		}
+	}
+}
+
+
+
+
+western_control_2{
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = BAE
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	take_north_mauretanian_coast{
+		icon = mission_eastern_european_city
+		required_missions = { defeat_of_the_coalition } #None
+		position = 2
+		trigger = {
+			northern_morocco_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = BAE
+			}
+			barbary_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = BAE
+			}
+			northern_morocco_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = BAE
+			}
+	}
+	effect{
+			sicily_area = {
+				type = all
+				add_permanent_claim = BAE
+			}
+			liguria_area{
+				type = all
+				add_permanent_claim = BAE
+			}
+			tuscany_area{
+				type = all
+				add_permanent_claim = BAE
+			}
+		}
+	}
+
+	take_carthage_bae{
+		icon = mission_eastern_european_city
+		required_missions = { a_first_foot_hold take_north_mauretanian_coast} #None
+		position = 5
+		trigger = {
+			tunisia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = BAE
+			}
+	}
+	effect{
+			add_dip_power = 100
+			add_country_modifier = {
+					name = "dominant_trade_hub"
+					duration = 3650
+			}
+		}
+	}
+}
+
+
+western_control_3{
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = BAE
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+		a_second_foot_hold{
+		icon = mission_eastern_european_city
+		required_missions = { a_first_foot_hold } #None
+		position = 5
+		trigger = {
+			sicily_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = BAE
+			}
+	}
+	effect{
+			calabria_area = {
+				type = all
+				add_permanent_claim = BAE
+			}
+		}
+	}
+
+	invade_south_italy{
+		icon = mission_eastern_european_city
+		required_missions = { a_second_foot_hold } #None
+		position = 6
+		trigger = {
+			calabria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = BAE
+			}
+	}
+	effect{
+			naples_area = {
+				type = all
+				add_permanent_claim = BAE
+			}
+		}
+	}
+
+}

@@ -1,0 +1,18 @@
+# 4391 Vivarais
+
+owner = BOR
+controller = BOR
+capital = "Viviers"
+is_city = yes
+culture = burgond
+religion = germanic
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = wine
+base_manpower = 2
+add_core = BOR
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman

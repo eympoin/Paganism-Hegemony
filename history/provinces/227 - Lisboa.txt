@@ -1,0 +1,27 @@
+#227 - Estremadura
+
+owner = LUS
+controller = LUS
+culture = lusitanian
+religion = jupiterian
+capital = "Lisboa"
+trade_goods = fish
+hre = no
+base_tax = 9
+base_production = 8
+base_manpower = 6
+is_city = yes
+add_core = LUS
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+fort_15th = yes
+discovered_by = eastern
+extra_cost = 26
+center_of_trade = 2
+fort_15th = yes
+
+add_permanent_province_modifier = {
+	name = tagus_estuary_modifier
+	duration = -1
+}

@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = autocracy_reform
+primary_culture = pontic_greek
+religion = olympoi
+technology_group = eastern
+capital = 328
+elector=yes
+government_rank = 1
+1435.1.1 = {
+	monarch = {
+		name = "Nikolaos III"
+		dynasty = "Paphlagon"
+		birth_date = 1410.1.1
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}

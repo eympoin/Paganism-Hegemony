@@ -1,0 +1,23 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = irish
+religion = celt
+capital = 376	# Galway
+
+#House Burke / De Burgh
+
+1440.1.1 = {
+	heir = {
+		name = "Ulick Fionn"
+		monarch_name = "Ulick Fionn"
+		dynasty = "Burke"
+		birth_date = 1440.1.1
+		death_date = 1509.1.1
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}

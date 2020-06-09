@@ -1,0 +1,19 @@
+#250 - Perth
+
+owner = PCT
+controller = PCT
+culture = highland_scottish
+religion = celt
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = livestock
+base_manpower = 4
+capital = "Perth"
+is_city = yes
+add_core = PCT
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+

@@ -1,0 +1,21 @@
+#125 - Palermo
+
+owner = CTG
+controller = CTG
+culture = sicilian 
+religion = jupiterian 
+hre = no 
+base_tax = 8 
+base_production = 8
+trade_goods = wine
+base_manpower = 4
+capital = "Palermo"
+is_city = yes
+add_core = CTG
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+extra_cost = 8
+center_of_trade = 1
+

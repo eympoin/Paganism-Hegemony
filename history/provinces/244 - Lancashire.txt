@@ -1,0 +1,19 @@
+#244 - Lancashire
+
+owner = NRT
+controller = NRT
+culture = northymbrian
+religion = norse_pagan_reformed
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = wool
+base_manpower = 2
+capital = "Lancaster"
+is_city = yes
+add_core = NRT
+seat_in_parliament = yes
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern

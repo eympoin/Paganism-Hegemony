@@ -1,0 +1,136 @@
+reims_Unification_1 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = FRR
+		NOT = { map_setup = map_setup_random }
+	}
+
+	Subjugate_The_Kingdom_of_Soissons_FRR = {
+		icon = mission_eastern_european_city
+		required_missions = {  } #None
+		position = 6
+		trigger = {
+		picardy_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = FRR
+            }
+		flanders_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = FRR
+            }
+		wallonia_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = FRR
+            }
+		ile_de_france_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = FRR
+            }
+
+		}
+		effect = {
+			add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 3650 #10 years
+			}
+				add_legitimacy = 10
+
+			}
+		}
+
+
+}
+reims_Unification_2 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = FRR
+		NOT = { map_setup = map_setup_random }
+	}
+	Subjugate_The_Kingdom_of_Paris_FRR = {
+		icon = mission_eastern_european_city
+		required_missions = {  } #None
+		position = 6
+		trigger = {
+		ile_de_france_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = FRR
+            }
+		normandy_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = FRR
+            }
+
+
+		}
+		effect = {
+			add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 3650 #10 years
+			}
+				add_legitimacy = 10
+
+			}
+		}
+		Regnum_Francorum_FRR = {
+		icon = mission_eastern_european_city
+		required_missions = { Subjugate_The_Kingdom_of_Soissons_FRR Subjugate_The_Kingdom_of_Paris_FRR Subjugate_The_Kingdom_of_Orleans_FRR }
+		position = 7
+		trigger = {
+
+		}
+		effect = {
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			add_country_modifier = {
+				name = "the_only_king"
+				duration = -1
+			}
+			}
+		}
+}
+
+reims_Unification_3 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = FRR
+		NOT = { map_setup = map_setup_random }
+	}
+
+		Subjugate_The_Kingdom_of_Orleans_FRR = {
+		icon = mission_eastern_european_city
+		required_missions = {  } #None
+		position = 6
+		trigger = {
+		ile_de_france_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = FRR
+            }
+		loire_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = FRR
+            }
+		brittany_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = FRR
+            }
+
+		}
+		effect = {
+			add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 3650 #10 years
+			}
+				add_legitimacy = 10
+
+			}
+		}
+
+
+}

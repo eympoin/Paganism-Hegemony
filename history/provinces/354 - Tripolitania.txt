@@ -1,0 +1,21 @@
+#354 - Tripoli
+
+owner = TRP
+controller = TRP
+culture = carthaginian
+religion = jupiterian
+capital = "Tripoli" #Tripoli in the West.
+estate = estate_nobles
+trade_goods = cloth
+hre = no
+base_tax =6
+base_production = 5
+base_manpower = 5
+is_city = yes
+add_core = TRP
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+extra_cost = 16
+center_of_trade = 2

@@ -1,0 +1,22 @@
+#221 - Murcia
+
+owner = BAE		# Juan II of Castille
+controller = BAE
+add_core = BAE
+add_core = CTH
+culture = cartaginensian 
+religion = jupiterian
+hre = no
+base_tax = 4
+base_production = 3
+trade_goods = grain
+base_manpower = 3
+capital = "Cartagena"
+is_city = yes
+center_of_trade = 2
+
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

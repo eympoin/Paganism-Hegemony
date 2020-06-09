@@ -1,0 +1,29 @@
+#Elfsborgs L�n
+
+add_core = SWE
+owner = SWE
+controller = SWE
+culture = swedish
+religion = norse_pagan_reformed
+hre = no
+base_tax = 2
+base_production = 1
+trade_goods = grain
+base_manpower = 1
+fort_15th = yes #Old �lvsborg Castle
+capital = "Elfsborg"
+is_city = yes
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+extra_cost = 8
+center_of_trade = 1
+
+
+1527.6.1 = { religion = protestant}
+1598.8.15 = { controller = PLC } # Sigismund tries to reconquer his crown
+1598.12.15 = { controller = SWE } # Duke Karl get it back
+1612.5.24 = { controller = DAN } # The War of Kalmar-Captured by Christian IV
+1613.1.20 = { controller = SWE }# The Peace of Kn�red
+1621.1.1 = { capital = "G�teborg" }

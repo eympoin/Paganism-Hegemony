@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = assyrian
+religion = mesopotamian
+technology_group = muslim
+capital = 2310 # Tabriz
+
+1428.1.1 = {
+	monarch = {
+		name = "Naramsin"
+		dynasty = "Ashurbeth"
+		birth_date = 1403.1.1
+		DIP = 4
+		ADM = 3
+		MIL = 6
+	}
+}

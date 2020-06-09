@@ -1,0 +1,20 @@
+#214 - Teruel
+
+owner = BAE		# Alfons V of Aragon
+controller = BAE
+add_core = BAE
+add_core = TRC
+
+culture = tarraconan 
+religion = jupiterian
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = cloth
+base_manpower = 3
+capital = "Teruel"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

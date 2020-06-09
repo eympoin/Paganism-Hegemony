@@ -1,0 +1,26 @@
+# 4111 - Vendée
+
+owner = FRO
+controller = FRO
+add_permanent_claim = FRP
+add_permanent_claim = FRR
+add_permanent_claim = FRV
+capital = "Luçon"
+is_city = yes
+culture = aquitain
+religion = jupiterian
+hre = no
+base_tax = 3
+
+base_production = 3
+trade_goods = salt
+base_manpower = 3
+add_core = FRO
+add_core = AQI
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+extra_cost = 8
+center_of_trade = 1
+

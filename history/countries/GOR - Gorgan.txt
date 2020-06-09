@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = khorasani
+religion = zoroastrian
+technology_group = muslim
+capital = 2214
+
+1420.1.1 = {
+	monarch = {
+		name = "Turan"
+		dynasty = "Shule"
+		birth_date = 1403.1.1
+		DIP = 2
+		ADM = 2
+		MIL = 4
+	}
+}

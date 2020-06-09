@@ -1,0 +1,23 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = scottish
+add_accepted_culture = highland_scottish
+religion = celt
+technology_group = western
+capital = 249 # Edinburgh
+
+
+
+1437.2.20 = {
+	#decision = use_highland_charge
+	monarch = {
+		name = "James II"
+		dynasty = Stuart
+		birth_date = 1410.1.3
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = righteous_personality
+}

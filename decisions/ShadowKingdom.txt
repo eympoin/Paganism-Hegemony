@@ -1,0 +1,124 @@
+country_decisions = {
+
+  stop_shadow_kingdom = {
+    major = yes
+    potential = {
+      ai = no
+      NOT = { has_global_flag = egypt_out_of_HRE }
+      has_global_flag = enable_stop_shadow_kingdom
+      is_emperor = yes
+    }
+    provinces_to_highlight = {
+      OR = {
+        area = cyrenaica_area
+        area = vostani_area
+        area = bahari_area
+        area = delta_area
+        area = al_wahat_area
+        area = gulf_of_arabia_area
+      }
+      OR = {
+        NOT = { owned_by = ROOT }
+        is_part_of_hre = no
+        NOT = { owner = { is_subject_of = ROOT } }
+      }
+    }
+    allow = {
+      NOT = { is_year = 1490 }
+      custom_trigger_tooltip = {
+          type = all
+          OR = {
+            owned_by = ROOT
+            is_part_of_hre = yes
+            owner = {
+              is_subject_of = ROOT
+            }
+          }
+        }
+      cyrenaica_area= {
+        type = all
+        OR = {
+          owned_by = ROOT
+          is_part_of_hre = yes
+          owner = {
+            is_subject_of = ROOT
+          }
+        }
+      }
+
+      vostani_area = {
+        type = all
+        OR = {
+          owned_by = ROOT
+          is_part_of_hre = yes
+          owner = {
+            is_subject_of = ROOT
+          }
+        }
+      }
+      bahari_area = {
+        type = all
+        OR = {
+          owned_by = ROOT
+          is_part_of_hre = yes
+          owner = {
+            is_subject_of = ROOT
+          }
+        }
+      }
+      delta_area= {
+        type = all
+        OR = {
+          owned_by = ROOT
+          is_part_of_hre = yes
+          owner = {
+            is_subject_of = ROOT
+          }
+        }
+      }
+      al_wahat_area= {
+        type = all
+        OR = {
+          province_id = 120
+          owned_by = ROOT
+          is_part_of_hre = yes
+          owner = {
+            is_subject_of = ROOT
+          }
+        }
+      }
+      gulf_of_arabia_area= {
+        OR = {
+          owned_by = ROOT
+          is_part_of_hre = yes
+          owner = {
+            is_subject_of = ROOT
+          }
+        }
+      }
+    }
+    effect = {
+      hidden_effect = {
+        set_global_flag = egypt_out_of_HRE #Disables Shadow Kingdom Event.
+        every_province = {
+          limit = {
+            region = egypt_region
+            is_part_of_hre = no
+            OR = {
+              owned_by = ROOT
+              owner = {
+                is_subject_of = ROOT
+              }
+            }
+          }
+          set_in_empire = yes
+        }
+      }
+      custom_tooltip = disable_shadow_kingdom_tooltip
+    }
+    ai_will_do = {
+      factor = 0
+    }
+  }
+
+}

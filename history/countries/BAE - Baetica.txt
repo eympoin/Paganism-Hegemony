@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = baetician
+religion = jupiterian
+technology_group = western
+capital = 225 
+historical_rival = BAE
+
+1444.1.1 = {
+    monarch = {
+        name = "Quintus"
+	dynasty = "Cornelius "
+        birth_date = 1420.2.10
+        adm = 1
+        dip = 3
+        mil = 6
+    }
+}

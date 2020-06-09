@@ -1,0 +1,20 @@
+government = republic
+add_government_reform = merchants_reform
+mercantilism = 25
+primary_culture = syrian
+religion = olympoi
+technology_group = muslim
+capital = 1855# Damascus
+government_rank = 1
+add_accepted_culture = canaan
+
+1442.1.1 = {
+	monarch = {
+		name = "Artemios"
+		dynasty = "Chameas"
+		birth_date = 1417.1.1
+		dip = 2
+		adm = 3
+		mil = 4
+	}
+}

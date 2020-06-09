@@ -1,0 +1,36 @@
+alliance = {
+	first = TRC
+	second = CTH
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+alliance = {
+	first = TRC
+	second = LUS
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+alliance = {
+	first = TRC
+	second = GAL
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+alliance = {
+	first = GAL
+	second = CTH
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+alliance = {
+	first = LUS
+	second = CTH
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+alliance = {
+	first = LUS
+	second = GAL
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}

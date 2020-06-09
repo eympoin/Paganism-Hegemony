@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = eastern
+primary_culture = bulgarian
+religion = olympoi
+capital = 150	# Sofia
+government_rank = 1
+
+1425.1.1 = {
+	monarch = {
+		name = "Koloman"
+		dynasty = "Cometopuli"
+		dip = 2
+		mil = 2
+		adm = 2
+	}
+}

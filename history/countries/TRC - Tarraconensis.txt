@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = tarraconan
+religion = jupiterian
+technology_group = western
+capital = 2988
+historical_rival = BAE
+
+1444.1.1 = {
+    monarch = {
+        name = "Manius"
+	dynasty = "Caelius"
+        birth_date = 1414.2.9
+        adm = 1
+        dip = 1
+        mil = 3
+    }
+}

@@ -1,0 +1,22 @@
+#220 - Val�ncia
+
+owner = BAE	#Alfons V of Aragon
+controller = BAE
+add_core = BAE
+add_core = CTH
+culture = cartaginensian 
+religion = jupiterian
+hre = no
+base_tax = 6
+base_production = 5
+trade_goods = cloth
+base_manpower = 4
+fort_15th = yes
+capital = "Val�ncia"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+extra_cost = 16
+center_of_trade = 2

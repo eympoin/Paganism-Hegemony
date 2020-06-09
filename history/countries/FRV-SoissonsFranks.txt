@@ -1,0 +1,24 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = salian
+add_accepted_culture = rhenan
+add_accepted_culture = lingerian
+religion = germanic
+technology_group = western
+capital = 182 
+fixed_capital = 182
+historical_rival = FRO
+historical_rival = FRR
+historical_rival = FRP
+
+
+1444.1.1 = {
+    monarch = {
+        name = "Mérovée"
+	dynasty = "Merovingiens"
+        birth_date = 1422.8.12
+        adm = 1
+        dip = 2
+        mil = 3
+    }
+}

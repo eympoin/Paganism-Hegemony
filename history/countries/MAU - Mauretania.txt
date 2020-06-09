@@ -1,0 +1,16 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = carthaginian
+religion = jupiterian
+technology_group = western
+capital = 334
+1414.1.1 = {
+    monarch = {
+        name = "Caius"
+	dynasty = "Antius"
+        birth_date = 1399.12.9
+        adm = 3
+        dip = 4
+        mil = 3
+    }
+}

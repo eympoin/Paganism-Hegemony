@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = autocracy_reform 
+primary_culture = armenian
+add_accepted_culture = azerbaijani
+religion = armenian_rl
+technology_group = muslim
+capital = 419	# Yerevan
+
+1425.1.1 = {
+	monarch = {
+		name = "Tigranes"
+		dynasty = "Marzpanate"
+		birth_date = 1390.1.1
+		adm = 3
+		dip = 5
+		mil = 6
+	}
+}

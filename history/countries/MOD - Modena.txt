@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = jupiterian
+primary_culture = romagnan
+capital = 106	# Modena
+fixed_capital = 106 # Cannot move capital away from this province & no power cost to move to it
+
+1444.1.1 = {
+	monarch = {
+		name = "Cesare"
+		dynasty = "d'Este"
+		birth_date = 1361.1.1
+		adm = 0
+		dip = 0
+		mil = 2
+	}
+}

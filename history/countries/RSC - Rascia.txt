@@ -1,0 +1,32 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = serbian
+religion = olympoi
+technology_group = eastern
+capital = 1827# Krusevac
+
+1389.1.1 = {
+	government_rank = 1
+}
+
+1397.6.24 = {
+	monarch = {
+		name = "Miroslav"
+		dynasty = "Ilic"
+		birth_date = 1377.1.1		
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}
+1435.6.24 = {
+	heir = {
+		name = "Porin" 
+		dynasty = "Ilic"
+		birth_date = 1435.1.1
+		claim = 85
+		adm = 6
+		dip = 4
+		mil = 4
+	}
+}

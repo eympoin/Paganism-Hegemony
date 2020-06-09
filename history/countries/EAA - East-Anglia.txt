@@ -1,0 +1,19 @@
+government = monarchy
+technology_group = western
+primary_culture = angle
+religion = germanic
+capital = 238 # London
+add_government_reform = feudalism_reform
+government_rank = 1
+
+
+1428.11.6 = { #Coronation
+	monarch = {
+		name = "Wuffa"
+		dynasty = "Iclingas"
+		birth_date = 1413.12.6
+		adm = 4
+		dip = 4
+		mil = 5
+	}
+}

@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = narbonnais
+religion = jupiterian
+technology_group = western
+capital = 2753
+fixed_capital = 2753
+historical_rival = BOR
+historical_friend = AQI
+historical_friend = SPQ
+
+1444.1.1 = {
+    monarch = {
+        name = "Valerian"
+	dynasty = "Hadrianus"
+        birth_date = 1409.7.24
+        adm = 6
+        dip = 6
+        mil = 4
+    }
+}

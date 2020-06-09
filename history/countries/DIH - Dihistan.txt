@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = persian
+add_accepted_culture = turkmeni
+religion = zoroastrian
+technology_group = muslim
+capital = 2349
+
+1430.1.1 = { 
+	monarch = {
+		name = "Saman"
+		dynasty = "Arsacid"
+		adm = 1
+		dip = 5
+		mil = 2
+	}
+}

@@ -1,0 +1,21 @@
+#228 - Beira
+
+owner = LUS
+controller = LUS
+culture = lusitanian
+religion = jupiterian
+capital = "Viseu"
+trade_goods = wine
+hre = no
+base_tax = 5
+base_production = 5
+base_manpower = 3
+is_city = yes
+add_core = LUS
+
+
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern

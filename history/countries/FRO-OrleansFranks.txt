@@ -1,0 +1,24 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = lingerian
+add_accepted_culture = rhenan
+add_accepted_culture = salian
+religion = germanic
+technology_group = western
+capital = 184 
+fixed_capital = 184
+historical_rival = FRP
+historical_rival = FRR
+historical_rival = FRV
+
+
+1444.1.1 = {
+    monarch = {
+        name = "Rodrigue"
+	dynasty = "Merovingiens"
+        birth_date = 1420.6.27
+        adm = 3
+        dip = 6
+        mil = 2
+    }
+}

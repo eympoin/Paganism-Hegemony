@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = anatolian
+religion = olympoi
+technology_group = eastern
+capital = 327 
+fixed_capital = 327
+
+1415.2.16 = {
+	monarch = {
+		name = "Diogenes"
+		dynasty = "Kilikos"
+		birth_date = 1396.6.27		
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}

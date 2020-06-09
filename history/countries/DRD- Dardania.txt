@@ -1,0 +1,24 @@
+government = republic
+add_government_reform = free_city
+primary_culture = serbian
+religion = olympoi
+technology_group = eastern
+capital = 1766# Krusevac
+historical_friend = BOS
+
+1389.1.1 = {
+	government_rank = 1
+}
+
+1410.6.24 = {
+	monarch = {
+		name = "Vukan"
+		dynasty = "Vojislavljevic"
+		birth_date = 1385.1.1		
+		adm = 1
+		dip = 3
+		mil = 0
+	}
+}
+
+

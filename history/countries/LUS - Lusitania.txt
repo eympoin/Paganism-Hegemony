@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = lusitanian
+religion = jupiterian
+technology_group = western
+capital = 227 # Lisboa
+national_focus = DIP
+historical_rival = BAE
+
+1444.1.1 = {
+    monarch = {
+        name = "Publius"
+	dynasty = "Aelius"
+        birth_date = 1420.2.10
+        adm = 3
+        dip = 1
+        mil = 4
+    }
+}

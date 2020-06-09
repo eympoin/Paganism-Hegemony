@@ -1,0 +1,19 @@
+#H�lsingland-G�strikland-Medelpad, from G�vle to N�s
+
+add_core = SWE
+owner = SWE
+controller = SWE
+culture = swedish
+religion = norse_pagan_reformed
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = fish
+base_manpower = 1
+capital = "G�vle"
+is_city = yes
+discovered_by = eastern
+discovered_by = western
+
+
+1527.6.1 = { religion = protestant}

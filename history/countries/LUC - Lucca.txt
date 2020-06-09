@@ -1,0 +1,19 @@
+government = republic
+add_government_reform = oligarchy_reform
+government_rank = 1
+mercantilism = 25
+primary_culture = tuscan
+religion = jupiterian
+technology_group = western
+capital = 2980 # Lucca
+add_army_professionalism = 0.05
+
+1444.11.11 = {
+	monarch = {
+		name = "Consiglio Generale"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}

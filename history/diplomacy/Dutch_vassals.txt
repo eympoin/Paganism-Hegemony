@@ -1,0 +1,15 @@
+# Venetian League Members
+
+vassal = {
+	first = LOT
+	second = BAT
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+
+vassal = {
+	first = LOT
+	second = FIS
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}

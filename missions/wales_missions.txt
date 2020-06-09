@@ -1,0 +1,122 @@
+Cornish_Unification_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = WLS
+			tag = GLA
+			tag = GWY
+			}
+		NOT = { map_setup = map_setup_random }
+	}
+	Unite_wales = {
+		icon = mission_eastern_european_city
+		required_missions = {}
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = wales_area
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			wales_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			 add_legitimacy = 20
+			 add_prestige = 20
+
+			add_country_modifier = {
+				name = "army_enthusiasm"
+				duration = 5475
+			}
+			west_midlands_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			wessex_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	invade_cornwall = {
+		icon = mission_eastern_european_city
+		required_missions = {Unite_wales}
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = wessex_area
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			wessex_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				}
+		}
+		effect = {
+			add_prestige = 15
+			britanny_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			home_counties_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	invade_ireland = {
+		icon = mission_eastern_european_city
+		required_missions = {invade_cornwall}
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				province_id = 373
+				province_id = 374
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+    	owns_or_non_sovereign_subject_of = 373
+			owns_or_non_sovereign_subject_of = 374
+		}
+		effect = {
+			add_prestige = 15
+			munster_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			leinster_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			connacht_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			ulster_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+# 4384 Rennes
+
+owner = FRP
+controller = FRP
+add_permanent_claim = FRO
+add_permanent_claim = FRR
+add_permanent_claim = FRV
+capital = "Rennes"
+is_city = yes
+culture = breton
+religion = celt
+hre = no
+base_tax = 4
+
+base_production = 4
+trade_goods = cloth
+base_manpower = 4
+add_core = FRP
+add_core = BRI
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+

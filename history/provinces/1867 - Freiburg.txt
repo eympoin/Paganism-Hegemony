@@ -1,0 +1,20 @@
+#1867 - Freiburg
+
+owner = BOR
+controller = BOR
+culture = burgond
+religion = germanic
+capital = "Lausanne"
+trade_goods = livestock
+hre = no
+base_tax = 4 
+base_production = 4
+base_manpower = 3
+is_city = yes
+add_core = BOR
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+

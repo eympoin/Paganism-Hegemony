@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = canaan
+religion = mesopotamian
+technology_group = muslim
+capital = 2308 
+
+1428.1.1 = {
+	monarch = {
+		name = "Bilgamish"
+		dynasty = "Edessos"
+		birth_date = 1403.1.1
+		DIP = 4
+		ADM = 3
+		MIL = 2
+	}
+}

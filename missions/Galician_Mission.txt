@@ -1,0 +1,196 @@
+
+
+hispania_unification_1_gal{
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = GAL
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	victory_of_the_coalition_gal = {
+		icon = mission_eastern_european_city
+		required_missions = {  } #None
+		position = 1
+		trigger = {
+			owns_or_non_sovereign_subject_of = 215
+		}
+		effect = {
+			add_permanent_claim = 232
+			add_permanent_claim = 231
+			beieras_area = {
+				type = all
+				add_permanent_claim = GAL
+			}
+			castille_area = {
+				type = all
+				add_permanent_claim = GAL
+			}
+			leon_area = {
+				type = all
+				add_permanent_claim = GAL
+			}
+			alentejo_area = {
+				type = all
+				add_permanent_claim = GAL
+			}
+			}
+		}
+		rex_atlantica = {
+		icon = mission_eastern_european_city
+		required_missions = {victory_of_the_coalition_gal}
+		position = 2
+		trigger = {
+			alentejo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = GAL
+			}
+			beieras_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = GAL
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "naval_enthusiasm_mission"
+				duration = 7300
+			}
+		lower_andalucia_area = {
+			type = all
+			add_permanent_claim = GAL
+			}
+		upper_andalucia_area = {
+			type = all
+			add_permanent_claim = GAL
+			}
+		}
+	}
+
+}
+
+hispania_unification_2_gal{
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = GAL
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	toward_the_plains = {
+		icon = mission_eastern_european_city
+		required_missions = {victory_of_the_coalition_gal}
+		position = 2
+		trigger = {
+			castille_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = GAL
+			}
+			leon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = GAL
+			}
+		}
+		effect = {
+
+			toledo_area = {
+				type = all
+				add_permanent_claim = GAL
+			}
+
+
+		}
+	}
+}
+
+hispania_unification_3_gal{
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = GAL
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	asturias_defense = {
+		icon = mission_eastern_european_city
+		required_missions = {}
+		position = 1
+		trigger = {
+			208 = {
+				fort_level = 2
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "asturias_stronghold"
+				duration = -1
+			}
+			basque_country = {
+				type = all
+				add_permanent_claim = GAL
+			}
+			aragon_area = {
+				type = all
+				add_permanent_claim = GAL
+			}
+		}
+	}
+
+	secure_the_pyreneus = {
+		icon = mission_eastern_european_city
+		required_missions = {victory_of_the_coalition_gal asturias_defense}
+		position = 2
+		trigger = {
+			aragon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = GAL
+			}
+			basque_country = {
+				type = all
+				country_or_non_sovereign_subject_holds = GAL
+			}
+		}
+		effect = {
+			catalonia_area = {
+				type = all
+				add_permanent_claim = GAL
+			}
+		}
+	}
+}
+
+hispania_unification_final_gal{
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = GAL
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+		unify_hispania_gal = {
+		icon = mission_eastern_european_city
+		required_missions = {rex_atlantica toward_the_plains secure_the_pyreneus}
+		position = 3
+		trigger = {
+			iberia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = GAL
+			}
+		}
+		effect = {
+		add_prestige = 20
+		add_stability = 1
+				capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+		}
+	}
+}

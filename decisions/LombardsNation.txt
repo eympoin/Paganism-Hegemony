@@ -1,0 +1,106 @@
+country_decisions = {
+
+	lombard_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = HLR }
+			NOT = { tag = FRK }
+			NOT = { tag = LOM }
+			OR = {
+				ai = no
+				NOT = { exists = LOM }
+			}
+
+			OR{
+				primary_culture = lombard
+				primary_culture = ligurian
+				primary_culture = aquileian
+				primary_culture = venetian
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = lombardy_area
+				area = piedmont_area
+				area = venetia_area
+				area = emilia_romagna_area
+				province_id = 2992
+				province_id = 101
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no			
+			NOT = { exists = LOM }
+			lombardy_area = {
+				type = all
+				owned_by = ROOT
+			}
+			piedmont_area = {
+				type = all
+				owned_by = ROOT
+			}
+			venetia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			emilia_romagna_area = {
+				type = all
+				owned_by = ROOT
+			}
+			owns_core_province = 2992
+			owns_core_province = 101
+		}
+		effect = {
+			change_tag = LOM
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							has_idea_group = default_ideas
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

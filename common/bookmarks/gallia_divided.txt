@@ -1,0 +1,15 @@
+bookmark =
+{
+	name = "GALLIA_NAME"
+	desc = "GALLIA_DESC"
+	date = 1444.11.11
+	
+	country = FRR
+	country = FRP
+	country = FRO
+	country = FRV
+	country = BOR
+	country = LOT
+	country = NAR
+	country = AQI
+}

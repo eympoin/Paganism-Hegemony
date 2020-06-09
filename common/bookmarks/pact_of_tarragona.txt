@@ -1,0 +1,12 @@
+bookmark =
+{
+	name = "HISPANIA_NAME"
+	desc = "HISPANIA_DESC"
+	date = 1444.11.11
+	
+	country = BAE
+	country = GAL
+	country = TRC
+	country = CTH
+	country = LUS
+}

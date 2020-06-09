@@ -1,0 +1,17 @@
+#4152 - Kuusamo incl Maanselk� and Kitka
+
+owner = FIN
+controller = FIN
+add_core = FIN
+culture = sapmi
+religion = suomenusko
+hre = no
+base_tax = 1
+base_production = 1
+trade_goods = fur
+base_manpower = 1
+capital = "Maanselk�"
+is_city = yes
+discovered_by = eastern
+discovered_by = western
+

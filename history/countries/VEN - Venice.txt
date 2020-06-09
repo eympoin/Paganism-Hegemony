@@ -1,0 +1,25 @@
+government = republic
+add_government_reform = venice_merchants_reform
+mercantilism = 25
+primary_culture = venetian
+religion = jupiterian
+add_accepted_culture = greek
+add_accepted_culture = croatian
+technology_group = western
+capital = 112 # Venezia
+fixed_capital = 112 # Cannot move capital away from this province & no power cost to move to it
+historical_friend = KNI
+national_focus = DIP
+add_army_professionalism = 0.05
+
+1438.1.1 = { leader = {	name = "Erasmo Gattamelata"	type = admiral	fire = 4	shock = 4	manuever = 3	siege = 0	death_date = 1443.1.1 } }
+
+
+	monarch = {
+		name = "Alvise II Mocenigo"
+		birth_date = 1380.1.3
+		adm = 2
+		dip = 4
+		mil = 2
+	}
+}

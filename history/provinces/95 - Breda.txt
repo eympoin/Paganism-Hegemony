@@ -1,0 +1,19 @@
+# 95 Breda - Principal cities: 's Hertogenbosch & Breda
+
+owner = BAT
+controller = BAT
+add_core = BAT
+is_city = yes
+capital = "'s Hertogenbosch"
+culture = dutch
+religion = germanic
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = cloth
+base_manpower = 2
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman

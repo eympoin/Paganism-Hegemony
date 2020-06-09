@@ -1,0 +1,25 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = rhenan
+add_accepted_culture = salian
+add_accepted_culture = lingerian
+religion = germanic
+technology_group = western
+capital = 186 
+fixed_capital = 186
+historical_rival = FRO
+historical_rival = FRP
+historical_rival = FRV
+
+
+
+1444.1.1 = {
+    monarch = {
+        name = "Siegbert"
+	dynasty = "Merovingiens"
+        birth_date = 1416.2.15
+        adm = 4
+        dip = 2
+        mil = 3
+    }
+}

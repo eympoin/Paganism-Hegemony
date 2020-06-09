@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+
+primary_culture = canaan
+religion = chalcedonian
+technology_group = muslim
+capital = 381 # Jerusalem
+
+1444.1.1 = {
+	monarch = {
+		name = "Herod"
+		dynasty = "Salomonide"
+		birth_date = 1420.1.1
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+}

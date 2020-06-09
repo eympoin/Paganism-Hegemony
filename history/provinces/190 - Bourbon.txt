@@ -1,0 +1,19 @@
+# 190 Bourbon - Principal cities: Moulins
+
+owner = BOR
+controller = BOR
+capital = "Moulins"
+is_city = yes
+culture = burgond
+religion = germanic
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = iron
+base_manpower = 4
+add_core = BOR
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+

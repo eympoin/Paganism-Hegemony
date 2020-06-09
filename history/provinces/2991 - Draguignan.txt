@@ -1,0 +1,23 @@
+# Forcalquier
+
+owner = NAR
+controller = NAR
+capital = "Forcalquier"
+is_city = yes
+culture = narbonnais
+religion = jupiterian
+hre = no
+base_tax = 5 
+base_production = 5
+trade_goods = wool
+base_manpower = 3
+add_core = NAR
+
+
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+

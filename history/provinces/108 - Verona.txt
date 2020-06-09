@@ -1,0 +1,21 @@
+#108 - Verona
+
+owner = AQU
+controller = AQU
+culture = aquileian 
+religion = jupiterian 
+hre = no 
+base_tax = 6 
+base_production = 6    
+trade_goods = grain
+base_manpower = 5    
+capital = "Verona" 
+is_city = yes 
+add_core = AQU
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+extra_cost = 8
+center_of_trade = 1
+

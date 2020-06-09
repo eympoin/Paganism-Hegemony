@@ -1,0 +1,16 @@
+bookmark =
+{
+	name = "WRE_NAME"
+	desc = "WRE_DESC"
+	date = 1444.11.11
+	
+	country = BYZ
+	country = MAC
+	country = SER
+	country = PON
+	country = LYD
+	country = SYR
+	country = PHO
+	country = LEG
+	country = UEG
+}

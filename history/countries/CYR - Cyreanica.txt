@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = cyrenian
+religion = olympoi
+technology_group = muslim
+capital = 356 # Cairo
+government_rank = 1
+
+1424.1.1 = {
+	monarch = {
+		name = "Nikolaos"
+		dynasty = "Skepides"
+		birth_date = 1407.1.1
+		dip = 2
+		adm = 2
+		mil = 2
+	}
+}

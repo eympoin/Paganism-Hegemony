@@ -1,0 +1,25 @@
+# - El Kef
+
+owner = CTG
+controller = CTG 
+culture = carthaginian
+religion = jupiterian
+capital = "El Kef"
+trade_goods = wool
+hre = no
+base_tax = 4 
+base_production = 4
+base_manpower = 2
+is_city = yes
+add_core = CTG
+fort_15th = yes 
+
+
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+
+}

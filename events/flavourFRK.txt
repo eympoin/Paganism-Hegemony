@@ -1,0 +1,76 @@
+#Brittany revolution
+namespace = flavor_frp
+country_event = {
+	id = flavor_frp.2
+	title = "flavor_frp.2.t"
+	desc = "flavor_frp.2.d"
+	picture = MILITARY_CAMP_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		TAG = FRP
+		NOT = { owns = 183 }
+		owns = 169
+		owns = 170
+		owns = 171
+		owns = 4384
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			BRI = {
+				169 = {
+					cede_province = BRI
+					add_core = BRI
+				}
+				170 = {
+					cede_province = BRI
+					add_core = BRI
+				}
+				171 = {
+					cede_province = BRI
+					add_core = BRI
+				}
+				4384 = {
+					cede_province = BRI
+					add_core = BRI
+				}
+				define_ruler = {
+					name = "Conan"
+					dynasty = "Rennes"
+					culture = breton
+					religion = germanic
+					claim = 100
+					DIP = 2
+					MIL = 4
+					ADM = 4
+				}
+				adopt_reform_progress = ROOT
+			}
+		}
+	}
+	
+	option = {
+		name = "flavor_frp.2.a"	#This means war.
+		ai_chance = {
+			factor = 0.5
+		}
+		BRI = {
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+	}
+	option = {
+		name = "flavor_frp.2.b"	#Let bygones be bygones.
+		ai_chance = {
+			factor = 0.5
+		}
+	}
+}

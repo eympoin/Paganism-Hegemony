@@ -1,0 +1,18 @@
+# 194 Périgord - Principal cities: Bergerac
+
+owner = AQI
+controller = AQI
+capital = "Vesunna"
+is_city = yes
+culture = aquitain
+religion = jupiterian
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = wine
+base_manpower = 4
+add_core = AQI
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman

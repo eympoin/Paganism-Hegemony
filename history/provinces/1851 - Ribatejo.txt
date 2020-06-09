@@ -1,0 +1,18 @@
+#1851 - Coimbra
+
+owner = LUS
+controller = LUS
+culture = lusitanian
+religion = jupiterian
+capital = "Coimbra"
+trade_goods = grain
+hre = no
+base_tax = 8
+base_production = 7
+base_manpower = 5
+is_city = yes
+add_core = LUS
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern

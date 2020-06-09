@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = persian
+religion = zoroastrian
+technology_group = muslim
+capital = 446
+
+1422.1.1 = { 
+	monarch = {
+		name = "Nuh"
+		dynasty = "Sajid"
+		adm = 6
+		dip = 2
+		mil = 0
+	}
+}
