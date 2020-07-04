@@ -103,7 +103,7 @@ country_event = {
 ########################################
 # Flavor Events for Persia
 #
-# written by Sara Wendel-Örtqvist & Henrik Lohmander
+# written by Sara Wendel-Ã–rtqvist & Henrik Lohmander
 ########################################
 
 #The Reforms of Ismail
@@ -1364,4 +1364,116 @@ country_event = {
 		name = flavor_per_cw.5a.a
 		
 	}
+}
+
+
+#The Afghan claims
+country_event {
+	id = flavor_per_cw.6
+	title = flavor_per_cw.6.t
+	desc = flavor_per_cw.6.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PER
+		exists = SIS
+		exists = AFG
+		NOT = {
+			check_variable = {
+				which = SIS_loy
+				value = 5
+			}
+		}
+		is_year = 1449
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {#Their claims are nonsensical, we stand with the Sakastani satrap
+		name = flavor_per_cw.6.a
+		add_dip_power = -100
+		add_mil_power = -50
+		add_prestige = 15
+		reverse_add_opinion = {
+			who = SIS
+			modifier = answered_call_to_empire
+		}
+		2224 = { remove_core = AFG }
+		2229 = { remove_core = AFG }
+		AFG = { create_alliance = ABA }
+		immediate = {
+			change_variable = {
+				which = SIS_loy
+				value = 2
+				}
+		}
+	}
+	option = {#Give up the cultural lands
+		name = flavor_per_cw.6.b
+		add_prestige = -5
+		add_dip_power = -50
+		reverse_remove_opinion = {
+			who = SIS
+			modifier = answered_call_to_empire 
+		}
+		reverse_remove_opinion = {
+			who = HRV
+			modifier = answered_call_to_empire 
+		}
+		2229 = { cede_province = AFG }
+		2228 = { cede_province = AFG }
+		2224 = { remove_core = AFG }
+		immediate = {
+			change_variable = {
+				which = SIS_loy
+				value = 1
+				}
+			change_variable = {
+				which = HRV_loy
+				value = -1
+				}
+		}
+	}
+	option = {#Enforce a status quo
+		name = flavor_per_cw.6.c
+		add_adm_power = -50
+		add_dip_power = -50
+		add_years_of_income = -0.5
+		2228 = { remove_core = AFG }
+		2224 = { remove_core = AFG }
+		2229 = { remove_core = AFG }
+		449 = { remove_core = SIS }
+		2225 = { remove_core = SIS }
+		447 = { remove_core = SIS }
+		immediate = {
+			change_variable = {
+				which = SIS_loy
+				value = 1
+				}
+		}
+	}
+	option = {#Our time is better spent elsewhere, take it all
+		name = flavor_per_cw.6.e
+		add_adm_power = 100
+		add_prestige = -20
+		reverse_remove_opinion = {
+			who = SIS
+			modifier = answered_call_to_empire 
+		}
+		reverse_remove_opinion = {
+			who = HRV
+			modifier = answered_call_to_empire 
+		}
+		reverse_add_opinion = {
+			who = AFG
+			modifier = historical_friend
+		}
+		2229 = { cede_province = AFG }
+		2228 = { cede_province = AFG }
+		2224 = { cede_province = AFG }
+	}
+
 }
