@@ -3,6 +3,7 @@
 ########################################
 
 namespace = flavor_per
+namespace = flavor_per_cw
 normal_or_historical_nations = yes
 
 
@@ -102,7 +103,7 @@ country_event = {
 ########################################
 # Flavor Events for Persia
 #
-# written by Sara Wendel-Ã–rtqvist & Henrik Lohmander
+# written by Sara Wendel-Örtqvist & Henrik Lohmander
 ########################################
 
 #The Reforms of Ismail
@@ -818,6 +819,7 @@ country_event = {
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
+	on_startup = yes
 	
 	trigger = {
 		tag = PER
@@ -826,7 +828,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 1
+		days = 10
 	}
 	
 	option = { #Dire times ahead
@@ -836,5 +838,530 @@ country_event = {
 			name = "per_cw_1"
 			duration = -1
 			}
+	}
+	
+	set_variable = {
+		which = DIH_loy
+		value = 2
+    }
+	set_variable = {
+		which = GOR_loy
+		value = 3
+    }
+	set_variable = {
+		which = MRV_loy
+		value = 1
+    }
+	set_variable = {
+		which = ABA_loy
+		value = 0
+    }
+	set_variable = {
+		which = SIS_loy
+		value = 2
+    }
+	set_variable = {
+		which = KRM_loy
+		value = 2
+    }
+	set_variable = {
+		which = FRS_loy
+		value = 2
+    }
+}
+
+#Dihistan request
+country_event = {
+	id = flavor_per_cw.2
+	title = flavor_per_cwdih.1.t
+	desc = flavor_per_cwdih.1.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PER
+		exists = DIH
+		owns = 414
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = { #They shall have their fort
+		name = flavor_per_cwdih.1.a
+		add_treasury = -200
+		add_adm_power = -70
+		438 = {
+			add_building_construction = {
+				building = fort_15th
+				speed = 1
+				cost = 1
+			}
+		}
+		immediate = {
+			change_variable = {
+				which = DIH_loy
+				value = 2
+				}
+		}
+	}
+	
+	option = { #They shall fund it too
+		name = flavor_per_cwdih.1.b
+		add_treasury = -100
+		add_adm_power = -35
+		438 = {
+			add_building_construction = {
+				building = fort_15th
+				speed = 1
+				cost = 1
+			}
+		}
+		immediate = {
+			change_variable = {
+				which = DIH_loy
+				value = 1
+				}
+		}
+	}
+	
+	option = { #We have no coin to waste on such a folly
+		name = flavor_per_cwdih.1.c
+		reverse_add_opinion = {
+				who =  DIH
+				modifier = vassal_abandoned
+		}
+	}
+}
+
+#Turkmeni representation
+country_event = {
+	id = flavor_per_cw.3
+	title = flavor_per_cwdihmrv.1.t
+	desc = flavor_per_cwdihmrv.1.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PER
+		exists = DIH
+		exists = MRV
+		owns = 414
+		is_year = 1448
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+	
+	option = { #They have their place in court
+		name = flavor_per_cwdihmrv.1.a
+		add_legitimacy = -20
+		add_prestige = -20
+		add_dip_power = -50
+		persia_region = {
+                type = all
+                            limit = {
+                                owned_by = ROOT
+                                OR = {
+                                    culture_group = iranian
+                                    }
+                                }
+                add_nationalism = 5
+        }
+        
+		immediate = {
+			change_variable = {
+				which = DIH_loy
+				value = 2
+				}
+		}
+		immediate = {
+			change_variable = {
+				which = MRV_loy
+				value = 2
+				}
+		}
+	}
+	
+	option = { #They shall adapt, and we will aid them
+		name = flavor_per_cwdihmrv.1.b
+		add_dip_power = -180
+		438 = { #karakum
+			add_culture_construction = {
+				speed = 1
+				cost = 1
+			}
+		}
+		437 = { #kopet dag
+			add_culture_construction = {
+				speed = 1
+				cost = 1
+			}
+		}
+		2349 = { #kizil-su
+			add_culture_construction = {
+				speed = 1
+				cost = 1
+			}
+		}
+		2350 = { #konjikala
+			add_culture_construction = {
+				speed = 1
+				cost = 1
+			}
+		}
+		444 = { #charjuy
+			add_culture_construction = {
+				speed = 1
+				cost = 1
+			}
+		}
+		445 = { #merv
+			add_culture_construction = {
+				speed = 1
+				cost = 1
+			}
+		}
+		persia_region = {
+                type = all
+                            limit = {
+                                owned_by = ROOT
+                                OR = {
+                                    culture_group = Oghuz
+                                    }
+                                }
+                add_nationalism = 5
+        }
+		immediate = {
+			change_variable = {
+				which = DIH_loy
+				value = 1
+				}
+		}
+		immediate = {
+			change_variable = {
+				which = MRV_loy
+				value = 1
+				}
+		}
+	}
+	
+	option = { #They are on their own
+		name = flavor_per_cwdihmrv.1.c
+		reverse_add_opinion = {
+				who =  DIH
+				modifier = opinion_court_events_rebuke
+		}
+		reverse_add_opinion = {
+				who =  MRV
+				modifier = opinion_court_events_rebuke
+		}
+	}
+}
+
+#Al-bakir's coup in Sakastan
+country_event = {
+	id = flavor_per_cw.4
+	title = flavor_per_cw.4.t
+	desc = flavor_per_cw.4.d
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PER
+		exists = SIS
+		owns = 414
+		is_year = 1445
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = { #Publicly denounce the Mihrabanids and support Al-bakir
+		name = flavor_per_cw.4.a
+		add_prestige = -20
+		add_stability = -1
+		add_dip_power = -50
+		add_years_of_income = -1
+		add_manpower = -5
+		reverse_add_opinion = {
+			who = ABA
+			modifier = opinion_tyrant_overlord
+		}
+		reverse_add_opinion = {
+			who = MRV
+			modifier = opinion_tyrant_overlord
+		}
+		SIS = { set_country_flag = sis_al_bakir_a }
+		
+	}
+	option = { #Publicly denounce the Mihrabanids
+		name = flavor_per_cw.4.b
+		add_prestige = -20
+		add_legitimacy = -10
+		add_dip_power = -50
+		SIS = {
+			random_list = {
+				80 = { set_country_flag = sis_al_bakir_b }
+				20 = { set_country_flag = sis_mihrabanids_b }
+				}
+		}
+		reverse_add_opinion = {
+			who = ABA
+			modifier = opinion_tyrant_overlord
+		}
+		reverse_add_opinion = {
+			who = MRV
+			modifier = opinion_tyrant_overlord
+		}
+	}
+	option = { #Support Al-bakir discreetly
+		name = flavor_per_cw.4.c
+		add_years_of_income = -0.75
+		add_manpower = -4
+		SIS = {
+			random_list = {
+				60 = { set_country_flag = sis_al_bakir_c}
+				40 = { set_country_flag = sis_mihrabanids_c}
+			}
+		}
+	}
+	option = { #Support the Mihrabanids
+		name = flavor_per_cw.4.f
+		add_years_of_income = -0.55
+		add_manpower = -3
+		SIS = {
+			random_list = {
+			60 = { set_country_flag = sis_al_bakir_d }
+			40 = { set_country_flag = sis_mihrabanids_d }
+		    }
+		}
+	}
+	option = { #This triffling matter does not concern the Shahanshah
+		name = flavor_per_cw.4.e
+		SIS = {
+			random_list = {
+				10 = { set_country_flag = sis_al_bakir_f }
+				90 = { set_country_flag = sis_mihrabanids_f }
+				}
+			}
+		}
+
+	after = {
+		SIS = {
+			set_country_flag = sis_cw
+		}
+	}
+}
+
+#The result of the coup
+country_event = {
+	id = flavor_per_cw.5
+	title = flavor_per_cw.5.t
+	desc = flavor_per_cw.5.d
+	picture = WOUNDED_SOLDIERS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = SIS
+		has_country_flag = sis_cw
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = flavor_per_cw.5.a
+			if = {
+				limit = {
+					has_country_flag = sis_al_bakir_a
+				}
+				define_ruler = {
+					name = "Ahuran"
+					dynasty = "Al-bakir"
+					adm = 5
+					dip = 4
+					mil = 6
+					age = 20
+					claim = 80
+				}
+				add_legitimacy = 20
+				add_prestige = 20
+				add_stability = 1
+				change_variable = {
+					which = SIS_loy
+					value = 3
+				}
+				PER = { country_event = { id = flavor_per_cw.51 } }
+			}
+			if = {
+				limit = { 
+					has_country_flag = sis_al_bakir_b
+				}
+				define_ruler = {
+					name = "Ahuran"
+					dynasty = "Al-bakir"
+					adm = 5
+					dip = 4
+					mil = 6
+					age = 20
+					claim = 80
+				}
+				add_legitimacy = 20
+				add_prestige = 20
+				add_stability = 1
+				change_variable = {
+					which = SIS_loy
+					value = 2
+				}
+				PER = { country_event = { id = flavor_per_cw.51 } }
+			}
+			if = {
+				limit = {
+					has_country_flag = sis_al_bakir_c
+				}
+				define_ruler = {
+					name = "Ahuran"
+					dynasty = "Al-bakir"
+					adm = 5
+					dip = 4
+					mil = 6
+					age = 20
+					claim = 80
+				}
+				add_legitimacy = 20
+				add_prestige = 20
+				add_stability = 1
+				change_variable = {
+					which = SIS_loy
+					value = 1
+				}
+				PER = { country_event = { id = flavor_per_cw.51 } }
+			}
+			if = {
+				limit = {
+					has_country_flag = sis_al_bakir_d
+				}
+				define_ruler = {
+					name = "Ahuran"
+					dynasty = "Al-bakir"
+					adm = 5
+					dip = 4
+					mil = 6
+					age = 20
+					claim = 80
+				}
+				add_legitimacy = 20
+				add_prestige = 20
+				add_stability = 1
+				change_variable = {
+					which = SIS_loy
+					value = -1
+				}
+				PER = { country_event = { id = flavor_per_cw.51 } }
+			}
+			if = {
+				limit = {
+					has_country_flag = sis_al_bakir_e
+				}
+				define_ruler = {
+					name = "Ahuran"
+					dynasty = "Al-bakir"
+					adm = 5
+					dip = 4
+					mil = 6
+					age = 20
+					claim = 80
+				}
+				add_legitimacy = 20
+				add_prestige = 20
+				add_stability = 1
+				PER = { country_event = { id = flavor_per_cw.51 } }
+			}
+			if = {
+				limit = {
+					has_country_flag = sis_mihrabanids_b
+				}
+				change_variable = {
+					which = SIS_loy
+					value = -2
+				}
+				PER = { country_event = { id = flavor_per_cw.52 } }
+			}
+			if = {
+				limit = {
+					has_country_flag = sis_mihrabanids_c
+				}
+				add_legitimacy = 20
+				add_prestige = 20
+				add_stability = 1
+				change_variable = {
+					which = SIS_loy
+					value = -1
+				}
+				PER = { country_event = { id = flavor_per_cw.52 } }
+			}
+			if = {
+				limit = {
+					has_country_flag = sis_mihrabanids_d
+				}
+				add_legitimacy = 20
+				add_prestige = 20
+				add_stability = 1
+				change_variable = {
+					which = SIS_loy
+					value = 1
+				}
+				PER = { country_event = { id = flavor_per_cw.52 } }
+			}
+			if = {
+				limit = {
+					has_country_flag = sis_mihrabanids_e
+				}
+				add_legitimacy = 20
+				add_prestige = 20
+				add_stability = 1
+				PER = { country_event = { id = flavor_per_cw.52 } }
+			}
+	
+	}
+}
+
+#Al-bakir victorious
+country_event = {
+	id = flavor_per_cw.51
+	title = flavor_per_cw.5a.t
+	desc = flavor_per_cw.5a.d
+	picture = ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		
+		name = flavor_per_cw.5a.a
+		
+	}
+}
+
+#The Mirhabanids victorious
+country_event = {
+	id = flavor_per_cw.52
+	title = flavor_per_cw.5b.t
+	desc = flavor_per_cw.5b.d
+	picture = ADVISOR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+
+		name = flavor_per_cw.5a.a
+		
 	}
 }
