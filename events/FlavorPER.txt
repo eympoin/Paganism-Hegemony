@@ -102,7 +102,7 @@ country_event = {
 ########################################
 # Flavor Events for Persia
 #
-# written by Sara Wendel-Örtqvist & Henrik Lohmander
+# written by Sara Wendel-Ã–rtqvist & Henrik Lohmander
 ########################################
 
 #The Reforms of Ismail
@@ -815,7 +815,7 @@ country_event = {
 	id = flavor_per_cw.1
 	title = "flavor_per_cw.1.t"
 	desc = "flavor_per_cw.1.d"
-	picture = GENERALS_DISCUSSING_eventPicture
+	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
 	
