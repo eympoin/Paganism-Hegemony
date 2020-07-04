@@ -1,5 +1,5 @@
-government = republic
-add_government_reform = free_city
+government = monarchy
+add_government_reform = feudalism_reform
 primary_culture = greek
 add_accepted_culture = greek
 technology_group = western

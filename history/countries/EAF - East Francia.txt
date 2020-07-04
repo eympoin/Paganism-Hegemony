@@ -1,0 +1,7 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = east-francian
+religion = germanic
+technology_group = western
+capital = 67
+fixed_capital = 67

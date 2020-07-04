@@ -1,17 +1,17 @@
 #365 - Aqaba
 
-owner = ANZ
-controller = ANZ
+owner = GAR
+controller = GAR
 culture = bedouin_arabic
 religion = arabian
 capital = "Aqaba"
 trade_goods = fish
-hre = no
+hre = yes
 base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = ANZ
+add_core = GAR
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = western

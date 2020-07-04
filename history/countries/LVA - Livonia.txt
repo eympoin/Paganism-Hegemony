@@ -2,10 +2,6 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = eastern
-religion = romuva
-primary_culture = latvian
+religion = suomenusko
+primary_culture = estonian
 capital = 1834
-
-1542.1.1 = {
-	religion = protestant
-}

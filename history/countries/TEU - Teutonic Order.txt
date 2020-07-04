@@ -1,7 +1,7 @@
 government = theocracy
 add_government_reform = monastic_order_reform
 government_rank = 1
-primary_culture = prussian
+primary_culture = old-prussian
 religion = slavic
 technology_group = western
 historical_friend = LIV

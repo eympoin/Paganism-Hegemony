@@ -1,7 +1,7 @@
 #1067 - Narym
 
 culture = samoyed
-religion = tengri_pagan_reformed #Sami Shamanism
+religion = suomenusko#Sami Shamanism
 capital = "Turukhan"
 trade_goods = unknown
 hre = no

@@ -1,13 +1,13 @@
 # 1872 - Ulm
-owner = WUR
-controller = WUR
-add_core = WUR
-culture = swabian
+owner = ALM
+controller = ALM
+add_core = ALM
+culture = alamann
 religion = germanic
-base_tax = 7
-base_production = 7
+base_tax = 3
+base_production = 3
 trade_goods = cloth	#fustians
-base_manpower = 4
+base_manpower = 2
 capital = "Ulm"
 is_city = yes
 hre = no
@@ -18,9 +18,3 @@ discovered_by = ottoman
 extra_cost = 8
 center_of_trade = 1
 
-1803.1.1 = {
-	add_core = WUR
-	owner = WUR
-	controller = WUR
-}
-1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

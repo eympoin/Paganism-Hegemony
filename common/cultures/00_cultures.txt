@@ -27,6 +27,9 @@ neo-roman={
 	narbonnais= {
 		primary = NAR
 	}
+	franko-roman= {
+		primary = GLI
+	}
 	britannian= {
 		primary = LDN
 	}
@@ -74,12 +77,8 @@ neo-roman={
 
 }
 
-germano-roman	= {
+frankish = {
 	graphical_culture = westerngfx
-	aquileian = {
-		primary = AQU
-	}
-
 	salian = {
 		primary = FRP
 		dynasty_names = {
@@ -88,8 +87,8 @@ germano-roman	= {
 			"de Rohan" "de Bar" "d'Albert" "d'Escoubleau" "de Neufville"
 		}
 	}
-	venetian = {
-		primary = VEN
+	franko-burgond = {
+		primary = WFR
 	}
 	lingerian = {
 		primary = FRO
@@ -97,18 +96,41 @@ germano-roman	= {
 	rhenan = {
 		primary = FRR
         }
-	lombard = {
-		primary = LOM
-        }
-	ligurian = {
-		primary = GEN
-	}
-	burgond= {
-		primary = BOR
-        }
 	lotharingian= {
 		primary = LOT
-        }
+    }
+	east-francian = {
+		primary = EAF
+	}
+	alamann = {
+		primary = ALM
+	}
+	bavarian = {
+		primary = BAV
+		male_names = {
+			Albrecht Wilhelm Johann Ernst Maximilian Emanuel Siegmund Ludwig Anton Christoph Ferdinand
+			Leopold Philipp Theodor Adalbert Alois Johann Clemens August Friedrich Johann Theodor Joseph
+			Luitpold Otto Philipp Moritz Wolfgang Engelbert Gottfried Hieronymus Ignatz Markus Meinhard
+			Raphael Karl Kajetan Clemens
+		}
+		female_names = {
+			Hiltraud Friede Juliane
+		}
+		dynasty_names = {
+			"von Pappenheim" "von Westernhagen" "von Henneberg" "von Flemming"
+			"von Arnim" "von Baudissin" "zu Eulenburg" "von Etzdorff" "von Keller" "von Hohenzollern" "von Wittelsbach"
+			"von W�rttemberg" "von Aham"  "von Arco" "von Armansperg" "von Bibra" "von Chlingensperg" "von Closen" "von Degenberg" "von Durkheim" "Echter" "von Fraunberg"
+			"von Freundsberg" "Fugger" "Gabelkofen" "von Gaisberg" "von Gebsattel" "von Gravenreuth"
+			"Griespek von Griespach" "von Trockau" "von Grumbach" "von Guttenberg" "von Gumppenberg"
+			"von Grumbach" "von Hackledt" "von Haslang" "Hofer von Lobenstein" "von Holnstein"
+			"von Kn�ringen" "von Laiming" "von Leublfing" "von Quirnheim" "Notthafft" "von Ortenburg"
+			"von Parsberg" "Pf�ffinger" "von Pienzenau" "von Pudewels" "von Raumer" "von Rehlinger"
+			"von Reitzenstein" "von Rohr"
+			"Rotenhan" "R�dt von Collenberg" "von Waldow" "von Wartenberg" "von Sandizell" "von Sinzendorf" "von der Tann" "von Tattenbach"
+			"von Thuengen" "von Th�rheim" "von Thurn und Taxis" "von Toerring"
+			"von Koenigsegg"
+		}
+	}
 	dutch = {
 		primary = BAT
 		male_names = {
@@ -160,6 +182,69 @@ germano-roman	= {
 			"van Serooskerken"
 		}
 	}
+		dynasty_names = {
+		"de Valois" "de Bourbon" "de la Tour" "d'Anjou"
+		"de Lorraine" "de Foix" "de Montfort" "de Blois" "de Penthievre" "de Dreux"
+		"de Rohan" "de Bar" "d'Albert" "d'Escoubleau" "de Neufville" "de Bourgogne"
+		"de Castellane" "d'Auvergne" "de Montb�liard" "de Metz"
+		#CKII Frankish
+		"de Laval" "de la Tour du Pin" "de La Tr�moille" "de Cr�quy" "de Broglie"
+		"de Montesquiou" "de Courtenay" "d'Harcourt" "de La Croix" "Le Tellier"
+		"de Rochechouart" "d'Aumont" "de Vergy" "de Saboulin" "de Gramont" "de Bissy"
+		"de Barrau" "de La Fayette" "d'Armagnac" "de Roug�" "du Quenoy" "de Ficquelmont"
+		"de Talleyrand" "de Saintignon" "von Luxemburg" "de Montmorency" "de Savoie"
+		"de Vaudemont" "de Nicola�"
+	}
+	male_names = {
+		�douard �rrard �tienne Ad�mar Adrien Aimery Alain
+		Aldebert Ald�ric Alphonse Amaury Am�d�e Ancel Andr� Antoine Archambaud Arnaud
+		Arnault Arnoul Aubry Aymar Barth�l�mi Baudouin Beno�t B�renger Bernard Bertrand Bohemond
+		Boson Bouchard Centule Charles Clotaire Ebbon Enguerrand Eudes Eustache Evrard Foulques Fran�ois
+		Fr�d�ric Gaucher Gaucelin Gauthier Geoffroi G�raud Gilbert Gilles Godefroi
+		Guichard Guiges Guilhem Guillaume Guy H�lie Hamelin Henri Herbert Hildebert Hugues Humbert Jacques
+		Jaufr� Jaspert Jean Jourdain Julien L�on L�onard Lothaire Louis Loup Mathieu Maurice Nicolas Ogier Onfroi Orson Othon
+		Payen Philippe Pierre Raimbaut Raoul Raymond Raynaud Renaud Richard Robert Robin Roger Rorgues Roubaud Savary Sigismond Simon Thibault Thi�baut
+		Thierry Thomas Valeran Yves
+	}
+	female_names = {
+		�l�onore �lodie �tiennette Ad�le Adalmode Adelaide Adelinde
+		Agn�s Al�arde Alice Ali�nor Agathe
+		Alix Almodis Amelie Anne Antoinette Arsinde Aude Aurengarde
+		B�atrice B�atrix Belleassez Beno�te B�reng�re
+		Berthe Blanche Bonne Bourgogne Bourguigne C�cile Cath�rine
+		Charlotte Constance Denise Douce Echive Eglantine
+		Elisabeth Emma Ermengarde Ermessinde Esclarmonde
+		Euphrosine Eustachie Eve Gerberge Gis�le Guillaumette H�loise Helvis Hodierne Ide Ild�garde
+		Isabeau Isabelle Jeanne Judith Julienne Mafalda Mahaut Margot Marguerite Marie Marthe
+		Mascarose Mathilde M�lisande M�lisende M�lusine P�ronelle Pernelle Perinne Pernette Plaisance
+		Raymonde Sarrazine Sol�ne Sophie St�phanie Sybille Tiburge Valence Yolande
+	}
+}
+
+germano-roman	= {
+	graphical_culture = westerngfx
+	aquileian = {
+		primary = AQU
+	}
+	venetian = {
+		primary = VEN
+	}
+
+	lombard = {
+		primary = LOM
+        }
+	ligurian = {
+		primary = GEN
+	}
+	burgond= {
+		primary = BOR
+  }
+
+	west-francian = {
+		primary = WFR
+	}
+
+
 	dynasty_names = {
 		"de Valois" "de Bourbon" "de la Tour" "d'Anjou"
 		"de Lorraine" "de Foix" "de Montfort" "de Blois" "de Penthievre" "de Dreux"
@@ -206,72 +291,8 @@ germanic = {
 
 	male_names = { Gunther Rolf }
 
-	pommeranian = {
-		primary = POM
-		male_names = {
-			Boguslaw Barnim Ota Eryk Filip Franciszek Jan Fryderyk Georg Ernest
-			Ludwik Albrecht Arnt August Bernhard Bodo Carl Emil Fritz Gerhard
-			Gustav Harald Hendryk Herbert Hermann Jochem Maximiliam Reinhold
-			Siegfried Walter Wilhelm Alexander Andrzej Antoni Antoninus Aron
-			Bartosz Bartolomeus Bedrich
-			Frederick Bezprzym Blazej Blaise Bogislaw Bohdan Bogdan Bohumir Boleslaw Boleslav
-			Boriwoj Borijov Bozydar Theodat Branimir Branislav
-			Bretislav Bretislaus Casimir Ctibor Ctibor Dobieslaw Dobromil Drosuk Dytryk Thierry Frantisek
-			Francis Gawel Grzegorz Gregory Havel Gallus Jacenty Hyacinth Jakub Jakusz Jacob
-			Janusz John Jaromar
-			Jaromil Jaromir Jaroslav Jedrzej Jindrich Henry Jir� George Jozef Joseph
-			Juliusz Julian Kajetan Kamil Camillus Karel Charles Kasper Kazimierz Kliment Clement Kolman
-			Koloman Kornel Cornelius Kresimir Krzeslaw
-			Krzysztof Christopher Lech Leszek Lubomir Lucjan Lucius Ludvik Louis Marek Marcus Marian Marius
-			Martin Mateusz Matthew Mieszko Mikol�s Nicholas Miloslaw Milosz Miroslaw
-			Mscislaw Mstislav Msciwoj
-			Oldrich Ulrich Ondrej Andrew Otokar Patryk Patrick Pawel Paul Piotr Peter Prendota Przemysl
-			Premysl Przybyslaw Radomil Radomir Radoslav Rostislav Ryszard Richard Sambor Sobieslav Sobeslaus
-			Stanislaw
-			Strasz Swietopelk Svatopluk Swietoslaw Sviatoslav Szczepan Stephen Szczesny Szymon Tadeusz
-			Theodore Tomasz Thomas Udalrich Urjasz Vojtech Albert Waclaw Walenty Valentin Wratislaw
-			Vratislav Wawrzyniec Laurence Wenceslaw Vaclav
-			Wincenty Vincent Wizlaw Wladyslaw Wlodek Wlodzimierz Wlodzislaw Wratislaw
-			Zbigniew Zbynek Zdenek Zdislav Zygmunt Sigmund
-		}
-		female_names = {
-			Gabriela Helena Janina
-			Agnieszka Agnes Alzbeta Andela Anna Berta Bohuslava Bozena Branislava Dagmar Danuta Dobravy
-			Dobroniega Dorota Dorothy Dragomira Edyta Ewa Geira Gertruda Gertrude
-			Gracja Grazyna Halina Hanna Irena Izabela Jadwiga Jarka Jarmila Jolanta Judyta Judith Kamila
-			Katarina Catherine Kenna Kornelia Krystyna Christina Ksenia Lidia
-			Ludmila Magda Magdalena Magdalena Magdalena Malgorzata Marcelina Maria Mark�ta Martyna
-			Mateja Matylda Matilda Milena Miroslava Pechna R�za Radomila Radomira Radoslava
-			Raina Regelinda Rycheza Salomea Smiechna Stanislava Stefana Stephania Svetlana Urszula V�clava
-			Vladislava Wera Wojslawa Zdenka Zofia Zwinislawa
-		}
-		dynasty_names = {
-			"von Klinckow" "von Puttkamer" "von Barnekow" "von Strantz" "Gryf" "Wizlawid"
-			"von Krassow" "von der Lancken" "von Schlieffen" "von Schwerin"
-			"von Sch�ning" "von Suhm" "von Maltzahn" "von Below" "von Blixen" "von Borcke"
-			"von Buggenhagen" "von Manteuffel" "von Corswant" "von Stralenheim" "von Dewitz" "von Preen" "von Podewils"
-			"von Flemming" "von Platen" "von Neuenkirchen" "von Gottberg" "von Hackewitz" "von Hennigs" "Trampe" "von Hertzberg" "von Heyden" "von Kameke" "von Kleist" "Natzmer"
-			"von Zepelin" "von Gostowski" "von Wakenitz"
-			"von Usedom" "Thun" "von Thadden"
-			#CKII
-			"Gryfita" "z Pomorza" "Grzymala" "Jastrzebiec" "Lubicz" "Nalecz" "Slaweka" "ze Slupska"
-			"Gniewosz"
-		}
-	}
-	prussian = {
-		primary = PRU
-		male_names = {
-			Albrecht Friedrich August Emil Ferdinand Karl Ludwig Karl Wilhelm Adolf Alfred Anton Benedikt
-			Benjamin Denis Diederick Eckbert Erwin Florian Franz Gebhard Gottfried Hartmann Heinrich Helmut
-			Horst Joachim Kaspar Kurt Leo Ludwig Lukas Manfred Michael Nikolaus Oskar Otto Philipp Reiner Rudolf
-			Rupprecht Siegfried Siegmund Thomas Urs Viktor Werner Alvydas Arelis Auctune Bajoras Beidras Budo Dagonis
-			Ekkelis Galindas Galindo Gauronas Gerdautas Glande Golding Jauguttis Karatas Klukis Kugis Milzas Nomedas
-			Prusas Sergonis Ulinniks Ulitis
-		}
-		female_names = {
-			Raphaela Sabine Vera Betten Dagas Gelennis Gerkus Grasus Gulbis Mila Milyuns Weslikan Ziedas
-		}
-	}
+
+
 	hannoverian = {
 		primary = HAN
 		male_names = {
@@ -341,6 +362,52 @@ germanic = {
 			"von Liebenau" "von Loeben" "von Logau" "von L�ttichau" "von Taube" "von Tettau" Vitzthum "von Wolffersdorff" W�hrmann "von Werthern" "von Wackerbarth" "von Bredow" "von Brandt"
 		}
 	}
+	thuringian = {
+		primary = SAX
+		male_names = {
+			Friedrich Albrecht Christian Heinrich Rudolf August Ernst Georg Moritz Alexander Anton Hektor
+			Johann Karl Clemens Wenzel Franz Xaver Joachim Joseph Magnus Maximilian Severinus Wolfgang
+			Andreas Bruno Burkhard G�nther HermannLukas Micharl Reimund Ulrich Wilfried Wolfram Konrad Edwin Marcus Osmund Peter Ralph Reginald Sigehelm Wulfhelm Wulfhere Alfred
+			Alwin Ad�mar Alwin Adolf Albert Albrecht Arnold Baltasar
+			Benedict Bernd Bernard Bernhard Bertold Bertram Bertrand Burchard
+			Claus Nicholas Cobbo Cord Dietmar Diederik Ekkehard Ekbert Engelbert Engelhard
+			Erik Albert Ewald Frederick Gerard Gebhard Giselmar Gottschalk G�nther Hans
+			Heideke Herbert Hermann Hinrik Jacob Jaspar Caspar Jochim Joakim Johann Kersten
+			Christian Laurentz Lambert Liawizo Liemar Liudger Otto Ludolf Ludwig
+			Louis Mathias Matthew Meinwerk Merten Martin Michael Norbert Ordulf
+			Peter Philip Renard Reinmar Roger Rudolf Ralph Sigbert Sigisbert
+			Sigfrid Siegfried Sigward Sigurd Simon Steffen Thomas Waldemar
+			Werner Victor Werneke Weybrecht Wichbert Wichmann Wigebert Wolter Walter Wulff Ulf
+		}
+		female_names = {
+			Amalia Bianka Eleonora
+			Agatha Balthild
+			Christina Cuthburg
+			Cynehild Cyneswith Cynethryth Eadburg Edith
+			Gunhilda Gunhild Helga Judith
+			Maud Matilda Sigri
+			Wulfhild
+			Addila Adela Adelheid Alof Agnes Anna Athela Beatrix Beatrice Bertha Bertha
+			Bertrada Bia Beatrice Bisina Bithild Brigida Brigid Elisabeth
+			Elisabeth Enda Gertrud Gisela
+			Hedwig Heilwig Helene Hildegard Ida Emma Irmgard
+			Judith Katharina
+			Margarete Mathilde Matilda Mechthild Reginlint
+			Richardis Ricarda Rodelinda Sophia Sophia Suanhilde Swanahild Wienke
+			Wiltrud Wulfhild Ulfhild
+		}
+		dynasty_names = {
+			"von Schwarzburg" "von Sch�nburg" "von Schlotheim" "von Salza" "von Kospoth"
+			"von Knuth" "von Wettin" "Askanier" "von Hohenzollern" "von Erffa" "von Bodungen" "von Eckersberg" "von Brandenstein" "von Pappenheim" "von Wiehe"
+			"von Westernhagen" "von Jena" "von Tr�tzschler" "von Plessen" "von Haugwitz" "von Kanitz" "von Falkenhayn" "von Th�na"
+			"von Th�ringen" "von Nostitz" "von Bieberstein" "von Meerheimb" "von Freiberg" "von Neitsch�tz" "von Minckwitz" "von Arnswaldt" "von Auerswald" "aus dem Winckel"
+			"von Beichlingen" "von Bendeleben" "von Beneckendorff"  "von Berbisdorf" "von Bissingen" "von Bock" "von Bomsdorff" "von Bose" "von Breitenbach"
+			"von Breitenbuch" "von Br�hl" "von B�nau" "von Hoym" "Holtzendorff" "von Hohenthal" "von Heynitz" "von Hessler" "von Helldorff" "von Harling" "von G�rschen" "von Glaubitz"
+			"von Gfug" "von Gersdorff" "von Germar" "von Fritsch" "von Friesen" "von Flanss" "von Etzdorff" "von Erdmannsdorff" "von Einsiedel" "von Dyhrn" "von Dieskau" "von Creytzen" "von Carlowitz" "von Maltitz" "von Mansfeld" "von Miltitz" "von M�cheln" "von Pflugk" "von P�lnitz" "von Ponickau" "von Rackel"
+			"von Raumer" "von Rechenberg" "von Rex" "Sack" "von Scheidingen" "von Schleinitzstrasse" "von Sch�nberg" "Senfft von Pilsach" "von Stolberg" "von Kannewurf" "Karras" "von Keller" "von Kirchbach" "von Sternberg" "von Leisnig"
+			"von Liebenau" "von Loeben" "von Logau" "von L�ttichau" "von Taube" "von Tettau" Vitzthum "von Wolffersdorff" W�hrmann "von Werthern" "von Wackerbarth" "von Bredow" "von Brandt"
+		}
+	}
 	franconian = {
 		primary = ANS
 	}
@@ -359,32 +426,7 @@ germanic = {
 			Angela Marlene Hanna Anastasia Christina Adelina Adriana Afina Alexandra Alexia Ana Anna Arina
 		}
 	}
-	bavarian = {
-		primary = BAV
-		male_names = {
-			Albrecht Wilhelm Johann Ernst Maximilian Emanuel Siegmund Ludwig Anton Christoph Ferdinand
-			Leopold Philipp Theodor Adalbert Alois Johann Clemens August Friedrich Johann Theodor Joseph
-			Luitpold Otto Philipp Moritz Wolfgang Engelbert Gottfried Hieronymus Ignatz Markus Meinhard
-			Raphael Karl Kajetan Clemens
-		}
-		female_names = {
-			Hiltraud Friede Juliane
-		}
-		dynasty_names = {
-			"von Pappenheim" "von Westernhagen" "von Henneberg" "von Flemming"
-			"von Arnim" "von Baudissin" "zu Eulenburg" "von Etzdorff" "von Keller" "von Hohenzollern" "von Wittelsbach"
-			"von W�rttemberg" "von Aham"  "von Arco" "von Armansperg" "von Bibra" "von Chlingensperg" "von Closen" "von Degenberg" "von Durkheim" "Echter" "von Fraunberg"
-			"von Freundsberg" "Fugger" "Gabelkofen" "von Gaisberg" "von Gebsattel" "von Gravenreuth"
-			"Griespek von Griespach" "von Trockau" "von Grumbach" "von Guttenberg" "von Gumppenberg"
-			"von Grumbach" "von Hackledt" "von Haslang" "Hofer von Lobenstein" "von Holnstein"
-			"von Kn�ringen" "von Laiming" "von Leublfing" "von Quirnheim" "Notthafft" "von Ortenburg"
-			"von Parsberg" "Pf�ffinger" "von Pienzenau" "von Pudewels" "von Raumer" "von Rehlinger"
-			"von Reitzenstein" "von Rohr"
-			"Rotenhan" "R�dt von Collenberg" "von Waldow" "von Wartenberg" "von Sandizell" "von Sinzendorf" "von der Tann" "von Tattenbach"
-			"von Thuengen" "von Th�rheim" "von Thurn und Taxis" "von Toerring"
-			"von Koenigsegg"
-		}
-	}
+
 	austrian = {
 		primary = HAB
 		male_names = {
@@ -727,7 +769,7 @@ scandinavian = { #Nordic
 	}
 
 
-	
+
 }
 
 british	= {
@@ -1789,7 +1831,50 @@ french	= {
 
 finno_ugric = { #Ugric
 	graphical_culture = westerngfx
-	
+
+
+		hungarian = {
+			primary = HUN
+			dynasty_names = {
+				B�thory Hunyadi Szapolyai R�k�czy Bocskai Bethlen Alm�sy Andr�ssy Batthy�ny Cs�ky Dessewffy
+				Erdody Eszterh�zy Festetics Hajd� K�rolyi Kun Magyary Per�nyi R�nai Sz�chenyi Szepessy
+				Th�k�ly Tisza Zr�nyi Teleki
+				Majl�th D�czy Dob� Koh�ry Orczy Frankopan Garay Mikes Sz�csi Imreffy N�dasdy Rh�dey
+
+				#CK2
+				Zrinski Hadik Both "R�k�czi" Forg�ch Cseszneky Derencs�nyi D�csey R�vay Esterh�zy
+				K�llay Kem�ny Thurz� Zichy
+			}
+			male_names = {
+				Ul�szl� L�szl� Lajos Albert J�nos M�ty�s Zsigmond Andr�s K�roly Istv�n B�la Anaszt�z Barnab�s
+				Boldizs�r D�vid D�m�t�r Edv�rd Ern� Ferenc G�bor Gy�rgy Izs�k Jen� J�zsef K�lm�n K�zm�r L�rinc
+				Mikl�s Oszk�r Ott� Patrik P�ter Simon Tam�s Vencel
+				�bel �d�rn �goston �lmos �rp�d �d�n Otto Alajos Ambrus Andr�s Andrew Antal Attila B�lint
+				Albert Bal�zs Benedek Benedict Bern�t Bernard Bert�k Bertalan Boldizs�r Bonuslo
+				Borisz Boris Cs�k Csaba Csongor D�nes D�m�t�r Dezs� Domoszl� Don�t Elek Elem�r Endre Ern�
+				Philip Ferenc Francis Frigyes G�bor G�briel Gabriel G�sp�r Caspar G�za Gazsi
+				Gell�rt Gergely Gy�rgy George Gyula Imre Istv�n Stephen Izs�k J�kob Jacob J�nos John J�zsef
+				Joseph Jen� K�lm�n K�roly Charles Konr�d Konrad Korn�l Krist�f L�szl� L�z�r L�rinc Lajos
+				Lampert Levente Luk�cs M�rk Marcus M�rton Martin M�t� M�ty�s Matthew M�ric M�zes Mih�ly
+				Michael Louis Ful�p B�la
+				Mikl�s N�ndor Orb�n Oszk�r P�l Paul P�ter Peter S�muel Samuel S�ndor Alexander Salamon
+				Szilveszter Silvester T�dor Tacsony Tam�s Thomas Tibor Tivadar Vazul Vencel Vaclav Vilmos
+				Zolt�n Zsigmond Sigmund Zsolt Saul Soma
+			}
+			female_names = {
+				�gnes Agnes �va Eva Adelaida Adelaide Ag�ta Agatha Am�lia Amelia Angyalka Anik� Aranka
+				Bertha Borb�la Csilla Csillag Czenzi Dorottya Dorothy Edit Edith Em�ke Emese Erika Erzs�bet
+				Elisabeth Eszter Berta Anna
+				Etel Euphemia Euphemia Gizella Gisela Gy�rgyi Georgia Hajnal Hedwig Hedwig Ibolya Ildik�
+				Ir�n Irene J�cinta J�zsa J�lia Juliana Jol�n Judith Judith Kamilla Camilla Katalin
+				Kinga Kl�ra Clara Catherine Illona
+				Konstancia Constance Krisztina Christina Kunigunda Kunigunde Luca M�ria Maria M�rta Martha
+				Magdolna Magdalena Margar�ta Margaret Margit Matild Matilda Nat�lia Natalia Odola Orsolya
+				Panni Piroska R�zsa Rosa S�ra Sarah Sarolt Zsuzsa Zsanett
+				Skolasztika Sophia Sophia Tund�r Terezia Teresa Viola Viola Vir�g Zolt�na Zs�fia Sophia
+			}
+		}
+
 	sapmi = {
 		primary = SMI
 		male_names = {
@@ -1816,7 +1901,7 @@ finno_ugric = { #Ugric
 			Kaise Saiva
 		}
 	}
-	
+
 	estonian = {
 		primary = EST
 		dynasty_names = {
@@ -1863,7 +1948,7 @@ finno_ugric = { #Ugric
 			�nnela �lle
 		}
 	}
-	
+
 	karelian = {
 		primary = KRL
 		male_names = {
@@ -2051,6 +2136,23 @@ south_slavic = {
 			"Brakovic" "Balsic" "Vukovic" "Branovic"
 		}
 	}
+	slovene = {
+		primary = CLI
+		male_names = {
+			Andrej Albreht Alojzij Anton Adam Avgust Boris Blaz	Davorin	Etbin Filip Franc Friderik
+			Gregorij Henrik Ivan Igor Ignacij Janez Janko Jernej Jozef Karel Konrad	Lovro Luka Ludvik
+			Marko Matija Milan Oton Peter Primoz Roman Rado Slavoj Simon Stanislav Stanko Stefan
+			Tobija Toma Valentin Vitomil
+		}
+		female_names = {
+			Agnes Angela Alenka Helena Izabela Ivana Jozefa	Katarina Katja Margareta Marija Majda Marjanca Terezija
+		}
+		dynasty_names = {
+			Bogenski Breski Celjski Crnomaljski Cresnjevec Hadik Izanski Jablaniski Koroski Lenkovic
+			Mocnik Pustalski Ptujski Rusbachi Strmski Savinjski Turjaski Visnjegorski Vovbrzani
+			Zovneski Zois Zagar Zelko
+		}
+	}
 	bulgarian = {
 		primary = BUL
 		male_names = {
@@ -2132,6 +2234,9 @@ west_slavic = {
 			Zapolsk� Palfi C�ki Bala�a B�thory
 		}
 	}
+	pommeranian = {
+		primary = POM
+	}
 	polish = {
 		graphical_culture = easterngfx
 		primary = POL
@@ -2175,6 +2280,115 @@ west_slavic = {
 			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
 			Ostrogski Ostror�g Pac Sapieha Sanguszko Tarnowski Teczynski
 			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	Vistulan = {
+		graphical_culture = easterngfx
+		primary = VIS
+		male_names = {
+			August Wladyslaw Stanislaw Kazimierz Aleksander Henryk Albert Kazimierz Michal Stefan
+			August Aleksander Karol Kazimierz Krzysztof Fryderyk Olbracht Jan Karol Patryk
+			Ferdynand Olbracht Albert Aleksy Andrzej Bartlomiej Bogumil Bronislaw Dawid Dominik Emil Eugeniusz
+			Ferdynand Gustaw Igor Iwan Krystian Lech Lucjusz Ludwik Lukasz Maksym Mariusz Mieszko Miroslaw
+			Rafal Sylwester Szymon Zygfryd Oskar
+			Aleksander Alexander Andrzej Andrew Bartosz Bartolomeus Bezprym Boguchwal Bogumil Boleslaw
+			Boleslav Boncza Bonifacius Borzyslaw Bozydar Theodat Borzywoj Borijov Budziwuj Czcibor
+			Czyrzniech Dalimir Daniel Daniel Dobieslaw Dobrogost Dobromir Doman Domawuj Dytryk Thierry
+			Eustachy Eustace Gaudenty Gierolt Gerald Gniewomir Gniewosz Gosciwuj Goszczon Henryk Henry
+			Izbor J�zef Joseph Jacek Hyacinth Jaksa Jacob Jakub Jacob Jakusz John Janislaw John
+			John Janusz John Jaroslaw Jaroslav Jerzy George Karol Charles Kazimierz Konrad Konrad
+			Christian Krzeslaw Lambert Lambert Leszek Ctibor
+			Maciej Matthew Macko Matthew Malowuj Marcin Martin Maslaw Mateusz Matthew Mieszko Mikolaj
+			Nicholas Milobrat Milosz Milosz Miroslaw Miroslav Msciwoj Mszczuj Nadbor Niezamysl Odon
+			Pawel Paul Pelka Piotr Peter Piskla Prendota Przemyslaw Premysl Przybor Sambor Sedziej
+			Sieciech Siemomysl Siemowit Skarbimir Snowid Spytko Stanislaw Stanislav
+			Stefan Stephen Stoigniew Strasz Sulislaw Sulistryj Swietopelk Svatopluk Swietoslaw
+			Szczesny Felix Tomasz Thomas Trojden Twardomir Usciech Waclaw Vaclav Wanko Vaclav
+			Laurence Wielislaw Wieslaw Wincenty Vincent Wit Guy Witosz Wladyslaw Vladislav Wojciech
+			Wojuta Wszebor Vsebor Zbigniew Zbynek Zbyszko Zbynek Zegota Ignatius Zelibrat
+			Zygmunt Sigmund Albert Wawrzyniec Sviatoslav Sedzimir Otto Krystyn Janko Imram
+		}
+		female_names = {
+			Adelajda Adleta Agnieszka Agnes Aldona Anastazja Anastasia Anna Anna Beata Bozena Danuta
+			Dobrawa Dobronega Elzbieta Elisabeth Eufemia Euphemia Eufrozyna Gertruda Gertrude
+			Helena Helen Jadwiga Jolanta Yolanda Judyta Judith Katarzyna Catherine Kazimiera Kenna
+			Konstancja Constance Krystyna Christina Kunegunda Lucja Lucia Ludmila Magdalena Magdalena
+			Malgorzata Maria Maria Kinga Grzymislawa Richeza Agafia
+			Matylda Matilda Milena Nadzieja Nawoja Pechna Rycheza Ryksa Salomea Samboja Scholastyka
+			Smiechna Stanislawa Swietoslawa Wislawa Wojslawa
+			Wolislawa Wszebora Wszemila Zofia Sophia Zwinislawa
+		}
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski
+			Premyslovci Podebrad
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostror�g Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+	Mazovian = {
+		graphical_culture = easterngfx
+		primary = VIS
+		male_names = {
+			August Wladyslaw Stanislaw Kazimierz Aleksander Henryk Albert Kazimierz Michal Stefan
+			August Aleksander Karol Kazimierz Krzysztof Fryderyk Olbracht Jan Karol Patryk
+			Ferdynand Olbracht Albert Aleksy Andrzej Bartlomiej Bogumil Bronislaw Dawid Dominik Emil Eugeniusz
+			Ferdynand Gustaw Igor Iwan Krystian Lech Lucjusz Ludwik Lukasz Maksym Mariusz Mieszko Miroslaw
+			Rafal Sylwester Szymon Zygfryd Oskar
+			Aleksander Alexander Andrzej Andrew Bartosz Bartolomeus Bezprym Boguchwal Bogumil Boleslaw
+			Boleslav Boncza Bonifacius Borzyslaw Bozydar Theodat Borzywoj Borijov Budziwuj Czcibor
+			Czyrzniech Dalimir Daniel Daniel Dobieslaw Dobrogost Dobromir Doman Domawuj Dytryk Thierry
+			Eustachy Eustace Gaudenty Gierolt Gerald Gniewomir Gniewosz Gosciwuj Goszczon Henryk Henry
+			Izbor J�zef Joseph Jacek Hyacinth Jaksa Jacob Jakub Jacob Jakusz John Janislaw John
+			John Janusz John Jaroslaw Jaroslav Jerzy George Karol Charles Kazimierz Konrad Konrad
+			Christian Krzeslaw Lambert Lambert Leszek Ctibor
+			Maciej Matthew Macko Matthew Malowuj Marcin Martin Maslaw Mateusz Matthew Mieszko Mikolaj
+			Nicholas Milobrat Milosz Milosz Miroslaw Miroslav Msciwoj Mszczuj Nadbor Niezamysl Odon
+			Pawel Paul Pelka Piotr Peter Piskla Prendota Przemyslaw Premysl Przybor Sambor Sedziej
+			Sieciech Siemomysl Siemowit Skarbimir Snowid Spytko Stanislaw Stanislav
+			Stefan Stephen Stoigniew Strasz Sulislaw Sulistryj Swietopelk Svatopluk Swietoslaw
+			Szczesny Felix Tomasz Thomas Trojden Twardomir Usciech Waclaw Vaclav Wanko Vaclav
+			Laurence Wielislaw Wieslaw Wincenty Vincent Wit Guy Witosz Wladyslaw Vladislav Wojciech
+			Wojuta Wszebor Vsebor Zbigniew Zbynek Zbyszko Zbynek Zegota Ignatius Zelibrat
+			Zygmunt Sigmund Albert Wawrzyniec Sviatoslav Sedzimir Otto Krystyn Janko Imram
+		}
+		female_names = {
+			Adelajda Adleta Agnieszka Agnes Aldona Anastazja Anastasia Anna Anna Beata Bozena Danuta
+			Dobrawa Dobronega Elzbieta Elisabeth Eufemia Euphemia Eufrozyna Gertruda Gertrude
+			Helena Helen Jadwiga Jolanta Yolanda Judyta Judith Katarzyna Catherine Kazimiera Kenna
+			Konstancja Constance Krystyna Christina Kunegunda Lucja Lucia Ludmila Magdalena Magdalena
+			Malgorzata Maria Maria Kinga Grzymislawa Richeza Agafia
+			Matylda Matilda Milena Nadzieja Nawoja Pechna Rycheza Ryksa Salomea Samboja Scholastyka
+			Smiechna Stanislawa Swietoslawa Wislawa Wojslawa
+			Wolislawa Wszebora Wszemila Zofia Sophia Zwinislawa
+		}
+		dynasty_names = {
+			Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski
+			Poniatowski Radziwill Zamoyski Potocki Lubomirski
+			Premyslovci Podebrad
+			Chodkiewicz Czartoryski Lanckoronski Mielzynski Oginski
+			Ostrogski Ostror�g Pac Sapieha Sanguszko Tarnowski Teczynski
+			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
+		}
+	}
+
+	polabian = {
+		primary = VEL
+		male_names = {
+			Awgust Alojs Abraham Albin Bogumil Bjedrich Bjarnat Cyril Derwan Fryco Frido Filip
+			Handrij Jan Jurij Jakub Jozef Joachim Korla Kito Kristalub Krescan Michal Mikolaj Mato Mercin
+			Matej Marko Miliduch Miklaws Nathanael Petr Pawol Pomgajbog Stanislaw Salomon
+			Wjaclaw Wylem
+		}
+		female_names = {
+			Bogna Benedikta Hanka Inga Irmgard Jewa Lubina Ludmila Marja Marta Marjana Pawlina Róza Sofija
+		}
+		dynasty_names = {
+			Brosk "z Barenstamma" Buk Bronisz Czornak Cyzh Dejka "z Friedenfelsa"
+			Glowan Jakobica Klosopolski Kucank Leska Langa Mosak Muslik Mercink Miczka
+			Parczewski Prätorius Pjekar Rhenisz Rizo Rychtar Swora Stempel Smoler
+			Woski Wirt Zejler
 		}
 	}
 
@@ -2227,51 +2441,6 @@ west_slavic = {
 	}
 }
 
-Magyar = {
-	graphical_culture = easterngfx
-
-	hungarian = {
-		primary = HUN
-		dynasty_names = {
-			B�thory Hunyadi Szapolyai R�k�czy Bocskai Bethlen Alm�sy Andr�ssy Batthy�ny Cs�ky Dessewffy
-			Erdody Eszterh�zy Festetics Hajd� K�rolyi Kun Magyary Per�nyi R�nai Sz�chenyi Szepessy
-			Th�k�ly Tisza Zr�nyi Teleki
-			Majl�th D�czy Dob� Koh�ry Orczy Frankopan Garay Mikes Sz�csi Imreffy N�dasdy Rh�dey
-
-			#CK2
-			Zrinski Hadik Both "R�k�czi" Forg�ch Cseszneky Derencs�nyi D�csey R�vay Esterh�zy
-			K�llay Kem�ny Thurz� Zichy
-		}
-		male_names = {
-			Ul�szl� L�szl� Lajos Albert J�nos M�ty�s Zsigmond Andr�s K�roly Istv�n B�la Anaszt�z Barnab�s
-			Boldizs�r D�vid D�m�t�r Edv�rd Ern� Ferenc G�bor Gy�rgy Izs�k Jen� J�zsef K�lm�n K�zm�r L�rinc
-			Mikl�s Oszk�r Ott� Patrik P�ter Simon Tam�s Vencel
-			�bel �d�rn �goston �lmos �rp�d �d�n Otto Alajos Ambrus Andr�s Andrew Antal Attila B�lint
-			Albert Bal�zs Benedek Benedict Bern�t Bernard Bert�k Bertalan Boldizs�r Bonuslo
-			Borisz Boris Cs�k Csaba Csongor D�nes D�m�t�r Dezs� Domoszl� Don�t Elek Elem�r Endre Ern�
-			Philip Ferenc Francis Frigyes G�bor G�briel Gabriel G�sp�r Caspar G�za Gazsi
-			Gell�rt Gergely Gy�rgy George Gyula Imre Istv�n Stephen Izs�k J�kob Jacob J�nos John J�zsef
-			Joseph Jen� K�lm�n K�roly Charles Konr�d Konrad Korn�l Krist�f L�szl� L�z�r L�rinc Lajos
-			Lampert Levente Luk�cs M�rk Marcus M�rton Martin M�t� M�ty�s Matthew M�ric M�zes Mih�ly
-			Michael Louis Ful�p B�la
-			Mikl�s N�ndor Orb�n Oszk�r P�l Paul P�ter Peter S�muel Samuel S�ndor Alexander Salamon
-			Szilveszter Silvester T�dor Tacsony Tam�s Thomas Tibor Tivadar Vazul Vencel Vaclav Vilmos
-			Zolt�n Zsigmond Sigmund Zsolt Saul Soma
-		}
-		female_names = {
-			�gnes Agnes �va Eva Adelaida Adelaide Ag�ta Agatha Am�lia Amelia Angyalka Anik� Aranka
-			Bertha Borb�la Csilla Csillag Czenzi Dorottya Dorothy Edit Edith Em�ke Emese Erika Erzs�bet
-			Elisabeth Eszter Berta Anna
-			Etel Euphemia Euphemia Gizella Gisela Gy�rgyi Georgia Hajnal Hedwig Hedwig Ibolya Ildik�
-			Ir�n Irene J�cinta J�zsa J�lia Juliana Jol�n Judith Judith Kamilla Camilla Katalin
-			Kinga Kl�ra Clara Catherine Illona
-			Konstancia Constance Krisztina Christina Kunigunda Kunigunde Luca M�ria Maria M�rta Martha
-			Magdolna Magdalena Margar�ta Margaret Margit Matild Matilda Nat�lia Natalia Odola Orsolya
-			Panni Piroska R�zsa Rosa S�ra Sarah Sarolt Zsuzsa Zsanett
-			Skolasztika Sophia Sophia Tund�r Terezia Teresa Viola Viola Vir�g Zolt�na Zs�fia Sophia
-		}
-	}
-}
 
 Romanian = {
 	graphical_culture = easterngfx
@@ -2340,6 +2509,108 @@ Romanian = {
 			Kogalniceanu Movilesti
 		}
 	}
+
+	dacian = {
+		primary = CRP
+		male_names = {
+			Ul�szl� L�szl� Lajos Albert J�nos M�ty�s Zsigmond Andr�s K�roly Istv�n B�la Anaszt�z Barnab�s
+			Boldizs�r D�vid D�m�t�r Edv�rd Ern� Ferenc G�bor Gy�rgy Izs�k Jen� J�zsef K�lm�n K�zm�r L�rinc
+			Mikl�s Oszk�r Ott� Patrik P�ter Simon Tam�s Vencel
+			�bel �d�rn �goston �lmos �rp�d �d�n Otto Alajos Ambrus Andr�s Andrew Antal Attila B�lint
+			Albert Bal�zs Benedek Benedict Bern�t Bernard Bert�k Bertalan Boldizs�r Bonuslo
+			Borisz Boris Cs�k Csaba Csongor D�nes D�m�t�r Dezs� Domoszl� Don�t Elek Elem�r Endre Ern�
+			Philip Ferenc Francis Frigyes G�bor G�briel Gabriel G�sp�r Caspar G�za Gazsi
+			Gell�rt Gergely Gy�rgy George Gyula Imre Istv�n Stephen Izs�k J�kob Jacob J�nos John J�zsef
+			Joseph Jen� K�lm�n K�roly Charles Konr�d Konrad Korn�l Krist�f L�szl� L�z�r L�rinc Lajos
+			Lampert Levente Luk�cs M�rk Marcus M�rton Martin M�t� M�ty�s Matthew M�ric M�zes Mih�ly
+			Michael Louis Ful�p B�la
+			Mikl�s N�ndor Orb�n Oszk�r P�l Paul P�ter Peter S�muel Samuel S�ndor Alexander Salamon
+			Szilveszter Silvester T�dor Tacsony Tam�s Thomas Tibor Tivadar Vazul Vencel Vaclav Vilmos
+			Zolt�n Zsigmond Sigmund Zsolt Saul Soma
+			Alexandru Radu Vlad Constantin Mihail Mircea George Grigore Mihnea Nicolae Besarab Vladislav Mattia
+			Radu Ilias Scarlat Stefan Dan Alexandru Ilias Gabriel Ioan George Leon Moise Neagoie Besarab
+			Leon Radu Mihnea Serban Simeon Teodosiu Vintila Vladut Milos Corneliu Flaviu Iuliu Octavian Sergiu
+			Valeriu Petru Petrascu Radu
+			Adrian Alexandru Alexander Anghel Angel Aron Bajan Balc Barbat Basarab Bogdan Bogdan Carol
+			Ciprian Ciubar Claudiu
+			Corneliu Cornelius Costin Damjan Dan Dragos Dumitru Emerik Florin Franjo Francis Gavril
+			Gheorghe George Grigore Gregory Iacob Gabriel
+			Iancu Ieremia Ilie Ioan John Iorghu Iosif Iuga Janos John Ladislau Latcu Laurentiu Laurence
+			Litovoi Lucian Lucius Marin Marius
+			Mihai Milos Milosz Mircea Moise Nicolaie Petre Pirvu Radovan Radu Roman Sas Seneslav
+			Sergiu Simion Simon
+			Stefan Stephen Stelian Teodor Theodore Tepes Tibor Tihomir Timotei Tudor Thierry Valentin
+			Valentin Valeriu Vasile Basil Veaceslav
+			Victor Vilhelm William Vintila Vlad
+		}
+		female_names = {
+			�gnes Agnes �va Eva Adelaida Adelaide Ag�ta Agatha Am�lia Amelia Angyalka Anik� Aranka
+			Bertha Borb�la Csilla Csillag Czenzi Dorottya Dorothy Edit Edith Em�ke Emese Erika Erzs�bet
+			Elisabeth Eszter Berta Anna
+			Etel Euphemia Euphemia Gizella Gisela Gy�rgyi Georgia Hajnal Hedwig Hedwig Ibolya Ildik�
+			Ir�n Irene J�cinta J�zsa J�lia Juliana Jol�n Judith Judith Kamilla Camilla Katalin
+			Kinga Kl�ra Catherine Illona
+			Konstancia Constance Krisztina Christina Kunigunda Kunigunde Luca M�ria Maria M�rta Martha
+			Magdolna Magdalena Margar�ta Margaret Margit Matild Matilda Nat�lia Natalia Odola Orsolya
+			Panni Piroska R�zsa Rosa S�ra Sarah Sarolt Zsuzsa Zsanett
+			Skolasztika Sophia Tund�r Terezia Viola Vir�g Zolt�na Zs�fia Adelina Adriana Afina Alexandra Alexia Ana Anna Anastasia Anastasia Angela Arina Christina
+			Christina Dana Ecatarina
+			Elena Helen Elisabeta Elisabeth Emilia Emily Eufroysina Euphrosyne Felicia Floarea Flora
+			Ioana Ionela Irina Iulia Juliana Maria Maria Monica Iacoba
+			Natalia Olimpia Paraschiva Petra Roxana Ruxandra Smaranda Stana Stefana
+			Stefania Stephania Teodora Rahela Flavia Cosmina
+			Tereza Teresa Vasilica Violeta Yolanda Voica Zina
+		}
+		dynasty_names = {
+			B�thory Hunyadi Szapolyai R�k�czy Bocskai Bethlen Alm�sy Andr�ssy Batthy�ny Cs�ky Dessewffy
+			Erdody Eszterh�zy Festetics Hajd� K�rolyi Kun Magyary Per�nyi R�nai Sz�chenyi Szepessy
+			Th�k�ly Tisza Zr�nyi Teleki
+			Majl�th D�czy Dob� Koh�ry Orczy Frankopan Garay Mikes Sz�csi Imreffy N�dasdy Rh�dey
+			Zrinski Hadik Both "R�k�czi" Forg�ch Cseszneky Derencs�nyi D�csey R�vay Esterh�zy
+			K�llay Kem�ny Thurz� Zichy
+			"Basarab" "Danesti" "Draculesti"
+			Callimachi Ghica Cantacuzino Cantemiresti Racovita Caradja Sturdza
+			Conachi Soutzos Golescu Vacarescu Mavrocordatos Craiovesti H�jdau
+			Kogalniceanu Movilesti
+		}
+	}
+
+	daco-romanian = {
+		primary = MOL
+		dynasty_names = {
+			"Basarab" "Danesti" "Draculesti"
+			Callimachi Ghica Cantacuzino Cantemiresti Racovita Caradja Sturdza
+			Conachi Soutzos Golescu Vacarescu Mavrocordatos Craiovesti H�jdau
+			Kogalniceanu Movilesti
+		}
+		male_names = {
+			Alexandru Radu Vlad Constantin Mihail Mircea George Grigore Mihnea Nicolae Besarab Vladislav Mattia
+			Radu Ilias Scarlat Stefan Dan Alexandru Ilias Gabriel Ioan George Leon Moise Neagoie Besarab
+			Leon Radu Mihnea Serban Simeon Teodosiu Vintila Vladut Milos Corneliu Flaviu Iuliu Octavian Sergiu
+			Valeriu Petru Petrascu Radu
+			Adrian Alexandru Alexander Anghel Angel Aron Bajan Balc Barbat Basarab Bogdan Bogdan Carol
+			Ciprian Ciubar Claudiu
+			Corneliu Cornelius Costin Damjan Dan Dragos Dumitru Emerik Florin Franjo Francis Gavril
+			Gheorghe George Grigore Gregory Iacob Gabriel
+			Iancu Ieremia Ilie Ioan John Iorghu Iosif Iuga Janos John Ladislau Latcu Laurentiu Laurence
+			Litovoi Lucian Lucius Marin Marius
+			Mihai Milos Milosz Mircea Moise Nicolaie Petre Pirvu Radovan Radu Roman Sas Seneslav
+			Sergiu Simion Simon
+			Stefan Stephen Stelian Teodor Theodore Tepes Tibor Tihomir Timotei Tudor Thierry Valentin
+			Valentin Valeriu Vasile Basil Veaceslav
+			Victor Vilhelm William Vintila Vlad
+		}
+		female_names = {
+			Adelina Adriana Afina Alexandra Alexia Ana Anna Anastasia Anastasia Angela Arina Christina
+			Christina Clara Clara Dana Ecatarina Catherine
+			Elena Helen Elisabeta Elisabeth Emilia Emily Eufroysina Euphrosyne Felicia Floarea Flora
+			Ioana Ionela Irina Iulia Juliana Maria Maria Monica Iacoba
+			Natalia Olimpia Paraschiva Petra Roxana Ruxandra Smaranda Sophia Sophia Stana Stefana
+			Stefania Stephania Teodora Rahela Flavia Cosmina
+			Tereza Teresa Vasilica Violeta Yolanda Voica Zina
+		}
+	}
+
 	romanian = {
 		primary = WAL
 		dynasty_names = {
@@ -2557,7 +2828,9 @@ east_slavic = {
 baltic	= {
 	graphical_culture = easterngfx
 
-	
+	old-prussian = {
+		primary = PRU
+	}
 	lithuanian = {
 		primary = LIT
 		male_names = {
@@ -4178,7 +4451,61 @@ iranian	= {
 			��wen Atiya
 		}
 	}
-	
+
+	elymaite = { #a mix of persian and ancient elamite
+		primary = ELM
+		dynasty_names = {
+			Khorshidi Bakhtiari Jangardi "Banu Hussayn" Charlang Haftlang
+			Dorikan Babadi Baharvand Dinarini Meyvand
+		}
+		male_names = {
+			Bawa Helo Timur Ahmad Soleiman Sobhanverdi Khosrow Bozorg Hosayn Aman-Allah Faqi Ahmad Mohammad
+			Khalid Nawaub Salim Abdolla Mahmoud Ibrahim Abdurrahman Kulos Isa Mir Saifeddin Saidi Budak
+			Abbas Abolhassan Alah-Verdi Allahyar Amin Aram Assad Aurang Ayeshah Azad Babek Babak Bahman
+			Behrad Behram Bahram Behrouz Bext�yar Bakhtiar Bozorg Cehandar Jahandar Cehangir Jahangir
+			Cehan�ah Jahanshah Cem��d Jamshid Cevid Javeed Dan�� Danush Darab Dary�� Darius Davud David
+			Ebrahim Abraham Efrasiyab Afrasiyab Ef�er Afshar Ehmed Ahmad Ehsan Ekber Akbar El� Ali
+			En��irwan Anushirvan Erdehan Ardahan Erdewan Ardavan Erde��r Ardeshir Esfendiyar Esfandiar
+			Eskander Alexander E�ot Ashot Eyyub Ayyub Feramez Faramarz Feraz Faraz Fath Ferhad Farhad
+			Ferhan Farhan Ferheng Farhang Feriburz Fariborz Fer�d Farid Fer�dun Feridun Ferux Farroukh
+			Feruxzad Farrukhzad Ferzad Farzad Fezl Fadl Fezlun Fadlun Firdews Ferdows Ghobad Gholam Godarz
+			Go�tasp Goshtasb Hezarhesp Hazarasp Hafez Hedayat Hesen Hasan His�n Hussein Hormoz Hosen
+			Hossein Humayun Hurmiz Hormazd �sma�l Ismail Kambiz Kamran Keyghobad Keyxusrew Keykhosrau K�vus
+			Kavoos K�ru�� Cyrus Mamlan Muhammad Mashad Mehm�d Mahmud Mehrab Mehrzad Mens�r Mansur Men��ihr
+			Manuchihr Men��ihr Manushihr Merwan Marwan Merzuban Marzuban Mes�d Masud Mihemed Muhammad M�rza
+			Mirza Mistefa Mustafa Murad Morad Morteza Mozaffar Nard Naveed Nawid Nesir Nazir Nesr Nasr
+			Nezam No��rwan Nawshirwan N���rvan Nechirwan Parviz Pujman P��eng Pashang P�roz Peroz Revend
+			Rawwad Reza Ruhollah Rustam Rostam Sadri Salman Sina Surxap Surkhab Tahmasp Tahmasb Vahhab
+			Vahid Vahusdan Wahustan Vali Var�asp Varshasb V��tap Vishtasb Xarmandar Kharmandar Xa�ayar
+			Khashayar Xur��d Khurshid Xusrew Khosrau Xu�yar Hooshyar Xwedadad Khodadad Xwedayar Khudayar
+			Yez�d Yazid Yousef Zahak Zakaria Zand Zerde�t Zartosht Zia �ad� Shadhi �ahab Shahab �ahbaz
+			Shahbaz �ahen�ah Shahanshah �ahin Shahin �ahram Shahram �ahryar Shahryar �ahrux Shahrokh �ahruz
+			Shahruz �apur Shapur �arvin Sharwin �awur Shavur �ayan Shayan ��rk�h Shirkuh
+		}
+		female_names = {
+			Adan Adar Ara Ardil Arezo Arezu Ariyan Ar�z Ar�man Ar�n Asan Asteng As� Avan Azad� Azr�n A�t�
+			Badil Bahar Balnex��n Ban� Bar�n Bawan Baziyan Baz� Befraw Befr�n Beg�xan Belal�k Belqis
+			Bel�can Benav Benaz Berbij�n Berdar Berdil Bers�n Ber�can Bex��n Beyan Beyb�n Beyb�n Bez�n
+			Bihar Bij�n Bil�se Binar Binav Binef� Binev� Biyan Bi�koj Bi�kur�n Bohar B�naz B�r�can B�r�van
+			Burandoxt Pourandokht Deng�n Derav Derz�n Desmal Devken Dilar Dilaram Dilare Dilawaz Dilber
+			Dilcan Dildar Dilgerm Dilistan Dilkan� Dilnaz Dilv�n Dilxo� Dilxwe� Diyar� Doman D�rsim D�lan
+			D�ristan Esmercan Esmerxan Est�re Ev�n Ewr�n Ey�an Ezcan Felek Fener Fera��n Firm�sk F�dan
+			Gaz� Gelav�j Gerdengaz Gozel Goz� Gr�van Guhtem Gulbehar Golbahar Gul�en Gulnar Gulnaz Golnaz
+			G�las Helez Heliz Helv�n Hemay�l Kej� Keser Kevok Kev� Kewser Kez�zer Ko�er Leyl� Leym�n Lez�n
+			Lolav Lork� Lor� Lor�can Lor�n L�lav L�vken L�lyan L�za Ma�a Mebest Mehr�ban Mehr�can Mehr�van
+			Mejb�r Mendal Mercam Mer�van Mirar�xan Miryem Mariam Mizg�n Muhabad M�m� M�rd�n M�xek M�dya
+			M�ran Nar�man Nar�ncan Navbihar Nawxo� Naz Nazdar Nazen�n Nazgul Nazgol Nazik Naznaz Naz� Nerm�
+			Nerm�n Nesr�n Newbohar Nex��n Ne�m�l Ne�m�n Norcan N�rgiz N�r�n N�z�k N�dar N�gar N�roj N��an
+			N��t�man Perj�n Perv�n Perwane Parvaneh Perw�n Per�em Per� Per�gul Per�naz Per�xan Per��an
+			Pex�an Peyman Pirj�n Pir�eng Pir�ing Pore Por�eng P�l�n P�roz P��eng Rana Reng�n Rew�a Rew�en
+			Rihan Rind� Rojhelat Roj� Ronah� Ronak Rondik R�j�n R�zan R�han R�ken R�ciwan R�ge� R�ken
+			R�zer�n Sar� Serbar Sercan Serferaz Serfiraz Sergul Ser�inar Seyran Xat�n X�l�can Xon�e
+			Ghoncheh Zern��an Zerya Zer� Zer� Zer�xan Zeyt�n Zeyt�n Zilf� Zoya Zozan Z�r�n Z�lan Z�net Z�n�
+			�ana �anaz �ayan �ehr�ban �elal �emam �eng� �epal �epirze �erm�n �evba �ev�n ��laz ��lan ��n�
+			��wen Atiya
+		}
+	}
+
 	khorasani = {
 		primary = KHO
 		male_names = {
@@ -4385,9 +4712,9 @@ iranian	= {
 }
 
 
-mongol = {
+altaic = {
 	graphical_culture = muslimgfx
-	
+
 	mongol = {
 		primary = KHA
 		male_names = {
@@ -4446,7 +4773,7 @@ mongol = {
 			Hoelun Tam�l�n Sorghaghtani Tem�len B�rte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Ho'elun Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene
 		}
 	}
-	
+
 }
 
 Karluk = {
@@ -4510,6 +4837,36 @@ Karluk = {
 			Sveta Senim Sezim Sulu Sulujan Sulushash Symbat Talshin Tamara Tanzilya Tansholpan Tatti Togjan Tolganai
 			Tomiris Tursin Tursinai Tursingul Uazira Ulbala Ulbolsyn Uldana Uljan Umit Umitjan Venera Zaida Zamzagul Zamira
 			Zarina Zaure Zauresh Zeyne Zeynep Zemfira Zere Zlikha Zoya Zubaira Zulfia Zukhra Zlika
+		}
+	}
+	avar = {
+		primary = AVR
+		male_names = {
+			# AVAR
+			Almish Alp Alzek Anzi Apskhih Araslan Arslan Asparukh Bagha Baghatur Balambär Balambar Barjik
+			Bars Barsbek Bashtwa Bastu Bataul Batbayan Batoya Batulia Bayan Belkermak Bezmer Bihor Boyan Bugha
+			Bughra Bulan Bulger Bulçan Busir Buzan Buzer Bälgiçi Böri
+			Chepa Chinialush Dengizikh Dizeng Dometa Dristar Drong Dukum Elemag Ellak Ernakh Eskhakh Goleda
+			Gostun Guar Hudbad Iani Ilik Iltäbär Irnek Isbul Islivan Isperikh Ispor Itakh Kamaj Kano Karadakh
+			Karan Karaton Kardam Kayghalagh Kharaton Khatir Khinialon
+			Khudbard Khuterkin Kibar Kisa Kordil Kormesiy Kormisosh Kotrag Krovat Krum Kuber Kubrat Kundaç
+			Kundaçiq Kurt Kutrigur Kälaç Labertam Magotin Malamir Mugel Mänär Mänäs Mënümarót Odolgan Okhsi
+			Okhsun Okors Omurtag Onegavon Organ Organa Ornag
+			Oshi Ostro Pagan Pakhtiyar Bakhtiar Papaçyz Paväl Praksa Rassate Rugila Sabin Samsam Sandil
+			Sandilkh Sarkhan Sartäç Savin Sevar Shilki Simsam Sondoke Tabghaç Tarasiy Taridin Tarkhan Tarmaç
+			Tatra Telec Telerig Tervel Timër Timur Timëreç Timërpälat
+			Tingiz Tiradin Toghan Toghrïl Toghrul Tokhtaman Toktu Tsog Tsul Tuk Tuzniq Täbär Teber Tähtaman
+			Umor Uturgur Vakrim Venda Vetam Vinekh Yabghu Yani Yavantey Yençepi Yerneslu Yeçtirek Yilig
+			Zabergan Zenti Çat Çat'n Çorpan Ötemis
+		}
+		female_names = {
+			# AVAR
+			Akgul Asli Ayasun Ayten Bozçin Dilek Esin Gulay Gulçiçäk Gulçiçek Gundes Gunduz Gunes Ikalay Ilkay
+			Ipek Ipekel Irge Karacik Khatun Kätyarikka Këlnissa Këlyamal Lyukha Lärkka Mala Maturkka Mutlu Naça
+			Parsbit Patiyer Paykëlti Peksen Puyantay Samur Sarantay Sarica Sarikel Sarä Sati Savaçka Savilay
+			Sevilay Savintik Sevindik Savkëlti Savtilek Shurkka Sibel Sirin Sirma Songul Tekçe Tura Tähtani
+			Umay Usunbike Yartilek Yasar Yeldem Yildiz Çeçeppi Çeçki Çeçtilet Çilen Çiltanesi Çiçäk Çiçek Özgul
+			Özlem
 		}
 	}
 	kirgiz = {
@@ -4617,7 +4974,7 @@ Oghuz = {
 			Adila Ikram
 		}
 	}
-	
+
 
 		turkish = {
 			primary = TUR

@@ -1,10 +1,10 @@
 #110 - Trent
 
-owner = AQU
-controller = AQU
-add_core = AQU
-culture = aquileian
-religion = jupiterian
+owner = TIR
+controller = TIR
+add_core = TIR
+culture = bavarian
+religion = germanic
 hre = no
 base_tax = 4 
 base_production = 4

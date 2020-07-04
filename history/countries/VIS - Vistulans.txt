@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = slavic
+primary_culture = Vistulan
+capital = 257	
+
+1429.12.8 = {
+	monarch = {
+		name = "Mieszko III"
+		dynasty = "Piast"
+		birth_date = 1418.1.1
+		dip = 0
+		adm = 1
+		mil = 4
+	}
+}

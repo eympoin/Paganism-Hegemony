@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = feudalism_reform
 technology_group = western
 religion = olympoi
-primary_culture = greek
+primary_culture = Griko
 capital = 122
 
 1423.2.3 = {

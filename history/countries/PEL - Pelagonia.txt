@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+elector = no
+primary_culture = greek
+religion = olympoi
+technology_group = eastern
+capital = 148
+fixed_capital = 148# Cannot move capital away from this province & no power cost to move to it
+
+1398.2.16 = {
+	monarch = {
+		name = "Manuel"
+		dynasty = "Leonid"
+		birth_date = 1385.6.27		
+		adm = 6
+		dip = 2
+		mil = 1
+	}
+}
+

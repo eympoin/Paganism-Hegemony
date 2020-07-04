@@ -15,7 +15,7 @@ to_vinland = {
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = {
-			area = iceland_area
+			area = subarctic_islands_area
 			OR = {
 				is_city = no
 				NOT = { owned_by = ROOT }
@@ -23,7 +23,7 @@ to_vinland = {
 			has_discovered = ROOT
 		}
 		trigger = {
-			iceland_area = {
+			subarctic_islands_area = {
 				type = all
 				owned_by = ROOT
 			}
@@ -42,7 +42,6 @@ to_vinland = {
 		icon = mission_colonial
 		required_missions = { take_iceland }
 		position = 4
-		completed_by = 1445.1.1
 
 		provinces_to_highlight = {
 			area = greenland_area
@@ -61,7 +60,7 @@ to_vinland = {
 		}
 
 		effect = {
-			create_explorer = 60
+			create_explorer = { tradition = 50 }
 			add_dip_power = 60
 		}
 	}
@@ -100,6 +99,7 @@ to_vinland = {
 		}
 	}
 }
+
 
 destroy_saxon = {
 	slot = 2

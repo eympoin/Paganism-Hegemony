@@ -2,7 +2,7 @@
 
 owner = MOL
 controller = MOL
-culture = romanian
+culture = daco-romanian 
 religion = slavic
 capital = "Iasi"
 trade_goods = wine

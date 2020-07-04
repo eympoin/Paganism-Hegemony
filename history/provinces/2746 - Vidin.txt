@@ -1,7 +1,7 @@
 #2746 - Vidin
 
-owner = BUL
-controller = BUL
+owner = MIA
+controller = MIA
 culture = bulgarian
 religion = tengri_pagan_reformed
 capital = "Vidin"
@@ -9,9 +9,9 @@ trade_goods = grain
 hre = yes
 base_tax = 3
 base_production = 3
-base_manpower = 1
+base_manpower = 2
 is_city = yes
-add_core = BUL
+add_core = MIA
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

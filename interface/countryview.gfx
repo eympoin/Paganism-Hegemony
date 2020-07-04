@@ -30,7 +30,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "button_defender_of_faith"
-		texturefile = "gfx//interface//button_defender_of_faith.tga"
+		texturefile = "gfx/interface/defender_of_the_faith/dotf_gray.dds"
 		#effectFile = "gfx/FX/buttonstate.lua"
 		loadType = "INGAME"
 	}
@@ -178,7 +178,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_icon_religion"
 		texturefile = "gfx//interface//icon_religion.dds"
-		noOfFrames = 40
+		noOfFrames = 42
 ###		loadType = "INGAME"
 		
 	}
@@ -186,13 +186,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_country_icon_religion"
 		texturefile = "gfx//interface//country_icon_religion.dds"
-		noOfFrames = 40	
+		noOfFrames = 42
 	}
 
 	spriteType = {
 		name = "GFX_icon_religion_small"
 		texturefile = "gfx//interface//icon_religion_small.dds"
-		noOfFrames = 40
+		noOfFrames = 42
 		loadType = "INGAME"
 	}
 
@@ -341,6 +341,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_execute_decision"
 		texturefile = "gfx//interface//execute_decision.tga"
+		transparencecheck = yes 
+	}
+	
+	spriteType = {
+		name = "GFX_revoke_decision"
+		texturefile = "gfx//interface//revoke_decision.dds"
 		transparencecheck = yes 
 	}
 	

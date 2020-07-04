@@ -1,0 +1,17 @@
+government = tribal
+add_government_reform = steppe_horde
+primary_culture = astrakhani
+add_accepted_culture = polish
+add_accepted_culture = Vistulan
+religion = tengri_pagan_reformed
+technology_group = eastern
+capital = 262
+1432.1.1 = {
+	monarch = {
+		name = "Tokhtamysh"
+		dynasty = "Genghisid"
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}

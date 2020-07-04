@@ -1,0 +1,739 @@
+
+Gallia_Unification_1 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = NAR
+		NOT = { map_setup = map_setup_random }
+	}
+	union_of_two_thrones_nar = {
+		icon = mission_monarch_in_throne_room
+		required_missions = {}
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = pyrenees_area
+				area = guyenne_area
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			guyenne_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = NAR
+			}
+			pyrenees_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = NAR
+			}
+		}
+		effect = {
+			savoy_dauphine_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NAR
+			}
+			west_burgundy_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NAR
+			}
+			bourgogne_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NAR
+			}
+			massif_central_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NAR
+			}
+		}
+	}
+
+	reclaim_north_poitou_nar = {
+		icon = mission_build_up_to_force_limit
+		required_missions = {union_of_two_thrones_nar}
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				province_id = 180
+				province_id = 4386
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			owns_or_non_sovereign_subject_of = 180
+			owns_or_non_sovereign_subject_of = 4386
+		}
+		effect = {
+			loire_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NAR
+			}
+			orleans_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NAR
+			}
+			add_country_modifier = {
+				name = "revenge_against_the_franks"
+				duration = 5475
+			}
+		}
+	}
+
+	offensive_against_franks_nar = {
+		icon = mission_conquer_50_development
+		required_missions = {reclaim_north_poitou_nar end_of_the_burgonds_nar}
+		position = 3
+		provinces_to_highlight = {
+			region = france_region
+			OR = {
+				owned_by = FRO
+				owned_by = WFR
+				owned_by = FRP
+				owned_by = FRR
+				owned_by = FRV
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			france_region = {
+				type = all
+				NOT = {owned_by = FRO}
+				NOT = {owned_by = WFR}
+				NOT = {owned_by = FRP}
+				NOT = {owned_by = FRV}
+				NOT = {owned_by = FRR}
+			}
+		}
+		effect = {
+			france_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NAR
+			}
+			add_country_modifier = {
+				name = "romanize_the_franks"
+				duration = 7300
+			}
+		}
+	}
+
+
+	Gallia_united_nar = {
+		icon = mission_unite_home_region
+		required_missions = {offensive_against_franks_nar }
+		position = 3
+		provinces_to_highlight = {
+			region = france_region
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			france_region = {
+				type = all
+				owned_by = NAR
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "gallia_united"
+				duration = 7300
+			}
+			add_prestige = 25
+			add_stability = 1
+		}
+	}
+
+
+	roman_gallia_nar = {
+		icon = mission_hands_praying
+		required_missions = {Gallia_united_nar}
+		position = 5
+		provinces_to_highlight = {
+			region = france_region
+			religion = jupiterian
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			france_region = {
+				type = all
+				religion = jupiterian
+			}
+		}
+		effect = {
+			france_region = {
+				type = all
+				owned_by = ROOT
+				limit = {
+					OR = {
+						culture_group = frankish
+						culture = burgond
+					}
+				}
+				change_culture = franko-roman
+			}
+		}
+	}
+}
+
+
+Gallia_Unification_2 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = NAR
+		NOT = { map_setup = map_setup_random }
+	}
+	end_of_the_burgonds_nar = {
+		icon = mission_impaled_soldies
+		required_missions = {union_of_two_thrones_nar}
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = massif_central_area
+				area = west_burgundy_area
+				area = bourgogne_area
+				area = savoy_dauphine_area
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			massif_central_area = {
+				type = all
+				owned_by  = NAR
+			}
+			west_burgundy_area = {
+				type = all
+				owned_by  = NAR
+			}
+			bourgogne_area = {
+				type = all
+				owned_by  = NAR
+			}
+			savoy_dauphine_area = {
+				type = all
+				owned_by  = NAR
+			}
+		}
+		effect = {
+			romandie_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NAR
+			}
+			add_country_modifier = {
+				name = "full_elan"
+				duration = 5475
+			}
+		}
+	}
+}
+
+Spanish_intervention_nar = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = NAR
+		NOT = { map_setup = map_setup_random }
+	}
+	invade_catalonia = {
+		icon = mission_eastern_european_city
+		required_missions = {}
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = catalonia_area
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			catalonia_area = {
+				type = all
+				owned_by  = NAR
+			}
+		}
+		effect = {
+			aragon_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NAR
+			}
+			valencia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NAR
+			}
+		}
+	}
+
+
+	take_the_coast_nar = {
+		icon = mission_galleys_in_port
+		required_missions = {invade_catalonia}
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = aragon_area
+				area = valencia_area
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			aragon_area = {
+				type = all
+				owned_by  = NAR
+			}
+			valencia_area = {
+				type = all
+				owned_by  = NAR
+			}
+		}
+		effect = {
+			iberia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = NAR
+			}
+			add_country_modifier = {
+				name = "protected_coast"
+				duration = 7300
+			}
+		}
+	}
+
+
+	end_the_chaos_nar = {
+		icon = mission_unite_home_region
+		required_missions = {take_the_coast_nar}
+		position = 3
+
+		provinces_to_highlight = {
+			OR = {
+				region = iberia_region
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+
+		trigger = {
+			iberia_region = {
+				type = all
+				owned_by  = NAR
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "iberian_horses"
+				duration = -1
+			}
+		}
+	}
+}
+
+Italian_intervention = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = NAR
+		NOT = { map_setup = map_setup_random }
+	}
+	protect_genoa = {
+		icon = mission_alliances
+		required_missions = {}
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = piedmont_area
+			}
+			owned_by = PAV
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+		OR = {
+			alliance_with = GEN
+			NOT = { exists = GEN }
+
+			}
+			piedmont_area = {
+				type = all
+				NOT = { owned_by = PAV }
+			}
+		}
+		effect = {
+			vassalize = GEN
+		}
+	}
+
+
+	subjugate_the_senate = {
+		icon = mission_empire
+		required_missions = {protect_genoa}
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = tuscany_area
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+				NOT = { owned_by = SPQ }
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			tuscany_area = {
+				type = all
+				OR = {
+					owned_by  = NAR
+					owned_by  = SPQ
+					}
+			}
+			army_strength = {
+				who = SPQ
+				value = 2
+				}
+				legitimacy = 100
+				prestige = 75
+		}
+		effect = {
+			vassalize = SPQ
+			add_country_modifier = {
+				name = "the_eternal_city_mod"
+				duration = -1
+			}
+		}
+	}
+}
+
+
+
+Western_mediterranean_control_mission = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = NAR
+		NOT = { map_setup = map_setup_random }
+	}
+	island_control = {
+		icon = mission_invade_island
+		required_missions = {}
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = baleares_area
+				area = corsica_sardinia_area
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			baleares_area = {
+				type = all
+				owned_by = NAR
+			}
+			corsica_sardinia_area = {
+				type = all
+				owned_by = NAR
+			}
+		}
+		effect = {
+		tunisia_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = NAR
+		}
+		sicily_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = NAR
+		}
+		western_sicily_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = NAR
+		}
+		}
+	}
+
+
+	protect_the_coast = {
+		icon = mission_sea_battles
+		required_missions = {island_control}
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = corsica_sardinia_area
+				area = baleares_area
+			}
+			NOT = { has_building = coastal_defence  }
+		}
+		trigger = {
+			corsica_sardinia_area = {
+				type = all
+				has_building = coastal_defence
+			}
+			baleares_area = {
+				type = all
+				has_building = coastal_defence
+			}
+
+		}
+		effect = {
+			add_country_modifier = {
+				name = "mediterranean_protection"
+				duration = -1
+			}
+		}
+	}
+
+	carthago_delenda_est = {
+		icon = mission_war_chest
+		required_missions = {protect_the_coast}
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = sicily_area
+				area = tunisia_area
+				area = western_sicily_area
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			western_sicily_area = {
+				type = all
+				owned_by = NAR
+			}
+			sicily_area = {
+				type = all
+				owned_by = NAR
+			}
+			tunisia_area = {
+				type = all
+				owned_by = NAR
+			}
+		}
+		effect = {
+		calabria_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = NAR
+		}
+		naples_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = NAR
+		}
+		add_country_modifier = {
+			name = "western_mediterranean_control"
+			duration = -1
+		}
+		}
+	}
+
+}
+
+economic_nar{
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = NAR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	pentapolis_mission = {
+		position = 3
+		icon = mission_early_game_buildings
+		required_missions = { }
+		trigger = {
+			196 = {
+				development = 20
+				has_building = temple
+			}
+			2753 = {
+				development = 20
+				has_building = temple
+			}
+			200 = {
+				development = 20
+				has_building = temple
+			}
+			201 = {
+				development = 20
+				has_building = temple
+			}
+			202 = {
+				development = 20
+				has_building = temple
+			}
+		}
+		effect = {
+			196  = {
+				add_province_modifier = {
+					name = the_pentapolis
+					duration = -1
+				}
+			}
+			2753  = {
+				add_province_modifier = {
+					name = the_pentapolis
+					duration = -1
+				}
+			}
+			200  = {
+				add_province_modifier = {
+					name = the_pentapolis
+					duration = -1
+				}
+			}
+			201  = {
+				add_province_modifier = {
+					name = the_pentapolis
+					duration = -1
+				}
+			}
+			202  = {
+				add_province_modifier = {
+					name = the_pentapolis
+					duration = -1
+				}
+			}
+		}
+	}
+
+	penta_university = {
+		position = 4
+		icon = mission_early_modern_university
+		required_missions = { pentapolis_mission }
+		trigger = {
+			196 = {
+				development = 30
+				has_building = university
+			}
+			2753 = {
+				development = 30
+				has_building = university
+			}
+			200 = {
+				development = 30
+				has_building = university
+			}
+			201 = {
+				development = 30
+				has_building = university
+			}
+			202 = {
+				development = 30
+				has_building = university
+			}
+		}
+		effect = {
+		196  = {
+			add_province_modifier = {
+				name = the_penta_universities
+				duration = -1
+			}
+		}
+		2753  = {
+			add_province_modifier = {
+				name = the_penta_universities
+				duration = -1
+			}
+		}
+		200  = {
+			add_province_modifier = {
+				name = the_penta_universities
+				duration = -1
+			}
+		}
+		201  = {
+			add_province_modifier = {
+				name = the_penta_universities
+				duration = -1
+			}
+		}
+		202  = {
+			add_province_modifier = {
+				name = the_penta_universities
+				duration = -1
+			}
+		}
+		add_country_modifier = {
+			name = "education_focus"
+			duration = -1
+		}
+		}
+	}
+
+}

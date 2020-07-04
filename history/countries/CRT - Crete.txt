@@ -4,5 +4,5 @@ government_rank = 1
 technology_group = eastern
 primary_culture = greek
 religion = olympoi
-capital = 163	# Heraklion
-fixed_capital = 163 # Cannot move capital away from this province & no power cost to move to it
+capital = 4791 # Heraklion
+fixed_capital = 4791 # Cannot move capital away from this province & no power cost to move to it

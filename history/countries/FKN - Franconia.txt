@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = western
+religion = germanic
+primary_culture = east-francian
+capital = 67	# Nurnberg
+government_rank = 1
+
+1444.1.1 = {
+	monarch = {
+		name = "Otto I"
+		dynasty = "Ottonian"
+		birth_date = 1407.1.1
+		adm = 2
+		dip = 4
+		mil = 6
+	}
+}

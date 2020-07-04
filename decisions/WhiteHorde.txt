@@ -1,0 +1,158 @@
+country_decisions = {
+
+	white_horde_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_golden_horde_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				tag = SKH
+				tag = OKH
+				}
+			has_reform = steppe_horde
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			OR = {
+				ai = no
+				num_of_cities = 20
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+					OR = {
+						province_id = 153
+						province_id = 262
+						province_id = 254
+						province_id = 260
+						province_id = 1951
+					}
+				}
+				AND = {
+					OR = {
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+					}
+					OR = {
+						province_id = 1952
+						province_id = 1772
+						province_id = 134
+						province_id = 279
+						province_id = 43
+						province_id = 257
+						province_id = 263
+					}
+				}
+			}
+		}
+		allow = {
+			NOT = { exists = WHD }
+			has_reform = steppe_horde
+			owns_core_province = 153
+			owns_core_province = 262
+			owns_core_province = 254
+			owns_core_province = 260
+			owns_core_province = 1951
+			1952 = { #Tver
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			1772 = { #Moscow
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			134 = { #Ryazan
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			279 = { #Vladimir
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			43 = { #Yaroslavl
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			257 = { #Suzdal
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			263 = { #Suzdal
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			num_of_cities = 30
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+		}
+		effect = {
+			change_tag = WHD
+			change_primary_culture	= polish
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+			if = {
+				limit = {
+					has_custom_ideas = no
+				}
+				set_country_flag = formed_golden_horde_flag
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			carpathia_region = {
+				add_permanent_claim = WHD
+			}
+			poland_region = {
+				add_permanent_claim = WHD
+			}
+			volhynia_area = {
+				add_permanent_claim = WHD
+			}
+			podlasie_area = {
+				add_permanent_claim = WHD
+			}
+			east_prussia_area = {
+				add_permanent_claim = WHD
+			}
+			west_prussia_area = {
+				add_permanent_claim = WHD
+			}
+			hinter_pommern_area = {
+				add_permanent_claim = WHD
+			}
+			neumark_area = {
+				add_permanent_claim = WHD
+			}
+			moravia_area = {
+				add_permanent_claim = WHD
+			}
+			bohemia_area = {
+				add_permanent_claim = WHD
+			}
+			lusatia_area = {
+				add_permanent_claim = WHD
+			}
+			erzgebirge_area = {
+				add_permanent_claim = WHD
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}

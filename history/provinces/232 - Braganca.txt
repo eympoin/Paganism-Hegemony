@@ -2,7 +2,7 @@
 
 owner = GAL
 controller = GAL
-culture = lusitanian
+culture = galician
 religion = jupiterian
 capital = "Bragan�a"
 trade_goods = wine

@@ -1,0 +1,18 @@
+# 4731 - Spoleto
+
+owner = SPQ
+controller = SPQ
+culture = roman
+religion = jupiterian
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = livestock
+base_manpower = 3
+capital = "Spoleto" 
+is_city = yes
+add_core = SPQ
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

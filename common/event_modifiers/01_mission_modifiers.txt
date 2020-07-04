@@ -50,11 +50,6 @@ dominant_trade_hub = {
 	picture = "province_trade_power_value"
 }
 
-east_india_trade_rush = {
-	trade_efficiency = 0.3
-	global_trade_power = 0.02
-}
-
 #Generic Administrative Mission Rewards:
 
 growing_economy = {
@@ -4182,7 +4177,7 @@ through_the_atlantic = {
 	colonist_placement_chance = 0.03
 	range = 0.1
 }
-western_mediterranean control = {
+western_mediterranean_control = {
 	trade_efficiency = 0.1
 }
 
@@ -4192,4 +4187,147 @@ the_eternal_city_mod = {
 
 the_only_king = {
 	legitimacy = 1
+}
+
+Vassalization = {
+	diplomatic_upkeep = 1
+	reduced_liberty_desire = 10
+}
+
+bois_des_landes = {
+	ship_durability = 0.1
+}
+
+new_farmlands = {
+	supply_limit = 4
+	local_development_cost = -0.2
+	allowed_num_of_buildings = 1
+}
+
+best_wine = {
+	trade_goods_size_modifier = 0.2
+}
+
+revenge_against_the_franks = {
+	manpower_recovery_speed = 0.15
+}
+
+romanize_the_franks = {
+	missionaries = 1
+	global_missionary_strength = 0.03
+}
+
+gallia_united = {
+	global_unrest = -2
+}
+
+protected_coast = {
+	naval_morale = 0.1
+}
+
+iberian_horses = {
+	cavalry_cost = - 0.3
+	cavalry_power = 0.1
+}
+
+the_pentapolis = {
+	development_cost = -0.2
+	allowed_num_of_buildings = 1
+}
+
+the_penta_universities = {
+	local_institution_spread = 0.2
+}
+
+education_focus = {
+	technology_cost = -0.1
+}
+
+mediterranean_protection = {
+	own_coast_naval_combat_bonus = 1
+}
+
+mountainous_fort = {
+	local_defensiveness = 0.15
+}
+navy_emphasis = {
+	global_ship_cost = -0.25
+}
+
+lorraine_mines = {
+	production_efficiency = 0.1
+	}
+
+protected_mountains_passage = {
+	land_attrition = -0.1
+}
+
+merchant_from_all_europe = {
+ merchants = 1
+}
+
+finest_iron = {
+ regiment_cost = -0.2
+ fire_damage = 0.1
+}
+
+selected_breed = {
+	cavalry_power = 0.1
+}
+
+flanders_industry = {
+	production_efficiency = 0.1
+}
+
+great_temple = {
+	local_tax_modifier = 0.15
+	province_trade_power_modifier = 0.1
+}
+
+coal_development = {
+	production_efficiency = 0.2
+}
+
+norman_guard = {
+	mercenary_discipline = 0.05
+}
+
+accept_the_celts = {
+	religious_unity = 0.2
+	tolerance_heathen = 3
+}
+
+frp_city_of_light = {
+	local_development_cost = -0.1
+	province_trade_power_modifier = 0.25
+}
+
+chateau_loire = {
+	prestige = 1
+	build_cost = -0.15
+}
+
+biggest_shipyard = {
+	global_ship_recruit_speed = -0.1
+	global_ship_repair = 0.1
+}
+
+repopulation = {
+	development_cost = -0.1
+}
+
+norman_base = {
+	local_defensiveness = 0.33
+}
+
+south_rich_cities = {
+	global_tax_modifier = 0.1
+}
+
+king_of_all_franks = {
+	prestige = 1
+	land_morale = 0.1
+}
+Sunni_missionary_strength  = {
+	lobal_missionary_strength = 0.02
 }

@@ -1,18 +1,18 @@
 #1859 - Torun
 
-owner = DNZ
-controller = DNZ
+owner = PRT
+controller = PRT
 capital = "Torun"
 is_city = yes
 estate = estate_burghers
-culture = polish
-religion = slavic
+culture = old-prussian
+religion = romuva
 trade_goods = grain
 hre = no
 base_tax = 4
 base_production = 4
 base_manpower = 2
-add_core = DNZ
+add_core = PRT
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

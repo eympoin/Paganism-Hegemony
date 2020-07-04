@@ -1,0 +1,225 @@
+Hejaz_Unification_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = HED
+		NOT = { map_setup = map_setup_random }
+	}
+
+	Unite_Muslim = {
+		icon = mission_bedouins
+		required_missions = {  } #None
+		position = 1
+		trigger = {
+		medina_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = HED
+            }
+		}
+		effect = {
+		add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 1825
+			}
+		tabuk_area = {
+                type = all
+                add_permanent_claim = HED
+            }
+
+		
+
+			}
+		}
+	Secure_the_red_sea = {
+		icon = mission_bedouins
+		required_missions = {Unite_Muslim} #None
+		position = 2
+		trigger = {
+		medina_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = HED
+            }
+		asir_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = HED
+            }
+		tihama_al_yemen_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = HED
+            }
+		}
+		effect = {
+		add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 3650
+			}
+		add_prestige = 10
+
+			}
+		}
+	For_Allah = {
+		icon = mission_mosque
+		required_missions = {Secure_the_red_sea} #None
+		position = 3
+		trigger = {
+		}
+		effect = {
+		
+		add_country_modifier = {
+				name = "Islamic_faith"
+				duration = 3650
+			}
+		
+		add_prestige = 10
+		add_country_modifier = {
+				name = "Sunni_missionary_strength"
+				duration = 3650
+			}
+		}
+		
+		}
+}
+
+Hejaz_Unification_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = HED
+		NOT = { map_setup = map_setup_random }
+	}
+	Unite_central_Tribes = {
+		icon = mission_bedouins
+		required_missions = {} #None
+		position = 1
+		trigger = {
+		qasim_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = HED
+            }
+		yamamah_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = HED
+            }
+		owns_or_non_sovereign_subject_of = 393
+		owns_or_non_sovereign_subject_of = 2338
+		}
+		effect = {
+		bahrain_area = {
+                type = all
+                add_permanent_claim = HED
+            }
+		add_prestige = 10
+		
+		
+		}
+		
+		}
+	Unite_eastern_Tribes = {
+		icon = mission_bedouins
+		required_missions = {Unite_central_Tribes} #None
+		position = 2
+		trigger = {
+		bahrain_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = HED
+            }
+		pirate_coast_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = HED
+            }
+		
+		
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "desert_fox"
+				duration = 3650
+			}
+		}
+		
+		}
+	Arabia = {
+		icon = mission_bedouins
+		required_missions = {Secure_the_red_sea Unite_eastern_Tribes Unite_southeast_Tribes  } #None
+		position = 3
+		trigger = {
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "rightful_dynasty"
+				duration = 3650
+			}
+		385 = {
+					add_base_tax = 3
+					add_base_production = 3
+					add_base_manpower = 5
+				}
+		}
+		
+	}
+	
+}
+
+Hejaz_Unification_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = HED
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	Unite_yemen = {
+		icon = mission_bedouins
+		required_missions = {} #None
+		position = 1
+		trigger = {
+		
+		asir_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = HED
+            }
+		}
+		effect = {
+		hadramut_area = {
+                type = all
+                add_permanent_claim = HED
+            }
+		upper_yemen_area = {
+                type = all
+                add_permanent_claim = HED
+            }
+		
+		}
+		
+	}
+	Unite_southeast_Tribes = {
+		icon = mission_bedouins
+		required_missions = {Unite_yemen} #None
+		position = 2
+		trigger = {
+		mahra_area = {
+                type = all
+                country_or_non_sovereign_subject_holds = HED
+            }
+		dhofar_area  = {
+                type = all
+                country_or_non_sovereign_subject_holds = HED
+            }
+		
+		}
+		effect = {
+		oman_area  = {
+                type = all
+                add_permanent_claim = HED
+            }
+		
+		}
+		
+	}
+
+}

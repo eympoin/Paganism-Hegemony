@@ -10,7 +10,7 @@ fixed_capital = 184
 historical_rival = FRP
 historical_rival = FRR
 historical_rival = FRV
-
+legitimacy = 20
 
 1444.1.1 = {
     monarch = {

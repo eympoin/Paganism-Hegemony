@@ -3,12 +3,11 @@ add_government_reform = steppe_horde
 government_rank = 1
 technology_group = nomad_group
 primary_culture = mishary
-religion = sunni
+religion = tengri_pagan_reformed
 capital = 1778	# Kasimov
-religious_school = hanafi_school
 
 #Khans
-1445.7.7 = {
+1444.7.7 = {
 	monarch = {
 		name = "Qasim"
 		dynasty = "Genghisid"

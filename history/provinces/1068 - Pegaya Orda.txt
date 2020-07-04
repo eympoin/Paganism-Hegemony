@@ -1,7 +1,7 @@
 #1068 - Pegaya Orda
 
 culture = ostyaki
-religion = tengri_pagan_reformed
+religion = suomenusko
 capital = "Ket"
 trade_goods = unknown
 hre = no

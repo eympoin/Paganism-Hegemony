@@ -3,8 +3,9 @@
 owner = GAL
 controller = GAL
 add_core = GAL
-culture = tarraconan 
-religion = jupiterian
+add_core = ASU
+culture = asturian
+religion = celt
 hre = no
 base_tax = 4
 base_production = 4

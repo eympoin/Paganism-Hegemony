@@ -3,6 +3,7 @@
 owner = FRV
 controller = FRV
 add_core = FRV
+add_core = PIC
 add_permanent_claim = FRP
 add_permanent_claim = FRR
 add_permanent_claim = FRO

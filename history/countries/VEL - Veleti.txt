@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = polabian
+religion = slavic
+capital = 50
+
+1444.1.1 = {
+    monarch = {
+        name = "Dragovit"
+	dynasty = "Wiltzes"
+        birth_date = 1408.8.12
+        adm = 0
+        dip = 2
+        mil = 5
+    }
+}

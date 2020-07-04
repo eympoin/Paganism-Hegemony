@@ -1,7 +1,7 @@
 #Kovno
 
-owner = LIT
-controller = LIT
+owner = SAM
+controller = SAM
 culture = lithuanian
 religion = romuva
 capital = "Kovno"
@@ -13,7 +13,7 @@ base_production = 3
 base_manpower = 1
 is_city = yes
 fort_15th = yes
-add_core = LIT
+add_core = SAM
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL

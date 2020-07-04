@@ -1,0 +1,23 @@
+# 4753 - Zadar
+
+owner = IAD
+controller = IAD
+culture = Dalmatian
+religion = olympoi
+capital = "Zadar"
+trade_goods = naval_supplies
+hre = yes
+base_tax = 6
+base_production = 6
+base_manpower = 5
+is_city = yes
+add_core = IAD
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

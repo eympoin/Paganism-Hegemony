@@ -2,14 +2,15 @@
 namespace = flavor_trc
 namespace = flavor_cth
 namespace = flavor_bae
+
 country_event = {
 	id = flavor_trc.4
 	title = "flavor_trc.4.t"
 	desc = "flavor_trc.4.d"
 	picture = SIEGE_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		OR{
 			tag = TRC
@@ -27,10 +28,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
-		months = 1
+		days = 7
 	}
+
 
 	option = {
 		name = "flavor_trc.4.a"
@@ -46,16 +48,16 @@ country_event = {
 	title = "flavor_cth.1.t"
 	desc = "flavor_cth.1.d"
 	picture = CITY_VIEW_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = CTH
 		221 = {
 			owned_by = CTH
 			}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 4
 	}
@@ -89,17 +91,27 @@ country_event = {
 	desc = "flavor_bae.1.d"
 	picture = SIEGE_eventPicture
 	is_triggered_only = yes
+
 	option = {
 		name = "flavor_bae.1.a"
 		ai_chance = {
 			factor = 90
 		}
-			BAE = {
+			TRC = {
 			declare_war_with_cb = {
-				who = TRC
+				who = BAE
 				casus_belli = cb_annex
 			}
 		}
+		GAL = {
+ 	 	join_all_offensive_wars_of = TRC
+ 	 	}
+ 	 	LUS = {
+ 	 	join_all_offensive_wars_of = TRC
+ 	 	}
+ 	 CTH = {
+ 	 	join_all_offensive_wars_of = TRC
+ 	 }
 	}
 	option = {
 		name = "flavor_bae.1.b"
@@ -119,6 +131,9 @@ country_event = {
 			cede_province = LUS
 		}
 		216 = {
+			cede_province = LUS
+		}
+		4788= {
 			cede_province = LUS
 		}
 		1747 = {
@@ -148,6 +163,9 @@ country_event = {
 		215 = {
 			cede_province = GAL
 		}
+		4789 = {
+			cede_province = GAL
+		}
 		add_truce_with = TRC
 		add_truce_with = CTH
 		add_truce_with = LUS
@@ -155,7 +173,7 @@ country_event = {
 		add_prestige = -10
 		add_stability = -1
 	}
-	
+
 }
 
 
@@ -164,9 +182,9 @@ country_event = {
 	title = "flavor_bae.2.t"
 	desc = "flavor_bae.2.d"
 	picture = SIEGE_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = BAE
 		BAE = {
@@ -180,11 +198,12 @@ country_event = {
 		mean_time_to_happen = {
 		months = 1
 	}
-	
+
 		option = {
 		name = "flavor_bae.2.b"
+		trigger = { tag = BAE }
 		ai_chance = {
-			factor = 0
+			factor = 10
 		}
 		4150 = {
 			cede_province = LUS
@@ -204,9 +223,13 @@ country_event = {
 		1747 = {
 			cede_province = LUS
 		}
+		4788 = {
+			cede_province = LUS
+		}
 		2755 = {
 			cede_province = TRC
 		}
+
 		2990 = {
 			cede_province = TRC
 		}
@@ -246,6 +269,14 @@ country_event = {
 		215 = {
 			cede_province = GAL
 		}
+
+		4789 = {
+			cede_province = GAL
+		}
+		TRC = { country_event = { id = flavor_trc.2 } }
+		CTH = { country_event = { id = flavor_trc.2 } }
+		LUS = { country_event = { id = flavor_trc.2 } }
+		GAL = { country_event = { id = flavor_trc.2 } }
 		TOL = {
 			add_truce_with = TRC
 			add_truce_with = CTH
@@ -259,4 +290,47 @@ country_event = {
 		add_truce_with = GAL
 		white_peace = TRC
 	}
+
 }
+
+#end of the war
+country_event = {
+	id = flavor_trc.2
+	title = "flavor_trc.2.t"
+	desc = "flavor_trc.2.d"
+	picture = SIEGE_eventPicture
+	is_triggered_only = yes
+
+		option = {
+		name = "flavor_trc.2.1"
+		ai_chance = {
+			factor = 10
+		}
+			remove_historical_rival = BAE
+			CTH = {
+				add_historical_rival = TRC
+				remove_historical_friend = TRC
+				remove_historical_friend = LUS
+				remove_historical_friend = GAL
+			}
+			TRC = {
+				add_historical_rival = CTH
+				remove_historical_friend = CTH
+				remove_historical_friend = LUS
+				remove_historical_friend = GAL
+			}
+			GAL = {
+				add_historical_rival = LUS
+				remove_historical_friend = TRC
+				remove_historical_friend = LUS
+				remove_historical_friend = CTH
+			}
+			LUS = {
+				add_historical_rival = GAL
+				remove_historical_friend = TRC
+				remove_historical_friend = CTH
+				remove_historical_friend = GAL
+			}
+		}
+
+	}

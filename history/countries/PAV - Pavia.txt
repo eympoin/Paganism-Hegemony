@@ -2,7 +2,7 @@ government = monarchy
 primary_culture = lombard
 religion = jupiterian
 technology_group = western
-capital = 1862
+capital = 4728
 add_army_professionalism = 0.05
 historical_rival = AQU
 

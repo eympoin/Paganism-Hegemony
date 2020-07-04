@@ -1,18 +1,18 @@
 #1869 - Zurich
 
-owner = SWI
-controller = SWI
-culture = swiss
+owner = ALM
+controller = ALM
+culture = alamann
 religion = germanic
 capital = "Z�rich"
 trade_goods = wool
 hre = no
-base_tax = 4
-base_production = 4
+base_tax = 3
+base_production = 3
 base_manpower = 2
 is_city = yes
 estate = estate_burghers
-add_core = SWI
+add_core = ALM
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

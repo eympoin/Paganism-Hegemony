@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = polabian
+religion = slavic
+capital = 60	# Oberlausitz
+
+1444.1.1 = {
+    monarch = {
+        name = "Lecho"
+	dynasty = "Luzici"
+        birth_date = 1422.8.12
+        adm = 3
+        dip = 3
+        mil = 4
+    }

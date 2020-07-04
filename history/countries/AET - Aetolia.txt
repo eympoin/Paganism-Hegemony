@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = greek
+religion = olympoi
+technology_group = western
+capital = 4794
+fixed_capital = 4794
+1435.1.1 = {
+	monarch = {
+		name = "Therapon I"
+		dynasty = "Apollonid"
+		birth_date = 1423.1.1
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}

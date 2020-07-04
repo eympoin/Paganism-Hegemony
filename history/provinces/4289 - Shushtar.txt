@@ -2,7 +2,7 @@
 
 owner = ELM
 controller = ELM
-culture = luri
+culture = elymaite
 religion = zoroastrian
 capital = "Shushtar"
 trade_goods = silk
@@ -19,3 +19,4 @@ discovered_by = ottoman
 discovered_by = nomad_group
 discovered_by = indian
 #fort_15th = yes #Shushtar, Dezful
+discovered_by = eastern

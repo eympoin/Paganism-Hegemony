@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = feudalism_reform
-primary_culture = luri
+primary_culture = elymaite
 religion = zoroastrian
 technology_group = muslim
 capital = 4289

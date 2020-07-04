@@ -3,7 +3,7 @@
 owner = GEN
 controller = GEN
 add_core = GEN
-culture = ligurian
+culture = lombard
 religion = jupiterian
 hre = no
 base_tax = 6

@@ -2,9 +2,8 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
-primary_culture = normand
-add_accepted_culture = cosmopolitan_french
-religion = catholic
+primary_culture = salian
+religion = germanic
 capital = 168	# Caen
 
 1465.8.15 = {
@@ -16,11 +15,3 @@ capital = 168	# Caen
 		mil = 0
 	}
 }
-
-1515.1.1 = { government = monarchy
-add_government_reform = autocracy_reform }
-
-1589.8.3 = { set_legacy_government = administrative_monarchy }
-
-1661.3.9 = { government = monarchy
-add_government_reform = autocracy_reform }

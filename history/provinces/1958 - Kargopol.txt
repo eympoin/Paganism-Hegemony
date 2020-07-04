@@ -1,7 +1,7 @@
 #Kargopol
 
-owner = NOV
-controller = NOV
+owner = KRL
+controller = KRL
 culture = novgorodian
 religion = suomenusko
 hre = no
@@ -11,7 +11,7 @@ trade_goods = naval_supplies
 base_manpower = 1
 capital = "Kargopol"
 is_city = yes
-add_core = NOV
+add_core = KRL
 
 
 

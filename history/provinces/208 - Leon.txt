@@ -3,6 +3,7 @@
 owner = GAL 
 controller = GAL
 add_core = GAL
+add_core = ASU
 culture = asturian
 religion = celt
 hre = no

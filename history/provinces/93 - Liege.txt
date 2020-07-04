@@ -5,6 +5,7 @@ controller = FRR
 add_permanent_claim = FRP
 add_permanent_claim = FRV
 add_permanent_claim = FRO
+add_core = LUX
 capital = "Liège"
 is_city = yes
 culture = rhenan

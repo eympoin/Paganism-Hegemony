@@ -3,42 +3,42 @@ reims_Unification_1 = {
 	generic = no
 	ai = yes
 	potential = {
+	OR = {
 		tag = FRR
+		was_tag = FRR
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 
 	Subjugate_The_Kingdom_of_Soissons_FRR = {
-		icon = mission_eastern_european_city
-		required_missions = {  } #None
-		position = 6
-		trigger = {
-		picardy_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = FRR
-            }
-		flanders_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = FRR
-            }
-		wallonia_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = FRR
-            }
-		ile_de_france_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = FRR
-            }
-
+	icon = mission_build_up_to_force_limit
+	required_missions = {  } #None
+	position = 1
+	provinces_to_highlight = {
+		OR = {
+			province_id = 182
 		}
-		effect = {
-			add_country_modifier = {
-				name = "hegemonic_ambition"
-				duration = 3650 #10 years
-			}
-				add_legitimacy = 10
+		OR = {
+			is_city = no
+			NOT = { owned_by = ROOT }
+		}
+		has_discovered = ROOT
+	}
+	trigger = {
+	182 = {
+							type = all
+							owned_by = ROOT
+					}
 
+	}
+	effect = {
+			create_union = FRV
+			add_legitimacy = 10
+			FRV = {
+				remove_historical_rival = FRR
 			}
 		}
+	}
 
 
 }
@@ -47,40 +47,64 @@ reims_Unification_2 = {
 	generic = no
 	ai = yes
 	potential = {
+	OR = {
 		tag = FRR
+		was_tag = FRR
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	Subjugate_The_Kingdom_of_Paris_FRR = {
-		icon = mission_eastern_european_city
+		icon = mission_build_up_to_force_limit
 		required_missions = {  } #None
-		position = 6
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 183
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
 		trigger = {
-		ile_de_france_area = {
+		183 = {
                 type = all
-                country_or_non_sovereign_subject_holds = FRR
+                owned_by = ROOT
             }
-		normandy_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = FRR
-            }
-
 
 		}
 		effect = {
-			add_country_modifier = {
-				name = "hegemonic_ambition"
-				duration = 3650 #10 years
-			}
+				create_union = FRP
 				add_legitimacy = 10
-
+				FRP = {
+					remove_historical_rival = FRR
+				}
 			}
 		}
 		Regnum_Francorum_FRR = {
-		icon = mission_eastern_european_city
+		icon = mission_unite_home_region
 		required_missions = { Subjugate_The_Kingdom_of_Soissons_FRR Subjugate_The_Kingdom_of_Paris_FRR Subjugate_The_Kingdom_of_Orleans_FRR }
-		position = 7
+		position = 2
 		trigger = {
-
+			FRV = {
+				OR = {
+				is_subject_of = FRR
+				exists = no
+				}
+			}
+			FRP = {
+				OR = {
+				is_subject_of = FRR
+				exists = no
+				}
+			}
+			FRO = {
+				OR = {
+				is_subject_of = FRR
+				exists = no
+				}
+			}
 		}
 		effect = {
 			add_adm_power = 100
@@ -89,6 +113,11 @@ reims_Unification_2 = {
 			add_country_modifier = {
 				name = "the_only_king"
 				duration = -1
+			}
+			186 = {
+				add_base_tax = 3
+				add_base_manpower = 3
+				add_base_production = 3
 			}
 			}
 		}
@@ -99,38 +128,123 @@ reims_Unification_3 = {
 	generic = no
 	ai = yes
 	potential = {
+	OR = {
 		tag = FRR
+		was_tag = FRR
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 
 		Subjugate_The_Kingdom_of_Orleans_FRR = {
-		icon = mission_eastern_european_city
+		icon = mission_build_up_to_force_limit
 		required_missions = {  } #None
-		position = 6
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 184
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
 		trigger = {
-		ile_de_france_area = {
+		184 = {
                 type = all
-                country_or_non_sovereign_subject_holds = FRR
-            }
-		loire_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = FRR
-            }
-		brittany_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = FRR
+                owned_by = ROOT
             }
 
 		}
 		effect = {
-			add_country_modifier = {
-				name = "hegemonic_ambition"
-				duration = 3650 #10 years
-			}
+				create_union = FRO
 				add_legitimacy = 10
-
+				FRO = {
+					remove_historical_rival = FRR
+				}
 			}
 		}
+}
 
 
+REIMS_economy = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		tag = FRR
+		was_tag = FRR
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	champagne_fairs = {
+		icon = mission_eastern_european_city
+		required_missions = {  } #None
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 186
+			}
+		}
+		trigger = {
+			186  = {
+			highest_value_trade_node = yes
+			has_most_province_trade_power = FRR
+			}
+
+		}
+		effect = {
+		186 = {
+		add_center_of_trade_level = 1
+		}
+		add_years_of_income = 1
+		}
+	}
+
+	great_temple_reims = {
+		icon = mission_eastern_european_city
+		required_missions = {  } #None
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				province_id = 186
+			}
+		}
+		trigger = {
+			186 = {
+				has_building = cathedral
+			}
+		}
+		effect = {
+		186 = {
+			add_province_modifier = {
+				name = "great_temple"
+				duration = -1
+			}
+		}
+		}
+	}
+
+	rhenan_industry = {
+	icon = mission_eastern_european_city
+	required_missions = {  } #None
+	position = 3
+	trigger = {
+	any_owned_province = {
+		trade_goods = coal
+			}
+		trading_part = {
+		trade_goods = coal
+		value = 0.2
+	}
+	}
+	effect = {
+	add_country_modifier = {
+		name = "coal_development"
+		duration = -1
+	}
+	}
+	}
 }

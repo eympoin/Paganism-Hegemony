@@ -1,0 +1,498 @@
+unite_the_franks = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = FRP
+			tag = FRO
+			tag = FRV
+			tag = FRR
+			tag = WFR
+			tag = FRK
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	united_west_francia = {
+		icon = mission_eastern_european_city
+		required_missions = { }
+		position = 1
+		trigger = {
+			has_country_modifier	= "the_only_king"
+		}
+
+		effect = {
+			add_treasury =  100
+		}
+	}
+
+	retake_lotharingia = {
+		icon = mission_eastern_european_city
+		required_missions = { united_west_francia}
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = lorraine_area
+				area = alsace_area
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+
+		trigger = {
+			lorraine_area = {
+				type = all
+				owned_by  = ROOT
+			}
+			alsace_area = {
+				type = all
+				owned_by  = ROOT
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "lorraine_mines"
+				duration = -1
+			}
+			lower_rhineland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			palatinate_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			north_rhine_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+
+		}
+	}
+
+
+
+	end_of_lotharingian_independance = {
+		icon = mission_eastern_european_city
+		required_missions = { retake_lotharingia}
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				owned_by = LOT
+			}
+			has_discovered = ROOT
+		}
+
+		trigger = {
+			NOT = {exists = LOT}
+		}
+
+		effect = {
+			hesse_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+
+			westphalia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+
+		}
+	}
+
+
+}
+
+
+take_south_gallia = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = FRP
+			tag = FRO
+			tag = FRV
+			tag = FRR
+			tag = WFR
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	break_the_burgonds = {
+		icon = mission_eastern_european_city
+		required_missions = { }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = bourgogne_area
+				area = west_burgundy_area
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+
+		trigger = {
+			bourgogne_area = {
+				type = all
+				owned_by  = ROOT
+			}
+			west_burgundy_area = {
+				type = all
+				owned_by  = ROOT
+			}
+		}
+
+		effect = {
+			savoy_dauphine_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			massif_central_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			poitou_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	end_of_the_burgonds_fr = {
+		icon = mission_eastern_european_city
+		required_missions = { break_the_burgonds}
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = massif_central_area
+				area = west_burgundy_area
+				area = bourgogne_area
+				area = savoy_dauphine_area
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+
+		trigger = {
+			massif_central_area = {
+				type = all
+				owned_by  = ROOT
+			}
+			west_burgundy_area = {
+				type = all
+				owned_by  = ROOT
+			}
+			bourgogne_area = {
+				type = all
+				owned_by  = ROOT
+			}
+			savoy_dauphine_area = {
+				type = all
+				owned_by  = ROOT
+			}
+		}
+
+		effect = {
+			every_owned_province = {
+				type = all
+				limit = {
+					culture = burgond
+				}
+				change_culture = franko-burgond
+			}
+			guyenne_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			pyrenees_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			provence_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			languedoc_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+
+		}
+	}
+
+	franks_south_gallia = {
+		icon = mission_eastern_european_city
+		required_missions = { end_of_the_burgonds_fr}
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = languedoc_area
+				area = guyenne_area
+				area = pyrenees_area
+				area = provence_area
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+
+		trigger = {
+			languedoc_area = {
+				type = all
+				owned_by  = ROOT
+			}
+			guyenne_area = {
+				type = all
+				owned_by  = ROOT
+			}
+			pyrenees_area = {
+				type = all
+				owned_by  = ROOT
+			}
+			provence_area = {
+				type = all
+				owned_by  = ROOT
+			}
+		}
+
+		effect = {
+			add_dip_power = 100
+			add_country_modifier = {
+				name = "south_rich_cities"
+				duration = 7300
+			}
+
+
+		}
+	}
+}
+
+
+
+
+
+unite_with_eastern_franks_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = FRP
+			tag = FRO
+			tag = FRV
+			tag = FRR
+			tag = WFR
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	beat_the_saxon = {
+		icon = mission_eastern_european_city
+		required_missions = { end_of_lotharingian_independance}
+		position = 4
+		provinces_to_highlight = {
+			culture_group = frankish
+			owned_by = SAX
+			has_discovered = ROOT
+		}
+
+		trigger = {
+			SAX = {
+				every_owned_province = {
+					NOT = {culture_group = frankish}
+				}
+			}
+		}
+
+		effect = {
+			add_dip_power = 200
+			add_country_modifier = {
+				name = "influential_diplomacy"
+				duration = 7300
+			}
+		}
+	}
+
+	vassalization_alamannia = {
+		icon = mission_eastern_european_city
+		required_missions = { beat_the_saxon}
+		position = 5
+
+		trigger = {
+		OR = {
+		 NOT = {exists = ALM}
+
+			ALM = {
+				has_opinion = {
+					who = ROOT
+					value = 190
+				}
+			}
+			}
+		}
+
+		effect = {
+			vassalize = ALM
+		}
+	}
+
+	conquer_Bavaria = {
+		icon = mission_eastern_european_city
+		required_missions = { vassalization_alamannia vassalization_frankonia}
+		position = 6
+
+		provinces_to_highlight = {
+			OR = {
+				area = lower_bavaria_area
+				area = upper_bavaria_area
+				area = east_bavaria_area
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+
+		trigger = {
+			east_bavaria_area = {
+				type = all
+				owned_by  = ROOT
+			}
+			upper_bavaria_area = {
+				type = all
+				owned_by  = ROOT
+			}
+			lower_bavaria_area = {
+				type = all
+				owned_by  = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 100
+			languedoc_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		}
+
+		United_Franks = {
+			icon = mission_eastern_european_city
+			required_missions = { conquer_Bavaria}
+			position = 7
+
+			provinces_to_highlight = {
+
+			culture_group = frankish
+				OR = {
+					is_city = no
+					NOT = { owned_by = ROOT }
+				}
+				has_discovered = ROOT
+			}
+
+			trigger = {
+			custom_trigger_tooltip = {
+			NOT = {
+				any_province = {
+					NOT = {owned_by = ROOT}
+					culture_group = frankish
+				}
+			}
+				tooltip = mod_frk_united_franks_tooltip
+			}
+
+			}
+			effect = {
+				add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
+				add_country_modifier = {
+					name = "king_of_all_franks"
+					duration = -1
+				}
+			}
+			}
+}
+
+
+unite_with_eastern_franks_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = FRP
+			tag = FRO
+			tag = FRV
+			tag = FRR
+			tag = WFR
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	vassalization_frankonia = {
+		icon = mission_eastern_european_city
+		required_missions = { beat_the_saxon}
+		position = 5
+
+		trigger = {
+		OR = {
+		 NOT = {exists = FKN}
+
+			FKN = {
+				has_opinion = {
+					who = ROOT
+					value = 190
+				}
+			}
+			}
+		}
+
+		effect = {
+			vassalize = FKN
+		}
+	}
+}

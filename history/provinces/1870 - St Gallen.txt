@@ -1,17 +1,17 @@
 #1870 - St Gallen
 
-owner = RVA
-controller = RVA
-culture = swiss
+owner = ALM
+controller = ALM
+culture = alamann
 religion = germanic
 capital = "St Gallen"
 trade_goods = livestock
 hre = no
-base_tax = 4
-base_production = 4
+base_tax = 3
+base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = RVA
+add_core = ALM
 estate = estate_burghers #or priests
 discovered_by = western
 discovered_by = eastern

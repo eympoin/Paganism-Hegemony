@@ -1,10 +1,10 @@
 #41 - K�nigsberg
 
-owner = LIT
-controller = LIT
-capital = "K�nigsberg"
-culture = prussian
-religion = romuva
+owner = JOM
+controller = JOM
+capital = "Konigsberg"
+culture = swedish
+religion = norse_pagan_reformed
 trade_goods = gems #Amber
 hre = no
 base_tax = 5
@@ -12,7 +12,7 @@ base_production = 5
 base_manpower = 3
 is_city = yes
 fort_15th = yes
-add_core = LIT
+add_core = JOM
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

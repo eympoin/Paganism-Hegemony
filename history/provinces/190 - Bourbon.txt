@@ -12,6 +12,7 @@ base_production = 3
 trade_goods = iron
 base_manpower = 4
 add_core = BOR
+add_core = AUV
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

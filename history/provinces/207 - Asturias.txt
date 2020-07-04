@@ -7,6 +7,7 @@ latent_trade_goods = {
 owner = GAL		#Juan II of Castille
 controller = GAL
 add_core = GAL
+add_core = ASU
 culture = asturian
 religion = celt
 hre = no

@@ -12,6 +12,7 @@ aristocracy_ideas = {
 
 	bonus = {
 		leader_siege = 1
+		nobles_loyalty_modifier = 0.1
 	}
 
 	trigger = {
@@ -21,7 +22,7 @@ aristocracy_ideas = {
 			government = tribal
 		}
 	}
-	
+
 	noble_knights = {
 		cavalry_power = 0.10
 		cavalry_cost = -0.10
@@ -31,7 +32,7 @@ aristocracy_ideas = {
 	}
 	local_nobility = {
 		global_autonomy = -0.025
-		yearly_absolutism = 0.1
+		yearly_absolutism = 0.5
 	}
 	serfdom = {
 		global_manpower_modifier = 0.33
@@ -45,17 +46,17 @@ aristocracy_ideas = {
 		free_leader_pool = 1
 	}
 	noble_resilience = {
-		possible_mercenaries = 0.20
+		mercenary_manpower = 0.20
 	}
-	
+
 
 	ai_will_do = {
 		factor = 0.45
-		
+
 		modifier = {
 			factor = 0.5
 			is_subject = yes
-		}	
+		}
 	}
 }
 
@@ -65,6 +66,8 @@ plutocracy_ideas = {
 
 	bonus = {
 		global_institution_spread = 0.10
+		burghers_loyalty_modifier = 0.1
+		vaisyas_loyalty_modifier = 0.1
 	}
 
 	trigger = {
@@ -72,7 +75,7 @@ plutocracy_ideas = {
 	}
 
 	tradition_of_payment = {
-		possible_mercenaries = 0.10
+		mercenary_manpower = 0.10
 		mercenary_discipline = 0.025
 	}
 	abolished_serfdom = {
@@ -153,6 +156,8 @@ religious_ideas = {
 
 	bonus = {
 		culture_conversion_cost = -0.25
+		brahmins_hindu_loyalty_modifier = 0.1
+		church_loyalty_modifier = 0.1
 	}
 
 	missionary_schools = {
@@ -201,10 +206,10 @@ spy_ideas = {
 	efficient_spies = {
 		spy_offence = 0.5
 		advisor_cost = -0.10
-	}	
-	
+	}
+
 	agent_training = {
-		diplomats = 1		
+		diplomats = 1
 	}
 
 	vetting = {
@@ -214,12 +219,12 @@ spy_ideas = {
 	state_propaganda = {
 		ae_impact = -0.2
 	}
-	
+
 	claim_fabrication = {
 		fabricate_claims_cost = -0.25
 		can_fabricate_for_vassals = yes
 	}
-	
+
 	privateers = {
 		embargo_efficiency = 0.25
 		privateer_efficiency = 0.33
@@ -320,7 +325,7 @@ defensive_ideas = {
 	}
 
 	battlefield_commisions = {
-		army_tradition = 1
+		army_tradition_from_battle = 1.0
 	}
 	military_drill = {
 		land_morale = 0.15
@@ -464,7 +469,7 @@ exploration_ideas = {
 	colonial_ventures = {
 		colonists = 1
 	}
-	
+
 	overseas_exploration = {
 		range = 0.5
 	}
@@ -476,7 +481,7 @@ exploration_ideas = {
  		envoy_travel_time = -0.20
  	}
 	free_colonies = {
-		expel_minorities_cost = -0.25
+		expel_minorities_cost = -1.0
 	}
 	global_empire = {
 		naval_forcelimit_modifier = 0.25
@@ -494,27 +499,57 @@ exploration_ideas = {
 		}
 		modifier = {
 			factor = 0
-			is_subject = yes
-		}		
-		modifier = {
-			factor = 0
 			primitives = yes
 		}
 		modifier = {
 			factor = 0
-			NOT = { num_of_ports = 1 }
-			NOT = { 
-				any_owned_province = { 
+			current_age = age_of_revolutions #too late
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				any_owned_province = {
+					has_port = yes
+					sea_zone = {
+						NOT = { area = eastern_mediterrenean_area }
+					}
+				}
+			}
+			NOT = {
+				any_owned_province = {
 					is_in_capital_area = yes
 					has_empty_adjacent_province = yes
-				} 
+				}
+			}
+		}
+		modifier = {
+			factor = 0.3
+			NOT = {
+				any_owned_province = {
+					has_port = yes
+					sea_zone = {
+						OR = {
+							NOT = { region = mediterrenean_region }
+							province_id = 1293 #Gibraltar
+							province_id = 1294 #Almeria
+						}
+						NOT = { area = red_sea_area }
+						NOT = { area = baltic_area }
+					}
+				}
+			}
+			NOT = {
+				any_owned_province = {
+					is_in_capital_area = yes
+					has_empty_adjacent_province = yes
+				}
 			}
 		}
 		modifier = {
 			factor = 0.1
 			NOT = { num_of_ports = 3 }
-			NOT = { 
-				any_owned_province = { 
+			NOT = {
+				any_owned_province = {
 					is_in_capital_area = yes
 					has_empty_adjacent_province = yes
 				}
@@ -540,7 +575,7 @@ exploration_ideas = {
 		}
 		modifier = {
 			factor = 0.5
-			tag = ARA
+			tag = GAL
 		}
 		modifier = {
 			factor = 0.1
@@ -574,35 +609,26 @@ exploration_ideas = {
 		modifier = {
 			factor = 1000
 			OR = {
-				tag = POR
-				tag = BAE
-				tag = SPA
+			tag = GAL
+			tag = BAE
 				tag = LUS
-				tag = NRT
 				tag = AQI
-				tag = CTG
-				tag = MAU
-			}
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				tag = GBR
-				tag = NED
-				tag = ENG
-				tag = FRA
-				tag = KUR
+				tag = NRT
 				tag = GAL
-				tag = LDN
+				tag = CTG
 			}
 		}
 		modifier = {
-			factor = 1.1
+			factor = 20
 			OR = {
-				tag = FRP
-				tag = FRO
-				tag = FRK
-				tag = FRV
+				tag = MAU
+				tag = SCO
+				tag = ICE
+				tag = NOR
+				tag = MIE
+				tag = SEA
+				tag = EAA
+				primary_culture = irish
 			}
 		}
 	}
@@ -693,7 +719,7 @@ quality_ideas = {
 		infantry_power = 0.1
 	}
 	quality_education = {
-		army_tradition = 1
+		army_tradition = 0.5
 	}
 	finest_of_horses = {
 		cavalry_power = 0.1
@@ -756,8 +782,7 @@ expansion_ideas = {
 	important = yes
 
 	bonus = {
- 		cb_on_overseas = yes
- 		max_states = 5
+ 		min_autonomy_in_territories = -0.1
 	}
 
 	additional_colonists = {
@@ -836,11 +861,11 @@ administrative_ideas = {
 	category = ADM
 
 	bonus = {
-		max_states = 5
+		governing_capacity_modifier = 0.25
 	}
 
 	organised_mercenary_payment = {
-		mercenary_cost = -0.25
+		mercenary_cost = -0.10
 	}
 	adaptability = {
 		core_creation = -0.25
@@ -852,7 +877,7 @@ administrative_ideas = {
 		interest = -0.5
 	}
 	organised_mercenary_recruitment = {
-		possible_mercenaries = 0.25
+		mercenary_manpower = 0.25
 	}
 	administrative_efficiency_idea = {
 		advisor_pool = 1
@@ -876,6 +901,8 @@ humanist_ideas = {
 	bonus = {
 		idea_cost = -0.1
 		yearly_harmony = 0.25  # Used if religion uses harmony (confucianism)
+		brahmins_muslim_loyalty_modifier = 0.1
+		dhimmi_loyalty_modifier = 0.1
 	}
 
 	tolerance_idea = {
@@ -919,11 +946,11 @@ influence_ideas = {
 	tribute_system = {
 		vassal_income = 0.25
 	}
-	
+
 	additional_loyalist_recruitment = {
 		reduced_liberty_desire = 15
 	}
-	
+
 	integrated_elites = {
 		diplomatic_annexation_cost = -0.25
 	}
@@ -966,6 +993,7 @@ naval_ideas = {
 
 	bonus = {
 		ship_durability = 0.1
+		allowed_marine_fraction = 0.05
 	}
 
 	boarding_parties = {

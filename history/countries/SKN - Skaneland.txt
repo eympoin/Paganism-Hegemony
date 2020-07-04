@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = danish
+religion = norse_pagan_reformed
+technology_group = western
+capital = 6
+
+
+
+1440.4.9 = {
+	monarch = {
+		name = "Christopher III"
+		dynasty = "Rosenborg"
+		birth_date = 1416.2.26
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+	clear_scripted_personalities = yes
+}

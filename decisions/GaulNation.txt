@@ -11,8 +11,6 @@ country_decisions = {
 			}
 			NOT = { tag = HLR }
 			NOT = { tag = GLI }
-			NOT = { tag = PAP }
-			NOT = { tag = SPA }		# Basque is a valid culture for both GLI and SPA
 			OR = {
 				ai = no
 				NOT = { exists = GLI }
@@ -33,8 +31,6 @@ country_decisions = {
 		provinces_to_highlight = {
 			OR = {
 				region = france_region
-				area = wallonia_area
-				area = flanders_area
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -44,30 +40,21 @@ country_decisions = {
 		allow = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
-			is_nomad = no			
+			is_nomad = no
 			NOT = { exists = GLI }
 			france_region = {
-				type = all
-				owned_by = ROOT
-			}
-			wallonia_area = {
-				type = all
-				owned_by = ROOT
-			}
-			flanders_area = {
 				type = all
 				owned_by = ROOT
 			}
 		}
 		effect = {
 			change_tag = GLI
-			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 3 }
 				}
-				set_government_rank = 2
+				set_government_rank = 3
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -79,5 +66,4 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	
 }

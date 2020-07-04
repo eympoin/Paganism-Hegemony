@@ -6,4 +6,11 @@ vassal = {
 	start_date = 1444.1.1
 	end_date = 1820.1.1
 }
+vassal = {
+	first = NRT
+	second = ICE
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+
 

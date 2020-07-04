@@ -1,0 +1,147 @@
+country_decisions = {
+
+	east_francia_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = FRK }
+			NOT = { tag = SAX }
+			OR = {
+				ai = no
+				NOT = { exists = EAF }
+			}
+			OR = {
+				primary_culture = east-francian
+				primary_culture = alamann
+				primary_culture = bavarian
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = switzerland_area
+				area = lower_swabia_area
+				area = upper_swabia_area
+				area = lower_bavaria_area
+				area = upper_bavaria_area
+				area = east_bavaria_area
+				area = franconia_area
+				area = upper_franconia_area
+				area = hesse_area
+				area = westphalia_area
+				area = braunschweig_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			NOT = { exists = EAF }
+			switzerland_area = {
+				type = all
+				owned_by = ROOT
+			}
+			lower_swabia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			upper_swabia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			lower_bavaria_area = {
+				type = all
+				owned_by = ROOT
+			}
+			upper_bavaria_area = {
+				type = all
+				owned_by = ROOT
+			}
+			east_bavaria_area = {
+				type = all
+				owned_by = ROOT
+			}
+			franconia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			westphalia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			braunschweig_area = {
+				type = all
+				owned_by = ROOT
+			}
+			hesse_area = {
+				type = all
+				owned_by = ROOT
+			}
+			upper_franconia_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			change_tag = EAF
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			south_germany_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = EAF
+			}
+			north_germany_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = EAF
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							has_idea_group = default_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

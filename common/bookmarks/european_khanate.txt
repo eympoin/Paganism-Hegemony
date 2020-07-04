@@ -1,0 +1,15 @@
+bookmark =
+{
+	name = "GERMANY_NAME"
+	desc = "GERMANY_DESC"
+	date = 1444.11.11
+	country = SKH
+	country = OKH
+	country = CRP
+	country = VEL
+	country = BOH
+	country = ALM
+	country = BAV
+	country = SAX
+	country = FKN
+}

@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = saxon
+religion = germanic
+technology_group = western
+capital = 1775
+
+
+
+1444.9.1 = {
+	monarch = {
+		name = "Christian I"
+		dynasty = "von Oldenburg"
+		birth_date = 1426.2.1
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+	set_country_flag = christian_elected
+}

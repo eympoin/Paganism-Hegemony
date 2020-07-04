@@ -1,0 +1,18 @@
+# 4765 - Mulhouse. Primary city: Mülhausen
+
+owner = LOT
+controller = LOT
+capital = "Mülhausen"
+is_city = yes
+culture = lotharingian
+religion = germanic
+hre = no
+base_tax = 4
+base_production = 4
+trade_goods = cloth
+base_manpower = 3
+add_core = LOT
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman

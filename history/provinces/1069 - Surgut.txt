@@ -1,7 +1,7 @@
 #1069 - Surgut
 
 culture = samoyed
-religion = tengri_pagan_reformed #Sami Shamanism
+religion = suomenusko#Sami Shamanism
 capital = "Sörgüt"
 trade_goods = unknown
 hre = no

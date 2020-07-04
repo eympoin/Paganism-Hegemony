@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+primary_culture = dacian
+religion = Zalmoxianism
+capital = 158 
+
+
+1410.1.1 = {
+	monarch = {
+		name = "Cotys"
+		dynasty = "Zyraxes"
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+}

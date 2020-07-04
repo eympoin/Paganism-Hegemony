@@ -1,8 +1,8 @@
 #4124 - North Karelia
 
-owner = FIN
-controller = FIN
-add_core = FIN
+owner = KRL
+controller = KRL
+add_core = KRL
 culture = karelian
 religion = suomenusko
 hre = no

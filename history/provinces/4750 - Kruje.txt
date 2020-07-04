@@ -1,0 +1,24 @@
+# 4750 - Krujë, Tirana, central Albania
+
+owner = ALB
+controller = ALB
+culture = albanian
+religion = Illyrian
+capital = "Krujë"
+trade_goods = wool
+hre = yes
+base_tax = 4
+base_production = 3
+base_manpower = 2
+is_city = yes
+fort_15th = yes # Krujë Castle
+add_core = ALB
+discovered_by = KAZ
+discovered_by = CRI
+discovered_by = GOL
+discovered_by = AST
+discovered_by = QAS
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = western

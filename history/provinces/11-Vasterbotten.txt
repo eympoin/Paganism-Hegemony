@@ -1,9 +1,9 @@
 #V�sterbotten-�ngermanland, from Sundsvall/H�rn�sand over Ume� to Torne�
 
-owner = SWE
-controller = SWE
-add_core = SWE
-culture = swedish
+owner = SMI
+controller = SMI
+add_core = SMI
+culture = sapmi
 religion = suomenusko
 hre = no
 base_tax = 1
@@ -17,9 +17,3 @@ is_city = yes
 
 discovered_by = eastern
 discovered_by = western
-
-
-1527.6.1 = { religion = protestant}
-1650.1.1 = { trade_goods = naval_supplies }
-1809.3.24 = { controller = RUS } # Conquered by Barclay de Tolly
-1809.9.17 = { controller = SWE } # Treaty of Fredrikshamn

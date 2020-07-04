@@ -1,7 +1,7 @@
 #Turov
 
-owner = LIT
-controller = LIT
+owner = PLT
+controller = PLT
 culture = byelorussian
 religion = slavic
 hre = no
@@ -11,7 +11,7 @@ trade_goods = wool
 base_manpower = 1
 capital = "Turov"
 is_city = yes
-add_core = LIT
+add_core = PLT
 
 
 

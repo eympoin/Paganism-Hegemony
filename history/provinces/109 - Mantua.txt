@@ -1,13 +1,13 @@
 #109 - Mantua
  
-owner = FER
-controller = FER
-add_core = FER
+owner = AQU
+controller = AQU
+add_core = AQU
 culture = lombard 
 religion = jupiterian 
 hre = no 
-base_tax = 9 
-base_production = 9    
+base_tax = 6
+base_production = 6
 trade_goods = livestock
 base_manpower = 4    
 fort_15th = yes

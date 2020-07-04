@@ -2,7 +2,7 @@
 
 owner = GAL
 controller = GAL
-culture = lusitanian
+culture = galician
 religion = jupiterian
 capital = "Porto"
 trade_goods = wine

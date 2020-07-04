@@ -5,7 +5,7 @@ controller = RHO
 culture = greek
 religion = olympoi
 capital = "Rhodes"
-trade_goods = fish
+trade_goods = wine
 hre = yes
 base_tax = 5
 base_production = 5
@@ -18,10 +18,3 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = nomad_group
 discovered_by = ottoman
-
-
-1522.12.21 = {	owner = TUR
-	controller = TUR
-	add_core = TUR
-	remove_core = KNI
-} # Part of the Ottoman Empire

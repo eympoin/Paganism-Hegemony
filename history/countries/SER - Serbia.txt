@@ -4,8 +4,7 @@ primary_culture = serbian
 elector = yes
 religion = olympoi
 technology_group = eastern
-capital = 4176	# Krusevac
-historical_friend = BOS
+capital = 4239
 government_rank = 1
 
 

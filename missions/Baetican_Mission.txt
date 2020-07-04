@@ -49,36 +49,28 @@ hispania_unification_1_bae{
 			add_permanent_claim = 232
 			add_permanent_claim = 231
 			beieras_area = {
-				type = all
 				add_permanent_claim = BAE
 			}
 			add_permanent_claim = 227
 			castille_area = {
-				type = all
 				add_permanent_claim = BAE
 			}
 			leon_area = {
-				type = all
 				add_permanent_claim = BAE
 			}
 			asturias_area = {
-				type = all
 				add_permanent_claim = BAE
 			}
 			aragon_area = {
-				type = all
 				add_permanent_claim = BAE
 			}
 			catalonia_area = {
-				type = all
 				add_permanent_claim = BAE
 			}
 			basque_country = {
-				type = all
 				add_permanent_claim = BAE
 			}
 			baleares_area = {
-				type = all
 				add_permanent_claim = BAE
 			}
 			}
@@ -121,7 +113,6 @@ hispania_unification_1_bae{
 				duration = 5475
 			}
 			corsica_sardinia_area = {
-				type = all
 				add_permanent_claim = BAE
 			}
 		}
@@ -228,11 +219,9 @@ western_control{
 	}
 	effect{
 			sicily_area = {
-				type = all
 				add_permanent_claim = BAE
 			}
 			liguria_area{
-				type = all
 				add_permanent_claim = BAE
 			}
 		}
@@ -254,11 +243,9 @@ western_control{
 	}
 	effect{
 			emilia_romagna_area = {
-				type = all
 				add_permanent_claim = BAE
 			}
 			central_italy_area{
-				type = all
 				add_permanent_claim = BAE
 			}
 		}
@@ -323,16 +310,13 @@ western_control_2{
 				add_permanent_claim = BAE
 			}
 			liguria_area{
-				type = all
 				add_permanent_claim = BAE
 			}
 			tuscany_area{
-				type = all
 				add_permanent_claim = BAE
 			}
 		}
 	}
-
 	take_carthage_bae{
 		icon = mission_eastern_european_city
 		required_missions = { a_first_foot_hold take_north_mauretanian_coast} #None
@@ -398,5 +382,4 @@ western_control_3{
 			}
 		}
 	}
-
 }

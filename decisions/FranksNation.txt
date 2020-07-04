@@ -9,18 +9,11 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { tag = HLR }
-			NOT = { tag = FRK }
-			NOT = { tag = LOM }
-			OR = {
-				ai = no
-				NOT = { exists = FRK }
-			}
-			OR = {
-				primary_culture = salian
-				primary_culture = rhenan
-				primary_culture = lingerian
-			}
+			NOT = { tag = BOR }
+			NOT = { tag = LOM}
+			NOT = { tag = SAX}
+			NOT = { exists = FRK }
+			culture_group = frankish
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -32,13 +25,16 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				area = loire_area
-				area = ile_de_france_area
-				area = champagne_area
-				area = normandy_area
-				area = picardy_area
-				area = wallonia_area
-				area = flanders_area
+				province_id = 182
+				province_id = 183	
+				province_id = 184
+				province_id = 186
+				province_id = 188
+				province_id = 67	
+				province_id = 68
+				province_id = 65
+				province_id = 81
+				province_id = 85
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -49,35 +45,17 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no			
-			NOT = { exists = FRK }
-			loire_area = {
-				type = all
-				owned_by = ROOT
-			}
-			normandy_area = {
-				type = all
-				owned_by = ROOT
-			}
-			picardy_area = {
-				type = all
-				owned_by = ROOT
-			}
-			champagne_area = {
-				type = all
-				owned_by = ROOT
-			}
-			ile_de_france_area = {
-				type = all
-				owned_by = ROOT
-			}
-			wallonia_area = {
-				type = all
-				owned_by = ROOT
-			}
-			flanders_area = {
-				type = all
-				owned_by = ROOT
-			}
+			NOT = { exists = FRK}
+			owns_core_province = 182
+			owns_core_province = 183	
+			owns_core_province = 184
+			owns_core_province = 186
+			owns_core_province = 188
+			owns_core_province = 67	
+			owns_core_province = 68
+			owns_core_province = 65
+			owns_core_province = 81
+			owns_core_province = 85
 		}
 		effect = {
 			change_tag = FRK
@@ -85,9 +63,9 @@ country_decisions = {
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 3 }
 				}
-				set_government_rank = 2
+				set_government_rank = 3
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -97,7 +75,25 @@ country_decisions = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = FRA
+				add_permanent_claim = FRK
+			}
+			south_german_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = FRK
+			}
+			north_german_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = FRK
+			}
+			low_countries_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = FRK
 			}
 			add_prestige = 25
 			if = {

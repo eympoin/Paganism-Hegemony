@@ -5,3 +5,13 @@ religion = slavic
 technology_group = eastern
 capital = 1772 # Nitra
 government_rank = 1
+
+1440.1.1 = {
+	monarch = {
+		name = "Almos"
+		dynasty = "Mojmir"
+		adm = 5
+		dip = 4
+		mil = 4
+	}
+}

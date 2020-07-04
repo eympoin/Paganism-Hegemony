@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = eastern
 religion = slavic
-primary_culture = polish
+primary_culture = Mazovian
 capital = 257	# Warsaw
 
 

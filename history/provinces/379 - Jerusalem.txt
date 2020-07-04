@@ -1,7 +1,7 @@
 #379 - Judea
 
-owner = PLS
-controller = PLS
+owner = KOJ
+controller = KOJ
 culture = canaan
 religion = chalcedonian
 capital = "Al Quds"
@@ -20,6 +20,5 @@ discovered_by = western
 discovered_by = nomad_group
 discovered_by = indian
 discovered_by = east_african
-unrest = 5
 
 add_province_triggered_modifier = jerusalem_held

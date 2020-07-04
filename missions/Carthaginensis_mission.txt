@@ -302,10 +302,6 @@ hispania_unification_final{
 		position = 7
 		trigger = {
 			iberia_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
 				country_or_non_sovereign_subject_holds = CTH
 			}
 		}
@@ -486,8 +482,6 @@ expand_eastward{
 			}
 		}
 	}
-
-
 	the_eternal_city_CTH{
 		icon = mission_eastern_european_city
 		required_missions = { take_the_rich_cities_CTH } #None

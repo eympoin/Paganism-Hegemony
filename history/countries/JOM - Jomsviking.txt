@@ -1,0 +1,31 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = western
+unit_type = western
+primary_culture = swedish
+religion = norse_pagan_reformed
+capital = 43
+
+
+1443.6.20 = {
+	monarch = {
+		name = "Sigvaldi"
+		dynasty = "Strut-Haraldsson"
+		birth_date = 1409.10.5
+		adm = 4
+		dip = 2
+		mil = 5
+		leader = {	name = "Sigvaldi Strut-Haraldsson"   type = general	fire = 2	shock = 5	manuever = 3	siege = 1 }
+	}
+	queen = {
+		country_of_origin = SWE
+		name = "Katarina"
+		dynasty = "Gumsehuvud"
+		birth_date = 1418.1.1
+		death_date = 1451.1.1
+		female = yes
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

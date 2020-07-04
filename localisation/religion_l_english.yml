@@ -144,7 +144,7 @@
  berber_religion_desc:0 "Gods of the diverse berber tribes"
 
  romuva:0 "Romuva"
- berber_religion_desc:0 "Gods of the diverse baltic tribes"
+ romuva_religion_desc:0 "Gods of the diverse baltic tribes"
 
  celt:0 "Celtic"
  celt_religion_desc:0 "Gods of the diverse celtic tribes"
@@ -158,4 +158,7 @@
  armenian_rl:0 "Caucasian"
  armenian_rl_religion_desc:0 "Represents the diverse caucasian paganisms"
  arabian:0 "Arabian"
- arabian_rl_religion_desc:0 "Represents the diverse arabian paganisms"
+ arabian_religion_desc:0 "Represents the diverse arabian paganisms"
+ zalmoxianism:0 "Zalmoxianism"
+ Zalmoxianism_religion_desc:0 "The old religion of the Dacian named after their main god Zalmoxis"
+ Illyrian_religion_desc:0 "Gods of the diverse Illyrian tribes now only present in Albania"

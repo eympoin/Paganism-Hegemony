@@ -3,13 +3,13 @@
 owner = HDR
 controller = HDR
 culture = yemeni_culture
-religion = arabian
+religion = jewish
 capital = "As Shihr"
 trade_goods = incense
 hre = no
-base_tax = 2
-base_production = 2
-base_manpower = 2
+base_tax = 3
+base_production = 4
+base_manpower = 3
 is_city = yes
 add_core = HDR
 discovered_by = muslim

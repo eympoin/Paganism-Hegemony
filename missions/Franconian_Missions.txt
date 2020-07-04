@@ -1,5 +1,5 @@
 
-franconia_conquest_group = {
+franconia_conquest_group_1 = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -81,17 +81,17 @@ franconia_conquest_group = {
 				area = franconia_area
 				area = upper_franconia_area
 			}
-			NOT = { owner = { primary_culture = franconian } }
+			NOT = { owner = { primary_culture = east-francian} }
 		}
 		
 		trigger = {
 			franconia_area = {
 				type = all
-				owner = { primary_culture = franconian }
+				owner = { primary_culture = east-francian}
 			}
 			upper_franconia_area = {
 				type = all
-				owner = { primary_culture = franconian }
+				owner = { primary_culture = east-francian}
 			}
 		}
 		
@@ -348,7 +348,7 @@ franconia_conquest_group = {
 	}
 }
 
-franconia_conquest_group = {
+franconia_conquest_group_2 = {
 	slot = 1
 	generic = no
 	ai = yes

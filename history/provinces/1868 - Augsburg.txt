@@ -1,13 +1,13 @@
 # 1868 - Augsburg
-owner = RVA
-controller = RVA
-add_core = RVA
-culture = swabian
+owner = ALM
+controller = ALM
+add_core = ALM
+culture = alamann
 religion = germanic
-base_tax = 7
-base_production = 7
+base_tax = 3
+base_production = 2
 trade_goods = cloth	#fustians
-base_manpower = 4
+base_manpower = 2
 capital = "Augsburg"
 is_city = yes
 hre = no

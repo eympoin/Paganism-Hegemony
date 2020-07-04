@@ -1,4 +1,4 @@
-#Western Sm�land - Tioh�rads Lagsaga, ie: V�rend, Finnveden och Njudung
+
 
 add_core = SWE
 owner = SWE
@@ -10,7 +10,7 @@ base_tax = 1
 base_production = 1
 trade_goods = naval_supplies
 base_manpower = 1
-capital = "V�xj�"
+capital = "Vaxjo"
 is_city = yes
 discovered_by = western
 discovered_by = eastern

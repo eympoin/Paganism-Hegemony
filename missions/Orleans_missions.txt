@@ -3,40 +3,40 @@ Orleans_Unification_1 = {
 	generic = no
 	ai = yes
 	potential = {
+	OR = {
 		tag = FRO
+		was_tag = FRO
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 
 	Subjugate_The_Kingdom_of_Soissons_FRO = {
-		icon = mission_eastern_european_city
+		icon = mission_build_up_to_force_limit
 		required_missions = {  } #None
-		position = 6
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 182
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
 		trigger = {
-		picardy_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = FRO
-            }
-		flanders_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = FRO
-            }
-		wallonia_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = FRO
-            }
-		ile_de_france_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = FRO
-            }
+		182 = {
+								type = all
+								owned_by = ROOT
+						}
 
 		}
 		effect = {
-				add_country_modifier = {
-				name = "hegemonic_ambition"
-				duration = 3650 #10 years
-			}
+				create_union = FRV
 				add_legitimacy = 10
-
+				FRV = {
+					remove_historical_rival = FRO
+				}
 			}
 		}
 
@@ -48,43 +48,64 @@ Orleans_Unification_2 = {
 	generic = no
 	ai = yes
 	potential = {
+	OR = {
 		tag = FRO
+		was_tag = FRO
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	Subjugate_The_Kingdom_of_Reims_FRO = {
-		icon = mission_eastern_european_city
+		icon = mission_build_up_to_force_limit
 		required_missions = {  } #None
-		position = 6
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 186
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
 		trigger = {
-
-		champagne_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = FRO
-            }
-		owns_or_non_sovereign_subject_of = 187
-		owns_or_non_sovereign_subject_of = 94
-		owns_or_non_sovereign_subject_of = 93
-		owns_or_non_sovereign_subject_of = 1866
-		owns_or_non_sovereign_subject_of = 2974
-		owns_or_non_sovereign_subject_of = 1742
-
+		186 = {
+								type = all
+								owned_by = ROOT
+						}
 
 		}
 		effect = {
-				add_country_modifier = {
-				name = "hegemonic_ambition"
-				duration = 3650 #10 years
-			}
+				create_union = FRR
 				add_legitimacy = 10
-
+				FRR = {
+					remove_historical_rival = FRO
+				}
 			}
 		}
 		Regnum_Francorum_FRO = {
-		icon = mission_eastern_european_city
+		icon = mission_unite_home_region
 		required_missions = { Subjugate_The_Kingdom_of_Soissons_FRO Subjugate_The_Kingdom_of_Reims_FRO Subjugate_The_Kingdom_of_Paris_FRO }
-		position = 7
+		position = 2
 		trigger = {
-
+			FRV = {
+				OR = {
+				is_subject_of = FRO
+				exists = no
+				}
+			}
+			FRR = {
+				OR = {
+				is_subject_of = FRO
+				exists = no
+				}
+			}
+			FRP = {
+				OR = {
+				is_subject_of = FRO
+				exists = no
+				}
+			}
 		}
 		effect = {
 			add_adm_power = 100
@@ -94,7 +115,11 @@ Orleans_Unification_2 = {
 				name = "the_only_king"
 				duration = -1
 			}
-
+			184 = {
+				add_base_tax = 3
+				add_base_manpower = 3
+				add_base_production = 3
+			}
 			}
 		}
 }
@@ -104,34 +129,128 @@ Orleans_Unification_3 = {
 	generic = no
 	ai = yes
 	potential = {
+	OR = {
 		tag = FRO
+		was_tag = FRO
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 
 		Subjugate_The_Kingdom_of_Paris_FRO = {
-		icon = mission_eastern_european_city
+		icon = mission_build_up_to_force_limit
 		required_missions = {  } #None
-		position = 6
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 183
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
 		trigger = {
-		ile_de_france_area = {
+		183 = {
                 type = all
-                country_or_non_sovereign_subject_holds = FRO
-            }
-		normandy_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = FRO
+                owned_by = ROOT
             }
 
 		}
 		effect = {
-			add_country_modifier = {
-				name = "hegemonic_ambition"
-				duration = 3650 #10 years
-			}
+				create_union = FRP
 				add_legitimacy = 10
-
+				FRP = {
+					remove_historical_rival = FRO
+				}
 			}
 		}
 
 
+}
+
+
+Orleans_economy = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		tag = FRO
+		was_tag = FRO
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	chateau_de_la_loire = {
+		icon = mission_eastern_european_city
+		required_missions = {  } #None
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 177
+			}
+		}
+		trigger = {
+		estate_loyalty = {
+    estate = estate_nobles
+    loyalty = 60
+		}
+		treasury = 100
+
+		}
+		effect = {
+		add_treasury = -100
+		add_country_modifier = {
+			name = "chateau_loire"
+			duration = -1
+		}
+	}
+	}
+
+	saint_nazaire_ship_building = {
+		icon = mission_eastern_european_city
+		required_missions = {  } #None
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				province_id = 172
+			}
+		}
+		trigger = {
+			172  = {
+			has_building = shipyard
+			}
+
+		}
+		effect = {
+		add_country_modifier = {
+			name = "biggest_shipyard"
+			duration = -1
+		}
+	}
+	}
+	repopulate_the_lands = {
+	icon = mission_eastern_european_city
+	required_missions = {  } #None
+	position = 3
+	trigger = {
+	num_of_owned_provinces_with = {
+				value = 5
+				num_of_times_improved	= 7
+			}
+	}
+	effect = {
+
+	184 = {
+		add_base_tax = 3
+		add_base_production = 3
+		add_base_production = 3
+	}
+	add_country_modifier = {
+		name = "repopulation"
+		duration = -1
+	}
+	}
+	}
 }

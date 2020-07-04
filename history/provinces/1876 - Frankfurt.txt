@@ -1,16 +1,16 @@
 # 1876 - Frankfurt
 capital = "Frankfurt"
-culture = hessian
+culture = east-francian
 religion = germanic
 trade_goods = paper
-owner = HES
-base_tax = 7
-base_production = 7
-base_manpower = 4
+owner = FKN
+base_tax = 4
+base_production = 3
+base_manpower = 3
 is_city = yes
 fort_15th = yes
-add_core = HES
-controller = HES
+add_core = FKN
+controller = FKN
 hre = no
 discovered_by = eastern
 discovered_by = western
@@ -25,10 +25,3 @@ center_of_trade = 2
 		duration = -1
 	}
 }
-1556.4.19 = { religion = protestant }
-1685.1.1 = { base_tax = 10
-base_production = 10} # Stock Exchange established in Frankfurt
-1792.10.1 = { controller = FRA } # Occupied by French troops
-1792.12.3 = { controller = FRN } # Prussian troops take control
-1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
-1810.1.1 = { fort_15th = no fort_18th = yes }

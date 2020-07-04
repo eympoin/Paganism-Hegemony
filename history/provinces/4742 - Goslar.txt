@@ -1,0 +1,22 @@
+# 4742 - Goslar
+
+owner = SAX
+controller = SAX
+add_core = SAX
+culture = thuringian
+religion = germanic
+hre = no
+base_tax = 5
+base_production = 5
+trade_goods = iron #Rammelsberg
+base_manpower = 1
+capital = "Goslar"
+is_city = yes
+
+
+
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+

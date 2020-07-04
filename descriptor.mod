@@ -1,4 +1,4 @@
-version="0.1"
+version="0.7.5"
 tags={
 	"Alternative History"
 	"Events"
@@ -8,6 +8,6 @@ tags={
 	"Trade"
 }
 picture="thumbnail.png"
-name="Pagan"
-supported_version="1.29.6"
+name="Paganism Hegemony v0.7.5: Fate of Gallia"
+supported_version="1.30.3"
 remote_file_id="2017988677"

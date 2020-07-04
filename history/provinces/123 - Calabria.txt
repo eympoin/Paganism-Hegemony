@@ -12,7 +12,7 @@ base_manpower = 2
 capital = "Reggio di Calabria"
 is_city = yes 
 add_core = CTG
-
+add_local_autonomy = 50
 
 
 discovered_by = western

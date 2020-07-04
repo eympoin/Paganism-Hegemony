@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = syrian
+religion = olympoi
+add_accepted_culture = canaan
+technology_group = muslim
+capital = 405# Antioch
+elector=no
+government_rank = 1
+
+
+1397.1.1 = {
+	monarch = {
+		name = "Iason"
+		dynasty = "Syros"
+		birth_date = 1385.1.1
+		dip = 1
+		adm = 2
+		mil = 1
+	}
+}

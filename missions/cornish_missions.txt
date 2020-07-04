@@ -44,7 +44,7 @@ Cornish_Unification_1 = {
 		position = 2
 		provinces_to_highlight = {
 			OR = {
-				area = britanny_area
+				area = brittany_area
 			}
 			OR = {
 				is_city = no
@@ -55,7 +55,7 @@ Cornish_Unification_1 = {
 		trigger = {
 			brittany_area = {
 				type = all
-				add_permanent_claim = CRN
+				country_or_non_sovereign_subject_holds = CRN
 			}
 		}
 		effect = {

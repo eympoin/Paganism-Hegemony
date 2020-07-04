@@ -1,18 +1,18 @@
 #113 - Ferrara
 
-owner = FER
-controller = FER
+owner = AQU
+controller = AQU
 culture = aquileian 
 religion = jupiterian 
 hre = no 
 base_tax = 6 
-base_production = 6 
+base_production = 5
 trade_goods = salt
-base_manpower = 2 
+base_manpower = 3
 capital = "Ferrara" 
 is_city = yes
 fort_15th = yes
-add_core = FER
+add_core = AQU
 
 
 

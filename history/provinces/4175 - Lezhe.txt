@@ -3,13 +3,13 @@
 owner = ALB
 controller = ALB
 culture = albanian
-religion = olympoi
+religion = Illyrian
 capital = "Lezh�"
 trade_goods = wool
 hre = yes
-base_tax = 2
-base_production = 2
-base_manpower = 2
+base_tax = 4
+base_production = 4
+base_manpower = 3
 is_city = yes
 add_core = ALB
 discovered_by = KAZ
@@ -23,12 +23,3 @@ discovered_by = eastern
 discovered_by = western
 
 
-
-1478.6.16 = { owner = TUR controller = TUR }
-1520.1.1 = { religion = sunni } # Predominant religion under Turkish rule
-1555.1.1 = { unrest = 5 } # General discontent against the Janissaries' dominance
-1556.1.1 = { unrest = 0  }
-1687.1.1 = { unrest = 6 } # Christian counteroffensive against the Ottomans
-1690.1.1 = { unrest = 0 }
-1797.1.1 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } # Suliot uprising
-1803.1.1 = { revolt = {} controller = TUR }

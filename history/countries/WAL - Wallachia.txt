@@ -1,8 +1,8 @@
 government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
-primary_culture = romanian
-religion = tengri_pagan_reformed
+primary_culture = daco-romanian 
+religion = Zalmoxianism
 technology_group = eastern
 capital = 161 # Tîrgoviste
 

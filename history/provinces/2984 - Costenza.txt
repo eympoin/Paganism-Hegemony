@@ -13,7 +13,7 @@ capital = "Cosenza"
 is_city = yes 
 add_core = CTG
 add_core = SLR
-
+add_local_autonomy = 50
 
 
 discovered_by = western

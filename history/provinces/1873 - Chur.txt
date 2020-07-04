@@ -1,8 +1,8 @@
 #1873 - Chur
 
-owner = RVA
-controller = RVA
-culture = swiss
+owner = ALM
+controller = ALM
+culture = alamann
 religion = germanic
 capital = "Chur"
 trade_goods = livestock
@@ -13,7 +13,7 @@ base_manpower = 1
 is_city = yes
 estate = estate_church
 fort_15th = yes
-add_core = RVA
+add_core = ALM
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
