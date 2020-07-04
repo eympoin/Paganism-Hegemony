@@ -22,10 +22,8 @@ Hejaz_Unification_1 = {
 				name = "thriving_arms_industry"
 				duration = 1825
 			}
-		tabuk_area = {
-                type = all
-                add_permanent_claim = HED
-            }
+		add_permanent_claim = 4269
+		add_permanent_claim = 2328
 
 		
 

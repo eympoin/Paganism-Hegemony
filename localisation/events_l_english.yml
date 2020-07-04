@@ -53,8 +53,26 @@
  hre_event.8.e:0 "Take everything for us"
  hre_event.8.f:0 "Integrate Upper Egypt in the Empire"
  hre_event.8.d:0 "The fate of Egypt"
+
+ flavor_hed.1.t:0 "War Of Unification "
+ flavor_hed.1.d:0 "The sunni faith prevail"
+ flavor_hed.1.a:0 "War"
+ flavor_hed.3.t:0 "Muslim Civil War"
+ flavor_hed.3.d:0 ""
+ flavor_hed.3.b:0 "Bad times for Arab people"
+
+ flavor_mda.1.t:0 "Muslim Civil War"
+ flavor_mda.1.d:0 ""
+ flavor_mda.1.b:0 "Bad times for Arab people"
+
+ flavor_hed.4.t:0 "End of Civil War"
+ flavor_hed.4.d:0 ""
+ flavor_hed.4.b:0 "War is over"
   #Persian CW
  flavor_per_cw.1.t:0 "The Persian Civil War"
  flavor_per_cw.1.d:0 "In recent years the Satrapies have gotten more and more unruly, once mere governors of states in the name of the Shahanshah, they now claim to be the true rulers of their lands. But unruly as they are, they can still be brought back into the fold by indebting them to the court or by curbing their ambitions and showing them who the true ruler of these lands is."
  flavor_per_cw.1.a:0 "Dire times are ahead"
  per_cw_1:0 "Disloyal Satrapies"
+ flavor_hed.1.t:0 "War Of Unification "
+ flavor_hed.1.d:0 "The sunni faith prevail"
+ flavor_hed.1.a:0 "War"

@@ -34,6 +34,7 @@ SPQ	= "countries/SPQR.txt"
 LOM	= "countries/Lombards.txt"
 SLR	= "countries/Salerno.txt"
 TRN	= "countries/Taras.txt"
+BRD = "countries/Brundisium.txt"
 
 CTG = "countries/Carthage.txt"
 MAU = "countries/Mauretania.txt"

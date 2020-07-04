@@ -1,0 +1,155 @@
+#The Muslim Civil War
+namespace = flavor_hed
+namespace = flavor_mda
+country_event = {
+	id = flavor_hed.1
+	title = "flavor_hed.1.t"
+	desc = "flavor_hed.1.d"
+	picture = SIEGE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+	OR{
+			tag = HED
+			
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+
+	option = {
+		name = "flavor_hed.1.a"
+		ai_chance = {
+			factor = 90
+		}
+			HED = {
+			declare_war_with_cb = {
+				who = MDA
+				casus_belli = cb_annex
+				}
+			}
+		}
+}
+
+country_event = {
+	id = flavor_hed.2
+	title = "flavor_hed.2.t"
+	desc = "flavor_hed.2.d"
+	picture = SIEGE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MDA
+		MDA = {
+			war_with = HED
+		}
+		NOT = {war_score = -25}
+	}
+		mean_time_to_happen = {
+		months = 1
+	}
+
+		option = {
+		name = "flavor_hed.2.b"
+		trigger = { tag = MDA }
+		ai_chance = {
+			factor = 10
+		}
+		2330 = {
+			cede_province = HED
+		}
+		2329 = {
+			cede_province = HED
+		}
+		384 = {
+			cede_province = HED
+		}
+
+		white_peace = HED
+	}
+
+}
+
+#Muslim civil war Hejaz
+country_event = {
+	id = flavor_hed.3
+	title = "flavor_hed.3.t"
+	desc = "flavor_hed.3.d"
+	picture = GENERALS_DISCUSSING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HED
+		is_year = 1444
+		
+	}
+
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = { 
+		name = flavor_hed.3.b
+		add_prestige = -25
+		add_stability = -1
+	}
+}
+
+#Muslim civil war medina
+country_event = {
+	id = flavor_mda.1
+	title = "flavor_mda.1.t"
+	desc = "flavor_mda.1.d"
+	picture = GENERALS_DISCUSSING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = MDA
+		is_year = 1444
+		
+	}
+
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = { 
+		name = flavor_mda.1.b
+		add_prestige = -25
+		add_stability = -1
+		
+	}
+}
+
+#End Civil war 
+country_event = {
+	id = flavor_hed.4
+	title = "flavor_hed.4.t"
+	desc = "flavor_hed.4.d"
+	picture = GENERALS_DISCUSSING_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HED
+		NOT = {exists = MDA}  
+		
+	}
+
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = { 
+		name = flavor_hed.4.b
+		add_prestige = 10 
+		add_stability = 1
+	}
+}
