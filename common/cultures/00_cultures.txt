@@ -641,6 +641,48 @@ scandinavian = { #Nordic
 			"Gylta" "Lillie" "Puke" "Slatte"  "Stiernkors" "Fincke" "Dufva" "Cronstedt"
 		}
 	}
+
+	baltic-norse = {
+		primary = JOM
+
+
+		male_names = {
+			Christian Christoph Oskar Adolf August Goran Sigismund Alfred Axel Edvard Gottfrid
+			Jakob Ludvig Mikael Olof Patrik Rangvald Rettil Sigvard Simon Sture Svante
+			Tomas Ulrik
+			Albrikt Albert Alf Algot Anders Arne Arnfast Astrad
+			Bengt Benedict Bertil Birger Bjorn Bo Borkvard Brage Bror
+			Dag Dan Dyre Egil Einar Erik Eskild Faste Fredrik Frederick Filip
+			Folke Georg Greger Gregory Gunnar Gustav Halsten Hans Harald Harold
+			Helge Henrik Hjalmar Holmger Hokan Inge Ingemar Ingvar
+			Edward Johan John Karl Klas Knut Lars Magnus
+			Markus Marcus
+			Mats Matthew Nils Nicholas Niklas Odd Olaf Peter Ragnar Rolf
+			Ragnvald Sorkver Sigurd Starkad Sten Styrbjorn Sune Sven
+			Sverker Solve Thomas Tjudmund Toke Torbjorn Tord Torbrand Torkel Torolf
+			Thorolf Torsten Toste Totil Tyke Ulf Valdemar Oke Asten
+		}
+		female_names = {
+			Christina Ulrika Eleonora Hedwig
+			Anna Asta Astrid Beata Birgitta Brigid Bothild Cecilia Elin
+			Elisabet Gunhild Helena Holmfrid Iliana Inga
+			Ingeborg Ingegerd Ingfrid Ingrid Karin Katarina Kristina Linda
+			Margareta M�rta Martha Ragnhild Sara Sarah Sigrid Sofia
+			Sophia Thordis Ulvhilde �sa
+		}
+		dynasty_names = {
+			"Bonde" "Vasa" "Tre Rosor" "Oxenstierna" "Sparre" "Sture" "Tott" "Trolle" "Bielke" "Brahe"
+			"Horn" "Ribbing" "Skytte" "Ban�r" "Fleming" "Gyllenstierna" "de la Gardie" "Leijonhufvud"
+			"Natt och Dag" "Grip" "Stenbock" "Bure" "Drake" "Hand" "Burenskold"
+			"B�llja" "Cruus" "Geete" "Grubbenhielm" "Soop" "Ekeblad" "Svinhufvud"
+			"H�rd" "Forstena" "Kurck" "Eka" "Hjort" "J�gerhorn" "Lilliehook"
+			"Porse" "Palme" Gumsehuvud
+			"Boot" "Ulv" "Sjoblad" "Loma" "Posse" "Rosenstrole" "Thott" "Bagge"
+			"Bese" "Godda" "Hatt" "Marsvin" "Oxhufvud" "Stake" "Tre Rutor" "Hostesko"
+			"Ulfsax" "Tre Sjablad" "Bratt" "Munk" "Eketro" "Gera"
+			"Gylta" "Lillie" "Puke" "Slatte"  "Stiernkors" "Fincke" "Dufva" "Cronstedt"
+		}
+	}
 	danish = {
 		primary = DAN
 		male_names = {

@@ -2,7 +2,7 @@
 
 owner = JOM
 controller = JOM
-culture = swedish
+culture = baltic-norse
 religion = norse_pagan_reformed
 capital = "Memel"
 trade_goods = livestock

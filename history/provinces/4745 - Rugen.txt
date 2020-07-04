@@ -3,7 +3,7 @@
 owner = JOM
 controller = JOM
 add_core = JOM
-culture = swedish
+culture = baltic-norse
 religion = norse_pagan_reformed
 hre = no
 base_tax = 2

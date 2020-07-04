@@ -1,7 +1,7 @@
 #4790 - Lycia
 
-owner = CAA
-controller = CAA
+owner = LYC
+controller = LYC
 culture = greek
 religion = olympoi
 capital = "Xanthos"
@@ -11,7 +11,7 @@ base_tax = 4
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = CAA
+add_core = LYC
 
 
 

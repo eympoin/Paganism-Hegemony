@@ -1,7 +1,7 @@
 #2298 - Tekke
 
-owner = CAA
-controller = CAA
+owner = PAM
+controller = PAM
 culture = greek
 religion = olympoi
 capital = "Adalia"
@@ -11,7 +11,7 @@ base_tax = 4
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = CAA
+add_core = PAM
 
 
 

@@ -1,19 +1,18 @@
 government = monarchy
 add_government_reform = autocracy_reform
-primary_culture = greek
+primary_culture = pontic_greek
 religion = olympoi
 technology_group = eastern
-capital = 318 
-fixed_capital = 318 
+capital = 325
 elector=no
 government_rank = 1
-1390.1.1 = {
+1435.1.1 = {
 	monarch = {
-		name = "Apollonia"
-		female = yes
-		dynasty = "Notaras"
+		name = "Nikolaos III"
+		dynasty = "Paphlagon"
+		birth_date = 1410.1.1
 		adm = 4
-		dip = 3
-		mil = 2
+		dip = 4
+		mil = 4
 	}
 }

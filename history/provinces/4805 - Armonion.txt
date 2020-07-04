@@ -1,7 +1,7 @@
 #4311 - Karahisar
 
-owner = PHR
-controller = PHR
+owner = PSD
+controller = PSD
 culture = anatolian
 religion = olympoi
 capital = "Karahisar"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = PHR
+add_core = PSD
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

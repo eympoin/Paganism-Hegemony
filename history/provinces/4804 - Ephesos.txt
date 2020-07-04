@@ -1,7 +1,7 @@
 #318 - Sugla
 
-owner = LYD
-controller = LYD
+owner = ION
+controller = ION
 culture = greek
 religion = olympoi
 capital = "Ephesos"
@@ -11,9 +11,7 @@ base_tax = 7
 base_production = 7
 base_manpower = 6
 is_city = yes
-add_core = LYD
-add_core = KNI
-add_core = AYD
+add_core = ION
 fort_15th = yes
 discovered_by = western
 discovered_by = eastern

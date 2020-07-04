@@ -4,8 +4,8 @@ owner = JOM
 controller = JOM
 add_core = JOM
 add_core = KUR
-culture = swedish
-religion = norse_pagan_reformed
+culture = latvian
+religion = romuva
 hre = no
 base_tax = 3
 base_production = 3
@@ -14,7 +14,7 @@ base_manpower = 1
 capital = "Goldingen"
 estate = estate_church #Pilten
 is_city = yes
-
+add_local_autonomy = 50
 
 
 discovered_by = western

@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = anatolian
+religion = olympoi
+technology_group = eastern
+capital = 326
+fixed_capital = 326
+
+1425.7.21 = {
+	monarch = {
+		name = "Nikomedes"
+		dynasty = "Galaton"
+		birth_date = 1392.12.18
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}
