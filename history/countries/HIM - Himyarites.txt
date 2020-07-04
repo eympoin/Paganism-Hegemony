@@ -1,0 +1,60 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = muslim
+religion = jewish
+primary_culture = yemeni_culture
+capital = 390	# Sana'a
+
+
+1397.1.1 = {
+	monarch = {
+		name = "Abu Karib III"
+		dynasty = "As'ad"
+		adm = 2
+		dip = 1
+		mil = 3
+	}
+	add_piety = -0.05
+}
+
+1424.1.1 = {
+	monarch = {
+		name = "Hasan II"
+		dynasty = "As'ad"
+		adm = 0
+		dip = 2
+		mil = 2
+	}
+}
+
+1426.1.1 = {
+	monarch = {
+		name = "Barakât I"
+		dynasty = "As'ad"
+		adm = 1
+		dip = 4
+		mil = 2
+	}
+}
+
+1441.1.1 = {
+	monarch = {
+		name = "'Ali III"
+		dynasty = "As'ad"
+		adm = 3
+		dip = 1
+		mil = 0
+	}
+}
+
+1443.1.1 = {
+	monarch = {
+		name = "Abu'l Qasim"
+		dynasty = "As'ad"
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}
+

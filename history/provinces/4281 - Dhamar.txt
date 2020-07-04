@@ -1,9 +1,9 @@
 #4281 - Dhamar
 
-owner = ADE #Tahirids
-controller = ADE #Tahirids
+owner = Him #Tahirids
+controller = HIM #Tahirids
 culture = yemeni_culture
-religion = arabian
+religion = jewish
 capital = "Dhamar"
 trade_goods = livestock
 hre = no
@@ -11,7 +11,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 3
 is_city = yes
-add_core = RAS
+add_core = HIM
 add_core = ADE #Tahirids
 add_core = YEM
 discovered_by = muslim

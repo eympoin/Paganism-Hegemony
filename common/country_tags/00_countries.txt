@@ -137,6 +137,8 @@ SAM = "countries/Samogitians.txt"
 PRT = "countries/Pruthenians.txt"
 LAT = "countries/Latgalians.txt"
 
+
+HIM = "countries/Himyarites.txt"
 #Scandinavia
 SWE	= "countries/Sweden.txt"
 DAN	= "countries/Denmark.txt"

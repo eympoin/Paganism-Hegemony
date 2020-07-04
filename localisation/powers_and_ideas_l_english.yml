@@ -7443,3 +7443,24 @@
    adopt_feudal_system_desc:0 "Adopt Feudal System"
    implement_hogting_desc:0 "Implement the Högting"
    valhalla_await_desc:0 "Valhalla Awaits"
+
+
+   HIM_ideas:0 "Himyarites ideas"
+   HIM_ideas_start:0 "Himyarites traditions"
+   HIM_ideas_ambition:0 "Himyarites ambitions"
+
+   We_need_money:0 "We need money"
+   Protect_our_religion:0 "Protect our religion"
+   one_culture_one_country:0 "one_culture_one_country"
+   jewish_identity:0 "jewish identity"
+   administration:0 "administration"
+   Science:0 "Science"
+   nationalism:0 "nationalism"
+
+   We_need_money_desc:0 "We need money"
+   Protect_our_religion_desc:0 "Protect our religion"
+   one_culture_one_country_desc:0 "one_culture_one_country"
+   jewish_identity_desc:0 "jewish identity"
+   administration_desc:0 "administration"
+   Science_desc:0 "Science"
+   nationalism_desc:0 "nationalism"

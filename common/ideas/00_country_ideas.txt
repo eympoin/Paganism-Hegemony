@@ -3,6 +3,48 @@
 # If adding new groups or ideas, make sure they are unique.
 
 ### Nation specific idea groups
+HIM_ideas = {
+	start = {
+		global_trade_power = 0.1
+		hostile_attrition = 1
+	}
+
+	bonus = {
+		global_trade_goods_size_modifier = 0.1
+	}
+
+	trigger = {
+		tag = HIM
+	}
+	free = yes
+
+	HIM_Protect_our_religion = {
+		land_morale = 0.1
+
+	}
+
+	HIM_We_need_money = {
+	global_tax_modifier = 0.2
+	development_cost = -0.05
+	}
+
+	HIM_one_culture_one_country = {
+		discipline = 0.05
+	}
+	HIM_jewish_identity = {
+		global_missionary_strength = 0.02
+	}
+	HIM_administration = {
+		global_institution_spread = 0.12
+	}
+
+	HIM_Science = {
+		idea_cost = -0.1
+	}
+	HIM_nationalism = {
+		culture_conversion_cost = -0.2
+	}
+}
 
 JOM_ideas = {
 	start = {
