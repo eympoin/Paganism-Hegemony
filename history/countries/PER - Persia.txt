@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = persian_empire_decen
 primary_culture = persian
 religion = zoroastrian
 technology_group = muslim

@@ -4184,6 +4184,11 @@ per_isfahan_maidan = {
 	local_development_cost = -0.1
 }
 
+per_cw_1 = {
+	stability_cost_modifier = 0.25
+	global_unrest = 2
+}
+
 #Mewar
 mer_vijaya_sthambha = {
 	prestige = 1

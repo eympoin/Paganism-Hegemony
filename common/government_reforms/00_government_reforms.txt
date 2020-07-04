@@ -1997,6 +1997,79 @@ indian_sultanate_legacy = {
 	}
 }
 
+persian_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	legacy_government = yes
+	allow_normal_conversion = no
+
+	valid_for_new_country = no
+	allow_convert = no
+
+	maintain_dynasty = yes
+
+	allow_vassal_war = yes
+	allow_vassal_alliance = yes
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	nation_designer_trigger = {
+		culture_group = iranian
+		technology_group = muslim
+		capital_scope = { region = persia_region }
+		owns = 1020
+	}
+
+    fixed_rank = 3
+	monarchy = yes
+	modifiers = {
+		governing_capacity = 100
+		diplomats = 1
+		envoy_travel_time = -0.25
+		max_absolutism = 5
+	}
+	conditional = {
+		allow = { has_dlc = "Cradle of Civilization" }
+		government_abilities = {
+			iqta_mechanic
+		}
+	}
+	ai = {
+		factor = 5
+	}
+}
+
+satrapdom_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	legacy_government = yes
+	allow_normal_conversion = no
+
+	valid_for_new_country = no
+	allow_convert = no
+
+	maintain_dynasty = yes
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	nation_designer_trigger = {
+		culture_group = iranian
+		technology_group = muslim
+		capital_scope = { region = persia_region }
+	}
+
+    fixed_rank = 1
+	monarchy = yes
+	modifiers = {
+		burghers_loyalty_modifier = 0.1
+		country_admin_power = 1
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+
 shogunate_legacy = {
 	# government mechanics flags go here
 	icon = "crown"
