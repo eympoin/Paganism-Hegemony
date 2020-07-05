@@ -3,7 +3,7 @@
 owner = LEG
 controller = LEG
 culture = al_misr_arabic
-religion = olympoi
+religion = ancient_egyptian_rl
 capital = "Al Qahira"
 trade_goods = cloth
 hre = yes

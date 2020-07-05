@@ -1,10 +1,9 @@
 government = republic
 add_government_reform = free_city
-primary_culture = syrian
+primary_culture = albanian
 religion = olympoi
-add_accepted_culture = canaan
-technology_group = muslim
-capital = 382
+technology_group = eastern
+capital = 4174
 elector=no
 government_rank = 1
 

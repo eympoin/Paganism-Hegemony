@@ -2,14 +2,14 @@
 
 owner = LEG
 controller = LEG
-culture = al_misr_arabic
-religion = ancient_egyptian_rl
+culture = ptolemaic
+religion = olympoi
 capital = "Suweis"
 trade_goods = livestock
 hre = yes
-base_tax = 2
-base_production = 2
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 4
 is_city = yes
 add_core = LEG
 discovered_by = muslim

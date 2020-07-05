@@ -2,7 +2,7 @@
 
 owner = PER
 controller = PER
-culture = luri
+culture = persian
 religion = zoroastrian
 capital = "Hamedan"
 trade_goods = cloth

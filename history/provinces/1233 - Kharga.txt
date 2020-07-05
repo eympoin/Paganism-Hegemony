@@ -3,6 +3,7 @@
 owner = UEG
 controller = UEG #Local Badawin in control
 add_core = UEG
+add_core = ABY
 culture = al_misr_arabic
 religion = ancient_egyptian_rl
 capital = "Kharga"

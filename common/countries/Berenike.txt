@@ -1,0 +1,79 @@
+graphical_culture = muslimgfx
+
+color = { 249 196 255 }
+
+revolutionary_colors = { 5  0  1 }
+
+historical_idea_groups = {
+	maritime_ideas
+	defensive_ideas
+	religious_ideas
+	trade_ideas
+	offensive_ideas
+	administrative_ideas
+	economic_ideas
+	expansion_ideas
+}
+
+historical_units = {
+	mamluk_archer
+	mamluk_cavalry_charge
+	mamluk_duel
+	mamluk_musket_charge
+	muslim_mass_infantry
+	muslim_dragoon
+	ali_bey_reformed_infantry
+}
+
+monarch_names = {
+	"Seka " = 40
+	"Khayu" = 40
+	"Tiu #0" = 40
+	"Thesh#0" = 40
+	"Mekh #0" = 20
+	"Djer #1" = 20
+	"Masaharta #0" = 20
+	"Menkheperre #0" = 20
+	"Neferkara #0" = 20
+	"Thutmose #0" = 20
+	"Jaqmaq #0" = 20
+	"Akhenaten #0" = 20
+	"Ramesses" = 40
+	"Piankh #2" = 10
+	"Narmer #2" = 10
+	"Awybre Hor" = 10
+	"Amenhotep #1" = 10
+	"Ahmose #1" = 10
+	"Tutankhamun #1" = 10
+	"Sneferka #1" = 10
+	"Senedj #1" = 10
+
+	"Hatshepsut #0" = -10
+	"Nefertiti #0" = -1
+	"Sobekkare #0" = -1
+}
+
+leader_names = {
+	Seka
+	Khayu
+	Baibars
+	"Hor-Aha"
+	Tiu
+	Den
+	Djet
+	Herihor
+	Thutmose
+	Zangi
+}
+
+ship_names = {
+	"Zaher Barqooq" "Farag Ben Barqooq"
+	"Ben Barqooq" "Muyaid Sheikh" "Ahmen Muyaid"
+	"Zaher Tatar" "Nasser Muhamed" "Ashraf Barsbay"
+	"Aziz Gamal" "Nahr an-Nil" "Al-Farafirah"
+	"Ad-D�khilah" "Al-Kharijah" "Al-Ali" "Al-Bahriyah"
+	Rahman Rahim Malik Quddus Salam Mu'min Muhaymin
+	Aziz Jabbar Mutakabbir Khaliq Bari Musawwir
+	Ghaffar Qahhar Wahhab Razzaq Fattah Alim Qabid
+	Basit Khafid Rafi Mu'izz Mudhill Sami Basir Hakam Adl
+}

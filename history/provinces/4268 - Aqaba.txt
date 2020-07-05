@@ -3,7 +3,7 @@
 owner = GAR
 controller = GAR
 culture = bedouin_arabic
-religion = arabian
+religion = olympoi
 capital = "Aqaba"
 trade_goods = fish
 hre = yes

@@ -785,7 +785,12 @@ ancient_egyptian_ideas = {
 		discipline = 0.05
 		}
 	trigger = {
+	OR = {
 		tag = UEG
+		tag = THB
+		tag = FAY
+		tag = ABY
+		}
 	}
 	free = yes
 

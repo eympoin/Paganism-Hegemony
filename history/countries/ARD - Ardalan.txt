@@ -1,12 +1,10 @@
 government = monarchy
-add_government_reform = iqta
+add_government_reform = feudalism_reform
 government_rank = 1
 primary_culture = kurdish
-religion = zoroastrian
+religion = mesopotamian
 technology_group = muslim
-capital = 2211 # Ardalan
-fixed_capital = 2211 # Cannot move capital away from this province & no power cost to move to it
-religious_school = shafii_school
+capital = 418
 
 1399.1.1 = {
 	monarch = {
