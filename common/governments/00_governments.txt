@@ -32,6 +32,7 @@ monarchy = {
 				austrian_archduchy_reform
 				persian_empire_decen
 				satrapdom
+				persian_empire_cen
 			}
 		}
 		hereditary_vs_nobility = {
@@ -151,7 +152,7 @@ monarchy = {
 		persian_empire_decen
 		satrapdom
 	}
-	
+
 	# Dictatorships etc
 	exclusive_reforms = {
 		military_dictatorship_reform
@@ -174,6 +175,9 @@ monarchy = {
 		prussian_monarchy
 		elective_monarchy
 		celestial_empire
+		satrapdom
+		persian_empire_cen
+		persian_empire_decen
 	}
 
 	#Flavor
