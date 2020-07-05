@@ -1344,9 +1344,16 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		
+		trigger = { 
+				SIS = { had_country_flag = sis_mihrabanids_d }
+		}
+		name = flavor_per_cw.5a.b
+	}
+	option = {
+		trigger = { 
+				NOT = { SIS = { had_country_flag = sis_mihrabanids_d } }
+		}
 		name = flavor_per_cw.5a.a
-		
 	}
 }
 
@@ -1360,9 +1367,16 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-
-		name = flavor_per_cw.5a.a
-		
+		trigger = { 
+				SIS = { had_country_flag = sis_mihrabanids_d }
+		}
+		name = flavor_per_cw.5b.b
+	}
+	option = {
+		trigger = { 
+				NOT = { SIS = { had_country_flag = sis_mihrabanids_d } }
+		}
+		name = flavor_per_cw.5b.a
 	}
 }
 
@@ -1380,12 +1394,9 @@ country_event {
 		tag = PER
 		exists = SIS
 		exists = AFG
-		NOT = {
-			check_variable = {
-				which = SIS_loy
-				value = 5
-			}
-		}
+		AFG = { owns = 447 }
+		AFG = { owns = 449 }
+		AFG = { owns = 2225 }
 		is_year = 1449
 	}
 	
@@ -1404,6 +1415,7 @@ country_event {
 		2224 = { remove_core = AFG }
 		2229 = { remove_core = AFG }
 		AFG = { create_alliance = ABA }
+		add_truce = AFG
 		immediate = {
 			change_variable = {
 				which = SIS_loy
@@ -1426,6 +1438,7 @@ country_event {
 		2229 = { cede_province = AFG }
 		2228 = { cede_province = AFG }
 		2224 = { remove_core = AFG }
+		add_truce = AFG
 		immediate = {
 			change_variable = {
 				which = SIS_loy
@@ -1448,6 +1461,7 @@ country_event {
 		449 = { remove_core = SIS }
 		2225 = { remove_core = SIS }
 		447 = { remove_core = SIS }
+		add_truce = AFG
 		immediate = {
 			change_variable = {
 				which = SIS_loy
@@ -1474,6 +1488,623 @@ country_event {
 		2229 = { cede_province = AFG }
 		2228 = { cede_province = AFG }
 		2224 = { cede_province = AFG }
+		add_truce = AFG
 	}
 
+}
+
+#The Parsite revendications
+country_event = {
+	id = flavor_per_cw.7
+	title = flavor_per_cw.7.t
+	desc = flavor_per_cw.7.d
+	picture = MILITARY_CAMP_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PER
+		exists = FRS
+		is_year = 1446
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {#It is a perfect occasion to reclaim the elymaite satrap
+		name = flavor_per_cw.7.a
+		ARM = { create_guarantee = ELM }
+		LRI = { create_alliance = ELM }
+		BAB = { create_guarantee = ELM }
+		4331 = { cede_province = FRS }
+		430 = { cede_province = FRS }
+		declare_war_with_cb = {
+			who = ELM
+			casus_belli = cb_vassalize_mission
+		}
+		immediate = {
+			change_variable = {
+				which = FRS_loy
+				value = 1
+				}
+		}
+		
+	}
+	option = {#Pressure them
+		name = flavor_per_cw.7.b
+		add_dip_power = -100
+		add_years_of_income = -0.3
+		add_prestige = 10
+		4331 = { cede_province = FRS }
+		430 = { cede_province = FRS }
+		add_truce = ELM
+		reverse_add_opinion = {
+			who = FRS
+			modifier = returned_core_to_me
+		}
+		ABA = { create_alliance = ELM }
+		immediate = {
+			change_variable = {
+				which = FRS_loy
+				value = 1
+				}
+		}
+	}
+	option = {#Rebuke them
+		name = flavor_per_cw.7.c
+		add_prestige = -10
+		reverse_add_opinion = {
+			who = FRS
+			modifier = opinion_refused_send_help
+		}
+		reverse_add_opinion = {
+			who = ARM
+			modifier = opinion_more_eased_tension
+		}
+		reverse_add_opinion = {
+			who = ELM
+			modifier = opinion_more_eased_tension
+		}
+	}
+}
+
+#The reclamation of Elymais
+country_event = {
+	id = flavor_per_cw.71
+	title = flavor_per_cw.71.t
+	desc = flavor_per_cw.71.d
+	picture = SIEGE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PER
+		PER = {
+			war_with = ELM
+			war_with = ARM
+		}
+		OR = { 
+			war_score = 50
+			NOT = { war_score = -50 }
+		}
+		NOT = { is_year = 1455 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = flavor_per_cw.71.a
+		trigger = { war_score = 50 }
+		white_peace = ELM
+		add_prestige = 10
+		add_treasury = 100
+		vassalize = ELM
+		add_truce = ARM
+		add_truce = BAB
+		add_truce = LRI
+		ELM = {
+			define_ruler = {
+					name = "Chesek"
+					dynasty = "Khuzinid"
+					adm = 4
+					dip = 2
+					mil = 2
+					age = 40
+					claim = 80
+				}
+		}
+		ELM = {
+			add_government_reform = satrapdom_reform
+		}
+		immediate = {
+			set_variable = {
+				which = ELM_loy
+				value = 5
+			}
+		}
+	}
+	option = {
+		name = flavor_per_cw.71.b
+		trigger = { NOT = { war_score = -50 } }
+		white_peace = ELM
+		add_prestige = -10
+		add_legitimacy = -10
+		FRS = { grant_independence = yes }
+		add_truce = ARM
+		add_truce = BAB
+		add_truce = LRI
+		add_truce = FRS
+		add_truce = ELM
+	}
+}
+
+#The Southern rivalry
+country_event = {
+	id = flavor_per_cw.8
+	title = flavor_per_cw.8.t
+	desc = flavor_per_cw.8.d
+	picture = SIEGE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PER
+		is_year = 1449
+		exists = FRS
+		exists = KRM
+		FRS = { is_subject_of = PER }
+		
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {#Mediate the conflict and find an arrangement
+		name = flavor_per_cw.8.a
+		add_dip_power = -300
+		add_years_of_income = -1
+		add_legitimacy = 10
+		add_prestige = 10
+		add_stability = 1
+		431 = { cede_province = FRS }
+		4330 = [ cede_province = KRM }
+		reverse_add_opinion = {
+			who = FRS
+			modifier = fair_dealing
+		}
+		reverse_add_opinion = {
+			who = KRM
+			modifier = fair_dealing
+		}
+		immediate = {
+			change_variable = {
+				which = FRS_loy
+				value = 1
+				}
+		}
+		immediate = {
+			change_variable = {
+				which = KRM_loy
+				value = 1
+				}
+		}
+	}
+	option = {#Pars is right
+		name = flavor_per_cw.8.b
+		431 = { cede_province = FRS }
+		4327 = { cede_province = FRS }
+		add_prestige = -20
+		add_dip_power = -25
+		reverse_add_opinion = {
+			who = FRS
+			modifier = fair_dealing
+		}
+		reverse_remove_opinion = {
+			who = KRM
+			modifier = fair_dealing
+		}
+		immediate = {
+			change_variable = {
+				which = FRS_loy
+				value = 2
+				}
+		}
+	}
+	option = {#Kirman is right
+		name = flavor_per_cw.8.c
+		2223 = { cede_province = KRM }
+		2219 = { cede_province = KRM }
+		add_prestige = -20
+		add_dip_power = -25
+		reverse_add_opinion = {
+			who = KRM
+			modifier = fair_dealing
+		}
+		reverse_remove_opinion = {
+			who = FRS
+			modifier = fair_dealing
+		}
+		immediate = {
+			change_variable = {
+				which = KRM_loy
+				value = 2
+				}
+		}
+	}
+	option = {#Let them fight it out
+		name = flavor_per_cw.8.e
+		add_mil_power = 100
+		add_legitimacy = -10
+		add_prestige = -10
+		random_list = {
+			80 = { 
+				4345 = { cede_province = FRS }
+				2220 = { cede_province = FRS }
+				431 = { cede_province = FRS }
+				4327 = { cede_province = FRS }
+				FRS = { set_country_flag = support_ABA }
+				
+			}
+			20 = {
+				2223 = { cede_province = KRM }
+				4330 = { cede_province = KRM }
+				2219 = { cede_province = KRM }
+			}
+		}
+	}
+}
+
+#An outraging demand
+country_event = {
+	id = flavor_per_cw.9
+	title = flavor_per_cw.9.t
+	desc = flavor_per_cw.9.d
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PER
+		is_year = 1452
+		exists = FRS
+		FRS = { is_subject_of = PER }
+		FRS = { NOT = { has_country_flag = support_ABA } }
+		
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {#Grant them exclusive rights
+		name = flavor_per_cw.9.a
+		add_prestige = -10
+		add_adm_power = -50
+		433 = { add_local_autonomy = 50 }
+		433 = { add_nationalism = 10 }
+		4171 = { add_local_autonomy = 50 }
+		4171 = { add_nationalism = 10 }
+		2222 = { add_local_autonomy = 50 }
+		2222 = { add_nationalism = 10 }
+		4335 = { add_local_autonomy = 50 }
+		4335 = { add_nationalism = 10 }
+		429 = { add_local_autonomy = 50 }
+		429 = { add_nationalism = 10 }
+		reverse_add_opinion = {
+			who = FRS
+			modifier = fair_dealing
+		}
+		immediate = {
+			change_variable = {
+				which = FRS_loy
+				value = 2
+				}
+		}
+	}
+	option = {#Allow them to operate
+		name = flavor_per_cw.9.b
+		add_prestige = -10
+		433 = { add_local_autonomy = 25 }
+		433 = { add_nationalism = 6 }
+		4171 = { add_local_autonomy = 25 }
+		4171 = { add_nationalism = 6 }
+		2222 = { add_local_autonomy = 25 }
+		4222 = { add_nationalism = 6 }
+		4335 = { add_local_autonomy = 25 }
+		4335 = { add_nationalism = 6 }
+		429 = { add_local_autonomy = 25 }
+		429 = { add_nationalism = 6 }
+		
+		reverse_add_opinion = {
+			who = FRS
+			modifier = honest_broker
+		}
+		immediate = {
+			change_variable = {
+				which = FRS_loy
+				value = 1
+				}
+		}
+	}
+	option = {#Ban them and confiscate their assets
+		name = flavor_per_cw.9.c
+		add_years_of_income = 1
+		reverse_add_opinion = {
+			who = FRS
+			modifier = arrogant_administrators
+		}
+	}
+}
+
+#A fleet without funds
+country_event = {
+	id = flavor_per_cw.10
+	title = flavor_per_cw.10.t
+	desc = flavor_per_cw.10.d
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PER
+		is_year = 1446
+		exists = KRM
+		KRM = { 
+			owns = 431 
+			owns = 4327
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {#They shall build a great fleet in our name
+		name = flavor_per_cw.10.a
+		add_treasury = -250
+		add_prestige = 10
+		KRM = {
+			431 = {add_unit_construction = {
+				type = heavy_ship
+				amount = 2
+				speed = 0.1
+				cost = 0
+				}
+			}
+		}
+		KRM={
+			4327 = {add_unit_construction = {
+				type = light_ship
+				amount = 5
+				speed = 0.1
+				cost = 0
+				}
+			}
+		}
+		reverse_add_opinion = {
+			who = KRM
+			modifier = grateful_for_aid
+		}
+		immediate = {
+			change_variable = {
+				which = KRM_loy
+				value = 2
+				}
+		}
+	}
+	option = {#A token fleet shall do
+		name = flavor_per_cw.10.b
+		add_treasury = -120
+		KRM = {
+			431 = {add_unit_construction = {
+				type = light_ship
+				amount = 5
+				speed = 0.1
+				cost = 0
+				}
+			}
+		}
+		reverse_add_opinion = {
+			who = KRM
+			modifier = grateful_for_aid
+		}
+		immediate = {
+			change_variable = {
+				which = KRM_loy
+				value = 1
+				}
+		}
+	}
+	option = {#Boats ? What for ?
+		name = flavor_per_cw.10.c
+		add_army_tradition = 10
+		add_prestige = -10
+		reverse_add_opinion = {
+			who = KRM
+			modifier = denied_aid
+		}
+		
+	}
+}
+
+#Our brethren across a border
+country_event = {
+	id = flavor_per_cw.11
+	title = flavor_per_cw.11.t
+	desc = flavor_per_cw.11.d
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PER
+		is_year = 1448
+		exists = KRM
+		NOT = { war_with = SND }
+		
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {#Our brethren shall be liberated and be welcomed in our empire once more
+		name = flavor_per_cw.11.a
+		declare_war_with_cb = {
+			who = SND
+			casus_belli = cb_crusade
+		}
+		AFG = { join_all_defensive_wars_of = SND }
+		JNP = { join_all_defensive_wars_of = SND }
+		
+	}
+	option = {#Pressure Sindh into freeing the western part
+		name = flavor_per_cw.11.b
+		add_dip_power = -160
+		add_adm_power = -40
+		add_years_of_income = -1
+		add_prestige = 10
+		2233 = {cede_province = BAL }
+		2232 = {cede_province = BAL }
+		575 = {cede_province = BAL }
+		434 = {cede_province = BAL }
+		add_truce = SND
+		576 = { local_missionary_strength = -3 }
+		577 = { local_missionary_strength = -3 }
+		2231 = { local_missionary_strength = -3 }
+		2068 = { local_missionary_strength = -3 }
+		vassalize = BAL
+		BAL = {
+			define_ruler = {
+					name = "Ahma"
+					dynasty = "Lund"
+					adm = 3
+					dip = 2
+					mil = 2
+					age = 33
+					claim = 80
+				}
+		}
+		BAL = {
+			add_government_reform = satrapdom_reform
+		}
+		immediate = {
+			set_variable = {
+				which = BAL_loy
+				value = 5
+			}
+		}
+		immediate = {
+			change_variable = {
+				which = KRM_loy
+				value = 1
+				}
+		}
+	}
+	option = {#Escalate the border conflict to pressure Sindh
+		name = flavor_per_cw.11.c
+		add_dip_power = -50
+		add_mil_power = -25
+		2233 = {cede_province = KRM }
+		434 = {cede_province = KRM }
+		KRM = { add_core = 434 }
+		KRM = { add_core = 2233 }
+		add_truce = SND
+		immediate = {
+			change_variable = {
+				which = KRM_loy
+				value = 2
+				}
+		}
+	}
+	option = {#Let them rot
+		name = flavor_per_cw.11.e
+		global_unrest = 3
+		reverse_add_opinion = {
+			who = SND
+			modifier = opinion_friendliness
+		}
+		reverse_add_opinion = {
+			who = KRM
+			modifier = refused_join_war
+		}
+	}
+}
+
+#The reclamation of Baluchistan
+country_event = {
+	id = flavor_per_cw.111
+	title = flavor_per_cw.111.t
+	desc = flavor_per_cw.111.d
+	picture = SIEGE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PER
+		PER = {
+			war_with = SND
+		}
+		OR = { 
+			war_score = 50
+			NOT = { war_score = -50 }
+		}
+		NOT = { is_year = 1455 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = flavor_per_cw.111.a
+		trigger = { war_score = 50 }
+		white_peace = SND
+		add_prestige = 10
+		add_treasury = 100
+		SND = { release = BAL }
+		vassalize = BAL
+		BAL = {
+			define_ruler = {
+					name = "Ahma"
+					dynasty = "Lund"
+					adm = 3
+					dip = 2
+					mil = 2
+					age = 33
+					claim = 80
+				}
+		}
+		BAL = {
+			add_government_reform = satrapdom_reform
+		}
+		immediate = {
+			set_variable = {
+				which = BAL_loy
+				value = 5
+			}
+		}
+		immediate = {
+			change_variable = {
+				which = KRM_loy
+				value = 1
+				}
+		}
+	}
+	option = {
+		name = flavor_per_cw.111.b
+		trigger = { NOT = { war_score = -50 } }
+		white_peace = SND
+		add_prestige = -10
+		add_legitimacy = -10
+		SND = { vassalize = KRM }
+		KRM = {
+			add_government_reform = feudalism_reform
+		}
+		add_truce = KRM
+	}
 }

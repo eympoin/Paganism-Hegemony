@@ -1070,6 +1070,7 @@ persian_empire_decen = {
 	modifiers = {
 		vassal_income = 0.2
 		diplomatic_upkeep = 2
+		reduced_liberty_desire = -40
 	}
 
 	custom_attributes = {
