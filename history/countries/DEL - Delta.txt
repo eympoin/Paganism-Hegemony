@@ -5,16 +5,16 @@ add_accepted_culture = al_misr_arabic
 religion = olympoi
 technology_group = muslim
 capital = 362 # Cairo
-elector = yes
+elector = no
 government_rank = 1
 
 1435.1.1 = {
 	monarch = {
-		name = "Adrian"
-		dynasty = "Bessarion"
+		name = "Toxaras"
+		dynasty = "Belissariotes"
 		birth_date = 1420.1.1
-		dip = 5
-		adm = 5
-		mil = 5
+		dip = 6
+		adm = 3
+		mil = 3
 	}
 }

@@ -2,7 +2,7 @@
 
 owner = SEB
 controller = SEB
-culture = anatolian
+culture = cappadocian
 religion = olympoi
 capital = "Divrigi"
 trade_goods = wool

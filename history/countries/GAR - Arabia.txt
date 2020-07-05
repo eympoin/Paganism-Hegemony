@@ -9,13 +9,22 @@ elector=no
 government_rank = 1
 
 
-1397.1.1 = {
+
+1435.1.1 = {
 	monarch = {
-		name = "Iason"
-		dynasty = "Syros"
-		birth_date = 1385.1.1
-		dip = 1
-		adm = 2
-		mil = 1
+		name = "Aretas "
+		dynasty = "Philopatris"
+		birth_date = 1412.1.1
+		dip = 5
+		adm = 5
+		mil = 4
+	}
+	heir= {
+		name = "Herodias"
+		dynasty = "Philopatris"
+		birth_date = 1434.1.1
+		dip = 3
+		adm = 4
+		mil = 4
 	}
 }

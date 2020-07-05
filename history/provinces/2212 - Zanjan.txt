@@ -17,3 +17,5 @@ discovered_by = ottoman
 discovered_by = nomad_group
 discovered_by = indian
 discovered_by = eastern
+add_core = SRV
+add_local_autonomy = 20

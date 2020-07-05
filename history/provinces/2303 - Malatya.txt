@@ -2,7 +2,7 @@
 
 owner = CMG
 controller = CMG
-culture = anatolian
+culture = cilician
 religion = olympoi
 capital = "Malatiya"
 trade_goods = cloth

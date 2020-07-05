@@ -2,7 +2,7 @@
 
 owner = SYR
 controller = SYR
-culture = anatolian
+culture = syrian
 religion = olympoi
 capital = "Ayntab"
 trade_goods = wool

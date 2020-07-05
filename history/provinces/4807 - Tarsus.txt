@@ -2,7 +2,7 @@
 
 owner = CIL
 controller = CIL
-culture = anatolian
+culture = cilician
 religion = olympoi
 capital = "Adana"
 trade_goods = cotton

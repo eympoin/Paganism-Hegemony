@@ -2,7 +2,7 @@
 
 owner = LCA
 controller = LCA
-culture = anatolian
+culture = cilician
 religion = olympoi
 capital = "Karaman"
 trade_goods = livestock

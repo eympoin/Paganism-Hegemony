@@ -2,7 +2,7 @@
 
 owner = PON
 controller = PON
-culture = pontic_greek
+culture = cappadocian
 religion = olympoi
 capital = "Amasya"
 trade_goods = paper #and iron

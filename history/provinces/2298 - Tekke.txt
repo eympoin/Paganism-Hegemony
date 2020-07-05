@@ -2,7 +2,7 @@
 
 owner = PAM
 controller = PAM
-culture = greek
+culture = anatolian
 religion = olympoi
 capital = "Adalia"
 trade_goods = cotton

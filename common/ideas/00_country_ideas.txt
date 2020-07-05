@@ -3,6 +3,250 @@
 # If adding new groups or ideas, make sure they are unique.
 
 ### Nation specific idea groups
+MOE_ideas = {
+	start = {
+		army_tradition = 1
+	 	infantry_power = 0.2
+	}
+	bonus = {
+		army_tradition_decay = -0.02
+	}
+	trigger = {
+	OR = {
+			tag = MOE
+			}
+	}
+	free = yes
+	heir_of_sparta = {
+	 prestige = 1
+	}
+	peace_negotiators = {
+		province_warscore_cost = - 0.2
+	}
+	reestablish_spartan_discipline = {
+		discipline = 0.75
+	}
+	conquest_of_greece = {
+		core_creation = -0.1
+	}
+
+	every_man_is_recruitable = {
+		manpower_recovery_speed = 0.15
+	}
+
+	a_new_hegemony = {
+		governing_capacity_modifier = 0.2
+	}
+
+	never_surrender = {
+		war_exhaustion = -0.02
+	}
+}
+
+BOE_ideas = {
+	start = {
+		global_tax_modifier = 0.1
+	 	free_leader_pool = 1
+	}
+	bonus = {
+		army_tradition = 1
+	}
+	trigger = {
+	OR = {
+			tag = BOE
+			}
+	}
+	free = yes
+	greek_renaissance = {
+	 idea_cost = -0.1
+	}
+	restore_the_sacred_band = {
+		infantry_power = 0.15
+	}
+	the_seven_gates = {
+		defensiveness = 0.1
+	}
+	the_silk_of_thebes = {
+		global_trade_goods_size_modifier = 0.15
+	}
+
+	heir_of_cadmus = {
+		legitimacy = 1
+	}
+
+	reform_the_army_THB = {
+		discipline = 0.05
+	}
+
+	thebean_hegemony = {
+		ae_impact = -0.2
+	}
+}
+
+THE_ideas = {
+	start = {
+		cavalry_cost = -0.3
+		leader_land_manuever = 1
+	}
+	bonus = {
+		leader_land_shock = 1
+	}
+	trigger = {
+	OR = {
+			tag = THE
+			}
+	}
+	free = yes
+	only_plains_of_greece = {
+		global_trade_goods_size_modifier = 0.15
+	}
+	thessalian_cavalry = {
+		cavalry_power = 0.2
+	}
+	flourishing_cities = {
+		global_tax_modifier = 0.15
+	}
+	thessalian_league = {
+	 free_dip_policy = 1
+	}
+	 agricultural_force = {
+		production_efficiency = 0.15
+	}
+
+	Hippocrates_legacy = {
+		technology_cost = -0.05
+	}
+	export_our_products = {
+		global_own_trade_power = 0.15
+	}
+}
+
+
+KRT_ideas = {
+	start = {
+		trade_efficiency = 0.15
+		global_tax_modifier = 0.15
+	}
+	bonus = {
+		improve_relation_modifier = 0.2
+	}
+	trigger = {
+	OR = {
+			tag = KRT
+			}
+	}
+	free = yes
+	city_of_aphrodite = {
+		development_cost = -0.1
+	}
+	hetaires_diplomacy = {
+		diplomatic_reputation =1
+		female_advisor_chance = 0.33
+	}
+	isthmus_of_korinth = {
+		trade_steering = 0.15
+	}
+	blockade_mastery = {
+		blockade_efficiency = 0.2
+		siege_blockade_progress = 1
+	}
+	masters_of_the_2seas = {
+		galley_cost = -0.1
+		galley_power = 0.15
+	}
+
+	religious_celebrations = {
+		tolerance_heathen = 2
+	}
+	man_the_guns = {
+		artillery_power = 0.1
+	}
+}
+
+greek_arabian_ideas = {
+	start = {
+		caravan_power = 0.33
+		global_foreign_trade_power = 0.1
+	}
+	bonus = {
+		merchants = 1
+	}
+	trigger = {
+	OR = {
+			tag = GAR
+			tag = PLM
+			}
+	}
+	free = yes
+	trading_oasis = {
+		trade_steering = 0.1
+	}
+	desert_habits = {
+		land_attrition = -0.1
+	}
+	bedouin_cavalry = {
+		cavalry_cost = -0.2
+		cavalry_power = 0.1
+	}
+	importance_of_merchant = {
+		burghers_loyalty_modifier = 0.1
+	}
+
+	accept_local_religion = {
+		tolerance_heathen = 2
+	}
+	limes = {
+		defensiveness = 0.1
+		global_garrison_growth = 0.5
+	}
+
+	cities_in_the_desert = {
+		prestige = 1
+	}
+
+}
+
+PRT_ideas = {
+	start = {
+		shock_damage_received = -0.1
+		global_unrest = -1
+	}
+	bonus = {
+		land_morale = 0.1
+	}
+	trigger = {
+			tag = PRT
+	}
+	free = yes
+	confederations = {
+		global_manpower_modifier = 0.15
+	}
+	amber_trade = {
+		global_own_trade_power = 0.1
+	}
+	push_back_the_colonists = {
+		global_missionary_strength = 0.02
+	}
+	lauks = {
+		fort_maintenance_modifier = -0.2
+		garrison_size = 0.1
+	}
+
+	our_land = {
+		stability_cost_modifier = -0.1
+		enemy_core_creation = 0.3
+	}
+	professional_army_prt = {
+		yearly_army_professionalism = 0.01
+		army_tradition = 1
+	}
+
+	baltic_confederations = {
+		diplomatic_reputation = 1
+	}
+
+}
+
 HIM_ideas = {
 	start = {
 		global_trade_power = 0.1
@@ -1009,7 +1253,11 @@ anatolian_ideas = {
 		land_maintenance_modifier = -0.1
 		}
 	trigger = {
+	OR = {
 		primary_culture = anatolian
+		primary_culture = cappadocian
+		primary_culture = cilician
+		}
 	}
 	free = yes
 
@@ -4667,7 +4915,12 @@ SER_ideas = {
 	}
 
 	trigger = {
+	OR = {
 		tag = SER
+		tag = MIA
+		tag = PEL
+		tag = RSC
+		}
 	}
 	free = yes
 
@@ -4824,7 +5077,10 @@ DAL_ideas = {
 	}
 
 	trigger = {
+	OR = {
 		tag = DAL
+		tag = LIK
+		}
 
 	}
 	free = yes		#will be added at load.
@@ -7036,8 +7292,8 @@ RMN_ideas = {
 
 ATH_ideas = {
 	start = {
-		defensiveness = 0.1
-		tolerance_heretic = 4
+		trade_efficiency = 0.1
+		galley_power = 0.25
 	}
 	bonus = {
 		land_morale = 0.1
@@ -7047,23 +7303,23 @@ ATH_ideas = {
 	}
 	free = yes		#will be added at load
 
-	dominus_athenarum = {
-		legitimacy = 1
+	long_republican_tradition = {
+		republican_tradition = 1
 	}
-	athenian_openeness = {
-		num_accepted_cultures = 1
+	athena_wisdom = {
+		technology_cost = -0.1
+	}
+	forefront_of_the_news = {
+		global_institution_spread = 0.1
 	}
 	athenian_pragmatism = {
 		diplomatic_reputation = 1
 	}
-	revive_the_latin_greece = {
+	revive_the_athenian_hegemony = {
 		prestige = 1
 	}
-	latin_contracts = {
+	Panathenaia = {
 		global_unrest = -1
-	}
-	archbishop_of_athens = {
-		global_missionary_strength = 0.01
 	}
 	athenian_army_reform = {
 		infantry_power = 0.05

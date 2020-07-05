@@ -2,7 +2,7 @@
 
 owner = CAP
 controller = CAP
-culture = anatolian
+culture = cappadocian
 religion = olympoi
 capital = "Kayseri"
 trade_goods = iron

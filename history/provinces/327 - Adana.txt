@@ -2,7 +2,7 @@
 
 owner = CIL
 controller = CIL
-culture = anatolian
+culture = cilician
 religion = olympoi
 capital = "Anazarbos"
 trade_goods = cotton

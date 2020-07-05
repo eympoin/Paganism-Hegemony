@@ -15,3 +15,14 @@ capital = 414
 		mil = 3
 	}
 }
+
+1420.1.1 = {
+	heir = {
+		name = "Ahura"
+		dynasty = "Saffarid"
+		birth_date = 1410.3.30
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+}

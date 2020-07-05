@@ -2,7 +2,7 @@
 
 owner = CYP
 controller = CYP
-culture = greek
+culture = cilician
 religion = olympoi
 capital = "Limassol"
 trade_goods = wine
