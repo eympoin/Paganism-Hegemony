@@ -220,7 +220,7 @@
  satrapdom_reform:0 "Satrapdom"
  satrapdom_reform_desc:0 "The once loyal governor of the provinces have claimed their independance from the court in Ectabana, using their capacity to administrate their territory perfectly and the connections they have in various guilds they will fight to claim what should be theirs."
  persian_empire_cen:0 "Satrapy System"
- persian_empire_cen_desc:O "The satraps are once again loyal and through the marvel that is the satrapy system works once again, territories are administered in an efficient manner but everything is centralized around the Shahanshah, making Persia the mightiest empire of all."
+ persian_empire_cen_desc:0 "The satraps are once again loyal and through that the marvel that is the satrapy system works once again, territories are administered in an efficient manner but everything is centralized around the Shahanshah, making Persia the mightiest empire of all."
  FEDERAL_KINGDOM:0 "Federal Kingdom"
  FEDERAL_EMPIRE:0 "Federal Empire"
  mechanic_enables_plutocratic_idea_group_yes:0 "Allows Plutocratic Idea Group."

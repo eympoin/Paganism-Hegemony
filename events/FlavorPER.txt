@@ -77,7 +77,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 1000
 	}
-	
+
 	immediate = {
 		set_country_flag = PER_had_event_3563
 	}
@@ -112,9 +112,9 @@ country_event = {
 	title = "flavor_per.EVTNAME1"
 	desc = "flavor_per.EVTDESC1"
 	picture = REFORM_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = { #Reform
 		name = "flavor_per.EVTOPTA1"
 		if = {
@@ -176,9 +176,9 @@ country_event = {
 	title = "flavor_per.EVTNAME2"
 	desc = "flavor_per.EVTDESC2"
 	picture = REFORM_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = PER
 		is_year = 1580
@@ -191,7 +191,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 150
 	}
-	
+
 	option = { #Reform
 		name = "flavor_per.EVTOPTA1"
 		if = {
@@ -213,9 +213,9 @@ country_event = {
 	title = "flavor_per.EVTNAME3"
 	desc = "flavor_per.EVTDESC3"
 	picture = ADVISOR_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = PER
 		is_year = 1590
@@ -228,7 +228,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 150
 	}
-	
+
 	option = { # Hire the English advisors
 		name = "flavor_per.EVTOPTA3"
 		if = {
@@ -252,7 +252,7 @@ country_event = {
 	title = "flavor_per.EVTNAME4"
 	desc = "flavor_per.EVTDESC4"
 	picture = LIBERUM_VETO_eventPicture
-	
+
 	trigger = {
 		tag = PER
 		is_year = 1580
@@ -270,11 +270,11 @@ country_event = {
 		}
 		has_regency = no
 	}
-	
+
 	mean_time_to_happen = {
 		months = 500
 	}
-	
+
 	option = { #Let the Clans fight
 		name = "flavor_per.EVTOPTA4"
 		hidden_effect = {
@@ -305,9 +305,9 @@ country_event = {
 	title = "flavor_per.EVTNAME5"
 	desc = "flavor_per.EVTDESC5"
 	picture = LIBERUM_VETO_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = PER
 		is_year = 1635
@@ -319,7 +319,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 500
 	}
-	
+
 	option = { # Let the factions conspire
 		name = "flavor_per.EVTOPTA5"
 		hidden_effect = {
@@ -357,9 +357,9 @@ country_event = {
 	title = "flavor_per.EVTNAME6"
 	desc = "flavor_per.EVTDESC6"
 	picture = ANGRY_MOB_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = PER
 		NOT = { primary_culture = afghani }
@@ -370,7 +370,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 2000
 	}
-	
+
 	option = { #Curses!
 		name = "flavor_per.EVTOPTA6"
 		random_owned_province = {
@@ -400,9 +400,9 @@ country_event = {
 	title = flavor_per.7.t
 	desc = flavor_per.7.d
 	picture = BIG_BOOK_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = PER
 		NOT = { is_year = 1600 }
@@ -411,7 +411,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 300
 	}
-	
+
 	option = { #Ok
 		name = flavor_per.7.a
 		add_prestige = 10
@@ -428,9 +428,9 @@ country_event = {
 	title = flavor_per.8.t
 	desc = flavor_per.8.d
 	picture = BIG_BOOK_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = PER
 		is_year = 1620
@@ -440,7 +440,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 45
 	}
-	
+
 	option = { #
 		name = flavor_per.8.a
 		add_legitimacy = 10
@@ -454,10 +454,10 @@ country_event = {
 	title = flavor_per.9.t
 	desc = flavor_per.9.d
 	picture = PRAYING_eventPicture
-	
+
 	is_triggered_only = yes
 
-	
+
 	option = { #Whatever is needed we must provide.
 		name = flavor_per.9.a
 		ai_chance = {
@@ -471,7 +471,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = { #We must practice restraint.
 		name = flavor_per.9.b
 		ai_chance = {
@@ -492,9 +492,9 @@ country_event = {
 	title = flavor_per.10.t
 	desc = flavor_per.10.d
 	picture = RELIGIOUS_CONVERSION_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		NOT = { tag = MSY }
 		is_year = 1445
@@ -507,7 +507,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 30
 	}
-	
+
 	option = { #
 		name = flavor_per.10.a
 		every_province = {
@@ -521,7 +521,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 }
 
 
@@ -531,9 +531,9 @@ country_event = {
 	title = flavor_per.12.t
 	desc = flavor_per.12.d
 	picture = RELIGIOUS_TURMOIL_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		exists = PER
 		NOT = { tag = PER }
@@ -547,7 +547,7 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 390
-		
+
 		modifier = {
 			factor = 0.75
 			any_owned_province = {
@@ -568,7 +568,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			random_owned_province = {
@@ -605,7 +605,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = { #Ok.
 		name = flavor_per.12.a
 		random_owned_province = {
@@ -639,9 +639,9 @@ country_event = {
 	title = flavor_per.14.t
 	desc = flavor_per.14.d
 	picture = ADVISOR_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = PER
 		religion = shiite
@@ -651,7 +651,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 30
 	}
-	
+
 	option = { # Carrot
 		name = flavor_per.14.a
 		ai_chance = { factor = 1 }
@@ -660,7 +660,7 @@ country_event = {
 			duration = 3650
 		}
 	}
-	
+
 	option = { # Whip
 		name = flavor_per.14.b
 		ai_chance = { factor = 0 }
@@ -678,9 +678,9 @@ country_event = {
 	title = flavor_per.15.t
 	desc = flavor_per.15.d
 	picture = ADVISOR_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = PER
 		religion = shiite
@@ -690,7 +690,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 30
 	}
-	
+
 	option = { # Welcome them with open arms
 		name = flavor_per.15.a
 		ai_chance = { factor = 1 }
@@ -711,7 +711,7 @@ country_event = {
 			duration = 7300
 		}
 	}
-	
+
 	#option = { # Turn them away
 	#	name = flavor_per.15.b
 	#	ai_chance = { factor = 0 }
@@ -726,9 +726,9 @@ country_event = {
 	title = flavor_per.16.t
 	desc = flavor_per.16.d
 	picture = CITY_VIEW_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = PER
 		religion = shiite
@@ -742,7 +742,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 150
 	}
-	
+
 	option = { #Let us build a new, truly Persian capital.
 		name = flavor_per.16.a
 		ai_chance = {
@@ -758,7 +758,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = { #Our current capital fit our current needs
 		name = flavor_per.16.b
 		ai_chance = {
@@ -774,9 +774,9 @@ country_event = {
 	title = flavor_per.17.t
 	desc = flavor_per.17.d
 	picture = CITY_VIEW_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = PER
 		had_country_flag = { flag = per_isfahan_construction days = 3650 }
@@ -789,7 +789,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 168
 	}
-	
+
 	option = { #Great!
 		name = flavor_per.17.a
 		add_prestige = 20
@@ -801,7 +801,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 }
 
 ########################################
@@ -817,10 +817,10 @@ country_event = {
 	title = "flavor_per_cw.1.t"
 	desc = "flavor_per_cw.1.d"
 	picture = CIVIL_WAR_eventPicture
-	
+
 	fire_only_once = yes
 	on_startup = yes
-	
+
 	trigger = {
 		tag = PER
 		is_year = 1444
@@ -830,7 +830,7 @@ country_event = {
 	mean_time_to_happen = {
 		days = 10
 	}
-	
+
 	option = { #Dire times ahead
 		name = flavor_per_cw.1.a
 		add_stability = -1
@@ -839,7 +839,7 @@ country_event = {
 			duration = -1
 			}
 	}
-	
+
 	set_variable = {
 		which = DIH_loy
 		value = 2
@@ -876,19 +876,20 @@ country_event = {
 	title = flavor_per_cwdih.1.t
 	desc = flavor_per_cwdih.1.d
 	picture = HORDE_ON_HORSEBACK_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = PER
 		exists = DIH
 		owns = 414
+		is_year = 1445
 	}
-	
+
 	mean_time_to_happen = {
-		months = 24
+		months = 20
 	}
-	
+
 	option = { #They shall have their fort
 		name = flavor_per_cwdih.1.a
 		add_treasury = -200
@@ -907,7 +908,7 @@ country_event = {
 				}
 		}
 	}
-	
+
 	option = { #They shall fund it too
 		name = flavor_per_cwdih.1.b
 		add_treasury = -100
@@ -926,7 +927,7 @@ country_event = {
 				}
 		}
 	}
-	
+
 	option = { #We have no coin to waste on such a folly
 		name = flavor_per_cwdih.1.c
 		reverse_add_opinion = {
@@ -942,21 +943,21 @@ country_event = {
 	title = flavor_per_cwdihmrv.1.t
 	desc = flavor_per_cwdihmrv.1.d
 	picture = DEBATE_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = PER
 		exists = DIH
 		exists = MRV
 		owns = 414
-		is_year = 1448
+		is_year = 1450
 	}
-	
+
 	mean_time_to_happen = {
 		months = 24
 	}
-	
+
 	option = { #They have their place in court
 		name = flavor_per_cwdihmrv.1.a
 		add_legitimacy = -20
@@ -972,7 +973,7 @@ country_event = {
                                 }
                 add_nationalism = 5
         }
-        
+
 		immediate = {
 			change_variable = {
 				which = DIH_loy
@@ -986,7 +987,7 @@ country_event = {
 				}
 		}
 	}
-	
+
 	option = { #They shall adapt, and we will aid them
 		name = flavor_per_cwdihmrv.1.b
 		add_dip_power = -180
@@ -1049,7 +1050,7 @@ country_event = {
 				}
 		}
 	}
-	
+
 	option = { #They are on their own
 		name = flavor_per_cwdihmrv.1.c
 		reverse_add_opinion = {
@@ -1069,20 +1070,20 @@ country_event = {
 	title = flavor_per_cw.4.t
 	desc = flavor_per_cw.4.d
 	picture = DEBATE_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = PER
 		exists = SIS
 		owns = 414
 		is_year = 1445
 	}
-	
+
 	mean_time_to_happen = {
 		months = 6
 	}
-	
+
 	option = { #Publicly denounce the Mihrabanids and support Al-bakir
 		name = flavor_per_cw.4.a
 		add_prestige = -20
@@ -1099,7 +1100,7 @@ country_event = {
 			modifier = opinion_tyrant_overlord
 		}
 		SIS = { set_country_flag = sis_al_bakir_a }
-		
+
 	}
 	option = { #Publicly denounce the Mihrabanids
 		name = flavor_per_cw.4.b
@@ -1166,14 +1167,14 @@ country_event = {
 	title = flavor_per_cw.5.t
 	desc = flavor_per_cw.5.d
 	picture = WOUNDED_SOLDIERS_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SIS
 		has_country_flag = sis_cw
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 	}
@@ -1202,7 +1203,7 @@ country_event = {
 				PER = { country_event = { id = flavor_per_cw.51 } }
 			}
 			if = {
-				limit = { 
+				limit = {
 					has_country_flag = sis_al_bakir_b
 				}
 				define_ruler = {
@@ -1330,7 +1331,7 @@ country_event = {
 				add_stability = 1
 				PER = { country_event = { id = flavor_per_cw.52 } }
 			}
-	
+
 	}
 }
 
@@ -1340,17 +1341,17 @@ country_event = {
 	title = flavor_per_cw.5a.t
 	desc = flavor_per_cw.5a.d
 	picture = ADVISOR_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
-		trigger = { 
+		trigger = {
 				SIS = { had_country_flag = sis_mihrabanids_d }
 		}
 		name = flavor_per_cw.5a.b
 	}
 	option = {
-		trigger = { 
+		trigger = {
 				NOT = { SIS = { had_country_flag = sis_mihrabanids_d } }
 		}
 		name = flavor_per_cw.5a.a
@@ -1363,17 +1364,17 @@ country_event = {
 	title = flavor_per_cw.5b.t
 	desc = flavor_per_cw.5b.d
 	picture = ADVISOR_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
-		trigger = { 
+		trigger = {
 				SIS = { had_country_flag = sis_mihrabanids_d }
 		}
 		name = flavor_per_cw.5b.b
 	}
 	option = {
-		trigger = { 
+		trigger = {
 				NOT = { SIS = { had_country_flag = sis_mihrabanids_d } }
 		}
 		name = flavor_per_cw.5b.a
@@ -1387,9 +1388,9 @@ country_event {
 	title = flavor_per_cw.6.t
 	desc = flavor_per_cw.6.d
 	picture = MILITARY_CAMP_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = PER
 		exists = SIS
@@ -1399,7 +1400,7 @@ country_event {
 		AFG = { owns = 2225 }
 		is_year = 1449
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 	}
@@ -1429,11 +1430,11 @@ country_event {
 		add_dip_power = -50
 		reverse_remove_opinion = {
 			who = SIS
-			modifier = answered_call_to_empire 
+			modifier = answered_call_to_empire
 		}
 		reverse_remove_opinion = {
 			who = HRV
-			modifier = answered_call_to_empire 
+			modifier = answered_call_to_empire
 		}
 		2229 = { cede_province = AFG }
 		2228 = { cede_province = AFG }
@@ -1475,11 +1476,11 @@ country_event {
 		add_prestige = -20
 		reverse_remove_opinion = {
 			who = SIS
-			modifier = answered_call_to_empire 
+			modifier = answered_call_to_empire
 		}
 		reverse_remove_opinion = {
 			who = HRV
-			modifier = answered_call_to_empire 
+			modifier = answered_call_to_empire
 		}
 		reverse_add_opinion = {
 			who = AFG
@@ -1499,19 +1500,19 @@ country_event = {
 	title = flavor_per_cw.7.t
 	desc = flavor_per_cw.7.d
 	picture = MILITARY_CAMP_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = PER
 		exists = FRS
 		is_year = 1446
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 	}
-	
+
 	option = {#It is a perfect occasion to reclaim the elymaite satrap
 		name = flavor_per_cw.7.a
 		ARM = { create_guarantee = ELM }
@@ -1529,7 +1530,7 @@ country_event = {
 				value = 1
 				}
 		}
-		
+
 	}
 	option = {#Pressure them
 		name = flavor_per_cw.7.b
@@ -1575,26 +1576,26 @@ country_event = {
 	title = flavor_per_cw.71.t
 	desc = flavor_per_cw.71.d
 	picture = SIEGE_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = PER
 		PER = {
 			war_with = ELM
 			war_with = ARM
 		}
-		OR = { 
+		OR = {
 			war_score = 50
 			NOT = { war_score = -50 }
 		}
 		NOT = { is_year = 1455 }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 1
 	}
-	
+
 	option = {
 		name = flavor_per_cw.71.a
 		trigger = { war_score = 50 }
@@ -1646,23 +1647,23 @@ country_event = {
 	id = flavor_per_cw.8
 	title = flavor_per_cw.8.t
 	desc = flavor_per_cw.8.d
-	picture = SIEGE_eventPicture
-	
+	picture = CIVIL_WAR_eventPicture
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = PER
 		is_year = 1449
 		exists = FRS
 		exists = KRM
 		FRS = { is_subject_of = PER }
-		
+
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 	}
-	
+
 	option = {#Mediate the conflict and find an arrangement
 		name = flavor_per_cw.8.a
 		add_dip_power = -300
@@ -1741,13 +1742,13 @@ country_event = {
 		add_legitimacy = -10
 		add_prestige = -10
 		random_list = {
-			80 = { 
+			80 = {
 				4345 = { cede_province = FRS }
 				2220 = { cede_province = FRS }
 				431 = { cede_province = FRS }
 				4327 = { cede_province = FRS }
 				FRS = { set_country_flag = support_ABA }
-				
+
 			}
 			20 = {
 				2223 = { cede_province = KRM }
@@ -1764,22 +1765,22 @@ country_event = {
 	title = flavor_per_cw.9.t
 	desc = flavor_per_cw.9.d
 	picture = NOBLE_ESTATE_DEMANDS_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = PER
 		is_year = 1452
 		exists = FRS
 		FRS = { is_subject_of = PER }
 		FRS = { NOT = { has_country_flag = support_ABA } }
-		
+
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 	}
-	
+
 	option = {#Grant them exclusive rights
 		name = flavor_per_cw.9.a
 		add_prestige = -10
@@ -1818,7 +1819,7 @@ country_event = {
 		4335 = { add_nationalism = 6 }
 		429 = { add_local_autonomy = 25 }
 		429 = { add_nationalism = 6 }
-		
+
 		reverse_add_opinion = {
 			who = FRS
 			modifier = honest_broker
@@ -1845,24 +1846,24 @@ country_event = {
 	id = flavor_per_cw.10
 	title = flavor_per_cw.10.t
 	desc = flavor_per_cw.10.d
-	picture = NOBLE_ESTATE_DEMANDS_eventPicture
-	
+	picture = CARIBBEAN_PIRATE_FORT_eventPicture
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = PER
 		is_year = 1446
 		exists = KRM
-		KRM = { 
-			owns = 431 
+		KRM = {
+			owns = 431
 			owns = 4327
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 	}
-	
+
 	option = {#They shall build a great fleet in our name
 		name = flavor_per_cw.10.a
 		add_treasury = -250
@@ -1927,7 +1928,7 @@ country_event = {
 			who = KRM
 			modifier = denied_aid
 		}
-		
+
 	}
 }
 
@@ -1936,22 +1937,22 @@ country_event = {
 	id = flavor_per_cw.11
 	title = flavor_per_cw.11.t
 	desc = flavor_per_cw.11.d
-	picture = NOBLE_ESTATE_DEMANDS_eventPicture
-	
+	picture = BORDER_TENSION_eventPicture
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = PER
 		is_year = 1448
 		exists = KRM
 		NOT = { war_with = SND }
-		
+
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 	}
-	
+
 	option = {#Our brethren shall be liberated and be welcomed in our empire once more
 		name = flavor_per_cw.11.a
 		declare_war_with_cb = {
@@ -1960,7 +1961,7 @@ country_event = {
 		}
 		AFG = { join_all_defensive_wars_of = SND }
 		JNP = { join_all_defensive_wars_of = SND }
-		
+
 	}
 	option = {#Pressure Sindh into freeing the western part
 		name = flavor_per_cw.11.b
@@ -2041,25 +2042,25 @@ country_event = {
 	title = flavor_per_cw.111.t
 	desc = flavor_per_cw.111.d
 	picture = SIEGE_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = PER
 		PER = {
 			war_with = SND
 		}
-		OR = { 
+		OR = {
 			war_score = 50
 			NOT = { war_score = -50 }
 		}
 		NOT = { is_year = 1455 }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 1
 	}
-	
+
 	option = {
 		name = flavor_per_cw.111.a
 		trigger = { war_score = 50 }
@@ -2106,5 +2107,240 @@ country_event = {
 			add_government_reform = feudalism_reform
 		}
 		add_truce = KRM
+	}
+}
+
+#The Dihistani wasteland
+country_event = {
+	id = flavor_per_cw.12
+	title = flavor_per_cw.12.t
+	desc = flavor_per_cw.12.d
+	picture = COLONIZATION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = PER
+		exists = DIH
+		is_year = 1447
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {#Invest heavily in the territory
+			name = flavor_per_cw.12.a
+			add_prestige = 10
+			add_adm_power = -200
+			add_dip_power = -200
+			add_mil_power = -200
+			add_years_of_income = -1.2
+			438 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			437 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			2349 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			reverse_add_opinion = {
+				who = DIH
+				modifier = opinion_benevolent_overlord
+			}
+		immediate = {
+			change_variable = {
+				which = DIH_loy
+				value = 2
+				}
+		}
+	}
+	option = {#Grant the request
+		name = flavor_per_cw.12.b
+		add_adm_power = -80
+		add_dip_power = -80
+		add_mil_power = -80
+		add_years_of_income = -0.5
+		2349 = {
+			add_base_tax = 1
+			add_base_production = 2
+			add_base_manpower = 1
+		}
+		reverse_add_opinion = {
+			who = DIH
+			modifier = opinion_benevolent_overlord
+		}
+		immediate = {
+			change_variable = {
+				which = DIH_loy
+				value = 1
+				}
+		}
+	}
+	option = {#Developping this wretched land will not do any good
+		name = flavor_per_cw.12.c
+		add_prestige = -10
+		reverse_add_opinion = {
+			who = DIH
+			modifier = opinion_tyrant_overlord
+		}
+	}
+}
+
+#Spread the true faith in Harev
+country_event = {
+	id = flavor_per_cw.13
+	title = flavor_per_cw.13.t
+	desc = flavor_per_cw.13.d
+	picture = CHURCH_ESTATE_2_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = PER
+		exists = HRV
+		is_year = 1445
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {#In the name of Zoroaster
+		name = flavor_per_cw.13.a
+		add_adm_power = -30
+		add_years_of_income = -0.2
+		2228 = {
+			add_province_modifier = {
+					name = "per_zor_pro"
+					duration = 24
+			}
+			send_missionary = yes
+		}
+		reverse_add_opinion = {
+			who = HRV
+			modifier = opinion_benevolent_overlord
+		}
+		immediate = {
+			change_variable = {
+				which = HRV_loy
+				value = 2
+			}
+		}
+	}
+	option = {#We shall fund their effort
+		name = flavor_per_cw.13.b
+		add_years_of_income = -0.5
+		2228 = {
+			add_province_modifier = {
+					name = "per_zor_pro"
+					duration = 24
+			}
+			HRV = { send_missionary = yes }
+		}
+		immediate = {
+			change_variable = {
+				which = HRV_loy
+				value = 1
+			}
+		}
+	}
+	option = {#What good would prozelitism do ?
+		name = flavor_per_cw.13.c
+		add_legitimacy = -10
+		reverse_add_opinion = {
+			who = HRV
+			modifier = opinion_sent_nothing
+		}
+		reverse_add_opinion = {
+			who = AFG
+			modifier = opinion_eased_tension
+		}
+	}
+}
+
+#The fate of Harev
+country_event = {
+	id = flavor_per_cw.14
+	title = flavor_per_cw.14.t
+	desc = flavor_per_cw.14.d
+	picture = REVOLT_HUNGARIAN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = PER
+		exists = HRV
+		exists = ABA
+		is_year = 1447
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {#Stand firm and defend Harev
+		name = flavor_per_cw.14.a
+		add_dip_power = -120
+		add_treasury = -50
+		add_manpower = -3
+		add_prestige = 5
+		reverse_add_opinion = {
+			who = MRV
+			modifier = opinion_tyrant_overlord
+		}
+		reverse_add_opinion = {
+			who = FRS
+			modifier = opinion_tyrant_overlord
+		}
+		reverse_add_opinion = {
+			who = ABA
+			modifier = opinion_tyrant_overlord
+		}
+		immediate = {
+			change_variable = {
+				which = HRV_loy
+				value = 1
+			}
+		}
+	}
+	option = {#Try to cut the losses
+		name = flavor_per_cw.14.b
+		add_treasury = -30
+		add_manpower = -1.5
+		ABA = {
+			add_core = 4325
+			add_core = 4324
+		}
+		4325 = { cede_province = ABA }
+		4324 = { cede_province = ABA }
+	}
+	option = {#Give up Herat
+		name = flavor_per_cw.14.c
+		ABA = {
+			add_core = 4325
+			add_core = 4324
+			add_core = 446
+		}
+		4325 = { cede_province = ABA }
+		4324 = { cede_province = ABA }
+		446 = { cede_province = ABA }
+		reverse_add_opinion = {
+			who = HRV
+			modifier = vassal_abandoned
+		}
+		immediate = {
+			change_variable = {
+				which = HRV_loy
+				value = -1
+			}
+		}
 	}
 }
