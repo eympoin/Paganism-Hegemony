@@ -4226,7 +4226,7 @@ protected_coast = {
 }
 
 iberian_horses = {
-	cavalry_cost = - 0.3
+	cavalry_cost = -0.3
 	cavalry_power = 0.1
 }
 
@@ -4267,7 +4267,7 @@ merchant_from_all_europe = {
 }
 
 finest_iron = {
- regiment_cost = -0.2
+ global_regiment_cost	 = -0.2
  fire_damage = 0.1
 }
 
@@ -4329,5 +4329,5 @@ king_of_all_franks = {
 	land_morale = 0.1
 }
 Sunni_missionary_strength  = {
-	lobal_missionary_strength = 0.02
+	global_missionary_strength = 0.02
 }

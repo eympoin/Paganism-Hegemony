@@ -80,7 +80,7 @@ country_event = {
 		name = shadow_kingdom.2.b
 		set_global_flag = emperor_trying_to_avert_shadow_kingdom
 		custom_tooltip = shadow_kingdom_incident_tt
-		BYZ = { country_event = { id = hre_event.6 } }
+		BYZ = { country_event = { id = shadow_kingdom.6 } }
 	}
 }
 
@@ -458,7 +458,7 @@ country_event = {
 		name = shadow_kingdom.2.b
 		set_global_flag = emperor_trying_to_avert_shadow_kingdom
 		custom_tooltip = shadow_kingdom_incident_tt
-		BYZ = { country_event = { id = hre_event.6 } }
+		BYZ = { country_event = { id = shadow_kingdom.6 } }
 	}
 }
 
@@ -467,13 +467,13 @@ country_event = {
 
 
 country_event = {
-	id = hre_event.6
-	title = "hre_event.6.t"
-	desc = "hre_event.6.d"
+	id = shadow_kingdom.6
+	title = "shadow_kingdom.6.t"
+	desc = "shadow_kingdom.6.d"
 	picture = DIPLOMACY_eventPicture
 	is_triggered_only = yes
 	option = {
-		name = "hre_event.6.a"
+		name = "shadow_kingdom.6.a"
 		ai_chance = {
 			factor = 90
 		}
@@ -486,81 +486,91 @@ country_event = {
 				mutual = yes
 			}
 		}
-		BYZ = { country_event = { id = hre_event.7 } }
+		BYZ = { country_event = { id = shadow_kingdom.7 } }
 	}
 	option = {
-		name = "hre_event.6.b"
+		name = "shadow_kingdom.6.b"
 		ai_chance = {
 			factor = 10
 		}
 		add_prestige = 10
-		BYZ = { country_event = { id = hre_event.7 } }
+		BYZ = { country_event = { id = shadow_kingdom.7 } }
 	}
 
 }
 
 
 country_event = {
-	id = hre_event.7
-	title = "hre_event.7.t"
-	desc = "hre_event.7.d"
+	id = shadow_kingdom.7
+	title = "shadow_kingdom.7.t"
+	desc = "shadow_kingdom.7.d"
 	picture = SIEGE_eventPicture
 	is_triggered_only = yes
-	hidden_effect = {
+	option = {
+		name = "shadow_kingdom.7.a"
+		ai_chance = {
+			factor = 90
+		}
+		trigger = {
+					has_global_flag = allied_with_leg_for_egypt
+					BYZ = {ai = no}
+					LEG = {ai = yes}
+			}
+		}
+		BYZ = {
+			declare_war_with_cb = {
+				who = UEG
+				casus_belli = cb_annex
+			}
+		}
 		LEG = {
 			join_all_offensive_wars_of = BYZ
+		}
+	}
+
+	option = {
+		name = "shadow_kingdom.7.c"
+		ai_chance = {
+			factor = 90
+		}
+		trigger = {
+			has_global_flag = allied_with_leg_for_egypt
+			NOT = {
+						BYZ = {ai = no}
+						LEG = {ai = yes}
+					}
+		}
+		LEG = {
+			declare_war_with_cb = {
+				who = UEG
+				casus_belli = cb_annex
+			}
 		}
 		BYZ = {
 			join_all_offensive_wars_of = LEG
 		}
 	}
 	option = {
-		name = "hre_event.7.a"
-		ai_chance = {
-			factor = 90
-		}
-		if = {
-			limit = {
-				OR = {
-					NOT = { has_global_flag = allied_with_leg_for_egypt}
-					AND = {
-						BYZ = {ai = no}
-						LEG = {ai = yes}
-					}
-				}
-			}
-			LEG = {
-				join_all_offensive_wars_of = BYZ
-			}
-			BYZ = {
-				declare_war_with_cb = {
-					who = UEG
-					casus_belli = cb_annex
-				}
-			}
-		}
-		else = {
-			BYZ = {
-				join_all_offensive_wars_of = LEG
-			}
-			LEG = {
-				declare_war_with_cb = {
-					who = UEG
-					casus_belli = cb_annex
-				}
-			}
-		}
-	}
-	option = {
-		name = "hre_event.7.b"
+		name = "shadow_kingdom.7.b"
 		ai_chance = {
 			factor = 10
 		}
 		add_prestige = 10
+	}
+
+	option = {
+		name = "shadow_kingdom.7.e"
+		ai_chance = {
+			factor = 90
+		}
+		trigger = {
+					NOT = {has_global_flag = allied_with_leg_for_egypt}
+			}
+		}
 		BYZ = {
-			country_event = {
-				id = hre_event.7
-				days = 30
+			declare_war_with_cb = {
+				who = UEG
+				casus_belli = cb_annex
 			}
 		}
 	}
@@ -568,9 +578,9 @@ country_event = {
 
 
 country_event = {
-	id = hre_event.8
-	title = "hre_event.8.t"
-	desc = "hre_event.8.d"
+	id = shadow_kingdom.8
+	title = "shadow_kingdom.8.t"
+	desc = "shadow_kingdom.8.d"
 	picture = SIEGE_eventPicture
 
 	fire_only_once = yes
@@ -590,7 +600,7 @@ country_event = {
 
 	#give UEG to LEG
 	option = {
-		name = "hre_event.8.b"
+		name = "shadow_kingdom.8.b"
 		ai_chance = {
 			factor = 20
 		}
@@ -608,7 +618,7 @@ country_event = {
 
 	#take UEG when allied
 	option = {
-		name = "hre_event.8.c"
+		name = "shadow_kingdom.8.c"
 		ai_chance = {
 			factor = 10
 		}
@@ -630,9 +640,12 @@ country_event = {
 
 	#take UEG when not allied
 	option = {
-		name = "hre_event.8.e"
+		name = "shadow_kingdom.8.e"
 		ai_chance = {
 			factor = 20
+		}
+		trigger = {
+			NOT = {has_global_flag = allied_with_leg_for_egypt}
 		}
 		white_peace = UEG
 		UEG = {
@@ -648,51 +661,51 @@ country_event = {
 	}
 	#UEG free but hellenic and back in the empire + free vassals
 	option = {
-		name = "hre_event.8.f"
+		name = "shadow_kingdom.8.f"
 		ai_chance = {
-			factor = 50
+			factor = 60
 		}
 		360 = {
-			set_in_empire = yes
+			cede_province = THB
 		}
 		359 = {
-			set_in_empire = yes
+			cede_province = FAY
 		}
 		4318 = {
-			set_in_empire = yes
+			cede_province = FAY
 		}
 		4323 = {
-			set_in_empire = yes
+			cede_province = ABY
 		}
 		2317 = {
-			set_in_empire = yes
+			cede_province = FAY
 		}
 		2318 = {
-			set_in_empire = yes
+			cede_province = FAY
 		}
 		2319 = {
-			set_in_empire = yes
-		}
-		4223 = {
-			set_in_empire = yes
+			cede_province = ABY
 		}
 		1233 = {
-			set_in_empire = yes
+			cede_province = ABY
+		}
+		4320 = {
+			cede_province = ABY
 		}
 		4320 = {
 			set_in_empire = yes
 		}
 		4319 = {
-			set_in_empire = yes
+			cede_province = THB
 		}
 		1231 = {
-			set_in_empire = yes
+			cede_province = THB
 		}
 		2320 = {
-			set_in_empire = yes
+			cede_province = BRK
 		}
 		2321 = {
-			set_in_empire = yes
+			cede_province = BRK
 		}
 		add_truce_with = UEG
 		LEG = {
@@ -702,41 +715,19 @@ country_event = {
 		UEG = {
 			release_all_subjects = yes
 			change_religion	= olympoi
-			define_ruler = {
-				name = "Alexandros"
-				dynasty = "Antigonos"
-				adm = 2
-				dip = 4
-				mil = 3
-				age = 20
-				claim = 50
-			}
+		}
+		THB = {
+			change_religion	= olympoi
+		}
+		ABY = {
+			change_religion	= olympoi
+		}
+		FAY = {
+			change_religion	= olympoi
 		}
 		add_opinion = {
 			who = LEG
 			modifier = opinion_give_autonomy_to_UEG
-		}
-	}
-}
-
-#Germany/Egypt Formed - Leaving Empire
-country_event = {
-	id = hre_event.5
-	title = "hre_event.5.t"
-	desc = "hre_event.5.d"
-	picture = HRE_eventPicture
-
-	is_triggered_only = yes
-
-	option = {
-		name = "hre_event.5.a" #Ok.
-		add_imperial_influence = -75
-		add_prestige = -10
-		tooltip = {
-			add_opinion = {
-				who = FROM
-				modifier = opinion_left_empire
-			}
 		}
 	}
 }

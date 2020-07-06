@@ -5,7 +5,7 @@
 ### Nation specific idea groups
 RHO_ideas = {
 	start = {
-		fire_damage
+		fire_damage = 0.1
 		galley_power = 0.15
 	}
 	bonus = {
@@ -143,10 +143,10 @@ MOE_ideas = {
 	 prestige = 1
 	}
 	peace_negotiators = {
-		province_warscore_cost = - 0.2
+		province_warscore_cost = -0.2
 	}
 	reestablish_spartan_discipline = {
-		discipline = 0.75
+		discipline = 0.075
 	}
 	conquest_of_greece = {
 		core_creation = -0.1
