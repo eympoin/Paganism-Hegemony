@@ -966,18 +966,18 @@
  IMPERIAL_EMBARGO:0 "Imperial Embargo"
  may_join_hansa_tt:0 "§YWill be asked to join a renewed Hanseatic League§!"
  # Shadow Kingdom
- shadow_kingdom_warning_tt:1 "§YThe Emperor can rein in Italian states by defeating them in any war, making them a Free City, or by securing an alliance or strong relations with them.§!"
- shadow_kingdom.2.d:1 "While the Kingdom of Italy is still formally part of the Holy Roman Empire it has in many ways turned into a 'Shadow Kingdom', with the Italian states acting independently of the Emperor. The failure of successive Emperors to restore Imperial authority in the region has also left large areas under the control of states that outright reject Imperial Authority.\nBy now the question for many Italian states is why they should allow the Emperor any authority over their lands."
- shadow_kingdom.2.a:0 "It is time to abandon Italy."
- shadow_kingdom.2.b:0 "We must rein in the Italians."
- shadow_kingdom_emperor_gives_up_tt:0 "§YItalian nations within the HRE that have been reined in will remain in the Empire.§!\n§YItalian nations that have not been reined in will leave the Empire.§!"
- shadow_kingdom_incident_tt:0 "§YThe Emperor has until the year 1490 to rein in as many Italian nations in the Empire as possible.§!"
+ shadow_kingdom_warning_tt:1 "§YThe Emperor can rein in Egyptian states by defeating them in any war, making them a Free City, or by securing an alliance or strong relations with them.§!"
+ shadow_kingdom.2.d:1 "While the Kingdom of Egypt is still formally part of the Holy Roman Empire it has in many ways turned into a 'Shadow Kingdom', with the Egyptian states acting independently of the Emperor. The failure of successive Emperors to restore Imperial authority in the region has also left large areas under the control of states that outright reject Imperial Authority.\nBy now the question for many Egyptian states is why they should allow the Emperor any authority over their lands."
+ shadow_kingdom.2.a:0 "It is time to abandon Egypt."
+ shadow_kingdom.2.b:0 "We must rein in the Egypians."
+ shadow_kingdom_emperor_gives_up_tt:0 "§YEgyptian nations within the HRE that have been reined in will remain in the Empire.§!\n§YEgyptian nations that have not been reined in will leave the Empire.§!"
+ shadow_kingdom_incident_tt:0 "§YThe Emperor has until the year 1490 to rein in as many Egyptian nations in the Empire as possible.§!"
  shadow_kingdom.3.t:0 "The Shadow Kingdom"
- shadow_kingdom.3.d:0 "Despite the Imperial resolution to rein in Italy, there are still Italian states that refuse to accept the supremacy of the Empire. [Root.GetAdjective] efforts have not been completely in vain however; those states that have been reined in will not dare defy the Empire again."
- shadow_kingdom.3.a:0 "The fate of Italy is decided."
+ shadow_kingdom.3.d:0 "Despite the Imperial resolution to rein in Egypt, there are still Egyptian states that refuse to accept the supremacy of the Empire. [Root.GetAdjective] efforts have not been completely in vain however; those states that have been reined in will not dare defy the Empire again."
+ shadow_kingdom.3.a:0 "The fate of Egypt is decided."
  shadow_kingdom_triggered_modifier_tt:1 "§Y[Root.GetName] will suffer penalties to Prestige, Unrest, and Stability Cost while it remains within the Empire, unless allied to the Emperor.§!"
- shadow_kingdom_result_ia_tooltip:0 "§Y[Root.GetName]§! will gain §Y5§! Imperial Authority for each Italian nation that remains in the Empire due to being reined in.\n§Y[Root.GetName]§! will lose §Y10§! Imperial Authority for each independent Italian nation that we did not rein in."
- shadow_kingdom.4.d2:0 "As promised, the Emperor launched a campaign to restore Imperial authority to Italy. [Root.GetName] was among the states that were forced to accept the rule of the Empire, and our submission is proof that the Emperor’s word is law."
+ shadow_kingdom_result_ia_tooltip:0 "§Y[Root.GetName]§! will gain §Y5§! Imperial Authority for each Egyptian nation that remains in the Empire due to being reined in.\n§Y[Root.GetName]§! will lose §Y10§! Imperial Authority for each independent Egyptian nation that we did not rein in."
+ shadow_kingdom.4.d2:0 "As promised, the Emperor launched a campaign to restore Imperial authority to Egypt. [Root.GetName] was among the states that were forced to accept the rule of the Empire, and our submission is proof that the Emperor’s word is law."
  # Defender of the Faith events
  dotf.1.t:0 "Defender of a Vulnerable Faith"
  dotf.1.d:0 "[Root.GetName] has pledged to defend the [Root.Religion.GetName] faith, and to be its champion in the face of adversity. Yet there are scarce few nations that share our faith, and no great masses of believers to shelter. The only remedy is evangelism; more believers must be brought into the fold."
@@ -1409,10 +1409,10 @@
  emperor_reichskrieg_desc:0 "Mobilize the Empire's forces against all who may seek to threaten it!"
  emperor_imperial_estates_title:0 "Curtail the Imperial Estates"
  emperor_imperial_estates_desc:0 "Curb the freedoms of the Imperial Estates so that they are no longer able to defy the Emperor."
- 
+
  NOT_RELEVANT_TRADE_REGION:0 "[Root.GetName] needs at least 1% trade share in [From.GetName]'s home trade node."
  NOT_RELEVANT_TRADE_REGION_FROM:0 "[From.GetName] needs at least 1% trade share in [Root.GetName]'s home trade node."
- 
+
  country_estate_nobles_name:0 "[This.GetNobilityName]"
  country_estate_burghers_name:0 "[This.GetBurghersName]"
  country_estate_church_name:0 "[This.GetClergyName]"
@@ -1464,7 +1464,7 @@
  a_navigator:0 "a Navigator"
  PLC_country_string:0 "the Polish-Lithuanian Commonwealth"
  PLC_country_string_CAP:0 "The Polish-Lithuanian Commonwealth"
- 
+
  robots_sprite_pack:0 "Synthetics Sprites"
  cas_base_sprite_pack:0 "Castile Base Sprites"
  merc_meatbag_sympathisers:0 "Meatbag Sympathizers"
@@ -1501,7 +1501,7 @@
  flavor_kor.12.d:0 "Although Korea has experienced something of a golden age in recent years, this has not brought greater prosperity for the peasantry, who for the most part live in abject poverty. Already the first signs of discontent that could threaten Korea's stability can be seen. Steps will need to be taken to improve their lot if we are to avoid significant unrest."
  flavor_kor.12.A:0 "Damned peasants..."
  flavor_kor.12.tt:0 "Complete the mission "§YThe Plight of the Peasantry§!" before the 1470s to avoid upheaval from peasant unrest."
- 
+
  #Industrialization Institution and other Institutions work
  tooltip_global_trade_embraced_other_continent:0 "Not Trade Company & Owner has embraced §YGlobal Trade§! - overseas province"
  tooltip_manufactories_embraced_other_continent:0 "Not Trade Company & Owner has embraced §YManufactories§! - overseas province"
@@ -1563,7 +1563,7 @@
  opinion_imperial_diplomacy:0 "Imperial Diplomacy"
  TUR_is_rival_of_PREV:0 "Rivals [TUR.GetName]"
  joint_war_with_root_vs_france:0 "Is fighting with [Root.GetName] in a war against [FRA.GetName]"
- 
+
  catholicism_string:0 "Catholicism"
  anglicanism_string:0 "Anglicanism"
  protestantism_string:0 "Protestantism"
@@ -1636,7 +1636,7 @@
  emperor_expand_gemeiner_pfennig_emperor_per_prince:0 "Gemeiner Pfennig per Prince"
  emperor_expand_gemeiner_pfennig_province:0 "Gemeiner Pfennig"
  emperor_imperial_estates_emperor:0 "Imperial Estates Curtailed"
- 
+
  french_wars_of_religion.1.desc.catholic:0 "With the [religion_province.Religion.GetName] faith spreading like wildfire among the population and their leaders growing increasingly bold, many Catholics are becoming uneasy at the situation in [Root.GetName]. Rising tensions between the two groups have come to a head with the formation of the [religion_province.Religion.GetName] League, a paramilitary organization that seeks to install a [religion_province.Religion.GetName] [Root.Monarch.GetTitle] on the throne of [Root.GetName]. Failing that, they demand significant rights and freedoms to safeguard their future. For their part, leaders of the Catholic community warn against making concessions, hinting that violence would follow should the [Root.Monarch.GetTitle] be seen to turn [Root.Monarch.GetHerHis] back on the Pope's teachings. Either way, turmoil awaits us.\n\nWhat should be our course of action?"
  french_wars_of_religion.1.desc.not_catholic:0 "There is widespread anger among French Catholics at the conversion of the [Root.Monarch.GetTitle] to the [Root.Religion.GetName] faith. Resenting the sweeping changes in our nation and fearing for their future, they have formed a paramilitary organization they call the Catholic League in order to demand that the [Root.Monarch.GetTitle] once again bows to the Pope - or failing that, that they are given significant rights and freedoms to safeguard their future. For their part, leaders of the [Root.Religion.GetName] community warn against making concessions, hinting that violence would follow should the [Root.Monarch.GetTitle] be seen to favor the Catholics. Either way, turmoil awaits us.\n\nWhat should be our course of action?"
  french_reformed:0 "French Reformers"
@@ -1726,7 +1726,7 @@
  CRO_parliament_name:0 "Sabor"
  HUN_parliament_name:0 "Országgyülés"
  altaic_parliament_name:0 "Kurultai"
- 
+
  flavor_tus.EVTNAME22:0 "The [medici_pope_home.GetAdjective] Pope"
  flavor_tus.EVTDESC22:0 "The machinations of [medici_pope_home.GetName] have resulted in one of their own men becoming Pope. While [medici_pope_home.GetName] is surely pleased, some have denounced [Root.Monarch.GetName]'s ascension as corrupt and a sign of even deeper corruption in the Church. Our new Pope, for his part, has vowed to rule with... distinction."
  flavor_tus.EVTOPTA22:0 "Habemus Papam!"
@@ -2028,14 +2028,14 @@
  incident_great_peasants_war_emperor_alert:0 "The violent conflict between the peasantry and the establishment has raged for decades within the Holy Roman Empire. It is time for the Emperor to enforce a firm and final resolution: to protect the rights of the peasantry or to impose the control of the nobility."
  # Misc indicents loc
  incident_shadow_kingdom:0 "The Shadow Kingdom"
- incident_shadow_kingdom_member_alert:0 "While the Kingdom of Italy is still formally part of the Holy Roman Empire it has in many ways turned into a 'Shadow Kingdom', with the Italian states acting independently of the Emperor. The failure of successive Emperors to restore Imperial authority in the region has also left large areas under the control of states that outright reject Imperial Authority.\nBy now the question for many Italian states is why they should allow the Emperor any authority over their lands."
- incident_shadow_kingdom_emperor_alert:0 "While the Kingdom of Italy is still formally part of the Holy Roman Empire it has in many ways turned into a 'Shadow Kingdom', with the Italian states acting independently of the Emperor. The failure of successive Emperors to restore Imperial authority in the region has also left large areas under the control of states that outright reject Imperial Authority.\nBy now the question for many Italian states is why they should allow the Emperor any authority over their lands."
+ incident_shadow_kingdom_member_alert:0 "While the Kingdom of Egypt is still formally part of the Holy Roman Empire it has in many ways turned into a 'Shadow Kingdom', with the Egyptian states acting independently of the Emperor. The failure of successive Emperors to restore Imperial authority in the region has also left large areas under the control of states that outright reject Imperial Authority.\nBy now the question for many Italian states is why they should allow the Emperor any authority over their lands."
+ incident_shadow_kingdom_emperor_alert:0 "While the Kingdom of Egypt is still formally part of the Holy Roman Empire it has in many ways turned into a 'Shadow Kingdom', with the Egyptian states acting independently of the Emperor. The failure of successive Emperors to restore Imperial authority in the region has also left large areas under the control of states that outright reject Imperial Authority.\nBy now the question for many Italian states is why they should allow the Emperor any authority over their lands."
  incident_dutch_revolt:0 "The Dutch Rebellion"
  incident_dutch_revolt_member_alert:0 "The Dutch Revolt has escalated far beyond regional unrest and has become an international crisis as nations lend their armies to each side. The newly declared Dutch Republic lies within the boundaries of Empire, and thus it has been argued that the Emperor has a duty to extend Imperial protection over this fledgling nation. Imperial involvement, however it manifests, is sure to alter the fate of the Netherlands forever."
  incident_dutch_revolt_emperor_alert:0 "The Dutch Revolt has escalated far beyond regional unrest and has become an international crisis as nations lend their armies to each side. The newly declared Dutch Republic lies within the boundaries of Empire, and thus it has been argued that the Emperor has a duty to extend Imperial protection over this fledgling nation. Imperial involvement, however it manifests, is sure to alter the fate of the Netherlands forever."
  shadow_kingdom.5.a:0 "The Emperor must decide. Summon the diet!"
- shadow_kingdom.3.b:0 "Italy has been returned to the fold. Long live the Empire!"
- shadow_kingdom.3.d2:0 "True to its promise, the Empire has reined in the Princes of Italy and secured their place within the Holy Roman Empire. With this feat of diplomatic and military genius, all of Christendom now knows the futility of defying Imperial rule."
+ shadow_kingdom.3.b:0 "Egypt has been returned to the fold. Long live the Empire!"
+ shadow_kingdom.3.d2:0 "True to its promise, the Empire has reined in the Princes of Egypt and secured their place within the Holy Roman Empire. With this feat of diplomatic and military genius, all of Christendom now knows the futility of defying Imperial rule."
  # Misc
  province_has_current_tech_fort_trigger_tt:0 "§YProvince§! has the highest level of Fort building possible with the current level of technology."
  swi_won_condottiere_war_tt:0 "Rent §YCondottiere§! to a country and help them to win a war."
@@ -2133,7 +2133,7 @@
  pap_sistinechapel_perugino_tt:0 "§YThe Sistine Chapel decorated by Perugino§! will be added to §Y[118.GetName]§!, giving the following effects:\nYearly Devotion: §G+0.10§!\nImprove Relations: §G+10%§!"
  pap_sistinechapel_michelangelo_tt:0 "§YThe Sistine Chapel decorated by Michelangelo§! will be added to §Y[118.GetName]§!, giving the following effects:\nYearly Devotion: §G+0.10§!\nIdea Cost: §G-5%§!"
  pap_sistinechapel_decorated_tt:0 "§YSistine Chapel Decorated§! will be added to §Y[118.GetName]§!, giving the following effects:\nYearly Devotion: §G+0.10§!\nMissionary Strength: §G+1%§!"
- 
+
  bullion_famine.1.t:0 "The Great Bullion Famine"
  bullion_famine.1.d:1 "We often pay in gold to import silk, alum, spices and pearls from the East. As trade between East and West becomes increasingly frequent, the deficit of gold in Europe becomes more apparent. Gold has become an increasingly rare commodity in our world, but the demand for these luxuries has not decreased. If we were to gain access to a source of gold outside Europe, put an end to this bullion famine."
  bullion_famine.1.a:0 "We should start searching for gold before others do."
@@ -2149,7 +2149,7 @@
  flavor_swi.3.t:0 "The Freedom of [Root.GetName]"
  flavor_swi.3.d:0 "After our resilient struggle against [geneva_independence_target.GetName], we have finally freed ourselves from the oppressors!"
  flavor_swi.3.a:0 "We deserve it!"
- 
+
  united_cantons_reform:0 "Autonomous Swiss Cantons"
  united_cantons_reform_desc:0 "The Swiss Federation is not a singular nation in itself, it is a federation of independent Cantons with the common goal of maintaining their independence and economic stability."
  united_cantons_legacy:0 "Autonomous Swiss Cantons"
@@ -2303,7 +2303,7 @@
  consolidate_power_in_cities_reform_desc:0 "Our government is a strange mix between a Republic, an Oligarchy, and a Monarchy. Trade and commerce are our primary concern and we’re not interested in building a global empire, only making an empire of trade. If we shatter powers in our nation and grant greater control to the Trade Cities, we shall make our trade league much more inviting for the smaller powers who only desire the freedom and economic stability that we can provide."
  consolidate_power_in_doge_reform:0 "Consolidate Power in the Doge"
  consolidate_power_in_doge_reform_desc:0 "For years, our Republic has had its power base divided between the Doge, the Council of Ten, the citizens, and countless other legislative bodies. Each are subject to each other, but the Doge sits at the top of the hierarchy. Our loose government system has been useful thus far in advancing our trade efforts, but as our nation expands across the world, it’s become clear that we must grant the Doge executive powers across all branches of the government if we are to eliminate corruption in our administration."
- 
+
  TTL_ideas:0 "Three Leagues Ideas"
  TTL_ideas_start:0 "League Traditions"
  TTL_ideas_bonus:0 "Three Leagues Ambition"
@@ -3325,8 +3325,8 @@
  opinion_holstein_good:0 "Recognized Holstein"
  become_hussite_title:0 "Adopt Hussitism"
  become_hussite_desc:0 "The teachings of Jan Hus have spread to our nation, and many among the common people are receptive to his word. Denounced as a heresy by the Pope, adopting this faith would put us at odds with most of Christendom. Yet with righteousness in our hearts, we may overcome even the greatest foe."
- shadow_kingdom_decision_title:0 "Rein in Italy"
- shadow_kingdom_decision_desc:0 "The Italian Princes must be reined in either through diplomacy or war. We cannot allow Italy to become a shadow kingdom!"
+ shadow_kingdom_decision_title:0 "Rein in Egptian"
+ shadow_kingdom_decision_desc:0 "The Egyptians Princes must be reined in either through diplomacy or war. We cannot allow Egypt to become a shadow kingdom!"
  shadow_kingdom_will_leave_info_decision_tt:1 "§YHas not been reined in and may leave the Empire§!"
  has_reined_in_all_italians_early:0 "All Italian Princes have been reined in."
  great_peasants_war_emperor_decision_title:0 "End the Great Peasants' War"
@@ -3368,5 +3368,5 @@
  same_govt_as_root_tt:0 "Has the same government type as [Root.GetName]"
  imperial_ban_fallback_tt:0 "Every core province is owned by §Y[Root.GetName]§!."
  EST_VAL_HEATHEN_PEACE_LOYALTY:0 "Not at War with Heathens: §G$VAL$§!"
- emperor_trying_to_avert_shadow_kingdom_tt:0 "The Emperor has formally decided to rein in Italy"
+ emperor_trying_to_avert_shadow_kingdom_tt:0 "The Emperor has formally decided to rein in Egypt"
  opinion_left_hre:0 "Left the Empire"
