@@ -9,7 +9,7 @@ elector=no
 government_rank = 1
 
 
-1423.1.1 = {
+1443.1.1 = {
 	monarch = {
 		name = "Bat-Zabbai"
 		dynasty = "Athenodorus"

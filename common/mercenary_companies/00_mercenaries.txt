@@ -1959,7 +1959,7 @@ merc_norman_guard = {
 	cost_modifier = 0.5
 	modifier = {
 		discipline = 0.05
-    morale = 0.2
+    land_morale = 0.2
     shock_damage = 0.15
 	}
 }

@@ -112,13 +112,13 @@ country_decisions = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
-			south_germany_region = {
+			south_german_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = EAF
 			}
-			north_germany_region = {
+			north_german_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}

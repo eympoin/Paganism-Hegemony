@@ -3,6 +3,49 @@
 # If adding new groups or ideas, make sure they are unique.
 
 ### Nation specific idea groups
+
+
+CRT_ideas = {
+	start = {
+		legitimacy = 1
+		merc_maintenance_modifier = -0.1
+	}
+	bonus = {
+		mercenary_discipline = 0.05
+	}
+	trigger = {
+	OR = {
+			tag = CRT
+			}
+	}
+	free = yes
+	cretan_archer = {
+	 fire_damage = 0.1
+	}
+	recruit_the_pirats = {
+		capture_ship_chance = 0.2
+	}
+	minoan_rennaissance = {
+		idea_cost = -0.1
+	}
+	from_bow_to_cannon = {
+		artillery_power = 0.1
+	}
+
+	legacy_of_minos = {
+		prestige = 1
+	}
+
+	center_of_east_mediterranea = {
+		trade_efficiency = 0.1
+	}
+
+	respect_of_poseidon = {
+		tolerance_own = 2
+	}
+}
+
+
 MOE_ideas = {
 	start = {
 		army_tradition = 1
@@ -7881,7 +7924,6 @@ NAX_ideas = {
 	trigger = {
 		OR{
 		tag = NAX
-		tag = CRT
 		tag = RHO
 		tag = CYP
 		}

@@ -7565,7 +7565,7 @@
    reform_the_army_THB_desc:0 "Reform the Army"
    thebean_hegemony_desc:0 "Theban hegemony"
 
-   MOE_ideas:0 "Lakonian ideas"
+   MOE_ideas:0 "Lakonian Ideas"
    MOE_ideas_start:0 "Lakonian traditions"
    MOE_ideas_bonus:0 "Lakonian bonus"
 
@@ -7596,3 +7596,43 @@
    forefront_of_the_news_desc:0 "Place of philosophers"
    revive_the_athenian_hegemony_desc:0 "Revive the Athenian hegeomony"
    Panathenaia_desc:0 "Panathenaia"
+
+   CRT_ideas:0 "Cretan Ideas"
+   CRT_ideas_start:0 "Cretan traditions"
+   CRT_ideas_bonus:0 "Cretan ambitions"
+
+   cretan_archer:0 "Cretan archers"
+   recruit_the_pirats:0 "Recruit the pirates"
+   minoan_rennaissance:0 "Minoan rennaissance"
+   from_bow_to_cannon:0 "From bow to cannons"
+   legacy_of_minos:0 "Legacy of Minos"
+   center_of_east_mediterranea:0 "Center of East Mediterranean"
+   respect_of_poseidon:0 "respect of Poseidon"
+
+   cretan_archer_desc:0 "Cretan archers"
+   recruit_the_pirats_desc:0 "Recruit the pirates"
+   minoan_rennaissance_desc:0 "Minoan rennaissance"
+   from_bow_to_cannon_desc:0 "From bow to cannons"
+   legacy_of_minos_desc:0 "Legacy of Minos"
+   center_of_east_mediterranea_desc:0 "Center of East Mediterranean"
+   respect_of_poseidon_desc:0 "respect of Poseidon"
+
+   free_city_ideas:0 "Free cities Ideas"
+   free_city_ideas_start:0 "Free cities traditions"
+   free_city_ideas_bonus:0 "Free cities ambitions"
+
+   mercenary_army:0 "Mercenary armies"
+   keep_independance:0 "Keep our indenpendance"
+   expand_the_industry:0 "Expand the industry"
+   center_of_knowledge:0 "Center of knowledge"
+   control_the_politics:0 "Control the politicians"
+   big_marketplace:0 "Attractive market"
+   expand_the_city:0 "Expand the city"
+
+   mercenary_army_desc:0 "Mercenary armies"
+   keep_independance_desc:0 "Keep our indenpendance"
+   expand_the_industry_desc:0 "Expand the industry"
+   center_of_knowledge_desc:0 "Center of knowledge"
+   control_the_politics_desc:0 "Control the politicians"
+   big_marketplace_desc:0 "Attractive market"
+   expand_the_city_desc:0 "Expand the city"
