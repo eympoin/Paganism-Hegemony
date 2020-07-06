@@ -506,6 +506,14 @@ country_event = {
 	desc = "hre_event.7.d"
 	picture = SIEGE_eventPicture
 	is_triggered_only = yes
+	hidden_effect = {
+		LEG = {
+			join_all_offensive_wars_of = BYZ
+		}
+		BYZ = {
+			join_all_offensive_wars_of = LEG
+		}
+	}
 	option = {
 		name = "hre_event.7.a"
 		ai_chance = {
@@ -513,8 +521,13 @@ country_event = {
 		}
 		if = {
 			limit = {
-				BYZ = {ai = no}
-				LEG = {ai = yes}
+				OR = {
+					NOT = { has_global_flag = allied_with_leg_for_egypt}
+					AND = {
+						BYZ = {ai = no}
+						LEG = {ai = yes}
+					}
+				}
 			}
 			LEG = {
 				join_all_offensive_wars_of = BYZ

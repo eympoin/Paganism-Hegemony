@@ -1,8 +1,8 @@
 government = monarchy
 add_government_reform = iqta
 technology_group = muslim
-religion = sunni
-primary_culture = uzbehk
+religion = tengri_pagan_reformed
+primary_culture = kirgiz
 capital = 458	# Kokkand
 fixed_capital = 458 # Cannot move capital away from this province & no power cost to move to it
 
