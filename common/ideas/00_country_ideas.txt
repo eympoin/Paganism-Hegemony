@@ -3,7 +3,45 @@
 # If adding new groups or ideas, make sure they are unique.
 
 ### Nation specific idea groups
+RHO_ideas = {
+	start = {
+		fire_damage
+		galley_power = 0.15
+	}
+	bonus = {
+		ship_durability = 0.1
+	}
+	trigger = {
+	OR = {
+			tag = RHO
+			}
+	}
+	free = yes
+	rhodian_sea_law = {
+	 navy_tradition = 1
+	}
 
+	new_trade_taxes = {
+		trade_efficiency = 0.1
+	}
+	naval_defence = {
+		own_coast_naval_combat_bonus = 1
+	}
+	rebuild_the_colossus = {
+		prestige = 1
+		tolerance_own = 1
+	}
+	korniaktos_dynasty = {
+		legitimacy = 1
+	}
+	cover_fire = {
+		fire_damage_received = -0.1
+	}
+
+	reuse_naval_canon = {
+		artillery_cost = -0.3
+	}
+}
 
 BRD_ideas = {
 	start = {

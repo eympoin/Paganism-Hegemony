@@ -7656,3 +7656,23 @@
    help_from_the_empire_desc:0 "Help from the empire"
    spread_nationalism_desc:0 "Spread Griko's nationalism"
    strait_control_desc:0 "Market from East and West"
+
+   RHO_ideas:0 "Rhodian Ideas"
+   RHO_ideas_start:0 "Rhodian traditions"
+   RHO_ideas_bonus:0 "Rhodian ambitions"
+
+   rhodian_sea_law:0 "Rhodian sea law"
+   new_trade_taxes:0 "New trade taxes"
+   naval_defence:0 "Coastal forts"
+   rebuild_the_colossus:0 "Rebuild the Colossus"
+   korniaktos_dynasty:0 "Korniaktos dynasty"
+   cover_fire:0 "Suppressive fire"
+   reuse_naval_canon:0 "Reuse the canons of the navy"
+
+   rhodian_sea_law_desc:0 "Rhodian sea law"
+   new_trade_taxes_desc:0 "New trade taxes"
+   naval_defence_desc:0 "Coastal forts"
+   rebuild_the_colossus_desc:0 "Rebuild the Colossus"
+   korniaktos_dynasty_desc:0 "Korniaktos dynasty"
+   cover_fire_desc:0 "Suppressive fire"
+   reuse_naval_canon_desc:0 "Reuse the canons of the navy"
