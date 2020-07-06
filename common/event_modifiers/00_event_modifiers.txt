@@ -4199,6 +4199,9 @@ per_mrv_aid = {
 	land_maintenance_modifier = -0.5
 }
 
+loyal_in_war = {
+	liberty_desire = -200
+}
 #Mewar
 mer_vijaya_sthambha = {
 	prestige = 1

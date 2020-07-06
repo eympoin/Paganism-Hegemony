@@ -78,7 +78,7 @@ country_event = {
 		months = 1000
 	}
 
-	immediate = {
+	{
 		set_country_flag = PER_had_event_3563
 	}
 
@@ -569,7 +569,7 @@ country_event = {
 		}
 	}
 
-	immediate = {
+	{
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
@@ -819,7 +819,6 @@ country_event = {
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
-	on_startup = yes
 
 	trigger = {
 		tag = PER
@@ -828,7 +827,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 10
+		days = 5
 	}
 
 	option = { #Dire times ahead
@@ -839,35 +838,36 @@ country_event = {
 			duration = -1
 			}
 	}
-
-	set_variable = {
-		which = DIH_loy
-		value = 2
-    }
-	set_variable = {
-		which = GOR_loy
-		value = 3
-    }
-	set_variable = {
-		which = MRV_loy
-		value = 1
-    }
-	set_variable = {
-		which = ABA_loy
-		value = 0
-    }
-	set_variable = {
-		which = SIS_loy
-		value = 2
-    }
-	set_variable = {
-		which = KRM_loy
-		value = 2
-    }
-	set_variable = {
-		which = FRS_loy
-		value = 2
-    }
+	after = {
+		set_variable = {
+			which = DIH_loy
+			value = 2
+	    }
+		set_variable = {
+			which = GOR_loy
+			value = 3
+	    }
+		set_variable = {
+			which = MRV_loy
+			value = 1
+	    }
+		set_variable = {
+			which = ABA_loy
+			value = 0
+	    }
+		set_variable = {
+			which = SIS_loy
+			value = 2
+	    }
+		set_variable = {
+			which = KRM_loy
+			value = 2
+	    }
+		set_variable = {
+			which = FRS_loy
+			value = 2
+	    }
+	}
 }
 
 #Dihistan request
@@ -901,12 +901,12 @@ country_event = {
 				cost = 1
 			}
 		}
-		immediate = {
-			change_variable = {
-				which = DIH_loy
-				value = 2
-				}
-		}
+
+		change_variable = {
+			which = DIH_loy
+			value = 2
+			}
+
 	}
 
 	option = { #They shall fund it too
@@ -920,12 +920,12 @@ country_event = {
 				cost = 1
 			}
 		}
-		immediate = {
-			change_variable = {
+
+		change_variable = {
 				which = DIH_loy
 				value = 1
 				}
-		}
+
 	}
 
 	option = { #We have no coin to waste on such a folly
@@ -974,18 +974,18 @@ country_event = {
                 add_nationalism = 5
         }
 
-		immediate = {
+
 			change_variable = {
 				which = DIH_loy
 				value = 2
 				}
-		}
-		immediate = {
+
+
 			change_variable = {
 				which = MRV_loy
 				value = 2
 				}
-		}
+
 	}
 
 	option = { #They shall adapt, and we will aid them
@@ -1037,18 +1037,18 @@ country_event = {
                                 }
                 add_nationalism = 5
         }
-		immediate = {
+
 			change_variable = {
 				which = DIH_loy
 				value = 1
 				}
-		}
-		immediate = {
+
+
 			change_variable = {
 				which = MRV_loy
 				value = 1
 				}
-		}
+
 	}
 
 	option = { #They are on their own
@@ -1109,8 +1109,14 @@ country_event = {
 		add_dip_power = -50
 		SIS = {
 			random_list = {
-				80 = { set_country_flag = sis_al_bakir_b }
-				20 = { set_country_flag = sis_mihrabanids_b }
+				80 = {
+				custom_tooltip = PER_AL_BAKIR
+				set_country_flag = sis_al_bakir_b
+				}
+				20 = {
+				custom_tooltip = PER_MIRHABANIDS
+				set_country_flag = sis_mihrabanids_b
+				}
 				}
 		}
 		reverse_add_opinion = {
@@ -1128,8 +1134,14 @@ country_event = {
 		add_manpower = -4
 		SIS = {
 			random_list = {
-				60 = { set_country_flag = sis_al_bakir_c}
-				40 = { set_country_flag = sis_mihrabanids_c}
+				60 = {
+				custom_tooltip = PER_AL_BAKIR
+				set_country_flag = sis_al_bakir_c
+				}
+				40 = {
+				custom_tooltip = PER_MIRHABANIDS
+				set_country_flag = sis_mihrabanids_c
+				}
 			}
 		}
 	}
@@ -1139,8 +1151,14 @@ country_event = {
 		add_manpower = -3
 		SIS = {
 			random_list = {
-			60 = { set_country_flag = sis_al_bakir_d }
-			40 = { set_country_flag = sis_mihrabanids_d }
+			60 = {
+			custom_tooltip = PER_AL_BAKIR
+			set_country_flag = sis_al_bakir_d
+			}
+			40 = {
+			custom_tooltip = PER_MIRHABANIDS
+			set_country_flag = sis_mihrabanids_d
+			}
 		    }
 		}
 	}
@@ -1148,8 +1166,14 @@ country_event = {
 		name = flavor_per_cw.4.e
 		SIS = {
 			random_list = {
-				10 = { set_country_flag = sis_al_bakir_f }
-				90 = { set_country_flag = sis_mihrabanids_f }
+				10 = {
+				custom_tooltip = PER_AL_BAKIR
+				set_country_flag = sis_al_bakir_f
+				}
+				90 = {
+				custom_tooltip = PER_MIRHABANIDS
+				set_country_flag = sis_mihrabanids_f
+				}
 				}
 			}
 		}
@@ -1417,12 +1441,12 @@ country_event {
 		2229 = { remove_core = AFG }
 		AFG = { create_alliance = ABA }
 		add_truce = AFG
-		immediate = {
+
 			change_variable = {
 				which = SIS_loy
 				value = 2
 				}
-		}
+
 	}
 	option = {#Give up the cultural lands
 		name = flavor_per_cw.6.b
@@ -1440,7 +1464,7 @@ country_event {
 		2228 = { cede_province = AFG }
 		2224 = { remove_core = AFG }
 		add_truce = AFG
-		immediate = {
+
 			change_variable = {
 				which = SIS_loy
 				value = 1
@@ -1449,7 +1473,7 @@ country_event {
 				which = HRV_loy
 				value = -1
 				}
-		}
+
 	}
 	option = {#Enforce a status quo
 		name = flavor_per_cw.6.c
@@ -1463,12 +1487,12 @@ country_event {
 		2225 = { remove_core = SIS }
 		447 = { remove_core = SIS }
 		add_truce = AFG
-		immediate = {
+
 			change_variable = {
 				which = SIS_loy
 				value = 1
 				}
-		}
+
 	}
 	option = {#Our time is better spent elsewhere, take it all
 		name = flavor_per_cw.6.e
@@ -1524,12 +1548,12 @@ country_event = {
 			who = ELM
 			casus_belli = cb_vassalize_mission
 		}
-		immediate = {
+
 			change_variable = {
 				which = FRS_loy
 				value = 1
 				}
-		}
+
 
 	}
 	option = {#Pressure them
@@ -1545,12 +1569,12 @@ country_event = {
 			modifier = returned_core_to_me
 		}
 		ABA = { create_alliance = ELM }
-		immediate = {
+
 			change_variable = {
 				which = FRS_loy
 				value = 1
 				}
-		}
+
 	}
 	option = {#Rebuke them
 		name = flavor_per_cw.7.c
@@ -1621,12 +1645,12 @@ country_event = {
 		ELM = {
 			add_government_reform = satrapdom_reform
 		}
-		immediate = {
+
 			set_variable = {
 				which = ELM_loy
 				value = 5
 			}
-		}
+
 	}
 	option = {
 		name = flavor_per_cw.71.b
@@ -1682,18 +1706,18 @@ country_event = {
 			who = KRM
 			modifier = fair_dealing
 		}
-		immediate = {
+
 			change_variable = {
 				which = FRS_loy
 				value = 1
 				}
-		}
-		immediate = {
-			change_variable = {
+
+
+		change_variable = {
 				which = KRM_loy
 				value = 1
 				}
-		}
+
 	}
 	option = {#Pars is right
 		name = flavor_per_cw.8.b
@@ -1709,12 +1733,12 @@ country_event = {
 			who = KRM
 			modifier = fair_dealing
 		}
-		immediate = {
+
 			change_variable = {
 				which = FRS_loy
 				value = 2
 				}
-		}
+
 	}
 	option = {#Kirman is right
 		name = flavor_per_cw.8.c
@@ -1730,12 +1754,12 @@ country_event = {
 			who = FRS
 			modifier = fair_dealing
 		}
-		immediate = {
+
 			change_variable = {
 				which = KRM_loy
 				value = 2
 				}
-		}
+
 	}
 	option = {#Let them fight it out
 		name = flavor_per_cw.8.e
@@ -1800,12 +1824,12 @@ country_event = {
 			who = FRS
 			modifier = fair_dealing
 		}
-		immediate = {
+
 			change_variable = {
 				which = FRS_loy
 				value = 2
 				}
-		}
+
 	}
 	option = {#Allow them to operate
 		name = flavor_per_cw.9.b
@@ -1825,12 +1849,12 @@ country_event = {
 			who = FRS
 			modifier = honest_broker
 		}
-		immediate = {
+
 			change_variable = {
 				which = FRS_loy
 				value = 1
 				}
-		}
+
 	}
 	option = {#Ban them and confiscate their assets
 		name = flavor_per_cw.9.c
@@ -1891,12 +1915,12 @@ country_event = {
 			who = KRM
 			modifier = grateful_for_aid
 		}
-		immediate = {
+
 			change_variable = {
 				which = KRM_loy
 				value = 2
 				}
-		}
+
 	}
 	option = {#A token fleet shall do
 		name = flavor_per_cw.10.b
@@ -1914,12 +1938,12 @@ country_event = {
 			who = KRM
 			modifier = grateful_for_aid
 		}
-		immediate = {
+
 			change_variable = {
 				which = KRM_loy
 				value = 1
 				}
-		}
+
 	}
 	option = {#Boats ? What for ?
 		name = flavor_per_cw.10.c
@@ -1995,18 +2019,18 @@ country_event = {
 		BAL = {
 			add_government_reform = satrapdom_reform
 		}
-		immediate = {
+
 			set_variable = {
 				which = BAL_loy
 				value = 5
 			}
-		}
-		immediate = {
+
+
 			change_variable = {
 				which = KRM_loy
 				value = 1
 				}
-		}
+
 	}
 	option = {#Escalate the border conflict to pressure Sindh
 		name = flavor_per_cw.11.c
@@ -2017,12 +2041,12 @@ country_event = {
 		KRM = { add_core = 434 }
 		KRM = { add_core = 2233 }
 		add_truce = SND
-		immediate = {
+
 			change_variable = {
 				which = KRM_loy
 				value = 2
 				}
-		}
+
 	}
 	option = {#Let them rot
 		name = flavor_per_cw.11.e
@@ -2086,18 +2110,18 @@ country_event = {
 		BAL = {
 			add_government_reform = satrapdom_reform
 		}
-		immediate = {
+
 			set_variable = {
 				which = BAL_loy
 				value = 5
 			}
-		}
-		immediate = {
+
+
 			change_variable = {
 				which = KRM_loy
 				value = 1
 				}
-		}
+
 	}
 	option = {
 		name = flavor_per_cw.111.b
@@ -2158,12 +2182,12 @@ country_event = {
 				who = DIH
 				modifier = opinion_benevolent_overlord
 			}
-		immediate = {
+
 			change_variable = {
 				which = DIH_loy
 				value = 2
 				}
-		}
+
 	}
 	option = {#Grant the request
 		name = flavor_per_cw.12.b
@@ -2180,12 +2204,12 @@ country_event = {
 			who = DIH
 			modifier = opinion_benevolent_overlord
 		}
-		immediate = {
+
 			change_variable = {
 				which = DIH_loy
 				value = 1
 				}
-		}
+
 	}
 	option = {#Developping this wretched land will not do any good
 		name = flavor_per_cw.12.c
@@ -2225,18 +2249,18 @@ country_event = {
 					name = "per_zor_pro"
 					duration = 720
 			}
-			send_missionary = yes
+			PER = { send_missionary = yes }
 		}
 		reverse_add_opinion = {
 			who = HRV
 			modifier = opinion_benevolent_overlord
 		}
-		immediate = {
+
 			change_variable = {
 				which = HRV_loy
 				value = 2
 			}
-		}
+
 	}
 	option = {#We shall fund their effort
 		name = flavor_per_cw.13.b
@@ -2248,12 +2272,12 @@ country_event = {
 			}
 			HRV = { send_missionary = yes }
 		}
-		immediate = {
+
 			change_variable = {
 				which = HRV_loy
 				value = 1
 			}
-		}
+
 	}
 	option = {#What good would prozelitism do ?
 		name = flavor_per_cw.13.c
@@ -2307,12 +2331,12 @@ country_event = {
 			who = ABA
 			modifier = opinion_tyrant_overlord
 		}
-		immediate = {
+
 			change_variable = {
 				which = HRV_loy
 				value = 1
 			}
-		}
+
 	}
 	option = {#Try to cut the losses
 		name = flavor_per_cw.14.b
@@ -2339,12 +2363,12 @@ country_event = {
 			who = HRV
 			modifier = vassal_abandoned
 		}
-		immediate = {
+
 			change_variable = {
 				which = HRV_loy
 				value = -1
 			}
-		}
+
 	}
 }
 
@@ -2410,12 +2434,12 @@ country_event = {
 			who = MRV
 			modifier = opinion_benevolent_overlord
 		}
-		immediate = {
+
 			change_variable = {
 				which = MRV_loy
 				value = 2
 			}
-		}
+
 	}
 	option = {#Relieve their upkeep
 		name = flavor_per_cw.15.b
@@ -2431,12 +2455,12 @@ country_event = {
 			who = MRV
 			modifier = opinion_benevolent_overlord
 		}
-		immediate = {
+
 			change_variable = {
 				which = MRV_loy
 				value = 1
 			}
-		}
+
 	}
 	option = {#We will not fund an army that will fight us
 		name = flavor_per_cw.15.c
@@ -2482,18 +2506,18 @@ country_event = {
 			who = HRV
 			modifier = opinion_benevolent_overlord
 		}
-		immediate = {
+
 			change_variable = {
 				which = HRV_loy
 				value = 2
 			}
-		}
-		immediate = {
+
+
 			change_variable = {
 				which = MRV_loy
 				value = -1
 			}
-		}
+
 	}
 	option = {#Herat shall not fall
 		name = flavor_per_cw.16.b
@@ -2521,18 +2545,18 @@ country_event = {
 			who = MRV
 			modifier = opinion_friendliness
 		}
-		immediate = {
+
 			change_variable = {
 				which = MRV_loy
 				value = 1
 			}
-		}
-		immediate = {
+
+
 			change_variable = {
 				which = HRV_loy
 				value = 1
 			}
-		}
+
 	}
 	option = {#A stronger Marv might be useful
 		name = flavor_per_cw.16.e
@@ -2543,16 +2567,360 @@ country_event = {
 			who = GOR
 			modifier = opinion_tyrant_overlord
 		}
-		immediate = {
+
 			change_variable = {
 				which = MRV_loy
 				value = 2
 			}
-		}
+
 		if {
 		HRV = { owns = 446 }
 		}
 		MRV = { add_core = 446 }
 		446 = { cede_province = MRV }
+	}
+}
+
+#The final pieces fall in place
+country_event = {
+	id = flavor_per_cw.17
+	title = flavor_per_cw.17.t
+	desc = flavor_per_cw.17.d
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = PER
+		exists = MRV
+		owns = 414
+		is_year = 1450
+	}
+
+	mean_time_to_happen = {
+		months = 20
+	}
+
+	option = {#They shall have one of the mightiest strongholds
+		name = flavor_per_cw.17.a
+		add_treasury = -300
+		add_adm_power = -50
+		add_mil_power = -50
+		add_prestige = 20
+		444 = {
+			add_building_construction = {
+				building = fort_15th
+				speed = 0.5
+				cost = 1
+			}
+			add_province_modifier = {
+				name = fortification_expert_boost
+				duration = -1
+			}
+		}
+		reverse_add_opinion = {
+				who =  MRV
+				modifier = opinion_benevolent_overlord
+		}
+
+			change_variable = {
+				which = MRV_loy
+				value = 2
+				}
+
+	}
+	option = {#They shall have a fort
+		name = flavor_per_cw.17.b
+		add_treasury = -200
+		add_adm_power = -35
+		444 = {
+			add_building_construction = {
+				building = fort_15th
+				speed = 0.5
+				cost = 1
+			}
+		}
+		reverse_add_opinion = {
+				who =  MRV
+				modifier = opinion_benevolent_overlord
+		}
+
+			change_variable = {
+				which = MRV_loy
+				value = 2
+				}
+
+	}
+	option = {#They shall fund it too
+		name = flavor_per_cw.17.c
+		add_treasury = -100
+		add_adm_power = -35
+		444 = {
+			add_building_construction = {
+				building = fort_15th
+				speed = 0.75
+				cost = 1
+			}
+		}
+
+			change_variable = {
+				which = MRV_loy
+				value = 1
+				}
+
+	}
+
+	option = {#This is starting to cost too much
+		name = flavor_per_cw.17.e
+		add_prestige = -10
+		reverse_add_opinion = {
+				who =  MRV
+				modifier = vassal_abandoned
+		}
+	}
+}
+
+#Facing the Timurid threat
+country_event = {
+	id = flavor_per_cw.18
+	title = flavor_per_cw.18.t
+	desc = flavor_per_cw.18.d
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = PER
+		exists = MRV
+		exists = TIM
+		is_year = 1451
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {#The Timurids will fall this day !
+		name = flavor_per_cw.18.a
+		add_mil_power = -200
+		add_prestige = 20
+		add_country_modifier = {
+			name = full_elan
+			duration = 720
+		}
+		declare_war_with_cb = {
+			who = TIM
+			casus_belli = cb_crusade
+		}
+		MRV = {
+			add_country_modifier = {
+				name = loyal_in_war
+				duration = 720
+			}
+		}
+		PER = {
+			set_country_flag = per_cw_dismantle_tim
+		}
+		TIM = {
+			custom_tooltip = Our_country_is_threatened
+			add_manpower = 10
+			add_treasury = 200
+			add_country_modifier = {
+				name = bargi_giri
+				duration = 720
+			}
+		}
+		change_variable = {
+			which = MRV_loy
+			value = 2
+		}
+		if = {
+		AFG = { owns = 2225 }
+		}
+		AFG = { join_all_offensive_wars_of = PER }
+	}
+	option = {#The Shahanshah will do his duty
+		name = flavor_per_cw.18.b
+		add_mil_power = -100
+		add_prestige = 10
+		declare_war_with_cb = {
+			who = TIM
+			casus_belli = cb_crusade
+		}
+		MRV = {
+			add_country_modifier = {
+				name = loyal_in_war
+				duration = 720
+			}
+		}
+		change_variable = {
+			which = MRV_loy
+			value = 1
+		}
+	}
+	option = {#Rebuke Marv and stop the offensive
+		name = flavor_per_cw.18.c
+		add_dip_power = -50
+		add_stability = -1
+		add_legitimacy = -10
+		add_prestige = -10
+		reverse_add_opinion = {
+			who = MRV
+			modifier = opinion_court_events_rebuke
+		}
+		change_variable = {
+			which = MRV_loy
+			value = -1
+		}
+	}
+	option = {#Leave Marv to die alone
+		name = flavor_per_cw.18.e
+		add_stability = -1
+		add_prestige = -20
+		add_legitimacy = -30
+		445 = { cede_province = TIM }
+		444 = { cede_province = TIM }
+		2350 = { cede_province = TIM }
+		add_truce = TIM
+		change_variable = {
+				which = HRV_loy
+				value = -1
+		}
+		change_variable = {
+				which = DIH_loy
+				value = -1
+		}
+		change_variable = {
+			which = GOR_loy
+			value = -1
+		}
+		change_variable = {
+			which = SIS_loy
+			value = -1
+		}
+
+		if = {
+			MRV = { owns = 2228 }
+		}
+		2228 = { cede_province = TIM }
+		if = {
+		MRV = {owns = 446 }
+		}
+		446 = { cede_province = TIM }
+	}
+}
+
+#An end to the Timurid war
+country_event = {
+ id = flavor_per_cw.19
+ title = flavor_per_cw.19.t
+ desc = flavor_per_cw.19.d
+ picture = BORDER_TENSION_eventPicture
+
+ fire_only_once = yes
+
+ trigger = {
+	 tag = PER
+	 PER = {
+		 war_with = TIM
+	 }
+	 OR = {
+		 war_score = 50
+		 NOT = { war_score = -50 }
+	 }
+	 is_year = 1451
+	 NOT = { is_year = 1455 }
+ }
+
+ mean_time_to_happen = {
+	 mouths = 2
+ }
+
+	option = {#The Timurid dismantled
+		name = flavor_per_cw.19.a
+		trigger = {
+		war_score = 50
+			has_country_flag = per_cw_dismantle_tim
+		}
+		add_prestige = 20
+		add_stability = 1
+		add_years_of_income = 2
+		450 = { cede_province = AFG }
+		452 = { cede_province = AFG }
+		2227 = { cede_province = AFG }
+		442 = { cede_province = MRV }
+		453 = { cede_province = MRV }
+		454 = { cede_province = MRV }
+		739 = { cede_province = CHG }
+		2127 = { cede_province = CHG }
+		4210 = { cede_province = CHG }
+		TIM = {
+		release = KHI
+		release = KOK
+		release = KZH
+		release_all_subjects = yes
+		}
+		white_peace = TIM
+	}
+	option = {#The cost of pride
+		name = flavor_per_cw.19.b
+		trigger = {
+			NOT = { war_score = -50 }
+			has_country_flag = per_cw_dismantle_tim
+		}
+		add_stability = -1
+		add_prestige = -20
+		add_legitimacy = -30
+		add_years_of_income = -2
+		438 = { cede_province = TIM }
+		2350 = { cede_province = TIM }
+		445 = { cede_province = TIM }
+		444 = { cede_province = TIM }
+		2228 = { cede_province = TIM }
+		TIM = {
+			add_adm_power = 200
+			add_mil_power = 200
+			add_years_of_income = 3
+			add_prestige = 20
+		}
+		white_peace = TIM
+				#loyalty thingy ?
+
+	}
+	option = {#The Timurid pushed back
+		name = flavor_per_cw.19.c
+		trigger = {
+			war_score = 50
+			NOT = { has_country_flag = per_cw_dismantle_tim }
+		}
+		add_prestige = 10
+		add_years_of_income = 1
+		442 = { cede_province = MRV }
+		453 = { cede_province = MRV }
+		white_peace = TIM
+	}
+	option = {#Marv razed
+		name = flavor_per_cw.19.e
+		trigger = {
+			NOT = { war_score = 50 }
+			NOT = { has_country_flag = per_cw_dismantle_tim }
+		}
+		add_prestige = -10
+		add_legitimacy = -10
+		add_years_of_income = -1
+		add_dip_power = -50
+		444 = { cede_province = TIM }
+		TIM = {
+			add_adm_power = 200
+			add_mil_power = 200
+			add_years_of_income = 3
+			add_prestige = 20
+		}
+		445 = {
+			add_base_tax = -2
+			add_base_production = -2
+			add_base_manpower = -1
+		}
+		white_peace = TIM
 	}
 }

@@ -1,50 +1,58 @@
-vassal = {
+dependency = {
+	subject_type = "persian_satrapdom"
 	first = PER
 	second = FRS
 	start_date = 1444.1.1
 	end_date = 1820.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = "persian_satrapdom"
 	first = PER
 	second = SIS
 	start_date = 1444.1.1
 	end_date = 1820.1.1
 }
-vassal = {
+dependency = {
+	subject_type = "persian_satrapdom"
 	first = PER
 	second = KRM
 	start_date = 1444.1.1
 	end_date = 1820.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = "persian_satrapdom"
 	first = PER
 	second = DIH
 	start_date = 1444.1.1
 	end_date = 1820.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = "persian_satrapdom"
 	first = PER
 	second = ABA
 	start_date = 1444.1.1
 	end_date = 1820.1.1
 }
 
-vassal = {
+dependency = {
+	subject_type = "persian_satrapdom"
 	first = PER
 	second = GOR
 	start_date = 1444.1.1
 	end_date = 1820.1.1
 }
-vassal = {
+dependency = {
+	subject_type = "persian_satrapdom"
 	first = PER
 	second = HRV
 	start_date = 1444.1.1
 	end_date = 1820.1.1
 }
-vassal = {
+dependency = {
+	subject_type = "persian_satrapdom"
 	first = PER
 	second = MRV
 	start_date = 1444.1.1
