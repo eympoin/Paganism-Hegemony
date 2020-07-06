@@ -68,7 +68,7 @@ IAD = "countries/Iadera.txt"
 LIK = "countries/Lika.txt"
 MIA = "countries/Moesia.txt"
 PEL = "countries/Pelagonia.txt"
-
+PEC = "countries/Pechenegs.txt"
 
 PON = "countries/Pontus.txt"
 PHR = "countries/Phrygia.txt"
