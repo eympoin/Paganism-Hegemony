@@ -153,3 +153,74 @@ country_event = {
 		add_stability = 1
 	}
 }
+
+#Medina Victory
+country_event = {
+	id = flavor_mda.2
+	title = "flavor_mda.2.t"
+	desc = "flavor_mda.2.e"
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HED
+		HED = {
+			war_with = MDA
+		}
+		NOT = {war_score = -25}
+	}
+		mean_time_to_happen = {
+		months = 1
+	}
+
+		option = {
+		name = "flavor_mda.2.f"
+		trigger = { tag = MDA }
+		ai_chance = {
+			factor = 10
+		}
+		385 = {
+			cede_province = MDA
+		}
+		2331 = {
+			cede_province = MDA
+		}
+		4277 = {
+			cede_province = MDA
+		}
+		4278 = {
+			cede_province = MDA
+		}
+		2332 = {
+			cede_province = MDA
+		}
+		white_peace = MDA
+
+	}
+}
+
+country_event = {
+	id = flavor_mda.3
+	title = "flavor_mda.3.t"
+	desc = "flavor_mda.3.g"
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MDA
+		NOT = {exists = HED}
+
+	}
+
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	option = {
+		name = flavor_mda.3.h
+		add_prestige = 10
+		add_stability = 1
+	}
+}
