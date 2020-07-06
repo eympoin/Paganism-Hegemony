@@ -1,0 +1,31 @@
+government = tribal
+add_government_reform = steppe_horde
+technology_group = eastern
+religion = tengri_pagan_reformed
+primary_culture = pecheneg
+capital = 2405 # Crimea
+add_accepted_culture = daco-romanian
+1441.1.1 = {
+	monarch = {
+		name = "Haji I"
+		dynasty = Giray
+		birth_date = 1397.1.1
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+	heir = {
+		name = "Nur Devlet"
+		monarch_name = "Nur Devlet I"
+		dynasty = "Giray"
+		birth_date = 1420.1.1
+		death_date = 1503.1.1
+		claim = 95
+		adm = 0
+		dip = 0
+		mil = 2
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = silver_tongue_personality
+	add_heir_personality = naive_personality
+}

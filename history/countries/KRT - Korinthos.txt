@@ -6,11 +6,10 @@ religion = olympoi
 technology_group = western
 capital = 4701
 fixed_capital = 4701
-1435.1.1 = {
+
+1444.11.11 = {
 	monarch = {
-		name = Bartholomaios"
-		dynasty = "Skleros"
-		birth_date = 1421.1.1
+		name = "Bartholomaios"
 		adm = 4
 		dip = 4
 		mil = 2

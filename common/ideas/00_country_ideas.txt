@@ -3,6 +3,128 @@
 # If adding new groups or ideas, make sure they are unique.
 
 ### Nation specific idea groups
+RHO_ideas = {
+	start = {
+		fire_damage
+		galley_power = 0.15
+	}
+	bonus = {
+		ship_durability = 0.1
+	}
+	trigger = {
+	OR = {
+			tag = RHO
+			}
+	}
+	free = yes
+	rhodian_sea_law = {
+	 navy_tradition = 1
+	}
+
+	new_trade_taxes = {
+		trade_efficiency = 0.1
+	}
+	naval_defence = {
+		own_coast_naval_combat_bonus = 1
+	}
+	rebuild_the_colossus = {
+		prestige = 1
+		tolerance_own = 1
+	}
+	korniaktos_dynasty = {
+		legitimacy = 1
+	}
+	cover_fire = {
+		fire_damage_received = -0.1
+	}
+
+	reuse_naval_canon = {
+		artillery_cost = -0.3
+	}
+}
+
+BRD_ideas = {
+	start = {
+		advisor_cost = -0.1
+		galley_cost = -0.2
+	}
+	bonus = {
+		global_ship_trade_power = 0.2
+	}
+	trigger = {
+	OR = {
+			tag = TRN
+			tag = BRD
+			}
+	}
+	free = yes
+	last_bastion_of_griko = {
+	 land_morale = 0.1
+	}
+
+	roman_and_greek_advisors = {
+		advisor_pool = 1
+		idea_cost = -0.1
+	}
+	crossroad_of_thoughts = {
+		global_institution_spread = 0.2
+	}
+	protect_the_strait = {
+		naval_morale = 0.1
+	}
+	help_from_the_empire = {
+		diplomatic_upkeep = 1
+	}
+	spread_nationalism = {
+		global_regiment_cost = -0.15
+	}
+
+	strait_control = {
+		trade_efficiency = 0.1
+	}
+}
+
+CRT_ideas = {
+	start = {
+		legitimacy = 1
+		merc_maintenance_modifier = -0.1
+	}
+	bonus = {
+		mercenary_discipline = 0.05
+	}
+	trigger = {
+	OR = {
+			tag = CRT
+			}
+	}
+	free = yes
+	cretan_archer = {
+	 fire_damage = 0.1
+	}
+	recruit_the_pirats = {
+		capture_ship_chance = 0.2
+	}
+	minoan_rennaissance = {
+		idea_cost = -0.1
+	}
+	from_bow_to_cannon = {
+		artillery_power = 0.1
+	}
+
+	legacy_of_minos = {
+		prestige = 1
+	}
+
+	center_of_east_mediterranea = {
+		trade_efficiency = 0.1
+	}
+
+	respect_of_poseidon = {
+		tolerance_own = 2
+	}
+}
+
+
 MOE_ideas = {
 	start = {
 		army_tradition = 1
@@ -7881,7 +8003,6 @@ NAX_ideas = {
 	trigger = {
 		OR{
 		tag = NAX
-		tag = CRT
 		tag = RHO
 		tag = CYP
 		}
