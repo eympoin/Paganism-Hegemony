@@ -4189,6 +4189,16 @@ per_cw_1 = {
 	global_unrest = 2
 }
 
+per_zor_pro = {
+	local_missionary_strength = 0.1
+	local_unrest = -3
+}
+
+per_mrv_aid = {
+	land_forcelimit = 4
+	land_maintenance_modifier = -0.5
+}
+
 #Mewar
 mer_vijaya_sthambha = {
 	prestige = 1
@@ -11022,7 +11032,7 @@ held_protestant_council = {
 	tolerance_own = 1
 	diplomatic_reputation = 1
 }
-	
+
 bastion_of_the_church = {
 	local_religious_conversion_resistance = 0.75
 }

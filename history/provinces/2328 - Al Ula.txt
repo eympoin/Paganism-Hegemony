@@ -1,7 +1,7 @@
 #2328 - Al-Ula
 
-owner = ANZ
-controller = ANZ
+owner = MDA
+controller = MDA
 culture = bedouin_arabic
 religion = arabian
 capital = "Al-Ula"
