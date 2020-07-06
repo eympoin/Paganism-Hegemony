@@ -1613,6 +1613,7 @@ country_event = {
 					adm = 4
 					dip = 2
 					mil = 2
+					fixed = yes
 					age = 40
 					claim = 80
 				}
@@ -1986,6 +1987,7 @@ country_event = {
 					adm = 3
 					dip = 2
 					mil = 2
+					fixed = yes
 					age = 33
 					claim = 80
 				}
@@ -2076,6 +2078,7 @@ country_event = {
 					adm = 3
 					dip = 2
 					mil = 2
+					fixed = yes
 					age = 33
 					claim = 80
 				}
@@ -2220,7 +2223,7 @@ country_event = {
 		2228 = {
 			add_province_modifier = {
 					name = "per_zor_pro"
-					duration = 24
+					duration = 720
 			}
 			send_missionary = yes
 		}
@@ -2241,7 +2244,7 @@ country_event = {
 		2228 = {
 			add_province_modifier = {
 					name = "per_zor_pro"
-					duration = 24
+					duration = 720
 			}
 			HRV = { send_missionary = yes }
 		}
@@ -2342,5 +2345,214 @@ country_event = {
 				value = -1
 			}
 		}
+	}
+}
+
+#Marv mustering troops
+country_event = {
+	id = flavor_per_cw.15
+	title = flavor_per_cw.15.t
+	desc = flavor_per_cw.15.d
+	picture = LAND_MILITARY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = PER
+		exists = MRV
+		is_year = 1446
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {#Finance their undertaking fully
+		name = flavor_per_cw.15.a
+		add_treasury = -90
+		add_mil_power = -50
+		add_manpower = -5
+		MRV = {
+			add_country_modifier = {
+				name = per_mrv_aid
+				duration = 3600
+			}
+			2350 = {
+				add_unit_construction = {
+					type = infantry
+					amount = 2
+					speed = 0.5
+					cost = 1
+				}
+			}
+			444 = {
+				add_unit_construction = {
+					type = infantry
+					amount = 2
+					speed = 0.5
+					cost = 1
+				}
+			}
+			445 = {
+				add_unit_construction = {
+					type = cavalry
+					amount = 1
+					speed = 0.5
+					cost = 1
+				}
+			}
+		}
+		reverse_add_opinion = {
+			who = MRV
+			modifier = opinion_benevolent_overlord
+		}
+		reverse_add_opinion = {
+			who = MRV
+			modifier = opinion_benevolent_overlord
+		}
+		immediate = {
+			change_variable = {
+				which = MRV_loy
+				value = 2
+			}
+		}
+	}
+	option = {#Relieve their upkeep
+		name = flavor_per_cw.15.b
+		add_treasury = -40
+		add_mil_power = -50
+		MRV = {
+			add_country_modifier = {
+				name = per_mrv_aid
+				duration = 3600
+			}
+		}
+		reverse_add_opinion = {
+			who = MRV
+			modifier = opinion_benevolent_overlord
+		}
+		immediate = {
+			change_variable = {
+				which = MRV_loy
+				value = 1
+			}
+		}
+	}
+	option = {#We will not fund an army that will fight us
+		name = flavor_per_cw.15.c
+		reverse_add_opinion = {
+			who = MRV
+			modifier = opinion_tyrant_overlord
+		}
+	}
+}
+
+#The warmongering satrap
+country_event = {
+	id = flavor_per_cw.16
+	title = flavor_per_cw.16.t
+	desc = flavor_per_cw.16.d
+	picture = BORDER_TENSION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = PER
+		exists = MRV
+		exists = HRV
+		is_year = 1448
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {#The satrap of Harev shall remain in office
+		name = flavor_per_cw.16.a
+		add_mil_power = -50
+		add_dip_power = -50
+		add_manpower = -5
+		add_treasury = -50
+		add_prestige = 10
+		reverse_add_opinion = {
+			who = MRV
+			modifier = opinion_tyrant_overlord
+		}
+		reverse_add_opinion = {
+			who = HRV
+			modifier = opinion_benevolent_overlord
+		}
+		immediate = {
+			change_variable = {
+				which = HRV_loy
+				value = 2
+			}
+		}
+		immediate = {
+			change_variable = {
+				which = MRV_loy
+				value = -1
+			}
+		}
+	}
+	option = {#Herat shall not fall
+		name = flavor_per_cw.16.b
+		trigger = {
+		HRV = { owns = 446 }
+		}
+		add_dip_power = -30
+		add_manpower = -3
+		add_treasury = -30
+		MRV = { add_core = 2228 }
+		2228 = { cede_province = MRV }
+	}
+	option = {#The satrap of Marv has forfeited his office, replace him
+		name = flavor_per_cw.16.c
+		add_adm_power = -100
+		add_dip_power = -50
+		add_years_of_income = -0.6
+		add_manpower = -5
+		add_legitimacy = 10
+		reverse_add_opinion = {
+			who = PAR
+			modifier = opinion_tyrant_overlord
+		}
+		reverse_add_opinion = {
+			who = MRV
+			modifier = opinion_friendliness
+		}
+		immediate = {
+			change_variable = {
+				which = MRV_loy
+				value = 1
+			}
+		}
+		immediate = {
+			change_variable = {
+				which = HRV_loy
+				value = 1
+			}
+		}
+	}
+	option = {#A stronger Marv might be useful
+		name = flavor_per_cw.16.e
+		add_legitimacy = -10
+		MRV = { add_core = 2228 }
+		2228 = { cede_province = MRV }
+		reverse_add_opinion = {
+			who = GOR
+			modifier = opinion_tyrant_overlord
+		}
+		immediate = {
+			change_variable = {
+				which = MRV_loy
+				value = 2
+			}
+		}
+		if {
+		HRV = { owns = 446 }
+		}
+		MRV = { add_core = 446 }
+		446 = { cede_province = MRV }
 	}
 }

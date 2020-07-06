@@ -1,7 +1,7 @@
 #4269 - Al Wajh
 
-owner = ANZ
-controller ANZ 
+owner = MDA
+controller MDA
 culture = bedouin_arabic
 religion = arabian
 capital = "Al Wajh"

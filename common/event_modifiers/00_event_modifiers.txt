@@ -4194,6 +4194,11 @@ per_zor_pro = {
 	local_unrest = -3
 }
 
+per_mrv_aid = {
+	land_forcelimit = 4
+	land_maintenance_modifier = -0.5
+}
+
 #Mewar
 mer_vijaya_sthambha = {
 	prestige = 1
