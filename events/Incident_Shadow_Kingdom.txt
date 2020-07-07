@@ -256,9 +256,9 @@ country_event = {
 
 	option = { # remain
 		ai_chance = {
-			factor = 1
+			factor = 0
 			modifier = {
-				factor = 0
+				factor = 1
 				will_leave_for_shadow_kingdom_trigger = no
 			}
 		}
