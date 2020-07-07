@@ -4202,6 +4202,11 @@ per_mrv_aid = {
 loyal_in_war = {
 	liberty_desire = -200
 }
+
+loyal_satrap_mod = {
+	liberty_desire = -50
+}
+
 #Mewar
 mer_vijaya_sthambha = {
 	prestige = 1
