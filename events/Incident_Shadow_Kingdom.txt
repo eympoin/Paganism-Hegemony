@@ -12,7 +12,7 @@ country_event = {
 	trigger = {
 		is_emperor = yes
 		NOT = {
-			is_year = 1490
+			is_year = 1455
 		}
 		normal_or_historical_nations = yes
 	}
@@ -50,11 +50,15 @@ country_event = {
 		hidden_effect = {
 			every_country = {
 				limit = {
-					is_shadow_kingdom_eligible_trigger = yes
+					is_part_of_hre = yes
+					capital_scope = { region = egypt_region }
 					OR = {
 						is_subject = no
 						overlord = {
-							is_shadow_kingdom_eligible_trigger = no
+							NOT = {
+								is_part_of_hre = yes
+								capital_scope = { region = egypt_region }
+							}
 						}
 					}
 				}
@@ -90,44 +94,27 @@ country_event = {
 	title = shadow_kingdom.3.t
 	desc = {
 		trigger = {
-			any_country = {
-				will_leave_for_shadow_kingdom_trigger = yes
-				is_shadow_kingdom_eligible_trigger = yes
-				OR = {
-					is_subject = no
-					AND = {
-						is_subject = yes
-						overlord = {
-							NOT = {
-								is_part_of_hre = yes
-								capital_scope = { region = egypt_region }
-							}
-						}
+				any_province = {
+					is_part_of_hre = no
+					region = egypt
+					owner = {
+					is_part_of_hre = no
 					}
 				}
 			}
-		}
 		desc = shadow_kingdom.3.d # emperor not completely successful
 	}
 	desc = {
 		trigger = {
 			NOT = {
-				any_country = {
-					will_leave_for_shadow_kingdom_trigger = yes
-					is_shadow_kingdom_eligible_trigger = yes
-					OR = {
-						is_subject = no
-						AND = {
-							is_subject = yes
-							overlord = { # overlord chooses for their vassals if eligible to leave themselves
-								NOT = {
-									is_part_of_hre = yes
-									capital_scope = { region = egypt_region }
-								}
-							}
-						}
+				any_province = {
+					is_part_of_hre = no
+					region = egypt
+					owner = {
+					is_part_of_hre = no
 					}
 				}
+			}
 			}
 		}
 		desc = shadow_kingdom.3.d2 # emperor completely successful
@@ -142,7 +129,7 @@ country_event = {
 		has_global_flag = emperor_trying_to_avert_shadow_kingdom
 		OR = {
 			has_country_flag = shadow_kingdom_early_success
-			is_year = 1490
+			is_year = 1447
 		}
 	}
 
@@ -159,28 +146,20 @@ country_event = {
 	option = {
 		name = shadow_kingdom.3.a
 		trigger = {
-			any_country = {
-				will_leave_for_shadow_kingdom_trigger = yes
-				is_shadow_kingdom_eligible_trigger = yes
-				OR = {
-					is_subject = no
-					AND = {
-						is_subject = yes
-						overlord = { # overlord chooses for their vassals if eligible to leave themselves
-							NOT = {
-								is_part_of_hre = yes
-								capital_scope = { region = egypt_region }
-							}
-						}
+				any_province = {
+					is_part_of_hre = no
+					region = egypt
+					owner = {
+					is_part_of_hre = no
 					}
 				}
-			}
 		}
 		custom_tooltip = shadow_kingdom_emperor_gives_up_tt
 		hidden_effect = {
 			every_country = {
 				limit = {
-					is_shadow_kingdom_eligible_trigger = yes
+					is_part_of_hre = yes
+					capital_scope = { region = egypt_region }
 					OR = {
 						is_subject = no
 						AND = {
@@ -199,7 +178,8 @@ country_event = {
 		}
 		every_country = {
 			limit = {
-				is_shadow_kingdom_eligible_trigger = yes
+				is_part_of_hre = yes
+				capital_scope = { region = egypt_region }
 				will_leave_for_shadow_kingdom_trigger = yes
 				OR = {
 					is_subject = no
@@ -218,7 +198,8 @@ country_event = {
 		}
 		every_country = {
 			limit = {
-				is_shadow_kingdom_eligible_trigger = yes
+				is_part_of_hre = yes
+				capital_scope = { region = egypt_region }
 				will_leave_for_shadow_kingdom_trigger = no
 				OR = {
 					is_subject = no
@@ -250,24 +231,15 @@ country_event = {
 	option = {
 		trigger = {
 			NOT = {
-				any_country = {
-					will_leave_for_shadow_kingdom_trigger = yes
-					is_shadow_kingdom_eligible_trigger = yes
-					OR = {
-						is_subject = no
-						AND = {
-							is_subject = yes
-							overlord = { # overlord chooses for their vassals if eligible to leave themselves
-								NOT = {
-									is_part_of_hre = yes
-									capital_scope = { region = egypt_region }
-								}
-							}
-						}
+				any_province = {
+					is_part_of_hre = no
+					region = egypt
+					owner = {
+					is_part_of_hre = no
 					}
 				}
 			}
-		}
+			}
 		name = shadow_kingdom.3.b
 		add_imperial_influence = 25
 		set_global_flag = shadow_kingdom_averted
@@ -278,18 +250,7 @@ country_event = {
 country_event = {
 	id = shadow_kingdom.4
 	title = hre_event.1.t
-	desc = {
-		trigger = {
-			has_country_flag = reined_in_for_shadow_kingdom
-		}
-		desc = shadow_kingdom.4.d2
-	}
-	desc = {
-		trigger = {
-			NOT = { has_country_flag = reined_in_for_shadow_kingdom }
-		}
-		desc = hre_event.1.d
-	}
+	desc = hre_event.1.d
 	picture = HRE_eventPicture
 
 	is_triggered_only = yes
@@ -298,7 +259,7 @@ country_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
-				factor = 1000
+				factor = 0
 				will_leave_for_shadow_kingdom_trigger = no
 			}
 		}
@@ -311,15 +272,8 @@ country_event = {
 				add_imperial_influence = 5
 			}
 		}
-		if = {
-			limit = {
-				NOT = {
-					has_country_flag = reined_in_for_shadow_kingdom
-				}
-			}
-			add_prestige = -20
-			custom_tooltip = shadow_kingdom_triggered_modifier_tt
-		}
+		add_prestige = -20
+		custom_tooltip = shadow_kingdom_triggered_modifier_tt
 	}
 	option = { # leave
 		ai_chance = {
@@ -327,11 +281,6 @@ country_event = {
 			modifier = {
 				factor = 1000
 				will_leave_for_shadow_kingdom_trigger = yes
-			}
-		}
-		trigger = {
-			NOT = {
-				has_country_flag = reined_in_for_shadow_kingdom
 			}
 		}
 		name = hre_event.1.a
@@ -386,10 +335,11 @@ country_event = {
 
 	trigger = {
 		is_emperor = yes
-		is_year = 1460
+		is_year = 1445
 		NOT = { has_global_flag = italians_leave_hre }
 		any_country = {
-			is_shadow_kingdom_eligible_trigger = yes
+			is_part_of_hre = yes
+			capital_scope = { region = egypt_region }
 			NOT = { has_country_flag = reined_in_for_shadow_kingdom }
 		}
 		NOT = { active_imperial_incident = any }
@@ -420,7 +370,9 @@ country_event = {
 		hidden_effect = {
 			every_country = {
 				limit = {
-					is_shadow_kingdom_eligible_trigger = yes
+					is_part_of_hre = yes
+					capital_scope = { region = egypt_region }
+
 					OR = {
 						is_subject = no
 						AND = {
@@ -480,11 +432,6 @@ country_event = {
 		set_global_flag = allied_with_leg_for_egypt
 		BYZ = {
 			create_alliance  = LEG
-			add_trust = {
-				who = LEG
-				value = 50
-				mutual = yes
-			}
 		}
 		BYZ = { country_event = { id = shadow_kingdom.7 } }
 	}
@@ -512,10 +459,9 @@ country_event = {
 			factor = 90
 		}
 		trigger = {
-					has_global_flag = allied_with_leg_for_egypt
-					BYZ = {ai = no}
-					LEG = {ai = yes}
-			}
+			has_global_flag = allied_with_leg_for_egypt
+			BYZ = {ai = no}
+			LEG = {ai = yes}
 		}
 		BYZ = {
 			declare_war_with_cb = {
@@ -536,9 +482,9 @@ country_event = {
 		trigger = {
 			has_global_flag = allied_with_leg_for_egypt
 			NOT = {
-						BYZ = {ai = no}
-						LEG = {ai = yes}
-					}
+				BYZ = {ai = no}
+				LEG = {ai = yes}
+			}
 		}
 		LEG = {
 			declare_war_with_cb = {
@@ -564,14 +510,13 @@ country_event = {
 			factor = 90
 		}
 		trigger = {
-					NOT = {has_global_flag = allied_with_leg_for_egypt}
-			}
+			NOT = {has_global_flag = allied_with_leg_for_egypt}
 		}
-		BYZ = {
-			declare_war_with_cb = {
-				who = UEG
-				casus_belli = cb_annex
-			}
+	}
+	BYZ = {
+		declare_war_with_cb = {
+			who = UEG
+			casus_belli = cb_annex
 		}
 	}
 }
@@ -590,8 +535,13 @@ country_event = {
 		BYZ = {
 			war_with = UEG
 		}
+		OR = {
 		BYZ = {
 			war_score = 50
+		}
+		LEG = {
+			war_score = 50
+		}
 		}
 	}
 	mean_time_to_happen = {

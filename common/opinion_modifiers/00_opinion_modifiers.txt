@@ -4454,12 +4454,12 @@ opinion_took_egypt_for_themselves = {
 }
 
 opinion_took_egypt_for_themselves2 = {
-	opinion = -50
+	opinion = -100
 	yearly_decay = 1
 }
 
 
 opinion_give_autonomy_to_UEG = {
-	opinion = -100
+	opinion = -50
 	yearly_decay = 2
 }
