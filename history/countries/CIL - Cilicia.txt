@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
-primary_culture = anatolian
+primary_culture = cilician
 religion = olympoi
 technology_group = eastern
 capital = 327 
