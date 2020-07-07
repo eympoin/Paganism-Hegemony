@@ -35,6 +35,10 @@ country_event = {
 	}
 	after = {
 		set_variable = {
+			which = HRV_loy
+			value = 2
+			}
+		set_variable = {
 			which = DIH_loy
 			value = 2
 	    }
@@ -62,6 +66,14 @@ country_event = {
 			which = FRS_loy
 			value = 2
 	    }
+		set_variable = {
+			which = ELM_loy
+			value = 0
+			}
+		set_variable = {
+			which = BAL_loy
+			value = 0
+		  }
 	}
 }
 
@@ -415,11 +427,14 @@ country_event = {
 				add_legitimacy = 20
 				add_prestige = 20
 				add_stability = 1
-				change_variable = {
-					which = SIS_loy
-					value = 3
+				PER = {
+					change_variable = {
+						which = SIS_loy
+						value = 3
+					}
+					country_event = { id = flavor_per_cw.51 }
 				}
-				PER = { country_event = { id = flavor_per_cw.51 } }
+
 			}
 			if = {
 				limit = {
@@ -437,11 +452,13 @@ country_event = {
 				add_legitimacy = 20
 				add_prestige = 20
 				add_stability = 1
-				change_variable = {
-					which = SIS_loy
-					value = 2
+				PER = {
+					change_variable = {
+						which = SIS_loy
+						value = 2
+					}
+					country_event = { id = flavor_per_cw.51 }
 				}
-				PER = { country_event = { id = flavor_per_cw.51 } }
 			}
 			if = {
 				limit = {
@@ -459,11 +476,13 @@ country_event = {
 				add_legitimacy = 20
 				add_prestige = 20
 				add_stability = 1
-				change_variable = {
-					which = SIS_loy
-					value = 1
+				PER = {
+					change_variable = {
+						which = SIS_loy
+						value = 1
+					}
+					country_event = { id = flavor_per_cw.51 }
 				}
-				PER = { country_event = { id = flavor_per_cw.51 } }
 			}
 			if = {
 				limit = {
@@ -481,11 +500,13 @@ country_event = {
 				add_legitimacy = 20
 				add_prestige = 20
 				add_stability = 1
-				change_variable = {
-					which = SIS_loy
-					value = -1
+				PER = {
+					change_variable = {
+						which = SIS_loy
+						value = -1
+					}
+					country_event = { id = flavor_per_cw.51 }
 				}
-				PER = { country_event = { id = flavor_per_cw.51 } }
 			}
 			if = {
 				limit = {
@@ -509,11 +530,13 @@ country_event = {
 				limit = {
 					has_country_flag = sis_mihrabanids_b
 				}
-				change_variable = {
-					which = SIS_loy
-					value = -2
+				PER = {
+					change_variable = {
+						which = SIS_loy
+						value = -2
+					}
+					country_event = { id = flavor_per_cw.52 }
 				}
-				PER = { country_event = { id = flavor_per_cw.52 } }
 			}
 			if = {
 				limit = {
@@ -522,11 +545,13 @@ country_event = {
 				add_legitimacy = 20
 				add_prestige = 20
 				add_stability = 1
-				change_variable = {
-					which = SIS_loy
-					value = -1
+				PER = {
+					change_variable = {
+						which = SIS_loy
+						value = -1
+					}
+					country_event = { id = flavor_per_cw.52 }
 				}
-				PER = { country_event = { id = flavor_per_cw.52 } }
 			}
 			if = {
 				limit = {
@@ -535,11 +560,13 @@ country_event = {
 				add_legitimacy = 20
 				add_prestige = 20
 				add_stability = 1
-				change_variable = {
-					which = SIS_loy
-					value = 1
+				PER = {
+					change_variable = {
+						which = SIS_loy
+						value = 1
+					}
+					country_event = { id = flavor_per_cw.52 }
 				}
-				PER = { country_event = { id = flavor_per_cw.52 } }
 			}
 			if = {
 				limit = {
@@ -550,7 +577,6 @@ country_event = {
 				add_stability = 1
 				PER = { country_event = { id = flavor_per_cw.52 } }
 			}
-
 	}
 }
 
@@ -2008,7 +2034,7 @@ country_event = {
 		}
 		2228 = { cede_province = TIM }
 		if = {
-		MRV = {owns = 446 }
+		MRV = { owns = 446 }
 		}
 		446 = { cede_province = TIM }
 	}
@@ -2043,7 +2069,7 @@ country_event = {
 	option = {#The Timurid dismantled
 		name = flavor_per_cw.19.a
 		trigger = {
-		war_score = 50
+			war_score = 50
 			has_country_flag = per_cw_dismantle_tim
 		}
 		add_prestige = 20
@@ -2633,4 +2659,446 @@ country_event = {
 			value = -2
 		}
 	}
+}
+
+#Our efforts rewarded
+country_event = {
+	id = flavor_per_cw.25
+	title = flavor_per_cw.25.t
+	desc = flavor_per_cw.25.d
+	picture = DIPLOMACY_eventPicture
+
+	trigger = {
+		tag = PER
+		OR = {
+			AND = {#MRV
+				check_variable = {
+					which = MRV_loy
+					value = 5
+				}
+				MRV = {
+					NOT = { has_country_flag = loyal_satrap }
+				}
+			}
+			AND = {#GOR
+				check_variable = {
+					which = GOR_loy
+					value = 5
+				}
+				GOR = {
+					NOT = { has_country_flag = loyal_satrap }
+				}
+			}
+			AND = {#HRV
+				check_variable = {
+					which = HRV_loy
+					value = 5
+				}
+				HRV = {
+					NOT = { has_country_flag = loyal_satrap }
+				}
+			}
+			AND = {#DIH
+				check_variable = {
+					which = DIH_loy
+					value = 5
+				}
+				DIH = {
+					NOT = { has_country_flag = loyal_satrap }
+				}
+			}
+			AND = {#SIS
+				check_variable = {
+					which = SIS_loy
+					value = 5
+				}
+				SIS = {
+					NOT = { has_country_flag = loyal_satrap }
+				}
+			}
+			AND = {#FRS
+				check_variable = {
+					which = FRS_loy
+					value = 5
+				}
+				FRS = {
+					NOT = { has_country_flag = loyal_satrap }
+				}
+			}
+			AND = {#KRM
+				check_variable = {
+					which = KRM_loy
+					value = 5
+				}
+				KRM = {
+					NOT = { has_country_flag = loyal_satrap }
+				}
+			}
+			AND = {#ELM
+				check_variable = {
+					which = ELM_loy
+					value = 5
+				}
+				ELM = {
+					NOT = { has_country_flag = loyal_satrap }
+				}
+			}
+			AND = {#BAL
+				check_variable = {
+					which = BAL_loy
+					value = 5
+				}
+				BAL = {
+					NOT = { has_country_flag = loyal_satrap }
+				}
+			}
+		}
+	is_year = 1445
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {#MRV
+		name = flavor_per_cw.25.a
+		trigger = {
+			AND = {#MRV
+				check_variable = {
+					which = MRV_loy
+					value = 5
+				}
+				MRV = {
+					NOT = { has_country_flag = loyal_satrap }
+				}
+			}
+		}
+		MRV = { set_country_flag = loyal_satrap }
+		custom_tooltip = ONCE_AGAIN_LOYAL_MRV
+	}
+	option = {#GOR
+		name = flavor_per_cw.25.b
+		trigger = {
+			AND = {#GOR
+				check_variable = {
+					which = GOR_loy
+					value = 5
+				}
+				GOR = {
+					NOT = { has_country_flag = loyal_satrap }
+				}
+			}
+		}
+		GOR = { set_country_flag = loyal_satrap }
+		custom_tooltip = ONCE_AGAIN_LOYAL_GOR
+	}
+	option = {#DIH
+		name = flavor_per_cw.25.c
+		trigger = {
+			AND = {#DIH
+				check_variable = {
+					which = DIH_loy
+					value = 5
+				}
+				DIH = {
+					NOT = { has_country_flag = loyal_satrap }
+				}
+			}
+		}
+		DIH = { set_country_flag = loyal_satrap }
+		custom_tooltip = ONCE_AGAIN_LOYAL_DIH
+	}
+	option = {#FRS
+		name = flavor_per_cw.25.e
+		trigger = {
+			AND = {#FRS
+				check_variable = {
+					which = FRS_loy
+					value = 5
+				}
+				FRS = {
+					NOT = { has_country_flag = loyal_satrap }
+				}
+			}
+		}
+		FRS = { set_country_flag = loyal_satrap }
+		custom_tooltip = ONCE_AGAIN_LOYAL_FRS
+	}
+	option = {#SIS
+		name = flavor_per_cw.25.f
+		trigger = {
+			AND = {#SIS
+				check_variable = {
+					which = SIS_loy
+					value = 5
+				}
+				SIS = {
+					NOT = { has_country_flag = loyal_satrap }
+				}
+			}
+		}
+		SIS = { set_country_flag = loyal_satrap }
+		custom_tooltip = ONCE_AGAIN_LOYAL_SIS
+	}
+	option = {#KRM
+		name = flavor_per_cw.25.g
+		trigger = {
+			AND = {#KRM
+				check_variable = {
+					which = KRM_loy
+					value = 5
+				}
+				KRM = {
+					NOT = { has_country_flag = loyal_satrap }
+				}
+			}
+		}
+		KRM = { set_country_flag = loyal_satrap }
+		custom_tooltip = ONCE_AGAIN_LOYAL_KRM
+	}
+	option = {#HRV
+		name = flavor_per_cw.25.h
+		trigger = {
+			AND = {#HRV
+				check_variable = {
+					which = HRV_loy
+					value = 5
+				}
+				HRV = {
+					NOT = { has_country_flag = loyal_satrap }
+				}
+			}
+		}
+		HRV = { set_country_flag = loyal_satrap }
+		custom_tooltip = ONCE_AGAIN_LOYAL_HRV
+	}
+	option = {#ELM
+		name = flavor_per_cw.25.i
+		trigger = {
+			AND = {#ELM
+				check_variable = {
+					which = ELM_loy
+					value = 5
+				}
+				ELM = {
+					NOT = { has_country_flag = loyal_satrap }
+				}
+			}
+		}
+		ELM = { set_country_flag = loyal_satrap }
+		custom_tooltip = ONCE_AGAIN_LOYAL_ELM
+	}
+	option = {#BAL
+		name = flavor_per_cw.25.j
+		trigger = {
+			AND = {#BAL
+				check_variable = {
+					which = BAL_loy
+					value = 5
+				}
+				BAL = {
+					NOT = { has_country_flag = loyal_satrap }
+				}
+			}
+		}
+		BAL = { set_country_flag = loyal_satrap }
+		custom_tooltip = ONCE_AGAIN_LOYAL_BAL
+	}
+}
+
+#Hidden : setting modifiers for loyalty
+country_event = {
+	id = flavor_per_cw.2525
+	title = flavor_per_cw.2525.t
+	desc = flavor_per_cw.2525.d
+	picture =	DIPLOMACY_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		is_subject_of_type = persian_satrapdom
+		ROOT = {
+			OR = {
+				AND = {
+					has_country_flag = loyal_satrap
+					NOT = { has_country_modifier = loyal_satrap_mod }
+				}
+				AND = {
+					NOT = { has_country_flag = loyal_satrap }
+					has_country_modifier = loyal_satrap_mod
+				}
+			}
+		}
+		exists = PER
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {#DIH add loy
+		name = flavor_per_cw.2525.a
+		trigger = {
+			tag = DIH
+			NOT = { has_country_modifier = loyal_satrap_mod }
+		}
+		add_country_modifier = {
+			name = loyal_satrap_mod
+			duration = -1
+		}
+	}
+	option = {#DIH remove loy
+		name = flavor_per_cw.2525.b
+		trigger = {
+			tag = DIH
+			has_country_modifier = loyal_satrap_mod
+		}
+		remove_country_modifier = loyal_satrap_mod
+	}
+	option = {#MRV add loy
+		name = flavor_per_cw.2525.c
+		trigger = {
+			tag = MRV
+			NOT = { has_country_modifier = loyal_satrap_mod }
+		}
+		add_country_modifier = {
+			name = loyal_satrap_mod
+			duration = -1
+		}
+	}
+	option = {#MRV remove loy
+		name = flavor_per_cw.2525.e
+		trigger = {
+			tag = MRV
+			has_country_modifier = loyal_satrap_mod
+		}
+		remove_country_modifier = loyal_satrap_mod
+	}
+	option = {#GOR add loy
+		name = flavor_per_cw.2525.f
+		trigger = {
+			tag = GOR
+			NOT = { has_country_modifier = loyal_satrap_mod }
+		}
+		add_country_modifier = {
+			name = loyal_satrap_mod
+			duration = -1
+		}
+	}
+	option = {#GOR remove loy
+		name = flavor_per_cw.2525.g
+		trigger = {
+			tag = GOR
+			has_country_modifier = loyal_satrap_mod
+		}
+		remove_country_modifier = loyal_satrap_mod
+	}
+	option = {#HRV add loy
+		name = flavor_per_cw.2525.h
+		trigger = {
+			tag = HRV
+			NOT = { has_country_modifier = loyal_satrap_mod }
+		}
+		add_country_modifier = {
+			name = loyal_satrap_mod
+			duration = -1
+		}
+	}
+	option = {#HRV remove loy
+		name = flavor_per_cw.2525.i
+		trigger = {
+			tag = HRV
+			has_country_modifier = loyal_satrap_mod
+		}
+		remove_country_modifier = loyal_satrap_mod
+	}
+	option = {#SIS add loy
+		name = flavor_per_cw.2525.j
+		trigger = {
+			tag = SIS
+			NOT = { has_country_modifier = loyal_satrap_mod }
+		}
+		add_country_modifier = {
+			name = loyal_satrap_mod
+			duration = -1
+		}
+	}
+	option = {#SIS remove loy
+		name = flavor_per_cw.2525.k
+		trigger = {
+			tag = SIS
+			has_country_modifier = loyal_satrap_mod
+		}
+		remove_country_modifier = loyal_satrap_mod
+	}
+	option = {#KRM add loy
+		name = flavor_per_cw.2525.l
+		trigger = {
+			tag = KRM
+			NOT = { has_country_modifier = loyal_satrap_mod }
+		}
+		add_country_modifier = {
+			name = loyal_satrap_mod
+			duration = -1
+		}
+	}
+	option = {#KRM remove loy
+		name = flavor_per_cw.2525.m
+		trigger = {
+			tag = KRM
+			has_country_modifier = loyal_satrap_mod
+		}
+		remove_country_modifier = loyal_satrap_mod
+	}
+	option = {#FRS add loy
+		name = flavor_per_cw.2525.n
+		trigger = {
+			tag = FRS
+			NOT = { has_country_modifier = loyal_satrap_mod }
+		}
+		add_country_modifier = {
+			name = loyal_satrap_mod
+			duration = -1
+		}
+	}
+	option = {#FRS remove loy
+		name = flavor_per_cw.2525.o
+		trigger = {
+			tag = FRS
+			has_country_modifier = loyal_satrap_mod
+		}
+		remove_country_modifier = loyal_satrap_mod
+	}
+	option = {#ELM add loy
+		name = flavor_per_cw.2525.p
+		trigger = {
+			tag = ELM
+		}
+		add_country_modifier = {
+			name = loyal_satrap_mod
+			duration = -1
+		}
+	}
+	option = {#BAL add loy
+		name = flavor_per_cw.2525.q
+		trigger = {
+			tag = BAL
+		}
+		add_country_modifier = {
+			name = loyal_satrap_mod
+			duration = -1
+		}
+	}
+}
+
+#Our efforts rewarded
+country_event = {
+	id = flavor_per_cw.26
+
+}
+
+#The Shahanshah's work
+country_event = {
+	id = flavor_per_cw.pasfinis
+
 }
