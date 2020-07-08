@@ -35,30 +35,28 @@ country_event = {
 	title = shadow_kingdom.3.t
 	desc = {
 		trigger = {
-				any_province = {
+			any_province = {
+				region = egypt_region
+				owner = {
 					is_part_of_hre = no
-					region = egypt
-					owner = {
-					is_part_of_hre = no
-					}
 				}
 			}
+		}
 		desc = shadow_kingdom.3.d # emperor not completely successful
 	}
 	desc = {
 		trigger = {
 			NOT = {
 				any_province = {
-					is_part_of_hre = no
-					region = egypt
+					region = egypt_region
 					owner = {
-					is_part_of_hre = no
+						is_part_of_hre = no
 					}
 				}
 			}
-			}
 		}
 		desc = shadow_kingdom.3.d2 # emperor completely successful
+	}
 	picture = HRE_eventPicture
 
 	fire_only_once = yes
@@ -86,13 +84,12 @@ country_event = {
 	option = {
 		name = shadow_kingdom.3.a
 		trigger = {
-				any_province = {
+			any_province = {
+				region = egypt_region
+				owner = {
 					is_part_of_hre = no
-					region = egypt
-					owner = {
-					is_part_of_hre = no
-					}
 				}
+			}
 		}
 		custom_tooltip = shadow_kingdom_emperor_gives_up_tt
 		hidden_effect = {
@@ -172,14 +169,13 @@ country_event = {
 		trigger = {
 			NOT = {
 				any_province = {
-					is_part_of_hre = no
-					region = egypt
+					region = egypt_region
 					owner = {
-					is_part_of_hre = no
+						is_part_of_hre = no
 					}
 				}
 			}
-			}
+		}
 		name = shadow_kingdom.3.b
 		add_imperial_influence = 25
 		set_global_flag = shadow_kingdom_averted
@@ -476,12 +472,12 @@ country_event = {
 			war_with = UEG
 		}
 		OR = {
-		BYZ = {
-			war_score = 50
-		}
-		LEG = {
-			war_score = 50
-		}
+			BYZ = {
+				war_score = 50
+			}
+			LEG = {
+				war_score = 50
+			}
 		}
 	}
 	mean_time_to_happen = {
