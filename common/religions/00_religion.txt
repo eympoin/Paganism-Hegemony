@@ -1706,6 +1706,7 @@ semetic_group{
     can_have_secondary_religion = yes
 
     heretic = { OLD_ARABIAN }
+    personal_deity = yes
   }
   ancient_egyptian_rl = {
     icon = 37

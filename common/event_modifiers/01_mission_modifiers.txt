@@ -272,18 +272,35 @@ chastening_of_venice = {
 
 # Persian Missions
 
-per_tribal_warriors = {
-	manpower_recovery_speed = 0.1
+per_rebuilding_country = {
+	inflation_reduction = 0.1
+	stability_cost_modifier = -0.2
+	technology_cost = -0.1
 }
 
-per_pashtun_warriors = {
-	manpower_recovery_speed = 0.1
-	infantry_power = 0.1
+per_elm_trading = {
+	trade_efficiency = 0.1
+	global_trade_power = 0.1
 }
 
-per_pearl_of_khorasan = {
+per_seat_of_satrap = {
 	local_state_maintenance_modifier = -0.25
-	local_development_cost = -0.1
+	local_development_cost = -0.2
+	local_production_efficiency = 0.1
+}
+
+per_zealotry = {
+	global_missionary_strength = 0.02
+}
+
+per_ind_steer = {
+	trade_steering = 0.2
+}
+
+per_silk_road = {
+	merchants = 1
+	trade_goods_size_modifier = 0.1
+	trade_efficiency = 0.1
 }
 
 # Swedish missions

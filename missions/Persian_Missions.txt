@@ -1,0 +1,716 @@
+per_aftermath_cw_center = {
+	slot = 3 #center
+	generic = no #if a mission without generic = yes wants this slot then it overrides this.
+	ai = yes
+	potential = {
+		tag = PER
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	victory_in_civil_war_per = {
+		icon = mission_monarch_in_throne_room
+		required_missions = {  } #None
+		trigger = {
+			has_country_modifier = won_per_cw
+		}
+		effect = {
+			add_country_modifier = {
+				name = "per_rebuilding_country"
+				duration = 7300
+			}
+		}
+	}
+	the_cities_east_per = {
+		icon = mission_central_asian_city
+		required_missions = { victory_in_civil_war_per }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = herat_area
+				area = sistan_area
+				province_id = 4326
+				province_id = 2235
+				province_id = 2221
+			}
+		}
+		trigger = {
+			owns = 2221
+			owns = 2234
+			owns = 4326
+			owns = 4324
+			owns = 4325
+			owns = 446
+			owns = 2224
+			owns = 435
+			owns = 2230
+			owns = 2229
+		}
+		effect = {
+			4326 = {
+				add_province_modifier = {
+					name = "per_seat_of_satrap"
+					duration = -1
+				}
+			}
+			435 = {
+				add_province_modifier = {
+					name = "per_seat_of_satrap"
+					duration = -1
+				}
+			}
+			446 = {
+				add_province_modifier = {
+					name = "per_seat_of_satrap"
+					duration = -1
+				}
+			}
+			ghor_area = {
+				limit = {
+					NOT = { is_core = ROOT}
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			balkh_area = {
+				limit = {
+					NOT = { is_core = ROOT}
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kabulistan_area = {
+				limit = {
+					NOT = { is_core = ROOT}
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	crushing_the_zunists_per = {
+		icon = mission_non-western_soldiers
+		required_missions = { the_cities_east_per }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = ghor_area
+				area = kabulistan_area
+				area = balkh_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			ghor_area = { #Must still have this
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kabulistan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			balkh_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 100
+			add_prestige = 10
+			add_legitimacy = 10
+			451 = {
+				add_province_modifier = {
+					name = per_seat_of_satrap
+					duration = -1
+				}
+			}
+			add_country_modifier = {
+				name = per_zealotry
+				duration = 3600
+			}
+			multan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lahore_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sind_sagar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	land_trade_control_per = {
+		icon = mission_indian_soldier_elephant
+		required_missions = { crushing_the_zunists_per }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = multan_area
+				province_id = 507
+				province_id = 506
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			sind_sagar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			OR = {
+				owns = 507
+				owns = 506
+			}
+		}
+		effect = {
+			add_prestige = 25
+			451 = { add_center_of_trade_level = 1 }
+			sirhind_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			kashmir_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+	the_richest_of_empires_per = {
+		icon = mission_entrepot_of_india
+		required_missions = {
+			land_trade_control_per
+			reinvigorate_silk_road_per
+			steer_indian_trade_per
+		}
+		position = 5
+		trigger = {
+			4341 = {
+				trade_share = {
+					country = PER
+					share = 50
+				}
+			}
+			owns = 414
+		}
+		effect = {
+			add_inflation = -3
+			4341 = { add_center_of_trade_level = 1 }
+			persia_region = {
+				limit = {
+					NOT = { is_core = ROOT}
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	the_empire_reborn_per = {
+		icon = mission_empire
+		required_missions = {
+			the_richest_of_empires_per
+		}
+		position = 6
+		trigger = {
+			persia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			country_event = = { id = flavor_per_mission.1 }
+		}
+	}
+}
+
+per_aftermath_cw_left = {
+	slot = 1 #left
+	generic = no #if a mission without generic = yes wants this slot then it overrides this.
+	ai = yes
+	potential = {
+		tag = PER
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+
+	integrate_south_per = {
+		icon = mission_establish_high_seas_navy
+		position = 2
+		required_missions = { victory_in_civil_war_per }
+		provinces_to_highlight = {
+			OR = {
+				area = kerman_area
+				province_id = 4327
+				province_id = 431
+				province_id = 2219
+				province_id = 4332
+				province_id = 2223
+				province_id = 4330
+				province_id = 4329
+				province_id = 2218
+			}
+		}
+		trigger = {
+			owns_all_provinces = {
+				area = kerman_area
+			}
+			owns = 4327
+			owns = 431
+			owns = 2219
+			owns = 4332
+			owns = 2223
+			owns = 4330
+			owns = 4329
+			owns = 2218
+		}
+		effect = {
+			4329 = {
+				add_province_modifier = {
+					name = "per_seat_of_satrap"
+					duration = -1
+				}
+			}
+			432 = {
+				add_province_modifier = {
+					name = "per_seat_of_satrap"
+					duration = -1
+				}
+			}
+			khuzestan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			makran_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			4331 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			430 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	reclaim_elymais_per = {
+		icon = mission_have_two_subjects
+		position = 3
+		required_missions = { integrate_south_per }
+		provinces_to_highlight = {
+				area = khuzestan_area
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			khuzestan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mercantilism = 3
+			add_country_modifier = {
+				name = "per_elm_trading"
+				duration = 7300
+			}
+			4289 = {
+				add_province_modifier = {
+					name = per_seat_of_satrap
+					duration = -1
+				}
+			}
+			basra_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bahrain_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+}
+
+per_aftermath_cw_mleft = {
+	slot = 2 #middle left
+	generic = no #if a mission without generic = yes wants this slot then it overrides this.
+	ai = yes
+	potential = {
+		tag = PER
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+
+	reclaim_baluchistan_per = {
+		icon = mission_indian_soldier_elephant
+		position = 3
+		required_missions = { integrate_south_per }
+		provinces_to_highlight = {
+			OR = {
+				area = makran_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			makran_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 10
+			add_mil_power = 100
+			add_country_modifier = {
+				name = per_zealotry
+				duration = 3600
+			}
+			4329 = {
+				add_province_modifier = {
+					name = "per_seat_of_satrap"
+					duration = -1
+				}
+			}
+			kalat_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sindh_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	steer_indian_trade_per = {
+		icon = mission_dominate_home_trade_node
+		position = 4
+		required_missions = {
+			reclaim_baluchistan_per
+			reclaim_elymais_per
+		}
+		provinces_to_highlight = {
+			OR {
+				area = basra_area
+				area = sindh_area
+				province_id = 394
+			}
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			basra_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			sindh_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns = 394
+		}
+		effect = {
+			add_country_modifier = {
+				name = "per_ind_steer"
+				duration = 7300
+			}
+			410 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+					}
+				add_claim = ROOT
+			}
+			4457 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+					}
+				add_claim = ROOT
+			}
+			517 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+					}
+				add_claim = ROOT
+			}
+			529 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+					}
+				add_claim = ROOT
+			}
+			2089 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+					}
+				add_claim = ROOT
+			}
+		}
+	}
+}
+
+per_aftermath_cw_right = {
+	slot = 5 #right
+	generic = no #if a mission without generic = yes wants this slot then it overrides this.
+	ai = yes
+	potential = {
+		tag = PER
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+
+	integrate_north_per = {
+		icon = mission_persian_soldiers
+		position = 2
+		required_missions = { victory_in_civil_war_per }
+		provinces_to_highlight = {
+			OR = {
+				area = merv_area
+				area = tabarestan_area
+				province_id = 437
+				province_id = 438
+				province_id = 2349
+				province_id = 2236
+			}
+		}
+		trigger = {
+			owns_all_provinces = {
+				area = merv_area
+			}
+			owns_all_provinces = {
+				area = tabarestan_area
+			}
+			owns = 437
+			owns = 438
+			owns = 2349
+			owns = 2236
+		}
+		effect = {
+			2349 = {
+				add_province_modifier = {
+					name = "per_seat_of_satrap"
+					duration = -1
+				}
+			}
+			445 = {
+				add_province_modifier = {
+					name = "per_seat_of_satrap"
+					duration = -1
+				}
+			}
+			4341 = {
+				add_province_modifier = {
+					name = "per_seat_of_satrap"
+					duration = -1
+				}
+			}
+			443 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			439 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			transoxiana_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			khiva_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	recuperate_silk_road_per = {
+		icon = mission_asian_trader
+		position = 3
+		required_missions = { integrate_north_per }
+		provinces_to_highlight = {
+				area = transoxiana_area
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			transoxiana_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 100
+			termez_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ferghana_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			kashgaria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+}
+
+per_aftermath_cw_mright = {
+	slot = 4 #middle right
+	generic = no #if a mission without generic = yes wants this slot then it overrides this.
+	ai = yes
+	potential = {
+		tag = PER
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+
+	secure_north_per = {
+		icon = mission_conquer_50_development
+		position = 3
+		required_missions = { integrate_north_per }
+		provinces_to_highlight = {
+			OR = {
+				area = khiva_area
+				province_id = 443
+				province_id = 439
+			}
+		}
+		trigger = {
+			owns_all_provinces = {
+				area = khiva_area
+			}
+			owns_all_provinces = {
+				area = transcaspia_area
+			}
+		}
+		effect = {
+			add_stability = 1
+			add_prestige = 20
+		}
+	}
+	reinvigorate_silk_road_per = {
+		icon = mission_market_place_with_asian_traders
+		position = 4
+		required_missions = {
+			recuperate_silk_road_per
+			secure_north_per
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = khiva_area
+				area = transcaspia_area
+				area = transoxiana_area
+				area = termez_area
+				area = kashgaria_area
+				area = ferghana_area
+			}
+		}
+		trigger = {
+			owns_all_provinces = {
+				area = khiva_area
+			}
+			owns_all_provinces = {
+				area = transoxiana_area
+			}
+			owns_all_provinces = {
+				area = transcaspia_area
+			}
+			owns_all_provinces = {
+				area = termez_area
+			}
+			owns_all_provinces = {
+				area = kashgaria_area
+			}
+			owns_all_provinces = {
+				area = ferghana_area
+			}
+			441 = { province_has_center_of_trade_of_level = 2 }
+			454 = { province_has_center_of_trade_of_level = 2 }
+			739 = { province_has_center_of_trade_of_level = 2 }
+			2124 = { province_has_center_of_trade_of_level = 2 }
+			445 = { province_has_center_of_trade_of_level = 2 }
+			739 = { fort_level = 2 }
+			460 = { fort_level = 2 }
+			443 = { fort_level = 2 }
+			1973 = { fort_level = 2 }
+			442 = { fort_level = 2 }
+			treasury = 500
+		}
+		effect = {
+			add_mercantilism = 3
+			add_country_modifier = {
+				name = "per_silk_road"
+				duration = 7300
+			}
+			add_treasury = -500
+			454 = { add_center_of_trade_level = 1 }
+		}
+	}
+}
