@@ -1,0 +1,63 @@
+#Retake Mecca Arabian
+namespace = flavor_alh
+namespace = flavor_hed
+namespace = flavor_mda
+namespace = flavor_naj
+
+country_event = {
+  id = flavor_alh.1
+  title = "flavor_alh.1.t"
+  desc =  "flavor_alh.1.a"
+  picture = HORDE_ON_HORSEBACK_eventPicture
+
+  fire_only_once = yes
+
+  trigger = {
+    tag = ALH
+    is_year = 1445
+    385 = {religion = sunni}
+
+  }
+
+  mean_time_to_happen = {
+    months = 1
+  }
+
+  option = {
+    name = "flavor_alh.1.b"
+    add_permanent_claim = 385
+
+  }
+}
+
+country_event = {
+  id = flavor_alh.2
+  title = "flavor_alh.2.t"
+  desc =  "flavor_alh.2.c"
+  picture = SIEGE_eventPicture
+
+  fire_only_once = yes
+
+  trigger = {
+    tag = ALH
+    owns = 385
+
+  }
+
+  mean_time_to_happen = {
+    months = 1
+  }
+
+  option = {
+    name = "flavor_alh.2.d"
+    add_prestige = 20
+    add_dip_power = 100
+    add_country_modifier = {
+      name = cooperation_with_merchant_class
+      duration = 3600
+    }
+    385 = {
+      center_of_trade = 1
+    }
+  }
+}

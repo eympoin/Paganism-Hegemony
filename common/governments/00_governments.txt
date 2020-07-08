@@ -31,6 +31,7 @@ monarchy = {
 				holy_state_reform
 				austrian_archduchy_reform
 				persian_empire_decen
+				persian_empire_stable
 				satrapdom
 				persian_empire_cen
 			}
@@ -151,6 +152,8 @@ monarchy = {
 		states_general_reform
 		persian_empire_decen
 		satrapdom
+		persian_empire_cen
+		persian_empire_stable
 	}
 
 	# Dictatorships etc
@@ -178,6 +181,7 @@ monarchy = {
 		satrapdom
 		persian_empire_cen
 		persian_empire_decen
+		persian_empire_stable
 	}
 
 	#Flavor

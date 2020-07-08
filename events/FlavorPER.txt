@@ -34,6 +34,36 @@ country_event = {
 			}
 	}
 	after = {
+		ABA = {
+			reverse_add_opinion = {
+				who = DIH
+				modifier = vassal_abandoned
+			}
+			reverse_add_opinion = {
+				who = MRV
+				modifier = vassal_abandoned
+			}
+			reverse_add_opinion = {
+				who = GOR
+				modifier = vassal_abandoned
+			}
+			reverse_add_opinion = {
+				who = HRV
+				modifier = vassal_abandoned
+			}
+			reverse_add_opinion = {
+				who = SIS
+				modifier = vassal_abandoned
+			}
+			reverse_add_opinion = {
+				who = FRS
+				modifier = vassal_abandoned
+			}
+			reverse_add_opinion = {
+				who = KRM
+				modifier = vassal_abandoned
+			}
+		}
 		set_variable = {
 			which = HRV_loy
 			value = 2
@@ -1479,17 +1509,16 @@ country_event = {
 					name = "per_zor_pro"
 					duration = 720
 			}
-			PER = { send_missionary = yes }
 		}
+		2228 = { change_religion = zoroastrian }
 		reverse_add_opinion = {
 			who = HRV
 			modifier = opinion_benevolent_overlord
 		}
-
-			change_variable = {
+		change_variable = {
 				which = HRV_loy
 				value = 2
-			}
+		}
 
 	}
 	option = {#We shall fund their effort
@@ -1500,14 +1529,13 @@ country_event = {
 					name = "per_zor_pro"
 					duration = 720
 			}
-			HRV = { send_missionary = yes }
+			send_missionary = yes
 		}
 
-			change_variable = {
-				which = HRV_loy
-				value = 1
-			}
-
+		change_variable = {
+			which = HRV_loy
+			value = 1
+		}
 	}
 	option = {#What good would prozelitism do ?
 		name = flavor_per_cw.13.c
@@ -1828,7 +1856,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 20
+		months = 6
 	}
 
 	option = {#They shall have one of the mightiest strongholds
@@ -1965,9 +1993,11 @@ country_event = {
 			value = 2
 		}
 		if = {
-		AFG = { owns = 2225 }
-		}
+			limit = {
+				AFG = { owns = 2225 }
+			}
 		AFG = { join_all_offensive_wars_of = PER }
+		}
 	}
 	option = {#The Shahanshah will do his duty
 		name = flavor_per_cw.18.b
@@ -2030,13 +2060,17 @@ country_event = {
 		}
 
 		if = {
-			MRV = { owns = 2228 }
+			limit = {
+				MRV = { owns = 2228 }
+			}
+			2228 = { cede_province = TIM }
 		}
-		2228 = { cede_province = TIM }
 		if = {
-		MRV = { owns = 446 }
+			limit = {
+				MRV = { owns = 446 }
+			}
+			446 = { cede_province = TIM }
 		}
-		446 = { cede_province = TIM }
 	}
 }
 
@@ -2249,6 +2283,7 @@ country_event = {
 			value = 2
 		}
 		custom_tooltip = ABA_LOOK_WEST
+		ABA = { set_country_flag = ABA_look_west }
 	}
 	option = {#Bojnord is rightfully theirs
 		name = flavor_per_cw.21.b
@@ -2398,6 +2433,7 @@ country_event = {
 		}
 		add_prestige = 10
 		add_years_of_income = 1
+		white_peace = TAB
 		426 = { cede_province = GOR}
 		GOR = { add_core = 426}
 		4341 = { cede_province = GOR}
@@ -2410,6 +2446,7 @@ country_event = {
 		}
 		add_prestige = -10
 		add_years_of_income = -2
+		white_peace = TAB
 		417 = { cede_province = TAB }
 		TAB = { add_core = 417 }
 		4339 = { cede_province = TAB }
@@ -2954,6 +2991,10 @@ country_event = {
 			has_country_modifier = loyal_satrap_mod
 		}
 		remove_country_modifier = loyal_satrap_mod
+		clr_country_flag = loyal_satrap
+		PER = {
+			country_event = { id = flavor_per_cw.26 }
+		}
 	}
 	option = {#MRV add loy
 		name = flavor_per_cw.2525.c
@@ -2973,6 +3014,10 @@ country_event = {
 			has_country_modifier = loyal_satrap_mod
 		}
 		remove_country_modifier = loyal_satrap_mod
+		clr_country_flag = loyal_satrap
+		PER = {
+			country_event = { id = flavor_per_cw.26 }
+		}
 	}
 	option = {#GOR add loy
 		name = flavor_per_cw.2525.f
@@ -2992,6 +3037,10 @@ country_event = {
 			has_country_modifier = loyal_satrap_mod
 		}
 		remove_country_modifier = loyal_satrap_mod
+		clr_country_flag = loyal_satrap
+		PER = {
+			country_event = { id = flavor_per_cw.26 }
+		}
 	}
 	option = {#HRV add loy
 		name = flavor_per_cw.2525.h
@@ -3011,6 +3060,10 @@ country_event = {
 			has_country_modifier = loyal_satrap_mod
 		}
 		remove_country_modifier = loyal_satrap_mod
+		clr_country_flag = loyal_satrap
+		PER = {
+			country_event = { id = flavor_per_cw.26 }
+		}
 	}
 	option = {#SIS add loy
 		name = flavor_per_cw.2525.j
@@ -3030,6 +3083,10 @@ country_event = {
 			has_country_modifier = loyal_satrap_mod
 		}
 		remove_country_modifier = loyal_satrap_mod
+		clr_country_flag = loyal_satrap
+		PER = {
+			country_event = { id = flavor_per_cw.26 }
+		}
 	}
 	option = {#KRM add loy
 		name = flavor_per_cw.2525.l
@@ -3049,6 +3106,10 @@ country_event = {
 			has_country_modifier = loyal_satrap_mod
 		}
 		remove_country_modifier = loyal_satrap_mod
+		clr_country_flag = loyal_satrap
+		PER = {
+			country_event = { id = flavor_per_cw.26 }
+		}
 	}
 	option = {#FRS add loy
 		name = flavor_per_cw.2525.n
@@ -3068,6 +3129,10 @@ country_event = {
 			has_country_modifier = loyal_satrap_mod
 		}
 		remove_country_modifier = loyal_satrap_mod
+		clr_country_flag = loyal_satrap
+		PER = {
+			country_event = { id = flavor_per_cw.26 }
+		}
 	}
 	option = {#ELM add loy
 		name = flavor_per_cw.2525.p
@@ -3091,14 +3156,644 @@ country_event = {
 	}
 }
 
-#Our efforts rewarded
+#Traitors all of them
 country_event = {
 	id = flavor_per_cw.26
+	title = flavor_per_cw.26.t
+	desc = flavor_per_cw.26.d
+	picture = ACCUSATION_eventPicture
 
+	is_triggered_only = yes
+
+	option = {#DIH
+		name = flavor_per_cw.26.a
+		trigger = {
+			DIH = {
+				NOT = { has_country_flag = loyal_satrap }
+				had_country_flag = {
+					flag = loyal_satrap
+					days = 20000
+				}
+			}
+		}
+		#add_prestige = 1
+	}
+	option = {#MRV
+		name = flavor_per_cw.26.b
+		trigger = {
+			MRV = {
+				NOT = { has_country_flag = loyal_satrap }
+				had_country_flag = {
+					flag = loyal_satrap
+					days = 20000
+				}
+			}
+		}
+	}
+	option = {#HRV
+		name = flavor_per_cw.26.c
+		trigger = {
+			HRV = {
+				NOT = { has_country_flag = loyal_satrap }
+				had_country_flag = {
+					flag = loyal_satrap
+					days = 20000
+				}
+			}
+		}
+	}
+	option = {#GOR
+		name = flavor_per_cw.26.e
+		trigger = {
+			GOR = {
+				NOT = { has_country_flag = loyal_satrap }
+				had_country_flag = {
+					flag = loyal_satrap
+					days = 20000
+				}
+			}
+		}
+	}
+	option = {#SIS
+		name = flavor_per_cw.26.f
+		trigger = {
+			SIS = {
+				NOT = { has_country_flag = loyal_satrap }
+				had_country_flag = {
+					flag = loyal_satrap
+					days = 20000
+				}
+			}
+		}
+	}
+	option = {#KRM
+		name = flavor_per_cw.26.g
+		trigger = {
+			KRM = {
+				NOT = { has_country_flag = loyal_satrap }
+				had_country_flag = {
+					flag = loyal_satrap
+					days = 20000
+				}
+			}
+		}
+	}
+	option = {#FRS
+		name = flavor_per_cw.26.h
+		trigger = {
+			FRS = {
+				NOT = {
+					has_country_flag = loyal_satrap
+				}
+				had_country_flag = {
+					flag = loyal_satrap
+					days = 20000
+				}
+			}
+		}
+	}
 }
 
 #The Shahanshah's work
 country_event = {
-	id = flavor_per_cw.pasfinis
+	id = flavor_per_cw.27
+	title = flavor_per_cw.27.t
+	desc = flavor_per_cw.27.d
+	picture = ADVISOR_eventPicture
 
+	fire_only_once = yes
+
+	trigger = {
+		tag = PER
+		is_year = 1455
+	}
+
+	mean_time_to_happen ={
+		months = 1
+	}
+
+	option = {#Peace in the realm
+		name = flavor_per_cw.27.a
+		trigger = {
+			NOT = {
+				any_country = {
+					is_subject_of_type = persian_satrapdom
+					NOT = { tag = ABA }
+					NOT = { has_country_flag = loyal_satrap }
+				}
+			}
+		}
+		add_stability = 1
+		add_prestige = 50
+		add_legitimacy = 20
+		add_manpower = 10
+		add_years_of_income = 3
+		add_adm_power = 200
+		add_dip_power = 200
+		add_mil_power = 200
+		add_government_reform = persian_empire_stable
+		ABA = {
+			add_country_modifier = {
+				name = loyal_satrap_mod
+				duration = -1
+			}
+		}
+		remove_country_modifier = per_cw_1
+	}
+	option = {#Concede to their demands
+		name = flavor_per_cw.27.b
+		trigger = {
+			any_country = {
+				is_subject_of_type = persian_satrapdom
+				NOT = { tag = ABA }
+				NOT = { has_country_flag = loyal_satrap }
+			}
+		}
+		add_prestige = -50
+		add_legitimacy = -20
+		release_all_subjects = yes
+		ABA = {
+			create_subject = {
+				subject_type = persian_satrapdom
+				subject = PER
+			}
+			create_subject = {
+				subject_type = persian_satrapdom
+				subject = GOR
+			}
+			create_subject = {
+				subject_type = persian_satrapdom
+				subject = DIH
+			}
+			create_subject = {
+				subject_type = persian_satrapdom
+				subject = MRV
+			}
+			create_subject = {
+				subject_type = persian_satrapdom
+				subject = HRV
+			}
+			create_subject = {
+				subject_type = persian_satrapdom
+				subject = SIS
+			}
+			create_subject = {
+				subject_type = persian_satrapdom
+				subject = KRM
+			}
+			create_subject = {
+				subject_type = persian_satrapdom
+				subject = FRS
+			}
+			add_government_reform = persian_empire_stable
+			add_core = 427
+			add_core = 2213
+			add_core = 428
+			add_core = 429
+			add_core = 2222
+			add_core = 433
+			add_core = 4171
+			add_core = 4337
+			add_core = 4335
+			add_core = 2216
+		}
+		2216 = { cede_province = ABA }
+		4335 = { cede_province = ABA }
+		4337 = { cede_province = ABA }
+		4171 = { cede_province = ABA }
+		433 = { cede_province = ABA }
+		2222 = { cede_province = ABA }
+		429 = { cede_province = ABA }
+		428 = { cede_province = ABA }
+		2213 = { cede_province = ABA }
+		427 = { cede_province = ABA }
+		2236 = { cede_province = ABA }
+		add_government_reform = satrapdom_reform
+		add_country_modifier = {
+			name = loyal_satrap_mod
+			duration = -1
+		}
+		remove_country_modifier = per_cw_1
+	}
+	option = {#Independence war
+		name = flavor_per_cw.27.c
+		add_legitimacy = -20
+		DIH = {
+			if = {
+			 limit = {
+				 NOT = { has_country_flag = loyal_satrap }
+			 }
+			 grant_independence = yes
+			 create_alliance = ABA
+			 set_country_flag = loyal_to_ABA
+			}
+		}
+		MRV = {
+			if = {
+			 limit = {
+				 NOT = { has_country_flag = loyal_satrap }
+			 }
+			 grant_independence = yes
+			 create_alliance = ABA
+			 set_country_flag = loyal_to_ABA
+			}
+		}
+		HRV = {
+			if = {
+			 limit = {
+				 NOT = { has_country_flag = loyal_satrap }
+			 }
+			 grant_independence = yes
+			 create_alliance = ABA
+			 set_country_flag = loyal_to_ABA
+			}
+		}
+		GOR = {
+			if = {
+			 limit = {
+				 NOT = { has_country_flag = loyal_satrap }
+			 }
+			 grant_independence = yes
+			 create_alliance = ABA
+			 set_country_flag = loyal_to_ABA
+			}
+		}
+		SIS = {
+		 if = {
+			limit = {
+				NOT = { has_country_flag = loyal_satrap }
+			}
+	 		grant_independence = yes
+	 		create_alliance = ABA
+	 		set_country_flag = loyal_to_ABA
+		 }
+		}
+		KRM = {
+			if = {
+			 limit = {
+				 NOT = { has_country_flag = loyal_satrap }
+			 }
+			 grant_independence = yes
+			 create_alliance = ABA
+			 set_country_flag = loyal_to_ABA
+			}
+		}
+		FRS = {
+			if = {
+			 limit = {
+				 NOT = { has_country_flag = loyal_satrap }
+			 }
+			 grant_independence = yes
+			 create_alliance = ABA
+			 set_country_flag = loyal_to_ABA
+			}
+		}
+		ABA = {
+			declare_war_with_cb = {
+				who = PER
+				casus_belli = cb_independence_war
+			}
+			if = {
+				limit = {
+					has_country_flag = ABA_look_west
+				}
+				if = {
+					limit = {
+						NOT = { exists = TAB }
+					}
+					create_alliance = ARM
+				}
+				else = { create_alliance = TAB }
+			}
+		}
+		remove_country_modifier = per_cw_1
+	}
+}
+
+#The conclusion of the war
+country_event = {
+	id = flavor_per_cw.28
+	title = flavor_per_cw.28.t
+	desc = flavor_per_cw.28.d
+	picture = VILLAGE_BURNING_eventPicture
+
+	trigger = {
+		tag = PER
+		war_with = ABA
+		OR = {
+			war_score = 50
+			NOT = { war_score = -50 }
+		}
+		NOT = { is_year = 1500 }
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	option = {#Win
+		name = flavor_per_cw.28.a
+		trigger = {
+			war_score = 50
+		}
+		add_stability = 1
+		add_prestige = 20
+		add_legitimacy = 10
+		add_dip_power = 100
+		add_adm_power = 100
+		add_mil_power = 100
+		white_peace = ABA
+		DIH = {
+		 if = {
+			limit = {
+				NOT = { has_country_flag = loyal_satrap }
+			}
+			 add_country_modifier = {
+			 	name = loyal_satrap_mod
+				duration = -1
+			 }
+		 }
+		 PER = {
+		 	create_subject = {
+				subject_type = persian_satrapdom
+				subject = DIH
+			}
+			change_variable = {
+				which = DIH_loy
+				value = 6
+			}
+		 }
+		}
+		MRV = {
+			if = {
+			limit = {
+				NOT = { has_country_flag = loyal_satrap }
+			}
+			 add_country_modifier = {
+				name = loyal_satrap_mod
+				duration = -1
+			 }
+		 	}
+			PER = {
+			 create_subject = {
+				 subject_type = persian_satrapdom
+				 subject = MRV
+			 }
+			 change_variable = {
+				 which = MRV_loy
+				 value = 6
+			 }
+			}
+		}
+		GOR = {
+					if = {
+						limit = {
+							NOT = { has_country_flag = loyal_satrap }
+						}
+					 	add_country_modifier = {
+							name = loyal_satrap_mod
+							duration = -1
+					 	}
+				 }
+			PER = {
+			 create_subject = {
+				 subject_type = persian_satrapdom
+				 subject = GOR
+			 }
+			 change_variable = {
+				 which = GOR_loy
+				 value = 6
+			 }
+			}
+		}
+		KRM = {
+			if = {
+				limit = {
+						NOT = { has_country_flag = loyal_satrap }
+				}
+		 		add_country_modifier = {
+						name = loyal_satrap_mod
+						duration = -1
+		 		}
+	 		}
+			PER = {
+			 create_subject = {
+				 subject_type = persian_satrapdom
+				 subject = KRM
+			 }
+			 change_variable = {
+				 which = KRM_loy
+				 value = 6
+			 }
+			}
+		}
+		HRV = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = loyal_satrap }
+				}
+			  add_country_modifier = {
+					name = loyal_satrap_mod
+					duration = -1
+			  }
+			}
+			PER = {
+			 create_subject = {
+				 subject_type = persian_satrapdom
+				 subject = HRV
+			 }
+			 change_variable = {
+				 which = HRV_loy
+				 value = 6
+			 }
+			}
+		}
+		SIS = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = loyal_satrap }
+				}
+				add_country_modifier = {
+					name = loyal_satrap_mod
+					duration = -1
+				}
+		 }
+			PER = {
+			 create_subject = {
+				 subject_type = persian_satrapdom
+				 subject = SIS
+			 }
+			 change_variable = {
+				 which = SIS_loy
+				 value = 6
+			 }
+			}
+		}
+		FRS = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = loyal_satrap }
+				}
+				add_country_modifier = {
+					name = loyal_satrap_mod
+					duration = -1
+				 }
+		 }
+			PER = {
+			 create_subject = {
+				 subject_type = persian_satrapdom
+				 subject = FRS
+			 }
+			 change_variable = {
+				 which = FRS_loy
+				 value = 6
+			 }
+			}
+		}
+		inherit = ABA
+		add_government_reform = persian_empire_stable
+	}
+	option = {#Lose
+		name = flavor_per_cw.28.b
+
+		white_peace = ABA
+		ABA = { grant_independence = yes }
+		DIH = {
+			if = {
+					limit = {
+							NOT = { has_country_flag = loyal_satrap }
+					}
+					ABA = {
+							create_subject = {
+								subject_type = persian_satrapdom
+								subject = DIH
+							}
+					}
+			}
+			else = {
+				grant_independence = yes
+			}
+		}
+		MRV = {
+			if = {
+					limit = {
+							NOT = { has_country_flag = loyal_satrap }
+					}
+					ABA = {
+							create_subject = {
+								subject_type = persian_satrapdom
+								subject = MRV
+							}
+					}
+			}
+			else = {
+				grant_independence = yes
+			}
+		}
+		GOR = {
+			if = {
+					limit = {
+							NOT = { has_country_flag = loyal_satrap }
+					}
+					ABA = {
+							create_subject = {
+								subject_type = persian_satrapdom
+								subject = GOR
+							}
+					}
+			}
+			else = {
+				grant_independence = yes
+			}
+		}
+		KRM = {
+			if = {
+					limit = {
+							NOT = { has_country_flag = loyal_satrap }
+					}
+					ABA = {
+							create_subject = {
+								subject_type = persian_satrapdom
+								subject = KRM
+							}
+					}
+			}
+			else = {
+				grant_independence = yes
+			}
+		}
+		HRV = {
+			if = {
+					limit = {
+							NOT = { has_country_flag = loyal_satrap }
+					}
+					ABA = {
+							create_subject = {
+								subject_type = persian_satrapdom
+								subject = HRV
+							}
+					}
+			}
+			else = {
+				grant_independence = yes
+			}
+		}
+		SIS = {
+			if = {
+					limit = {
+							NOT = { has_country_flag = loyal_satrap }
+					}
+					ABA = {
+							create_subject = {
+								subject_type = persian_satrapdom
+								subject = SIS
+							}
+					}
+			}
+			else = {
+				grant_independence = yes
+			}
+		}
+		FRS = {
+			if = {
+					limit = {
+							NOT = { has_country_flag = loyal_satrap }
+					}
+					ABA = {
+							create_subject = {
+								subject_type = persian_satrapdom
+								subject = FRS
+							}
+					}
+			}
+			else = {
+				grant_independence = yes
+			}
+		}
+		ABA = {
+			add_government_reform = persian_empire_stable
+			add_core = 427
+			add_core = 2213
+			add_core = 428
+			add_core = 429
+			add_core = 2222
+			add_core = 433
+			add_core = 4171
+			add_core = 4337
+			add_core = 4335
+			add_core = 2216
+			2216 = { cede_province = ABA }
+			4335 = { cede_province = ABA }
+			4337 = { cede_province = ABA }
+			4171 = { cede_province = ABA }
+			433 = { cede_province = ABA }
+			2222 = { cede_province = ABA }
+			429 = { cede_province = ABA }
+			428 = { cede_province = ABA }
+			2213 = { cede_province = ABA }
+			427 = { cede_province = ABA }
+			2236 = { cede_province = ABA }
+		}
+		release_all_subjects = yes
+	}
 }
