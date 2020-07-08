@@ -5,6 +5,7 @@
 ########################################
 
 namespace = flavor_per_cw
+namespace = flavor_per_mission
 
 #The Satrapies' betrayal
 country_event = {
@@ -1511,12 +1512,6 @@ country_event = {
 		name = flavor_per_cw.13.a
 		add_adm_power = -30
 		add_years_of_income = -0.2
-		2228 = {
-			add_province_modifier = {
-					name = "per_zor_pro"
-					duration = 720
-			}
-		}
 		2228 = { change_religion = zoroastrian }
 		reverse_add_opinion = {
 			who = HRV
@@ -3882,8 +3877,6 @@ country_event = {
 #
 # written by Walthorn
 ##################
-
-namespace = flavor_per_mission
 
 #The empire reborn
 country_event={
