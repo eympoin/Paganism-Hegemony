@@ -4,7 +4,7 @@ add_government_reform = feudalism_reform
 primary_culture = canaan
 religion = chalcedonian
 technology_group = muslim
-capital = 381 # Jerusalem
+capital = 379 # Jerusalem
 
 1444.1.1 = {
 	monarch = {
@@ -12,6 +12,14 @@ capital = 381 # Jerusalem
 		dynasty = "Salomonide"
 		birth_date = 1420.1.1
 		adm = 3
+		dip = 3
+		mil = 4
+	}
+	heir = {
+		name = "Aliyan"
+		dynasty = "Salomonide"
+		birth_date = 1434.1.1
+		adm = 5
 		dip = 3
 		mil = 4
 	}
