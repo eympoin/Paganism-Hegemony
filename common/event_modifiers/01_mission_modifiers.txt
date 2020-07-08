@@ -4348,3 +4348,7 @@ king_of_all_franks = {
 Sunni_missionary_strength  = {
 	global_missionary_strength = 0.02
 }
+
+conversion_of_mecca  = {
+	global_missionary_strength = 0.02
+}
