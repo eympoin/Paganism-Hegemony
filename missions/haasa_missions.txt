@@ -38,14 +38,19 @@ haasa_domination_1 = {
 		icon = mission_arabian_fort
 		required_missions = {Conquest_of_Shammar}
 		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = qasim_area
+			}
+				}
 		trigger = {
     qasim_area = {
       type = all
       country_or_non_sovereign_subject_holds = ROOT
     }
 		}
-
 		effect = {
+		add_mil_power = 50
 		}
 	}
 
@@ -53,6 +58,11 @@ haasa_domination_1 = {
 		icon = mission_traverse_the_sahara
 		required_missions = {take_yemen }
 		position = 5
+			provinces_to_highlight = {
+				OR = {
+					area = ifat_area
+				}
+			}
 		trigger ={
 		ifat_area = {
       type = all
@@ -89,6 +99,16 @@ haasa_domination_2 = {
       icon = mission_arabian_fort
       required_missions = {destroy_hormuz Conquest_of_Shammar}
       position = 2
+			provinces_to_highlight = {
+				OR = {
+					province_id = 397
+					province_id = 398
+					province_id = 399
+					province_id = 400
+					province_id = 2333
+					province_id = 2999
+					}
+				}
       trigger = {
       owns_or_non_sovereign_subject_of = 2333
       owns_or_non_sovereign_subject_of = 397
@@ -109,7 +129,13 @@ haasa_domination_2 = {
         icon = mission_mosque
         required_missions = {Conquest_of_Najd take_hormuz_trade}
         position = 3
+				provinces_to_highlight = {
+					OR = {
+						province_id = 385
+						}
+					}
         trigger = {
+				owns_or_non_sovereign_subject_of = 385
 
         }
         effect = {
@@ -126,7 +152,17 @@ haasa_domination_2 = {
 		  		icon = mission_trade_company_region_abroad
 		  		required_missions = {retake_mecca}
 		  		position = 4
+					provinces_to_highlight = {
+						OR = {
+						area = tihama_al_yemen_area
+						area = yemen_area
+							province_id = 386
+							province_id = 2346
+							}
+						}
 		  		trigger ={
+					owns_or_non_sovereign_subject_of = 2346
+		      owns_or_non_sovereign_subject_of = 386
 					tihama_al_yemen_area= {
 						type = all
 						country_or_non_sovereign_subject_holds = ALH
@@ -213,6 +249,11 @@ haasa_domination_2 = {
 		        icon = mission_arabian_fort
 		        required_missions = {take_hormuz_trade}
 		        position = 3
+						provinces_to_highlight = {
+							OR = {
+								area = mascat_area
+								area = oman_area}
+								}
 		        trigger = {
 						mascat_area = {
 							type = all
@@ -229,6 +270,25 @@ haasa_domination_2 = {
 								duration = 5475 }
 		            }
 		        }
+			Hegemony_in_hormuz_node = {
+						 icon = mission_arabian_fort
+						 required_missions = {End_of_hormuz}
+						 position = 4
+						   trigger = {
+											2999 = {
+															trade_share ={
+																country = ALH
+																share = 55
+																}
+											}
+										}
+						        effect = {
+										add_country_modifier = {
+						            name = "Hegemony_in_hormuz"
+												duration = 5475 }
+
+						            }
+						        }
 
   	}
 	#------------------------------------------
