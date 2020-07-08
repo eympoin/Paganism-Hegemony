@@ -1,0 +1,249 @@
+haasa_domination_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = ALH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	Conquest_of_Shammar = {
+		icon = mission_arabian_fort
+		required_missions = {  } #None
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2338
+				province_id = 393
+				province_id = 2337
+			}
+			}
+		trigger = {
+    owns_or_non_sovereign_subject_of = 2338
+    owns_or_non_sovereign_subject_of = 393
+    owns_or_non_sovereign_subject_of = 2337
+		}
+		effect = {
+    qasim_area = {
+      type = all
+      add_permanent_claim = ALH
+    }
+    add_permanent_claim = 2333
+    add_permanent_claim = 397
+			}
+		}
+
+		Conquest_of_Najd = {
+		icon = mission_arabian_fort
+		required_missions = {Conquest_of_Shammar}
+		position = 2
+		trigger = {
+    qasim_area = {
+      type = all
+      country_or_non_sovereign_subject_holds = ROOT
+    }
+		}
+
+		effect = {
+		}
+	}
+
+	Protect_the_trade = {
+		icon = mission_traverse_the_sahara
+		required_missions = {take_yemen }
+		position = 5
+		trigger ={
+		ifat_area = {
+      type = all
+      country_or_non_sovereign_subject_holds = ROOT
+    }
+		 }
+
+		effect = {
+		add_country_modifier = {
+			name = "hegemonic_ambition"
+			duration = 3650
+		}
+		add_country_modifier = {
+			name = "building_spree"
+			duration = 3650
+		}
+				}
+		}
+
+}
+
+#--------------------------------------------
+haasa_domination_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = ALH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+    take_hormuz_trade = {
+      icon = mission_arabian_fort
+      required_missions = {destroy_hormuz Conquest_of_Shammar}
+      position = 2
+      trigger = {
+      owns_or_non_sovereign_subject_of = 2333
+      owns_or_non_sovereign_subject_of = 397
+      owns_or_non_sovereign_subject_of = 398
+      owns_or_non_sovereign_subject_of = 400
+      owns_or_non_sovereign_subject_of = 2999
+      owns_or_non_sovereign_subject_of = 399
+      }
+      effect = {
+      add_mercantilism = 2
+      add_country_modifier = {
+          name = "dominant_trade_hub"
+          duration = 3650}
+          }
+      }
+
+      retake_mecca = {
+        icon = mission_mosque
+        required_missions = {Conquest_of_Najd take_hormuz_trade}
+        position = 3
+        trigger = {
+
+        }
+        effect = {
+
+        add_country_modifier = {
+            name = "conversion_of_mecca"
+            }
+						add_permanent_claim = 2346
+						add_permanent_claim = 386
+
+            }
+        }
+				take_yemen = {
+		  		icon = mission_trade_company_region_abroad
+		  		required_missions = {retake_mecca}
+		  		position = 4
+		  		trigger ={
+					tihama_al_yemen_area= {
+						type = all
+						country_or_non_sovereign_subject_holds = ALH
+						}
+						yemen_area= {
+							type = all
+							country_or_non_sovereign_subject_holds = ALH
+							}
+		       }
+
+		  		effect = {
+					add_mercantilism = 2
+					add_country_modifier = {
+	            name = "dominant_trade_hub"
+							duration = 3650
+	            }
+							hadramut_area = {
+					      type = all
+					      add_permanent_claim = ALH
+					    }
+							dhofar_area = {
+					      type = all
+					      add_permanent_claim = ALH
+					    }
+							ifat_area = {
+					      type = all
+					      add_permanent_claim = ALH
+					    }
+
+		          }
+		  		}
+
+					Take_hadramut = {
+							icon = mission_arabian_fort
+							required_missions = {take_yemen}
+							position = 5
+							trigger = {
+							hadramut_area= {
+								type = all
+								country_or_non_sovereign_subject_holds = ALH
+								}
+								dhofar_area= {
+									type = all
+									country_or_non_sovereign_subject_holds = ALH
+									}
+
+							}
+							effect = {
+							add_country_modifier = {
+									name = "army_enthusiasm"
+									duration = 7300
+									}
+									}
+							}
+
+	}
+
+#------------------------------------
+  haasa_domination_3 = {
+  	slot = 3
+  	generic = no
+  	ai = yes
+  	potential = {
+  		tag = ALH
+  		NOT = { map_setup = map_setup_random }
+  	}
+  	has_country_shield = yes
+
+		destroy_hormuz = {
+			icon = mission_arabian_fort
+			required_missions = {  }
+			position = 1
+			trigger ={ army_size = 10 }
+
+			effect = {
+			add_country_modifier = {
+				name = "army_enthusiasm"
+				duration = 9125 #25 years
+			}
+					}
+			}
+
+		End_of_hormuz = {
+		        icon = mission_arabian_fort
+		        required_missions = {take_hormuz_trade}
+		        position = 3
+		        trigger = {
+						mascat_area = {
+							type = all
+							country_or_non_sovereign_subject_holds = ALH
+							}
+						oman_area = {
+								type = all
+								country_or_non_sovereign_subject_holds = ALH
+								}
+						}
+		        effect = {
+		        add_country_modifier = {
+		            name = "construction_modifier_haasa"
+								duration = 5475 }
+		            }
+		        }
+
+  	}
+	#------------------------------------------
+		haasa_domination_4 = {
+			slot = 4
+			generic = no
+			ai = yes
+			potential = {
+				tag = ALH
+				NOT = { map_setup = map_setup_random }
+			}
+			has_country_shield = yes
+
+
+
+
+	}
+#--------------------------------------------
