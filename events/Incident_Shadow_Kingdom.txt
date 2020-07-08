@@ -118,7 +118,6 @@ country_event = {
 			}
 		}
 		desc = shadow_kingdom.3.d2 # emperor completely successful
-	}
 	picture = HRE_eventPicture
 
 	fire_only_once = yes
@@ -129,7 +128,7 @@ country_event = {
 		has_global_flag = emperor_trying_to_avert_shadow_kingdom
 		OR = {
 			has_country_flag = shadow_kingdom_early_success
-			is_year = 1447
+			is_year = 1455
 		}
 	}
 
@@ -257,9 +256,9 @@ country_event = {
 
 	option = { # remain
 		ai_chance = {
-			factor = 1
+			factor = 0
 			modifier = {
-				factor = 0
+				factor = 1
 				will_leave_for_shadow_kingdom_trigger = no
 			}
 		}
@@ -277,7 +276,7 @@ country_event = {
 	}
 	option = { # leave
 		ai_chance = {
-			factor = 1
+			factor = 1000
 			modifier = {
 				factor = 1000
 				will_leave_for_shadow_kingdom_trigger = yes
@@ -499,7 +498,7 @@ country_event = {
 	option = {
 		name = "shadow_kingdom.7.b"
 		ai_chance = {
-			factor = 10
+			factor = 0
 		}
 		add_prestige = 10
 	}
