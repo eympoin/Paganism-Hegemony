@@ -75,7 +75,7 @@ religious_center = {
 			limit = {
 				province_id = 118 # Roma
 			}
-			religion = catholic
+			religion = jupiterian
 		}
 		else_if = {
 			limit = {
@@ -142,9 +142,9 @@ religious_center = {
 		}
 		else_if = {
 			limit = {
-				province_id = 266
+				province_id = 4810
 			}
-			religion = hussite
+			religion = olympoi
 		}
 	}
 
