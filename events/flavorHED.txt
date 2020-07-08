@@ -12,7 +12,7 @@ country_event = {
 	trigger = {
 	OR{
 			tag = HED
-			
+
 		}
 	}
 
@@ -69,6 +69,13 @@ country_event = {
 		384 = {
 			cede_province = HED
 		}
+		2328 = {
+			cede_province = HED
+		}
+		4269 = {
+			cede_province = HED
+		}
+
 
 		white_peace = HED
 	}
@@ -81,20 +88,20 @@ country_event = {
 	title = "flavor_hed.3.t"
 	desc = "flavor_hed.3.d"
 	picture = GENERALS_DISCUSSING_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = HED
 		is_year = 1444
-		
+
 	}
 
 	mean_time_to_happen = {
 		days = 3
 	}
-	
-	option = { 
+
+	option = {
 		name = flavor_hed.3.b
 		add_prestige = -25
 		add_stability = -1
@@ -107,49 +114,49 @@ country_event = {
 	title = "flavor_mda.1.t"
 	desc = "flavor_mda.1.d"
 	picture = GENERALS_DISCUSSING_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = MDA
 		is_year = 1444
-		
+
 	}
 
 	mean_time_to_happen = {
 		days = 3
 	}
-	
-	option = { 
+
+	option = {
 		name = flavor_mda.1.b
 		add_prestige = -25
 		add_stability = -1
-		
+
 	}
 }
 
-#End Civil war 
+#End Civil war
 country_event = {
 	id = flavor_hed.4
 	title = "flavor_hed.4.t"
 	desc = "flavor_hed.4.d"
 	picture = GENERALS_DISCUSSING_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = HED
-		NOT = {exists = MDA}  
-		
+		NOT = {exists = MDA}
+
 	}
 
 	mean_time_to_happen = {
 		days = 3
 	}
-	
-	option = { 
+
+	option = {
 		name = flavor_hed.4.b
-		add_prestige = 10 
+		add_prestige = 10
 		add_stability = 1
 	}
 }
