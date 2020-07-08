@@ -12,7 +12,7 @@ country_event = {
 	trigger = {
 		is_emperor = yes
 		NOT = {
-			is_year = 1455
+			is_year = 1456
 		}
 		normal_or_historical_nations = yes
 	}
@@ -27,8 +27,6 @@ country_event = {
 		# see on_actions on_war_lost
 	}
 }
-
-# dummy incident
 country_event = {
 	id = shadow_kingdom.2
 	title = hre_event.3.t
@@ -94,30 +92,28 @@ country_event = {
 	title = shadow_kingdom.3.t
 	desc = {
 		trigger = {
-				any_province = {
+			any_province = {
+				region = egypt_region
+				owner = {
 					is_part_of_hre = no
-					region = egypt
-					owner = {
-					is_part_of_hre = no
-					}
 				}
 			}
+		}
 		desc = shadow_kingdom.3.d # emperor not completely successful
 	}
 	desc = {
 		trigger = {
 			NOT = {
 				any_province = {
-					is_part_of_hre = no
-					region = egypt
+					region = egypt_region
 					owner = {
-					is_part_of_hre = no
+						is_part_of_hre = no
 					}
 				}
 			}
-			}
 		}
 		desc = shadow_kingdom.3.d2 # emperor completely successful
+	}
 	picture = HRE_eventPicture
 
 	fire_only_once = yes
@@ -128,7 +124,7 @@ country_event = {
 		has_global_flag = emperor_trying_to_avert_shadow_kingdom
 		OR = {
 			has_country_flag = shadow_kingdom_early_success
-			is_year = 1455
+			is_year = 1456
 		}
 	}
 
@@ -145,13 +141,12 @@ country_event = {
 	option = {
 		name = shadow_kingdom.3.a
 		trigger = {
-				any_province = {
+			any_province = {
+				region = egypt_region
+				owner = {
 					is_part_of_hre = no
-					region = egypt
-					owner = {
-					is_part_of_hre = no
-					}
 				}
+			}
 		}
 		custom_tooltip = shadow_kingdom_emperor_gives_up_tt
 		hidden_effect = {
@@ -231,14 +226,13 @@ country_event = {
 		trigger = {
 			NOT = {
 				any_province = {
-					is_part_of_hre = no
-					region = egypt
+					region = egypt_region
 					owner = {
-					is_part_of_hre = no
+						is_part_of_hre = no
 					}
 				}
 			}
-			}
+		}
 		name = shadow_kingdom.3.b
 		add_imperial_influence = 25
 		set_global_flag = shadow_kingdom_averted
@@ -334,18 +328,17 @@ country_event = {
 
 	trigger = {
 		is_emperor = yes
-		is_year = 1445
+		is_year = 1446
 		NOT = { has_global_flag = italians_leave_hre }
 		any_country = {
 			is_part_of_hre = yes
 			capital_scope = { region = egypt_region }
-			NOT = { has_country_flag = reined_in_for_shadow_kingdom }
 		}
 		NOT = { active_imperial_incident = any }
 	}
 
 	mean_time_to_happen = {
-		months = 1
+		days = 7
 	}
 
 	option = {
@@ -511,172 +504,172 @@ country_event = {
 		trigger = {
 			NOT = {has_global_flag = allied_with_leg_for_egypt}
 		}
-	}
-	BYZ = {
-		declare_war_with_cb = {
-			who = UEG
-			casus_belli = cb_annex
+		BYZ = {
+			declare_war_with_cb = {
+				who = UEG
+				casus_belli = cb_annex
+			}
 		}
 	}
 }
 
 
-country_event = {
-	id = shadow_kingdom.8
-	title = "shadow_kingdom.8.t"
-	desc = "shadow_kingdom.8.d"
-	picture = SIEGE_eventPicture
+	country_event = {
+		id = shadow_kingdom.8
+		title = "shadow_kingdom.8.t"
+		desc = "shadow_kingdom.8.d"
+		picture = SIEGE_eventPicture
 
-	fire_only_once = yes
+		fire_only_once = yes
 
-	trigger = {
-		tag = BYZ
-		BYZ = {
-			war_with = UEG
-		}
-		OR = {
-		BYZ = {
-			war_score = 50
-		}
-		LEG = {
-			war_score = 50
-		}
-		}
-	}
-	mean_time_to_happen = {
-		months = 1
-	}
-
-	#give UEG to LEG
-	option = {
-		name = "shadow_kingdom.8.b"
-		ai_chance = {
-			factor = 20
-		}
 		trigger = {
-			has_global_flag = allied_with_leg_for_egypt
-		}
-		UEG = {
-			every_owned_province = {
-				cede_province = LEG
+			tag = BYZ
+			BYZ = {
+				war_with = UEG
+			}
+			OR = {
+				BYZ = {
+					war_score = 50
+				}
+				LEG = {
+					war_score = 50
+				}
 			}
 		}
-		add_truce_with = UEG
-		white_peace = UEG
-	}
+		mean_time_to_happen = {
+			months = 1
+		}
 
-	#take UEG when allied
-	option = {
-		name = "shadow_kingdom.8.c"
-		ai_chance = {
-			factor = 10
-		}
-		trigger = {
-			has_global_flag = allied_with_leg_for_egypt
-		}
-		UEG = {
-			every_owned_province = {
-				cede_province = BYZ
+		#give UEG to LEG
+		option = {
+			name = "shadow_kingdom.8.b"
+			ai_chance = {
+				factor = 20
 			}
-		}
-		add_opinion = {
-			who = FROM
-			modifier = opinion_took_egypt_for_themselves
-		}
-		add_truce_with = UEG
-		white_peace = UEG
-	}
-
-	#take UEG when not allied
-	option = {
-		name = "shadow_kingdom.8.e"
-		ai_chance = {
-			factor = 20
-		}
-		trigger = {
-			NOT = {has_global_flag = allied_with_leg_for_egypt}
-		}
-		white_peace = UEG
-		UEG = {
-			every_owned_province = {
-				cede_province = BYZ
+			trigger = {
+				has_global_flag = allied_with_leg_for_egypt
 			}
-		}
-		add_opinion = {
-			who = LEG
-			modifier = opinion_took_egypt_for_themselves2
-		}
-		add_truce_with = UEG
-	}
-	#UEG free but hellenic and back in the empire + free vassals
-	option = {
-		name = "shadow_kingdom.8.f"
-		ai_chance = {
-			factor = 60
-		}
-		360 = {
-			cede_province = THB
-		}
-		359 = {
-			cede_province = FAY
-		}
-		4318 = {
-			cede_province = FAY
-		}
-		4323 = {
-			cede_province = ABY
-		}
-		2317 = {
-			cede_province = FAY
-		}
-		2318 = {
-			cede_province = FAY
-		}
-		2319 = {
-			cede_province = ABY
-		}
-		1233 = {
-			cede_province = ABY
-		}
-		4320 = {
-			cede_province = ABY
-		}
-		4320 = {
-			set_in_empire = yes
-		}
-		4319 = {
-			cede_province = THB
-		}
-		1231 = {
-			cede_province = THB
-		}
-		2320 = {
-			cede_province = BRK
-		}
-		2321 = {
-			cede_province = BRK
-		}
-		add_truce_with = UEG
-		LEG = {
+			UEG = {
+				every_owned_province = {
+					cede_province = LEG
+				}
+			}
+			add_truce_with = UEG
 			white_peace = UEG
+		}
+
+		#take UEG when allied
+		option = {
+			name = "shadow_kingdom.8.c"
+			ai_chance = {
+				factor = 10
+			}
+			trigger = {
+				has_global_flag = allied_with_leg_for_egypt
+			}
+			UEG = {
+				every_owned_province = {
+					cede_province = BYZ
+				}
+			}
+			add_opinion = {
+				who = FROM
+				modifier = opinion_took_egypt_for_themselves
+			}
+			add_truce_with = UEG
+			white_peace = UEG
+		}
+
+		#take UEG when not allied
+		option = {
+			name = "shadow_kingdom.8.e"
+			ai_chance = {
+				factor = 20
+			}
+			trigger = {
+				NOT = {has_global_flag = allied_with_leg_for_egypt}
+			}
+			white_peace = UEG
+			UEG = {
+				every_owned_province = {
+					cede_province = BYZ
+				}
+			}
+			add_opinion = {
+				who = LEG
+				modifier = opinion_took_egypt_for_themselves2
+			}
 			add_truce_with = UEG
 		}
-		UEG = {
-			release_all_subjects = yes
-			change_religion	= olympoi
-		}
-		THB = {
-			change_religion	= olympoi
-		}
-		ABY = {
-			change_religion	= olympoi
-		}
-		FAY = {
-			change_religion	= olympoi
-		}
-		add_opinion = {
-			who = LEG
-			modifier = opinion_give_autonomy_to_UEG
+		#UEG free but hellenic and back in the empire + free vassals
+		option = {
+			name = "shadow_kingdom.8.f"
+			ai_chance = {
+				factor = 60
+			}
+			360 = {
+				cede_province = THB
+			}
+			359 = {
+				cede_province = FAY
+			}
+			4318 = {
+				cede_province = FAY
+			}
+			4323 = {
+				cede_province = ABY
+			}
+			2317 = {
+				cede_province = FAY
+			}
+			2318 = {
+				cede_province = FAY
+			}
+			2319 = {
+				cede_province = ABY
+			}
+			1233 = {
+				cede_province = ABY
+			}
+			4320 = {
+				cede_province = ABY
+			}
+			4320 = {
+				set_in_empire = yes
+			}
+			4319 = {
+				cede_province = THB
+			}
+			1231 = {
+				cede_province = THB
+			}
+			2320 = {
+				cede_province = BRK
+			}
+			2321 = {
+				cede_province = BRK
+			}
+			add_truce_with = UEG
+			LEG = {
+				white_peace = UEG
+				add_truce_with = UEG
+			}
+			UEG = {
+				release_all_subjects = yes
+				change_religion	= olympoi
+			}
+			THB = {
+				change_religion	= olympoi
+			}
+			ABY = {
+				change_religion	= olympoi
+			}
+			FAY = {
+				change_religion	= olympoi
+			}
+			add_opinion = {
+				who = LEG
+				modifier = opinion_give_autonomy_to_UEG
+			}
 		}
 	}
-}

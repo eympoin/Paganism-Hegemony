@@ -1,0 +1,17 @@
+government = republic
+add_government_reform = free_city
+government_rank = 1
+primary_culture = greek
+religion = olympoi
+technology_group = western
+capital = 4810
+fixed_capital = 4810
+
+1444.11.11 = {
+	monarch = {
+		name = "Apollodoros"
+		adm = 3
+		dip = 6
+		mil = 3
+	}
+}

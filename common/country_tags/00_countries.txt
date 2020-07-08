@@ -70,6 +70,7 @@ MIA = "countries/Moesia.txt"
 PEL = "countries/Pelagonia.txt"
 PEC = "countries/Pechenegs.txt"
 ILY = "countries/Illyria.txt"
+DLP = "countries/Delphi.txt"
 
 PON = "countries/Pontus.txt"
 PHR = "countries/Phrygia.txt"

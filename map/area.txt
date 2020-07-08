@@ -1061,7 +1061,7 @@ morea_area = { #4 Central Greece
 }
 
 attica_area = { #Attica and Boeotia
-	146 4792 3003
+	146 4792 3003 4810
 }
 
 south_islands_area = { #crete and Rhodes
@@ -1073,7 +1073,7 @@ northern_greece_area = { #3 #Northern Greece
 }
 
 thessalia_area = { #Thessalia Greece
-	147 4795 1853
+	147 4795 1853 
 }
 
 thrace_area = { #5
