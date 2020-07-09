@@ -1,0 +1,60 @@
+########################################
+# Flavor Events for Timurid
+#
+# written by Sara Wendel-�rtqvist
+# Events rewritten and adapted for patch 1.22 by Henrik Lohmander
+########################################
+
+namespace = flavor_tim
+normal_or_historical_nations = yes
+
+
+# Ulugh Beg's Observatory
+country_event = {
+	id = flavor_tim.3
+	title = "flavor_tim.EVTNAME3"
+	desc = "flavor_tim.EVTDESC3"
+	picture = UNIVERSITY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = TRS
+			tag = TIM
+		}
+		has_ruler = "Ulugh Beg"
+		NOT = { is_year = 1465 }
+	}
+
+	mean_time_to_happen = {
+		months = 63
+	}
+
+	option = {
+		name = "flavor_tim.EVTOPTA3" # Build it!
+		add_years_of_income = -1
+		add_dip_power = 50
+		add_mil_power = 50
+		add_adm_power = 50
+		add_innovativeness_big_effect = yes
+	}
+	option = {
+		name = "flavor_tim.EVTOPTB3" # We don't have the time or the money for such foolishness!
+		add_prestige = -5
+	}
+}
+
+country_event = {
+	id = flavor_tim.4
+	title = "flavor_tim.0.t"
+	desc = "flavor_tim.0.d"
+	picture = OVEREXTENSION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "flavor_tim.0.a" # My time has come!
+		custom_tooltip = flavor_tim.0.a.tt
+	}
+}
