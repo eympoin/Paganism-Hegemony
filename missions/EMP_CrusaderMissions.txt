@@ -19,6 +19,46 @@ EMP_crusader_1 = {
 			country_event = { id = flavor_koj.1 }
 		}
 	}
+	cannanite_settlers_koj = {
+		icon = mission_settlers_north_america
+		required_missions = { unify_palestine_koj }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4809
+				province_id = 1854
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			owns = 4809
+			owns = 1854
+			dip_power = 100
+		}
+		effect = {
+			add_dip_power = -200
+			add_country_modifier = {
+				name = koj_cannan_settlers
+				duration = 10900
+			}
+			syria_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+					NOT = { owned_by = PAP }
+				}
+				add_permanent_claim = ROOT
+			}
+			aleppo_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+					NOT = { owned_by = PAP }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
 }
 
 EMP_crusader_2 = {
@@ -475,182 +515,45 @@ EMP_crusader_4 = {
 	slot = 4
 	generic = no
 	ai = yes
-	potential_on_load = {
-		has_dlc = "Emperor"
-	}
 	potential = {
-		has_dlc = "Emperor"
-		OR = {
-			tag = CYP
-			tag = KNI
-			tag = ATH
-			tag = NAX
-			tag = KOJ
-			tag = EPI
-		}
+		tag = KOJ
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 
-	EMP_crusader_spain = {
-		icon = mission_imperial_spain
-		required_missions = { }
-		provinces_to_highlight = {
-			province_id = 126
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+	jerusalem_bishop_koj = {
+		icon = kingdom_of_heaven
+		required_missions = { renovate_holy_sepulcher_koj }
+		position = 2
+		provinces_to_highlight = {  }
+		trigger = {
+			is_subject = no
+			at_peace = yes
+			stability = 2
+			prestige = 20
+			379 = { has_state_patriach = yes }
+		}
+		effect = {
+			country_event = { id = flavor_koj.2 }
+		}
+	}
+	alexandria_bishop_koj = {
+		icon = guardians_of_saint_sava
+		required_missions = {
+			jerusalem_bishop_koj
+			the_granary_mediteranean_koj
 		}
 		trigger = {
 			is_subject = no
-			if = {
-				limit = {
-					NOT = { has_global_flag = knights_malta_event_flag }
-					126 = {
-						owner = {
-							is_subject = no
-						}
-					}
-				}
-				OR = {
-					126 = { country_or_non_sovereign_subject_holds = ROOT }
-					126 = {
-						owner = {
-							alliance_with = ROOT
-							has_opinion = {
-								who = ROOT
-								value = 150
-							}
-						}
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = { has_global_flag = knights_malta_event_flag }
-				}
-				OR = {
-					126 = { country_or_non_sovereign_subject_holds = ROOT }
-					126 = {
-						owner = {
-							overlord = {
-								alliance_with = ROOT
-								has_opinion = {
-									who = ROOT
-									value = 150
-								}
-							}
-						}
-					}
-				}
-			}
-			else = {
-				126 = { country_or_non_sovereign_subject_holds = ROOT }
+			at_peace = yes
+			stability = 2
+			prestige = 20
+			358 = {
+				has_state_patriach = yes
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					NOT = {
-						126 = { country_or_non_sovereign_subject_holds = ROOT }
-					}
-					126 = {
-						owner = { is_subject = no }
-					}
-					NOT = { has_global_flag = knights_malta_event_flag }
-				}
-				126 = {
-					owner = {
-						set_country_flag = kni_malta_mision_flag
-						country_event = { id = flavor_kni.100 }
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						126 = { country_or_non_sovereign_subject_holds = ROOT }
-					}
-					126 = {
-						owner = { is_subject = yes }
-					}
-					NOT = { has_global_flag = knights_malta_event_flag }
-				}
-				126 = {
-					owner = {
-						overlord = {
-							set_country_flag = kni_malta_mision_flag
-							country_event = { id = flavor_kni.100 }
-						}
-					}
-				}
-			}
-			else = {
-				add_dip_power = 100
-			}
-		}
-	}
-	EMP_crusader_malta = {
-		icon = fortify_malta
-		required_missions = { EMP_crusader_spain }
-		provinces_to_highlight = {
-			province_id = 126
-		}
-		trigger = {
-			owns_core_province = 126
-			126 = {
-				OR = {
-					fort_level = 3
-					has_building = shipyard
-					has_building = grand_shipyard
-				}
-			}
-		}
-		effect = {
-			126 = {
-				add_province_modifier = {
-					name = "malta_fort"
-					duration = -1
-				}
-			}
-			354 = {
-				if = {
-					limit = {
-						NOT = {
-							country_or_non_sovereign_subject_holds = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			2954 = {
-				if = {
-					limit = {
-						NOT = {
-							country_or_non_sovereign_subject_holds = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			2453 = {
-				if = {
-					limit = {
-						NOT = {
-							country_or_non_sovereign_subject_holds = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			341 = {
-				if = {
-					limit = {
-						NOT = {
-							country_or_non_sovereign_subject_holds = ROOT
-						}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+			country_event = { id = flavor_koj.4 }
 		}
 	}
 	EMP_crusader_africa = {
@@ -763,51 +666,58 @@ EMP_crusader_5 = {
 			}
 		}
 	}
-	EMP_crusader_fountain_of_youth = {
-		icon = the_fountain_of_youth
-		required_missions = {  }
+	the_granary_mediteranean_koj = {
+		icon = mission_develop_cordoba
+		required_missions = { renovate_holy_sepulcher_koj }
 		provinces_to_highlight = {
-			has_province_modifier = sce_life_water
 		}
 		trigger = {
-			if = {
-				limit = {
-					has_dlc = "El Dorado"
-					OR = {
-						NOT = {
-							south_america = {
-								type = all
-								has_discovered = ROOT
-							}
-						}
-						AND = {
-							south_america = {
-								type = all
-								has_discovered = ROOT
-							}
-							any_province = {
-								has_province_modifier = sce_life_water
-							}
-						}
-					}
-				}
-				any_province = {
-					has_province_modifier = sce_life_water
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-			}
-			else = {
-				amazon_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-			}
+			has_country_modifier = koj_the_great_drought
 		}
 		effect = {
 			add_country_modifier = {
-				name = "guardians_of_the_fountain"
-				duration = -1
+				name = koj_desperate_army
+				duration = 1825
 			}
+			bahari_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			delta_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	fead_the_people_koj = {
+		icon = mission_bedouins
+		required_missions = { the_granary_mediteranean_koj }
+		provinces_to_highlight = {
+				OR = {
+					area = delta_area
+					area = bahari_area
+				}
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			delta_area = { country_or_non_sovereign_subject_holds = ROOT }
+			bahari_area = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		effect = {
+			add_years_of_income = 2
+			add_prestige = 20
+			add_country_modifier = {
+				name = national_recovery
+				duration = 1825
+			}
+			remove_country_modifier = koj_the_great_drought
+			remove_country_modifier = koj_desperate_army
 		}
 	}
 }

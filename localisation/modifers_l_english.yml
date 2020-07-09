@@ -2417,3 +2417,13 @@ per_ind_steer:0 "Persian ventures in India"
 desc_per_ind_steer:0 "The riches of India can be found both on land and on sea, now that we control trade routes into India we must divert the trade from the arabia peninsula."
 per_silk_road:0 "The persian silk road"
 desc_per_silk_road:0 "The silk road is being heavily invested into, turning it back to its former glory."
+
+#Kingdom of Jerusalem Mission Rewards
+koj_cannan_settlers:0 "Cannanite settlers"
+desc_koj_cannan_settlers:0 "The tribes of cannan have been left to live in desolate lands and desert, as we claim new and fertile land on the cost huge influx of settlers easying the integration of newly conquered provinces."
+koj_seat_of_bishop:0 "Seat of a consecrated archbishop"
+desc_koj_seat_of_bishop:0 "An archbishop consecrated in the holy sepulcher resides in this city. The land is blessed by his presence and the populus is invigored by the cantiques he recites."
+koj_the_great_drought:0 "Great famine"
+desc_koj_the_great_drought:0 "A great famine broke out following an unforseen drought, the land and the people are dying, nothing comes out of the ground as if the land was cursed."
+koj_desperate_army:0 "The force of Desperation"
+desc_koj_desperate_army:0 "Desparation slowly fills the ranks of the soldiers, they are fighting for the survival of their brethren back at home. They are fearsome in battle, but their morale is as empty as their stomachs."

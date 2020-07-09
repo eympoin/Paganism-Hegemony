@@ -16,13 +16,16 @@ capital = 414
 	}
 }
 
-1444.11.11 = {
+1444.1.1 = {
 	heir = {
 		name = "Ahura"
+		monarch_name = "Ahura I"
 		dynasty = "Saffarid"
 		birth_date = 1425.3.30
+		death_date = 1504.10.5
 		adm = 4
 		dip = 5
 		mil = 3
+		religion = zoroastrian
 	}
 }
