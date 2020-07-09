@@ -4363,3 +4363,15 @@ Hegemony_in_hormuz = {
 trade_efficiency = 0.20
 local_development_cost = -0.05
 }
+
+#Hejaz
+Prepare_for_War {
+global_unrest = -2
+global_autonomy = -0.08
+}
+
+South_Arabia_integrate {
+local_development_cost = -0.05
+global_autonomy = -0.05
+global_unrest = -1
+}

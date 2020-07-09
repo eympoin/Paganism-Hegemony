@@ -2417,3 +2417,17 @@ per_ind_steer:0 "Persian ventures in India"
 desc_per_ind_steer:0 "The riches of India can be found both on land and on sea, now that we control trade routes into India we must divert the trade from the arabia peninsula."
 per_silk_road:0 "The persian silk road"
 desc_per_silk_road:0 "The silk road is being heavily invested into, turning it back to its former glory."
+
+#Hejaz
+South_Arabia_integrate:0 "South Arabia integrate"
+desc_South_Arabia_integrate:0 ""
+Prepare_for_War:0 "Prepare for War"
+desc_Prepare_for_War:0 ""
+Hegemony_in_hormuz:0 "Hegemony in Hormuz"
+desc_Hegemony_in_hormuz:0 ""
+
+#al Haasa
+conversion_of_mecca:0 "Conversion of Mecca"
+desc_conversion_of_mecca:0 ""
+construction_modifier_haasa:0 "Construction modifier Haasa"
+desc_construction_modifier_haasa:0 ""
