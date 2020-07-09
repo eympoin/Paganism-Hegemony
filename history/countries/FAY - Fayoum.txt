@@ -6,14 +6,3 @@ technology_group = muslim
 capital = 359
 elector = no
 government_rank = 1
-
-1435.1.1 = {
-	monarch = {
-		name = "Adrian"
-		dynasty = "Bessarion"
-		birth_date = 1420.1.1
-		dip = 5
-		adm = 5
-		mil = 5
-	}
-}

@@ -158,6 +158,7 @@ country_event = {
 		name = flavor_hed.4.b
 		add_prestige = 10
 		add_stability = 1
+		add_treasury = 100
 	}
 }
 
@@ -229,5 +230,6 @@ country_event = {
 		name = flavor_mda.3.h
 		add_prestige = 10
 		add_stability = 1
+		add_treasury = 100
 	}
 }

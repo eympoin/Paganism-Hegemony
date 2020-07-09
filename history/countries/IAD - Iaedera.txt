@@ -10,11 +10,10 @@ government_rank = 1
 
 1397.1.1 = {
 	monarch = {
-		name = "Iason"
-		dynasty = "Syros"
-		birth_date = 1385.1.1
-		dip = 1
-		adm = 2
+		name = "Orestes"
+		birth_date = 1392.1.1
+		dip = 2
+		adm = 1
 		mil = 1
 	}
 }

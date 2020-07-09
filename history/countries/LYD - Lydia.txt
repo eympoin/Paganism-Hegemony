@@ -9,11 +9,10 @@ elector=no
 government_rank = 1
 1390.1.1 = {
 	monarch = {
-		name = "Apollonia"
-		female = yes
-		dynasty = "Notaras"
-		adm = 4
-		dip = 3
-		mil = 2
+		name = "Eusebios"
+		dynasty = "Lardotyros"
+		adm = 5
+		dip = 1
+		mil = 3
 	}
 }

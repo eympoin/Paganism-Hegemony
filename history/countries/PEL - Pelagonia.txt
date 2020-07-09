@@ -8,14 +8,25 @@ technology_group = eastern
 capital = 148
 fixed_capital = 148# Cannot move capital away from this province & no power cost to move to it
 
-1398.2.16 = {
+1444.1.1 = {
 	monarch = {
-		name = "Manuel"
-		dynasty = "Leonid"
-		birth_date = 1385.6.27		
-		adm = 6
-		dip = 2
+		name = "Antiochos"
+		dynasty = "Choumnos"
+		adm = 5
+		dip = 6
 		mil = 1
 	}
 }
 
+1444.1.1 = {
+	heir = {
+
+		monarch_name = "Gregoras"
+		dynasty = "Choumnos"
+		birth_date = 1433.1.1
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}

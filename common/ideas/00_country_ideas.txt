@@ -3725,7 +3725,10 @@ SCO_Ideas = {
 	}
 
 	trigger = {
+	OR = {
 		tag = SCO
+		tag = PCT
+		}
 	}
 	free = yes
 
@@ -8360,7 +8363,7 @@ WLS_ideas = {
 	}
 
 	trigger = {
-		tag = WLS
+		primary_culture = welsh
 	}
 	free = yes		#will be added at load.
 

@@ -4390,3 +4390,15 @@ koj_the_great_drought = {
 	global_tax_modifier = -0.2
 	global_unrest = 4
 }
+
+#Hejaz
+Prepare_for_War {
+global_unrest = -2
+global_autonomy = -0.08
+}
+
+South_Arabia_integrate {
+local_development_cost = -0.05
+global_autonomy = -0.05
+global_unrest = -1
+}

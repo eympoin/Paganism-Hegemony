@@ -2427,3 +2427,17 @@ koj_the_great_drought:0 "Great famine"
 desc_koj_the_great_drought:0 "A great famine broke out following an unforseen drought, the land and the people are dying, nothing comes out of the ground as if the land was cursed."
 koj_desperate_army:0 "The force of Desperation"
 desc_koj_desperate_army:0 "Desparation slowly fills the ranks of the soldiers, they are fighting for the survival of their brethren back at home. They are fearsome in battle, but their morale is as empty as their stomachs."
+
+#Hejaz
+South_Arabia_integrate:0 "South Arabia integrate"
+desc_South_Arabia_integrate:0 ""
+Prepare_for_War:0 "Prepare for War"
+desc_Prepare_for_War:0 ""
+Hegemony_in_hormuz:0 "Hegemony in Hormuz"
+desc_Hegemony_in_hormuz:0 ""
+
+#al Haasa
+conversion_of_mecca:0 "Conversion of Mecca"
+desc_conversion_of_mecca:0 ""
+construction_modifier_haasa:0 "Construction modifier Haasa"
+desc_construction_modifier_haasa:0 ""

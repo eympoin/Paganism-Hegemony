@@ -1165,7 +1165,7 @@ basra={
 		2335 2336 2339 4275 #yamamah_area
 		408 2311 2312 4288 #basra_area
 		406 409 410 2310 4291 #iraq_arabi_area
-		413 414 2209 2210 #luristan_area
+		413 2209 2210 #luristan_area
 		415 2211 4293 4294 #shahrizor_area
 		2334 4276 #Wasteland
 	}
@@ -1234,6 +1234,7 @@ persia={
 		416 2206 2207 4304 #tabriz_area
 		2212 2215 4300 4338 #azerbaijan_area
 		4177 4170 4172 4179#Wasteland
+		414
 	}
 }
 aleppo={
@@ -2322,7 +2323,7 @@ english_channel={
 		233 234 4130 4373 4374 1860 4370 #wessex_area
 		235 236 237 238 4371 #home_counties_area
 		90  1865 #flanders_area
-		4769 182 
+		4769 182
 	}
 	end=yes
 }

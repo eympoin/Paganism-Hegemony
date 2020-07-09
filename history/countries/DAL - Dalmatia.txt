@@ -8,24 +8,23 @@ government_rank = 1
 
 1444.1.1 = {
 	monarch = {
-		name = "John"
-		dynasty = "Hunyadi"
-		adm = 2
-		dip = 2
-		mil = 2
+		name = "Matthaios"
+		dynasty = "Boilas"
+		adm = 4
+		dip = 3
+		mil = 1
 	}
 }
 
 1444.1.1 = {
 	heir = {
-		name = "László"
-		monarch_name = "László"
-		dynasty = "Hunyadi"
+
+		monarch_name = "Eustace"
+		dynasty = "Boilas"
 		birth_date = 1433.1.1
-		death_date = 1457.3.16
 		claim = 95
-		adm = 2
-		dip = 2
-		mil = 2
+		adm = 1
+		dip = 5
+		mil = 4
 	}
 }
