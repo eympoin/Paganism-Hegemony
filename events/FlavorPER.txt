@@ -3867,8 +3867,16 @@ country_event = {
 			2213 = { cede_province = ABA }
 			427 = { cede_province = ABA }
 			2236 = { cede_province = ABA }
+			create_subject = {
+				subject_type = persian_satrapdom
+				subject = PER
+			}
 		}
 		release_all_subjects = yes
+		add_country_modifier = {
+			name = won_per_cw
+			duration = -1
+		}
 	}
 }
 

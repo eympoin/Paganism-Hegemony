@@ -17,10 +17,14 @@ capital = 379 # Jerusalem
 	}
 	heir = {
 		name = "Aliyan"
+		monarch_name = "Aliyan the Just"
 		dynasty = "Salomonide"
 		birth_date = 1434.1.1
+		death_date = 1504.10.5
+		claim = 95
 		adm = 5
 		dip = 3
 		mil = 4
+		religion = chalcedonian
 	}
 }

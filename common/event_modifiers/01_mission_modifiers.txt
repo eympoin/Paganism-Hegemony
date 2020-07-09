@@ -4354,14 +4354,41 @@ Sunni_missionary_strength  = {
 conversion_of_mecca  = {
 	global_missionary_strength = 0.02
 }
+
 construction_modifier_haasa = {
-production_efficiency = 0.1
-build_cost = -0.10
+	production_efficiency = 0.1
+	build_cost = -0.10
 }
 
 Hegemony_in_hormuz = {
-trade_efficiency = 0.20
-local_development_cost = -0.05
+	trade_efficiency = 0.20
+	local_development_cost = -0.05
+}
+
+#Kingdom of Jerusalem
+
+koj_cannan_settlers = {
+	years_of_nationalism = -10
+	culture_conversion_cost = -0.8
+}
+
+koj_seat_of_bishop = {
+	local_tax_modifier = 0.1
+	local_development_cost = -0.1
+	state_maintenance_modifier = -0.25
+}
+
+koj_desperate_army = {
+	shock_damage = 0.2
+	recover_army_morale_speed = -0.2
+	land_morale = -0.1
+}
+
+koj_the_great_drought = {
+	production_efficiency = -0.8
+	manpower_recovery_speed = -0.5
+	global_tax_modifier = -0.2
+	global_unrest = 4
 }
 
 #Hejaz
