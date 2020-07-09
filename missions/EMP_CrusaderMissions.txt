@@ -59,214 +59,58 @@ EMP_crusader_1 = {
 			}
 		}
 	}
+	a_temple_for_apostle_koj = {
+		icon = show_piety
+		required_missions = { cannanite_settlers_koj }
+		position = 3
+		provinces_to_highlight = {
+		}
+		trigger = {
+			temple = 13
+			2313 = { has_building = temple }
+			377 = { has_building = temple }
+			382 = { has_building = temple }
+		}
+		effect = {
+			add_adm_power = 100
+			add_patriarch_authority = 0.1
+			add_country_modifier = {
+				name = enthusiastic_believer
+				duration = 1850
+			}
+		}
+	}
 }
 
 EMP_crusader_2 = {
 	slot = 2
 	generic = no
 	ai = yes
-	potential_on_load = {
-		has_dlc = "Emperor"
-	}
 	potential = {
-		has_dlc = "Emperor"
-		OR = {
-			tag = CYP
-			tag = KNI
-			tag = ATH
-			tag = NAX
-			tag = KOJ
-			tag = EPI
-		}
-		NOT = { map_setup = map_setup_random }
+		tag = KOJ
 	}
 	has_country_shield = yes
 
-	EMP_crusader_navy = {
-		icon = crusader_fleet
-		required_missions = { }
-		provinces_to_highlight = {
-		}
-		trigger = {
-			is_subject = no
-			navy_size_percentage = 1
-			num_of_admirals = 1
-		}
-		effect = {
-			if = {
-				limit = {
-					religion = catholic
-				}
-				add_country_modifier = {
-					name = "kni_new_crusade"
-					duration = 7300
-				}
-			}
-			aleppo_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			palestine_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-
-	EMP_crusader_jerusalem = {
+	antioch_bishop_koj = {
 		icon = jerusalem
-		required_missions = { EMP_crusader_navy }
-		position = 2
+		required_missions = { cannanite_settlers_koj }
+		position = 3
 		provinces_to_highlight = {
-			province_id = 379
+			area = aleppo_area
 			NOT = { owned_by = ROOT }
 		}
 		trigger = {
-			owns = 379
-		}
-		effect = {
-			if = {
-				limit = {
-					religion = catholic
-				}
-				country_event = { id = knights_missions.2 }
-			}
-			trans_jordan_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	EMP_crusader_syria = {
-		icon = kingdom_of_heaven
-		required_missions = { EMP_crusader_jerusalem EMP_crusader_antioch }
-		provinces_to_highlight = {
-			OR = {
-				area = syria_area
-				area = syrian_desert_area
-				area = trans_jordan_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			syria_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			syrian_desert_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			trans_jordan_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			is_subject = no
+			at_peace = yes
+			stability = 2
+			prestige = 20
+			2313 = {
+				has_state_patriach = yes
+				has_building = temple
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					religion = catholic
-				}
-				add_country_modifier = {
-					name = "kni_kingdom_of_heaven"
-					duration = 7300
-				}
-			}
-			delta_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			bahari_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			vostani_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			gulf_of_arabia_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			said_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	EMP_crusader_egypt = {
-		icon = the_land_of_moses
-		required_missions = { EMP_crusader_syria }
-		provinces_to_highlight = {
-			OR = {
-				AND = {
-					region = egypt_region
-					NOT = {
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-				}
-				AND = {
-					province_id = 358
-					OR = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-				}
-			}
-		}
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = crusader_egypt_tt
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 15
-					region = egypt_region
-				}
-			}
-			owns_core_province = 358
-		}
-		effect = {
-			if = {
-				limit = {
-					religion = catholic
-				}
-				358 = {
-					add_province_modifier = {
-						name = "kni_alexandrian_archbishopric"
-						duration = -1
-					}
-				}
-			}
-			tigray_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
+			country_event = { id = flavor_koj.5 }
 		}
 	}
 	EMP_crusader_ark_of_the_covenant = {
@@ -289,68 +133,32 @@ EMP_crusader_3 = {
 	slot = 3
 	generic = no
 	ai = yes
-	potential_on_load = {
-		has_dlc = "Emperor"
-	}
 	potential = {
-		has_dlc = "Emperor"
-		OR = {
-			tag = CYP
-			tag = KNI
-			tag = ATH
-			tag = NAX
-			tag = KOJ
-			tag = EPI
-		}
-		NOT = { map_setup = map_setup_random }
+		tag = KOJ
 	}
 	has_country_shield = yes
 
-	EMP_crusader_pope = {
-		icon = sway_the_pope
+	the_cannanite_kingdom_koj = {
+		icon = mission_mashriq
 		required_missions = { }
 		provinces_to_highlight = {
 		}
 		trigger = {
 			is_subject = no
-			if = {
-				limit = {
-					exists = PAP
-					religion = catholic
-				}
-				PAP = {
-					has_opinion = {
-						who = ROOT
-						value = 150
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					religion = catholic
-				}
-				papal_influence = 50
-			}
-			else = {
-				grown_by_development = 10
-			}
+			at_peace = yes
+			development = 100
 		}
 		effect = {
-			morea_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-					NOT = { owned_by = PAP }
+			add_prestige = 10
+			add_dip_power = 100
+			any_province = {
+				if = {
+					limit = {
+						culture = cannanite
+						NOT = { country_or_non_sovereign_subject_holds = ROOT }
+						}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
-			}
-			aegean_archipelago_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-					NOT = { owned_by = PAP }
-				}
-				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -550,93 +358,11 @@ EMP_crusader_4 = {
 			prestige = 20
 			358 = {
 				has_state_patriach = yes
+				has_building = temple
 			}
 		}
 		effect = {
 			country_event = { id = flavor_koj.4 }
-		}
-	}
-	EMP_crusader_africa = {
-		icon = mission_control_the_barbary_coast
-		required_missions = { EMP_crusader_malta }
-		provinces_to_highlight = {
-			OR = {
-				province_id = 2453
-				province_id = 354
-				province_id = 2954
-				province_id = 341
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			OR = {
-				2453 = { country_or_non_sovereign_subject_holds = ROOT }
-				354 = { country_or_non_sovereign_subject_holds = ROOT }
-				2954 = { country_or_non_sovereign_subject_holds = ROOT }
-				341 = { country_or_non_sovereign_subject_holds = ROOT }
-			}
-		}
-		effect = {
-			tripolitania_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			djerba_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			tunisia_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			kabylia_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			barbary_coast_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	EMP_crusader_piracy = {
-		icon = mission_construct_a_corsair_fleet
-		required_missions = { EMP_crusader_africa }
-		provinces_to_highlight = {
-			region = maghreb_region
-			has_port = yes
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = cruader_piracy_tt
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 10
-					region = maghreb_region
-					has_port = yes
-				}
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = "kni_crusade_against_piracy"
-				duration = -1
-			}
 		}
 	}
 }

@@ -62,7 +62,8 @@ country_event = {
   fire_only_once = yes
 
   trigger  = {
-    is_year = 1460
+    tag = KOJ
+    is_year = 1470
   }
 
   mean_time_to_happen = {
@@ -94,6 +95,28 @@ country_event = {
     add_patriarch_authority = 0.05
     add_prestige = 10
     358 = {
+      add_province_modifier = {
+        name = koj_seat_of_bishop
+        duration = -1
+      }
+    }
+  }
+}
+
+#The bishop of Antioch
+country_event = {
+  id = flavor_koj.5
+  title = flavor_koj.5.t
+  desc = flavor_koj.5.d
+  picture = ST_PETERS_CHURCH_eventPicture
+
+  is_triggered_only = yes
+
+  option = {
+    name = flavor_koj.5.a
+    add_patriarch_authority = 0.05
+    add_prestige = 10
+    2313 = {
       add_province_modifier = {
         name = koj_seat_of_bishop
         duration = -1

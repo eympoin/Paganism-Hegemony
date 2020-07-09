@@ -3436,6 +3436,19 @@ country_event = {
 		2236 = { cede_province = ABA }
 		add_government_reform = satrapdom_reform
 		remove_country_modifier = per_cw_1
+		if = {
+			limit = {
+				any_country = {
+					is_subject_of_type = persian_satrapdom
+					NOT = { tag = ABA }
+					NOT = { has_country_flag = loyal_satrap }
+				}
+			}
+			add_country_modifier = {
+				name = loyal_satrap
+				duration = -1
+			}
+		}
 	}
 	option = {#Independence war
 		name = flavor_per_cw.27.c
@@ -3743,6 +3756,10 @@ country_event = {
 								subject = DIH
 							}
 					}
+					add_country_modifier = {
+						name = loyal_satrap
+						duration = -1
+					}
 			}
 			else = {
 				grant_independence = yes
@@ -3758,6 +3775,10 @@ country_event = {
 								subject_type = persian_satrapdom
 								subject = MRV
 							}
+					}
+					add_country_modifier = {
+						name = loyal_satrap
+						duration = -1
 					}
 			}
 			else = {
@@ -3775,6 +3796,10 @@ country_event = {
 								subject = GOR
 							}
 					}
+					add_country_modifier = {
+						name = loyal_satrap
+						duration = -1
+					}
 			}
 			else = {
 				grant_independence = yes
@@ -3790,6 +3815,10 @@ country_event = {
 								subject_type = persian_satrapdom
 								subject = KRM
 							}
+					}
+					add_country_modifier = {
+						name = loyal_satrap
+						duration = -1
 					}
 			}
 			else = {
@@ -3807,6 +3836,10 @@ country_event = {
 								subject = HRV
 							}
 					}
+					add_country_modifier = {
+						name = loyal_satrap
+						duration = -1
+					}
 			}
 			else = {
 				grant_independence = yes
@@ -3823,6 +3856,10 @@ country_event = {
 								subject = SIS
 							}
 					}
+					add_country_modifier = {
+						name = loyal_satrap
+						duration = -1
+					}
 			}
 			else = {
 				grant_independence = yes
@@ -3838,6 +3875,10 @@ country_event = {
 								subject_type = persian_satrapdom
 								subject = FRS
 							}
+					}
+					add_country_modifier = {
+						name = loyal_satrap
+						duration = -1
 					}
 			}
 			else = {
@@ -3871,12 +3912,12 @@ country_event = {
 				subject_type = persian_satrapdom
 				subject = PER
 			}
+			add_country_modifier = {
+				name = won_per_cw
+				duration = -1
+			}
 		}
 		release_all_subjects = yes
-		add_country_modifier = {
-			name = won_per_cw
-			duration = -1
-		}
 	}
 }
 

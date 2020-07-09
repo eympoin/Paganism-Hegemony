@@ -234,7 +234,7 @@ per_aftermath_cw_center = {
 			}
 		}
 		effect = {
-			country_event = = { id = flavor_per_mission.1 }
+			country_event = { id = flavor_per_mission.1 }
 		}
 	}
 }
