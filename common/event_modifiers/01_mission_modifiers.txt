@@ -4391,6 +4391,11 @@ koj_the_great_drought = {
 	global_unrest = 4
 }
 
+koj_greek_assimilation = {
+	trade_efficiency = 0.05
+	technology_cost = -0.1
+}
+
 #Hejaz
 Prepare_for_War {
 global_unrest = -2

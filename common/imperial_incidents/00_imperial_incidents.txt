@@ -253,3 +253,36 @@ incident_shadow_kingdom = {
 		factor = 2
 	}
 }
+
+
+incident_slavic_nationalism= {
+	event = slavic_uprising.2
+	default_option = 0
+
+	can_stop = {
+		always = no
+	}
+
+	0 = { #accept the slavs
+		factor = 2
+
+
+	}
+
+	1 = { #reject them and help the others
+		factor = 2
+    modifier = {
+			factor = 5
+      OR = {
+			   primary_culture = serbian
+         primary_culture = croatian
+         primary_culture = bulgarian
+         primary_culture = albanian
+         }
+		}
+	}
+
+  2 = { #reject them
+		factor = 3
+	}
+}

@@ -2427,7 +2427,8 @@ koj_the_great_drought:0 "Great famine"
 desc_koj_the_great_drought:0 "A great famine broke out following an unforseen drought, the land and the people are dying, nothing comes out of the ground as if the land was cursed."
 koj_desperate_army:0 "The force of Desperation"
 desc_koj_desperate_army:0 "Desparation slowly fills the ranks of the soldiers, they are fighting for the survival of their brethren back at home. They are fearsome in battle, but their morale is as empty as their stomachs."
-
+koj_greek_assimilation:0 "Greek assimilation"
+desc_koj_greek_assimilation:0 "We have integrated the greek language and customs into our own, make it easier to trade and discuss philosophy and science with the west."
 #Hejaz
 South_Arabia_integrate:0 "South Arabia integrate"
 desc_South_Arabia_integrate:0 ""
