@@ -11317,3 +11317,12 @@ medici_pope_modifier = {
 	diplomatic_reputation = 1
 	papal_influence = 2
 }
+
+slavic_uprising_imperial_help = {
+	global_unrest = 10
+	mercenary_cost = -0.5
+	merc_maintenance_modifier = -0.5
+}
+slavic_uprising = {
+	global_unrest = 10
+}
