@@ -1,0 +1,155 @@
+#Event n°1 : Yemen civil War------------
+
+namespace = flavor_him
+namespace = flavor_yem
+namespace = flavor_ade
+
+country_event = {
+  id = "flavor_him.1"
+  title = "flavor_him.1.t"
+  desc = "flavor_him.1.d"
+  picture = CIVIL_WAR_eventPicture
+
+  fire_only_once = yes
+
+    trigger = {
+    OR{
+  			tag = HIM
+  		}
+
+    }
+      mean_time_to_happen = {
+      days = 7
+      }
+      option = {
+        name = "flavor_him.1.a"
+        ai_chance = {
+          factor = 90
+        }
+        HIM = {
+          declare_war_with_cb = {
+            who = YEM
+            casus_belli = cb_annex
+          }
+        }
+      }
+}
+
+#Event N°2 : PEACE--------------
+
+country_event = {
+  id = "flavor_him.2"
+  title = "flavor_him.2.t"
+  desc = "flavor_him.2.d"
+  picture = WOUNDED_SOLDIERS_eventPicture
+
+  fire_only_once = yes
+
+    trigger = {
+        tag = YEM
+        YEM ={
+          war_with = HIM
+        }
+        NOT = {war_score = -35}
+    }
+      mean_time_to_happen = {
+      months = 1
+      }
+      option = {
+        name = "flavor_him.2.b"
+        trigger = {tag = YEM}
+    		ai_chance = {
+    			factor = 10
+    		}
+    		4280 = {
+    			cede_province = HIM
+    		}
+    		387 = {
+    			cede_province = HIM
+    		}
+    		4279 = {
+    			cede_province = HIM
+    		}
+      }
+}
+
+#Event N°3 : END OF CIVIL WAR PART I--------------
+
+country_event = {
+  id = "flavor_him.3"
+  title = "flavor_him.3.t"
+  desc = "flavor_him.3.d"
+  picture = REFORM_eventPicture
+
+  fire_only_once = yes
+
+    trigger = {
+        tag = HIM
+        NOT = {exists = YEM}
+    }
+      mean_time_to_happen = {
+      days = 14
+      }
+      option = {
+        name = "flavor_him.3.c"
+        387 = {change_religion = jewish}
+        4279 = {change_religion = jewish}
+        4280 = {change_religion = jewish}
+        add_treasury = -100
+        add_stability = -2
+        387 = {add_base_tax = -1
+               add_base_production = -1
+        }
+        4280 = {add_base_tax = -2
+               add_base_production = -2
+        }
+      }
+      option = {
+        name = "flavor_him.3.de"
+        387 = {change_religion = jewish}
+        add_treasury = -67
+        add_stability = -1
+      }
+      option = {
+        name = "flavor_him.3.e"
+        add_country_modifier = {
+    			name = "Accept_Ibadi_faith"
+    			duration = 3650
+    			}
+      }
+}
+
+#Event N°4 : Path of conquest
+country_event = {
+  id = "flavor_him.4"
+  title = "flavor_him.4.t"
+  desc = "flavor_him.4.d"
+  picture = COURT_eventPicture
+
+  fire_only_once = yes
+
+    trigger = {
+    tag = HIM
+    NOT = {exists = YEM}
+    }
+      mean_time_to_happen = {
+      months = 1
+      }
+      option = {
+        name = "flavor_him.4.f"
+        	388 = { add_claim = HIM}
+          2345 = { add_claim = HIM}
+          389 = { add_claim = HIM}
+          2343 = { add_claim = HIM}
+          4283 = { add_claim = HIM}
+
+
+      }
+      option = {
+        name = "flavor_him.4.g"
+        	386 = { add_claim = HIM}
+          2346 = { add_claim = HIM}
+          391 = { add_claim = HIM}
+          2335 = { add_claim = HIM}
+      }
+}

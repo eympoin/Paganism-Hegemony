@@ -105,18 +105,19 @@ Hejaz_Unification_2 = {
 			position = 2
 			provinces_to_highlight = {
 					OR = {
-					province_id = 385
-					province_id = 2331
+					province_id = 384
+					province_id = 2329
 					}
 				}
 
 				trigger = {
-						385 = {
-							 has_building = barracks
+					tag = HED
+						384 = {
+							 has_building = temple
 
 					}
-					2331 = {
-						 	has_building = barracks
+					2329 = {
+						 	has_building = temple
 
 				}
 					}

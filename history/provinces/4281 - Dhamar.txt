@@ -2,7 +2,7 @@
 
 owner = Him #Tahirids
 controller = HIM #Tahirids
-culture = yemeni_culture
+culture = Himyarites_culture
 religion = jewish
 capital = "Dhamar"
 trade_goods = livestock

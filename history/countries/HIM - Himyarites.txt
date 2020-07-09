@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = muslim
 religion = jewish
-primary_culture = yemeni_culture
+primary_culture = Himyarites_culture
 capital = 390	# Sana'a
 
 
@@ -57,4 +57,3 @@ capital = 390	# Sana'a
 		mil = 4
 	}
 }
-

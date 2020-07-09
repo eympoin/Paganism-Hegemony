@@ -11317,3 +11317,11 @@ medici_pope_modifier = {
 	diplomatic_reputation = 1
 	papal_influence = 2
 }
+
+#Himyarites
+
+Accept_Ibadi_faith {
+ 	tolerance_heretic = 2
+	 	global_missionary_strength = -0.05
+		religious_unity = 0.2
+}
