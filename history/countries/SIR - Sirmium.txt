@@ -8,13 +8,13 @@ elector=no
 government_rank = 1
 
 
-1397.1.1 = {
+1444.1.1 = {
 	monarch = {
-		name = "Iason"
-		dynasty = "Syros"
-		birth_date = 1385.1.1
-		dip = 1
-		adm = 2
-		mil = 1
+		name = "Basil"
+		adm = 5
+		dip = 2
+		mil = 2
 	}
 }
+
+

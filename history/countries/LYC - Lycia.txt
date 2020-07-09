@@ -7,10 +7,10 @@ capital = 4790
 government_rank = 1
 1390.1.1 = {
 	monarch = {
-		name = "Prokopios"
-		dynasty = "Kanakaris"
-		adm = 4
-		dip = 3
-		mil = 2
+		name = "Hektor"
+		dynasty = "Toxias"
+		adm = 5
+		dip = 1
+		mil = 5
 	}
 }

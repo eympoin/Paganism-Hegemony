@@ -8,11 +8,11 @@ capital = 323
 
 1436.2.16 = {
 	monarch = {
-		name = "Aineias"
-		dynasty = "Vonos"
+		name = "Stefanos"
+		dynasty = "Mouzelis"
 		birth_date = 1412.6.27		
-		adm = 3
-		dip = 1
+		adm = 1
+		dip = 3
 		mil = 3
 	}
 }

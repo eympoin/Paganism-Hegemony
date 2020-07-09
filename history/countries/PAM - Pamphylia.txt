@@ -8,11 +8,11 @@ capital = 2298
 
 1415.2.16 = {
 	monarch = {
-		name = "Diogenes"
-		dynasty = "Kilikos"
+		name = "Herakleios"
+		dynasty = "Myxares"
 		birth_date = 1396.6.27		
-		adm = 1
-		dip = 2
-		mil = 1
+		adm = 3
+		dip = 3
+		mil = 3
 	}
 }
