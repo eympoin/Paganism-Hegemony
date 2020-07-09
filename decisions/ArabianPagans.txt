@@ -1,16 +1,16 @@
 country_decisions = {
 
-	arab_nation = {
+	ArabianPagans = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
-			NOT = { has_country_flag = formed_arabia_flag }
+			NOT = { has_country_flag = formed_Ardu_Alaliha_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { exists = ARB }
+			NOT = { exists = ARG }
 			NOT = { tag = HLR }
 			NOT = { tag = PAP }
 			NOT = { tag = BAB }
@@ -20,7 +20,7 @@ country_decisions = {
 			NOT = { tag = ORM }
 			NOT = { tag = PLM }
 			NOT = { tag = OSR }
-			NOT = { religion_group = semetic_group }
+			NOT = { religion_group = muslim }
 			NOT = { religion_group = jewish_group }
 			is_colonial_nation = no
 			OR = {
@@ -74,28 +74,28 @@ country_decisions = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = ARB
+				add_permanent_claim = ARG
 			}
 			egypt_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = { area = lower_nubia_area }
 				}
-				add_permanent_claim = ARB
+				add_permanent_claim = ARG
 			}
 			arabia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = ARB
+				add_permanent_claim = ARG
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
 			add_prestige = 25
-			set_country_flag = formed_arabia_flag
-			change_tag = ARB
+			set_country_flag = formed_Ardu_Alaliha_flag
+			change_tag = ARG
 		}
 		ai_will_do = {
 			factor = 0

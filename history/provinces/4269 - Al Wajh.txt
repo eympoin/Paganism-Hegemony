@@ -2,7 +2,7 @@
 
 owner = MDA
 controller MDA
-culture = bedouin_arabic
+culture = hejazi_culture
 religion = arabian
 capital = "Al Wajh"
 trade_goods = fish
@@ -11,7 +11,6 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = ANZ
 add_core = MDA
 discovered_by = muslim
 discovered_by = ottoman
