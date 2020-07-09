@@ -85,13 +85,13 @@ country_decisions = {
 			owns_core_province = 2213		# Qom
 			owns_core_province = 2215		# Qazvin
 			OR = {
-				owns_core_province = 426		# Amol
+				owns_core_province = 4326		# Nishapur
 				owns_core_province = 2218		# Shiraz
 			}
 			OR = {
 				owns_core_province = 416		# Tabriz
 				owns_core_province = 432		# Kerman
-				owns_core_province = 2221		# Mashhad
+				owns_core_province = 428		# Teheran
 			}
 		}
 		effect = {
@@ -108,20 +108,13 @@ country_decisions = {
 			set_government_rank = 3
 			if = {
 				limit = { is_revolutionary = no }
-				add_government_reform = feudal_theocracy
+				add_government_reform = persian_empire_stable
 			}
 			if = {
 				limit = {
 					has_reform = states_general_reform
 				}
 				remove_government_reform = states_general_reform
-			}
-			persia_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = PER
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
@@ -145,5 +138,5 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
-	
+
 }

@@ -1,0 +1,31 @@
+########################################
+# Flavor Events for the Kingdom of Jerusalem
+#
+# written by Walthorn
+########################################
+
+namespace = flavor_koj
+
+#Unifying palestine
+country_event = {
+  id = flavor_koj.1
+  title = flavor_koj.1.t
+  desc = flavor_koj.1.d
+  picture = RELIGIOUS_WARS_eventPicture
+
+  is_triggered_only = yes
+
+  option = {
+    name = flavor_koj.1.a
+    add_country_modifier = {
+      name = full_elan
+      duration = 1800
+    }
+    PLS = {
+      declare_war_with_cb = {
+        who = KOJ
+        casus_belli = cb_crusade
+      }
+    }
+  }
+}

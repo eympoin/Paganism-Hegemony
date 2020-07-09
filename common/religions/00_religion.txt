@@ -1703,9 +1703,10 @@ semetic_group{
     province = {
       local_missionary_strength = -0.01
     }
-    can_have_secondary_religion = yes
+    can_have_secondary_religion = no
 
     heretic = { OLD_ARABIAN }
+    personal_deity = yes
   }
   ancient_egyptian_rl = {
     icon = 37

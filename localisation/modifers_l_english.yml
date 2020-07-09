@@ -1429,13 +1429,6 @@
  desc_ori_coastal_trade:0 "We now control many of the important shipping ports along the Indian coast. There are few to challenge our right to impose lucrative tariffs on visiting merchants."
  ori_diamonds_golconda:0 "Diamond Trade"
  desc_ori_diamonds_golconda:0 "We now own the famed Golconda diamond mines. It is surprising how much more receptive foreign diplomats can be when faced with such opulence."
- # Persian Mission Rewards
- per_pearl_of_khorasan:0 "Pearl of Khorasan"
- desc_per_pearl_of_khorasan:0 "As one of the more important cities of Persian Khorasan, Herat is home to the governor of the region and the center of our operations in the East."
- per_tribal_warriors:0 "Tribal Recruitment"
- desc_per_tribal_warriors:0 "Having secured control of the old heartland of the Ilkhanate we have good access to the the tribal warriors that once served it and its successor states."
- per_pashtun_warriors:0 "Pashtun Recruitment"
- desc_per_pashtun_warriors:0 "The conquest of Afghanistan has opened up for the recruitment of the warriors of the Pashtun clans into our ranks. Expecting to be allowed to plunder the Indian plains many are eager to join our cause."
  # Gujarati mission rewards
  solanki_fortress:0 "Renovate the Solanki Fortress"
  desc_solanki_fortress:0 "Built by the ancient Solanki Kings, and further built upon by countless overlords, the fortress at Champaner is widely known to be impregnable. We have proven that rumor false, so we must renovate and improve the walls."
@@ -2410,3 +2403,17 @@
  south_rich_cities:0 "Riches of southern Gallia"
  king_of_all_franks:0 "King of all franks"
  Sunni_missionary_strength:0 "Sunni missionary strength "
+
+# Persian Mission Rewards
+per_seat_of_satrap:0 "Seat of a satrap"
+desc_per_seat_of_satrap:0 "This city is the seat of a Satrap, a talented administator overseeing the surrounding areas."
+per_rebuilding_country:0 "Rebuilding the country"
+desc_per_rebuilding_country:0 "Now that the civil war is over the effort can be shifted towards mending the wounds accumulated by our aging empire."
+per_elm_trading:0 "Elymaite trading"
+desc_per_elm_trading:0 "The reconquest of Elymais has opened up new trade routes in mesopotamia and eased up the control of the persian gulf."
+per_zealotry:0 "Zoroastrian zealotry"
+desc_per_zealotry:0 "The reconquest of Baluchistan and its forcefully converted populus has invigored our missionary with purpose."
+per_ind_steer:0 "Persian ventures in India"
+desc_per_ind_steer:0 "The riches of India can be found both on land and on sea, now that we control trade routes into India we must divert the trade from the arabia peninsula."
+per_silk_road:0 "The persian silk road"
+desc_per_silk_road:0 "The silk road is being heavily invested into, turning it back to its former glory."

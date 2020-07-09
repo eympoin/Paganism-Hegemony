@@ -1039,7 +1039,10 @@ persian_empire_decen = {
 	icon = "muslim"
 	allow_normal_conversion = yes
 	potential = {
-		NOT = { has_country_flag = formed_persia_flag }
+		OR = {
+			tag = ABA
+			tag = PER
+		}
 		OR = {
 			AND = {
 				culture_group = iranian
@@ -1075,7 +1078,10 @@ persian_empire_stable = {
 	icon = "muslim"
 	allow_normal_conversion = yes
 	potential = {
-		NOT = { has_country_flag = formed_persia_flag }
+		OR = {
+			tag = ABA
+			tag = PER
+		}
 		OR = {
 			AND = {
 				culture_group = iranian
@@ -1110,7 +1116,10 @@ persian_empire_cen = {
 	icon = "muslim"
 	allow_normal_conversion = yes
 	potential = {
-		NOT = { has_country_flag = formed_persia_flag }
+		OR = {
+			tag = ABA
+			tag = PER
+		}
 		OR = {
 			AND = {
 				culture_group = iranian

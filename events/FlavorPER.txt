@@ -5,6 +5,7 @@
 ########################################
 
 namespace = flavor_per_cw
+namespace = flavor_per_mission
 
 #The Satrapies' betrayal
 country_event = {
@@ -724,7 +725,6 @@ country_event {
 				which = HRV_loy
 				value = -1
 				}
-
 	}
 	option = {#Enforce a status quo
 		name = flavor_per_cw.6.c
@@ -743,7 +743,6 @@ country_event {
 				which = SIS_loy
 				value = 1
 				}
-
 	}
 	option = {#Our time is better spent elsewhere, take it all
 		name = flavor_per_cw.6.e
@@ -766,7 +765,6 @@ country_event {
 		2224 = { cede_province = AFG }
 		add_truce = AFG
 	}
-
 }
 
 #The Parsite revendications
@@ -790,6 +788,7 @@ country_event = {
 
 	option = {#It is a perfect occasion to reclaim the elymaite satrap
 		name = flavor_per_cw.7.a
+		ai_chance = { factor = 1 }
 		ARM = { create_guarantee = ELM }
 		LRI = { create_alliance = ELM }
 		BAB = { create_guarantee = ELM }
@@ -799,16 +798,16 @@ country_event = {
 			who = ELM
 			casus_belli = cb_vassalize_mission
 		}
-
-			change_variable = {
-				which = FRS_loy
-				value = 1
-				}
+		change_variable = {
+			which = FRS_loy
+			value = 1
+		}
 
 
 	}
 	option = {#Pressure them
 		name = flavor_per_cw.7.b
+		ai_chance = { factor = 75 }
 		add_dip_power = -100
 		add_years_of_income = -0.3
 		add_prestige = 10
@@ -829,6 +828,7 @@ country_event = {
 	}
 	option = {#Rebuke them
 		name = flavor_per_cw.7.c
+		ai_chance = { factor = 24 }
 		add_prestige = -10
 		reverse_add_opinion = {
 			who = FRS
@@ -908,7 +908,9 @@ country_event = {
 	}
 	option = {
 		name = flavor_per_cw.71.b
-		trigger = { NOT = { war_score = -50 } }
+		trigger = {
+			NOT = { war_score = -50 }
+		}
 		white_peace = ELM
 		add_prestige = -10
 		add_legitimacy = -10
@@ -1234,6 +1236,7 @@ country_event = {
 
 	option = {#Our brethren shall be liberated and be welcomed in our empire once more
 		name = flavor_per_cw.11.a
+		ai_chance = { factor = 1 }
 		declare_war_with_cb = {
 			who = SND
 			casus_belli = cb_crusade
@@ -1244,6 +1247,7 @@ country_event = {
 	}
 	option = {#Pressure Sindh into freeing the western part
 		name = flavor_per_cw.11.b
+		ai_chance = { factor = 75 }
 		add_dip_power = -160
 		add_adm_power = -40
 		add_years_of_income = -1
@@ -1291,6 +1295,7 @@ country_event = {
 	}
 	option = {#Escalate the border conflict to pressure Sindh
 		name = flavor_per_cw.11.c
+		ai_chance = { factor = 20 }
 		add_dip_power = -50
 		add_mil_power = -25
 		2233 = {cede_province = KRM }
@@ -1307,6 +1312,7 @@ country_event = {
 	}
 	option = {#Let them rot
 		name = flavor_per_cw.11.e
+		ai_chance = { factor = 4 }
 		global_unrest = 3
 		reverse_add_opinion = {
 			who = SND
@@ -1385,7 +1391,9 @@ country_event = {
 	}
 	option = {
 		name = flavor_per_cw.111.b
-		trigger = { NOT = { war_score = -50 } }
+		trigger = {
+			NOT = { war_score = -50 }
+		}
 		white_peace = SND
 		add_prestige = -10
 		add_legitimacy = -10
@@ -1504,12 +1512,6 @@ country_event = {
 		name = flavor_per_cw.13.a
 		add_adm_power = -30
 		add_years_of_income = -0.2
-		2228 = {
-			add_province_modifier = {
-					name = "per_zor_pro"
-					duration = 720
-			}
-		}
 		2228 = { change_religion = zoroastrian }
 		reverse_add_opinion = {
 			who = HRV
@@ -2343,6 +2345,7 @@ country_event = {
 
 	option = {#Display the full might of the Persian Empire
 		name = flavor_per_cw.22.a
+		ai_chance = { factor = 1 }
 		add_prestige = 10
 		add_mil_power = -100
 		declare_war_with_cb = {
@@ -2353,6 +2356,7 @@ country_event = {
 	}
 	option = {#Pressure Mazandaran into giving up Sari
 		name = flavor_per_cw.22.b
+		ai_chance = { factor = 75 }
 		add_mil_power = -75
 		add_manpower = -5
 		add_years_of_income = -0.5
@@ -2366,6 +2370,7 @@ country_event = {
 	}
 	option = {#Offer a trade for Sari
 		name = flavor_per_cw.22.c
+		ai_chance = { factor = 10 }
 		add_prestige = -10
 		417 = { cede_province = TAB }
 		TAB = { add_core = 417 }
@@ -2382,6 +2387,7 @@ country_event = {
 	}
 	option = {#They should focus on developping their province instead
 		name = flavor_per_cw.22.e
+		ai_chance = { factor = 14 }
 		add_prestige = -5
 		add_dip_power = -50
 		reverse_add_opinion = {
@@ -2630,6 +2636,7 @@ country_event = {
 
 	option = {#Make every effort to counter these accusations
 		name = flavor_per_cw.24.a
+		ai_chance = { factor = 50 }
 		add_years_of_income = -3
 		add_manpower = -10
 		add_dip_power = -100
@@ -2640,6 +2647,7 @@ country_event = {
 	}
 	option = {#Act accordingly
 		name = flavor_per_cw.24.b
+		ai_chance = { factor = 35 }
 		add_years_of_income = -2
 		add_manpower = -3
 		add_stability = -2
@@ -2664,6 +2672,7 @@ country_event = {
 	}
 	option = {#Ignore these fools
 		name = flavor_per_cw.24.c
+		ai_chance = { factor = 15 }
 		add_legitimacy = -40
 		add_prestige = -30
 		add_stability = -2
@@ -3291,6 +3300,10 @@ country_event = {
 		add_adm_power = 200
 		add_dip_power = 200
 		add_mil_power = 200
+		add_country_modifier = {
+			name = won_per_cw
+			duration = -1
+		}
 		add_government_reform = persian_empire_stable
 		ABA = {
 			add_country_modifier = {
@@ -3309,6 +3322,7 @@ country_event = {
 				NOT = { has_country_flag = loyal_satrap }
 			}
 		}
+		ai_chance = { factor = 20 }
 		add_prestige = -50
 		add_legitimacy = -20
 		release_all_subjects = yes
@@ -3317,33 +3331,81 @@ country_event = {
 				subject_type = persian_satrapdom
 				subject = PER
 			}
+			PER = {
+				add_country_modifier = {
+					name = loyal_satrap_mod
+					duration = -1
+				}
+			}
 			create_subject = {
 				subject_type = persian_satrapdom
 				subject = GOR
+			}
+			GOR = {
+				add_country_modifier = {
+					name = loyal_satrap_mod
+					duration = -1
+				}
 			}
 			create_subject = {
 				subject_type = persian_satrapdom
 				subject = DIH
 			}
+			DIH = {
+				add_country_modifier = {
+					name = loyal_satrap_mod
+					duration = -1
+				}
+			}
 			create_subject = {
 				subject_type = persian_satrapdom
 				subject = MRV
+			}
+			MRV = {
+				add_country_modifier = {
+					name = loyal_satrap_mod
+					duration = -1
+				}
 			}
 			create_subject = {
 				subject_type = persian_satrapdom
 				subject = HRV
 			}
+			HRV = {
+				add_country_modifier = {
+					name = loyal_satrap_mod
+					duration = -1
+				}
+			}
 			create_subject = {
 				subject_type = persian_satrapdom
 				subject = SIS
+			}
+			SIS = {
+				add_country_modifier = {
+					name = loyal_satrap_mod
+					duration = -1
+				}
 			}
 			create_subject = {
 				subject_type = persian_satrapdom
 				subject = KRM
 			}
+			KRM = {
+				add_country_modifier = {
+					name = loyal_satrap_mod
+					duration = -1
+				}
+			}
 			create_subject = {
 				subject_type = persian_satrapdom
 				subject = FRS
+			}
+			FRS = {
+				add_country_modifier = {
+					name = loyal_satrap_mod
+					duration = -1
+				}
 			}
 			add_government_reform = persian_empire_stable
 			add_core = 427
@@ -3356,6 +3418,10 @@ country_event = {
 			add_core = 4337
 			add_core = 4335
 			add_core = 2216
+			add_country_modifier = {
+				name = won_per_cw
+				duration = -1
+			}
 		}
 		2216 = { cede_province = ABA }
 		4335 = { cede_province = ABA }
@@ -3369,14 +3435,18 @@ country_event = {
 		427 = { cede_province = ABA }
 		2236 = { cede_province = ABA }
 		add_government_reform = satrapdom_reform
-		add_country_modifier = {
-			name = loyal_satrap_mod
-			duration = -1
-		}
 		remove_country_modifier = per_cw_1
 	}
 	option = {#Independence war
 		name = flavor_per_cw.27.c
+		trigger = {
+			any_country = {
+				is_subject_of_type = persian_satrapdom
+				NOT = { tag = ABA }
+				NOT = { has_country_flag = loyal_satrap }
+			}
+		}
+		ai_chance = { factor = 80 }
 		add_legitimacy = -20
 		DIH = {
 			if = {
@@ -3502,6 +3572,10 @@ country_event = {
 		add_dip_power = 100
 		add_adm_power = 100
 		add_mil_power = 100
+		add_country_modifier = {
+			name = won_per_cw
+			duration = -1
+		}
 		white_peace = ABA
 		DIH = {
 		 if = {
@@ -3795,5 +3869,32 @@ country_event = {
 			2236 = { cede_province = ABA }
 		}
 		release_all_subjects = yes
+	}
+}
+
+##################
+# Flavor Events for the Persian Missions
+#
+# written by Walthorn
+##################
+
+#The empire reborn
+country_event={
+	id = flavor_per_mission.1
+	title = flavor_per_mission.1.t
+	desc = flavor_per_mission.1.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = flavor_per_mission.1.a
+		add_stability = 1
+		add_prestige = 20
+		add_government_reform = persian_empire_cen
+		add_country_modifier = {
+			name = per_empire_reborn
+			duration = 7300
+		}
 	}
 }

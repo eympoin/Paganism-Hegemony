@@ -4207,6 +4207,17 @@ loyal_satrap_mod = {
 	liberty_desire = -50
 }
 
+won_per_cw = {
+	legitimacy = 1
+	prestige = 0.25
+}
+
+per_empire_reborn = {
+	development_cost = -0.1
+	prestige_decay = -0.01
+	land_morale = 0.15
+}
+
 #Mewar
 mer_vijaya_sthambha = {
 	prestige = 1

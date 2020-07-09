@@ -296,3 +296,12 @@
  flavor_per_cw.28.d:0 "This is the end, finnaly. The empire has been ravaged by the civil war for a decade now, let us hope this peace lasts."
  flavor_per_cw.28.a:0 "The Shahanshah is ever glorious"
  flavor_per_cw.28.b:0 "This grudge will be avenged, by my descendents if I don't do it myself"
+ won_per_cw:0 "The true persian Shahanshah"
+ flavor_per_mission.1.t:0 "The empire reborn"
+ flavor_per_mission.1.d:0 "Our empire was once weak and in dissaray, but this time is over. We are the mightiest empire there is and there ever will be. May we reign supreme."
+ flavor_per_mission.1.a:0 "The Shahanshah's light shines from Tabriz to Sirhind"
+
+#Kingdom of Jerusalem
+flavor_koj.1.t:0 "Unifying Palestine"
+flavor_koj.1.d:0 "Palestine, once the heartland of our kingdom, was stolen from us time and time again, through the combined effort of our chalcedonian brethren is came back to its rightfull owners every time it was stolen. But with time our brethren disappeared and only we remain. But all is not lost. We shall retake our homeland and bring the light of the christ to the unbelievers."
+flavor_koj.1.a:0 "Deus lu vult !"
