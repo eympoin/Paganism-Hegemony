@@ -6,7 +6,27 @@ Hejaz_Unification_1 = {
 		tag = HED
 		NOT = { map_setup = map_setup_random }
 	}
+	For_Allah = {
+		icon = mission_mosque
+		required_missions = {Unite_Muslim} #None
+		position = 2
+		trigger = {
+		}
+		effect = {
 
+		add_country_modifier = {
+				name = "Islamic_faith"
+				duration = 7300
+			}
+
+		add_prestige = 10
+		add_country_modifier = {
+				name = "Sunni_missionary_strength"
+				duration = 3650
+			}
+		}
+
+		}
 
 	Secure_the_red_sea = {
 		icon = mission_bedouins
@@ -43,27 +63,7 @@ Hejaz_Unification_1 = {
 
 				}
 		}
-	For_Allah = {
-		icon = mission_mosque
-		required_missions = {Secure_the_red_sea} #None
-		position = 4
-		trigger = {
-		}
-		effect = {
 
-		add_country_modifier = {
-				name = "Islamic_faith"
-				duration = 7300
-			}
-
-		add_prestige = 10
-		add_country_modifier = {
-				name = "Sunni_missionary_strength"
-				duration = 3650
-			}
-		}
-
-		}
 }
 #----------------------------------------
 Hejaz_Unification_2 = {

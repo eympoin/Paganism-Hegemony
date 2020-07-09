@@ -4347,6 +4347,7 @@ king_of_all_franks = {
 }
 Sunni_missionary_strength  = {
 	global_missionary_strength = 0.02
+	missionary_maintenance_cost = -0.5
 }
 
 #AL-HAASA
