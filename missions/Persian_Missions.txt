@@ -519,11 +519,13 @@ per_aftermath_cw_right = {
 			}
 		}
 		trigger = {
-			owns_all_provinces = {
-				area = merv_area
+			merv_area = {
+				type = all
+				owned_by = ROOT
 			}
-			owns_all_provinces = {
-				area = tabarestan_area
+			tabarestan_area = {
+				type = all
+				owned_by = ROOT
 			}
 			owns = 437
 			owns = 438

@@ -1968,9 +1968,11 @@ country_event = {
 			name = full_elan
 			duration = 720
 		}
-		declare_war_with_cb = {
-			who = TIM
-			casus_belli = cb_crusade
+		TIM = {
+			declare_war_with_cb = {
+				who = PER
+				casus_belli = cb_crusade
+			}
 		}
 		MRV = {
 			add_country_modifier = {
@@ -2005,9 +2007,11 @@ country_event = {
 		name = flavor_per_cw.18.b
 		add_mil_power = -100
 		add_prestige = 10
-		declare_war_with_cb = {
-			who = TIM
-			casus_belli = cb_crusade
+		TIM = {
+			declare_war_with_cb = {
+				who = PER
+				casus_belli = cb_crusade
+			}
 		}
 		MRV = {
 			add_country_modifier = {
@@ -3585,10 +3589,6 @@ country_event = {
 		add_dip_power = 100
 		add_adm_power = 100
 		add_mil_power = 100
-		add_country_modifier = {
-			name = won_per_cw
-			duration = -1
-		}
 		white_peace = ABA
 		DIH = {
 		 if = {
@@ -3600,17 +3600,17 @@ country_event = {
 				duration = -1
 			 }
 		 }
-		 PER = {
-		 	create_subject = {
-				subject_type = persian_satrapdom
-				subject = DIH
-			}
-			change_variable = {
-				which = DIH_loy
-				value = 6
-			}
-		 }
 		}
+		create_subject = {
+			subject_type = persian_satrapdom
+			subject = DIH
+		}
+		change_variable = {
+			which = DIH_loy
+			value = 6
+		}
+
+
 		MRV = {
 			if = {
 			limit = {
@@ -3621,17 +3621,16 @@ country_event = {
 				duration = -1
 			 }
 		 	}
-			PER = {
-			 create_subject = {
-				 subject_type = persian_satrapdom
-				 subject = MRV
-			 }
-			 change_variable = {
-				 which = MRV_loy
-				 value = 6
-			 }
-			}
 		}
+		create_subject = {
+			 subject_type = persian_satrapdom
+			 subject = MRV
+		}
+		change_variable = {
+			 which = MRV_loy
+			 value = 6
+		}
+
 		GOR = {
 					if = {
 						limit = {
@@ -3642,17 +3641,15 @@ country_event = {
 							duration = -1
 					 	}
 				 }
-			PER = {
-			 create_subject = {
-				 subject_type = persian_satrapdom
-				 subject = GOR
-			 }
-			 change_variable = {
-				 which = GOR_loy
-				 value = 6
-			 }
-			}
 		}
+	 create_subject = {
+		 subject_type = persian_satrapdom
+		 subject = GOR
+	 }
+	 change_variable = {
+		 which = GOR_loy
+		 value = 6
+	 }
 		KRM = {
 			if = {
 				limit = {
@@ -3663,16 +3660,14 @@ country_event = {
 						duration = -1
 		 		}
 	 		}
-			PER = {
-			 create_subject = {
-				 subject_type = persian_satrapdom
-				 subject = KRM
-			 }
-			 change_variable = {
-				 which = KRM_loy
-				 value = 6
-			 }
-			}
+		}
+		create_subject = {
+			 subject_type = persian_satrapdom
+			 subject = KRM
+		}
+		change_variable = {
+			which = KRM_loy
+			value = 6
 		}
 		HRV = {
 			if = {
@@ -3684,16 +3679,14 @@ country_event = {
 					duration = -1
 			  }
 			}
-			PER = {
-			 create_subject = {
-				 subject_type = persian_satrapdom
-				 subject = HRV
-			 }
-			 change_variable = {
-				 which = HRV_loy
-				 value = 6
-			 }
-			}
+		}
+		create_subject = {
+			subject_type = persian_satrapdom
+			subject = HRV
+		}
+		change_variable = {
+		 which = HRV_loy
+		 value = 6
 		}
 		SIS = {
 			if = {
@@ -3705,17 +3698,15 @@ country_event = {
 					duration = -1
 				}
 		 }
-			PER = {
-			 create_subject = {
-				 subject_type = persian_satrapdom
-				 subject = SIS
-			 }
-			 change_variable = {
-				 which = SIS_loy
-				 value = 6
-			 }
-			}
 		}
+		create_subject = {
+		 subject_type = persian_satrapdom
+		 subject = SIS
+	 }
+	 change_variable = {
+		 which = SIS_loy
+		 value = 6
+	 }
 		FRS = {
 			if = {
 				limit = {
@@ -3726,19 +3717,21 @@ country_event = {
 					duration = -1
 				 }
 		 }
-			PER = {
-			 create_subject = {
-				 subject_type = persian_satrapdom
-				 subject = FRS
-			 }
-			 change_variable = {
-				 which = FRS_loy
-				 value = 6
-			 }
-			}
 		}
+		 create_subject = {
+			 subject_type = persian_satrapdom
+			 subject = FRS
+		 }
+		 change_variable = {
+			 which = FRS_loy
+			 value = 6
+		 }
 		inherit = ABA
 		add_government_reform = persian_empire_stable
+		add_country_modifier = {
+			name = won_per_cw
+			duration = -1
+		}
 	}
 	option = {#Lose
 		name = flavor_per_cw.28.b
