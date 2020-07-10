@@ -140,6 +140,36 @@ country_event = {
 			name = "slavic_uprising"
 			duration = 3650
 		}
+		random_owned_province = {
+			limit = {
+				religion = slavic
+			}
+		spawn_rebels = {
+				type = slavic_rebels
+				size = 6
+				leader = "Stefan"
+			}
+		}
+		random_owned_province = {
+			limit = {
+				religion = Illyrian
+			}
+		spawn_rebels = {
+				type = Illyrian_rebels
+				size = 6
+				leader = "Stefan"
+			}
+		}
+		random_owned_province = {
+			limit = {
+				religion = tengri_pagan_reformed
+			}
+		spawn_rebels = {
+				type = tengri_pagan_reformed_rebels
+				size = 6
+				leader = "Aleksandër"
+			}
+		}
 	}
 
 	option = { #become slavic
@@ -195,15 +225,46 @@ country_event = {
 		ai_chance = {
 			factor = 10
 		}
+		add_treasury = 100
 		add_country_modifier = {
 			name = "slavic_uprising_imperial_help"
 			duration = 3650
 		}
+		random_owned_province = {
+			limit = {
+				religion = slavic
+			}
+		spawn_rebels = {
+				type = slavic_rebels
+				size = 6
+				leader = "Stefan"
+			}
+		}
+		random_owned_province = {
+			limit = {
+				religion = Illyrian
+			}
+		spawn_rebels = {
+				type = Illyrian_rebels
+				size = 6
+				leader = "Stefan"
+			}
+		}
+		random_owned_province = {
+			limit = {
+				religion = tengri_pagan_reformed
+			}
+		spawn_rebels = {
+				type = tengri_pagan_reformed_rebels
+				size = 6
+				leader = "Aleksandër"
+			}
+		}
 	}
 
 	option = { #defy the empire : become slavic
+		name = slavic_uprising.4.a
 		trigger = {
-			name = slavic_uprising.4.a
 			any_owned_province = {
 				religion = slavic
 			}
@@ -268,6 +329,36 @@ country_event = {
 		add_country_modifier = {
 			name = "slavic_uprising"
 			duration = 3650
+		}
+		random_owned_province = {
+			limit = {
+				religion = slavic
+			}
+		spawn_rebels = {
+				type = slavic_rebels
+				size = 6
+				leader = "Stefan"
+			}
+		}
+		random_owned_province = {
+			limit = {
+				religion = Illyrian
+			}
+		spawn_rebels = {
+				type = Illyrian_rebels
+				size = 6
+				leader = "Stefan"
+			}
+		}
+		random_owned_province = {
+			limit = {
+				religion = tengri_pagan_reformed
+			}
+		spawn_rebels = {
+				type = tengri_pagan_reformed_rebels
+				size = 6
+				leader = "Aleksandër"
+			}
 		}
 	}
 
