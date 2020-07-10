@@ -72,6 +72,11 @@ PEC = "countries/Pechenegs.txt"
 ILY = "countries/Illyria.txt"
 DLP = "countries/Delphi.txt"
 
+ORG = "countries/Organa.txt"
+IND = "countries/India.txt"
+GAN = "countries/Gangaridai.txt"
+MES = "countries/Mesopotamia.txt"
+
 PON = "countries/Pontus.txt"
 PHR = "countries/Phrygia.txt"
 CIL = "countries/Cilicia.txt"

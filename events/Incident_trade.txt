@@ -1,0 +1,357 @@
+namespace = new_trade_roads
+
+country_event = {
+	id = new_trade_roads.1
+	title = new_trade_roads.1.t
+	desc = new_trade_roads.1.d
+	picture = HRE_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		is_year = 1600
+		NOT= { 151 = { highest_value_trade_node = yes}}
+		OR = {
+			118 = { highest_value_trade_node = yes}
+			1305 = { highest_value_trade_node = yes}
+			236 = { highest_value_trade_node = yes}
+			224 = { highest_value_trade_node = yes}
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = { # incident
+		name = new_trade_roads.1.a
+		trigger = {
+			has_dlc = "Emperor"
+		}
+		ai_chance = {
+			factor = 1
+		}
+		set_imperial_incident = incident_trade_competitor
+	}
+
+	option = { #if not emperor
+		trigger = {
+			NOT = {has_dlc = "Emperor"}
+		}
+		name = new_trade_roads.1.b
+		ai_chance = {
+			factor = 1
+		}
+		country_event = { id = new_trade_roads.2 }
+	}
+}
+
+
+country_event = {
+	id = new_trade_roads.2
+	title = new_trade_roads.2.t
+	desc = new_trade_roads.2.d
+	picture = HRE_eventPicture
+
+	is_triggered_only = yes
+
+	option = { dont care
+		ai_chance = {
+			factor = 1
+		}
+		name = new_trade_roads.2.a
+		add_prestige = -10
+		add_imperial_influence = -20
+	}
+
+	option = {
+		ai_chance = {
+			factor = 1
+		}
+		name = new_trade_roads.2.b
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+				is_emperor = no
+			}
+			add_years_of_income = -2
+		}
+		set_global_flag = the_empire_create_the_great_canal
+		emperor = {
+			add_years_of_income = -4
+		}
+		2315 = {
+			add_great_project = suez_canal
+		}
+	}
+
+	option = {#create the canal
+		trigger = {
+			trigger = {
+	      2315 = {
+	        is_part_of_hre = yes
+	      }
+	    }
+		}
+		ai_chance = {
+			factor = 1
+		}
+		name = new_trade_roads.2.c
+		set_global_flag = the_emperor_go_to_india
+		basra_area = {
+			limit = {
+				NOT = { is_core = emperor }
+				NOT = { is_permanent_claim = emperor }
+			}
+			add_permanent_claim = emperor
+		}
+	}
+}
+
+
+country_event = {
+	id = new_trade_roads.3
+	title = new_trade_roads.3.t
+	desc = new_trade_roads.3.d
+	picture = HRE_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		is_emperor = yes
+		has_global_flag = the_emperor_go_to_india
+		any_owned_province = {
+			area = basra_area
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = new_trade_roads.3.a
+		ai_chance = {
+			factor = 1
+		}
+		every_owned_province ={
+			limit = {
+				area = basra_area
+			}
+			set_in_empire = yes
+			cede_province	= MES
+			add_core = MES
+		}
+		MES = {
+			change_religion = olympoi
+		}
+		408 = {
+			add_trade_modifier = {
+				who = emperor
+				duration = -1
+				power = 40
+				key = spice_road
+				}
+		}
+		set_global_flag = control_of_mesopotamia
+		mogostan_area = {
+			limit = {
+				NOT = { is_core = emperor }
+				NOT = { is_permanent_claim = emperor }
+			}
+			add_permanent_claim = emperor
+		}
+	}
+}
+
+country_event = {
+	id = new_trade_roads.4
+	title = new_trade_roads.4.t
+	desc = new_trade_roads.4.d
+	picture = HRE_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		is_emperor = yes
+		has_global_flag = control_of_mesopotamia
+		any_owned_province = {
+			area = mogostan_area
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = new_trade_roads.4.a
+		ai_chance = {
+			factor = 1
+		}
+		every_owned_province ={
+			limit = {
+				area = mogostan_area
+			}
+			set_in_empire = yes
+			cede_province	= ORG
+			add_core = ORG
+		}
+		ORG = {
+			change_religion = olympoi
+		}
+		2999 = {
+			add_trade_modifier = {
+				who = emperor
+				duration = -1
+				power = 40
+				key = spice_road
+				}
+		}
+		sindh_area = {
+			limit = {
+				NOT = { is_core = emperor }
+				NOT = { is_permanent_claim = emperor }
+			}
+			add_permanent_claim = emperor
+		}
+		set_global_flag = control_of_organa
+	}
+}
+
+country_event = {
+	id = new_trade_roads.5
+	title = new_trade_roads.5.t
+	desc = new_trade_roads.5.d
+	picture = HRE_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		is_emperor = yes
+		has_global_flag = the_emperor_go_to_india
+		has_global_flag = control_of_organa
+		any_owned_province = {
+			area = sindh_area
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = new_trade_roads.5.a
+		ai_chance = {
+			factor = 1
+		}
+		every_owned_province ={
+			limit = {
+				area = sindh_area
+			}
+			set_in_empire = yes
+			cede_province	= IND
+			add_core = IND
+		}
+		IND = {
+			change_religion = olympoi
+		}
+		504 = {
+			add_trade_modifier = {
+				who = emperor
+				duration = -1
+				power = 40
+				key = spice_road
+				}
+		}
+		ahmedabad_area = {
+			limit = {
+				NOT = { is_core = emperor }
+				NOT = { is_permanent_claim = emperor }
+			}
+			add_permanent_claim = emperor
+		}
+		set_global_flag = control_of_indus
+	}
+}
+
+country_event = {
+	id = new_trade_roads.6
+	title = new_trade_roads.6.t
+	desc = new_trade_roads.6.d
+	picture = HRE_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		is_emperor = yes
+		has_global_flag = the_emperor_go_to_india
+		has_global_flag = control_of_indus
+		any_owned_province = {
+			area = ahmedabad_area
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = new_trade_roads.6.a
+		ai_chance = {
+			factor = 1
+		}
+		every_owned_province ={
+			limit = {
+				area = ahmedabad_area
+			}
+			set_in_empire = yes
+			cede_province	= GAN
+			add_core = GAN
+		}
+		4457 = {
+			add_trade_modifier = {
+				who = emperor
+				duration = -1
+				power = 40
+				key = spice_road
+				}
+		}
+		GAN = {
+			change_religion = olympoi
+		}
+	}
+}
+
+country_event = {
+	id = new_trade_roads.6
+	title = new_trade_roads.6.t
+	desc = new_trade_roads.6.d
+	picture = HRE_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		is_emperor = yes
+		has_global_flag = the_empire_create_the_great_canal
+		2315 = {
+			has_great_project = suez_canal
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = new_trade_roads.6.a
+		ai_chance = {
+			factor = 1
+		}
+		1212 = {
+			add_trade_modifier = {
+				who = emperor
+				duration = -1
+				power = 20
+				key = clymsa_canal
+				}
+		}
+		4457 = {
+			add_trade_modifier = {
+				who = emperor
+				duration = -1
+				power = 20
+				key = clymsa_canal
+				}
+		}
+
+	}
+}

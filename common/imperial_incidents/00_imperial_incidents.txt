@@ -286,3 +286,34 @@ incident_slavic_nationalism= {
 		factor = 3
 	}
 }
+
+
+
+incident_trade_competitor = {
+	event = new_trade_roads.2
+	default_option = 0
+
+	can_stop = {
+		always = no
+	}
+
+	0 = { do nothing
+		factor = 2
+	}
+
+  1 = { #faster road
+    factor = 1
+    modifier = {
+      factor = 100
+      OR = {
+         has_port = yes
+         }
+    }
+  }
+
+	2 = { #secure a spice road
+		factor = 2
+	}
+
+
+}

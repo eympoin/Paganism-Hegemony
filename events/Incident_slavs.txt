@@ -13,6 +13,7 @@ country_event = {
 			is_part_of_hre = yes
 			religion = slavic
 		}
+		NOT = { active_imperial_incident = any }
 		is_emperor = yes
 	}
 	mean_time_to_happen = {
@@ -64,6 +65,7 @@ country_event = {
 			limit = {
 				is_emperor = no
 				is_part_of_hre = yes
+				NOT = {religious_unity = 0.7}
 				any_owned_province = {
 					OR = {
 						religion = slavic
@@ -86,6 +88,7 @@ country_event = {
 		}
 		every_country = {
 			limit = {
+				is_emperor = no
 				is_part_of_hre = yes
 				any_owned_province = {
 					OR = {
@@ -107,6 +110,7 @@ country_event = {
 		name = slavic_uprising.2.c
 		every_country = {
 			limit = {
+				is_emperor = no
 				is_part_of_hre = yes
 				any_owned_province = {
 					OR = {

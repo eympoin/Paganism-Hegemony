@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = babylonian
+religion = olympoi
+technology_group = eastern
+capital = 408
+
