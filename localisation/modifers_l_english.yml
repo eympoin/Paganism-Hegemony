@@ -2444,3 +2444,10 @@ construction_modifier_haasa:0 "Construction modifier Haasa"
 desc_construction_modifier_haasa:0 ""
 Accept_Ibadi_faith:0 "Accept the heretics"
 desc_Accept_Ibadi_faith:0 ""
+
+#slavic uprising
+slavic_uprising_imperial_help:0"Slavic uprising with Imperial Help"
+slavic_uprising:0 "Slavic Uprising"
+
+desc_slavic_uprising_imperial_help:0""
+desc_slavic_uprising:0 ""
