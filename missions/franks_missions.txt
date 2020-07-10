@@ -337,7 +337,7 @@ unite_with_eastern_franks_1 = {
 
 		trigger = {
 			SAX = {
-				every_owned_province = {
+				all_owned_province = {
 					NOT = {culture_group = frankish}
 				}
 			}
