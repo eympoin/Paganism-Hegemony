@@ -2,7 +2,7 @@
 
 owner = HIM
 controller = HIM
-culture = yemeni_culture
+culture = Himyarites_culture
 religion = jewish
 capital = "Marib"
 trade_goods = livestock

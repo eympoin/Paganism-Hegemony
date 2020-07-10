@@ -146,175 +146,140 @@ EMP_crusader_3 = {
 		trigger = {
 			is_subject = no
 			at_peace = yes
-			development = 100
+			total_development = 100
 		}
 		effect = {
 			add_prestige = 10
 			add_dip_power = 100
-			any_province = {
-				if = {
-					limit = {
-						culture = cannanite
-						NOT = { country_or_non_sovereign_subject_holds = ROOT }
-						}
-					add_permanent_claim = ROOT
-				}
-			}
+			 4271 = { add_permanent_claim = ROOT }
+			 4270 = { add_permanent_claim = ROOT }
+			 405 = { add_permanent_claim = ROOT }
+			 4297 = { add_permanent_claim = ROOT }
+			 1849 = { add_permanent_claim = ROOT }
+			 407 = { add_permanent_claim = ROOT }
+			 2308 = { add_permanent_claim = ROOT }
+			 4292 = { add_permanent_claim = ROOT }
+			 364 = { add_permanent_claim = ROOT }
+			 380 = { add_permanent_claim = ROOT }
+			 381 = { add_permanent_claim = ROOT }
+			 379 = { add_permanent_claim = ROOT }
 		}
 	}
-	EMP_crusader_greece = {
-		icon = foothold_in_greece
-		required_missions = { EMP_crusader_pope }
+	unify_the_cannanite_koj = {
+		icon = knights_of_the_new_world
+		required_missions = { the_cannanite_kingdom_koj }
+		position = 3
 		provinces_to_highlight = {
 			OR = {
-				area = morea_area
-				area = aegean_archipelago_area
+				province_id = 4271
+				province_id = 4270
+				province_id = 405
+				province_id = 4297
+				province_id = 1849
+				province_id = 407
+				province_id = 2308
+				province_id = 4292
+				province_id = 364
+				province_id = 380
+				province_id = 381
+				province_id = 379
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = crusader_greece_tt
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					value = 5
-					OR = {
-						area = morea_area
-						area = aegean_archipelago_area
-					}
-				}
-			}
+			owns = 4271
+			owns = 4270
+			owns = 405
+			owns = 4297
+			owns = 1849
+			owns = 407
+			owns = 2308
+			owns = 4292
+			owns = 364
+			owns = 380
+			owns = 381
+			owns = 379
 		}
 		effect = {
-			northern_greece_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			macedonia_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			thrace_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			hudavendigar_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
+			add_stability = 1
+			add_prestige = 20
+			add_dip_power = 200
 		}
 	}
-	EMP_crusader_latin_empire = {
-		icon = the_latin_empire
-		required_missions = { EMP_crusader_greece }
+	assimilate_the_greeks_koj = {
+		icon = restore_the_hospitallers
+		required_missions = {
+			unify_the_cannanite_koj
+			alexandria_bishop_koj
+			antioch_bishop_koj
+		}
+		position = 4
 		provinces_to_highlight = {
 			OR = {
-				area = northern_greece_area
-				area = macedonia_area
-				area = thrace_area
-				area = hudavendigar_area
+				area = delta_area
+				area = bahari_area
+				area = palestine_area
+				area = syria_area
+				area = aleppo_area
 			}
 			OR = {
-				AND = {
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-					NOT = { province_id = 151 }
-				}
-				AND = {
-					province_id = 151
-					OR = {
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-				}
+				NOT = { province_id = 4317 }
+				NOT = { province_id = 361 }
+				NOT = { culture = canaan }
+				NOT = { culture = ptolemaic }
+				NOT = { culture = syrian }
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			}
 		}
 		trigger = {
-			owns_core_province = 151
-			northern_greece_area = {
+			patriarch_authority = 0.5
+			ptolemaic = { accepted_culture = ROOT }
+			syrian = { accepted_culture = ROOT }
+			aleppo_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = KOJ
+				religion = chalcedonian
 			}
-			macedonia_area = {
+			syria_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = KOJ
+				religion = chalcedonian
 			}
-			thrace_area = {
+			palestine_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = KOJ
+				religion = chalcedonian
 			}
-			hudavendigar_area = {
+			2316 = {
+				owned_by = KOJ
+				religion = chalcedonian
+			}
+			4316 = {
+				owned_by = ROOT
+				religion = chalcedonian
+			}
+			delta_area =  {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = KOJ
+				religion = chalcedonian
 			}
 		}
 		effect = {
-			if = {
+			add_country_modifier = {
+				name = koj_greek_assimilation
+				duration = -1
+			}
+			every_province = {
 				limit = {
-					religion = catholic
+					owned_by = KOJ
+					OR = {
+						culture = canaan
+						culture = syrian
+						culture = ptolemaic
+					}
 				}
-				country_event = { id = knights_missions.3 }
+				change_culture = jerusalemite
 			}
-			anatolia_region = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			balkan_region = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	EMP_crusader_catholic = {
-		icon = shield_of_christendom
-		required_missions = { EMP_crusader_latin_empire }
-		provinces_to_highlight = {
-		}
-		trigger = {
-			if = {
-				limit = {
-					religion = catholic
-				}
-				curia_treasury_contribution = 5
-			}
-			else = {
-				religious_unity = 1
-			}
-			custom_trigger_tooltip = {
-				tooltip = obj_force_converted_tooltip
-				has_country_flag = force_converted
-			}
-			custom_trigger_tooltip = {
-				tooltip = obj_convert_30_provinces_tooltip
-				check_variable = { which = num_converted_religion value = 30 }
-			}
-		}
-		effect = {
-			if = {
-				limit = {
-					religion = catholic
-				}
-				add_papal_influence = 50
-			}
-			add_adm_power = 50
-			add_dip_power = 50
-			add_mil_power = 50
 		}
 	}
 }

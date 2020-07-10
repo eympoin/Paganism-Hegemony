@@ -4347,6 +4347,7 @@ king_of_all_franks = {
 }
 Sunni_missionary_strength  = {
 	global_missionary_strength = 0.02
+	missionary_maintenance_cost = -0.5
 }
 
 #AL-HAASA
@@ -4389,6 +4390,11 @@ koj_the_great_drought = {
 	manpower_recovery_speed = -0.5
 	global_tax_modifier = -0.2
 	global_unrest = 4
+}
+
+koj_greek_assimilation = {
+	trade_efficiency = 0.05
+	technology_cost = -0.1
 }
 
 #Hejaz

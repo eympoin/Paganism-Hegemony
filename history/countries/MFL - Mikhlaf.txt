@@ -83,3 +83,6 @@ religious_school = ismaili_school
 		mil = 2
 	}
 }
+1444.1.1 ={
+	add_truce_with = HIM
+}

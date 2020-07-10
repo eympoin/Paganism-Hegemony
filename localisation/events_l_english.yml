@@ -318,6 +318,19 @@ flavor_koj.5.t:0 "The archbishop of Antioch"
 flavor_koj.5.d:0 "Antioch, both a rich spawling city and the gateway into Anatolia. As the church is built our hold onto this city becomes clearer, this place is now sacred in the name of the Christ."
 flavor_koj.5.a:0 "Amin"
 
+#Conquest of Yemen (HIM)
+flavor_him.1.t:0 "Conquest of Yemen"
+flavor_him.1.d:0 "The kingdom is threatened by our powerful rivals, for the conservation of our kingdom we must attack first"
+flavor_him.1.a:0 "God watches us"
+flavor_him.3.t:0 "The fate of defeated"
+flavor_him.3.d:0 "My King,  Yemen is defeated, your councillors await your decision on the fate of the Yemeni people"
+flavor_him.3.c:0 "This Heretics must disappear"
+flavor_him.3.de:0 "Find an arrangement"
+flavor_him.3.e:0 "We can accept their faith"
+flavor_him.4.t:0 "Expand the Kingdom"
+flavor_him.4.d:0 "My King you must choose our next conquest in arabia to strengthen the Kingdom and maybe one day we can retake the holy city of Jerusalem"
+flavor_him.4.f:0 "Conquest of the South"
+flavor_him.4.g:0 "Conquest of the North"
 
 #slavic incident
 incident_slavic_nationalism:0 "Slavic Uprisings"
