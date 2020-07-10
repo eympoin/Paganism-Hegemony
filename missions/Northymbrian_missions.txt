@@ -1,334 +1,334 @@
 to_vinland = {
 
-	slot = 1
-	generic = no
-	ai = yes
+  slot = 1
+  generic = no
+  ai = yes
 
-	potential = {
-		tag = NRT
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
+  potential = {
+    tag = NRT
+    NOT = { map_setup = map_setup_random }
+  }
+  has_country_shield = yes
 
-	take_iceland = {
-		icon = mission_build_up_to_force_limit
-		required_missions = { }
-		position = 1
-		provinces_to_highlight = {
-			area = subarctic_islands_area
-			OR = {
-				is_city = no
-				NOT = { owned_by = ROOT }
-			}
-			has_discovered = ROOT
-		}
-		trigger = {
-			subarctic_islands_area = {
-				type = all
-				owned_by = ROOT
-			}
-		}
+  take_iceland = {
+    icon = mission_build_up_to_force_limit
+    required_missions = { }
+    position = 1
+    provinces_to_highlight = {
+      area = subarctic_islands_area
+      OR = {
+        is_city = no
+        NOT = { owned_by = ROOT }
+      }
+      has_discovered = ROOT
+    }
+    trigger = {
+      subarctic_islands_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
 
-		effect = {
-			add_prestige = 10
-			add_country_modifier = {
-				name = "the_unknown_frontier"
-				duration = 5475
-			}
-		}
-	}
+    effect = {
+      add_prestige = 10
+      add_country_modifier = {
+        name = "the_unknown_frontier"
+        duration = 5475
+      }
+    }
+  }
 
-	recolonize_greenland = {
-		icon = mission_colonial
-		required_missions = { take_iceland }
-		position = 4
+  recolonize_greenland = {
+    icon = mission_colonial
+    required_missions = { take_iceland }
+    position = 4
 
-		provinces_to_highlight = {
-			area = greenland_area
-			OR = {
-				is_city = no
-				NOT = { owned_by = ROOT }
-			}
-			has_discovered = ROOT
-		}
+    provinces_to_highlight = {
+      area = greenland_area
+      OR = {
+        is_city = no
+        NOT = { owned_by = ROOT }
+      }
+      has_discovered = ROOT
+    }
 
-		trigger = {
-			greenland_area = {
-				owned_by = ROOT
-				is_city = yes
-			}
-		}
+    trigger = {
+      greenland_area = {
+        owned_by = ROOT
+        is_city = yes
+      }
+    }
 
-		effect = {
-			create_explorer = { tradition = 50 }
-			add_dip_power = 60
-		}
-	}
+    effect = {
+      create_explorer = { tradition = 50 }
+      add_dip_power = 60
+    }
+  }
 
-	colonize_Vinland = {
-		icon = mission_settlers_north_america
-		required_missions = { recolonize_greenland }
+  colonize_Vinland = {
+    icon = mission_settlers_north_america
+    required_missions = { recolonize_greenland }
 
-		provinces_to_highlight = {
-			area = newfoundland_area
-			NOT = { owned_by = ROOT }
-			has_discovered = ROOT
-		}
+    provinces_to_highlight = {
+      area = newfoundland_area
+      NOT = { owned_by = ROOT }
+      has_discovered = ROOT
+    }
 
-		trigger = {
-			newfoundland_area = {
-				owned_by = ROOT
-				is_city = yes
-			}
-		}
+    trigger = {
+      newfoundland_area = {
+        owned_by = ROOT
+        is_city = yes
+      }
+    }
 
-		effect = {
-			hidden_effect = {
-				canada_region = {
-					discover_country = ROOT
-				}
-			}
-			980 = {
-				add_trade_modifier = {
-					who = root
-					duration = -1
-					power = 20
-					key = the_first_colony
-				}
-			}
-		}
-	}
+    effect = {
+      hidden_effect = {
+        canada_region = {
+          discover_country = ROOT
+        }
+      }
+      980 = {
+        add_trade_modifier = {
+          who = root
+          duration = -1
+          power = 20
+          key = the_first_colony
+        }
+      }
+    }
+  }
 }
 
 
 destroy_saxon = {
-	slot = 2
-	generic = no
-	ai = yes
-	potential = {
-		tag = NRT
-	}
-	finish_mierce = {
-		icon = mission_build_up_to_force_limit
-		required_missions = {}
-		position = 1
-		provinces_to_highlight = {
-			OR = {
-				province_id = 239
-				province_id = 240
-				province_id = 4372
-				province_id = 4375
-			}
-			OR = {
-				is_city = no
-				NOT = { owned_by = ROOT }
-			}
-			has_discovered = ROOT
-		}
-		trigger = {
-			owns_or_non_sovereign_subject_of = 239
-			owns_or_non_sovereign_subject_of = 240
-			owns_or_non_sovereign_subject_of = 4372
-			owns_or_non_sovereign_subject_of = 4375
-		}
-		effect = {
-			wessex_area = {
-				add_permanent_claim = ROOT
-			}
-			east_anglia_area = {
-				add_permanent_claim = ROOT
-			}
-			add_permanent_claim = 234
-			add_permanent_claim = 237
-			add_permanent_claim = 235
-			add_permanent_claim = 4371
-		}
-	}
-	end_of_the_saxon = {
-		icon = mission_conquer_50_development
-		required_missions = {finish_mierce}
-		position = 2
-		provinces_to_highlight = {
-			OR = {
-				area = east_anglia_area
-				province_id = 237
-				province_id = 234
-				province_id = 235
-				province_id = 4371
-			}
-			OR = {
-				is_city = no
-				NOT = { owned_by = ROOT }
-			}
-			has_discovered = ROOT
-		}
-		trigger = {
-			east_anglia_area = {
-				type = all
-				owns_or_non_sovereign_subject_of = ROOT
-			}
-			owns_or_non_sovereign_subject_of = 237
-			owns_or_non_sovereign_subject_of = 234
-			owns_or_non_sovereign_subject_of = 235
-			owns_or_non_sovereign_subject_of = 4371
-		}
-		effect = {
-			add_accepted_culture = angle
-			add_accepted_culture = seaxan
-			add_permanent_claim = 236
-		}
-	}
-	legacy_of_rome = {
-		icon = mission_empire
-		required_missions = {end_of_the_saxon}
-		position = 3
-		provinces_to_highlight = {
-			province_id = 236
-			OR = {
-				is_city = no
-				NOT = { owned_by = ROOT }
-			}
-			has_discovered = ROOT
-		}
-		trigger = {
-			owns_or_non_sovereign_subject_of = 236
-		}
-		effect = {
-			add_legitimacy = 20
-			add_prestige = 20
-		}
-	}
-	unite_bretland = {
-		icon = mission_monarch_in_throne_room
-		required_missions = {legacy_of_rome foothold_on_ireland}
-		position = 4
-		provinces_to_highlight = {
-			region = british_isles_region
-			OR = {
-				is_city = no
-				NOT = { owned_by = ROOT }
-			}
-			has_discovered = ROOT
-		}
-		trigger = {
-			british_isles_region  = {
-				type = all
-				owns_or_non_sovereign_subject_of = ROOT
-			}
-		}
-		effect = {
-			capital_scope = {
-				add_base_tax = 4
-				add_base_production = 4
-				add_base_manpower = 5
-			}
-		}
-	}
-}
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+    tag = NRT
+  }
+  finish_mierce = {
+    icon = mission_build_up_to_force_limit
+    required_missions = {}
+      position = 1
+      provinces_to_highlight = {
+        OR = {
+          province_id = 239
+          province_id = 240
+          province_id = 4372
+          province_id = 4375
+        }
+        OR = {
+          is_city = no
+          NOT = { owned_by = ROOT }
+        }
+        has_discovered = ROOT
+      }
+      trigger = {
+        owns_or_non_sovereign_subject_of = 239
+        owns_or_non_sovereign_subject_of = 240
+        owns_or_non_sovereign_subject_of = 4372
+        owns_or_non_sovereign_subject_of = 4375
+      }
+      effect = {
+        wessex_area = {
+          add_permanent_claim = ROOT
+        }
+        east_anglia_area = {
+          add_permanent_claim = ROOT
+        }
+        add_permanent_claim = 234
+        add_permanent_claim = 237
+        add_permanent_claim = 235
+        add_permanent_claim = 4371
+      }
+    }
+    end_of_the_saxon = {
+      icon = mission_conquer_50_development
+      required_missions = {finish_mierce}
+      position = 2
+      provinces_to_highlight = {
+        OR = {
+          area = east_anglia_area
+          province_id = 237
+          province_id = 234
+          province_id = 235
+          province_id = 4371
+        }
+        OR = {
+          is_city = no
+          NOT = { owned_by = ROOT }
+        }
+        has_discovered = ROOT
+      }
+      trigger = {
+        east_anglia_area = {
+          type = all
+          owns_or_non_sovereign_subject_of = ROOT
+        }
+        owns_or_non_sovereign_subject_of = 237
+        owns_or_non_sovereign_subject_of = 234
+        owns_or_non_sovereign_subject_of = 235
+        owns_or_non_sovereign_subject_of = 4371
+      }
+      effect = {
+        add_accepted_culture = angle
+        add_accepted_culture = seaxan
+        add_permanent_claim = 236
+      }
+    }
+    legacy_of_rome = {
+      icon = mission_empire
+      required_missions = {end_of_the_saxon}
+      position = 3
+      provinces_to_highlight = {
+        province_id = 236
+        OR = {
+          is_city = no
+          NOT = { owned_by = ROOT }
+        }
+        has_discovered = ROOT
+      }
+      trigger = {
+        owns_or_non_sovereign_subject_of = 236
+      }
+      effect = {
+        add_legitimacy = 20
+        add_prestige = 20
+      }
+    }
+    unite_bretland = {
+      icon = mission_monarch_in_throne_room
+      required_missions = {legacy_of_rome foothold_on_ireland}
+      position = 4
+      provinces_to_highlight = {
+        region = british_isles_region
+        OR = {
+          is_city = no
+          NOT = { owned_by = ROOT }
+        }
+        has_discovered = ROOT
+      }
+      trigger = {
+        british_isles_region  = {
+          type = all
+          country_or_non_sovereign_subject_holds = ROOT
+        }
+      }
+      effect = {
+        capital_scope = {
+          add_base_tax = 4
+          add_base_production = 4
+          add_base_manpower = 5
+        }
+      }
+    }
+  }
 
 
-destroy_celts = {
-	slot = 3
-	generic = no
-	ai = yes
-	potential = {
-		tag = NRT
-	}
-	unite_north_and_south = {
-		icon = mission_unite_home_region
-		required_missions = {}
-		position = 1
-		provinces_to_highlight = {
-			OR = {
-				area = lowlands_area
-				area = highlands_area
-				province_id = 4361
-				province_id = 4362
-			}
-			OR = {
-				is_city = no
-				NOT = { owned_by = ROOT }
-			}
-			has_discovered = ROOT
-		}
-		trigger = {
-			lowlands_area = {
-				type = all
-				owns_or_non_sovereign_subject_of = ROOT
-			}
-			highlands_area = {
-				type = all
-				owns_or_non_sovereign_subject_of = ROOT
-			}
-			owns_or_non_sovereign_subject_of = 4361
-			owns_or_non_sovereign_subject_of = 4362
-		}
-		effect = {
-			ulster_area = {
-				add_permanent_claim = ROOT
-			}
-			wales_area = {
-				add_permanent_claim = ROOT
-			}
-			highlands_area = {
-				type = all
-				change_culture = northymbrian
-			}
-		}
-	}
-	invade_wales = {
-		icon = mission_assemble_an_army
-		required_missions = {unite_north_and_south}
-		position = 2
-		provinces_to_highlight = {
-			area = wales_area
-			OR = {
-				is_city = no
-				NOT = { owned_by = ROOT }
-			}
-			has_discovered = ROOT
-		}
-		trigger = {
-			wales_area = {
-				type = all
-				owns_or_non_sovereign_subject_of = ROOT
-			}
-		}
-		effect = {
-			wessex_area = {
-				type = all
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	foothold_on_ireland = {
-		icon = mission_galleys_in_port
-		required_missions = {invade_wales}
-		position = 3
-		provinces_to_highlight = {
-			area = ulster_area
-			OR = {
-				is_city = no
-				NOT = { owned_by = ROOT }
-			}
-			has_discovered = ROOT
-		}
-		trigger = {
-			ulster_area = {
-				type = all
-				owns_or_non_sovereign_subject_of = ROOT
-			}
-		}
-		effect = {
-			connacht_area = {
-				add_permanent_claim = ROOT
-			}
-			leinster_area = {
-				add_permanent_claim = ROOT
-			}
-			munster_area = {
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-}
+  destroy_celts = {
+    slot = 3
+    generic = no
+    ai = yes
+    potential = {
+      tag = NRT
+    }
+    unite_north_and_south = {
+      icon = mission_unite_home_region
+      required_missions = {}
+        position = 1
+        provinces_to_highlight = {
+          OR = {
+            area = lowlands_area
+            area = highlands_area
+            province_id = 4361
+            province_id = 4362
+          }
+          OR = {
+            is_city = no
+            NOT = { owned_by = ROOT }
+          }
+          has_discovered = ROOT
+        }
+        trigger = {
+          lowlands_area = {
+            type = all
+            owns_or_non_sovereign_subject_of = ROOT
+          }
+          highlands_area = {
+            type = all
+            owns_or_non_sovereign_subject_of = ROOT
+          }
+          owns_or_non_sovereign_subject_of = 4361
+          owns_or_non_sovereign_subject_of = 4362
+        }
+        effect = {
+          ulster_area = {
+            add_permanent_claim = ROOT
+          }
+          wales_area = {
+            add_permanent_claim = ROOT
+          }
+          highlands_area = {
+            type = all
+            change_culture = northymbrian
+          }
+        }
+      }
+      invade_wales = {
+        icon = mission_assemble_an_army
+        required_missions = {unite_north_and_south}
+        position = 2
+        provinces_to_highlight = {
+          area = wales_area
+          OR = {
+            is_city = no
+            NOT = { owned_by = ROOT }
+          }
+          has_discovered = ROOT
+        }
+        trigger = {
+          wales_area = {
+            type = all
+            owns_or_non_sovereign_subject_of = ROOT
+          }
+        }
+        effect = {
+          wessex_area = {
+            type = all
+            add_permanent_claim = ROOT
+          }
+        }
+      }
+      foothold_on_ireland = {
+        icon = mission_galleys_in_port
+        required_missions = {invade_wales}
+        position = 3
+        provinces_to_highlight = {
+          area = ulster_area
+          OR = {
+            is_city = no
+            NOT = { owned_by = ROOT }
+          }
+          has_discovered = ROOT
+        }
+        trigger = {
+          ulster_area = {
+            type = all
+            owns_or_non_sovereign_subject_of = ROOT
+          }
+        }
+        effect = {
+          connacht_area = {
+            add_permanent_claim = ROOT
+          }
+          leinster_area = {
+            add_permanent_claim = ROOT
+          }
+          munster_area = {
+            add_permanent_claim = ROOT
+          }
+        }
+      }
+    }
