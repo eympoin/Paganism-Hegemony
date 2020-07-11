@@ -1651,3 +1651,7 @@
  GAN_ADJ:0 "Gangaridai"
  ORG:0 "Organa"
  ORG_ADJ:0 "Organa"
+ WRM:0 "Western Roman Empire"
+ WRM_ADJ:0 "Roman"
+ERM:0 "Eastern Roman Empire"
+ERM_ADJ:0 "Eastern Roman"

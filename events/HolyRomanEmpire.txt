@@ -81,7 +81,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA9075"
-		change_tag = ROM
+		change_tag = ERM
 		add_country_modifier = {
 			name = "rome_reborn"
 			duration = -1
@@ -122,7 +122,7 @@ country_event = {
 
 	option = {
 		name = "EVTOPTA9076"
-		ROM = {
+		ERM = {
 			inherit = ROOT
 		}
 	}

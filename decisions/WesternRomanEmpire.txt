@@ -1,0 +1,108 @@
+country_decisions = {
+
+	restore_Western_Roman_Empire = {
+		major = yes
+		potential = {
+      normal_or_historical_nations = yes
+      was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_Western_Roman_Empire_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = HLR }
+			NOT = { tag = WRM }
+			NOT = { tag = PAP }
+			NOT = {religion_group = christian}
+      NOT = { religion_group = muslim }
+			NOT = { religion_group = jewish_group }
+			OR = {
+				religion = jupiterian
+		}
+    culture_group = roman
+    NOT = { primary_culture = byzantine }
+  }
+		provinces_to_highlight = {
+			OR = {
+				region = italy_region
+				region = france_region
+				region = iberia_region
+				province_id = 343 # Fez
+				province_id = 236 # London
+				province_id = 245 # Yorkshire
+				province_id = 96 # Zeeland
+				province_id = 134 # Vienna
+			}
+			NOT = { owned_by = ROOT }
+		}
+		allow = {
+    is_free_or_tributary_trigger = yes
+    is_at_war = no
+    is_nomad = no
+    adm_tech = 10
+			italy_region = {
+				type = all
+				owned_by = ROOT
+			}
+			france_region = {
+				type = all
+				owned_by = ROOT
+			}
+			iberia_region = {
+				type = all
+				owned_by = ROOT
+			}
+      croatia_area = {
+				type = all
+				owned_by = ROOT
+			}
+      slavonia_area = {
+				type = all
+				owned_by = ROOT
+			}
+      east_adriatic_coast_area = {
+				type = all
+				owned_by = ROOT
+			}
+      rascia_area = {
+				type = all
+				owned_by = ROOT
+			}
+      bosnia_area = {
+				type = all
+				owned_by = ROOT
+			}
+      serbia_area  = {
+				type = all
+				owned_by = ROOT
+			}
+      owns_core_province = 343
+      owns_core_province = 341
+      owns_core_province = 236
+      owns_core_province = 245
+      owns_core_province = 96
+      owns_core_province = 134
+
+		}
+    effect = {
+      remove_non_electors_emperors_from_empire_effect = yes
+      if = {
+        limit = {
+          NOT = { government_rank = 3 }
+        }
+        set_government_rank = 3
+      }
+
+      add_country_modifier = {
+        name = "centralization_modifier"
+        duration = 7300
+      }
+      add_prestige = 25
+      set_country_flag = formed_Western_Roman_Empire_flag
+      change_tag = WRM
+    }
+    ai_will_do = {
+      factor = 0
+    }
+		}
+	}
