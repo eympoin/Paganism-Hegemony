@@ -381,3 +381,44 @@ slavic_uprising.7.a:0 "The Greeks have returned."
 slavic_uprising.8.t:0 "The war is won"
 slavic_uprising.8.d:0 "We have defeated the Slavs. They shall not rule again."
 slavic_uprising.8.a:0 "Reestablish the Greek elites !"
+
+
+#trade incident
+incident_trade_competitor:0 "New trade competitors"
+incident_trade_competitor_emperor_alert:0 "With the discoveries of new trade routes to India comes new competitors. Western Europe don't pass through us anymore to get the diverse Indian products, and thus our trade is impoverished. We shall do something !"
+incident_trade_competitor_member_alert:0 "With the discoveries of new trade routes to India comes new competitors. Western Europe don't pass through us anymore to get the diverse Indian products, and thus our trade is impoverished. We shall do something !"
+
+new_trade_roads.1.t:0 "New trade competitors"
+new_trade_roads.1.d:0 "With the discoveries of new trade routes to India comes new competitors. Western Europe don't pass through us anymore to get the diverse Indian products, and thus our trade is impoverished. We shall do something !"
+
+new_trade_roads.1.a:0 "We shall plan our next actions carefully"
+new_trade_roads.1.b:0 "We shall plan our next actions carefully"
+
+new_trade_roads.2.t:0 "New trade competitors"
+new_trade_roads.2.d:0 "With the discoveries of new trade routes to India comes new competitors. Western Europe don't pass through us anymore to get the diverse Indian products, and thus our trade is impoverished."
+new_trade_roads.2.a:0 "Do nothing"
+new_trade_roads.2.b:0 "Speed up our trade roads with the construction of a canal in Egypt. It will be costly but worth it."
+new_trade_roads.2.c:0 "Secure territories on the road to India. First South Mesopotamia then Hormuz then the Indus estuary and finally the Gujarat trading center !"
+
+new_trade_roads.3.t:0 "Conquest of Mesopotamia"
+new_trade_roads.3.d:0 "We have conquer Mesopotamia. Establish a base here and continue our conquest."
+new_trade_roads.3.a:0 "The next step is Organa"
+
+new_trade_roads.4.t:0 "Conquest of Organa"
+new_trade_roads.4.d:0 "We have conquer Organa. Establish a base here and continue our conquest."
+new_trade_roads.4.a:0 "The next step is the Indus estuary"
+
+new_trade_roads.5.t:0 "Conquest of the Indus estuary"
+new_trade_roads.5.d:0 "We have conquer the Indus estuary. Establish a base here and continue our conquest."
+new_trade_roads.5.a:0 "The next step is the rich trading cities of Gujarat"
+
+new_trade_roads.6.t:0 "Conquest of Gujarat"
+new_trade_roads.6.d:0 "We have conquer Gujarat. Our mission is finally complete"
+new_trade_roads.6.a:0 "Our trade road is secure !"
+
+new_trade_roads.7.t:0 "The Great Canal of Clymsa"
+new_trade_roads.7.d:0 "Our great project is now finished, and our trade road to India faster than ever."
+new_trade_roads.7.a:0 "The Westerners will never compete with this."
+
+clymsa_canal:0 "Clymsa Canal"
+spice_road:0 "Indian Road"

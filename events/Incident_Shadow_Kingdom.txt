@@ -514,162 +514,166 @@ country_event = {
 }
 
 
-	country_event = {
-		id = shadow_kingdom.8
-		title = "shadow_kingdom.8.t"
-		desc = "shadow_kingdom.8.d"
-		picture = SIEGE_eventPicture
+country_event = {
+	id = shadow_kingdom.8
+	title = "shadow_kingdom.8.t"
+	desc = "shadow_kingdom.8.d"
+	picture = SIEGE_eventPicture
 
-		fire_only_once = yes
+	fire_only_once = yes
 
-		trigger = {
-			tag = BYZ
+	trigger = {
+		tag = BYZ
+		BYZ = {
+			war_with = UEG
+		}
+		OR = {
 			BYZ = {
-				war_with = UEG
+				war_score = 50
 			}
-			OR = {
-				BYZ = {
-					war_score = 50
-				}
-				LEG = {
-					war_score = 50
-				}
+			LEG = {
+				war_score = 50
 			}
 		}
-		mean_time_to_happen = {
-			months = 1
-		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
 
-		#give UEG to LEG
-		option = {
-			name = "shadow_kingdom.8.b"
-			ai_chance = {
-				factor = 20
-			}
-			trigger = {
-				has_global_flag = allied_with_leg_for_egypt
-			}
-			UEG = {
-				every_owned_province = {
-					cede_province = LEG
-				}
-			}
-			add_truce_with = UEG
-			white_peace = UEG
+	#give UEG to LEG
+	option = {
+		name = "shadow_kingdom.8.b"
+		ai_chance = {
+			factor = 20
 		}
+		trigger = {
+			has_global_flag = allied_with_leg_for_egypt
+		}
+		UEG = {
+			every_owned_province = {
+				cede_province = LEG
+			}
+		}
+		add_truce_with = UEG
+		white_peace = UEG
+	}
 
-		#take UEG when allied
-		option = {
-			name = "shadow_kingdom.8.c"
-			ai_chance = {
-				factor = 10
+	#take UEG when allied
+	option = {
+		name = "shadow_kingdom.8.c"
+		ai_chance = {
+			factor = 10
+		}
+		trigger = {
+			has_global_flag = allied_with_leg_for_egypt
+		}
+		UEG = {
+			every_owned_province = {
+				cede_province = BYZ
 			}
-			trigger = {
-				has_global_flag = allied_with_leg_for_egypt
-			}
-			UEG = {
-				every_owned_province = {
-					cede_province = BYZ
-				}
-			}
+		}
+		LEG = {
 			add_opinion = {
-				who = FROM
+				who = BYZ
 				modifier = opinion_took_egypt_for_themselves
 			}
-			add_truce_with = UEG
-			white_peace = UEG
 		}
+		add_truce_with = UEG
+		white_peace = UEG
+	}
 
-		#take UEG when not allied
-		option = {
-			name = "shadow_kingdom.8.e"
-			ai_chance = {
-				factor = 20
+	#take UEG when not allied
+	option = {
+		name = "shadow_kingdom.8.e"
+		ai_chance = {
+			factor = 20
+		}
+		trigger = {
+			NOT = {has_global_flag = allied_with_leg_for_egypt}
+		}
+		white_peace = UEG
+		UEG = {
+			every_owned_province = {
+				cede_province = BYZ
 			}
-			trigger = {
-				NOT = {has_global_flag = allied_with_leg_for_egypt}
-			}
+		}
+		add_opinion = {
+			who = LEG
+			modifier = opinion_took_egypt_for_themselves2
+		}
+		add_truce_with = UEG
+	}
+	#UEG free but hellenic and back in the empire + free vassals
+	option = {
+		name = "shadow_kingdom.8.f"
+		ai_chance = {
+			factor = 60
+		}
+		360 = {
+			cede_province = THB
+		}
+		359 = {
+			cede_province = FAY
+		}
+		4318 = {
+			cede_province = FAY
+		}
+		4323 = {
+			cede_province = ABY
+		}
+		2317 = {
+			cede_province = FAY
+		}
+		2318 = {
+			cede_province = FAY
+		}
+		2319 = {
+			cede_province = ABY
+		}
+		1233 = {
+			cede_province = ABY
+		}
+		4320 = {
+			cede_province = ABY
+		}
+		4320 = {
+			set_in_empire = yes
+		}
+		4319 = {
+			cede_province = THB
+		}
+		1231 = {
+			cede_province = THB
+		}
+		2320 = {
+			cede_province = BRK
+		}
+		2321 = {
+			cede_province = BRK
+		}
+		add_truce_with = UEG
+		LEG = {
 			white_peace = UEG
-			UEG = {
-				every_owned_province = {
-					cede_province = BYZ
-				}
-			}
-			add_opinion = {
-				who = LEG
-				modifier = opinion_took_egypt_for_themselves2
-			}
 			add_truce_with = UEG
 		}
-		#UEG free but hellenic and back in the empire + free vassals
-		option = {
-			name = "shadow_kingdom.8.f"
-			ai_chance = {
-				factor = 60
-			}
-			360 = {
-				cede_province = THB
-			}
-			359 = {
-				cede_province = FAY
-			}
-			4318 = {
-				cede_province = FAY
-			}
-			4323 = {
-				cede_province = ABY
-			}
-			2317 = {
-				cede_province = FAY
-			}
-			2318 = {
-				cede_province = FAY
-			}
-			2319 = {
-				cede_province = ABY
-			}
-			1233 = {
-				cede_province = ABY
-			}
-			4320 = {
-				cede_province = ABY
-			}
-			4320 = {
-				set_in_empire = yes
-			}
-			4319 = {
-				cede_province = THB
-			}
-			1231 = {
-				cede_province = THB
-			}
-			2320 = {
-				cede_province = BRK
-			}
-			2321 = {
-				cede_province = BRK
-			}
-			add_truce_with = UEG
-			LEG = {
-				white_peace = UEG
-				add_truce_with = UEG
-			}
-			UEG = {
-				release_all_subjects = yes
-				change_religion	= olympoi
-			}
-			THB = {
-				change_religion	= olympoi
-			}
-			ABY = {
-				change_religion	= olympoi
-			}
-			FAY = {
-				change_religion	= olympoi
-			}
+		UEG = {
+			release_all_subjects = yes
+			change_religion	= olympoi
+		}
+		THB = {
+			change_religion	= olympoi
+		}
+		ABY = {
+			change_religion	= olympoi
+		}
+		FAY = {
+			change_religion	= olympoi
+		}
+		LEG = {
 			add_opinion = {
-				who = LEG
+				who = BYZ
 				modifier = opinion_give_autonomy_to_UEG
 			}
 		}
 	}
+}

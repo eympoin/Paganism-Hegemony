@@ -144,33 +144,33 @@ country_event = {
 			name = "slavic_uprising"
 			duration = 3650
 		}
-		random_owned_province = {
+		every_owned_province = {
 			limit = {
 				religion = slavic
 			}
-		spawn_rebels = {
+			spawn_rebels = {
 				type = slavic_rebels
-				size = 6
+				size = 1
 				leader = "Stefan"
 			}
 		}
-		random_owned_province = {
+		every_owned_province = {
 			limit = {
 				religion = Illyrian
 			}
-		spawn_rebels = {
+			spawn_rebels = {
 				type = Illyrian_rebels
-				size = 6
+				size = 1
 				leader = "Stefan"
 			}
 		}
-		random_owned_province = {
+		every_owned_province = {
 			limit = {
 				religion = tengri_pagan_reformed
 			}
-		spawn_rebels = {
+			spawn_rebels = {
 				type = tengri_pagan_reformed_rebels
-				size = 6
+				size = 1
 				leader = "Aleksandër"
 			}
 		}
@@ -234,33 +234,33 @@ country_event = {
 			name = "slavic_uprising_imperial_help"
 			duration = 3650
 		}
-		random_owned_province = {
+		every_owned_province = {
 			limit = {
 				religion = slavic
 			}
-		spawn_rebels = {
+			spawn_rebels = {
 				type = slavic_rebels
-				size = 6
+				size = 1
 				leader = "Stefan"
 			}
 		}
-		random_owned_province = {
+		every_owned_province = {
 			limit = {
 				religion = Illyrian
 			}
-		spawn_rebels = {
+			spawn_rebels = {
 				type = Illyrian_rebels
-				size = 6
+				size = 1
 				leader = "Stefan"
 			}
 		}
-		random_owned_province = {
+		every_owned_province = {
 			limit = {
 				religion = tengri_pagan_reformed
 			}
-		spawn_rebels = {
+			spawn_rebels = {
 				type = tengri_pagan_reformed_rebels
-				size = 6
+				size = 1
 				leader = "Aleksandër"
 			}
 		}
@@ -334,33 +334,33 @@ country_event = {
 			name = "slavic_uprising"
 			duration = 3650
 		}
-		random_owned_province = {
+		every_owned_province = {
 			limit = {
 				religion = slavic
 			}
-		spawn_rebels = {
+			spawn_rebels = {
 				type = slavic_rebels
-				size = 6
+				size = 1
 				leader = "Stefan"
 			}
 		}
-		random_owned_province = {
+		every_owned_province = {
 			limit = {
 				religion = Illyrian
 			}
-		spawn_rebels = {
+			spawn_rebels = {
 				type = Illyrian_rebels
-				size = 6
+				size = 1
 				leader = "Stefan"
 			}
 		}
-		random_owned_province = {
+		every_owned_province = {
 			limit = {
 				religion = tengri_pagan_reformed
 			}
-		spawn_rebels = {
+			spawn_rebels = {
 				type = tengri_pagan_reformed_rebels
-				size = 6
+				size = 1
 				leader = "Aleksandër"
 			}
 		}

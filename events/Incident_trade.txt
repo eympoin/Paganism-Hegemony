@@ -314,9 +314,9 @@ country_event = {
 }
 
 country_event = {
-	id = new_trade_roads.6
-	title = new_trade_roads.6.t
-	desc = new_trade_roads.6.d
+	id = new_trade_roads.7
+	title = new_trade_roads.7.t
+	desc = new_trade_roads.7.d
 	picture = HRE_eventPicture
 
 	fire_only_once = yes
@@ -332,7 +332,7 @@ country_event = {
 	}
 
 	option = {
-		name = new_trade_roads.6.a
+		name = new_trade_roads.7.a
 		ai_chance = {
 			factor = 1
 		}
