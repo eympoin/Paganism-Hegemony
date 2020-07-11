@@ -150,7 +150,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = slavic_rebels
-				size = 1
+				size = 0.5
 				leader = "Stefan"
 			}
 		}
@@ -160,7 +160,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = Illyrian_rebels
-				size = 1
+				size = 0.5
 				leader = "Stefan"
 			}
 		}
@@ -170,7 +170,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = tengri_pagan_reformed_rebels
-				size = 1
+				size = 0.5
 				leader = "Aleksandër"
 			}
 		}
@@ -184,7 +184,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 1000
+			factor = 100
 		}
 		change_religion = slavic
 	}
@@ -197,7 +197,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 1000
+			factor = 100
 		}
 		change_religion = Illyrian
 	}
@@ -210,7 +210,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 1000
+			factor = 100
 		}
 		change_religion = tengri_pagan_reformed
 	}
@@ -240,7 +240,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = slavic_rebels
-				size = 1
+				size = 0.5
 				leader = "Stefan"
 			}
 		}
@@ -250,7 +250,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = Illyrian_rebels
-				size = 1
+				size = 0.5
 				leader = "Stefan"
 			}
 		}
@@ -260,7 +260,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = tengri_pagan_reformed_rebels
-				size = 1
+				size = 0.5
 				leader = "Aleksandër"
 			}
 		}
@@ -292,7 +292,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 1
+			factor = 10
 		}
 		set_global_flag = defy_the_emperor
 		change_religion = Illyrian
@@ -309,7 +309,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 1000
+			factor = 10
 		}
 		set_global_flag = defy_the_emperor
 		change_religion = tengri_pagan_reformed
@@ -340,7 +340,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = slavic_rebels
-				size = 1
+				size = 0.5
 				leader = "Stefan"
 			}
 		}
@@ -350,7 +350,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = Illyrian_rebels
-				size = 1
+				size = 0.5
 				leader = "Stefan"
 			}
 		}
@@ -360,7 +360,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = tengri_pagan_reformed_rebels
-				size = 1
+				size = 0.5
 				leader = "Aleksandër"
 			}
 		}
@@ -374,7 +374,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 1000
+			factor = 10
 		}
 		set_global_flag = defy_the_emperor
 		change_religion = slavic
@@ -392,7 +392,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 1
+			factor = 10
 		}
 		set_global_flag = defy_the_emperor
 		change_religion = Illyrian
@@ -409,7 +409,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 1000
+			factor = 10
 		}
 		set_global_flag = defy_the_emperor
 		change_religion = tengri_pagan_reformed
