@@ -3,7 +3,7 @@ add_government_reform = free_city
 primary_culture = serbian
 religion = olympoi
 technology_group = eastern
-capital = 382
+capital = 4173
 elector=no
 government_rank = 1
 

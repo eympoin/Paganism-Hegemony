@@ -81,7 +81,10 @@ religious_center = {
 			limit = {
 				province_id = 385 # Mecca
 			}
-			religion_group = muslim
+			OR = {
+			 religion_group = muslim
+			 religion = arabian
+			 }
 		}
 		else_if = {
 			limit = {
@@ -144,7 +147,110 @@ religious_center = {
 			limit = {
 				province_id = 4810
 			}
-			religion = olympoi
+			religion_group = greco_roman_group
+		}
+		else_if = {
+			limit = {
+				province_id = 1773
+			}
+			religion_group = greco_roman_group
+		}
+		else_if = {
+			limit = {
+				province_id = 144
+			}
+			religion_group = greco_roman_group
+		}
+		else_if = {
+			limit = {
+				province_id = 361
+			}
+			religion = ancient_egyptian_rl
+		}
+		else_if = {
+			limit = {
+				province_id = 360
+			}
+			religion = ancient_egyptian_rl
+		}
+
+		else_if = {
+			limit = {
+				province_id = 2311
+			}
+			religion = mesopotamian
+		}
+		else_if = {
+			limit = {
+				province_id = 411
+			}
+			religion = mesopotamian
+		}
+		else_if = {
+			limit = {
+				province_id = 420
+			}
+			religion = armenian_rl
+		}
+		else_if = {
+			limit = {
+				province_id = 2972
+			}
+			religion = germanic
+		}
+		else_if = {
+			limit = {
+				province_id = 12
+			}
+			religion = norse_pagan_reformed
+		}
+		else_if = {
+			limit = {
+				province_id = 1
+			}
+			religion = norse_pagan_reformed
+		}
+		else_if = {
+			limit = {
+				province_id = 256
+			}
+			religion = slavic
+		}
+		else_if = {
+			limit = {
+				province_id = 280
+			}
+			religion = slavic
+		}
+		else_if = {
+			limit = {
+				province_id = 272
+			}
+			religion = romuva
+		}
+		else_if = {
+			limit = {
+				province_id = 1859
+			}
+			religion = romuva
+		}
+		else_if = {
+			limit = {
+				province_id = 1077
+			}
+			religion = suomenusko
+		}
+		else_if = {
+			limit = {
+				province_id = 346
+			}
+			religion = berber
+		}
+		else_if = {
+			limit = {
+				province_id = 451
+			}
+			religion = zunist
 		}
 	}
 
@@ -563,7 +669,7 @@ jerusalem_held = {
 
 	prestige = 0.5
 	missionaries = 1
-	global_heretic_missionary_strength = 0.02
+	global_missionary_strength = 0.01
 
 	#Province scope
 	on_activation = {

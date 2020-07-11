@@ -1577,7 +1577,10 @@ PON_ideas = {
 		discipline = 0.05
 		}
 	trigger = {
+	OR = {
 		tag = PON
+		tag = PPH
+		}
 	}
 	free = yes
 
