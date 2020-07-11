@@ -11324,7 +11324,8 @@ Accept_Ibadi_faith {
  	tolerance_heretic = 2
 	 	global_missionary_strength = -0.05
 		religious_unity = 0.2
-		
+		}
+
 slavic_uprising_imperial_help = {
 	global_unrest = 10
 	mercenary_cost = -0.5
