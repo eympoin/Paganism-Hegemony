@@ -27,11 +27,17 @@ country_decisions = {
 				region = italy_region
 				region = france_region
 				region = iberia_region
+				area = slavonia_area
+				area = croatia_area
+				area = east_adriatic_coast_area
+				area = rascia_area
+				area = bosnia_area
 				province_id = 343 # Fez
 				province_id = 236 # London
 				province_id = 245 # Yorkshire
 				province_id = 96 # Zeeland
 				province_id = 134 # Vienna
+				area = serbia_area
 			}
 			NOT = { owned_by = ROOT }
 		}
