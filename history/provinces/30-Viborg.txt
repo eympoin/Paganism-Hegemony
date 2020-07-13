@@ -3,7 +3,7 @@
 owner = KRL
 controller = KRL
 add_core = KRL
-culture = finnish
+culture = karelian
 religion = suomenusko
 hre = no
 base_tax = 2

@@ -1,10 +1,10 @@
 #S�nderjylland-Slesvig, incl. Slesvig, Haderslev and Flensborg
 
-add_core = JUT
-owner = JUT
-controller = JUT
-culture = danish
-religion = norse_pagan_reformed
+add_core = ANG
+owner = ANG
+controller = ANG
+culture = saxon
+religion = germanic
 hre = no
 base_tax = 3
 base_production = 3

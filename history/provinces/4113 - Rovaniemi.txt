@@ -3,7 +3,7 @@
 owner = SML
 controller = SML
 add_core = SML
-culture = finnish #Probably also a large Sami population.
+culture = sapmi#Probably also a large Sami population.
 religion = suomenusko
 hre = no
 base_tax = 1

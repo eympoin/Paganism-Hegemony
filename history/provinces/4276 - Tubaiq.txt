@@ -5,5 +5,5 @@ discovered_by = indian
 discovered_by = muslim
 discovered_by = nomad_group
 discovered_by = ottoman
-
+discovered_by = eastern
 1507.9.1 = { discovered_by = POR } # Alfonso d'Albuquerque

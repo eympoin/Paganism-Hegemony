@@ -3,7 +3,7 @@
 owner = SML
 controller = SML
 add_core = SML
-culture = finnish
+culture = sapmi
 religion = suomenusko
 hre = no
 base_tax = 1

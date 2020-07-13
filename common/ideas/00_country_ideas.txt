@@ -2747,6 +2747,8 @@ NED_ideas = {
 		OR = {
 			tag = NED
 			tag = HOL
+			tag = BAT
+			tag = FIS
 		}
 	}
 	free = yes		#will be added at load.
