@@ -1,11 +1,11 @@
 #East Karelia
 
-owner = KRL
-controller = KRL
+owner = SML
+controller = SML
 capital = "Kem"
 culture = karelian
 religion = suomenusko
-add_core = KRL
+add_core = SML
 hre = no
 is_city = yes
 base_tax = 1

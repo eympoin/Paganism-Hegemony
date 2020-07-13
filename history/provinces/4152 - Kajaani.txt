@@ -1,8 +1,8 @@
 #4152 - Kuusamo incl Maanselk� and Kitka
 
-owner = FIN
-controller = FIN
-add_core = FIN
+owner = SML
+controller = SML
+add_core = SML
 culture = sapmi
 religion = suomenusko
 hre = no

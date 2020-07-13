@@ -1,7 +1,7 @@
 #63 - Erfurt
 
-owner = SAX
-controller = SAX
+owner = THU
+controller = THU
 culture = thuringian
 religion = germanic
 capital = "Erfurt"
@@ -12,7 +12,7 @@ base_production = 3
 base_manpower = 1
 is_city = yes
 estate = estate_nobles
-add_core = SAX
+add_core = THU
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

@@ -1,8 +1,8 @@
 # 4742 - Goslar
 
-owner = SAX
-controller = SAX
-add_core = SAX
+owner = THU
+controller = THU
+add_core = THU
 culture = thuringian
 religion = germanic
 hre = no

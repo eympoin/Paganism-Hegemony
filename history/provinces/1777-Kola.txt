@@ -1,12 +1,12 @@
 #Kola
 
-owner = KRL
-controller = KRL
+owner = SML
+controller = SML
 capital = "Kola"
-culture = karelian
+culture = sapmi
 religion = suomenusko
 hre = no
-add_core = KRL
+add_core = SML
 base_tax = 1
 base_production = 1
 is_city = yes

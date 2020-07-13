@@ -1,7 +1,7 @@
 #58 - Anhalt
 
-owner = SAX
-controller = SAX
+owner = THU
+controller = THU
 culture = thuringian
 religion = germanic
 capital = "Dessau"
@@ -11,7 +11,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = SAX
+add_core = THU
 
 
 

@@ -1,7 +1,7 @@
 #J�mtland+H�rjedalen
 
-owner = NOR
-controller = NOR
+owner = SMI
+controller = SMI
 culture = norwegian # They were actually J�mts - the unique blend of Swedish, Norwegian and local tendencies
 religion = norse_pagan_reformed
 hre = no
@@ -10,9 +10,8 @@ base_production = 1
 trade_goods = fur
 base_manpower = 1
 capital = "Froson"
-add_local_autonomy = 25
 is_city = yes
-add_core = NOR
+add_core = SMI
 
 
 

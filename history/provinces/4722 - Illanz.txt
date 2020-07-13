@@ -1,5 +1,5 @@
-owner = ALM
-controller = ALM
+owner = SUE
+controller = SUE
 culture = alamann
 religion = germanic
 capital = "Illanz"
@@ -9,7 +9,7 @@ base_tax = 3
 base_production = 2
 base_manpower = 1
 is_city = yes
-add_core = ALM
+add_core = SUE
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

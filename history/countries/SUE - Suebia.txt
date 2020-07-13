@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = western
+religion = germanic
+primary_culture = alamann
+capital = 1869
+government_rank = 1
+
+1444.1.1 = {
+    monarch = {
+        name = "Lantfrid"
+	dynasty = "Gotfrid"
+        birth_date = 1410.8.12
+        adm = 4
+        dip = 3
+        mil = 4
+    }
+}
