@@ -7,7 +7,7 @@ religion = germanic
 elector = no
 technology_group = western
 capital = 1758
-
+historical_friend = SAX
 
 #Elector
 1420.1.1 = {

@@ -15,7 +15,7 @@ is_city = yes
 discovered_by = east_african
 discovered_by = muslim
 discovered_by = ottoman
-
+discovered_by = eastern
 1503.1.1 = {
 	owner = NUB
 	controller = NUB

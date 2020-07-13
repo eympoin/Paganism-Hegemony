@@ -3,7 +3,7 @@
 owner = SML
 controller = SML
 capital = "Kem"
-culture = karelian
+culture = sapmi
 religion = suomenusko
 add_core = SML
 hre = no

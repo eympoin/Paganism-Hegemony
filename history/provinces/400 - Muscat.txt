@@ -22,34 +22,4 @@ fort_15th = yes
 extra_cost = 16
 center_of_trade = 2
 estate = estate_burghers
-
-1480.1.1 = { discovered_by = TUR }
-1488.1.1 = { discovered_by = POR } # P�ro da Covilh�
-1507.6.1 = {
-	owner = POR
-	controller = POR
-	add_core = POR
-	remove_core = ORM
-	add_to_trade_company = POR
-	add_trade_company_investment = {
-		investment = local_quarter
-		investor = POR
-	}
-}# Captured by the Portuguese
-1624.1.1 = {
-	owner = OMA
-	controller = OMA
-	remove_core = POR
-}# Rule restored
-1679.1.1 = { unrest = 5 } # Internal unrest upon Imam's death
-1741.1.1 = {
-	owner = PER
-	controller = PER
-	add_core = PER
-}# Invaded by Persia
-1749.6.10 = {
-	owner = OMA
-	controller = OMA
-	remove_core = PER
-	unrest = 0
-}
+discovered_by = eastern

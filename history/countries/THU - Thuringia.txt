@@ -5,7 +5,7 @@ primary_culture = saxon
 religion = germanic
 technology_group = western
 capital = 63	# Erfurt
-
+historical_friend = THU
 
 1349.1.1 = {
 	monarch = {

@@ -2,8 +2,8 @@
 
 owner = SMI
 controller = SMI
-culture = norwegian # They were actually J�mts - the unique blend of Swedish, Norwegian and local tendencies
-religion = norse_pagan_reformed
+culture = sapmi# They were actually J�mts - the unique blend of Swedish, Norwegian and local tendencies
+religion = suomenusko
 hre = no
 base_tax = 1
 base_production = 1
