@@ -1,6 +1,6 @@
 owner = SUE
 controller = SUE
-culture = alamann
+culture = suebian
 religion = germanic
 capital = "Illanz"
 trade_goods = livestock

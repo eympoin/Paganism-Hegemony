@@ -29,8 +29,8 @@ country_event = {
 }
 country_event = {
 	id = shadow_kingdom.2
-	title = hre_event.3.t
-	desc = shadow_kingdom.2.d
+	title = "hre_event.3.t"
+	desc = "shadow_kingdom.2.d"
 	picture = HRE_eventPicture
 
 	fire_only_once = yes
@@ -40,7 +40,7 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		name = shadow_kingdom.2.a
+		name = "shadow_kingdom.2.a"
 		add_prestige = -10
 		add_imperial_influence = -20
 		custom_tooltip = shadow_kingdom_emperor_gives_up_tt
@@ -79,7 +79,7 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		name = shadow_kingdom.2.b
+		name = "shadow_kingdom.2.b"
 		set_global_flag = emperor_trying_to_avert_shadow_kingdom
 		custom_tooltip = shadow_kingdom_incident_tt
 		BYZ = { country_event = { id = shadow_kingdom.6 } }
@@ -89,7 +89,7 @@ country_event = {
 # Time is up for the Emperor
 country_event = {
 	id = shadow_kingdom.3
-	title = shadow_kingdom.3.t
+	title = "shadow_kingdom.3.t"
 	desc = {
 		trigger = {
 			any_province = {
@@ -99,7 +99,7 @@ country_event = {
 				}
 			}
 		}
-		desc = shadow_kingdom.3.d # emperor not completely successful
+		desc = "shadow_kingdom.3.d" # emperor not completely successful
 	}
 	desc = {
 		trigger = {
@@ -112,7 +112,7 @@ country_event = {
 				}
 			}
 		}
-		desc = shadow_kingdom.3.d2 # emperor completely successful
+		desc = "shadow_kingdom.3.d2" # emperor completely successful
 	}
 	picture = HRE_eventPicture
 
@@ -139,7 +139,7 @@ country_event = {
 	}
 
 	option = {
-		name = shadow_kingdom.3.a
+		name = "shadow_kingdom.3.a"
 		trigger = {
 			any_province = {
 				region = egypt_region
@@ -233,7 +233,7 @@ country_event = {
 				}
 			}
 		}
-		name = shadow_kingdom.3.b
+		name = "shadow_kingdom.3.b"
 		add_imperial_influence = 25
 		set_global_flag = shadow_kingdom_averted
 	}
@@ -242,8 +242,8 @@ country_event = {
 # Italian country leaves or stays
 country_event = {
 	id = shadow_kingdom.4
-	title = hre_event.1.t
-	desc = hre_event.1.d
+	title = "hre_event.1.t"
+	desc = "hre_event.1.d"
 	picture = HRE_eventPicture
 
 	is_triggered_only = yes
@@ -256,7 +256,7 @@ country_event = {
 				will_leave_for_shadow_kingdom_trigger = no
 			}
 		}
-		name = hre_event.1.b
+		name = "hre_event.1.b"
 		if = {
 			limit = {
 				has_global_flag = emperor_trying_to_avert_shadow_kingdom
@@ -276,7 +276,7 @@ country_event = {
 				will_leave_for_shadow_kingdom_trigger = yes
 			}
 		}
-		name = hre_event.1.a
+		name = "hre_event.1.a"
 		set_in_empire = no
 		set_country_flag = permanently_left_hre_flag
 		emperor = {
@@ -319,8 +319,8 @@ country_event = {
 # Event to fire the incident. Or the de facto incident for non-dlc owners
 country_event = {
 	id = shadow_kingdom.5
-	title = hre_event.3.t
-	desc = shadow_kingdom.2.d
+	title = "hre_event.3.t"
+	desc = "shadow_kingdom.2.d"
 	picture = HRE_eventPicture
 
 	fire_only_once = yes
@@ -342,7 +342,7 @@ country_event = {
 	}
 
 	option = {
-		name = shadow_kingdom.5.a
+		name = "shadow_kingdom.5.a"
 		trigger = {
 			has_dlc = "Emperor"
 		}
@@ -355,7 +355,7 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		name = shadow_kingdom.2.a
+		name = "shadow_kingdom.2.a"
 		add_prestige = -10
 		add_imperial_influence = -20
 		set_global_flag = italians_leave_hre
@@ -399,7 +399,7 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		name = shadow_kingdom.2.b
+		name = "shadow_kingdom.2.b"
 		set_global_flag = emperor_trying_to_avert_shadow_kingdom
 		custom_tooltip = shadow_kingdom_incident_tt
 		BYZ = { country_event = { id = shadow_kingdom.6 } }
@@ -675,5 +675,62 @@ country_event = {
 				modifier = opinion_give_autonomy_to_UEG
 			}
 		}
+	}
+}
+
+
+
+
+country_event = {
+	id = shadow_kingdom.9
+	title = "shadow_kingdom.9.t"
+	desc = "shadow_kingdom.9.d"
+	picture = SIEGE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = UEG
+		war_with = BYZ
+		war_score = 40
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "shadow_kingdom.9.a"
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			has_global_flag = allied_with_leg_for_egypt
+		}
+		LEG = {
+			every_owned_province = {
+				cede_province = UEG
+			}
+		}
+		add_truce_with = BYZ
+		white_peace = BYZ
+	}
+
+	option = {
+		name = "shadow_kingdom.9.b"
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			NOT = {has_global_flag = allied_with_leg_for_egypt}
+		}
+		add_treasury = 200
+		add_prestige = 20
+		BYZ = {
+			add_imperial_influence = -20
+			add_prestige = -20
+			add_treasury = -200
+		}
+		add_truce_with = BYZ
+		white_peace = BYZ
 	}
 }

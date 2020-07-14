@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = feudalism_reform
 technology_group = western
 religion = germanic
-primary_culture = alamann
+primary_culture = suebian
 capital = 1869
 government_rank = 1
 

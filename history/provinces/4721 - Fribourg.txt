@@ -1,6 +1,6 @@
 owner = BOR
 controller = BOR
-culture = burgond
+culture = suebian
 religion = germanic
 capital = "Fribourg"
 trade_goods = livestock
@@ -14,3 +14,4 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
+add_core = SUE

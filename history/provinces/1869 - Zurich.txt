@@ -2,7 +2,7 @@
 
 owner = SUE
 controller = SUE
-culture = alamann
+culture = suebian
 religion = germanic
 capital = "Zürich"
 trade_goods = wool

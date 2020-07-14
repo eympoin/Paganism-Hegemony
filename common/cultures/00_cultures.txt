@@ -226,6 +226,9 @@ germano-roman	= {
 	aquileian = {
 		primary = AQU
 	}
+	suebian = {
+		primary = SUE
+	}
 	venetian = {
 		primary = VEN
 	}
@@ -259,28 +262,28 @@ germano-roman	= {
 		"de Vaudemont" "de Nicola�"
 	}
 	male_names = {
-		�douard �rrard �tienne Ad�mar Adrien Aimery Alain
-		Aldebert Ald�ric Alphonse Amaury Am�d�e Ancel Andr� Antoine Archambaud Arnaud
-		Arnault Arnoul Aubry Aymar Barth�l�mi Baudouin Beno�t B�renger Bernard Bertrand Bohemond
+		Edouard Errard Etienne Adémar Adrien Aimery Alain
+		Aldebert Ald�ric Alphonse Amaury Ancel André Antoine Archambaud Arnaud
+		Arnault Arnoul Aubry Aymar Barthélémi Baudouin Benoit Bérenger Bernard Bertrand Bohemond
 		Boson Bouchard Centule Charles Clotaire Ebbon Enguerrand Eudes Eustache Evrard Foulques Fran�ois
-		Fr�d�ric Gaucher Gaucelin Gauthier Geoffroi G�raud Gilbert Gilles Godefroi
-		Guichard Guiges Guilhem Guillaume Guy H�lie Hamelin Henri Herbert Hildebert Hugues Humbert Jacques
-		Jaufr� Jaspert Jean Jourdain Julien L�on L�onard Lothaire Louis Loup Mathieu Maurice Nicolas Ogier Onfroi Orson Othon
+		Frédéric Gaucher Gaucelin Gauthier Geoffroi Géraud Gilbert Gilles Godefroi
+		Guichard Guiges Guilhem Guillaume Guy Hélie Hamelin Henri Herbert Hildebert Hugues Humbert Jacques
+		Jaufré Jaspert Jean Jourdain Julien Léon Léonard Lothaire Louis Loup Mathieu Maurice Nicolas Ogier Onfroi Orson Othon
 		Payen Philippe Pierre Raimbaut Raoul Raymond Raynaud Renaud Richard Robert Robin Roger Rorgues Roubaud Savary Sigismond Simon Thibault Thi�baut
 		Thierry Thomas Valeran Yves
 	}
 	female_names = {
-		�l�onore �lodie �tiennette Ad�le Adalmode Adelaide Adelinde
-		Agn�s Al�arde Alice Ali�nor Agathe
+		Eléonore Elodie Etiennette Adèle Adalmode Adelaide Adelinde
+		Agnès Alice Aliénor Agathe
 		Alix Almodis Amelie Anne Antoinette Arsinde Aude Aurengarde
-		B�atrice B�atrix Belleassez Beno�te B�reng�re
-		Berthe Blanche Bonne Bourgogne Bourguigne C�cile Cath�rine
+		Béatrice Béatrix Belleassez Benoite
+		Berthe Blanche Bonne Bourgogne Bourguigne Cécile Catherine
 		Charlotte Constance Denise Douce Echive Eglantine
 		Elisabeth Emma Ermengarde Ermessinde Esclarmonde
-		Euphrosine Eustachie Eve Gerberge Gis�le Guillaumette H�loise Helvis Hodierne Ide Ild�garde
+		Euphrosine Eustachie Eve Gerberge Gisèle Guillaumette Héloise Helvis Hodierne Ide Ildegarde
 		Isabeau Isabelle Jeanne Judith Julienne Mafalda Mahaut Margot Marguerite Marie Marthe
-		Mascarose Mathilde M�lisande M�lisende M�lusine P�ronelle Pernelle Perinne Pernette Plaisance
-		Raymonde Sarrazine Sol�ne Sophie St�phanie Sybille Tiburge Valence Yolande
+		Mascarose Mathilde Mélisande Mélisende Mélusine Péronelle Pernelle Perinne Pernette Plaisance
+		Raymonde Sarrazine Solène Sophie Stéphanie Sybille Tiburge Valence Yolande
 	}
 }
 
@@ -291,7 +294,12 @@ germanic = {
 
 	male_names = { Gunther Rolf }
 
-
+	seaxan = {
+		primary = SEA
+	}
+	angle = {
+		primary = EAA
+	}
 
 	hannoverian = {
 		primary = HAN
@@ -817,12 +825,7 @@ scandinavian = { #Nordic
 british	= {
 	graphical_culture = westerngfx
 
-	seaxan = {
-		primary = SEA
-	}
-	angle = {
-		primary = EAA
-	}
+
 	english = {
 		primary = ENG
 		dynasty_names = {

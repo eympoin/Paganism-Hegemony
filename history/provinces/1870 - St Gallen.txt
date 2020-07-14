@@ -2,7 +2,7 @@
 
 owner = SUE
 controller = SUE
-culture = alamann
+culture = suebian
 religion = germanic
 capital = "St Gallen"
 trade_goods = livestock
