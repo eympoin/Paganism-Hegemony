@@ -165,7 +165,7 @@ destroy_saxon = {
       trigger = {
         east_anglia_area = {
           type = all
-          owns_or_non_sovereign_subject_of = ROOT
+          country_or_non_sovereign_subject_holds = ROOT = ROOT
         }
         owns_or_non_sovereign_subject_of = 237
         owns_or_non_sovereign_subject_of = 234
@@ -254,11 +254,11 @@ destroy_saxon = {
         trigger = {
           lowlands_area = {
             type = all
-            owns_or_non_sovereign_subject_of = ROOT
+            country_or_non_sovereign_subject_holds = ROOT = ROOT
           }
           highlands_area = {
             type = all
-            owns_or_non_sovereign_subject_of = ROOT
+            country_or_non_sovereign_subject_holds = ROOT = ROOT
           }
           owns_or_non_sovereign_subject_of = 4361
           owns_or_non_sovereign_subject_of = 4362
@@ -291,7 +291,7 @@ destroy_saxon = {
         trigger = {
           wales_area = {
             type = all
-            owns_or_non_sovereign_subject_of = ROOT
+            country_or_non_sovereign_subject_holds = ROOT = ROOT
           }
         }
         effect = {
@@ -316,7 +316,7 @@ destroy_saxon = {
         trigger = {
           ulster_area = {
             type = all
-            owns_or_non_sovereign_subject_of = ROOT
+            country_or_non_sovereign_subject_holds = ROOT = ROOT
           }
         }
         effect = {

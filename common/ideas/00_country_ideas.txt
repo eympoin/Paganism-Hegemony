@@ -2540,7 +2540,7 @@ SWE_ideas = {
 	}
 
 	trigger = {
-		tag = SWE
+		primary_culture = swedish
 	}
 	free = yes		#will be added at load.
 
@@ -4289,7 +4289,8 @@ NOR_ideas = {
 	}
 
 	trigger = {
-		tag = NOR
+		primary_culture = norwegian
+		
 	}
 	free = yes
 
@@ -7661,7 +7662,7 @@ FIN_ideas = {
 	}
 
 	trigger = {
-		tag = FIN
+		primary_culture = finnish
 	}
 	free = yes
 
@@ -10501,7 +10502,10 @@ SMI_ideas = {
 	}
 
 	trigger = {
+	OR = {
 		tag = SMI
+		tag = SML
+		}
 	}
 	free = yes		#
 
