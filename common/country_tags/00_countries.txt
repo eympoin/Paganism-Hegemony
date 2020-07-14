@@ -19,6 +19,7 @@ GLI   = "countries/Gallia.txt"
 WFR   = "countries/West Francia.txt"
 WRM   = "countries/Western Roman Empire.txt"
 ERM   = "countries/Eastern Roman Empire.txt"
+SOC   = "countries/Socotra.txt"
 
 BSQ   = "countries/Basque.txt"
 

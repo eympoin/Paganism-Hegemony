@@ -1,0 +1,20 @@
+government = republic
+add_government_reform = pirate_republic_reform
+government_rank = 1
+primary_culture = yemeni_culture
+religion = sunni
+technology_group = muslim
+capital = 1099	# Taiz
+religious_school = shafii_school
+
+#Hashemites
+
+1442.1.1 = {
+	monarch = {
+		name = "Ali"
+		dynasty = "Hashemites"
+		adm = 5
+		dip = 2
+		mil = 5
+	}
+}
