@@ -1,0 +1,12 @@
+bookmark =
+{
+	name = "BALTIC_NAME"
+	desc = "BALTIC_DESC"
+	date = 1444.11.11
+	
+	country = LIT
+	country = JOM
+	country = PRT
+	country = EST
+
+}
