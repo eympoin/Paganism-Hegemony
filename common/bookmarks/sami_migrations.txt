@@ -1,0 +1,15 @@
+bookmark =
+{
+	name = "SCANDINAVIA_NAME"
+	desc = "SCANDINAVIA_DESC"
+	date = 1444.11.11
+	
+	country = SMI
+	country = SML
+	country = GEA
+	country = VES
+	country = FIN
+	country = SWE
+	country = SKN
+	country = SJA
+}
