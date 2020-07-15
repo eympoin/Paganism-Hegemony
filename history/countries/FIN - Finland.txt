@@ -5,3 +5,26 @@ technology_group = western
 religion = suomenusko
 primary_culture = finnish
 capital = 28	# Nyland
+
+1443.10.31 = {
+	monarch = {
+		name = "Aaro"
+		dynasty = "Hanninen"
+		birth_date = 1411.2.8
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
+1443.7.21 = {
+	heir = {
+		name = "Jari"
+		monarch_name = "Jari II"
+		dynasty = "Hanninen"
+		birth_date = 1428.2.8
+		claim = 95
+		adm = 4
+		dip = 3
+		mil = 4
+	}
+}

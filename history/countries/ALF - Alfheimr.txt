@@ -5,3 +5,14 @@ unit_type = western
 primary_culture = norwegian
 religion = norse_pagan_reformed
 capital = 16
+
+1435.11.6 = { #Coronation
+	monarch = {
+		name = "Eirikr"
+		dynasty = "Ragnarsson"
+		birth_date = 1408.12.6
+		adm = 2
+		dip = 3
+		mil = 3
+	}
+}

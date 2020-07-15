@@ -1,498 +1,504 @@
 namespace = slavic_uprising
 
 country_event = {
-	id = slavic_uprising.1
-	title = slavic_uprising.1.t
-	desc = slavic_uprising.1.d
-	picture = HRE_eventPicture
+  id = slavic_uprising.1
+  title = slavic_uprising.1.t
+  desc = slavic_uprising.1.d
+  picture = HRE_eventPicture
 
-	fire_only_once = yes
-	trigger = {
-		is_year = 1508
-		any_province = {
-			is_part_of_hre = yes
-			religion = slavic
-		}
-		NOT = { active_imperial_incident = any }
-		is_emperor = yes
-	}
-	mean_time_to_happen = {
-		months = 1
-	}
+  fire_only_once = yes
+  trigger = {
+    is_year = 1508
+    any_province = {
+      is_part_of_hre = yes
+      religion = slavic
+    }
+    NOT = { active_imperial_incident = any }
+    is_emperor = yes
+  }
+  immediate = {
+    hidden_effect = {
+      set_global_flag = slavic_uprising_incident
+    }
+  }
+  mean_time_to_happen = {
+    months = 1
+  }
 
-	option = { # incident
-		name = slavic_uprising.1.a
-		trigger = {
-			has_dlc = "Emperor"
-		}
-		ai_chance = {
-			factor = 1
-		}
-		set_imperial_incident = incident_slavic_nationalism
-	}
+  option = { # incident
+    name = slavic_uprising.1.a
+    trigger = {
+      has_dlc = "Emperor"
+    }
+    ai_chance = {
+      factor = 1
+    }
+    set_imperial_incident = incident_slavic_nationalism
+  }
 
-	option = { #if not emperor
-		trigger = {
-			NOT = {has_dlc = "Emperor"}
-		}
-		name = slavic_uprising.1.b
-		ai_chance = {
-			factor = 1
-		}
-		country_event = { id = slavic_uprising.2 }
-	}
+  option = { #if not emperor
+    trigger = {
+      NOT = {has_dlc = "Emperor"}
+    }
+    name = slavic_uprising.1.b
+    ai_chance = {
+      factor = 1
+    }
+    country_event = { id = slavic_uprising.2 }
+  }
 }
 
 
 country_event = {
-	id = slavic_uprising.2
-	title = slavic_uprising.2.t
-	desc = slavic_uprising.2.d
-	picture = HRE_eventPicture
+  id = slavic_uprising.2
+  title = slavic_uprising.2.t
+  desc = slavic_uprising.2.d
+  picture = HRE_eventPicture
 
-	is_triggered_only = yes
+  is_triggered_only = yes
 
-	option = { # we cannot succeed, let them leave
-		ai_chance = {
-			factor = 1
-		}
-		name = slavic_uprising.2.a
-		add_prestige = -10
-		add_imperial_influence = -20
-		set_global_flag = accepted_slavs
+  option = { # we cannot succeed, let them leave
+    ai_chance = {
+      factor = 1
+    }
+    name = slavic_uprising.2.a
+    add_prestige = -10
+    add_imperial_influence = -20
+    set_global_flag = accepted_slavs
 
-		every_country = {
-			limit = {
-				is_emperor = no
-				is_part_of_hre = yes
-				NOT = {religious_unity = 0.7}
-				any_owned_province = {
-					OR = {
-						religion = slavic
-						religion = Illyrian
-						religion = tengri_pagan_reformed
-					}
-				}
-			}
-			country_event = { id = slavic_uprising.3 }
-		}#choice to remain theoi or not
-	}
+    every_country = {
+      limit = {
+        is_emperor = no
+        is_part_of_hre = yes
+        NOT = {religious_unity = 0.7}
+        any_owned_province = {
+          OR = {
+            religion = slavic
+            religion = Illyrian
+            religion = tengri_pagan_reformed
+          }
+        }
+      }
+      country_event = { id = slavic_uprising.3 }
+    }#choice to remain theoi or not
+  }
 
-	option = {#forbid them and help the doux to fight them
-		ai_chance = {
-			factor = 1
-		}
-		name = slavic_uprising.2.b
-		emperor = {
-			add_treasury = -1000
-		}
-		every_country = {
-			limit = {
-				is_emperor = no
-				is_part_of_hre = yes
-				any_owned_province = {
-					OR = {
-						religion = slavic
-						religion = Illyrian
-						religion = tengri_pagan_reformed
-					}
-				}
-			}
-			country_event = { id = slavic_uprising.4 }
-		}#choice to remain theoi or not but declarer war on the emperor if they become slavic
-	}
+  option = {#forbid them and help the doux to fight them
+    ai_chance = {
+      factor = 1
+    }
+    name = slavic_uprising.2.b
+    emperor = {
+      add_treasury = -1000
+    }
+    every_country = {
+      limit = {
+        is_emperor = no
+        is_part_of_hre = yes
+        any_owned_province = {
+          OR = {
+            religion = slavic
+            religion = Illyrian
+            religion = tengri_pagan_reformed
+          }
+        }
+      }
+      country_event = { id = slavic_uprising.4 }
+    }#choice to remain theoi or not but declarer war on the emperor if they become slavic
+  }
 
 
-	option = { #forbid them and dont help them
-		ai_chance = {
-			factor = 1
-		}
-		name = slavic_uprising.2.c
-		every_country = {
-			limit = {
-				is_emperor = no
-				is_part_of_hre = yes
-				any_owned_province = {
-					OR = {
-						religion = slavic
-						religion = Illyrian
-						religion = tengri_pagan_reformed
-					}
-				}
-			}
+  option = { #forbid them and dont help them
+    ai_chance = {
+      factor = 1
+    }
+    name = slavic_uprising.2.c
+    every_country = {
+      limit = {
+        is_emperor = no
+        is_part_of_hre = yes
+        any_owned_province = {
+          OR = {
+            religion = slavic
+            religion = Illyrian
+            religion = tengri_pagan_reformed
+          }
+        }
+      }
 
-			country_event = { id = slavic_uprising.5 }
-		}#choice to remain theoi or not but declarer war on the emperor if they become slavic
-	}
+      country_event = { id = slavic_uprising.5 }
+    }#choice to remain theoi or not but declarer war on the emperor if they become slavic
+  }
 }
 
 
 country_event = {
-	id = slavic_uprising.3
-	title = slavic_uprising.3.t
-	desc = slavic_uprising.3.d
-	picture = HRE_eventPicture
+  id = slavic_uprising.3
+  title = slavic_uprising.3.t
+  desc = slavic_uprising.3.d
+  picture = HRE_eventPicture
 
-	is_triggered_only = yes
+  is_triggered_only = yes
 
-	option = { # remain theoi
-		name = slavic_uprising.3.e
-		ai_chance = {
-			factor = 1
-		}
-		add_country_modifier = {
-			name = "slavic_uprising"
-			duration = 3650
-		}
-		every_owned_province = {
-			limit = {
-				religion = slavic
-			}
-			spawn_rebels = {
-				type = slavic_rebels
-				size = 0.5
-				leader = "Stefan"
-			}
-		}
-		every_owned_province = {
-			limit = {
-				religion = Illyrian
-			}
-			spawn_rebels = {
-				type = Illyrian_rebels
-				size = 0.5
-				leader = "Stefan"
-			}
-		}
-		every_owned_province = {
-			limit = {
-				religion = tengri_pagan_reformed
-			}
-			spawn_rebels = {
-				type = tengri_pagan_reformed_rebels
-				size = 0.5
-				leader = "Aleksandër"
-			}
-		}
-	}
+  option = { # remain theoi
+    name = slavic_uprising.3.e
+    ai_chance = {
+      factor = 1
+    }
+    add_country_modifier = {
+      name = "slavic_uprising"
+      duration = 3650
+    }
+    every_owned_province = {
+      limit = {
+        religion = slavic
+      }
+      spawn_rebels = {
+        type = slavic_rebels
+        size = 0.5
+        leader = "Stefan"
+      }
+    }
+    every_owned_province = {
+      limit = {
+        religion = Illyrian
+      }
+      spawn_rebels = {
+        type = Illyrian_rebels
+        size = 0.5
+        leader = "Stefan"
+      }
+    }
+    every_owned_province = {
+      limit = {
+        religion = tengri_pagan_reformed
+      }
+      spawn_rebels = {
+        type = tengri_pagan_reformed_rebels
+        size = 0.5
+        leader = "Aleksandër"
+      }
+    }
+  }
 
-	option = { #become slavic
-		name = slavic_uprising.3.a
-		trigger = {
-			any_owned_province = {
-				religion = slavic
-			}
-		}
-		ai_chance = {
-			factor = 100
-		}
-		change_religion = slavic
-	}
+  option = { #become slavic
+    name = slavic_uprising.3.a
+    trigger = {
+      any_owned_province = {
+        religion = slavic
+      }
+    }
+    ai_chance = {
+      factor = 100
+    }
+    change_religion = slavic
+  }
 
-	option = { #become illyrian
-		name = slavic_uprising.3.b
-		trigger = {
-			any_owned_province = {
-				religion = Illyrian
-			}
-		}
-		ai_chance = {
-			factor = 100
-		}
-		change_religion = Illyrian
-	}
+  option = { #become illyrian
+    name = slavic_uprising.3.b
+    trigger = {
+      any_owned_province = {
+        religion = Illyrian
+      }
+    }
+    ai_chance = {
+      factor = 100
+    }
+    change_religion = Illyrian
+  }
 
-	option = { #become tengri_pagan_reformed
-		name = slavic_uprising.3.c
-		trigger = {
-			any_owned_province = {
-				religion = tengri_pagan_reformed
-			}
-		}
-		ai_chance = {
-			factor = 100
-		}
-		change_religion = tengri_pagan_reformed
-	}
+  option = { #become tengri_pagan_reformed
+    name = slavic_uprising.3.c
+    trigger = {
+      any_owned_province = {
+        religion = tengri_pagan_reformed
+      }
+    }
+    ai_chance = {
+      factor = 100
+    }
+    change_religion = tengri_pagan_reformed
+  }
 }
 
 country_event = {
-	id = slavic_uprising.4
-	title = slavic_uprising.4.t
-	desc = slavic_uprising.4.d
-	picture = HRE_eventPicture
+  id = slavic_uprising.4
+  title = slavic_uprising.4.t
+  desc = slavic_uprising.4.d
+  picture = HRE_eventPicture
 
-	is_triggered_only = yes
+  is_triggered_only = yes
 
-	option = { #remain theoi
-		name = slavic_uprising.4.e
-		ai_chance = {
-			factor = 10
-		}
-		add_treasury = 100
-		add_country_modifier = {
-			name = "slavic_uprising_imperial_help"
-			duration = 3650
-		}
-		every_owned_province = {
-			limit = {
-				religion = slavic
-			}
-			spawn_rebels = {
-				type = slavic_rebels
-				size = 0.5
-				leader = "Stefan"
-			}
-		}
-		every_owned_province = {
-			limit = {
-				religion = Illyrian
-			}
-			spawn_rebels = {
-				type = Illyrian_rebels
-				size = 0.5
-				leader = "Stefan"
-			}
-		}
-		every_owned_province = {
-			limit = {
-				religion = tengri_pagan_reformed
-			}
-			spawn_rebels = {
-				type = tengri_pagan_reformed_rebels
-				size = 0.5
-				leader = "Aleksandër"
-			}
-		}
-	}
+  option = { #remain theoi
+    name = slavic_uprising.4.e
+    ai_chance = {
+      factor = 10
+    }
+    add_treasury = 100
+    add_country_modifier = {
+      name = "slavic_uprising_imperial_help"
+      duration = 3650
+    }
+    every_owned_province = {
+      limit = {
+        religion = slavic
+      }
+      spawn_rebels = {
+        type = slavic_rebels
+        size = 0.5
+        leader = "Stefan"
+      }
+    }
+    every_owned_province = {
+      limit = {
+        religion = Illyrian
+      }
+      spawn_rebels = {
+        type = Illyrian_rebels
+        size = 0.5
+        leader = "Stefan"
+      }
+    }
+    every_owned_province = {
+      limit = {
+        religion = tengri_pagan_reformed
+      }
+      spawn_rebels = {
+        type = tengri_pagan_reformed_rebels
+        size = 0.5
+        leader = "Aleksandër"
+      }
+    }
+  }
 
-	option = { #defy the empire : become slavic
-		name = slavic_uprising.4.a
-		trigger = {
-			any_owned_province = {
-				religion = slavic
-			}
-		}
-		ai_chance = {
-			factor = 10
-		}
-		set_global_flag = defy_the_emperor
-		change_religion = slavic
-		declare_war_with_cb = {
-			who = emperor
-			casus_belli = cb_crusade
-		}
-	}
+  option = { #defy the empire : become slavic
+    name = slavic_uprising.4.a
+    trigger = {
+      any_owned_province = {
+        religion = slavic
+      }
+    }
+    ai_chance = {
+      factor = 10
+    }
+    set_country_flag = defy_the_emperor
+    change_religion = slavic
+    declare_war_with_cb = {
+      who = emperor
+      casus_belli = cb_religious_conformance
+    }
+  }
 
-	option = { #defy the empire : become illyrian
-		name = slavic_uprising.4.b
-		trigger = {
-			any_owned_province = {
-				religion = Illyrian
-			}
-		}
-		ai_chance = {
-			factor = 10
-		}
-		set_global_flag = defy_the_emperor
-		change_religion = Illyrian
-		declare_war_with_cb = {
-			who = emperor
-			casus_belli = cb_crusade
-		}
-	}
-	option = { #become tengri_pagan_reformed
-		name = slavic_uprising.4.c
-		trigger = {
-			any_owned_province = {
-				religion = tengri_pagan_reformed
-			}
-		}
-		ai_chance = {
-			factor = 10
-		}
-		set_global_flag = defy_the_emperor
-		change_religion = tengri_pagan_reformed
-	}
+  option = { #defy the empire : become illyrian
+    name = slavic_uprising.4.b
+    trigger = {
+      any_owned_province = {
+        religion = Illyrian
+      }
+    }
+    ai_chance = {
+      factor = 10
+    }
+    set_country_flag = defy_the_emperor
+    change_religion = Illyrian
+    declare_war_with_cb = {
+      who = emperor
+      casus_belli = cb_religious_conformance
+    }
+  }
+  option = { #become tengri_pagan_reformed
+    name = slavic_uprising.4.c
+    trigger = {
+      any_owned_province = {
+        religion = tengri_pagan_reformed
+      }
+    }
+    ai_chance = {
+      factor = 10
+    }
+    set_country_flag = defy_the_emperor
+    change_religion = tengri_pagan_reformed
+  }
 }
 
 
 country_event = {
-	id = slavic_uprising.5
-	title = slavic_uprising.5.t
-	desc = slavic_uprising.5.d
-	picture = HRE_eventPicture
+  id = slavic_uprising.5
+  title = slavic_uprising.5.t
+  desc = slavic_uprising.5.d
+  picture = HRE_eventPicture
 
-	is_triggered_only = yes
+  is_triggered_only = yes
 
-	option = { #remain theoi
-		name = slavic_uprising.5.e
-		ai_chance = {
-			factor = 1
-		}
-		add_country_modifier = {
-			name = "slavic_uprising"
-			duration = 3650
-		}
-		every_owned_province = {
-			limit = {
-				religion = slavic
-			}
-			spawn_rebels = {
-				type = slavic_rebels
-				size = 0.5
-				leader = "Stefan"
-			}
-		}
-		every_owned_province = {
-			limit = {
-				religion = Illyrian
-			}
-			spawn_rebels = {
-				type = Illyrian_rebels
-				size = 0.5
-				leader = "Stefan"
-			}
-		}
-		every_owned_province = {
-			limit = {
-				religion = tengri_pagan_reformed
-			}
-			spawn_rebels = {
-				type = tengri_pagan_reformed_rebels
-				size = 0.5
-				leader = "Aleksandër"
-			}
-		}
-	}
+  option = { #remain theoi
+    name = slavic_uprising.5.e
+    ai_chance = {
+      factor = 1
+    }
+    add_country_modifier = {
+      name = "slavic_uprising"
+      duration = 3650
+    }
+    every_owned_province = {
+      limit = {
+        religion = slavic
+      }
+      spawn_rebels = {
+        type = slavic_rebels
+        size = 0.5
+        leader = "Stefan"
+      }
+    }
+    every_owned_province = {
+      limit = {
+        religion = Illyrian
+      }
+      spawn_rebels = {
+        type = Illyrian_rebels
+        size = 0.5
+        leader = "Stefan"
+      }
+    }
+    every_owned_province = {
+      limit = {
+        religion = tengri_pagan_reformed
+      }
+      spawn_rebels = {
+        type = tengri_pagan_reformed_rebels
+        size = 0.5
+        leader = "Aleksandër"
+      }
+    }
+  }
 
-	option = { #defy the empire : become slavic
-		name = slavic_uprising.5.a
-		trigger = {
-			any_owned_province = {
-				religion = slavic
-			}
-		}
-		ai_chance = {
-			factor = 10
-		}
-		set_global_flag = defy_the_emperor
-		change_religion = slavic
-		declare_war_with_cb = {
-			who = emperor
-			casus_belli = cb_crusade
-		}
-	}
+  option = { #defy the empire : become slavic
+    name = slavic_uprising.5.a
+    trigger = {
+      any_owned_province = {
+        religion = slavic
+      }
+    }
+    ai_chance = {
+      factor = 10
+    }
+    set_country_flag = defy_the_emperor
+    change_religion = slavic
+    declare_war_with_cb = {
+      who = emperor
+      casus_belli = cb_religious_conformance
+    }
+  }
 
-	option = { #defy the empire : become illyrian
-		name = slavic_uprising.5.b
-		trigger = {
-			any_owned_province = {
-				religion = Illyrian
-			}
-		}
-		ai_chance = {
-			factor = 10
-		}
-		set_global_flag = defy_the_emperor
-		change_religion = Illyrian
-		declare_war_with_cb = {
-			who = emperor
-			casus_belli = cb_crusade
-		}
-	}
-	option = { #become tengri_pagan_reformed
-		name = slavic_uprising.5.c
-		trigger = {
-			any_owned_province = {
-				religion = tengri_pagan_reformed
-			}
-		}
-		ai_chance = {
-			factor = 10
-		}
-		set_global_flag = defy_the_emperor
-		change_religion = tengri_pagan_reformed
-	}
+  option = { #defy the empire : become illyrian
+    name = slavic_uprising.5.b
+    trigger = {
+      any_owned_province = {
+        religion = Illyrian
+      }
+    }
+    ai_chance = {
+      factor = 10
+    }
+    set_country_flag = defy_the_emperor
+    change_religion = Illyrian
+    declare_war_with_cb = {
+      who = emperor
+      casus_belli = cb_religious_conformance
+
+    }
+  }
+  option = { #become tengri_pagan_reformed
+    name = slavic_uprising.5.c
+    trigger = {
+      any_owned_province = {
+        religion = tengri_pagan_reformed
+      }
+    }
+    ai_chance = {
+      factor = 10
+    }
+    set_country_flag = defy_the_emperor
+    change_religion = tengri_pagan_reformed
+  }
 }
 
 
 country_event = {#defeat of the emperor
-	id = slavic_uprising.6
-	title = slavic_uprising.6.t
-	desc = slavic_uprising.6.d
-	picture = HRE_eventPicture
+  id = slavic_uprising.6
+  title = slavic_uprising.6.t
+  desc = slavic_uprising.6.d
+  picture = HRE_eventPicture
 
-	trigger = {
-		has_global_flag = defy_the_emperor
-		war_with = emperor
-		war_score = 25
-	}
-	mean_time_to_happen = {
-		months = 1
-	}
+  trigger = {
+    has_country_flag = defy_the_emperor
+    war_with = emperor
+    war_score = 25
+  }
+  mean_time_to_happen = {
+    days = 2
+  }
 
-	option = {
-		name = slavic_uprising.6.a
-		ai_chance = {
-			factor = 1
-		}
-		clr_global_flag = defy_the_emperor
-		emperor = {
-			add_prestige = -10
-			add_imperial_influence = -20
-		}
-		add_prestige = 20
-		add_truce_with = emperor
-	}
+  option = {
+    name = slavic_uprising.6.a
+    ai_chance = {
+      factor = 1
+    }
+    ckr_country_flag = defy_the_emperor
+    emperor = {
+      add_prestige = -10
+      add_imperial_influence = -20
+    }
+    add_prestige = 20
+    add_truce_with = emperor
+  }
 }
 
 country_event = { #victory_of_the_emperor
-	id = slavic_uprising.7
-	title = slavic_uprising.7.t
-	desc = slavic_uprising.7.d
-	picture = HRE_eventPicture
+  id = slavic_uprising.7
+  title = slavic_uprising.7.t
+  desc = slavic_uprising.7.d
+  picture = HRE_eventPicture
 
-	trigger = {
-		has_global_flag = defy_the_emperor
-		war_with = emperor
-		NOT = {war_score = -25}
-	}
-	mean_time_to_happen = {
-		months = 1
-	}
+  trigger = {
+    has_country_flag = defy_the_emperor
+    war_with = emperor
+    NOT = {war_score = -25}
+  }
+  mean_time_to_happen = {
+    days = 2
+  }
 
-	option = {
-		name = slavic_uprising.7.a
-		ai_chance = {
-			factor = 1
-		}
-		clr_global_flag = defy_the_emperor
-		emperor = {
-			country_event = {id = slavic_uprising.8}
-		}
-		add_prestige = -20
-		white_peace = emperor
-		add_truce_with = emperor
-		change_religion = olympoi
-	}
+  option = {
+    name = slavic_uprising.7.a
+    ai_chance = {
+      factor = 1
+    }
+    ckr_country_flag = defy_the_emperor
+    emperor = {
+      country_event = {id = slavic_uprising.8}
+    }
+    add_prestige = -20
+    white_peace = emperor
+    add_truce_with = emperor
+    change_religion = olympoi
+  }
 }
 
 country_event = { #victory_of_the_emperor
-	id = slavic_uprising.8
-	title = slavic_uprising.8.t
-	desc = slavic_uprising.8.d
-	picture = HRE_eventPicture
+  id = slavic_uprising.8
+  title = slavic_uprising.8.t
+  desc = slavic_uprising.8.d
+  picture = HRE_eventPicture
 
-	is_triggered_only = yes
+  is_triggered_only = yes
 
-	option = {
-		name = slavic_uprising.8.a
-		ai_chance = {
-			factor = 1
-		}
-		country_event = {id = slavic_uprising.8}
-		add_prestige = 10
-		add_imperial_influence = 5
-	}
+  option = {
+    name = slavic_uprising.8.a
+    ai_chance = {
+      factor = 1
+    }
+    country_event = {id = slavic_uprising.8}
+    add_prestige = 10
+    add_imperial_influence = 5
+  }
 }

@@ -8,11 +8,11 @@ government_rank = 1
 
 1444.1.1 = {
     monarch = {
-        name = "Lantfrid"
-	dynasty = "Gotfrid"
-        birth_date = 1410.8.12
-        adm = 4
-        dip = 3
-        mil = 4
+        name = "Hermeric"
+	dynasty = "Miro"
+        birth_date = 1416.8.12
+        adm = 2
+        dip = 1
+        mil = 5
     }
 }

@@ -5,3 +5,25 @@ unit_type = western
 primary_culture = norwegian
 religion = norse_pagan_reformed
 capital = 17
+1443.10.31 = {
+	monarch = {
+		name = "Harald"
+		dynasty = "Hardrada"
+		birth_date = 1402.2.8
+		adm = 2
+		dip = 3
+		mil = 6
+	}
+}
+1443.7.21 = {
+	heir = {
+		name = "Olav"
+		monarch_name = "Olav"
+		dynasty = "Hardrada"
+		birth_date = 1422.2.8
+		claim = 95
+		adm = 1
+		dip = 6
+		mil = 6
+	}
+}

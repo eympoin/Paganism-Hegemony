@@ -5,3 +5,26 @@ technology_group = eastern
 religion = suomenusko
 primary_culture = sapmi
 capital = 4151
+
+1443.10.31 = {
+	monarch = {
+		name = "Gavgu"
+		dynasty = "Aikio"
+		birth_date = 1385.2.8
+		adm = 2
+		dip = 4
+		mil = 1
+	}
+}
+1443.7.21 = {
+	heir = {
+		name = "Riggu"
+		monarch_name = "Riggu"
+		dynasty = "Aikio"
+		birth_date = 1411.2.8
+		claim = 95
+		adm = 6
+		dip = 6
+		mil = 6
+	}
+}
