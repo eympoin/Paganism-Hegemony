@@ -235,7 +235,10 @@
  west_francia_nation_desc:0 "The Kingdom of West Francia was divided for too long. Now is the time to unite the 4 kingdoms into one : West Francia !"
  illyrian_nation_title:0 "Reform the old province of Illyria"
  illyrian_nation_desc:0 "Following the slavic migrations, the province of Illyria was fractured into multiple states. It is time to reform it."
-
+ swedish_nation_title:0 "Unite the Swedes"
+ swedish_nation_desc:0 "The former Swedish coalition failed to protect us against the Sami, it is time to form a coalation of our own."
+ norwegian_nation_title:0 "Unite the Norwegians"
+ norwegian_nation_desc:0 "The Norwegians need to be united if we want to survive the struggles of the future."
 #Arabia
 ArabianPagans_title:0 "Form Ardu-Alaliha"
 ArabianPagans_desc:0 "All Arabs are under one country and respect the old way"

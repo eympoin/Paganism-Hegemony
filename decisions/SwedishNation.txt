@@ -1,6 +1,6 @@
 country_decisions = {
 
-	danish_nation = {
+	swedish_nation = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
@@ -11,10 +11,10 @@ country_decisions = {
 			}
 			NOT = { tag = HLR }
 			NOT = { tag = DAN }
-			NOT = { tag = PAP }
+			NOT = { tag = NOR }
 			NOT = { tag = SWE }
-			NOT = { exists = DAN }
-			primary_culture = danish
+			NOT = { exists = SWE }
+			primary_culture = swedish
 
 			is_colonial_nation = no
 			OR = {
@@ -27,9 +27,10 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 15
-				province_id = 12
-				province_id = 6
+				province_id = 1
+				province_id = 2
+				province_id = 7
+				province_id = 5
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -40,16 +41,14 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
-			NOT = { exists = DAN }
-			owns_core_province = 15
-			owns_core_province = 12
-			owns_core_province = 6
+			NOT = { exists = SWE }
+			owns_core_province = 1
+			owns_core_province = 2
+			owns_core_province = 7
+			owns_core_province = 5
 		}
 		effect = {
-			12 = {
-				move_capital_effect = yes
-			}
-			change_tag = DAN
+			change_tag = SWE
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -62,7 +61,7 @@ country_decisions = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = DAN
+				add_permanent_claim = SWE
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
