@@ -2,7 +2,7 @@
 
 owner = MOR
 controller = MOR
-culture = berber
+culture = berber_culture
 religion = berber
 capital = "Oulad Mhedi"
 trade_goods = livestock

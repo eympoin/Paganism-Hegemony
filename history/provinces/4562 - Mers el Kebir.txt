@@ -1,7 +1,7 @@
 #337 - Oran
 
-owner = MAU
-controller = MAU
+owner = TLC
+controller = TLC
 culture = mauretanian
 religion = jupiterian
 capital = "Mers el Kebir"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = MAU
+add_core = TLC
 
 
 

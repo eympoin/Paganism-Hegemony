@@ -1,9 +1,9 @@
 # - Oujda
 
-owner = MAU
-controller = MAU
-culture = mauretanian
-religion = jupiterian
+owner = TLC
+controller = TLC
+culture = berber_culture
+religion = berber
 capital = "Oujda"
 trade_goods = wool
 hre = no
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 1
 is_city = yes
-add_core = MAU
+add_core = TLC
 
 
 

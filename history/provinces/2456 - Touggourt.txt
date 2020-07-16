@@ -1,8 +1,8 @@
 # - Touggourt
 
-owner = TGT
-controller = TGT
-culture = berber
+owner = TLC
+controller = TLC
+culture = berber_culture
 religion = berber
 capital = "Touggourt"
 trade_goods = spices
@@ -11,7 +11,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = TGT
+add_core = TLC
 
 
 

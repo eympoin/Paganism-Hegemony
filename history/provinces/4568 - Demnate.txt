@@ -1,9 +1,9 @@
 #Demnate
 
-owner = MRK
-controller = MRK
-add_core = MRK
-culture = berber
+owner = TFL
+controller = TFL
+add_core = TFL
+culture = berber_culture
 religion = berber
 capital = "Demnate"
 trade_goods = wool

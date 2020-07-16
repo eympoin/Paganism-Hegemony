@@ -7740,3 +7740,23 @@
    powerful_merchant_desc:0 "Powerful merchants"
    land_of_wonders_desc:0 "Land of Wonders"
    council_of_burghers_desc:0 "Council of Burghers"
+
+   ION_ideas:0 "Suebian Ideas"
+   ION_ideas_start:0 "Suebian traditions"
+   ION_ideas_bonus:0 "Suebian ambitions"
+
+   continuity_through_the_people:0 "People of survivors"
+   germanization:0 "Germanization"
+   guerilla_alps:0 "Alpine corps"
+   isolated_between_bigger_fish:0 "Alone against the Franks, Lombards and Burgonds"
+   alpine_forts_sue:0 "Great Befestigung"
+   every_one_a_soldier:0 "Everyone is a soldier"
+   reform_the_adm:0 "Neue Verwaltung"
+
+   continuity_through_the_people_desc:0 "People of survivors"
+   germanization_desc:0 "Germanization"
+   guerilla_alps_desc:0 "Alpine corps"
+   isolated_between_bigger_fish_desc:0 "Alone against the Franks, Lombards and Burgonds"
+   alpine_forts_sue_desc:0 "Great Befestigung"
+   every_one_a_soldier_desc:0 "Everyone is a soldier"
+   reform_the_adm_desc:0 "Neue Verwaltung"

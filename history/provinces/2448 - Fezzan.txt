@@ -2,7 +2,7 @@
 
 owner = FZA
 controller = FZA
-culture = berber
+culture = berber_culture
 religion = berber
 capital = "Murzuk"
 trade_goods = ivory
