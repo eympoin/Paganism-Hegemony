@@ -4,5 +4,27 @@ government_rank = 1
 technology_group = western
 religion = suomenusko
 primary_culture = finnish
-add_accepted_culture = swedish
 capital = 31
+
+1443.10.31 = {
+	monarch = {
+		name = "Kyotsi"
+		dynasty = "Lauri"
+		birth_date = 1400.2.8
+		adm = 3
+		dip = 4
+		mil = 1
+	}
+}
+1443.7.21 = {
+	heir = {
+		name = "Torben"
+		monarch_name = "Kauko I"
+		dynasty = "Lauri"
+		birth_date = 1420.2.8
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 3
+	}
+}

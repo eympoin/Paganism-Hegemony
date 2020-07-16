@@ -5,3 +5,26 @@ technology_group = eastern
 religion = suomenusko
 primary_culture = sapmi
 capital = 18
+
+1443.10.31 = {
+	monarch = {
+		name = "Felles"
+		dynasty = "Aikio"
+		birth_date = 1382.2.8
+		adm = 5
+		dip = 0
+		mil = 5
+	}
+}
+1443.7.21 = {
+	heir = {
+		name = "Doaivu"
+		monarch_name = "Doaivu"
+		dynasty = "Aikio"
+		birth_date = 1412.2.8
+		claim = 95
+		adm = 1
+		dip = 5
+		mil = 0
+	}
+}

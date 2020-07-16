@@ -7,22 +7,20 @@ religion = norse_pagan_reformed
 capital = 7
 
 
-1448.6.20 = {
+1443.6.20 = {
 	monarch = {
-		name = "Karl VIII"
-		dynasty = "Bonde"
+		name = "Ottar"
+		dynasty = "Munso"
 		birth_date = 1409.10.5
-		adm = 3
-		dip = 0
-		mil = 2
-		leader = {	name = "Karl VIII"   type = general	fire = 2	shock = 2	manuever = 3	siege = 0 }
+		adm = 2
+		dip = 1
+		mil = 3
+		leader = {	name = "Ottar"   type = general	fire = 2	shock = 2	manuever = 3	siege = 0 }
 	}
 	queen = {
-		country_of_origin = SWE
-		name = "Katarina"
+		name = "Alvilda"
 		dynasty = "Gumsehuvud"
 		birth_date = 1418.1.1
-		death_date = 1451.1.1
 		female = yes
 		adm = 2
 		dip = 2

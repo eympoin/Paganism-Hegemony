@@ -1,7 +1,7 @@
 #1110 - Agadir
 
-owner = MOR
-controller = MOR
+owner = TFL
+controller = TFL
 culture = berber
 religion = berber
 capital = "Agadir"
@@ -12,16 +12,9 @@ base_production = 3
 base_manpower = 2
 is_city = yes
 estate = estate_nobles
-add_core = MOR
-add_core = SOS
+add_core = TFL
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 extra_cost = 8
 center_of_trade = 1
-
-1444.1.1 = {
-	owner = SOS
-	controller = SOS
-	add_core = SOS
-}

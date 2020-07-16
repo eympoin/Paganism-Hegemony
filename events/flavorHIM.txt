@@ -70,6 +70,9 @@ country_event = {
     		4279 = {
     			cede_province = HIM
     		}
+        388 = {
+    			cede_province = HIM
+    		}
       }
 }
 
@@ -96,6 +99,7 @@ country_event = {
         387 = {change_religion = jewish}
         4279 = {change_religion = jewish}
         4280 = {change_religion = jewish}
+        388 = {change_religion = jewish}
         add_treasury = -100
         add_stability = -2
         387 = {add_base_tax = -1

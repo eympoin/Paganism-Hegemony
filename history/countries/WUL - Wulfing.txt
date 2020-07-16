@@ -5,3 +5,26 @@ unit_type = western
 primary_culture = swedish
 religion = norse_pagan_reformed
 capital = 2
+
+1443.10.31 = {
+	monarch = {
+		name = "Beowulf"
+		dynasty = "Wulfing"
+		birth_date = 1412.2.8
+		adm = 6
+		dip = 1
+		mil = 2
+	}
+}
+1443.7.21 = {
+	heir = {
+		name = "Edgetho"
+		monarch_name = "Edgetho"
+		dynasty = "Wulfing"
+		birth_date = 1436.2.8
+		claim = 95
+		adm = 4
+		dip = 6
+		mil = 2
+	}
+}

@@ -443,3 +443,9 @@ new_trade_roads.7.a:0 "The Westerners will never compete with this."
 
 clymsa_canal:0 "Clymsa Canal"
 spice_road:0 "Indian Road"
+
+#Flavor SMI
+
+flavor_smi.1.t:0 "The Stora Kopparberget"
+flavor_smi.1.d:0 "The copper stock in these mines is colossal, we shall use it to boost our economy"
+flavor_smi.1.a:0 "The riches of these mines is ours !"
