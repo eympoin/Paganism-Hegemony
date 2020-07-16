@@ -246,3 +246,7 @@ ArabianPagans_desc:0 "All Arabs are under one country and respect the old way"
 #Western Roman empire
 restore_Western_Roman_Empire_title:0 "Reform the Western Roman Empire"
 restore_Western_Roman_Empire_desc:0 "The Western Empire is back"
+
+#Tamazgha
+Create_Tamazgha_title:0 "Create Tamazgha"
+Create_Tamazgha_desc:0 "All Imazighen are unite"
