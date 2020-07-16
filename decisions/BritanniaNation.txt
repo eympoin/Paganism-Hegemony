@@ -30,7 +30,8 @@ country_decisions = {
 				province_id = 235		# Kent
 				province_id = 238		# East Anglia
 				province_id = 245		# York
-				province_id = 240		
+				province_id = 240
+				area = wales_area
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -40,15 +41,20 @@ country_decisions = {
 		allow = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
-			is_nomad = no			
+			is_nomad = no
 			NOT = { exists = BRN}
 			owns_core_province = 236		# London
 			owns_core_province = 237		# Oxfordshire
 			owns_core_province = 234		# Wessex
 			owns_core_province = 235		# Kent
 			owns_core_province = 238		# East Anglia
-			owns_core_province = 245		
-			owns_core_province = 240		
+			owns_core_province = 245
+			owns_core_province = 240
+			wales_area = {
+			 type = all
+			 owned_by = LDN
+			 }
+
 		}
 		effect = {
 			236 = { #London
@@ -134,5 +140,5 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
-	
+
 }

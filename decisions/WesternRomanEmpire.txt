@@ -36,7 +36,6 @@ country_decisions = {
 				province_id = 236 # London
 				province_id = 245 # Yorkshire
 				province_id = 96 # Zeeland
-				province_id = 134 # Vienna
 				area = serbia_area
 			}
 			NOT = { owned_by = ROOT }
@@ -87,8 +86,6 @@ country_decisions = {
       owns_core_province = 236
       owns_core_province = 245
       owns_core_province = 96
-      owns_core_province = 134
-
 		}
     effect = {
       remove_non_electors_emperors_from_empire_effect = yes
