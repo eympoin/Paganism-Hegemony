@@ -2404,6 +2404,7 @@
  king_of_all_franks:0 "King of all franks"
  Sunni_missionary_strength:0 "Sunni missionary strength "
  burdigala_port:0 "Port of Burdigala"
+ control_of_champagne_and_bourgogne_fairs:0 "Control of all the fairs"
 
 # Persian Mission Rewards
 per_seat_of_satrap:0 "Seat of a satrap"
@@ -2453,7 +2454,7 @@ slavic_uprising:0 "Slavic Uprising"
 desc_slavic_uprising_imperial_help:0""
 desc_slavic_uprising:0 ""
 
-#Lundinium
+#Londinium
 dip_approach_ldn:0 "A diplomatic approach"
 desc_dip_approach_ldn:0 "Whereas our history and traditions are those of warriors we chose to extand our hand and reach out to other kindgoms, the time where we can rely only on romans is well and truly over."
 mil_approach_ldn:0 "The great Reconquest"
