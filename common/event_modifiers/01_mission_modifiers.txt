@@ -4420,3 +4420,13 @@ ldn_integrate_land = {
 	global_autonomy = -0.05
 	global_unrest = -2
 }
+
+ldn_glevum_shipyard = {
+	allowed_num_of_buildings = 1
+	local_sailors = 0.5
+}
+
+ldn_eboracum_university = {
+	prestige = 0.25
+	local_tax_modifier = 0.1
+}

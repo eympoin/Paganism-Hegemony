@@ -3,7 +3,10 @@ Londinium_1 = {
 		generic = no
 		ai = yes
 		potential = {
-			tag = LDN
+			OR = {
+				tag = LDN
+				tag = BRN
+			}
 			NOT = { map_setup = map_setup_random }
 		}
 
@@ -37,6 +40,55 @@ Londinium_1 = {
 				}
 			}
 		}
+
+		a_roman_fleet_ldn = {
+			icon = mission_establish_high_seas_navy
+			required_missions = { roman_loyalty_ldn }
+			position = 3
+			trigger = {
+				num_of_transport = 10
+				num_of_light_ship = 10
+				num_of_heavy_ship = 2
+				navy_size_percentage = 1
+			}
+			effect = {
+				add_prestige = 10
+				add_navy_tradition = 20
+				brittany_area = {
+					type = all
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+		hunt_down_the_celts_ldn = {
+			icon = mission_rb_conquer_brittany
+			required_missions = { a_roman_fleet_ldn }
+			position = 4
+			provinces_to_highlight = {
+				area = brittany_area
+				NOT = { is_core = ROOT }
+			}
+			trigger = {
+				brittany_area = {
+					type = all
+					is_core = ROOT
+				}
+			}
+			effect = {
+				add_country_modifier = {
+					name = missionary_syncretism
+					duration = 7300
+				}
+				every_province = {
+					limit = {
+						region = france_region
+						culture_group = frankish
+						has_port = yes
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
 }
 
 Londinium_2 = {
@@ -44,50 +96,90 @@ Londinium_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = LDN
+		OR = {
+			tag = LDN
+			tag = BRN
+		}
 		NOT = { map_setup = map_setup_random }
 	}
-
-		Glory_for_the_britannian_people = {
-			icon = mission_eastern_european_city
-			required_missions = {}
-			position = 5
-			trigger = {
-
-			}
-			effect = {
-			east_midlands_area = {
-	                type = all
-	                change_culture = britannian
-	            }
-			yorkshire_area = {
-	                type = all
-	                change_culture = britannian
-	            }
-			west_midlands_area = {
-	                type = all
-	                change_culture = britannian
-	            }
-			east_anglia_area = {
-	                type = all
-	                change_culture = britannian
-	            }
-			home_counties_area = {
-	                type = all
-	                change_culture = britannian
-	            }
-			scottish_marches_area = {
-	                type = all
-	                change_culture = britannian
-	            }
-			wessex_area = {
-	                type = all
-	                change_culture = britannian
-	            }
-
-
-				}
+	reclaim_britannia_secunda_ldn = {
+		icon = mission_rb_conquer_the_isles
+		required_missions = {
+			reclaim_britannia_prima_ldn
 		}
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = wales_area
+			}
+			NOT = { is_core = ROOT }
+		}
+		trigger = {
+			wales_area = {
+				 type = all
+				 is_core = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = ldn_integrate_land
+				duration = 3650
+			}
+			leinster_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			241 = {
+				rename_capital = "Isca Silurum"
+				change_province_name = Silures
+			}
+			4369 = {
+				change_province_name = Demetae
+				rename_capital = Moridunum
+			}
+			4366 = {
+				rename_capital = Levobrinta
+				change_province_name = Ordovices
+			}
+			242 = {
+				rename_capital = Segontium
+				change_province_name = Degeangli
+			}
+		}
+	}
+	into_hybernia_ldn = {
+		icon = mission_rb_into_ireland
+		required_missions = {
+			a_roman_fleet_ldn
+			reclaim_britannia_secunda_ldn
+		}
+		position = 4
+		provinces_to_highlight = {
+			area = leinster_area
+			NOT = { is_core = ROOT }
+		}
+		trigger = {
+			leinster_area = {
+				type = all
+				is_core = ROOT
+			}
+		}
+		effect = {
+			munster_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			connacht_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+			ulster_area = {
+				type = all
+				add_permanent_claim = ROOT
+			}
+		}
+	}
 }
 
 Londinium_3 = {
@@ -95,7 +187,10 @@ Londinium_3 = {
 		generic = no
 		ai = yes
 		potential = {
-			tag = LDN
+			OR = {
+				tag = LDN
+				tag = BRN
+			}
 			NOT = { map_setup = map_setup_random }
 		}
 		last_britannian_city_ldn = {
@@ -118,14 +213,21 @@ Londinium_3 = {
 				last_britannian_city_ldn
 			}
 			position = 2
+			provinces_to_highlight = {
+				OR = {
+					area = wessex_area
+					area = home_counties_area
+				}
+				NOT = { is_core = ROOT }
+			}
 			trigger = {
 				wessex_area = {
 	         type = all
-	         is_core = LDN
+	         is_core = ROOT
 	      }
 				home_counties_area = {
 	         type = all
-	         is_core = LDN
+	         is_core = ROOT
 	      }
 			}
 			effect = {
@@ -134,6 +236,10 @@ Londinium_3 = {
 				add_country_modifier = {
 					name = ldn_integrate_land
 					duration = 3650
+				}
+				wales_area = {
+					type = all
+					add_permanent_claim = ROOT
 				}
 				east_anglia_area = {
 					type = all
@@ -176,8 +282,184 @@ Londinium_3 = {
 					change_province_name = Cornovh
 				}
 				4373 = {
-					rename_capital = "Isca Dumnonii"
+					rename_capital = "Isca Dumnoniarum"
 					change_province_name = Dumnonii
+				}
+			}
+		}
+		reclaim_west_flavia_caesariensis_ldn = {
+			icon = mission_rb_into_england
+			required_missions = {reclaim_britannia_prima_ldn}
+			position = 3
+			provinces_to_highlight = {
+				OR = {
+					area = west_midlands_area
+					province_id = 4375
+				}
+				NOT = { is_core = ROOT }
+			}
+			trigger = {
+				west_midlands_area = {
+					type = all
+					is_core = ROOT
+				}
+				is_core = 4375
+			}
+			effect = {
+				add_prestige = 15
+				add_adm_power = 100
+				add_country_modifier = {
+					name = navy_emphasis
+					duration = 3650
+				}
+			}
+		}
+		flavia_caesariensis_united_ldn = {
+			icon = mission_rb_rule_britannia_irish_version
+			required_missions = {
+				reclaim_west_flavia_caesariensis_ldn
+				reclaim_east_flavia_caesariensis_ldn
+			}
+			trigger = {
+				adm_power = 100
+				dip_power = 100
+			}
+			effect = {
+				add_adm_power = -100
+				add_dip_power = -100
+				add_country_modifier = {
+					name = ldn_integrate_land
+					duration = 3600
+				}
+				yorkshire_area = {
+					type = all
+					add_permanent_claim = ROOT
+				}
+				scottish_marches_area = {
+					type = all
+					add_permanent_claim = ROOT
+				}
+				4375 = {
+					change_province_name = Cornovii
+					 rename_capital = Deva
+					 change_religion = jupiterian
+				}
+				240 = {
+					change_province_name = "Sinistra Cornovii"
+					 rename_capital = Viroconium
+				}
+				239 = {
+					change_province_name = Dobunni
+					 rename_capital = Glevum
+					 change_religion = jupiterian
+					 add_province_modifier = {
+					 	name = growing_economy
+						duration = 7300
+					 }
+				}
+				4372 = {
+					change_province_name = "Dextra Cornovii"
+					 rename_capital = Venonae
+				}
+				1860 = {
+					change_province_name = Iceni
+					 rename_capital = "Venta Icenorum"
+				}
+				238 = {
+					change_province_name = Trinovantes
+					 rename_capital = Camulodunum
+				}
+				4370 = {
+					change_province_name = Catuvellauni
+					 rename_capital = Camboricum
+				}
+				243 = {
+					change_province_name = Coritani
+					 rename_capital = Lindum
+					 change_religion = jupiterian
+					 add_province_modifier = {
+					 	name = growing_economy
+						duration = 7300
+					 }
+				}
+				4376 = {
+					change_province_name = "Imus Coritani"
+					 rename_capital = "Ratae Coritanorum"
+				}
+				1861 = {
+					change_province_name = "Altum Coritani"
+					 rename_capital = Derventio
+				}
+			}
+		}
+		maxima_caesariensis_ldn = {
+			icon = mission_rb_conquer_the_highlands
+			required_missions = { flavia_caesariensis_united_ldn }
+			position = 5
+			provinces_to_highlight = {
+				OR = {
+					area = yorkshire_area
+					area = scottish_marches_area
+				}
+				NOT = { is_core = ROOT }
+			}
+			trigger = {
+				yorkshire_area = {
+					type = all
+					is_core = ROOT
+				}
+				scottish_marches_area = {
+					type = all
+					is_core = ROOT
+				}
+			}
+			effect = {
+				add_stability = 1
+				add_prestige = 20
+				lowlands_area = {
+					type = all
+					add_permanent_claim = ROOT
+				}
+				highlands_area = {
+					type = all
+					add_permanent_claim = ROOT
+				}
+				kingdom_of_the_isles_area = {
+					type = all
+					add_permanent_claim = ROOT
+				}
+				4785 = {
+					change_province_name = "Imus Brigantes"
+					rename_capital = Danum
+				}
+				4367 = {
+					change_province_name = Parisi
+					rename_capital = Petuaria
+				}
+				4368 = {
+					change_province_name = "Altum Parisi"
+					rename_capital = Cerventio
+				}
+				245 = {
+					change_province_name = Brigantes
+					rename_capital = Eboracum
+					change_religion = jupiterian
+					add_province_modifier = {
+						name = building_spree
+						duration = 3650
+					}
+				}
+				246 = {
+					change_province_name = "Altum Brigantes"
+					rename_capital = Arbeia
+				}
+				247 = {
+					change_province_name = Carvetii
+					rename_capital = Luguvallium
+				}
+				244 = {
+					change_province_name = "Sinistra Brigantes"
+					rename_capital = Calunium
 				}
 			}
 		}
@@ -188,40 +470,71 @@ Londinium_4 = {
 		generic = no
 		ai = yes
 		potential = {
-			tag = LDN
+			OR = {
+				tag = LDN
+				tag = BRN
+			}
 			NOT = { map_setup = map_setup_random }
 		}
-		Conquest_of_Ireland = {
-				icon = mission_eastern_european_city
-				required_missions = { All_Hail_Britannia  }
-				position = 5
-				trigger = {
-				munster_area = {
-		                type = all
-		                country_or_non_sovereign_subject_holds = LDN
-		            }
-				leinster_area = {
-		                type = all
-		                country_or_non_sovereign_subject_holds = LDN
-		            }
-				ulster_area = {
-		                type = all
-		                country_or_non_sovereign_subject_holds = LDN
-		            }
-				connacht_area = {
-		                type = all
-		                country_or_non_sovereign_subject_holds = LDN
-		            }
+		reclaim_east_flavia_caesariensis_ldn = {
+			icon = mission_rb_into_england
+			required_missions = {reclaim_britannia_prima_ldn}
+			position = 3
+			provinces_to_highlight = {
+				OR = {
+					area = east_midlands_area
+					area = east_anglia_area
+				}
+				NOT = { is_core = ROOT }
+			}
+			trigger = {
+				east_midlands_area = {
+					type = all
+					is_core = ROOT
+				}
+				east_anglia_area = {
+					type = all
+					is_core = ROOT
+				}
 			}
 			effect = {
-
-			add_province_modifier = {
-						name = "eng_irish_revolts"
-						duration = 5475
-					}
-
-
+				add_prestige = 15
+				add_dip_power = 100
+				add_country_modifier = {
+					name = army_enthusiasm
+					duration = 3650
 				}
+			}
+		}
+		rebuild_glevum_ldn = {
+			icon = toulon_dockyards
+			required_missions = {
+				rebuild_clausentum_ldn
+			}
+			position = 4
+			trigger = {
+				treasury = 200
+				239 = {
+					has_building = shipyard
+					has_building = marketplace
+					has_building = workshop
+					development = 15
+				}
+			}
+			effect = {
+				add_treasury = -200
+				239 = {
+							add_base_tax = 1
+							add_base_production = 3
+							add_base_manpower = 1
+							add_center_of_trade_level = 1
+							add_province_modifier = {
+								name = ldn_glevum_shipyard
+								duration = -1
+							}
+							change_culture = britannian
+				}
+			}
 		}
 }
 
@@ -230,7 +543,10 @@ Londinium_5 = {
 		generic = no
 		ai = yes
 		potential = {
-			tag = LDN
+			OR = {
+				tag = LDN
+				tag = BRN
+			}
 			NOT = { map_setup = map_setup_random }
 		}
 		rebuild_londinium_ldn = {
@@ -258,6 +574,92 @@ Londinium_5 = {
 				add_country_modifier = {
 						name = ldn_londinium_rebuilt
 						duration = -1
+				}
+			}
+		}
+		rebuild_clausentum_ldn = {
+			icon = mission_guilds_of_barcelona
+			required_missions = {
+				rebuild_londinium_ldn
+				reclaim_britannia_prima_ldn
+			}
+			position = 3
+			trigger = {
+				treasury = 200
+				234 = {
+					has_building = temple
+					has_building = marketplace
+					has_building = fort_15th
+					has_building = workshop
+					development = 15
+				}
+			}
+			effect = {
+				add_treasury = -200
+				234 = {
+							add_base_tax = 1
+							add_base_production = 2
+							add_base_manpower = 2
+							center_of_trade = 1
+							change_culture = britannian
+						}
+			}
+		}
+		rebuild_lindum_ldn = {
+			icon = eastern_catholicization
+			required_missions = {
+				rebuild_clausentum_ldn
+			}
+			position = 4
+			trigger = {
+				treasury = 200
+				243 = {
+					has_building = temple
+					has_building = marketplace
+					has_building = fort_15th
+					has_building = workshop
+					has_building = shipyard
+					development = 20
+				}
+			}
+			effect = {
+				add_treasury = -200
+				243 = {
+							add_base_tax = 3
+							add_base_production = 3
+							add_base_manpower = 1
+							add_center_of_trade_level = 1
+							change_culture = britannian
+						}
+			}
+		}
+		rebuild_erboracum_ldn = {
+			icon = mission_rb_renovate_oxbridge
+			required_missions = {
+				rebuild_lindum_ldn
+				maxima_caesariensis_ldn
+			}
+			position = 6
+			trigger = {
+				treasury = 200
+				245 = {
+					has_building = marketplace
+					has_building = temple
+					has_building = workshop
+					has_building = fort_15th
+					has_building = barracks
+				}
+			}
+			effect = {
+				add_treasury = -200
+				245 = {
+					add_center_of_trade_level = 1
+					add_building = university
+					change_culture = britannian
+					add_province_modifier = {
+						name = ldn_eboracum_university
+						duration = -1
+					}
 				}
 			}
 		}
