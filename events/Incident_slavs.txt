@@ -443,7 +443,7 @@ country_event = {#defeat of the emperor
     ai_chance = {
       factor = 1
     }
-    ckr_country_flag = defy_the_emperor
+    clr_country_flag = defy_the_emperor
     emperor = {
       add_prestige = -10
       add_imperial_influence = -20
@@ -473,7 +473,7 @@ country_event = { #victory_of_the_emperor
     ai_chance = {
       factor = 1
     }
-    ckr_country_flag = defy_the_emperor
+    clr_country_flag = defy_the_emperor
     emperor = {
       country_event = {id = slavic_uprising.8}
     }

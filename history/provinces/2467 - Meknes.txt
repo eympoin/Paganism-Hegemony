@@ -1,5 +1,5 @@
 # - Meknes
-
+owner = TLC
 controller = TLC
 culture = berber_culture
 religion = berber

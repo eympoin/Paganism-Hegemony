@@ -3450,7 +3450,7 @@ country_event = {
 				}
 			}
 			add_country_modifier = {
-				name = loyal_satrap
+				name = loyal_satrap_mod
 				duration = -1
 			}
 		}
@@ -3752,7 +3752,7 @@ country_event = {
 							}
 					}
 					add_country_modifier = {
-						name = loyal_satrap
+						name = loyal_satrap_mod
 						duration = -1
 					}
 			}
@@ -3772,7 +3772,7 @@ country_event = {
 							}
 					}
 					add_country_modifier = {
-						name = loyal_satrap
+						name = loyal_satrap_mod
 						duration = -1
 					}
 			}
@@ -3792,7 +3792,7 @@ country_event = {
 							}
 					}
 					add_country_modifier = {
-						name = loyal_satrap
+						name = loyal_satrap_mod
 						duration = -1
 					}
 			}
@@ -3812,7 +3812,7 @@ country_event = {
 							}
 					}
 					add_country_modifier = {
-						name = loyal_satrap
+						name = loyal_satrap_mod
 						duration = -1
 					}
 			}
@@ -3832,7 +3832,7 @@ country_event = {
 							}
 					}
 					add_country_modifier = {
-						name = loyal_satrap
+						name = loyal_satrap_mod
 						duration = -1
 					}
 			}
@@ -3852,7 +3852,7 @@ country_event = {
 							}
 					}
 					add_country_modifier = {
-						name = loyal_satrap
+						name = loyal_satrap_mod
 						duration = -1
 					}
 			}

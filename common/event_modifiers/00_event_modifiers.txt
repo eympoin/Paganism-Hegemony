@@ -4237,7 +4237,7 @@ adm_approach_ldn = {
 
 mil_approach_ldn = {
 	land_morale = 0.2
-	leader_shock = 1
+	leader_land_shock = 1
 	land_maintenance_modifier = -0.2
 	diplomatic_reputation = -2
 }

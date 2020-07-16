@@ -4,7 +4,6 @@ primary_culture = moroccan
 religion = berber
 technology_group = muslim
 capital = 344 # Marrakech
-add_accepted_culture = berber
 
 1399.1.1 = {
 	monarch = {
