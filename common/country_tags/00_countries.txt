@@ -20,6 +20,7 @@ WFR   = "countries/West Francia.txt"
 WRM   = "countries/Western Roman Empire.txt"
 ERM   = "countries/Eastern Roman Empire.txt"
 SOC   = "countries/Socotra.txt"
+TAM   = "countries/Tamazgha.txt"
 
 BSQ   = "countries/Basque.txt"
 

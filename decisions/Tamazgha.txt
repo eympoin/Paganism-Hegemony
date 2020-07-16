@@ -1,0 +1,72 @@
+country_decisions = {
+
+	Create_Tamazgha = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { exists = TAM }
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+			culture_group = berber_culture
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 347
+				province_id = 2448
+        province_id = 2449
+        province_id = 341
+        province_id = 334
+        province_id = 336
+        province_id = 355
+        province_id = 339
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns_core_province = 347
+      owns_core_province = 2448
+      owns_core_province = 2449
+      owns_core_province = 341
+      owns_core_province = 334
+      owns_core_province = 336
+      owns_core_province = 355
+      owns_core_province = 339
+		}
+		effect = {
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 3 }
+				}
+				set_government_rank = 3
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_country_flag = formed_Tamazgha_flag
+			change_tag = TAM
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}
