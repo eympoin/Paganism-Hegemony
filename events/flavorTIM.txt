@@ -64,7 +64,8 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-
+		tag = TIM
+		tag = AFG
 	}
 
 	mean_time_to_happen = {
@@ -84,7 +85,8 @@ country_event = {
 	picture = DEATH_OF_HEIR_eventPicture
 
 	trigger = {
-
+		tag = TIM
+		tag = AFG
 	}
 
 	option = {
