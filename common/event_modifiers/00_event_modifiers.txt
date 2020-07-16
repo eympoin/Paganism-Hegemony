@@ -4210,6 +4210,7 @@ loyal_satrap_mod = {
 won_per_cw = {
 	legitimacy = 1
 	prestige = 0.25
+	diplomatic_annexation_cost = -0.33s
 }
 
 per_empire_reborn = {

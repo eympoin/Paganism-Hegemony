@@ -4,6 +4,7 @@ per_aftermath_cw_center = {
 	ai = yes
 	potential = {
 		tag = PER
+		tag = ABA
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -245,6 +246,7 @@ per_aftermath_cw_left = {
 	ai = yes
 	potential = {
 		tag = PER
+		tag = ABA
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -373,6 +375,7 @@ per_aftermath_cw_mleft = {
 	ai = yes
 	potential = {
 		tag = PER
+		tag = ABA
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -499,6 +502,7 @@ per_aftermath_cw_right = {
 	ai = yes
 	potential = {
 		tag = PER
+		tag = ABA
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -628,6 +632,7 @@ per_aftermath_cw_mright = {
 	ai = yes
 	potential = {
 		tag = PER
+		tag = ABA
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes

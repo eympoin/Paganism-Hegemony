@@ -1,8 +1,8 @@
 #Demnate
 
-owner = SOS
-controller = SOS
-add_core = SOS
+owner = MRK
+controller = MRK
+add_core = MRK
 culture = berber
 religion = berber
 capital = "Demnate"
