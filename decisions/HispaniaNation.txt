@@ -73,18 +73,17 @@ country_decisions = {
 			}
 			custom_tooltip = spanish_unification_effect.tooltip
 			hidden_effect = {
-					add_permanent_claim = HIS
-				}
+				add_permanent_claim = HIS
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
 			add_prestige = 25
-			ai_will_do = {
-				factor = 1
-			}
-			ai_importance = 400
 		}
+		ai_will_do = {
+			factor = 1
 		}
+		ai_importance = 400
+	}
 }

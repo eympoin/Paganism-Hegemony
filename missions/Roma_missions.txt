@@ -183,7 +183,9 @@ ROM_Unification_2 = {
 		add_prestige = 20
 		add_stability = 1
 		italy_region = {
-			type = all
+			limit = {
+				owned_by = SPQ
+			}
 			change_culture = roman
 		}
 		}

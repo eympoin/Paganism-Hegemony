@@ -1,377 +1,383 @@
 MIE_Unification_1 = {
-	slot = 1
-	generic = no
-	ai = yes
-	potential = {
-		tag = MIE
-		NOT = { map_setup = map_setup_random }
-	}
-	Submit_Seaxe_MIE = {
-		icon = mission_eastern_european_city
-		required_missions = {}
-		position = 1
-		provinces_to_highlight = {
-			OR = {
-				province_id = 235
-				province_id = 234
-				province_id = 237
-				province_id = 4371
-			}
-			OR = {
-				is_city = no
-				NOT = { owned_by = ROOT }
-			}
-			has_discovered = ROOT
-		}
-		trigger = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+    tag = MIE
+    NOT = { map_setup = map_setup_random }
+  }
+  Submit_Seaxe_MIE = {
+    icon = mission_eastern_european_city
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+      OR = {
+        province_id = 235
+        province_id = 234
+        province_id = 237
+        province_id = 4371
+      }
+      OR = {
+        is_city = no
+        NOT = { owned_by = ROOT }
+      }
+      has_discovered = ROOT
+    }
+    trigger = {
       owns_or_non_sovereign_subject_of = 234
       owns_or_non_sovereign_subject_of = 237
       owns_or_non_sovereign_subject_of = 235
       owns_or_non_sovereign_subject_of = 4371
-		}
-		effect = {
+    }
+    effect = {
 
-			add_country_modifier = {
-				name = "army_enthusiasm"
-				duration = 5475
-			}
-			236 = {
-				type = all
-				add_permanent_claim = MIE
-			}
-		}
-	}
-	Submit_The_last_city_of_Romans_MIE = {
-		icon = mission_eastern_european_city
-		required_missions = {Submit_Seaxe_MIE}
-		position = 2
-		provinces_to_highlight = {
-			OR = {
-				province_id = 236
-			}
-			OR = {
-				is_city = no
-				NOT = { owned_by = ROOT }
-			}
-			has_discovered = ROOT
-		}
-		trigger = {
-			owns_or_non_sovereign_subject_of = 236
-		}
-		effect = {
+      add_country_modifier = {
+        name = "army_enthusiasm"
+        duration = 5475
+      }
+      236 = {
+        add_permanent_claim = MIE
+      }
+    }
+  }
+  Submit_The_last_city_of_Romans_MIE = {
+    icon = mission_eastern_european_city
+    required_missions = {Submit_Seaxe_MIE}
+    position = 2
+    provinces_to_highlight = {
+      OR = {
+        province_id = 236
+      }
+      OR = {
+        is_city = no
+        NOT = { owned_by = ROOT }
+      }
+      has_discovered = ROOT
+    }
+    trigger = {
+      owns_or_non_sovereign_subject_of = 236
+    }
+    effect = {
 
-			add_prestige = 15
-		}
-	}
+      add_prestige = 15
+    }
+  }
 }
 
 MIE_Unification_2 = {
-	slot = 2
-	generic = no
-	ai = yes
-	potential = {
-		tag = MIE
-		NOT = { map_setup = map_setup_random }
-	}
-	Submit_East_Anglia_MIE = {
-		icon = mission_eastern_european_city
-		required_missions = {}
-		position = 1
-		provinces_to_highlight = {
-			OR = {
-				area = east_anglia_area
-			}
-			OR = {
-				is_city = no
-				NOT = { owned_by = ROOT }
-			}
-			has_discovered = ROOT
-		}
-		trigger = {
-			east_anglia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = MIE
-			}
-		}
-		effect = {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+    tag = MIE
+    NOT = { map_setup = map_setup_random }
+  }
+  Submit_East_Anglia_MIE = {
+    icon = mission_eastern_european_city
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+      OR = {
+        area = east_anglia_area
+      }
+      OR = {
+        is_city = no
+        NOT = { owned_by = ROOT }
+      }
+      has_discovered = ROOT
+    }
+    trigger = {
+      east_anglia_area = {
+        type = all
+        country_or_non_sovereign_subject_holds = MIE
+      }
+    }
+    effect = {
 
-			add_country_modifier = {
-				name = "thriving_arms_industry"
-				duration = 5475
-			}
-		}
-	}
-	Kingdom_of_Anglo_Seaxon_MIE= {
-		icon = mission_eastern_european_city
-		required_missions = {Submit_Seaxe_MIE Submit_East_Anglia_MIE Liberate_our_brothers_MIE }
-		position = 2
-		trigger = {
+      add_country_modifier = {
+        name = "thriving_arms_industry"
+        duration = 5475
+      }
+    }
+  }
+  Kingdom_of_Anglo_Seaxon_MIE= {
+    icon = mission_eastern_european_city
+    required_missions = {Submit_Seaxe_MIE Submit_East_Anglia_MIE Liberate_our_brothers_MIE }
+    position = 2
+    trigger = {
 
-		}
-		effect = {
-			capital_scope = {
-				add_base_tax = 4
-				add_base_production = 4
-				add_base_manpower = 5
-			}
-
-
-		}
-	}
-	Two_people_one_country_MIE= {
-		icon = mission_eastern_european_city
-		required_missions = {Kingdom_of_Anglo_Seaxon_MIE Submit_The_last_city_of_Romans_MIE }
-		position = 3
-		provinces_to_highlight = {
-			OR = {
-				area = east_midlands_area
-				area = west_midlands_area
-				area = east_anglia_area
-				area = home_counties_area
-				province_id = 234
-				province_id = 239
-				province_id = 234
-				province_id = 240
-				province_id = 4372
-				province_id = 4375
-			}
-			OR = {
-				is_city = no
-				NOT = { owned_by = ROOT }
-			}
-			has_discovered = ROOT
-		}
-		trigger = {
-			east_midlands_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			west_midlands_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			east_anglia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			home_counties_area = {
-				east_midlands_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = ROOT
-				}
-			}
-			owns_or_non_sovereign_subject_of = 234
-			owns_or_non_sovereign_subject_of = 239
-			owns_or_non_sovereign_subject_of = 240
-			owns_or_non_sovereign_subject_of = 4372
-			owns_or_non_sovereign_subject_of = 4375
-		}
-		effect = {
-			change_primary_culture	= english
-			east_midlands_area = {
-				type = all
-				change_culture = english
-			}
-
-			west_midlands_area = {
-				type = all
-				change_culture = english
-			}
-			east_anglia_area = {
-				type = all
-				change_culture = english
-			}
-			home_counties_area = {
-				type = all
-				change_culture = english
-			}
-			234 = {
-				type = all
-				change_culture = english
-			}
-			239 = {
-				type = all
-				change_culture = english
-			}
-			240 = {
-				type = all
-				change_culture = english
-			}
-			4372 = {
-				type = all
-				change_culture = english
-			}
-			4375 = {
-				type = all
-				change_culture = english
-			}
+    }
+    effect = {
+      capital_scope = {
+        add_base_tax = 4
+        add_base_production = 4
+        add_base_manpower = 5
+      }
 
 
-		}
-	}
+    }
+  }
+  Two_people_one_country_MIE= {
+    icon = mission_eastern_european_city
+    required_missions = {Kingdom_of_Anglo_Seaxon_MIE Submit_The_last_city_of_Romans_MIE }
+    position = 3
+    provinces_to_highlight = {
+      OR = {
+        area = east_midlands_area
+        area = west_midlands_area
+        area = east_anglia_area
+        area = home_counties_area
+        province_id = 234
+        province_id = 239
+        province_id = 234
+        province_id = 240
+        province_id = 4372
+        province_id = 4375
+      }
+      OR = {
+        is_city = no
+        NOT = { owned_by = ROOT }
+      }
+      has_discovered = ROOT
+    }
+    trigger = {
+      east_midlands_area = {
+        type = all
+        country_or_non_sovereign_subject_holds = ROOT
+      }
+      west_midlands_area = {
+        type = all
+        country_or_non_sovereign_subject_holds = ROOT
+      }
+      east_anglia_area = {
+        type = all
+        country_or_non_sovereign_subject_holds = ROOT
+      }
+      home_counties_area = {
+        east_midlands_area = {
+          type = all
+          country_or_non_sovereign_subject_holds = ROOT
+        }
+      }
+      owns_or_non_sovereign_subject_of = 234
+      owns_or_non_sovereign_subject_of = 239
+      owns_or_non_sovereign_subject_of = 240
+      owns_or_non_sovereign_subject_of = 4372
+      owns_or_non_sovereign_subject_of = 4375
+    }
+    effect = {
+      change_primary_culture	= english
+      east_midlands_area = {
+        limit = {
+          owned_by = ROOT
+        }
+        change_culture = english
+      }
+
+      west_midlands_area = {
+        limit = {
+          owned_by = ROOT
+        }
+        change_culture = english
+      }
+      east_anglia_area = {
+        limit = {
+          owned_by = ROOT
+        }
+        change_culture = english
+      }
+      home_counties_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        change_culture = english
+      }
+      234 = {
+        change_culture = english
+      }
+      239 = {
+        change_culture = english
+      }
+      240 = {
+        change_culture = english
+      }
+      4372 = {
+        change_culture = english
+      }
+      4375 = {
+        change_culture = english
+      }
+
+
+    }
+  }
 }
 
 
 MIE_Unification_3 = {
-	slot = 3
-	generic = no
-	ai = yes
-	potential = {
-		tag = MIE
-	}
-	Liberate_our_brothers_MIE = {
-		icon = mission_eastern_european_city
-		required_missions = {}
-		position = 1
-		provinces_to_highlight = {
-			OR = {
-				area = east_midlands_area
-			}
-			OR = {
-				is_city = no
-				NOT = { owned_by = ROOT }
-			}
-			has_discovered = ROOT
-		}
-		trigger = {
-			east_midlands_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = MIE
-			}
-		}
-		effect = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+    tag = MIE
+  }
+  Liberate_our_brothers_MIE = {
+    icon = mission_eastern_european_city
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+      OR = {
+        area = east_midlands_area
+      }
+      OR = {
+        is_city = no
+        NOT = { owned_by = ROOT }
+      }
+      has_discovered = ROOT
+    }
+    trigger = {
+      east_midlands_area = {
+        type = all
+        country_or_non_sovereign_subject_holds = MIE
+      }
+    }
+    effect = {
 
-			add_country_modifier = {
-				name = "army_enthusiasm"
-				duration = 5475
-			}
-			yorkshire_area = {
-				type = all
-				add_permanent_claim = MIE
-			}
-			246 = {
-				type = all
-				add_permanent_claim = MIE
-			}
-			244 = {
-				type = all
-				add_permanent_claim = MIE
-			}
-			yorkshire_area = {
-				type = all
-				add_permanent_claim = MIE
-			}
-		}
-	}
-	Destroy_The_Northymbrian_kingdom_MIE = {
-		icon = mission_eastern_european_city
-		required_missions = {Liberate_our_brothers_MIE}
-		position = 2
-		provinces_to_highlight = {
-			OR = {
-				area = east_anglia_area
-				area = yorkshire_area
-				province_id = 246
-				province_id = 244
-				province_id = 247
-			}
-			OR = {
-				is_city = no
-				NOT = { owned_by = ROOT }
-			}
-			has_discovered = ROOT
-		}
-		trigger = {
-			east_midlands_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = MIE
-			}
-			yorkshire_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = MIE
-			}
-			owns_or_non_sovereign_subject_of = 246
-			owns_or_non_sovereign_subject_of = 244
-			owns_or_non_sovereign_subject_of = 247
+      add_country_modifier = {
+        name = "army_enthusiasm"
+        duration = 5475
+      }
+      yorkshire_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = MIE
+      }
+      246 = {
+        add_permanent_claim = MIE
+      }
+      244 = {
+        add_permanent_claim = MIE
+      }
+      yorkshire_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = MIE
+      }
+    }
+  }
+  Destroy_The_Northymbrian_kingdom_MIE = {
+    icon = mission_eastern_european_city
+    required_missions = {Liberate_our_brothers_MIE}
+    position = 2
+    provinces_to_highlight = {
+      OR = {
+        area = east_anglia_area
+        area = yorkshire_area
+        province_id = 246
+        province_id = 244
+        province_id = 247
+      }
+      OR = {
+        is_city = no
+        NOT = { owned_by = ROOT }
+      }
+      has_discovered = ROOT
+    }
+    trigger = {
+      east_midlands_area = {
+        type = all
+        country_or_non_sovereign_subject_holds = MIE
+      }
+      yorkshire_area = {
+        type = all
+        country_or_non_sovereign_subject_holds = MIE
+      }
+      owns_or_non_sovereign_subject_of = 246
+      owns_or_non_sovereign_subject_of = 244
+      owns_or_non_sovereign_subject_of = 247
 
 
-		}
-		effect = {
+    }
+    effect = {
 
-			add_country_modifier = {
-				name = "growing_economy"
-				duration = 5475
-			}
-		}
-	}
+      add_country_modifier = {
+        name = "growing_economy"
+        duration = 5475
+      }
+    }
+  }
 }
 
 MIE_Unification_4 = {
-	slot = 4
-	generic = no
-	ai = yes
-	potential = {
-		tag = MIE
-		NOT = { map_setup = map_setup_random }
-	}
-	Submit_The_Cornish_people_MIE = {
-		icon = mission_eastern_european_city
-		required_missions = {}
-		position = 1
-		provinces_to_highlight = {
-			OR = {
-				area = wessex_area
-			}
-			OR = {
-				is_city = no
-				NOT = { owned_by = ROOT }
-			}
-			has_discovered = ROOT
-		}
-		trigger = {
-			wessex_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = MIE
-			}
-		}
-		effect = {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+    tag = MIE
+    NOT = { map_setup = map_setup_random }
+  }
+  Submit_The_Cornish_people_MIE = {
+    icon = mission_eastern_european_city
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+      OR = {
+        area = wessex_area
+      }
+      OR = {
+        is_city = no
+        NOT = { owned_by = ROOT }
+      }
+      has_discovered = ROOT
+    }
+    trigger = {
+      wessex_area = {
+        type = all
+        country_or_non_sovereign_subject_holds = MIE
+      }
+    }
+    effect = {
 
-			add_country_modifier = {
-				name = "expansionist_country"
-				duration = 5475
-			}
-			wales_area = {
-				type = all
-				add_permanent_claim = MIE
-			}
-		}
-	}
-	Submit_The_Welsh_people_MIE = {
-		icon = mission_eastern_european_city
-		required_missions = {Submit_The_Cornish_people_MIE}
-		position = 2
-		provinces_to_highlight = {
-			OR = {
-				area = wales_area
-			}
-			OR = {
-				is_city = no
-				NOT = { owned_by = ROOT }
-			}
-			has_discovered = ROOT
-		}
-		trigger = {
-			wales_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = MIE
-			}
-		}
-		effect = {
+      add_country_modifier = {
+        name = "expansionist_country"
+        duration = 5475
+      }
+      wales_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = MIE
+      }
+    }
+  }
+  Submit_The_Welsh_people_MIE = {
+    icon = mission_eastern_european_city
+    required_missions = {Submit_The_Cornish_people_MIE}
+    position = 2
+    provinces_to_highlight = {
+      OR = {
+        area = wales_area
+      }
+      OR = {
+        is_city = no
+        NOT = { owned_by = ROOT }
+      }
+      has_discovered = ROOT
+    }
+    trigger = {
+      wales_area = {
+        type = all
+        country_or_non_sovereign_subject_holds = MIE
+      }
+    }
+    effect = {
 
-			add_country_modifier = {
-				name = "hegemonic_ambition"
-				duration = 5475
-			}
-		}
-	}
+      add_country_modifier = {
+        name = "hegemonic_ambition"
+        duration = 5475
+      }
+    }
+  }
 }

@@ -3,9 +3,9 @@ Orleans_Unification_1 = {
 	generic = no
 	ai = yes
 	potential = {
-	OR = {
-		tag = FRO
-		was_tag = FRO
+		OR = {
+			tag = FRO
+			was_tag = FRO
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -25,20 +25,19 @@ Orleans_Unification_1 = {
 			has_discovered = ROOT
 		}
 		trigger = {
-		182 = {
-								type = all
-								owned_by = ROOT
-						}
+			182 = {
+				owned_by = ROOT
+			}
 
 		}
 		effect = {
-				create_union = FRV
-				add_legitimacy = 10
-				FRV = {
-					remove_historical_rival = FRO
-				}
+			create_union = FRV
+			add_legitimacy = 10
+			FRV = {
+				remove_historical_rival = FRO
 			}
 		}
+	}
 
 
 }
@@ -48,9 +47,9 @@ Orleans_Unification_2 = {
 	generic = no
 	ai = yes
 	potential = {
-	OR = {
-		tag = FRO
-		was_tag = FRO
+		OR = {
+			tag = FRO
+			was_tag = FRO
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -69,41 +68,40 @@ Orleans_Unification_2 = {
 			has_discovered = ROOT
 		}
 		trigger = {
-		186 = {
-								type = all
-								owned_by = ROOT
-						}
+			186 = {
+				owned_by = ROOT
+			}
 
 		}
 		effect = {
-				create_union = FRR
-				add_legitimacy = 10
-				FRR = {
-					remove_historical_rival = FRO
-				}
+			create_union = FRR
+			add_legitimacy = 10
+			FRR = {
+				remove_historical_rival = FRO
 			}
 		}
-		Regnum_Francorum_FRO = {
+	}
+	Regnum_Francorum_FRO = {
 		icon = mission_unite_home_region
 		required_missions = { Subjugate_The_Kingdom_of_Soissons_FRO Subjugate_The_Kingdom_of_Reims_FRO Subjugate_The_Kingdom_of_Paris_FRO }
 		position = 2
 		trigger = {
 			FRV = {
 				OR = {
-				is_subject_of = FRO
-				exists = no
+					is_subject_of = FRO
+					exists = no
 				}
 			}
 			FRR = {
 				OR = {
-				is_subject_of = FRO
-				exists = no
+					is_subject_of = FRO
+					exists = no
 				}
 			}
 			FRP = {
 				OR = {
-				is_subject_of = FRO
-				exists = no
+					is_subject_of = FRO
+					exists = no
 				}
 			}
 		}
@@ -120,8 +118,8 @@ Orleans_Unification_2 = {
 				add_base_manpower = 3
 				add_base_production = 3
 			}
-			}
 		}
+	}
 }
 
 Orleans_Unification_3 = {
@@ -129,14 +127,14 @@ Orleans_Unification_3 = {
 	generic = no
 	ai = yes
 	potential = {
-	OR = {
-		tag = FRO
-		was_tag = FRO
+		OR = {
+			tag = FRO
+			was_tag = FRO
 		}
 		NOT = { map_setup = map_setup_random }
 	}
 
-		Subjugate_The_Kingdom_of_Paris_FRO = {
+	Subjugate_The_Kingdom_of_Paris_FRO = {
 		icon = mission_build_up_to_force_limit
 		required_missions = {  } #None
 		position = 1
@@ -151,20 +149,19 @@ Orleans_Unification_3 = {
 			has_discovered = ROOT
 		}
 		trigger = {
-		183 = {
-                type = all
-                owned_by = ROOT
-            }
+			183 = {
+				owned_by = ROOT
+			}
 
 		}
 		effect = {
-				create_union = FRP
-				add_legitimacy = 10
-				FRP = {
-					remove_historical_rival = FRO
-				}
+			create_union = FRP
+			add_legitimacy = 10
+			FRP = {
+				remove_historical_rival = FRO
 			}
 		}
+	}
 
 
 }
@@ -175,9 +172,9 @@ Orleans_economy = {
 	generic = no
 	ai = yes
 	potential = {
-	OR = {
-		tag = FRO
-		was_tag = FRO
+		OR = {
+			tag = FRO
+			was_tag = FRO
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -192,20 +189,20 @@ Orleans_economy = {
 			}
 		}
 		trigger = {
-		estate_loyalty = {
-    estate = estate_nobles
-    loyalty = 60
-		}
-		treasury = 100
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 60
+			}
+			treasury = 100
 
 		}
 		effect = {
-		add_treasury = -100
-		add_country_modifier = {
-			name = "chateau_loire"
-			duration = -1
+			add_treasury = -100
+			add_country_modifier = {
+				name = "chateau_loire"
+				duration = -1
+			}
 		}
-	}
 	}
 
 	saint_nazaire_ship_building = {
@@ -219,38 +216,38 @@ Orleans_economy = {
 		}
 		trigger = {
 			172  = {
-			has_building = shipyard
+				has_building = shipyard
 			}
 
 		}
 		effect = {
-		add_country_modifier = {
-			name = "biggest_shipyard"
-			duration = -1
+			add_country_modifier = {
+				name = "biggest_shipyard"
+				duration = -1
+			}
 		}
 	}
-	}
 	repopulate_the_lands = {
-	icon = mission_eastern_european_city
-	required_missions = {  } #None
-	position = 3
-	trigger = {
-	num_of_owned_provinces_with = {
+		icon = mission_eastern_european_city
+		required_missions = {  } #None
+		position = 3
+		trigger = {
+			num_of_owned_provinces_with = {
 				value = 5
 				num_of_times_improved	= 7
 			}
-	}
-	effect = {
+		}
+		effect = {
 
-	184 = {
-		add_base_tax = 3
-		add_base_production = 3
-		add_base_production = 3
-	}
-	add_country_modifier = {
-		name = "repopulation"
-		duration = -1
-	}
-	}
+			184 = {
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_production = 3
+			}
+			add_country_modifier = {
+				name = "repopulation"
+				duration = -1
+			}
+		}
 	}
 }

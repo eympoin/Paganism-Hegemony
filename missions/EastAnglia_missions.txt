@@ -24,10 +24,10 @@ EAA_Unification_1 = {
 			has_discovered = ROOT
 		}
 		trigger = {
-      owns_or_non_sovereign_subject_of = 234
-      owns_or_non_sovereign_subject_of = 237
-      owns_or_non_sovereign_subject_of = 235
-      owns_or_non_sovereign_subject_of = 4371
+			owns_or_non_sovereign_subject_of = 234
+			owns_or_non_sovereign_subject_of = 237
+			owns_or_non_sovereign_subject_of = 235
+			owns_or_non_sovereign_subject_of = 4371
 		}
 		effect = {
 			add_country_modifier = {
@@ -35,7 +35,6 @@ EAA_Unification_1 = {
 				duration = 5475
 			}
 			236 = {
-				type = all
 				add_permanent_claim = EAA
 			}
 		}
@@ -172,44 +171,45 @@ EAA_Unification_2 = {
 		effect = {
 			change_primary_culture	= english
 			east_midlands_area = {
-				type = all
+				limit = {
+					owned_by = ROOT
+				}
 				change_culture = english
 			}
 
 			west_midlands_area = {
-				type = all
+				limit = {
+					owned_by = ROOT
+				}
 				change_culture = english
 			}
 			east_anglia_area = {
-				type = all
+				limit = {
+					owned_by = ROOT
+				}
 				change_culture = english
 			}
 			home_counties_area = {
-				type = all
+				limit = {
+					owned_by = ROOT
+				}
 				change_culture = english
 			}
 			234 = {
-				type = all
 				change_culture = english
 			}
 			239 = {
-				type = all
 				change_culture = english
 			}
 			240 = {
-				type = all
 				change_culture = english
 			}
 			4372 = {
-				type = all
 				change_culture = english
 			}
 			4375 = {
-				type = all
 				change_culture = english
 			}
-
-
 		}
 	}
 }
@@ -250,19 +250,21 @@ EAA_Unification_3 = {
 				duration = 5475
 			}
 			yorkshire_area = {
-				type = all
+				limit = {
+					NOT = {owned_by = ROOT }
+				}
 				add_permanent_claim = EAA
 			}
 			246 = {
-				type = all
 				add_permanent_claim = EAA
 			}
 			244 = {
-				type = all
 				add_permanent_claim = EAA
 			}
 			yorkshire_area = {
-				type = all
+				limit = {
+					NOT = {owned_by = ROOT }
+				}
 				add_permanent_claim = EAA
 			}
 		}
@@ -345,7 +347,9 @@ EAA_Unification_4 = {
 				duration = 5475
 			}
 			wales_area = {
-				type = all
+				limit = {
+					NOT = {owned_by = ROOT }
+				}
 				add_permanent_claim = EAA
 			}
 		}

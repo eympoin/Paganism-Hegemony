@@ -192,10 +192,10 @@ Gallia_Unification_1 = {
 			}
 		}
 		effect = {
+		custom_tooltip = roman_gallia_tt
 			france_region = {
-				type = all
-				owned_by = ROOT
 				limit = {
+				owned_by = ROOT
 					OR = {
 						culture_group = frankish
 						culture = burgond

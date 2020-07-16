@@ -33,7 +33,9 @@ Cornish_Unification_1 = {
 				duration = 5475
 			}
 			west_midlands_area = {
-				type = all
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
 				add_permanent_claim = CRN
 			}
 		}

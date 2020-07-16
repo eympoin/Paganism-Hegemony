@@ -53,7 +53,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = { dont care
+	option = { #dont care
 		ai_chance = {
 			factor = 1
 		}
@@ -83,13 +83,11 @@ country_event = {
 		}
 	}
 
-	option = {#create the canal
+	option = { #create the canal
 		trigger = {
-			trigger = {
 	      2315 = {
 	        is_part_of_hre = yes
 	      }
-	    }
 		}
 		ai_chance = {
 			factor = 1
@@ -364,6 +362,9 @@ country_event = {
 			cede_province	= GAN
 			add_core = GAN
 		}
+		GAN = {
+			change_religion = olympoi
+		}
 		every_country = {
 			limit = {
 				war_with = emperor
@@ -383,9 +384,6 @@ country_event = {
 				power = 60
 				key = spice_road
 				}
-		}
-		GAN = {
-			change_religion = olympoi
 		}
 	}
 }

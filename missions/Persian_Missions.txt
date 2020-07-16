@@ -310,17 +310,9 @@ per_aftermath_cw_left = {
 				add_permanent_claim = ROOT
 			}
 			4331 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
 				add_permanent_claim = ROOT
 			}
 			430 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
 				add_permanent_claim = ROOT
 			}
 		}
@@ -458,38 +450,18 @@ per_aftermath_cw_mleft = {
 				duration = 7300
 			}
 			410 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_claim = ROOT }
-					}
 				add_claim = ROOT
 			}
 			4457 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_claim = ROOT }
-					}
 				add_claim = ROOT
 			}
 			517 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_claim = ROOT }
-					}
 				add_claim = ROOT
 			}
 			529 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_claim = ROOT }
-					}
 				add_claim = ROOT
 			}
 			2089 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_claim = ROOT }
-					}
 				add_claim = ROOT
 			}
 		}
@@ -556,17 +528,9 @@ per_aftermath_cw_right = {
 				}
 			}
 			443 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
 				add_permanent_claim = ROOT
 			}
 			439 = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
 				add_permanent_claim = ROOT
 			}
 			transoxiana_area = {

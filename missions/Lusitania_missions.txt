@@ -55,15 +55,21 @@ hispania_unification_1{
 			add_permanent_claim = 232
 			add_permanent_claim = 231
 			galicia_area = {
-				type = all
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
 				add_permanent_claim = LUS
 			}
 			lower_andalucia_area = {
-				type = all
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
 				add_permanent_claim = LUS
 			}
 			upper_andalucia_area = {
-				type = all
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
 				add_permanent_claim = LUS
 			}
 			}
@@ -84,7 +90,9 @@ hispania_unification_1{
 		add_permanent_claim = 208
 		add_permanent_claim = 4553
 		asturias_area = {
-			type = all
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
 			add_permanent_claim = LUS
 			}
 		}
@@ -107,7 +115,9 @@ hispania_unification_1{
 		add_permanent_claim = 210
 		add_permanent_claim = 2989
 		basque_country = {
-				type = all
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
 				add_permanent_claim = LUS
 			}
 		}
@@ -193,7 +203,9 @@ hispania_unification_3{
 		}
 		effect = {
 			aragon_area = {
-				type = all
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
 				add_permanent_claim = LUS
 			}
 		}
@@ -210,7 +222,9 @@ hispania_unification_3{
 		}
 		effect = {
 		catalonia_area = {
-			type = all
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
 			add_permanent_claim = LUS
 		}
 		}

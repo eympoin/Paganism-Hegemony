@@ -132,7 +132,7 @@ CAP_ideas = {
 	}
 
 	mix_of_2_cultures = {
-	  unrest = -1
+	  global_unrest = -1
 		global_institution_spread = 0.1
 	}
 	eingeneer_of_the_empire = {
@@ -173,7 +173,7 @@ CAP_ideas = {
 	}
 
 	mix_of_2_cultures = {
-	  unrest = -1
+	  global_unrest = -1
 		global_institution_spread = 0.1
 	}
 	eingeneer_of_the_empire = {

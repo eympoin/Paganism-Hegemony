@@ -7,7 +7,7 @@ primary_culture = swedish
 technology_group = western
 capital = 25	#Gotland
 
-Fun pirate king stuff for later discussion with Niklas
+#Fun pirate king stuff for later discussion with Niklas
 1439.9.24 = {
 	government = monarchy
 	monarch = {

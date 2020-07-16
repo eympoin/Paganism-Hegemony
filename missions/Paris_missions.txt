@@ -3,9 +3,9 @@ Paris_Unification_1 = {
 	generic = no
 	ai = yes
 	potential = {
-	OR = {
-		tag = FRP
-		was_tag = FRP
+		OR = {
+			tag = FRP
+			was_tag = FRP
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -25,20 +25,19 @@ Paris_Unification_1 = {
 			has_discovered = ROOT
 		}
 		trigger = {
-		182 = {
-                type = all
-                owned_by = ROOT
-            }
+			182 = {
+				owned_by = ROOT
+			}
 
 		}
 		effect = {
-				create_union = FRV
-				add_legitimacy = 10
-				FRV = {
-					remove_historical_rival = FRP
-				}
+			create_union = FRV
+			add_legitimacy = 10
+			FRV = {
+				remove_historical_rival = FRP
 			}
 		}
+	}
 }
 
 Paris_Unification_2 = {
@@ -46,34 +45,33 @@ Paris_Unification_2 = {
 	generic = no
 	ai = yes
 	potential = {
-	OR = {
-		tag = FRP
-		was_tag = FRP
+		OR = {
+			tag = FRP
+			was_tag = FRP
 		}
 		NOT = { map_setup = map_setup_random }
 	}
 	Subjugate_The_Kingdom_of_Reims_FRP = {
-	icon = mission_build_up_to_force_limit
-	required_missions = {  } #None
-	position = 1
-	provinces_to_highlight = {
-		OR = {
-			province_id = 186
+		icon = mission_build_up_to_force_limit
+		required_missions = {  } #None
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 186
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
 		}
-		OR = {
-			is_city = no
-			NOT = { owned_by = ROOT }
-		}
-		has_discovered = ROOT
-	}
-	trigger = {
-	186 = {
-							type = all
-							owned_by = ROOT
-					}
+		trigger = {
+			186 = {
+				owned_by = ROOT
+			}
 
-	}
-	effect = {
+		}
+		effect = {
 			create_union = FRR
 			add_legitimacy = 10
 			FRR = {
@@ -83,27 +81,27 @@ Paris_Unification_2 = {
 	}
 
 
-		Regnum_Francorum_FRP = {
+	Regnum_Francorum_FRP = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { Subjugate_The_Kingdom_of_Soissons_FRP Subjugate_The_Kingdom_of_Reims_FRP Subjugate_The_Kingdom_of_Orleans_FRP }
 		position = 2
 		trigger = {
 			FRV = {
 				OR = {
-				is_subject_of = FRP
-				exists = no
+					is_subject_of = FRP
+					exists = no
 				}
 			}
 			FRR = {
 				OR = {
-				is_subject_of = FRP
-				exists = no
+					is_subject_of = FRP
+					exists = no
 				}
 			}
 			FRO = {
 				OR = {
-				is_subject_of = FRP
-				exists = no
+					is_subject_of = FRP
+					exists = no
 				}
 			}
 		}
@@ -122,8 +120,8 @@ Paris_Unification_2 = {
 				add_base_manpower = 3
 				add_base_production = 3
 			}
-			}
 		}
+	}
 }
 
 Paris_Unification_3 = {
@@ -131,14 +129,14 @@ Paris_Unification_3 = {
 	generic = no
 	ai = yes
 	potential = {
-	OR = {
-		tag = FRP
-		was_tag = FRP
+		OR = {
+			tag = FRP
+			was_tag = FRP
 		}
 		NOT = { map_setup = map_setup_random }
 	}
 
-		Subjugate_The_Kingdom_of_Orleans_FRP  = {
+	Subjugate_The_Kingdom_of_Orleans_FRP  = {
 		icon = mission_build_up_to_force_limit
 		required_missions = {  } #None
 		position = 1
@@ -153,20 +151,19 @@ Paris_Unification_3 = {
 			has_discovered = ROOT
 		}
 		trigger = {
-		184 = {
-                type = all
-                owned_by = ROOT
-            }
+			184 = {
+				owned_by = ROOT
+			}
 
 		}
 		effect = {
-				create_union = FRO
-				add_legitimacy = 10
-				FRO = {
-					remove_historical_rival = FRP
-				}
+			create_union = FRO
+			add_legitimacy = 10
+			FRO = {
+				remove_historical_rival = FRP
 			}
 		}
+	}
 
 
 }
@@ -178,9 +175,9 @@ Paris_economy = {
 	generic = no
 	ai = yes
 	potential = {
-	OR = {
-		tag = FRP
-		was_tag = FRP
+		OR = {
+			tag = FRP
+			was_tag = FRP
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -196,22 +193,22 @@ Paris_economy = {
 		}
 		trigger = {
 			168  = {
-			has_building = barracks
+				has_building = barracks
 			}
 
 		}
 		effect = {
-		add_country_modifier = {
-			name = "norman_guard"
-			duration = -1
-		}
-		168 = {
-			add_province_modifier = {
-			 name = "norman_base"
-			 duration = -1
+			add_country_modifier = {
+				name = "norman_guard"
+				duration = -1
+			}
+			168 = {
+				add_province_modifier = {
+					name = "norman_base"
+					duration = -1
+				}
 			}
 		}
-	}
 	}
 
 	accept_Britanny = {
@@ -228,56 +225,56 @@ Paris_economy = {
 		}
 		trigger = {
 			170 = {
-			 NOT = {local_autonomy = 5}
-			 NOT = {unrest = 0}
+				NOT = {local_autonomy = 5}
+				NOT = {unrest = 0}
 			}
 			171 = {
-			 NOT = {local_autonomy = 5}
-			 NOT = {unrest = 0}
+				NOT = {local_autonomy = 5}
+				NOT = {unrest = 0}
 			}
 			169 = {
-			 NOT = {local_autonomy = 5}
-			 NOT = {unrest = 0}
+				NOT = {local_autonomy = 5}
+				NOT = {unrest = 0}
 			}
 			4384 = {
-			 NOT = {local_autonomy = 5}
-			 NOT = {unrest = 0}
+				NOT = {local_autonomy = 5}
+				NOT = {unrest = 0}
 			}
 		}
 		effect = {
-		add_country_modifier = {
-			name = "accept_the_celts"
-			duration = -1
-		}
+			add_country_modifier = {
+				name = "accept_the_celts"
+				duration = -1
+			}
 		}
 	}
 
 	city_of_light = {
-	icon = mission_eastern_european_city
-	required_missions = {  } #None
-	position = 3
-	provinces_to_highlight = {
-		OR = {
-			province_id = 183
+		icon = mission_eastern_european_city
+		required_missions = {  } #None
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				province_id = 183
+			}
 		}
-	}
-	trigger = {
-		183  = {
-			development = 35
+		trigger = {
+			183  = {
+				development = 35
 
+			}
 		}
-	}
-	effect = {
+		effect = {
 
-	183 = {
-		add_base_tax = 5
-		add_base_production = 5
-		add_base_production = 5
-	}
-	add_country_modifier = {
-		name = "frp_city_of_light"
-		duration = -1
-	}
-	}
+			183 = {
+				add_base_tax = 5
+				add_base_production = 5
+				add_base_production = 5
+			}
+			add_country_modifier = {
+				name = "frp_city_of_light"
+				duration = -1
+			}
+		}
 	}
 }

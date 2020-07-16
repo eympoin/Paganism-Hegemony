@@ -297,10 +297,6 @@ hispania_unification_final{
 		position = 6
 		trigger = {
 			iberia_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
 				country_or_non_sovereign_subject_holds = TRC
 			}
 		}
@@ -472,11 +468,15 @@ expand_eastward{
 		}
 		effect{
 			emilia_romagna_area = {
-				type = all
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
 				add_permanent_claim = TRC
 			}
 			central_italy_area{
-				type = all
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
 				add_permanent_claim = TRC
 			}
 		}

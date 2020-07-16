@@ -685,6 +685,11 @@ released_us_freely = {
 	yearly_decay = 1
 }
 
+opinion_left_hre = {
+	opinion = -50
+	yearly_decay = 1
+}
+
 fightinginside_realm = {
 	opinion = -25
 	yearly_decay = 1

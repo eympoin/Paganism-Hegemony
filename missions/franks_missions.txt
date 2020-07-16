@@ -223,7 +223,6 @@ take_south_gallia = {
 
 		effect = {
 			every_owned_province = {
-				type = all
 				limit = {
 					culture = burgond
 				}

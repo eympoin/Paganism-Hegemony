@@ -297,7 +297,7 @@ incident_trade_competitor = {
 		always = no
 	}
 
-	0 = { do nothing
+	0 = { #do nothing
 		factor = 3
 	}
 

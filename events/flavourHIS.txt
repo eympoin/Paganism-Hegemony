@@ -120,51 +120,67 @@ country_event = {
 		}
 		4150 = {
 			cede_province = LUS
+			remove_core = BAE
 		}
 		229 = {
 			cede_province = LUS
+			remove_core = BAE
 		}
 		230 = {
 			cede_province = LUS
+			remove_core = BAE
 		}
 		218 = {
 			cede_province = LUS
+			remove_core = BAE
 		}
 		216 = {
 			cede_province = LUS
+			remove_core = BAE
 		}
 		4788= {
 			cede_province = LUS
+			remove_core = BAE
 		}
 		1747 = {
 			cede_province = LUS
+			remove_core = BAE
 		}
 		2755 = {
 			cede_province = TRC
+			remove_core = BAE
 		}
 		2990 = {
 			cede_province = TRC
+			remove_core = BAE
 		}
 		4550 = {
 			cede_province = TRC
+			remove_core = BAE
 		}
 		220 = {
 			cede_province = CTH
+			remove_core = BAE
 		}
 		221 = {
 			cede_province = CTH
+			remove_core = BAE
 		}
 		1750 = {
 			cede_province = CTH
+			remove_core = BAE
 		}
 		4549 = {
 			cede_province = CTH
+			remove_core = BAE
 		}
 		215 = {
 			cede_province = GAL
+			remove_core = BAE
 		}
 		4789 = {
 			cede_province = GAL
+			remove_core = BAE
 		}
 		add_truce_with = TRC
 		add_truce_with = CTH
@@ -207,46 +223,60 @@ country_event = {
 		}
 		4150 = {
 			cede_province = LUS
+			remove_core = BAE
 		}
 		229 = {
 			cede_province = LUS
+			remove_core = BAE
 		}
 		230 = {
 			cede_province = LUS
+			remove_core = BAE
 		}
 		218 = {
 			cede_province = LUS
+			remove_core = BAE
 		}
 		216 = {
 			cede_province = LUS
+			remove_core = BAE
 		}
 		1747 = {
 			cede_province = LUS
+			remove_core = BAE
 		}
 		4788 = {
 			cede_province = LUS
+			remove_core = BAE
 		}
 		2755 = {
 			cede_province = TRC
+			remove_core = BAE
 		}
 
 		2990 = {
 			cede_province = TRC
+			remove_core = BAE
 		}
 		4550 = {
 			cede_province = TRC
+			remove_core = BAE
 		}
 		220 = {
 			cede_province = CTH
+			remove_core = BAE
 		}
 		221 = {
 			cede_province = CTH
+			remove_core = BAE
 		}
 		1750 = {
 			cede_province = CTH
+			remove_core = BAE
 		}
 		4549 = {
 			cede_province = CTH
+			remove_core = BAE
 		}
 		2751 = {
 			cede_province = CTH
@@ -268,9 +298,11 @@ country_event = {
 		}
 		215 = {
 			cede_province = GAL
+			remove_core = BAE
 		}
 
 		4789 = {
+			remove_core = BAE
 			cede_province = GAL
 		}
 		TRC = { country_event = { id = flavor_trc.2 } }

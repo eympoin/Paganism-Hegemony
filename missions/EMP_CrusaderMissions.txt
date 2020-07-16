@@ -101,7 +101,7 @@ EMP_crusader_2 = {
 		}
 		trigger = {
 			is_subject = no
-			at_peace = yes
+			is_at_war = no
 			stability = 2
 			prestige = 20
 			2313 = {
@@ -145,7 +145,7 @@ EMP_crusader_3 = {
 		}
 		trigger = {
 			is_subject = no
-			at_peace = yes
+			is_at_war = no
 			total_development = 100
 		}
 		effect = {
@@ -233,8 +233,13 @@ EMP_crusader_3 = {
 		}
 		trigger = {
 			patriarch_authority = 0.5
-			ptolemaic = { accepted_culture = ROOT }
-			syrian = { accepted_culture = ROOT }
+			any_owned_province = {
+				OR = {
+					culture = ptolemaic
+					culture = syrian
+				}
+				has_owner_accepted_culture = no
+			}
 			aleppo_area = {
 				type = all
 				owned_by = KOJ
@@ -301,7 +306,7 @@ EMP_crusader_4 = {
 		provinces_to_highlight = {  }
 		trigger = {
 			is_subject = no
-			at_peace = yes
+			is_at_war = no
 			stability = 2
 			prestige = 20
 			379 = { has_state_patriach = yes }
@@ -318,7 +323,7 @@ EMP_crusader_4 = {
 		}
 		trigger = {
 			is_subject = no
-			at_peace = yes
+			is_at_war = no
 			stability = 2
 			prestige = 20
 			358 = {

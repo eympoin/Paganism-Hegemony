@@ -46,15 +46,12 @@ Revenge = {
     }
     trigger = {
       195 = {
-        type = all
         owned_by  = BOR
       }
       4697 = {
-        type = all
         owned_by  = BOR
       }
       204 = {
-        type = all
         owned_by  = BOR
       }
     }
@@ -143,571 +140,573 @@ attack_franks = {
   chaos_in_wfr = {
     icon = mission_noble_council
     required_missions = {}
-    position = 1
-    provinces_to_highlight = {
-      owned_by = FRP
-      culture = breton
-    }
-    trigger = {
-    OR = {
-      NOT = {exists = FRP}
-      has_spy_network_in = {
-        who = FRP
-        value = 75
-      }
-      }
-    }
-    effect = {
-      FRP = {
-        limit = {
-        was_player = no
-        }
-        every_owned_province = {
-          limit = {
-            culture = breton
-          }
-          cede_province = BRI
-        }
-      }
-      create_alliance = BRI
-    }
-  }
-  control_of_the_loire = {
-    icon = mission_hanseatic_city
-    required_missions = {chaos_in_wfr}
-    position = 2
-    provinces_to_highlight = {
-      OR = {
-        area = loire_area
-        area = orleans_area
-      }
-      OR = {
-        is_city = no
-        NOT = { owned_by = ROOT }
-      }
-      has_discovered = ROOT
-    }
-    trigger = {
-      loire_area = {
-        type = all
-        owned_by  = BOR
-      }
-      orleans_area = {
-        type = all
-        owned_by  = BOR
-      }
-    }
-    effect = {
-      ile_de_france_area = {
-        limit = {
-          NOT = { owned_by = ROOT }
-        }
-        add_permanent_claim = BOR
-      }
-      normandy_area = {
-        limit = {
-          NOT = { owned_by = ROOT }
-        }
-        add_permanent_claim = BOR
-      }
-      if = {
-       limit = {
-        exists = BRI
-        BRI = { is_subject = no}
-       }
-       vassalize = BRI
-      }
-    }
-  }
-
-  master_of_northern_Gallia = {
-    icon = mission_unite_home_region
-    required_missions = {control_of_the_loire road_to_the_north_sea}
-    position = 3
-    provinces_to_highlight = {
-      OR = {
-        area = normandy_area
-        area = wallonia_area
-        area = ile_de_france_area
-        area = picardy_area
-        area = flanders_area
-        area = champagne_area
-        area = loire_area
-        area = orleans_area
-      }
-      OR = {
-        is_city = no
-        NOT = { owned_by = ROOT }
-      }
-      has_discovered = ROOT
-    }
-    trigger = {
-      normandy_area = {
-        type = all
-        owned_by  = BOR
-      }
-      ile_de_france_area = {
-        type = all
-        owned_by  = BOR
-      }
-      wallonia_area = {
-        type = all
-        owned_by  = BOR
-      }
-      champagne_area = {
-        type = all
-        owned_by  = BOR
-      }
-      picardy_area = {
-        type = all
-        owned_by  = BOR
-      }
-      flanders_area = {
-        type = all
-        owned_by  = BOR
-      }
-      loire_area = {
-        type = all
-        owned_by  = BOR
-      }
-      orleans_area = {
-        type = all
-        owned_by  = BOR
-      }
-    }
-    effect = {
-      add_adm_power = 100
-      192 = {
-        add_base_production = 2
-        add_base_manpower	 = 2
-        add_base_tax = 2
-      }
-    }
-  }
-  scourge_of_the_franks = {
-    icon = mission_conquer_50_development
-    required_missions = {master_of_northern_Gallia road_to_east_Francia}
-    position = 3
-    provinces_to_highlight = {
-      OR = {
-        region = france_region
-        region = north_german_region
-        region = south_german_region
-      }
-      OR = {
-        owned_by = FRO
-        owned_by = WFR
+      position = 1
+      provinces_to_highlight = {
         owned_by = FRP
-        owned_by = FRR
-        owned_by = FRV
-        owned_by = LOT
-        owned_by = FRK
-        owned_by = ALM
-        owned_by = FKN
-        owned_by = BAV
+        culture = breton
       }
-      has_discovered = ROOT
-    }
-    trigger = {
-      france_region = {
-        type = all
-        NOT = {owned_by = FRO}
-        NOT = {owned_by = WFR}
-        NOT = {owned_by = FRP}
-        NOT = {owned_by = FRV}
-        NOT = {owned_by = FRR}
-        NOT = {owned_by = LOT}
-        NOT = {owned_by = FRK}
-        NOT = {owned_by = FKN}
-        NOT = {owned_by = ALM}
-        NOT = {owned_by = BAV}
-        NOT = {owned_by = EAF}
-      }
-      north_german_region = {
-        type = all
-        NOT = {owned_by = FRO}
-        NOT = {owned_by = WFR}
-        NOT = {owned_by = FRP}
-        NOT = {owned_by = FRV}
-        NOT = {owned_by = FRR}
-        NOT = {owned_by = LOT}
-        NOT = {owned_by = FRK}
-        NOT = {owned_by = FKN}
-        NOT = {owned_by = ALM}
-        NOT = {owned_by = BAV}
-        NOT = {owned_by = EAF}
-      }
-      south_german_region = {
-        type = all
-        NOT = {owned_by = FRO}
-        NOT = {owned_by = WFR}
-        NOT = {owned_by = FRP}
-        NOT = {owned_by = FRV}
-        NOT = {owned_by = FRR}
-        NOT = {owned_by = LOT}
-        NOT = {owned_by = FRK}
-        NOT = {owned_by = FKN}
-        NOT = {owned_by = ALM}
-        NOT = {owned_by = BAV}
-        NOT = {owned_by = EAF}
-      }
-    }
-    effect = {
-      france_region = {
-        type = all
-        limit = {
-          owned_by = ROOT
-          OR = {
-            culture_group = frankish
-          }
-        }
-        change_culture = west-francian
-      }
-      north_german_region = {
-        type = all
-        limit = {
-          owned_by = ROOT
-          OR = {
-            culture_group = frankish
-          }
-        }
-        change_culture = west-francian
-      }
-      south_german_region = {
-        type = all
-        limit = {
-          owned_by = ROOT
-          OR = {
-            culture_group = frankish
-          }
-        }
-        change_culture = east-francian
-      }
-      add_accepted_culture = east-francian
-      set_government_rank = 3
-    }
-  }
-}
-
-
-attack_franks_2 = {
-  slot = 3
-  generic = no
-  ai = yes
-  potential = {
-    tag = BOR
-    NOT = { map_setup = map_setup_random }
-  }
-  control_champagne_fairs = {
-    icon = mission_trade_company_region_abroad
-    required_missions = {}
-    position = 1
-    provinces_to_highlight = {
-      OR = {
-        area = champagne_area
-      }
-      OR = {
-        is_city = no
-        NOT = { owned_by = ROOT }
-      }
-      has_discovered = ROOT
-    }
-    trigger = {
-      champagne_area = {
-        type = all
-        owned_by  = BOR
-      }
-    }
-    effect = {
-      186 = {
-        add_trade_modifier = {
-          who = root
-          duration = -1
-          power = 40
-          key = control_of_champagne_and_bourgogne_fairs
-        }
-      }
-    }
-  }
-
-  road_to_the_north_sea = {
-    icon = mission_establish_high_seas_navy
-    required_missions = {control_champagne_fairs}
-    position = 2
-    provinces_to_highlight = {
-      OR = {
-        area = picardy_area
-        area = flanders_area
-      }
-      OR = {
-        is_city = no
-        NOT = { owned_by = ROOT }
-      }
-      has_discovered = ROOT
-    }
-    trigger = {
-      flanders_area = {
-        type = all
-        owned_by  = BOR
-      }
-      picardy_area = {
-        type = all
-        owned_by  = BOR
-      }
-    }
-    effect = {
-      add_country_modifier = {
-        name = "navy_emphasis"
-        duration = 3650
-      }
-    }
-  }
-}
-
-
-east_francia = {
-  slot = 1
-  generic = no
-  ai = yes
-  potential = {
-    tag = BOR
-    NOT = { map_setup = map_setup_random }
-  }
-  sax_alliance = {
-    icon = mission_alliances
-    required_missions = {}
-    position = 1
-
-    trigger = {
-    OR = {
-      alliance_with = SAX
-      NOT = {exists = SAX}
-      }
-    }
-    effect = {
-      lorraine_area = {
-        limit = {
-          NOT = { owned_by = ROOT }
-        }
-        add_permanent_claim = BOR
-      }
-      alsace_area = {
-        limit = {
-          NOT = { owned_by = ROOT }
-        }
-        add_permanent_claim = BOR
-      }
-    }
-  }
-
-  road_to_east_Francia = {
-    icon = mission_conquer_50_development
-    required_missions = {sax_alliance}
-    position = 3
-    provinces_to_highlight = {
-      OR = {
-        area = lorraine_area
-        area = alsace_area
-      }
-      OR = {
-        is_city = no
-        NOT = { owned_by = ROOT }
-      }
-      has_discovered = ROOT
-    }
-    trigger = {
-      lorraine_area = {
-        type = all
-        owned_by  = BOR
-      }
-      alsace_area = {
-        type = all
-        owned_by  = BOR
-      }
-    }
-    effect = {
-      add_country_modifier = {
-        name = "lorraine_mines"
-        duration = -1
-      }
-    }
-  }
-}
-
-
-
-Italia_invasion = {
-  slot = 5
-  generic = no
-  ai = yes
-  potential = {
-    tag = BOR
-    NOT = { map_setup = map_setup_random }
-  }
-
-  helvetian_passage = {
-    icon = mission_build_up_to_force_limit
-    required_missions = {}
-    position = 1
-    provinces_to_highlight = {
-      OR = {
-        area = switzerland_area
-      }
-      OR = {
-        is_city = no
-        NOT = { owned_by = ROOT }
-      }
-      has_discovered = ROOT
-    }
-    trigger = {
-      switzerland_area = {
-        type = all
-        owned_by  = BOR
-      }
-    }
-    effect = {
-      add_country_modifier = {
-        name = "protected_mountains_passage"
-        duration = -1
-      }
-      205 = {
-        add_building = fort_15th
-      }
-      166 = {
-        add_building = fort_15th
-      }
-      piedmont_area = {
-        limit = {
-          NOT = { owned_by = ROOT }
-        }
-        add_permanent_claim = BOR
-      }
-      lombardy_area = {
-        limit = {
-          NOT = { owned_by = ROOT }
-        }
-        add_permanent_claim = BOR
-      }
-    }
-  }
-
-  riches_of_north_italy = {
-    icon = mission_war_chest
-    required_missions = {helvetian_passage}
-    position = 2
-    provinces_to_highlight = {
-      OR = {
-        area = lombardy_area
-        area = piedmont_area
-      }
-      OR = {
-        is_city = no
-        NOT = { owned_by = ROOT }
-      }
-      has_discovered = ROOT
-    }
-    trigger = {
-      lombardy_area = {
-        type = all
-        owned_by  = BOR
-      }
-      piedmont_area = {
-        type = all
-        owned_by  = BOR
-      }
-    }
-    effect = {
-      liguria_area = {
-        limit = {
-          NOT = { owned_by = ROOT }
-        }
-        add_permanent_claim = BOR
-      }
-      venetia_area = {
-        limit = {
-          NOT = { owned_by = ROOT }
-        }
-        add_permanent_claim = BOR
-      }
-      po_valley_area = {
-        limit = {
-          NOT = { owned_by = ROOT }
-        }
-        add_permanent_claim = BOR
-      }
-      192 = {
-        add_base_production = 1
-        add_base_manpower	 = 1
-        add_base_tax = 1
-      }
-    }
-  }
-}
-
-
-economic_bor = {
-  slot = 5
-  generic = no
-  ai = yes
-  potential = {
-    tag = BOR
-    NOT = { map_setup = map_setup_random }
-  }
-
-  bourgogne_fairs = {
-    icon = mission_high_income
-    required_missions = {}
-    position = 3
-    provinces_to_highlight = {
-      OR = {
-        province_id = 192
-      }
-      NOT = {has_building = marketplace}
-      owned_by = ROOT
-      has_discovered = ROOT
-    }
-    trigger = {
-    192 = {
-      has_most_province_trade_power = BOR
-      }
-      192 = {
-       has_building = marketplace
-      }
-
-    }
-    effect = {
-    add_country_modifier = {
-      name = "merchant_from_all_europe"
-      duration = -1
-    }
-    }
-  }
-
-
-  mountains_mines = {
-    icon = mission_have_manufactories
-    required_missions = {bourgogne_fairs}
-    position = 4
-    provinces_to_highlight = {
+      trigger = {
         OR = {
-          area = romandie_area
-          area = massif_central_area
+          NOT = {exists = FRP}
+          has_spy_network_in = {
+            who = FRP
+            value = 75
+          }
         }
-        owned_by = ROOT
-        trade_goods = iron
+      }
+      effect = {
+        FRP = {
+          if = {
+            limit = {
+              was_player = no
+            }
+            every_owned_province = {
+              limit = {
+                culture = breton
+              }
+              cede_province = BRI
+            }
+            create_alliance = BRI
+          }
+          else = {
+            add_dip_power = 100
+          }
+        }
+      }
     }
-    trigger = {
-    any_owned_province = {
-      has_building = weapons
-      trade_goods = iron
+    control_of_the_loire = {
+      icon = mission_hanseatic_city
+      required_missions = {chaos_in_wfr}
+      position = 2
+      provinces_to_highlight = {
+        OR = {
+          area = loire_area
+          area = orleans_area
+        }
+        OR = {
+          is_city = no
+          NOT = { owned_by = ROOT }
+        }
+        has_discovered = ROOT
+      }
+      trigger = {
+        loire_area = {
+          type = all
+          owned_by  = BOR
+        }
+        orleans_area = {
+          type = all
+          owned_by  = BOR
+        }
+      }
+      effect = {
+        ile_de_france_area = {
+          limit = {
+            NOT = { owned_by = ROOT }
+          }
+          add_permanent_claim = BOR
+        }
+        normandy_area = {
+          limit = {
+            NOT = { owned_by = ROOT }
+          }
+          add_permanent_claim = BOR
+        }
+        if = {
+          limit = {
+            exists = BRI
+            BRI = { is_subject = no}
+          }
+          vassalize = BRI
+        }
+      }
     }
+
+    master_of_northern_Gallia = {
+      icon = mission_unite_home_region
+      required_missions = {control_of_the_loire road_to_the_north_sea}
+      position = 3
+      provinces_to_highlight = {
+        OR = {
+          area = normandy_area
+          area = wallonia_area
+          area = ile_de_france_area
+          area = picardy_area
+          area = flanders_area
+          area = champagne_area
+          area = loire_area
+          area = orleans_area
+        }
+        OR = {
+          is_city = no
+          NOT = { owned_by = ROOT }
+        }
+        has_discovered = ROOT
+      }
+      trigger = {
+        normandy_area = {
+          type = all
+          owned_by  = BOR
+        }
+        ile_de_france_area = {
+          type = all
+          owned_by  = BOR
+        }
+        wallonia_area = {
+          type = all
+          owned_by  = BOR
+        }
+        champagne_area = {
+          type = all
+          owned_by  = BOR
+        }
+        picardy_area = {
+          type = all
+          owned_by  = BOR
+        }
+        flanders_area = {
+          type = all
+          owned_by  = BOR
+        }
+        loire_area = {
+          type = all
+          owned_by  = BOR
+        }
+        orleans_area = {
+          type = all
+          owned_by  = BOR
+        }
+      }
+      effect = {
+        add_adm_power = 100
+        192 = {
+          add_base_production = 2
+          add_base_manpower	 = 2
+          add_base_tax = 2
+        }
+      }
     }
-    effect = {
-    add_country_modifier = {
-      name = "finest_iron"
-      duration = -1
-    }
+    scourge_of_the_franks = {
+      icon = mission_conquer_50_development
+      required_missions = {master_of_northern_Gallia road_to_east_Francia}
+      position = 3
+      provinces_to_highlight = {
+        OR = {
+          region = france_region
+          region = north_german_region
+          region = south_german_region
+        }
+        OR = {
+          owned_by = FRO
+          owned_by = WFR
+          owned_by = FRP
+          owned_by = FRR
+          owned_by = FRV
+          owned_by = LOT
+          owned_by = FRK
+          owned_by = ALM
+          owned_by = FKN
+          owned_by = BAV
+        }
+        has_discovered = ROOT
+      }
+      trigger = {
+        france_region = {
+          type = all
+          NOT = {owned_by = FRO}
+          NOT = {owned_by = WFR}
+          NOT = {owned_by = FRP}
+          NOT = {owned_by = FRV}
+          NOT = {owned_by = FRR}
+          NOT = {owned_by = LOT}
+          NOT = {owned_by = FRK}
+          NOT = {owned_by = FKN}
+          NOT = {owned_by = ALM}
+          NOT = {owned_by = BAV}
+          NOT = {owned_by = EAF}
+        }
+        north_german_region = {
+          type = all
+          NOT = {owned_by = FRO}
+          NOT = {owned_by = WFR}
+          NOT = {owned_by = FRP}
+          NOT = {owned_by = FRV}
+          NOT = {owned_by = FRR}
+          NOT = {owned_by = LOT}
+          NOT = {owned_by = FRK}
+          NOT = {owned_by = FKN}
+          NOT = {owned_by = ALM}
+          NOT = {owned_by = BAV}
+          NOT = {owned_by = EAF}
+        }
+        south_german_region = {
+          type = all
+          NOT = {owned_by = FRO}
+          NOT = {owned_by = WFR}
+          NOT = {owned_by = FRP}
+          NOT = {owned_by = FRV}
+          NOT = {owned_by = FRR}
+          NOT = {owned_by = LOT}
+          NOT = {owned_by = FRK}
+          NOT = {owned_by = FKN}
+          NOT = {owned_by = ALM}
+          NOT = {owned_by = BAV}
+          NOT = {owned_by = EAF}
+        }
+      }
+      effect = {
+        france_region = {
+          limit = {
+            owned_by = ROOT
+            OR = {
+              culture_group = frankish
+            }
+          }
+          change_culture = west-francian
+        }
+        north_german_region = {
+          limit = {
+            owned_by = ROOT
+            OR = {
+              culture_group = frankish
+            }
+          }
+          change_culture = west-francian
+        }
+        south_german_region = {
+          limit = {
+            owned_by = ROOT
+            OR = {
+              culture_group = frankish
+            }
+          }
+          change_culture = east-francian
+        }
+        add_accepted_culture = east-francian
+        set_government_rank = 3
+      }
     }
   }
 
-}
+
+  attack_franks_2 = {
+    slot = 3
+    generic = no
+    ai = yes
+    potential = {
+      tag = BOR
+      NOT = { map_setup = map_setup_random }
+    }
+    control_champagne_fairs = {
+      icon = mission_trade_company_region_abroad
+      required_missions = {}
+        position = 1
+        provinces_to_highlight = {
+          OR = {
+            area = champagne_area
+          }
+          OR = {
+            is_city = no
+            NOT = { owned_by = ROOT }
+          }
+          has_discovered = ROOT
+        }
+        trigger = {
+          champagne_area = {
+            type = all
+            owned_by  = BOR
+          }
+        }
+        effect = {
+          186 = {
+            add_trade_modifier = {
+              who = root
+              duration = -1
+              power = 40
+              key = control_of_champagne_and_bourgogne_fairs
+            }
+          }
+        }
+      }
+
+      road_to_the_north_sea = {
+        icon = mission_establish_high_seas_navy
+        required_missions = {control_champagne_fairs}
+        position = 2
+        provinces_to_highlight = {
+          OR = {
+            area = picardy_area
+            area = flanders_area
+          }
+          OR = {
+            is_city = no
+            NOT = { owned_by = ROOT }
+          }
+          has_discovered = ROOT
+        }
+        trigger = {
+          flanders_area = {
+            type = all
+            owned_by  = BOR
+          }
+          picardy_area = {
+            type = all
+            owned_by  = BOR
+          }
+        }
+        effect = {
+          add_country_modifier = {
+            name = "navy_emphasis"
+            duration = 3650
+          }
+        }
+      }
+    }
+
+
+    east_francia = {
+      slot = 1
+      generic = no
+      ai = yes
+      potential = {
+        tag = BOR
+        NOT = { map_setup = map_setup_random }
+      }
+      sax_alliance = {
+        icon = mission_alliances
+        required_missions = {}
+          position = 1
+
+          trigger = {
+            OR = {
+              alliance_with = SAX
+              NOT = {exists = SAX}
+            }
+          }
+          effect = {
+            lorraine_area = {
+              limit = {
+                NOT = { owned_by = ROOT }
+              }
+              add_permanent_claim = BOR
+            }
+            alsace_area = {
+              limit = {
+                NOT = { owned_by = ROOT }
+              }
+              add_permanent_claim = BOR
+            }
+          }
+        }
+
+        road_to_east_Francia = {
+          icon = mission_conquer_50_development
+          required_missions = {sax_alliance}
+          position = 3
+          provinces_to_highlight = {
+            OR = {
+              area = lorraine_area
+              area = alsace_area
+            }
+            OR = {
+              is_city = no
+              NOT = { owned_by = ROOT }
+            }
+            has_discovered = ROOT
+          }
+          trigger = {
+            lorraine_area = {
+              type = all
+              owned_by  = BOR
+            }
+            alsace_area = {
+              type = all
+              owned_by  = BOR
+            }
+          }
+          effect = {
+            add_country_modifier = {
+              name = "lorraine_mines"
+              duration = -1
+            }
+          }
+        }
+      }
+
+
+
+      Italia_invasion = {
+        slot = 5
+        generic = no
+        ai = yes
+        potential = {
+          tag = BOR
+          NOT = { map_setup = map_setup_random }
+        }
+
+        helvetian_passage = {
+          icon = mission_build_up_to_force_limit
+          required_missions = {}
+            position = 1
+            provinces_to_highlight = {
+              OR = {
+                area = switzerland_area
+              }
+              OR = {
+                is_city = no
+                NOT = { owned_by = ROOT }
+              }
+              has_discovered = ROOT
+            }
+            trigger = {
+              switzerland_area = {
+                type = all
+                owned_by  = BOR
+              }
+            }
+            effect = {
+              add_country_modifier = {
+                name = "protected_mountains_passage"
+                duration = -1
+              }
+              205 = {
+                add_building = fort_15th
+              }
+              166 = {
+                add_building = fort_15th
+              }
+              piedmont_area = {
+                limit = {
+                  NOT = { owned_by = ROOT }
+                }
+                add_permanent_claim = BOR
+              }
+              lombardy_area = {
+                limit = {
+                  NOT = { owned_by = ROOT }
+                }
+                add_permanent_claim = BOR
+              }
+            }
+          }
+
+          riches_of_north_italy = {
+            icon = mission_war_chest
+            required_missions = {helvetian_passage}
+            position = 2
+            provinces_to_highlight = {
+              OR = {
+                area = lombardy_area
+                area = piedmont_area
+              }
+              OR = {
+                is_city = no
+                NOT = { owned_by = ROOT }
+              }
+              has_discovered = ROOT
+            }
+            trigger = {
+              lombardy_area = {
+                type = all
+                owned_by  = BOR
+              }
+              piedmont_area = {
+                type = all
+                owned_by  = BOR
+              }
+            }
+            effect = {
+              liguria_area = {
+                limit = {
+                  NOT = { owned_by = ROOT }
+                }
+                add_permanent_claim = BOR
+              }
+              venetia_area = {
+                limit = {
+                  NOT = { owned_by = ROOT }
+                }
+                add_permanent_claim = BOR
+              }
+              po_valley_area = {
+                limit = {
+                  NOT = { owned_by = ROOT }
+                }
+                add_permanent_claim = BOR
+              }
+              192 = {
+                add_base_production = 1
+                add_base_manpower	 = 1
+                add_base_tax = 1
+              }
+            }
+          }
+        }
+
+
+        economic_bor = {
+          slot = 5
+          generic = no
+          ai = yes
+          potential = {
+            tag = BOR
+            NOT = { map_setup = map_setup_random }
+          }
+
+          bourgogne_fairs = {
+            icon = mission_high_income
+            required_missions = {}
+              position = 3
+              provinces_to_highlight = {
+                OR = {
+                  province_id = 192
+                }
+                NOT = {has_building = marketplace}
+                owned_by = ROOT
+                has_discovered = ROOT
+              }
+              trigger = {
+                192 = {
+                  has_most_province_trade_power = BOR
+                }
+                192 = {
+                  has_building = marketplace
+                }
+
+              }
+              effect = {
+                add_country_modifier = {
+                  name = "merchant_from_all_europe"
+                  duration = -1
+                }
+              }
+            }
+
+
+            mountains_mines = {
+              icon = mission_have_manufactories
+              required_missions = {bourgogne_fairs}
+              position = 4
+              provinces_to_highlight = {
+                OR = {
+                  area = romandie_area
+                  area = massif_central_area
+                }
+                owned_by = ROOT
+                trade_goods = iron
+              }
+              trigger = {
+                any_owned_province = {
+                  has_building = weapons
+                  trade_goods = iron
+                }
+              }
+              effect = {
+                add_country_modifier = {
+                  name = "finest_iron"
+                  duration = -1
+                }
+              }
+            }
+
+          }

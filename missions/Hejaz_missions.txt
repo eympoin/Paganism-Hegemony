@@ -14,55 +14,50 @@ Hejaz_Unification_1 = {
 		}
 		effect = {
 
-		add_country_modifier = {
-				name = "Islamic_faith"
-				duration = 7300
-			}
-
-		add_prestige = 10
-		add_country_modifier = {
+			add_prestige = 10
+			add_country_modifier = {
 				name = "Sunni_missionary_strength"
 				duration = 3650
 			}
 		}
 
-		}
+	}
 
 	Secure_the_red_sea = {
 		icon = mission_bedouins
 		required_missions = {Prepare_Invasion} #None
 		position = 3
-			provinces_to_highlight = {
-					OR = {
-					area = medina_area
-					area = asir_area
-					area = tihama_al_yemen_area
-					}
-				}
+		provinces_to_highlight = {
+			OR = {
+				area = medina_area
+				area = asir_area
+				area = tihama_al_yemen_area
+			}
+		}
 		trigger = {
-		medina_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = HED
-            }
-		asir_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = HED
-            }
-		tihama_al_yemen_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = HED
-            }
+			medina_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = HED
+			}
+			asir_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = HED
+			}
+			tihama_al_yemen_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = HED
+			}
 		}
-			effect = {
-				add_country_modifier = {
-						name = "hegemonic_ambition"
-						duration = 3650
-					}
-				add_prestige = 10
-				add_mil_power = 100
+		effect = {
+			add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 3650
+			}
+			add_prestige = 10
+			add_mil_power = 100
 
-				}
 		}
+	}
 
 }
 #----------------------------------------
@@ -79,150 +74,152 @@ Hejaz_Unification_2 = {
 		icon = mission_bedouins
 		required_missions = {} #None
 		position = 1
-			provinces_to_highlight = {
-					OR = {
-					area = medina_area
-					}
-				}
-			trigger = {
-			medina_area = {
-									type = all
-									country_or_non_sovereign_subject_holds = HED
-							}
+		provinces_to_highlight = {
+			OR = {
+				area = medina_area
 			}
-			effect = {
+		}
+		trigger = {
+			medina_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = HED
+			}
+		}
+		effect = {
 			add_country_modifier = {
-					name = "thriving_arms_industry"
-					duration = 3650
-				}
+				name = "thriving_arms_industry"
+				duration = 3650
+			}
 
-				}
+		}
+	}
+
+	Prepare_Invasion = {
+		icon = mission_bedouins
+		required_missions = {Unite_Muslim  } #None
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				province_id = 384
+				province_id = 2329
+			}
 		}
 
-		Prepare_Invasion = {
-			icon = mission_bedouins
-			required_missions = {Unite_Muslim  } #None
-			position = 2
-			provinces_to_highlight = {
-					OR = {
-					province_id = 384
-					province_id = 2329
-					}
-				}
+		trigger = {
+			tag = HED
+			384 = {
+				has_building = temple
 
-				trigger = {
-					tag = HED
-						384 = {
-							 has_building = temple
-
-					}
-					2329 = {
-						 	has_building = temple
-
-				}
-					}
-						effect = {
-						add_country_modifier = {
-								name = "Prepare_for_War"
-								duration = 3650
-							}
-							qasim_area = {
-					                type = all
-					                add_permanent_claim = HED
-					            }
-
-							393 = { add_permanent_claim = ROOT }
-							2338 = { add_permanent_claim = ROOT }
-							yamamah_area = {
-													type = all
-													add_permanent_claim = HED
-											}
-							}
-				}
-		Unite_central_Tribes = {
-			icon = mission_bedouins
-			required_missions = {Prepare_Invasion} #None
-			position = 3
-			provinces_to_highlight = {
-					OR = {
-					area = yamamah_area
-					area = qasim_area
-					province_id = 393
-					province_id = 2338
-					}
-				}
-			trigger = {
-				qasim_area = {
-		                type = all
-		                country_or_non_sovereign_subject_holds = HED
-		            }
-				yamamah_area = {
-		                type = all
-		                country_or_non_sovereign_subject_holds = HED
-		            }
-				owns_or_non_sovereign_subject_of = 393
-				owns_or_non_sovereign_subject_of = 2338
-				}
-				effect = {
-				bahrain_area = {
-		                type = all
-		                add_permanent_claim = HED
-		            }
-				add_prestige = 10
-				add_treasury = 200
-				}
 			}
-		Unite_eastern_Tribes = {
-			icon = mission_bedouins
-			required_missions = {Unite_central_Tribes} #None
-			position = 4
-			provinces_to_highlight = {
-					OR = {
-					area = bahrain_area
-					area = pirate_coast_area
-					}
-				}
-				trigger = {
-				bahrain_area = {
-		                type = all
-		                country_or_non_sovereign_subject_holds = HED
-		            }
-				pirate_coast_area = {
-		                type = all
-		                country_or_non_sovereign_subject_holds = HED
-		            }
+			2329 = {
+				has_building = temple
 
-
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "Prepare_for_War"
+				duration = 3650
+			}
+			qasim_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
 				}
-					effect = {
-							394 = { add_center_of_trade_level = 1
-						}
-					}
-
-				}
-		Arabia = {
-			icon = mission_bedouins
-			required_missions = {Unite_eastern_Tribes Unite_southeast_TribesSecure_the_red_sea Unite_southeast_Tribes} #None
-			position = 5
-			trigger = {
+				add_permanent_claim = HED
 			}
 
-			effect = {
-				add_country_modifier = {
-					name = "rightful_dynasty"
-					duration = 3650
+			393 = { add_permanent_claim = ROOT }
+			2338 = { add_permanent_claim = ROOT }
+			yamamah_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
 				}
+				add_permanent_claim = HED
+			}
+		}
+	}
+	Unite_central_Tribes = {
+		icon = mission_bedouins
+		required_missions = {Prepare_Invasion} #None
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = yamamah_area
+				area = qasim_area
+				province_id = 393
+				province_id = 2338
+			}
+		}
+		trigger = {
+			qasim_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = HED
+			}
+			yamamah_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = HED
+			}
+			owns_or_non_sovereign_subject_of = 393
+			owns_or_non_sovereign_subject_of = 2338
+		}
+		effect = {
+			bahrain_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = HED
+			}
+			add_prestige = 10
+			add_treasury = 200
+		}
+	}
+	Unite_eastern_Tribes = {
+		icon = mission_bedouins
+		required_missions = {Unite_central_Tribes} #None
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = bahrain_area
+				area = pirate_coast_area
+			}
+		}
+		trigger = {
+			bahrain_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = HED
+			}
+			pirate_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = HED
+			}
+
+
+		}
+		effect = {
+			394 = { add_center_of_trade_level = 1
+			}
+		}
+
+	}
+	Arabia = {
+		icon = mission_bedouins
+		required_missions = {Unite_eastern_Tribes Unite_southeast_TribesSecure_the_red_sea Unite_southeast_Tribes} #None
+		position = 5
+		trigger = {
+		}
+
+		effect = {
 			385 = {
-						add_base_tax = 3
-						add_base_production = 3
-						add_base_manpower = 5
-					}
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 5
+			}
 			add_mil_power = 100
 			add_adm_power = 100
 			add_dip_power = 100
-			}
-
 		}
+
+	}
 
 }
 #------------------------------------
@@ -235,69 +232,75 @@ Hejaz_Unification_3 = {
 		NOT = { map_setup = map_setup_random }
 	}
 
-		Unite_yemen = {
-			icon = mission_bedouins
-			required_missions = {Prepare_Invasion} #None
-			position = 3
-			provinces_to_highlight = {
-					OR = {
-					area = upper_yemen_area
-					}
-				}
-			trigger = {
+	Unite_yemen = {
+		icon = mission_bedouins
+		required_missions = {Prepare_Invasion} #None
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = upper_yemen_area
+			}
+		}
+		trigger = {
 
 			upper_yemen_area = {
-	                type = all
-	                country_or_non_sovereign_subject_holds = HED
-	            }
+				type = all
+				country_or_non_sovereign_subject_holds = HED
 			}
-			effect = {
+		}
+		effect = {
 			hadramut_area = {
-	                type = all
-	                add_permanent_claim = HED
-	            }
-		 yemen_area = {
-									type = all
-									add_permanent_claim = HED
-							}
-		add_country_modifier = {
-					name = "growth_of_capital"
-					duration = 3650
-							}
-
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = HED
+			}
+			yemen_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = HED
+			}
+			add_country_modifier = {
+				name = "growth_of_capital"
+				duration = 3650
 			}
 
 		}
+
+	}
 	Unite_southeast_Tribes = {
 		icon = mission_bedouins
 		required_missions = {Unite_yemen} #None
 		position = 4
 		provinces_to_highlight = {
-				OR = {
+			OR = {
 				area = mahra_area
 				area = dhofar_area
-				}
 			}
+		}
 		trigger = {
-		mahra_area = {
-                type = all
-                country_or_non_sovereign_subject_holds = HED
-            }
-		dhofar_area  = {
-                type = all
-                country_or_non_sovereign_subject_holds = HED
-            }
+			mahra_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = HED
+			}
+			dhofar_area  = {
+				type = all
+				country_or_non_sovereign_subject_holds = HED
+			}
 
 		}
 		effect = {
-		oman_area  = {
-                type = all
-                add_permanent_claim = HED
-            }
-			add_country_modifier = {
-					name = "South_Arabia_integrate"
-					duration = 3650
+			oman_area  = {
+				limit = {
+					NOT = { owned_by = ROOT }
 				}
+				add_permanent_claim = HED
+			}
+			add_country_modifier = {
+				name = "South_Arabia_integrate"
+				duration = 3650
+			}
 
 		}
 

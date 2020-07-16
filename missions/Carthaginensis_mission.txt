@@ -69,7 +69,7 @@ hispania_unification_1_cth{
 			}
 		}
 	}
- control_of_the_eastern_coast_cth = {
+	control_of_the_eastern_coast_cth = {
 		icon = mission_eastern_european_city
 		required_missions = {victory_of_the_coalition_CTH a_new_navy}
 		position = 2
@@ -473,11 +473,15 @@ expand_eastward{
 		}
 		effect{
 			emilia_romagna_area = {
-				type = all
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
 				add_permanent_claim = CTH
 			}
 			central_italy_area{
-				type = all
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
 				add_permanent_claim = CTH
 			}
 		}

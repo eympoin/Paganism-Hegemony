@@ -30,7 +30,7 @@ hispania_unification_1_bae{
 				country_or_non_sovereign_subject_holds = BAE
 			}
 			lower_andalucia_area = {
-			type = all
+				type = all
 				country_or_non_sovereign_subject_holds = BAE
 			}
 			upper_andalucia_area = {
@@ -73,9 +73,9 @@ hispania_unification_1_bae{
 			baleares_area = {
 				add_permanent_claim = BAE
 			}
-			}
 		}
-		allies_needed = {
+	}
+	allies_needed = {
 		icon = mission_eastern_european_city
 		required_missions = { defeat_of_the_coalition } #None
 		position = 2
@@ -88,8 +88,8 @@ hispania_unification_1_bae{
 				duration = 5475
 			}
 		}
-		}
-		eastern_counter_attack{
+	}
+	eastern_counter_attack{
 		icon = mission_eastern_european_city
 		required_missions = { allies_needed } #None
 		position = 3
@@ -109,7 +109,7 @@ hispania_unification_1_bae{
 		}
 		effect{
 			add_country_modifier = {
-				name = "western_mediterranean"
+				name = "western_mediterranean_control"
 				duration = 5475
 			}
 			corsica_sardinia_area = {
@@ -130,7 +130,7 @@ hispania_unification_final_bae{
 	}
 	has_country_shield = yes
 
-		unify_hispania_bae = {
+	unify_hispania_bae = {
 		icon = mission_eastern_european_city
 		required_missions = {eastern_counter_attack western_counter_attack}
 		position = 4
@@ -141,8 +141,8 @@ hispania_unification_final_bae{
 			}
 		}
 		effect = {
-		add_prestige = 20
-		add_stability = 1
+			add_prestige = 20
+			add_stability = 1
 			capital_scope = {
 				add_base_tax = 2
 				add_base_production = 2
@@ -186,11 +186,11 @@ hispania_unification_2_bae{
 				type = all
 				country_or_non_sovereign_subject_holds = BAE
 			}
-	}
-	effect{
-		add_country_modifier = {
-		name = "through_the_atlantic"
-		duration = 5475
+		}
+		effect{
+			add_country_modifier = {
+				name = "through_the_atlantic"
+				duration = 5475
 			}
 		}
 	}
@@ -216,8 +216,8 @@ western_control{
 				type = all
 				country_or_non_sovereign_subject_holds = BAE
 			}
-	}
-	effect{
+		}
+		effect{
 			sicily_area = {
 				add_permanent_claim = BAE
 			}
@@ -240,8 +240,8 @@ western_control{
 				type = all
 				country_or_non_sovereign_subject_holds = BAE
 			}
-	}
-	effect{
+		}
+		effect{
 			emilia_romagna_area = {
 				add_permanent_claim = BAE
 			}
@@ -261,8 +261,8 @@ western_control{
 				type = all
 				country_or_non_sovereign_subject_holds = BAE
 			}
-	}
-	effect{
+		}
+		effect{
 			add_adm_power	= 100
 			add_dip_power	= 100
 			add_mil_power	= 100
@@ -303,16 +303,24 @@ western_control_2{
 				type = all
 				country_or_non_sovereign_subject_holds = BAE
 			}
-	}
-	effect{
+		}
+		effect{
 			sicily_area = {
-				type = all
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
 				add_permanent_claim = BAE
 			}
 			liguria_area{
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
 				add_permanent_claim = BAE
 			}
 			tuscany_area{
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
 				add_permanent_claim = BAE
 			}
 		}
@@ -326,12 +334,12 @@ western_control_2{
 				type = all
 				country_or_non_sovereign_subject_holds = BAE
 			}
-	}
-	effect{
+		}
+		effect{
 			add_dip_power = 100
 			add_country_modifier = {
-					name = "dominant_trade_hub"
-					duration = 3650
+				name = "dominant_trade_hub"
+				duration = 3650
 			}
 		}
 	}
@@ -347,7 +355,7 @@ western_control_3{
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-		a_second_foot_hold{
+	a_second_foot_hold{
 		icon = mission_eastern_european_city
 		required_missions = { a_first_foot_hold } #None
 		position = 5
@@ -356,10 +364,12 @@ western_control_3{
 				type = all
 				country_or_non_sovereign_subject_holds = BAE
 			}
-	}
-	effect{
+		}
+		effect{
 			calabria_area = {
-				type = all
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
 				add_permanent_claim = BAE
 			}
 		}
@@ -374,10 +384,12 @@ western_control_3{
 				type = all
 				country_or_non_sovereign_subject_holds = BAE
 			}
-	}
-	effect{
+		}
+		effect{
 			naples_area = {
-				type = all
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
 				add_permanent_claim = BAE
 			}
 		}

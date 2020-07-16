@@ -646,6 +646,7 @@
  invade_basque_title:0 "Invade the Basque Country"
  take_the_coast_title:0 "Take the Atlantic coast"
  end_the_chaos_title:0 "End the Chaos"
+ roman_gallia_tt:0 "Every province owned by Aquitania with Frankish or Burgond culture within Gallia will become Franko-Roman"
 
  build_aqi_fleet_desc:0 "Build a fleet"
  aqi_discovers_north_america_desc:0 "Lusitanians spoke of a continent beyond the ocean, we shall explore it !"

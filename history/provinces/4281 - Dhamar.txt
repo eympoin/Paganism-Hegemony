@@ -1,6 +1,6 @@
 #4281 - Dhamar
 
-owner = Him #Tahirids
+owner = HIM #Tahirids
 controller = HIM #Tahirids
 culture = Himyarites_culture
 religion = jewish

@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = feudalism_reform
-primary_culture = byzantine
+primary_culture = greek
 religion = olympoi
 technology_group = eastern
 capital = 151 # Constantinople
