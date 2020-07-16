@@ -4408,3 +4408,15 @@ local_development_cost = -0.05
 global_autonomy = -0.05
 global_unrest = -1
 }
+
+#Londinium
+ldn_londinium_rebuilt = {
+	prestige = 0.5
+	local_tax_modifier = 0.1
+	province_trade_power_modifier = 0.1
+}
+
+ldn_integrate_land = {
+	global_autonomy = -0.05
+	global_unrest = -2
+}

@@ -4210,13 +4210,36 @@ loyal_satrap_mod = {
 won_per_cw = {
 	legitimacy = 1
 	prestige = 0.25
-	diplomatic_annexation_cost = -0.33s
+	diplomatic_annexation_cost = -0.33
 }
 
 per_empire_reborn = {
 	development_cost = -0.1
 	prestige_decay = -0.01
 	land_morale = 0.15
+}
+
+#Londinium
+
+dip_approach_ldn = {
+	diplomatic_reputation = 2
+	diplomats = 1
+	tolerance_heathen = 2
+	land_morale = -0.1
+}
+
+adm_approach_ldn = {
+	development_cost = -0.33
+	technology_cost = -0.1
+	stability_cost_modifier = -0.2
+	land_morale = -0.1
+}
+
+mil_approach_ldn = {
+	land_morale = 0.2
+	leader_shock = 1
+	land_maintenance_modifier = -0.2
+	diplomatic_reputation = -2
 }
 
 #Mewar

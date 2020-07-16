@@ -7,7 +7,7 @@ technology_group = western
 capital = 236
 fixed_capital = 236
 
-1436.2.20 = {
+1444.1.11 = {
 	monarch = {
 		name = "Tiberius"
 		dynasty = "Postumianus"
@@ -15,5 +15,18 @@ fixed_capital = 236
 		adm = 2
 		dip = 4
 		mil = 3
+		add_ruler_personality = bold_fighter_personality
+		add_ruler_personality = inspiring_leader_personality
+	}
+	heir = {
+		name = "Constius"
+		monarch_name = "Constius"
+		dynasty = "Postumianus"
+		birth_date = 1425.3.30
+		death_date = 1504.10.5
+		adm = 4
+		dip = 5
+		mil = 3
+		religion = jupiterian
 	}
 }
