@@ -2,7 +2,7 @@
 
 owner = TFL
 controller = TFL
-culture = berber
+culture = berber_culture
 religion = berber
 capital = "Tafilalt"
 trade_goods = gold

@@ -1,7 +1,7 @@
 #338 - Al-Djazair
 
-owner = MAU
-controller = MAU
+owner = TLC
+controller = TLC
 culture = mauretanian
 religion = jupiterian
 capital = "Al-Djazair"
@@ -11,7 +11,7 @@ base_tax = 5
 base_production = 5
 base_manpower = 3
 is_city = yes
-add_core = MAU
+add_core = TLC
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman

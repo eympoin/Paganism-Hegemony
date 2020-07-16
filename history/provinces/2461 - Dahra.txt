@@ -1,7 +1,7 @@
 # - Dahra
 
-owner = MAU
-controller = MAU
+owner = TLC
+controller = TLC
 culture = mauretanian
 religion = jupiterian
 capital = "Mostaganem"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = MAU
+add_core = TLC
 
 fort_15th = yes
 discovered_by = muslim
