@@ -4665,7 +4665,7 @@ maghrebi = {
 			Tasa Tasa'fut Taszellayt Tatbirt Tati Taweckint Tawenza Tawnat Tawzalt Tayri Tayyurt Tazdayt
 		}
 	}
-	berber = {
+	berber_culture = {
 		primary = TLC
 		dynasty_names = {
 			"al-Ilighi" "al-Tadsi" "Zayyanid" Maatka Wattasid Atfayyish "Beni Isguen" "al-Afdali" "Mzabi"

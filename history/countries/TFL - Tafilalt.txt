@@ -1,11 +1,12 @@
-government = tribal
-add_government_reform = tribal_despotism
+government = monarchy
+add_government_reform = feudalism_reform
 government_rank = 1
-primary_culture = moroccan
+primary_culture =	berber_culture
 religion = berber
 technology_group = muslim
 capital = 346	# Tafilalt
 fixed_capital = 346 # Cannot move capital away from this province & no power cost to move to it
+historical_friend = TLC
 
 1444.1.1 = {
 	monarch = {

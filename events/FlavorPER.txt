@@ -3279,6 +3279,7 @@ country_event = {
 	trigger = {
 		tag = PER
 		is_year = 1455
+		NOT = { is_at_war = YES }
 	}
 
 	mean_time_to_happen ={
@@ -3580,6 +3581,7 @@ country_event = {
 
 	option = {#Win
 		name = flavor_per_cw.28.a
+		ai_chance = { factor = 100 }
 		trigger = {
 			war_score = 50
 		}

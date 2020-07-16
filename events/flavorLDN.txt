@@ -1,0 +1,115 @@
+########################################
+# Flavor Events for Lundinium
+#
+# written by Walthorn
+########################################
+
+namespace = flavor_ldn
+namespace = flavor_ldn_affect
+
+#The way forward
+country_event = {
+  id = flavor_ldn.1
+  title = flavor_ldn.1.t
+  desc = flavor_ldn.1.d
+  picture = BIG_BOOK_eventPicture
+
+  is_triggered_only = yes
+
+  option = {#The great reconquest
+    name = flavor_ldn.1.a
+    add_mil_power = -200
+    add_treasury = -200
+    add_prestige = 20
+    add_legitimacy = 10
+    add_country_modifier = {
+      name = mil_approach_ldn
+      duration = 18000
+    }
+    reverse_add_opinion = {
+      who = MIE
+      modifier = rival
+    }
+    reverse_add_opinion = {
+      who = SEA
+      modifier = rival
+    }
+    reverse_add_opinion = {
+      who = EAA
+      modifier = rival
+    }
+    reverse_add_opinion = {
+      who = NRT
+      modifier = rival
+    }
+    reverse_add_opinion = {
+      who = CRN
+      modifier = rival
+    }
+
+  }
+  option = {#Inwards development
+    name = flavor_ldn.1.b
+    add_treasury = -200
+    add_adm_power = -200
+    add_prestige = 10
+    add_country_modifier = {
+      name = adm_approach_ldn
+      duration = 18000
+    }
+  }
+  option = {#A most unlikely alliance
+    name = flavor_ldn.1.c
+    add_treasury = -200
+    add_dip_power = -200
+    add_prestige = -10
+    add_legitimacy = -20
+    add_country_modifier = {
+      name = dip_approach_ldn
+      duration = 18000
+    }
+    NRT = {
+      country_event = {
+        id = flavor_ldn_affect.1
+      }
+    }
+  }
+}
+
+#Northumbria event for alliance
+country_event = {
+  id = flavor_ldn_affect.1
+  title = flavor_ldn_affect.1.t
+  desc = flavor_ldn_affect.1.d
+  picture = NOBLE_ESTATE_eventPicture
+
+  is_triggered_only = yes
+
+  option = {#Alliance
+    name = flavor_ldn_affect.1.a
+    ai_chance = { factor = 70 }
+    add_treasury = 200
+    add_prestige = 15
+    add_dip_power = 75
+    create_alliance = LDN
+  }
+  option = {#Guarantee
+    name = flavor_ldn_affect.1.b
+    ai_chance = { factor = 25 }
+    add_treasury = 200
+    add_prestige = 15
+    add_dip_power = 75
+    create_guarantee = LDN
+  }
+  option = {#Emisarry murdered
+    name = flavor_ldn_affect.1.c
+    ai_chance = { factor = 5 }
+    add_treasury = 200
+    add_prestige = 15
+    add_dip_power = 75
+    reverse_add_opinion = {
+      who = LDN
+      modifier = enemy
+    }
+  }
+}

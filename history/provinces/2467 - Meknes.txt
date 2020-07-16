@@ -1,9 +1,8 @@
 # - Meknes
 
-owner = MAU
-controller = MAU
-culture = mauretanian
-religion = jupiterian
+controller = TLC
+culture = berber_culture
+religion = berber
 capital = "Meknes"
 trade_goods = cloth
 hre = no
@@ -11,7 +10,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 2
 is_city = yes
-add_core = MAU
+add_core = TLC
 
 
 
