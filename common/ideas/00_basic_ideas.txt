@@ -616,6 +616,7 @@ exploration_ideas = {
 				tag = NRT
 				tag = GAL
 				tag = CTG
+				tag = LDN
 			}
 		}
 		modifier = {

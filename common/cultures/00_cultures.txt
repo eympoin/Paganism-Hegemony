@@ -2641,7 +2641,7 @@ Romanian = {
 		}
 	}
 
-	daco-romanian = {
+	carpathian = {
 		primary = MOL
 		dynasty_names = {
 			"Basarab" "Danesti" "Draculesti"

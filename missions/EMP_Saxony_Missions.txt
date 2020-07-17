@@ -1,0 +1,261 @@
+
+
+east_francia_fall = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = SAX
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	end_of_east_francia = {
+		icon = claim_the_borderlands
+		required_missions = {  }
+		ai_weight = {
+			factor = 5
+		}
+		ai_priority = {
+			factor = 5
+		}
+
+		provinces_to_highlight = {
+			culture = east-francian
+			local_autonomy = 20
+		}
+		trigger = {
+			NOT = {
+				all_owned_province = {
+					local_autonomy = 20
+					culture = east-francian
+				}
+			}
+		}
+		effect = {
+			add_adm_power = 50
+			upper_franconia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			franconia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+
+	continue_southward = {
+		icon = claim_the_borderlands
+		required_missions = {  }
+		ai_weight = {
+			factor = 5
+		}
+		ai_priority = {
+			factor = 5
+		}
+
+		provinces_to_highlight = {
+			culture = east-francian
+			local_autonomy = 20
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 6
+				OR = {
+					area = franconia_area
+					area = upper_franconia_area
+				}
+			}
+			NOT = {exists = FKN}
+		}
+		effect = {
+			#event
+			lower_swabia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_swabia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_bavaria_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_bavaria_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+
+		}
+	}
+
+}
+
+religion = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = SAX
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	develop_Irminisul_sanctuary = {
+		icon = claim_the_borderlands
+		required_missions = {  }
+		ai_weight = {
+			factor = 5
+		}
+		ai_priority = {
+			factor = 5
+		}
+
+		provinces_to_highlight = {
+			province_id = 2972
+		}
+		trigger = {
+			treasury = 100
+		}
+		effect = {
+			add_treasury = -100
+			2972 = {
+				add_building = temple
+				add_province_modifier = {
+					name = "Sanctuary_of_Irminsul"
+					duration = -1
+				}
+				add_base_tax = 2
+				add_base_manpower = 3
+			}
+		}
+	}
+}
+
+norse_raids = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = SAX
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	punish_norse_raiders = {
+		position = 2
+		icon = claim_the_borderlands
+		required_missions = {  }
+		ai_weight = {
+			factor = 5
+		}
+		ai_priority = {
+			factor = 5
+		}
+
+		provinces_to_highlight = {
+		}
+		trigger = {
+			navy_size_percentage = 0.9
+		}
+		effect = {
+			jutland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			denmark_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			skaneland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "naval_enthusiasm_mission"
+				duration = 3650
+			}
+		}
+	}
+
+	secure_the_baltic_gates = {
+		position = 3
+		icon = claim_the_borderlands
+		required_missions = { norse_raids }
+		ai_weight = {
+			factor = 5
+		}
+		ai_priority = {
+			factor = 5
+		}
+
+		provinces_to_highlight = {
+			province_id = 4142
+			province_id = 4149
+			province_id = 14
+			province_id = 12
+			province_id = 1983
+			province_id = 6
+		}
+		trigger = {
+			4142 = {
+				owned_by  = ROOT
+			}
+			4149 = {
+				owned_by  = ROOT
+			}
+			14 = {
+				owned_by  = ROOT
+			}
+			12 = {
+				owned_by  = ROOT
+			}
+			1983 = {
+				owned_by  = ROOT
+			}
+			6 = {
+				owned_by  = ROOT
+			}
+		}
+		effect = {
+		add_treasury = 100
+		12 = {
+			add_trade_modifier = {
+				who = root
+				duration = -1
+				power = 40
+				key = baltic_gates
+				}
+		}
+		}
+	}
+
+
+}

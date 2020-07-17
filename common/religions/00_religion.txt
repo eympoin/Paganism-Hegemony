@@ -1801,7 +1801,6 @@ norse_group{
     country = {
       land_forcelimit_modifier = 0.10
       naval_forcelimit_modifier = 0.10
-      tolerance_heretic = 2
     }
     country_as_secondary = {
       merc_maintenance_modifier = -0.1
@@ -1820,7 +1819,6 @@ norse_group{
     country = {
       shock_damage = 0.1
       loot_amount = 0.2
-      tolerance_heretic = 2
     }
     country_as_secondary = {
       infantry_power = 0.1
