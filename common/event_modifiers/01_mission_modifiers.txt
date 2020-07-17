@@ -4430,3 +4430,8 @@ ldn_eboracum_university = {
 	prestige = 0.25
 	local_tax_modifier = 0.1
 }
+
+ldn_colonial_vigor = {
+	global_colonial_growth = 25
+	colonist_placement_chance = 0.05
+}
