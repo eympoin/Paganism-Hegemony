@@ -55,7 +55,10 @@ Londinium_1 = {
 				add_prestige = 10
 				add_navy_tradition = 20
 				brittany_area = {
-					type = all
+					limit = {
+  					NOT = { is_core = ROOT }
+  					NOT = { is_permanent_claim = ROOT }
+					}
 					add_permanent_claim = ROOT
 				}
 			}
@@ -127,7 +130,10 @@ Londinium_2 = {
 				duration = 3650
 			}
 			leinster_area = {
-				type = all
+				limit = {
+				  NOT = { is_core = ROOT }
+				  NOT = { is_permanent_claim = ROOT }
+				}
 				add_permanent_claim = ROOT
 			}
 			241 = {
@@ -167,16 +173,51 @@ Londinium_2 = {
 		}
 		effect = {
 			munster_area = {
-				type = all
+				limit = {
+				  NOT = { is_core = ROOT }
+				  NOT = { is_permanent_claim = ROOT }
+				}
 				add_permanent_claim = ROOT
 			}
 			connacht_area = {
-				type = all
+				limit = {
+				  NOT = { is_core = ROOT }
+				  NOT = { is_permanent_claim = ROOT }
+				}
 				add_permanent_claim = ROOT
 			}
 			ulster_area = {
-				type = all
+				limit = {
+				  NOT = { is_core = ROOT }
+				  NOT = { is_permanent_claim = ROOT }
+				}
 				add_permanent_claim = ROOT
+			}
+		}
+	}
+	britannia_romanus_ldn = {
+		icon = mission_unite_home_region
+		required_missions = {
+			into_hybernia_ldn
+			maxima_caesariensis_ldn
+		}
+		position = 6
+		provinces_to_highlight = {
+			region = british_isles_region
+			NOT = { is_core = ROOT }
+		}
+		trigger = {
+			british_isles_region = {
+				type = all
+				is_core = ROOT
+			}
+		}
+		effect = {
+			add_stability = 1
+			add_prestige = 20
+			add_country_modifier = {
+				name = theology
+				duration = 7300
 			}
 		}
 	}
@@ -238,19 +279,31 @@ Londinium_3 = {
 					duration = 3650
 				}
 				wales_area = {
-					type = all
+					limit = {
+					  NOT = { is_core = ROOT }
+					  NOT = { is_permanent_claim = ROOT }
+					}
 					add_permanent_claim = ROOT
 				}
 				east_anglia_area = {
-					type = all
+					limit = {
+					  NOT = { is_core = ROOT }
+					  NOT = { is_permanent_claim = ROOT }
+					}
 					add_permanent_claim = ROOT
 				}
 				east_midlands_area = {
-					type = all
+					limit = {
+					  NOT = { is_core = ROOT }
+					  NOT = { is_permanent_claim = ROOT }
+					}
 					add_permanent_claim = ROOT
 				}
 				west_midlands_area = {
-					type = all
+					limit = {
+					  NOT = { is_core = ROOT }
+					  NOT = { is_permanent_claim = ROOT }
+					}
 					add_permanent_claim = ROOT
 				}
 				234 = {
@@ -332,11 +385,17 @@ Londinium_3 = {
 					duration = 3600
 				}
 				yorkshire_area = {
-					type = all
+					limit = {
+					  NOT = { is_core = ROOT }
+					  NOT = { is_permanent_claim = ROOT }
+					}
 					add_permanent_claim = ROOT
 				}
 				scottish_marches_area = {
-					type = all
+					limit = {
+					  NOT = { is_core = ROOT }
+					  NOT = { is_permanent_claim = ROOT }
+					}
 					add_permanent_claim = ROOT
 				}
 				4375 = {
@@ -417,15 +476,17 @@ Londinium_3 = {
 				add_stability = 1
 				add_prestige = 20
 				lowlands_area = {
-					type = all
+					limit = {
+					  NOT = { is_core = ROOT }
+					  NOT = { is_permanent_claim = ROOT }
+					}
 					add_permanent_claim = ROOT
 				}
 				highlands_area = {
-					type = all
-					add_permanent_claim = ROOT
-				}
-				kingdom_of_the_isles_area = {
-					type = all
+					limit = {
+					  NOT = { is_core = ROOT }
+					  NOT = { is_permanent_claim = ROOT }
+					}
 					add_permanent_claim = ROOT
 				}
 				4785 = {
@@ -460,6 +521,35 @@ Londinium_3 = {
 				244 = {
 					change_province_name = "Sinistra Brigantes"
 					rename_capital = Calunium
+				}
+			}
+		}
+		invade_the_norse_ldn = {
+			icon = mission_cannons_firing
+			required_missions = {
+				maxima_caesariensis_ldn
+			}
+			position = 6
+			provinces_to_highlight = {
+				area = highlands_area
+				NOT = { is_core = ROOT }
+			}
+			trigger = {
+				lowlands_area = {
+					type = all
+					is_core = ROOT
+				}
+			}
+			effect = {
+				248 = {
+					add_center_of_trade_level = 1
+				}
+				western_norway = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
 				}
 			}
 		}
@@ -533,6 +623,44 @@ Londinium_4 = {
 								duration = -1
 							}
 							change_culture = britannian
+				}
+				kingdom_of_the_isles_area = {
+					limit = {
+					  NOT = { is_core = ROOT }
+					  NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				subarctic_islands_area = {
+					limit = {
+					  NOT = { is_core = ROOT }
+					  NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+		across_the_ocean_ldn = {
+			icon = mission_rb_the_thirteen_colonies
+			required_missions = { rebuild_glevum_ldn }
+			position = 5
+
+			trigger = {
+				any_province = {
+					OR = {
+						region = canada_region
+						region = northeast_america_region
+						region = southeast_america_region
+					}
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+
+			effect = {
+				add_dip_power = 100
+				add_country_modifier = {
+					name = ldn_colonial_vigor
+					duration = 7300
 				}
 			}
 		}
