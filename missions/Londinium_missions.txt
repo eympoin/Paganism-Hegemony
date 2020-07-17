@@ -55,7 +55,10 @@ Londinium_1 = {
 				add_prestige = 10
 				add_navy_tradition = 20
 				brittany_area = {
-					type = all
+					limit = {
+  					NOT = { is_core = ROOT }
+  					NOT = { is_permanent_claim = ROOT }
+					}
 					add_permanent_claim = ROOT
 				}
 			}
@@ -127,7 +130,10 @@ Londinium_2 = {
 				duration = 3650
 			}
 			leinster_area = {
-				type = all
+				limit = {
+				  NOT = { is_core = ROOT }
+				  NOT = { is_permanent_claim = ROOT }
+				}
 				add_permanent_claim = ROOT
 			}
 			241 = {
@@ -167,15 +173,24 @@ Londinium_2 = {
 		}
 		effect = {
 			munster_area = {
-				type = all
+				limit = {
+				  NOT = { is_core = ROOT }
+				  NOT = { is_permanent_claim = ROOT }
+				}
 				add_permanent_claim = ROOT
 			}
 			connacht_area = {
-				type = all
+				limit = {
+  NOT = { is_core = ROOT }
+  NOT = { is_permanent_claim = ROOT }
+}
 				add_permanent_claim = ROOT
 			}
 			ulster_area = {
-				type = all
+				limit = {
+  NOT = { is_core = ROOT }
+  NOT = { is_permanent_claim = ROOT }
+}
 				add_permanent_claim = ROOT
 			}
 		}
@@ -238,19 +253,31 @@ Londinium_3 = {
 					duration = 3650
 				}
 				wales_area = {
-					type = all
+					limit = {
+					  NOT = { is_core = ROOT }
+					  NOT = { is_permanent_claim = ROOT }
+					}
 					add_permanent_claim = ROOT
 				}
 				east_anglia_area = {
-					type = all
+					limit = {
+					  NOT = { is_core = ROOT }
+					  NOT = { is_permanent_claim = ROOT }
+					}
 					add_permanent_claim = ROOT
 				}
 				east_midlands_area = {
-					type = all
+					limit = {
+					  NOT = { is_core = ROOT }
+					  NOT = { is_permanent_claim = ROOT }
+					}
 					add_permanent_claim = ROOT
 				}
 				west_midlands_area = {
-					type = all
+					limit = {
+					  NOT = { is_core = ROOT }
+					  NOT = { is_permanent_claim = ROOT }
+					}
 					add_permanent_claim = ROOT
 				}
 				234 = {
@@ -332,11 +359,17 @@ Londinium_3 = {
 					duration = 3600
 				}
 				yorkshire_area = {
-					type = all
+					limit = {
+					  NOT = { is_core = ROOT }
+					  NOT = { is_permanent_claim = ROOT }
+					}
 					add_permanent_claim = ROOT
 				}
 				scottish_marches_area = {
-					type = all
+					limit = {
+					  NOT = { is_core = ROOT }
+					  NOT = { is_permanent_claim = ROOT }
+					}
 					add_permanent_claim = ROOT
 				}
 				4375 = {
@@ -417,15 +450,24 @@ Londinium_3 = {
 				add_stability = 1
 				add_prestige = 20
 				lowlands_area = {
-					type = all
+					limit = {
+					  NOT = { is_core = ROOT }
+					  NOT = { is_permanent_claim = ROOT }
+					}
 					add_permanent_claim = ROOT
 				}
 				highlands_area = {
-					type = all
+					limit = {
+					  NOT = { is_core = ROOT }
+					  NOT = { is_permanent_claim = ROOT }
+					}
 					add_permanent_claim = ROOT
 				}
 				kingdom_of_the_isles_area = {
-					type = all
+					limit = {
+					  NOT = { is_core = ROOT }
+					  NOT = { is_permanent_claim = ROOT }
+					}
 					add_permanent_claim = ROOT
 				}
 				4785 = {

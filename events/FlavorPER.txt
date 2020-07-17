@@ -619,16 +619,24 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-	name = flavor_per_cw.5a.b
+		name = flavor_per_cw.5a.b
 		trigger = {
-				SIS = { had_country_flag = sis_mihrabanids_d }
+				SIS = {
+					has_country_flag = sis_mihrabanids_d
+				}
 		}
+		add_prestige = 5
 	}
 	option = {
-	name = flavor_per_cw.5a.a
+		name = flavor_per_cw.5a.a
 		trigger = {
-				NOT = { SIS = { had_country_flag = sis_mihrabanids_d } }
+				NOT = {
+					SIS = {
+						has_country_flag = sis_mihrabanids_d
+					}
+				}
 		}
+		add_prestige = -10
 	}
 }
 
@@ -644,20 +652,28 @@ country_event = {
 	option = {
 	name = flavor_per_cw.5b.b
 		trigger = {
-				SIS = { had_country_flag = sis_mihrabanids_d }
+				SIS = {
+					has_country_flag = sis_mihrabanids_d
+				}
 		}
+		add_prestige = 10
 	}
 	option = {
 	name = flavor_per_cw.5b.a
 		trigger = {
-				NOT = { SIS = { had_country_flag = sis_mihrabanids_d } }
+				NOT = {
+					SIS = {
+						has_country_flag = sis_mihrabanids_d
+					}
+				}
 		}
+		add_prestige = -10
 	}
 }
 
 
 #The Afghan claims
-country_event {
+country_event = {
 	id = flavor_per_cw.6
 	title = flavor_per_cw.6.t
 	desc = flavor_per_cw.6.d
@@ -678,6 +694,7 @@ country_event {
 	mean_time_to_happen = {
 		months = 12
 	}
+
 	option = {#Their claims are nonsensical, we stand with the Sakastani satrap
 		name = flavor_per_cw.6.a
 		add_dip_power = -100
@@ -692,11 +709,10 @@ country_event {
 		AFG = { create_alliance = ABA }
 		add_truce_with = AFG
 
-			change_variable = {
+		change_variable = {
 				which = SIS_loy
 				value = 2
-				}
-
+		}
 	}
 	option = {#Give up the cultural lands
 		name = flavor_per_cw.6.b
