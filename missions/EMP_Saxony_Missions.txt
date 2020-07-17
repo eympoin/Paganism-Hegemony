@@ -258,6 +258,46 @@ norse_raids = {
 		}
 		}
 	}
+}
 
+
+norse_raids = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = SAX
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	our_germanic_brethren = {
+		position = 1
+		icon = claim_the_borderlands
+		required_missions = {  }
+		ai_weight = {
+			factor = 5
+		}
+		ai_priority = {
+			factor = 5
+		}
+
+		provinces_to_highlight = {
+		}
+		trigger = {
+			alliance_with = THU
+			THU = {
+			has_opinion = {
+				who = ROOT
+				value = 180
+				}
+			}
+		}
+		effect = {
+			#event
+		}
+	}
 
 }

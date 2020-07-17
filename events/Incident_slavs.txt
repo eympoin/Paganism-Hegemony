@@ -149,33 +149,33 @@ country_event = {
       name = "slavic_uprising"
       duration = 3650
     }
-    every_owned_province = {
+    random_owned_province  = {
       limit = {
         religion = slavic
       }
       spawn_rebels = {
         type = slavic_rebels
-        size = 0.5
+        size = 2
         leader = "Stefan"
       }
     }
-    every_owned_province = {
+    random_owned_province  = {
       limit = {
         religion = Illyrian
       }
       spawn_rebels = {
         type = Illyrian_rebels
-        size = 0.5
+        size = 2
         leader = "Stefan"
       }
     }
-    every_owned_province = {
+    random_owned_province  = {
       limit = {
         religion = tengri_pagan_reformed
       }
       spawn_rebels = {
         type = tengri_pagan_reformed_rebels
-        size = 0.5
+        size = 2
         leader = "Aleksandër"
       }
     }
@@ -239,33 +239,33 @@ country_event = {
       name = "slavic_uprising_imperial_help"
       duration = 3650
     }
-    every_owned_province = {
+    random_owned_province  = {
       limit = {
         religion = slavic
       }
       spawn_rebels = {
         type = slavic_rebels
-        size = 0.5
+        size = 2
         leader = "Stefan"
       }
     }
-    every_owned_province = {
+    random_owned_province  = {
       limit = {
         religion = Illyrian
       }
       spawn_rebels = {
         type = Illyrian_rebels
-        size = 0.5
+        size = 2
         leader = "Stefan"
       }
     }
-    every_owned_province = {
+    random_owned_province  = {
       limit = {
         religion = tengri_pagan_reformed
       }
       spawn_rebels = {
         type = tengri_pagan_reformed_rebels
-        size = 0.5
+        size = 2
         leader = "Aleksandër"
       }
     }
@@ -318,6 +318,10 @@ country_event = {
     }
     set_country_flag = defy_the_emperor
     change_religion = tengri_pagan_reformed
+    declare_war_with_cb = {
+      who = emperor
+      casus_belli = cb_religious_conformance
+    }
   }
 }
 
@@ -339,33 +343,33 @@ country_event = {
       name = "slavic_uprising"
       duration = 3650
     }
-    every_owned_province = {
+    random_owned_province  = {
       limit = {
         religion = slavic
       }
       spawn_rebels = {
         type = slavic_rebels
-        size = 0.5
+        size = 2
         leader = "Stefan"
       }
     }
-    every_owned_province = {
+    random_owned_province  = {
       limit = {
         religion = Illyrian
       }
       spawn_rebels = {
         type = Illyrian_rebels
-        size = 0.5
+        size = 2
         leader = "Stefan"
       }
     }
-    every_owned_province = {
+    random_owned_province  = {
       limit = {
         religion = tengri_pagan_reformed
       }
       spawn_rebels = {
         type = tengri_pagan_reformed_rebels
-        size = 0.5
+        size = 2
         leader = "Aleksandër"
       }
     }
@@ -497,7 +501,6 @@ country_event = { #victory_of_the_emperor
     ai_chance = {
       factor = 1
     }
-    country_event = {id = slavic_uprising.8}
     add_prestige = 10
     add_imperial_influence = 5
   }

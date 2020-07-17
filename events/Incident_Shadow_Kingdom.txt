@@ -669,6 +669,8 @@ country_event = {
 		FAY = {
 			change_religion	= olympoi
 		}
+		white_peace = UEG
+		add_truce_with = UEG
 		LEG = {
 			add_opinion = {
 				who = BYZ
