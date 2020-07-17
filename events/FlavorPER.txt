@@ -202,7 +202,6 @@ country_event = {
 		add_prestige = -20
 		add_dip_power = -50
 		persia_region = {
-                type = all
                             limit = {
                                 owned_by = ROOT
                                 OR = {
@@ -266,7 +265,6 @@ country_event = {
 			}
 		}
 		persia_region = {
-                type = all
                             limit = {
                                 owned_by = ROOT
                                 OR = {
@@ -621,16 +619,16 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
+	name = flavor_per_cw.5a.b
 		trigger = {
 				SIS = { had_country_flag = sis_mihrabanids_d }
 		}
-		name = flavor_per_cw.5a.b
 	}
 	option = {
+	name = flavor_per_cw.5a.a
 		trigger = {
 				NOT = { SIS = { had_country_flag = sis_mihrabanids_d } }
 		}
-		name = flavor_per_cw.5a.a
 	}
 }
 
@@ -644,16 +642,16 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
+	name = flavor_per_cw.5b.b
 		trigger = {
 				SIS = { had_country_flag = sis_mihrabanids_d }
 		}
-		name = flavor_per_cw.5b.b
 	}
 	option = {
+	name = flavor_per_cw.5b.a
 		trigger = {
 				NOT = { SIS = { had_country_flag = sis_mihrabanids_d } }
 		}
-		name = flavor_per_cw.5b.a
 	}
 }
 
@@ -692,7 +690,7 @@ country_event {
 		2224 = { remove_core = AFG }
 		2229 = { remove_core = AFG }
 		AFG = { create_alliance = ABA }
-		add_truce = AFG
+		add_truce_with = AFG
 
 			change_variable = {
 				which = SIS_loy
@@ -715,7 +713,7 @@ country_event {
 		2229 = { cede_province = AFG }
 		2228 = { cede_province = AFG }
 		2224 = { remove_core = AFG }
-		add_truce = AFG
+		add_truce_with = AFG
 
 			change_variable = {
 				which = SIS_loy
@@ -737,7 +735,7 @@ country_event {
 		449 = { remove_core = SIS }
 		2225 = { remove_core = SIS }
 		447 = { remove_core = SIS }
-		add_truce = AFG
+		add_truce_with = AFG
 
 			change_variable = {
 				which = SIS_loy
@@ -763,7 +761,7 @@ country_event {
 		2229 = { cede_province = AFG }
 		2228 = { cede_province = AFG }
 		2224 = { cede_province = AFG }
-		add_truce = AFG
+		add_truce_with = AFG
 	}
 }
 
@@ -813,7 +811,7 @@ country_event = {
 		add_prestige = 10
 		4331 = { cede_province = FRS }
 		430 = { cede_province = FRS }
-		add_truce = ELM
+		add_truce_with = ELM
 		reverse_add_opinion = {
 			who = FRS
 			modifier = returned_core_to_me
@@ -881,9 +879,9 @@ country_event = {
 			subject_type = persian_satrapdom
 			subject = ELM
 		}
-		add_truce = ARM
-		add_truce = BAB
-		add_truce = LRI
+		add_truce_with = ARM
+		add_truce_with = BAB
+		add_truce_with = LRI
 		ELM = {
 			define_ruler = {
 					name = "Chesek"
@@ -915,11 +913,11 @@ country_event = {
 		add_prestige = -10
 		add_legitimacy = -10
 		FRS = { grant_independence = yes }
-		add_truce = ARM
-		add_truce = BAB
-		add_truce = LRI
-		add_truce = FRS
-		add_truce = ELM
+		add_truce_with = ARM
+		add_truce_with = BAB
+		add_truce_with = LRI
+		add_truce_with = FRS
+		add_truce_with = ELM
 	}
 }
 
@@ -1256,11 +1254,31 @@ country_event = {
 		2232 = {cede_province = BAL }
 		575 = {cede_province = BAL }
 		434 = {cede_province = BAL }
-		add_truce = SND
-		576 = { local_missionary_strength = -3 }
-		577 = { local_missionary_strength = -3 }
-		2231 = { local_missionary_strength = -3 }
-		2068 = { local_missionary_strength = -3 }
+		add_truce_with = SND
+		576 = {
+		add_province_modifier = {
+    	name = persian_pressure
+    		duration = -1
+			}
+		}
+		577 = {
+		add_province_modifier = {
+    	name = persian_pressure
+    		duration = -1
+			}
+		}
+		2231 = {
+		add_province_modifier = {
+    	name = persian_pressure
+    		duration = -1
+			}
+		}
+		2068 = {
+		add_province_modifier = {
+    	name = persian_pressure
+    		duration = -1
+			}
+		}
 		create_subject = {
 			subject_type = persian_satrapdom
 			subject = BAL
@@ -1302,7 +1320,7 @@ country_event = {
 		434 = {cede_province = KRM }
 		KRM = { add_core = 434 }
 		KRM = { add_core = 2233 }
-		add_truce = SND
+		add_truce_with = SND
 
 			change_variable = {
 				which = KRM_loy
@@ -1313,7 +1331,10 @@ country_event = {
 	option = {#Let them rot
 		name = flavor_per_cw.11.e
 		ai_chance = { factor = 4 }
-		global_unrest = 3
+		add_country_modifier = {
+			name = "not_helping_bal"
+			duration = 1825
+		}
 		reverse_add_opinion = {
 			who = SND
 			modifier = opinion_friendliness
@@ -1401,7 +1422,7 @@ country_event = {
 		KRM = {
 			add_government_reform = feudalism_reform
 		}
-		add_truce = KRM
+		add_truce_with = KRM
 	}
 }
 
@@ -1834,7 +1855,11 @@ country_event = {
 			}
 
 		if {
-		HRV = { owns = 446 }
+		limit = {
+			446 = {
+				owned_by = HRV
+				}
+			}
 		}
 		MRV = { add_core = 446 }
 		446 = { cede_province = MRV }
@@ -2047,7 +2072,7 @@ country_event = {
 		445 = { cede_province = TIM }
 		444 = { cede_province = TIM }
 		2350 = { cede_province = TIM }
-		add_truce = TIM
+		add_truce_with = TIM
 		change_variable = {
 				which = HRV_loy
 				value = -1
@@ -3872,7 +3897,7 @@ country_event = {
 							}
 					}
 					add_country_modifier = {
-						name = loyal_satrap
+						name = loyal_satrap_mod
 						duration = -1
 					}
 			}

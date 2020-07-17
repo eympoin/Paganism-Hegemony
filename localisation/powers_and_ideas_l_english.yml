@@ -7741,9 +7741,9 @@
    land_of_wonders_desc:0 "Land of Wonders"
    council_of_burghers_desc:0 "Council of Burghers"
 
-   ION_ideas:0 "Suebian Ideas"
-   ION_ideas_start:0 "Suebian traditions"
-   ION_ideas_bonus:0 "Suebian ambitions"
+   SUE_ideas:0 "Suebian Ideas"
+   SUE_ideas_start:0 "Suebian traditions"
+   SUE_ideas_bonus:0 "Suebian ambitions"
 
    continuity_through_the_people:0 "People of survivors"
    germanization:0 "Germanization"

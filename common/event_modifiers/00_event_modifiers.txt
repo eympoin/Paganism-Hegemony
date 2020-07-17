@@ -11358,3 +11358,11 @@ slavic_uprising_imperial_help = {
 slavic_uprising = {
 	global_unrest = 10
 }
+
+persian_pressure = {
+	local_missionary_strength = -3
+}
+
+not_helping_bal = {
+	global_unrest = 3
+}

@@ -2406,6 +2406,11 @@
  burdigala_port:0 "Port of Burdigala"
  control_of_champagne_and_bourgogne_fairs:0 "Control of all the fairs"
 
+
+persian_pressure:0 "Persian pressure"
+desc_persian_pressure:0 ""
+not_helping_bal:0 "Didn't helped our Baluch brethren"
+desc_not_helping_bal:0 "Didn't helped our Baluch brethren"
 # Persian Mission Rewards
 per_seat_of_satrap:0 "Seat of a satrap"
 desc_per_seat_of_satrap:0 "This city is the seat of a Satrap, a talented administator overseeing the surrounding areas."
@@ -2419,6 +2424,7 @@ per_ind_steer:0 "Persian ventures in India"
 desc_per_ind_steer:0 "The riches of India can be found both on land and on sea, now that we control trade routes into India we must divert the trade from the arabia peninsula."
 per_silk_road:0 "The persian silk road"
 desc_per_silk_road:0 "The silk road is being heavily invested into, turning it back to its former glory."
+
 
 #Kingdom of Jerusalem Mission Rewards
 koj_cannan_settlers:0 "Cannanite settlers"
