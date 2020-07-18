@@ -963,10 +963,7 @@ printing_press = {
 			trade_goods = paper
 		}
 		OR = {
-			religion = protestant
-			religion = reformed
-			region = north_german_region
-			region = south_german_region
+			region = persia_superregion
 		}
 
 	}

@@ -296,7 +296,7 @@ norse_raids = {
 			}
 		}
 		effect = {
-			#event
+			country_event = { id = flavor_sax.1 }
 		}
 	}
 
