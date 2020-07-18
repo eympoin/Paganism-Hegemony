@@ -4430,7 +4430,9 @@ ldn_eboracum_university = {
 	prestige = 0.25
 	local_tax_modifier = 0.1
 }
-
+Sanctuary_of_Irminsul = {
+	local_development_cost = -0.4
+}
 ldn_colonial_vigor = {
 	global_colonial_growth = 25
 	colonist_placement_chance = 0.05

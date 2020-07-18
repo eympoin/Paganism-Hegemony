@@ -140,24 +140,33 @@ country_event = {
 				}
 			}
 			set_in_empire = yes
-			cede_province	= MES
-			add_core = MES
 		}
-		MES = {
-			change_religion = olympoi
-		}
+
+
 		every_country = {
 			limit = {
 				war_with = emperor
 				OR = {
-					is_core = 2311
-					is_core = 2312
-					is_core = 4288
-					is_core = 408
+					country_or_non_sovereign_subject_holds  = 2311
+					country_or_non_sovereign_subject_holds  = 2312
+					country_or_non_sovereign_subject_holds  = 4288
+					country_or_non_sovereign_subject_holds  = 408
 				}
 			}
 		white_peace = emperor
 		}
+		MES = {
+			change_religion = olympoi
+		}
+		every_province ={
+			limit = {
+				area = basra_area
+				is_part_of_hre = yes
+			}
+			cede_province	= MES
+			add_core = MES
+		}
+
 		408 = {
 			add_trade_modifier = {
 				who = emperor
@@ -213,19 +222,25 @@ country_event = {
 				}
 			}
 			set_in_empire = yes
-			cede_province	= ORG
-			add_core = ORG
 		}
 		every_country = {
 			limit = {
 				war_with = emperor
 				OR = {
-					is_core = 2999
-					is_core = 431
-					is_core = 4327
+					country_or_non_sovereign_subject_holds = 2999
+					country_or_non_sovereign_subject_holds = 431
+					country_or_non_sovereign_subject_holds = 4327
 				}
 			}
 		white_peace = emperor
+		}
+		every_province ={
+			limit = {
+				area = basra_area
+				is_part_of_hre = yes
+			}
+			cede_province	= ORG
+			add_core = ORG
 		}
 		ORG = {
 			change_religion = olympoi
@@ -286,23 +301,30 @@ country_event = {
 				}
 			}
 			set_in_empire = yes
+		}
+
+		every_country = {
+			limit = {
+				war_with = emperor
+				OR = {
+					country_or_non_sovereign_subject_holds = 504
+					country_or_non_sovereign_subject_holds = 4504
+					country_or_non_sovereign_subject_holds = 4503
+					country_or_non_sovereign_subject_holds = 2088
+				}
+			}
+		white_peace = emperor
+		}
+		every_province ={
+			limit = {
+				area = basra_area
+				is_part_of_hre = yes
+			}
 			cede_province	= IND
 			add_core = IND
 		}
 		IND = {
 			change_religion = olympoi
-		}
-		every_country = {
-			limit = {
-				war_with = emperor
-				OR = {
-					is_core = 504
-					is_core = 4504
-					is_core = 4503
-					is_core = 2088
-				}
-			}
-		white_peace = emperor
 		}
 		504 = {
 			add_trade_modifier = {
@@ -362,20 +384,29 @@ country_event = {
 			cede_province	= GAN
 			add_core = GAN
 		}
-		GAN = {
-			change_religion = olympoi
-		}
+
 		every_country = {
 			limit = {
 				war_with = emperor
 				OR = {
-					is_core = 4512
-					is_core = 516
-					is_core = 2054
-					is_core = 4457
+					country_or_non_sovereign_subject_holds = 4512
+					country_or_non_sovereign_subject_holds = 516
+					country_or_non_sovereign_subject_holds = 2054
+					country_or_non_sovereign_subject_holds = 4457
 				}
 			}
 		white_peace = emperor
+		}
+		every_province ={
+			limit = {
+				area = basra_area
+				is_part_of_hre = yes
+			}
+			cede_province	= GAN
+			add_core = GAN
+		}
+		GAN = {
+			change_religion = olympoi
 		}
 		4457 = {
 			add_trade_modifier = {

@@ -7486,7 +7486,7 @@
    baltic_confederations_desc:0 "Baltic confederations"
 
    greek_arabian_ideas:0 "Arabian Ideas"
-   greek_arabian_ideas_traditions:"Arabian traditions"
+   greek_arabian_ideas_start:"Arabian traditions"
    greek_arabian_ideas_bonus:"Arabian ambitions"
 
    trading_oasis:0 "Trading oasis"

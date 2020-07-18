@@ -2508,7 +2508,7 @@ west_slavic = {
 }
 
 
-Romanian = {
+carpathian = {
 	graphical_culture = easterngfx
 
 	transylvanian = {
