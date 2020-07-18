@@ -2508,7 +2508,7 @@ west_slavic = {
 }
 
 
-Romanian = {
+carpathian = {
 	graphical_culture = easterngfx
 
 	transylvanian = {
@@ -2576,7 +2576,7 @@ Romanian = {
 		}
 	}
 
-	carpathian = {
+	dacian = {
 		primary = CRP
 		male_names = {
 			Ul�szl� L�szl� Lajos Albert J�nos M�ty�s Zsigmond Andr�s K�roly Istv�n B�la Anaszt�z Barnab�s
