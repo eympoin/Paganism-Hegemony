@@ -9,7 +9,7 @@ haasa_domination_1 = {
 	has_country_shield = yes
 
 	Conquest_of_Shammar = {
-		icon = mission_arabian_fort
+		icon = mission_conquer_timbuktu
 		required_missions = {  } #None
 		position = 1
 		provinces_to_highlight = {
@@ -37,7 +37,7 @@ haasa_domination_1 = {
 	}
 
 	Conquest_of_Najd = {
-		icon = mission_arabian_fort
+		icon = mission_conquer_timbuktu
 		required_missions = {Conquest_of_Shammar}
 		position = 2
 		provinces_to_highlight = {
@@ -98,7 +98,7 @@ haasa_domination_2 = {
 	has_country_shield = yes
 
 	take_hormuz_trade = {
-		icon = mission_arabian_fort
+		icon = mission_raid_on_iceland
 		required_missions = {destroy_hormuz Conquest_of_Shammar}
 		position = 2
 		provinces_to_highlight = {
@@ -204,7 +204,7 @@ haasa_domination_2 = {
 		}
 
 		Take_hadramut = {
-			icon = mission_arabian_fort
+			icon = mission_conquer_air
 			required_missions = {take_yemen}
 			position = 5
 			trigger = {
@@ -223,6 +223,24 @@ haasa_domination_2 = {
 					name = "army_enthusiasm"
 					duration = 7300
 				}
+			}
+		}
+		Ardu_Alaliha = {
+			icon = mission_into_arabia
+			required_missions = {Take_hadramut Hegemony_in_hormuz_node}
+			position = 6
+			trigger = {
+
+			}
+			effect = {
+			384 = {
+				rename_capital = Yathrib
+				change_province_name = Yathrib
+			}
+			add_mil_power = 120
+			add_adm_power = 120
+			add_dip_power = 120
+
 			}
 		}
 
@@ -279,9 +297,9 @@ haasa_domination_2 = {
 					}
 				}
 				Hegemony_in_hormuz_node = {
-					icon = mission_arabian_fort
+					icon = mission_trade_in_gold_coast
 					required_missions = {End_of_hormuz}
-					position = 4
+					position = 5
 					trigger = {
 						2999 = {
 							trade_share ={
