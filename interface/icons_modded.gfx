@@ -1,0 +1,18 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_icon_roman_province"
+		texturefile = "gfx//interface//icon_roman_province.dds"
+	}
+
+  spriteType = {
+		name = "GFX_icon_diplomacy_leadromanprovince"
+		texturefile = "gfx//interface//icon_diplomacy_leadromanprovince.dds"
+	}
+
+  spriteType = {
+		name = "GFX_diplomacy_amromanprovince"
+		texturefile = "gfx//interface//icon_diplomacy_amromanprovince.dds"
+	}
+
+}

@@ -462,3 +462,8 @@ flavor_ldn_affect.1.d:0 "An emissary hailing from Lundinium has arrived today, t
 flavor_ldn_affect.1.a:0 "An uncertain ally, but an ally none the least"
 flavor_ldn_affect.1.b:0 "They are one of many duchies in our domain and we shall protect them as such"
 flavor_ldn_affect.1.c:0 "We will take their tribute, and the emissary's head for this outraging proposal"
+flavor_ldn.2.t:0 "An Emisarry from the Senate"
+flavor_ldn.2.d:0 "The Senate in Rome has sent us an emisarry bringing us news of the state of affairs in the former empire. They say that our endeavors have not gone unnoticed and that the Senate desires to have us back under their wings. Will we remain to the Senate that abandoned us centuries ago ?"
+flavor_ldn.2.a:0 "We are loyal to the Senate"
+flavor_ldn.2.b:0 "We are brothers, the past shall not stain that fact"
+flavor_ldn.2.c:0 "We are the true heirs of the empire of old !"
