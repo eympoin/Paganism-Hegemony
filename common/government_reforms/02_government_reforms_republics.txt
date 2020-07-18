@@ -140,7 +140,7 @@ prussian_republic_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 100
 	legacy_equivalent = prussian_republic
-	
+
 	modifiers = {
 		war_exhaustion = -0.02
 		monthly_militarized_society = 0.05
@@ -149,18 +149,18 @@ prussian_republic_reform = {
 		max_absolutism = -10
 		governing_capacity_modifier = -0.5
 	}
-	
+
 	conditional = {
 		allow = { has_dlc = "Rights of Man" }
 		militarised_society = yes
 	}
-	
+
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
 		generals_become_rulers = yes
 	}
-	
+
 	has_term_election = no
 }
 
@@ -226,24 +226,24 @@ merchants_reform = {
 	}
 	ai = {
 		factor = 0.75 #generic
-		
+
 		modifier = {
 			factor = 0
 			num_of_cities = 11
 		}
-		
+
 		modifier = {
 			factor = 0
 			capital_scope = { has_port = no }
 		}
-		
+
 		modifier = {
 			factor = 0
 			NOT = {
 				capital_scope = { province_has_center_of_trade_of_level = 1 }
 			}
 		}
-		
+
 		modifier = {
 			factor = 0
 			is_subject = yes
@@ -334,7 +334,7 @@ pirate_republic_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
 	can_form_trade_league = no
-	
+
 	nation_designer_trigger = {
 		has_dlc = "Golden Century"
 		capital_scope = {
@@ -353,26 +353,26 @@ pirate_republic_reform = {
 	removed_effect = {
 		clr_country_flag = pirate_mutineer_council
 	}
-	
+
 	potential = {
 		has_reform = pirate_republic_reform
 		has_dlc = "Golden Century"
 	}
-	
+
 	factions_frame = 9
 	factions = {
 		pr_buccaneers
 		pr_smugglers
 		pr_captains
 	}
-	
+
 	duration = 4
-	
+
 	custom_attributes = {
 		locked_government_type = yes
 		force_admiral_leader = yes
 	}
-	
+
 }
 
 noble_elite_reform = {
@@ -1085,6 +1085,62 @@ cossacks_reform = {
 	duration = 4
 }
 
+
+roman_curia_reform = {
+	icon = "imperial_roman_curia"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			has_country_flag = roman_inheritor
+			tag = SPQ
+			tag = WRM
+		}
+	}
+	legacy_equivalent = roman_curia_legacy
+	valid_for_nation_designer = yes
+	lock_level_when_selected = yes
+	nation_designer_cost = 50
+	modifiers = {
+		republican_tradition = 0.5
+		global_unrest = -2
+		global_autonomy = -0.05
+		governing_capacity = 100
+		max_absolutism = -30
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		locked_government_type = yes
+	}
+	duration = 3
+}
+
+imperial_roman_curia_reform = {
+	icon = "roman_curia"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			tag = SPQ
+			tag = WRM
+		}
+	}
+	legacy_equivalent = imperial_roman_curia_legacy
+	valid_for_nation_designer = yes
+	lock_level_when_selected = yes
+	nation_designer_cost = 20
+	modifiers = {
+		republican_tradition = -0.25
+		global_unrest = 2
+		global_autonomy = -0.05
+		governing_capacity = 100
+	}
+	custom_attributes = {
+		enables_plutocratic_idea_group = no
+		enables_aristocratic_idea_group = yes
+	}
+	duration = 3
+}
+
 #Republican Virtues
 
 republican_authoritarianism_reform = {
@@ -1303,9 +1359,9 @@ lottery_reform = {
 		}
 	}
 	trigger = {
-		NOT = { 
+		NOT = {
 			OR = {
-				has_reform = venice_merchants_reform 
+				has_reform = venice_merchants_reform
 				has_reform = dutch_republic
 				has_reform = presidential_despot_reform
 				has_reform = military_dictatorship_reform
@@ -1607,7 +1663,7 @@ two_chamber_reform = {
 		free_policy = 1
 		republican_tradition = 0.15
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1858,7 +1914,7 @@ admiralty_reform = {
 		admirals_become_rulers = yes
 	}
 	has_term_election = no
-	
+
 	ai = {
 		factor = 0
 	}
@@ -1877,7 +1933,7 @@ equal_electorate_reform = {
 		female_advisor_chance = 0.33
 		rr_jacobins_influence = 0.1
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1894,7 +1950,7 @@ three_classes_reform = {
 		core_creation = -0.1
 		rr_girondists_influence = 0.1
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1916,7 +1972,7 @@ military_electorate_reform = {
 		generals_become_rulers = yes
 		has_term_election = no
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1967,7 +2023,7 @@ universal_suffrage_reform = {
 pirates_become_republic_reform = {
 	icon = "parliament_highlighted"
 	allow_normal_conversion = yes
-	
+
 	potential = {
 		has_reform = pirate_republic_reform
 	}
@@ -2030,8 +2086,8 @@ proclaim_divine_guidance_reform = {
 strengthen_executive_powers_reform = {
 	icon = "soldiers_2"
 	allow_normal_conversion = yes
-	potential = { 
-		is_revolutionary = no 
+	potential = {
+		is_revolutionary = no
 	}
 	modifiers = {
 		max_absolutism = 25
@@ -2051,7 +2107,7 @@ president_for_life_reform = {
 	icon = "man_on_podium"
 	allow_normal_conversion = yes
 	has_term_election = no
-	potential = { 
+	potential = {
 		is_revolutionary = yes
 		has_dlc = "Emperor"
 	}
@@ -2065,7 +2121,7 @@ president_for_life_reform = {
 government_for_people_reform = {
 	icon = "government_for_people_reform"
 	allow_normal_conversion = yes
-	potential = { 
+	potential = {
 		is_revolutionary = yes
 		has_dlc = "Emperor"
 	}
@@ -2078,10 +2134,10 @@ become_rev_empire_reform = {
 	icon = "become_rev_empire_reform"
 	allow_normal_conversion = yes
 
-	potential = { 
+	potential = {
 		is_revolutionary = yes
 	}
-	
+
 	trigger = {
 		has_reform = revolutionary_republic_reform
 		if = {

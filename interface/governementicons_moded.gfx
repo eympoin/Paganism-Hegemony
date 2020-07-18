@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "government_reform_imperial_roman_curia"
+		texturefile = "gfx//interface//government_reform_icons//imperial_roman_curia_reform.dds"
+	}
+  spriteType = {
+		name = "government_reform_roman_curia"
+		texturefile = "gfx//interface//government_reform_icons//roman_curia_reform.dds"
+	}
+}

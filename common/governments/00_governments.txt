@@ -235,6 +235,8 @@ republic = {
 		protectorate_parliament_legacy
 		prussian_republic
 		united_cantons_legacy
+		roman_curia_legacy
+		imperial_roman_curia_legacy
 	}
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {
@@ -262,6 +264,8 @@ republic = {
 				protectorate_parliament_reform
 				prussian_republic_reform
 				united_cantons_reform
+				roman_curia_reform
+				imperial_roman_curia_reform
 			}
 		}
 		republican_virtues = {
@@ -374,6 +378,7 @@ republic = {
 		prussian_republic_reform
 	}
 	exclusive_reforms = {
+		roman_curia_reform
 		lottery_reform
 		venice_merchants_reform
 		dutch_republic
