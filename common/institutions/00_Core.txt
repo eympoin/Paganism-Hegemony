@@ -963,7 +963,7 @@ printing_press = {
 			trade_goods = paper
 		}
 		OR = {
-			region = persia_superregion
+			superregion = persia_superregion
 		}
 
 	}
