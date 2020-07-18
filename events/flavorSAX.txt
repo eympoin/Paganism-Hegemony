@@ -1,0 +1,407 @@
+
+namespace = flavor_sax
+normal_or_historical_nations = yes
+
+# Thuringia attack
+country_event = {
+	id = flavor_sax.1
+	title = "flavor_sax.1.t"
+	desc = "flavor_sax.1.d"
+	picture = IMPORTANT_STATUE_eventPicture
+
+	is_triggered_only = yes
+
+
+	option = {#helping thuringia
+		name = "flavor_sax.1.a"
+		ai_chance = { factor = 10 }
+		THU = {
+			country_event = { id = flavor_sax.2 }
+		}
+		reverse_add_opinion = {
+			who = THU
+			modifier = opinion_sent_help
+		}
+
+	}
+	option = {#not helping Thuringia
+		name = "flavor_sax.1.b"
+		ai_chance = { factor = 1 }
+		THU = {
+			country_event = { id = flavor_sax.3 }
+		}
+		reverse_add_opinion = {
+			who = THU
+			modifier = opinion_refused_send_help
+		}
+	}
+}
+
+#Thuringia receive the answer : yes
+country_event = {
+	id = flavor_sax.2
+	title = "flavor_sax.2.t"
+	desc = "flavor_sax.2.d"
+	picture = IMPORTANT_STATUE_eventPicture
+
+	is_triggered_only = yes
+
+
+	option = {#to war
+		name = "flavor_sax.2.a"
+		VEL = {
+			country_event = { id = flavor_sax.4 }
+		}
+		OBO = {
+			country_event = { id = flavor_sax.4 }
+		}
+		SOR = {
+			country_event = { id = flavor_sax.5 }
+		}
+	}
+}
+
+
+#Thuringia receive the answer : no
+country_event = {
+	id = flavor_sax.3
+	title = "flavor_sax.3.t"
+	desc = "flavor_sax.3.d"
+	picture = IMPORTANT_STATUE_eventPicture
+
+	is_triggered_only = yes
+
+
+	option = {#to war
+		name = "flavor_sax.3.a"
+		ai_chance = { factor = 1 }
+		VEL = {
+			country_event = { id = flavor_sax.4 }
+		}
+		OBO = {
+			country_event = { id = flavor_sax.4 }
+		}
+		SOR = {
+			country_event = { id = flavor_sax.5 }
+		}
+	}
+
+	option = {#do nothing then
+		name = "flavor_sax.3.b"
+		ai_chance = { factor = 1 }
+		remove_historical_friend = SAX
+	}
+}
+
+
+#Thuringia receive the answer : no
+country_event = {
+	id = flavor_sax.4
+	title = "flavor_sax.4.t"
+	desc = "flavor_sax.4.d"
+	picture = IMPORTANT_STATUE_eventPicture
+
+	is_triggered_only = yes
+
+
+	option = {#help our brethren
+		name = "flavor_sax.4.a"
+		ai_chance = { factor = 100 }
+		create_alliance = SOR
+	}
+	option = {#let them die
+		name = "flavor_sax.4.b"
+		ai_chance = { factor = 0 }
+		reverse_add_opinion = {
+			who = SOR
+			modifier = opinion_refused_send_help
+		}
+	}
+}
+
+#Sorba information on the attack
+country_event = {
+	id = flavor_sax.5
+	title = "flavor_sax.5.t"
+	desc = "flavor_sax.5.d"
+	picture = IMPORTANT_STATUE_eventPicture
+
+	is_triggered_only = yes
+
+
+	option = {#aled
+		THU = {
+			declare_war_with_cb = {
+				who = SOR
+				casus_belli = cb_annex
+			}
+		}
+		if = {
+			limit = {
+				SAX = {
+					as_opinion_modifier = {
+						who = ROOT
+						modifier = opinion_sent_help
+					}
+				}
+			}
+			SAX = {
+				join_all_offensive_wars_of = THU
+			}
+		}
+	}
+}
+
+country_event = {#Thuringian king die
+	id = flavor_sax.6
+	title = "flavor_sax.6.t"
+	desc = "flavor_sax.6.d"
+	picture = IMPORTANT_STATUE_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		month = 3
+	}
+	trigger = {
+		war_with = SOR
+		tag = THU
+	}
+
+
+	option = {
+		name = "flavor_sax.6.a"
+		ai_chance = { factor = 10 }
+		SAX = {
+			create_union = THU
+		}
+	}
+
+	option = {
+		name = "flavor_sax.6.b"
+		ai_chance = { factor = 1 }
+		add_prestige = 10
+	}
+}
+
+country_event = {#polabians ask help from the khanate
+	id = flavor_sax.7
+	title = "flavor_sax.7.t"
+	desc = "flavor_sax.7.d"
+	picture = IMPORTANT_STATUE_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 10
+	}
+	trigger = {
+		war_with = THU
+		tag = SOR
+		NOT = {war_score = -20}
+	}
+
+
+	option = {#ask for help
+		name = "flavor_sax.7.a"
+		ai_chance = { factor = 5 }
+		SAX = {
+			country_event = { id = flavor_sax.8 }
+		}
+	}
+
+	option = {#we will fight alone
+		name = "flavor_sax.7.b"
+		ai_chance = { factor = 5 }
+		add_prestige = 20
+		add_country_modifier = {
+			name = the_last_offensive
+			duration = 365
+		}
+	}
+}
+
+country_event = {#polabians ask help from the khanate
+	id = flavor_sax.8
+	title = "flavor_sax.8.t"
+	desc = "flavor_sax.8.d"
+	picture = IMPORTANT_STATUE_eventPicture
+
+	is_triggered_only = yes
+
+
+	option = {#accept the plea for help (polabians become tributaries)
+		name = "flavor_sax.8.a"
+		ai_chance = { factor = 5 }
+		create_subject = {
+			subject_type = tributary_state
+			subject = SOR
+		}
+		OKH = {
+			join_all_defensive_wars_of = SOR
+		}
+	}
+
+	option = {#attack in the back
+		name = "flavor_sax.8.b"
+		ai_chance = { factor = 5 }
+		OKH = {
+			declare_war_with_cb = {
+				who = SOR
+				casus_belli = cb_annex
+			}
+		}
+		set_global_flag = okh_backstab
+	}
+
+	option = {#do not care
+		name = "flavor_sax.8.c"
+		ai_chance = { factor = 0 }
+		add_prestige = 10
+	}
+}
+
+country_event = {# peace polabians lose
+	id = flavor_bae.9
+	title = "flavor_sax.9.t"
+	desc = "flavor_sax.2.d"
+	picture = SIEGE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SOR
+		BAE = {
+			war_with = THU
+		}
+		NOT = {war_score = -50}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "flavor_bae.9.b"
+		trigger = { has_global_flag = okh_backstab }
+		ai_chance = {
+			factor = 10
+		}
+		every_owned_province = {
+			limit = {
+				area = south_saxony_area
+			}
+			cede_province = THU
+		}
+		every_owned_province = {
+			limit = {
+				area = mittelmark_area
+			}
+			cede_province = THU
+		}
+		every_owned_province = {
+			limit = {
+				area = lusatia_area
+			}
+			cede_province = OKH
+		}
+		if = {
+			limit = {
+				VEL = {
+					war_with = THU
+				}
+			}
+			VEL = {
+				every_owned_province = {
+					limit = {
+						area = mecklenburg_area
+					}
+					cede_province = THU
+				}
+				every_owned_province = {
+					limit = {
+						area = mittelmark_area
+					}
+					cede_province = OKH
+				}
+				every_owned_province = {
+					limit = {
+						area = vorpommern_area
+					}
+					cede_province = POM
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				OBO = {
+					war_with = THU
+				}
+			}
+			OBO = {
+				every_owned_province = {
+					cede_province = SAX
+				}
+			}
+		}
+		add_truce_with = SAX
+		white_peace = SAX
+	}
+
+	option = {
+		name = "flavor_bae.9.b"
+		trigger = { NOT = {has_global_flag = okh_backstab }}
+		ai_chance = {
+			factor = 10
+		}
+		every_owned_province = {
+			limit = {
+				area = south_saxony_area
+			}
+			cede_province = THU
+		}
+		every_owned_province = {
+			limit = {
+				area = mittelmark_area
+			}
+			cede_province = THU
+		}
+		every_owned_province = {
+			limit = {
+				area = lusatia_area
+			}
+			cede_province = THU
+		}
+		if = {
+			limit = {
+				VEL = {
+					war_with = THU
+				}
+			}
+			VEL = {
+				every_owned_province = {
+					limit = {
+						area = mecklenburg_area
+					}
+					cede_province = THU
+				}
+
+			}
+		}
+		if = {
+			limit = {
+				OBO = {
+					war_with = THU
+				}
+			}
+			OBO = {
+				every_owned_province = {
+					cede_province = SAX
+				}
+			}
+		}
+		add_truce_with = SAX
+		white_peace = SAX
+	}
+}
+#TODO peace polabian wins + sax does not accept the peace with okh

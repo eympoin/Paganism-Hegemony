@@ -5,7 +5,7 @@ technology_group = western
 primary_culture = polabian
 religion = slavic
 capital = 60	# Oberlausitz
-
+add_historical_friend = VEL
 1444.1.1 = {
     monarch = {
         name = "Lecho"

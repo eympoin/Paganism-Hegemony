@@ -1439,7 +1439,7 @@ pagan = {
   flag_emblem_index_range = { 83 96 }
 
   animism = {
-    color = { 127 0 0 }
+    color = { 0 50 0 }
     icon = 11
     country = {
       tolerance_own = 1

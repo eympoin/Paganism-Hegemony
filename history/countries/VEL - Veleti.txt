@@ -5,7 +5,7 @@ technology_group = western
 primary_culture = polabian
 religion = slavic
 capital = 50
-
+add_historical_friend = SOR
 1444.1.1 = {
     monarch = {
         name = "Dragovit"
