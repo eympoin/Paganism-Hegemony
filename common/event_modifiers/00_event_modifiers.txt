@@ -4242,6 +4242,24 @@ mil_approach_ldn = {
 	diplomatic_reputation = -2
 }
 
+ldn_rival_spq = {
+	prestige = 1
+	land_morale = 0.1
+	global_unrest = -2
+}
+
+ldn_coop_spq = {
+	technology_cost = -0.1
+	global_autonomy = -0.1
+	global_missionary_strength = 0.02
+}
+
+ldn_vassal_spq = {
+	technology_cost = -0.2
+	global_unrest = 2
+	prestige = -1
+}
+
 #Mewar
 mer_vijaya_sthambha = {
 	prestige = 1

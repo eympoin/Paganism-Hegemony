@@ -113,3 +113,75 @@ country_event = {
     }
   }
 }
+
+#An Emisarry from the Senate
+country_event = {
+  id = flavor_ldn.2
+  title = flavor_ldn.2.t
+  desc = flavor_ldn.2.d
+  picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+
+  trigger = {
+    exists = SPQ
+    is_year = 1500
+    total_development = 80
+    OR = {
+      tag = LDN
+      tag = BRN
+    }
+  }
+
+  option = {#Submit
+    name = flavor_ldn.2.a
+    ai_chance = { factor = 10 }
+    add_prestige = -10
+    add_legitimacy = 30
+    add_stability = 2
+    add_treasury = 500
+    SPQ = {
+      create_subject = {
+        subject_type = roman_province_decen
+        subject = ROOT
+      }
+    }
+    add_country_modifier = {
+      name = ldn_vassal_spq
+      duration = -1
+    }
+  }
+  option = {#Cooperate
+    name = flavor_ldn.2.b
+    ai_chance = { factor = 60 }
+    add_legitimacy = 20
+    add_dip_power = 100
+    add_stability = 1
+    create_alliance = SPQ
+    SPQ = { add_historical_friend = ROOT }
+    add_historical_friend = SPQ
+    add_country_modifier = {
+      name = ldn_coop_spq
+      duration = -1
+    }
+  }
+  option = {#Dismiss
+    name = flavor_ldn.2.c
+    ai_chance = { factor = 30 }
+    add_legitimacy = -15
+    add_prestige = 20
+    add_mil_power = 100
+    add_dip_power = -100
+    add_stability = -1
+    add_country_modifier = {
+      name = ldn_rival_spq
+      duration = -1
+    }
+    reverse_add_opinion = {
+      who = SPQ
+      modifier = rival
+    }
+    #add_government_reform = roman_senate_reform
+  }
+}
+
+#Cultural conversion
+#country_event = {}

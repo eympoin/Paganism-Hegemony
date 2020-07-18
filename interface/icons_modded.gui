@@ -1,0 +1,84 @@
+windowType = {
+		name = "vassal_selection_entry"
+		backGround=""
+		position = { x=0 y=0 }
+		size = { x=150 y= 64 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder= ""
+		verticalBorder= ""
+		fullScreen = no
+
+		iconType =
+		{
+			name ="entry_banner"
+			spriteType = "GFX_banner_yellow_20"
+			position = { x= 10 y = -1 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "name"
+			position = { x = 65 y =3 }
+			format = left
+			textureFile = ""
+			font = "vic_22"
+			borderSize = {x = 0 y = 0}
+			text = ""
+			maxWidth = 350
+			maxHeight = 32
+			Orientation = "UPPER_LEFT"
+
+		}
+
+		iconType =
+		{
+			name ="icon_protectorate"
+			spriteType = "GFX_icon_protectorate"
+			position = { x= 300 y = -4 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType =
+		{
+			name ="icon_vassal"
+			spriteType = "GFX_icon_vassal"
+			position = { x= 300 y = -4 }
+			Orientation = "UPPER_LEFT"
+		}
+    iconType =
+    {
+      name ="icon_roman_province"
+      spriteType = "GFX_icon_roman_province"
+      position = { x= 300 y = -4 }
+			Orientation = "UPPER_LEFT"
+    }
+
+
+
+		instantTextBoxType = {
+				name = "provinces"
+				position = { x = 60 y = 27 }
+				textureFile = ""
+				font = "vic_18"
+				borderSize = {x = 4 y = 4}
+				text = ""
+				maxWidth = 400
+				maxHeight = 130
+				Orientation = "UPPER_LEFT"
+			}
+
+		guiButtonType =
+		{
+			name ="vassal_selection_button"
+			quadTextureSprite= "GFX_shield_medium"
+			position = { x= -25 y = -5 }
+			Orientation = "UPPER_LEFT"
+
+			tooltip = ""
+			tooltipText =""
+			delayedTooltipText = ""
+
+		}
+
+
+	}

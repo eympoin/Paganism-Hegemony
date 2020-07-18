@@ -1,0 +1,1092 @@
+#ERE Arabian Missions 
+#The overall slots are  split into before and after arabian_nights (taking arabia over)
+
+roman_conquests{
+    #Syrian conquests
+    slot = 1
+    generic = no
+    potential = {
+        tag = GAR
+    }
+    has_country_shield = yes
+    one_holy_empire{
+        icon = mission_pf_cross
+        position = 1
+        required_missions{}
+        provinces_to_highlight{
+            OR{
+                area = trans_jordan_area
+                province_id = 379
+                }
+            NOT= {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        trigger{
+             owns_or_non_sovereign_subject_of = 379
+            trans_jordan_area{
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        effect{
+            syria_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+            syrian_desert_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+            
+        }
+    }
+    conquer_syria{
+        position = 2
+        required_missions{one_holy_empire}
+        icon = mission_build_up_to_force_limit
+        provinces_to_highlight{
+            OR{
+            area = syria_area
+            area = syrian_desert_area
+            }
+            NOT{
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        trigger{
+            syrian_desert_area{
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            syria_area{
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        effect{
+            aleppo_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+            al_jazira_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+    consolidate_syria{
+        position = 3
+        icon = mission_unite_home_region
+        required_missions{conquer_syria}
+        provinces_to_highlight{
+        OR{
+            area = aleppo_area
+            area = al_jazira_area
+        }
+        NOT{
+        country_or_non_sovereign_subject_holds = ROOT
+        }
+        }
+        trigger{
+            aleppo_area{
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            al_jazira_area{
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        effect{
+            cukurova_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+            dulkadir_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+
+        }
+    }
+    trade_of_the_empire{
+        required_missions{consolidate_syria}
+        position = 4
+        icon = mission_trade_company_region_abroad
+        provinces_to_highlight{
+            province_id = 377
+        }
+        trigger{
+            377={
+                is_strongest_trade_power = ROOT
+            }
+        }
+        effect{
+            add_treasury = 300
+            add_country_modifier = {
+				name = "influential_diplomacy"
+				duration = 9125 #25 years
+			}
+        }
+    }
+    #Eastern Mashriq conquests
+    march_on_babylon{
+        position = 8
+        required_missions{arabian_nights}
+        icon = mission_build_up_to_force_limit
+        provinces_to_highlight{
+            OR{
+                area = basra_area
+            }
+            NOT{
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        trigger{
+            basra_area{
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        effect{
+            khuzestan_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+        iraq_arabi_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+    into_the_valleys{
+        position = 9
+        required_missions{march_on_babylon}
+        icon = mission_expand_inland
+        provinces_to_highlight{
+            OR{
+                area = iraq_arabi_area
+                area = khuzestan_area
+            }
+            NOT{
+                country_or_non_sovereign_subject_holds =ROOT
+            }
+        }
+        trigger{
+            iraq_arabi_area{
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            khuzestan_area{
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        effect{
+            shahrizor_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+            luristan_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+    surround_the_zargos{
+        position = 10
+        required_missions{into_the_valleys}
+        icon = mission_unite_home_region
+        provinces_to_highlight{
+            OR{
+                area = luristan_area
+                area = shahrizor_area
+            }
+            NOT{
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        trigger{
+            luristan_area{
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            shahrizor_area{
+                type = all 
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        effect{
+            add_prestige = 20
+            add_mil_power= 150
+        }
+    }
+}
+death_of_islam{
+    slot = 2
+    generic = no
+    potential = {
+        tag = GAR
+    }
+    has_country_shield = yes
+    finish_off_shiites{
+        #Western arab conquests
+        position = 2
+        icon = mission_crusade_for_varna
+        required_missions{ready_the_banners}
+        provinces_to_highlight{
+            OR{
+            area = tabuk_area
+            area = medina_area
+            }
+            NOT = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        trigger{
+            tabuk_area= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            medina_area= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        effect{
+            mecca_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+            tihama_al_yemen_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+            
+        }
+    }
+    crush_islam{
+        icon = mission_mosque
+        required_missions{finish_off_shiites}
+        position = 3
+        provinces_to_highlight{
+            OR{
+                province_id = 385
+                province_id = 2331
+                province_id = 2332
+                province_id = 4277
+                province_id = 4278
+                province_id = 2346
+                province_id = 387
+                province_id = 4279
+            }
+            NOT = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        trigger{
+            mecca_area= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            tihama_al_yemen_area= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        effect{
+            add_prestige 20
+        }
+    }
+    banners_once_more{
+        position = 7
+        required_missions{arabian_nights}
+        icon = mission_control_the_ganges_delta
+        trigger{army_size = 45}
+        effect{
+            gulf_of_arabia_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+            palestine_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+            basra_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+
+        }
+    }
+    secure_sinai{
+        #Egyptian conquests
+        position = 8
+        icon = mission_build_up_to_force_limit
+        required_missions{banners_once_more}
+        provinces_to_highlight{
+            OR{
+                area = palestine_area
+                area = gulf_of_arabia_area
+            }
+            NOT{
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        trigger{
+            palestine_area{
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            gulf_of_arabia_area{
+                type = al;
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        effect{
+            delta_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+            bahari_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+        }
+
+    }
+    dismantle_lower_egypt{
+        position = 9
+        required_missions{secure_sinai}
+        icon = mission_afghan_frontier
+        provinces_to_highlight{
+            OR{
+                area =delta_area
+                area = bahari_area
+            }
+            NOT{
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        trigger{
+            delta_area{
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            bahari_area{
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        effect{
+            said_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+            vostani_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+            al_wahat_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+    dismantle_upper_egypt{
+        position = 10
+        required_missions{dismantle_lower_egypt}
+        icon = mission_unite_home_region
+        provinces_to_highlight{
+            OR{ 
+                area  = al_wahat_area
+                area = vostani_area
+                area = said_area
+            }
+            NOT{
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        trigger{
+            al_wahat_area{
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            vostani_area{
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            said_area{
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        effect{
+            add_legitimacy =  20
+            385{
+                add_building = trade_depot
+            }
+            361{
+                add_building = trade_depot
+            }
+        }
+    }
+}
+central_attack ={
+    #Central arab conquests
+    slot = 3
+    generic = no
+    potential{
+        tag = GAR
+    }
+    has_country_shield = yes
+    ready_the_banners = {
+        
+        icon = mission_assemble_an_army
+        required_missions = {   }
+        trigger{
+        army_size_percentage = 1
+        }
+    effect{
+        medina_area ={
+            limit{
+                NOT ={is_core =ROOT}
+                NOT ={is_permanent_claim = ROOT}
+            }
+            add_permanent_claim =ROOT
+        }
+        tabuk_area ={
+            limit{
+                NOT ={is_core =ROOT}
+                NOT ={is_permanent_claim = ROOT}
+            }
+            add_permanent_claim =ROOT
+        }
+        nafud_area ={
+            limit{
+                NOT ={is_core =ROOT}
+                NOT ={is_permanent_claim = ROOT}
+            }
+            add_permanent_claim =ROOT
+        }
+    }
+    }
+    unite_the_sands ={
+        icon = mission_bedouins
+        required_missions = {ready_the_banners}
+        provinces_to_highlight = {
+            OR = {
+                province_id = 393
+                province_id = 2338
+                province_id= 4272
+            }
+         NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
+        trigger{
+            owns_or_non_sovereign_subject_of = 393
+			owns_or_non_sovereign_subject_of = 2338
+            owns_or_non_sovereign_subject_of = 4272
+
+        }
+        effect{
+            qasim_area ={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT} 
+                }
+                add_permanent_claim = ROOT
+            }
+            yamamah_area ={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+    the_beoudin_union{
+        icon = mission_arabian_fort
+        required_missions{unite_the_sands}
+        provinces_to_highlight{
+            OR{
+                province_id = 2337
+                province_id = 4273
+                province_id = 4274
+                province_id = 392
+                province_id = 4275
+                province_id = 2335
+                province_id = 2336
+                province_id = 2339
+
+            }
+        }
+        trigger{
+            yamamah_area= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            qasim_area= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			} 
+        }
+        effect{
+            pirate_coast_area ={
+            limit{
+                NOT ={is_core =ROOT}
+                NOT ={is_permanent_claim = ROOT}
+            }
+            add_permanent_claim =ROOT
+        }
+        bahrain_area  ={
+            limit{
+                NOT ={is_core =ROOT}
+                NOT ={is_permanent_claim = ROOT}
+            }
+            add_permanent_claim =ROOT
+        }
+        asir_area ={
+            limit{
+                NOT ={is_core =ROOT}
+                NOT ={is_permanent_claim = ROOT}
+            }
+            add_permanent_claim =ROOT
+        }
+        upper_yemen_area ={
+            limit{
+                NOT ={is_core =ROOT}
+                NOT ={is_permanent_claim = ROOT}
+            }
+            add_permanent_claim =ROOT
+        }
+
+        }
+    }
+    to_the_hills{
+        icon = mission_impaled_soldies
+        required_missions{crush_islam the_beoudin_union}
+        provinces_to_highlight{
+            OR{
+                province_id = 390
+                province_id = 391
+                province_id = 4282
+                province_id = 4281
+                province_id = 386
+                province_id = 2344
+            }
+            NOT = {country_or_non_sovereign_subject_holds = ROOT}
+        }
+        trigger{
+            asir_area= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            upper_yemen_area= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        effect{
+            arabia_region{
+                limit{
+                NOT ={is_core =ROOT}
+                NOT ={is_permanent_claim = ROOT}
+            }
+            add_permanent_claim =ROOT
+
+            }
+        }
+    }
+    arabian_nights{
+        icon = mission_war_chest
+        position = 6
+        provinces_to_highlight{
+                OR={region = arabia_region}
+                NOT = {
+                    country_or_non_sovereign_subject_holds = ROOT
+                }
+        }
+        required_missions{the_omani to_the_hills}
+        trigger{arabia_region= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        effect{
+            add_treasury = 200
+            add_country_modifier{
+            name = "imperial_ambition"
+				duration = 9125}
+        }
+
+    }
+    under_one_faith{
+        position = 7
+        icon = mission_hands_praying
+        required_missions{arabian_nights}
+        trigger{
+            religious_unity = 1
+            }
+        effect{
+            add_dip_power = 100
+            add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 9125 
+			}
+        }
+    }
+}
+to_the_gulf{
+    slot = 4 
+    generic = no
+    potential = {
+        tag = GAR
+    }
+    has_country_shield = yes
+    an_arab_lake{
+        #gulf conquests
+        position = 4
+        icon = mission_junk_boat
+        required_missions{the_beoudin_union}
+        provinces_to_highlight{
+            OR{
+                province_id = 394
+                province_id = 2340
+                province_id = 2347
+                province_id = 395
+                province_id = 396
+                province_id = 404
+                province_id = 2333
+                province_id = 397
+                province_id = 398
+            }
+            NOT = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        trigger{
+            pirate_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            bahrain_area= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        effect{
+            oman_area ={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+            dhofar_area ={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+            mascat_area ={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+            
+        }
+    }
+    the_omani{
+        position =5 
+        required_missions{an_arab_lake}
+        icon = mission_steppe_warriors
+        provinces_to_highlight{
+            OR{
+                area = dhofar_area
+                area = mascat_area
+                area = oman_area
+            }
+            NOT = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        trigger{
+            dhofar_area= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            mascat_area= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            oman_area= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+
+        }
+        effect{
+            add_adm_power = 100
+            add_manpower = 5
+        }
+    }
+    to_the_seas{
+        position = 7
+        required_missions{arabian_nights}
+        icon = mission_junk_boat
+        trigger{
+            navy_size_percentage = 1
+        }
+        effect{
+         aussa_area ={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+            red_sea_coast_area ={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }   
+            persian_gulf_coast={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+            mogostan_area ={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+    a_gulf_of_blood{
+        #Ethopian conquests
+        position = 8 
+        required_missions{to_the_seas}
+        icon = mission_build_up_to_force_limit
+        provinces_to_highlight{
+            OR{
+                area = aussa_area
+                area = red_sea_coast_area
+            }
+            NOT = {
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        trigger{
+            aussa_area= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+            }
+			red_sea_coast_area= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        effect{
+            central_ethiopia_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+            tigray_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+        }
+        
+    }
+    over_the_center{
+        position = 9
+        required_missions{a_gulf_of_blood}
+        icon = mission_african_soldier
+        provinces_to_highlight{
+            OR{
+                area = central_ethiopia_area
+                area = tigray_area
+            }
+            NOT{
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        trigger{
+            central_ethiopia_area= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+            tigray_area= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        effect{
+            damot_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+            shewa_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+            hadiya_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+            southern_ethiopia_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+    the_fields_of_gold{
+        position = 10
+        required_missions{over_the_center}
+        icon = mission_unite_home_region
+        provinces_to_highlight{
+            OR{
+                area = southern_ethopia_area
+                area = hadiya_area
+                area = shewa_area
+                area = damot_area
+            }
+            NOT{
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        trigger{
+            southern_ethiopia_area{
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            hadiya_area{
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            shewa_area{
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            damot_area{
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        effect{
+            add_legitimacy = 20
+            add_treasury = 400
+        }
+
+    }
+}
+to_persia{
+    #(See name)
+    slot = 5
+    generic = yes
+    potential{
+        tag = GAR
+    }
+    has_country_shield = yes
+    across_the_strait{
+        position = 8
+        required_missions{to_the_seas}
+        icon = mission_build_up_to_force_limit
+        provinces_to_highlight{
+            OR{
+                area = persian_gulf_coast
+                area = mogostan_area
+            }
+            NOT={
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        trigger{
+            persian_gulf_coast{
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            mogostan_area{
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        effect{
+            farsistan_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+            kerman_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+        }
+    }   
+    cracking_persia{
+        postion = 9
+        icon = mission_conquer_persia
+        required_missions{across_the_strait}
+        provinces_to_highlight{
+            OR{
+                area = farsistan_area
+                area = kerman_area
+            }
+            NOT{
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        trigger{
+            farsistan_area{
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            kerman_area{
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        effect{
+            isfahan_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+            iraq_e_ajam_area={
+                limit{
+                    NOT={is_core = ROOT}
+                    NOT={is_permanent_claim = ROOT}
+                }
+                add_permanent_claim = ROOT
+            }
+        }
+    }
+    the_final_push{
+        position = 10
+        icon = mission_unite_home_region
+        required_missions{cracking_persia}
+        provinces_to_highlight{
+            OR{
+                area =isfahan_area
+                area = iraq_e_ajam_area
+            }
+            NOT{
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        trigger{
+            iraq_e_ajam_area{
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+            isfahan_area{
+                type = all
+                country_or_non_sovereign_subject_holds = ROOT
+            }
+        }
+        effect{
+            add_prestige = 20
+            capital_scope{
+                add_base_tax = 3
+                add_base_production = 3
+                add_base_manpower = 3
+            }
+        }
+    }
+}
