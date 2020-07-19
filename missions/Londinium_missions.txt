@@ -553,9 +553,6 @@ Londinium_3 = {
 				}
 			}
 		}
-		dummy_loyal_to_rome = {}
-		dummy_coop_with_rome = {}
-		dummy_true_roman_empire = {}
 }
 
 Londinium_4 = {

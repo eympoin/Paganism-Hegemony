@@ -287,7 +287,41 @@ germano-roman	= {
 	}
 }
 
+britannian_group = {
+	graphical_culture = westerngfx
 
+	dynasty_names = { "Aelius" "Abronius" "Abudius" "Albinius" "Antonius" "Anneius" "Antius" "Aurelius" "Betucius" "Caecius" "Catienus" "Decimius" "Domitius"
+	"Flavius" "Gallius" "Julius" "Junius" "Livius" "Lucretius" "Marcius" "Marius" "Pompeius" "Salvius" "Tarquinius"
+	}
+	male_names = { "Aggripa" "Appius" "Aulus" "Caeso" "Decimus" "Faustus" "Gaius" "Gnaeus" "Hostus" "Lucius" "Mamercus" "Manius" "Marcus" "Mettius" "Nonus"
+	"Numerius" "Octavius" "Opiter" "Paullus" "Postumus" "Proculus" "Publius" "Quintus" "Septimus" "Sertor" "Servius" "Sectus" "Spurius" "Statius" "Tiberius"
+	"Titus" "Tullus" "Vibius" "Volesus" "Vospiscus"
+	}
+
+	female_names = {"Appia" "Aula" "Caesula" "Decima" "Fausta" "Gaia" "Gnaea" "Hosta" "Lucia" "Mamerca" "Mania" "Marcia" "Mettia" "Nona"
+	"Numeria" "Octavia" "Paulla" "Postuma" "Procula" "Publia" "Quinta" "Septima" "Sertor" "Servia" "Sexta" "Spuria" "Statia" "Tiberia"
+	"Titia" "Tulla" "Vibia" "Volusa" "Vospisca"
+	}
+
+	britannian_2 = {
+		primary = BRN
+	}
+
+	flavian = {
+	}
+
+	brigantes = {
+	}
+
+	iscan = {
+	}
+
+	hybernian = {
+	}
+
+	caledonian = {
+	}
+}
 
 germanic = {
 	graphical_culture = westerngfx
@@ -979,7 +1013,7 @@ gaelic	= {
 			Una
 		}
 	}
-		cornish = {
+	cornish = {
 		primary = CRN
 		dynasty_names = {
 			Aberffraw Dinefwr Mathrafal Gwynedd Tudor Kernew "of Cornwall" Glyndwr "Ternyllwg"
@@ -1045,7 +1079,6 @@ gaelic	= {
 			Tancostyla Tegla Thecla Ysbail Ystradwel
 		}
 	}
-
 	welsh = {
 		primary = WLS
 		dynasty_names = {
@@ -1112,7 +1145,7 @@ gaelic	= {
 			Tancostyla Tegla Thecla Ysbail Ystradwel
 		}
 	}
-		breton = {
+	breton = {
 		primary = BRI
 		dynasty_names = {
 			Rohan Penteur Leon Roazhon Poutrecoet Naoned "Leon" "de Dinan" "de Vitr�" "de Cornouaille"
@@ -1284,7 +1317,6 @@ gaelic	= {
 			Trifine Tristana Uriell Seva Perenn Meonre Ilcum Guigo�don Drichglur Berthildis Argantmoet
 		}
 	}
-
 	irish = {
 		primary = IRE
 		dynasty_names = {
