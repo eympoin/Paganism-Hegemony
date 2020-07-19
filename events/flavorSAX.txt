@@ -51,11 +51,9 @@ country_event = {
 
 	option = {
 		name = "flavor_sax.8.a"
-		}
 	}
-
 }
-#Thuringia receive the answer : yes
+
 country_event = {
 	id = flavor_sax.2
 	title = "flavor_sax.2.t"
@@ -112,7 +110,7 @@ country_event = {
 }
 
 
-#Thuringia receive the answer : no
+#VEL/OBO choose to help or not SOR
 country_event = {
 	id = flavor_sax.4
 	title = "flavor_sax.4.t"
@@ -183,8 +181,12 @@ country_event = {#Thuringian king die
 	}
 	trigger = {
 		war_with = SOR
-		OR = {
-			tag = THU
+		tag = THU
+		THU = {
+			has_opinion_modifier = {
+				who = SAX
+				modifier = opinion_sent_help
+			}
 		}
 	}
 
@@ -195,6 +197,7 @@ country_event = {#Thuringian king die
 			tag = THU
 		}
 		ai_chance = { factor = 10 }
+		kill_ruler = yes
 		set_global_flag = sax_take_control
 	}
 
@@ -204,6 +207,7 @@ country_event = {#Thuringian king die
 			tag = THU
 		}
 		ai_chance = { factor = 0 }
+		kill_ruler = yes
 		add_prestige = 10
 		set_global_flag = thuringia_remains_independant
 	}
@@ -228,11 +232,8 @@ country_event = {#fate of thuringian throne
 	}
 	trigger = {
 		is_at_war = no
-		tag = THU
-		OR = {
-			has_global_flag =  thuringia_remains_independant
-			has_global_flag = sax_take_control
-		}
+		tag = SAX
+		has_global_flag = sax_take_control
 	}
 
 
@@ -245,15 +246,6 @@ country_event = {#fate of thuringian throne
 		SAX = {
 			create_union = THU
 		}
-	}
-
-	option = {
-		name = "flavor_sax.12.b"
-		trigger = {
-			has_global_flag = thuringia_remains_indpeendant
-		}
-		ai_chance = { factor = 1 }
-		add_prestige = 10
 	}
 }
 country_event = {#polabians ask help from the khanate
@@ -609,5 +601,3 @@ country_event = {# peace polabians wins against OKH
 		clr_global_flag = okh_backstab
 	}
 }
-
-#TODO peace polabian wins + sax does not accept the peace with okh
