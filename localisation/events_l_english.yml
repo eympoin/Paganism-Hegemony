@@ -451,7 +451,7 @@ flavor_smi.1.d:0 "The copper stock in these mines is colossal, we shall use it t
 flavor_smi.1.a:0 "The riches of these mines is ours !"
 
 
-#Lundinium
+#Londinium
 flavor_ldn.1.t:0 "The way forward"
 flavor_ldn.1.d:0 "Our brethren have all been chased from the Isles, only we remain. To thrive in these uncertain times we must focus our efforts wisely and chose how we will move forward in the hopes of one day reuniteing Britannia."
 flavor_ldn.1.a:0 "To arms brothers, these heathens will die on the field of battle"
@@ -467,3 +467,63 @@ flavor_ldn.2.d:0 "The Senate in Rome has sent us an emisarry bringing us news of
 flavor_ldn.2.a:0 "We are loyal to the Senate"
 flavor_ldn.2.b:0 "We are brothers, the past shall not stain that fact"
 flavor_ldn.2.c:0 "We are the true heirs of the empire of old !"
+
+#Saxony
+flavor_sax.1.t:0 "Thuringia ask for help"
+flavor_sax.1.d:0 "The Thuringians are our closest allies since the attack of the Franks and the creation of East Francia. They have helped us in countless wars and our famillies closely related. Now they seek to reconquer the long lost lands of the Polabians and they asked us to help them in the following war."
+flavor_sax.1.a:0 "Help them !"
+flavor_sax.1.b:0 "This is not our war"
+
+flavor_sax.2.t:0 "Saxony agree to help us conquer Polabia !"
+flavor_sax.2.d:0 "With the Khanate invasion, the Polabians are weakened, it is the right time to strike. Saxony has agreed to help us in this endeavour."
+flavor_sax.2.a:0 "To war !"
+
+flavor_sax.3.t:0 "Saxony refuse to help us conquer Polabia !"
+flavor_sax.3.d:0 "With the Khanate invasion, the Polabians are weakened, it is the right time to strike. But Saxony won't help us, what should we do ?"
+flavor_sax.3.a:0 "We don't need the Saxons help. To war !"
+flavor_sax.3.b:0 "Do not attack for now..."
+
+flavor_sax.4.t:0 "Sorbia plea for help"
+flavor_sax.4.d:0 "Sorbia is attacked by the Germans and have asked for helps against the Germanic invasion. They call for a Slavic alliance against the Germans. An alliance wit hteh same purpose of the Alliance against the mongols some years ago."
+flavor_sax.4.a:0 "We will stand with our brethren. If they fall, we will fall next."
+flavor_sax.4.b:0 "Let them die alone"
+
+flavor_sax.5.t:0 "Thuringia is attacking us !"
+flavor_sax.5.d:0 "They have declared war and their armies are moving. We don't know yet if the Saxons will help them or not. We have send envoys to the Obotrites and the Veletis to ask for help."
+flavor_sax.5.a:0 "The war for Polabia has begun"
+
+
+flavor_sax.5.t:0 "Our king is dead"
+flavor_sax.5.d:0 "In the midst of a skirmish against the Polabians, our king was struck by an arrow. It killed him. What should we do now ?"
+flavor_sax.5.a:0 "Let a Saxon rule us (At the end of the war, Thuringia will become a personal Union under Saxony)"
+flavor_sax.5.b:0 "We shall rule ourselves"
+
+flavor_sax.12.t:0 "The fate of the Thuringian throne"
+flavor_sax.12.d:0 "The king of Thuringia died in a skirmish during the war and the nobles of Thuringia decided to give us the throne as we are closely related to the dead king"
+flavor_sax.12.a:0 "The Germans will stay united !"
+
+flavor_sax.7.t:0 "We are losing this war"
+flavor_sax.7.d:0 "We are not winning this war. in fact we are even losing it. But something may save us. The Khan of the Orda Khanate might help us, but asking for their help is risky. There will be a price to pay and they will learn of our weak state tehy may even backstab us."
+flavor_sax.7.a:0 "A deal with the devil"
+flavor_sax.7.b:0 "We will defend ourselves alone !"
+
+flavor_sax.13.t:0 "The Sorbians are asking for help"
+flavor_sax.13.d:0 "The Germans are attacking the Polabians and the Slavs are losing this war. They are asking for our help, what sould we do ?"
+flavor_sax.13.a:0 "Accept their plea for help."
+flavor_sax.13.b:0 "They are weak, it is time to attack them."
+flavor_sax.13.c:0 "Let the Slavs die alone"
+
+
+flavor_sax.9.t:0 "We have fallen"
+flavor_sax.9.d:0 "Our warriors might was not enough. Today we fall..."
+flavor_sax.9.a:0 "Our children will avenge us"
+flavor_sax.9.b:0 "Our children will avenge us"
+
+flavor_sax.10.t:0 "Victory against the Germans"
+flavor_sax.10.d:0 "The German invaders are repelled. Today marks the end of their invasion and the beginning of our golden age."
+flavor_sax.10.a:0 "Victory !"
+
+
+flavor_sax.11.t:0 "Victory against the Khan"
+flavor_sax.11.d:0 "The khan was ill-advised to backstab us like that..."
+flavor_sax.11.a:0 "Liberate our Pomeranians and Silesians brethren !"

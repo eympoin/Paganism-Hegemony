@@ -430,7 +430,7 @@ country_event = {
 	option = {
 		name = "shadow_kingdom.6.b"
 		ai_chance = {
-			factor = 10
+			factor = 0
 		}
 		add_prestige = 10
 		BYZ = { country_event = { id = shadow_kingdom.7 } }
