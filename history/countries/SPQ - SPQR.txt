@@ -1,5 +1,5 @@
 government = republic
-add_government_reform = feudalism_reform
+add_government_reform = imperial_roman_curia_reform
 primary_culture = roman
 religion = jupiterian
 technology_group = western

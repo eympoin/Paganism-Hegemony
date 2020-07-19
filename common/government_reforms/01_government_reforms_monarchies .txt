@@ -1154,7 +1154,19 @@ satrapdom_reform = {
 	icon = "muslim"
 	allow_normal_conversion = yes
 	potential = {
-		culture_group = iranian
+		OR = {
+			tag = DIH
+			tag = GOR
+			tag = SIS
+			tag = FRS
+			tag = ABA
+			tag = MRV
+			tag = HRV
+			tag = EML
+			tag = LRI
+			tag = KRM
+			tag = BAL
+		}
 	}
 	legacy_equivalent = satrapdom_legacy
 	fixed_rank = 1
