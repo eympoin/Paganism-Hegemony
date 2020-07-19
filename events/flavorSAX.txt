@@ -37,6 +37,24 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = flavor_sax.8
+	title = "flavor_sax.8.t"
+	desc = "flavor_sax.8.d"
+	picture = IMPORTANT_STATUE_eventPicture
+
+	trigger = {
+		tag = THU
+		tag = SAX
+	}
+
+
+	option = {
+		name = "flavor_sax.8.a"
+		}
+	}
+
+}
 #Thuringia receive the answer : yes
 country_event = {
 	id = flavor_sax.2
