@@ -4,6 +4,8 @@
 # written by Walthorn
 ########################################
 
+namespace = flavor_nrt
+
 #Cultural choice
 country_event = {
   id = flavor_nrt.1
