@@ -89,7 +89,7 @@ country_event = {
     }
     name = slavic_uprising.2.b
     emperor = {
-      add_treasury = -1000
+      add_treasury = -500
     }
     every_country = {
       limit = {
@@ -234,6 +234,7 @@ country_event = {
     ai_chance = {
       factor = 10
     }
+    set_country_flag = elite_remained_in_power
     add_treasury = 100
     add_country_modifier = {
       name = "slavic_uprising_imperial_help"
@@ -339,6 +340,7 @@ country_event = {
     ai_chance = {
       factor = 1
     }
+    set_country_flag = elite_remained_in_power
     add_country_modifier = {
       name = "slavic_uprising"
       duration = 3650
@@ -503,5 +505,28 @@ country_event = { #victory_of_the_emperor
     }
     add_prestige = 10
     add_imperial_influence = 5
+  }
+}
+
+country_event = {
+  id = slavic_uprising.9
+  title = slavic_uprising.9.t
+  desc = slavic_uprising.9.d
+  picture = HRE_eventPicture
+
+  trigger = {
+    is_force_converted = yes
+    has_country_flag = elite_remained_in_power
+  }
+
+
+  option = { #defy the empire
+    name = slavic_uprising.9.a
+
+    set_country_flag = defy_the_emperor
+    declare_war_with_cb = {
+      who = emperor
+      casus_belli = cb_religious_conformance
+    }
   }
 }

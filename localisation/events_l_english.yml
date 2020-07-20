@@ -403,6 +403,9 @@ slavic_uprising.8.t:0 "The war is won"
 slavic_uprising.8.d:0 "We have defeated the Slavs. They shall not rule again."
 slavic_uprising.8.a:0 "Reestablish the Greek elites !"
 
+slavic_uprising.9.t:0 "The rebellion has succeed"
+slavic_uprising.9.d:0 "We have defeated the Greek elites who wished to remain in power, it is time to bring the arms upon their leader : the Emperor"
+slavic_uprising.9.a:0 "To war !"
 
 #trade incident
 incident_trade_competitor:0 "New trade competitors"
