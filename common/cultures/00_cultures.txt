@@ -854,8 +854,94 @@ scandinavian = { #Nordic
 			"Vedel" "Bjelke" "Galle" "Griis"
 		}
 	}
-
-
+	Vinlandic = {
+		primary = NRT
+		male_names = {
+				Ale Alfr Alf Alfgeir Anders Andrew Anlaufr Anundr Anund Arnbj�rn Arngrimr Arni Arne Arnfast
+				Asbj�rn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger Bj�rn Beorn Bo Borkvard
+				Botulfr Bragi Brage Bu�li Dag Dan Dyre Eilif Egill Egil Emund Einarr Einar Eirikr Erik
+				Eskild Falki Faste Filip Philip Fredrik Frederick Frirek Frode Freyr Frej Folki Folke
+				Gandalfr Geirr Georg George Gnupa Gorm Greger Gregory Grimr Grim Godfrey Gu�mundr
+				Gudmund Gudr�d Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming
+				Holmger Hrafn Hrolfr Rolf Hrane H�steinn Hjalmar Hysing
+				Ing�lfr Ingolf Ingemar Ingjald Ivar Jedvard Edward Jon John Karl Charles Kettil Kettilmund
+				Kjartan Klas Knut Kol Kolbj�rn Magnus Markus Marcus Mats Matthew Nils Niklas Nicholas Oddr
+				Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr R�gnvaldr
+				Ragnvald Skuli Skule Snorri Sigbj�rn Sigtrygg Sigur�r Sigurd Starkad Steinn Sten
+				Sturla Styrbj�rn Styrkar Somerled Suni Sune Sveinn Sven Sverker S�mundr S�mund
+				S�lvi S�lve S�rkver Tjudmund Toke Tolir �orbj�rn Torbj�rn �orfinn Torfinn �orbrandr Torbrand
+				�ordr Tord �orgil Torkel �orsteinn Torsten �orolfr Thorolf Toste Totil Tryggve Tyke Ulfr Ulf
+				Vagn Valdemar Vladimir �ke Yngvar Ingvar �rvar Orvar �ysteinn Eysteinn H�kon Olav
+				Christoffer Harald Inge Aksel Ansgard Arvid Bernt Bj�rn Daniel Edvard Eilert Elias Esben
+				Kasper Kennet Knut Ludvig Mikael Nj�ld Njord Oddmund Peder Rikard Simon S�ren Tollak
+		}
+		female_names = {
+			Torhild Aleta Alfhildr Alfhild Alfridh Alv�r Anna Asa �sa Aslaug Asta Astrid Beata
+			Birgitta Brigid Bj�rg Bodil Bothildr Bothild Cecilia Edla Elin Elisabet Elizabeth Freyja Freja
+			Grima Gunnhildr Gunhild Gurli Gudrun Gyla Gytha Hafrid Halla Helena
+			Helen Holmfrid Iliana Inga Ingfrid Ingibj�rg Ingeborg Ingjer�r Ingegerd Ingrid Karin
+			Katarina Catherine Kraka Kristina Christina Linda Maer Malmfri� Malmfrid Margareta Margaret
+			Maria Rikissa R�gnfrid Ragnfrid R�gnhildr Ragnhild Saga Sara Sarah Sif Sigrid Skuld Sofia
+			Sophia Svanhildr Svanhild Ulfhildr Ulvhilde Vigdis Ylva Yrsa �ora Thora �ordis Thordis �yra
+			Thyra
+		}
+		dynasty_names = {
+			"H�rfagre�tta" "Bielke" "Bildt" "Galte" "Paus" "Sm�r" "Benkestok" "Kane" "Bonde"
+			"Drake" "av Hafrsfjord" "Ytra" "av Ask�" "Koss" "av R�ra" "av Nordland" "Hylling"
+			"Alfr" "Herja" "Vans�" "Flod" "af Vendel" "av Alfheim" Vidfamne "Bille"
+			"Iuel" "Kaas" "Rosenkrantz" "Urne" "Adeler" "Blixenskiold" "Gyldenpalm" "Holberg"
+			"Rosenheim" "Schouboe" "Tordenskiold" "Wessel" "Westervick" "Falsen" "Knagenhjelm"
+			"Galtung" "Heubsch" "Kl�cker" "L�venskiold" "Rosenvinge" "Werenskiold" "Kruckow"
+			"Mowat" "R�mer" "Handingmann" "Skaktavl" "Tordenstierne" Roos
+			# CKII
+			"Skanke" "Bolt" "Giske" "Brockenhuus" "Adelsw�rd" "Kane" "Blixen" "L�vendal" "Balke"
+			"Vedel" "Bjelke" "Galle" "Griis"
+		}
+	}
+	Icelandic = {
+		primary = ICE
+		male_names = {
+				Ale Alfr Alf Alfgeir Anders Andrew Anlaufr Anundr Anund Arnbj�rn Arngrimr Arni Arne Arnfast
+				Asbj�rn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger Bj�rn Beorn Bo Borkvard
+				Botulfr Bragi Brage Bu�li Dag Dan Dyre Eilif Egill Egil Emund Einarr Einar Eirikr Erik
+				Eskild Falki Faste Filip Philip Fredrik Frederick Frirek Frode Freyr Frej Folki Folke
+				Gandalfr Geirr Georg George Gnupa Gorm Greger Gregory Grimr Grim Godfrey Gu�mundr
+				Gudmund Gudr�d Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming
+				Holmger Hrafn Hrolfr Rolf Hrane H�steinn Hjalmar Hysing
+				Ing�lfr Ingolf Ingemar Ingjald Ivar Jedvard Edward Jon John Karl Charles Kettil Kettilmund
+				Kjartan Klas Knut Kol Kolbj�rn Magnus Markus Marcus Mats Matthew Nils Niklas Nicholas Oddr
+				Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr R�gnvaldr
+				Ragnvald Skuli Skule Snorri Sigbj�rn Sigtrygg Sigur�r Sigurd Starkad Steinn Sten
+				Sturla Styrbj�rn Styrkar Somerled Suni Sune Sveinn Sven Sverker S�mundr S�mund
+				S�lvi S�lve S�rkver Tjudmund Toke Tolir �orbj�rn Torbj�rn �orfinn Torfinn �orbrandr Torbrand
+				�ordr Tord �orgil Torkel �orsteinn Torsten �orolfr Thorolf Toste Totil Tryggve Tyke Ulfr Ulf
+				Vagn Valdemar Vladimir �ke Yngvar Ingvar �rvar Orvar �ysteinn Eysteinn H�kon Olav
+				Christoffer Harald Inge Aksel Ansgard Arvid Bernt Bj�rn Daniel Edvard Eilert Elias Esben
+				Kasper Kennet Knut Ludvig Mikael Nj�ld Njord Oddmund Peder Rikard Simon S�ren Tollak
+		}
+		female_names = {
+			Torhild Aleta Alfhildr Alfhild Alfridh Alv�r Anna Asa �sa Aslaug Asta Astrid Beata
+			Birgitta Brigid Bj�rg Bodil Bothildr Bothild Cecilia Edla Elin Elisabet Elizabeth Freyja Freja
+			Grima Gunnhildr Gunhild Gurli Gudrun Gyla Gytha Hafrid Halla Helena
+			Helen Holmfrid Iliana Inga Ingfrid Ingibj�rg Ingeborg Ingjer�r Ingegerd Ingrid Karin
+			Katarina Catherine Kraka Kristina Christina Linda Maer Malmfri� Malmfrid Margareta Margaret
+			Maria Rikissa R�gnfrid Ragnfrid R�gnhildr Ragnhild Saga Sara Sarah Sif Sigrid Skuld Sofia
+			Sophia Svanhildr Svanhild Ulfhildr Ulvhilde Vigdis Ylva Yrsa �ora Thora �ordis Thordis �yra
+			Thyra
+		}
+		dynasty_names = {
+			"H�rfagre�tta" "Bielke" "Bildt" "Galte" "Paus" "Sm�r" "Benkestok" "Kane" "Bonde"
+			"Drake" "av Hafrsfjord" "Ytra" "av Ask�" "Koss" "av R�ra" "av Nordland" "Hylling"
+			"Alfr" "Herja" "Vans�" "Flod" "af Vendel" "av Alfheim" Vidfamne "Bille"
+			"Iuel" "Kaas" "Rosenkrantz" "Urne" "Adeler" "Blixenskiold" "Gyldenpalm" "Holberg"
+			"Rosenheim" "Schouboe" "Tordenskiold" "Wessel" "Westervick" "Falsen" "Knagenhjelm"
+			"Galtung" "Heubsch" "Kl�cker" "L�venskiold" "Rosenvinge" "Werenskiold" "Kruckow"
+			"Mowat" "R�mer" "Handingmann" "Skaktavl" "Tordenstierne" Roos
+			# CKII
+			"Skanke" "Bolt" "Giske" "Brockenhuus" "Adelsw�rd" "Kane" "Blixen" "L�vendal" "Balke"
+			"Vedel" "Bjelke" "Galle" "Griis"
+		}
+	}
 
 }
 

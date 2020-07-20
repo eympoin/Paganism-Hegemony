@@ -1,14 +1,13 @@
 #1104 - Eiriksfjord
 
-culture = inuit
-religion = animism
+culture = Vinlandic
+religion = norse_pagan_reformed
 capital = "Eiriksfjord"
 trade_goods = unknown
 hre = no
-base_tax = 1 
+base_tax = 1
 base_production = 1
 base_manpower = 1
 native_size = 5
 native_ferocity = 2
 native_hostileness = 9
-
