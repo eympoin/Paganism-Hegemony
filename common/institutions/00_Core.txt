@@ -1051,7 +1051,11 @@ printing_press = {
 				tooltip = tooltip_development_20_capital
 				development = 20
 				is_capital = yes
-				continent = europe
+				OR = {
+					continent = europe
+					superregion = persia_superregion
+					superregion = near_east_superregion 
+					}
 			}
 		}
 		modifier = {
