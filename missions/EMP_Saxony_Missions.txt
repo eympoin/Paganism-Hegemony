@@ -210,7 +210,7 @@ norse_raids = {
 	secure_the_baltic_gates = {
 		position = 3
 		icon = claim_the_borderlands
-		required_missions = { norse_raids }
+		required_missions = { punish_norse_raiders }
 		ai_weight = {
 			factor = 5
 		}
@@ -247,21 +247,21 @@ norse_raids = {
 			}
 		}
 		effect = {
-		add_treasury = 100
-		12 = {
-			add_trade_modifier = {
-				who = root
-				duration = -1
-				power = 40
-				key = baltic_gates
+			add_treasury = 100
+			12 = {
+				add_trade_modifier = {
+					who = root
+					duration = -1
+					power = 40
+					key = baltic_gates
 				}
-		}
+			}
 		}
 	}
 }
 
 
-norse_raids = {
+german_unification = {
 	slot = 1
 	generic = no
 	ai = yes
@@ -289,9 +289,9 @@ norse_raids = {
 		trigger = {
 			alliance_with = THU
 			THU = {
-			has_opinion = {
-				who = ROOT
-				value = 180
+				has_opinion = {
+					who = ROOT
+					value = 180
 				}
 			}
 		}
@@ -300,4 +300,141 @@ norse_raids = {
 		}
 	}
 
-}
+	two_people_one_king = {
+		position = 2
+		icon = claim_the_borderlands
+		required_missions = { our_germanic_brethren }
+		ai_weight = {
+			factor = 5
+		}
+		ai_priority = {
+			factor = 5
+		}
+
+		provinces_to_highlight = {
+		}
+		trigger = {
+			OR = {
+				senior_union_with = THU
+				NOT = {exists = MNG}
+			}
+		}
+		effect = {
+			mecklenburg_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			vorpommern_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mittelmark_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lusatia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	the_mongol_threat = {
+		position = 3
+		icon = claim_the_borderlands
+		required_missions = { two_people_one_king }
+		ai_weight = {
+			factor = 5
+		}
+		ai_priority = {
+			factor = 5
+		}
+
+		provinces_to_highlight = {
+		}
+		trigger = {
+			army_strength = {
+				who = OKH
+				value = 1
+			}
+		}
+		effect = {
+			neumark_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			wielkopolska_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			silesia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			central_poland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			malopolska_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "anti_mongol_strategy"
+				duration = 3650
+			}
+		}
+	}
+
+	fall_of_the_khanate = {
+		position = 4
+		icon = claim_the_borderlands
+		required_missions = { the_mongol_threat }
+		ai_weight = {
+			factor = 5
+		}
+		ai_priority = {
+			factor = 5
+		}
+
+		provinces_to_highlight = {
+		}
+		trigger = {
+			army_strength = {
+				OKH = {
+					NOT = {development = 75}
+				}
+			}
+		}
+		effect = {
+			every_country = {
+				limit = {
+					is_subject_of = OKH
+				}
+				grant_independence = yes
+			}
+			add_country_modifier = {
+				name = "lesson_from_the_nomads"
+				duration = -1
+			}
+		}
+
+	}
