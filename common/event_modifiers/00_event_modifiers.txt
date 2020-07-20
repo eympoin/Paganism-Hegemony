@@ -11389,3 +11389,29 @@ the_last_offensive = {
 	land_morale = 0.1
 	shock_damage = 0.1
 }
+
+#Northumbria
+
+nrt_assimilation = {
+	global_unrest = -2
+}
+
+nrt_purge = {
+	global_unrest = 3
+}
+
+nrt_expatriation = {
+	expel_minorities_cost = -0.7
+	global_unrest = 1
+}
+
+nrt_migration_affect = {
+	local_tax_modifier = -0.3
+	local_production_efficiency = -0.2
+	local_manpower_modifier = -0.3
+}
+
+nrt_purged_populus = {
+	local_tax_modifier = -0.7
+	local_production_efficiency = -0.3
+}

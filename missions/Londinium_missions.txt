@@ -219,6 +219,58 @@ Londinium_2 = {
 				name = theology
 				duration = 7300
 			}
+			4362 = {
+				rename_capital = "Blatobulgio"
+				change_province_name = Selgovae
+			}
+			4361 = {
+				rename_capital = "Trimontium"
+				change_province_name = Votadni
+			}
+			248 = {
+				rename_capital = "Eidyn"
+				change_province_name = Damnonii
+			}
+			249 = {
+				rename_capital = "Normandicum"
+				change_province_name = Novantae
+			}
+			4363 = {
+				rename_capital = "Pavetum"
+				change_province_name = Epidii
+			}
+			250 = {
+				rename_capital = "Pinnata Castra"
+				change_province_name = Venicones
+			}
+			251 = {
+				rename_capital = "Durno"
+				change_province_name = Taexali
+			}
+			252 = {
+				rename_capital = "Phadriga"
+				change_province_name = Caledonii
+			}
+			4110 = {
+				rename_capital = "Dornorum"
+				change_province_name = Smertae
+			}
+			4364 = {
+				rename_capital = "Sicius"
+				change_province_name = Creones
+			}
+			253 = {
+				rename_capital = "Stornum"
+				change_province_name = Carnonacae
+			}
+			4365 = {
+				rename_capital = "Insula Monava"
+				change_province_name = Monapia
+			}
+			369 = {
+				rename_capital = "Isca Cornum"
+				change_province_name = Cornavii
+			}
 		}
 	}
 }
@@ -506,7 +558,7 @@ Londinium_3 = {
 					rename_capital = Eboracum
 					change_religion = jupiterian
 					add_province_modifier = {
-						name = building_spree
+						name = growing_economy
 						duration = 3650
 					}
 				}
@@ -553,9 +605,6 @@ Londinium_3 = {
 				}
 			}
 		}
-		dummy_loyal_to_rome = {}
-		dummy_coop_with_rome = {}
-		dummy_true_roman_empire = {}
 }
 
 Londinium_4 = {
@@ -625,7 +674,15 @@ Londinium_4 = {
 								name = ldn_glevum_shipyard
 								duration = -1
 							}
-							change_culture = britannian
+							if = {
+							  limit = {
+							    has_country_modifier = ldn_rival_spq
+							  }
+							  change_culture = britannian_2
+							}
+							else = {
+							  change_culture = britannian
+							}
 				}
 				kingdom_of_the_isles_area = {
 					limit = {
@@ -691,7 +748,6 @@ Londinium_5 = {
 					has_building = fort_15th
 					has_building = workshop
 					has_building = dock
-					has_building = shipyard
 					province_has_center_of_trade_of_level = 2
 				}
 			}
@@ -701,10 +757,11 @@ Londinium_5 = {
 							add_base_production = 3
 							add_base_manpower = 5
 							add_center_of_trade_level = 1
-						}
-				add_country_modifier = {
-						name = ldn_londinium_rebuilt
-						duration = -1
+
+					add_province_modifier = {
+							name = ldn_londinium_rebuilt
+							duration = -1
+					}
 				}
 			}
 		}
@@ -732,7 +789,15 @@ Londinium_5 = {
 							add_base_production = 2
 							add_base_manpower = 2
 							center_of_trade = 1
-							change_culture = britannian
+							if = {
+								limit = {
+									has_country_modifier = ldn_rival_spq
+								}
+								change_culture = britannian_2
+							}
+							else = {
+								change_culture = britannian
+							}
 						}
 			}
 		}
@@ -760,7 +825,15 @@ Londinium_5 = {
 							add_base_production = 3
 							add_base_manpower = 1
 							add_center_of_trade_level = 1
-							change_culture = britannian
+							if = {
+							  limit = {
+							    has_country_modifier = ldn_rival_spq
+							  }
+							  change_culture = britannian_2
+							}
+							else = {
+							  change_culture = britannian
+							}
 						}
 			}
 		}
@@ -786,7 +859,15 @@ Londinium_5 = {
 				245 = {
 					add_center_of_trade_level = 1
 					add_building = university
-					change_culture = britannian
+					if = {
+					  limit = {
+					    has_country_modifier = ldn_rival_spq
+					  }
+					  change_culture = britannian_2
+					}
+					else = {
+					  change_culture = britannian
+					}
 					add_province_modifier = {
 						name = ldn_eboracum_university
 						duration = -1
