@@ -832,7 +832,16 @@ country_event = {
 			who = FRS
 			modifier = returned_core_to_me
 		}
-		ABA = { create_alliance = ELM }
+		ABA = { create_alliance = ELM
+			reverse_add_opinion = {
+				who = ELM
+				modifier = opinion_friendliness
+			}
+			add_opinion = {
+				who = ELM
+				modifier = opinion_friendliness
+			}
+		}
 
 			change_variable = {
 				which = FRS_loy

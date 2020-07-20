@@ -43,8 +43,8 @@ northymbria_1 = {
       has_idea_group = exploration_ideas
       239 = {
         has_building = workshop
-        has_building = dockyard
-        developement = 15
+        has_building = dock
+        development = 15
       }
     }
 

@@ -1,11 +1,11 @@
 #2573 - Placientia
 
-culture = cree
-religion = totemism
+culture = Vinlandic
+religion = norse_pagan_reformed
 capital = "Placentia"
 trade_goods = unknown
 hre = no
-base_tax = 1 
+base_tax = 1
 base_production = 3
 base_manpower = 1
 native_size = 5
@@ -21,7 +21,7 @@ discovered_by = north_american
 		duration = -1
 	}
 }
-1534.1.1 = { discovered_by = FRA } # Jacques Cartier	
+1534.1.1 = { discovered_by = FRA } # Jacques Cartier
 1620.1.1 = {
 	owner = FRA
 	controller = FRA
