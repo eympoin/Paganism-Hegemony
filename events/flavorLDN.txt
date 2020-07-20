@@ -205,7 +205,7 @@ country_event = {
       tag = BRN
       tag = LDN
     }
-    has_country_tag = ldn_rival_spq
+    has_country_modifier = ldn_rival_spq
     any_owned_province = {
       religion = jupiterian
       OR = {
@@ -364,8 +364,8 @@ country_event = {
       tag = LDN
     }
     OR = {
-      has_country_tag = ldn_coop_spq
-      has_country_tag = ldn_vassal_spq
+      has_country_modifier = ldn_coop_spq
+      has_country_modifier = ldn_vassal_spq
     }
     any_owned_province = {
       religion = jupiterian

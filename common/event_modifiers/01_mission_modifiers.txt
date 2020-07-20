@@ -4423,7 +4423,7 @@ ldn_integrate_land = {
 
 ldn_glevum_shipyard = {
 	allowed_num_of_buildings = 1
-	local_sailors = 0.5
+	local_sailors_modifier = 0.25
 }
 
 ldn_eboracum_university = {
@@ -4436,4 +4436,23 @@ Sanctuary_of_Irminsul = {
 ldn_colonial_vigor = {
 	global_colonial_growth = 25
 	colonist_placement_chance = 0.05
+}
+
+#Northumbria
+nrt_push_south = {
+	movement_speed = 0.2
+}
+
+nrt_purge_germanics = {
+	missionary_maintenance_cost = -0.5
+	global_missionary_strength = 0.03
+}
+
+nrt_shocking_force = {
+	shock_damage = 0.15
+}
+
+nrt_colonial_port = {
+	local_sailors_modifier = 0.25
+	allowed_num_of_buildings = 1
 }

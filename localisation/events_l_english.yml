@@ -537,3 +537,17 @@ flavor_sax.10.a:0 "Victory !"
 flavor_sax.11.t:0 "Victory against the Khan"
 flavor_sax.11.d:0 "The khan was ill-advised to backstab us like that..."
 flavor_sax.11.a:0 "Liberate our Pomeranians and Silesians brethren !"
+
+
+#Northumbria
+flavor_nrt.1.t:0 "The fate of the non-nords"
+flavor_nrt.1.d:0 "In the lands we now own there are many who do not speak or behave like nords, the issue is what to do with them, assimilating them would take a long time but it would be the most efficient, expelling them to new lands would work too but they would not be too happy about it. We could also let the nordic migrants deal with them with cold steel, but that would be extreme."
+flavor_nrt.1.a:0 "Assimilation will be the most rewarding"
+flavor_nrt.1.b:0 "Send them across the waves, to Vinland they go"
+flavor_nrt.1.c:0 "May they meet their makers"
+flavor_nrt.2.t:0 "A civilized province"
+flavor_nrt.2.d:0 "The people of this province have mingled with the nordic migrants over the years, it is hard to tell them apart from true nords."
+flavor_nrt.2.a:0 "This is beautiful"
+flavor_nrt.3.t:0 "A new province settled"
+flavor_nrt.3.d:0 "Settlers from scandinavia have arrived and made this province home, they expelled and butchered the former inhabitants make the land poor and barren, but, in time, it will recover."
+flavor_nrt.3.a:0 "Just as planned"
