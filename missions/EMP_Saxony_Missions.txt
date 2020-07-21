@@ -70,7 +70,7 @@ east_francia_fall = {
 		}
 		trigger = {
 			num_of_owned_provinces_with = {
-				value = 6
+				value = 5
 				OR = {
 					area = franconia_area
 					area = upper_franconia_area
@@ -316,7 +316,7 @@ german_unification = {
 		trigger = {
 			OR = {
 				senior_union_with = THU
-				NOT = {exists = MNG}
+				NOT = {exists = THU}
 			}
 		}
 		effect = {
@@ -418,12 +418,10 @@ german_unification = {
 		provinces_to_highlight = {
 		}
 		trigger = {
-			army_strength = {
 				OKH = {
 					NOT = {development = 75}
 				}
 			}
-		}
 		effect = {
 			every_country = {
 				limit = {

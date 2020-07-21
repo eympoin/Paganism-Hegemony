@@ -601,3 +601,57 @@ country_event = {# peace polabians wins against OKH
 		clr_global_flag = okh_backstab
 	}
 }
+
+#Lotharingia intervention
+country_event = {
+	id = flavor_sax.14
+	title = "flavor_sax.14.t"
+	desc = "flavor_sax.14.d"
+	picture = IMPORTANT_STATUE_eventPicture
+
+	is_triggered_only = yes
+
+
+	option = {#protect the other duchies
+		name = "flavor_sax.14.a"
+		ai_chance = { factor = 10 }
+
+		create_guarantee = BAV
+		create_guarantee = ALM
+		create_guarantee = EFR
+		add_country_modifier = {
+			name = "anti_saxon_protection"
+			duration = -1
+		}
+	}
+	option = {#not helping Thuringia
+		name = "flavor_sax.14.b"
+		ai_chance = { factor = 0 }
+
+		prestige = 10
+	}
+}
+
+#Failure of lotharingia
+country_event = {
+	id = flavor_sax.15
+	title = "flavor_sax.15.t"
+	desc = "flavor_sax.15.d"
+	picture = IMPORTANT_STATUE_eventPicture
+
+	trigger = {
+		has_country_modifier = anti_saxon_protection
+		war_with = SAX
+		NOT = {war_score = -50}
+	}
+
+
+	option = {#failure
+		name = "flavor_sax.15.a"
+		ai_chance = { factor = 10 }
+		remove_country_modifier = anti_saxon_protection
+		prestige = -20
+
+	}
+
+}

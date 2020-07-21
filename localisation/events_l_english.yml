@@ -536,12 +536,18 @@ flavor_sax.10.t:0 "Victory against the Germans"
 flavor_sax.10.d:0 "The German invaders are repelled. Today marks the end of their invasion and the beginning of our golden age."
 flavor_sax.10.a:0 "Victory !"
 
-
 flavor_sax.11.t:0 "Victory against the Khan"
 flavor_sax.11.d:0 "The khan was ill-advised to backstab us like that..."
 flavor_sax.11.a:0 "Liberate our Pomeranians and Silesians brethren !"
 
+flavor_sax.14.t:0 "The Saxons advance"
+flavor_sax.14.d:0 "The Saxons are advincing in the former East-Francian land. If we don't stop them now, we are not sure we will be able to stop them in the future..."
+flavor_sax.14.a:0 "We shall protect the other Franks of the Saxons agressions"
+flavor_sax.14.b:0 "We have other matters which are more important than petty Saxons"
 
+flavor_sax.15.t:0 "We have failed"
+flavor_sax.15.d:0 "We have failed to stop the Saxons, we are not stong enough..."
+flavor_sax.15.a:0 "It is time to focus on our own defenses."
 #Northumbria
 flavor_nrt.1.t:0 "The fate of the non-nords"
 flavor_nrt.1.d:0 "In the lands we now own there are many who do not speak or behave like nords, the issue is what to do with them, assimilating them would take a long time but it would be the most efficient, expelling them to new lands would work too but they would not be too happy about it. We could also let the nordic migrants deal with them with cold steel, but that would be extreme."

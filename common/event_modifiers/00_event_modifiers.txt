@@ -11415,3 +11415,7 @@ nrt_purged_populus = {
 	local_tax_modifier = -0.7
 	local_production_efficiency = -0.3
 }
+
+anti_saxon_protection = {
+	diplomatic_upkeep = 2
+}
