@@ -251,12 +251,15 @@ country_event = {
       random_list = {
         35 = {
           change_culture = norwegian
+          change_religion = norse_pagan_reformed
           add_province_modifier = {
             name = nrt_purged_populus
             duration = 7300
           }
           random_country = {
             limit = {
+              NOT = { tag = NRT }
+              NOT = { tag = BET }
               any_owned_province = {
                 culture = norwegian
                 NOT = { has_province_modifier = nrt_migration_affect }
@@ -280,12 +283,15 @@ country_event = {
         }
         35 = {
           change_culture = swedish
+          change_religion = norse_pagan_reformed
           add_province_modifier = {
             name = nrt_purged_populus
             duration = 7300
           }
           random_country = {
             limit = {
+              NOT = { tag = NRT }
+              NOT = { tag = BET }
               any_owned_province = {
                 culture = swedish
                 NOT = { has_province_modifier = nrt_migration_affect }
@@ -309,12 +315,15 @@ country_event = {
         }
         20 = {
           change_culture = danish
+          change_religion = norse_pagan_reformed
           add_province_modifier = {
             name = nrt_purged_populus
             duration = 7300
           }
           random_country = {
             limit = {
+              NOT = { tag = NRT }
+              NOT = { tag = BET }
               any_owned_province = {
                 culture = danish
                 NOT = { has_province_modifier = nrt_migration_affect }
@@ -338,12 +347,15 @@ country_event = {
         }
         10 = {
           change_culture = "baltic-norse"
+          change_religion = norse_pagan_reformed
           add_province_modifier = {
             name = nrt_purged_populus
             duration = 7300
           }
           random_country = {
             limit = {
+              NOT = { tag = NRT }
+              NOT = { tag = BET }
               any_owned_province = {
                 culture = "baltic-norse"
                 NOT = { has_province_modifier = nrt_migration_affect }
