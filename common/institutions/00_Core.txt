@@ -1045,7 +1045,12 @@ printing_press = {
 			factor = 1
 			scale = yes
 			potential = {
+			OR = {
 				continent = europe
+				superregion = persia_superregion
+				superregion = near_east_superregion
+				region = maghreb_region
+				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_development_20_capital
@@ -1054,7 +1059,8 @@ printing_press = {
 				OR = {
 					continent = europe
 					superregion = persia_superregion
-					superregion = near_east_superregion 
+					superregion = near_east_superregion
+					region = maghreb_region
 					}
 			}
 		}
