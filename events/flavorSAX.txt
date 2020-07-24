@@ -7,7 +7,7 @@ country_event = {
 	id = flavor_sax.1
 	title = "flavor_sax.1.t"
 	desc = "flavor_sax.1.d"
-	picture = IMPORTANT_STATUE_eventPicture
+	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 
@@ -58,7 +58,7 @@ country_event = {
 	id = flavor_sax.2
 	title = "flavor_sax.2.t"
 	desc = "flavor_sax.2.d"
-	picture = IMPORTANT_STATUE_eventPicture
+	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
@@ -83,7 +83,7 @@ country_event = {
 	id = flavor_sax.3
 	title = "flavor_sax.3.t"
 	desc = "flavor_sax.3.d"
-	picture = IMPORTANT_STATUE_eventPicture
+	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
@@ -115,7 +115,7 @@ country_event = {
 	id = flavor_sax.4
 	title = "flavor_sax.4.t"
 	desc = "flavor_sax.4.d"
-	picture = IMPORTANT_STATUE_eventPicture
+	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 
@@ -140,7 +140,7 @@ country_event = {
 	id = flavor_sax.5
 	title = "flavor_sax.5.t"
 	desc = "flavor_sax.5.d"
-	picture = IMPORTANT_STATUE_eventPicture
+	picture = BORDER_TENSION_eventPicture
 
 	is_triggered_only = yes
 
@@ -172,7 +172,7 @@ country_event = {#Thuringian king die
 	id = flavor_sax.6
 	title = "flavor_sax.6.t"
 	desc = "flavor_sax.6.d"
-	picture = IMPORTANT_STATUE_eventPicture
+	picture = DEATH_OF_HEIR_eventPicture
 
 	fire_only_once = yes
 
@@ -223,7 +223,7 @@ country_event = {#fate of thuringian throne
 	id = flavor_sax.12
 	title = "flavor_sax.12.t"
 	desc = "flavor_sax.12.d"
-	picture = IMPORTANT_STATUE_eventPicture
+	picture = BAD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
 
@@ -252,7 +252,7 @@ country_event = {#polabians ask help from the khanate
 	id = flavor_sax.7
 	title = "flavor_sax.7.t"
 	desc = "flavor_sax.7.d"
-	picture = IMPORTANT_STATUE_eventPicture
+	picture = DIPLOMACY_eventPicture
 
 	fire_only_once = yes
 
@@ -289,7 +289,7 @@ country_event = {#polabians ask help from the khanate
 	id = flavor_sax.13
 	title = "flavor_sax.13.t"
 	desc = "flavor_sax.13.d"
-	picture = IMPORTANT_STATUE_eventPicture
+	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 
@@ -329,7 +329,7 @@ country_event = {# peace polabians lose
 	id = flavor_sax.9
 	title = "flavor_sax.9.t"
 	desc = "flavor_sax.9.d"
-	picture = SIEGE_eventPicture
+	picture = COUNTRY_COLLAPSE_eventPicture
 
 	fire_only_once = yes
 
@@ -607,7 +607,7 @@ country_event = {
 	id = flavor_sax.14
 	title = "flavor_sax.14.t"
 	desc = "flavor_sax.14.d"
-	picture = IMPORTANT_STATUE_eventPicture
+	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 
@@ -637,7 +637,7 @@ country_event = {
 	id = flavor_sax.15
 	title = "flavor_sax.15.t"
 	desc = "flavor_sax.15.d"
-	picture = IMPORTANT_STATUE_eventPicture
+	picture = COUNTRY_COLLAPSE_eventPicture
 
 	trigger = {
 		has_country_modifier = anti_saxon_protection
