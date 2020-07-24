@@ -31,6 +31,8 @@ CTH   = "countries/Carthaginensis.txt"
 GAL		= "countries/Galicia.txt"
 HIS		= "countries/Hispania.txt"
 TOL		= "countries/Toletum.txt"
+SLM   = "countries/Salamanca.txt"
+BLR   = "countries/Baleares.txt"
 
 PAV = "countries/Pavia.txt"
 AQU	= "countries/Aquileia.txt"

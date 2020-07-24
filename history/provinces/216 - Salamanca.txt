@@ -4,7 +4,7 @@ owner = BAE		#Juan II of Castille
 controller = BAE
 add_core = BAE
 add_core = LUS
-
+add_core = SLM
 culture = lusitanian
 religion = jupiterian
 hre = no

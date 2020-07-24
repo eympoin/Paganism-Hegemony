@@ -13,6 +13,7 @@ trade_goods = glass #Cadalso
 base_manpower = 2
 capital = "Caceres"
 is_city = yes
+add_core = SLM
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

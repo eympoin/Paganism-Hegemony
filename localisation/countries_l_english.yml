@@ -1681,3 +1681,7 @@
  SOC_ADJ:0 "Socotrans"
  TAM:0 "Tamazgha"
  TAM_ADJ:0 "Imazighen"
+ SLM:0 "Salamanca"
+ SLM_ADJ:0 "Salamancan"
+ BLR:0 "Balearis"
+ BLR_ADJ:0 "Balearian"
