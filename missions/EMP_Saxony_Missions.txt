@@ -54,7 +54,7 @@ east_francia_fall = {
 
 	continue_southward = {
 		icon = claim_the_borderlands
-		required_missions = {  }
+		required_missions = { end_of_east_francia }
 		ai_weight = {
 			factor = 5
 		}
@@ -107,8 +107,168 @@ east_francia_fall = {
 
 		}
 	}
+	tackle_alamannia = {
+		position = 3
+		icon = claim_the_borderlands
+		required_missions = {continue_southward  }
+		ai_weight = {
+			factor = 5
+		}
+		ai_priority = {
+			factor = 5
+		}
+
+		provinces_to_highlight = {
+		}
+		trigger = {
+
+		}
+		effect = {
+
+		}
+	}
+	revene_against_lotharingia = {
+		position = 5
+		icon = claim_the_borderlands
+		required_missions = {tackle_alamannia  }
+		ai_weight = {
+			factor = 5
+		}
+		ai_priority = {
+			factor = 5
+		}
+
+		provinces_to_highlight = {
+		}
+		trigger = {
+
+		}
+		effect = {
+
+		}
+	}
+	master_of_central_europe = {
+		position = 6
+		icon = claim_the_borderlands
+		required_missions = {revene_against_lotharingia the_rest_of_scandinavia another_khanate_to_end  }
+		ai_weight = {
+			factor = 5
+		}
+		ai_priority = {
+			factor = 5
+		}
+
+		provinces_to_highlight = {
+		}
+		trigger = {
+
+		}
+		effect = {
+
+		}
+	}
+}
+
+bohemia_hungary = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = SAX
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	subjugate_western_slavs = {
+		icon = claim_the_borderlands
+		position = 3
+		required_missions = { two_people_one_king }
+		ai_weight = {
+			factor = 5
+		}
+		ai_priority = {
+			factor = 5
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				area = bohemia_area
+				area = moravia_area
+			}
+		}
+		trigger = {
+			bohemia_area = {
+				owned_by = ROOT
+			}
+			moravia_area = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+
+		}
+	}
+
+	end_of_bavaria = {
+		icon = claim_the_borderlands
+		position = 4
+		required_missions = { subjugate_western_slavs }
+		ai_weight = {
+			factor = 5
+		}
+		ai_priority = {
+			factor = 5
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				area = east_bavaria_area
+				area = lower_bavaria_area
+				area = upper_bavaria_area
+			}
+		}
+		trigger = {
+			east_bavaria_area = {
+				owned_by = ROOT
+			}
+			lower_bavaria_area = {
+				owned_by = ROOT
+			}
+			upper_bavaria_area = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+
+		}
+	}
+
+	another_khanate_to_end = {
+		icon = claim_the_borderlands
+		position = 5
+		required_missions = { end_of_bavaria fall_of_the_khanate}
+		ai_weight = {
+			factor = 5
+		}
+		ai_priority = {
+			factor = 5
+		}
+
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+
+		}
+		effect = {
+
+		}
+	}
 
 }
+
 
 religion = {
 	slot = 5
@@ -149,6 +309,48 @@ religion = {
 				add_base_tax = 2
 				add_base_manpower = 3
 			}
+		}
+	}
+
+	fate_of_the_norse_faith = {
+		position = 4
+		icon = claim_the_borderlands
+		required_missions = {develop_Irminisul_sanctuary secure_the_baltic_gates  }
+		ai_weight = {
+			factor = 5
+		}
+		ai_priority = {
+			factor = 5
+		}
+
+		provinces_to_highlight = {
+		}
+		trigger = {
+
+		}
+		effect = {
+
+		}
+	}
+
+	subjugate_jomsviking = {
+		position = 5
+		icon = claim_the_borderlands
+		required_missions = {fate_of_the_norse_faith  }
+		ai_weight = {
+			factor = 5
+		}
+		ai_priority = {
+			factor = 5
+		}
+
+		provinces_to_highlight = {
+		}
+		trigger = {
+
+		}
+		effect = {
+
 		}
 	}
 }
@@ -256,6 +458,27 @@ norse_raids = {
 					key = baltic_gates
 				}
 			}
+		}
+	}
+
+	the_rest_of_scandinavia = {
+		position = 5
+		icon = claim_the_borderlands
+		required_missions = {fate_of_the_norse_faith  }
+		ai_weight = {
+			factor = 5
+		}
+		ai_priority = {
+			factor = 5
+		}
+
+		provinces_to_highlight = {
+		}
+		trigger = {
+
+		}
+		effect = {
+
 		}
 	}
 }
