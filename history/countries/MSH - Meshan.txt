@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = babylonian
+religion = mesopotamian
+technology_group = muslim
+capital = 408
+
+1428.1.1 = {
+	monarch = {
+		name = "Adurfarrobay"
+		dynasty = "Meshanid"
+		birth_date = 1409.1.1
+		DIP = 5
+		ADM = 4
+		MIL = 1
+	}
+}

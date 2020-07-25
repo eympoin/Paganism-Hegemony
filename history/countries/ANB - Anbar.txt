@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = Assyrian
+religion = mesopotamian
+technology_group = muslim
+capital = 406
+
+1428.1.1 = {
+	monarch = {
+		name = "Shapur"
+		dynasty = "Singarid"
+		birth_date = 1421.1.1
+		DIP = 2
+		ADM = 3
+		MIL = 4
+	}
+}

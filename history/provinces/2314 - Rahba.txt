@@ -1,7 +1,7 @@
 #2314 - Rahba
 
-owner = ASY
-controller = ASY
+owner = ANB
+controller = ANB
 culture = Assyrian
 religion = mesopotamian
 capital = "Deir ez-Zor"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = ASY
+add_core = ANB
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = indian

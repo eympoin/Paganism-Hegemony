@@ -124,6 +124,8 @@ GOR = "countries/Gorgan.txt"
 MRV = "countries/Marv.txt"
 HRV = "countries/Harev.txt"
 DIH = "countries/Dihistan.txt"
+MSH = "countries/Meshan.txt"
+ANB = "countries/Anbar.txt"
 
 ALM = "countries/Allamania.txt"
 JUT = "countries/Jutland.txt"

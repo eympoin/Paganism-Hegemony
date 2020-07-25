@@ -1,7 +1,7 @@
 # - Cezair i-Arab -> al-Qurna, Zihiya, Rahmaniya
 
-owner = BAB
-controller = BAB
+owner = MSH
+controller = MSH
 culture = babylonian
 religion = mesopotamian
 capital = "al-Qurna"
@@ -11,7 +11,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 5
 is_city = yes
-add_core = BAB
+add_core = MSH
 discovered_by = east_african
 discovered_by = muslim
 discovered_by = ottoman
