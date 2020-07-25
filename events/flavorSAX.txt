@@ -813,3 +813,83 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = flavor_sax.19
+	title = "flavor_sax.19.t"
+	desc = "flavor_sax.19.d"
+	picture = RELIGIOUS_CONVERSION_eventPicture
+
+	is_triggered_only = yes
+
+
+	option = {#start the acceptation of the eastern franks
+		name = "flavor_sax.19.a"
+		ai_chance = { factor = 10 }
+		set_country_flag = accepted_franks
+		add_prestige = 10
+	}
+}
+
+country_event = {
+  id = flavor_sax.20
+  title = flavor_sax.20.t
+  desc = flavor_sax.20.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      tag = SAX
+      tag = THU
+    }
+		has_country_flag = accepted_franks
+    any_owned_province = {
+      religion = germanic
+      OR = {
+        culture = east-francian
+        culture = bavarian
+				culture = alamann
+				culture = lotharingian
+      }
+      NOT = { culture_group = germanic }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 2
+  }
+
+  option = {#franks
+    name = flavor_sax.20.a
+    ai_chance = { factor = 1 }
+    trigger = {
+      any_owned_province = {
+        is_core = ROOT
+        religion = germanic
+        OR = {
+					culture = east-francian
+					culture = bavarian
+					culture = alamann
+					culture = lotharingian
+        }
+        NOT = { nationalism	= 1 }
+      }
+    }
+    random_owned_province = {
+      limit = {
+        religion = germanic
+        OR = {
+				culture = east-francian
+				culture = bavarian
+				culture = alamann
+				culture = lotharingian
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = franko-saxon
+    }
+  }
+}

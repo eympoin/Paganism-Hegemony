@@ -561,6 +561,14 @@ flavor_sax.18.t:0 "Our relation with the Norse faith"
 flavor_sax.18.d:0 "The Norse and Germanic faiths have always been close but now that our kingdom regroups the 2 faiths, we must choose wether we want to close the gap between them and accept them both or convert the Norsemen to our faith."
 flavor_sax.18.a:0 "We shall bot hlive in harmony."
 flavor_sax.18.b:0 "They will pray our Gods or die !"
+
+flavor_sax.18.t:0 "The Franks are assimilating"
+flavor_sax.18.d:0 "With their Empire and their close ties with Romans states, the Franks started to move away from their Germanic roots. Now that the eastern franks are ruled again by true germans. They are starting to assimilate themselves."
+flavor_sax.18.a:0 "Let's see where it goes"
+
+flavor_sax.20.t:0 "Cultural Assimilation"
+flavor_sax.20.d:0 "The Scandinavian and Franks are culturally close but the Roman influence forged a new Frankish culture. Now we can say that the Franks of this province are Germans again !"
+flavor_sax.20.a:0 "This is a happy news."
 #Northumbria
 flavor_nrt.1.t:0 "The fate of the non-nords"
 flavor_nrt.1.d:0 "In the lands we now own there are many who do not speak or behave like nords, the issue is what to do with them, assimilating them would take a long time but it would be the most efficient, expelling them to new lands would work too but they would not be too happy about it. We could also let the nordic migrants deal with them with cold steel, but that would be extreme."

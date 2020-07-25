@@ -79,6 +79,7 @@ east_francia_fall = {
       NOT = {exists = FKN}
     }
     effect = {
+      country_event = { id = flavor_sax.19 }
       LOT = {
         country_event = { id = flavor_sax.14 }
       }
@@ -332,7 +333,6 @@ bohemia_hungary = {
     }
     effect = {
       add_prestige = 10
-      #event coversion east francian
       austria_proper_area = {
         limit = {
           NOT = { owned_by = ROOT }

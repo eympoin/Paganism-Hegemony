@@ -455,6 +455,9 @@ germanic = {
 	east_saxon = {
 
 	}
+	franko-saxon = {
+
+	}
 	franconian = {
 		primary = ANS
 	}
