@@ -1073,7 +1073,7 @@ northern_greece_area = { #3 #Northern Greece
 }
 
 thessalia_area = { #Thessalia Greece
-	147 4795 1853 
+	147 4795 1853
 }
 
 thrace_area = { #5
@@ -1212,7 +1212,7 @@ aydin_area = { #5
 
 ankara_area = { #3
 	color = { 57 154 172 }
-	326 4312 4313 
+	326 4312 4313
 }
 
 aegean_archipelago_area = { #4
@@ -1954,7 +1954,7 @@ khiva_area = { #5
 
 kabulistan_area = { #5
 	color = { 96 219 58 }
-	448 451 452 578 2226
+	448 451  578 2226
 }
 
 transcaspia_area = {
@@ -1975,7 +1975,7 @@ birjand_area = { #3 - Western Khorasan
 
 ghor_area = { #3
 	color = { 191 176 53 }
-	447 449 2225
+	447 449 2225 2228
 }
 
 merv_area = { #3
@@ -1984,7 +1984,7 @@ merv_area = { #3
 }
 
 balkh_area = { #3
-	450 2227 2228
+	450 2227 452
 }
 
 kerman_area = { #4
