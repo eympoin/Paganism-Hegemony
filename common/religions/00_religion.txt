@@ -1799,7 +1799,7 @@ norse_group{
     icon = 21
     color = { 191 191 191 }
     country = {
-      land_forcelimit_modifier = 0.10
+      may_perform_slave_raid = yes	
       naval_forcelimit_modifier = 0.10
     }
     country_as_secondary = {

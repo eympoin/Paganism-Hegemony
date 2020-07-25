@@ -11432,3 +11432,7 @@ non_accepted_norse_religion = {
 	global_heretic_missionary_strength = 0.02
 	tolerance_heretic = -1
 }
+
+end_of_the_raids = {
+	development_cost = -0.2
+}

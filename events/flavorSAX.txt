@@ -628,7 +628,7 @@ country_event = {
 		name = "flavor_sax.14.b"
 		ai_chance = { factor = 0 }
 
-		prestige = 10
+		add_prestige = 10
 	}
 }
 
@@ -650,7 +650,7 @@ country_event = {
 		name = "flavor_sax.15.a"
 		ai_chance = { factor = 10 }
 		remove_country_modifier = anti_saxon_protection
-		prestige = -20
+		add_prestige = -20
 
 	}
 
@@ -795,7 +795,7 @@ country_event = {
 		name = "flavor_sax.18.a"
 		ai_chance = { factor = 10 }
 		set_country_flag = accepted_norse
-		prestige = -20
+		add_prestige = -20
 		add_stability = -1
 		add_country_modifier = {
 			name = accepted_norse_religion
@@ -806,7 +806,7 @@ country_event = {
 	option = {#refuse
 		name = "flavor_sax.18.b"
 		ai_chance = { factor = 0 }
-		prestige = 10
+		add_prestige = 10
 		add_country_modifier = {
 			name = non_accepted_norse_religion
 			duration = -1

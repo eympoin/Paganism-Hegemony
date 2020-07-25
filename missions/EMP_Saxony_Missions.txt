@@ -1,661 +1,821 @@
 
 
 east_francia_fall = {
-	slot = 3
-	generic = no
-	ai = yes
-	potential = {
-		OR = {
-			tag = SAX
-		}
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = SAX
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  has_country_shield = yes
 
-	end_of_east_francia = {
-		icon = claim_the_borderlands
-		required_missions = {  }
-		ai_weight = {
-			factor = 5
-		}
-		ai_priority = {
-			factor = 5
-		}
+  end_of_east_francia = {
+    icon = claim_the_borderlands
+    required_missions = {  }
+    ai_weight = {
+      factor = 5
+    }
+    ai_priority = {
+      factor = 5
+    }
 
-		provinces_to_highlight = {
-			culture = east-francian
-			local_autonomy = 20
-		}
-		trigger = {
-			NOT = {
-				any_owned_province = {
-					local_autonomy = 20
-					culture = east-francian
-				}
-			}
-		}
-		effect = {
-			add_adm_power = 50
-			upper_franconia_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			franconia_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
+    provinces_to_highlight = {
+      culture = east-francian
+      local_autonomy = 20
+    }
+    trigger = {
+      NOT = {
+        any_owned_province = {
+          local_autonomy = 20
+          culture = east-francian
+        }
+      }
+    }
+    effect = {
+      add_adm_power = 50
+      upper_franconia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      franconia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
 
 
-	continue_southward = {
-		icon = claim_the_borderlands
-		required_missions = { end_of_east_francia }
-		ai_weight = {
-			factor = 5
-		}
-		ai_priority = {
-			factor = 5
-		}
+  continue_southward = {
+    icon = claim_the_borderlands
+    required_missions = { end_of_east_francia }
+    ai_weight = {
+      factor = 5
+    }
+    ai_priority = {
+      factor = 5
+    }
 
-		provinces_to_highlight = {
-			OR = {
-				area = upper_franconia_area
-				area = franconia_area
-			}
-		}
-		trigger = {
-			num_of_owned_provinces_with = {
-				value = 5
-				OR = {
-					area = franconia_area
-					area = upper_franconia_area
-				}
-			}
-			NOT = {exists = FKN}
-		}
-		effect = {
-			#event
-			lower_swabia_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			upper_swabia_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			upper_bavaria_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			lower_bavaria_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+    provinces_to_highlight = {
+      OR = {
+        area = upper_franconia_area
+        area = franconia_area
+      }
+    }
+    trigger = {
+      num_of_owned_provinces_with = {
+        value = 5
+        OR = {
+          area = franconia_area
+          area = upper_franconia_area
+        }
+      }
+      NOT = {exists = FKN}
+    }
+    effect = {
+      LOT = {
+        country_event = { id = flavor_sax.14 }
+      }
+      lower_swabia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      upper_swabia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      upper_bavaria_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      lower_bavaria_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
 
-		}
-	}
-	tackle_alamannia = {
-		position = 3
-		icon = claim_the_borderlands
-		required_missions = {continue_southward  }
-		ai_weight = {
-			factor = 5
-		}
-		ai_priority = {
-			factor = 5
-		}
+    }
+  }
 
-		provinces_to_highlight = {
-		}
-		trigger = {
+  tackle_alamannia = {
+    icon = claim_the_borderlands
+    position = 3
+    required_missions = {continue_southward  }
+    ai_weight = {
+      factor = 5
+    }
+    ai_priority = {
+      factor = 5
+    }
 
-		}
-		effect = {
+    provinces_to_highlight = {
+      OR = {
+        area = upper_swabia_area
+        area = lower_swabia_area
+      }
+      NOT = { is_core = ROOT }
+    }
+    trigger = {
+      upper_swabia_area = {
+        type = all
+        owned_by = ROOT
+      }
+      lower_swabia_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      add_prestige = 10
+      add_mil_power = 50
+      switzerland_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      upper_rhineland_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      north_rhine_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      north_westphalia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+  revene_against_lotharingia = {
+    position = 5
+    icon = claim_the_borderlands
+    required_missions = {tackle_alamannia  }
+    ai_weight = {
+      factor = 5
+    }
+    ai_priority = {
+      factor = 5
+    }
 
-		}
-	}
-	revene_against_lotharingia = {
-		position = 5
-		icon = claim_the_borderlands
-		required_missions = {tackle_alamannia  }
-		ai_weight = {
-			factor = 5
-		}
-		ai_priority = {
-			factor = 5
-		}
+    provinces_to_highlight = {
+      OR ={
+        area = north_westphalia_area
+        area = north_rhine_area
+        area = upper_rhineland_area
+      }
+      NOT = { is_core = ROOT }
+    }
+    trigger = {
+      north_westphalia_area = {
+        type = all
+        owned_by = ROOT
+      }
+      north_rhine_area = {
+        type = all
+        owned_by = ROOT
+      }
+      upper_rhineland_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      add_years_of_income = 1.5
+      add_country_modifier = {
+        name = rhenish_trade
+        duration = -1
+      }
+    }
+  }
 
-		provinces_to_highlight = {
-		}
-		trigger = {
+  master_of_central_europe = {
+    position = 6
+    icon = claim_the_borderlands
+    required_missions = {revene_against_lotharingia the_rest_of_scandinavia another_khanate_to_end  }
+    ai_weight = {
+      factor = 5
+    }
+    ai_priority = {
+      factor = 5
+    }
 
-		}
-		effect = {
+    provinces_to_highlight = {
+    }
+    trigger = {
 
-		}
-	}
-	master_of_central_europe = {
-		position = 6
-		icon = claim_the_borderlands
-		required_missions = {revene_against_lotharingia the_rest_of_scandinavia another_khanate_to_end  }
-		ai_weight = {
-			factor = 5
-		}
-		ai_priority = {
-			factor = 5
-		}
-
-		provinces_to_highlight = {
-		}
-		trigger = {
-
-		}
-		effect = {
-
-		}
-	}
+    }
+    effect = {
+      add_prestige = 20
+      add_legitimacy = 10
+      add_mil_power = 100
+      add_dip_power = 100
+      add_adm_power = 100
+      british_isles_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      north_german_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      south_german_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
 }
 
 bohemia_hungary = {
-	slot = 2
-	generic = no
-	ai = yes
-	potential = {
-		OR = {
-			tag = SAX
-		}
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = SAX
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  has_country_shield = yes
 
-	subjugate_western_slavs = {
-		icon = claim_the_borderlands
-		position = 3
-		required_missions = { two_people_one_king }
-		ai_weight = {
-			factor = 5
-		}
-		ai_priority = {
-			factor = 5
-		}
+  subjugate_western_slavs = {
+    icon = claim_the_borderlands
+    position = 3
+    required_missions = { two_people_one_king }
+    ai_weight = {
+      factor = 5
+    }
+    ai_priority = {
+      factor = 5
+    }
 
-		provinces_to_highlight = {
-			OR = {
-				area = bohemia_area
-				area = moravia_area
-			}
-		}
-		trigger = {
-			bohemia_area = {
-				owned_by = ROOT
-			}
-			moravia_area = {
-				owned_by = ROOT
-			}
-		}
-		effect = {
+    provinces_to_highlight = {
+      OR = {
+        area = bohemia_area
+        area = moravia_area
+        area = erzgebirge_area
+      }
+      NOT = { is_core = ROOT }
+    }
+    trigger = {
+      num_of_owned_provinces_with = {
+        value = 7
+        OR = {
+          area = bohemia_area
+          area = moravia_area
+          area = erzgebirge_area
+        }
+      }
+    }
+    effect = {
+      add_adm_power = 100
+      add_years_of_income = 1.5
+      add_prestige = 10
+    }
+  }
 
-		}
-	}
+  end_of_bavaria = {
+    icon = claim_the_borderlands
+    position = 4
+    required_missions = { subjugate_western_slavs  tackle_alamannia}
+    ai_weight = {
+      factor = 5
+    }
+    ai_priority = {
+      factor = 5
+    }
 
-	end_of_bavaria = {
-		icon = claim_the_borderlands
-		position = 4
-		required_missions = { subjugate_western_slavs }
-		ai_weight = {
-			factor = 5
-		}
-		ai_priority = {
-			factor = 5
-		}
+    provinces_to_highlight = {
+      OR = {
+        area = east_bavaria_area
+        area = lower_bavaria_area
+        area = upper_bavaria_area
+      }
+      NOT = { is_core = ROOT }
+    }
+    trigger = {
+      num_of_owned_provinces_with = {
+        value = 7
+        OR = {
+          area = east_bavaria_area
+          area = lower_bavaria_area
+          area = upper_bavaria_area
+        }
+      }
+    }
+    effect = {
+      add_prestige = 10
+      #event coversion east francian
+      austria_proper_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      slovakia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      transdanubia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
 
-		provinces_to_highlight = {
-			OR = {
-				area = east_bavaria_area
-				area = lower_bavaria_area
-				area = upper_bavaria_area
-			}
-		}
-		trigger = {
-			east_bavaria_area = {
-				owned_by = ROOT
-			}
-			lower_bavaria_area = {
-				owned_by = ROOT
-			}
-			upper_bavaria_area = {
-				owned_by = ROOT
-			}
-		}
-		effect = {
+  another_khanate_to_end = {
+    icon = claim_the_borderlands
+    position = 5
+    required_missions = { end_of_bavaria fall_of_the_khanate}
+    ai_weight = {
+      factor = 5
+    }
+    ai_priority = {
+      factor = 5
+    }
 
-		}
-	}
-
-	another_khanate_to_end = {
-		icon = claim_the_borderlands
-		position = 5
-		required_missions = { end_of_bavaria fall_of_the_khanate}
-		ai_weight = {
-			factor = 5
-		}
-		ai_priority = {
-			factor = 5
-		}
-
-		provinces_to_highlight = {
-
-		}
-		trigger = {
-
-		}
-		effect = {
-
-		}
-	}
+    provinces_to_highlight = {
+      OR = {
+        area = austria_proper_area
+        area = slovakia_area
+        area = transdanubia_area
+      }
+      NOT = { is_core = ROOT }
+    }
+    trigger = {
+      SKH = {
+        NOT = {total_development = 50}
+      }
+      num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+        value = 10
+        OR = {
+          area = austria_proper_area
+          area = slovakia_area
+          area = transdanubia_area
+        }
+      }
+    }
+    effect = {
+      add_prestige = 10
+      add_stability = 1
+      add_country_modifier = {
+        name = end_of_the_raids
+        duration = 5475
+      }
+    }
+  }
 
 }
 
 
 religion = {
-	slot = 5
-	generic = no
-	ai = yes
-	potential = {
-		OR = {
-			tag = SAX
-		}
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
+  slot = 5
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = SAX
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  has_country_shield = yes
 
-	develop_Irminisul_sanctuary = {
-		icon = claim_the_borderlands
-		required_missions = {  }
-		ai_weight = {
-			factor = 5
-		}
-		ai_priority = {
-			factor = 5
-		}
+  develop_Irminisul_sanctuary = {
+    icon = claim_the_borderlands
+    required_missions = {  }
+    ai_weight = {
+      factor = 5
+    }
+    ai_priority = {
+      factor = 5
+    }
 
-		provinces_to_highlight = {
-			province_id = 2972
-		}
-		trigger = {
-			treasury = 100
-		}
-		effect = {
-			add_treasury = -100
-			2972 = {
-				add_building = temple
-				add_province_modifier = {
-					name = "Sanctuary_of_Irminsul"
-					duration = -1
-				}
-				add_base_tax = 2
-				add_base_manpower = 3
-			}
-		}
-	}
+    provinces_to_highlight = {
+      province_id = 2972
+    }
+    trigger = {
+      treasury = 100
+    }
+    effect = {
+      add_treasury = -100
+      2972 = {
+        add_building = temple
+        add_province_modifier = {
+          name = "Sanctuary_of_Irminsul"
+          duration = -1
+        }
+        add_base_tax = 2
+        add_base_manpower = 3
+      }
+    }
+  }
 
-	fate_of_the_norse_faith = {
-		position = 4
-		icon = claim_the_borderlands
-		required_missions = {develop_Irminisul_sanctuary secure_the_baltic_gates  }
-		ai_weight = {
-			factor = 5
-		}
-		ai_priority = {
-			factor = 5
-		}
+  fate_of_the_norse_faith = {
+    position = 4
+    icon = claim_the_borderlands
+    required_missions = {develop_Irminisul_sanctuary secure_the_baltic_gates  }
+    ai_weight = {
+      factor = 5
+    }
+    ai_priority = {
+      factor = 5
+    }
 
-		provinces_to_highlight = {
-		}
-		trigger = {
+    provinces_to_highlight = {
+    }
+    trigger = {
+      stability = 1
+    }
+    effect = {
+      country_event = { id = flavor_sax.18 }
+    }
+  }
 
-		}
-		effect = {
-			country_event = { id = flavor_sax.18 }
-		}
-	}
+  subjugate_jomsviking = {
+    position = 5
+    icon = claim_the_borderlands
+    required_missions = {fate_of_the_norse_faith  }
+    ai_weight = {
+      factor = 5
+    }
+    ai_priority = {
+      factor = 5
+    }
 
-	subjugate_jomsviking = {
-		position = 5
-		icon = claim_the_borderlands
-		required_missions = {fate_of_the_norse_faith  }
-		ai_weight = {
-			factor = 5
-		}
-		ai_priority = {
-			factor = 5
-		}
-
-		provinces_to_highlight = {
-		}
-		trigger = {
-
-		}
-		effect = {
-
-		}
-	}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      religious_unity = 1
+    }
+    effect = {
+      add_casus_belli = {
+        target = JOM
+        type = cb_vassalize_mission
+        months = 120
+      }
+    }
+  }
 }
 
 norse_raids = {
-	slot = 4
-	generic = no
-	ai = yes
-	potential = {
-		OR = {
-			tag = SAX
-		}
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = SAX
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  has_country_shield = yes
 
-	punish_norse_raiders = {
-		position = 2
-		icon = claim_the_borderlands
-		required_missions = {  }
-		ai_weight = {
-			factor = 5
-		}
-		ai_priority = {
-			factor = 5
-		}
+  punish_norse_raiders = {
+    position = 2
+    icon = claim_the_borderlands
+    required_missions = {  }
+    ai_weight = {
+      factor = 5
+    }
+    ai_priority = {
+      factor = 5
+    }
 
-		provinces_to_highlight = {
-		}
-		trigger = {
-			navy_size_percentage = 0.9
-		}
-		effect = {
-			jutland_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			denmark_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			skaneland_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			add_country_modifier = {
-				name = "naval_enthusiasm_mission"
-				duration = 3650
-			}
-		}
-	}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      navy_size_percentage = 0.9
+    }
+    effect = {
+      jutland_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      denmark_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      skaneland_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      add_country_modifier = {
+        name = "naval_enthusiasm_mission"
+        duration = 3650
+      }
+    }
+  }
 
-	secure_the_baltic_gates = {
-		position = 3
-		icon = claim_the_borderlands
-		required_missions = { punish_norse_raiders }
-		ai_weight = {
-			factor = 5
-		}
-		ai_priority = {
-			factor = 5
-		}
+  secure_the_baltic_gates = {
+    position = 3
+    icon = claim_the_borderlands
+    required_missions = { punish_norse_raiders }
+    ai_weight = {
+      factor = 5
+    }
+    ai_priority = {
+      factor = 5
+    }
 
-		provinces_to_highlight = {
-			province_id = 4142
-			province_id = 4149
-			province_id = 14
-			province_id = 12
-			province_id = 1983
-			province_id = 6
-		}
-		trigger = {
-			4142 = {
-				owned_by  = ROOT
-			}
-			4149 = {
-				owned_by  = ROOT
-			}
-			14 = {
-				owned_by  = ROOT
-			}
-			12 = {
-				owned_by  = ROOT
-			}
-			1983 = {
-				owned_by  = ROOT
-			}
-			6 = {
-				owned_by  = ROOT
-			}
-		}
-		effect = {
-			add_treasury = 100
-			12 = {
-				add_trade_modifier = {
-					who = root
-					duration = -1
-					power = 40
-					key = baltic_gates
-				}
-			}
-		}
-	}
+    provinces_to_highlight = {
+      OR = {
+        province_id = 4142
+        province_id = 4149
+        province_id = 14
+        province_id = 12
+        province_id = 1983
+        province_id = 6
+      }
+      NOT = { is_core = ROOT }
+    }
+    trigger = {
+      4142 = {
+        owned_by  = ROOT
+      }
+      4149 = {
+        owned_by  = ROOT
+      }
+      14 = {
+        owned_by  = ROOT
+      }
+      12 = {
+        owned_by  = ROOT
+      }
+      1983 = {
+        owned_by  = ROOT
+      }
+      6 = {
+        owned_by  = ROOT
+      }
+    }
+    effect = {
+      add_treasury = 100
+      12 = {
+        add_trade_modifier = {
+          who = root
+          duration = -1
+          power = 40
+          key = baltic_gates
+        }
+      }
+    }
+  }
 
-	the_rest_of_scandinavia = {
-		position = 5
-		icon = claim_the_borderlands
-		required_missions = {fate_of_the_norse_faith  }
-		ai_weight = {
-			factor = 5
-		}
-		ai_priority = {
-			factor = 5
-		}
+  the_rest_of_scandinavia = {
+    position = 5
+    icon = claim_the_borderlands
+    required_missions = {fate_of_the_norse_faith  }
+    ai_weight = {
+      factor = 5
+    }
+    ai_priority = {
+      factor = 5
+    }
 
-		provinces_to_highlight = {
-		}
-		trigger = {
-
-		}
-		effect = {
-
-		}
-	}
+    provinces_to_highlight = {
+      region = scandinavia_region
+      NOT = { is_core = ROOT }
+    }
+    trigger = {
+      scandinavia_region = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      add_prestige = 10
+      add_mil_power = 100
+      add_country_modifier = {
+        name = norsemen_legacy
+        duration = -1
+      }
+    }
+  }
 }
 
 
 german_unification = {
-	slot = 1
-	generic = no
-	ai = yes
-	potential = {
-		OR = {
-			tag = SAX
-		}
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = SAX
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  has_country_shield = yes
 
-	our_germanic_brethren = {
-		position = 1
-		icon = claim_the_borderlands
-		required_missions = {  }
-		ai_weight = {
-			factor = 5
-		}
-		ai_priority = {
-			factor = 5
-		}
+  our_germanic_brethren = {
+    position = 1
+    icon = claim_the_borderlands
+    required_missions = {  }
+    ai_weight = {
+      factor = 5
+    }
+    ai_priority = {
+      factor = 5
+    }
 
-		provinces_to_highlight = {
-		}
-		trigger = {
-			alliance_with = THU
-			THU = {
-				has_opinion = {
-					who = ROOT
-					value = 180
-				}
-			}
-		}
-		effect = {
-			country_event = { id = flavor_sax.1 }
-		}
-	}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      OR = {
+        AND = {
+          alliance_with = THU
+          THU = {
+            has_opinion = {
+              who = ROOT
+              value = 180
+            }
+          }
+        }
+        NOT = {exists = THU}
+      }
+    }
+    effect = {
+      country_event = { id = flavor_sax.1 }
+    }
+  }
 
-	two_people_one_king = {
-		position = 2
-		icon = claim_the_borderlands
-		required_missions = { our_germanic_brethren }
-		ai_weight = {
-			factor = 5
-		}
-		ai_priority = {
-			factor = 5
-		}
+  two_people_one_king = {
+    position = 2
+    icon = claim_the_borderlands
+    required_missions = { our_germanic_brethren }
+    ai_weight = {
+      factor = 5
+    }
+    ai_priority = {
+      factor = 5
+    }
 
-		provinces_to_highlight = {
-		}
-		trigger = {
-			OR = {
-				senior_union_with = THU
-				NOT = {exists = THU}
-			}
-		}
-		effect = {
-			mecklenburg_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			vorpommern_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			mittelmark_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			lusatia_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      OR = {
+        senior_union_with = THU
+        NOT = {exists = THU}
+      }
+    }
+    effect = {
+      mecklenburg_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      vorpommern_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      mittelmark_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      lusatia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
 
-	the_mongol_threat = {
-		position = 3
-		icon = claim_the_borderlands
-		required_missions = { two_people_one_king }
-		ai_weight = {
-			factor = 5
-		}
-		ai_priority = {
-			factor = 5
-		}
+  the_mongol_threat = {
+    position = 3
+    icon = claim_the_borderlands
+    required_missions = { two_people_one_king }
+    ai_weight = {
+      factor = 5
+    }
+    ai_priority = {
+      factor = 5
+    }
 
-		provinces_to_highlight = {
-		}
-		trigger = {
-			army_strength = {
-				who = OKH
-				value = 1
-			}
-		}
-		effect = {
-			neumark_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			wielkopolska_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			silesia_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			central_poland_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			malopolska_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			add_country_modifier = {
-				name = "anti_mongol_strategy"
-				duration = 3650
-			}
-		}
-	}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      army_strength = {
+        who = OKH
+        value = 1
+      }
+    }
+    effect = {
+      neumark_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      wielkopolska_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      silesia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      central_poland_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      malopolska_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      add_country_modifier = {
+        name = "anti_mongol_strategy"
+        duration = 3650
+      }
+    }
+  }
 
-	fall_of_the_khanate = {
-		position = 4
-		icon = claim_the_borderlands
-		required_missions = { the_mongol_threat }
-		ai_weight = {
-			factor = 5
-		}
-		ai_priority = {
-			factor = 5
-		}
+  fall_of_the_khanate = {
+    position = 4
+    icon = claim_the_borderlands
+    required_missions = { the_mongol_threat }
+    ai_weight = {
+      factor = 5
+    }
+    ai_priority = {
+      factor = 5
+    }
 
-		provinces_to_highlight = {
-		}
-		trigger = {
-				OKH = {
-					NOT = {development = 75}
-				}
-			}
-		effect = {
-			every_country = {
-				limit = {
-					is_subject_of = OKH
-				}
-				grant_independence = yes
-			}
-			add_country_modifier = {
-				name = "lesson_from_the_nomads"
-				duration = -1
-			}
-		}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      OKH = {
+        NOT = {total_development = 60}
+      }
+      num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+        value = 10
+        OR = {
+          area = neumark_area
+          area = wielkopolska_area
+          area = silesia_area
+          area = hinter_pommern_area
+        }
+      }
+    }
+    effect = {
+      every_country = {
+        limit = {
+          is_subject_of = OKH
+        }
+        grant_independence = yes
+      }
+      add_country_modifier = {
+        name = "lesson_from_the_nomads"
+        duration = -1
+      }
+    }
 
-	}
+  }
