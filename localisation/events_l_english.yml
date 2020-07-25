@@ -548,6 +548,19 @@ flavor_sax.14.b:0 "We have other matters which are more important than petty Sax
 flavor_sax.15.t:0 "We have failed"
 flavor_sax.15.d:0 "We have failed to stop the Saxons, we are not stong enough..."
 flavor_sax.15.a:0 "It is time to focus on our own defenses."
+
+flavor_sax.16.t:0 "Cultural Assimilation"
+flavor_sax.16.d:0 "The lands of the Polabians sounds now more Germanic than slavic."
+flavor_sax.16.a:0 "This is a happy news."
+
+flavor_sax.17.t:0 "Cultural Assimilation"
+flavor_sax.17.d:0 "The Scandinavian and Germanic were always close but now we can say that this province is truly Germanic"
+flavor_sax.17.a:0 "This is a happy news."
+
+flavor_sax.18.t:0 "Our relation with the Norse faith"
+flavor_sax.18.d:0 "The Norse and Germanic faiths have always been close but now that our kingdom regroups the 2 faiths, we must choose wether we want to close the gap between them and accept them both or convert the Norsemen to our faith."
+flavor_sax.18.a:0 "We shall bot hlive in harmony."
+flavor_sax.18.b:0 "They will pray our Gods or die !"
 #Northumbria
 flavor_nrt.1.t:0 "The fate of the non-nords"
 flavor_nrt.1.d:0 "In the lands we now own there are many who do not speak or behave like nords, the issue is what to do with them, assimilating them would take a long time but it would be the most efficient, expelling them to new lands would work too but they would not be too happy about it. We could also let the nordic migrants deal with them with cold steel, but that would be extreme."

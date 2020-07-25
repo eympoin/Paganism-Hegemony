@@ -1,5 +1,5 @@
 ########################################
-# Flavor Events for Lundinium
+# Flavor Events for Londinium
 #
 # written by Walthorn
 ########################################

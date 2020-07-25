@@ -329,7 +329,7 @@ religion = {
 
 		}
 		effect = {
-
+			country_event = { id = flavor_sax.18 }
 		}
 	}
 

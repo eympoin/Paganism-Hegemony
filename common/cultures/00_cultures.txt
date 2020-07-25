@@ -334,6 +334,8 @@ germanic = {
 	angle = {
 		primary = EAA
 	}
+	norse = {
+	}
 
 	hannoverian = {
 		primary = HAN
@@ -405,7 +407,7 @@ germanic = {
 		}
 	}
 	thuringian = {
-		primary = SAX
+		primary = THU
 		male_names = {
 			Friedrich Albrecht Christian Heinrich Rudolf August Ernst Georg Moritz Alexander Anton Hektor
 			Johann Karl Clemens Wenzel Franz Xaver Joachim Joseph Magnus Maximilian Severinus Wolfgang
@@ -449,6 +451,9 @@ germanic = {
 			"von Raumer" "von Rechenberg" "von Rex" "Sack" "von Scheidingen" "von Schleinitzstrasse" "von Sch�nberg" "Senfft von Pilsach" "von Stolberg" "von Kannewurf" "Karras" "von Keller" "von Kirchbach" "von Sternberg" "von Leisnig"
 			"von Liebenau" "von Loeben" "von Logau" "von L�ttichau" "von Taube" "von Tettau" Vitzthum "von Wolffersdorff" W�hrmann "von Werthern" "von Wackerbarth" "von Bredow" "von Brandt"
 		}
+	}
+	east_saxon = {
+
 	}
 	franconian = {
 		primary = ANS

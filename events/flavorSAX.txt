@@ -655,3 +655,161 @@ country_event = {
 	}
 
 }
+
+#colonize polabia
+country_event = {
+  id = flavor_sax.16
+  title = flavor_sax.16.t
+  desc = flavor_sax.16.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      tag = SAX
+      tag = THU
+    }
+    any_owned_province = {
+      religion = germanic
+      OR = {
+        culture = polabian
+        culture = czech
+      }
+      NOT = { culture_group = germanic }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 5
+  }
+
+  option = {#slavic
+    name = flavor_sax.16.a
+    ai_chance = { factor = 1 }
+    trigger = {
+      any_owned_province = {
+        is_core = ROOT
+        religion = germanic
+        OR = {
+          culture = polabian
+          culture = czech
+        }
+        NOT = { nationalism	= 1 }
+      }
+    }
+    random_owned_province = {
+      limit = {
+        religion = germanic
+        OR = {
+          culture = polabian
+          culture = czech
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = east_saxon
+    }
+  }
+}
+#norse conversion
+country_event = {
+  id = flavor_sax.17
+  title = flavor_sax.17.t
+  desc = flavor_sax.17.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      tag = SAX
+      tag = THU
+    }
+    any_owned_province = {
+			OR = {
+      	religion = germanic
+				ROOT = {
+					has_country_flag = accepted_norse
+					}
+			}
+      OR = {
+        culture_group = scandinavian
+      }
+      NOT = { culture_group = germanic }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 2
+  }
+
+  option = {#norse
+    name = flavor_sax.17.a
+    ai_chance = { factor = 1 }
+    trigger = {
+      any_owned_province = {
+        is_core = ROOT
+				OR = {
+	      	religion = germanic
+					ROOT = {
+						has_country_flag = accepted_norse
+						}
+				}
+        OR = {
+          culture_group = scandinavian
+        }
+        NOT = { nationalism	= 1 }
+      }
+    }
+    random_owned_province = {
+      limit = {
+			OR = {
+				religion = germanic
+				ROOT = {
+					has_country_flag = accepted_norse
+					}
+			}
+        OR = {
+          culture_group = scandinavian
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = norse
+    }
+  }
+}
+
+#norse faith fate
+country_event = {
+	id = flavor_sax.18
+	title = "flavor_sax.18.t"
+	desc = "flavor_sax.18.d"
+	picture = RELIGIOUS_CONVERSION_eventPicture
+
+	is_triggered_only = yes
+
+
+	option = {#accept the norse faith
+		name = "flavor_sax.18.a"
+		ai_chance = { factor = 10 }
+		set_country_flag = accepted_norse
+		prestige = -20
+		add_stability = -1
+		add_country_modifier = {
+			name = accepted_norse_religion
+			duration = -1
+		}
+	}
+
+	option = {#refuse
+		name = "flavor_sax.18.b"
+		ai_chance = { factor = 0 }
+		prestige = 10
+		add_country_modifier = {
+			name = non_accepted_norse_religion
+			duration = -1
+		}
+	}
+}
