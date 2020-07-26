@@ -330,9 +330,6 @@ savoy_dauphine_area = { #3 Savoy and Dauphiné, Upper Burgundy
 	203 204 205 4719
 }
 
-lorraine_area = { #4
-	187 188 189 4766
-}
 
 picardy_area = { #4
 	87 88 89 1743
@@ -343,7 +340,7 @@ ile_de_france_area = { #4
 }
 
 champagne_area = { #3
-	181 186 4390
+	181 186 4390 187  4766
 }
 
 loire_area = { #5
@@ -1001,7 +998,7 @@ upper_rhineland_area = { #3 # now 'Baden'
 }
 
 alsace_area = { #3
-	75 1880 4765
+	75 1880 4765 188 189
 }
 
 palatinate_area = { #3

@@ -12,68 +12,68 @@ neo-roman={
 
 	dynasty_names = { "Aelius" "Abronius" "Abudius" "Albinius" "Antonius" "Anneius" "Antius" "Aurelius" "Betucius" "Caecius" "Catienus" "Decimius" "Domitius"
 	"Flavius" "Gallius" "Julius" "Junius" "Livius" "Lucretius" "Marcius" "Marius" "Pompeius" "Salvius" "Tarquinius"
-	}
-	male_names = { "Aggripa" "Appius" "Aulus" "Caeso" "Decimus" "Faustus" "Gaius" "Gnaeus" "Hostus" "Lucius" "Mamercus" "Manius" "Marcus" "Mettius" "Nonus"
-	"Numerius" "Octavius" "Opiter" "Paullus" "Postumus" "Proculus" "Publius" "Quintus" "Septimus" "Sertor" "Servius" "Sectus" "Spurius" "Statius" "Tiberius"
-	"Titus" "Tullus" "Vibius" "Volesus" "Vospiscus"
-	}
+}
+male_names = { "Aggripa" "Appius" "Aulus" "Caeso" "Decimus" "Faustus" "Gaius" "Gnaeus" "Hostus" "Lucius" "Mamercus" "Manius" "Marcus" "Mettius" "Nonus"
+"Numerius" "Octavius" "Opiter" "Paullus" "Postumus" "Proculus" "Publius" "Quintus" "Septimus" "Sertor" "Servius" "Sectus" "Spurius" "Statius" "Tiberius"
+"Titus" "Tullus" "Vibius" "Volesus" "Vospiscus"
+}
 
-	female_names = {"Appia" "Aula" "Caesula" "Decima" "Fausta" "Gaia" "Gnaea" "Hosta" "Lucia" "Mamerca" "Mania" "Marcia" "Mettia" "Nona"
-	"Numeria" "Octavia" "Paulla" "Postuma" "Procula" "Publia" "Quinta" "Septima" "Sertor" "Servia" "Sexta" "Spuria" "Statia" "Tiberia"
-	"Titia" "Tulla" "Vibia" "Volusa" "Vospisca"
-	}
+female_names = {"Appia" "Aula" "Caesula" "Decima" "Fausta" "Gaia" "Gnaea" "Hosta" "Lucia" "Mamerca" "Mania" "Marcia" "Mettia" "Nona"
+"Numeria" "Octavia" "Paulla" "Postuma" "Procula" "Publia" "Quinta" "Septima" "Sertor" "Servia" "Sexta" "Spuria" "Statia" "Tiberia"
+"Titia" "Tulla" "Vibia" "Volusa" "Vospisca"
+}
 
 
-	narbonnais= {
-		primary = NAR
-	}
-	franko-roman= {
-		primary = GLI
-	}
-	britannian= {
-		primary = LDN
-	}
-	mauretanian= {
-		primary = MAU
-	}
-	aquitain = {
-		primary = AQI
-	}
-	lusitanian = {
-		primary = LUS
-	}
-	baetician = {
-		primary = BAE
-	}
-	cartaginensian = {
-		primary = CTH
-	}
-	tarraconan = {
-		primary = TRC
-	}
-	roman = {
-		primary = SPQ
-	}
-	salernian = {
-		primary = SLR
-	}
-	carthaginian = {
-		primary = CTG
-	}
+narbonnais= {
+	primary = NAR
+}
+franko-roman= {
+	primary = GLI
+}
+britannian= {
+	primary = LDN
+}
+mauretanian= {
+	primary = MAU
+}
+aquitain = {
+	primary = AQI
+}
+lusitanian = {
+	primary = LUS
+}
+baetician = {
+	primary = BAE
+}
+cartaginensian = {
+	primary = CTH
+}
+tarraconan = {
+	primary = TRC
+}
+roman = {
+	primary = SPQ
+}
+salernian = {
+	primary = SLR
+}
+carthaginian = {
+	primary = CTG
+}
 
-	galician = {
-		primary = GAL
-	}
-	tuscan = {
-		primary = TUS
-	}
-	sardinian = {
-		primary = SAR
-	}
+galician = {
+	primary = GAL
+}
+tuscan = {
+	primary = TUS
+}
+sardinian = {
+	primary = SAR
+}
 
-	sicilian = {
-		primary = SIC
-	}
+sicilian = {
+	primary = SIC
+}
 
 }
 
@@ -92,13 +92,13 @@ frankish = {
 	}
 	lingerian = {
 		primary = FRO
-        }
+	}
 	rhenan = {
 		primary = FRR
-        }
+	}
 	lotharingian= {
 		primary = LOT
-    }
+	}
 	east-francian = {
 		primary = EAF
 	}
@@ -182,7 +182,7 @@ frankish = {
 			"van Serooskerken"
 		}
 	}
-		dynasty_names = {
+	dynasty_names = {
 		"de Valois" "de Bourbon" "de la Tour" "d'Anjou"
 		"de Lorraine" "de Foix" "de Montfort" "de Blois" "de Penthievre" "de Dreux"
 		"de Rohan" "de Bar" "d'Albert" "d'Escoubleau" "de Neufville" "de Bourgogne"
@@ -235,13 +235,13 @@ germano-roman	= {
 
 	lombard = {
 		primary = LOM
-        }
+	}
 	ligurian = {
 		primary = GEN
 	}
 	burgond= {
 		primary = BOR
-  }
+	}
 
 	west-francian = {
 		primary = WFR
@@ -292,35 +292,35 @@ britannian_group = {
 
 	dynasty_names = { "Aelius" "Abronius" "Abudius" "Albinius" "Antonius" "Anneius" "Antius" "Aurelius" "Betucius" "Caecius" "Catienus" "Decimius" "Domitius"
 	"Flavius" "Gallius" "Julius" "Junius" "Livius" "Lucretius" "Marcius" "Marius" "Pompeius" "Salvius" "Tarquinius"
-	}
-	male_names = { "Aggripa" "Appius" "Aulus" "Caeso" "Decimus" "Faustus" "Gaius" "Gnaeus" "Hostus" "Lucius" "Mamercus" "Manius" "Marcus" "Mettius" "Nonus"
-	"Numerius" "Octavius" "Opiter" "Paullus" "Postumus" "Proculus" "Publius" "Quintus" "Septimus" "Sertor" "Servius" "Sectus" "Spurius" "Statius" "Tiberius"
-	"Titus" "Tullus" "Vibius" "Volesus" "Vospiscus"
-	}
+}
+male_names = { "Aggripa" "Appius" "Aulus" "Caeso" "Decimus" "Faustus" "Gaius" "Gnaeus" "Hostus" "Lucius" "Mamercus" "Manius" "Marcus" "Mettius" "Nonus"
+"Numerius" "Octavius" "Opiter" "Paullus" "Postumus" "Proculus" "Publius" "Quintus" "Septimus" "Sertor" "Servius" "Sectus" "Spurius" "Statius" "Tiberius"
+"Titus" "Tullus" "Vibius" "Volesus" "Vospiscus"
+}
 
-	female_names = {"Appia" "Aula" "Caesula" "Decima" "Fausta" "Gaia" "Gnaea" "Hosta" "Lucia" "Mamerca" "Mania" "Marcia" "Mettia" "Nona"
-	"Numeria" "Octavia" "Paulla" "Postuma" "Procula" "Publia" "Quinta" "Septima" "Sertor" "Servia" "Sexta" "Spuria" "Statia" "Tiberia"
-	"Titia" "Tulla" "Vibia" "Volusa" "Vospisca"
-	}
+female_names = {"Appia" "Aula" "Caesula" "Decima" "Fausta" "Gaia" "Gnaea" "Hosta" "Lucia" "Mamerca" "Mania" "Marcia" "Mettia" "Nona"
+"Numeria" "Octavia" "Paulla" "Postuma" "Procula" "Publia" "Quinta" "Septima" "Sertor" "Servia" "Sexta" "Spuria" "Statia" "Tiberia"
+"Titia" "Tulla" "Vibia" "Volusa" "Vospisca"
+}
 
-	britannian_2 = {
-		primary = BRN
-	}
+britannian_2 = {
+	primary = BRN
+}
 
-	flavian = {
-	}
+flavian = {
+}
 
-	brigantes = {
-	}
+brigantes = {
+}
 
-	iscan = {
-	}
+iscan = {
+}
 
-	hybernian = {
-	}
+hybernian = {
+}
 
-	caledonian = {
-	}
+caledonian = {
+}
 }
 
 germanic = {
@@ -496,7 +496,7 @@ germanic = {
 	}
 	flemish = {
 		primary = FLA
-			dynasty_names = {
+		dynasty_names = {
 			"van Oranje" Nassau "van Wassenberg" "van Henegouwen" "de Friesland"
 			"van Haspinga" "van Limburg" "van Lotharingen"  "von der Mark"
 			"van Leuven" "van Brabant" "van Egmont" "de Reginar" "van J�lich-Hengebach"
@@ -776,23 +776,23 @@ scandinavian = { #Nordic
 	norwegian = {
 		primary = NOR
 		male_names = {
-				Ale Alfr Alf Alfgeir Anders Andrew Anlaufr Anundr Anund Arnbj�rn Arngrimr Arni Arne Arnfast
-				Asbj�rn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger Bj�rn Beorn Bo Borkvard
-				Botulfr Bragi Brage Bu�li Dag Dan Dyre Eilif Egill Egil Emund Einarr Einar Eirikr Erik
-				Eskild Falki Faste Filip Philip Fredrik Frederick Frirek Frode Freyr Frej Folki Folke
-				Gandalfr Geirr Georg George Gnupa Gorm Greger Gregory Grimr Grim Godfrey Gu�mundr
-				Gudmund Gudr�d Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming
-				Holmger Hrafn Hrolfr Rolf Hrane H�steinn Hjalmar Hysing
-				Ing�lfr Ingolf Ingemar Ingjald Ivar Jedvard Edward Jon John Karl Charles Kettil Kettilmund
-				Kjartan Klas Knut Kol Kolbj�rn Magnus Markus Marcus Mats Matthew Nils Niklas Nicholas Oddr
-				Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr R�gnvaldr
-				Ragnvald Skuli Skule Snorri Sigbj�rn Sigtrygg Sigur�r Sigurd Starkad Steinn Sten
-				Sturla Styrbj�rn Styrkar Somerled Suni Sune Sveinn Sven Sverker S�mundr S�mund
-				S�lvi S�lve S�rkver Tjudmund Toke Tolir �orbj�rn Torbj�rn �orfinn Torfinn �orbrandr Torbrand
-				�ordr Tord �orgil Torkel �orsteinn Torsten �orolfr Thorolf Toste Totil Tryggve Tyke Ulfr Ulf
-				Vagn Valdemar Vladimir �ke Yngvar Ingvar �rvar Orvar �ysteinn Eysteinn H�kon Olav
-				Christoffer Harald Inge Aksel Ansgard Arvid Bernt Bj�rn Daniel Edvard Eilert Elias Esben
-				Kasper Kennet Knut Ludvig Mikael Nj�ld Njord Oddmund Peder Rikard Simon S�ren Tollak
+			Ale Alfr Alf Alfgeir Anders Andrew Anlaufr Anundr Anund Arnbj�rn Arngrimr Arni Arne Arnfast
+			Asbj�rn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger Bj�rn Beorn Bo Borkvard
+			Botulfr Bragi Brage Bu�li Dag Dan Dyre Eilif Egill Egil Emund Einarr Einar Eirikr Erik
+			Eskild Falki Faste Filip Philip Fredrik Frederick Frirek Frode Freyr Frej Folki Folke
+			Gandalfr Geirr Georg George Gnupa Gorm Greger Gregory Grimr Grim Godfrey Gu�mundr
+			Gudmund Gudr�d Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming
+			Holmger Hrafn Hrolfr Rolf Hrane H�steinn Hjalmar Hysing
+			Ing�lfr Ingolf Ingemar Ingjald Ivar Jedvard Edward Jon John Karl Charles Kettil Kettilmund
+			Kjartan Klas Knut Kol Kolbj�rn Magnus Markus Marcus Mats Matthew Nils Niklas Nicholas Oddr
+			Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr R�gnvaldr
+			Ragnvald Skuli Skule Snorri Sigbj�rn Sigtrygg Sigur�r Sigurd Starkad Steinn Sten
+			Sturla Styrbj�rn Styrkar Somerled Suni Sune Sveinn Sven Sverker S�mundr S�mund
+			S�lvi S�lve S�rkver Tjudmund Toke Tolir �orbj�rn Torbj�rn �orfinn Torfinn �orbrandr Torbrand
+			�ordr Tord �orgil Torkel �orsteinn Torsten �orolfr Thorolf Toste Totil Tryggve Tyke Ulfr Ulf
+			Vagn Valdemar Vladimir �ke Yngvar Ingvar �rvar Orvar �ysteinn Eysteinn H�kon Olav
+			Christoffer Harald Inge Aksel Ansgard Arvid Bernt Bj�rn Daniel Edvard Eilert Elias Esben
+			Kasper Kennet Knut Ludvig Mikael Nj�ld Njord Oddmund Peder Rikard Simon S�ren Tollak
 		}
 		female_names = {
 			Torhild Aleta Alfhildr Alfhild Alfridh Alv�r Anna Asa �sa Aslaug Asta Astrid Beata
@@ -821,23 +821,23 @@ scandinavian = { #Nordic
 	northymbrian = {
 		primary = NRT
 		male_names = {
-				Ale Alfr Alf Alfgeir Anders Andrew Anlaufr Anundr Anund Arnbjorn Arngrimr Arni Arne Arnfast
-				Asbjorn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger Bjorn Beorn Bo Borkvard
-				Botulfr Bragi Brage Buoli Dag Dan Dyre Eilif Egill Egil Emund Einarr Einar Eirikr Erik
-				Eskild Falki Faste Filip Philip Fredrik Frederick Frirek Frode Freyr Frej Folki Folke
-				Gandalfr Geirr Georg George Gnupa Gorm Greger Gregory Grimr Grim Godfrey Gudmundr
-				Gudmund Gudred Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming
-				Holmger Hrafn Hrolfr Rolf Hrane Hosteinn Hjalmar Hysing
-				Ingolfr Ingolf Ingemar Ingjald Ivar Jedvard Edward Jon John Karl Charles Kettil Kettilmund
-				Kjartan Klas Knut Kol Kolbjodrn Magnus Markus Marcus Mats Matthew Nils Niklas Nicholas Oddr
-				Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr Rognvaldr
-				Ragnvald Skuli Skule Snorri Sigbjorn Sigtrygg Sigurdr Sigurd Starkad Steinn Sten
-				Sturla Styrbjorn Styrkar Somerled Suni Sune Sveinn Sven Sverker Simundr Simund
-				Solvi Solve Sarkver Tjudmund Toke Tolir Dorbjorn Torbjorn Torfinn Torbrandr Torbrand
-				Tordr Tord Torgil Torkel Torsteinn Torsten Torolfr Thorolf Toste Totil Tryggve Tyke Ulfr Ulf
-				Vagn Valdemar Vladimir Ike Yngvar Ingvar Orvar Oysteinn Eysteinn Hakon Olav
-				Christoffer Harald Inge Aksel Ansgard Arvid Bernt Bjorn Daniel Edvard Eilert Elias Esben
-				Kasper Kennet Knut Ludvig Mikael Njold Njord Oddmund Peder Rikard Simon Soren Tollak
+			Ale Alfr Alf Alfgeir Anders Andrew Anlaufr Anundr Anund Arnbjorn Arngrimr Arni Arne Arnfast
+			Asbjorn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger Bjorn Beorn Bo Borkvard
+			Botulfr Bragi Brage Buoli Dag Dan Dyre Eilif Egill Egil Emund Einarr Einar Eirikr Erik
+			Eskild Falki Faste Filip Philip Fredrik Frederick Frirek Frode Freyr Frej Folki Folke
+			Gandalfr Geirr Georg George Gnupa Gorm Greger Gregory Grimr Grim Godfrey Gudmundr
+			Gudmund Gudred Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming
+			Holmger Hrafn Hrolfr Rolf Hrane Hosteinn Hjalmar Hysing
+			Ingolfr Ingolf Ingemar Ingjald Ivar Jedvard Edward Jon John Karl Charles Kettil Kettilmund
+			Kjartan Klas Knut Kol Kolbjodrn Magnus Markus Marcus Mats Matthew Nils Niklas Nicholas Oddr
+			Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr Rognvaldr
+			Ragnvald Skuli Skule Snorri Sigbjorn Sigtrygg Sigurdr Sigurd Starkad Steinn Sten
+			Sturla Styrbjorn Styrkar Somerled Suni Sune Sveinn Sven Sverker Simundr Simund
+			Solvi Solve Sarkver Tjudmund Toke Tolir Dorbjorn Torbjorn Torfinn Torbrandr Torbrand
+			Tordr Tord Torgil Torkel Torsteinn Torsten Torolfr Thorolf Toste Totil Tryggve Tyke Ulfr Ulf
+			Vagn Valdemar Vladimir Ike Yngvar Ingvar Orvar Oysteinn Eysteinn Hakon Olav
+			Christoffer Harald Inge Aksel Ansgard Arvid Bernt Bjorn Daniel Edvard Eilert Elias Esben
+			Kasper Kennet Knut Ludvig Mikael Njold Njord Oddmund Peder Rikard Simon Soren Tollak
 		}
 		female_names = {
 			Torhild Aleta Alfhildr Alfhild Alfridh Alv�r Anna Asa �sa Aslaug Asta Astrid Beata
@@ -865,23 +865,23 @@ scandinavian = { #Nordic
 	Vinlandic = {
 		primary = NRT
 		male_names = {
-				Ale Alfr Alf Alfgeir Anders Andrew Anlaufr Anundr Anund Arnbj�rn Arngrimr Arni Arne Arnfast
-				Asbj�rn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger Bj�rn Beorn Bo Borkvard
-				Botulfr Bragi Brage Bu�li Dag Dan Dyre Eilif Egill Egil Emund Einarr Einar Eirikr Erik
-				Eskild Falki Faste Filip Philip Fredrik Frederick Frirek Frode Freyr Frej Folki Folke
-				Gandalfr Geirr Georg George Gnupa Gorm Greger Gregory Grimr Grim Godfrey Gu�mundr
-				Gudmund Gudr�d Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming
-				Holmger Hrafn Hrolfr Rolf Hrane H�steinn Hjalmar Hysing
-				Ing�lfr Ingolf Ingemar Ingjald Ivar Jedvard Edward Jon John Karl Charles Kettil Kettilmund
-				Kjartan Klas Knut Kol Kolbj�rn Magnus Markus Marcus Mats Matthew Nils Niklas Nicholas Oddr
-				Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr R�gnvaldr
-				Ragnvald Skuli Skule Snorri Sigbj�rn Sigtrygg Sigur�r Sigurd Starkad Steinn Sten
-				Sturla Styrbj�rn Styrkar Somerled Suni Sune Sveinn Sven Sverker S�mundr S�mund
-				S�lvi S�lve S�rkver Tjudmund Toke Tolir �orbj�rn Torbj�rn �orfinn Torfinn �orbrandr Torbrand
-				�ordr Tord �orgil Torkel �orsteinn Torsten �orolfr Thorolf Toste Totil Tryggve Tyke Ulfr Ulf
-				Vagn Valdemar Vladimir �ke Yngvar Ingvar �rvar Orvar �ysteinn Eysteinn H�kon Olav
-				Christoffer Harald Inge Aksel Ansgard Arvid Bernt Bj�rn Daniel Edvard Eilert Elias Esben
-				Kasper Kennet Knut Ludvig Mikael Nj�ld Njord Oddmund Peder Rikard Simon S�ren Tollak
+			Ale Alfr Alf Alfgeir Anders Andrew Anlaufr Anundr Anund Arnbj�rn Arngrimr Arni Arne Arnfast
+			Asbj�rn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger Bj�rn Beorn Bo Borkvard
+			Botulfr Bragi Brage Bu�li Dag Dan Dyre Eilif Egill Egil Emund Einarr Einar Eirikr Erik
+			Eskild Falki Faste Filip Philip Fredrik Frederick Frirek Frode Freyr Frej Folki Folke
+			Gandalfr Geirr Georg George Gnupa Gorm Greger Gregory Grimr Grim Godfrey Gu�mundr
+			Gudmund Gudr�d Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming
+			Holmger Hrafn Hrolfr Rolf Hrane H�steinn Hjalmar Hysing
+			Ing�lfr Ingolf Ingemar Ingjald Ivar Jedvard Edward Jon John Karl Charles Kettil Kettilmund
+			Kjartan Klas Knut Kol Kolbj�rn Magnus Markus Marcus Mats Matthew Nils Niklas Nicholas Oddr
+			Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr R�gnvaldr
+			Ragnvald Skuli Skule Snorri Sigbj�rn Sigtrygg Sigur�r Sigurd Starkad Steinn Sten
+			Sturla Styrbj�rn Styrkar Somerled Suni Sune Sveinn Sven Sverker S�mundr S�mund
+			S�lvi S�lve S�rkver Tjudmund Toke Tolir �orbj�rn Torbj�rn �orfinn Torfinn �orbrandr Torbrand
+			�ordr Tord �orgil Torkel �orsteinn Torsten �orolfr Thorolf Toste Totil Tryggve Tyke Ulfr Ulf
+			Vagn Valdemar Vladimir �ke Yngvar Ingvar �rvar Orvar �ysteinn Eysteinn H�kon Olav
+			Christoffer Harald Inge Aksel Ansgard Arvid Bernt Bj�rn Daniel Edvard Eilert Elias Esben
+			Kasper Kennet Knut Ludvig Mikael Nj�ld Njord Oddmund Peder Rikard Simon S�ren Tollak
 		}
 		female_names = {
 			Torhild Aleta Alfhildr Alfhild Alfridh Alv�r Anna Asa �sa Aslaug Asta Astrid Beata
@@ -909,23 +909,23 @@ scandinavian = { #Nordic
 	Icelandic = {
 		primary = ICE
 		male_names = {
-				Ale Alfr Alf Alfgeir Anders Andrew Anlaufr Anundr Anund Arnbj�rn Arngrimr Arni Arne Arnfast
-				Asbj�rn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger Bj�rn Beorn Bo Borkvard
-				Botulfr Bragi Brage Bu�li Dag Dan Dyre Eilif Egill Egil Emund Einarr Einar Eirikr Erik
-				Eskild Falki Faste Filip Philip Fredrik Frederick Frirek Frode Freyr Frej Folki Folke
-				Gandalfr Geirr Georg George Gnupa Gorm Greger Gregory Grimr Grim Godfrey Gu�mundr
-				Gudmund Gudr�d Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming
-				Holmger Hrafn Hrolfr Rolf Hrane H�steinn Hjalmar Hysing
-				Ing�lfr Ingolf Ingemar Ingjald Ivar Jedvard Edward Jon John Karl Charles Kettil Kettilmund
-				Kjartan Klas Knut Kol Kolbj�rn Magnus Markus Marcus Mats Matthew Nils Niklas Nicholas Oddr
-				Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr R�gnvaldr
-				Ragnvald Skuli Skule Snorri Sigbj�rn Sigtrygg Sigur�r Sigurd Starkad Steinn Sten
-				Sturla Styrbj�rn Styrkar Somerled Suni Sune Sveinn Sven Sverker S�mundr S�mund
-				S�lvi S�lve S�rkver Tjudmund Toke Tolir �orbj�rn Torbj�rn �orfinn Torfinn �orbrandr Torbrand
-				�ordr Tord �orgil Torkel �orsteinn Torsten �orolfr Thorolf Toste Totil Tryggve Tyke Ulfr Ulf
-				Vagn Valdemar Vladimir �ke Yngvar Ingvar �rvar Orvar �ysteinn Eysteinn H�kon Olav
-				Christoffer Harald Inge Aksel Ansgard Arvid Bernt Bj�rn Daniel Edvard Eilert Elias Esben
-				Kasper Kennet Knut Ludvig Mikael Nj�ld Njord Oddmund Peder Rikard Simon S�ren Tollak
+			Ale Alfr Alf Alfgeir Anders Andrew Anlaufr Anundr Anund Arnbj�rn Arngrimr Arni Arne Arnfast
+			Asbj�rn Bagge Baldr Balder Barid Bengt Benedict Bersi Bertil Birger Bj�rn Beorn Bo Borkvard
+			Botulfr Bragi Brage Bu�li Dag Dan Dyre Eilif Egill Egil Emund Einarr Einar Eirikr Erik
+			Eskild Falki Faste Filip Philip Fredrik Frederick Frirek Frode Freyr Frej Folki Folke
+			Gandalfr Geirr Georg George Gnupa Gorm Greger Gregory Grimr Grim Godfrey Gu�mundr
+			Gudmund Gudr�d Gunnarr Gunnar Hakon Halsten Haraldr Harold Haukr Helgi Helge Hemming
+			Holmger Hrafn Hrolfr Rolf Hrane H�steinn Hjalmar Hysing
+			Ing�lfr Ingolf Ingemar Ingjald Ivar Jedvard Edward Jon John Karl Charles Kettil Kettilmund
+			Kjartan Klas Knut Kol Kolbj�rn Magnus Markus Marcus Mats Matthew Nils Niklas Nicholas Oddr
+			Odd Ofeig Olafr Olaf Ormr Orm Ottarr Ottar Refr Refil Ragnarr Ragnar Rikulfr R�gnvaldr
+			Ragnvald Skuli Skule Snorri Sigbj�rn Sigtrygg Sigur�r Sigurd Starkad Steinn Sten
+			Sturla Styrbj�rn Styrkar Somerled Suni Sune Sveinn Sven Sverker S�mundr S�mund
+			S�lvi S�lve S�rkver Tjudmund Toke Tolir �orbj�rn Torbj�rn �orfinn Torfinn �orbrandr Torbrand
+			�ordr Tord �orgil Torkel �orsteinn Torsten �orolfr Thorolf Toste Totil Tryggve Tyke Ulfr Ulf
+			Vagn Valdemar Vladimir �ke Yngvar Ingvar �rvar Orvar �ysteinn Eysteinn H�kon Olav
+			Christoffer Harald Inge Aksel Ansgard Arvid Bernt Bj�rn Daniel Edvard Eilert Elias Esben
+			Kasper Kennet Knut Ludvig Mikael Nj�ld Njord Oddmund Peder Rikard Simon S�ren Tollak
 		}
 		female_names = {
 			Torhild Aleta Alfhildr Alfhild Alfridh Alv�r Anna Asa �sa Aslaug Asta Astrid Beata
@@ -2007,47 +2007,47 @@ finno_ugric = { #Ugric
 	graphical_culture = westerngfx
 
 
-		hungarian = {
-			primary = HUN
-			dynasty_names = {
-				B�thory Hunyadi Szapolyai R�k�czy Bocskai Bethlen Alm�sy Andr�ssy Batthy�ny Cs�ky Dessewffy
-				Erdody Eszterh�zy Festetics Hajd� K�rolyi Kun Magyary Per�nyi R�nai Sz�chenyi Szepessy
-				Th�k�ly Tisza Zr�nyi Teleki
-				Majl�th D�czy Dob� Koh�ry Orczy Frankopan Garay Mikes Sz�csi Imreffy N�dasdy Rh�dey
+	hungarian = {
+		primary = HUN
+		dynasty_names = {
+			B�thory Hunyadi Szapolyai R�k�czy Bocskai Bethlen Alm�sy Andr�ssy Batthy�ny Cs�ky Dessewffy
+			Erdody Eszterh�zy Festetics Hajd� K�rolyi Kun Magyary Per�nyi R�nai Sz�chenyi Szepessy
+			Th�k�ly Tisza Zr�nyi Teleki
+			Majl�th D�czy Dob� Koh�ry Orczy Frankopan Garay Mikes Sz�csi Imreffy N�dasdy Rh�dey
 
-				#CK2
-				Zrinski Hadik Both "R�k�czi" Forg�ch Cseszneky Derencs�nyi D�csey R�vay Esterh�zy
-				K�llay Kem�ny Thurz� Zichy
-			}
-			male_names = {
-				Ul�szl� L�szl� Lajos Albert J�nos M�ty�s Zsigmond Andr�s K�roly Istv�n B�la Anaszt�z Barnab�s
-				Boldizs�r D�vid D�m�t�r Edv�rd Ern� Ferenc G�bor Gy�rgy Izs�k Jen� J�zsef K�lm�n K�zm�r L�rinc
-				Mikl�s Oszk�r Ott� Patrik P�ter Simon Tam�s Vencel
-				�bel �d�rn �goston �lmos �rp�d �d�n Otto Alajos Ambrus Andr�s Andrew Antal Attila B�lint
-				Albert Bal�zs Benedek Benedict Bern�t Bernard Bert�k Bertalan Boldizs�r Bonuslo
-				Borisz Boris Cs�k Csaba Csongor D�nes D�m�t�r Dezs� Domoszl� Don�t Elek Elem�r Endre Ern�
-				Philip Ferenc Francis Frigyes G�bor G�briel Gabriel G�sp�r Caspar G�za Gazsi
-				Gell�rt Gergely Gy�rgy George Gyula Imre Istv�n Stephen Izs�k J�kob Jacob J�nos John J�zsef
-				Joseph Jen� K�lm�n K�roly Charles Konr�d Konrad Korn�l Krist�f L�szl� L�z�r L�rinc Lajos
-				Lampert Levente Luk�cs M�rk Marcus M�rton Martin M�t� M�ty�s Matthew M�ric M�zes Mih�ly
-				Michael Louis Ful�p B�la
-				Mikl�s N�ndor Orb�n Oszk�r P�l Paul P�ter Peter S�muel Samuel S�ndor Alexander Salamon
-				Szilveszter Silvester T�dor Tacsony Tam�s Thomas Tibor Tivadar Vazul Vencel Vaclav Vilmos
-				Zolt�n Zsigmond Sigmund Zsolt Saul Soma
-			}
-			female_names = {
-				�gnes Agnes �va Eva Adelaida Adelaide Ag�ta Agatha Am�lia Amelia Angyalka Anik� Aranka
-				Bertha Borb�la Csilla Csillag Czenzi Dorottya Dorothy Edit Edith Em�ke Emese Erika Erzs�bet
-				Elisabeth Eszter Berta Anna
-				Etel Euphemia Euphemia Gizella Gisela Gy�rgyi Georgia Hajnal Hedwig Hedwig Ibolya Ildik�
-				Ir�n Irene J�cinta J�zsa J�lia Juliana Jol�n Judith Judith Kamilla Camilla Katalin
-				Kinga Kl�ra Clara Catherine Illona
-				Konstancia Constance Krisztina Christina Kunigunda Kunigunde Luca M�ria Maria M�rta Martha
-				Magdolna Magdalena Margar�ta Margaret Margit Matild Matilda Nat�lia Natalia Odola Orsolya
-				Panni Piroska R�zsa Rosa S�ra Sarah Sarolt Zsuzsa Zsanett
-				Skolasztika Sophia Sophia Tund�r Terezia Teresa Viola Viola Vir�g Zolt�na Zs�fia Sophia
-			}
+			#CK2
+			Zrinski Hadik Both "R�k�czi" Forg�ch Cseszneky Derencs�nyi D�csey R�vay Esterh�zy
+			K�llay Kem�ny Thurz� Zichy
 		}
+		male_names = {
+			Ul�szl� L�szl� Lajos Albert J�nos M�ty�s Zsigmond Andr�s K�roly Istv�n B�la Anaszt�z Barnab�s
+			Boldizs�r D�vid D�m�t�r Edv�rd Ern� Ferenc G�bor Gy�rgy Izs�k Jen� J�zsef K�lm�n K�zm�r L�rinc
+			Mikl�s Oszk�r Ott� Patrik P�ter Simon Tam�s Vencel
+			�bel �d�rn �goston �lmos �rp�d �d�n Otto Alajos Ambrus Andr�s Andrew Antal Attila B�lint
+			Albert Bal�zs Benedek Benedict Bern�t Bernard Bert�k Bertalan Boldizs�r Bonuslo
+			Borisz Boris Cs�k Csaba Csongor D�nes D�m�t�r Dezs� Domoszl� Don�t Elek Elem�r Endre Ern�
+			Philip Ferenc Francis Frigyes G�bor G�briel Gabriel G�sp�r Caspar G�za Gazsi
+			Gell�rt Gergely Gy�rgy George Gyula Imre Istv�n Stephen Izs�k J�kob Jacob J�nos John J�zsef
+			Joseph Jen� K�lm�n K�roly Charles Konr�d Konrad Korn�l Krist�f L�szl� L�z�r L�rinc Lajos
+			Lampert Levente Luk�cs M�rk Marcus M�rton Martin M�t� M�ty�s Matthew M�ric M�zes Mih�ly
+			Michael Louis Ful�p B�la
+			Mikl�s N�ndor Orb�n Oszk�r P�l Paul P�ter Peter S�muel Samuel S�ndor Alexander Salamon
+			Szilveszter Silvester T�dor Tacsony Tam�s Thomas Tibor Tivadar Vazul Vencel Vaclav Vilmos
+			Zolt�n Zsigmond Sigmund Zsolt Saul Soma
+		}
+		female_names = {
+			�gnes Agnes �va Eva Adelaida Adelaide Ag�ta Agatha Am�lia Amelia Angyalka Anik� Aranka
+			Bertha Borb�la Csilla Csillag Czenzi Dorottya Dorothy Edit Edith Em�ke Emese Erika Erzs�bet
+			Elisabeth Eszter Berta Anna
+			Etel Euphemia Euphemia Gizella Gisela Gy�rgyi Georgia Hajnal Hedwig Hedwig Ibolya Ildik�
+			Ir�n Irene J�cinta J�zsa J�lia Juliana Jol�n Judith Judith Kamilla Camilla Katalin
+			Kinga Kl�ra Clara Catherine Illona
+			Konstancia Constance Krisztina Christina Kunigunda Kunigunde Luca M�ria Maria M�rta Martha
+			Magdolna Magdalena Margar�ta Margaret Margit Matild Matilda Nat�lia Natalia Odola Orsolya
+			Panni Piroska R�zsa Rosa S�ra Sarah Sarolt Zsuzsa Zsanett
+			Skolasztika Sophia Sophia Tund�r Terezia Teresa Viola Viola Vir�g Zolt�na Zs�fia Sophia
+		}
+	}
 
 	sapmi = {
 		primary = SMI
@@ -2629,7 +2629,7 @@ west_slavic = {
 		Jana Jaroslava Jitka Johanka Judita Judith Justina Katerina Catherine
 		Kl�ra Clara Konstancie Constance Kristyna Christina Kunhuta Libuse Ludmila Marie Maria Mark�ta
 		Mlada Olga Perchta Pribyslava Richeza Skonka Stanislava Svatava Helen
- 		Vilem�na Viola Yolanda Vladislava Vojslava Zdislava Zdenka Zofie Sophia
+		Vilem�na Viola Yolanda Vladislava Vojslava Zdislava Zdenka Zofie Sophia
 	}
 }
 
@@ -4429,7 +4429,7 @@ caucasian = {
 turko_semitic = { #semitic
 	graphical_culture = muslimgfx
 	Assyrian = {
-	primary = ASY
+		primary = ASY
 		dynasty_names = {
 			Amorite Sealand Larsa Kassite
 		}
@@ -4441,7 +4441,7 @@ turko_semitic = { #semitic
 		}
 	}
 	babylonian = {
-	primary = BAB
+		primary = BAB
 		dynasty_names = {
 			Amorite Sealand Larsa Kassite
 		}
@@ -4579,7 +4579,7 @@ turko_semitic = { #semitic
 	Himyarites_culture = { #South Arabs
 		primary = HIM
 		dynasty_names = {
-		   "Rasulid" "Tahiride" "Jabrid" "al-Qasimi"
+			"Rasulid" "Tahiride" "Jabrid" "al-Qasimi"
 			"Nabhani" "Yaruba" "al-Said" "Usfurid" "Jarwanid" "Hashim"
 		}
 		male_names = {
@@ -4851,7 +4851,7 @@ iranian	= {
 			Parvaneh Parvin Pertevniyal Pourandokht Pourandokht Roshanora Roxana Salomeh Shahrzad Shahzadeh
 			Shirin Soraya Touran Tourandokht Yasaman Yekta Zarrindokht Zeynab Zohreh Atiya
 		}
-  }
+	}
 	luri = {
 		primary = LRI
 		dynasty_names = {
@@ -5041,7 +5041,7 @@ iranian	= {
 			Xêlîcan Xonçe Ghoncheh Zernîšan Zerya Zerê Zerî Zerîxan Zeytîn Zeytûn Zilfê Zoya Zozan Zêrîn
 			Zîlan Zînet Zînê Šana Šanaz Šayan Šehrîban Šelal Šemam Šengê Šepal Šepirze Šermîn Ševba Ševîn
 			Šêlaz Šîlan Šînî Šîwen
- 		}
+		}
 	}
 	kurdish = {
 		primary = ARD
@@ -5120,82 +5120,69 @@ altaic = {
 	graphical_culture = muslimgfx
 
 	mongol = {
-	primary = KHA
-	male_names = {
-		Agbarjin Adai Altan Arigaba Arugtai Ayurparibhadra Bodi Bek Bahamu Bars Buyan Biligtü Dayan
-		Delbeg Ejei Elbeg Engke Güyük Gün Gulichi Irinchibal Jorightu Kublai Köke Ligdan Markörgis Möngke
-		Manduulun Öljei Örüg Oyiradai Ögödei Qayshan Qoshila Sayn Suddhipala Tayisung Temujin Temür Toghun
-		Tolui Toq Uskhal Yesün Ariq Batu Eljigidei Joichi Darayisung Tümen
+		primary = KHA
+		male_names = {
+			Agbarjin Adai Altan Arigaba Arugtai Ayurparibhadra Bodi Bek Bahamu Bars Buyan Biligtü Dayan
+			Delbeg Ejei Elbeg Engke Güyük Gün Gulichi Irinchibal Jorightu Kublai Köke Ligdan Markörgis Möngke
+			Manduulun Öljei Örüg Oyiradai Ögödei Qayshan Qoshila Sayn Suddhipala Tayisung Temujin Temür Toghun
+			Tolui Toq Uskhal Yesün Ariq Batu Eljigidei Joichi Darayisung Tümen
+		}
+		female_names = {
+			Temülen Börte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Ho'elun
+			Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene
+		}
+		dynasty_names = {
+			# CKII
+			"Onggirat" "Naiman" "Kereyid" "Sartaq" "Mengu-Timur" "Uriankhai" "Bujakhin" "Besud" "Noyan"
+			"Jochid" "Chagatayid" "Borjigin" "Chupanid" "Injuid" "Toluid" "Ganbold" "Bolormaa" "Batbayar"
+			"Bat-Erdene" "Otgonbayar" "Enkhtuyaa" "Gantulga" "Nergüi" "Lkhagvasüren" "Enkhjargal"
+			"Ganzorig" "Narantsetseg" "Pürevsüren" "Ganbaatar" "Mönkhtsetseg" "Mönkhbat" "Mönkh-Erdene"
+			"Jalair" "Sartuul" "Olkhunut" "Khatagin" "Iljigin" "Tsookhor" "Qarakhanid"
+		}
 	}
-	female_names = {
-		Temülen Börte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Ho'elun
-		Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene
-	}
-	dynasty_names = {
-		# CKII
-		"Onggirat" "Naiman" "Kereyid" "Sartaq" "Mengu-Timur" "Uriankhai" "Bujakhin" "Besud" "Noyan"
-		"Jochid" "Chagatayid" "Borjigin" "Chupanid" "Injuid" "Toluid" "Ganbold" "Bolormaa" "Batbayar"
-		"Bat-Erdene" "Otgonbayar" "Enkhtuyaa" "Gantulga" "Nergüi" "Lkhagvasüren" "Enkhjargal"
-		"Ganzorig" "Narantsetseg" "Pürevsüren" "Ganbaatar" "Mönkhtsetseg" "Mönkhbat" "Mönkh-Erdene"
-		"Jalair" "Sartuul" "Olkhunut" "Khatagin" "Iljigin" "Tsookhor" "Qarakhanid"
-	}
-}
-chahar = { # now korchin
-	primary = KRC
-	male_names = {
-		Agbarjin Adai Altan Arigaba Arugtai Ayurparibhadra Bodi Bek Bahamu Bars Buyan Biligtü Dayan
-		Delbeg Ejei Elbeg Engke Güyük Gün Gulichi Irinchibal Jorightu Kublai Köke Ligdan Markörgis Möngke
-		Manduulun Öljei Örüg Oyiradai Ögödei Qayshan Qoshila Sayn Suddhipala Tayisung Temujin Temür Toghun
-		Tolui Toq Uskhal Yesün Ariq Batu Eljigidei Joichi Darayisung Tümen
-	}
-	female_names = {
-		Temülen Börte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Ho'elun
-		Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene
-	}
+	chahar = { # now korchin
+		primary = KRC
+		male_names = {
+			Agbarjin Adai Altan Arigaba Arugtai Ayurparibhadra Bodi Bek Bahamu Bars Buyan Biligtü Dayan
+			Delbeg Ejei Elbeg Engke Güyük Gün Gulichi Irinchibal Jorightu Kublai Köke Ligdan Markörgis Möngke
+			Manduulun Öljei Örüg Oyiradai Ögödei Qayshan Qoshila Sayn Suddhipala Tayisung Temujin Temür Toghun
+			Tolui Toq Uskhal Yesün Ariq Batu Eljigidei Joichi Darayisung Tümen
+		}
+		female_names = {
+			Temülen Börte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Ho'elun
+			Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene
+		}
 	}
 	khalkha = {
-	primary = KLK
-	male_names = {
-		Agbarjin Adai Altan Arigaba Arugtai Ayurparibhadra Bodi Bek Bahamu Bars Buyan Biligtü Dayan
-		Delbeg Ejei Elbeg Engke Güyük Gün Gulichi Irinchibal Jorightu Kublai Köke Ligdan Markörgis Möngke
-		Manduulun Öljei Örüg Oyiradai Ögödei Qayshan Qoshila Sayn Suddhipala Tayisung Temujin Temür Toghun
-		Tolui Toq Uskhal Yesün Ariq Batu Eljigidei Joichi Darayisung Tümen
+		primary = KLK
+		male_names = {
+			Agbarjin Adai Altan Arigaba Arugtai Ayurparibhadra Bodi Bek Bahamu Bars Buyan Biligtü Dayan
+			Delbeg Ejei Elbeg Engke Güyük Gün Gulichi Irinchibal Jorightu Kublai Köke Ligdan Markörgis Möngke
+			Manduulun Öljei Örüg Oyiradai Ögödei Qayshan Qoshila Sayn Suddhipala Tayisung Temujin Temür Toghun
+			Tolui Toq Uskhal Yesün Ariq Batu Eljigidei Joichi Darayisung Tümen
+		}
+		female_names = {
+			Temülen Börte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Ho'elun
+			Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene
+		}
 	}
-	female_names = {
-		Temülen Börte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Ho'elun
-		Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene
-	}
-}
-oirats = {
-	primary = ZUN
-	male_names = {
-		Batula Toghan Galdan Amursana Erdeni Choghtu Dawa Esen Güshi Lha-bzang Khara Khula Kho Sengge Tseten
-		Tsewang Kundelung Lobzang Sutai Tsobasa Ubasi Quduqa Toghto Altai Bäki Bayan Dayan Hami Molon Oori
-		Sechen Radi Talman Todo Tumen Tumu Ubashi Ulan Wehe Yelu Zaya Orlök
-	}
-	female_names = {
-		Hoelun Tamülün Sorghaghtani Temülen Börte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Ho'elun Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene
-	}
+	oirats = {
+		primary = ZUN
+		male_names = {
+			Batula Toghan Galdan Amursana Erdeni Choghtu Dawa Esen Güshi Lha-bzang Khara Khula Kho Sengge Tseten
+			Tsewang Kundelung Lobzang Sutai Tsobasa Ubasi Quduqa Toghto Altai Bäki Bayan Dayan Hami Molon Oori
+			Sechen Radi Talman Todo Tumen Tumu Ubashi Ulan Wehe Yelu Zaya Orlök
+		}
+		female_names = {
+			Hoelun Tamülün Sorghaghtani Temülen Börte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Ho'elun Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene
+		}
 
+	}
 }
 
 Karluk = {
 	graphical_culture = muslimgfx
-	uzbehk = {
-		primary = SHY
-		male_names = {
-			Abdul-Aziz Abdul-Karim Abdul-Mumin Abdul-Rahim Abdulla Abu Said Abu'l-Feiz Abu'l-Ghazi Abu'l-Khayr
-			Abu'l-Mansur Agatay Alim Anusha Arab Muhammad Avanesh Bahadur Bakht Baqi Muhammad Budjuga Bureke
-			Djuchi Dost Habash Hadji Hadji Muhammad Hassan Quli Haydar Imam Quli Ilbars Irdana Isfandiyar Isim
-			Janibek Kal Khudayar Khudaydad Kochkunju Muhammad Muhammad Amin Muhammad Hakim Muhammad Rahim Nadir
-			Muhammad Narbuta Navruz Ahmad Niyaz Pir Muhammad Sanjar Sevinch Shadi Shahmurad Shahrukh Shaykh
-			Subhan Quli Sufyan Suleyman Tahir Timur Ubaydulla Umar Vali Vali Muhammad Yadgar Daniyal Haidar
-			Iskandar
-		}
-		female_names = {
-			Tem�len B�rte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Ho'elun Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene
-		}
-	}
+
 	uyghur = {
 		primary = KAS
 		male_names = {
@@ -5240,6 +5227,21 @@ Karluk = {
 			Sveta Senim Sezim Sulu Sulujan Sulushash Symbat Talshin Tamara Tanzilya Tansholpan Tatti Togjan Tolganai
 			Tomiris Tursin Tursinai Tursingul Uazira Ulbala Ulbolsyn Uldana Uljan Umit Umitjan Venera Zaida Zamzagul Zamira
 			Zarina Zaure Zauresh Zeyne Zeynep Zemfira Zere Zlikha Zoya Zubaira Zulfia Zukhra Zlika
+		}
+	}
+	uzbehk = {
+		primary = SHY
+		male_names = {
+			Abdul-Aziz Abdul-Karim Abdul-Mumin Abdul-Rahim Abdulla Abu Said Abu'l-Feiz Abu'l-Ghazi Abu'l-Khayr
+			Abu'l-Mansur Agatay Alim Anusha Arab Muhammad Avanesh Bahadur Bakht Baqi Muhammad Budjuga Bureke
+			Djuchi Dost Habash Hadji Hadji Muhammad Hassan Quli Haydar Imam Quli Ilbars Irdana Isfandiyar Isim
+			Janibek Kal Khudayar Khudaydad Kochkunju Muhammad Muhammad Amin Muhammad Hakim Muhammad Rahim Nadir
+			Muhammad Narbuta Navruz Ahmad Niyaz Pir Muhammad Sanjar Sevinch Shadi Shahmurad Shahrukh Shaykh
+			Subhan Quli Sufyan Suleyman Tahir Timur Ubaydulla Umar Vali Vali Muhammad Yadgar Daniyal Haidar
+			Iskandar
+		}
+		female_names = {
+			Tem�len B�rte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Ho'elun Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene
 		}
 	}
 	avar = {
@@ -5291,69 +5293,69 @@ Karluk = {
 		primary = PEC
 	}
 	male_names = {
-	Abagha Achigh Aguchu Ajai Ajinai Akhutai Alagh Alchi Alchidai Altan Ambaghai Arkhai Arasen
-	Babur Badai Bagaridai Bala Barghujin Bartan Batu Bedugun Begter Belgutei Belgunutei Bilge Berke
-	Bodonchar Bogen Bogorchu Bolkhadar Borjigidai Boroghul Bughu Bugidai Bugunutei Bujeg Bukha
-	Bulughan Buri Burkhan Burundai Chagatai Chaghagan Chanai Chigu Chidukhul Chilagun Chiledu
-	Chormakhan Chulgetei Dagun Daritai Dayir Dodai Duua Eljigedei Ghazan Ghunan Guchu Gughlug Guyug
-	Harghasun Horkhudagh Hulegu Husun Inalchi Inancha Iturgen Jajiradai Jamugha Jebe Jochi
-	Jurchedei Khabichi Khachi Khachigun Khadagh Khagatai Khaidu Khal Khorchi Khorilartai Khubilai
-	Khudu Khutula Khuyildar Kogsegu Kokochu Megetu Megujin Menggei Mongke Morokha Munglig Nakhu
-	Narin Nayaga Nogai Odchigin Ogodei Okhotur Oljaitu Oronartai Shiraghul Shirgugetu Subetei
-	Suyiketu Taghai Tamachi Targhutai Temuge Temujin Temur Todogen Toghoril Toghtoga Tokhtamis
-	Tolui Torolchi Tumen Uighurtai Ukhuna Usun Yedi Yegu Yeke Yesugei Yesunge Yokhunan Kadan Godan
-	# PECHENEG
-	Çelgil Aba Baitzas Balgor Batan Batas Bator Bayça Biçkili Bizel Boru Bula Giazis Ildey Ipa Ipaos
-	Kabuksin Karaca Kaydum Kegen Konel
-	Korkutan Kortan Kostas Kourkoutai Kuerçi Kugel Kure Sol Suru Tatus Teber Temir Tyrach Yavdi Yazi
-	# CUMAN / KARLUK / KIRGHIZ
-	Çilbu Aepak Asalup Asep Atrak Bönek Bachman Begluk Blush Bonyak Borç Eldeçyuk Etrek Girgen Gzi
-	Itlar Ituk Könçek Kobyak Kopti Kotyan Koza Kozel Kubasar Kuntuvdi Kutan Pulad Saru Sevenç Sirçan
-	Sokal Sotan Sugr Törtogul Togli Tolun Tugor Uzluk Uzur
-	# AVAR
-	Almish Alp Alzek Anzi Apskhih Araslan Arslan Asparukh Bagha Baghatur Balambär Balambar Barjik
-	Bars Barsbek Bashtwa Bastu Bataul Batbayan Batoya Batulia Bayan Belkermak Bezmer Bihor Boyan Bugha
-	Bughra Bulan Bulger Bulçan Busir Buzan Buzer Bälgiçi Böri
-	Chepa Chinialush Dengizikh Dizeng Dometa Dristar Drong Dukum Elemag Ellak Ernakh Eskhakh Goleda
-	Gostun Guar Hudbad Iani Ilik Iltäbär Irnek Isbul Islivan Isperikh Ispor Itakh Kamaj Kano Karadakh
-	Karan Karaton Kardam Kayghalagh Kharaton Khatir Khinialon
-	Khudbard Khuterkin Kibar Kisa Kordil Kormesiy Kormisosh Kotrag Krovat Krum Kuber Kubrat Kundaç
-	Kundaçiq Kurt Kutrigur Kälaç Labertam Magotin Malamir Mugel Mänär Mänäs Mënümarót Odolgan Okhsi
-	Okhsun Okors Omurtag Onegavon Organ Organa Ornag
-	Oshi Ostro Pagan Pakhtiyar Bakhtiar Papaçyz Paväl Praksa Rassate Rugila Sabin Samsam Sandil
-	Sandilkh Sarkhan Sartäç Savin Sevar Shilki Simsam Sondoke Tabghaç Tarasiy Taridin Tarkhan Tarmaç
-	Tatra Telec Telerig Tervel Timër Timur Timëreç Timërpälat
-	Tingiz Tiradin Toghan Toghrïl Toghrul Tokhtaman Toktu Tsog Tsul Tuk Tuzniq Täbär Teber Tähtaman
-	Umor Uturgur Vakrim Venda Vetam Vinekh Yabghu Yani Yavantey Yençepi Yerneslu Yeçtirek Yilig
-	Zabergan Zenti Çat Çat'n Çorpan Ötemis
-}
-female_names = {
-	Al-Alta Alan Altani Borte Botokhui Bulughan Chabi Chagur Chakha Checheyigen Chotan Doregene
-	Doquz Ebegei Gurbesu Hogelun Holuikhan Ibakha Khadagan Khogaghchin Khojin Khorijin Khugurchin
-	Khulan Mandukhai Mongoljin Nomolun Oghul Orbei Sokhatai Sorkhaghatani Tekine Temulun Töregene
-	Yesugun Yesui Hoelun
-	# PECHENEG
-	Çiçek Çilen Çiltanesi Özgul Özlem Akgul Asli Ayasun Ayten Bozçin Dilek Esin Gulçiçek Gulay
-	Gunduz Gundes Gunes Ilkay Ipek Ipekel Irge Karacik Mala Mutlu Peksen Samur Sarica Sati Sevilay
-	Sevindik Sibel Sirin Sirma Songul Tekçe Tura Umay Usunbike Yasar Yeldem Yildiz
-	# CUMAN
-	Çiçek Çilen Çiltanesi Özgul Özlem Akgul Asli Ayasun Ayten Bozçin Dilek Esin Gulçiçek Gulay Gunduz
-	Gundes Gunes Ilkay Ipek Ipekel Irge Karacik Mala Mutlu Peksen Samur Sarica Sati Sevilay Sevindik
-	Sibel Sirin Sirma Songul Tekçe Tura Umay Usunbike Yasar Yeldem Yildiz
-	# KHAZAR / BOLGHAR
-	Çiçäk Çiçek Çeçeppi Çeçki Çeçtilet Çilen Çiltanesi Özgul Özlem Akgul Asli Ayasun Ayten Bozçin Dilek
-	Esin Gulçiçäk Gulçiçek Gulay Gunduz Gundes Gunes Ikalay Ilkay Ipek Ipekel Irge
-	Karacik Kätyarikka Këlnissa Këlyamal Khatun Lärkka Lyukha Mala Maturkka Mutlu Naça Parsbit Patiyer
-	Paykëlti Peksen Puyantay Samur Sarantay Sarä Sarica Sarikel
-	Sati Savaçka Savkëlti Savtilek Savilay Sevilay Savintik Sevindik Shurkka Sibel Sirin Sirma Songul
-	Tähtani Tekçe Tura Umay Usunbike Yasar Yeldem Yildiz Yartilek
-	# AVAR
-	Akgul Asli Ayasun Ayten Bozçin Dilek Esin Gulay Gulçiçäk Gulçiçek Gundes Gunduz Gunes Ikalay Ilkay
-	Ipek Ipekel Irge Karacik Khatun Kätyarikka Këlnissa Këlyamal Lyukha Lärkka Mala Maturkka Mutlu Naça
-	Parsbit Patiyer Paykëlti Peksen Puyantay Samur Sarantay Sarica Sarikel Sarä Sati Savaçka Savilay
-	Sevilay Savintik Sevindik Savkëlti Savtilek Shurkka Sibel Sirin Sirma Songul Tekçe Tura Tähtani
-	Umay Usunbike Yartilek Yasar Yeldem Yildiz Çeçeppi Çeçki Çeçtilet Çilen Çiltanesi Çiçäk Çiçek Özgul
-	Özlem
+		Abagha Achigh Aguchu Ajai Ajinai Akhutai Alagh Alchi Alchidai Altan Ambaghai Arkhai Arasen
+		Babur Badai Bagaridai Bala Barghujin Bartan Batu Bedugun Begter Belgutei Belgunutei Bilge Berke
+		Bodonchar Bogen Bogorchu Bolkhadar Borjigidai Boroghul Bughu Bugidai Bugunutei Bujeg Bukha
+		Bulughan Buri Burkhan Burundai Chagatai Chaghagan Chanai Chigu Chidukhul Chilagun Chiledu
+		Chormakhan Chulgetei Dagun Daritai Dayir Dodai Duua Eljigedei Ghazan Ghunan Guchu Gughlug Guyug
+		Harghasun Horkhudagh Hulegu Husun Inalchi Inancha Iturgen Jajiradai Jamugha Jebe Jochi
+		Jurchedei Khabichi Khachi Khachigun Khadagh Khagatai Khaidu Khal Khorchi Khorilartai Khubilai
+		Khudu Khutula Khuyildar Kogsegu Kokochu Megetu Megujin Menggei Mongke Morokha Munglig Nakhu
+		Narin Nayaga Nogai Odchigin Ogodei Okhotur Oljaitu Oronartai Shiraghul Shirgugetu Subetei
+		Suyiketu Taghai Tamachi Targhutai Temuge Temujin Temur Todogen Toghoril Toghtoga Tokhtamis
+		Tolui Torolchi Tumen Uighurtai Ukhuna Usun Yedi Yegu Yeke Yesugei Yesunge Yokhunan Kadan Godan
+		# PECHENEG
+		Çelgil Aba Baitzas Balgor Batan Batas Bator Bayça Biçkili Bizel Boru Bula Giazis Ildey Ipa Ipaos
+		Kabuksin Karaca Kaydum Kegen Konel
+		Korkutan Kortan Kostas Kourkoutai Kuerçi Kugel Kure Sol Suru Tatus Teber Temir Tyrach Yavdi Yazi
+		# CUMAN / KARLUK / KIRGHIZ
+		Çilbu Aepak Asalup Asep Atrak Bönek Bachman Begluk Blush Bonyak Borç Eldeçyuk Etrek Girgen Gzi
+		Itlar Ituk Könçek Kobyak Kopti Kotyan Koza Kozel Kubasar Kuntuvdi Kutan Pulad Saru Sevenç Sirçan
+		Sokal Sotan Sugr Törtogul Togli Tolun Tugor Uzluk Uzur
+		# AVAR
+		Almish Alp Alzek Anzi Apskhih Araslan Arslan Asparukh Bagha Baghatur Balambär Balambar Barjik
+		Bars Barsbek Bashtwa Bastu Bataul Batbayan Batoya Batulia Bayan Belkermak Bezmer Bihor Boyan Bugha
+		Bughra Bulan Bulger Bulçan Busir Buzan Buzer Bälgiçi Böri
+		Chepa Chinialush Dengizikh Dizeng Dometa Dristar Drong Dukum Elemag Ellak Ernakh Eskhakh Goleda
+		Gostun Guar Hudbad Iani Ilik Iltäbär Irnek Isbul Islivan Isperikh Ispor Itakh Kamaj Kano Karadakh
+		Karan Karaton Kardam Kayghalagh Kharaton Khatir Khinialon
+		Khudbard Khuterkin Kibar Kisa Kordil Kormesiy Kormisosh Kotrag Krovat Krum Kuber Kubrat Kundaç
+		Kundaçiq Kurt Kutrigur Kälaç Labertam Magotin Malamir Mugel Mänär Mänäs Mënümarót Odolgan Okhsi
+		Okhsun Okors Omurtag Onegavon Organ Organa Ornag
+		Oshi Ostro Pagan Pakhtiyar Bakhtiar Papaçyz Paväl Praksa Rassate Rugila Sabin Samsam Sandil
+		Sandilkh Sarkhan Sartäç Savin Sevar Shilki Simsam Sondoke Tabghaç Tarasiy Taridin Tarkhan Tarmaç
+		Tatra Telec Telerig Tervel Timër Timur Timëreç Timërpälat
+		Tingiz Tiradin Toghan Toghrïl Toghrul Tokhtaman Toktu Tsog Tsul Tuk Tuzniq Täbär Teber Tähtaman
+		Umor Uturgur Vakrim Venda Vetam Vinekh Yabghu Yani Yavantey Yençepi Yerneslu Yeçtirek Yilig
+		Zabergan Zenti Çat Çat'n Çorpan Ötemis
+	}
+	female_names = {
+		Al-Alta Alan Altani Borte Botokhui Bulughan Chabi Chagur Chakha Checheyigen Chotan Doregene
+		Doquz Ebegei Gurbesu Hogelun Holuikhan Ibakha Khadagan Khogaghchin Khojin Khorijin Khugurchin
+		Khulan Mandukhai Mongoljin Nomolun Oghul Orbei Sokhatai Sorkhaghatani Tekine Temulun Töregene
+		Yesugun Yesui Hoelun
+		# PECHENEG
+		Çiçek Çilen Çiltanesi Özgul Özlem Akgul Asli Ayasun Ayten Bozçin Dilek Esin Gulçiçek Gulay
+		Gunduz Gundes Gunes Ilkay Ipek Ipekel Irge Karacik Mala Mutlu Peksen Samur Sarica Sati Sevilay
+		Sevindik Sibel Sirin Sirma Songul Tekçe Tura Umay Usunbike Yasar Yeldem Yildiz
+		# CUMAN
+		Çiçek Çilen Çiltanesi Özgul Özlem Akgul Asli Ayasun Ayten Bozçin Dilek Esin Gulçiçek Gulay Gunduz
+		Gundes Gunes Ilkay Ipek Ipekel Irge Karacik Mala Mutlu Peksen Samur Sarica Sati Sevilay Sevindik
+		Sibel Sirin Sirma Songul Tekçe Tura Umay Usunbike Yasar Yeldem Yildiz
+		# KHAZAR / BOLGHAR
+		Çiçäk Çiçek Çeçeppi Çeçki Çeçtilet Çilen Çiltanesi Özgul Özlem Akgul Asli Ayasun Ayten Bozçin Dilek
+		Esin Gulçiçäk Gulçiçek Gulay Gunduz Gundes Gunes Ikalay Ilkay Ipek Ipekel Irge
+		Karacik Kätyarikka Këlnissa Këlyamal Khatun Lärkka Lyukha Mala Maturkka Mutlu Naça Parsbit Patiyer
+		Paykëlti Peksen Puyantay Samur Sarantay Sarä Sarica Sarikel
+		Sati Savaçka Savkëlti Savtilek Savilay Sevilay Savintik Sevindik Shurkka Sibel Sirin Sirma Songul
+		Tähtani Tekçe Tura Umay Usunbike Yasar Yeldem Yildiz Yartilek
+		# AVAR
+		Akgul Asli Ayasun Ayten Bozçin Dilek Esin Gulay Gulçiçäk Gulçiçek Gundes Gunduz Gunes Ikalay Ilkay
+		Ipek Ipekel Irge Karacik Khatun Kätyarikka Këlnissa Këlyamal Lyukha Lärkka Mala Maturkka Mutlu Naça
+		Parsbit Patiyer Paykëlti Peksen Puyantay Samur Sarantay Sarica Sarikel Sarä Sati Savaçka Savilay
+		Sevilay Savintik Sevindik Savkëlti Savtilek Shurkka Sibel Sirin Sirma Songul Tekçe Tura Tähtani
+		Umay Usunbike Yartilek Yasar Yeldem Yildiz Çeçeppi Çeçki Çeçtilet Çilen Çiltanesi Çiçäk Çiçek Özgul
+		Özlem
 	}
 	dynasty_names = {
 		"Chagatay" "Edig�id" "Giray" "Borjigin" "Shaybanid" "Janid" "Mangit"
@@ -5382,41 +5384,41 @@ Oghuz = {
 	}
 
 
-		turkish = {
-			primary = TUR
-			dynasty_names = {
-				"Osmanoglu" "Karamanoglu" "Menteseoglu" "Ramazanoglu" "Saruhanoglu"
-				"Dulkadiroglu" "Candaroglu" "Germiyanoglu" "Aydinoglu" "Eretnaoglu"
-				"Artukoglu" "Mutahhartenoglu" "Tekeoglu" "Hamidoglu" "Tacettinoglu"
-				"Oguzoglu" "Haciemiroglu" "Kubatoglu" "Bafraoglu" "Alaiyeoglu"
-			}
-			male_names = {
-				Mehmet Mustafa Murat Ahmet Selim Osman Mahmut S�leyman Bayezid Orhan Abdulaziz Abd�lhamit Ibrahim
-				Abd�lmecit Abdullah Cem Cihangir Alaattin Isa Musa �mer Seyfettin Yakup Yusuf Giyasettin Numan
-				Ali Davut Hasan H�seyin Ishak Kamer Kasim Korkut Emin Iskender Halil Sait Hamit Ertugrul Izzettin
-				Nizamettin Sinan Ferhat Salih Ismail C�neyt Bahadir Hizir Harun Cemal Inal Celalettin Ilyas
-				Dursun Ramazan Recep Abdulrahman Hayrettin
-				�agri �aka Afsin Ahmet Aksonqor Alaeddin Ali Alkan "Alp�Arslan" "Alp�Yurek" Alptigin Artuk Ayaz
-				Aydin Aydogan Aydogdu Aytekin B�ru Bulend Bahadir Balaban Basbuga Batuhan Baturay Baybars
-				Bayezid Baytas Belek Berkan Berkiyaruk Bozan Bugra Burak Cuneyd Dundar Danismend Davud David
-				Demir Dogan Dogukan Dukak Erdem Ertan Ertekin Ertugrul Gunduz Hasan Hasan Hizir Ibrahim Ilgazi
-				Inal Iskender Alexander Kurboga Kaikaus Kaikhusraw Kaiqobad Kara Karatay Kasim Kaya Kaytun
-				Kemal Kili� Korkut Kutalmis Kutay Kutlug Mursel Mahmud Mehmed Meliksah Mengucek Mesud Murad
-				Mustafa Orhan Osman Porsuk Rustem Ramazan Ridvan S�buk S�kmen S�nmez Suleyman Saim Saltuk
-				Saruca Savtekin Savur Sehinsah Sel�uk Selim Sencer Sinan Tanrivermis Tekin Timurtas Togay
-				Togtekin Toktamis Tolun Toruntay Tugrul Tunga Turgut Turhan Tutus Ulu� Umur Yakut Yaman Yinal
-				Yunus
-			}
-			female_names = {
-				�i�ek �ilen �iltanesi �zgul �zlem Akgul Asli Aslihan Ayasun Ayla Ayse Ayten Azize Bahar Banu
-				Boz�in Canan Ceylan Dunya Dilber Dilek Emine Esin Fatma Firuze Gul�i�ek Gulay Gulbahar Gulfem
-				Gulsum Gumus Gunduz Gundes Gunes Hatice Hayat Huriye Ilkay Ilknur Ipek Ipekel Irge Karacik Lale
-				Leyla Mala Mansure Merve Mutlu Nagihan Nergis Neslihan Nilufer Nur Peksen Terkhen Samur Sarica
-				Sati Sehnaz Serap Serife Sevilay Sevindik Sibel Sibylla Sirin Sirma Songul Sumru Tek�e Tura
-				Umay Usunbike Vahide Yasar Yeldem Yildiz Zehra Zuhal Hatice Safiye Zeynep H�rrem Mihrimah Nurbanu
-				Handan Alime K�sem H�ma
-			}
+	turkish = {
+		primary = TUR
+		dynasty_names = {
+			"Osmanoglu" "Karamanoglu" "Menteseoglu" "Ramazanoglu" "Saruhanoglu"
+			"Dulkadiroglu" "Candaroglu" "Germiyanoglu" "Aydinoglu" "Eretnaoglu"
+			"Artukoglu" "Mutahhartenoglu" "Tekeoglu" "Hamidoglu" "Tacettinoglu"
+			"Oguzoglu" "Haciemiroglu" "Kubatoglu" "Bafraoglu" "Alaiyeoglu"
 		}
+		male_names = {
+			Mehmet Mustafa Murat Ahmet Selim Osman Mahmut S�leyman Bayezid Orhan Abdulaziz Abd�lhamit Ibrahim
+			Abd�lmecit Abdullah Cem Cihangir Alaattin Isa Musa �mer Seyfettin Yakup Yusuf Giyasettin Numan
+			Ali Davut Hasan H�seyin Ishak Kamer Kasim Korkut Emin Iskender Halil Sait Hamit Ertugrul Izzettin
+			Nizamettin Sinan Ferhat Salih Ismail C�neyt Bahadir Hizir Harun Cemal Inal Celalettin Ilyas
+			Dursun Ramazan Recep Abdulrahman Hayrettin
+			�agri �aka Afsin Ahmet Aksonqor Alaeddin Ali Alkan "Alp�Arslan" "Alp�Yurek" Alptigin Artuk Ayaz
+			Aydin Aydogan Aydogdu Aytekin B�ru Bulend Bahadir Balaban Basbuga Batuhan Baturay Baybars
+			Bayezid Baytas Belek Berkan Berkiyaruk Bozan Bugra Burak Cuneyd Dundar Danismend Davud David
+			Demir Dogan Dogukan Dukak Erdem Ertan Ertekin Ertugrul Gunduz Hasan Hasan Hizir Ibrahim Ilgazi
+			Inal Iskender Alexander Kurboga Kaikaus Kaikhusraw Kaiqobad Kara Karatay Kasim Kaya Kaytun
+			Kemal Kili� Korkut Kutalmis Kutay Kutlug Mursel Mahmud Mehmed Meliksah Mengucek Mesud Murad
+			Mustafa Orhan Osman Porsuk Rustem Ramazan Ridvan S�buk S�kmen S�nmez Suleyman Saim Saltuk
+			Saruca Savtekin Savur Sehinsah Sel�uk Selim Sencer Sinan Tanrivermis Tekin Timurtas Togay
+			Togtekin Toktamis Tolun Toruntay Tugrul Tunga Turgut Turhan Tutus Ulu� Umur Yakut Yaman Yinal
+			Yunus
+		}
+		female_names = {
+			�i�ek �ilen �iltanesi �zgul �zlem Akgul Asli Aslihan Ayasun Ayla Ayse Ayten Azize Bahar Banu
+			Boz�in Canan Ceylan Dunya Dilber Dilek Emine Esin Fatma Firuze Gul�i�ek Gulay Gulbahar Gulfem
+			Gulsum Gumus Gunduz Gundes Gunes Hatice Hayat Huriye Ilkay Ilknur Ipek Ipekel Irge Karacik Lale
+			Leyla Mala Mansure Merve Mutlu Nagihan Nergis Neslihan Nilufer Nur Peksen Terkhen Samur Sarica
+			Sati Sehnaz Serap Serife Sevilay Sevindik Sibel Sibylla Sirin Sirma Songul Sumru Tek�e Tura
+			Umay Usunbike Vahide Yasar Yeldem Yildiz Zehra Zuhal Hatice Safiye Zeynep H�rrem Mihrimah Nurbanu
+			Handan Alime K�sem H�ma
+		}
+	}
 	turkmeni = {
 		primary = KHI
 		dynasty_names = {
@@ -9369,19 +9371,19 @@ southern_african = {
 		}
 	}
 	dynasty_names = {
-			Mwale Phiri Mbewe Karonga Ayao Banda Chewa Undi Luhanga Kachali Mwafulirwa
-			Mtika Nyanjagha Chiluba
-		}
-		male_names = {
-			Mcepera Mcocoma Kampini Sosola Muzura Chunzo Bakili Capampo Chicanda Tondo
-			Quizura Mbire Matope Mavura Mukombero Changamire Kakuyo Neshangwe Chivere Chirisamhuru Gatsi Nyambo Siti
-			Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye
-			Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa
-			Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
-		}
-		female_names = {
-			Achieng Nuru
-		}
+		Mwale Phiri Mbewe Karonga Ayao Banda Chewa Undi Luhanga Kachali Mwafulirwa
+		Mtika Nyanjagha Chiluba
+	}
+	male_names = {
+		Mcepera Mcocoma Kampini Sosola Muzura Chunzo Bakili Capampo Chicanda Tondo
+		Quizura Mbire Matope Mavura Mukombero Changamire Kakuyo Neshangwe Chivere Chirisamhuru Gatsi Nyambo Siti
+		Kamborapasu Dombo Chinkura Nechisake Nechagadzike Mambo Rupanadamananga Gumboremvura Toloa Matuzvianye
+		Mukombwe Nyamhandu Basvi Tohwechipi Nyatsimba Ngwato Molwa Tamasiga Seogola Mucombo Inhamunda Ningomoxa
+		Chiraramuro Chombo Peranhe Chicanga Nyacuimbiri Samutumbu Mupunzagutu Gowera Nyarumwe
+	}
+	female_names = {
+		Achieng Nuru
+	}
 }
 
 kongo_group = {
@@ -10208,15 +10210,15 @@ lost_cultures_group = {
 	}
 	pruthenian = {
 		male_names = {
-		Algirdas Antanas Antavas Aras Arunas Azuolas Budrys Bukantas Butavas Butigeidis Butvydas
-		Daugvilas Daumantas Dausprungas Dravenis Erdenis Erdvilas Gedigaudas
-		Gediminas Gedivilas Gintaras Gintautas Girdenis Irmantas Jaunutis Jogaila Jovirdas Kantibutas
-		Karijotas Kesgaila Kestutis Korigaila Korybutas
-		Lasukas Lingvenis Liudas Lubartas Lutuveras Merkelis Mindaugas Minigaila Mantvydas Movkoldas
-		Narimantas Povilas Pukuveras Rimantas
-		Rimgaila Rimvydas Ringaudas Sarunas Skirgaila Songaila Svarnas Svitrigaila Tarvydas Tovtivilas
-		Traidenis Treniotas Vainius Vaisvilkas Valimantas Zygimantas
-		Vidmantas Vingoldas Virmantas Visvaldis Vizgirdas Vykintas Vytautas Vytenis Zivinbudas
+			Algirdas Antanas Antavas Aras Arunas Azuolas Budrys Bukantas Butavas Butigeidis Butvydas
+			Daugvilas Daumantas Dausprungas Dravenis Erdenis Erdvilas Gedigaudas
+			Gediminas Gedivilas Gintaras Gintautas Girdenis Irmantas Jaunutis Jogaila Jovirdas Kantibutas
+			Karijotas Kesgaila Kestutis Korigaila Korybutas
+			Lasukas Lingvenis Liudas Lubartas Lutuveras Merkelis Mindaugas Minigaila Mantvydas Movkoldas
+			Narimantas Povilas Pukuveras Rimantas
+			Rimgaila Rimvydas Ringaudas Sarunas Skirgaila Songaila Svarnas Svitrigaila Tarvydas Tovtivilas
+			Traidenis Treniotas Vainius Vaisvilkas Valimantas Zygimantas
+			Vidmantas Vingoldas Virmantas Visvaldis Vizgirdas Vykintas Vytautas Vytenis Zivinbudas
 		}
 		female_names = {
 			Aldona Anele Audra Ausra Birute Dannila Danute Evalda Gaudimante Giedre Gintare Jevna Kenna
@@ -10235,7 +10237,7 @@ lost_cultures_group = {
 	phoenician = { #EU Rome
 		dynasty_names = {
 			Abbarid Adonibaalid Ahiromid Baalhannid Baalid Barcid Bostarid Chelbesid Eshbaalid Eugorid Hannid Hiramid Magoid Mattanid Metallid
-		Milkiramid Philosirid
+			Milkiramid Philosirid
 		}
 		male_names = {
 			Abbar Abdmelqart Adonibaal Agbal Ahirom Azimilik Baal Baalhanno Bodashtart Bodmelqart Bomilcar Bostar Boulomenus Carthalo Chelbes
