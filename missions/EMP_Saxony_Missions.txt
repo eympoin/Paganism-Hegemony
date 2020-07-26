@@ -13,7 +13,7 @@ east_francia_fall = {
   has_country_shield = yes
 
   end_of_east_francia = {
-    icon = claim_the_borderlands
+    icon = avoid_fragmentation
     required_missions = {  }
     ai_weight = {
       factor = 5
@@ -53,7 +53,7 @@ east_francia_fall = {
 
 
   continue_southward = {
-    icon = claim_the_borderlands
+    icon = mission_cossack_cavalry
     required_missions = { end_of_east_francia }
     ai_weight = {
       factor = 5
@@ -112,7 +112,7 @@ east_francia_fall = {
   }
 
   tackle_alamannia = {
-    icon = claim_the_borderlands
+    icon = mission_build_up_to_force_limit
     position = 3
     required_missions = {continue_southward  }
     ai_weight = {
@@ -170,7 +170,7 @@ east_francia_fall = {
   }
   revene_against_lotharingia = {
     position = 5
-    icon = claim_the_borderlands
+    icon = conquer_east_francia
     required_missions = {tackle_alamannia  }
     ai_weight = {
       factor = 5
@@ -212,7 +212,7 @@ east_francia_fall = {
 
   master_of_central_europe = {
     position = 6
-    icon = claim_the_borderlands
+    icon = mission_empire
     required_missions = {revene_against_lotharingia the_rest_of_scandinavia another_khanate_to_end  }
     ai_weight = {
       factor = 5
@@ -303,7 +303,7 @@ bohemia_hungary = {
   }
 
   end_of_bavaria = {
-    icon = claim_the_borderlands
+    icon = mission_landsknecht_soldier
     position = 4
     required_missions = { subjugate_western_slavs  tackle_alamannia}
     ai_weight = {
@@ -355,7 +355,7 @@ bohemia_hungary = {
   }
 
   another_khanate_to_end = {
-    icon = claim_the_borderlands
+    icon = mission_non-western_cavalry_raid
     position = 5
     required_missions = { end_of_bavaria fall_of_the_khanate}
     ai_weight = {
@@ -412,7 +412,7 @@ religion = {
   has_country_shield = yes
 
   develop_Irminisul_sanctuary = {
-    icon = claim_the_borderlands
+    icon = mission_hands_praying
     required_missions = {  }
     ai_weight = {
       factor = 5
@@ -443,7 +443,7 @@ religion = {
 
   fate_of_the_norse_faith = {
     position = 4
-    icon = claim_the_borderlands
+    icon = mission_hands_praying
     required_missions = {develop_Irminisul_sanctuary secure_the_baltic_gates  }
     ai_weight = {
       factor = 5
@@ -464,7 +464,7 @@ religion = {
 
   subjugate_jomsviking = {
     position = 5
-    icon = claim_the_borderlands
+    icon = mission_rb_unite_the_clans
     required_missions = {fate_of_the_norse_faith  }
     ai_weight = {
       factor = 5
@@ -502,7 +502,7 @@ norse_raids = {
 
   punish_norse_raiders = {
     position = 2
-    icon = claim_the_borderlands
+    icon = mission_establish_high_seas_navy
     required_missions = {  }
     ai_weight = {
       factor = 5
@@ -544,7 +544,7 @@ norse_raids = {
 
   secure_the_baltic_gates = {
     position = 3
-    icon = claim_the_borderlands
+    icon = mission_hanseatic_city
     required_missions = { punish_norse_raiders }
     ai_weight = {
       factor = 5
@@ -599,7 +599,7 @@ norse_raids = {
 
   the_rest_of_scandinavia = {
     position = 5
-    icon = claim_the_borderlands
+    icon = mission_unite_home_region
     required_missions = {fate_of_the_norse_faith  }
     ai_weight = {
       factor = 5
@@ -644,7 +644,7 @@ german_unification = {
 
   our_germanic_brethren = {
     position = 1
-    icon = claim_the_borderlands
+    icon = mission_alliances
     required_missions = {  }
     ai_weight = {
       factor = 5
@@ -676,7 +676,7 @@ german_unification = {
 
   two_people_one_king = {
     position = 2
-    icon = claim_the_borderlands
+    icon = mission_empire
     required_missions = { our_germanic_brethren }
     ai_weight = {
       factor = 5
@@ -723,7 +723,7 @@ german_unification = {
 
   the_mongol_threat = {
     position = 3
-    icon = claim_the_borderlands
+    icon = mission_crusade_for_varna
     required_missions = { two_people_one_king }
     ai_weight = {
       factor = 5
@@ -780,7 +780,7 @@ german_unification = {
 
   fall_of_the_khanate = {
     position = 4
-    icon = claim_the_borderlands
+    icon = mission_steppe_warriors
     required_missions = { the_mongol_threat }
     ai_weight = {
       factor = 5
