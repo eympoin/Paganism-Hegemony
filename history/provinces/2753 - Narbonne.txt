@@ -2,7 +2,7 @@
 
 owner = NAR
 controller = NAR
-capital = "NArbo Martius"
+capital = "Narbo Martius"
 is_city = yes
 culture = narbonnais
 religion = jupiterian
@@ -13,7 +13,7 @@ trade_goods = wine
 base_manpower = 6
 add_core = NAR
 fort_15th = yes
-
+center_of_trade = 1
 
 
 discovered_by = eastern

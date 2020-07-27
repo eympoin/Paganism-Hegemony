@@ -4248,7 +4248,7 @@ cavalry_power = 0.1
 }
 
 the_pentapolis = {
-development_cost = -0.2
+local_development_cost = -0.2
 allowed_num_of_buildings = 1
 }
 
