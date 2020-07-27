@@ -549,6 +549,15 @@ country_event = {
 		trigger = {
 			has_global_flag = allied_with_leg_for_egypt
 		}
+		MAK = {
+			grant_independence = yes
+		}
+		BEJ = {
+			grant_independence = yes
+		}
+		ABB = {
+			grant_independence = yes
+		}
 		UEG = {
 			every_owned_province = {
 				cede_province = LEG
@@ -566,6 +575,15 @@ country_event = {
 		}
 		trigger = {
 			has_global_flag = allied_with_leg_for_egypt
+		}
+		MAK = {
+			grant_independence = yes
+		}
+		BEJ = {
+			grant_independence = yes
+		}
+		ABB = {
+			grant_independence = yes
 		}
 		UEG = {
 			every_owned_province = {
@@ -591,6 +609,15 @@ country_event = {
 		trigger = {
 			NOT = {has_global_flag = allied_with_leg_for_egypt}
 		}
+		MAK = {
+			grant_independence = yes
+		}
+		BEJ = {
+			grant_independence = yes
+		}
+		ABB = {
+			grant_independence = yes
+		}
 		white_peace = UEG
 		UEG = {
 			every_owned_province = {
@@ -608,6 +635,15 @@ country_event = {
 		name = "shadow_kingdom.8.f"
 		ai_chance = {
 			factor = 60
+		}
+		MAK = {
+			grant_independence = yes
+		}
+		BEJ = {
+			grant_independence = yes
+		}
+		ABB = {
+			grant_independence = yes
 		}
 		360 = {
 			cede_province = THB
@@ -657,7 +693,6 @@ country_event = {
 			add_truce_with = UEG
 		}
 		UEG = {
-			release_all_subjects = yes
 			change_religion	= olympoi
 		}
 		THB = {
