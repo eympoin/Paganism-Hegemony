@@ -3,7 +3,7 @@
 owner = MIA
 controller = MIA
 culture = bulgarian
-religion = tengri_pagan_reformed
+religion = slavic
 capital = "Vidin"
 trade_goods = grain
 hre = yes

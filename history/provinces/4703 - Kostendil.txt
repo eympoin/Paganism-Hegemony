@@ -1,7 +1,7 @@
 owner = THR
 controller = THR
 culture = greek
-religion = olympoi
+religion = slavic
 capital = "Pautalia"
 trade_goods = copper
 hre = yes

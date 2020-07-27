@@ -71,11 +71,15 @@ country_event = {
         is_emperor = no
         is_part_of_hre = yes
         NOT = {religious_unity = 0.7}
+        religion = olympoi
         any_owned_province = {
           OR = {
             religion = slavic
             religion = Illyrian
             religion = tengri_pagan_reformed
+            religion = arabian
+            religion = chalcedonian
+            religion = ancient_egyptian_rl
           }
         }
       }
@@ -95,11 +99,15 @@ country_event = {
       limit = {
         is_emperor = no
         is_part_of_hre = yes
+        religion = olympoi
         any_owned_province = {
           OR = {
-            religion = slavic
-            religion = Illyrian
-            religion = tengri_pagan_reformed
+          religion = slavic
+          religion = Illyrian
+          religion = tengri_pagan_reformed
+          religion = arabian
+          religion = chalcedonian
+          religion = ancient_egyptian_rl
           }
         }
       }
@@ -117,11 +125,15 @@ country_event = {
       limit = {
         is_emperor = no
         is_part_of_hre = yes
+        religion = olympoi
         any_owned_province = {
           OR = {
-            religion = slavic
-            religion = Illyrian
-            religion = tengri_pagan_reformed
+          religion = slavic
+          religion = Illyrian
+          religion = tengri_pagan_reformed
+          religion = arabian
+          religion = chalcedonian
+          religion = ancient_egyptian_rl
           }
         }
       }
@@ -171,6 +183,36 @@ country_event = {
     }
     random_owned_province  = {
       limit = {
+        religion = ancient_egyptian_rl
+      }
+      spawn_rebels = {
+        type = ancient_egyptian_rl_rebels
+        size = 2
+        leader = "Stefan"
+      }
+    }
+    random_owned_province  = {
+      limit = {
+        religion = arabian
+      }
+      spawn_rebels = {
+        type = arabian_rebels
+        size = 2
+        leader = "Stefan"
+      }
+    }
+    random_owned_province  = {
+      limit = {
+        religion = chalcedonian
+      }
+      spawn_rebels = {
+        type = chalcedonian_rebels
+        size = 2
+        leader = "Stefan"
+      }
+    }
+    random_owned_province  = {
+      limit = {
         religion = tengri_pagan_reformed
       }
       spawn_rebels = {
@@ -205,6 +247,42 @@ country_event = {
       factor = 100
     }
     change_religion = Illyrian
+  }
+  option = { #become egyptian
+    name = slavic_uprising.3.h
+    trigger = {
+      any_owned_province = {
+        religion = ancient_egyptian_rl
+      }
+    }
+    ai_chance = {
+      factor = 100
+    }
+    change_religion = ancient_egyptian_rl
+  }
+  option = { #become arabian
+    name = slavic_uprising.3.g
+    trigger = {
+      any_owned_province = {
+        religion = arabian
+      }
+    }
+    ai_chance = {
+      factor = 100
+    }
+    change_religion = arabian
+  }
+  option = { #become chalcedonian
+    name = slavic_uprising.3.f
+    trigger = {
+      any_owned_province = {
+        religion = chalcedonian
+      }
+    }
+    ai_chance = {
+      factor = 100
+    }
+    change_religion = chalcedonian
   }
 
   option = { #become tengri_pagan_reformed
@@ -262,6 +340,36 @@ country_event = {
     }
     random_owned_province  = {
       limit = {
+        religion = ancient_egyptian_rl
+      }
+      spawn_rebels = {
+        type = ancient_egyptian_rl_rebels
+        size = 2
+        leader = "Stefan"
+      }
+    }
+    random_owned_province  = {
+      limit = {
+        religion = arabian
+      }
+      spawn_rebels = {
+        type = arabian_rebels
+        size = 2
+        leader = "Stefan"
+      }
+    }
+    random_owned_province  = {
+      limit = {
+        religion = chalcedonian
+      }
+      spawn_rebels = {
+        type = chalcedonian_rebels
+        size = 2
+        leader = "Stefan"
+      }
+    }
+    random_owned_province  = {
+      limit = {
         religion = tengri_pagan_reformed
       }
       spawn_rebels = {
@@ -302,6 +410,57 @@ country_event = {
     }
     set_country_flag = defy_the_emperor
     change_religion = Illyrian
+    declare_war_with_cb = {
+      who = emperor
+      casus_belli = cb_religious_conformance
+    }
+  }
+  option = { #defy the empire : become arabian
+    name = slavic_uprising.4.g
+    trigger = {
+      any_owned_province = {
+        religion = arabian
+      }
+    }
+    ai_chance = {
+      factor = 10
+    }
+    set_country_flag = defy_the_emperor
+    change_religion = arabian
+    declare_war_with_cb = {
+      who = emperor
+      casus_belli = cb_religious_conformance
+    }
+  }
+  option = { #defy the empire : become ancient_egyptian_rl
+    name = slavic_uprising.4.h
+    trigger = {
+      any_owned_province = {
+        religion = ancient_egyptian_rl
+      }
+    }
+    ai_chance = {
+      factor = 10
+    }
+    set_country_flag = defy_the_emperor
+    change_religion = ancient_egyptian_rl
+    declare_war_with_cb = {
+      who = emperor
+      casus_belli = cb_religious_conformance
+    }
+  }
+  option = { #defy the empire : become chalcedonian
+    name = slavic_uprising.4.f
+    trigger = {
+      any_owned_province = {
+        religion = chalcedonian
+      }
+    }
+    ai_chance = {
+      factor = 10
+    }
+    set_country_flag = defy_the_emperor
+    change_religion = chalcedonian
     declare_war_with_cb = {
       who = emperor
       casus_belli = cb_religious_conformance
@@ -367,6 +526,36 @@ country_event = {
     }
     random_owned_province  = {
       limit = {
+        religion = ancient_egyptian_rl
+      }
+      spawn_rebels = {
+        type = ancient_egyptian_rl_rebels
+        size = 2
+        leader = "Stefan"
+      }
+    }
+    random_owned_province  = {
+      limit = {
+        religion = arabian
+      }
+      spawn_rebels = {
+        type = arabian_rebels
+        size = 2
+        leader = "Stefan"
+      }
+    }
+    random_owned_province  = {
+      limit = {
+        religion = chalcedonian
+      }
+      spawn_rebels = {
+        type = chalcedonian_rebels
+        size = 2
+        leader = "Stefan"
+      }
+    }
+    random_owned_province  = {
+      limit = {
         religion = tengri_pagan_reformed
       }
       spawn_rebels = {
@@ -407,6 +596,60 @@ country_event = {
     }
     set_country_flag = defy_the_emperor
     change_religion = Illyrian
+    declare_war_with_cb = {
+      who = emperor
+      casus_belli = cb_religious_conformance
+
+    }
+  }
+  option = { #defy the empire : become chalcedonian
+    name = slavic_uprising.5.f
+    trigger = {
+      any_owned_province = {
+        religion = chalcedonian
+      }
+    }
+    ai_chance = {
+      factor = 10
+    }
+    set_country_flag = defy_the_emperor
+    change_religion = chalcedonian
+    declare_war_with_cb = {
+      who = emperor
+      casus_belli = cb_religious_conformance
+
+    }
+  }
+  option = { #defy the empire : become ancient_egyptian_rl
+    name = slavic_uprising.5.h
+    trigger = {
+      any_owned_province = {
+        religion = ancient_egyptian_rl
+      }
+    }
+    ai_chance = {
+      factor = 10
+    }
+    set_country_flag = defy_the_emperor
+    change_religion = ancient_egyptian_rl
+    declare_war_with_cb = {
+      who = emperor
+      casus_belli = cb_religious_conformance
+
+    }
+  }
+  option = { #defy the empire : become arabian
+    name = slavic_uprising.5.g
+    trigger = {
+      any_owned_province = {
+        religion = arabian
+      }
+    }
+    ai_chance = {
+      factor = 10
+    }
+    set_country_flag = defy_the_emperor
+    change_religion = arabian
     declare_war_with_cb = {
       who = emperor
       casus_belli = cb_religious_conformance
