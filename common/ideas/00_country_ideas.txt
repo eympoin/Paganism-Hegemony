@@ -1283,7 +1283,7 @@ assyrian_ideas = {
 	}
 
 	a_professional_army  = {
-	  yearly_army_professionalism = 0.1
+	  yearly_army_professionalism = 0.01
 		discipline = 0.05
 	}
 
