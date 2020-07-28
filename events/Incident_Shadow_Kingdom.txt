@@ -329,7 +329,6 @@ country_event = {
 	trigger = {
 		is_emperor = yes
 		is_year = 1446
-		NOT = { has_global_flag = italians_leave_hre }
 		any_country = {
 			is_part_of_hre = yes
 			capital_scope = { region = egypt_region }
