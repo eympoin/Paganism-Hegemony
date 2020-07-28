@@ -109,7 +109,7 @@ lot_sea = {
 
 	english_foothold = {
 		icon = mission_have_two_subjects
-		required_missions = {invasion_fleet }
+		required_missions = {invasion_fleet calais}
 
 		provinces_to_highlight = {
 			OR = {
@@ -136,7 +136,7 @@ lot_sea = {
 
 	lotharingian_britannia = {
 		icon = mission_have_two_subjects
-		required_missions = {english_foothold }
+		required_missions = {english_foothold  }
 
 		provinces_to_highlight = {
 			OR = {
@@ -150,16 +150,396 @@ lot_sea = {
 		}
 
 		trigger = {
-			235 = {
-				owned_by = ROOT
-			}
-			4371 = {
-				owned_by = ROOT
-			}
+		home_counties_area = {
+			type = all
+			owned_by = ROOT
+		}
+		east_anglia_area = {
+			type = all
+			owned_by = ROOT
+		}
+		east_midlands_area_name = {
+			type = all
+			owned_by = ROOT
+		}
+		west_midlands_area = {
+			type = all
+			owned_by = ROOT
+		}
 		}
 
 		effect = {
 
 		}
 	}
+}
+
+lot_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+
+	potential = {
+		OR = {
+			tag = LOT
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	rhenish_trade = {
+		position = 2
+		icon = mission_have_two_subjects
+		required_missions = { batavian_vassal }
+
+		provinces_to_highlight = {
+
+		}
+
+		trigger = {
+
+		}
+
+		effect = {
+
+		}
+	}
+
+	calais = {
+		position = 3
+		icon = mission_have_two_subjects
+		required_missions = { flanders }
+
+		provinces_to_highlight = {
+
+		}
+
+		trigger = {
+
+		}
+
+		effect = {
+
+		}
+	}
+
+	finish_gallia = {
+		position = 6
+		icon = mission_have_two_subjects
+		required_missions = { united_franks }
+
+		provinces_to_highlight = {
+
+		}
+
+		trigger = {
+
+		}
+
+		effect = {
+
+		}
+	}
+
+
+}
+
+lot_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+
+	potential = {
+		OR = {
+			tag = LOT
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	alliance_franks = {
+		position = 1
+		icon = mission_have_two_subjects
+		required_missions = {  }
+
+		provinces_to_highlight = {
+
+		}
+
+		trigger = {
+
+		}
+
+		effect = {
+
+		}
+	}
+
+	flanders = {
+		position = 2
+		icon = mission_have_two_subjects
+		required_missions = { alliance_franks }
+
+		provinces_to_highlight = {
+
+		}
+
+		trigger = {
+
+		}
+
+		effect = {
+
+		}
+	}
+
+	heart_of_wfr = {
+		position = 3
+		icon = mission_have_two_subjects
+		required_missions = { flanders }
+
+		provinces_to_highlight = {
+
+		}
+
+		trigger = {
+
+		}
+
+		effect = {
+
+		}
+	}
+
+	finish_wfr = {
+		position = 4
+		icon = mission_have_two_subjects
+		required_missions = { heart_of_wfr }
+
+		provinces_to_highlight = {
+
+		}
+
+		trigger = {
+
+		}
+
+		effect = {
+
+		}
+	}
+
+	united_franks = {
+		position = 5
+		icon = mission_have_two_subjects
+		required_missions = { heart_of_wfr reform_efr }
+
+		provinces_to_highlight = {
+
+		}
+
+		trigger = {
+
+		}
+
+		effect = {
+
+		}
+	}
+
+	lombards = {
+		position = 6
+		icon = mission_have_two_subjects
+		required_missions = { united_franks }
+
+		provinces_to_highlight = {
+
+		}
+
+		trigger = {
+
+		}
+
+		effect = {
+
+		}
+	}
+}
+
+lot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+
+	potential = {
+		OR = {
+			tag = LOT
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	reconquest_efr = {
+		position = 1
+		icon = mission_have_two_subjects
+		required_missions = {  }
+
+		provinces_to_highlight = {
+
+		}
+
+		trigger = {
+
+		}
+
+		effect = {
+
+		}
+	}
+
+	conquest_alamann = {
+		position = 2
+		icon = mission_have_two_subjects
+		required_missions = { reconquest_efr }
+
+		provinces_to_highlight = {
+
+		}
+
+		trigger = {
+
+		}
+
+		effect = {
+
+		}
+	}
+
+	fate_bavaria = {
+		position = 3
+		icon = mission_have_two_subjects
+		required_missions = { conquest_alamann subjugate_fkn}
+
+		provinces_to_highlight = {
+
+		}
+
+		trigger = {
+
+		}
+
+		effect = {
+
+		}
+	}
+
+	reform_efr = {
+		position = 4
+		icon = mission_have_two_subjects
+		required_missions = { fate_bavaria }
+
+		provinces_to_highlight = {
+
+		}
+
+		trigger = {
+
+		}
+
+		effect = {
+
+		}
+	}
+
+
+
+	rest_germany = {
+		position = 6
+		icon = mission_have_two_subjects
+		required_missions = { united_franks }
+
+		provinces_to_highlight = {
+
+		}
+
+		trigger = {
+
+		}
+
+		effect = {
+
+		}
+	}
+}
+
+lot_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+
+	potential = {
+		OR = {
+			tag = LOT
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+
+	subjugate_fkn = {
+		position = 2
+		icon = mission_have_two_subjects
+		required_missions = { reconquest_efr }
+
+		provinces_to_highlight = {
+
+		}
+
+		trigger = {
+
+		}
+
+		effect = {
+
+		}
+	}
+
+	lorraine_mines = {
+		position = 3
+		icon = mission_have_two_subjects
+		required_missions = {  }
+
+		provinces_to_highlight = {
+
+		}
+
+		trigger = {
+
+		}
+
+		effect = {
+
+		}
+	}
+
+	rhenish_industry = {
+		position = 4
+		icon = mission_have_two_subjects
+		required_missions = { lorraine_mines }
+
+		provinces_to_highlight = {
+
+		}
+
+		trigger = {
+
+		}
+
+		effect = {
+
+		}
+	}
+
+
+
 }
