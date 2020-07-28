@@ -158,7 +158,7 @@ lot_sea = {
 			type = all
 			owned_by = ROOT
 		}
-		east_midlands_area_name = {
+		east_midlands_area = {
 			type = all
 			owned_by = ROOT
 		}

@@ -287,7 +287,9 @@ brittany_area = { #5
 
 	169 170 171 172 4384
 }
+lorraine_area = {
 
+}
 normandy_area = { #4
 	167 168 1879 4385
 }
@@ -1199,7 +1201,7 @@ hudavendigar_area = { #3
 
 germiyan_area = { #4
 	color = { 234 145 65 }
-	322 4308 4311 4805
+	322 4308 4311 4805 1848
 }
 
 aydin_area = { #5
@@ -1225,7 +1227,7 @@ karaman_area = { #4
 }
 
 caria_area = {
- 319 2298 4790 1848
+ 319 2298 4790
 }
 
 cukurova_area = { #3
@@ -1251,7 +1253,7 @@ palestine_area = { #3
 
 dulkadir_area = { # 4
 	color = { 184 54 72 }
-	332 2303 2308 4310
+	332 2303 4310
 }
 
 iraq_arabi_area = { #5 Lower Mesopotamia
@@ -1263,7 +1265,7 @@ basra_area = { #4
 }
 
 luristan_area = { #4
-	413 414 2209 2210
+	413 414 2209 2210 2211
 }
 
 north_kurdistan_area = { #5
@@ -1276,12 +1278,12 @@ khuzestan_area = { #5
 
 shahrizor_area = {	#4
 	color = { 152 102 102 }
-	415 2211 4293 4294
+	415 4293 4294 411
 }
 
 al_jazira_area = { #5
 	color = { 92 200 92 }
-	407 411 2309 2314 4292
+	407 2309 2314 4292 2308
 }
 
 
@@ -1298,7 +1300,7 @@ pirate_coast_area = { #4
 }
 
 nafud_area = { #3
-	393 2338 4272
+	393 2338 2337
 }
 
 tabuk_area = { #4
@@ -1344,7 +1346,7 @@ yamamah_area = { #4
 }
 
 qasim_area = { #4
-	392 2337 4273 4274
+	392 4273 4274
 }
 
 dhofar_area = { #3 (Dhofar + Masirah)
@@ -1361,7 +1363,7 @@ mascat_area = { #3 (Batinah and Muscat coast
 
 syrian_desert_area = { #3
 	color = { 219 30 57 }
-	405 4270 4271
+	405 4270 4271 4272
 }
 
 ########################################
