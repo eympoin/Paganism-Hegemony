@@ -2359,3 +2359,5 @@
  rejected_claim_on_neighbor:0 "Rejected Claim on Neighbor"
  REMOVE_ELECTORATE_NO_OFFICIAL_RELIGION:0 "You cannot revoke electorates unless there is an official religion in the Empire."
  AUTO_TRANSPORT_NO_COG:1 "\nYou need transport ships in order to transport troops with this fleet."
+ cb_free_empire_tributary:0 "Free the Tributaries in the Empire"
+ cb_free_empire_tributary_desc:0 "This horde has some Tributaries in the Empire, it is time to free them ! "
