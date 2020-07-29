@@ -195,7 +195,8 @@ country_event = {
 }
 
 #Cultural conversion when opposed to rome
-country_event = {
+
+country_event = {#Anglo-saxon
   id = flavor_ldn.3
   title = flavor_ldn.3.t
   desc = flavor_ldn.3.d
@@ -210,10 +211,8 @@ country_event = {
     any_owned_province = {
       religion = jupiterian
       OR = {
-        culture_group = gaelic
         culture = angle
         culture = seaxan
-        culture = northymbrian
       }
       NOT = { culture_group = britannian_group }
       NOT = { nationalism	= 1 }
@@ -252,6 +251,36 @@ country_event = {
       change_culture = flavian
     }
   }
+}
+country_event = {#Welsh/cornish/breton
+  id = flavor_ldn.32
+  title = flavor_ldn.3.t
+  desc = flavor_ldn.3.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      tag = BRN
+      tag = LDN
+    }
+    has_country_modifier = ldn_rival_spq
+    any_owned_province = {
+      religion = jupiterian
+      OR = {
+        culture = welsh
+        culture = cornish
+        culture = breton
+      }
+      NOT = { culture_group = britannian_group }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 5
+  }
+
   option = {#Wales/Cornish
     name = flavor_ldn.3.b
     ai_chance = { factor = 1 }
@@ -281,6 +310,32 @@ country_event = {
       change_culture = iscan
     }
   }
+}
+country_event = {#Northumbrian
+  id = flavor_ldn.33
+  title = flavor_ldn.3.t
+  desc = flavor_ldn.3.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      tag = BRN
+      tag = LDN
+    }
+    has_country_modifier = ldn_rival_spq
+    any_owned_province = {
+      religion = jupiterian
+      culture = northymbrian
+      NOT = { culture_group = britannian_group }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 5
+  }
+
   option = {#Northumbrian
     name = flavor_ldn.3.c
     ai_chance = { factor = 1 }
@@ -302,20 +357,38 @@ country_event = {
       change_culture = brigantes
     }
   }
+}
+country_event = {#Scottish
+  id = flavor_ldn.34
+  title = flavor_ldn.3.t
+  desc = flavor_ldn.3.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      tag = BRN
+      tag = LDN
+    }
+    has_country_modifier = ldn_rival_spq
+    any_owned_province = {
+      religion = jupiterian
+      OR = {
+        culture = highland_scottish
+        culture = scottish
+      }
+      NOT = { culture_group = britannian_group }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 5
+  }
+
   option = {#Scottish
     name = flavor_ldn.3.e
     ai_chance = { factor = 1 }
-    trigger = {
-      any_owned_province = {
-        is_core = ROOT
-        religion = jupiterian
-        OR = {
-          culture = highland_scottish
-          culture = scottish
-        }
-        NOT = { nationalism	= 1 }
-      }
-    }
     random_owned_province = {
       limit = {
         religion = jupiterian
@@ -329,17 +402,35 @@ country_event = {
       change_culture = caledonian
     }
   }
+}
+country_event = {#Irish
+  id = flavor_ldn.35
+  title = flavor_ldn.3.t
+  desc = flavor_ldn.3.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      tag = BRN
+      tag = LDN
+    }
+    has_country_modifier = ldn_rival_spq
+    any_owned_province = {
+      religion = jupiterian
+      cultur = irish
+      NOT = { culture_group = britannian_group }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 5
+  }
+
   option = {#Irish
     name = flavor_ldn.3.f
     ai_chance = { factor = 1 }
-    trigger = {
-      any_owned_province = {
-        is_core = ROOT
-        religion = jupiterian
-        culture = irish
-        NOT = { nationalism	= 1 }
-      }
-    }
     random_owned_province = {
       limit = {
         religion = jupiterian
@@ -353,7 +444,8 @@ country_event = {
 }
 
 #Cultural conversion if loyal or coop with rome
-country_event = {
+
+country_event = {#Welsh/cornish/breton
   id = flavor_ldn.4
   title = flavor_ldn.4.t
   desc = flavor_ldn.4.d
@@ -371,10 +463,9 @@ country_event = {
     any_owned_province = {
       religion = jupiterian
       OR = {
-        culture_group = gaelic
-        culture = angle
-        culture = seaxan
-        culture = northymbrian
+        culture = welsh
+        culture = cornish
+        culture = breton
       }
       NOT = { culture_group = britannian_group }
       NOT = { nationalism	= 1 }
@@ -393,10 +484,189 @@ country_event = {
       limit = {
         religion = jupiterian
         OR = {
-          culture_group = gaelic
+          culture = welsh
+          culture = cornish
+          culture = breton
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = britannian
+    }
+  }
+}
+country_event = {#Scottish
+  id = flavor_ldn.42
+  title = flavor_ldn.4.t
+  desc = flavor_ldn.4.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      tag = BRN
+      tag = LDN
+    }
+    OR = {
+      has_country_modifier = ldn_coop_spq
+      has_country_modifier = ldn_vassal_spq
+    }
+    any_owned_province = {
+      religion = jupiterian
+      OR = {
+        culture = highland_scottish
+        culture = scottish
+      }
+      NOT = { culture_group = britannian_group }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_ldn.4.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+        religion = jupiterian
+        OR = {
+          culture = highland_scottish
+          culture = scottish
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = britannian
+    }
+  }
+}
+country_event = {#Irish
+  id = flavor_ldn.43
+  title = flavor_ldn.4.t
+  desc = flavor_ldn.4.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      tag = BRN
+      tag = LDN
+    }
+    OR = {
+      has_country_modifier = ldn_coop_spq
+      has_country_modifier = ldn_vassal_spq
+    }
+    any_owned_province = {
+      religion = jupiterian
+      culture = irish
+      NOT = { culture_group = britannian_group }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_ldn.4.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+        religion = jupiterian
+        culture = irish
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = britannian
+    }
+  }
+}
+country_event = {#Northumbrian
+  id = flavor_ldn.44
+  title = flavor_ldn.4.t
+  desc = flavor_ldn.4.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      tag = BRN
+      tag = LDN
+    }
+    OR = {
+      has_country_modifier = ldn_coop_spq
+      has_country_modifier = ldn_vassal_spq
+    }
+    any_owned_province = {
+      religion = jupiterian
+      culture = northymbrian
+      NOT = { culture_group = britannian_group }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_ldn.4.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+        religion = jupiterian
+        culture = northymbrian
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = britannian
+    }
+  }
+}
+country_event = {#Anglo-saxon
+  id = flavor_ldn.45
+  title = flavor_ldn.4.t
+  desc = flavor_ldn.4.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      tag = BRN
+      tag = LDN
+    }
+    OR = {
+      has_country_modifier = ldn_coop_spq
+      has_country_modifier = ldn_vassal_spq
+    }
+    any_owned_province = {
+      religion = jupiterian
+      OR = {
+        culture = angle
+        culture = seaxan
+      }
+      NOT = { culture_group = britannian_group }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_ldn.4.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+        religion = jupiterian
+        OR = {
           culture = angle
           culture = seaxan
-          culture = northymbrian
         }
         NOT = { nationalism	= 1 }
         is_core = ROOT
