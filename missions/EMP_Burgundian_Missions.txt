@@ -2,12 +2,14 @@ lot_sea = {
 	slot = 1
 	generic = no
 	ai = yes
-	potential_on_load = {
-		has_dlc = "Emperor"
-	}
+
 	potential = {
 		OR = {
 			tag = LOT
+			AND = {
+				tag = FRK
+				was_tag = LOT
+			}
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -180,10 +182,14 @@ lot_2 = {
 	ai = yes
 
 	potential = {
-		OR = {
-			tag = LOT
+	OR = {
+		tag = LOT
+		AND = {
+			tag = FRK
+			was_tag = LOT
 		}
-		NOT = { map_setup = map_setup_random }
+	}
+	NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 
@@ -197,6 +203,12 @@ lot_2 = {
 		}
 
 		trigger = {
+			75 = { #Alsace
+			trade_share = {
+			country = LOT
+			share = 75
+			}
+		}
 
 		}
 
@@ -211,11 +223,15 @@ lot_2 = {
 		required_missions = { flanders }
 
 		provinces_to_highlight = {
-
+			area = picardy_area
+			NOT = { owned_by = ROOT }
 		}
 
 		trigger = {
-
+		picardy_area = {
+			type = all
+			owned_by = ROOT
+		}
 		}
 
 		effect = {
@@ -229,11 +245,15 @@ lot_2 = {
 		required_missions = { united_franks }
 
 		provinces_to_highlight = {
-
+			region = france_region
 		}
 
 		trigger = {
-
+		france_region = {
+			type = all
+			owned_by = ROOT
+		}
+		NOT = { owned_by = ROOT }
 		}
 
 		effect = {
@@ -250,10 +270,14 @@ lot_3 = {
 	ai = yes
 
 	potential = {
-		OR = {
-			tag = LOT
+	OR = {
+		tag = LOT
+		AND = {
+			tag = FRK
+			was_tag = LOT
 		}
-		NOT = { map_setup = map_setup_random }
+	}
+	NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 
@@ -267,7 +291,24 @@ lot_3 = {
 		}
 
 		trigger = {
-
+			OR = {
+			alliance_with = FRP
+			alliance_with = FRO
+			}
+			OR = {
+			FRP = {
+				has_opinion = {
+					who = ROOT
+					value = 180
+				}
+			}
+			FRO = {
+				has_opinion = {
+					who = ROOT
+					value = 180
+				}
+			}
+			}
 		}
 
 		effect = {
@@ -281,11 +322,37 @@ lot_3 = {
 		required_missions = { alliance_franks }
 
 		provinces_to_highlight = {
-
+		OR = {
+			area = flanders_area
+			area = brabant_area
+			area = wallonia_area
+			area = lower_rhineland_area
+			area = north_brabant_area
+			}
+			NOT = { owned_by = ROOT }
 		}
 
 		trigger = {
-
+		flanders_area = {
+			type = all
+			owned_by = ROOT
+		}
+		brabant_area = {
+			type = all
+			owned_by = ROOT
+		}
+		wallonia_area = {
+			type = all
+			owned_by = ROOT
+		}
+		lower_rhineland_area = {
+			type = all
+			owned_by = ROOT
+		}
+		north_brabant_area = {
+			type = all
+			owned_by = ROOT
+		}
 		}
 
 		effect = {
@@ -299,11 +366,23 @@ lot_3 = {
 		required_missions = { flanders }
 
 		provinces_to_highlight = {
-
+		OR = {
+			area = champagne_area
+			area = ile_de_france_area
+			}
+			NOT = { owned_by = ROOT }
 		}
 
 		trigger = {
-
+		champagne_area = {
+			type = all
+			owned_by = ROOT
+		}
+		ile_de_france_area = {
+			type = all
+			owned_by = ROOT
+		}
+		NOT = { owned_by = ROOT }
 		}
 
 		effect = {
@@ -317,10 +396,32 @@ lot_3 = {
 		required_missions = { heart_of_wfr }
 
 		provinces_to_highlight = {
-
+		OR = {
+			area = normandy_area
+			area = brittany_area
+			area = loire_area
+			area = orleans_area
+			}
+			NOT = { owned_by = ROOT }
 		}
 
 		trigger = {
+		normandy_area = {
+			type = all
+			owned_by = ROOT
+		}
+		brittany_area = {
+			type = all
+			owned_by = ROOT
+		}
+		loire_area = {
+			type = all
+			owned_by = ROOT
+		}
+		orleans_area = {
+			type = all
+			owned_by = ROOT
+		}
 
 		}
 
@@ -332,14 +433,13 @@ lot_3 = {
 	united_franks = {
 		position = 5
 		icon = mission_have_two_subjects
-		required_missions = { heart_of_wfr reform_efr }
+		required_missions = { finish_wfr eliminate_saxon_threat }
 
 		provinces_to_highlight = {
-
 		}
 
 		trigger = {
-
+			tag = FRK
 		}
 
 		effect = {
@@ -353,11 +453,38 @@ lot_3 = {
 		required_missions = { united_franks }
 
 		provinces_to_highlight = {
-
+		OR = {
+			area = venetia_area
+			area = lombardy_area
+			area = po_valley_area
+			area = piedmont_area
+			area = emilia_romagna_area
+			area = liguria_area
+			}
+			NOT = { owned_by = ROOT }
 		}
 
 		trigger = {
-
+		venetia_area = {
+			type = all
+			owned_by = ROOT
+		}
+		lombardy_area = {
+			type = all
+			owned_by = ROOT
+		}
+		piedmont_area = {
+			type = all
+			owned_by = ROOT
+		}
+		emilia_romagna_area = {
+			type = all
+			owned_by = ROOT
+		}
+		liguria_area = {
+			type = all
+			owned_by = ROOT
+		}
 		}
 
 		effect = {
@@ -372,10 +499,14 @@ lot_4 = {
 	ai = yes
 
 	potential = {
-		OR = {
-			tag = LOT
+	OR = {
+		tag = LOT
+		AND = {
+			tag = FRK
+			was_tag = LOT
 		}
-		NOT = { map_setup = map_setup_random }
+	}
+	NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 
@@ -385,11 +516,21 @@ lot_4 = {
 		required_missions = {  }
 
 		provinces_to_highlight = {
-
+		OR = {
+			area = hesse_area
+			province_id = 82
+			province_id = 2972
+			}
+			NOT = { owned_by = ROOT }
 		}
 
 		trigger = {
-
+		liguria_area = {
+			type = all
+			owned_by = ROOT
+		}
+		province_id = 82
+		province_id = 2972
 		}
 
 		effect = {
@@ -403,11 +544,23 @@ lot_4 = {
 		required_missions = { reconquest_efr }
 
 		provinces_to_highlight = {
+		OR = {
+			area = lower_swabia_area
+			area = upper_swabia_area
+		}
+		NOT = { owned_by = ROOT }
 
 		}
 
 		trigger = {
-
+		lower_swabia_area = {
+			type = all
+			owns_or_non_sovereign_subject_of = ROOT
+		}
+		upper_swabia_area = {
+			type = all
+			owns_or_non_sovereign_subject_of = ROOT
+		}
 		}
 
 		effect = {
@@ -421,11 +574,27 @@ lot_4 = {
 		required_missions = { conquest_alamann subjugate_fkn}
 
 		provinces_to_highlight = {
-
+		OR = {
+			area = lower_bavaria_area
+			area = upper_bavaria_area
+			area = east_bavaria_area
+			}
+			NOT = { owned_by = ROOT }
 		}
 
 		trigger = {
-
+		lower_bavaria_area = {
+			type = all
+			owns_or_non_sovereign_subject_of = ROOT
+		}
+		east_bavaria_area = {
+			type = all
+			owns_or_non_sovereign_subject_of = ROOT
+		}
+		upper_bavaria_area = {
+			type = all
+			owns_or_non_sovereign_subject_of = ROOT
+		}
 		}
 
 		effect = {
@@ -433,17 +602,17 @@ lot_4 = {
 		}
 	}
 
-	reform_efr = {
+	eliminate_saxon_threat = {
 		position = 4
 		icon = mission_have_two_subjects
 		required_missions = { fate_bavaria }
 
 		provinces_to_highlight = {
-
+			owned_by = SAX
 		}
 
 		trigger = {
-
+			NOT = {exists = SAX}
 		}
 
 		effect = {
@@ -459,11 +628,22 @@ lot_4 = {
 		required_missions = { united_franks }
 
 		provinces_to_highlight = {
+			OR = {
+				region = north_german_region
+				region = south_german_region
+			}
 
 		}
 
 		trigger = {
-
+		north_german_region = {
+			type = all
+			owned_by = ROOT
+		}
+		south_german_region = {
+			type = all
+			owned_by = ROOT
+		}
 		}
 
 		effect = {
@@ -478,10 +658,14 @@ lot_5 = {
 	ai = yes
 
 	potential = {
-		OR = {
-			tag = LOT
+	OR = {
+		tag = LOT
+		AND = {
+			tag = FRK
+			was_tag = LOT
 		}
-		NOT = { map_setup = map_setup_random }
+	}
+	NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 
@@ -492,11 +676,22 @@ lot_5 = {
 		required_missions = { reconquest_efr }
 
 		provinces_to_highlight = {
-
+			OR = {
+				area = franconia_area
+				area = upper_franconia_area
+				}
+			NOT = { owned_by = ROOT }
 		}
 
 		trigger = {
-
+		franconia_area = {
+			type = all
+			owned_by = ROOT
+		}
+		upper_franconia_area = {
+			type = all
+			owned_by = ROOT
+		}
 		}
 
 		effect = {
@@ -514,7 +709,13 @@ lot_5 = {
 		}
 
 		trigger = {
-
+		production_leader = {
+			trade_goods = iron
+			}
+			trading_bonus = {
+				trade_goods = iron
+				value = yes
+				}
 		}
 
 		effect = {
@@ -532,7 +733,13 @@ lot_5 = {
 		}
 
 		trigger = {
-
+		production_leader = {
+			trade_goods = coal
+			}
+			trading_bonus = {
+				trade_goods = coal
+				value = yes
+				}
 		}
 
 		effect = {
