@@ -309,15 +309,9 @@ northymbria_3 = {
         duration = 3650
       }
       home_counties_area = {
-        limit = {
-          NOT = { owned_by = ROOT }
-        }
         add_permanent_claim = ROOT
       }
       234 = {
-        limit = {
-          NOT = { owned_by = ROOT }
-        }
         add_permanent_claim = ROOT
       }
     }
@@ -600,7 +594,7 @@ northymbria_5 = {
     }
 
     effect = {
-      remove_country_flag = great_plunderer_nrt
+      clr_country_flag = great_plunderer_nrt
       add_prestige = 20
       add_stability = 1
       245 = {

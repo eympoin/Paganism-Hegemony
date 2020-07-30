@@ -417,7 +417,7 @@ country_event = {#Irish
     has_country_modifier = ldn_rival_spq
     any_owned_province = {
       religion = jupiterian
-      cultur = irish
+      culture = irish
       NOT = { culture_group = britannian_group }
       NOT = { nationalism	= 1 }
       is_core = ROOT
