@@ -1,17 +1,15 @@
 country_decisions = {
 
-	english_nation = {
+	brytenwalda_nation = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
-			NOT = { has_country_flag = formed_england_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { tag = ENG }
-			NOT = { exists = GBR }
+			NOT = { tag = BRW }
 			NOT = { tag = HLR }
 			NOT = { tag = PAP }
 			OR = {
@@ -34,8 +32,8 @@ country_decisions = {
 				province_id = 234		# Wessex
 				province_id = 235		# Kent
 				province_id = 238		# East Anglia
-				province_id = 245		# York
-				province_id = 240		
+				province_id = 240
+				province_id = 243
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -45,22 +43,19 @@ country_decisions = {
 		allow = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
-			is_nomad = no			
-			NOT = { exists = ENG }
+			is_nomad = no
+			NOT = { exists = BRW }
 			owns_core_province = 236		# London
 			owns_core_province = 237		# Oxfordshire
 			owns_core_province = 234		# Wessex
 			owns_core_province = 235		# Kent
 			owns_core_province = 238		# East Anglia
-			owns_core_province = 245		
-			owns_core_province = 240		
+			owns_core_province = 240
+			owns_core_province = 243
 		}
 		effect = {
-			236 = { #London
-				move_capital_effect = yes
-			}
-			change_tag = ENG
-			swap_non_generic_missions = yes
+			change_tag = BRW
+			swap_non_generic_missions = no
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
@@ -98,42 +93,12 @@ country_decisions = {
 				}
 				add_permanent_claim = ENG
 			}
-			wales_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ENG
-			}
-			wessex_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ENG
-			}
-			#Cumbria
-			247 = {
-				if = {
-					limit = {
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ENG
-				}
-			}
-			#Northumberland
-			246 = {
-				if = {
-					limit = {
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = ENG
-				}
-			}
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
 			}
 			add_prestige = 25
-			set_country_flag = formed_england_flag
+			set_country_flag = formed_brytenwalda_flag
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
@@ -144,5 +109,5 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
-	
+
 }
