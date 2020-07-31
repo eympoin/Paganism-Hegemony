@@ -1839,7 +1839,10 @@ LDN_ideas = {
 		navy_tradition = 1
 	}
 	trigger = {
-		tag = LDN
+		OR = {
+			tag = LDN
+			tag = BRN
+			}
 	}
 	free = yes
 
@@ -1865,7 +1868,8 @@ LDN_ideas = {
 	}
 
 	romanization = {
-		culture_conversion_cost = -0.25
+		local_years_of_nationalism = -5	
+		global_autonomy = -0.05
 	}
 
 	canon_strat = {
