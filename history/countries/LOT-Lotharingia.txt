@@ -12,7 +12,7 @@ historical_rival = FRK
 1444.1.1 = {
     monarch = {
         name = "Marcel"
-	dynasty = "de Dabo"
+	dynasty = "von Dagsburg"
         birth_date = 1419.7.24
         adm = 6
         dip = 6
@@ -20,7 +20,7 @@ historical_rival = FRK
     }
     queen = {
         country_of_origin = LOT
-        name = "Odette"
+        name = "Odile"
         dynasty = "de Richemont"
         birth_date = 1424.10.14
         female = yes
