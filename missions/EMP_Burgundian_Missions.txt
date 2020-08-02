@@ -68,7 +68,7 @@ lot_sea = {
 	}
 
 	vassalize_EFR = {
-		icon = mission_have_two_subjects
+		icon = mission_alliances
 		required_missions = { batavian_vassal }
 
 		provinces_to_highlight = {
@@ -90,7 +90,7 @@ lot_sea = {
 	}
 
 	invasion_fleet = {
-		icon = mission_have_two_subjects
+		icon = mission_establish_high_seas_navy
 		required_missions = { vassalize_EFR calais}
 
 		provinces_to_highlight = {
@@ -126,7 +126,7 @@ lot_sea = {
 
 
 	english_foothold = {
-		icon = mission_have_two_subjects
+		icon = mission_galleys_in_port
 		required_missions = {invasion_fleet calais}
 
 		provinces_to_highlight = {
@@ -178,7 +178,7 @@ lot_sea = {
 	}
 
 	lotharingian_britannia = {
-		icon = mission_have_two_subjects
+		icon = mission_invade_island
 		required_missions = {english_foothold  }
 
 		provinces_to_highlight = {
@@ -253,7 +253,7 @@ lot_2 = {
 
 	rhenish_trade = {
 		position = 2
-		icon = mission_have_two_subjects
+		icon = mission_great_trading_houses
 		required_missions = { batavian_vassal }
 
 		provinces_to_highlight = {
@@ -293,7 +293,7 @@ lot_2 = {
 
 	calais = {
 		position = 3
-		icon = mission_have_two_subjects
+		icon = mission_rb_conquer_the_isles
 		required_missions = { flanders }
 
 		provinces_to_highlight = {
@@ -319,7 +319,7 @@ lot_2 = {
 
 	finish_gallia = {
 		position = 6
-		icon = mission_have_two_subjects
+		icon = centralize_france
 		required_missions = { united_franks }
 
 		provinces_to_highlight = {
@@ -381,7 +381,7 @@ lot_3 = {
 
 	alliance_franks = {
 		position = 1
-		icon = mission_have_two_subjects
+		icon = mission_alliances
 		required_missions = {  }
 
 		provinces_to_highlight = {
@@ -446,7 +446,7 @@ lot_3 = {
 
 	flanders = {
 		position = 2
-		icon = mission_have_two_subjects
+		icon = mission_assemble_an_army
 		required_missions = { alliance_franks }
 
 		provinces_to_highlight = {
@@ -503,7 +503,7 @@ lot_3 = {
 
 	heart_of_wfr = {
 		position = 3
-		icon = mission_have_two_subjects
+		icon = mission_conquer_50_development
 		required_missions = { flanders }
 
 		provinces_to_highlight = {
@@ -562,7 +562,7 @@ lot_3 = {
 
 	finish_wfr = {
 		position = 4
-		icon = mission_have_two_subjects
+		icon = mission_build_up_to_force_limit
 		required_missions = { heart_of_wfr }
 
 		provinces_to_highlight = {
@@ -625,7 +625,7 @@ lot_3 = {
 
 	united_franks = {
 		position = 5
-		icon = mission_have_two_subjects
+		icon = king_of_the_franks
 		required_missions = { finish_wfr eliminate_saxon_threat }
 
 		provinces_to_highlight = {
@@ -658,7 +658,7 @@ lot_3 = {
 
 	lombards = {
 		position = 6
-		icon = mission_have_two_subjects
+		icon = complete_the_risorgimento
 		required_missions = { united_franks }
 
 		provinces_to_highlight = {
@@ -731,7 +731,7 @@ lot_4 = {
 
 	reconquest_efr = {
 		position = 1
-		icon = mission_have_two_subjects
+		icon = mission_rb_unite_the_clans
 		required_missions = {  }
 
 		provinces_to_highlight = {
@@ -763,7 +763,7 @@ lot_4 = {
 
 	conquest_alamann = {
 		position = 2
-		icon = mission_have_two_subjects
+		icon = mission_hanseatic_city
 		required_missions = { reconquest_efr }
 
 		provinces_to_highlight = {
@@ -799,7 +799,7 @@ lot_4 = {
 
 	fate_bavaria = {
 		position = 3
-		icon = mission_have_two_subjects
+		icon = expand_the_terraferma
 		required_missions = { conquest_alamann subjugate_fkn}
 
 		provinces_to_highlight = {
@@ -851,7 +851,7 @@ lot_4 = {
 
 	eliminate_saxon_threat = {
 		position = 4
-		icon = mission_have_two_subjects
+		icon = reclaim_our_ancestral_lands
 		required_missions = { fate_bavaria }
 
 		provinces_to_highlight = {
@@ -878,7 +878,7 @@ lot_4 = {
 
 	rest_germany = {
 		position = 6
-		icon = mission_have_two_subjects
+		icon = mission_unite_home_region
 		required_missions = { united_franks }
 
 		provinces_to_highlight = {
@@ -971,7 +971,7 @@ lot_5 = {
 
 	lorraine_mines = {
 		position = 3
-		icon = mission_have_two_subjects
+		icon = mission_war_chest
 		required_missions = {  }
 
 		provinces_to_highlight = {
@@ -1009,7 +1009,7 @@ lot_5 = {
 
 	rhenish_industry = {
 		position = 4
-		icon = mission_have_two_subjects
+		icon = industrialized_rhineland
 		required_missions = { lorraine_mines }
 
 		provinces_to_highlight = {
