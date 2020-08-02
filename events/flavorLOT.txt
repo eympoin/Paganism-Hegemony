@@ -1,0 +1,112 @@
+namespace = flavor_lot
+
+#east-francia-heir
+country_event = {
+	id = flavor_lot.1
+	title = "flavor_lot.1.t"
+	desc = "flavor_lot.1.d"
+	picture = SIEGE_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #we are the heir of east francia
+		name = "flavor_lot.1.a"
+		ai_chance = {
+			factor = 100
+		}
+			add_stability = -1
+			add_prestige = 20
+			BAV = {country_event = { id = flavor_lot.2 }}
+			TIR = {country_event = { id = flavor_lot.2 }}
+			ALM = {country_event = { id = flavor_lot.2 }}
+			FKN = {country_event = { id = flavor_lot.2 }}
+		}
+	option = { #we are better alone
+		name = "flavor_lot.1.a"
+		ai_chance = {
+			factor = 0
+		}
+			add_stability = 1
+			add_prestige = 10
+			add_adm_power = 100
+			add_legitimacy = 10
+		}
+}
+
+
+#answer
+country_event = {
+	id = flavor_lot.2
+	title = "flavor_lot.2.t"
+	desc = "flavor_lot.2.d"
+	picture = SIEGE_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #accept
+		name = "flavor_lot.2.a"
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = 10
+				tag = BAV
+			}
+			modifier = {
+				factor = 50
+				tag = ALM
+			}
+			modifier = {
+				factor = 10
+				tag = TIR
+			}
+		}
+		LOT = {
+			vassalize  = ROOT
+		}
+		}
+	option = { #we are better alone
+		name = "flavor_lot.2.a"
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 90
+				tag = BAV
+			}
+			modifier = {
+				factor = 50
+				tag = ALM
+			}
+			modifier = {
+				factor = 90
+				tag = TIR
+			}
+		}
+			add_stability = 1
+			add_prestige = 20
+			LOT = {country_event = { id = flavor_lot.3 }}
+		}
+}
+
+
+#LOT learn of the defiance
+country_event = {
+	id = flavor_lot.3
+	title = "flavor_lot.3.t"
+	desc = "flavor_lot.3.d"
+	picture = SIEGE_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #we are the heir of east francia
+		name = "flavor_lot.3.a"
+		ai_chance = {
+			factor = 100
+		}
+		add_casus_belli = {
+				target = ROOT
+				type = cb_vassalize_mission
+				months = 120
+			}
+		}
+
+}

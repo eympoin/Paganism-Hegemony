@@ -744,16 +744,20 @@ lot_4 = {
 		}
 
 		trigger = {
-			liguria_area = {
+			hesse_area = {
 				type = all
 				owned_by = ROOT
 			}
-			province_id = 82
-			province_id = 2972
+			82 = {
+				owned_by = ROOT
+			}
+			2972 = {
+				owned_by = ROOT
+			}
 		}
 
 		effect = {
-
+			 country_event = { id = flavor_lot.1 }
 		}
 	}
 
@@ -783,7 +787,13 @@ lot_4 = {
 		}
 
 		effect = {
-
+			add_dip_power = 100
+			switzerland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
@@ -817,7 +827,25 @@ lot_4 = {
 		}
 
 		effect = {
-
+			add_dip_power = 100
+			bohemia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			erzgebirge_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			moravia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
@@ -835,7 +863,14 @@ lot_4 = {
 		}
 
 		effect = {
-
+		add_prestige = 10
+		add_years_of_income = 1
+		north_german_region = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
 		}
 	}
 
@@ -866,7 +901,14 @@ lot_4 = {
 		}
 
 		effect = {
-
+		prestige = 10
+		add_mil_power = 100
+		scandinavia_region = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
 		}
 	}
 }
@@ -914,7 +956,16 @@ lot_5 = {
 		}
 
 		effect = {
-
+		add_country_modifier = {
+			name = nurnberg_throne
+			duration = 7300
+		}
+		thuringia_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
 		}
 	}
 
@@ -938,7 +989,21 @@ lot_5 = {
 		}
 
 		effect = {
-
+		add_years_of_owned_provinces_production_income = {
+    years = 10
+    trigger = {
+        OR = {
+            trade_goods = iron
+        }
+    }
+    custom_tooltip = MONOPOLY_INCOME_IRON_DESC
+		}
+		change_price = {
+			trade_goods = iron
+			key = lorraine_iron
+			value = 0.25
+			duration = 7300
+		}
 		}
 	}
 
@@ -962,7 +1027,11 @@ lot_5 = {
 		}
 
 		effect = {
-
+			add_country_modifier = {
+			add_years_of_income = 1.5
+				name = lotharingian_industry
+				duration = -1
+			}
 		}
 	}
 

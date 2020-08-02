@@ -4499,3 +4499,12 @@ rhenish_trade = {
 	trade_efficiency = 0.1
 	trade_steering = 0.1
 }
+
+nurnberg_throne = {
+  prestige = 1
+  global_unrest = -1
+}
+
+lotharingian_industry = {
+  trade_goods_size_modifier = 0.25
+}
