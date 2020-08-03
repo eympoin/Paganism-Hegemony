@@ -593,3 +593,8 @@ flavor_nrt.3.a:0 "Just as planned"
 flavor_nrt.4.t:0 "The spoils of plunder"
 flavor_nrt.4.d:0 "The city is ours, let us bring home its riches to enrich York !"
 flavor_nrt.4.a:0 "To the longboats !"
+
+flavor_sea.1.t:0 "The great siege of Lundinium"
+flavor_sea.1.d:0 "In early 1462 the Jarl of Seaxe launched an offensive on Lundinium aided by the forces of East Anglia acting as mercenaries, the battle was fierce and after a while the siege was about to be won. When suddenly the great plan of the Jarl was put in motion, his armies slaughtered the forces of east anglia and went on to ravage the country side and siege their holdings."
+flavor_sea.1.a:0 "Act according to the plan"
+flavor_sea.1.b:0 "We are not traitors"
