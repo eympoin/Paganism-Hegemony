@@ -1,6 +1,6 @@
 owner = THR
 controller = THR
-culture = greek
+culture = bulgarian
 religion = slavic
 capital = "Pautalia"
 trade_goods = copper

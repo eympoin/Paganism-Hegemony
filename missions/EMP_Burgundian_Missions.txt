@@ -30,34 +30,34 @@ lot_sea = {
 				province_id = 4382
 				area = holland_area
 			}
-			NOT = { owned_by = ROOT }
+			NOT = { country_or_non_sovereign_subject_holds  = ROOT }
 		}
 
 		trigger = {
 			96 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds  = ROOT
 			}
 			95 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds  = ROOT
 			}
 			4770 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds  = ROOT
 			}
 			99 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds  = ROOT
 			}
 			4381 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds  = ROOT
 			}
 			100 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds  = ROOT
 			}
 			4382 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds  = ROOT
 			}
 			holland_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds  = ROOT
 			}
 		}
 
@@ -392,6 +392,8 @@ lot_3 = {
 			OR = {
 				alliance_with = FRP
 				alliance_with = FRO
+				alliance_with = FRR
+				alliance_with = FRV
 			}
 			OR = {
 				FRP = {
@@ -401,6 +403,18 @@ lot_3 = {
 					}
 				}
 				FRO = {
+					has_opinion = {
+						who = ROOT
+						value = 180
+					}
+				}
+				FRV = {
+					has_opinion = {
+						who = ROOT
+						value = 180
+					}
+				}
+				FRR = {
 					has_opinion = {
 						who = ROOT
 						value = 180
@@ -771,18 +785,18 @@ lot_4 = {
 				area = lower_swabia_area
 				area = upper_swabia_area
 			}
-			NOT = { owned_by = ROOT }
+			NOT = { country_or_non_sovereign_subject_holds  = ROOT }
 
 		}
 
 		trigger = {
 			lower_swabia_area = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds  = ROOT
 			}
 			upper_swabia_area = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds  = ROOT
 			}
 		}
 
@@ -808,21 +822,21 @@ lot_4 = {
 				area = upper_bavaria_area
 				area = east_bavaria_area
 			}
-			NOT = { owned_by = ROOT }
+			NOT = { country_or_non_sovereign_subject_holds  = ROOT }
 		}
 
 		trigger = {
 			lower_bavaria_area = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds  = ROOT
 			}
 			east_bavaria_area = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds  = ROOT
 			}
 			upper_bavaria_area = {
 				type = all
-				owns_or_non_sovereign_subject_of = ROOT
+				country_or_non_sovereign_subject_holds  = ROOT
 			}
 		}
 
@@ -941,7 +955,7 @@ lot_5 = {
 				area = franconia_area
 				area = upper_franconia_area
 			}
-			NOT = { owned_by = ROOT }
+			NOT = { country_or_non_sovereign_subject_holds  = ROOT }
 		}
 
 		trigger = {
