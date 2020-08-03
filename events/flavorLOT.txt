@@ -65,7 +65,7 @@ country_event = {
 		}
 	}
 	option = { #we are better alone
-		name = "flavor_lot.2.a"
+		name = "flavor_lot.2.b"
 		ai_chance = {
 			factor = 20
 			modifier = {
@@ -103,7 +103,7 @@ country_event = {
 			factor = 100
 		}
 		add_casus_belli = {
-			target = ROOT
+			target = FROM
 			type = cb_vassalize_mission
 			months = 120
 		}
@@ -257,6 +257,12 @@ country_event = {
 		name = "flavor_lot.4.f"
 		ai_chance = {
 			factor = 30
+			modifier = {
+				factor = 1000
+				FIS = {
+					ai = no
+				}
+			}
 		}
 		FIS = {country_event = { id = flavor_lot.6 }}
 	}
@@ -460,13 +466,14 @@ country_event = {
 			}
 			change_tag = NED
 			inherit = BAT
+			stability = -1
 		}
 		else = {
 			BAT = {country_event = { id = flavor_lot.7 }}
 			}
 		}
 		option = { #No unification
-			name = "flavor_lot.6.a"
+			name = "flavor_lot.6.b"
 			ai_chance = {
 				factor = 0
 			}

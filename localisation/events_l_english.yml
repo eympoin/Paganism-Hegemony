@@ -595,6 +595,58 @@ flavor_nrt.4.d:0 "The city is ours, let us bring home its riches to enrich York 
 flavor_nrt.4.a:0 "To the longboats !"
 
 flavor_sea.1.t:0 "The great siege of Lundinium"
-flavor_sea.1.d:0 "In early 1462 the Jarl of Seaxe launched an offensive on Lundinium aided by the forces of East Anglia acting as mercenaries, the battle was fierce and after a while the siege was about to be won. When suddenly the great plan of the Jarl was put in motion, his armies slaughtered the forces of east anglia and went on to ravage the country side and siege their holdings."
+flavor_sea.1.d:0 "In early 1462 the Jarl of Seaxe launched an offensive on Lundinium aided by the forces of East Anglia acting as mercenaries, the battle was fierce and after a while the siege was about to be won. When suddenly the great plan of the Jarl was put in motion, his armies slaughtered the forces of East Anglia and went on to ravage the country side and siege their holdings."
 flavor_sea.1.a:0 "Act according to the plan"
 flavor_sea.1.b:0 "We are not traitors"
+
+#Lotharingia and Netherlands
+
+flavor_lot.1.t:0 "The heir of East-Francia"
+flavor_lot.1.d:0 "We have reconquered the East-Francian lands which were taken by the Saxons including Irminsul. With our power and the legtimacy provided by these conquests, we can send claim the rest of East Francia and send envoy to the succesor states. They shall recognize our rule."
+flavor_lot.1.a:0 "Send the envoys"
+flavor_lot.1.b:0 "We are better alone"
+
+flavor_lot.2.t:0 "Lotharingia ask for subjugation"
+flavor_lot.2.d:0 "Lotharingia has reconquered the east-francian territories lost to the Saxons. They now claim to be the heir of East Francia and wants us to submit to them"
+flavor_lot.2.a:0 "Submit"
+flavor_lot.2.b:0 "I am East Francia"
+
+
+flavor_lot.3.t:0 "$FROMCOUNTRY$	refuse to submit"
+flavor_lot.3.d:0 "$FROMCOUNTRY$ refuse to recognize us as the heir of East Francia"
+flavor_lot.3.a:0 "If diplomacy doesn't work, war will !"
+
+flavor_lot.4.t:0 "Fate of the Dutch"
+flavor_lot.4.d:0 "From the chaos caused by the fall of West Francia, the duchy of Batavia and Frisia managed to claim their independance. This may not be long though as a lot of countries are tempted by our strategically well placed duchies. Should we seek shelter by becoming the vassal of one of them or shall we unite with our Frisian brethren ?"
+flavor_lot.4.a:0 "Lotharingia will protect us from West Francian succesor states"
+flavor_lot.4.b:0 "Mérovée is the true king of West Francia !"
+flavor_lot.4.c:0 "Siegbert is the true king of West Francia !"
+flavor_lot.4.e:0 "Saxony will protect us fom the other Franks"
+flavor_lot.4.f:0 "Unite with Frisia !"
+
+flavor_lot.5.t:0 "Fate of the Dutch"
+flavor_lot.5.d:0 "From the chaos caused by the fall of West Francia, the duchy of Batavia and Frisia managed to claim their independance. This may not be long though as a lot of countries are tempted by our strategically well placed duchies. Should we seek shelter by becoming the vassal of one of them or shall we remain independant ?"
+flavor_lot.5.a:0 "Lotharingia will protect us from West Francian succesor states"
+flavor_lot.5.b:0 "Mérovée is the true king of West Francia !"
+flavor_lot.5.c:0 "Siegbert is the true king of West Francia !"
+flavor_lot.5.e:0 "Saxony will protect us fom the other Franks"
+flavor_lot.5.f:0 "Remain independent !"
+
+flavor_lot.6.t:0 "A Dutch union ?"
+flavor_lot.6.d:0 "Batavia asked us to unite with them. This is motivated by a desire to defend ourselves against our stronger neighbours and the stong cultural ties between our two duchies. Our neighbours won't like this unification though and may try to attack us. Shall we accept ?"
+flavor_lot.6.a:0 "The Netherlands are born"
+flavor_lot.6.b:0 "We are better alone"
+
+flavor_lot.7.t:0 "The Netherlands union is formed"
+flavor_lot.7.d:0 "Frisia has accepted our proposal, together we are stronger !"
+flavor_lot.7.a:0 "The Netherlands are born"
+
+flavor_lot.8.t:0 "Batavia ask for protection"
+flavor_lot.8.d:0 "Since its independance, Batavia is in a hard spot and they asked us to protect them against their numerous greedy neighbours. Shall we protect them ? "
+flavor_lot.8.a:0 "They shall make a good vassal"
+flavor_lot.8.b:0 "Batavia isn't worth it"
+
+flavor_lot.9.t:0 "Frisia ask for protection"
+flavor_lot.9.d:0 "Since its independance, Frisia is in a hard spot and they asked us to protect them against their numerous greedy neighbours. Shall we protect them ? "
+flavor_lot.9.a:0 "They shall make a good vassal"
+flavor_lot.9.b:0 "Frisia isn't worth it"
