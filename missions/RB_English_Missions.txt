@@ -244,28 +244,7 @@ Seaxe_Unification_1 = {
 				}
 			}
 		}
-		Submit_The_last_city_of_Romans = {
-			icon = mission_eastern_european_city
-			required_missions = {Submit_East_Anglia}
-			position = 2
-			provinces_to_highlight = {
-				OR = {
-					province_id = 236
-				}
-				OR = {
-					is_city = no
-					NOT = { owned_by = ROOT }
-				}
-				has_discovered = ROOT
-			}
-			trigger = {
-				owns_or_non_sovereign_subject_of = 236
-			}
-			effect = {
 
-				add_prestige = 15
-			}
-		}
 }
 
 Seaxe_Unification_2 = {
@@ -281,7 +260,7 @@ Seaxe_Unification_2 = {
 			required_missions = {
 				moving_eastwards_sea
 			}
-			position = 5
+			position = 4
 			provinces_to_highlight = {
 			}
 			trigger = {
@@ -406,7 +385,7 @@ Seaxe_Unification_3 = {
 				unifying_the_angleseaxan_sea
 				the_city_of_lundenwic_sea
 			}
-	    position = 6
+	    position = 5
 			provinces_to_highlight = {
 				OR = {
 				 area = west_midlands_area

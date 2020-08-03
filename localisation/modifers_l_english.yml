@@ -2516,3 +2516,21 @@ desc_germano_norse_cooperation_frk:0 "A treaty based on the cooperation of two s
 #Anglo-saxon/brytenwalda
 unified_the_anglosaxon:0 "Unified the Angloseaxan"
 desc_unified_the_anglosaxon:0 "The germanic people in these lands are now ruled by one king, no longer are we splintered across borders, now we are strong !"
+
+#Saxon + Lotharingia
+anti_mongol_strategy:0 "Anti-mongol strategy"
+desc_anti_mongol_strategy:0 "We have learn how to counter these countless horse archers"
+lesson_from_the_nomads:0 "Lesson from the nomads"
+desc_lesson_from_the_nomads:0  "We have learn a lot from these nomadic warriors"
+norsemen_legacy:0 "Norsmen legacy"
+desc_norsemen_legacy:0  ""
+rhenish_trade:0 "Rhenish trade"
+desc_rhenish_trade:0 ""
+nurnberg_throne:0 "Nürnberg Throne"
+desc_nurnberg_throne:0 "The Throne of the East Francian Kings"
+lotharingian_industry:0"Lotharingian industry"
+desc_lotharingian_industry:0 ""
+lorraine_iron:0 "Lorraine Iron"
+attract_american_trade:0 "American trade"
+rhenish_trade:0 "Rhenish trade"
+baltic_gates:0 "The Baltic Gates"
