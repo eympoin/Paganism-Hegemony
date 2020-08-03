@@ -12,6 +12,7 @@ base_production = 3
 trade_goods = wine
 base_manpower = 2
 add_core = BOR
+add_core = LUG
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

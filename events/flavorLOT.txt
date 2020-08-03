@@ -5,7 +5,7 @@ country_event = {
 	id = flavor_lot.1
 	title = "flavor_lot.1.t"
 	desc = "flavor_lot.1.d"
-	picture = SIEGE_eventPicture
+	picture = GOOD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
@@ -39,7 +39,7 @@ country_event = {
 	id = flavor_lot.2
 	title = "flavor_lot.2.t"
 	desc = "flavor_lot.2.d"
-	picture = SIEGE_eventPicture
+	picture = CONQUEST_eventPicture
 
 	is_triggered_only = yes
 
@@ -93,7 +93,7 @@ country_event = {
 	id = flavor_lot.3
 	title = "flavor_lot.3.t"
 	desc = "flavor_lot.3.d"
-	picture = SIEGE_eventPicture
+	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
@@ -116,7 +116,7 @@ country_event = {
 	id = flavor_lot.4
 	title = "flavor_lot.4.t"
 	desc = "flavor_lot.4.d"
-	picture = SIEGE_eventPicture
+	picture = DIPLOMACY_eventPicture
 
 	trigger = {
 		tag = BAT
@@ -274,7 +274,7 @@ country_event = {
 	id = flavor_lot.5
 	title = "flavor_lot.5.t"
 	desc = "flavor_lot.5.d"
-	picture = SIEGE_eventPicture
+	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 	fire_only_once =yes
@@ -449,7 +449,7 @@ country_event = {
 	id = flavor_lot.6
 	title = "flavor_lot.6.t"
 	desc = "flavor_lot.6.d"
-	picture = SIEGE_eventPicture
+	picture = BIG_BOOK_eventPicture
 
 	is_triggered_only = yes
 
@@ -543,7 +543,7 @@ country_event = {
 	id = flavor_lot.7
 	title = "flavor_lot.7.t"
 	desc = "flavor_lot.7.d"
-	picture = SIEGE_eventPicture
+	picture = BIG_BOOK_eventPicture
 
 	is_triggered_only = yes
 
@@ -593,7 +593,7 @@ country_event = {
 	id = flavor_lot.8
 	title = "flavor_lot.8.t"
 	desc = "flavor_lot.8.d"
-	picture = SIEGE_eventPicture
+	picture = CONQUEST_eventPicture
 
 	is_triggered_only = yes
 
@@ -618,7 +618,7 @@ country_event = {
 	id = flavor_lot.9
 	title = "flavor_lot.9.t"
 	desc = "flavor_lot.9.d"
-	picture = SIEGE_eventPicture
+	picture = CONQUEST_eventPicture
 
 	is_triggered_only = yes
 

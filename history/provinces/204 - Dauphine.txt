@@ -4,7 +4,7 @@ owner = NAR
 controller = NAR
 capital = "Gratianopolis"
 is_city = yes
-culture = burgond
+culture = lugdunian
 religion = jupiterian
 hre = no
 base_tax = 4
@@ -13,6 +13,7 @@ trade_goods = wool
 base_manpower = 3
 add_core = NAR
 add_core = BOR
+add_core = LUG
 
 add_local_autonomy = 50
 discovered_by = eastern

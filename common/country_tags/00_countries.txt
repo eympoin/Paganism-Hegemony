@@ -17,11 +17,9 @@ FIS   = "countries/Frisians.txt"
 FRK   = "countries/Franks.txt"
 GLI   = "countries/Gallia.txt"
 WFR   = "countries/West Francia.txt"
+LUG   = "countries/Lugdunensis.txt"
 WRM   = "countries/Western Roman Empire.txt"
 ERM   = "countries/Eastern Roman Empire.txt"
-SOC   = "countries/Socotra.txt"
-TAM   = "countries/Tamazgha.txt"
-
 BSQ   = "countries/Basque.txt"
 
 TRC   = "countries/Tarraconensis.txt"
@@ -172,6 +170,8 @@ SVN = "countries/Savonians.txt"
 
 
 HIM = "countries/Himyarites.txt"
+SOC   = "countries/Socotra.txt"
+TAM   = "countries/Tamazgha.txt"
 #Scandinavia
 SWE	= "countries/Sweden.txt"
 DAN	= "countries/Denmark.txt"

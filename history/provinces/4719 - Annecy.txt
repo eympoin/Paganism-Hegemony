@@ -1,6 +1,6 @@
 owner = BOR
 controller = BOR
-culture = burgond
+culture = lugdunian
 religion = germanic
 hre = no
 base_tax = 3
@@ -11,7 +11,7 @@ capital = "Bourg-en-Bresse"
 is_city = yes	
 add_core = BOR
 
-
+add_core = LUG
 
 discovered_by = eastern
 discovered_by = western

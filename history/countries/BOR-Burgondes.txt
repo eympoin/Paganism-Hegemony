@@ -3,11 +3,9 @@ add_government_reform = feudalism_reform
 primary_culture = burgond
 religion = germanic
 technology_group = western
-capital = 203
-fixed_capital = 203
-historical_rival = NAR
-historical_rival = FRK
-historical_friend = LOM
+capital = 192
+fixed_capital = 192
+add_accepted_culture = lugdunian
 
 1444.1.1 = {
     monarch = {

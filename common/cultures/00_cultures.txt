@@ -27,6 +27,9 @@ female_names = {"Appia" "Aula" "Caesula" "Decima" "Fausta" "Gaia" "Gnaea" "Hosta
 narbonnais= {
 	primary = NAR
 }
+lugdunian= {
+	primary = LUG
+}
 franko-roman= {
 	primary = GLI
 }
