@@ -919,7 +919,7 @@ BRW_2 = {
 		}
 	}
 	expend_the_registry_brw = {
-		icon = reform_the_state
+		icon = mission_rb_trinity_college_dublin
 		required_missions = {
 			into_ireland_brw
 			scottish_conquest_brw
@@ -927,10 +927,36 @@ BRW_2 = {
 		}
 		position = 5
 		provinces_to_highlight = {
+			province_id = 4120
+			province_id = 248
 		}
 		trigger = {
+			4120 = {
+				has_building = temple
+				has_building = workshop
+				is_core = ROOT
+				religion = ROOT
+			}
+			248 = {
+				has_building = temple
+				has_building = workshop
+				is_core = ROOT
+				religion = ROOT
+			}
 		}
 		effect = {
+			4120 = {
+				add_province_modifier = {
+					name = regional_capital_brw
+					duration = -1
+				}
+			}
+			248 = {
+				add_province_modifier = {
+					name = regional_capital_brw
+					duration = -1
+				}
+			}
 		}
 	}
 }
