@@ -910,7 +910,7 @@ moravia_area = {
 }
 
 south_saxony_area = { #4
-	59 61 4744 62
+	59 61 4744
 }
 
 upper_bavaria_area = { #4
@@ -949,7 +949,7 @@ northern_saxony_area = { #4 (Saxe-Altmark)
 }
 
 thuringia_area = { #3
-	63 2965 4743
+	63 2965 4743 62
 }
 
 neumark_area = { #3
@@ -1188,7 +1188,7 @@ dagestan_area = { #5
 ########################################
 
 rum_area = { #5
-	329 1846 2300 4314 4315
+	1846 2300 4314 4315 2301
 }
 
 erzurum_area = { #3	Erzurum and Trebizond
@@ -1219,11 +1219,11 @@ aegean_archipelago_area = { #4
 }
 
 kastamonu_area = { #4
-	325 328 2299 2304
+	325 328 2299 2304 4811
 }
 
 karaman_area = { #4
-	323 324 2301 4307 4806
+	323 324 4307 4806 4813
 }
 
 caria_area = {
@@ -1236,7 +1236,7 @@ cukurova_area = { #3
 }
 
 aleppo_area = { #4
-	377 1849 2313 4298
+	377 1849 2313 4298 4812
 }
 
 syria_area = { #4
@@ -1253,7 +1253,7 @@ palestine_area = { #3
 
 dulkadir_area = { # 4
 	color = { 184 54 72 }
-	332 2303 4310
+	332 2303 4310 329
 }
 
 iraq_arabi_area = { #5 Lower Mesopotamia

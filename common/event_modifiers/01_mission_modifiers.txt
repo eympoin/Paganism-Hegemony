@@ -4557,3 +4557,9 @@ eaf_king = {
 secure_our_back = {
   defensiveness = 0.15
 }
+
+city_of_riches = {
+  local_tax_modifier = 0.1
+  province_trade_power_modifier = 0.3
+  local_institution_spread = 0.1	
+}

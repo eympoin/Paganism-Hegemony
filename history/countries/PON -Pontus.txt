@@ -6,6 +6,7 @@ technology_group = eastern
 capital = 328
 elector=yes
 government_rank = 1
+historical_rival = BYZ
 1435.1.1 = {
 	monarch = {
 		name = "Pharmaces III"
