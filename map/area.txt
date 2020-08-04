@@ -910,7 +910,7 @@ moravia_area = {
 }
 
 south_saxony_area = { #4
-	59 61 4744 62
+	59 61 4744
 }
 
 upper_bavaria_area = { #4
@@ -949,7 +949,7 @@ northern_saxony_area = { #4 (Saxe-Altmark)
 }
 
 thuringia_area = { #3
-	63 2965 4743
+	63 2965 4743 62
 }
 
 neumark_area = { #3
