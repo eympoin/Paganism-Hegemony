@@ -40,16 +40,15 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
 			legitimacy = 100
 			NOT = { exists = WFR}
-			owns_core_province = 182
-			owns_core_province = 183
-			owns_core_province = 184
-			owns_core_province = 186
+			owns_or_non_sovereign_subject_of  = 182
+			owns_or_non_sovereign_subject_of  = 183
+			owns_or_non_sovereign_subject_of  = 184
+			owns_or_non_sovereign_subject_of  = 186
 		}
 		effect = {
 			change_tag = WFR
@@ -72,6 +71,30 @@ country_decisions = {
 				add_permanent_claim = WFR
 			}
 			add_prestige = 25
+			if = {
+				limit = {
+				senior_union_with = FRR
+				}
+				inherit = FRR
+			}
+			if = {
+				limit = {
+				senior_union_with = FRV
+				}
+				inherit = FRV
+			}
+			if = {
+				limit = {
+				senior_union_with = FRP
+				}
+				inherit = FRP
+			}
+			if = {
+				limit = {
+				senior_union_with = FRO
+				}
+				inherit = FRO
+			}
 			if = {
 				limit = {
 					has_custom_ideas = no

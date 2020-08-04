@@ -31,21 +31,31 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				area = switzerland_area
-				area = lower_swabia_area
-				area = upper_swabia_area
-				area = lower_bavaria_area
-				area = upper_bavaria_area
-				area = east_bavaria_area
-				area = franconia_area
-				area = upper_franconia_area
-				area = hesse_area
-				area = westphalia_area
-				area = braunschweig_area
+				AND = {
+				OR = {
+					area = lower_swabia_area
+					area = upper_swabia_area
+					area = lower_bavaria_area
+					area = upper_bavaria_area
+					area = east_bavaria_area
+					area = franconia_area
+					area = upper_franconia_area
+				}
+				NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			}
-			OR = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
+
+				AND = {
+					OR = {
+						area = hesse_area
+						province_id = 2972
+						province_id = 82
+					}
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+				}
+
 			}
 		}
 		allow = {
@@ -53,49 +63,43 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			NOT = { exists = EAF }
-			switzerland_area = {
-				type = all
-				owned_by = ROOT
-			}
 			lower_swabia_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			upper_swabia_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			lower_bavaria_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			upper_bavaria_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			east_bavaria_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			franconia_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			westphalia_area = {
 				type = all
 				owned_by = ROOT
 			}
-			braunschweig_area = {
-				type = all
+			82 = {
 				owned_by = ROOT
 			}
-			hesse_area = {
-				type = all
+			2972 = {
 				owned_by = ROOT
 			}
 			upper_franconia_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -107,6 +111,30 @@ country_decisions = {
 					NOT = { government_rank = 2 }
 				}
 				set_government_rank = 2
+			}
+			if = {
+				limit = {
+					ALM = {
+						vassal_of = ROOT
+					}
+				}
+				inherit = ALM
+			}
+			if = {
+				limit = {
+					FKN = {
+						vassal_of = ROOT
+					}
+				}
+				inherit = FKN
+			}
+			if = {
+				limit = {
+					BAV = {
+						vassal_of = ROOT
+					}
+				}
+				inherit = BAV
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
