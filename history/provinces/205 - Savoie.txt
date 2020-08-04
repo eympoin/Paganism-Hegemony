@@ -2,17 +2,17 @@
 
 owner = BOR
 controller = BOR
-culture = burgond
+culture = lugdunian
 religion = germanic
 hre = no
-base_tax = 5
-base_production = 5
+base_tax = 3
+base_production = 3
 trade_goods = cloth
 base_manpower = 3
 capital = "Chambéry"
 is_city = yes	
 add_core = BOR
-
+add_core = LUG
 
 
 discovered_by = eastern

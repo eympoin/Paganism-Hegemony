@@ -2,7 +2,7 @@
 
 owner = THR
 controller = THR
-culture = greek
+culture = bulgarian
 religion = slavic
 capital = "Serdica"
 trade_goods = copper

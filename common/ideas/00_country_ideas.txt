@@ -1788,8 +1788,8 @@ SEA_ideas = {
 
 NRT_ideas = {
 	start = {
-		shock_damage = 0.2
-		may_perform_slave_raid = yes
+		shock_damage = 0.15
+		global_sailors_modifier = 0.2
 	}
 	bonus = {
 		infantry_power = 0.2
@@ -1839,7 +1839,10 @@ LDN_ideas = {
 		navy_tradition = 1
 	}
 	trigger = {
-		tag = LDN
+		OR = {
+			tag = LDN
+			tag = BRN
+			}
 	}
 	free = yes
 
@@ -1865,7 +1868,8 @@ LDN_ideas = {
 	}
 
 	romanization = {
-		culture_conversion_cost = -0.25
+		local_years_of_nationalism = -5
+		global_autonomy = -0.05
 	}
 
 	canon_strat = {
@@ -2101,7 +2105,7 @@ BAE_ideas = {
 CTH_ideas = {
 	start = {
 		galley_power = 0.15
-		may_perform_slave_raid = yes
+		naval_morale = 0.1	
 	}
 	bonus = {
 		development_cost = -0.1
@@ -2279,8 +2283,8 @@ NAR_ideas = {
 
 LOT_ideas = {
 	start = {
-		army_tradition = 0.5
-		discipline = 0.05
+ 		global_manpower_modifier = 0.25
+		infantry_power = 0.1
 	}
 	bonus = {
 		global_trade_goods_size_modifier = 0.2

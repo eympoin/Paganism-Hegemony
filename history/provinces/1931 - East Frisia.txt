@@ -2,7 +2,7 @@
 
 owner = EFR
 controller = EFR
-culture = saxon
+culture = dutch
 religion = germanic
 capital = "Emden"
 trade_goods = salt

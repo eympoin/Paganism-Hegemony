@@ -1,0 +1,680 @@
+MIE_Unification_1 = {
+		slot = 1
+		generic = no
+		ai = yes
+		potential = {
+			tag = MIE
+			NOT = { map_setup = map_setup_random }
+		}
+}
+
+MIE_Unification_2 = {
+	  slot = 2
+	  generic = no
+	  ai = yes
+	  potential = {
+	    tag = MIE
+	    NOT = { map_setup = map_setup_random }
+	  }
+		great_march_south_MIE = {
+	    icon = mission_rb_unite_the_clans
+	    required_missions = {}
+	    position = 1
+	    provinces_to_highlight = {
+	    }
+	    trigger = {
+	      army_size = SEA
+				prestige = SEA
+	    }
+	    effect = {
+				add_country_modifier = {
+					name = "army_enthusiasm"
+					duration = 5475
+				}
+				add_casus_belli = {
+					target = SEA
+					type = cb_vassalize_mission
+					months = 360
+				}
+	    }
+	  }
+	  Submit_Seaxe_MIE = {
+	    icon = mission_rb_conquer_the_highlands
+	    required_missions = {
+				great_march_south_MIE
+			}
+	    position = 2
+	    provinces_to_highlight = {
+	      OR = {
+	        province_id = 235
+	        province_id = 234
+	        province_id = 237
+	        province_id = 4371
+	      }
+	      AND = {
+	        NOT = { owned_by = SEA }
+	        NOT = { owned_by = ROOT }
+	      }
+	      has_discovered = ROOT
+	    }
+	    trigger = {
+	      owns_or_non_sovereign_subject_of = 234
+	      owns_or_non_sovereign_subject_of = 237
+	      owns_or_non_sovereign_subject_of = 235
+	      owns_or_non_sovereign_subject_of = 4371
+				overlord_of = SEA
+	    }
+	    effect = {
+				add_prestige = 15
+				add_country_modifier = {
+					name = support_monarch
+					duration = 7300
+				}
+	      236 = {
+					add_permanent_claim = ROOT
+				}
+	    }
+	  }
+	  Submit_The_last_city_of_Romans_MIE = {
+	    icon = mission_rb_the_bank_of_scotland
+	    required_missions = {
+				Submit_Seaxe_MIE
+			}
+	    position = 3
+	    provinces_to_highlight = {
+	      province_id = 236
+	      OR = {
+	        is_city = no
+	        NOT = { owned_by = ROOT }
+	      }
+	      has_discovered = ROOT
+	    }
+	    trigger = {
+	      is_core = 236
+	    }
+	    effect = {
+				236 = {
+					move_capital_effect = yes
+					change_culture = seaxan
+					change_religion = ROOT
+					rename_capital = Lundenwic
+					change_province_name = Lundenwic
+				}
+	    }
+	  }
+}
+
+MIE_Unification_3 = {
+	  slot = 3
+	  generic = no
+	  ai = yes
+	  potential = {
+	    tag = MIE
+			NOT = { map_setup = map_setup_random }
+	  }
+
+	  Kingdom_of_Anglo_Seaxon_MIE= {
+	    icon = mission_monarch_in_throne_room
+	    required_missions = {
+				Submit_Seaxe_MIE
+				Submit_East_Anglia_MIE
+			}
+	    position = 3
+	    trigger = {
+				stability = 2
+				prestige = 50
+	    }
+	    effect = {
+				add_legitimacy = 20
+				add_stability = 1
+				add_years_of_income = 2.5
+	      add_country_modifier = {
+					name = unified_the_anglosaxon
+					duration = 10950
+				}
+	    }
+	  }
+}
+
+MIE_Unification_4 = {
+	  slot = 4
+	  generic = no
+	  ai = yes
+	  potential = {
+	    tag = MIE
+	    NOT = { map_setup = map_setup_random }
+	  }
+		free_the_midlands_MIE = {
+	    icon = mission_rb_into_england
+	    required_missions = {}
+	    position = 1
+	    provinces_to_highlight = {
+	      OR = {
+	        area = east_midlands_area
+	      }
+	      OR = {
+	        NOT = { owned_by = ROOT }
+	      }
+	      has_discovered = ROOT
+	    }
+	    trigger = {
+	      east_midlands_area = {
+	        type = all
+	        country_or_non_sovereign_subject_holds = MIE
+	      }
+				overlord_of = EAA
+	    }
+	    effect = {
+				add_legitimacy = 10
+				add_mil_power = 100
+				add_casus_belli = {
+					target = EAA
+					type = cb_vassalize_mission
+					months = 360
+				}
+	    }
+	  }
+	  Submit_East_Anglia_MIE = {
+	    icon = mission_rb_rein_in_the_highland_clans
+	    required_missions = {
+				free_the_midlands_MIE
+			}
+	    position = 2
+	    provinces_to_highlight = {
+	      OR = {
+	        area = east_anglia_area
+	      }
+	      OR = {
+	        is_city = no
+	        NOT = { owned_by = ROOT }
+	      }
+	      has_discovered = ROOT
+	    }
+	    trigger = {
+	      east_anglia_area = {
+	        type = all
+	        country_or_non_sovereign_subject_holds = MIE
+	      }
+	    }
+	    effect = {
+				add_dip_power = 100
+	      add_country_modifier = {
+	        name = "improved_dip_reputation"
+	        duration = 5475
+	      }
+	    }
+	  }
+}
+
+MIE_Unification_5 = {
+	  slot = 5
+	  generic = no
+	  ai = yes
+	  potential = {
+	    tag = MIE
+			NOT = { map_setup = map_setup_random }
+	  }
+}
+
+Seaxe_Unification_1 = {
+		slot = 1
+		generic = no
+		ai = yes
+		potential = {
+			tag = SEA
+			NOT = { map_setup = map_setup_random }
+		}
+		assemble_great_host_sea = {
+			icon = mission_assemble_an_army
+			required_missions = {}
+			position = 1
+			provinces_to_highlight = {
+			}
+			trigger = {
+				army_size = 10
+			}
+			effect = {
+
+				add_country_modifier = {
+					name = "army_enthusiasm"
+					duration = 5475
+				}
+				236 = {
+					add_permanent_claim = SEA
+				}
+			}
+		}
+
+}
+
+Seaxe_Unification_2 = {
+		slot = 2
+		generic = no
+		ai = yes
+		potential = {
+			tag = SEA
+			NOT = { map_setup = map_setup_random }
+		}
+		the_city_of_lundenwic_sea = {
+			icon = mission_early_modern_university
+			required_missions = {
+				moving_eastwards_sea
+			}
+			position = 4
+			provinces_to_highlight = {
+			}
+			trigger = {
+				dip_power = 100
+				stability = 2
+				treasury = 100
+			}
+			effect = {
+				236 = {
+					move_capital_effect = yes
+					change_culture = seaxan
+					change_religion = ROOT
+					rename_capital = Lundenwic
+					change_province_name = Lundenwic
+					add_center_of_trade_level = 1
+				}
+			}
+		}
+}
+
+Seaxe_Unification_3 = {
+		slot = 3
+		generic = no
+		ai = yes
+		potential = {
+			tag = SEA
+			NOT = { map_setup = map_setup_random }
+		}
+		negociate_with_east_anglia_sea = {
+			icon = mission_alliances
+			required_missions = {}
+			position = 1
+			provinces_to_highlight = {
+			}
+			trigger = {
+				dip_power = 100
+				treasury = 100
+				reverse_has_opinion = {
+					who = EAA
+					value = 50
+				}
+			}
+			effect = {
+				create_alliance = EAA
+				add_dip_power = -100
+				add_treasury = -100
+				EAA = { add_treasury = 100 }
+			}
+		}
+		the_siege_of_lundinium_sea = {
+			icon = mission_cannons_firing
+			required_missions = {
+				deal_with_mercia_sea
+				negociate_with_east_anglia_sea
+				assemble_great_host_sea
+			}
+			position = 2
+			provinces_to_highlight = {
+			}
+			trigger = {
+				is_at_war = no
+			}
+			effect = {
+				contry_event = {
+					id = flavor_sea.1
+				}
+			}
+		}
+		moving_eastwards_sea = {
+			icon = mission_rb_unite_the_clans
+			required_missions = {
+				the_siege_of_lundinium_sea
+			}
+			position = 3
+			provinces_to_highlight = {
+			 province = 236
+			}
+			trigger = {
+				is_core = 236
+			}
+			effect = {
+				add_stability = 1
+				add_prestige = 15
+				add_years_of_income = 2
+				add_casus_belli = {
+					target = EAA
+					type = cb_vassalize_mission
+					months = 300
+				}
+			}
+		}
+		unifying_the_angleseaxan_sea = {
+			icon = mission_rb_unite_the_clans
+			required_missions = {
+				the_siege_of_lundinium_sea
+			}
+			position = 4
+			provinces_to_highlight = {
+			 province = 236
+			}
+			trigger = {
+				overlord_of = EAA
+			}
+			effect = {
+				add_dip_power = 100
+				east_midlands_area = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = SEA
+				}
+				add_casus_belli = {
+					target = MIE
+					casus_belli = cb_vassalize_mission
+					months = 300
+				}
+			}
+		}
+		Kingdom_of_Anglo_Seaxon_sea= {
+	    icon = mission_monarch_in_throne_room
+	    required_missions = {
+				unifying_the_angleseaxan_sea
+				the_city_of_lundenwic_sea
+			}
+	    position = 5
+			provinces_to_highlight = {
+				OR = {
+				 area = west_midlands_area
+				 province_id = 4375
+				 area = east_midlands_area
+				}
+			 NOT = { is_core = ROOT }
+			}
+	    trigger = {
+				west_midlands_area = {
+					type = all
+					is_core = ROOT
+				}
+				east_midlands_area = {
+					type = all
+					is_core = ROOT
+				}
+				4375 = {
+					is_core = ROOT
+				}
+	    }
+	    effect = {
+				add_legitimacy = 20
+				add_stability = 1
+				add_years_of_income = 2.5
+	      add_country_modifier = {
+					name = unified_the_anglosaxon
+					duration = 10950
+				}
+	    }
+	  }
+}
+
+Seaxe_Unification_4 = {
+		slot = 4
+		generic = no
+		ai = yes
+		potential = {
+			tag = SEA
+			NOT = { map_setup = map_setup_random }
+		}
+}
+
+Seaxe_Unification_5 = {
+		slot = 5
+		generic = no
+		ai = yes
+		potential = {
+			tag = SEA
+			NOT = { map_setup = map_setup_random }
+		}
+		deal_with_mercia_sea = {
+			icon = mission_war_chest
+			required_missions = {}
+			position = 1
+			provinces_to_highlight = {
+			}
+			trigger = {
+				Treasury = 200
+				adm_power = 100
+				dip_power = 100
+			}
+			effect = {
+				add_treasury = -200
+				add_dip_power = -100
+				add_adm_power = -100
+				MIE = { add_treasury = 200 }
+				add_truce_with = MIE
+			}
+		}
+}
+
+EAA_Unification_1 = {
+		slot = 1
+		generic = no
+		ai = yes
+		potential = {
+			tag = EAA
+			NOT = { map_setup = map_setup_random }
+		}
+}
+
+EAA_Unification_2 = {
+		slot = 2
+		generic = no
+		ai = yes
+		potential = {
+			tag = EAA
+			NOT = { map_setup = map_setup_random }
+		}
+
+	  Submit_Seaxe_eaa = {
+	    icon = mission_rb_conquer_the_highlands
+	    required_missions = {
+			}
+	    position = 1
+	    provinces_to_highlight = {
+	      OR = {
+	        province_id = 235
+	        province_id = 234
+	        province_id = 237
+	        province_id = 4371
+	      }
+	      AND = {
+	        NOT = { owned_by = SEA }
+	        NOT = { owned_by = ROOT }
+	      }
+	      has_discovered = ROOT
+	    }
+	    trigger = {
+	      owns_or_non_sovereign_subject_of = 234
+	      owns_or_non_sovereign_subject_of = 237
+	      owns_or_non_sovereign_subject_of = 235
+	      owns_or_non_sovereign_subject_of = 4371
+				overlord_of = SEA
+	    }
+	    effect = {
+				add_prestige = 15
+				add_country_modifier = {
+					name = support_monarch
+					duration = 7300
+				}
+	      236 = {
+					add_permanent_claim = ROOT
+				}
+	    }
+	  }
+		Submit_The_last_city_of_Romans_eaa = {
+	    icon = mission_rb_the_bank_of_scotland
+	    required_missions = {
+				Submit_Seaxe_eaa
+			}
+	    position = 2
+	    provinces_to_highlight = {
+	      province_id = 236
+	      OR = {
+	        is_city = no
+	        NOT = { owned_by = ROOT }
+	      }
+	      has_discovered = ROOT
+	    }
+	    trigger = {
+	      is_core = 236
+	    }
+	    effect = {
+				236 = {
+					move_capital_effect = yes
+					change_culture = angle
+					change_religion = ROOT
+					rename_capital = Lundenwic
+					change_province_name = Lundenwic
+				}
+	    }
+	  }
+		great_march_west_eaa = {
+	    icon = mission_rb_unite_the_clans
+	    required_missions = {
+				Submit_The_last_city_of_Romans_eaa
+			}
+	    position = 3
+	    provinces_to_highlight = {
+	    }
+	    trigger = {
+	      army_size = MIE
+				prestige = MIE
+	    }
+	    effect = {
+				add_country_modifier = {
+					name = "army_enthusiasm"
+					duration = 5475
+				}
+				add_casus_belli = {
+					target = MIE
+					type = cb_vassalize_mission
+					months = 360
+				}
+	    }
+	  }
+}
+
+EAA_Unification_3 = {
+		slot = 3
+		generic = no
+		ai = yes
+		potential = {
+			tag = EAA
+			NOT = { map_setup = map_setup_random }
+		}
+		Kingdom_of_Anglo_Seaxon_eaa= {
+	    icon = mission_monarch_in_throne_room
+	    required_missions = {
+				Submit_Mierce_eaa
+			}
+	    position = 5
+	    trigger = {
+				stability = 2
+				prestige = 50
+	    }
+	    effect = {
+				add_legitimacy = 20
+				add_stability = 1
+				add_years_of_income = 2.5
+	      add_country_modifier = {
+					name = unified_the_anglosaxon
+					duration = 10950
+				}
+	    }
+	  }
+}
+
+EAA_Unification_4 = {
+		slot = 4
+		generic = no
+		ai = yes
+		potential = {
+			tag = EAA
+			NOT = { map_setup = map_setup_random }
+		}
+		free_the_midlands_eaa = {
+	    icon = mission_rb_into_england
+	    required_missions = {}
+	    position = 1
+	    provinces_to_highlight = {
+	      OR = {
+	        area = east_midlands_area
+	      }
+	      OR = {
+	        NOT = { owned_by = ROOT }
+	      }
+	      has_discovered = ROOT
+	    }
+	    trigger = {
+	      west_midlands_area = {
+	        type = all
+	        country_or_non_sovereign_subject_holds = ROOT
+	      }
+				4375 = { country_or_non_sovereign_subject_holds = ROOT }
+				overlord_of = EAA
+	    }
+	    effect = {
+				add_legitimacy = 10
+				add_mil_power = 100
+				add_casus_belli = {
+					target = MIE
+					type = cb_vassalize_mission
+					months = 360
+				}
+	    }
+	  }
+	  Submit_Mierce_eaa = {
+	    icon = mission_rb_rein_in_the_highland_clans
+	    required_missions = {
+				free_the_midlands_eaa
+				great_march_west_eaa
+			}
+	    position = 4
+	    provinces_to_highlight = {
+	      OR = {
+	        area = west_midlands_area
+					province_id = 4375
+	      }
+	      OR = {
+	        is_city = no
+	        NOT = { owned_by = ROOT }
+	      }
+	      has_discovered = ROOT
+	    }
+	    trigger = {
+	      east_anglia_area = {
+	        type = all
+	        country_or_non_sovereign_subject_holds = EAA
+	      }
+	    }
+	    effect = {
+				add_dip_power = 100
+	      add_country_modifier = {
+	        name = "improved_dip_reputation"
+	        duration = 5475
+	      }
+	    }
+	  }
+}
+
+EAA_Unification_5 = {
+		slot = 5
+		generic = no
+		ai = yes
+		potential = {
+			tag = EAA
+			NOT = { map_setup = map_setup_random }
+		}
+}

@@ -62,9 +62,14 @@ country_event = {
 		add_imperial_influence = -20
 	}
 
-	option = {
+	option = {#create the canal
 		ai_chance = {
-			factor = 1
+			factor = 10
+		}
+		trigger = {
+				2315 = {
+					is_part_of_hre = yes
+				}
 		}
 		name = new_trade_roads.2.b
 		every_country = {
@@ -83,12 +88,8 @@ country_event = {
 		}
 	}
 
-	option = { #create the canal
-		trigger = {
-	      2315 = {
-	        is_part_of_hre = yes
-	      }
-		}
+	option = {
+
 		ai_chance = {
 			factor = 1
 		}

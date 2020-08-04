@@ -908,17 +908,11 @@ incident_trade_competitor = {
 	}
 
 	0 = { #do nothing
-		factor = 3
+		factor = 2
 	}
 
   1 = { #faster road
-    factor = 3
-    modifier = {
-      factor = 100
-      OR = {
-         has_port = yes
-         }
-    }
+    factor = 5
   }
 
 	2 = { #secure a spice road

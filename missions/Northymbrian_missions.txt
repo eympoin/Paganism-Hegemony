@@ -309,15 +309,9 @@ northymbria_3 = {
         duration = 3650
       }
       home_counties_area = {
-        limit = {
-          NOT = { owned_by = ROOT }
-        }
         add_permanent_claim = ROOT
       }
       234 = {
-        limit = {
-          NOT = { owned_by = ROOT }
-        }
         add_permanent_claim = ROOT
       }
     }
@@ -407,6 +401,34 @@ northymbria_4 = {
       tag = BET
     }
   }
+  annex_the_isles_nrt = {
+    icon = mission_rb_conquer_the_isles
+    required_missions = {
+      nordic_alliances_nrt
+    }
+    position = 2
+    provinces_to_highlight = {
+      province_id = 1284
+      province_id = 370
+      province_id = 371
+      NOT = { is_core = ROOT }
+    }
+    trigger = {
+      owns = 1284
+      owns = 370
+      owns = 371
+    }
+    effect = {
+      add_sailors = 2000
+      add_manpower = 5
+      western_norway = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
   the_riches_of_the_romans_nrt = {
     icon = mission_rb_renovate_oxbridge
     required_missions = {
@@ -448,30 +470,141 @@ northymbria_5 = {
       tag = BET
     }
   }
-  take_iceland = {
-    icon = mission_build_up_to_force_limit
+  nordic_alliances_nrt = {
+    icon = mission_have_two_subjects
     required_missions = { }
     position = 1
     provinces_to_highlight = {
-      area = subarctic_islands_area
-      OR = {
-        is_city = no
-        NOT = { owned_by = ROOT }
-      }
-      has_discovered = ROOT
     }
     trigger = {
-      subarctic_islands_area = {
-        type = all
-        owned_by = ROOT
+      treasury = 200
+      OR = {
+        num_of_allies = 3
+        num_of_subjects = 3
       }
     }
 
     effect = {
       add_prestige = 10
+      capital_scope = {
+        add_province_modifier = {
+          name = great_hall_nrt
+          duration = -1
+        }
+      }
+    }
+  }
+
+  meet_with_the_franks_nrt = {
+    icon = mission_alliances
+    required_missions = {
+      nordic_alliances_nrt
+    }
+    position = 3
+    provinces_to_highlight = {
+    }
+    trigger = {
+      mil_power = 100
+      adm_power = 100
+      manpower = 5
+      any_ally = {
+        culture_group = frankish
+        has_opinion = {
+          who = ROOT
+          value = 150
+        }
+      }
+    }
+
+    effect = {
+      add_mil_power = -100
+      add_adm_power = -100
+      add_manpower = -5
       add_country_modifier = {
-        name = "the_unknown_frontier"
-        duration = 5475
+        name = germano_norse_cooperation_nrt
+        duration = 10950
+      }
+      every_ally = {
+        limit = {
+          culture_group = frankish
+          has_opinion = {
+            who = ROOT
+            value = 150
+          }
+        }
+        add_country_modifier = {
+          name = germano_norse_cooperation_frk
+          duration = 10950
+        }
+      }
+    }
+  }
+
+  plunder_the_romans_nrt = {
+    icon = mission_war_chest
+    required_missions = {
+      meet_with_the_franks_nrt
+      the_riches_of_the_romans_nrt
+    }
+    position = 4
+    provinces_to_highlight = {
+    }
+    trigger = {
+      navy_size = AQI
+      navy_size = GAL
+      navy_size = LUS
+      navy_size = BAE
+    }
+
+    effect = {
+      set_country_flag = great_plunderer_nrt
+      add_prestige = 20
+      add_country_modifier = {
+        name = thriving_arms_industry
+        duration = 3650
+      }
+      every_province = {
+        limit = {
+          OR = {
+            region = france_region
+            region = iberia_region
+            area = northern_morocco_area
+          }
+          has_port = yes
+          development = 18
+          culture_group = neo-roman
+        }
+        add_claim = ROOT
+      }
+    }
+  }
+
+  the_great_city_of_york_nrt = {
+    icon = mission_rb_the_bank_of_scotland
+    required_missions = {
+      plunder_the_romans_nrt
+    }
+    position = 4
+    provinces_to_highlight = {
+    }
+    trigger = {
+      245 = {
+        development = 40
+      }
+    }
+
+    effect = {
+      clr_country_flag = great_plunderer_nrt
+      add_prestige = 20
+      add_stability = 1
+      245 = {
+        add_province_modifier = {
+          name = local_popularity
+          duration = 10950
+        }
+      }
+      yorkshire_area = {
+        add_prosperity = 100
       }
     }
   }

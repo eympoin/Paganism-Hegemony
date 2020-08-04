@@ -1,0 +1,44 @@
+namespace = flavor_sea
+
+country_event = {
+  id = flavor_sea.1
+  title = flavor_sea.1.t
+  desc = flavor_sea.1.d
+  picture = BATTLE_eventPicture
+
+  is_triggered_only = yes
+
+  option = {#Betrayal
+    name = flavor_sea.1.a
+    ai_chance = { factor = 70 }
+    add_dip_power = -100
+    add_legitimacy = -20
+    add_prestige = -10
+    declare_war_with_cb = {
+      who = LDN
+      casus_belli = cb_conquest
+    }
+    declare_war_with_cb = {
+      who = EAA
+      casus_belli = cb_vassalize_mission
+    }
+    EAA = {
+      declare_war_with_cb = {
+        who = LDN
+        casus_belli = cb_conquest
+      }
+    }
+  }
+
+  option = {#Loyal
+   name = flavor_sea.1.b
+   ai_chance = { factor = 30 }
+   declare_war_with_cb = {
+     who = LDN
+     casus_belli = cb_conquest
+   }
+   EAA = {
+    join_all_offensive_wars_of = ROOT
+   }
+  }
+}

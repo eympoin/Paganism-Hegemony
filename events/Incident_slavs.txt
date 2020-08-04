@@ -93,7 +93,7 @@ country_event = {
     }
     name = slavic_uprising.2.b
     emperor = {
-      add_treasury = -500
+      add_years_of_income = -2
     }
     every_country = {
       limit = {

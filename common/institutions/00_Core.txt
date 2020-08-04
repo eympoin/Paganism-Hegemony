@@ -1042,7 +1042,7 @@ printing_press = {
 			}
 		}
 		modifier = {
-			factor = 1
+			factor = 0.2
 			scale = yes
 			potential = {
 			OR = {

@@ -9,7 +9,13 @@ unite_the_franks = {
 			tag = FRV
 			tag = FRR
 			tag = WFR
-			tag = FRK
+			AND = {
+				tag = FRK
+				NOT = {was_tag = LOT}
+				NOT = {was_tag = FKN}
+				NOT = {was_tag = ALM}
+				NOT = {was_tag = BAV}
+			}
 		}
 		NOT = { map_setup = map_setup_random }
 	}

@@ -3,8 +3,7 @@ add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
 primary_culture = dutch
-add_accepted_culture = flemish
-religion = catholic
+religion = germanic
 capital = 4383 #Haag
 
 #1477.1.5 = {

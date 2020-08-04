@@ -2,12 +2,14 @@ lot_sea = {
 	slot = 1
 	generic = no
 	ai = yes
-	potential_on_load = {
-		has_dlc = "Emperor"
-	}
+
 	potential = {
 		OR = {
 			tag = LOT
+			AND = {
+				tag = FRK
+				was_tag = LOT
+			}
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -28,44 +30,45 @@ lot_sea = {
 				province_id = 4382
 				area = holland_area
 			}
-			NOT = { owned_by = ROOT }
+			NOT = { country_or_non_sovereign_subject_holds  = ROOT }
 		}
 
 		trigger = {
 			96 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds  = ROOT
 			}
 			95 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds  = ROOT
 			}
 			4770 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds  = ROOT
 			}
 			99 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds  = ROOT
 			}
 			4381 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds  = ROOT
 			}
 			100 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds  = ROOT
 			}
 			4382 = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds  = ROOT
 			}
 			holland_area = {
 				type = all
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds  = ROOT
 			}
 		}
 
 		effect = {
-
+			add_dip_power = 100
+			add_accepted_culture = dutch
 		}
 	}
 
 	vassalize_EFR = {
-		icon = mission_have_two_subjects
+		icon = mission_alliances
 		required_missions = { batavian_vassal }
 
 		provinces_to_highlight = {
@@ -78,13 +81,17 @@ lot_sea = {
 		}
 
 		effect = {
-
+			add_dip_power = 100
+			add_country_modifier = {
+				name = influential_diplomacy
+				duration = 3650
+			}
 		}
 	}
 
 	invasion_fleet = {
-		icon = mission_have_two_subjects
-		required_missions = { vassalize_EFR }
+		icon = mission_establish_high_seas_navy
+		required_missions = { vassalize_EFR calais}
 
 		provinces_to_highlight = {
 
@@ -104,11 +111,22 @@ lot_sea = {
 			}
 		}
 		effect = {
+			235 = {
+				add_permanent_claim = ROOT
+			}
+			4371 = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = naval_enthusiasm_mission
+				duration = 7300
+			}
 		}
 	}
 
+
 	english_foothold = {
-		icon = mission_have_two_subjects
+		icon = mission_galleys_in_port
 		required_missions = {invasion_fleet calais}
 
 		provinces_to_highlight = {
@@ -130,12 +148,37 @@ lot_sea = {
 		}
 
 		effect = {
-
+			add_mil_power = 100
+			add_army_tradition = 10
+			home_counties_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_anglia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_midlands_area_name = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_midlands_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
 	lotharingian_britannia = {
-		icon = mission_have_two_subjects
+		icon = mission_invade_island
 		required_missions = {english_foothold  }
 
 		provinces_to_highlight = {
@@ -150,26 +193,43 @@ lot_sea = {
 		}
 
 		trigger = {
-		home_counties_area = {
-			type = all
-			owned_by = ROOT
-		}
-		east_anglia_area = {
-			type = all
-			owned_by = ROOT
-		}
-		east_midlands_area = {
-			type = all
-			owned_by = ROOT
-		}
-		west_midlands_area = {
-			type = all
-			owned_by = ROOT
-		}
+			home_counties_area = {
+				type = all
+				owned_by = ROOT
+			}
+			east_anglia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			east_midlands_area = {
+				type = all
+				owned_by = ROOT
+			}
+			west_midlands_area = {
+				type = all
+				owned_by = ROOT
+			}
 		}
 
 		effect = {
-
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 20
+			}
+			british_isles_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			950 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = 7300
+					power = 50
+					key = attract_american_trade
+				}
+			}
 		}
 	}
 }
@@ -182,6 +242,10 @@ lot_2 = {
 	potential = {
 		OR = {
 			tag = LOT
+			AND = {
+				tag = FRK
+				was_tag = LOT
+			}
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -189,7 +253,7 @@ lot_2 = {
 
 	rhenish_trade = {
 		position = 2
-		icon = mission_have_two_subjects
+		icon = mission_great_trading_houses
 		required_missions = { batavian_vassal }
 
 		provinces_to_highlight = {
@@ -197,47 +261,101 @@ lot_2 = {
 		}
 
 		trigger = {
+			75 = { #Alsace
+				trade_share = {
+					country = LOT
+					share = 75
+				}
+			}
 
 		}
 
 		effect = {
-
+			add_years_of_income = 1
+			97 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 30
+					key = rhenish_trade
+				}
+			}
+			45 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = -1
+					power = 30
+					key = rhenish_trade
+				}
+			}
 		}
 	}
 
 	calais = {
 		position = 3
-		icon = mission_have_two_subjects
+		icon = mission_rb_conquer_the_isles
 		required_missions = { flanders }
 
 		provinces_to_highlight = {
-
+			area = picardy_area
+			NOT = { owned_by = ROOT }
 		}
 
 		trigger = {
-
+			picardy_area = {
+				type = all
+				owned_by = ROOT
+			}
 		}
 
 		effect = {
-
+			add_dip_power = 100
+			add_country_modifier = {
+				name = navy_emphasis
+				duration = 3650
+			}
 		}
 	}
 
 	finish_gallia = {
 		position = 6
-		icon = mission_have_two_subjects
+		icon = centralize_france
 		required_missions = { united_franks }
 
 		provinces_to_highlight = {
-
+			region = france_region
 		}
 
 		trigger = {
-
+			france_region = {
+				type = all
+				owned_by = ROOT
+			}
+			NOT = { owned_by = ROOT }
 		}
 
 		effect = {
-
+			add_adm_power = 100
+			add_mil_power = 100
+			add_dip_power = 100
+			catalonia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			aragon_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			basque_country = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
@@ -252,6 +370,10 @@ lot_3 = {
 	potential = {
 		OR = {
 			tag = LOT
+			AND = {
+				tag = FRK
+				was_tag = LOT
+			}
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -259,7 +381,7 @@ lot_3 = {
 
 	alliance_franks = {
 		position = 1
-		icon = mission_have_two_subjects
+		icon = mission_alliances
 		required_missions = {  }
 
 		provinces_to_highlight = {
@@ -267,101 +389,339 @@ lot_3 = {
 		}
 
 		trigger = {
-
+			OR = {
+				alliance_with = FRP
+				alliance_with = FRO
+				alliance_with = FRR
+				alliance_with = FRV
+			}
+			OR = {
+				FRP = {
+					has_opinion = {
+						who = ROOT
+						value = 180
+					}
+				}
+				FRO = {
+					has_opinion = {
+						who = ROOT
+						value = 180
+					}
+				}
+				FRV = {
+					has_opinion = {
+						who = ROOT
+						value = 180
+					}
+				}
+				FRR = {
+					has_opinion = {
+						who = ROOT
+						value = 180
+					}
+				}
+			}
 		}
 
 		effect = {
-
+			add_dip_power = 100
+			flanders_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			brabant_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			wallonia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_rhineland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			north_brabant_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
 	flanders = {
 		position = 2
-		icon = mission_have_two_subjects
+		icon = mission_assemble_an_army
 		required_missions = { alliance_franks }
 
 		provinces_to_highlight = {
-
+			OR = {
+				area = flanders_area
+				area = brabant_area
+				area = wallonia_area
+				area = lower_rhineland_area
+				area = north_brabant_area
+			}
+			NOT = { owned_by = ROOT }
 		}
 
 		trigger = {
-
+			flanders_area = {
+				type = all
+				owned_by = ROOT
+			}
+			brabant_area = {
+				type = all
+				owned_by = ROOT
+			}
+			wallonia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			lower_rhineland_area = {
+				type = all
+				owned_by = ROOT
+			}
+			north_brabant_area = {
+				type = all
+				owned_by = ROOT
+			}
 		}
 
 		effect = {
-
+		add_mil_power = 100
+		add_prestige = 10
+		champagne_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		ile_de_france_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
 		}
 	}
 
 	heart_of_wfr = {
 		position = 3
-		icon = mission_have_two_subjects
+		icon = mission_conquer_50_development
 		required_missions = { flanders }
 
 		provinces_to_highlight = {
-
+			OR = {
+				area = champagne_area
+				area = ile_de_france_area
+			}
+			NOT = { owned_by = ROOT }
 		}
 
 		trigger = {
-
+			champagne_area = {
+				type = all
+				owned_by = ROOT
+			}
+			ile_de_france_area = {
+				type = all
+				owned_by = ROOT
+			}
+			NOT = { owned_by = ROOT }
 		}
 
 		effect = {
-
+			add_adm_power = 100
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			normandy_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			brittany_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			loire_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			orleans_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
 	finish_wfr = {
 		position = 4
-		icon = mission_have_two_subjects
+		icon = mission_build_up_to_force_limit
 		required_missions = { heart_of_wfr }
 
 		provinces_to_highlight = {
-
+			OR = {
+				area = normandy_area
+				area = brittany_area
+				area = loire_area
+				area = orleans_area
+			}
+			NOT = { owned_by = ROOT }
 		}
 
 		trigger = {
+			normandy_area = {
+				type = all
+				owned_by = ROOT
+			}
+			brittany_area = {
+				type = all
+				owned_by = ROOT
+			}
+			loire_area = {
+				type = all
+				owned_by = ROOT
+			}
+			orleans_area = {
+				type = all
+				owned_by = ROOT
+			}
 
 		}
 
 		effect = {
-
+			add_prestige = 10
+			add_legitimacy = 20
+			add_country_modifier = {
+				name = hegemonic_ambition
+				duration = 7300
+			}
+			poitou_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bourgogne_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_burgundy_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
 	united_franks = {
 		position = 5
-		icon = mission_have_two_subjects
-		required_missions = { heart_of_wfr reform_efr }
+		icon = king_of_the_franks
+		required_missions = { finish_wfr eliminate_saxon_threat }
 
 		provinces_to_highlight = {
-
 		}
 
 		trigger = {
-
+			tag = FRK
 		}
 
 		effect = {
+		capital_scope = {
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+		add_dip_power = 100
+		add_adm_power = 100
+		add_mil_power = 100
 
+		add_country_modifier = {
+			name = the_only_king
+			duration = -1
+		}
+			add_country_modifier = {
+				name = imperial_ambition
+				duration = -1
+			}
 		}
 	}
 
 	lombards = {
 		position = 6
-		icon = mission_have_two_subjects
+		icon = complete_the_risorgimento
 		required_missions = { united_franks }
 
 		provinces_to_highlight = {
-
+			OR = {
+				area = venetia_area
+				area = lombardy_area
+				area = po_valley_area
+				area = piedmont_area
+				area = emilia_romagna_area
+				area = liguria_area
+			}
+			NOT = { owned_by = ROOT }
 		}
 
 		trigger = {
-
+			venetia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			lombardy_area = {
+				type = all
+				owned_by = ROOT
+			}
+			piedmont_area = {
+				type = all
+				owned_by = ROOT
+			}
+			emilia_romagna_area = {
+				type = all
+				owned_by = ROOT
+			}
+			liguria_area = {
+				type = all
+				owned_by = ROOT
+			}
 		}
 
 		effect = {
-
+		add_accepted_culture = lombard
+		italy_region = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		add_estate_loyalty = {
+	    estate = estate_nobles
+	    loyalty = 10
+			}
 		}
 	}
 }
@@ -374,6 +734,10 @@ lot_4 = {
 	potential = {
 		OR = {
 			tag = LOT
+			AND = {
+				tag = FRK
+				was_tag = LOT
+			}
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -381,73 +745,146 @@ lot_4 = {
 
 	reconquest_efr = {
 		position = 1
-		icon = mission_have_two_subjects
+		icon = mission_rb_unite_the_clans
 		required_missions = {  }
 
 		provinces_to_highlight = {
-
+			OR = {
+				area = hesse_area
+				province_id = 82
+				province_id = 2972
+			}
+			NOT = { owned_by = ROOT }
 		}
 
 		trigger = {
-
+			hesse_area = {
+				type = all
+				owned_by = ROOT
+			}
+			82 = {
+				owned_by = ROOT
+			}
+			2972 = {
+				owned_by = ROOT
+			}
 		}
 
 		effect = {
-
+			 country_event = { id = flavor_lot.1 }
 		}
 	}
 
 	conquest_alamann = {
 		position = 2
-		icon = mission_have_two_subjects
+		icon = mission_hanseatic_city
 		required_missions = { reconquest_efr }
 
 		provinces_to_highlight = {
+			OR = {
+				area = lower_swabia_area
+				area = upper_swabia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds  = ROOT }
 
 		}
 
 		trigger = {
-
+			lower_swabia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds  = ROOT
+			}
+			upper_swabia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds  = ROOT
+			}
 		}
 
 		effect = {
-
+			add_dip_power = 100
+			switzerland_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
 	fate_bavaria = {
 		position = 3
-		icon = mission_have_two_subjects
+		icon = expand_the_terraferma
 		required_missions = { conquest_alamann subjugate_fkn}
 
 		provinces_to_highlight = {
-
+			OR = {
+				area = lower_bavaria_area
+				area = upper_bavaria_area
+				area = east_bavaria_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds  = ROOT }
 		}
 
 		trigger = {
-
+			lower_bavaria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds  = ROOT
+			}
+			east_bavaria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds  = ROOT
+			}
+			upper_bavaria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds  = ROOT
+			}
 		}
 
 		effect = {
-
+			add_dip_power = 100
+			bohemia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			erzgebirge_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			moravia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
-	reform_efr = {
+	eliminate_saxon_threat = {
 		position = 4
-		icon = mission_have_two_subjects
+		icon = reclaim_our_ancestral_lands
 		required_missions = { fate_bavaria }
 
 		provinces_to_highlight = {
-
+			owned_by = SAX
 		}
 
 		trigger = {
-
+			NOT = {exists = SAX}
 		}
 
 		effect = {
-
+		add_prestige = 10
+		add_years_of_income = 1
+		north_german_region = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
 		}
 	}
 
@@ -455,19 +892,37 @@ lot_4 = {
 
 	rest_germany = {
 		position = 6
-		icon = mission_have_two_subjects
+		icon = mission_unite_home_region
 		required_missions = { united_franks }
 
 		provinces_to_highlight = {
+			OR = {
+				region = north_german_region
+				region = south_german_region
+			}
 
 		}
 
 		trigger = {
-
+			north_german_region = {
+				type = all
+				owned_by = ROOT
+			}
+			south_german_region = {
+				type = all
+				owned_by = ROOT
+			}
 		}
 
 		effect = {
-
+		prestige = 10
+		add_mil_power = 100
+		scandinavia_region = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
 		}
 	}
 }
@@ -480,6 +935,10 @@ lot_5 = {
 	potential = {
 		OR = {
 			tag = LOT
+			AND = {
+				tag = FRK
+				was_tag = LOT
+			}
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -492,21 +951,41 @@ lot_5 = {
 		required_missions = { reconquest_efr }
 
 		provinces_to_highlight = {
-
+			OR = {
+				area = franconia_area
+				area = upper_franconia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds  = ROOT }
 		}
 
 		trigger = {
-
+			franconia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			upper_franconia_area = {
+				type = all
+				owned_by = ROOT
+			}
 		}
 
 		effect = {
-
+		add_country_modifier = {
+			name = nurnberg_throne
+			duration = 7300
+		}
+		thuringia_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
 		}
 	}
 
 	lorraine_mines = {
 		position = 3
-		icon = mission_have_two_subjects
+		icon = mission_war_chest
 		required_missions = {  }
 
 		provinces_to_highlight = {
@@ -514,17 +993,37 @@ lot_5 = {
 		}
 
 		trigger = {
-
+			production_leader = {
+				trade_goods = iron
+			}
+			trading_bonus = {
+				trade_goods = iron
+				value = yes
+			}
 		}
 
 		effect = {
-
+		add_years_of_owned_provinces_production_income = {
+    years = 10
+    trigger = {
+        OR = {
+            trade_goods = iron
+        }
+    }
+    custom_tooltip = MONOPOLY_INCOME_IRON_DESC
+		}
+		change_price = {
+			trade_goods = iron
+			key = lorraine_iron
+			value = 0.25
+			duration = 7300
+		}
 		}
 	}
 
 	rhenish_industry = {
 		position = 4
-		icon = mission_have_two_subjects
+		icon = industrialized_rhineland
 		required_missions = { lorraine_mines }
 
 		provinces_to_highlight = {
@@ -532,11 +1031,21 @@ lot_5 = {
 		}
 
 		trigger = {
-
+			production_leader = {
+				trade_goods = coal
+			}
+			trading_bonus = {
+				trade_goods = coal
+				value = yes
+			}
 		}
 
 		effect = {
-
+			add_country_modifier = {
+			add_years_of_income = 1.5
+				name = lotharingian_industry
+				duration = -1
+			}
 		}
 	}
 

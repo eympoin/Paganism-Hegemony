@@ -1,8 +1,8 @@
 government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = lingerian
-add_accepted_culture = rhenan
-add_accepted_culture = salian
+add_accepted_culture = burgond
+add_accepted_culture = aquitain
 religion = germanic
 technology_group = western
 capital = 184 

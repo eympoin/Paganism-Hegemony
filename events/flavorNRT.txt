@@ -49,7 +49,8 @@ country_event = {
 
 
 #Cultural change assimilation
-country_event = {
+
+country_event = {#Scottish
   id = flavor_nrt.2
   title = flavor_nrt.2.t
   desc = flavor_nrt.2.d
@@ -64,9 +65,438 @@ country_event = {
     any_owned_province = {
       religion = norse_pagan_reformed
       OR = {
-        culture_group = gaelic
+        culture = highlands_scottish
+        culture = scottish
+      }
+      NOT = { culture_group = scandinavian }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 7
+  }
+
+  option = {
+    name = flavor_nrt.3.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+        religion = norse_pagan_reformed
+        OR = {
+          culture = highlands_scottish
+          culture = scottish
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      random_list = {
+        35 = {
+          change_culture = northymbrian
+          random_country = {
+            limit = {
+              any_owned_province = {
+                culture = norwegian
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+            }
+            random_owned_province = {
+              limit = {
+                culture = norwegian
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+              add_province_modifier = {
+                name = nrt_migration_affect
+                duration = 7300
+              }
+            }
+            add_opinion = {
+              who = ROOT
+              modifier = opinion_draining_people_nrt
+            }
+          }
+        }
+        35 = {
+          change_culture = northymbrian
+          random_country = {
+            limit = {
+              any_owned_province = {
+                culture = swedish
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+            }
+            random_owned_province = {
+              limit = {
+                culture = swedish
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+              add_province_modifier = {
+                name = nrt_migration_affect
+                duration = 7300
+              }
+            }
+            add_opinion = {
+              who = ROOT
+              modifier = opinion_draining_people_nrt
+            }
+          }
+        }
+        20 = {
+          change_culture = northymbrian
+          random_country = {
+            limit = {
+              any_owned_province = {
+                culture = danish
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+            }
+            random_owned_province = {
+              limit = {
+                culture = danish
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+              add_province_modifier = {
+                name = nrt_migration_affect
+                duration = 7300
+              }
+            }
+            add_opinion = {
+              who = ROOT
+              modifier = opinion_draining_people_nrt
+            }
+          }
+        }
+        10 = {
+          change_culture = northymbrian
+          random_country = {
+            limit = {
+              any_owned_province = {
+                culture = "baltic-norse"
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+            }
+            random_owned_province = {
+              limit = {
+                culture = "baltic-norse"
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+              add_province_modifier = {
+                name = nrt_migration_affect
+                duration = 7300
+              }
+            }
+            add_opinion = {
+              who = ROOT
+              modifier = opinion_draining_people_nrt
+            }
+          }
+        }
+      }
+    }
+  }
+}
+country_event = {#Irish
+  id = flavor_nrt.22
+  title = flavor_nrt.2.t
+  desc = flavor_nrt.2.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      tag = NRT
+      tag = BET
+    }
+    has_country_modifier = nrt_assimilation
+    any_owned_province = {
+      religion = norse_pagan_reformed
+      culture = irish
+      NOT = { culture_group = scandinavian }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 7
+  }
+
+  option = {
+    name = flavor_nrt.3.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+        religion = norse_pagan_reformed
+        culture = irish
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      random_list = {
+        35 = {
+          change_culture = northymbrian
+          random_country = {
+            limit = {
+              any_owned_province = {
+                culture = norwegian
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+            }
+            random_owned_province = {
+              limit = {
+                culture = norwegian
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+              add_province_modifier = {
+                name = nrt_migration_affect
+                duration = 7300
+              }
+            }
+            add_opinion = {
+              who = ROOT
+              modifier = opinion_draining_people_nrt
+            }
+          }
+        }
+        35 = {
+          change_culture = northymbrian
+          random_country = {
+            limit = {
+              any_owned_province = {
+                culture = swedish
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+            }
+            random_owned_province = {
+              limit = {
+                culture = swedish
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+              add_province_modifier = {
+                name = nrt_migration_affect
+                duration = 7300
+              }
+            }
+            add_opinion = {
+              who = ROOT
+              modifier = opinion_draining_people_nrt
+            }
+          }
+        }
+        20 = {
+          change_culture = northymbrian
+          random_country = {
+            limit = {
+              any_owned_province = {
+                culture = danish
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+            }
+            random_owned_province = {
+              limit = {
+                culture = danish
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+              add_province_modifier = {
+                name = nrt_migration_affect
+                duration = 7300
+              }
+            }
+            add_opinion = {
+              who = ROOT
+              modifier = opinion_draining_people_nrt
+            }
+          }
+        }
+        10 = {
+          change_culture = northymbrian
+          random_country = {
+            limit = {
+              any_owned_province = {
+                culture = "baltic-norse"
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+            }
+            random_owned_province = {
+              limit = {
+                culture = "baltic-norse"
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+              add_province_modifier = {
+                name = nrt_migration_affect
+                duration = 7300
+              }
+            }
+            add_opinion = {
+              who = ROOT
+              modifier = opinion_draining_people_nrt
+            }
+          }
+        }
+      }
+    }
+  }
+}
+country_event = {#Anglo-saxon
+  id = flavor_nrt.23
+  title = flavor_nrt.2.t
+  desc = flavor_nrt.2.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      tag = NRT
+      tag = BET
+    }
+    has_country_modifier = nrt_assimilation
+    any_owned_province = {
+      religion = norse_pagan_reformed
+      OR = {
         culture = angle
         culture = seaxan
+      }
+      NOT = { culture_group = scandinavian }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 7
+  }
+
+  option = {
+    name = flavor_nrt.3.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+        religion = norse_pagan_reformed
+        OR = {
+          culture = angle
+          culture = seaxan
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      random_list = {
+        35 = {
+          change_culture = northymbrian
+          random_country = {
+            limit = {
+              any_owned_province = {
+                culture = norwegian
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+            }
+            random_owned_province = {
+              limit = {
+                culture = norwegian
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+              add_province_modifier = {
+                name = nrt_migration_affect
+                duration = 7300
+              }
+            }
+            add_opinion = {
+              who = ROOT
+              modifier = opinion_draining_people_nrt
+            }
+          }
+        }
+        35 = {
+          change_culture = northymbrian
+          random_country = {
+            limit = {
+              any_owned_province = {
+                culture = swedish
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+            }
+            random_owned_province = {
+              limit = {
+                culture = swedish
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+              add_province_modifier = {
+                name = nrt_migration_affect
+                duration = 7300
+              }
+            }
+            add_opinion = {
+              who = ROOT
+              modifier = opinion_draining_people_nrt
+            }
+          }
+        }
+        20 = {
+          change_culture = northymbrian
+          random_country = {
+            limit = {
+              any_owned_province = {
+                culture = danish
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+            }
+            random_owned_province = {
+              limit = {
+                culture = danish
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+              add_province_modifier = {
+                name = nrt_migration_affect
+                duration = 7300
+              }
+            }
+            add_opinion = {
+              who = ROOT
+              modifier = opinion_draining_people_nrt
+            }
+          }
+        }
+        10 = {
+          change_culture = northymbrian
+          random_country = {
+            limit = {
+              any_owned_province = {
+                culture = "baltic-norse"
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+            }
+            random_owned_province = {
+              limit = {
+                culture = "baltic-norse"
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+              add_province_modifier = {
+                name = nrt_migration_affect
+                duration = 7300
+              }
+            }
+            add_opinion = {
+              who = ROOT
+              modifier = opinion_draining_people_nrt
+            }
+          }
+        }
+      }
+    }
+  }
+}
+country_event = {#Brittanian
+  id = flavor_nrt.24
+  title = flavor_nrt.2.t
+  desc = flavor_nrt.2.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      tag = NRT
+      tag = BET
+    }
+    has_country_modifier = nrt_assimilation
+    any_owned_province = {
+      religion = norse_pagan_reformed
+      OR = {
         culture = britannian
         culture_group = britannian_group
       }
@@ -87,11 +517,156 @@ country_event = {
       limit = {
         religion = norse_pagan_reformed
         OR = {
-          culture_group = gaelic
-          culture = angle
-          culture = seaxan
           culture = britannian
           culture_group = britannian_group
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      random_list = {
+        35 = {
+          change_culture = northymbrian
+          random_country = {
+            limit = {
+              any_owned_province = {
+                culture = norwegian
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+            }
+            random_owned_province = {
+              limit = {
+                culture = norwegian
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+              add_province_modifier = {
+                name = nrt_migration_affect
+                duration = 7300
+              }
+            }
+            add_opinion = {
+              who = ROOT
+              modifier = opinion_draining_people_nrt
+            }
+          }
+        }
+        35 = {
+          change_culture = northymbrian
+          random_country = {
+            limit = {
+              any_owned_province = {
+                culture = swedish
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+            }
+            random_owned_province = {
+              limit = {
+                culture = swedish
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+              add_province_modifier = {
+                name = nrt_migration_affect
+                duration = 7300
+              }
+            }
+            add_opinion = {
+              who = ROOT
+              modifier = opinion_draining_people_nrt
+            }
+          }
+        }
+        20 = {
+          change_culture = northymbrian
+          random_country = {
+            limit = {
+              any_owned_province = {
+                culture = danish
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+            }
+            random_owned_province = {
+              limit = {
+                culture = danish
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+              add_province_modifier = {
+                name = nrt_migration_affect
+                duration = 7300
+              }
+            }
+            add_opinion = {
+              who = ROOT
+              modifier = opinion_draining_people_nrt
+            }
+          }
+        }
+        10 = {
+          change_culture = northymbrian
+          random_country = {
+            limit = {
+              any_owned_province = {
+                culture = "baltic-norse"
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+            }
+            random_owned_province = {
+              limit = {
+                culture = "baltic-norse"
+                NOT = { has_province_modifier = nrt_migration_affect }
+              }
+              add_province_modifier = {
+                name = nrt_migration_affect
+                duration = 7300
+              }
+            }
+            add_opinion = {
+              who = ROOT
+              modifier = opinion_draining_people_nrt
+            }
+          }
+        }
+      }
+    }
+  }
+}
+country_event = {#Welsh/breton/Cornish
+  id = flavor_nrt.25
+  title = flavor_nrt.2.t
+  desc = flavor_nrt.2.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      tag = NRT
+      tag = BET
+    }
+    has_country_modifier = nrt_assimilation
+    any_owned_province = {
+      religion = norse_pagan_reformed
+      OR = {
+        culture = welsh
+        culture = breton
+        culture = cornish
+      }
+      NOT = { culture_group = scandinavian }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 7
+  }
+
+  option = {
+    name = flavor_nrt.3.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+        religion = norse_pagan_reformed
+        OR = {
+          culture = welsh
+          culture = breton
+          culture = cornish
         }
         NOT = { nationalism	= 1 }
         is_core = ROOT
@@ -230,7 +805,7 @@ country_event = {
   }
 
   mean_time_to_happen = {
-    years = 3
+    years = 2
   }
 
   option = {
@@ -378,6 +953,60 @@ country_event = {
           }
         }
       }
+    }
+  }
+}
+
+#Pillage
+country_event = {
+  id = flavor_nrt.4
+  title = flavor_nrt.4.t
+  desc = flavor_nrt.4.d
+  picture = VILLAGE_RAIDED_eventPicture
+
+  trigger = {
+    has_country_flag = great_plunderer_nrt
+    any_province = {
+      culture_group = neo-roman
+      OR = {
+        region = france_region
+        region = iberia_region
+        area = northern_morocco_area
+      }
+      controlled_by = ROOT
+      development = 18
+      NOT = { devastation = 50 }
+    }
+  }
+
+  mean_time_to_happen = {
+    days = 1
+  }
+
+  option = {
+    name = flavor_nrt.4.a
+    every_province = {
+      limit = {
+        culture_group = neo-roman
+        OR = {
+          region = france_region
+          region = iberia_region
+          area = northern_morocco_area
+        }
+        controlled_by = ROOT
+        development = 18
+        NOT = { is_core = ROOT }
+        NOT = { devastation = 50 }
+      }
+      add_devastation = 100
+      add_base_tax = -1
+      add_base_manpower = -1
+      add_base_production = -1
+    }
+    245 = {
+      add_base_tax = 1
+      add_base_manpower = 1
+      add_base_production = 1
     }
   }
 }
