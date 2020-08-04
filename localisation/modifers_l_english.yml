@@ -2516,6 +2516,12 @@ desc_germano_norse_cooperation_frk:0 "A treaty based on the cooperation of two s
 #Anglo-saxon/brytenwalda
 unified_the_anglosaxon:0 "Unified the Angloseaxan"
 desc_unified_the_anglosaxon:0 "The germanic people in these lands are now ruled by one king, no longer are we splintered across borders, now we are strong !"
+angle_court_brw:0 "Angle court"
+desc_angle_court_brw:0 "The Angle culture is mostly represented in court, this makes their productivity and talent with crafting shine in the eyes of all."
+seaxan_court_brw:0 "Seaxan court"
+desc_seaxan_court_brw:0 "The Seanxan culture is mostly represented in court, their willpower and good health make them an example to all the Germans in Brytenwalda."
+angleseaxan_court_brw:0 "AngleSeaxan court"
+desc_angleseaxan_court_brw:0 "Both cultures are present in court, we have the productive angle leading the economy while the brave seaxan lead the army, together they bring us glory."
 
 #Saxon + Lotharingia
 anti_mongol_strategy:0 "Anti-mongol strategy"

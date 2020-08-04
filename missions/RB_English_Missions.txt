@@ -244,7 +244,6 @@ Seaxe_Unification_1 = {
 				}
 			}
 		}
-
 }
 
 Seaxe_Unification_2 = {
@@ -324,7 +323,7 @@ Seaxe_Unification_3 = {
 				is_at_war = no
 			}
 			effect = {
-				contry_event = {
+				country_event = {
 					id = flavor_sea.1
 				}
 			}
@@ -336,7 +335,7 @@ Seaxe_Unification_3 = {
 			}
 			position = 3
 			provinces_to_highlight = {
-			 province = 236
+			 province_id = 236
 			}
 			trigger = {
 				is_core = 236
@@ -359,7 +358,7 @@ Seaxe_Unification_3 = {
 			}
 			position = 4
 			provinces_to_highlight = {
-			 province = 236
+			 province_id = 236
 			}
 			trigger = {
 				overlord_of = EAA
@@ -677,4 +676,594 @@ EAA_Unification_5 = {
 			tag = EAA
 			NOT = { map_setup = map_setup_random }
 		}
+}
+
+BRW_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = BRW
+		NOT = { map_setup = map_setup_random }
+	}
+	seaxan_military_brw = {
+		icon = protect_against_austria
+		required_missions = {
+			angle_or_seaxan_brw
+		}
+		position = 2
+		provinces_to_highlight = {
+		}
+		trigger = {
+			4372 = {
+				has_building = fort_15th
+			}
+			army_size = 18
+		}
+		effect = {
+			wales_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			 add_permanent_claim = ROOT
+			}
+			wessex_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			 add_permanent_claim = ROOT
+			}
+			yorkshire_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			 add_permanent_claim = ROOT
+			}
+			scottish_marches_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			 add_permanent_claim = ROOT
+			}
+		}
+	}
+	yorkshire_conquest_brw = {
+		icon = mission_rb_into_england
+		required_missions = {
+			seaxan_military_brw
+		}
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = yorkshire_area
+				area = scottish_marches_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			yorkshire_area = {
+				type = all
+				is_core = ROOT
+			}
+			scottish_marches_area = {
+				type = all
+				is_core = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 10
+			add_mil_power = 100
+			highlands_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			 add_permanent_claim = ROOT
+			}
+			lowlands_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			 add_permanent_claim = ROOT
+			}
+			kingdom_of_the_isles_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			 add_permanent_claim = ROOT
+			}
+		}
+	}
+	scottish_conquest_brw = {
+		icon = mission_rb_conquer_the_highlands
+		required_missions = {
+			yorkshire_conquest_brw
+		}
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = highlands_area
+				area = lowlands_area
+				area = kingdom_of_the_isles_area
+			}
+			NOT = { is_core = ROOT }
+		}
+		trigger = {
+			highlands_area = {
+				type = all
+				is_core = ROOT
+			}
+			lowlands_area = {
+				type = all
+				is_core = ROOT
+			}
+			kingdom_of_the_isles_area = {
+				type = all
+				is_core = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 100
+			western_norway = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			 add_permanent_claim = ROOT
+			}
+			subarctic_islands_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			 add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+BRW_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = BRW
+		NOT = { map_setup = map_setup_random }
+	}
+	unite_cornwales_brw = {
+		icon = mission_rb_conquer_the_isles
+		required_missions = {
+			seaxan_military_brw
+		}
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = wessex_area
+				area = wales_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			wessex_area = {
+				type = all
+				is_core = ROOT
+			}
+			wales_area = {
+				type = all
+				is_core = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 10
+			add_dip_power = 100
+			munster_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			 add_permanent_claim = ROOT
+			}
+			connacht_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			 add_permanent_claim = ROOT
+			}
+			ulster_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			 add_permanent_claim = ROOT
+			}
+			leinster_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+			 add_permanent_claim = ROOT
+			}
+		}
+	}
+	into_ireland_brw = {
+		icon = mission_rb_into_ireland
+		required_missions = {
+			unite_cornwales_brw
+		}
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = munster_area
+				area = connacht_area
+				area = ulster_area
+				area = leinster_area
+		 	}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			munster_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			connacht_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ulster_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			leinster_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_legitimacy = 20
+			create_explorer = { tradition = 50 }
+		}
+	}
+	expend_the_registry_brw = {
+		icon = reform_the_state
+		required_missions = {
+			into_ireland_brw
+			scottish_conquest_brw
+			designate_regional_capitals_brw
+		}
+		position = 5
+		provinces_to_highlight = {
+		}
+		trigger = {
+		}
+		effect = {
+		}
+	}
+}
+
+BRW_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = BRW
+		NOT = { map_setup = map_setup_random }
+	}
+	angle_or_seaxan_brw = {
+		icon = reform_the_state
+		required_missions = {}
+		position = 1
+		provinces_to_highlight = {
+		}
+		trigger = {
+			stability = 2
+			is_at_war = no
+			Legitimacy = 80
+		}
+		effect = {
+			country_event = {
+				id = flavor_brw.1
+			}
+		}
+	}
+	centralise_the_state_brw = {
+		icon = dominant_economy
+		required_missions = {
+			angle_or_seaxan_brw
+		}
+		position = 2
+		provinces_to_highlight = {
+			any_owned_province = {
+				local_autonomy = 10
+			}
+		}
+		trigger = {
+			stability = 1
+			is_at_war = no
+			all_owned_province = {
+				NOT = { local_autonomy = 10 }
+			}
+		}
+		effect = {
+			add_adm_power = 100
+			add_inflation = -1
+			add_country_modifier = {
+				name = centralised_state
+				duration = 7300
+			}
+		}
+	}
+	designate_regional_capitals_brw = {
+		icon = mission_rb_the_bank_of_scotland
+		required_missions = {
+			centralise_the_state_brw
+			yorkshire_conquest_brw
+			unite_cornwales_brw
+		}
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				province_id = 245
+				province_id = 243
+				province_id = 236
+				province_id = 233
+				province_id = 240
+			}
+			NOT = {
+				has_building = temple
+				has_building = workshop
+				is_core = ROOT
+				religion = ROOT
+			}
+		}
+		trigger = {
+			245 = {
+				has_building = temple
+				has_building = workshop
+				religion = ROOT
+				is_core = ROOT
+			}
+			243 = {
+				has_building = temple
+				has_building = workshop
+				religion = ROOT
+				is_core = ROOT
+			}
+			236 = {
+				has_building = temple
+				has_building = workshop
+				religion = ROOT
+				is_core = ROOT
+			}
+			233 = {
+				has_building = temple
+				has_building = workshop
+				religion = ROOT
+				is_core = ROOT
+			}
+			240 = {
+				has_building = temple
+				has_building = workshop
+				religion = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = -200
+			add_corruption = 2
+			add_stability = -1
+			245 = {
+				add_province_modifier = {
+					name = regional_capital_brw
+					duration = -1
+				}
+			}
+			243 = {
+				add_province_modifier = {
+					name = regional_capital_brw
+					duration = -1
+				}
+			}
+			236 = {
+				add_province_modifier = {
+					name = regional_capital_brw
+					duration = -1
+				}
+			}
+			233 = {
+				add_province_modifier = {
+					name = regional_capital_brw
+					duration = -1
+				}
+			}
+			240 = {
+				add_province_modifier = {
+					name = regional_capital_brw
+					duration = -1
+				}
+			}
+			add_country_modifier = {
+				name = great_register_census_brw
+				duration = -1
+			}
+		}
+	}
+}
+
+BRW_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = BRW
+		NOT = { map_setup = map_setup_random }
+	}
+	angle_industry_brw = {
+		icon = mission_colonial
+		required_missions = {
+			angle_or_seaxan_brw
+		}
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = east_midlands_area
+				area = east_anglia_area
+			}
+			NOT = {
+				is_core = ROOT
+				has_building = workshop
+			}
+		}
+		trigger = {
+			east_midlands_area = {
+				type = all
+				has_building = workshop
+			}
+			east_anglia_area = {
+				type = all
+				has_building = workshop
+			}
+		}
+		effect = {
+			add_adm_power = -100
+			add_dip_power = -50
+			add_years_of_income = -2
+			east_anglia_area = {
+				limit = {
+					is_core = ROOT
+				}
+				add_base_production = 2
+			}
+			east_midlands_area = {
+				limit = {
+					is_core = ROOT
+				}
+				add_base_production = 2
+			}
+		}
+	}
+	cloth_industry_brw = {
+		icon = mission_rb_conquer_wales
+		required_missions = {
+			angle_industry_brw
+		}
+		position = 3
+		provinces_to_highlight = {
+		}
+		trigger = {
+			any_owned_province = {
+				limit = {
+					trade_goods = cloth
+				}
+				base_production = 6
+				has_building = workshop
+				has_building = textile
+			}
+		}
+		effect = {
+			every_owned_province = {
+				limit = {
+					trade_goods = cloth
+				}
+				add_province_modifier = {
+					name = angle_loom_brw
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+BRW_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = BRW
+		NOT = { map_setup = map_setup_random }
+	}
+	spreading_our_goods_brw = {
+		icon = mission_rb_grow_the_channel
+		required_missions = {}
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 239
+				province_id = 243
+				province_id = 236
+			}
+			NOT = {
+					province_has_center_of_trade_of_level = 2
+					has_building = marketplace
+			}
+		}
+		trigger = {
+			239 = {
+					province_has_center_of_trade_of_level = 2
+					has_building = marketplace
+			}
+			243 = {
+					province_has_center_of_trade_of_level = 2
+					has_building = marketplace
+			}
+			236 = {
+					province_has_center_of_trade_of_level = 2
+					has_building = marketplace
+			}
+		}
+		effect = {
+			add_dip_power = 50
+			add_mercantilism = 5
+			236 = {
+				add_center_of_trade_level = 1
+			}
+		}
+	}
+	burgeoning_industry_brw = {
+		icon = mission_have_manufactories
+		required_missions = {
+			angle_industry_brw
+			spreading_our_goods_brw
+		}
+		position = 3
+		provinces_to_highlight = {
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 10
+				is_core = ROOT
+				base_production = 8
+				OR = {
+					trade_goods = iron
+					trade_goods = salt
+					trade_goods = cloth
+				}
+			}
+		}
+		effect = {
+			add_years_of_income = 2
+			add_country_modifier = {
+				name = early_industry_brw
+				duration = 18250
+			}
+		}
+	}
+	new_working_philosophy_brw = {
+		icon = mission_rb_scottish_north_sea_trade
+		required_missions = {
+			burgeoning_industry_brw
+			yorkshire_conquest_brw
+			unite_cornwales_brw
+		}
+		position = 4
+		provinces_to_highlight = {
+		}
+		trigger = {
+			treasury = 800
+			has_colonist = yes
+			has_institution = new_world_i
+		}
+		effect = {
+			add_treasury = -800
+			add_dip_power = -100
+			add_adm_power = -100
+			country_event = {
+				id = flavor_brw.2
+			}
+		}
+	}
 }
