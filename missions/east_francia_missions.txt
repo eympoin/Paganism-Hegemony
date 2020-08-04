@@ -1,0 +1,825 @@
+ALM_1 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = ALM
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	FKN_sumbission_1 = {
+		icon = mission_eastern_european_city
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			area = franconia_area
+		}
+		trigger = {
+		num_of_owned_provinces_with = {
+			value = 3
+			OR = {
+				area = franconia_area
+			}
+		}
+		}
+
+		effect = {
+			vassalize = FKN
+		}
+	}
+}
+
+ALM_2 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = ALM
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	BAV_sumbission_1 = {
+		icon = mission_eastern_european_city
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			area = upper_bavaria_area
+		}
+		trigger = {
+		num_of_owned_provinces_with = {
+			value = 3
+			OR = {
+				area = upper_bavaria_area
+			}
+		}
+		}
+
+		effect = {
+			vassalize = BAV
+		}
+	}
+	prepare_revenge_alm = {
+		icon = mission_eastern_european_city
+		required_missions = { Suebia_invasion BAV_sumbission_1 FKN_sumbission_1}
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+			army_strength = {
+			who = SAX
+			value = 1
+			}
+		}
+
+		effect = {
+		hesse_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		82 = {
+			add_permanent_claim = ROOT
+		}
+		2972 = {
+			add_permanent_claim = ROOT
+		}
+		}
+	}
+
+	revenge_of_the_franks_alm = {
+		icon = mission_eastern_european_city
+		required_missions = { prepare_revenge_alm }
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				province_id = 82
+				province_id = 2972
+				area = hesse_area
+			}
+		}
+		trigger = {
+		82 = {
+			owned_by = ROOT
+		}
+		2972 = {
+			owned_by = ROOT
+		}
+		hesse_area = {
+			type = all
+			owned_by = ROOT
+		}
+		}
+
+		effect = {
+		add_prestige = 10
+		add_mil_power = 100
+			add_country_modifier = {
+				name = eaf_king
+				duration = -1
+			}
+		}
+	}
+}
+ALM_3 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = ALM
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	Suebia_invasion = {
+		icon = mission_eastern_european_city
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+		OR = {
+			area = switzerland_area
+			}
+		}
+		trigger = {
+		switzerland_area = {
+			type = all
+			owned_by = ROOT
+		}
+		}
+
+		effect = {
+			add_mil_power = 100
+			add_country_modifier = {
+				name = secure_our_back
+				duration = 7300
+			}
+		}
+	}
+}
+
+
+BAV_1 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = BAV
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	FKN_sumbission_2 = {
+		icon = mission_eastern_european_city
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			area = upper_franconia_area
+		}
+		trigger = {
+		num_of_owned_provinces_with = {
+			value = 3
+			OR = {
+				area = upper_franconia_area
+			}
+		}
+		}
+
+		effect = {
+			vassalize = FKN
+		}
+	}
+}
+
+BAV_2 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = BAV
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	ALM_sumbission_1 = {
+		icon = mission_eastern_european_city
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			area = upper_swabia_area
+		}
+		trigger = {
+		num_of_owned_provinces_with = {
+			value = 3
+			OR = {
+				area = upper_swabia_area
+			}
+		}
+		}
+
+		effect = {
+			vassalize = ALM
+		}
+	}
+	prepare_revenge_bav = {
+		icon = mission_eastern_european_city
+		required_missions = { TIR_invasion FKN_sumbission_2 ALM_sumbission_1 }
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+			army_strength = {
+			who = SAX
+			value = 1
+			}
+		}
+
+		effect = {
+		hesse_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		82 = {
+			add_permanent_claim = ROOT
+		}
+		2972 = {
+			add_permanent_claim = ROOT
+		}
+		}
+	}
+
+	revenge_of_the_franks_bav = {
+		icon = mission_eastern_european_city
+		required_missions = {prepare_revenge_bav }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 82
+				province_id = 2972
+				area = hesse_area
+			}
+		}
+		trigger = {
+		82 = {
+			owned_by = ROOT
+		}
+		2972 = {
+			owned_by = ROOT
+		}
+		hesse_area = {
+			type = all
+			owned_by = ROOT
+		}
+		}
+
+		effect = {
+		add_prestige = 10
+		add_mil_power = 100
+			add_country_modifier = {
+				name = eaf_king
+				duration = -1
+			}
+		}
+	}
+}
+BAV_3 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = BAV
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	TIR_invasion = {
+		icon = mission_eastern_european_city
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+		OR = {
+			area = tirol_area
+			province_id = 4759
+			}
+		}
+		trigger = {
+		4759 = {
+			owned_by = ROOT
+		}
+		tirol_area = {
+			type = all
+			owned_by = ROOT
+		}
+		}
+
+		effect = {
+			add_mil_power = 100
+			add_country_modifier = {
+				name = secure_our_back
+				duration = 7300
+			}
+		}
+	}
+}
+
+
+
+FKN_1 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = FKN
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	ALM_sumbission_2 = {
+		icon = mission_eastern_european_city
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			area = lower_swabia_area
+		}
+		trigger = {
+		num_of_owned_provinces_with = {
+			value = 3
+			OR = {
+				area = lower_swabia_area
+			}
+		}
+		}
+
+		effect = {
+			vassalize = ALM
+		}
+	}
+}
+
+FKN_2 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = FKN
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	BAV_sumbission_2 = {
+		icon = mission_eastern_european_city
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = {
+			area = lower_bavaria_area
+		}
+		trigger = {
+		num_of_owned_provinces_with = {
+			value = 3
+			OR = {
+				area = lower_bavaria_area
+			}
+		}
+		}
+
+		effect = {
+			vassalize = BAV
+		}
+	}
+	prepare_revenge_fkn = {
+		icon = mission_eastern_european_city
+		required_missions = { reconstruct_nurberg BAV_sumbission_2 ALM_sumbission_2 }
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+			army_strength = {
+			who = SAX
+			value = 1
+			}
+		}
+
+		effect = {
+		hesse_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		82 = {
+			add_permanent_claim = ROOT
+		}
+		2972 = {
+			add_permanent_claim = ROOT
+		}
+		}
+	}
+
+	revenge_of_the_franks_fkn = {
+		icon = mission_eastern_european_city
+		required_missions = {prepare_revenge_fkn }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 82
+				province_id = 2972
+				area = hesse_area
+			}
+		}
+		trigger = {
+		82 = {
+			owned_by = ROOT
+		}
+		2972 = {
+			owned_by = ROOT
+		}
+		hesse_area = {
+			type = all
+			owned_by = ROOT
+		}
+		}
+
+		effect = {
+		add_prestige = 10
+		add_mil_power = 100
+			add_country_modifier = {
+				name = eaf_king
+				duration = -1
+			}
+		}
+	}
+}
+FKN_3 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = FKN
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	reconstruct_nurberg = {
+		icon = mission_eastern_european_city
+		required_missions = {  }
+		position = 1
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+			treasury = 100
+			adm_power = 100
+		}
+
+		effect = {
+		67 = {
+			add_base_production = 2
+			add_base_tax = 2
+			add_base_manpower = 2
+			}
+			add_adm_power = -100
+			add_treasury = -100
+		}
+	}
+}
+
+East_francia = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = EAF
+			tag = BAV
+			tag = FKN
+			tag = ALM
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	East_francia_united = {
+		icon = mission_eastern_european_city
+		required_missions = { }
+		position = 4
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+			has_country_modifier = eaf_king
+		}
+
+		effect = {
+			add_prestige = 10
+			add_adm_power = 50
+			add_mil_power = 50
+			add_dip_power = 50
+		}
+	}
+
+	Punish_thuringia = {
+		icon = mission_eastern_european_city
+		required_missions = { East_francia_united }
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+	End_the_saxon = {
+		icon = mission_eastern_european_city
+		required_missions = { Punish_thuringia }
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+}
+
+East_francia_invade_wfr = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = EAF
+			tag = BAV
+			tag = FKN
+			tag = ALM
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	reconquer_eastern_rhine = {
+		icon = mission_eastern_european_city
+		required_missions = { East_francia_united }
+		position = 5
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+	end_lotharingia = {
+		icon = mission_eastern_european_city
+		required_missions = { reconquer_eastern_rhine }
+		position = 6
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+		Dutchland_invasion = {
+			icon = mission_eastern_european_city
+			required_missions = { End_the_saxon end_lotharingia }
+			provinces_to_highlight = {
+
+			}
+			trigger = {
+			}
+
+			effect = {
+			}
+		}
+
+
+	united_frk = {
+		icon = mission_eastern_european_city
+		position = 9
+		required_missions = { Dutchland_invasion finish_wfr }
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+}
+
+west_francia_invasion = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = EAF
+			tag = BAV
+			tag = FKN
+			tag = ALM
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	into_wfr = {
+		icon = mission_eastern_european_city
+		required_missions = { end_lotharingia }
+		position = 7
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+	finish_wfr = {
+		icon = mission_eastern_european_city
+		required_missions = { into_wfr }
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+}
+
+mongol_threat = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = EAF
+			tag = BAV
+			tag = FKN
+			tag = ALM
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	Nomadic_threat = {
+		icon = mission_eastern_european_city
+		required_missions = {East_francia_united }
+		position = 5
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+	push_eastward = {
+		icon = mission_eastern_european_city
+		required_missions = { Nomadic_threat }
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+	invade_carpathian = {
+		icon = mission_eastern_european_city
+		required_missions = { push_eastward }
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+	heart_of_the_khantes = {
+		icon = mission_eastern_european_city
+		required_missions = { invade_carpathian polabian_line}
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+}
+
+centralization_eaf = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = EAF
+			tag = BAV
+			tag = FKN
+			tag = ALM
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	choice_of_the_capital = {
+		icon = mission_eastern_european_city
+		required_missions = { }
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+	centralize_the_realm = {
+		icon = mission_eastern_european_city
+		required_missions = {choice_of_the_capital }
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+	a_proud_capital = {
+		icon = mission_eastern_european_city
+		required_missions = {centralize_the_realm }
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+
+}
+
+mongol_threat_2 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = EAF
+			tag = BAV
+			tag = FKN
+			tag = ALM
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+
+	polabian_line = {
+		icon = mission_eastern_european_city
+		required_missions = {push_eastward }
+		position = 7
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+
+}

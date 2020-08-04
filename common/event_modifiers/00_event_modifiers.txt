@@ -4213,6 +4213,11 @@ won_per_cw = {
 	diplomatic_annexation_cost = -0.33
 }
 
+won_muslim_cw = {
+	global_missionary_strength = 0.03
+	missionary_maintenance_cost = -0.5
+}
+
 per_empire_reborn = {
 	development_cost = -0.1
 	prestige_decay = -0.01

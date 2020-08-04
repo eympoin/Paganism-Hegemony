@@ -466,7 +466,7 @@ country_event = {
 			}
 			change_tag = NED
 			inherit = BAT
-			stability = -1
+			add_stability = -1
 		}
 		else = {
 			BAT = {country_event = { id = flavor_lot.7 }}

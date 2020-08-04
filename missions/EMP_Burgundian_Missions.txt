@@ -92,7 +92,7 @@ lot_sea = {
 	invasion_fleet = {
 		icon = mission_establish_high_seas_navy
 		required_missions = { vassalize_EFR calais}
-
+		position = 4
 		provinces_to_highlight = {
 
 		}
