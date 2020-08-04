@@ -87,6 +87,7 @@
  flavor_hed.4.t:0 "End of Civil War"
  flavor_hed.4.d:0 "Finally, we have retaken the holy city of Medina. Now it's time to unite the Arab tribes under one banner"
  flavor_hed.4.b:0 "The Battle for Arabia has just begun"
+  won_muslim_cw:0 "End of the civil war"
  #Medina
  flavor_mda.1.t:0 "Muslim Civil War"
  flavor_mda.1.d:0 "The people of Hejaz try to take impose their beliefs by strength, we will protect ours at all cost"

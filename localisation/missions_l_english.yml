@@ -730,6 +730,20 @@ chaos_in_wfr_desc:0 "Chaos in West Francia"
  Unite_southeast_Tribes_desc:0 ""
  Prepare_Invasion_title:0 "Prepare Invasion"
  Prepare_Invasion_desc:0 ""
+
+ #Medina
+The_Shia_are_Victorious_title:0 "Shia victorious"
+The_Shia_are_Victorious_desc:0 ""
+rebuild_mecca_title:0 "Rebuild Mecca"
+rebuild_mecca_desc:0 ""
+Begin_Unification_title:0 "Begin Unification"
+Begin_Unification_desc:0 ""
+expand_islam_title:0 "Expand Islam"
+expand_islam_desc:0 ""
+Unify_Islam_title:0 "Unify Islam"
+Unify_Islam_desc:0 ""
+won_muslim_cw:0 "End of the civil war"
+
  #Persia
  victory_in_civil_war_per_title:0 "Victory in the civil war"
  victory_in_civil_war_per_desc:0 ""

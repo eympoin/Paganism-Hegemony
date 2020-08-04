@@ -231,5 +231,9 @@ country_event = {
 		add_prestige = 10
 		add_stability = 1
 		add_treasury = 100
+		add_country_modifier = {
+			name = "won_muslim_cw"
+			duration = 7600
+			}
 	}
 }

@@ -1,0 +1,157 @@
+Medina_1 = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+    tag = MDA
+    NOT = { map_setup = map_setup_random }
+  }
+
+  rebuild_mecca = {
+    icon = mission_bedouins
+    required_missions = {The_Shia_are_Victorious}
+    position = 2
+    trigger = {
+    385 = {
+      has_building = temple
+    }
+    }
+    effect = {
+    385 = {
+      change_religion = shiite
+    }
+    }
+  }
+  end_of_sunni = {
+    icon = mission_bedouins
+    required_missions = {rebuild_mecca}
+    position = 3
+    trigger = {
+    }
+    effect = {
+
+    }
+  }
+
+
+}
+
+#-------------------------------------
+Medina_2 = {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+    tag = MDA
+    NOT = { map_setup = map_setup_random }
+  }
+  The_Shia_are_Victorious = {
+    icon = mission_bedouins
+    required_missions = {}
+    position = 1
+    trigger = {
+    has_country_modifier = won_muslim_cw
+    }
+    effect = {
+    add_country_modifier = {
+      name = "Sunni_missionary_strength"
+      duration = 3650
+    }
+
+    }
+  }
+  Begin_Unification = {
+    icon = mission_bedouins
+    required_missions = {The_Shia_are_Victorious}
+    position = 2
+    trigger = {
+      manpower = 13
+    build_to_forcelimit = {
+    infantry = 0.8
+    }
+    }
+      effect = {
+        tihama_al_yemen_area = {
+            limit = {
+              NOT = { owned_by = ROOT }
+            }
+            add_permanent_claim = MDA
+        }
+     }
+  }
+  Unify_Islam = {
+    icon = mission_bedouins
+    required_missions = {Begin_Unification rebuild_mecca}
+    position = 3
+    provinces_to_highlight = {
+			OR = {
+				area = tihama_al_yemen_area
+			}
+		}
+    trigger = {
+    tihama_al_yemen_area = {
+      type = all
+      country_or_non_sovereign_subject_holds = MDA
+    }
+    }
+    effect = {
+    }
+  }
+
+}
+#-----------------------------------
+Medina_3 = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+    tag = MDA
+    NOT = { map_setup = map_setup_random }
+  }
+
+
+  expand_islam = {
+   icon = mission_bedouins
+   required_missions = {The_Shia_are_Victorious}
+   position = 2
+   trigger = {
+   religious_unity = 1
+   }
+   effect = {
+
+   }
+ }
+ expan = {
+  icon = mission_bedouins
+  required_missions = {expand_islam}
+  position = 3
+  trigger = {
+
+  }
+  effect = {
+
+  }
+}
+}
+#-------------------------------------------
+Medina_4 = {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+    tag = MDA
+    NOT = { map_setup = map_setup_random }
+  }
+
+}
+#-------------------------------------------
+Medina_5 = {
+  slot = 5
+  generic = no
+  ai = yes
+  potential = {
+    tag = MDA
+    NOT = { map_setup = map_setup_random }
+  }
+
+}
