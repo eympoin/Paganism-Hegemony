@@ -4508,3 +4508,11 @@ nurnberg_throne = {
 lotharingian_industry = {
   trade_goods_size_modifier = 0.25
 }
+
+eaf_king = {
+  legitimacy = 1
+}
+
+secure_our_back = {
+  defensiveness = 0.15
+}

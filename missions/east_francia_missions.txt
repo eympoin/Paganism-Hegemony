@@ -14,12 +14,19 @@ ALM_1 = {
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = {
-
+			area = franconia_area
 		}
 		trigger = {
+		num_of_owned_provinces_with = {
+			value = 3
+			OR = {
+				area = franconia_area
+			}
+		}
 		}
 
 		effect = {
+			vassalize = FKN
 		}
 	}
 }
@@ -40,25 +47,47 @@ ALM_2 = {
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = {
-
+			area = upper_bavaria_area
 		}
 		trigger = {
+		num_of_owned_provinces_with = {
+			value = 3
+			OR = {
+				area = upper_bavaria_area
+			}
+		}
 		}
 
 		effect = {
+			vassalize = BAV
 		}
 	}
 	prepare_revenge_alm = {
 		icon = mission_eastern_european_city
 		required_missions = { Suebia_invasion BAV_sumbission_1 FKN_sumbission_1}
-		position = 1
 		provinces_to_highlight = {
 
 		}
 		trigger = {
+			army_strength = {
+			who = SAX
+			value = 1
+			}
 		}
 
 		effect = {
+		hesse_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		82 = {
+			add_permanent_claim = ROOT
+		}
+		2972 = {
+			add_permanent_claim = ROOT
+		}
 		}
 	}
 
@@ -67,12 +96,32 @@ ALM_2 = {
 		required_missions = { prepare_revenge_alm }
 		position = 1
 		provinces_to_highlight = {
-
+			OR = {
+				province_id = 82
+				province_id = 2972
+				area = hesse_area
+			}
 		}
 		trigger = {
+		82 = {
+			owned_by = ROOT
+		}
+		2972 = {
+			owned_by = ROOT
+		}
+		hesse_area = {
+			type = all
+			owned_by = ROOT
+		}
 		}
 
 		effect = {
+		add_prestige = 10
+		add_mil_power = 100
+			add_country_modifier = {
+				name = eaf_king
+				duration = -1
+			}
 		}
 	}
 }
@@ -92,12 +141,23 @@ ALM_3 = {
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = {
-
+		OR = {
+			area = switzerland_area
+			}
 		}
 		trigger = {
+		switzerland_area = {
+			type = all
+			owned_by = ROOT
+		}
 		}
 
 		effect = {
+			add_mil_power = 100
+			add_country_modifier = {
+				name = secure_our_back
+				duration = 7300
+			}
 		}
 	}
 }
@@ -119,12 +179,19 @@ BAV_1 = {
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = {
-
+			area = upper_franconia_area
 		}
 		trigger = {
+		num_of_owned_provinces_with = {
+			value = 3
+			OR = {
+				area = upper_franconia_area
+			}
+		}
 		}
 
 		effect = {
+			vassalize = FKN
 		}
 	}
 }
@@ -145,39 +212,80 @@ BAV_2 = {
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = {
-
+			area = upper_swabia_area
 		}
 		trigger = {
+		num_of_owned_provinces_with = {
+			value = 3
+			OR = {
+				area = upper_swabia_area
+			}
+		}
 		}
 
 		effect = {
+			vassalize = ALM
 		}
 	}
 	prepare_revenge_bav = {
 		icon = mission_eastern_european_city
 		required_missions = { TIR_invasion FKN_sumbission_2 ALM_sumbission_1 }
-		position = 1
 		provinces_to_highlight = {
 
 		}
 		trigger = {
+			army_strength = {
+			who = SAX
+			value = 1
+			}
 		}
 
 		effect = {
+		hesse_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		82 = {
+			add_permanent_claim = ROOT
+		}
+		2972 = {
+			add_permanent_claim = ROOT
+		}
 		}
 	}
 
 	revenge_of_the_franks_bav = {
 		icon = mission_eastern_european_city
 		required_missions = {prepare_revenge_bav }
-		position = 1
 		provinces_to_highlight = {
-
+			OR = {
+				province_id = 82
+				province_id = 2972
+				area = hesse_area
+			}
 		}
 		trigger = {
+		82 = {
+			owned_by = ROOT
+		}
+		2972 = {
+			owned_by = ROOT
+		}
+		hesse_area = {
+			type = all
+			owned_by = ROOT
+		}
 		}
 
 		effect = {
+		add_prestige = 10
+		add_mil_power = 100
+			add_country_modifier = {
+				name = eaf_king
+				duration = -1
+			}
 		}
 	}
 }
@@ -197,12 +305,27 @@ BAV_3 = {
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = {
-
+		OR = {
+			area = tirol_area
+			province_id = 4759
+			}
 		}
 		trigger = {
+		4759 = {
+			owned_by = ROOT
+		}
+		tirol_area = {
+			type = all
+			owned_by = ROOT
+		}
 		}
 
 		effect = {
+			add_mil_power = 100
+			add_country_modifier = {
+				name = secure_our_back
+				duration = 7300
+			}
 		}
 	}
 }
@@ -225,12 +348,19 @@ FKN_1 = {
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = {
-
+			area = lower_swabia_area
 		}
 		trigger = {
+		num_of_owned_provinces_with = {
+			value = 3
+			OR = {
+				area = lower_swabia_area
+			}
+		}
 		}
 
 		effect = {
+			vassalize = ALM
 		}
 	}
 }
@@ -251,39 +381,80 @@ FKN_2 = {
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = {
-
+			area = lower_bavaria_area
 		}
 		trigger = {
+		num_of_owned_provinces_with = {
+			value = 3
+			OR = {
+				area = lower_bavaria_area
+			}
+		}
 		}
 
 		effect = {
+			vassalize = BAV
 		}
 	}
 	prepare_revenge_fkn = {
 		icon = mission_eastern_european_city
 		required_missions = { reconstruct_nurberg BAV_sumbission_2 ALM_sumbission_2 }
-		position = 1
 		provinces_to_highlight = {
 
 		}
 		trigger = {
+			army_strength = {
+			who = SAX
+			value = 1
+			}
 		}
 
 		effect = {
+		hesse_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		82 = {
+			add_permanent_claim = ROOT
+		}
+		2972 = {
+			add_permanent_claim = ROOT
+		}
 		}
 	}
 
 	revenge_of_the_franks_fkn = {
 		icon = mission_eastern_european_city
 		required_missions = {prepare_revenge_fkn }
-		position = 1
 		provinces_to_highlight = {
-
+			OR = {
+				province_id = 82
+				province_id = 2972
+				area = hesse_area
+			}
 		}
 		trigger = {
+		82 = {
+			owned_by = ROOT
+		}
+		2972 = {
+			owned_by = ROOT
+		}
+		hesse_area = {
+			type = all
+			owned_by = ROOT
+		}
 		}
 
 		effect = {
+		add_prestige = 10
+		add_mil_power = 100
+			add_country_modifier = {
+				name = eaf_king
+				duration = -1
+			}
 		}
 	}
 }
@@ -306,9 +477,18 @@ FKN_3 = {
 
 		}
 		trigger = {
+			treasury = 100
+			adm_power = 100
 		}
 
 		effect = {
+		67 = {
+			add_base_production = 2
+			add_base_tax = 2
+			add_base_manpower = 2
+			}
+			add_adm_power = -100
+			add_treasury = -100
 		}
 	}
 }
@@ -335,9 +515,14 @@ East_francia = {
 
 		}
 		trigger = {
+			has_country_modifier = eaf_king
 		}
 
 		effect = {
+			add_prestige = 10
+			add_adm_power = 50
+			add_mil_power = 50
+			add_dip_power = 50
 		}
 	}
 

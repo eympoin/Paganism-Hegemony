@@ -927,7 +927,7 @@ east_bavaria_area = { #3
 }
 
 lower_swabia_area = { #3 (West Swabia)
-	70 4713 4712
+	70 4713 4712 4710
 }
 
 franconia_area = { #4 (Lower Franconia)
@@ -970,7 +970,7 @@ hinter_pommern_area = { #3
 }
 
 tirol_area = { #5
-	73 110 1768 4710 4758
+	73 110 1768 4758
 }
 
 austria_proper_area = { #5
