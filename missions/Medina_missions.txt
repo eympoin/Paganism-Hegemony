@@ -20,6 +20,12 @@ Medina_1 = {
     385 = {
       change_religion = shiite
     }
+    tihama_al_yemen_area = {
+      limit = {
+        NOT = { owned_by = ROOT }
+      }
+      add_permanent_claim = MDA
+    }
     }
   }
   end_of_sunni = {
@@ -27,6 +33,7 @@ Medina_1 = {
     required_missions = {rebuild_mecca}
     position = 3
     trigger = {
+    religious_unity = 0.8
     }
     effect = {
 
@@ -86,6 +93,8 @@ Medina_2 = {
     provinces_to_highlight = {
 			OR = {
 				area = tihama_al_yemen_area
+        province_id = 388
+				province_id = 4280
 			}
 		}
     trigger = {
@@ -93,8 +102,13 @@ Medina_2 = {
       type = all
       country_or_non_sovereign_subject_holds = MDA
     }
+    owns_or_non_sovereign_subject_of = 388
+    owns_or_non_sovereign_subject_of = 4280
     }
     effect = {
+    	add_treasury = 150
+      add_adm_power = 100
+      add_mil_power = 100
     }
   }
 
@@ -115,7 +129,7 @@ Medina_3 = {
    required_missions = {The_Shia_are_Victorious}
    position = 2
    trigger = {
-   religious_unity = 1
+
    }
    effect = {
 
