@@ -1460,9 +1460,9 @@ anatolia={
 	members={
 	329 1846 2300 4314 4315 #rum_area
 	326 4312 4313 #ankara_area
-	325 328 2299 2304 #pontus
+	325 328 2299 2304 4811#pontus
 	327 2302 #cukurova_area
-	323 324 2301 4307 #karaman_area
+	323 324 2301 4307 4813#karaman_area
 	332 2303 4310 #dulkadir_area
 	4806 4807
 	322 1848 4308 4311 4805#germiyan_area
@@ -1495,7 +1495,7 @@ aleppo={
 	members={
 		4808
 
-		377 1849 2313 4298 #aleppo_area
+		377 1849 2313 4812 4298 #aleppo_area
 		378 382 1855 4297 #syria_area
 		405 4270 4271 4272#syrian_desert_area
 		380 381 2327
