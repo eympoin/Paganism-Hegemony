@@ -1,4 +1,4 @@
-#225 - C�rdoba
+#225 - Cordoba
 
 owner = BAE		
 controller = BAE

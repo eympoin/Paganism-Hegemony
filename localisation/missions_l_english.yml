@@ -1058,3 +1058,84 @@ rest_germany_desc:0 ""
 subjugate_fkn_desc:0 ""
 lorraine_mines_desc:0 ""
 rhenish_industry_desc:0 ""
+
+#East Francia
+
+FKN_sumbission_1_title:0 "Subjugate Franconia"
+FKN_sumbission_2_title:0 "Invade Franconia"
+
+ALM_sumbission_1_title:0 "Invade Alamannia"
+ALM_sumbission_2_title:0 "Subjugate Alamannia"
+
+BAV_sumbission_1_title:0 "Invade Bavaria"
+BAV_sumbission_2_title:0 "Subjugate Bavaria"
+
+prepare_revenge_alm_title:0 "The Saxon menace"
+prepare_revenge_bav_title:0 "The Saxon menace"
+prepare_revenge_fkn_title:0 "The Saxon menace"
+
+revenge_of_the_franks_alm_title:0 "Revenge of the Franks"
+revenge_of_the_franks_bav_title:0 "Revenge of the Franks"
+revenge_of_the_franks_fkn_title:0 "Revenge of the Franks"
+
+Suebia_invasion_title:0 "Secure our southern border"
+TIR_invasion_title:0 "Secure our southern border"
+reconstruct_nurberg_title:0 "Reconstruct Nürnberg"
+
+East_francia_united_title:0 "East Francia United"
+Punish_thuringia_title:0 "Punish Thuringia"
+End_the_saxon_title:0 "End of the Saxon"
+reconquer_eastern_rhine_title:0 "Reconquer Eastern Rhine"
+end_lotharingia_title:0 "End Lotharingia"
+Dutchland_invasion_title:0 "Invade the Dutch"
+united_frk_title:0 "United Franks"
+into_wfr_title:0 "Into West Francia"
+finish_wfr_eaf_title:0 "Finish West Francia"
+Nomadic_threat_title:0 "Avenge our King"
+push_eastward_title:0 "Push Eastward"
+invade_carpathian_title:0 "Carpathian line"
+heart_of_the_khantes_title:0 "Heart of the Khanates"
+choice_of_the_capital_title:0 "Choose our capital"
+centralize_the_realm_title:0 "Centralize the realm"
+a_proud_capital_title:0 "A proud capital"
+polabian_line_title:0 "Polabian line"
+
+
+FKN_sumbission_1_desc:0 ""
+FKN_sumbission_2_desc:0 ""
+
+ALM_sumbission_1_desc:0 ""
+ALM_sumbission_2_desc:0 ""
+
+BAV_sumbission_1_desc:0 ""
+BAV_sumbission_2_desc:0 ""
+
+prepare_revenge_alm_desc:0 ""
+prepare_revenge_bav_desc:0 ""
+prepare_revenge_fkn_desc:0 ""
+
+revenge_of_the_franks_alm_desc:0 ""
+revenge_of_the_franks_bav_desc:0 ""
+revenge_of_the_franks_fkn_desc:0 ""
+
+Suebia_invasio_desc:0 ""
+TIR_invasion_desc:0 ""
+reconstruct_nurberg_desc:0 ""
+
+East_francia_united_desc:0 ""
+Punish_thuringia_desc:0 ""
+End_the_saxon_desc:0 ""
+reconquer_eastern_rhine_desc:0 ""
+end_lotharingia_desc:0 ""
+Dutchland_invasion_desc:0 ""
+united_frk_desc:0 ""
+into_wfr_desc:0 ""
+finish_wfr_eaf_desc:0 ""
+Nomadic_threat_desc:0 ""
+push_eastward_desc:0 ""
+invade_carpathian_desc:0 ""
+heart_of_the_khantes_desc:0 ""
+choice_of_the_capital_desc:0 ""
+centralize_the_realm_desc:0 ""
+a_proud_capita_desc:0 ""
+polabian_line_desc:0 ""

@@ -10,7 +10,6 @@ base_production = 3
 trade_goods = wool
 base_manpower = 2
 capital = "Dumfries"
-fort_15th = yes
 is_city = yes
 add_core = SCO
 add_core = NRT

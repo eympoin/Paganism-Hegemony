@@ -17,7 +17,7 @@ ALM_1 = {
 	}
 
 	FKN_sumbission_1 = {
-		icon = mission_eastern_european_city
+		icon = mission_have_two_subjects
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = {
@@ -58,7 +58,7 @@ ALM_2 = {
 	}
 
 	BAV_sumbission_1 = {
-		icon = mission_eastern_european_city
+		icon = mission_have_two_subjects
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = {
@@ -79,7 +79,7 @@ ALM_2 = {
 		}
 	}
 	prepare_revenge_alm = {
-		icon = mission_eastern_european_city
+		icon = mission_assemble_an_army
 		required_missions = { Suebia_invasion BAV_sumbission_1 FKN_sumbission_1}
 		provinces_to_highlight = {
 
@@ -108,7 +108,7 @@ ALM_2 = {
 	}
 
 	revenge_of_the_franks_alm = {
-		icon = mission_eastern_european_city
+		icon = mission_build_up_to_force_limit
 		required_missions = { prepare_revenge_alm }
 		position = 1
 		provinces_to_highlight = {
@@ -161,7 +161,7 @@ ALM_3 = {
 	}
 
 	Suebia_invasion = {
-		icon = mission_eastern_european_city
+		icon = protect_against_the_turks
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = {
@@ -207,7 +207,7 @@ BAV_1 = {
 	}
 
 	FKN_sumbission_2 = {
-		icon = mission_eastern_european_city
+		icon = mission_have_two_subjects
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = {
@@ -248,7 +248,7 @@ BAV_2 = {
 	}
 
 	ALM_sumbission_1 = {
-		icon = mission_eastern_european_city
+		icon = mission_have_two_subjects
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = {
@@ -269,7 +269,7 @@ BAV_2 = {
 		}
 	}
 	prepare_revenge_bav = {
-		icon = mission_eastern_european_city
+		icon = mission_assemble_an_army
 		required_missions = { TIR_invasion FKN_sumbission_2 ALM_sumbission_1 }
 		provinces_to_highlight = {
 
@@ -298,7 +298,7 @@ BAV_2 = {
 	}
 
 	revenge_of_the_franks_bav = {
-		icon = mission_eastern_european_city
+		icon = mission_build_up_to_force_limit
 		required_missions = {prepare_revenge_bav }
 		provinces_to_highlight = {
 			OR = {
@@ -350,7 +350,7 @@ BAV_3 = {
 	}
 
 	TIR_invasion = {
-		icon = mission_eastern_european_city
+		icon = protect_against_the_turks
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = {
@@ -401,7 +401,7 @@ FKN_1 = {
 	}
 
 	ALM_sumbission_2 = {
-		icon = mission_eastern_european_city
+		icon = mission_have_two_subjects
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = {
@@ -442,7 +442,7 @@ FKN_2 = {
 	}
 
 	BAV_sumbission_2 = {
-		icon = mission_eastern_european_city
+		icon = mission_have_two_subjects
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = {
@@ -463,7 +463,7 @@ FKN_2 = {
 		}
 	}
 	prepare_revenge_fkn = {
-		icon = mission_eastern_european_city
+		icon = mission_assemble_an_army
 		required_missions = { reconstruct_nurberg BAV_sumbission_2 ALM_sumbission_2 }
 		provinces_to_highlight = {
 
@@ -492,7 +492,7 @@ FKN_2 = {
 	}
 
 	revenge_of_the_franks_fkn = {
-		icon = mission_eastern_european_city
+		icon = mission_build_up_to_force_limit
 		required_missions = {prepare_revenge_fkn }
 		provinces_to_highlight = {
 			OR = {
@@ -544,7 +544,7 @@ FKN_3 = {
 	}
 
 	reconstruct_nurberg = {
-		icon = mission_eastern_european_city
+		icon = mission_early_game_buildings
 		required_missions = {  }
 		position = 1
 		provinces_to_highlight = {
@@ -588,7 +588,7 @@ East_francia = {
 	}
 
 	East_francia_united = {
-		icon = mission_eastern_european_city
+		icon = mission_empire
 		required_missions = { }
 		position = 4
 		provinces_to_highlight = {
@@ -635,7 +635,7 @@ East_francia = {
 	}
 
 	Punish_thuringia = {
-		icon = mission_eastern_european_city
+		icon = mission_teutonic_knights
 		required_missions = { East_francia_united }
 		provinces_to_highlight = {
 			OR = {
@@ -679,7 +679,7 @@ East_francia = {
 	}
 
 	End_the_saxon = {
-		icon = mission_eastern_european_city
+		icon = reclaim_our_ancestral_lands
 		required_missions = { Punish_thuringia }
 		provinces_to_highlight = {
 			OR = {
@@ -746,7 +746,7 @@ East_francia_invade_wfr = {
 	}
 
 	reconquer_eastern_rhine = {
-		icon = mission_eastern_european_city
+		icon = mission_cannons_firing
 		required_missions = { East_francia_united }
 		position = 5
 		provinces_to_highlight = {
@@ -808,7 +808,7 @@ East_francia_invade_wfr = {
 	}
 
 	end_lotharingia = {
-		icon = mission_eastern_european_city
+		icon = mission_conquer_50_development
 		required_missions = { reconquer_eastern_rhine }
 		position = 6
 		provinces_to_highlight = {
@@ -877,7 +877,7 @@ East_francia_invade_wfr = {
 	}
 
 	Dutchland_invasion = {
-		icon = mission_eastern_european_city
+		icon = bavarian_netherlands
 		required_missions = { End_the_saxon end_lotharingia }
 		provinces_to_highlight = {
 		OR = {
@@ -913,7 +913,7 @@ East_francia_invade_wfr = {
 
 
 	united_frk = {
-		icon = mission_eastern_european_city
+		icon = king_of_the_franks
 		position = 9
 		required_missions = { Dutchland_invasion finish_wfr }
 		provinces_to_highlight = {
@@ -966,7 +966,7 @@ west_francia_invasion = {
 	}
 
 	into_wfr = {
-		icon = mission_eastern_european_city
+		icon = the_hundred_years_war
 		required_missions = { end_lotharingia }
 		position = 7
 		provinces_to_highlight = {
@@ -1008,7 +1008,7 @@ west_francia_invasion = {
 	}
 
 	finish_wfr_eaf = {
-		icon = mission_eastern_european_city
+		icon = mission_cannons_firing
 		required_missions = { into_wfr }
 		provinces_to_highlight = {
 			OR = {
@@ -1098,7 +1098,7 @@ mongol_threat = {
 	}
 
 	Nomadic_threat = {
-		icon = mission_eastern_european_city
+		icon = mission_non-western_cavalry_raid
 		required_missions = {East_francia_united }
 		position = 5
 		provinces_to_highlight = {
@@ -1130,7 +1130,7 @@ mongol_threat = {
 	}
 
 	push_eastward = {
-		icon = mission_eastern_european_city
+		icon = army_reforms
 		required_missions = { Nomadic_threat }
 		provinces_to_highlight = {
 			OR = {
@@ -1180,7 +1180,7 @@ mongol_threat = {
 	}
 
 	invade_carpathian = {
-		icon = mission_eastern_european_city
+		icon = alpine_defenses
 		required_missions = { push_eastward }
 		provinces_to_highlight = {
 		OR = {
@@ -1209,7 +1209,7 @@ mongol_threat = {
 	}
 
 	heart_of_the_khantes = {
-		icon = mission_eastern_european_city
+		icon = mission_partition_poland
 		required_missions = { invade_carpathian polabian_line}
 		provinces_to_highlight = {
 			OR = {
@@ -1277,7 +1277,7 @@ centralization_eaf = {
 	}
 
 	choice_of_the_capital = {
-		icon = mission_eastern_european_city
+		icon = promote_urbanization
 		required_missions = { }
 		provinces_to_highlight = {
 
@@ -1293,7 +1293,7 @@ centralization_eaf = {
 	}
 
 	centralize_the_realm = {
-		icon = mission_eastern_european_city
+		icon = mission_hanseatic_city
 		required_missions = {choice_of_the_capital }
 		provinces_to_highlight = {
 			any_owned_province = {
@@ -1317,7 +1317,7 @@ centralization_eaf = {
 	}
 
 	a_proud_capital = {
-		icon = mission_eastern_european_city
+		icon = develop_our_capital
 		required_missions = {centralize_the_realm }
 		provinces_to_highlight = {
 
@@ -1362,7 +1362,7 @@ mongol_threat_2 = {
 	}
 
 	polabian_line = {
-		icon = mission_eastern_european_city
+		icon = fortress_switzerland
 		required_missions = {push_eastward }
 		position = 7
 		provinces_to_highlight = {

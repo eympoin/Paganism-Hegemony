@@ -5,7 +5,7 @@ country_event = {
 	id = flavor_eaf.1
 	title = "flavor_eaf.1.t"
 	desc = "flavor_eaf.1.d"
-	picture = GOOD_WITH_MONARCH_eventPicture
+	picture = UNIVERSITY_eventPicture
 
 	is_triggered_only = yes
 
@@ -87,7 +87,7 @@ country_event = {
 	id = flavor_eaf.2
 	title = "flavor_eaf.2.t"
 	desc = "flavor_eaf.2.d"
-	picture = GOOD_WITH_MONARCH_eventPicture
+	picture = SHIP_SAILING_eventPicture
 
 	is_triggered_only = yes
 
@@ -100,7 +100,7 @@ country_event = {
 			add_base_tax = 2
 			add_base_production = 2
 			add_base_manpower = 2
-			center_of_trade = 2
+			add_center_of_trade_level = 1
 		}
 
 	}
@@ -113,7 +113,7 @@ country_event = {
 			add_base_tax = 2
 			add_base_production = 2
 			add_base_manpower = 2
-			center_of_trade = 2
+			add_center_of_trade_level = 1
 		}
 
 	}
