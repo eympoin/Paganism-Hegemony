@@ -58,11 +58,15 @@ MIE_Unification_2 = {
 	      has_discovered = ROOT
 	    }
 	    trigger = {
-	      owns_or_non_sovereign_subject_of = 234
-	      owns_or_non_sovereign_subject_of = 237
-	      owns_or_non_sovereign_subject_of = 235
-	      owns_or_non_sovereign_subject_of = 4371
-				overlord_of = SEA
+				OR = {
+					AND = {
+			      owns_or_non_sovereign_subject_of = 234
+			      owns_or_non_sovereign_subject_of = 237
+			      owns_or_non_sovereign_subject_of = 235
+			      owns_or_non_sovereign_subject_of = 4371
+				  }
+					overlord_of = SEA
+				}
 	    }
 	    effect = {
 				add_prestige = 15
@@ -162,7 +166,6 @@ MIE_Unification_4 = {
 	        type = all
 	        country_or_non_sovereign_subject_holds = MIE
 	      }
-				overlord_of = EAA
 	    }
 	    effect = {
 				add_legitimacy = 10
@@ -495,11 +498,15 @@ EAA_Unification_2 = {
 	      has_discovered = ROOT
 	    }
 	    trigger = {
-	      owns_or_non_sovereign_subject_of = 234
-	      owns_or_non_sovereign_subject_of = 237
-	      owns_or_non_sovereign_subject_of = 235
-	      owns_or_non_sovereign_subject_of = 4371
-				overlord_of = SEA
+				OR = {
+					AND = {
+			      owns_or_non_sovereign_subject_of = 234
+			      owns_or_non_sovereign_subject_of = 237
+			      owns_or_non_sovereign_subject_of = 235
+			      owns_or_non_sovereign_subject_of = 4371
+					}
+					overlord_of = SEA
+				}
 	    }
 	    effect = {
 				add_prestige = 15
@@ -622,7 +629,6 @@ EAA_Unification_4 = {
 	        country_or_non_sovereign_subject_holds = ROOT
 	      }
 				4375 = { country_or_non_sovereign_subject_holds = ROOT }
-				overlord_of = EAA
 	    }
 	    effect = {
 				add_legitimacy = 10
