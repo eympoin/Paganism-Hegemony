@@ -574,6 +574,8 @@ East_francia = {
 	potential = {
 		OR = {
 			tag = FKN
+			tag = ALM
+			tag = BAV
 			AND = {
 				OR = {
 					tag = FRK
@@ -703,7 +705,7 @@ East_francia = {
 		}
 
 		effect = {
-			#event sea access choice between bremen and hambourg port
+			country_event = {id = flavor_eaf.2}
 			add_prestige = 10
 			add_years_of_income = 1
 			north_westphalia_area = {
@@ -922,7 +924,6 @@ East_francia_invade_wfr = {
 		}
 
 		effect = {
-		effect = {
 		capital_scope = {
 			add_base_tax = 2
 			add_base_production = 2
@@ -940,7 +941,6 @@ East_francia_invade_wfr = {
 				name = imperial_ambition
 				duration = -1
 			}
-		}
 		}
 	}
 }
@@ -1007,7 +1007,7 @@ west_francia_invasion = {
 		}
 	}
 
-	finish_wfr = {
+	finish_wfr_eaf = {
 		icon = mission_eastern_european_city
 		required_missions = { into_wfr }
 		provinces_to_highlight = {
@@ -1214,11 +1214,10 @@ mongol_threat = {
 		provinces_to_highlight = {
 			OR = {
 				region = poland_region
-				AND = {
-				region = carpathia_region
-				NOT = {area = moldavia_area}
-				NOT = {area = wallachia_area}
-				}
+				area = transdanubia_area
+				area = alfold_area
+				area = transylvania_area
+				area = southern_transylvania_area
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -1227,11 +1226,20 @@ mongol_threat = {
 			type = all
 			owned_by = ROOT
 		}
-		carpathia_region = {
-			limit = {
-				NOT = {area = moldavia_area}
-				NOT = {area = wallachia_area}
-			}
+		transdanubia_area = {
+			type = all
+			owned_by = ROOT
+		}
+		alfold_area = {
+			type = all
+			owned_by = ROOT
+		}
+		transylvania_area = {
+			type = all
+			owned_by = ROOT
+		}
+		southern_transylvania_area = {
+			type = all
 			owned_by = ROOT
 		}
 		}
@@ -1280,7 +1288,7 @@ centralization_eaf = {
 		}
 
 		effect = {
-		#event
+			country_event = {id = flavor_eaf.1}
 		}
 	}
 

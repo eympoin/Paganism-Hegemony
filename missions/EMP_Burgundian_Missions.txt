@@ -75,8 +75,14 @@ lot_sea = {
 		}
 
 		trigger = {
+		OR = {
 			EFR = {
 				is_subject_of = LOT
+			}
+			AND = {
+				is_year = 1550
+				NOT = {exists = EFR}
+			}
 			}
 		}
 
@@ -162,7 +168,7 @@ lot_sea = {
 				}
 				add_permanent_claim = ROOT
 			}
-			east_midlands_area_name = {
+			east_midlands_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -915,7 +921,7 @@ lot_4 = {
 		}
 
 		effect = {
-		prestige = 10
+		add_prestige = 10
 		add_mil_power = 100
 		scandinavia_region = {
 			limit = {
@@ -1041,8 +1047,8 @@ lot_5 = {
 		}
 
 		effect = {
+		add_years_of_income = 1.5
 			add_country_modifier = {
-			add_years_of_income = 1.5
 				name = lotharingian_industry
 				duration = -1
 			}

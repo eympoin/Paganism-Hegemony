@@ -14,7 +14,7 @@ country_event = {
 
 	option = {#helping thuringia
 		name = "flavor_sax.1.a"
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 95 }
 		THU = {
 			country_event = { id = flavor_sax.2 }
 		}
@@ -26,7 +26,7 @@ country_event = {
 	}
 	option = {#not helping Thuringia
 		name = "flavor_sax.1.b"
-		ai_chance = { factor = 1 }
+		ai_chance = { factor = 5 }
 		THU = {
 			country_event = { id = flavor_sax.3 }
 		}
