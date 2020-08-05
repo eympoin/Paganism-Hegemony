@@ -663,3 +663,17 @@ flavor_lot.9.t:0 "Frisia ask for protection"
 flavor_lot.9.d:0 "Since its independance, Frisia is in a hard spot and they asked us to protect them against their numerous greedy neighbours. Shall we protect them ? "
 flavor_lot.9.a:0 "They shall make a good vassal"
 flavor_lot.9.b:0 "Frisia isn't worth it"
+
+#East Francia
+
+flavor_eaf.1.t:0 "A new capital ?"
+flavor_eaf.1.d:0 "Now that we have reformed East Francia, we must choose where the capital of our new kingdom must be."
+flavor_eaf.1.a:0 "We should put it next to the holy Sanctuary of Irminsul"
+flavor_eaf.1.b:0 "Nürnberg, the former capital of East Francia will be perfect"
+flavor_eaf.1.c:0 "The banking city of München shall be our new capital"
+flavor_eaf.1.e:0 "The trading city of Konstanz will spread our influence everywhere"
+
+flavor_eaf.2.t:0 "Access to the Sea"
+flavor_eaf.2.d:0 "Now that we have an access to the sea, we shall choose which port we prioritize."
+flavor_eaf.2.a:0 "The port of Bremen will be the best"
+flavor_eaf.2.b:0 "Hamburg will be our choice"
