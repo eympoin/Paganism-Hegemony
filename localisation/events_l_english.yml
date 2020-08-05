@@ -95,6 +95,12 @@
  flavor_mda.3.t:0 "End of Civil War"
  flavor_mda.3.g:0 "Finally,the war is over, we have retaken the holy city of Mecca. Now we can unite all Arabs tribes"
  flavor_mda.3.h:0 "The Shia are victorious"
+ flavor_mda.4.t:0 "Trade of Mecca"
+ flavor_mda.4.d:0 "The pilgrims come back in the holy cities  "
+ flavor_mda.4.b:0 "First step for reconstruct our economy"
+ flavor_mda.5.t:0 "The caliphate Reborn"
+ flavor_mda.5.d:0 "Since the Fall of last caliphate the Arabs people are divided but now we can lead our people to greatness"
+ flavor_mda.5.c:0 "Allah is great"
  #Al Haasa Reconquest of Mecca
  flavor_alh.1.t:0 "The city of Mecca"
  flavor_alh.1.a:0 "Since the years 630 the inhabitants of Mecca follow a false god. Because of them we have lost our holy city. Today the sunni faith is weak, we can retake the city"

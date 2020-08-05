@@ -1,0 +1,47 @@
+#Trade Medina
+namespace = flavor_mda
+
+
+country_event = {
+  id = flavor_mda.4
+  title = "flavor_mda.4.t"
+  desc =  "flavor_mda.4.d"
+  picture = HORDE_ON_HORSEBACK_eventPicture
+
+  is_triggered_only = yes
+
+  trigger = {
+    tag = MDA
+  }
+
+
+  option = {
+    name = "flavor_mda.4.b"
+    385 = {
+      center_of_trade = 1
+    }
+    add_treasury = 150
+
+  }
+}
+
+# Caliphate
+country_event = {
+  id = flavor_mda.5
+  title = "flavor_mda.5.t"
+  desc =  "flavor_mda.5.d"
+  picture = HORDE_ON_HORSEBACK_eventPicture
+
+  is_triggered_only = yes
+
+  trigger = {
+    tag = MDA
+  }
+
+
+  option = {
+    name = "flavor_mda.5.c"
+    add_legitimacy = 30
+    add_stability = 2
+  }
+}
