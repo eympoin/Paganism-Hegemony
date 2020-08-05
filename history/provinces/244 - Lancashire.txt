@@ -12,6 +12,7 @@ base_manpower = 2
 capital = "Lancaster"
 is_city = yes
 add_core = NRT
+add_core = NOL
 seat_in_parliament = yes
 discovered_by = western
 discovered_by = muslim

@@ -1,7 +1,7 @@
 #4361 - Central + East March (Roxburghshire+Berwickshire+Selkirkshire)
 
-owner = PCT
-controller = PCT
+owner = NRT
+controller = NRT
 culture = scottish
 religion = celt
 hre = no
@@ -12,7 +12,10 @@ base_manpower = 1
 capital = "Jedburgh"
 is_city = yes
 add_core = PCT
+add_core = NRT
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
+add_local_autonomy = 50
+add_nationalism = 2
