@@ -75,7 +75,7 @@ country_event = {#Scottish
   }
 
   mean_time_to_happen = {
-    years = 7
+    years = 5
   }
 
   option = {
@@ -218,7 +218,7 @@ country_event = {#Irish
   }
 
   mean_time_to_happen = {
-    years = 7
+    years = 5
   }
 
   option = {
@@ -361,7 +361,7 @@ country_event = {#Anglo-saxon
   }
 
   mean_time_to_happen = {
-    years = 7
+    years = 5
   }
 
   option = {
@@ -507,7 +507,7 @@ country_event = {#Brittanian
   }
 
   mean_time_to_happen = {
-    years = 7
+    years = 5
   }
 
   option = {
@@ -654,7 +654,7 @@ country_event = {#Welsh/breton/Cornish
   }
 
   mean_time_to_happen = {
-    years = 7
+    years = 5
   }
 
   option = {
@@ -799,7 +799,7 @@ country_event = {
         culture_group = britannian_group
       }
       NOT = { culture_group = scandinavian }
-      NOT = { nationalism	= 1 }
+      NOT = { nationalism	= 7 }
       is_core = ROOT
     }
   }
@@ -820,7 +820,7 @@ country_event = {
           culture = britannian
           culture_group = britannian_group
         }
-        NOT = { nationalism	= 1 }
+        NOT = { nationalism	= 7 }
         is_core = ROOT
       }
       random_list = {

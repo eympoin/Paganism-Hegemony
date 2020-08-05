@@ -9,7 +9,7 @@ capital = 151 # Constantinople
 fixed_capital = 151 # Cannot move capital away from this province & no power cost to move to it
 elector = yes
 
-
+historical_rival = PON
 
 
 

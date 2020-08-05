@@ -75,8 +75,14 @@ lot_sea = {
 		}
 
 		trigger = {
+		OR = {
 			EFR = {
 				is_subject_of = LOT
+			}
+			AND = {
+				is_year = 1550
+				NOT = {exists = EFR}
+			}
 			}
 		}
 
@@ -127,7 +133,7 @@ lot_sea = {
 
 	english_foothold = {
 		icon = mission_galleys_in_port
-		required_missions = {invasion_fleet calais}
+		required_missions = {invasion_fleet}
 
 		provinces_to_highlight = {
 			OR = {
@@ -162,7 +168,7 @@ lot_sea = {
 				}
 				add_permanent_claim = ROOT
 			}
-			east_midlands_area_name = {
+			east_midlands_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -785,18 +791,18 @@ lot_4 = {
 				area = lower_swabia_area
 				area = upper_swabia_area
 			}
-			NOT = { country_or_non_sovereign_subject_holds  = ROOT }
+			NOT = { owned_by  = ROOT }
 
 		}
 
 		trigger = {
 			lower_swabia_area = {
 				type = all
-				country_or_non_sovereign_subject_holds  = ROOT
+				owned_by  = ROOT
 			}
 			upper_swabia_area = {
 				type = all
-				country_or_non_sovereign_subject_holds  = ROOT
+				owned_by  = ROOT
 			}
 		}
 
@@ -822,21 +828,21 @@ lot_4 = {
 				area = upper_bavaria_area
 				area = east_bavaria_area
 			}
-			NOT = { country_or_non_sovereign_subject_holds  = ROOT }
+			NOT = { owned_by  = ROOT }
 		}
 
 		trigger = {
 			lower_bavaria_area = {
 				type = all
-				country_or_non_sovereign_subject_holds  = ROOT
+				owned_by  = ROOT
 			}
 			east_bavaria_area = {
 				type = all
-				country_or_non_sovereign_subject_holds  = ROOT
+				owned_by  = ROOT
 			}
 			upper_bavaria_area = {
 				type = all
-				country_or_non_sovereign_subject_holds  = ROOT
+				owned_by  = ROOT
 			}
 		}
 
@@ -915,7 +921,7 @@ lot_4 = {
 		}
 
 		effect = {
-		prestige = 10
+		add_prestige = 10
 		add_mil_power = 100
 		scandinavia_region = {
 			limit = {
@@ -955,7 +961,7 @@ lot_5 = {
 				area = franconia_area
 				area = upper_franconia_area
 			}
-			NOT = { country_or_non_sovereign_subject_holds  = ROOT }
+			NOT = { owned_by  = ROOT }
 		}
 
 		trigger = {
@@ -1041,8 +1047,8 @@ lot_5 = {
 		}
 
 		effect = {
+		add_years_of_income = 1.5
 			add_country_modifier = {
-			add_years_of_income = 1.5
 				name = lotharingian_industry
 				duration = -1
 			}

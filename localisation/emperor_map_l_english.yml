@@ -1,11 +1,12 @@
 ﻿l_english:
  # French Provinces
- PROV4694:0 "Foix"
- PROV_ADJ4694:0 "Foix"
+ PROV4694:0 "Convenarum"
+ PROV_ADJ4694:0 "Convenarum"
  PROV4695:0 "Carcassonne"
  PROV_ADJ4695:0 "Carcassonne"
- PROV4696:0 "Toulon"
- PROV_ADJ4696:0 "Toulon"
+ PROV4696:0 "Telo Martius"
+ PROV_ADJ4696:0 "Telo Martius
+ "
  PROV4697:0 "La Marche"
  PROV_ADJ4697:0 "La Marche"
  # Additional French Provinces

@@ -606,6 +606,18 @@ flavor_sea.1.d:0 "In early 1462 the Jarl of Seaxe launched an offensive on Lundi
 flavor_sea.1.a:0 "Act according to the plan"
 flavor_sea.1.b:0 "We are not traitors"
 
+flavor_brw.1.t:0 "The culture of the court"
+flavor_brw.1.d:0 "Our country is divided bewteen two major cultures, the productive Angle and the resilient Seaxan, we must chose which culture we will adopt in the court."
+flavor_brw.1.a:0 "The talented Angle"
+flavor_brw.1.b:0 "The fierce Seaxan"
+flavor_brw.1.c:0 "Enforce a union"
+
+flavor_brw.2.t:0 "Ressource reassesment"
+flavor_brw.2.d:0 "With goods arriving from the new world a lot of our local production are losing interest and poverty is spreading in some areas, we must stimulate these places. By relying on the colonies for some supplies we can focus our goods on more refined ones."
+flavor_brw.2.a:0 "Establish salt mines and evaporation ponds"
+flavor_brw.2.b:0 "Cloth is popular and useful"
+flavor_brw.2.c:0 "The navy shall benefit from this"
+
 #Lotharingia and Netherlands
 
 flavor_lot.1.t:0 "The heir of East-Francia"
@@ -657,3 +669,17 @@ flavor_lot.9.t:0 "Frisia ask for protection"
 flavor_lot.9.d:0 "Since its independance, Frisia is in a hard spot and they asked us to protect them against their numerous greedy neighbours. Shall we protect them ? "
 flavor_lot.9.a:0 "They shall make a good vassal"
 flavor_lot.9.b:0 "Frisia isn't worth it"
+
+#East Francia
+
+flavor_eaf.1.t:0 "A new capital ?"
+flavor_eaf.1.d:0 "Now that we have reformed East Francia, we must choose where the capital of our new kingdom must be."
+flavor_eaf.1.a:0 "We should put it next to the holy Sanctuary of Irminsul"
+flavor_eaf.1.b:0 "Nürnberg, the former capital of East Francia will be perfect"
+flavor_eaf.1.c:0 "The banking city of München shall be our new capital"
+flavor_eaf.1.e:0 "The trading city of Konstanz will spread our influence everywhere"
+
+flavor_eaf.2.t:0 "Access to the Sea"
+flavor_eaf.2.d:0 "Now that we have an access to the sea, we shall choose which port we prioritize."
+flavor_eaf.2.a:0 "The port of Bremen will be the best"
+flavor_eaf.2.b:0 "Hamburg will be our choice"
