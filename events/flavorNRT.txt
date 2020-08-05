@@ -799,7 +799,7 @@ country_event = {
         culture_group = britannian_group
       }
       NOT = { culture_group = scandinavian }
-      NOT = { nationalism	= 1 }
+      NOT = { nationalism	= 7 }
       is_core = ROOT
     }
   }
