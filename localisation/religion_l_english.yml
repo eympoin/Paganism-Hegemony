@@ -218,6 +218,7 @@
  suomenusko_rebels_army:0 "$RELIGION$ Army"
 
  norse_group:0 "Germano-norse"
+ norse_group_name:0 "Germano-norse"
  germanic:0 "Germanic"
  germanic_religion_desc:0 "Gods of the diverse german tribes"
 
