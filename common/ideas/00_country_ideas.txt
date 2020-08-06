@@ -1864,7 +1864,7 @@ LDN_ideas = {
 	}
 
 	a_new_hope_on_a_new_land  = {
-		global_colonial_growth = 0.2
+		global_colonial_growth = 20
 	}
 
 	romanization = {
@@ -2105,7 +2105,7 @@ BAE_ideas = {
 CTH_ideas = {
 	start = {
 		galley_power = 0.15
-		naval_morale = 0.1	
+		naval_morale = 0.1
 	}
 	bonus = {
 		development_cost = -0.1

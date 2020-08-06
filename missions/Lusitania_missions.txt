@@ -1,5 +1,5 @@
 
-trade_empire{
+trade_empire ={
 	slot = 2
 	generic = no
 	ai = yes
@@ -30,7 +30,7 @@ trade_empire{
 		}
 	}
 
-	hispania_unification_1{
+	hispania_unification_1 = {
 		slot = 4
 		generic = no
 		ai = yes
