@@ -1,4 +1,43 @@
 # These ideas are loaded after all country ideas, but before default idea.
+BRD_ideas = {
+	start = {
+		advisor_cost = -0.1
+		galley_cost = -0.2
+	}
+	bonus = {
+		global_ship_trade_power = 0.2
+	}
+	trigger = {
+	OR = {
+			primary_culture = Griko
+			}
+	}
+	free = yes
+	last_bastion_of_griko = {
+	 land_morale = 0.1
+	}
+
+	roman_and_greek_advisors = {
+		advisor_pool = 1
+		idea_cost = -0.1
+	}
+	crossroad_of_thoughts = {
+		global_institution_spread = 0.2
+	}
+	protect_the_strait = {
+		naval_morale = 0.1
+	}
+	help_from_the_empire = {
+		diplomatic_upkeep = 1
+	}
+	spread_nationalism = {
+		global_regiment_cost = -0.15
+	}
+
+	strait_control = {
+		trade_efficiency = 0.1
+	}
+}
 
 free_city_ideas = {
 	start = {

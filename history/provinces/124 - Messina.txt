@@ -2,13 +2,13 @@
 
 owner = MSS
 controller = MSS
-culture = griko
+culture = Griko
 religion = olympoi
 hre = no 
-base_tax = 6 
+base_tax = 6
 base_production = 6
 trade_goods = fish
-base_manpower = 5
+base_manpower = 6
 fort_15th = yes #Numerous forts, Castello Maniace and Castello di Milazzo being the prominent.
 capital = "Messina"
 is_city = yes 
