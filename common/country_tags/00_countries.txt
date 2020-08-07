@@ -182,7 +182,9 @@ HAL = "countries/Halogaland.txt"
 SML = "countries/Samiland.txt"
 TAV = "countries/Tavastland.txt"
 SVN = "countries/Savonians.txt"
-
+VEP = "countries/Veps.txt"
+CUD = "countries/Chud.txt"
+UDM = "countries/Udmurt.txt"
 
 HIM = "countries/Himyarites.txt"
 SOC   = "countries/Socotra.txt"

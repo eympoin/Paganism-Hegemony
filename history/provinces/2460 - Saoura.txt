@@ -1,7 +1,7 @@
 # - Saoura
 
-owner = MOR
-controller = MOR
+owner = TFL
+controller = TFL
 culture = berber_culture
 religion = berber
 capital = "Oulad Mhedi"
@@ -11,16 +11,8 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = MOR
 add_core = TFL
-add_local_autonomy = 25
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = western
 discovered_by = sub_saharan
-
-1444.1.1 = {
-	owner = TFL
-	controller = TFL
-	add_core = TFL
-}

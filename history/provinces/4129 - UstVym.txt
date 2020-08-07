@@ -1,7 +1,7 @@
 #4129 - Ust-Vym
 
-owner = PRM
-controller = PRM
+owner = CUD
+controller = CUD
 culture = uralic
 religion = suomenusko
 hre = no
@@ -12,7 +12,7 @@ base_manpower = 1
 capital = "Ust-Vym"
 is_city = yes
 estate = estate_church #Bishop of Perm
-add_core = PRM
+add_core = CUD
 discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group

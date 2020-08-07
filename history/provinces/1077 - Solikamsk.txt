@@ -1,7 +1,7 @@
 #1077 - Solikamsk
 
-owner = PRM
-controller = PRM
+owner = UDM
+controller = UDM
 capital = "Usolye Kamskoye"
 culture = uralic
 religion = suomenusko#Sami Shamanism
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 5 #Salt Mines
 base_manpower = 1
 is_city = yes
-add_core = PRM
+add_core = UDM
 
 
 
