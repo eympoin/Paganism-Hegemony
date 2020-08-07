@@ -1,7 +1,7 @@
 #127 - Sardinia
 
-owner = CTG
-controller = CTG
+owner = TRR
+controller = TRR
 culture = sardinian 
 religion = jupiterian 
 hre = no 
@@ -11,7 +11,7 @@ trade_goods = fish
 base_manpower = 2
 capital = "Sassari" 
 is_city = yes 
-add_core = CTG
+add_core = TRR
 
 
 
