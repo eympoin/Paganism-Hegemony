@@ -1,6 +1,6 @@
 #4727 - Saluzzo
-owner = PAV
-controller = PAV
+owner = PDM
+controller = PDM
 culture = lombard
 religion = jupiterian
 hre = no
@@ -10,7 +10,7 @@ trade_goods = iron
 base_manpower = 4
 capital = "Saluzzo"
 is_city = yes
-add_core = PAV
+add_core = PDM
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

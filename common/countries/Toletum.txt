@@ -30,55 +30,39 @@ historical_units = {
 	napoleonic_square
 	napoleonic_lancers
 }
-
 monarch_names = {
-	"Lucius #0" = 10
-	"Tiberius #0" = 10
-	"Septimus #0" = 10
-	"Titus #0" = 10
-	"Gaius #0" = 10
-	"Faustus #0" = 10
-	"Appius #0" = 10
-	"Decimus #0" = 10
-	"Faustus #0" = 10
-	"Marcus #0" = 10
-	"Sextus #0" = 10
-	"Appia #0" = -5
-	"Aula #0" = -5
-	"Fausta #0" = -5
-	"Lucia #0" = -5
-	"Octavia #0" = -5
-}
+"Lucius #0" = 10
+"Tiberius #0" = 10
+"Septimus #0" = 10
+"Titus #0" = 10
+"Gaius #0" = 10
+"Faustus #0" = 10
+"Appius #0" = 10
+"Decimus #0" = 10
+"Faustus #0" = 10
+"Marcus #0" = 10
+"Sextus #0" = 10
+"Appia #0" = -5
+"Aula #0" = -5
+"Fausta #0" = -5
+"Lucia #0" = -5
+"Octavia #0" = -5
 }
 
 leader_names = {
-	"de Aguirre" "de Alarcón" "de Toledo" "de Andrade" "de Ayala"
-	"de Bazán" "de Benavides" Campomanes "de Castilla" "de la Cerda" Cienfuegos Colón Coronado Cortés
-	"de Toledo" "de Córdoba" "de la Cueva" "de Figueroa" Fonseca
-	Gálvez Gómez "de Guzmán" "Jiménez de Cisneros"
-	"de Leiva" "López de Haro" "de Luna"
-	"de Lara" "de Velasco" "de Villena" "de Mendoza"
-	Narváez "de Nebrija" "Nuñez de Balboa" "de Ojeda" Orellana Osorio 
-	Pimentel Pinzón Pizarro "Ponce de León" Portocarrero
-	"de Rojas" Tellez-Girón "de la Vega" "de Zúñiga"
+	"Manius Acilius Glabrio" "Titus Aebutius Elva" "Aegidius" "Gaius Antonius" "Aulus Atilius calatinus" "Aureolus" "Bonifacius" "Scipio Asiaticus" "Aulus Didius Gallus"
+	"Dexippus" "Gaius Claudius Nero" "Marcus Cornelius Barbatus" "Scipio Aemilianus Africanus" "Valens" "Publius Agrippa" "Flavius Valerius Africanus" "Titus Vinius" "Trebonius"
 }
 
 ship_names = {
-	Galicia Argonauta Asturias Asunción Atrevido Azor
-	Cartagonova Castilla "Castillo Negro" Castor "Ciervo Volante"
-	Doncella Dragón 
-	"El Gran Grin" "El Retiro" Eneas Eolo Esperanza "Espíritu Santo" Extremadura
-	Furor "Gran Grifón" Halcón Hércules Isabela Júpiter
-	"La Concepción" "La Magdalena" "La Manuela" León Ligera "Lobo Marino"
-	Marte Mercurio Neptuno Niña Orión
-	"Paloma Blanca" Pegaso "Perro Marino" Pinta Plutón Pollux "Príncipe de Asturias"
-	Rayo "Real Alfonso" "Real Enrique" "Real Juan" "Rey Pelayo" "Rey Rodrigo"
-	"San Andrés" "San Antonio" "San Bartolomé" "San Bernabé" "San Cristobal" "San Enrique"
-	"San Esteban" "San Fernando" "San Francisco" "San Gabriel" "San Isidoro" "San Jerónimo"
-	"San José" "San Juan" "San Juan Bautista" "San Leandro" "San Miguel" "San Pedro"
-	"San Rafael" "San Salvador" "San Sebastian" "Santa Ana" "Santa Bárbara" "Santa Beatriz"
-	"Santa Catalina" "Santa Cruz" "Santa Fe" "Santa Isabel" "Santa Justa" "Santa María"
-	"Santa Marta" "Santa Rita" "Santa Teresa" Santiago "Santísima Trinidad" "Santo Domingo" Sirena
-	Terror Toledo Trinidad Tritón Unicornio
-	Vencedora Ventura Victoria Vigilante Vizcaya Vulcano Zúñiga
+	Navis
+}
+
+army_names = {
+	"Legio I" "Legio II" "Legio III" "Legio IV" "Legio V" "Legio VI" "Legio VII"
+	"Legio VIII" "Legio IX" "Legio X" "Legio XI" "Legio XII"
+}
+
+fleet_names = {
+	"Classis Misenensis" "Classis Masselia" "Classis Narbonnenesis" "Classis Tolosa" "Classis Gallis"
 }

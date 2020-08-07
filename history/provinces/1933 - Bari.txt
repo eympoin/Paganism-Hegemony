@@ -1,17 +1,17 @@
 #1933 - Bari
 
-owner = SLR
-controller = SLR
+owner = BAI
+controller = BAI
 culture = Griko
 religion = olympoi
-hre = no 
+hre = no
 base_tax = 5
 base_production = 5
 trade_goods = wine
 base_manpower = 4
 capital = "Bari"
-is_city = yes # Estimated 
-add_core = SLR
+is_city = yes # Estimated
+add_core = BAI
 
 
 
@@ -19,4 +19,3 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-

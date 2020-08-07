@@ -100,7 +100,7 @@ ship_names = {
 
 army_names = {
 	"Legio I" "Legio II" "Legio III" "Legio IV" "Legio V" "Legio VI" "Legio VII"
-	"Legio VIII" "Legio IX" "Legio X" "Legio XI" "Legio XII" "Arm�e de $PROVINCE$"
+	"Legio VIII" "Legio IX" "Legio X" "Legio XI" "Legio XII"
 }
 
 fleet_names = {

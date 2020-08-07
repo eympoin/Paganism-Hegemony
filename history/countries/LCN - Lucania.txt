@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = Griko
+religion = olympoi
+technology_group = western
+capital = 1934
+fixed_capital = 1934
+
+1444.1.1 = {
+    monarch = {
+        name = "Claudius"
+	dynasty = "Hadrianus"
+        birth_date = 1410.8.12
+        adm = 4
+        dip = 4
+        mil = 2
+    }
+}
