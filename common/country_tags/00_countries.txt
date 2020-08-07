@@ -42,6 +42,11 @@ BRD = "countries/Brundisium.txt"
 
 CTG = "countries/Carthage.txt"
 MAU = "countries/Mauretania.txt"
+HIP = "countries/Hippo Regius.txt"
+TAC = "countries/Tacape.txt"
+SRC = "countries/Syracuse.txt"
+MSS = "countries/Messina.txt"
+PNR = "countries/Panormus.txt"
 
 EAA = "countries/East-Anglia.txt"
 GLA = "countries/Glamorgan.txt"
