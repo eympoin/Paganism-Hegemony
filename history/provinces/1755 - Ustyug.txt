@@ -2,7 +2,7 @@
 
 owner = CUD # was part of Ustyug principality, annexed by Muscovy in 1474
 controller = CUD
-culture = russian
+culture = uralic
 religion = suomenusko
 hre = no
 base_tax = 2

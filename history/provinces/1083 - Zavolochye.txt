@@ -3,7 +3,7 @@
 owner = CUD
 controller = CUD
 capital = "Yur"
-culture = russian
+culture = uralic
 religion = suomenusko
 trade_goods = grain
 hre = no

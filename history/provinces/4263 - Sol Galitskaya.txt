@@ -2,7 +2,7 @@
 
 owner = RSO
 controller = RSO
-culture = russian
+culture = uralic
 religion = suomenusko
 hre = no
 base_tax = 1

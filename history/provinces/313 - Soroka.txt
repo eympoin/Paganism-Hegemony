@@ -2,7 +2,7 @@
 
 owner = VEP
 controller = VEP
-culture = novgorodian
+culture = karelian
 religion = suomenusko
 hre = no
 base_tax = 1
