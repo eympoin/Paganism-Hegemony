@@ -31,87 +31,39 @@ historical_units = {
 	napoleonic_square
 	napoleonic_lancers
 }
-
 monarch_names = {
-	"Alfonso #0" = 40
-	"Ercole #0" = 40
-	"Niccol� #2" = 20
-	"Borso #1" = 20
-	"Leonello #0" = 20
-	"Alessandro #0" = 15
-	"Ferdinando #0" = 15
-	"Folco #0" = 15
-	"Luigi #0" = 15
-	"Sigismondo #0" = 15
-	"Alberto #1" = 10
-	"Francesco #0" = 10
-	"Ippolito #0" = 10
-	"Azzo #3" = 5
-	"Aldobrandino #2" = 5
-	"Obizzo #2" = 5
-	"Rinaldo #1" = 5
-	"Agostino #0" = 0
-	"Baldasare #0" = 0
-	"Carlo #0" = 0
-	"Cesare #0" = 0
-	"Cosimo #0" = 0
-	"Cristiano #0" = 0
-	"Davide #0" = 0
-	"Ennio #0" = 0
-	"Fulgenzio #0" = 0
-	"Gennaro #0" = 0
-	"Giulio #0" = 0
-	"Giuseppe #0" = 0
-	"Lazzaro #0" = 0
-	"Martino #0" = 0
-	"Nicola #0" = 0
-	"Ottavio #0" = 0
-	"Panfilo #0" = 0
-	"Prospero #0" = 0
-	"Renato #0" = 0
-	"Ruggiero #0" = 0
-	"Torquato #0" = 0
-	"Ugo #0" = 0
-	"Vincenzo #0" = 0
-
-	"Gaia #0" = -1
-	"Liboria #0" = -1
-	"Marietta #0" = -1
+"Lucius #0" = 10
+"Tiberius #0" = 10
+"Septimus #0" = 10
+"Titus #0" = 10
+"Gaius #0" = 10
+"Faustus #0" = 10
+"Appius #0" = 10
+"Decimus #0" = 10
+"Faustus #0" = 10
+"Marcus #0" = 10
+"Sextus #0" = 10
+"Appia #0" = -5
+"Aula #0" = -5
+"Fausta #0" = -5
+"Lucia #0" = -5
+"Octavia #0" = -5
 }
 
 leader_names = {
-	Allegri "d'Appiani d'Aragona" Araldini "di Ardizzone" Ariosto Avanzini
-	Bacciochi Barberini Battisti Boiardo Boncompagni Boncompagni-Ludovisi
-	Calcagnini Catena Colonna "del Cossa" d'Este Farini "di Farnese" "di Ferrari"
-	Giardini Grandi Graziosi Gualandelli Gucciardini Loschi
-	Malmussi Marescalchi Menotti Mitelli Montecuccoli Montefeltro Nardi Nobili
-	Ordelaffi Pavironica Peretti Pico Pio Rangoni "de Roberti" Rossetti
-	Santarosa "di Sauli" Tassoni "de Tolomei" "della Torre" Tura Viridis Zini
+	"Manius Acilius Glabrio" "Titus Aebutius Elva" "Aegidius" "Gaius Antonius" "Aulus Atilius calatinus" "Aureolus" "Bonifacius" "Scipio Asiaticus" "Aulus Didius Gallus"
+	"Dexippus" "Gaius Claudius Nero" "Marcus Cornelius Barbatus" "Scipio Aemilianus Africanus" "Valens" "Publius Agrippa" "Flavius Valerius Africanus" "Titus Vinius" "Trebonius"
 }
 
 ship_names = {
-	Aguscello Albarea "Azzo VI d'Este"
-	Baura Boara "Borgo Scoline" Bova "Borso"
-	Casaglia Cassana "Castel Trivellino" "Chiesuol del Fosso" "Cocomaro di Cona"
-	"Cocomaro di Focomorto" Codrea Cona Contrap� Corlo Correggio
-	Denore
-	Ezzelino
-	Focomorto Francolino
-	Gaibana "Gaibanella Sant'Egidio" "Guglielmo Adelardi"
-	"Malborghetto di Boara" "Malborghetto di Correggio" Marrara Mezzavia
-	Monestirolo Montalbano
-	"Niccol� III"
-	"Obizzo II"
-	Parasacco Pescara Pontegradella Pontelagoscuro "Ponte Travagli" Porotto Porporana
-	Quartesana
-	Ravalle
-	"S.Caterina" "S.Paolo" Sabbioni "San Bartolomeo in Bosco" "San Giorgio"
-	"San Martino" "San Mercuriale di Forl�" "San Michele" "Sant'Egidio" Spinazzino
-	Tedaldo "Torre della Fossa"
-	Uccellino
-	Viconovo Villanova
+	Navis
 }
 
 army_names = {
-	"Armata di $PROVINCE$"
+	"Legio I" "Legio II" "Legio III" "Legio IV" "Legio V" "Legio VI" "Legio VII"
+	"Legio VIII" "Legio IX" "Legio X" "Legio XI" "Legio XII"
+}
+
+fleet_names = {
+	"Classis Misenensis" "Classis Masselia" "Classis Narbonnenesis" "Classis Tolosa" "Classis Gallis"
 }

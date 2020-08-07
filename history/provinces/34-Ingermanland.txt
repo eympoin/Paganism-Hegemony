@@ -1,8 +1,8 @@
 #Ingermanland, incl. Ivangorod, Jama, and Kopore.
 
-owner = NOV
-controller = NOV
-add_core = NOV
+owner = IGR
+controller = IGR
+add_core = IGR
 culture = karelian
 religion = suomenusko
 hre = no

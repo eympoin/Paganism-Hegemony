@@ -2,7 +2,7 @@
 
 owner = NZH
 controller = NZH
-culture = russian
+culture = cuman
 religion = tengri_pagan_reformed
 hre = no
 base_tax = 3
