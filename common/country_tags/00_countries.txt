@@ -185,6 +185,8 @@ SVN = "countries/Savonians.txt"
 VEP = "countries/Veps.txt"
 CUD = "countries/Chud.txt"
 UDM = "countries/Udmurt.txt"
+IGR = "countries/Ingria.txt"
+CUM = "countries/Cumans.txt"
 
 HIM = "countries/Himyarites.txt"
 SOC   = "countries/Socotra.txt"
