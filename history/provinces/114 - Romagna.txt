@@ -1,17 +1,17 @@
 #114 - Romagna
 
-owner = URB#Bologna was independent until 1506, but the rest of Romagna was mainly under Papal control.
-controller = URB
+owner = RVN
+controller = RVN
 culture = tuscan
-religion = jupiterian 
-hre = no 
-base_tax = 8 
-base_production = 8    
+religion = jupiterian
+hre = no
+base_tax = 8
+base_production = 8
 trade_goods = salt
-base_manpower = 6    
+base_manpower = 6
 capital = "Ravenna"
-is_city = yes	# Estimated 
-add_core = URB
+is_city = yes	# Estimated
+add_core = RVN
 
 
 
@@ -19,4 +19,3 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-

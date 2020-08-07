@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = western
-religion = catholic
+religion = jupiterian
 primary_culture = sardinian
 capital = 1247	# Bastia
 
@@ -15,7 +15,7 @@ capital = 1247	# Bastia
 		adm = 5
 		dip = 1
 		mil = 1
-		leader = {	name = "Théodore de Neuhoff"	type = general	fire = 3	shock = 3	manuever = 2	siege = 1 }
+		leader = {	name = "Thï¿½odore de Neuhoff"	type = general	fire = 3	shock = 3	manuever = 2	siege = 1 }
 	}
 }
 

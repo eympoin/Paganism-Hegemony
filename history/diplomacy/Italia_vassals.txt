@@ -5,3 +5,43 @@ dependency = {
 	start_date = 1444.1.1
 	end_date = 1820.1.1
 }
+
+dependency = {
+	subject_type = "roman_province_cen"
+	first = SPQ
+	second = RVN
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+
+dependency = {
+	subject_type = "roman_province_cen"
+	first = SPQ
+	second = PRA
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+
+dependency = {
+	subject_type = "roman_province_cen"
+	first = SPQ
+	second = SIE
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+
+dependency = {
+	subject_type = "roman_province_cen"
+	first = SPQ
+	second = TUS
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+
+dependency = {
+	subject_type = "roman_province_cen"
+	first = SPQ
+	second = PIS
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}

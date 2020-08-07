@@ -1,17 +1,17 @@
 # 4734 - Avellino
 
-owner = SLR
-controller = SLR
+owner = FOG
+controller = FOG
 culture = salernian
 religion = jupiterian
-hre = no 
+hre = no
 base_tax = 4
 base_production = 4
-trade_goods = grain 
+trade_goods = grain
 base_manpower = 3
-capital = "Avellino" 
+capital = "Avellino"
 is_city = yes	# Estimated
-add_core = SLR
+add_core = FOG
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

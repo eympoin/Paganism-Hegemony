@@ -1,7 +1,7 @@
 # 4730 - Bologna
 
-owner = URB
-controller = URB
+owner = RVN
+controller = RVN
 culture = tuscan
 religion = jupiterian
 hre = no
@@ -11,7 +11,7 @@ trade_goods = cloth
 base_manpower = 3
 capital = "Bologna"
 is_city = yes
-add_core = URB
+add_core = RVN
 
 
 

@@ -1,7 +1,7 @@
 # 4731 - Spoleto
 
-owner = SPQ
-controller = SPQ
+owner = PRA
+controller = PRA
 culture = roman
 religion = jupiterian
 hre = no
@@ -11,7 +11,7 @@ trade_goods = livestock
 base_manpower = 3
 capital = "Spoleto" 
 is_city = yes
-add_core = SPQ
+add_core = PRA
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
