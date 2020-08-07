@@ -7,11 +7,11 @@ capital = 124
 
 1444.1.1 = {
     monarch = {
-        name = "Lucius"
-	dynasty = "Africanus"
+        name = "Demetrios"
+	dynasty = "Boumbalis"
         birth_date = 1418.12.9
-        adm = 3
+        adm = 1
         dip = 2
-        mil = 4
+        mil = 3
     }
 }
