@@ -1,0 +1,16 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = carthaginian
+religion = jupiterian
+technology_group = western
+capital = 353
+1444.1.1 = {
+    monarch = {
+        name = "Lucius"
+	dynasty = "Africanus"
+        birth_date = 1418.12.9
+        adm = 3
+        dip = 2
+        mil = 4
+    }
+}

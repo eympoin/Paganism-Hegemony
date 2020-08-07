@@ -1,7 +1,7 @@
 #339 - Bejaia
 
-owner = CTG
-controller = CTG
+owner = HIP
+controller = HIP
 culture = carthaginian
 religion = jupiterian
 capital = "Bejaia"
@@ -11,7 +11,7 @@ base_tax = 5
 base_production = 5
 base_manpower = 4
 is_city = yes
-add_core = CTG
+add_core = HIP
 
 
 

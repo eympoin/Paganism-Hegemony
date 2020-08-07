@@ -1,7 +1,7 @@
 #123 - Calabria
 
-owner = CTG
-controller = CTG
+owner = RHE
+controller = RHE
 culture = Griko
 religion = olympoi
 hre = no 
@@ -9,10 +9,9 @@ base_tax = 4
 base_production = 3
 trade_goods = fish
 base_manpower = 3
-capital = "Reggio di Calabria"
+capital = "Rhegium"
 is_city = yes 
-add_core = CTG
-add_local_autonomy = 50
+add_core = RHE
 
 
 discovered_by = western

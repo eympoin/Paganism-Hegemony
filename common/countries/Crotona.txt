@@ -2,21 +2,21 @@
 
 graphical_culture = westerngfx
 
-color = { 220 54 0}
+color = { 206 163 112 }
 
-revolutionary_colors = { 15  0  16 }
+revolutionary_colors = { 91  12  76 }
 
 historical_score = 0
 
 historical_idea_groups = {
-	defensive_ideas
-	administrative_ideas
-	trade_ideas
+	exploration_ideas
+	expansion_ideas
 	offensive_ideas
 	religious_ideas
 	economic_ideas
 	maritime_ideas
 	quality_ideas
+	defensive_ideas
 }
 
 historical_units = {

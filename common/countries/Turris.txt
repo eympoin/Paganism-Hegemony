@@ -2,21 +2,21 @@
 
 graphical_culture = westerngfx
 
-color = { 220 54 0}
+color = { 77 95 105 }
 
-revolutionary_colors = { 15  0  16 }
+revolutionary_colors = { 91  12  76 }
 
 historical_score = 0
 
 historical_idea_groups = {
-	defensive_ideas
-	administrative_ideas
-	trade_ideas
+	exploration_ideas
+	expansion_ideas
 	offensive_ideas
 	religious_ideas
 	economic_ideas
 	maritime_ideas
 	quality_ideas
+	defensive_ideas
 }
 
 historical_units = {
@@ -37,66 +37,25 @@ historical_units = {
 	napoleonic_lancers
 }
 
+
 monarch_names = {
-	"Ioannes #7" = 10
-	"Alexios #5" = 10
-	"Konstantinos #10" = 10
-	"Andronikos #4" = 10
-	"Manuel #1" = 10
-	"Romanos #4" = 10
-	"Demetrios #0" = 10
-	"Theodoros #2" = 10
-	"Michael #9" = 10
-	"Andreas #0" = 10
-	"Helene #0" = -10
-	"Thomas #0" = 10
-	"Isaakios #2" = 10
-	"Basileios #2" = 10
-	"Leon #6" = 10
-	"Adrianos #1" = 5
-	"Anastasios #2" = 5
-	"Herakleios #1" = 5
-	"Ioulianos #3" = 5
-	"Ioustinianos #2"= 5
-	"Ioustinos #2" = 5
-	"Konstantios #3" = 5
-	"Markos #1" = 5
-	"Nikephoros #3" = 5
-	"Theophilos #1" = 5
-	"Theodosios #3" = 5
-	"Tiberios #3" = 5
-	"Traianos #1" = 5
-	"Alexandros #1" = 5
-	"Philippos #1" = 5
-	"Athanasios #0" = 5
-	"Antonios #0" = 5
-	"Bartholomaios #0" = 5
-	"Christophoros #0" = 5
-	"Diogenes #0" = 5
-	"Dionysios #0" = 5
-	"Eirenaios #0" = 5
-	"Elpidios #0" = 5
-	"Georgios #0" = 5
-	"Gregorios #0" = 5
-	"Hektorios #0" = 5
-	"Iason #0" = 5
-	"Kyrillos #0" = 5
-	"Matthaios #0" = 5
-	"Niketas #0" = 5
-	"Nikolaos #0" = 5
-	"Nikodemos #0" = 5
-	"Sergios #0" = 5
-	"Porphyrios #0" = 0
-	"Pavlos #0" = 5
-	"Panagiotis #0" = 5
-	"Petros #0" = 5
-	"Philemon #0" = 5
-	"Prokopios #0" = 5
-	"Stephanos #0" = 5
-	
-	"Eirene #1" = -20
-	"Theodora #1" = -20
-	"Zoe #1" = -10
+	"Lucius #0" = 10
+	"Tiberius #0" = 10
+	"Septimus #0" = 10
+	"Titus #0" = 10
+	"Gaius #0" = 10
+	"Faustus #0" = 10
+	"Appius #0" = 10
+	"Decimus #0" = 10
+	"Faustus #0" = 10
+	"Marcus #0" = 10
+	"Sextus #0" = 10
+	"Appia #0" = -5
+	"Aula #0" = -5
+	"Fausta #0" = -5
+	"Lucia #0" = -5
+	"Octavia #0" = -5
+}
 }
 
 leader_names = {

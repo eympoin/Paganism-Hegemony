@@ -1,7 +1,7 @@
 #353 - Tataouine
 
-owner = CTG
-controller = CTG
+owner = TAC
+controller = TAC
 culture = carthaginian
 religion = jupiterian
 capital = "Tataouine"
@@ -11,7 +11,7 @@ base_tax = 5
 base_production = 4
 base_manpower = 4
 is_city = yes
-add_core = CTG
+add_core = TAC
 
 
 

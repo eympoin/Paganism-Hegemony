@@ -1,9 +1,9 @@
 #124 - Messina
 
-owner = CTG
-controller = CTG
-culture = sicilian 
-religion = jupiterian 
+owner = MSS
+controller = MSS
+culture = griko
+religion = olympoi
 hre = no 
 base_tax = 6 
 base_production = 6
@@ -12,7 +12,7 @@ base_manpower = 5
 fort_15th = yes #Numerous forts, Castello Maniace and Castello di Milazzo being the prominent.
 capital = "Messina"
 is_city = yes 
-add_core = CTG
+add_core = MSS
 
 
 

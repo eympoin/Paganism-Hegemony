@@ -1,8 +1,8 @@
 # - Syracusa
 
-owner = CTG
-controller = CTG
-culture = sicilian 
+owner = SRC
+controller = SRC
+culture = sicilian
 religion = jupiterian
 hre = no 
 base_tax = 4
@@ -11,7 +11,7 @@ trade_goods = grain
 base_manpower = 3
 capital = "Girgenti"
 is_city = yes
-add_core = CTG
+add_core = SRC
 
 
 
