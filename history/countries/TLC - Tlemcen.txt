@@ -5,7 +5,6 @@ religion = berber
 primary_culture = berber_culture
 capital = 336 # Tlemcen
 fixed_capital = 336 # Cannot move capital away from this province & no power cost to move to it
-historical_friend = TFL
 
 
 1402.1.1 = {

@@ -1,15 +1,15 @@
-# - Syracusa
+# - Lilybaeum
 
 owner = CTG
 controller = CTG
 culture = sicilian 
 religion = jupiterian
 hre = no 
-base_tax = 5
-base_production = 4
+base_tax = 6
+base_production = 5
 trade_goods = fish
-base_manpower = 3
-capital = "Trapani"
+base_manpower = 5
+capital = "Lilybaeum"
 is_city = yes
 add_core = CTG
 
