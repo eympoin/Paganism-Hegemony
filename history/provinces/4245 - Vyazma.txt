@@ -1,8 +1,8 @@
 #4245 - Vyazma
 
-owner = RSO
-controller = RSO
-add_core = RSO
+owner = SMO
+controller = SMO
+add_core = SMO
 culture = ryazanian
 religion = slavic
 hre = no

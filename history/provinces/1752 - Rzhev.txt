@@ -1,10 +1,10 @@
 #1752 - Rzhev
 
-owner = RSO
-controller = RSO
-add_core = RSO
+owner = NOV
+controller = NOV
+add_core = NOV
 culture = russian
-religion = suomenusko
+religion = slavic
 hre = no
 base_tax = 5
 base_production = 5
