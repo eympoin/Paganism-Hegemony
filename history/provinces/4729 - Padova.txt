@@ -1,17 +1,17 @@
 #4729 - Padova, Padua
 
-owner = AQU
-controller = AQU
+owner = FER
+controller = FER
 culture = aquileian
 religion = jupiterian
-hre = no 
+hre = no
 base_tax = 4
 base_production = 4
 trade_goods = paper
 base_manpower = 4
-capital = "Padova" 
-is_city = yes 
-add_core = AQU
+capital = "Padova"
+is_city = yes
+add_core = FER
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

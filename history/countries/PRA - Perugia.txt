@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = roman
+religion = jupiterian
+technology_group = western
+capital = 2976
+fixed_capital = 2976
+
+1444.1.1 = {
+    monarch = {
+        name = "Claudius"
+	dynasty = "Hadrianus"
+        birth_date = 1410.8.12
+        adm = 4
+        dip = 4
+        mil = 2
+    }
+}

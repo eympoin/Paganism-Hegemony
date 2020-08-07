@@ -2,7 +2,7 @@
 
 graphical_culture = westerngfx
 
-color = { 61  152  180 }
+color = { 73 5 23 }
 
 revolutionary_colors = { 13  8  5 } #Repubblica Ancona
 
@@ -88,17 +88,17 @@ leader_names = {
 }
 
 ship_names = {
-	Acqualagna Auditore 
+	Acqualagna Auditore
 	Colbordolo Colonna
-	Federico Fermignano Fossombrone  
+	Federico Fermignano Fossombrone
 	ghibellini "Giordano Orsini" "Giovanni Santi"
-	"Isola del Piano" 
-	Lunano 
-	Mondaino Montefeltro 
-	Oddantonio Orsini 
+	"Isola del Piano"
+	Lunano
+	Mondaino Montefeltro
+	Oddantonio Orsini
 	Peglio "Piero della Francesca"
-	"San Crescentino" "Sant'Angelo in Vado" 
-	Tavoleto 
+	"San Crescentino" "Sant'Angelo in Vado"
+	Tavoleto
 }
 
 army_names = {

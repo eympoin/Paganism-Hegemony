@@ -1,8 +1,8 @@
 # - Albenga
 
-owner = GEN
-controller = GEN
-add_core = GEN
+owner = PDM
+controller = PDM
+add_core = PDM
 culture = lombard
 religion = jupiterian
 hre = no

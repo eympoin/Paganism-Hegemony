@@ -1,18 +1,18 @@
 #121 - Napoli
 
-owner = SLR
-controller = SLR
+owner = NAP
+controller = NAP
 culture = salernian 
-religion = jupiterian 
-hre = no 
-base_tax = 6 
-base_production = 6 
-trade_goods = grain 
-base_manpower = 5 
-capital = "Napoli" 
+religion = jupiterian
+hre = no
+base_tax = 6
+base_production = 6
+trade_goods = grain
+base_manpower = 5
+capital = "Napoli"
 is_city = yes	# Estimated
 fort_15th = yes
-add_core = SLR
+add_core = NAP
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

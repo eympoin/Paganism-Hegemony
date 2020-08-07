@@ -1,17 +1,17 @@
 #119 - Ancona
 
-owner = SPQ
-controller = SPQ
-culture = roman 
-religion = jupiterian 
-hre = no 
-base_tax = 5 
-base_production = 5    
+owner = URB
+controller = URB
+culture = roman
+religion = jupiterian
+hre = no
+base_tax = 5
+base_production = 5
 trade_goods = paper
-base_manpower = 4    
-capital = "Ancona" 
+base_manpower = 4
+capital = "Ancona"
 is_city = yes 
-add_core = SPQ
+add_core = URB
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

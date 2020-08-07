@@ -1,12 +1,12 @@
 government = monarchy
 add_government_reform = feudalism_reform
 technology_group = western
-religion = catholic
-primary_culture = neapolitan
+religion = jupiterian
+primary_culture = salernian
 capital = 121 # Napoli
 
 1399.1.1 = {
-	monarch = { 
+	monarch = {
 		name = "Louis II"
 		dynasty = "de Valois"
 		adm = 0
@@ -30,7 +30,7 @@ capital = 121 # Napoli
 }
 
 1399.11.1 = {
-	monarch = { 
+	monarch = {
 		name = "Ladislao I"
 		dynasty = "Durazzo"
 		dip = 2
@@ -55,7 +55,7 @@ capital = 121 # Napoli
 }
 
 1414.1.1 = {
-	monarch = { 
+	monarch = {
 		name = "Giovanna II"
 		dynasty = "de Valois"
 		dip = 2
@@ -80,7 +80,7 @@ capital = 121 # Napoli
 }
 
 1435.2.3 = {
-	monarch = { 
+	monarch = {
 		name = "Renato I"
 		dynasty = "de Valois"
 		dip = 2
@@ -94,19 +94,19 @@ capital = 121 # Napoli
 1458.6.27 = {
 	monarch = {
 		name = "Ferdinand I"
-		dynasty = "de Trastámara"
+		dynasty = "de Trastï¿½mara"
 		birth_date = 1424.6.2
 		dip = 4
 		mil = 4
 		adm = 2
-	}		
+	}
 }
 
 1458.6.27 = {
 	heir = {
 		name = "Alfonso"
 		monarch_name = "Alfonso II"
-		dynasty = "de Trastámara"
+		dynasty = "de Trastï¿½mara"
 		birth_date = 1448.11.4
 		death_date = 1495.12.18
 		claim = 95
@@ -119,19 +119,19 @@ capital = 121 # Napoli
 1494.1.26 = {
 	monarch = {
 		name = "Alfonso II"
-		dynasty = "de Trastámara"
+		dynasty = "de Trastï¿½mara"
 		birth_date = 1448.11.4
 		dip = 1
 		mil = 0
 		adm = 0
-	}		
+	}
 }
 
 1494.1.26 = {
 	heir = {
 		name = "Ferdinand"
 		monarch_name = "Ferdinando II"
-		dynasty = "de Trastámara"
+		dynasty = "de Trastï¿½mara"
 		birth_date = 1469.8.26
 		death_date = 1496.9.7
 		claim = 95
@@ -144,19 +144,19 @@ capital = 121 # Napoli
 1495.1.23 = {
 	monarch = {
 		name = "Ferdinando II"
-		dynasty = "de Trastámara"
+		dynasty = "de Trastï¿½mara"
 		birth_date = 1469.8.26
 		dip = 2
 		mil = 1
 		adm = 1
-	}		
+	}
 }
 
 1495.1.23 = {
 	heir = {
 		name = "Federigo"
 		monarch_name = "Federigo IV"
-		dynasty = "de Trastámara"
+		dynasty = "de Trastï¿½mara"
 		birth_date = 1452.4.19
 		death_date = 1504.11.9
 		claim = 95
@@ -169,12 +169,12 @@ capital = 121 # Napoli
 1496.10.8 = {
 	monarch = {
 		name = "Federigo IV"
-		dynasty = "de Trastámara"
+		dynasty = "de Trastï¿½mara"
 		birth_date = 1452.4.19
 		dip = 0
 		mil = 0
 		adm = 0
-	}		
+	}
 }
 
 1709.12.22 = { government = monarchy
@@ -193,7 +193,7 @@ add_government_reform = autocracy_reform }
 }
 
 1734.6.2 = { government = monarchy
-# add_government_reform = letat_cest_moi_reform 
+# add_government_reform = letat_cest_moi_reform
 government_rank = 1 }
 
 1734.6.2 = {
@@ -204,7 +204,7 @@ government_rank = 1 }
 		dip = 4
 		mil = 2
 		adm = 3
-	}		
+	}
 }
 
 1751.1.12 = {
@@ -239,7 +239,7 @@ government_rank = 1 }
 1800.1.1 = { capital = 125 } # Palermo
 
 1806.3.11 = {
-	monarch = { 
+	monarch = {
 		name = "Giuseppe I"
 		dynasty = "Bonaparte"
 		culture = sardinian #Corsican
@@ -255,7 +255,7 @@ government_rank = 1 }
 }
 
 1808.8.1 = {
-	monarch = { 
+	monarch = {
 		name = "Gioacchino I Murat"
 		dynasty = "Bonaparte"
 		culture = sardinian #Corsican

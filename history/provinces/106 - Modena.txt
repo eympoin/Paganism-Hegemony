@@ -1,19 +1,18 @@
 #106 - Modena
 
-owner = PAV
-controller = PAV
-culture = lombard 
-religion = jupiterian 
-hre = no 
-base_tax = 5 
-base_production = 5  
+owner = FER
+controller = FER
+culture = lombard
+religion = jupiterian
+hre = no
+base_tax = 5
+base_production = 5
 trade_goods = livestock
 base_manpower = 2  
-capital = "Modena" 
+capital = "Modena"
 is_city = yes
-add_core = PAV
+add_core = FER
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-
