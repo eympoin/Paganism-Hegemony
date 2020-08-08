@@ -6,11 +6,19 @@ capital = 4728
 add_army_professionalism = 0.05
 historical_rival = AQU
 
+add_truce_with = SPQ
+add_truce_with = RVN
+add_truce_with = TUS
+add_truce_with = PIS
+add_truce_with = SIE
+add_truce_with = PRA
+add_truce_with = URB
+
 1429.2.20 = {
 	monarch = {
 		name = "Cosimo"
 		dynasty = "Gausian"
-		birth_date = 1389.9.27                
+		birth_date = 1389.9.27
 		adm = 3
 		dip = 3
 		mil = 5

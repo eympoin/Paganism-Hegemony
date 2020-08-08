@@ -6,7 +6,13 @@ religion = jupiterian
 primary_culture = aquileian
 capital = 4729 # Padova
 
-
+add_truce = SPQ
+add_truce = RVN
+add_truce = TUS
+add_truce = PIS
+add_truce = SIE
+add_truce = PRA
+add_truce = URB
 
 1444.1.1 = {
 	monarch = {

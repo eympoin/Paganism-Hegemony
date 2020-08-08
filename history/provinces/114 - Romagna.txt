@@ -12,6 +12,7 @@ base_manpower = 6
 capital = "Ravenna"
 is_city = yes	# Estimated
 add_core = RVN
+add_core = FER
 
 
 

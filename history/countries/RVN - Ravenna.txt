@@ -5,14 +5,15 @@ religion = jupiterian
 technology_group = western
 capital = 114
 fixed_capital = 114
+government_rank = 1
 
 1444.1.1 = {
     monarch = {
-        name = "Claudius"
-	dynasty = "Hadrianus"
+        name = "Aineius"
+	dynasty = "Patius"
         birth_date = 1410.8.12
-        adm = 4
-        dip = 4
+        adm = 1
+        dip = 2
         mil = 2
     }
 }

@@ -1,10 +1,12 @@
-government = republic
-add_government_reform = imperial_roman_curia_reform
+government = monarchy
+add_government_reform = autocracy_reform
 primary_culture = roman
 religion = jupiterian
 technology_group = western
 capital = 118
 government_rank = 2
+
+
 
 1444.1.1 = {
     monarch = {

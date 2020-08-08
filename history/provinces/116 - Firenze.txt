@@ -2,7 +2,7 @@
 
 owner = TUS
 controller = TUS
-culture = tuscan
+culture = lombard
 religion = jupiterian
 hre = no
 base_tax = 6
@@ -14,6 +14,7 @@ capital = "Firenze"
 is_city = yes
  # Founded 1321
 add_core = TUS
+add_core = TOS
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
