@@ -5,7 +5,7 @@ primary_culture = northymbrian
 religion = norse_pagan_reformed
 capital = 245
 
-1431.11.6 = { #Coronation
+1438.11.6 = { #Coronation
 	monarch = {
 		name = "Siefried"
 		dynasty = "Ragnarsson"
@@ -19,7 +19,6 @@ capital = 245
 		monarch_name = "Wodir"
 		dynasty = "Ragnarsson"
 		birth_date = 1438.3.30
-		death_date = 1510.10.5
 		adm = 2
 		dip = 4
 		mil = 4
