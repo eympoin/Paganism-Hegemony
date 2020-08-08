@@ -279,8 +279,8 @@ cossack_ideas = {
 
 berber_ideas = {
 	start = {
-		naval_attrition = -0.25
-		may_perform_slave_raid = yes
+		land_attrition = -0.1
+		cavalry_power = 0.2
 	}
 
 	bonus = {
@@ -302,19 +302,19 @@ berber_ideas = {
 		trade_efficiency = 0.1
 		caravan_power = 0.2
 	}
-	corsairs = {
-		navy_tradition = 1
-		privateer_efficiency = 0.10
+	sedentarization = {
+		development_cost = -0.1
 	}
-	tuareg_cavalry = {
-		cavalry_power = 0.10
-		loot_amount = 0.10
+	legacy_of_dihya = {
+		legitimacy = 1
+		diplomatic_reputation = 1
 	}
 	dual_diplomacy = {
 		diplomatic_upkeep = 1
 	}
-	brothers_barbarossa = {
-		galley_power = 0.20
+	corsairs = {
+		navy_tradition = 1
+		privateer_efficiency = 0.10
 	}
 }
 

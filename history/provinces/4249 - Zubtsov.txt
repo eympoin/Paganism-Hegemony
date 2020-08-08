@@ -1,8 +1,8 @@
 #4249 - Zubtsov
 
-owner = RSO
-controller = RSO
-add_core = RSO
+owner = NOV
+controller = NOV
+add_core = NOV
 culture = russian
 religion = slavic
 hre = no
