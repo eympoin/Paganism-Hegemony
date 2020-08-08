@@ -208,10 +208,10 @@
  institute_prussian_monarchy_desc:0 "Our monarchy must once more reflect Prussian virtues and Protestant ideals!"
  franks_nation_title:0 "Unite the Franks"
  franks_nation_desc:0 "The Franks were divided for too long. Now it is time to unite them !"
- gaul_nation_title:0 "Recreate Gallia"
+ gaul_nation_title:0 "Reform Gallia"
  gaul_nation_desc:0 "A lot of Gallia has been lost to barbarians, but now it is back under roman control"
  hispania_nation_title:0 "Unite Hispania"
- hispania_nation_desc:0 "The peninsula was divided for too long, united nothing will stand in our ways"
+ hispania_nation_desc:0 "The peninsula was divided for too long, united nothing will stand in our way"
  wales_nation_title:0 "Unite Wales"
  wales_nation_desc:0 "The Lombards were divided for too long. Now it is time to unite them !"
  lombard_nation_title:0 "Unite the Lombards"
@@ -243,14 +243,17 @@
  swedish_nation_desc:0 "The former Swedish coalition failed to protect us against the Sami, it is time to form a coalation of our own."
  norwegian_nation_title:0 "Unite the Norwegians"
  norwegian_nation_desc:0 "The Norwegians need to be united if we want to survive the struggles of the future."
-#Arabia
-ArabianPagans_title:0 "Form Ardu-Alaliha"
-ArabianPagans_desc:0 "All Arabs are under one country and respect the old way"
+ #Arabia
+ ArabianPagans_title:0 "Form Ardu-Alaliha"
+ ArabianPagans_desc:0 "All Arabs are under one country and respect the old way"
 
-#Western Roman empire
-restore_Western_Roman_Empire_title:0 "Reform the Western Roman Empire"
-restore_Western_Roman_Empire_desc:0 "The Western Empire is back"
+ #Western Roman empire
+ restore_Western_Roman_Empire_title:0 "Reform the Western Roman Empire"
+ restore_Western_Roman_Empire_desc:0 "The Western Empire is back"
 
-#Tamazgha
-Create_Tamazgha_title:0 "Create Tamazgha"
-Create_Tamazgha_desc:0 "All Imazighen are unite"
+ #Tamazgha
+ Create_Tamazgha_title:0 "Create Tamazgha"
+ Create_Tamazgha_desc:0 "All Imazighen are unite"
+
+ african_nation_title:0 "Unite Africa"
+ african_nation_desc:0 "Africa has been divided for too long, united nothing will stand in our way"
