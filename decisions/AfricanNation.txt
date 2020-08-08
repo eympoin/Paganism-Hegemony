@@ -33,6 +33,7 @@ country_decisions = {
 				province_id = 1882
 				province_id = 353
 				province_id = 354
+				province_id = 352
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -47,7 +48,7 @@ country_decisions = {
 			owns_core_province = 1882
 			owns_core_province = 353
 			owns_core_province = 354
-			owns_core_province = 359
+			owns_core_province = 352
 		}
 		effect = {
 			change_tag = AFR

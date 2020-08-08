@@ -12,7 +12,7 @@ base_manpower = 1
 capital = "Cagliari" 
 is_city = yes # Estimated 
 add_core = CTG
-
+add_core = TRR
 
 
 discovered_by = western

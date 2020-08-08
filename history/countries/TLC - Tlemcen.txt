@@ -3,47 +3,17 @@ add_government_reform = feudalism_reform
 technology_group = muslim
 religion = berber
 primary_culture = berber_culture
-capital = 336 # Tlemcen
-fixed_capital = 336 # Cannot move capital away from this province & no power cost to move to it
+capital = 2450 # Tlemcen
 
-
-1402.1.1 = {
-	monarch = {
-		name = "Muhammad IV"
-		dynasty = "Jarawid"
-		adm = 3
-		dip = 3
-		mil = 2
-	}
-}
-
-1411.1.1 = {
-	monarch = {
-		name = "Abd al-Wahid"
-		dynasty = "Jarawid"
-		adm = 2
-		dip = 1
-		mil = 2
-	}
-}
-
-1424.1.1 = {
-	monarch = {
-		name = "Muhammad V"
-		dynasty = "Jarawid"
-		adm = 0
-		dip = 3
-		mil = 0
-	}
-}
 
 1430.7.27 = {
 	monarch = {
-		name = "Ahmad II"
+		name = "Kahina III"
 		dynasty = "Jarawid"
 		adm = 4
 		dip = 1
 		mil = 2
-		leader = {	name = "Ahmad II"	type = general	fire = 3	shock = 2	manuever = 3	siege = 0 }
+		female = yes
+		leader = {	name = "Kahina III"	type = general	fire = 3	shock = 2	manuever = 3	siege = 0 }
 	}
 }

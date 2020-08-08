@@ -3,7 +3,7 @@
 owner = FEZ
 controller = FEZ
 culture = mauretanian
-religion = berber
+religion = jupiterian
 capital = "Rabat"
 trade_goods = grain
 hre = no
