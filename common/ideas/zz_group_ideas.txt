@@ -28,7 +28,7 @@ african_ideas = {
 	}
 	trading_outpost = {
 		trade_steering = 0.1
-		range = 0.25	
+		range = 0.25
 	}
 	cities_of_innovation = {
 		global_institution_spread = 0.1
@@ -335,9 +335,9 @@ berber_ideas = {
 		culture_group = maghrebi
 	}
 	free = yes
-
-	ber_barbary_pirates = {
-		naval_forcelimit_modifier = 0.25
+	born_on_the_saddle_ber = {
+		cavalry_cost = -0.2
+		cavalry_fire = 1
 	}
 	desert_warfare = {
 		hostile_attrition = 1
@@ -349,17 +349,16 @@ berber_ideas = {
 	sedentarization = {
 		development_cost = -0.1
 	}
-	legacy_of_dihya = {
-		legitimacy = 1
-		diplomatic_reputation = 1
+	oasis_development = {
+		production_efficiency = 0.05
 	}
 	dual_diplomacy = {
 		diplomatic_upkeep = 1
 	}
-	corsairs = {
-		navy_tradition = 1
-		privateer_efficiency = 0.10
+	ber_barbary_pirates = {
+		naval_forcelimit_modifier = 0.25
 	}
+
 }
 
 
