@@ -2694,24 +2694,7 @@ east_slavic = {
 			Tyszkiewicz Kurnatowski Taczanowski Gosiewski Opalinski
 		}
 	}
-	sorbian = {
-		primary = SOR
-		male_names = {
-			Awgust Alojs Abraham Albin Bogumil Bjedrich Bjarnat Cyril Derwan Fryco Frido Filip
-			Handrij Jan Jurij Jakub Jozef Joachim Korla Kito Kristalub Krescan Michal Mikolaj Mato Mercin
-			Matej Marko Miliduch Miklaws Nathanael Petr Pawol Pomgajbog Stanislaw Salomon
-			Wjaclaw Wylem
-		}
-		female_names = {
-			Bogna Benedikta Hanka Inga Irmgard Jewa Lubina Ludmila Marja Marta Marjana Pawlina Róza Sofija
-		}
-		dynasty_names = {
-			Brosk "z Barenstamma" Buk Bronisz Czornak Cyzh Dejka "z Friedenfelsa"
-			Glowan Jakobica Klosopolski Kucank Leska Langa Mosak Muslik Mercink Miczka
-			Parczewski Prätorius Pjekar Rhenisz Rizo Rychtar Swora Stempel Smoler
-			Woski Wirt Zejler
-		}
-	}
+
 
 	polabian = {
 		primary = VEL
@@ -2801,7 +2784,24 @@ east_slavic = {
 }
 west_slavic = {
 	graphical_culture = westerngfx
-
+	sorbian = {
+		primary = SOR
+		male_names = {
+			Awgust Alojs Abraham Albin Bogumil Bjedrich Bjarnat Cyril Derwan Fryco Frido Filip
+			Handrij Jan Jurij Jakub Jozef Joachim Korla Kito Kristalub Krescan Michal Mikolaj Mato Mercin
+			Matej Marko Miliduch Miklaws Nathanael Petr Pawol Pomgajbog Stanislaw Salomon
+			Wjaclaw Wylem
+		}
+		female_names = {
+			Bogna Benedikta Hanka Inga Irmgard Jewa Lubina Ludmila Marja Marta Marjana Pawlina Róza Sofija
+		}
+		dynasty_names = {
+			Brosk "z Barenstamma" Buk Bronisz Czornak Cyzh Dejka "z Friedenfelsa"
+			Glowan Jakobica Klosopolski Kucank Leska Langa Mosak Muslik Mercink Miczka
+			Parczewski Prätorius Pjekar Rhenisz Rizo Rychtar Swora Stempel Smoler
+			Woski Wirt Zejler
+		}
+	}
 
 }
 
