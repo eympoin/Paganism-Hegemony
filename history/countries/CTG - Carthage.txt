@@ -1,5 +1,5 @@
-government = republic
-add_government_reform = oligarchy_reform
+government = monarchy
+add_government_reform = feudalism_reform
 primary_culture = carthaginian
 religion = jupiterian
 technology_group = western
@@ -11,7 +11,7 @@ historical_rival = BAE
 	dynasty = "Africanus"
         birth_date = 1418.12.9
         adm = 3
-        dip = 2
+        dip = 0
         mil = 4
     }
 }

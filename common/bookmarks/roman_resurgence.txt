@@ -6,5 +6,4 @@ bookmark =
 	country = SPQ
 	country = PAV
 	country = AQU
-	country = CTG
 }

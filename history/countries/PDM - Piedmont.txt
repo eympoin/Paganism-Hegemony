@@ -16,8 +16,8 @@ add_truce_with = URB
 
 1444.1.1 = {
     monarch = {
-        name = "Amédéo"
-	dynasty = "Sorfa"
+        name = "Amedeo"
+		dynasty = "Sorfa"
         birth_date = 1410.8.12
         adm = 2
         dip = 4

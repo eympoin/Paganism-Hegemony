@@ -1,0 +1,10 @@
+bookmark =
+{
+	name = "AFRICA_NAME"
+	desc = "AFRICA_DESC"
+	date = 1444.11.11
+	country = CTG
+	country = TLC
+	country = MAU
+	country = TRP
+}
