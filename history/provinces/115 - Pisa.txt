@@ -2,7 +2,7 @@
 
 owner = PIS
 controller = PIS
-culture = tuscan
+culture = lombard
 religion = jupiterian
 hre = no
 base_tax = 6
@@ -12,6 +12,7 @@ base_manpower = 3
 capital = "Pisa"
 is_city = yes	# Estimated
 add_core = PIS
+add_core = TOS
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

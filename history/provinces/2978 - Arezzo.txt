@@ -2,19 +2,18 @@
 
 owner = TUS
 controller = TUS
-culture = tuscan 
-religion = jupiterian 
-hre = no 
+culture = tuscan
+religion = jupiterian
+hre = no
 base_tax = 6
 base_production = 6
 trade_goods = livestock
 base_manpower = 2
-capital = "Arezzo" 
-is_city = yes # Estimated 
+capital = "Arezzo"
+is_city = yes # Estimated
 add_core = TUS
+add_core = TOS
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-
-

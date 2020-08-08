@@ -1,11 +1,10 @@
 government = monarchy
 add_government_reform = feudalism_reform
-primary_culture = roman
+primary_culture = lombard
 religion = jupiterian
 technology_group = western
-capital = 2976
-fixed_capital = 2976
-government_rank = 1
+capital = 116
+fixed_capital = 116
 
 1444.1.1 = {
     monarch = {

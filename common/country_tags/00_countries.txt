@@ -49,6 +49,7 @@ BAI = "countries/Bari.txt"
 LCN = "countries/Lucania.txt"
 PDM = "countries/Piedmont.txt"
 RVN = "countries/Ravenna.txt"
+TOS = "countries/Toscani.txt"
 
 CTG = "countries/Carthage.txt"
 MAU = "countries/Mauretania.txt"
