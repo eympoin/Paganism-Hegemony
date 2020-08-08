@@ -1,6 +1,6 @@
 graphical_culture = muslimgfx
 
-color = { 255  227 165 }
+color = { 244 207 90 }
 
 revolutionary_colors = { 5  0  1 }
 
