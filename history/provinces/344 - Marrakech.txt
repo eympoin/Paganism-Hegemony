@@ -1,7 +1,7 @@
 #344 - Marrakech
 
-owner = TFL
-controller = TFL
+owner = MRK
+controller = MRK
 culture = berber_culture
 religion = berber
 capital = "Marrakech"
@@ -12,7 +12,7 @@ base_production = 7
 base_manpower = 5
 is_city = yes
 fort_15th = yes
-add_core = TFL
+add_core = MRK
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

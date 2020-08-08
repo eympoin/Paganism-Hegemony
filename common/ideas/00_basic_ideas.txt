@@ -617,6 +617,7 @@ exploration_ideas = {
 				tag = GAL
 				tag = CTG
 				tag = LDN
+				primary_culture = carthaginian
 			}
 		}
 		modifier = {

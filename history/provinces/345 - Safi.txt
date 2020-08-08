@@ -1,7 +1,7 @@
 #345 - Safi
 
-owner = TFL
-controller = TFL
+owner = MRK
+controller = MRK
 culture = berber_culture
 religion = berber
 capital = "Safi"
@@ -11,7 +11,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = TFL
+add_core = MRK
 
 
 

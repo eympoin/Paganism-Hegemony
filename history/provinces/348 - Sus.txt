@@ -1,7 +1,7 @@
 #348 - Sus
 
-owner = TFL
-controller = TFL
+owner = SOS
+controller = SOS
 culture = berber_culture
 religion = berber
 capital = "Taroudant"
@@ -11,7 +11,7 @@ base_tax = 5
 base_production = 5
 base_manpower = 2
 is_city = yes
-add_core = TFL
+add_core = SOS
 
 
 

@@ -1,7 +1,7 @@
 # - Rabat
 
-owner = MRK
-controller = MRK
+owner = FEZ
+controller = FEZ
 culture = mauretanian
 religion = berber
 capital = "Rabat"
@@ -11,7 +11,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 2
 is_city = yes
-add_core = MRK
+add_core = FEZ
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

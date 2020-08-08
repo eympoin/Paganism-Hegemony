@@ -1,4 +1,48 @@
 # These ideas are loaded after all country ideas, but before default idea.
+
+african_ideas = {
+	start = {
+		galley_cost = -0.2
+		trade_goods_size_modifier = 0.2
+	}
+	bonus = {
+		trade_efficiency = 0.15
+	}
+	trigger = {
+	OR = {
+			primary_culture = carthaginian
+			}
+	}
+	free = yes
+	numidian_diplomacy = {
+	 diplomatic_reputation = 1
+	}
+
+	beacon_of_the_west = {
+		global_tax_modifier = 0.1
+		prestige = 1
+	}
+	berber_mercenaries = {
+		cavalry_cost = -0.2
+		mercenary_cost = -0.2
+	}
+	trading_outpost = {
+		trade_steering = 0.1
+		range = 0.25	
+	}
+	cities_of_innovation = {
+		global_institution_spread = 0.1
+	}
+	naval_siege = {
+		siege_blockade_progress = 1
+	}
+
+	expand_agriculture = {
+		production_efficiency = 0.1
+	}
+}
+
+
 BRD_ideas = {
 	start = {
 		advisor_cost = -0.1
