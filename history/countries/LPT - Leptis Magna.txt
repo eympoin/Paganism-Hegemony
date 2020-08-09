@@ -1,0 +1,19 @@
+government = republic
+add_government_reform = oligarchy_reform
+technology_group = western
+religion = jupiterian
+primary_culture = tripolitan
+capital = 2451	# Tripoli
+fixed_capital = 2451 # Cannot move capital away from this province & no power cost to move to it
+
+
+1400.1.1 = {
+	monarch = {
+		name = "Volesus"
+		dynasty = "Herculius"
+		adm = 3
+		dip = 3
+		mil = 4
+		birth_date = 1386.1.1
+	}
+}

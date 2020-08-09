@@ -1,7 +1,7 @@
 # - Thubaqt
 
-owner = TRP
-controller = TRP
+owner = LPT
+controller = LPT
 culture = tripolitan
 religion = jupiterian
 capital = "Thubaqt"
@@ -11,7 +11,7 @@ base_tax = 6
 base_production = 5
 base_manpower = 5
 is_city = yes
-add_core = TRP
+add_core = LPT
 
 
 

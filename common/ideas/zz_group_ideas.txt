@@ -11,6 +11,7 @@ african_ideas = {
 	trigger = {
 	OR = {
 			primary_culture = carthaginian
+			primary_culture = tripolitan
 			}
 	}
 	free = yes
