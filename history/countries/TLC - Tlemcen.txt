@@ -17,3 +17,6 @@ capital = 2450 # Tlemcen
 		leader = {	name = "Kahina III"	type = general	fire = 3	shock = 2	manuever = 3	siege = 0 }
 	}
 }
+legitimacy = 30
+
+

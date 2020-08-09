@@ -12,7 +12,7 @@ base_production = 3
 base_manpower = 1
 is_city = yes
 add_core = TLC
-
+add_local_autonomy = 80
 
 
 discovered_by = muslim

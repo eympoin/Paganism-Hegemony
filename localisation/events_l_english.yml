@@ -683,3 +683,8 @@ flavor_eaf.2.t:0 "Access to the Sea"
 flavor_eaf.2.d:0 "Now that we have an access to the sea, we shall choose which port we prioritize."
 flavor_eaf.2.a:0 "The port of Bremen will be the best"
 flavor_eaf.2.b:0 "Hamburg will be our choice"
+
+#Jarawa
+flavor_jar.1.t:0 "jarawan civil war"
+flavor_jar.1.d:0 "At the death of the last queen Kahina II, the throne was diputed between her children. Kahina III, her daughter came out of top, but the other pretenders have not said their last words... The war for the Jarawan throne has just begun"
+flavor_jar.1.a:0 "I am the only queen of the Jarawas !"

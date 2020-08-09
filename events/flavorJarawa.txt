@@ -1,0 +1,28 @@
+namespace = flavor_jar
+
+#Jarawan civil-war
+country_event = {
+	id = flavor_jar.1
+	title = "flavor_jar.1.t"
+	desc = "flavor_jar.1.d"
+	picture = CIVIL_WAR_eventPicture
+
+	trigger = {
+		tag = TLC
+	}
+	mean_time_to_happen = {
+		days = 5
+	}
+	fire_only_once = yes
+
+	option = {
+		name = "flavor_jar.1.a"
+		ai_chance = {
+			factor = 100
+		}
+		add_disaster_progress = {
+				disaster = civil_war
+				value = 100
+		}
+	}
+}
