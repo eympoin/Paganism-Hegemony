@@ -19,6 +19,7 @@ country_decisions = {
 				}
 			}
 			culture_group = berber_culture
+			NOT = {tag = TLC}
 		}
 		provinces_to_highlight = {
 			OR = {
