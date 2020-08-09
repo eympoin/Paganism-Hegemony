@@ -4,14 +4,14 @@ primary_culture = carthaginian
 religion = jupiterian
 technology_group = western
 capital = 341
-historical_rival = BAE
 1444.1.1 = {
     monarch = {
-        name = "Lucius"
+        name = "Lucius IV"
 	dynasty = "Africanus"
         birth_date = 1418.12.9
         adm = 3
         dip = 0
         mil = 4
     }
+    add_ruler_personality = cruel_personality
 }
