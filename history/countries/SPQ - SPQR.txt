@@ -6,15 +6,32 @@ technology_group = western
 capital = 118
 government_rank = 2
 
+add_country_modifier = {
+  name = massive_indebtment_spq
+  duration = -1
+}
 
+add_country_modifier = {
+  name = no_men_left_spq
+  duration = -1
+}
+
+add_country_modifier = {
+  name = wounds_of_bloody_war_spq
+  duration = -1
+}
+
+add_treasury = -120
 
 1444.1.1 = {
     monarch = {
         name = "Publius"
-	dynasty = "Junius"
+	       dynasty = "Junius"
         birth_date = 1390.2.9
         adm = 3
         dip = 5
         mil = 4
     }
+    add_ruler_personality = cruel_personality
+    add_ruler_personality = malevolent_personality 
 }
