@@ -24,7 +24,7 @@ historical_rival = PON
 		leader = {	name = "Konstantinos XI"	type = general	fire = 3	shock = 3	manuever = 4	siege = 0 }
 	}
 }
-1444.11.11 = {
+1443.11.11 = {
 	heir = {
 		name = "Alexios"
 		monarch_name = "Alexios IV"
