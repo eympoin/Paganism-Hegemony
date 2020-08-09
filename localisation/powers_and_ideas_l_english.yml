@@ -6844,7 +6844,7 @@
  land_sea_synchro:0 "Council of Admirals and Generals"
 
  granary_desc:0 "Africa is the second granary of the Mediterranean behind Egypt, we should expand our production to become the World largest exporter of food."
- numidian_cavalry_desc:0 "The Numidians cavalry is praised for its efficiency since the first Roman republic. For centuries we continued to use it, developped its use and made it evolve into an elite troop"
+ numidian_cavalry_desc:0 "The Numidian cavalry is praised for its efficiency since the first Roman republic. For centuries we continued to use it, developped its use and made it evolve into an elite troop"
  settle_new_trading_post_desc:0 "We must establish trading posts in the new lands discovered in the West. Trading with the natives will make our kingdom stronger. "
  naval_dominance_desc:0 "This chart written by our best admiral regroups all the laws and tactics of the navy of our time."
  mare_nostrum_c_desc:0 "Our city phenician or roman has always claimed the riches of the Mediterannean, and they will be ours"
@@ -7821,8 +7821,28 @@
 
    numidian_diplomacy_desc:0 "Since the fall of the Roman province of Africa in the last Jarawa-African war, the diplomacy between our city and the Numidian power has always been crucial for our survival."
    beacon_of_the_west_desc:0 "Even if we had to paid tributes to the Numids after the fall of Africa, our cities prospered in this Pax-Numidia. We became the most prosperous land in all teh Western Empire"
-   berber_mercenaries_desc:0 "The Numidians cavalry is praised for its efficiency since the first Roman republic. Our proximity with them permit us to hire them at  a lower price "
+   berber_mercenaries_desc:0 "The Numidian cavalry is praised for its efficiency since the first Roman republic. Our proximity with them permit us to hire them at  a lower price "
    trading_outpost_desc:0 "With the newly discovered lands in the west, we must establish trading outposts there to acquire all of these riches."
    cities_of_innovation_desc:0 "Our cities are famed for their scientists who advanced our knowledge of the world"
    naval_siege_desc:0 "We are renowned for our expertise for using ships to siege ennemy cities to blockade, bombard and even invade them. "
    expand_agriculture_desc:0 "Africa is the second granary of the Mediterranean behind Egypt, we should expand our production to become the World largest exporter of food."
+
+   TLC_ideas:0 "Jarawa Ideas"
+   TLC_ideas_start:0 "Jarawa Traditions"
+   TLC_ideas_bonus:0 "Jarawa Ambition"
+
+   roman_tributaries:0 "Roman tributaries"
+   numidian_cavalry_jar:0 "Numidian cavalry"
+   kuhinas_legacy:0 "Kuhina's legacy"
+   roman_syncretism:0 "Roman syncretism"
+   roman_exchanges:0 "Roman sciences"
+   sedentarization_jar:0 "Sedentarization"
+   from_riders_to_pirate:0 "From riders to pirates"
+
+   roman_tributaries_desc:0 "When we finished the roman province of Africa, when saw that keeping the roman cities on the coast as tributaries would be way more lucrative and beneficial for our kingdom. Even if we recentlt lost the control over them, we will soon return."
+   numidian_cavalry_jar_desc:0 "Our cavalry is praised for its efficiency throughout the world. Our cavalry traditions are rooted deep within ourselves and we will be nothing weithout our horses and camels."
+   kuhinas_legacy_desc:0 "The great Queen Kuhina led the first war of resistance against the Roman province of Africa. She was renowned for her spirit. This same spirit that kept our trrops from routing in these hard battles for our independance."
+   roman_syncretism_desc:0 "With the wonquest of ancient roman lands, we began to assimilate one another and formed a new romano-numid culture."
+   roman_exchanges_desc:0 "Our Roman tributaries and lands also gives us the access to Roman knowledge."
+   sedentarization_jar_desc:0 "A lot of us are still nomad going from an oasis to another. As we develop our territory we must try to sedentarize in these oasis so that they can become populous city."
+   from_riders_to_pirate_desc:0 "WIth the recent sedentarization, a lot of former nomads became pirates on the sea. Funding them to pillage the lands of our ennemies would weaken our ennemies."

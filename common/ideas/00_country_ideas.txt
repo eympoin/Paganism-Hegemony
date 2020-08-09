@@ -3,6 +3,47 @@
 # If adding new groups or ideas, make sure they are unique.
 
 ### Nation specific idea groups
+
+TLC_ideas = {
+	start = {
+		cavalry_power = 0.2
+		caravan_power = 0.33
+	}
+	bonus = {
+	 discipline = 0.05
+	}
+	trigger = {
+		tag = TLC
+	}
+	free = yes
+	roman_tributaries = {
+	 diplomatic_upkeep = 1
+	 vassal_income = 0.3
+	}
+	numidian_cavalry_jar = {
+		cavalry_cost = -0.2
+		cavalry_fire = 1
+	}
+
+	kuhinas_legacy = {
+	  legitimacy = 1
+		land_morale = 0.1
+	}
+	roman_syncretism = {
+		num_accepted_cultures = 1
+		religious_unity = 0.25
+	}
+	roman_exchanges = {
+		technology_cost = -0.1
+	}
+	sedentarization_jar = {
+		development_cost = -0.1
+	}
+	from_riders_to_pirate = {
+		may_perform_slave_raid = yes
+	}
+}
+
 SUE_ideas = {
 	start = {
 		hostile_attrition = 1
