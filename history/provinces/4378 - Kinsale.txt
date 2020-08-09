@@ -10,7 +10,6 @@ base_production = 1
 trade_goods = fish
 base_manpower = 1
 capital = "Killarney"
-fort_15th = yes
 is_city = yes
 add_core = MCM
 discovered_by = western

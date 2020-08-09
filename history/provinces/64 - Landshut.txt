@@ -9,7 +9,6 @@ base_tax = 3
 base_production = 3
 trade_goods = salt
 base_manpower = 2
-fort_15th = yes #Trausnitz Castle
 capital	= "Landshut"
 is_city = yes
 estate = estate_nobles

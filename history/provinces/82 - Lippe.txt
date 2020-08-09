@@ -16,6 +16,7 @@ base_manpower = 1
 hre = no
 is_city = yes
 add_core = SAX
+fort_15th = yes
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

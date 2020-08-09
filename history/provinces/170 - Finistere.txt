@@ -16,7 +16,6 @@ base_production = 3
 trade_goods = naval_supplies
 base_manpower = 4
 add_core = FRP
-fort_15th = yes
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

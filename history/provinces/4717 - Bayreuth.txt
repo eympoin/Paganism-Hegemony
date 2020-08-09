@@ -10,8 +10,6 @@ base_production = 2
 base_manpower = 2
 trade_goods = wool
 add_core = FKN
-fort_15th = yes
-
 discovered_by = eastern
 discovered_by = western
 discovered_by = muslim

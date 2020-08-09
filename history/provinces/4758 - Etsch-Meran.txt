@@ -11,7 +11,6 @@ trade_goods = wool
 base_manpower = 2
 capital = "Meran" 
 is_city = yes
-fort_15th = yes
 hre = no
 discovered_by = eastern
 discovered_by = western
