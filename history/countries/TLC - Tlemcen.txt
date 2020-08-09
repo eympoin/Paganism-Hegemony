@@ -4,7 +4,7 @@ technology_group = muslim
 religion = berber
 primary_culture = berber_culture
 capital = 2450 # Tlemcen
-
+add_accepted_culture = mauretanian
 
 1430.7.27 = {
 	monarch = {

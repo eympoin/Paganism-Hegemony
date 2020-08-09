@@ -2,7 +2,7 @@
 
 owner = MRK
 controller = MRK
-culture = berber_culture
+culture = moors
 religion = berber
 capital = "Anfa"
 trade_goods = grain

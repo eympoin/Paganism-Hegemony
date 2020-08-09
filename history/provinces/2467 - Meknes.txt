@@ -1,7 +1,7 @@
 # - Meknes
 owner = FEZ
 controller = FEZ
-culture = berber_culture
+culture = moors
 religion = berber
 capital = "Meknes"
 trade_goods = cloth

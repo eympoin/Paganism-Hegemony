@@ -2,7 +2,7 @@
 
 owner = TAC
 controller = TAC
-culture = carthaginian
+culture = tripolitan
 religion = jupiterian
 capital = "Tacape"
 trade_goods = grain

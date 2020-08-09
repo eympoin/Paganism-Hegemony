@@ -3,7 +3,7 @@
 owner = TFL
 controller = TFL
 add_core = TFL
-culture = berber_culture
+culture = moors
 religion = berber
 capital = "Demnate"
 trade_goods = wool

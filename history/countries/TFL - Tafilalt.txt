@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
-primary_culture =	berber_culture
+primary_culture = moors
 religion = berber
 technology_group = muslim
 capital = 346	# Tafilalt

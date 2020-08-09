@@ -2,7 +2,7 @@
 
 owner = TFL
 controller = TFL
-culture = berber_culture
+culture = moors
 religion = berber
 capital = "Ouarzazate"
 trade_goods = grain

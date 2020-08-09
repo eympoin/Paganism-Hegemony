@@ -2,7 +2,7 @@
 
 owner = FEZ
 controller = FEZ
-culture = berber_culture
+culture = moors
 religion = berber
 capital = "Fez"
 trade_goods = cloth

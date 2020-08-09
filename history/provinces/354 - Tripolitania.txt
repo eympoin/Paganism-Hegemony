@@ -2,7 +2,7 @@
 
 owner = TRP
 controller = TRP
-culture = carthaginian
+culture = tripolitan
 religion = jupiterian
 capital = "Tripoli" #Tripoli in the West.
 estate = estate_nobles

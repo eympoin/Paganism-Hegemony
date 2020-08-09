@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = feudalism_reform
-primary_culture = moroccan
+primary_culture = moors
 religion = berber
 technology_group = muslim
 capital = 343	# Fez

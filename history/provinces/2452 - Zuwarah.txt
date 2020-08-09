@@ -2,7 +2,7 @@
 
 owner = TRP
 controller = TRP
-culture = carthaginian
+culture = tripolitan
 religion = jupiterian
 capital = "Zuwarah"
 trade_goods = fish

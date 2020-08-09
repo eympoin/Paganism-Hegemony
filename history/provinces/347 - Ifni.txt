@@ -2,7 +2,7 @@
 
 owner = SOS
 controller = SOS
-culture = berber_culture
+culture = moors
 religion = berber
 capital = "Sidi Ifni"
 trade_goods = fish
