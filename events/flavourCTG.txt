@@ -18,17 +18,11 @@ country_event = { #a plot in the shadow
 	}
 
 	option = {
-		name = "flavor_nar..1.a"
+		name = "flavor_ctg.1.a"
 		ai_chance = { factor = 75 }
     kill_ruler = yes
-    define_ruler = {
-    name = "(Interregnum)"
-      adm = 0
-      mil = 0
-      dip = 0
-      regent = yes
-    }
 		add_stability = -1
+    country_event = {id = flavor_ctg.2}
 	}
 
 }
@@ -43,10 +37,10 @@ country_event = { #republic or monarchy ?
 	is_triggered_only = yes
 
 	option = {		# republic
-		name = "flavor_nar..2.a"
+		name = "flavor_ctg.2.a"
 		ai_chance = { factor = 90 }
     change_government = republic
-    add_government_reform = oligarchy_reform
+    add_government_reform = oligarchy_reform #carthaginian reform
     random_owned_province = {
 			limit = {
 				is_capital = no
@@ -63,7 +57,7 @@ country_event = { #republic or monarchy ?
 	}
 
   option = {	# monarchy
-		name = "flavor_nar..2.b"
+		name = "flavor_ctg.2.b"
 		ai_chance = { factor = 10 }
     random_owned_province = {
 			limit = {
@@ -79,7 +73,8 @@ country_event = { #republic or monarchy ?
       adm = 4
       mil = 0
       dip = 5
-      regent = yes
+      regency = yes
+      fixed = yes
     }
     define_heir = {
     dynasty = "Africanus"
@@ -88,6 +83,7 @@ country_event = { #republic or monarchy ?
     mil = 4
     dip = 2
     claim = 70
+    fixed = yes
     }
     add_country_modifier = {
       name = "need_of_reforms_monarchy"
