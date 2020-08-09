@@ -2,8 +2,8 @@
 
 owner = ARM
 controller = ARM
-culture = armenian
-religion = armenian_rl
+culture = pontic_greek
+religion = olympoi
 capital = "Erzindjan"
 trade_goods = copper
 hre = no

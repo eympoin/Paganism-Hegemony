@@ -359,6 +359,8 @@ anatolia_region = {
 		aegean_archipelago_area
 		germiyan_area
 		caria_area
+		cyprus_area
+		paphlagonia_area
 	}
 }
 

@@ -1056,7 +1056,7 @@ macedonia_area = { #5 (Macedonia)
 }
 
 morea_area = { #4 Central Greece
-	145  1773 4793 4701
+	145  1773 4793 4701 4819
 }
 
 attica_area = { #Attica and Boeotia
@@ -1188,11 +1188,11 @@ dagestan_area = { #5
 ########################################
 
 rum_area = { #5
-	1846 2300 4314 4315 2301
+ 2300 4314 2301 4806
 }
 
 erzurum_area = { #3	Erzurum and Trebizond
-	330 331 2305
+	330 331 2305 4817
 }
 
 hudavendigar_area = { #3
@@ -1201,17 +1201,17 @@ hudavendigar_area = { #3
 
 germiyan_area = { #4
 	color = { 234 145 65 }
-	322 4308 4311 4805 1848
+	322 4308 4311 2297 4309
 }
 
 aydin_area = { #5
 	color = { 239 70 86 }
-	318 2297 4309 4803 4804
+	318 4803 4804 4818
 }
 
 ankara_area = { #3
 	color = { 57 154 172 }
-	326 4312 4313
+	326 4312 4805 4816
 }
 
 aegean_archipelago_area = { #4
@@ -1219,22 +1219,27 @@ aegean_archipelago_area = { #4
 }
 
 kastamonu_area = { #4
-	325 328 2299 2304 4811
+ 	328 4811 4315 1846 2304
 }
 
 karaman_area = { #4
-	323 324 4307 4806 4813
+	323 324 4307 4813
 }
 
 caria_area = {
- 319 2298 4790
+ 319 2298 4790 1848
 }
 
 cukurova_area = { #3
 	color = { 50 177 200 }
-	321 327 2302 4800 4807
+	327 2302 4807 4814
 }
-
+cyprus_area = {
+	321 4800 4815
+}
+paphlagonia_area = {
+	2299 325 4313
+}
 aleppo_area = { #4
 	377 1849 2313 4298 4812
 }
@@ -1385,7 +1390,7 @@ delta_area = { #3
 
 bahari_area = { #4 #Lower Egypt
 	color = { 19 193 219 }
-	361 2316 4316 4317
+	361 2316 4316 4317 4820
 }
 
 vostani_area = { #3 #Middle Egypt

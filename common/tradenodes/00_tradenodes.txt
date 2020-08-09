@@ -1321,7 +1321,7 @@ armenia={
 		462 422 1856 #colchis
 		2197 2195 2201 463 #circassia
 		425 2198 2199 2208 4306 #dagestan_area
-		330 331 2305
+		330 331 2305 4817
 	}
 }
 basra={
@@ -1551,13 +1551,14 @@ anatolia={
 	}
 	members={
 	329 1846 2300 4314 4315 #rum_area
-	326 4312 4313 #ankara_area
+	326 4312 4313 4816#ankara_area
 	325 328 2299 2304 4811#pontus
 	327 2302 #cukurova_area
-	323 324 2301 4307 4813#karaman_area
+	323 324 2301 4307 4813 4814#karaman_area
 	332 2303 4310 #dulkadir_area
 	4806 4807
 	322 1848 4308 4311 4805#germiyan_area
+	319 4790 2298 4309 2297
 
 	}
 }
@@ -1593,7 +1594,7 @@ aleppo={
 		380 381 2327
 		383 2328 4268 4269 #tabuk_area
 		364 379 1854 4809#palestine_area
-		321 4800
+		321 4800 4815
 
 	}
 }
@@ -1625,7 +1626,7 @@ alexandria={
 		365 2315 2320 2321 #gulf_of_arabia_area
 		1233 2318 4323 #al_wahat_area
 		358 362 363 #delta_area
-		361 2316 4316 4317 #bahari_area
+		361 2316 4316 4317 4820#bahari_area
 		359 2317 4318 #vostani_area
 		360 1231 2319 4319 4320 #said_area
 		356 357 2325 2326 #cyrenaica_area
@@ -2478,11 +2479,11 @@ constantinople={
 	members={
 		1320 149 151 1764
 		316 317 2296 4797 4798#hudavendigar_area
-		318 319 2297 2298 4309 4803 4804#aydin_area
+		318 4803 4804 4818#aydin_area
 		164 320 1319 2348 3003 4799#aegean_archipelago_area
-		4700 4705 4779 4790 4801 # 1.30
+		4700 4705 4779 4801 # 1.30
 		4791 4792 4793 4795 4796
-		145 146 163 1773 4701 #morea_area
+		145 146 163 1773 4701 4819#morea_area
 		147 1853 148 4702
 		144 142 4699 4698 4794 4810
 	}

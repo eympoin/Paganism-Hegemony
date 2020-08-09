@@ -2,7 +2,7 @@
 
 owner = CAA
 controller = CAA
-culture = greek
+culture = anatolian
 religion = olympoi
 capital = "Halikarnassos"
 trade_goods = salt

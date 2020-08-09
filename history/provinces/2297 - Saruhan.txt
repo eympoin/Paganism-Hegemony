@@ -2,7 +2,7 @@
 
 owner = LYD
 controller = LYD
-culture = greek
+culture = anatolian
 religion = olympoi
 capital = "Magnesia"
 trade_goods = cotton
