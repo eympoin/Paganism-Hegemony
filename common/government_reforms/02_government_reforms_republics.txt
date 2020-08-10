@@ -60,6 +60,7 @@ carthaginian_republic_decentralize = {
 		has_country_modifier = intern_trade_focus
 		has_country_modifier = balanced_approach
 		}
+		NOT = {has_reform = carthaginian_republic_centralize}
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 15
@@ -69,6 +70,8 @@ carthaginian_republic_decentralize = {
 	legacy_equivalent = carthaginian_republic_decentralize_legacy
 	modifiers = {
 		merchants = 1
+		min_autonomy_in_territories = 0.1
+		state_maintenance_modifier = -0.2
 		max_absolutism = -20
 	}
 
@@ -99,6 +102,7 @@ carthaginian_republic_centralize = {
 		has_country_modifier = intern_trade_focus
 		has_country_modifier = balanced_approach
 		}
+		NOT = {has_reform = carthaginian_republic_decentralize}
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 15
@@ -108,7 +112,8 @@ carthaginian_republic_centralize = {
 	legacy_equivalent = carthaginian_republic_centralize_legacy
 	modifiers = {
 		global_autonomy = -0.05
-		global_tax_modifier = 0.1
+		global_tax_modifier = 0.15
+		governing_capacity = 200
 		max_absolutism = -20
 	}
 

@@ -710,3 +710,8 @@ flavor_ctg.4.d:0 "Our trade policies are non existant since our former king was 
 flavor_ctg.4.a:0 "Focus on internal trade."
 flavor_ctg.4.b:0 "Focus on external trade"
 flavor_ctg.4.c:0 "A mixed approach"
+
+flavor_ctg.5.t:0 "Seats of power"
+flavor_ctg.5.d:0 "We began as a city states, tributary to the Jarawas. But now our territories have grown and a centralized power in Carthage may not be the best to rule our empire."
+flavor_ctg.5.a:0 "Carthago is the only Senate."
+flavor_ctg.5.b:0 "Create Senates in different cities."
