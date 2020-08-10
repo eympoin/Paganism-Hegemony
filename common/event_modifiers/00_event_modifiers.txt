@@ -11475,3 +11475,36 @@ republic_under_construction = {
 	republican_tradition = -0.5
 	yearly_corruption = 0.1
 }
+
+army_of_citizens = {
+	global_manpower_modifier = 0.1
+	army_tradition = 1
+	discipline = 0.02
+	land_maintenance_modifier = 0.1
+}
+
+mercenary_contracts = {
+	mercenary_cost = -0.1
+	merc_maintenance_modifier = -0.1
+	mercenary_discipline = 0.05
+	land_morale = -0.1
+}
+
+intern_trade_focus = {
+	global_own_trade_power = 0.1
+	global_trade_goods_size_modifier = 0.1
+	global_foreign_trade_power = -0.1
+}
+
+extern_trade_focus = {
+	trade_steering = 0.2
+	trade_efficiency = 0.1
+	global_foreign_trade_power = 0.1
+	global_own_trade_power = -0.1
+}
+
+balanced_approach = {
+	global_foreign_trade_power = 0.1
+	global_own_trade_power = 0.1
+	trade_efficiency = 0.1
+}

@@ -21,7 +21,6 @@ country_event = { #a plot in the shadow
 		name = "flavor_ctg.1.a"
 		ai_chance = { factor = 75 }
     kill_ruler = yes
-		add_stability = -1
     country_event = {id = flavor_ctg.2}
 	}
 
@@ -91,4 +90,90 @@ country_event = { #republic or monarchy ?
     }
 	}
 
+}
+
+country_event = { #republic 1 fate of the military
+	id = flavor_ctg.3
+	title = "flavor_ctg.3.t"
+	desc = "flavor_ctg.3.d"
+	picture = LAND_MILITARY_eventPicture
+	major = yes
+
+	fire_only_once = yes
+
+
+	trigger = {
+      tag = CTG
+			has_country_modifier = "republic_under_construction"
+		}
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "flavor_ctg.3.a"
+		ai_chance = { factor = 50 }
+		add_country_modifier = {
+			name = "army_of_citizens"
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "flavor_ctg.3.b"
+		ai_chance = { factor = 50 }
+		add_country_modifier = {
+			name = "mercenary_contracts"
+			duration = -1
+		}
+	}
+}
+
+
+country_event = { #republic 2 trade_focus
+	id = flavor_ctg.4
+	title = "flavor_ctg.4.t"
+	desc = "flavor_ctg.4.d"
+	picture = PORTUGUESE_MERCHANTS_eventPicture
+	major = yes
+
+	fire_only_once = yes
+
+
+	trigger = {
+      tag = CTG
+			OR = {
+			has_country_modifier = army_of_citizens
+			has_country_modifier = mercenary_contracts
+			}
+		}
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = "flavor_ctg.4.a"
+		ai_chance = { factor = 40 }
+		add_country_modifier = {
+			name = "intern_trade_focus"
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "flavor_ctg.4.b"
+		ai_chance = { factor = 50 }
+		add_country_modifier = {
+			name = "extern_trade_focus"
+			duration = -1
+		}
+	}
+	option = {
+		name = "flavor_ctg.4.c"
+		ai_chance = { factor = 10 }
+		add_country_modifier = {
+			name = "balanced_approach"
+			duration = -1
+		}
+	}
 }
