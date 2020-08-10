@@ -2,7 +2,7 @@
 
 owner = ARM
 controller = ARM
-culture = azerbaijani
+culture = armenian
 religion = armenian_rl
 capital = "Shamakhi"
 trade_goods = wool
@@ -17,4 +17,3 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = nomad_group
 add_core = SRV
-add_local_autonomy = 20
