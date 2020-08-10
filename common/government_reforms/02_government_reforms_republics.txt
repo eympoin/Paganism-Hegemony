@@ -46,6 +46,79 @@ oligarchy_reform = {
 	}
 }
 
+carthaginian_republic_decentralize = {
+	icon = "parliament"
+	allow_normal_conversion = no
+	potential = {
+		tag = CTG
+		OR = {
+		has_country_modifier = army_of_citizens
+		has_country_modifier = mercenary_contracts
+		}
+		OR = {
+		has_country_modifier = extern_trade_focus
+		has_country_modifier = intern_trade_focus
+		has_country_modifier = balanced_approach
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 15
+	nation_designer_trigger = {
+		primary_culture = carthaginian
+	}
+	legacy_equivalent = carthaginian_republic_decentralize_legacy
+	modifiers = {
+		merchants = 1
+		max_absolutism = -20
+	}
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	conditional = {
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		has_parliament = yes
+	}
+	duration = 4
+}
+
+carthaginian_republic_centralize = {
+	icon = "parliament"
+	allow_normal_conversion = no
+	potential = {
+		tag = CTG
+		OR = {
+		has_country_modifier = army_of_citizens
+		has_country_modifier = mercenary_contracts
+		}
+		OR = {
+		has_country_modifier = extern_trade_focus
+		has_country_modifier = intern_trade_focus
+		has_country_modifier = balanced_approach
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 15
+	nation_designer_trigger = {
+		primary_culture = carthaginian
+	}
+	legacy_equivalent = carthaginian_republic_centralize_legacy
+	modifiers = {
+		global_autonomy = -0.05
+		global_tax_modifier = 0.1
+		max_absolutism = -20
+	}
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+	duration = 4
+}
+
 signoria_reform = {
 	icon = "signoria_reform"
 	allow_normal_conversion = yes

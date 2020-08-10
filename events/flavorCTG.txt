@@ -14,7 +14,7 @@ country_event = { #a plot in the shadow
       tag = CTG
 		}
 	mean_time_to_happen = {
-		months = 12
+		months = 6
 	}
 
 
@@ -102,7 +102,7 @@ country_event = { #republic 1 fate of the military
 			has_country_modifier = "republic_under_construction"
 		}
 	mean_time_to_happen = {
-		months = 12
+		months = 6
 	}
 
 	option = {
@@ -143,7 +143,7 @@ country_event = { #republic 2 trade_focus
 			}
 		}
 	mean_time_to_happen = {
-		months = 12
+		months = 6
 	}
 
 	option = {
@@ -171,4 +171,42 @@ country_event = { #republic 2 trade_focus
 			duration = -1
 		}
 	}
+}
+
+country_event = { #republic 3 government centralization
+	id = flavor_ctg.5
+	title = "flavor_ctg.5.t"
+	desc = "flavor_ctg.5.d"
+	picture = PORTUGUESE_MERCHANTS_eventPicture
+	major = yes
+
+	fire_only_once = yes
+
+
+	trigger = {
+      tag = CTG
+			OR = {
+			has_country_modifier = extern_trade_focus
+			has_country_modifier = intern_trade_focus
+			has_country_modifier = balanced_approach
+			}
+		}
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = { #centralize
+		name = "flavor_ctg.5.a"
+		ai_chance = { factor = 30 }
+		add_government_reform	= carthaginian_republic_centralize
+		remove_country_modifier = republic_under_construction
+	}
+
+	option = {
+		name = "flavor_ctg.5.b"
+		ai_chance = { factor = 70 }
+		add_government_reform	= carthaginian_republic_decentralize
+		remove_country_modifier = republic_under_construction
+	}
+
 }

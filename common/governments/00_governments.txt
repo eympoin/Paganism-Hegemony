@@ -237,6 +237,8 @@ republic = {
 		united_cantons_legacy
 		roman_curia_legacy
 		imperial_roman_curia_legacy
+		carthaginian_republic_centralize_legacy
+		carthaginian_republic_decentralize_legacy
 	}
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {
@@ -266,6 +268,8 @@ republic = {
 				united_cantons_reform
 				roman_curia_reform
 				imperial_roman_curia_reform
+				carthaginian_republic_decentralize
+				carthaginian_republic_centralize
 			}
 		}
 		republican_virtues = {
@@ -386,6 +390,8 @@ republic = {
 		admiralty_reform
 		prussian_republic_reform
 		military_dictatorship_reform
+		carthaginian_republic_decentralize
+		carthaginian_republic_centralize
 	}
 	exclusive_reforms = {
 		free_city
