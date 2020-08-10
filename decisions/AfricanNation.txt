@@ -49,6 +49,7 @@ country_decisions = {
 			owns_core_province = 353
 			owns_core_province = 354
 			owns_core_province = 352
+			development = 300
 		}
 		effect = {
 			change_tag = AFR

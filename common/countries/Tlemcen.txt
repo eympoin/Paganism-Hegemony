@@ -56,13 +56,13 @@ monarch_names = {
 	"Wahid #0" = 1
 	"Zahir #0" = 1
 	
-	"Dihya #6" = -60
-	"Kahina #3" = -40
-	"Anno #0" = -10
-	"Daïkra #0" = -1
-	"Izza #0" = -10
-	"Massa #0" = -10
-	"Tafalkayt #0" = -10
+	"Dihya #6" = -100
+	"Kahina #3" = -70
+	"Anno #0" = -20
+	"Daïkra #0" = -20
+	"Izza #0" = -20
+	"Massa #0" = -20
+	"Tafalkayt #0" = -20
 }
 
 leader_names = {
