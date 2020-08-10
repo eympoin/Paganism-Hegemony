@@ -2,8 +2,8 @@
 
 owner = ARM
 controller = ARM
-culture = pontic_greek
-religion = olymmpoi
+culture = armenian
+religion = armenian_rl
 capital = "Theodosiopolis"
 trade_goods = livestock
 hre = no
