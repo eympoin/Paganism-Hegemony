@@ -234,7 +234,7 @@ roman_province_cen = {
 	max_government_rank = 2								# 0 means no limit
 
 	base_liberty_desire = 0.0
-	liberty_desire_negative_prestige = 50.0
+	liberty_desire_negative_prestige = 0.5
 	liberty_desire_development_ratio = 0.20
 	pays_overlord = 1.0									# 1.0 represents the amount payed by vassals
 	forcelimit_bonus = 2.0								# 1.0 represents bonus from having a vassal
@@ -278,7 +278,7 @@ roman_province_decen = {
 	max_government_rank = 2								# 0 means no limit
 
 	base_liberty_desire = 20.0
-	liberty_desire_negative_prestige = 50.0
+	liberty_desire_negative_prestige = 0.5
 	liberty_desire_development_ratio = 0.25
 	pays_overlord = 0.5									# 1.0 represents the amount payed by vassals
 	forcelimit_bonus = 1.0								# 1.0 represents bonus from having a vassal

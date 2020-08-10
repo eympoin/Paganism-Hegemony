@@ -6,6 +6,34 @@ technology_group = western
 capital = 118
 government_rank = 2
 
+change_estate_land_share = {
+  estate = estate_nobles
+  share = 50
+}
+change_estate_land_share = {
+  estate = estate_church
+  share = -14
+}
+change_estate_land_share = {
+  estate = estate_burghers
+  share = -9
+}
+
+1444.1.1 = {
+    monarch = {
+        name = "Publius"
+	       dynasty = "Junius"
+        birth_date = 1390.2.9
+        adm = 3
+        dip = 5
+        mil = 4
+    }
+    add_ruler_personality = cruel_personality
+    add_ruler_personality = malevolent_personality
+}
+
+#Initial situation settings
+
 add_country_modifier = {
   name = massive_indebtment_spq
   duration = -1
@@ -22,16 +50,3 @@ add_country_modifier = {
 }
 
 add_treasury = -120
-
-1444.1.1 = {
-    monarch = {
-        name = "Publius"
-	       dynasty = "Junius"
-        birth_date = 1390.2.9
-        adm = 3
-        dip = 5
-        mil = 4
-    }
-    add_ruler_personality = cruel_personality
-    add_ruler_personality = malevolent_personality 
-}

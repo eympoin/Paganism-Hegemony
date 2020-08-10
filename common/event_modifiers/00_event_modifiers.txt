@@ -11466,6 +11466,33 @@ Munchen_capital = {
 	yearly_corruption = -0.1
 }
 
+massive_indebtment_spq = {
+	inflation_reduction = -0.1
+	yearly_corruption = 0.1
+	interest = 1
+}
+
+no_men_left_spq = {
+	manpower_recovery_speed = -0.8
+	global_manpower_modifier = -0.5
+	production_efficiency = -0.5
+	global_tax_modifier = -0.5
+}
+wounds_of_bloody_war_spq = {
+	diplomatic_reputation = -2
+	ae_impact = 0.3
+	war_exhaustion = 0.09
+	stability_cost_modifier = 0.5
+}
+bloodthirsty_heritage_spq = {
+    diplomatic_reputation = -1
+    ae_impact = 0.15
+}
+birthed_by_cw_spq = {
+    stability_cost_modifier = 0.2
+    war_exhaustion = 0.02
+}
+
 need_of_reforms_monarchy = {
 	global_unrest = -2
   stability_cost_modifier = 0.1

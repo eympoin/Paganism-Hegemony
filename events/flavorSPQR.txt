@@ -1,0 +1,253 @@
+namespace = flavor_spqr
+
+country_event = {
+  id = flavor_spqr.1
+  title = flavor_spqr.1.t
+  desc = flavor_spqr.1.d
+  picture = DEFENESTRATION_PRAGUE_eventPicture
+
+  fire_only_once = yes
+
+  trigger = {
+    tag = SPQ
+    is_year = 1445
+  }
+
+  mean_time_to_happen = {
+    months = 1
+  }
+
+  option = {
+    name = flavor_spqr.1.a
+    ai_chance = { factor = 99 }
+    change_government = republic
+    add_government_reform = imperial_roman_curia_reform
+    kill_ruler = yes
+    118 = { pretender_rebels = 1 }
+    4732 = { pretender_rebels = 1 }
+    custom_tooltip = SPQ_PROV_LEAVE_tt
+    hidden_effect = {
+      RVN = {
+        country_event =  {
+          id = flavor_spqr.111
+          days = 100
+        }
+      }
+      URB = {
+        country_event =  {
+          id = flavor_spqr.111
+          days = 180
+        }
+      }
+      PIS = {
+        country_event =  {
+          id = flavor_spqr.111
+          days = 70
+        }
+      }
+      SIE = {
+        country_event =  {
+          id = flavor_spqr.111
+          days = 210
+        }
+      }
+      PRA = {
+        country_event =  {
+          id = flavor_spqr.111
+          days = 300
+        }
+      }
+      TUS = {
+        country_event =  {
+          id = flavor_spqr.111
+          days = 130
+        }
+      }
+    }
+  }
+
+  option = {
+    name = flavor_spqr.1.b
+    ai_chance = { factor = 1 }
+    change_adm = -1
+    change_dip = -1
+    change_mil = -2
+  }
+}
+
+country_event = {
+  id = flavor_spqr.111
+  title = flavor_spqr.111.t
+  desc = flavor_spqr.111.d
+  picture = NOBLE_ESTATE_TAKE_OVER_eventPicture
+
+  is_triggered_only = yes
+
+  option = {#Independence
+    name = flavor_spqr.111.a
+    ai_chance = {
+      factor = 60
+      modifier = {
+        factor = 0
+        tag = PRA
+      }
+      modifier = {
+        factor = 20
+        OR = {
+          tag = URB
+          tag = SIE
+        }
+      }
+    }
+    grant_independence = yes
+    SPQ = {
+      country_event = {
+        id = flavor_spqr.1111
+      }
+    }
+  }
+
+  option = {#Autonomy
+    name = flavor_spqr.111.b
+    ai_chance = {
+      factor = 30
+      modifier = {
+        factor = 10
+        tag = PRA
+      }
+      modifier = {
+        factor = 70
+        OR = {
+          tag = URB
+          tag = SIE
+        }
+      }
+      modifier = {
+        factor = 0
+        has_country_flag = postponed_choice_spqr_province
+      }
+    }
+    hidden_effect = {
+      set_country_flag = postponed_choice_spqr_province
+      country_event = {
+        id = flavor_spqr.111
+        days = 3650
+      }
+    }
+    SPQ = {
+      create_subject = {
+        subject_type = roman_province_decen
+        subject = ROOT
+      }
+      country_event = {
+        id = flavor_spqr.1112
+      }
+    }
+  }
+
+  option = {#Loyal
+    name = flavor_spqr.111.c
+    ai_chance = {
+      factor = 10
+      modifier = {
+        factor = 100
+        tag = PRA
+      }
+      modifier = {
+        factor = 0
+        OR = {
+          tag = PIS
+          tag = RVN
+        }
+      }
+      modifier = {
+        factor = 60
+        has_country_flag = postponed_choice_spqr_province
+        SPQ = {
+          stability = 1
+          NOT = { inflation = 5 }
+          prestige = 20
+          NOT = { average_unrest = 0 }
+          OR = {
+            NOT = { has_country_modifier = massive_indebtment_spq }
+            NOT = { has_country_modifier = no_men_left_spq }
+            NOT = { has_country_modifier = wounds_of_bloody_war_spq }
+          }
+        }
+      }
+    }
+  }
+
+  option = {#coming back
+    name = flavor_spqr.111.e
+    ai_chance = {
+      factor = 0
+      modifier = {
+        factor = 60
+        has_country_flag = postponed_choice_spqr_province
+        SPQ = {
+          stability = 1
+          NOT = { inflation = 5 }
+          prestige = 20
+          NOT = { average_unrest = 0 }
+          OR = {
+            NOT = { has_country_modifier = massive_indebtment_spq }
+            NOT = { has_country_modifier = no_men_left_spq }
+            NOT = { has_country_modifier = wounds_of_bloody_war_spq }
+          }
+        }
+      }
+    }
+    SPQ = {
+      create_subject = {
+        subject_type = roman_province_cen
+        subject = ROOT
+      }
+      country_event = {
+        id = flavor_spqr.1113
+      }
+    }
+  }
+}
+
+country_event = {#Independence
+  id = flavor_spqr.1111
+  title = flavor_spqr.1111.t
+  desc = flavor_spqr.1111.d
+  picture = NOBLE_ESTATE_TAKE_OVER_eventPicture
+
+  is_triggered_only = yes
+
+  option = {
+    name = flavor_spqr.1111.a
+    add_prestige = -15
+  }
+}
+
+country_event = {#Autonomy
+  id = flavor_spqr.1112
+  title = flavor_spqr.1112.t
+  desc = flavor_spqr.1112.d
+  picture = NOBLE_ESTATE_TAKE_OVER_eventPicture
+
+  is_triggered_only = yes
+
+  option = {
+    name = flavor_spqr.1112.a
+    add_prestige = -5
+  }
+}
+
+country_event = {#Coming back
+  id = flavor_spqr.1113
+  title = flavor_spqr.1113.t
+  desc = flavor_spqr.1113.d
+  picture = NOBLE_ESTATE_TAKE_OVER_eventPicture
+
+  is_triggered_only = yes
+
+  option = {
+    name = flavor_spqr.1113.a
+    add_prestige = 15
+  }
+}
