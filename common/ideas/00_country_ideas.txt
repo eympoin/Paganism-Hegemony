@@ -117,44 +117,6 @@ ION_ideas = {
 	}
 }
 
-CIL_ideas = {
-	start = {
-		global_naval_engagement_modifier = 0.1
-		ship_durability = 0.1
-	}
-	bonus = {
-	 may_perform_slave_raid = yes
-	}
-	trigger = {
-		primary_culture = cilician
-		NOT = {tag = CYP}
-	}
-	free = yes
-	kilikian_shield = {
-	 shock_damage_received = -0.1
-	}
-	horse_pasture = {
-		cavalry_cost = -0.2
-		cavalry_power = 0.1
-	}
-
-	naval_culture = {
-	  navy_tradition_decay = -0.1
-	}
-	everyone_is_a_sailor = {
-		sailors_recovery_speed = 0.15
-	}
-	cilicia_pedias = {
-		global_trade_goods_size_modifier = 0.2
-	}
-	develop_use_gun = {
-		leader_land_fire = 1
-	}
-	cilician_trading_post = {
-		trade_efficiency = 0.1
-	}
-}
-
 CAP_ideas = {
 	start = {
 		hostile_attrition = 1
@@ -6615,7 +6577,12 @@ CYP_ideas = {
 		naval_forcelimit_modifier = 0.33
 	}
 	trigger = {
-		tag = CYP
+		OR = {
+			tag = LIM
+			tag = CYP
+			tag = SLS
+			tag = PPO
+		}
 	}
 	free = yes
 
@@ -8206,8 +8173,7 @@ NAX_ideas = {
 	trigger = {
 		OR{
 		tag = NAX
-		tag = RHO
-		tag = CYP
+		tag = LES
 		}
 	}
 	free = yes

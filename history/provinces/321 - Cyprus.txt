@@ -1,7 +1,7 @@
 #321 - Cyprus
 
-owner = CYP
-controller = CYP
+owner = LIM
+controller = LIM
 culture = cilician
 religion = olympoi
 capital = "Limassol"
@@ -11,8 +11,7 @@ base_tax = 5
 base_production = 5
 base_manpower = 4
 is_city = yes
-fort_15th = yes
-add_core = CYP
+add_core = LIM
 
 
 

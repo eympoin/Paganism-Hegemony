@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = cilician
+technology_group = western
+capital = 4815 # Paphos
+fixed_capital = 4815 # Cannot move capital away from this province & no power cost to move to it
+religion = olympoi
+1413.1.1 = {
+	monarch = {
+		name = "Stefanos"
+		dynasty = "Karbonopsis"
+		birth_date = 1412.1.1
+		adm = 5
+		dip = 0
+		mil = 1
+	}
+}

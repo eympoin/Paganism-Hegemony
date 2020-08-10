@@ -5,3 +5,13 @@ technology_group = western
 capital = 321	# Limassol
 fixed_capital = 321 # Cannot move capital away from this province & no power cost to move to it
 religion = olympoi
+1398.1.1 = {
+	monarch = {
+		name = "Janus"
+		dynasty = "Axuochos"
+		birth_date = 1385.1.1
+		adm = 1
+		dip = 3
+		mil = 2
+	}
+}

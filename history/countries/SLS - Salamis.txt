@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = cilician
+technology_group = western
+capital = 4800 # Salamis
+fixed_capital = 4800 # Cannot move capital away from this province & no power cost to move to it
+religion = olympoi
+1398.1.1 = {
+	monarch = {
+		name = "Hektorios"
+		dynasty = "Angoures"
+		birth_date = 1402.1.1
+		adm = 6
+		dip = 1
+		mil = 1
+	}
+}

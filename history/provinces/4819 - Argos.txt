@@ -1,5 +1,5 @@
-owner = MOE
-controller = MOE
+owner = AGO
+controller = AGO
 culture = greek
 religion = olympoi
 capital = "Argos"
@@ -9,7 +9,7 @@ base_tax = 6
 base_production = 5
 base_manpower = 5
 is_city = yes
-add_core = MOE
+add_core = AGO
 
 
 

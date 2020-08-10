@@ -2,7 +2,7 @@
 
 graphical_culture = easterngfx
 
-color = { 44 10 223 }
+color = { 159 162 163 }
 
 historical_idea_groups = {
 	maritime_ideas
@@ -95,7 +95,6 @@ monarch_names = {
 	"Theodora #1" = -20
 	"Zoe #1" = -10
 }
-
 leader_names = { 
 	Acciajuoli 
 	Contarini Crispo

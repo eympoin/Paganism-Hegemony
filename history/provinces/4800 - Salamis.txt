@@ -1,7 +1,7 @@
 #321 - Cyprus
 
-owner = CYP
-controller = CYP
+owner = SLS
+controller = SLS
 culture = cilician
 religion = olympoi
 capital = "Salamis"
@@ -11,7 +11,7 @@ base_tax = 6
 base_production = 6
 base_manpower = 4
 is_city = yes
-add_core = CYP
+add_core = SLS
 extra_cost = 8
 center_of_trade = 1
 

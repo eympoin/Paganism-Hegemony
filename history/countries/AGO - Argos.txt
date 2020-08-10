@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = greek
+religion = olympoi
+capital = 4819
+
+# Principality of Achaea #
+1396.1.1 = {
+	monarch = {
+		name = "Bardas I"
+		dynasty = "Monotes"
+		dip = 3
+		adm = 3
+		mil = 5
+	}
+}
