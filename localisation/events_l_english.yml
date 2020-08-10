@@ -700,6 +700,18 @@ flavor_ctg.2.d:0 "The king is dead but we shall now choose what we will do, who 
 flavor_ctg.2.a:0 "The time of kings is over. Proclaim the Republic !"
 flavor_ctg.2.b:0 "We can't abandon the monarchy. Bring Lucius's son to the throne !"
 
+
+flavor_ctg.3.t:0 "Army of the Republic"
+flavor_ctg.3.d:0 "The old kingdoms army was based on mercenary contracts with Numidians, Sicilians or Africans. At the senate two sides are opposed, some wants to renew these mercenry contracts and making them an elite army. Other wants to make an army made of citizen and making military service mandatory."
+flavor_ctg.3.a:0 "Our citzens will make the bulk of our army."
+flavor_ctg.3.b:0 "Renew the mercenary contracts."
+
+flavor_ctg.4.t:0 "Trade focus"
+flavor_ctg.4.d:0 "Our trade policies are non existant since our former king was more focused on war than trade. Now that we are in power, we must choose whether we focus on attracting foreign traders to our cities or develop our internal trade and production. Maybe a mixed approach is better ?"
+flavor_ctg.4.a:0 "Focus on internal trade."
+flavor_ctg.4.b:0 "Focus on external trade"
+flavor_ctg.4.c:0 "A mixed approach"
+
 #Rome
 flavor_spqr.1.t:0 "The defenestration of Roma"
 flavor_spqr.1.d:0 "Our king, Rex Julius Publius was attacked by the Senators of the Roman Curia, they hope to take power and bring back the republic, as the monarchy seems to have brought naught but poverty and suffering upon our people. They threw him though the window of his personal quarters after a heated argument, his life hangs by a thread."

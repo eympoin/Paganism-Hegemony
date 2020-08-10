@@ -14,9 +14,9 @@ add_accepted_culture = mauretanian
 		dip = 1
 		mil = 2
 		female = yes
-		leader = {	name = "Kahina III"	type = general	fire = 3	shock = 2	manuever = 3	siege = 0 }
+		leader = {	name = "Kahina III"	type = general	fire = 3	shock = 2	manuever = 3	siege = 0  female = yes}
 	}
 }
-legitimacy = 30
+legitimacy = 39
 
 

@@ -13,5 +13,13 @@ capital = 341
         dip = 0
         mil = 4
     }
-    add_ruler_personality = cruel_personality
+    heir = {
+		name = "Gaius"
+		dynasty = "Africanus"
+		birth_date = 1438.2.8
+		adm = 3
+		mil = 4
+		dip = 2
+		claim = 70
+	}
 }

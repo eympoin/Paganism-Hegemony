@@ -1,0 +1,212 @@
+# A plot for two thrones
+namespace = flavor_ctg
+country_event = { #a plot in the shadow
+	id = flavor_ctg.1
+	title = "flavor_ctg.1.t"
+	desc = "flavor_ctg.1.d"
+	picture = COURT_eventPicture
+	major = yes
+
+	fire_only_once = yes
+
+
+	trigger = {
+      tag = CTG
+		}
+	mean_time_to_happen = {
+		months = 6
+	}
+
+
+	option = {
+		name = "flavor_ctg.1.a"
+		ai_chance = { factor = 75 }
+    kill_ruler = yes
+		hidden_effect = {
+			 country_event = { id = flavor_ctg.2 days = 7 }
+		}
+	}
+
+}
+
+country_event = { #republic or monarchy ?
+	id = flavor_ctg.2
+	title = "flavor_ctg.2.t"
+	desc = "flavor_ctg.2.d"
+	picture = COURT_eventPicture
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {		# republic
+		name = "flavor_ctg.2.a"
+		ai_chance = { factor = 90 }
+    change_government = republic
+    add_government_reform = oligarchy_reform #carthaginian reform
+    random_owned_province = {
+			limit = {
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = noble_rebels
+				size = 2
+			}
+		}
+    add_country_modifier = {
+      name = "republic_under_construction"
+      duration = -1
+    }
+	}
+
+  option = {	# monarchy
+		name = "flavor_ctg.2.b"
+		ai_chance = { factor = 10 }
+    random_owned_province = {
+			limit = {
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = revolutionary_rebels
+				size = 2
+			}
+		}
+    define_ruler = {
+      name = "Gaius"
+      adm = 4
+      mil = 0
+      dip = 5
+      regency = yes
+      fixed = yes
+    }
+
+    add_country_modifier = {
+      name = "need_of_reforms_monarchy"
+      duration = -1
+    }
+	}
+
+}
+
+country_event = { #republic 1 fate of the military
+	id = flavor_ctg.3
+	title = "flavor_ctg.3.t"
+	desc = "flavor_ctg.3.d"
+	picture = LAND_MILITARY_eventPicture
+	major = yes
+
+	fire_only_once = yes
+
+
+	trigger = {
+      tag = CTG
+			has_country_modifier = "republic_under_construction"
+		}
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "flavor_ctg.3.a"
+		ai_chance = { factor = 50 }
+		add_country_modifier = {
+			name = "army_of_citizens"
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "flavor_ctg.3.b"
+		ai_chance = { factor = 50 }
+		add_country_modifier = {
+			name = "mercenary_contracts"
+			duration = -1
+		}
+	}
+}
+
+
+country_event = { #republic 2 trade_focus
+	id = flavor_ctg.4
+	title = "flavor_ctg.4.t"
+	desc = "flavor_ctg.4.d"
+	picture = PORTUGUESE_MERCHANTS_eventPicture
+	major = yes
+
+	fire_only_once = yes
+
+
+	trigger = {
+      tag = CTG
+			OR = {
+			has_country_modifier = army_of_citizens
+			has_country_modifier = mercenary_contracts
+			}
+		}
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = "flavor_ctg.4.a"
+		ai_chance = { factor = 40 }
+		add_country_modifier = {
+			name = "intern_trade_focus"
+			duration = -1
+		}
+	}
+
+	option = {
+		name = "flavor_ctg.4.b"
+		ai_chance = { factor = 50 }
+		add_country_modifier = {
+			name = "extern_trade_focus"
+			duration = -1
+		}
+	}
+	option = {
+		name = "flavor_ctg.4.c"
+		ai_chance = { factor = 10 }
+		add_country_modifier = {
+			name = "balanced_approach"
+			duration = -1
+		}
+	}
+}
+
+country_event = { #republic 3 government centralization
+	id = flavor_ctg.5
+	title = "flavor_ctg.5.t"
+	desc = "flavor_ctg.5.d"
+	picture = PORTUGUESE_MERCHANTS_eventPicture
+	major = yes
+
+	fire_only_once = yes
+
+
+	trigger = {
+      tag = CTG
+			OR = {
+			has_country_modifier = extern_trade_focus
+			has_country_modifier = intern_trade_focus
+			has_country_modifier = balanced_approach
+			}
+		}
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = { #centralize
+		name = "flavor_ctg.5.a"
+		ai_chance = { factor = 30 }
+		add_government_reform	= carthaginian_republic_centralize
+		remove_country_modifier = republic_under_construction
+	}
+
+	option = {
+		name = "flavor_ctg.5.b"
+		ai_chance = { factor = 70 }
+		add_government_reform	= carthaginian_republic_decentralize
+		remove_country_modifier = republic_under_construction
+	}
+
+}
