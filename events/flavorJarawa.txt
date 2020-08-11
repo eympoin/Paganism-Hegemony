@@ -26,3 +26,205 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = flavor_jar.2
+	title = "flavor_jar.2.t"
+	desc = "flavor_jar.2.d"
+	picture = CIVIL_WAR_eventPicture
+
+	trigger = {
+		tag = TLC
+		is_year = 1445
+		NOT = { has_disaster = civil_war}
+
+	}
+	mean_time_to_happen = {
+		days = 5
+	}
+	fire_only_once = yes
+
+	option = {
+		name = "flavor_jar.2.a"
+		ai_chance = {
+			factor = 100
+		}
+		hidden_effect = {
+			 country_event = { id = flavor_jar.3 days = 7 }
+		}
+		every_owned_province = {
+			limit = {
+				local_autonomy = 50
+			}
+			add_local_autonomy = -50
+		}
+		add_yearly_manpower = 4
+	}
+}
+
+
+country_event = {
+	id = flavor_jar.3
+	title = "flavor_jar.3.t"
+	desc = "flavor_jar.3.d"
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "flavor_jar.3.a"
+		ai_chance = {
+			factor = 100
+		}
+		CTG = {country_event = { id = flavor_jar.4 }}
+		TRP = {country_event = { id = flavor_jar.4 }}
+		HIP = {country_event = { id = flavor_jar.4 }}
+		LPT = {country_event = { id = flavor_jar.4 }}
+		TAC = {country_event = { id = flavor_jar.4 }}
+		}
+	}
+
+
+country_event = {
+	id = flavor_jar.4
+	title = "flavor_jar.4.t"
+	desc = "flavor_jar.4.d"
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #submit
+		name = "flavor_jar.4.a"
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 100
+				tag = HIP
+			}
+			modifier = {
+				factor = 1
+				tag = CTG
+			}
+		}
+			TLC = {
+			if = {
+				limit ={ NOT = { has_dlc = "Mandate of Heaven" }}
+				create_subject = {
+				subject_type = vassal
+				subject = ROOT
+				}
+			}
+			else = {
+				create_subject = {
+				subject_type = tributary_state
+				subject = ROOT
+				}
+			}
+			country_event = { id = flavor_jar.5 }
+			}
+		}
+
+		option = { #refuse
+			name = "flavor_jar.4.b"
+			ai_chance = {
+				factor = 90
+				modifier = {
+					factor = 0
+					tag = HIP
+				}
+				modifier = {
+					factor = 10
+					primary_culture = tripolitan
+				}
+				modifier = {
+					factor = 99
+					tag = CTG
+				}
+			}
+				TLC = {country_event = { id = flavor_jar.6 }}
+			}
+
+		option = { #lybian confederation
+			name = "flavor_jar.4.c"
+			ai_chance = {
+				factor = 80
+			}
+				trigger = {
+					tag = TRP
+					exists = LPT
+					exists = TAC
+				}
+				TAC = {country_event = { id = flavor_jar.7 }}
+				LPT = {country_event = { id = flavor_jar.7 }}
+			}
+	}
+
+	country_event = { #accept tributaries
+		id = flavor_jar.5
+		title = "flavor_jar.5.t"
+		desc = "flavor_jar.5.d"
+		picture = BATTLE_eventPicture
+
+		is_triggered_only = yes
+
+		option = {
+			name = "flavor_jar.5.a"
+			ai_chance = {
+				factor = 100
+			}
+			prestige = 10
+
+		}
+
+	}
+
+	country_event = { #defiance
+		id = flavor_jar.6
+		title = "flavor_jar.6.t"
+		desc = "flavor_jar.6.d"
+		picture = BATTLE_eventPicture
+
+		is_triggered_only = yes
+
+		option = {
+			name = "flavor_jar.6.a"
+			ai_chance = {
+				factor = 100
+			}
+			TLC = {
+			add_casus_belli = {
+				target = FROM
+				type = cb_force_tributary
+				months = 240
+			}
+			}
+		}
+
+	}
+
+	country_event = { #lybian confederation
+		id = flavor_jar.7
+		title = "flavor_jar.7.t"
+		desc = "flavor_jar.7.d"
+		picture = BATTLE_eventPicture
+
+		is_triggered_only = yes
+
+		option = {#accept
+			name = "flavor_jar.7.a"
+			ai_chance = {
+				factor = 100
+			}
+			switch_tag = TRP
+			TRP = {
+				inherit = ROOT
+			}
+		}
+		option = {
+			name = "flavor_jar.7.b"
+			ai_chance = {
+				factor = 100
+			}
+			add_prestige = 10
+		}
+	}
