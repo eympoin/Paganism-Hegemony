@@ -3,24 +3,29 @@ country_decisions = {
 	restore_Western_Roman_Empire = {
 		major = yes
 		potential = {
-      normal_or_historical_nations = yes
-      was_never_end_game_tag_trigger = yes
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_Western_Roman_Empire_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { tag = HLR }
 			NOT = { tag = WRM }
+			NOT = { tag = HLR }
 			NOT = { tag = PAP }
-			NOT = {religion_group = christian}
-      NOT = { religion_group = muslim }
-			NOT = { religion_group = jewish_group }
+
+				culture_group = neo-romans
+				NOT = { culture_group = byzantine }
+		
+			is_colonial_nation = no
 			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
 		}
-    culture_group = roman
-    NOT = { primary_culture = byzantine }
-  }
 		provinces_to_highlight = {
 			OR = {
 				region = italy_region
@@ -28,8 +33,13 @@ country_decisions = {
 				province_id = 341 # carthage
 				province_id = 333 # Majorca
 				province_id = 213 # Barcino
+				province_id = 334 # Tanger
+				province_id = 221 # Carthago Nova
 			}
-			NOT = { owned_by = ROOT }
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
 		}
 		allow = {
     is_free_or_tributary_trigger = yes
@@ -40,30 +50,34 @@ country_decisions = {
 				type = all
 				owned_by = ROOT
 			}
-      owns_core_province = 201
-      owns_core_province = 341
+			owns_core_province = 201
+			owns_core_province = 341
 			owns_core_province = 333
 			owns_core_province = 213
+			owns_core_province = 334
+			owns_core_province = 221
 		}
-    effect = {
-      remove_non_electors_emperors_from_empire_effect = yes
-      if = {
-        limit = {
-          NOT = { government_rank = 3 }
-        }
-        set_government_rank = 3
-      }
+		effect = {
+		 remove_non_electors_emperors_from_empire_effect = yes
+		 if = {
+			 limit = {
+				 NOT = { government_rank = 3 }
+			 }
+			 set_government_rank = 3
+		 }
 
-      add_country_modifier = {
-        name = "centralization_modifier"
-        duration = 7300
-      }
-      add_prestige = 25
-      set_country_flag = formed_Western_Roman_Empire_flag
-      change_tag = WRM
-    }
-    ai_will_do = {
-      factor = 0
-    }
+		 add_country_modifier = {
+			 name = "centralization_modifier"
+			 duration = 7300
+		 }
+		 add_prestige = 25
+		 set_country_flag = formed_Western_Roman_Empire_flag
+		 change_tag = WRM
+	 }
+		ai_will_do = {
+			factor = 1
 		}
+		ai_importance = 400
 	}
+
+}
