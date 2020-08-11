@@ -12,7 +12,7 @@ base_production = 8
 base_manpower = 5
 is_city = yes
 add_core = RAG
-
+fort_15th = yes
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL

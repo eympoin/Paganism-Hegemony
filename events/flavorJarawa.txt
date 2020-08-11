@@ -154,6 +154,7 @@ country_event = {
 					exists = LPT
 					exists = TAC
 				}
+				TLC = {country_event = { id = flavor_jar.6 }}
 				TAC = {country_event = { id = flavor_jar.7 }}
 				LPT = {country_event = { id = flavor_jar.7 }}
 			}
@@ -215,7 +216,6 @@ country_event = {
 			ai_chance = {
 				factor = 100
 			}
-			switch_tag = TRP
 			TRP = {
 				inherit = ROOT
 			}
