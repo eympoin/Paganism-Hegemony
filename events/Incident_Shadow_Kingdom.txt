@@ -692,16 +692,16 @@ country_event = {
 			add_truce_with = UEG
 		}
 		UEG = {
-			change_religion	= olympoi
+			change_religion	= theoi
 		}
 		THB = {
-			change_religion	= olympoi
+			change_religion	= theoi
 		}
 		ABY = {
-			change_religion	= olympoi
+			change_religion	= theoi
 		}
 		FAY = {
-			change_religion	= olympoi
+			change_religion	= theoi
 		}
 		white_peace = UEG
 		add_truce_with = UEG

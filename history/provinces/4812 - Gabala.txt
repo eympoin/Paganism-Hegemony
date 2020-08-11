@@ -3,7 +3,7 @@
 owner = SYR
 controller = SYR
 culture = syrian
-religion = olympoi
+religion = theoi
 capital = "Gabala"
 trade_goods = cotton
 hre = yes

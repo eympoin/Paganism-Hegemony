@@ -3,7 +3,7 @@
 owner = TRN
 controller = TRN
 culture = Griko
-religion = olympoi
+religion = theoi
 hre = yes
 base_tax = 7
 base_production = 5

@@ -3,7 +3,7 @@
 owner = COR
 controller = COR
 culture = sardinian
-religion = jupiterian
+religion = deii
 capital = "Bastia"
 hre = no
 base_tax = 3 

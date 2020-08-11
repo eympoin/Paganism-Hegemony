@@ -3,7 +3,7 @@
 owner = ION
 controller = ION
 culture = greek
-religion = olympoi
+religion = theoi
 capital = "Smyrna"
 trade_goods = cotton #Major producer and exporter of Cotton
 hre = yes

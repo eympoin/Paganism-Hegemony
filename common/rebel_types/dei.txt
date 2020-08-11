@@ -1,13 +1,13 @@
 ######################################################################
 # Hinduism rebels. Disgruntled fanatics.
 ######################################################################
-jupiterian_rebels = {
+deii_rebels = {
 
 	color = { 230 175 175 }
 
 	area = nation 					# Sticks to provinces of their nation
 	government = theocracy 			# Desires Theocracy
-	religion = jupiterian
+	religion = deii
 	defection = none				# Will not defect
 	defect_delay = 120				# Held provinces will auto-defect after 18 months, regardless of accept/enforce demands.
 	independence = none				# Does not strive for independence
@@ -45,7 +45,7 @@ jupiterian_rebels = {
 		}
 		modifier = {
 			factor = 0.0
-			NOT = { religion = jupiterian }
+			NOT = { religion = deii }
 		}
 		modifier = {
 			factor = 0.001
@@ -90,21 +90,21 @@ jupiterian_rebels = {
 		}
 		modifier = {
 			factor = 0.0
-			religion = jupiterian
-			owner = { religion = jupiterian}
+			religion = deii
+			owner = { religion = deii}
 		}
 		modifier = {
 			factor = 2.0
-			NOT = { religion = jupiterian}
+			NOT = { religion = deii}
 			any_neighbor_province = {
-	 			religion = jupiterian
+	 			religion = deii
 	 			NOT = { has_province_modifier = "forced_conversion" }
 	 		}
 	 	}
 		modifier = {
 			factor = 5
 			has_missionary = yes
-			religion = jupiterian
+			religion = deii
 		}
 		modifier = {
 			factor = 1.5
@@ -135,9 +135,9 @@ jupiterian_rebels = {
 			if = {
 				limit = {
 					OR = {
-						religion = jupiterian
+						religion = deii
 						is_reformation_center = yes
-						owner = { religion = jupiterian }
+						owner = { religion = deii }
 					}
 				}
 				add_province_modifier = {
@@ -147,11 +147,11 @@ jupiterian_rebels = {
 			}
 			if = {
 				limit = {
-					NOT = { religion = jupiterian }
+					NOT = { religion = deii }
 					is_reformation_center = no
-					NOT = { owner = { religion = jupiterian } }
+					NOT = { owner = { religion = deii } }
 				}
-				change_religion = jupiterian
+				change_religion = deii
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -181,7 +181,7 @@ jupiterian_rebels = {
 	can_negotiate_trigger = {
 		OR = {
 			religion_group = greco_roman_group
-			dominant_religion = jupiterian
+			dominant_religion = deii
 		}
 	}
 
@@ -191,7 +191,7 @@ jupiterian_rebels = {
 	}
 
 	# Localisation for their demands
-	demands_description = "jupiterian_rebels_demand"
+	demands_description = "deii_rebels_demand"
 
 	# Country Scope
 	demands_enforced_effect = {
@@ -227,15 +227,15 @@ jupiterian_rebels = {
 		}
 		else_if = {
 			limit = {
-				NOT = { religion = jupiterian }
-				dominant_religion = jupiterian
+				NOT = { religion = deii }
+				dominant_religion = deii
 			}
-			change_religion = jupiterian
+			change_religion = deii
 			force_converted = yes
 		}
 		else_if = {
 			limit = {
-				religion = jupiterian
+				religion = deii
 			}
 			add_country_modifier = {
 				name = "religious_intolerance_enforced"
@@ -244,8 +244,8 @@ jupiterian_rebels = {
 		}
 		else_if = {
 			limit = {
-				NOT = { religion = jupiterian }
-				NOT = { dominant_religion = jupiterian }
+				NOT = { religion = deii }
+				NOT = { dominant_religion = deii }
 				religion_group = greco_roman_group 
 				NOT = { has_country_modifier = heretic_tolerance }
 			}
@@ -257,7 +257,7 @@ jupiterian_rebels = {
 		else = { add_stability = -1 } #Should probably never get here
 		if = {
 			limit = {
-				religion = jupiterian
+				religion = deii
 				has_estate = estate_church
 				NOT = {
 					has_estate_influence_modifier = {

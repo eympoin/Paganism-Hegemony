@@ -3,7 +3,7 @@
 owner = CTG
 controller = CTG
 culture = carthaginian
-religion = jupiterian
+religion = deii
 capital = "Bizerte"
 estate = estate_nobles
 trade_goods = grain

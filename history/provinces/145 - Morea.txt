@@ -3,7 +3,7 @@
 owner = MOE
 controller = MOE
 culture = greek
-religion = olympoi
+religion = theoi
 capital = "Sparta"
 trade_goods = wine
 hre = yes

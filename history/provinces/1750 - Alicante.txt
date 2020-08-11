@@ -6,7 +6,7 @@ add_core = BAE
 add_core = CTH
 
 culture = cartaginensian 
-religion = jupiterian
+religion = deii
 hre = no
 base_tax = 3
 base_production = 3

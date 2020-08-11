@@ -1,11 +1,11 @@
-# 176 Béarn - Principal cities: Pau
+# 176 Bï¿½arn - Principal cities: Pau
 
 owner = AQI
 controller = AQI
 capital = "Pau"
 is_city = yes
 culture = aquitain
-religion = jupiterian
+religion = deii
 hre = no
 base_tax = 5
 base_production = 4

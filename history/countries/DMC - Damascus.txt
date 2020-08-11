@@ -1,7 +1,7 @@
 government = republic
 add_government_reform = free_city
 primary_culture = syrian
-religion = olympoi
+religion = theoi
 technology_group = muslim
 capital = 382
 elector=no

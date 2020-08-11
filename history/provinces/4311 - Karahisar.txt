@@ -3,7 +3,7 @@
 owner = PSD
 controller = PSD
 culture = anatolian
-religion = olympoi
+religion = theoi
 capital = "Maeander"
 trade_goods = livestock
 hre = yes

@@ -2,7 +2,7 @@ government = theocracy
 add_government_reform = monastic_order_reform
 government_rank = 1
 primary_culture = occitain
-religion = olympoi
+religion = theoi
 technology_group = western
 capital = 320 # Rhodes
 historical_friend = VEN
@@ -213,7 +213,7 @@ add_army_professionalism = 0.1
 
 1572.1.30 = {
 	monarch = {
-		name = "Jean de La Cassière"
+		name = "Jean de La Cassiï¿½re"
 		birth_date = 1502.1.1
 		culture = occitain
 		adm = 0
@@ -235,7 +235,7 @@ add_army_professionalism = 0.1
 
 1595.5.9 = {
 	monarch = {
-		name = "Martin Garzès"
+		name = "Martin Garzï¿½s"
 		birth_date = 1526.1.1
 		culture = aragonese
 		adm = 2

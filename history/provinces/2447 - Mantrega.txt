@@ -3,7 +3,7 @@
 owner = BYZ
 controller = BYZ
 culture = pontic_greek
-religion = olympoi
+religion = theoi
 hre = yes
 base_tax = 2
 base_production = 2

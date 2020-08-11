@@ -4,7 +4,7 @@ government_rank = 1
 elector = yes
 technology_group = eastern
 primary_culture = greek
-religion = olympoi
+religion = theoi
 capital = 145	# Nafplio
 fixed_capital = 145 # Cannot move capital away from this province & no power cost to move to it
 

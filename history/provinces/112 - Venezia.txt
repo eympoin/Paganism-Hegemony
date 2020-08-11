@@ -3,7 +3,7 @@
 owner = VEN
 controller = VEN
 culture = aquileian
-religion = jupiterian 
+religion = deii 
 hre = no 
 base_tax = 4
 base_production = 4

@@ -3,7 +3,7 @@
 owner = SEB
 controller = SEB
 culture = cappadocian
-religion = olympoi
+religion = theoi
 capital = "Sebasteia"
 trade_goods = livestock
 hre = yes

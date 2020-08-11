@@ -3,7 +3,7 @@
 owner = MSS
 controller = MSS
 culture = Griko
-religion = olympoi
+religion = theoi
 hre = no 
 base_tax = 6
 base_production = 6

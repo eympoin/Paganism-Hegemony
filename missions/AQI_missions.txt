@@ -485,12 +485,12 @@ Gallia_Unification_1 = {
 		position = 5
 		provinces_to_highlight = {
 			region = france_region
-			NOT = {religion = jupiterian}
+			NOT = {religion = deii}
 		}
 		trigger = {
 			france_region = {
 				type = all
-				religion = jupiterian
+				religion = deii
 			}
 		}
 		effect = {

@@ -1,12 +1,12 @@
 owner = AGO
 controller = AGO
 culture = greek
-religion = olympoi
+religion = theoi
 capital = "Argos"
 trade_goods = wine
 hre = yes
-base_tax = 6
-base_production = 5
+base_tax = 7
+base_production = 6
 base_manpower = 5
 is_city = yes
 add_core = AGO

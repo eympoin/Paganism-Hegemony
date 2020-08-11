@@ -3,7 +3,7 @@
 owner = PPH
 controller = PPH
 culture = pontic_greek
-religion = olympoi
+religion = theoi
 capital = "Timonion"
 trade_goods = copper
 hre = yes

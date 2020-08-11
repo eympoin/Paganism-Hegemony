@@ -578,21 +578,21 @@ byz_generic_slot_5 = {
 				area = hudavendigar_area
 			}
 			OR = {
-				NOT = { religion = olympoi }
+				NOT = { religion = theoi }
 				NOT = { owned_by = ROOT }
 			}
 		}
 		trigger = {
-			religion = olympoi
+			religion = theoi
 			aydin_area = {
 				type = all
 				owned_by = ROOT
-				religion = olympoi
+				religion = theoi
 			}
 			hudavendigar_area = {
 				type = all
 				owned_by = ROOT
-				religion = olympoi
+				religion = theoi
 			}
 		}
 		effect = {

@@ -3,7 +3,7 @@
 owner = LYC
 controller = LYC
 culture = anatolian
-religion = olympoi
+religion = theoi
 capital = "Xanthos"
 trade_goods = fish
 hre = yes

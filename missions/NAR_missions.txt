@@ -178,7 +178,7 @@ Gallia_Unification_1 = {
 		position = 5
 		provinces_to_highlight = {
 			region = france_region
-			religion = jupiterian
+			religion = deii
 			OR = {
 				is_city = no
 				NOT = { owned_by = ROOT }
@@ -188,7 +188,7 @@ Gallia_Unification_1 = {
 		trigger = {
 			france_region = {
 				type = all
-				religion = jupiterian
+				religion = deii
 			}
 		}
 		effect = {

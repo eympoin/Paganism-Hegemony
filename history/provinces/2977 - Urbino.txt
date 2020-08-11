@@ -3,7 +3,7 @@
 owner = URB
 controller = URB
 culture = tuscan
-religion = jupiterian 
+religion = deii 
 hre = no 
 base_tax = 5
 base_production = 5

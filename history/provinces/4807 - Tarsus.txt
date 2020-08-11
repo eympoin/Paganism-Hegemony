@@ -3,7 +3,7 @@
 owner = CIL
 controller = CIL
 culture = cilician
-religion = olympoi
+religion = theoi
 capital = "Tarsus"
 trade_goods = cotton
 hre = yes

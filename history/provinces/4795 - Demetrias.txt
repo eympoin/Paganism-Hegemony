@@ -3,7 +3,7 @@
 owner = THE
 controller = THE
 culture = greek
-religion = olympoi
+religion = theoi
 capital = "Demetrias"
 trade_goods = fish
 hre = yes

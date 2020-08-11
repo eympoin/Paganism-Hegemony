@@ -1,7 +1,7 @@
 government = republic
 add_government_reform = free_city
 primary_culture = serbian
-religion = olympoi
+religion = theoi
 technology_group = eastern
 capital = 4173
 elector=no

@@ -75,7 +75,7 @@ religious_center = {
 			limit = {
 				province_id = 118 # Roma
 			}
-			religion = jupiterian
+			religion = deii
 		}
 		else_if = {
 			limit = {

@@ -3,7 +3,7 @@
 owner = MAC
 controller = MAC
 culture = greek
-religion = olympoi
+religion = theoi
 capital = "Thessaloniki"
 trade_goods = cloth
 hre = yes

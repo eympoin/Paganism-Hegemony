@@ -3,7 +3,7 @@
 owner = CEP
 controller = CEP
 culture = greek
-religion = olympoi
+religion = theoi
 capital = "Corfu"
 trade_goods = fish
 hre = yes

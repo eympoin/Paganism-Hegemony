@@ -3,7 +3,7 @@
 owner = RHO		# Knights of St. John Hospitaler of Jerusalem
 controller = RHO		
 culture = greek
-religion = olympoi
+religion = theoi
 capital = "Rhodes"
 trade_goods = wine
 hre = yes

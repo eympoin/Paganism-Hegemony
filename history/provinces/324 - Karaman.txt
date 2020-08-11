@@ -3,7 +3,7 @@
 owner = LCA
 controller = LCA
 culture = cilician
-religion = olympoi
+religion = theoi
 capital = "Laranda"
 trade_goods = livestock
 hre = yes

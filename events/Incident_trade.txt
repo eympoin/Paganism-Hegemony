@@ -157,7 +157,7 @@ country_event = {
 		white_peace = emperor
 		}
 		MES = {
-			change_religion = olympoi
+			change_religion = theoi
 		}
 		every_province ={
 			limit = {
@@ -244,7 +244,7 @@ country_event = {
 			add_core = ORG
 		}
 		ORG = {
-			change_religion = olympoi
+			change_religion = theoi
 		}
 		2999 = {
 			add_trade_modifier = {
@@ -325,7 +325,7 @@ country_event = {
 			add_core = IND
 		}
 		IND = {
-			change_religion = olympoi
+			change_religion = theoi
 		}
 		504 = {
 			add_trade_modifier = {
@@ -407,7 +407,7 @@ country_event = {
 			add_core = GAN
 		}
 		GAN = {
-			change_religion = olympoi
+			change_religion = theoi
 		}
 		4457 = {
 			add_trade_modifier = {

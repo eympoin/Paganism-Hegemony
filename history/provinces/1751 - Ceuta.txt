@@ -3,7 +3,7 @@
 owner = MAU
 controller = MAU
 culture = mauretanian
-religion = jupiterian
+religion = deii
 capital = "Cebta"
 trade_goods = fish
 hre = no

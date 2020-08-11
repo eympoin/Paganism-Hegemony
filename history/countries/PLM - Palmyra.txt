@@ -1,7 +1,7 @@
 government = republic
 add_government_reform = noble_elite_reform
 primary_culture = syrian
-religion = olympoi
+religion = theoi
 add_accepted_culture = canaan
 technology_group = muslim
 capital = 405# Antioch

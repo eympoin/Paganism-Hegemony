@@ -3,7 +3,7 @@
 owner = UEG
 controller = UEG
 culture = ptolemaic
-religion = olympoi
+religion = theoi
 capital = "Myos Hormos"
 trade_goods = fish
 hre = yes

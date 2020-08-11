@@ -3,7 +3,7 @@
 owner = LCA
 controller = LCA
 culture = anatolian
-religion = olympoi
+religion = theoi
 capital = "Laodikeia"
 trade_goods = livestock
 hre = yes

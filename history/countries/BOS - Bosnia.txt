@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = serbian
 add_accepted_culture = croatian
-religion = olympoi
+religion = theoi
 technology_group = eastern
 capital = 3002	# Sarajevo
 government_rank = 1
@@ -85,7 +85,7 @@ government_rank = 1
 
 1443.6.23 = {
 	monarch = {
-		name = "Stjepan Tomaš Ostojic"
+		name = "Stjepan Tomaï¿½ Ostojic"
 		dynasty = "Kotromanic"
 		birth_date = 1412.7.10
 		adm = 0
@@ -98,8 +98,8 @@ government_rank = 1
 
 1443.6.23 = {
 	heir = {
-		name = "Stjepan Tomaševic"
-		monarch_name = "Stjepan Tomaševic"
+		name = "Stjepan Tomaï¿½evic"
+		monarch_name = "Stjepan Tomaï¿½evic"
 		dynasty = "Kotromanic"
 		birth_date = 1438.1.1
 		death_date = 1463.6.5
@@ -112,7 +112,7 @@ government_rank = 1
 
 1461.7.11 = {
 	monarch = {
-		name = "Stjepan Tomaševic"
+		name = "Stjepan Tomaï¿½evic"
 		dynasty = "Kotromanic"
 		birth_date = 1438.1.1
 		adm = 3

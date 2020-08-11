@@ -3,7 +3,7 @@ add_government_reform = autocracy_reform
 government_rank = 1
 technology_group = eastern
 primary_culture = greek
-religion = olympoi
+religion = theoi
 capital = 144 # Ioannina
 fixed_capital = 144 # Cannot move capital away from this province & no power cost to move to it
 

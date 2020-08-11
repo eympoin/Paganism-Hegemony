@@ -2,14 +2,14 @@ government = monarchy
 add_government_reform = autocracy_reform
 government_rank = 1
 primary_culture = turkish
-religion = olympoi
+religion = theoi
 technology_group = ottoman
 capital = 324	# Karaman
 
 
 1361.1.1 = {
 	monarch = {
-		name = "Alâeddîn I"
+		name = "Alï¿½eddï¿½n I"
 		dynasty = Karamanoglu
 		birth_date = 1341.1.1
 		adm = 4
@@ -21,8 +21,8 @@ capital = 324	# Karaman
 
 1399.1.1 = {
 	heir = {
-		name = "Seyfeddîn"
-		monarch_name = "Seyfeddîn Süleymân"
+		name = "Seyfeddï¿½n"
+		monarch_name = "Seyfeddï¿½n Sï¿½leymï¿½n"
 		dynasty = "Karamanoglu"
 		birth_date = 1380.1.1
 		death_date = 1416.1.1
@@ -35,7 +35,7 @@ capital = 324	# Karaman
 
 1407.1.1 = {
 	monarch = {
-		name = "Seyfeddîn Süleymân"
+		name = "Seyfeddï¿½n Sï¿½leymï¿½n"
 		dynasty = Karamanoglu
 		birth_date = 1380.1.1
 		adm = 3
@@ -71,8 +71,8 @@ capital = 324	# Karaman
 
 1416.1.1 = {
 	heir = {
-		name = "Alâeddîn"
-		monarch_name = "Alâeddîn Ali II"
+		name = "Alï¿½eddï¿½n"
+		monarch_name = "Alï¿½eddï¿½n Ali II"
 		dynasty = "Karamanoglu"
 		birth_date = 1400.1.1
 		death_date = 1424.1.1
@@ -85,7 +85,7 @@ capital = 324	# Karaman
 
 1419.1.1 = {
 	monarch = {
-		name = "Alâeddîn Ali II"
+		name = "Alï¿½eddï¿½n Ali II"
 		dynasty = Karamanoglu
 		birth_date = 1400.1.1
 		adm = 1
@@ -96,8 +96,8 @@ capital = 324	# Karaman
 
 1419.1.1 = {
 	heir = {
-		name = "Ibrâhîm"
-		monarch_name = "Ibrâhîm II"
+		name = "Ibrï¿½hï¿½m"
+		monarch_name = "Ibrï¿½hï¿½m II"
 		dynasty = "Karamanoglu"
 		birth_date = 1409.1.1
 		death_date = 1464.1.1
@@ -110,7 +110,7 @@ capital = 324	# Karaman
 
 1424.1.1 = {
 	monarch = {
-		name = "Ibrâhîm II"
+		name = "Ibrï¿½hï¿½m II"
 		dynasty = Karamanoglu
 		birth_date = 1409.1.1
 		adm = 0
@@ -123,8 +123,8 @@ capital = 324	# Karaman
 
 1424.1.1 = {
 	heir = {
-		name = "Sultanzâde"
-		monarch_name = "Sultanzâde Ishâk"
+		name = "Sultanzï¿½de"
+		monarch_name = "Sultanzï¿½de Ishï¿½k"
 		dynasty = "Karamanoglu"
 		birth_date = 1424.1.1
 		death_date = 1465.1.1
@@ -137,7 +137,7 @@ capital = 324	# Karaman
 
 1464.1.1 = {
 	monarch = {
-		name = "Sultanzâde Ishâk"
+		name = "Sultanzï¿½de Ishï¿½k"
 		dynasty = Karamanoglu
 		birth_date = 1424.1.1
 		adm = 1
@@ -148,8 +148,8 @@ capital = 324	# Karaman
 
 1464.1.1 = {
 	heir = {
-		name = "Pîr"
-		monarch_name = "Pîr Ahmed"
+		name = "Pï¿½r"
+		monarch_name = "Pï¿½r Ahmed"
 		dynasty = "Karamanoglu"
 		birth_date = 1450.1.1
 		death_date =1474.1.1
@@ -163,7 +163,7 @@ capital = 324	# Karaman
 
 1465.1.1 = {
 	monarch = {
-		name = "Pîr Ahmed"
+		name = "Pï¿½r Ahmed"
 		dynasty = Karamanoglu
 		birth_date = 1450.1.1
 		adm = 2
@@ -174,8 +174,8 @@ capital = 324	# Karaman
 
 1465.1.1 = {
 	heir = {
-		name = "Kâsim"
-		monarch_name = "Kâsim"
+		name = "Kï¿½sim"
+		monarch_name = "Kï¿½sim"
 		dynasty = "Karamanoglu"
 		birth_date = 1460.1.1
 		death_date = 1483.1.1
@@ -188,7 +188,7 @@ capital = 324	# Karaman
 
 1474.1.1 = {
 	monarch = {
-		name = "Kâsim"
+		name = "Kï¿½sim"
 		dynasty = Karamanoglu
 		birth_date = 1460.1.1
 		adm = 2
@@ -199,8 +199,8 @@ capital = 324	# Karaman
 
 1474.1.1 = {
 	heir = {
-		name = "Mahmûd"
-		monarch_name = "Turgutoglu Mahmûd"
+		name = "Mahmï¿½d"
+		monarch_name = "Turgutoglu Mahmï¿½d"
 		dynasty = "Karamanoglu"
 		birth_date = 1470.1.1
 		death_date = 1487.1.1
@@ -213,7 +213,7 @@ capital = 324	# Karaman
 
 1483.1.1 = {
 	monarch = {
-		name = "Turgutoglu Mahmûd"
+		name = "Turgutoglu Mahmï¿½d"
 		dynasty = Karamanoglu
 		birth_date = 1470.1.1
 		adm = 2

@@ -3,7 +3,7 @@
 owner = SRC
 controller = SRC
 culture = sicilian
-religion = jupiterian
+religion = deii
 hre = no 
 base_tax = 4
 base_production = 4

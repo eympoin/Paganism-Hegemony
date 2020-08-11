@@ -3,7 +3,7 @@
 owner = ALX
 controller = ALX
 culture = ptolemaic
-religion = olympoi
+religion = theoi
 capital = "Alexandria"
 trade_goods = spices
 hre = yes

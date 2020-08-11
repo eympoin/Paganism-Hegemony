@@ -1,14 +1,14 @@
-# 4111 - Vendée
+# 4111 - Vendï¿½e
 
 owner = FRO
 controller = FRO
 add_permanent_claim = FRP
 add_permanent_claim = FRR
 add_permanent_claim = FRV
-capital = "Luçon"
+capital = "Luï¿½on"
 is_city = yes
 culture = aquitain
-religion = jupiterian
+religion = deii
 hre = no
 base_tax = 3
 

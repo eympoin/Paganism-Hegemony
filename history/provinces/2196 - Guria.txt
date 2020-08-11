@@ -3,7 +3,7 @@
 owner = IME
 controller = IME
 culture = georgian
-religion = olympoi
+religion = theoi
 capital = "Batumi"
 trade_goods = fish
 hre = yes

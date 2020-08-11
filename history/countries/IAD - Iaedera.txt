@@ -1,7 +1,7 @@
 government = republic
 add_government_reform = free_city
 primary_culture = Dalmatian
-religion = olympoi
+religion = theoi
 technology_group = eastern
 capital = 4753
 elector=no

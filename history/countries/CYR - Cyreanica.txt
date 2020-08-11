@@ -1,7 +1,7 @@
 government = republic
 add_government_reform = noble_elite_reform
 primary_culture = cyrenian
-religion = olympoi
+religion = theoi
 technology_group = muslim
 capital = 356 # Cairo
 government_rank = 1

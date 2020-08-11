@@ -3,7 +3,7 @@
 owner = ATH
 controller = ATH
 culture = greek
-religion = olympoi
+religion = theoi
 capital = "Athens"
 trade_goods = cloth
 hre = yes

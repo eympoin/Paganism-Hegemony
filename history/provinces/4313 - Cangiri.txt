@@ -3,7 +3,7 @@
 owner = PPH
 controller = PPH
 culture = pontic_greek
-religion = olympoi
+religion = theoi
 capital = "Gangra"
 trade_goods = wool
 hre = yes

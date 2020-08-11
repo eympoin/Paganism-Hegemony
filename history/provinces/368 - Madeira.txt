@@ -1,6 +1,6 @@
 #368 - Madeira
 
-religion = jupiterian
+religion = deii
 capital = "Funchal"
 trade_goods = sugar
 hre = no

@@ -3,7 +3,7 @@
 owner = IAD
 controller = IAD
 culture = Dalmatian
-religion = olympoi
+religion = theoi
 capital = "Zadar"
 trade_goods = naval_supplies
 hre = yes

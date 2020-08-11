@@ -1,11 +1,11 @@
-# 4387 Angoulême
+# 4387 Angoulï¿½me
 
 owner = AQI
 controller = AQI
 capital = "Iculisma"
 is_city = yes
 culture = aquitain
-religion = jupiterian
+religion = deii
 hre = no
 base_tax = 6
 

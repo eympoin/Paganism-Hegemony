@@ -3,7 +3,7 @@
 owner = DEL
 controller = DEL
 culture = ptolemaic
-religion = olympoi
+religion = theoi
 capital = "Rosetta"
 trade_goods = grain
 hre = yes

@@ -3,7 +3,7 @@
 owner = RAG
 controller = RAG
 culture = Dalmatian
-religion = olympoi
+religion = theoi
 capital = "Ragusa"
 trade_goods = naval_supplies
 hre = yes

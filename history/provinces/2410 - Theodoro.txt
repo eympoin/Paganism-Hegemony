@@ -3,7 +3,7 @@
 owner = FEO
 controller = FEO
 culture = pontic_greek
-religion = olympoi
+religion = theoi
 hre = yes
 base_tax = 3
 base_production = 3

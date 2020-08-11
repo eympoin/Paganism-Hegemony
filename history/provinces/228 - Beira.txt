@@ -3,7 +3,7 @@
 owner = LUS
 controller = LUS
 culture = lusitanian
-religion = jupiterian
+religion = deii
 capital = "Viseu"
 trade_goods = wine
 hre = no

@@ -1,7 +1,7 @@
 owner = BYZ
 controller = BYZ
 culture = greek
-religion = olympoi
+religion = theoi
 capital = "Kallipolis"
 trade_goods = livestock
 hre = yes

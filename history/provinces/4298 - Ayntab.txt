@@ -3,7 +3,7 @@
 owner = CMG
 controller = CMG
 culture = cilician
-religion = olympoi
+religion = theoi
 capital = "Ayntab"
 trade_goods = wool
 hre = yes

@@ -3,7 +3,7 @@
 owner = LIM
 controller = LIM
 culture = cilician
-religion = olympoi
+religion = theoi
 capital = "Limassol"
 trade_goods = wine
 hre = yes

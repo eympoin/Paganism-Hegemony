@@ -3,7 +3,7 @@
 owner = HIP
 controller = HIP
 culture = carthaginian
-religion = jupiterian
+religion = deii
 capital = "Hippo Regius"
 trade_goods = naval_supplies
 hre = no

@@ -3,7 +3,7 @@
 owner = GAR
 controller = GAR
 culture = bedouin_arabic
-religion = olympoi
+religion = theoi
 capital = "Maan"
 trade_goods = livestock
 hre = yes

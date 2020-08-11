@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = lombard
-religion = jupiterian
+religion = deii
 technology_group = western
 capital = 116
 fixed_capital = 116

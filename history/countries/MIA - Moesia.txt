@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = serbian
 elector = no
-religion = olympoi
+religion = theoi
 technology_group = eastern
 capital = 4239
 government_rank = 1
@@ -21,7 +21,7 @@ government_rank = 1
 
 1397.6.24 = {
 	heir = {
-		name = "Ðurad"
+		name = "ï¿½urad"
 		dynasty = "Kolovos"
 		birth_date = 1396.1.1
 		death_date = 1456.12.24

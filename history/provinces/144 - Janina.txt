@@ -3,7 +3,7 @@
 owner = EPI
 controller = EPI
 culture = greek
-religion = olympoi
+religion = theoi
 capital = "Ioannina"
 trade_goods = wool
 hre = yes

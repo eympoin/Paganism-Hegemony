@@ -3,7 +3,7 @@
 owner = SIE
 controller = SIE
 culture = tuscan
-religion = jupiterian
+religion = deii
 hre = no
 base_tax = 6
 base_production = 6

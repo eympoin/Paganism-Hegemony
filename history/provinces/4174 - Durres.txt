@@ -3,7 +3,7 @@
 owner = DYR
 controller = DYR
 culture = albanian
-religion = olympoi
+religion = theoi
 capital = "Durr�s"
 trade_goods = salt
 hre = yes

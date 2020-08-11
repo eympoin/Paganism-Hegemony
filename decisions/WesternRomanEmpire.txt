@@ -17,15 +17,6 @@ country_decisions = {
       NOT = { religion_group = muslim }
 			NOT = { religion_group = jewish_group }
 			OR = {
-				ai = no
-				AND = {
-					ai = yes
-					num_of_cities = 40
-					adm_tech = 10
-				}
-			}
-			OR = {
-				religion = jupiterian
 		}
     culture_group = roman
     NOT = { primary_culture = byzantine }

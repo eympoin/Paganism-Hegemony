@@ -1,11 +1,11 @@
-# 204 Dauphiné - Principal cities: Grenoble
+# 204 Dauphinï¿½ - Principal cities: Grenoble
 
 owner = NAR
 controller = NAR
 capital = "Gratianopolis"
 is_city = yes
 culture = lugdunian
-religion = jupiterian
+religion = deii
 hre = no
 base_tax = 4
 base_production = 4

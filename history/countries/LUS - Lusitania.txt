@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = lusitanian
-religion = jupiterian
+religion = deii
 technology_group = western
 capital = 227 # Lisboa
 national_focus = DIP

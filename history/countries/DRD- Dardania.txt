@@ -1,7 +1,7 @@
 government = republic
 add_government_reform = noble_elite_reform
 primary_culture = serbian
-religion = olympoi
+religion = theoi
 technology_group = eastern
 capital = 1766# Krusevac
 

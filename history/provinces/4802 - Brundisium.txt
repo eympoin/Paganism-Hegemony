@@ -3,7 +3,7 @@
 owner = BRD
 controller = BRD
 culture = Griko
-religion = olympoi
+religion = theoi
 hre = yes
 base_tax = 6
 base_production = 5

@@ -3,7 +3,7 @@
 owner = MON
 controller = MON
 culture = Dalmatian
-religion = olympoi
+religion = theoi
 capital = "Kotor"
 trade_goods = naval_supplies
 hre = yes

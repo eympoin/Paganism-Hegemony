@@ -5,7 +5,7 @@ controller = AQI
 capital = "Mediolanum Santonum"
 is_city = yes
 culture = aquitain
-religion = jupiterian
+religion = deii
 hre = no
 base_tax = 8
 

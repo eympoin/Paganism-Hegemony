@@ -1,13 +1,13 @@
 ######################################################################
 # Hinduism rebels. Disgruntled fanatics.
 ######################################################################
-olympoi_rebels = {
+theoi_rebels = {
 
 	color = { 230 175 175 }
 
 	area = nation 					# Sticks to provinces of their nation
 	government = theocracy 			# Desires Theocracy
-	religion = olympoi
+	religion = theoi
 	defection = none				# Will not defect
 	defect_delay = 120				# Held provinces will auto-defect after 18 months, regardless of accept/enforce demands.
 	independence = none				# Does not strive for independence
@@ -45,7 +45,7 @@ olympoi_rebels = {
 		}
 		modifier = {
 			factor = 0.0
-			NOT = { religion = olympoi }
+			NOT = { religion = theoi }
 		}
 		modifier = {
 			factor = 0.001
@@ -90,21 +90,21 @@ olympoi_rebels = {
 		}
 		modifier = {
 			factor = 0.0
-			religion = olympoi
-			owner = { religion = olympoi}
+			religion = theoi
+			owner = { religion = theoi}
 		}
 		modifier = {
 			factor = 2.0
-			NOT = { religion = olympoi}
+			NOT = { religion = theoi}
 			any_neighbor_province = {
-	 			religion = olympoi
+	 			religion = theoi
 	 			NOT = { has_province_modifier = "forced_conversion" }
 	 		}
 	 	}
 		modifier = {
 			factor = 5
 			has_missionary = yes
-			religion = olympoi
+			religion = theoi
 		}
 		modifier = {
 			factor = 1.5
@@ -135,9 +135,9 @@ olympoi_rebels = {
 			if = {
 				limit = {
 					OR = {
-						religion = olympoi
+						religion = theoi
 						is_reformation_center = yes
-						owner = { religion = olympoi }
+						owner = { religion = theoi }
 					}
 				}
 				add_province_modifier = {
@@ -147,11 +147,11 @@ olympoi_rebels = {
 			}
 			if = {
 				limit = {
-					NOT = { religion = olympoi }
+					NOT = { religion = theoi }
 					is_reformation_center = no
-					NOT = { owner = { religion = olympoi } }
+					NOT = { owner = { religion = theoi } }
 				}
-				change_religion = olympoi
+				change_religion = theoi
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -181,7 +181,7 @@ olympoi_rebels = {
 	can_negotiate_trigger = {
 		OR = {
 			religion_group = greco_roman_group
-			dominant_religion = olympoi
+			dominant_religion = theoi
 		}
 	}
 
@@ -191,7 +191,7 @@ olympoi_rebels = {
 	}
 
 	# Localisation for their demands
-	demands_description = "olympoi_rebels_demand"
+	demands_description = "theoi_rebels_demand"
 
 	# Country Scope
 	demands_enforced_effect = {
@@ -227,15 +227,15 @@ olympoi_rebels = {
 		}
 		else_if = {
 			limit = {
-				NOT = { religion = olympoi }
-				dominant_religion = olympoi
+				NOT = { religion = theoi }
+				dominant_religion = theoi
 			}
-			change_religion = olympoi
+			change_religion = theoi
 			force_converted = yes
 		}
 		else_if = {
 			limit = {
-				religion = olympoi
+				religion = theoi
 			}
 			add_country_modifier = {
 				name = "religious_intolerance_enforced"
@@ -244,8 +244,8 @@ olympoi_rebels = {
 		}
 		else_if = {
 			limit = {
-				NOT = { religion = olympoi }
-				NOT = { dominant_religion = olympoi }
+				NOT = { religion = theoi }
+				NOT = { dominant_religion = theoi }
 				religion_group = greco_roman_group 
 				NOT = { has_country_modifier = heretic_tolerance }
 			}
@@ -257,7 +257,7 @@ olympoi_rebels = {
 		else = { add_stability = -1 } #Should probably never get here
 		if = {
 			limit = {
-				religion = olympoi
+				religion = theoi
 				has_estate = estate_church
 				NOT = {
 					has_estate_influence_modifier = {

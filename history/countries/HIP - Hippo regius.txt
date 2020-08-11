@@ -1,7 +1,7 @@
 government = republic
 add_government_reform = oligarchy_reform
 primary_culture = carthaginian
-religion = jupiterian
+religion = deii
 technology_group = western
 capital = 1882
 

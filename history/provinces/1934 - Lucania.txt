@@ -3,7 +3,7 @@
 owner = LCN
 controller = LCN
 culture = Griko
-religion = olympoi
+religion = theoi
 hre = no
 base_tax = 5
 base_production = 5

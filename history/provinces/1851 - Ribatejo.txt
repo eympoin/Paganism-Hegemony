@@ -3,7 +3,7 @@
 owner = LUS
 controller = LUS
 culture = lusitanian
-religion = jupiterian
+religion = deii
 capital = "Coimbra"
 trade_goods = grain
 hre = no

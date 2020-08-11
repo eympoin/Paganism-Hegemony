@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = aquitain
-religion = jupiterian
+religion = deii
 technology_group = western
 capital = 174
 fixed_capital = 174

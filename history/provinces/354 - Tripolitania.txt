@@ -3,7 +3,7 @@
 owner = TRP
 controller = TRP
 culture = tripolitan
-religion = jupiterian
+religion = deii
 capital = "Tripoli" #Tripoli in the West.
 estate = estate_nobles
 trade_goods = cloth
