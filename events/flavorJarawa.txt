@@ -213,8 +213,9 @@ country_event = {
 				limit = {
 					ai = no
 				}
-				change_tag = LBY
 				inherit = TRP
+				inherit = LBY
+				change_tag = LBY
 				add_stability = -1
 			}
 			else = {
@@ -250,7 +251,12 @@ country_event = {
 				factor = 100
 			}
 			if = {
-				limit = {tag = TRP}
+				limit = {
+				tag = TRP
+				ai = no
+				TAC = {ai = yes}
+				LPT = {ai = yes}
+				}
 				change_tag = LBY
 			}
 			LBY = {
