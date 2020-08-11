@@ -712,10 +712,14 @@ flavor_jar.6.t:0 "$FROMCOUNTRY$ refuse to submit"
 flavor_jar.6.d:0 "They refused to submit, they will know our wrath."
 flavor_jar.6.a:0 "War will come soon enough"
 
-flavor_jar.7.t:0 "Tripoli asks to form a confeeration"
+flavor_jar.7.t:0 "Tripoli asks to form a confederation"
 flavor_jar.7.d:0 "With the Jarawa's threat on our independance, Tripoli sents us envoys. They ask us to form a confederation so that we will be able to defend ourselves more efficiently."
 flavor_jar.7.a:0 "Together we are stronger."
 flavor_jar.7.b:0 "We don't need an alliance."
+
+flavor_jar.8.t:0 "$FROMCOUNTRY$ joins the confederation "
+flavor_jar.8.d:0 "After long debates, they have finally agreed on joining our confederation."
+flavor_jar.8.a:0 "Together we are stronger."
 #carthage
 flavor_ctg.1.t:0 "A plot in the shadow"
 flavor_ctg.1.d:0 "The king Lucius III has many ennemies, he is a capable warrior but a poor diplomat and administrator. He is also cruel and rule its kingdom with an iron fist. Because of this many wants his death and thus many began to plot. One night the king was going to his bed and an assassin made his sleep the last one."
