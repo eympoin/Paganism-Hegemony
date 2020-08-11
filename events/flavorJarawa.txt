@@ -70,7 +70,7 @@ country_event = {
 	id = flavor_jar.3
 	title = "flavor_jar.3.t"
 	desc = "flavor_jar.3.d"
-	picture = CIVIL_WAR_eventPicture
+	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
@@ -92,7 +92,7 @@ country_event = {
 	id = flavor_jar.4
 	title = "flavor_jar.4.t"
 	desc = "flavor_jar.4.d"
-	picture = CIVIL_WAR_eventPicture
+	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
@@ -157,7 +157,7 @@ country_event = {
 		id = flavor_jar.5
 		title = "flavor_jar.5.t"
 		desc = "flavor_jar.5.d"
-		picture = BATTLE_eventPicture
+		picture = CONQUEST_eventPicture
 
 		is_triggered_only = yes
 
@@ -200,7 +200,7 @@ country_event = {
 		id = flavor_jar.7
 		title = "flavor_jar.7.t"
 		desc = "flavor_jar.7.d"
-		picture = BATTLE_eventPicture
+		picture = DIPLOMACY_eventPicture
 
 		is_triggered_only = yes
 
@@ -241,7 +241,7 @@ country_event = {
 		id = flavor_jar.8
 		title = "flavor_jar.8.t"
 		desc = "flavor_jar.8.d"
-		picture = BIG_BOOK_eventPicture
+		picture = DIPLOMACY_eventPicture
 
 		is_triggered_only = yes
 
