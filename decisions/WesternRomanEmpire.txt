@@ -14,9 +14,8 @@ country_decisions = {
 			NOT = { tag = HLR }
 			NOT = { tag = PAP }
 
-				culture_group = neo-romans
-				NOT = { culture_group = byzantine }
-		
+			culture_group = neo-roman
+
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -26,6 +25,7 @@ country_decisions = {
 				}
 			}
 		}
+
 		provinces_to_highlight = {
 			OR = {
 				region = italy_region
