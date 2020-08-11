@@ -110,19 +110,10 @@ country_event = {
 			}
 		}
 			TLC = {
-			if = {
-				limit ={ NOT = { has_dlc = "Mandate of Heaven" }}
 				create_subject = {
 				subject_type = vassal
 				subject = ROOT
 				}
-			}
-			else = {
-				create_subject = {
-				subject_type = tributary_state
-				subject = ROOT
-				}
-			}
 			country_event = { id = flavor_jar.5 }
 			}
 		}
@@ -157,13 +148,12 @@ country_event = {
 					exists = LPT
 					exists = TAC
 				}
-				TLC = {country_event = { id = flavor_jar.6 }}
 				TAC = {country_event = { id = flavor_jar.7 }}
 				LPT = {country_event = { id = flavor_jar.7 }}
 			}
 	}
 
-	country_event = { #accept tributaries
+	country_event = { #accept vassals
 		id = flavor_jar.5
 		title = "flavor_jar.5.t"
 		desc = "flavor_jar.5.d"
@@ -198,7 +188,7 @@ country_event = {
 			TLC = {
 			add_casus_belli = {
 				target = FROM
-				type = cb_force_tributary
+				type = cb_vassalize_mission
 				months = 240
 			}
 			}
@@ -214,20 +204,59 @@ country_event = {
 
 		is_triggered_only = yes
 
-		option = {#accept
+		option = { #Unification
 			name = "flavor_jar.7.a"
 			ai_chance = {
 				factor = 100
 			}
-			TRP = {
-				inherit = ROOT
+			if = {
+				limit = {
+					ai = no
+				}
+				change_tag = LBY
+				inherit = TRP
+				add_stability = -1
 			}
-		}
+			else = {
+				if = {
+				limit = { NOT = {exists = LBY }}
+					TRP = {country_event = { id = flavor_jar.8 }}
+				}
+				else = {
+					LBY = {country_event = { id = flavor_jar.8 }}
+				}
+				}
+			}
 		option = {
 			name = "flavor_jar.7.b"
 			ai_chance = {
-				factor = 100
+				factor = 0
 			}
 			add_prestige = 10
+		}
+	}
+
+	country_event = {
+		id = flavor_jar.8
+		title = "flavor_jar.8.t"
+		desc = "flavor_jar.8.d"
+		picture = BIG_BOOK_eventPicture
+
+		is_triggered_only = yes
+
+		option = { #Unification
+			name = "flavor_jar.8.a"
+			ai_chance = {
+				factor = 100
+			}
+			if = {
+				limit = {tag = TRP}
+				change_tag = LBY
+			}
+			LBY = {
+				inherit = FROM
+				stability = -1
+				}
+				TLC = {country_event = { id = flavor_jar.6 }}
 		}
 	}

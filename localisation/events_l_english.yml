@@ -700,12 +700,12 @@ flavor_jar.3.a:0 "Demand submission"
 
 flavor_jar.4.t:0 "The Jarawas ask for submission"
 flavor_jar.4.d:0 "The Jarawas have healed their wounds caused by the civil war, and they want us to submit again. "
-flavor_jar.4.a:0 "they are too strong for us to fight them... for now"
+flavor_jar.4.a:0 "They are too strong for us to fight them... for now"
 flavor_jar.4.b:0 "We will never be their slaves again !"
 flavor_jar.4.c:0 "Asks our fellow Tripolitan to form a confederation to protect us from them."
 
 flavor_jar.5.t:0 "$FROMCOUNTRY$ has submit."
-flavor_jar.5.d:0 "They accept to gives us tributes"
+flavor_jar.5.d:0 "They accepted our demand."
 flavor_jar.5.a:0 "They are smarter than they look."
 
 flavor_jar.6.t:0 "$FROMCOUNTRY$ refuse to submit"
