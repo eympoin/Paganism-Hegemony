@@ -60,6 +60,7 @@ MSS = "countries/Messina.txt"
 PNR = "countries/Panormus.txt"
 AFR = "countries/Africa.txt"
 LPT = "countries/Leptis Magna.txt"
+LBY = "countries/Libyan Confederation.txt"
 
 EAA = "countries/East-Anglia.txt"
 GLA = "countries/Glamorgan.txt"
