@@ -3,7 +3,7 @@
 owner = LCA
 controller = LCA
 culture = anatolian
-religion = olympoi
+religion = theoi
 capital = "Ikonion"
 trade_goods = salt
 hre = yes

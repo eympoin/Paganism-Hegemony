@@ -1835,7 +1835,7 @@ norse_group{
 
 
 greco_roman_group = {
-  olympoi = {
+  theoi = {
     icon = 30
     color = { 150 0 150 }
     country = {
@@ -1857,7 +1857,7 @@ greco_roman_group = {
     heretic = { OLD_OLYMPOI }
   }
 
-  jupiterian = {
+  deii = {
     icon = 29
     color = { 109 7 26 }
     country = {

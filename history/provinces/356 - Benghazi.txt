@@ -3,7 +3,7 @@
 owner = CYR
 controller = CYR
 culture = cyrenian
-religion = olympoi
+religion = theoi
 capital = "Benghazi"
 trade_goods = livestock
 hre = yes

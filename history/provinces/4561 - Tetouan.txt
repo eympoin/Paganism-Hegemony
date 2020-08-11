@@ -3,7 +3,7 @@
 owner = MAU
 controller = MAU
 culture = mauretanian
-religion = jupiterian
+religion = deii
 capital = "Tetouan"
 trade_goods = grain
 hre = no

@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 technology_group = western
-religion = jupiterian
+religion = deii
 primary_culture = salernian
 capital = 121 # Napoli
 

@@ -2,9 +2,9 @@ government = monarchy
 add_government_reform = autocracy_reform
 government_rank = 1
 primary_culture = turkish
-religion = olympoi
+religion = theoi
 technology_group = ottoman
-capital = 322 # Kütahya
+capital = 322 # Kï¿½tahya
 
 
 1402.8.1 = {

@@ -3,7 +3,7 @@
 owner = BOE
 controller = BOE
 culture = greek
-religion = olympoi
+religion = theoi
 capital = "Thebes"
 trade_goods = silk
 hre = yes

@@ -1,7 +1,7 @@
 owner = AGO
 controller = AGO
 culture = greek
-religion = olympoi
+religion = theoi
 capital = "Argos"
 trade_goods = wine
 hre = yes

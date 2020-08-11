@@ -1,7 +1,7 @@
 government = republic
 add_government_reform = free_city
 primary_culture = albanian
-religion = olympoi
+religion = theoi
 technology_group = eastern
 capital = 4174
 elector=no

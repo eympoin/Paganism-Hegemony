@@ -3,7 +3,7 @@
 owner = TRP
 controller = TRP
 culture = tripolitan
-religion = jupiterian
+religion = deii
 capital = "Zuwarah"
 trade_goods = fish
 hre = no

@@ -3,7 +3,7 @@
 owner = BYZ
 controller = BYZ
 culture = greek
-religion = olympoi
+religion = theoi
 capital = "Adrianople"
 trade_goods = grain
 hre = yes

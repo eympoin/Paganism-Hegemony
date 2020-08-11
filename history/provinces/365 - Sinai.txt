@@ -3,7 +3,7 @@
 owner = PLS
 controller = PLS
 culture = bedouin_arabic
-religion = olympoi
+religion = theoi
 capital = "At Tur"
 trade_goods = gems #Turquoise
 hre = yes

@@ -3,7 +3,7 @@
 owner = TAC
 controller = TAC
 culture = tripolitan
-religion = jupiterian
+religion = deii
 capital = "Djerba"
 trade_goods = grain
 hre = no

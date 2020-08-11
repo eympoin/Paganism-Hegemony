@@ -3,7 +3,7 @@
 owner = GAL
 controller = GAL
 culture = galician
-religion = jupiterian
+religion = deii
 capital = "Bragan�a"
 trade_goods = wine
 hre = no

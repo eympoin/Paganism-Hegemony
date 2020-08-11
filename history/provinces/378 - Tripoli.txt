@@ -3,7 +3,7 @@
 owner = PHO
 controller = PHO
 culture = syrian
-religion = olympoi
+religion = theoi
 capital = "Tripoli" #Tripoli in the East.
 trade_goods = grain
 hre = yes

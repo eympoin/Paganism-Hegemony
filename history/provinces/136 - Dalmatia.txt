@@ -3,7 +3,7 @@
 owner = DAL
 controller = DAL
 culture = Dalmatian
-religion = olympoi
+religion = theoi
 capital = "Spalatum"
 trade_goods = wool
 hre = yes

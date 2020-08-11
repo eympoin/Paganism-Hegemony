@@ -3,7 +3,7 @@
 owner = BAI
 controller = BAI
 culture = Griko
-religion = olympoi
+religion = theoi
 hre = no
 base_tax = 7
 base_production = 7

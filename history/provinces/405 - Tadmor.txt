@@ -3,7 +3,7 @@
 owner = PLM
 controller = PLM
 culture = canaan
-religion = olympoi
+religion = theoi
 capital = "Tadmuriyah"
 trade_goods = livestock
 hre = yes

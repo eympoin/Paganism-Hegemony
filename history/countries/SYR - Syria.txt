@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = syrian
-religion = olympoi
+religion = theoi
 add_accepted_culture = canaan
 technology_group = muslim
 capital = 2313 # Antioch

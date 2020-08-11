@@ -3,7 +3,7 @@
 owner = DEL
 controller = DEL
 culture = ptolemaic
-religion = olympoi
+religion = theoi
 capital = "Tamiathis"
 trade_goods = grain #Rice
 hre = yes

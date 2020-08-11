@@ -3,7 +3,7 @@
 owner = LIK
 controller = LIK
 culture = Dalmatian
-religion = olympoi
+religion = theoi
 capital = "Rijeka"
 trade_goods = cloth
 hre = yes

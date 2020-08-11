@@ -3,7 +3,7 @@
 owner = SPQ
 controller = SPQ
 culture = roman 
-religion = jupiterian 
+religion = deii 
 hre = no
 base_tax = 10 
 base_production = 10

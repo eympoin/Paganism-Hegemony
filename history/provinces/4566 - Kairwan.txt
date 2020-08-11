@@ -2,7 +2,7 @@
 owner = CTG
 controller = CTG 
 culture = carthaginian
-religion = jupiterian
+religion = deii
 capital = "Kairwan"
 trade_goods = grain
 hre = no

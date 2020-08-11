@@ -3,7 +3,7 @@
 owner = DMC
 controller DMC
 culture = syrian
-religion = olympoi
+religion = theoi
 capital = "Damascus"
 trade_goods = iron
 hre = yes

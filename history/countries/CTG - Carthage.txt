@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = carthaginian
-religion = jupiterian
+religion = deii
 technology_group = western
 capital = 341
 1444.1.1 = {

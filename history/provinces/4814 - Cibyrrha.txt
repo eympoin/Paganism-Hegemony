@@ -3,7 +3,7 @@
 owner = CIL
 controller = CIL
 culture = cilician
-religion = olympoi
+religion = theoi
 capital = "Cibyrrha"
 trade_goods = naval_supplies
 hre = yes

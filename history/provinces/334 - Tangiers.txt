@@ -3,7 +3,7 @@
 owner = MAU
 controller = MAU
 culture = mauretanian
-religion = jupiterian
+religion = deii
 capital = "Tangier"
 trade_goods = cloth
 hre = no

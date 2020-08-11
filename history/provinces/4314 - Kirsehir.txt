@@ -3,7 +3,7 @@
 owner = CAP
 controller = CAP
 culture = cappadocian
-religion = olympoi
+religion = theoi
 capital = "Justinianopolis"
 trade_goods = wool
 hre = yes

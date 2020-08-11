@@ -3,7 +3,7 @@
 owner = TAC
 controller = TAC
 culture = tripolitan
-religion = jupiterian
+religion = deii
 capital = "Tacape"
 trade_goods = grain
 hre = no

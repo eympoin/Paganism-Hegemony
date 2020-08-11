@@ -3,7 +3,7 @@
 owner = NAX
 controller = NAX
 culture = greek
-religion = olympoi
+religion = theoi
 capital = "Chalcis"
 trade_goods = fish
 hre = yes

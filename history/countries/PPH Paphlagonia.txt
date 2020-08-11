@@ -1,7 +1,7 @@
 government = republic
 add_government_reform = noble_elite_reform
 primary_culture = pontic_greek
-religion = olympoi
+religion = theoi
 technology_group = eastern
 capital = 325
 elector=no

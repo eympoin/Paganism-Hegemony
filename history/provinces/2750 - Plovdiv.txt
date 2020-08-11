@@ -3,7 +3,7 @@
 owner = THR
 controller = THR
 culture = greek
-religion = olympoi
+religion = theoi
 capital = "Philippopolis"
 trade_goods = grain
 hre = yes

@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = cartaginensian 
-religion = jupiterian
+religion = deii
 technology_group = western
 capital = 333
 historical_rival = BAE

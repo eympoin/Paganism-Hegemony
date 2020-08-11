@@ -3,7 +3,7 @@
 owner = PNR
 controller = PNR
 culture = sicilian 
-religion = jupiterian 
+religion = deii 
 hre = no 
 base_tax = 8 
 base_production = 8

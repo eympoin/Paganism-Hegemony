@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = al_misr_arabic
-religion = olympoi
+religion = theoi
 technology_group = muslim
 capital = 359
 elector = no

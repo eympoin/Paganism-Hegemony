@@ -3,7 +3,7 @@
 owner = TLC
 controller = TLC
 culture = mauretanian
-religion = jupiterian
+religion = deii
 capital = "Mostaganem"
 trade_goods = grain
 hre = no

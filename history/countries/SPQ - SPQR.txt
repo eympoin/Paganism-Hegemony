@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = autocracy_reform
 primary_culture = roman
-religion = jupiterian
+religion = deii
 technology_group = western
 capital = 118
 government_rank = 2

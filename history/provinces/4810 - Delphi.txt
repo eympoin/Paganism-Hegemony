@@ -1,7 +1,7 @@
 owner = DLP
 controller = DLP
 culture = greek
-religion = olympoi
+religion = theoi
 capital = "Delphi"
 trade_goods = livestock
 hre = yes

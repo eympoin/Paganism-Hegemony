@@ -1,6 +1,6 @@
 government = monarchy
 primary_culture = aquileian
-religion = jupiterian
+religion = deii
 technology_group = western
 capital = 111	# Friuli
 historical_rival = LOM

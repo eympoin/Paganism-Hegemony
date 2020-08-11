@@ -3,7 +3,7 @@
 owner = GLT
 controller = GLT
 culture = anatolian
-religion = olympoi
+religion = theoi
 capital = "Ancyra"
 trade_goods = cloth
 hre = yes

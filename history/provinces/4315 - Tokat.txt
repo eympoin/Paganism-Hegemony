@@ -3,7 +3,7 @@
 owner = PON
 controller = PON
 culture = cappadocian
-religion = olympoi
+religion = theoi
 capital = "Evdoksia"
 trade_goods = cloth
 hre = yes

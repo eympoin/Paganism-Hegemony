@@ -3,7 +3,7 @@
 owner = ACH
 controller = ACH
 culture = greek
-religion = olympoi
+religion = theoi
 capital = "Patras"
 trade_goods = wine
 hre = yes

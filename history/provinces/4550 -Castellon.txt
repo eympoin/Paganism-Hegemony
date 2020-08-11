@@ -6,7 +6,7 @@ add_core = BAE
 add_core = TRC
 
 culture = tarraconan
-religion = jupiterian
+religion = deii
 hre = no
 base_tax = 4
 base_production = 4

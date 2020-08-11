@@ -3,7 +3,7 @@
 owner = BYZ
 controller = BYZ
 culture = greek
-religion = olympoi
+religion = theoi
 capital = "Pegai"
 trade_goods = naval_supplies
 hre = yes

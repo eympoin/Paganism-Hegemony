@@ -3,7 +3,7 @@
 owner = LYD
 controller = LYD
 culture = anatolian
-religion = olympoi
+religion = theoi
 capital = "Tralles"
 trade_goods = salt #Major Ottoman Salt Work
 hre = yes

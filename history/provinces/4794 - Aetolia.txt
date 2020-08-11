@@ -1,7 +1,7 @@
 owner = AET
 controller = AET
 culture = greek
-religion = olympoi
+religion = theoi
 capital = "Naupaktos"
 trade_goods = livestock
 hre = yes

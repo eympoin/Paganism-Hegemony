@@ -5,7 +5,7 @@ controller = BSQ
 add_core = BSQ
 
 culture = basque
-religion = jupiterian
+religion = deii
 hre = no
 base_tax = 2
 base_production = 2

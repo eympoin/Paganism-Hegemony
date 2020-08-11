@@ -5,7 +5,7 @@ controller = BAE
 add_core = LUS
 
 culture = lusitanian
-religion = jupiterian
+religion = deii
 capital = "Beja"
 trade_goods = livestock
 hre = no

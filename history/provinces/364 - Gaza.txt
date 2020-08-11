@@ -3,7 +3,7 @@
 owner = PLS
 controller = PLS
 culture = canaan
-religion = olympoi
+religion = theoi
 capital = "Gazzah"
 trade_goods = salt
 hre = yes

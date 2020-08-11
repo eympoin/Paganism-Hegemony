@@ -17,7 +17,7 @@ country_decisions = {
       NOT = { religion_group = muslim }
 			NOT = { religion_group = jewish_group }
 			OR = {
-				religion = jupiterian
+				religion = deii
 		}
     culture_group = roman
     NOT = { primary_culture = byzantine }

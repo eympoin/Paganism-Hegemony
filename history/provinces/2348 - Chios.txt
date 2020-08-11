@@ -3,7 +3,7 @@
 owner = LES
 controller = LES
 culture = greek
-religion = olympoi
+religion = theoi
 capital = "Chios"
 trade_goods = wine
 hre = yes

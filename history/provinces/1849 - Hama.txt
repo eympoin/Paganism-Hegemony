@@ -3,7 +3,7 @@
 owner = SYR
 controller = SYR
 culture = canaan
-religion = olympoi
+religion = theoi
 capital = "Hama"
 trade_goods = cotton
 hre = yes

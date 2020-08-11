@@ -3,7 +3,7 @@
 owner = LEG
 controller = LEG
 culture = ptolemaic
-religion = olympoi
+religion = theoi
 capital = "Clymsa"
 trade_goods = livestock
 hre = yes

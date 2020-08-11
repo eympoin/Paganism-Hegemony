@@ -2,14 +2,14 @@ government = monarchy
 add_government_reform = autocracy_reform
 government_rank = 1
 primary_culture = turkish
-religion = olympoi
+religion = theoi
 technology_group = ottoman
 capital = 327	# Adana
 religious_school = hanafi_school
 
 1383.1.1 = {
 	monarch = {
-		name = "Sihâbeddîn Ahmed I"
+		name = "Sihï¿½beddï¿½n Ahmed I"
 		dynasty = "Ramazanoglu"
 		birth_date = 1363.1.1
 		adm = 2
@@ -21,8 +21,8 @@ religious_school = hanafi_school
 
 1383.1.1 = {
 	heir = {
-		name = "Ibrâhim"
-		monarch_name = "Ibrâhim II"
+		name = "Ibrï¿½him"
+		monarch_name = "Ibrï¿½him II"
 		dynasty = "Ramazanoglu"
 		birth_date = 1383.1.1
 		death_date = 1418.1.1
@@ -35,7 +35,7 @@ religious_school = hanafi_school
 
 1416.1.1 = {
 	monarch = {
-		name = "Ibrâhim II"
+		name = "Ibrï¿½him II"
 		dynasty = "Ramazanoglu"
 		birth_date = 1383.1.1
 		adm = 1
@@ -46,8 +46,8 @@ religious_school = hanafi_school
 
 1416.1.1 = {
 	heir = {
-		name = "Izeddîn"
-		monarch_name = "Izeddîn Hamza I"
+		name = "Izeddï¿½n"
+		monarch_name = "Izeddï¿½n Hamza I"
 		dynasty = "Ramazanoglu"
 		birth_date = 1385.1.1
 		death_date = 1426.1.1
@@ -60,7 +60,7 @@ religious_school = hanafi_school
 
 1418.1.1 = {
 	monarch = {
-		name = "Izeddîn Hamza I"
+		name = "Izeddï¿½n Hamza I"
 		dynasty = "Ramazanoglu"
 		birth_date = 1385.1.1
 		adm = 3
@@ -96,8 +96,8 @@ religious_school = hanafi_school
 
 1426.1.1 = {
 	heir = {
-		name = "Eylük"
-		monarch_name = "Eylük I"
+		name = "Eylï¿½k"
+		monarch_name = "Eylï¿½k I"
 		dynasty = "Ramazanoglu"
 		birth_date = 1405.1.1
 		death_date = 1439.1.1
@@ -110,7 +110,7 @@ religious_school = hanafi_school
 
 1435.1.1 = {
 	monarch = {
-		name = "Eylük I"
+		name = "Eylï¿½k I"
 		dynasty = "Ramazanoglu"
 		birth_date = 1405.1.1
 		adm = 2
@@ -121,8 +121,8 @@ religious_school = hanafi_school
 
 1435.1.1 = {
 	heir = {
-		name = "Dündar"
-		monarch_name = "Dündar I"
+		name = "Dï¿½ndar"
+		monarch_name = "Dï¿½ndar I"
 		dynasty = "Ramazanoglu"
 		birth_date = 1415.1.1
 		death_date = 1470.1.1
@@ -136,7 +136,7 @@ religious_school = hanafi_school
 
 1439.1.1 = {
 	monarch = {
-		name = "Dündar I"
+		name = "Dï¿½ndar I"
 		dynasty = "Ramazanoglu"
 		birth_date = 1415.1.1
 		adm = 3
@@ -147,8 +147,8 @@ religious_school = hanafi_school
 
 1439.1.1 = {
 	heir = {
-		name = "Ömer"
-		monarch_name = "Ömer I"
+		name = "ï¿½mer"
+		monarch_name = "ï¿½mer I"
 		dynasty = "Ramazanoglu"
 		birth_date = 1439.1.1
 		death_date = 1485.1.1
@@ -161,7 +161,7 @@ religious_school = hanafi_school
 
 1470.1.1 = {
 	monarch = {
-		name = "Ömer I"
+		name = "ï¿½mer I"
 		dynasty = "Ramazanoglu"
 		birth_date = 1439.1.1
 		adm = 1
@@ -172,8 +172,8 @@ religious_school = hanafi_school
 
 1470.1.1 = {
 	heir = {
-		name = "Giyâseddîn"
-		monarch_name = "Giyâseddîn Halil I"
+		name = "Giyï¿½seddï¿½n"
+		monarch_name = "Giyï¿½seddï¿½n Halil I"
 		dynasty = "Ramazanoglu"
 		birth_date = 1450.1.1
 		death_date = 1510.1.1
@@ -186,7 +186,7 @@ religious_school = hanafi_school
 
 1485.1.1 = {
 	monarch = {
-		name = "Giyâseddîn Halil I"
+		name = "Giyï¿½seddï¿½n Halil I"
 		dynasty = "Ramazanoglu"
 		birth_date = 1450.1.1
 		adm = 5
@@ -297,8 +297,8 @@ religious_school = hanafi_school
 
 1517.1.1 = {
 	heir = {
-		name = "Pîrî"
-		monarch_name = "Pîrî Mehmed Pasa I"
+		name = "Pï¿½rï¿½"
+		monarch_name = "Pï¿½rï¿½ Mehmed Pasa I"
 		dynasty = "Ramazanoglu"
 		birth_date = 1478.1.1
 		death_date = 1568.1.1
@@ -311,7 +311,7 @@ religious_school = hanafi_school
 
 1520.1.1 = {
 	monarch = {
-		name = "Pîrî Mehmed Pasa I"
+		name = "Pï¿½rï¿½ Mehmed Pasa I"
 		dynasty = "Ramazanoglu"
 		birth_date = 1478.1.1
 		adm = 5

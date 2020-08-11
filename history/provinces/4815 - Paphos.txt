@@ -3,7 +3,7 @@
 owner = PPO
 controller = PPO
 culture = cilician
-religion = olympoi
+religion = theoi
 capital = "Paphos"
 trade_goods = copper
 hre = yes

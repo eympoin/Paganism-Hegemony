@@ -4,4 +4,4 @@ primary_culture = cilician
 technology_group = western
 capital = 321	# Limassol
 fixed_capital = 321 # Cannot move capital away from this province & no power cost to move to it
-religion = olympoi
+religion = theoi

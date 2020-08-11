@@ -3,7 +3,7 @@
 owner = CYR
 controller = CYR
 culture = cyrenian
-religion = olympoi
+religion = theoi
 capital = "Marsa Matruh"
 trade_goods = fish
 hre = yes

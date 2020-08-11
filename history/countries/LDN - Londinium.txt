@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
 primary_culture = britannian
-religion = jupiterian
+religion = deii
 technology_group = western
 capital = 236
 fixed_capital = 236
@@ -27,6 +27,6 @@ fixed_capital = 236
 		adm = 4
 		dip = 5
 		mil = 3
-		religion = jupiterian
+		religion = deii
 	}
 }

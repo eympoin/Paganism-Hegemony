@@ -1,7 +1,7 @@
 owner = KRT
 controller = KRT
 culture = greek
-religion = olympoi
+religion = theoi
 capital = "Corinth"
 trade_goods = silk
 hre = yes

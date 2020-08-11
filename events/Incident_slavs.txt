@@ -71,7 +71,7 @@ country_event = {
         is_emperor = no
         is_part_of_hre = yes
         NOT = {religious_unity = 0.7}
-        religion = olympoi
+        religion = theoi
         any_owned_province = {
           OR = {
             religion = slavic
@@ -99,7 +99,7 @@ country_event = {
       limit = {
         is_emperor = no
         is_part_of_hre = yes
-        religion = olympoi
+        religion = theoi
         any_owned_province = {
           OR = {
           religion = slavic
@@ -125,7 +125,7 @@ country_event = {
       limit = {
         is_emperor = no
         is_part_of_hre = yes
-        religion = olympoi
+        religion = theoi
         any_owned_province = {
           OR = {
           religion = slavic
@@ -729,7 +729,7 @@ country_event = { #victory_of_the_emperor
     add_prestige = -20
     white_peace = emperor
     add_truce_with = emperor
-    change_religion = olympoi
+    change_religion = theoi
   }
 }
 

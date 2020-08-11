@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = narbonnais
-religion = jupiterian
+religion = deii
 technology_group = western
 capital = 2753
 fixed_capital = 2753

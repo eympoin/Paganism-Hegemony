@@ -4,7 +4,7 @@
 owner = LDN
 controller = LDN
 culture = britannian
-religion = jupiterian
+religion = deii
 hre = no
 base_tax = 7
 base_production = 7

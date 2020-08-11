@@ -3,7 +3,7 @@
 owner = LPT
 controller = LPT
 culture = tripolitan
-religion = jupiterian
+religion = deii
 capital = "Thubaqt"
 trade_goods = cloth
 hre = no

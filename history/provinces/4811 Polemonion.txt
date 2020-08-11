@@ -3,7 +3,7 @@
 owner = PON
 controller = PON
 culture = pontic_greek
-religion = olympoi
+religion = theoi
 capital = "Polemonion"
 trade_goods = wine
 hre = yes

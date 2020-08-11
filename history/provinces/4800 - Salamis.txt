@@ -3,7 +3,7 @@
 owner = SLS
 controller = SLS
 culture = cilician
-religion = olympoi
+religion = theoi
 capital = "Salamis"
 trade_goods = wine
 hre = yes

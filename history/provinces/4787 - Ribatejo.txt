@@ -3,8 +3,8 @@
 owner = LUS
 controller = LUS
 culture = lusitanian
-religion = jupiterian
-capital = "Santarém"
+religion = deii
+capital = "Santarï¿½m"
 trade_goods = grain
 hre = no
 base_tax = 4 

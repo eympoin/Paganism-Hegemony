@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = Dalmatian
-religion = olympoi
+religion = theoi
 technology_group = eastern
 capital = 136
 government_rank = 1
