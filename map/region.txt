@@ -341,6 +341,7 @@ mashriq_region = {
 		trans_jordan_area
 		syrian_desert_area
 		aleppo_area
+		osroene_area
 	}
 }
 

@@ -1,17 +1,17 @@
 #2312 - Wasit
 
-owner = BAB
-controller = BAB
+owner = MSH
+controller = MSH
 culture = babylonian
 religion = mesopotamian
 capital = "Wasit"
 trade_goods = grain
 hre = no
-base_tax = 8
-base_production = 7
-base_manpower = 7
+base_tax = 6
+base_production = 5
+base_manpower = 5
 is_city = yes
-add_core = BAB
+add_core = MSH
 discovered_by = east_african
 discovered_by = muslim
 discovered_by = ottoman

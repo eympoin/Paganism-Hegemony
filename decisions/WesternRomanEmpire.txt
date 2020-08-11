@@ -30,11 +30,12 @@ country_decisions = {
 			OR = {
 				region = italy_region
 				province_id = 201 # Massalia
-				province_id = 341 # carthage
-				province_id = 333 # Majorca
-				province_id = 213 # Barcino
+				province_id = 341 # Carthage
+				province_id = 224 # Andalusia
+				province_id = 2298 # Tarragona
 				province_id = 334 # Tanger
 				province_id = 221 # Carthago Nova
+				province_id = 203 # Lyon
 			}
 			OR = {
 				NOT = { owned_by = ROOT }

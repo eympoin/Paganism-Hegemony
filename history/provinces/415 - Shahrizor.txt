@@ -7,9 +7,9 @@ religion = mesopotamian
 capital = "Kirkuk"
 trade_goods = grain
 hre = no
-base_tax = 8
-base_production = 7
-base_manpower = 7
+base_tax = 6
+base_production = 5
+base_manpower = 5
 is_city = yes
 add_core = ASY
 

@@ -288,7 +288,7 @@ brittany_area = { #5
 	169 170 171 172 4384
 }
 lorraine_area = {
-
+	188 189 4825
 }
 normandy_area = { #4
 	167 168 1879 4385
@@ -1000,7 +1000,7 @@ upper_rhineland_area = { #3 # now 'Baden'
 }
 
 alsace_area = { #3
-	75 1880 4765 188 189
+	75 1880 4765 
 }
 
 palatinate_area = { #3
@@ -1192,7 +1192,7 @@ rum_area = { #5
 }
 
 erzurum_area = { #3	Erzurum and Trebizond
-	330 331 2305 4817
+	330 331 2305 4817 4822
 }
 
 hudavendigar_area = { #3
@@ -1258,15 +1258,15 @@ palestine_area = { #3
 
 dulkadir_area = { # 4
 	color = { 184 54 72 }
-	332 2303 4310 329
+	332 4310 329 2303
 }
 
 iraq_arabi_area = { #5 Lower Mesopotamia
-	406 409 410 2310 4291
+	409 410 2310 4291
 }
 
 basra_area = { #4
-	408 2311 2312 4288
+	408 2311 2312 4288 4824
 }
 
 luristan_area = { #4
@@ -1274,7 +1274,7 @@ luristan_area = { #4
 }
 
 north_kurdistan_area = { #5
-	418 2306 2307 4295 4296
+	2306 2307 4295 4296 418 
 }
 
 khuzestan_area = { #5
@@ -1283,13 +1283,18 @@ khuzestan_area = { #5
 
 shahrizor_area = {	#4
 	color = { 152 102 102 }
-	415 4293 4294 411
+	415 4293 4294 411 4826
 }
 
 al_jazira_area = { #5
 	color = { 92 200 92 }
-	407 2309 2314 4292 2308
+	 2309 2314 4823 406
 }
+
+osroene_area = {
+	4821 2308 407 4292
+}
+
 
 
 ########################################

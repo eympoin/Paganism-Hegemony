@@ -3,8 +3,7 @@ add_government_reform = feudalism_reform
 primary_culture = Assyrian
 religion = mesopotamian
 technology_group = muslim
-capital = 2310 # Tabriz
-
+capital = 4826 
 1428.1.1 = {
 	monarch = {
 		name = "Naramsin"

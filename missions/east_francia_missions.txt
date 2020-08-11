@@ -804,6 +804,12 @@ East_francia_invade_wfr = {
 				}
 				add_permanent_claim = ROOT
 			}
+			lorraine_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
@@ -814,6 +820,7 @@ East_francia_invade_wfr = {
 		provinces_to_highlight = {
 			OR = {
 				area = alsace_area
+				area = lorraine_area 
 				area = palatinate_area
 				area = north_rhine_area
 				area = lower_rhineland_area
@@ -822,6 +829,10 @@ East_francia_invade_wfr = {
 		}
 		trigger = {
 			alsace_area = {
+				type = all
+				owned_by = ROOT
+			}
+			lorraine_area = {
 				type = all
 				owned_by = ROOT
 			}
