@@ -17,6 +17,14 @@ country_decisions = {
       NOT = { religion_group = muslim }
 			NOT = { religion_group = jewish_group }
 			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 40
+					adm_tech = 10
+				}
+			}
+			OR = {
 				religion = jupiterian
 		}
     culture_group = roman
@@ -25,18 +33,10 @@ country_decisions = {
 		provinces_to_highlight = {
 			OR = {
 				region = italy_region
-				region = france_region
-				region = iberia_region
-				area = slavonia_area
-				area = croatia_area
-				area = east_adriatic_coast_area
-				area = rascia_area
-				area = bosnia_area
-				province_id = 343 # Fez
-				province_id = 236 # London
-				province_id = 245 # Yorkshire
-				province_id = 96 # Zeeland
-				area = serbia_area
+				province_id = 201 # Massalia
+				province_id = 341 # carthage
+				province_id = 333 # Majorca
+				province_id = 213 # Barcino
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -49,43 +49,10 @@ country_decisions = {
 				type = all
 				owned_by = ROOT
 			}
-			france_region = {
-				type = all
-				owned_by = ROOT
-			}
-			iberia_region = {
-				type = all
-				owned_by = ROOT
-			}
-      croatia_area = {
-				type = all
-				owned_by = ROOT
-			}
-      slavonia_area = {
-				type = all
-				owned_by = ROOT
-			}
-      east_adriatic_coast_area = {
-				type = all
-				owned_by = ROOT
-			}
-      rascia_area = {
-				type = all
-				owned_by = ROOT
-			}
-      bosnia_area = {
-				type = all
-				owned_by = ROOT
-			}
-      serbia_area  = {
-				type = all
-				owned_by = ROOT
-			}
-      owns_core_province = 343
+      owns_core_province = 201
       owns_core_province = 341
-      owns_core_province = 236
-      owns_core_province = 245
-      owns_core_province = 96
+			owns_core_province = 333
+			owns_core_province = 213
 		}
     effect = {
       remove_non_electors_emperors_from_empire_effect = yes
