@@ -34,6 +34,7 @@ monarchy = {
 				persian_empire_stable
 				satrapdom
 				persian_empire_cen
+				absolute_reform
 			}
 		}
 		hereditary_vs_nobility = {
@@ -136,6 +137,7 @@ monarchy = {
 		principality_legacy
 		tsardom_legacy
 		holy_state_legacy
+		absolute_monarchy
 	}
 
 	# Each group of exclusive reforms are mutually exclusive to each other
@@ -182,6 +184,7 @@ monarchy = {
 		persian_empire_cen
 		persian_empire_decen
 		persian_empire_stable
+		absolute_monarchy
 	}
 
 	#Flavor

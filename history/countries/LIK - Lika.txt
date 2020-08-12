@@ -18,8 +18,8 @@ government_rank = 1
 
 1444.1.1 = {
 	heir = {
-		name = "L�szl�"
-		monarch_name = "L�szl�"
+		name = "Laszle"
+		monarch_name = "Laszle"
 		dynasty = "Hunyadi"
 		birth_date = 1433.1.1
 		death_date = 1457.3.16
