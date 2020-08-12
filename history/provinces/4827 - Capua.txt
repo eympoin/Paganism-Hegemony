@@ -1,0 +1,19 @@
+#121 - Napoli
+
+owner = NAP
+controller = NAP
+culture = salernian 
+religion = deii
+hre = no
+base_tax = 6
+base_production = 5
+trade_goods = grain
+base_manpower = 5
+capital = "Capua"
+is_city = yes	# Estimated
+add_core = NAP
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+

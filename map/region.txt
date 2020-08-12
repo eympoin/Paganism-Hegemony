@@ -312,6 +312,7 @@ maghreb_region = {
 	areas = {
 		fezzan_area
 		tunisia_area
+		byzacena_area
 		djerba_area
 		kabylia_area
 		algiers_area

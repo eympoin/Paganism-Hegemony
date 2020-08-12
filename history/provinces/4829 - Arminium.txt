@@ -1,0 +1,22 @@
+#4829
+
+owner = RVN
+controller = RVN
+culture = tuscan
+religion = deii
+hre = no
+base_tax = 5
+base_production = 4
+trade_goods = grain
+base_manpower = 4
+capital = "Arminium"
+is_city = yes	# Estimated
+add_core = RVN
+add_core = FER
+
+
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

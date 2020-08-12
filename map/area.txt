@@ -288,7 +288,7 @@ brittany_area = { #5
 	169 170 171 172 4384
 }
 lorraine_area = {
-	188 189 4825
+	188 189 4825 4833
 }
 normandy_area = { #4
 	167 168 1879 4385
@@ -479,11 +479,11 @@ tuscany_area = { #5
 }
 
 liguria_area = { #3
-	101 2992 2980
+	101 2992 2980 105
 }
 
-corsica_sardinia_area = { #4
-	127 1247 2986 4735
+corsica_sardinia_area = { #5
+	127 1247 2986 4735 4831
 }
 
 sicily_area = { #3 # now Eastern Sicily
@@ -495,7 +495,7 @@ western_sicily_area = { #3
 }
 
 naples_area = { #3  #Campania
-	121 2983 4734
+	121 2983 4734 4827
 }
 
 lazio_area = { #4 Lazio-Umbria
@@ -503,7 +503,7 @@ lazio_area = { #4 Lazio-Umbria
 }
 
 calabria_area = { #3 (+Lucania)
-	123 1934 2984
+	123 1934 2984 4828
 }
 
 apulia_area = { #4
@@ -512,11 +512,11 @@ apulia_area = { #4
 
 emilia_romagna_area = { #5
 	color = { 24 222 66 }
-	105 106 113 114 4730
+	106 113 114 4730 4829
 }
 
 central_italy_area = { #3
-	119 120 2977
+	119 120 2977 4830
 }
 
 ########################################
@@ -1418,8 +1418,11 @@ fezzan_area = { #4
 	2448 2449 2474 4567
 }
 
-tunisia_area = { #5
-	341 2454 2455 2473 4566
+tunisia_area = { #3
+	341  2455 2454
+}
+byzacena_area = { #3
+	4832 4566 2473 
 }
 
 djerba_area = { #3
