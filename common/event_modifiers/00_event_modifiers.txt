@@ -11471,12 +11471,11 @@ massive_indebtment_spq = {
 	yearly_corruption = 0.1
 	interest = 1
 }
-
 no_men_left_spq = {
 	manpower_recovery_speed = -0.8
 	global_manpower_modifier = -0.5
-	production_efficiency = -0.5
-	global_tax_modifier = -0.5
+	production_efficiency = -0.25
+	global_tax_modifier = -0.25
 }
 wounds_of_bloody_war_spq = {
 	diplomatic_reputation = -2
@@ -11491,6 +11490,14 @@ bloodthirsty_heritage_spq = {
 birthed_by_cw_spq = {
     stability_cost_modifier = 0.2
     war_exhaustion = 0.02
+}
+unrest_stirred_spqr = {
+	global_unrest = 3
+	stability_cost_modifier = 0.3
+	legitimacy = -0.5
+}
+nobles_curtailed_spqr = {
+	land_forcelimit_modifier = 0.1
 }
 
 need_of_reforms_monarchy = {
