@@ -11499,6 +11499,13 @@ unrest_stirred_spqr = {
 nobles_curtailed_spqr = {
 	land_forcelimit_modifier = 0.1
 }
+roman_senators_mustering_forces = {
+	min_local_autonomy = 50
+}
+sheltering_roman_senators_ctg = {
+	prestige = 0.3
+	republican_tradition = 0.15
+}
 
 need_of_reforms_monarchy = {
 	global_unrest = -2
