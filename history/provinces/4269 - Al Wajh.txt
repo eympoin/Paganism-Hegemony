@@ -3,7 +3,7 @@
 owner = MDA
 controller MDA
 culture = hejazi_culture
-religion = arabian
+religion = shiite
 capital = "Al Wajh"
 trade_goods = fish
 hre = no
