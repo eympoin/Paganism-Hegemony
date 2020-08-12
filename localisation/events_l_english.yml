@@ -748,6 +748,28 @@ flavor_ctg.5.d:0 "We began as a city states, tributary to the Jarawas. But now o
 flavor_ctg.5.a:0 "Carthago is the only Senate."
 flavor_ctg.5.b:0 "Create Senates in different cities."
 
+flavor_ctg.6.t:0 "Political cleansing"
+flavor_ctg.6.d:0 "The monarchy remains but the young king still has many ennemies in the nobility and the merchant class. Supporters of a republic continue their plots. What should we do ?"
+flavor_ctg.6.a:0 "Cleanse the realm from these republican fools."
+flavor_ctg.6.b:0 "In time they will recognize their true ruler."
+
+flavor_ctg.7.t:0 "Letters and Science"
+flavor_ctg.7.d:0 "With our latest king, the funding of scientists, philosophers and other authors has severely declined. If we want our monarchy to be the beacon of the world, we must attract them to our court.."
+flavor_ctg.7.a:0 "The authors will make a good propaganda of our countries."
+flavor_ctg.7.b:0 "Scientists will gives us new knowledge"
+flavor_ctg.7.c:0 "Both are equally importants"
+
+flavor_ctg.8.t:0 "Power of the clergy"
+flavor_ctg.8.d:0 "With the assassination of the king and the chaos following it, the clergy took a lot of power. They asked to crown the king when he will be of age. Should we accept ?"
+flavor_ctg.8.a:0 "The King is a God, no priest are allowed to crown him."
+flavor_ctg.8.b:0 "Let the clergy crown him. They could be important allies"
+flavor_ctg.8.c:0 "They won't crown him."
+
+flavor_ctg.9.t:0 "The King and the others."
+flavor_ctg.9.d:0 "The last monarchy showed its limit. The king should have the support of the nobility and there are two ways to do that : give them the pwoer of choosing the heir or make them fear the king."
+flavor_ctg.9.a:0 "There is only one who rules."
+flavor_ctg.9.b:0 "Hopefully they will support a good heir."
+
 #Rome
 flavor_spqr.1.t:0 "The defenestration of Roma"
 flavor_spqr.1.d:0 "Our king, Rex Julius Publius was attacked by the Senators of the Roman Curia, they hope to take power and bring back the republic, as the monarchy seems to have brought naught but poverty and suffering upon our people. They threw him though the window of his personal quarters after a heated argument, his life hangs by a thread."

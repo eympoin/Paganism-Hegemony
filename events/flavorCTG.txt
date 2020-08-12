@@ -200,6 +200,12 @@ country_event = { #republic 3 government centralization
 		ai_chance = { factor = 30 }
 		add_government_reform	= carthaginian_republic_centralize
 		remove_country_modifier = republic_under_construction
+		capital_scope = {
+			add_province_modifier = {
+				name = carthago_aeterna
+				duration = -1
+			}
+		}
 	}
 
 	option = {
@@ -307,6 +313,16 @@ country_event = { #monarchy 2 scientific legacy
 			duration = -1
 		}
 	}
+
+	option = { #balance
+		name = "flavor_ctg.7.c"
+		ai_chance = { factor = 50 }
+
+		add_country_modifier = {
+			name = "balanced_funding"
+			duration = -1
+		}
+	}
 }
 
 country_event = { #monarchy 3 religion
@@ -333,21 +349,44 @@ country_event = { #monarchy 3 religion
 
 	option = { #the king is a god
 		name = "flavor_ctg.8.a"
-		ai_chance = { factor = 50 }
+		ai_chance = {
+		factor = 50
+		modifier = {
+			factor = 90
+			has_country_modifier = political_cleansing
+		}
+		}
 
 		add_country_modifier = {
 			name = "god_king"
 			duration = -1
 		}
+		add_estate_loyalty = {
+    estate = estate_church
+    loyalty = -20
+		}
 	}
 
 	option = { #stay the same
 		name = "flavor_ctg.8.b"
-		ai_chance = { factor = 50 }
-		set_estate_privilege  = estate_church_statutory_rights
+		ai_chance = { factor = 40 }
+		set_estate_privilege  = estate_powerful_church
 		add_country_modifier = {
 			name = "respect_the_tradtions"
 			duration = -1
+		}
+		add_estate_loyalty = {
+    estate = estate_church
+    loyalty = 20
+		}
+	}
+
+	option = { #don't accept
+		name = "flavor_ctg.8.b"
+		ai_chance = { factor = 10 }
+		add_estate_loyalty = {
+    estate = estate_church
+    loyalty = -10
 		}
 	}
 }
@@ -376,14 +415,26 @@ country_event = { #monarchy 4 end elective or absolute
 
 	option = { #centralize
 		name = "flavor_ctg.9.a"
-		ai_chance = { factor = 30 }
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 100
+				has_country_modifier = political_cleansing
+			}
+		}
 		add_government_reform	= absolute_reform
 		remove_country_modifier = need_of_reforms_monarchy
 	}
 
 	option = {
 		name = "flavor_ctg.9.b"
-		ai_chance = { factor = 70 }
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 100
+				has_country_modifier = influenced_monarchy
+			}
+		}
 		add_government_reform	= elective_monarchy
 		remove_country_modifier = need_of_reforms_monarchy
 	}

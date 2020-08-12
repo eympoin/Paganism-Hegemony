@@ -233,6 +233,9 @@
  carthaginian_republic_centralize_desc:0 "The Senate of Carthago has a say in every matter in carthaginian territory from the trading policies to the military budget."
  carthaginian_republic_decentralize_desc:0 "The Carthaginian republic choose to decentralize its territory by creating multiple parliament in different cities to rule its empire more efficiently."
 
+ absolute_reform:0 "Absolute Monarchy"
+ absolute_reform_desc:0 "The king is the only leader of the states and have a say on everything."
+
  FEDERAL_KINGDOM:0 "Federal Kingdom"
  FEDERAL_EMPIRE:0 "Federal Empire"
  mechanic_enables_plutocratic_idea_group_yes:0 "Allows Plutocratic Idea Group."
