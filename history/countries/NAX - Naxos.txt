@@ -27,6 +27,7 @@ fixed_capital = 164 # Cannot move capital away from this province & no power cos
 		monarch_name = "Philip"
 		dynasty = "Crispos"
 		birth_date = 1442.1.1
+		death_date = 1465.1.29
 		claim = 95
 		adm = 3
 		dip = 2s

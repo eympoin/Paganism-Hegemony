@@ -19,11 +19,13 @@ capital = 1827# Krusevac
 		mil = 3
 	}
 }
-1435.6.24 = {
+1436.2.21 = {
 	heir = {
-		name = "Porin" 
+		name = "Porin"
+		monarch_name = "Porin I"
 		dynasty = "Ilic"
-		birth_date = 1435.1.1
+		birth_date = 1435.2.21
+		death_date = 1465.1.29
 		claim = 85
 		adm = 6
 		dip = 4

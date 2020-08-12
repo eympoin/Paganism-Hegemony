@@ -210,3 +210,182 @@ country_event = { #republic 3 government centralization
 	}
 
 }
+
+
+country_event = { #monarchy 1 cleansing
+	id = flavor_ctg.6
+	title = "flavor_ctg.6.t"
+	desc = "flavor_ctg.6.d"
+	picture = LAND_MILITARY_eventPicture
+	major = yes
+
+	fire_only_once = yes
+
+
+	trigger = {
+      tag = CTG
+			has_country_modifier = "need_of_reforms_monarchy"
+		}
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = { #cleanse
+		name = "flavor_ctg.6.a"
+		ai_chance = { factor = 50 }
+		change_estate_land_share = {
+    	estate = estate_nobles
+    	share = -15
+		}
+		change_estate_land_share = {
+    	estate = estate_burghers
+    	share = -10
+		}
+		add_country_modifier = {
+			name = "political_cleansing"
+			duration = 3650
+		}
+	}
+
+	option = { #more subtle approach
+		name = "flavor_ctg.6.b"
+		ai_chance = { factor = 50 }
+		change_estate_land_share = {
+    	estate = estate_nobles
+    	share = 10
+		}
+		change_estate_land_share = {
+    	estate = estate_burghers
+    	share = 10
+		}
+		add_country_modifier = {
+			name = "influenced_monarchy"
+			duration = 3650
+		}
+	}
+}
+
+
+country_event = { #monarchy 2 scientific legacy
+	id = flavor_ctg.7
+	title = "flavor_ctg.7.t"
+	desc = "flavor_ctg.7.d"
+	picture = LAND_MILITARY_eventPicture
+	major = yes
+
+	fire_only_once = yes
+
+
+	trigger = {
+      tag = CTG
+			OR = {
+			has_country_modifier = "political_cleansing"
+			has_country_modifier = "influenced_monarchy"
+
+			}
+		}
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = { #letters
+		name = "flavor_ctg.7.a"
+		ai_chance = { factor = 50 }
+
+		add_country_modifier = {
+			name = "letters_fundings"
+			duration = -1
+		}
+	}
+
+	option = { #science
+		name = "flavor_ctg.7.b"
+		ai_chance = { factor = 50 }
+
+		add_country_modifier = {
+			name = "science_funding"
+			duration = -1
+		}
+	}
+}
+
+country_event = { #monarchy 3 religion
+	id = flavor_ctg.8
+	title = "flavor_ctg.8.t"
+	desc = "flavor_ctg.8.d"
+	picture = LAND_MILITARY_eventPicture
+	major = yes
+
+	fire_only_once = yes
+
+
+	trigger = {
+      tag = CTG
+			OR = {
+			has_country_modifier = "letters_fundings"
+			has_country_modifier = "science_funding"
+
+			}
+		}
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = { #the king is a god
+		name = "flavor_ctg.8.a"
+		ai_chance = { factor = 50 }
+
+		add_country_modifier = {
+			name = "god_king"
+			duration = -1
+		}
+	}
+
+	option = { #stay the same
+		name = "flavor_ctg.8.b"
+		ai_chance = { factor = 50 }
+		set_estate_privilege  = estate_church_statutory_rights
+		add_country_modifier = {
+			name = "respect_the_tradtions"
+			duration = -1
+		}
+	}
+}
+
+
+country_event = { #monarchy 4 end elective or absolute
+	id = flavor_ctg.9
+	title = "flavor_ctg.9.t"
+	desc = "flavor_ctg.9.d"
+	picture = PORTUGUESE_MERCHANTS_eventPicture
+	major = yes
+
+	fire_only_once = yes
+
+
+	trigger = {
+      tag = CTG
+			OR = {
+			has_country_modifier = respect_the_tradtions
+			has_country_modifier = god_king
+			}
+		}
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = { #centralize
+		name = "flavor_ctg.9.a"
+		ai_chance = { factor = 30 }
+		add_government_reform	= absolute_reform
+		remove_country_modifier = need_of_reforms_monarchy
+	}
+
+	option = {
+		name = "flavor_ctg.9.b"
+		ai_chance = { factor = 70 }
+		add_government_reform	= elective_monarchy
+		remove_country_modifier = need_of_reforms_monarchy
+	}
+
+}

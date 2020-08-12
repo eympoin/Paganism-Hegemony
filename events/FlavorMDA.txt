@@ -43,5 +43,6 @@ country_event = {
     name = "flavor_mda.5.c"
     add_legitimacy = 30
     add_stability = 2
+    change_tag = RCE
   }
 }

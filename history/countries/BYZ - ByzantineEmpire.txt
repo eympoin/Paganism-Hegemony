@@ -13,7 +13,7 @@ historical_rival = PON
 
 
 
-1443.10.31 = {
+1425.10.31 = {
 	monarch = {
 		name = "Konstantinos XI"
 		dynasty = "Palaiologos"
@@ -24,12 +24,14 @@ historical_rival = PON
 		leader = {	name = "Konstantinos XI"	type = general	fire = 3	shock = 3	manuever = 4	siege = 0 }
 	}
 }
-1443.11.11 = {
+
+1436.2.21 = {
 	heir = {
 		name = "Alexios"
 		monarch_name = "Alexios IV"
 		dynasty = "Palaiologos"
 		birth_date = 1435.2.8
+		death_date = 1465.1.29
 		claim = 95
 		adm = 4
 		dip = 5

@@ -11549,3 +11549,46 @@ balanced_approach = {
 	global_own_trade_power = 0.1
 	trade_efficiency = 0.1
 }
+
+political_cleansing = {
+	global_unrest = -1
+	advisor_cost = 0.1
+	nobles_loyalty_modifier = -0.05
+	burghers_loyalty_modifier = -0.05
+	nobles_influence_modifier = -0.1
+	burghers_influence_modifier = -0.1
+}
+
+influenced_monarchy = {
+	advisor_cost = -0.1
+	nobles_loyalty_modifier = 0.05
+	burghers_loyalty_modifier = 0.05
+	nobles_influence_modifier = 0.1
+	burghers_influence_modifier = 0.1
+}
+
+science_funding = {
+	technology_cost = -0.05
+	innovativeness_gain = 0.5
+	advisor_cost = 0.1
+}
+
+letters_fundings = {
+	idea_cost = -0.1
+	embracement_cost = -0.1
+	global_institution_spread = 0.1
+	advisor_cost = 0.1
+}
+
+god_king= {
+	legitimacy = 1
+	global_missionary_strength = 0.01
+	prestige = 1
+	church_loyalty_modifier = -0.05
+	estate_church_influence_modifier = -0.1
+}
+respect_the_tradtions = {
+	tolerance_own = 2
+	church_loyalty_modifier = 0.05
+	estate_church_influence_modifier = 0.1
+}
