@@ -23,6 +23,7 @@ fixed_capital = 2750# Cannot move capital away from this province & no power cos
 		name = "Pelagios"
 		dynasty = "Karphitzes"
 		birth_date = 1433.2.8
+		death_date = 1465.1.29
 		claim = 95
 		adm = 5
 		dip = 2

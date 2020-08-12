@@ -344,10 +344,26 @@ celestial_empire = {
 		factions = {}
 	}
 }
+absolute_reform = {
+	icon = "crown"
+	allow_normal_conversion = no
+	legacy_equivalent = absolute_monarchy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	modifiers = {
+		yearly_absolutism = 0.1
+		max_absolutism = 10
+		legitimacy = 1
+		governing_capacity = 200
+	}
+	ai = {
+		factor = 0.5
+	}
+}
 
 elective_monarchy = {
 	icon = "elective_monarchy"
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
 	potential = {
 		OR = {
 			has_reform = elective_monarchy
