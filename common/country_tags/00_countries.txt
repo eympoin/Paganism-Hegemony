@@ -491,6 +491,7 @@ YAS = "countries/Yas.txt"
 YEM = "countries/Yemen.txt"
 HSN = "countries/Ayyubids.txt"
 BTL = "countries/Bitlis.txt"
+RCE = "countries/RashidunCaliphate.txt"
 
 #Asia Minor
 AKK	= "countries/AkKoyunlu.txt"

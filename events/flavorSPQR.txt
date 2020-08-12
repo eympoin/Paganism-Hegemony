@@ -1,6 +1,7 @@
 namespace = flavor_spqr
+namespace = flavor_ctgspqr
 
-country_event = {
+country_event = {#Defenestration
   id = flavor_spqr.1
   title = flavor_spqr.1.t
   desc = flavor_spqr.1.d
@@ -24,7 +25,12 @@ country_event = {
     change_government = republic
     add_government_reform = imperial_roman_curia_reform
     kill_ruler = yes
-    118 = { pretender_rebels = 1 }
+    if = {
+      limit = {
+        ai = no
+      }
+      118 = { pretender_rebels = 1 }
+    }
     4732 = { pretender_rebels = 1 }
     custom_tooltip = SPQ_PROV_LEAVE_tt
     hidden_effect = {
@@ -97,7 +103,100 @@ country_event = {
   }
 }
 
-country_event = {
+country_event = {#The fire of Ostia
+  id = flavor_spqr.2
+  title = flavor_spqr.2.t
+  desc = flavor_spqr.2.d
+  picture = REVOLT_HUNGARIAN_eventPicture
+
+  trigger = {
+    tag = SPQ
+    has_country_flag = supported_the_king
+  }
+
+  mean_time_to_happen = {
+    months = 20
+  }
+
+  option = {#Burn the port
+    name = flavor_spqr.2.a
+    ai_chance = {
+      factor = 70
+    }
+    add_legitimacy = -10
+    118 = {
+      add_center_of_trade_level = -1
+      add_devastation = 25
+    }
+    random_list = {
+      95 = {
+        custom_tooltip = senators_dead_tt
+        hidden_effect = {
+          set_country_flag = senators_dead_spqr
+        }
+      }
+      5 = {
+        custom_tooltip = senators_fled_tt
+        hidden_effect = {
+          set_country_flag = senators_fled_spqr
+          #CTG = { country_event = { flavor_ctgspqr.1 } days = 539 }
+        }
+      }
+    }
+  }
+  option = {#Send in the army
+    name = flavor_spqr.2.b
+    ai_chance = {
+      factor = 25
+    }
+    add_treasury = -30
+    add_manpower = -0.2
+    118 = {
+      add_devastation = 10
+    }
+    random_list = {
+      70 = {
+        custom_tooltip = senators_dead_tt
+        hidden_effect = {
+          set_country_flag = senators_dead_spqr
+        }
+      }
+      30 = {
+        custom_tooltip = senators_fled_tt
+        hidden_effect = {
+          set_country_flag = senators_fled_spqr
+          #CTG = { country_event = { flavor_ctgspqr.1 } days = 539 }
+        }
+      }
+    }
+  }
+  option = {#Let them go
+    name = flavor_spqr.2.c
+    ai_chance = {
+      factor = 5
+    }
+    add_prestige = -10
+    random_list = {
+      10 = {
+        custom_tooltip = senators_dead_tt
+        hidden_effect = {
+          set_country_flag = senators_dead_spqr
+        }
+      }
+      90 = {
+        custom_tooltip = senators_fled_tt
+        hidden_effect = {
+          set_country_flag = senators_fled_spqr
+          #CTG = { country_event = { flavor_ctgspqr.1 } days = 539 }
+        }
+      }
+    }
+  }
+}
+
+#Diplomatic events with the provinces
+
+country_event = {#Event for the provinces
   id = flavor_spqr.111
   title = flavor_spqr.111.t
   desc = flavor_spqr.111.d
@@ -274,3 +373,173 @@ country_event = {#Coming back
     add_prestige = 15
   }
 }
+
+#Events involving Carthago
+country_event = {
+  id = flavor_ctgspqr.1
+  title = flavor_ctgspqr.1.t
+  desc = flavor_ctgspqr.1.d
+  picture = CHURCH_ESTATE_1_eventPicture
+
+  is_triggered_only = yes
+
+  option = {#Republic help them
+    name = flavor_ctgspqr.1.a
+    trigger = {
+      government = republic
+    }
+    ai_chance = {
+      factor = 60
+      modifier = {
+        factor = 70
+        has_reform = carthaginian_republic_centralize
+      }
+    }
+    add_republican_tradition = 20
+    add_prestige = 10
+    add_years_of_income = -1
+    add_manpower = -2
+    2986 = {
+      add_province_modifier = {
+        name = roman_senators_mustering_forces
+        duration = -1
+      }
+    }
+    hidden_effect = {
+      set_country_flag = helped_roman_senators
+      SPQ = {
+        country_event = { id = flavor_ctgspqr.111 }
+      }
+    }
+  }
+  option = {#Republic shelter them
+    name = flavor_ctgspqr.1.b
+    trigger = {
+      government = republic
+    }
+    ai_chance = {
+      factor = 30
+      modifier = {
+        factor = 50
+        has_reform = carthaginian_republic_decentralize
+      }
+    }
+    add_republican_tradition = 10
+    add_prestige = 10
+    add_country_modifier = {
+      name = sheltering_roman_senators_ctg
+      duration = 7300
+    }
+    hidden_effect = {
+      set_country_flag = sheltered_roman_senators
+      SPQ = {
+        country_event = { id = flavor_ctgspqr.111 }
+      }
+    }
+  }
+  option = {#Republic ignore them
+    name = flavor_ctgspqr.1.c
+    trigger = {
+      government = republic
+    }
+    ai_chance = {
+      factor = 10
+      modifier = {
+        factor = 20
+        NOT = { stability = 0 }
+      }
+      modifier = {
+        factor = 20
+        NOT = { prestige = 0 }
+      }
+      modifier = {
+        factor = 20
+        NOT = { republican_tradition = 50 }
+      }
+    }
+    hidden_effect = {
+      set_country_flag = ignored_roman_senators
+      SPQ = {
+        country_event = { id = flavor_ctgspqr.111 }
+      }
+    }
+  }
+  option = {#Monarchy kill them
+    name = flavor_ctgspqr.1.e
+    trigger = {
+      government = monarchy
+    }
+    add_legitimacy = 10
+    add_prestige = -10
+    ai_chance = {
+      factor = 30
+      modifier = {
+        factor = 70
+        ruler_has_personality = cruel_personality
+      }
+    }
+    reverse_add_country_opinion = {
+      who = SPQ
+      modifier = Friendliness
+    }
+  }
+  option = {#Monarchy imprison them
+    name = flavor_ctgspqr.1.f
+    trigger = {
+      government = monarchy
+    }
+    add_prestige = 10
+    add_legitimacy = 10
+    ai_chance = {
+      factor = 60
+    }
+    hidden_effect = {
+      set_country_flag = imprisoned_roman_senators
+      SPQ = {
+        country_event = { id = flavor_ctgspqr.111 }
+      }
+    }
+  }
+  option = {#Monarchy ignore them
+    name = flavor_ctgspqr.1.g
+    trigger = {
+      government = monarchy
+    }
+    add_legitimacy = -5
+    add_prestige = -10
+    ai_chance = {
+      factor = 10
+      modifier = {
+        factor = 10
+        modifier = {
+          factor = 20
+          NOT = { stability = 0 }
+        }
+        modifier = {
+          factor = 20
+          NOT = { prestige = 0 }
+        }
+      }
+    }
+    hidden_effect = {
+      set_country_flag = ignored_roman_senators
+      SPQ = {
+        country_event = { id = flavor_ctgspqr.111 }
+      }
+    }
+  }
+}
+
+country_event = {#The senators in Carthago
+  id = flavor_ctgspqr.111
+  title = flavor_ctgspqr.111.t
+  desc = flavor_ctgspqr.111.d
+  picture = CHURCH_ESTATE_1_eventPicture
+
+  is_triggered_only = yes
+
+  #trucbidule avec des trigger CTG = { has_country_flag = fromage }
+}
+
+#other events demanding for cash and forces with a pulse
+#events asking to retake roma if sheltered
