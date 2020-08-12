@@ -32,6 +32,7 @@ country_event = {
 	title = "flavor_jar.2.t"
 	desc = "flavor_jar.2.d"
 	picture = CIVIL_WAR_eventPicture
+	major = yes
 
 	trigger = {
 		tag = TLC
@@ -59,6 +60,7 @@ country_event = {
 			add_local_autonomy = -60
 		}
 		add_yearly_manpower = 4
+		add_years_of_income = 2
 		add_mil_power = 100
 		add_dip_power = 100
 		add_adm_power = 100
@@ -71,6 +73,7 @@ country_event = {
 	title = "flavor_jar.3.t"
 	desc = "flavor_jar.3.d"
 	picture = BATTLE_eventPicture
+	major = yes
 
 	is_triggered_only = yes
 
@@ -231,7 +234,7 @@ country_event = {
 					LBY = {country_event = { id = flavor_jar.8 }}
 				}
 				}
-			}
+		}
 		option = {
 			name = "flavor_jar.7.b"
 			ai_chance = {
@@ -250,6 +253,7 @@ country_event = {
 		title = "flavor_jar.8.t"
 		desc = "flavor_jar.8.d"
 		picture = DIPLOMACY_eventPicture
+		major = yes
 
 		is_triggered_only = yes
 
@@ -270,6 +274,14 @@ country_event = {
 			LBY = {
 				inherit = FROM
 				stability = -1
+				if = {
+					limit = {
+						exists = TRP
+					}
+					LBY = {
+						inherit = TRP
+					}
+				}
 				}
 				TLC = {country_event = { id = flavor_jar.6 }}
 		}

@@ -6,6 +6,7 @@ country_event = {
 	title = "flavor_eaf.1.t"
 	desc = "flavor_eaf.1.d"
 	picture = UNIVERSITY_eventPicture
+	major = yes
 
 	is_triggered_only = yes
 
@@ -88,6 +89,7 @@ country_event = {
 	title = "flavor_eaf.2.t"
 	desc = "flavor_eaf.2.d"
 	picture = SHIP_SAILING_eventPicture
+	major = yes
 
 	is_triggered_only = yes
 

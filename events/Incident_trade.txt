@@ -20,6 +20,8 @@ country_event = {
 	mean_time_to_happen = {
 		months = 1
 	}
+	major = yes
+
 
 	option = { # incident
 		name = new_trade_roads.1.a

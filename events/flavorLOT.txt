@@ -6,6 +6,8 @@ country_event = {
 	title = "flavor_lot.1.t"
 	desc = "flavor_lot.1.d"
 	picture = GOOD_WITH_MONARCH_eventPicture
+	major = yes
+
 
 	is_triggered_only = yes
 
@@ -452,6 +454,7 @@ country_event = {
 	picture = BIG_BOOK_eventPicture
 
 	is_triggered_only = yes
+	major = yes
 
 	option = { #Unification
 		name = "flavor_lot.6.a"

@@ -5,7 +5,6 @@ country_event = { #a plot in the shadow
 	title = "flavor_ctg.1.t"
 	desc = "flavor_ctg.1.d"
 	picture = COURT_eventPicture
-	major = yes
 
 	fire_only_once = yes
 
@@ -92,7 +91,6 @@ country_event = { #republic 1 fate of the military
 	title = "flavor_ctg.3.t"
 	desc = "flavor_ctg.3.d"
 	picture = LAND_MILITARY_eventPicture
-	major = yes
 
 	fire_only_once = yes
 
@@ -130,7 +128,6 @@ country_event = { #republic 2 trade_focus
 	title = "flavor_ctg.4.t"
 	desc = "flavor_ctg.4.d"
 	picture = PORTUGUESE_MERCHANTS_eventPicture
-	major = yes
 
 	fire_only_once = yes
 
@@ -178,7 +175,6 @@ country_event = { #republic 3 government centralization
 	title = "flavor_ctg.5.t"
 	desc = "flavor_ctg.5.d"
 	picture = PORTUGUESE_MERCHANTS_eventPicture
-	major = yes
 
 	fire_only_once = yes
 
@@ -223,7 +219,6 @@ country_event = { #monarchy 1 cleansing
 	title = "flavor_ctg.6.t"
 	desc = "flavor_ctg.6.d"
 	picture = LAND_MILITARY_eventPicture
-	major = yes
 
 	fire_only_once = yes
 
@@ -277,7 +272,6 @@ country_event = { #monarchy 2 scientific legacy
 	title = "flavor_ctg.7.t"
 	desc = "flavor_ctg.7.d"
 	picture = LAND_MILITARY_eventPicture
-	major = yes
 
 	fire_only_once = yes
 
@@ -330,7 +324,6 @@ country_event = { #monarchy 3 religion
 	title = "flavor_ctg.8.t"
 	desc = "flavor_ctg.8.d"
 	picture = LAND_MILITARY_eventPicture
-	major = yes
 
 	fire_only_once = yes
 

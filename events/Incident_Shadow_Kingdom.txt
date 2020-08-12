@@ -518,6 +518,8 @@ country_event = {
 	title = "shadow_kingdom.8.t"
 	desc = "shadow_kingdom.8.d"
 	picture = SIEGE_eventPicture
+	major = yes
+
 
 	fire_only_once = yes
 
@@ -722,6 +724,8 @@ country_event = {
 	title = "shadow_kingdom.9.t"
 	desc = "shadow_kingdom.9.d"
 	picture = SIEGE_eventPicture
+	major = yes
+
 
 	fire_only_once = yes
 

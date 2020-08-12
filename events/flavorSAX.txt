@@ -10,6 +10,8 @@ country_event = {
 	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
+	major = yes
+
 
 
 	option = {#helping thuringia

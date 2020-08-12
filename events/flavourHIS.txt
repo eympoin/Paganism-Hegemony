@@ -91,6 +91,8 @@ country_event = {
 	desc = "flavor_bae.1.d"
 	picture = SIEGE_eventPicture
 	is_triggered_only = yes
+	major = yes
+
 
 	option = {
 		name = "flavor_bae.1.a"
@@ -214,6 +216,8 @@ country_event = {
 		mean_time_to_happen = {
 		months = 1
 	}
+	major = yes
+
 
 		option = {
 		name = "flavor_bae.2.b"
