@@ -32,6 +32,9 @@ change_estate_land_share = {
     add_ruler_personality = malevolent_personality
 }
 
+1444.10.1 = {
+	set_estate_privilege = estate_nobles_indebted_privilege_spqr
+}
 #Initial situation settings
 
 add_country_modifier = {
@@ -48,5 +51,4 @@ add_country_modifier = {
   name = wounds_of_bloody_war_spq
   duration = -1
 }
-
-add_treasury = -120
+add_war_exhaustion = 6

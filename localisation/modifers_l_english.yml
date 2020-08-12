@@ -2584,7 +2584,10 @@ bloodthirsty_heritage_spq:0 "Bloodthirsty Heritage"
 desc_bloodthirsty_heritage_spq:0 "We are deemed as dangerous by many surrounding kingdoms because of what we did during the Bloody War, it will take time for our reputation to recover."
 birthed_by_cw_spq:0 "Birthed from a Civil War"
 desc_birthed_by_cw_spq:0 "Our country was birthed by a civil war, we might have the support of those with power but the country remains unstable and our people are tired of conflicts. May peace reign in our times."
-
+nobles_curtailed_spqr:0 "Nobles curtailed"
+desc_nobles_curtailed_spqr:0 ""
+unrest_stirred_spqr:0 "Senatorial Unrest"
+desc_unrest_stirred_spqr:0 "Unrest is stirred by the remnants of the Senate, the debate on wether or not the monarchy is legitimate destabilizes our country."
 
 need_of_reforms_monarchy:0 "Need of Reforms"
 republic_under_construction:0 "Republic under construction"
