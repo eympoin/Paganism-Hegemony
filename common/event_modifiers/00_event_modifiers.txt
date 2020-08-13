@@ -11521,13 +11521,13 @@ army_of_citizens = {
 	global_manpower_modifier = 0.1
 	army_tradition = 1
 	discipline = 0.02
-	land_maintenance_modifier = 0.1
+	land_maintenance_modifier = 0.2
 }
 
 mercenary_contracts = {
-	mercenary_cost = -0.1
-	merc_maintenance_modifier = -0.1
-	mercenary_discipline = 0.05
+	mercenary_cost = -0.2
+	merc_maintenance_modifier = -0.2
+	mercenary_discipline = 0.1
 	land_morale = -0.1
 }
 
@@ -11547,12 +11547,11 @@ extern_trade_focus = {
 balanced_approach = {
 	global_foreign_trade_power = 0.1
 	global_own_trade_power = 0.1
-	trade_efficiency = 0.1
 }
 
 carthago_aeterna = {
 	local_development_cost = -0.1
-	trade_goods_size_modifier = 0.25
+	trade_goods_size_modifier = 0.2
 	local_tax_modifier = 0.1
 }
 
@@ -11574,7 +11573,7 @@ influenced_monarchy = {
 }
 
 science_funding = {
-	technology_cost = -0.1
+	technology_cost = -0.05
 	innovativeness_gain = 0.2
 	advisor_cost = 0.1
 }
@@ -11585,7 +11584,7 @@ balanced_funding = {
 }
 
 letters_fundings = {
-	idea_cost = -0.2
+	idea_cost = -0.1
 	embracement_cost = -0.1
 	global_institution_spread = 0.1
 	advisor_cost = 0.1

@@ -65,7 +65,7 @@ carthaginian_republic_decentralize = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 15
 	nation_designer_trigger = {
-		primary_culture = carthaginian
+		primary_culture = african
 	}
 	legacy_equivalent = carthaginian_republic_decentralize_legacy
 	modifiers = {
@@ -107,7 +107,7 @@ carthaginian_republic_centralize = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 15
 	nation_designer_trigger = {
-		primary_culture = carthaginian
+		primary_culture = african
 	}
 	legacy_equivalent = carthaginian_republic_centralize_legacy
 	modifiers = {

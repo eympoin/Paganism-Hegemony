@@ -2,7 +2,7 @@
 
 owner = CTG
 controller = CTG 
-culture = carthaginian
+culture = african
 religion = deii
 capital = "Carthage"
 trade_goods = cloth
