@@ -11602,3 +11602,15 @@ respect_the_tradtions = {
 	church_loyalty_modifier = 0.05
 	estate_church_influence_modifier = 0.1
 }
+
+ctg_own_path = {
+	prestige = 1
+	land_morale = 0.1
+	global_unrest = -2
+}
+
+ctg_roman = {
+	technology_cost = -0.05
+	global_autonomy = -0.1
+	global_missionary_strength = 0.02
+}

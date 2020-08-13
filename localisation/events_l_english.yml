@@ -770,6 +770,51 @@ flavor_ctg.9.d:0 "The last monarchy showed its limit. The king should have the s
 flavor_ctg.9.a:0 "There is only one who rules."
 flavor_ctg.9.b:0 "Hopefully they will support a good heir."
 
+
+flavor_ctg.10.t:0 "Cultural Shift"
+flavor_ctg.10.d:0 "The Roman influence over us decayed with its empire. We act more and more as an unique culture. Should we try to safeguard our Roman heritage or embrace our new culture ?"
+flavor_ctg.10.a:0 "Even after all of this, we are still Roman."
+flavor_ctg.10.b:0 "We are more than just a Roman we are Carthaginian"
+
+flavor_ctg.11.t:0 "Cultural Assimilation"
+flavor_ctg.11.d:0 "This province grew tired of the decaying Greek influence and its culture is more like our own."
+flavor_ctg.11.a:0 "This is a happy news."
+
+flavor_ctg.12.t:0 "Cultural Assimilation"
+flavor_ctg.12.d:0 "Like us this province grew tired of the decaying Roman influence and there culture is more like our own."
+flavor_ctg.12.a:0 "This is a happy news."
+
+flavor_ctg.13.t:0 "Cultural Assimilation"
+flavor_ctg.13.d:0 "Like us this province grew tired of the decaying Roman influence and there culture is more like our own."
+flavor_ctg.13.a:0 "This is a happy news."
+
+flavor_ctg.14.t:0 "Cultural Assimilation"
+flavor_ctg.14.d:0 "Like us this province grew tired of the decaying Roman influence and there culture is more like our own."
+flavor_ctg.14.a:0 "This is a happy news."
+
+flavor_ctg.15.t:0 "Cultural Assimilation"
+flavor_ctg.15.d:0 "Like us this province grew tired of the decaying Roman influence and there culture is more like our own."
+flavor_ctg.15.a:0 "This is a happy news."
+
+flavor_ctg.16.t:0 "Cultural Assimilation"
+flavor_ctg.16.d:0 "Like us this province grew tired of the decaying Roman influence and there culture is more like our own."
+flavor_ctg.16.a:0 "This is a happy news."
+
+flavor_ctg.17.t:0 "Cultural Assimilation"
+flavor_ctg.17.d:0 "Like us this province grew tired of the decaying Roman influence and there culture is more like our own."
+flavor_ctg.17.a:0 "This is a happy news."
+
+flavor_ctg.18.t:0 "Cultural Assimilation"
+flavor_ctg.18.d:0 "Centuries of war and trade between us have brought our two cultures closer."
+flavor_ctg.18.a:0 "This is a happy news."
+
+flavor_ctg.19.t:0 "Cultural Assimilation"
+flavor_ctg.19.d:0 "Centuries of war and trade between us have brought our two cultures closer."
+flavor_ctg.19.a:0 "This is a happy news."
+
+flavor_ctg.20.t:0 "Cultural Assimilation"
+flavor_ctg.20.d:0 "This province grew tired of the decaying Greek influence and its culture is more like our own."
+flavor_ctg.20.a:0 "This is a happy news."
 #Rome
 flavor_spqr.1.t:0 "The defenestration of Roma"
 flavor_spqr.1.d:0 "Our king, Rex Julius Publius was attacked by the Senators of the Roman Curia, they hope to take power and bring back the republic, as the monarchy seems to have brought naught but poverty and suffering upon our people. They threw him though the window of his personal quarters after a heated argument, his life hangs by a thread."
