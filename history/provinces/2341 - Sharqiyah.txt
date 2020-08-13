@@ -3,7 +3,7 @@
 owner = ORM
 controller = ORM
 culture = omani_culture
-religion = zoroastrian
+religion = arabian
 capital = "Masirah"
 trade_goods = copper
 hre = no

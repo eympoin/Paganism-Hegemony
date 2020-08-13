@@ -11603,3 +11603,20 @@ respect_the_tradtions = {
 	church_loyalty_modifier = 0.05
 	estate_church_influence_modifier = 0.1
 }
+
+Hormuz_missionary = {
+	global_missionary_strength = 0.06
+	missionary_maintenance_cost = -0.5
+	global_unrest = 2
+}
+
+ibadi_minority = {
+	local_unrest = 2
+}
+
+sunni_minority = {
+	local_unrest = 2
+}
+shiite_minority = {
+	local_unrest = 2
+}

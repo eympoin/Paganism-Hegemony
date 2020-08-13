@@ -1,0 +1,96 @@
+#Event n°1 : Yemen civil War------------
+
+namespace = flavor_ORM
+
+country_event = {
+  id = "flavor_orm.1"
+  title = "flavor_orm.1.t"
+  desc = "flavor_orm.1.a"
+  picture = DEBATE_REPUBLICAN_eventPicture
+
+  fire_only_once = yes
+
+    trigger = {
+    tag = ORM
+    }
+      mean_time_to_happen = {
+      days = 7
+      }
+      option = {
+        name = "flavor_orm.1.ae" # Keep Zoroastrian Faith
+        ai_chance = {
+          factor = 33
+        }
+        add_stability = -2
+        4286 = { sunni_rebels = 1 }
+        2333 = { arabian_rebels = 1 }
+        4286 = { shiite_rebels = 1 }
+        397 = { ibadi_rebels = 1 }
+        }
+      option = {
+        name = "flavor_orm.2.bc" #Arabian Faith
+        ai_chance = {
+          factor = 66
+        }
+        add_stability = -1
+        ORM = {change_religion = arabian}
+        add_country_modifier = {
+          name = "Hormuz_missionary"
+          duration = 2190
+        }
+      }
+      option = {
+        name = "flavor_orm.3.c" # Muslim
+        ai_chance = {
+          factor = 33
+        }
+        add_stability = -1
+        country_event = { id = flavor_orm.2 }
+      }
+}
+
+
+country_event = {
+id = "flavor_orm.2"
+title = "flavor_orm.2.t"
+desc = "flavor_orm.2.b"
+picture = BIG_BOOK_eventPicture
+
+fire_only_once = yes
+is_triggered_only = yes
+
+    option = {
+      name = "flavor_orm.4.d" # shiite faith
+      ai_chance = {
+        factor = 66
+      }
+      ORM = {change_religion = shiite}
+      add_country_modifier = {
+        name = "Hormuz_missionary"
+        duration = 2190
+      }
+
+      }
+    option = {
+      name = "flavor_orm.5.e" # sunni faith
+      ai_chance = {
+        factor = 33
+      }
+      ORM = {change_religion = sunni}
+      add_country_modifier = {
+        name = "Hormuz_missionary"
+        duration = 2190
+      }
+    }
+    option = {
+      name = "flavor_orm.6.f" # ibadi faith
+      ai_chance = {
+        factor = 3
+      }
+      ORM = {change_religion = ibadi}
+      add_country_modifier = {
+        name = "Hormuz_missionary"
+        duration = 2190
+      }
+    }
+}

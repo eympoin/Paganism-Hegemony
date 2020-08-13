@@ -3,7 +3,7 @@
 owner = ORM
 controller = ORM
 culture = gulf_arabic
-religion = zoroastrian
+religion = arabian
 capital = "Sila"
 trade_goods = fish
 hre = no
