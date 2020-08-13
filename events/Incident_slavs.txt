@@ -101,6 +101,7 @@ country_event = {
       limit = {
         is_emperor = no
         is_part_of_hre = yes
+        NOT = {religious_unity = 0.7}
         religion = theoi
         any_owned_province = {
           OR = {
@@ -127,6 +128,7 @@ country_event = {
       limit = {
         is_emperor = no
         is_part_of_hre = yes
+        NOT = {religious_unity = 0.7}
         religion = theoi
         any_owned_province = {
           OR = {

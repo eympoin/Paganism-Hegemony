@@ -2,7 +2,7 @@
 
 owner = CTG
 controller = CTG
-culture = carthaginian
+culture = african
 religion = deii
 capital = "Hadramentum"
 trade_goods = sugar

@@ -60,10 +60,16 @@ country_event = {
 			add_local_autonomy = -60
 		}
 		add_yearly_manpower = 4
-		add_years_of_income = 2
+		add_years_of_income = 4
 		add_mil_power = 100
 		add_dip_power = 100
 		add_adm_power = 100
+		if = {
+			limit = {
+				NOT = {prestige = -50}
+			}
+			add_prestige = 50
+		}
 	}
 }
 
@@ -102,7 +108,7 @@ country_event = {
 	option = { #submit
 		name = "flavor_jar.4.a"
 		ai_chance = {
-			factor = 10
+			factor = 0
 			modifier = {
 				factor = 100
 				tag = HIP
@@ -130,7 +136,7 @@ country_event = {
 					tag = HIP
 				}
 				modifier = {
-					factor = 10
+					factor = 0
 					primary_culture = tripolitan
 				}
 				modifier = {
@@ -144,7 +150,7 @@ country_event = {
 		option = { #lybian confederation
 			name = "flavor_jar.4.c"
 			ai_chance = {
-				factor = 80
+				factor = 100
 			}
 				trigger = {
 					tag = TRP
