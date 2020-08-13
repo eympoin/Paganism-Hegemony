@@ -11614,19 +11614,26 @@ ctg_roman = {
 	global_autonomy = -0.1
 	global_missionary_strength = 0.02
 }
-	Hormuz_missionary = {
-		global_missionary_strength = 0.06
-		missionary_maintenance_cost = -0.5
-		global_unrest = 2
-	}
 
-	ibadi_minority = {
-		local_unrest = 2
-	}
+efforts_to_convert = {
+	global_unrest = 6
+	global_tax_modifier = -0.2
+	global_missionary_strength = 0.04
+	missionaries = 1
+}
+Hormuz_missionary = {
+	global_missionary_strength = 0.06
+	missionary_maintenance_cost = -0.5
+	global_unrest = 2
+}
 
-	sunni_minority = {
-		local_unrest = 2
-	}
-	shiite_minority = {
-		local_unrest = 2
+ibadi_minority = {
+	local_unrest = 2
+}
+
+sunni_minority = {
+	local_unrest = 2
+}
+shiite_minority = {
+	local_unrest = 2
 }

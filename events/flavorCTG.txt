@@ -442,6 +442,7 @@ country_event = {
   desc = flavor_ctg.10.d
   picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
   fire_only_once = yes
+	major = yes
 
   trigger = {
     total_development = 250
@@ -449,6 +450,9 @@ country_event = {
       tag = CTG
     }
   }
+	mean_time_to_happen = {
+		months = 5
+	}
 
 
   option = {#We are Roman
@@ -1014,5 +1018,46 @@ country_event = {
       }
       change_culture = sicilian
     }
+  }
+}
+
+
+country_event = {
+  id = flavor_ctg.21
+  title = flavor_ctg.21.t
+  desc = flavor_ctg.21.d
+  picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+  fire_only_once = yes
+
+  trigger = {
+    total_development = 250
+    has_country_modifier = ctg_own_path
+  }
+	mean_time_to_happen = {
+		years = 10
+	}
+	major = yes
+
+
+  option = {#Embrace the phenician religion
+    name = flavor_ctg.21.a
+    ai_chance = { factor = 10 }
+		change_religion = phenician
+    add_legitimacy = -20
+    add_stability = -2
+		add_years_of_income = -1
+    add_country_modifier = {
+      name = efforts_to_convert
+      duration = 7300
+    }
+  }
+  option = {#WTf is this
+    name = flavor_ctg.21.b
+    ai_chance = { factor = 90 }
+    add_legitimacy = 10
+    add_prestige = 10
+    add_stability = 1
+
+
   }
 }

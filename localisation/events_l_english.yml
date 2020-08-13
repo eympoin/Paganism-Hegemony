@@ -815,6 +815,12 @@ flavor_ctg.19.a:0 "This is a happy news."
 flavor_ctg.20.t:0 "Cultural Assimilation"
 flavor_ctg.20.d:0 "This province grew tired of the decaying Greek influence and its culture is more like our own."
 flavor_ctg.20.a:0 "This is a happy news."
+
+flavor_ctg.21.t:0 "The call of Tanit"
+flavor_ctg.21.d:0 "A late night at the Library of Carthago, you stumble upon some ancient books. They spoke of the ancients gods of Carthage when it was still a rich Empire. With our ties with Rome cut, maybe we should try to forge our new identity with Ancient Carthage. We can begin that by converting to their religions."
+flavor_ctg.21.a:0 "It is time to bring our roots back in our world."
+flavor_ctg.21.b:0 "These gods are forgotten for a good reason."
+
 #Rome
 flavor_spqr.1.t:0 "The defenestration of Roma"
 flavor_spqr.1.d:0 "Our king, Rex Julius Publius was attacked by the Senators of the Roman Curia, they hope to take power and bring back the republic, as the monarchy seems to have brought naught but poverty and suffering upon our people. They threw him though the window of his personal quarters after a heated argument, his life hangs by a thread."
