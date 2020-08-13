@@ -20,6 +20,7 @@ country_decisions = {
 			NOT = { tag = ORM }
 			NOT = { tag = PLM }
 			NOT = { tag = OSR }
+			NOT = { tag = MDA }
 			NOT = { religion_group = semetic_group }
 			NOT = { religion_group = jewish_group }
 			is_colonial_nation = no
