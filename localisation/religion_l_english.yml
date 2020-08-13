@@ -217,6 +217,13 @@
  suomenusko_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  suomenusko_rebels_army:0 "$RELIGION$ Army"
 
+ phenician_rebels_demand:0 "Convert $COUNTRYNAME$"
+ phenician_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ phenician_rebels_title:0 "Religious"
+ phenician_rebels_name:0 "$RELIGION$ Zealots"
+ phenician_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ phenician_rebels_army:0 "$RELIGION$ Army"
+
  norse_group:0 "Germano-norse"
  norse_group_name:0 "Germano-norse"
  germanic:0 "Germanic"
@@ -239,6 +246,9 @@
 
  celt:0 "Celtic"
  celt_religion_desc:0 "Gods of the diverse celtic tribes"
+
+ phenician:0 "Phoenician"
+ phenician_religion_desc:0 "A long forgotten religion reestablished by the Carthaginians as a propaganda tool to unite its people under one none Roman faith. "
 
  ancient_egyptian_rl:0 "Egyptian"
  ancient_egyptian_rl_religion_desc:0 "Gods who watched for Egypt since the beginning of their civilizations"

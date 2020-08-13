@@ -1792,6 +1792,25 @@ semetic_group{
     heretic = { OLD_MESOPOTAMIAN }
     personal_deity = yes
   }
+
+phenician = {
+  icon = 43
+  color = { 145 132 225 }
+  country = {
+    legitimacy = 0.5
+    galley_power = 0.2
+  }
+  country_as_secondary = {
+    legitimacy = 0.5
+    galley_power = 0.2
+  }
+  province = {
+    local_missionary_strength = -0.01
+  }
+
+  heretic = { OLD_PHENICIAN }
+  personal_deity = yes
+}
 }
 
 norse_group{
@@ -1799,7 +1818,7 @@ norse_group{
     icon = 21
     color = { 191 191 191 }
     country = {
-      may_perform_slave_raid = yes	
+      may_perform_slave_raid = yes
       naval_forcelimit_modifier = 0.10
     }
     country_as_secondary = {
