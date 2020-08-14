@@ -303,7 +303,7 @@ poitou_area = { #4
 }
 
 guyenne_area = { #4
-	194  4112 174 195
+	194  4112 174 195 4840
 }
 
 pyrenees_area = { #4
@@ -475,19 +475,19 @@ piedmont_area = { #4
 }
 
 tuscany_area = { #5
-	115 116 117 2978
+	115 116 117 2978 4835
 }
 
 liguria_area = { #3
-	101 2992 2980 105
+	101 2992 2980 105 4839
 }
 
 corsica_sardinia_area = { #5
 	127 1247 2986 4735 4831
 }
 
-sicily_area = { #3 # now Eastern Sicily
-	124 126 2982
+sicily_area = { #4 # now Eastern Sicily
+	124 126 2982 4834
 }
 
 western_sicily_area = { #3
@@ -499,7 +499,7 @@ naples_area = { #3  #Campania
 }
 
 lazio_area = { #4 Lazio-Umbria
-	118 2976 4731 4732
+	118 2976 4731 4732 4836
 }
 
 calabria_area = { #3 (+Lucania)
@@ -1419,7 +1419,7 @@ fezzan_area = { #4
 }
 
 tunisia_area = { #3
-	341  2455 2454
+	341  2455 2454 4837
 }
 byzacena_area = { #3
 	4832 4566 2473 
@@ -1434,7 +1434,7 @@ algiers_area = { #3
 }
 
 barbary_coast_area = { #3
-	337 2461 338
+	337 2461 338 4838
 }
 
 kabylia_area = { #3

@@ -1,0 +1,19 @@
+#105 - Parma
+
+owner = FER
+controller = FER
+culture = lombard
+religion = deii
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = livestock
+base_manpower = 3
+capital = "Placentia"
+estate = estate_nobles
+is_city = yes	# Estimated
+add_core = FER
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
