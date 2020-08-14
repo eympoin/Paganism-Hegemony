@@ -130,7 +130,7 @@ seat_in_parliament = {
 	local_sailors_modifier = 0.05
 	local_tax_modifier = 0.1
 	local_production_efficiency = 0.1
-	province_trade_power_modifier = 0.2	
+	province_trade_power_modifier = 0.2
 	local_development_cost = -0.1
 }
 
@@ -854,7 +854,7 @@ num_of_marriages = {
 }
 
 num_of_provinces = {
-	
+
 }
 
 # Multiplied by Development
@@ -1687,7 +1687,7 @@ over_governing_capacity_modifier = {
 	core_creation = 0.2
 	advisor_cost = 1.0
 	monthly_militarized_society = -1.0
-	
+
 }
 
 
@@ -1697,4 +1697,11 @@ lost_hegemony = {
 
 at_peace_revolutionary = { # Applied if at peace while reactionaries are bordering you
 	yearly_revolutionary_zeal = -4
+}
+
+carthaginian_trading_outpost = {
+	province_trade_power_modifier = 0.2
+	local_development_cost= -0.1
+	local_sailors_modifier = 0.1
+	local_state_maintenance_modifier = -0.25	
 }

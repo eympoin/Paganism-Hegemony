@@ -524,8 +524,9 @@ country_event = {
   trigger = {
     OR = {
       tag = CTG
-			has_country_modifier = ctg_own_path
     }
+		has_country_modifier = ctg_own_path
+
     any_owned_province = {
 
 			has_owner_religion = yes
@@ -572,8 +573,9 @@ country_event = {
   trigger = {
     OR = {
       tag = CTG
-			has_country_modifier = ctg_own_path
     }
+		has_country_modifier = ctg_own_path
+
     any_owned_province = {
 
 			has_owner_religion = yes
@@ -618,8 +620,8 @@ country_event = {
   picture = COLONIZATION_eventPicture
 
   trigger = {
+		tag = CTG
     OR = {
-      tag = CTG
 			has_country_modifier = ctg_own_path
     }
     any_owned_province = {
@@ -666,8 +668,8 @@ country_event = {
   picture = COLONIZATION_eventPicture
 
   trigger = {
+	tag = CTG
     OR = {
-      tag = CTG
 			has_country_modifier = ctg_own_path
     }
     any_owned_province = {
@@ -716,8 +718,8 @@ country_event = {
   trigger = {
     OR = {
       tag = CTG
-			has_country_modifier = ctg_own_path
     }
+		has_country_modifier = ctg_own_path
     any_owned_province = {
 
 			has_owner_religion = yes
@@ -764,8 +766,8 @@ country_event = {
   trigger = {
     OR = {
       tag = CTG
-			has_country_modifier = ctg_own_path
     }
+		has_country_modifier = ctg_own_path
     any_owned_province = {
 
 			has_owner_religion = yes
@@ -812,8 +814,9 @@ country_event = {
   trigger = {
     OR = {
       tag = CTG
-			has_country_modifier = ctg_own_path
     }
+		has_country_modifier = ctg_own_path
+
     any_owned_province = {
 
 			has_owner_religion = yes
@@ -869,8 +872,9 @@ country_event = {
   trigger = {
     OR = {
       tag = CTG
-			has_country_modifier = ctg_own_path
     }
+		has_country_modifier = ctg_own_path
+
     any_owned_province = {
 
 			has_owner_religion = yes
@@ -926,8 +930,9 @@ country_event = {
   trigger = {
     OR = {
       tag = CTG
-			has_country_modifier = ctg_roman
     }
+		has_country_modifier = ctg_roman
+
     any_owned_province = {
 
 			has_owner_religion = yes
@@ -983,8 +988,9 @@ country_event = {
   trigger = {
     OR = {
       tag = CTG
-			has_country_modifier = ctg_roman
     }
+		has_country_modifier = ctg_roman
+
     any_owned_province = {
 
 			has_owner_religion = yes

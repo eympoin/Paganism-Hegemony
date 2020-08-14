@@ -73,7 +73,6 @@ africa_superregion = {
 	guinea_region
 	sahel_region
 	horn_of_africa_region
-	maghreb_region
 }
 
 southern_africa_superregion = {
@@ -116,7 +115,7 @@ central_america_superregion = {
 near_east_superregion = {
 
 	restrict_charter		# harder to get TC here.
-
+	maghreb_region
 	anatolia_region
 	mashriq_region
 	arabia_region
