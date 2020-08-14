@@ -443,13 +443,24 @@ demand_carthaginian_vassal = {
 			}
 			divide_variable = { which = ai_value value = 4 }
 		}
+
 		add_entry = {
 			name = INCOME
 			export_to_variable = {
 				variable_name = ai_value
-				value = years_of_income
+				value = monthly_income
 			}
-			divide_variable = { which = ai_value value = 100 }
+			divide_variable = { which = ai_value value = 5 }
+		}
+		add_entry = {
+			name = INCOME_FROM
+			export_to_variable = {
+				variable_name = ai_value
+				value = monthly_income
+				who = FROM
+			}
+			multiply_variable = { which = ai_value value = ai_value }
+			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
 			name = BASE
@@ -457,6 +468,16 @@ demand_carthaginian_vassal = {
 				variable_name = ai_value
 				value = -50
 			}
+		}
+		add_entry = {
+			name = TRUST
+			export_to_variable = {
+				variable_name = ai_value # Each "add_entry" must create one variable called "ai_value", the value of which will be extracted after executing all effects
+				value = trust
+				who = FROM
+			}
+			subtract_variable = { which = ai_value value = 50 }
+			multiply_variable = { which = ai_value value = 2 }
 		}
 	}
 

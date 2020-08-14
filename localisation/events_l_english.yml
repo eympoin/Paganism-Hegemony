@@ -821,6 +821,14 @@ flavor_ctg.21.d:0 "A late night at the Library of Carthago, you stumble upon som
 flavor_ctg.21.a:0 "It is time to bring our roots back in our world."
 flavor_ctg.21.b:0 "These gods are forgotten for a good reason."
 
+flavor_ctg.22.t:0 "The fate of inland Africa"
+flavor_ctg.22.d:0 "We have conquered the desert land of inland Africa. Our advisors debate on whether we should keep it totally under our control and administration or create some kind of protectorate there"
+flavor_ctg.22.a:0 "Keeping this destert is worthless. Create a protectorate there."
+flavor_ctg.22.b:0 "We will keep this lands."
+
+flavor_ctg.23.t:0 "The Numidians Land"
+flavor_ctg.23.d:0 "We have conquered new territories in inland Africa. We should give them to our protectorate there."
+flavor_ctg.23.a:0 "If they are stonger, we are stronger."
 #Rome
 flavor_spqr.1.t:0 "The defenestration of Roma"
 flavor_spqr.1.d:0 "Our king, Rex Julius Publius was attacked by the Senators of the Roman Curia, they hope to take power and bring back the republic, as the monarchy seems to have brought naught but poverty and suffering upon our people. They threw him though the window of his personal quarters after a heated argument, his life hangs by a thread."

@@ -1067,3 +1067,112 @@ country_event = {
 
   }
 }
+#fate of Inland Africa
+country_event = {
+  id = flavor_ctg.22
+  title = flavor_ctg.22.t
+  desc = flavor_ctg.22.d
+  picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+  fire_only_once = yes
+
+  trigger = {
+	tag = CTG
+    any_owned_province = {
+			OR = {
+				area = fezzan_area
+				area = north_saharan_area
+				area = ouled_nail_area
+				area = high_plains_area
+				area = tafilalt_area
+				area = marrekesh_area
+				area = sus_area
+			}
+		}
+  }
+	mean_time_to_happen = {
+		days = 3
+	}
+	major = yes
+
+
+  option = {#a protectorate
+    name = flavor_ctg.22.a
+    ai_chance = { factor = 10 }
+		every_owned_province = {
+			limit = {
+			OR = {
+				area = fezzan_area
+				area = north_saharan_area
+				area = ouled_nail_area
+				area = hautes_plaines_area
+				area = tafilalt_area
+				area = marrekesh_area
+				area = sus_area
+				}
+			}
+			cede_province = NMD
+			add_core = NMD
+		}
+			create_subject = {
+				subject_type = carthaginian_colony
+				subject = NMD
+			}
+			set_country_flag = ctg_not_in_africa
+		}
+  }
+  option = {#keep to ourselves
+    name = flavor_ctg.22.b
+    ai_chance = { factor = 90 }
+    add_prestige = 10
+  }
+}
+
+#fate of Inland Africa
+country_event = {
+  id = flavor_ctg.23
+  title = flavor_ctg.23.t
+  desc = flavor_ctg.23.d
+  picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+  fire_only_once = yes
+
+  trigger = {
+	has_country_flag = ctg_not_in_africa
+    any_owned_province = {
+			OR = {
+				area = fezzan_area
+				area = north_saharan_area
+				area = ouled_nail_area
+				area = hautes_plaines_area
+				area = tafilalt_area
+				area = marrekesh_area
+				area = sus_area
+			}
+		}
+  }
+	mean_time_to_happen = {
+		days = 3
+	}
+	major = yes
+
+
+  option = {#give them the provinces
+    name = flavor_ctg.23.a
+    ai_chance = { factor = 10 }
+		every_owned_province = {
+			limit = {
+			OR = {
+				area = fezzan_area
+				area = north_saharan_area
+				area = ouled_nail_area
+				area = hautes_plaines_area
+				area = tafilalt_area
+				area = marrekesh_area
+				area = sus_area
+				}
+			}
+			cede_province = NMD
+			set_country_flag = ctg_not_in_africa
+		}
+  }
+
+}
