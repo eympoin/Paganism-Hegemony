@@ -7,7 +7,7 @@ Hormuz_1 = {
     NOT = { map_setup = map_setup_random }
   }
   End_of_Oman = {
-    icon = mission_bedouins
+    icon = mission_crush_delhi
     required_missions = {Stabilize_the_country}
     position = 2
     trigger = {
@@ -32,7 +32,7 @@ Hormuz_1 = {
     }
   }
   Take_Al_Haasa = {
-    icon = mission_bedouins
+    icon = mission_unite_west_india
     required_missions = {End_of_Oman}
     position = 3
     trigger = {
@@ -71,7 +71,7 @@ Hormuz_2 = {
     NOT = { map_setup = map_setup_random }
   }
   Stabilize_the_country = {
-    icon = mission_bedouins
+    icon = mission_into_the_west
     required_missions = {}
     position = 1
     trigger = {
@@ -95,7 +95,7 @@ Hormuz_2 = {
   }
 
   Rebuild_the_country = {
-    icon = mission_bedouins
+    icon = mission_gharbianss
     required_missions = {Stabilize_the_country}
     position = 2
     trigger = {
@@ -123,7 +123,7 @@ Hormuz_2 = {
   }
 
   Control_trade= {
-    icon = mission_bedouins
+    icon = mission_arabian_sea_trade
     required_missions = {Secure_the_straits_of_hormuz}
     position = 5
     trigger = {
@@ -135,7 +135,7 @@ Hormuz_2 = {
   }
 
   Spice_island = {
-    icon = mission_bedouins
+    icon = mission_the_riches_of_india
     required_missions = {Control_trade India_Wealth}
     position = 6
     trigger = {
@@ -159,7 +159,7 @@ Hormuz_3 = {
     NOT = { map_setup = map_setup_random }
   }
   Control_yemen = {
-    icon = mission_bedouins
+    icon = mission_unite_west_india
     required_missions = {Stabilize_the_country}
     position = 2
     trigger = {
@@ -171,7 +171,7 @@ Hormuz_3 = {
   }
 
   Take_Hejaz = {
-    icon = mission_bedouins
+    icon = mission_unite_the_deccan
     required_missions = {Control_yemen}
     position = 3
     trigger = {
@@ -183,7 +183,7 @@ Hormuz_3 = {
   }
 
   India_Wealth = {
-    icon = mission_bedouins
+    icon = mission_riches_of_golconda
     required_missions = {Take_Hejaz Secure_the_straits_of_hormuz}
     position = 5
     trigger = {
