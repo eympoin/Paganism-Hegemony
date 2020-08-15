@@ -1,0 +1,10 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = mapuche
+religion = animism
+technology_group = south_american
+capital = 784
+
+
+
+

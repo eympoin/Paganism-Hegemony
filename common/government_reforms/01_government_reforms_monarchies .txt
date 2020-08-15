@@ -346,6 +346,15 @@ celestial_empire = {
 }
 absolute_reform = {
 	icon = "crown"
+	potential = {
+		OR = {
+			has_reform = absolute_reform
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = absolute_reform
+			}
+		}
+	}
 	allow_normal_conversion = no
 	legacy_equivalent = absolute_monarchy
 	valid_for_nation_designer = yes

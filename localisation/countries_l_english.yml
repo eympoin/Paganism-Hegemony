@@ -1764,7 +1764,7 @@
  AME:0"America" #East America
  LAB:0"Labyrinthia" #Brazil
  PLD:0"Paludia"
- AET:0"Aethiopes" #Africa
+ ATP:0"Aethiopes" #Africa
  MRB:0"Maerobia" #South Africa
  RUF:0"Rufusa" #Rufusa
 
@@ -1777,6 +1777,6 @@
  AME_ADJ:0"American" #East America
  LAB_ADJ:0"Labyrinthian" #Brazil
  PLD_ADJ:0"Paludian"
- AET_ADJ:0"Aethiopean" #Africa
+ ATP_ADJ:0"Aethiopean" #Africa
  MRB_ADJ:0"Maerobian" #South Africa
  RUF_ADJ:0"Rufusan" #Rufusa

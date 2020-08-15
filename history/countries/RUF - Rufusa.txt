@@ -1,0 +1,10 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = aboriginal
+religion = animism
+technology_group = chinese
+capital = 650	# Tidore
+
+
+
+

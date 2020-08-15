@@ -1,0 +1,10 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = inca
+religion = inti
+technology_group = andean
+unit_type = south_american
+capital = 808	# Cuzco
+
+
+

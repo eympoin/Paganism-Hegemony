@@ -1,5 +1,6 @@
 # A plot for two thrones
 namespace = flavor_ctg
+namespace = flavor_ctg_col
 country_event = { #a plot in the shadow
 	id = flavor_ctg.1
 	title = "flavor_ctg.1.t"
@@ -1090,7 +1091,7 @@ country_event = {
 		}
 	}
 	mean_time_to_happen = {
-		days = 3
+		days = 1
 	}
 	major = yes
 
@@ -1132,7 +1133,6 @@ country_event = {
 	title = flavor_ctg.23.t
 	desc = flavor_ctg.23.d
 	picture = COLONIZATION_eventPicture
-	fire_only_once = yes
 
 	trigger = {
 		has_country_flag = ctg_not_in_africa
@@ -1151,7 +1151,6 @@ country_event = {
 	mean_time_to_happen = {
 		days = 3
 	}
-	major = yes
 
 
 	option = {#give them the provinces
@@ -1170,7 +1169,7 @@ country_event = {
 				}
 			}
 			cede_province = NMD
-			set_country_flag = ctg_not_in_africa
+			add_core = NMD
 		}
 	}
 }
@@ -1342,6 +1341,7 @@ country_event = {
 				add_base_tax = 3
 				add_base_manpower = 3
 			}
+			set_country_flag = trading_alaska
 		}
 
 		if = {
@@ -1365,6 +1365,7 @@ country_event = {
 				add_base_tax = 3
 				add_base_manpower = 3
 			}
+			set_country_flag = trading_canada
 		}
 
 		if = {
@@ -1388,6 +1389,7 @@ country_event = {
 				add_base_tax = 3
 				add_base_manpower = 3
 			}
+			set_country_flag = trading_california
 		}
 
 		if = {
@@ -1411,6 +1413,7 @@ country_event = {
 				add_base_tax = 3
 				add_base_manpower = 3
 			}
+			set_country_flag = trading_louisiana
 		}
 
 		if = {
@@ -1434,6 +1437,7 @@ country_event = {
 				add_base_tax = 3
 				add_base_manpower = 3
 			}
+			set_country_flag = trading_america
 		}
 
 		if = {
@@ -1457,6 +1461,31 @@ country_event = {
 				add_base_tax = 3
 				add_base_manpower = 3
 			}
+			set_country_flag = trading_carribean
+		}
+
+		if = {
+			limit = {
+				colonial_mexico = {
+					NOT = { has_country_modifier = carthaginian_trading_outpost}
+				}
+				any_owned_province = {
+					colonial_region = colonial_mexico
+				}
+			}
+			random_owned_province = {
+				limit = {
+					colonial_region = colonial_mexico
+				}
+				add_province_modifier = {
+					name = carthaginian_trading_outpost
+					duration = -1
+				}
+				add_base_production = 3
+				add_base_tax = 3
+				add_base_manpower = 3
+			}
+			set_country_flag = trading_mexico
 		}
 
 		if = {
@@ -1480,6 +1509,7 @@ country_event = {
 				add_base_tax = 3
 				add_base_manpower = 3
 			}
+			set_country_flag = trading_colombia
 		}
 
 		if = {
@@ -1503,6 +1533,7 @@ country_event = {
 				add_base_tax = 3
 				add_base_manpower = 3
 			}
+			set_country_flag = trading_peru
 		}
 
 		if = {
@@ -1526,6 +1557,7 @@ country_event = {
 				add_base_tax = 3
 				add_base_manpower = 3
 			}
+			set_country_flag = trading_brazil
 		}
 
 		if = {
@@ -1549,6 +1581,7 @@ country_event = {
 				add_base_tax = 3
 				add_base_manpower = 3
 			}
+			set_country_flag = trading_plata
 		}
 
 		if = {
@@ -1572,6 +1605,7 @@ country_event = {
 				add_base_tax = 3
 				add_base_manpower = 3
 			}
+			set_country_flag = trading_australia
 		}
 
 		if = {
@@ -1595,6 +1629,7 @@ country_event = {
 				add_base_tax = 3
 				add_base_manpower = 3
 			}
+			set_country_flag = trading_africa
 		}
 
 		if = {
@@ -1618,7 +1653,742 @@ country_event = {
 				add_base_tax = 3
 				add_base_manpower = 3
 			}
+			set_country_flag = trading_south_africa
 		}
 
+	}
+}
+
+#establishment of the protectorate
+country_event = {
+	id = flavor_ctg_col.1
+	title = flavor_ctg_col.1.t
+	desc = flavor_ctg_col.1.d
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		tag = CTG
+		any_owned_province = {
+				colonial_region = colonial_alaska
+				CTG = {NOT = {has_country_flag = ctg_alaska} has_country_flag = trading_alaska}
+			}
+			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+
+
+	option = {#give them the provinces
+		name = flavor_ctg_col.1.a
+		ai_chance = { factor = 10 }
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_alaska
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = HYP
+			add_core = HYP
+
+		}
+		set_country_flag = ctg_alaska
+		create_subject = {
+			subject_type = carthaginian_colony
+			subject = HYP
+		}
+	}
+}
+
+country_event = {
+	id = flavor_ctg_col.2
+	title = flavor_ctg_col.2.t
+	desc = flavor_ctg_col.2.d
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		tag = CTG
+		any_owned_province = {
+				colonial_region = colonial_canada
+				CTG = {NOT = {has_country_flag = ctg_canada} has_country_flag = trading_canada}
+			}
+			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+
+
+	option = {#give them the provinces
+		name = flavor_ctg_col.2.a
+		ai_chance = { factor = 10 }
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_canada
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = VAR
+			add_core = VAR
+		}
+		set_country_flag = ctg_canada
+		create_subject = {
+			subject_type = carthaginian_colony
+			subject = VAR
+		}
+	}
+}
+
+country_event = {
+	id = flavor_ctg_col.3
+	title = flavor_ctg_col.3.t
+	desc = flavor_ctg_col.3.d
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		tag = CTG
+		any_owned_province = {
+				colonial_region = colonial_california
+				CTG = {NOT = {has_country_flag = ctg_california} has_country_flag = trading_california}
+			}
+			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+
+
+	option = {#give them the provinces
+		name = flavor_ctg_col.3.a
+		ai_chance = { factor = 10 }
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_california
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = HSP
+			add_core = HSP
+
+		}
+		set_country_flag = ctg_california
+		create_subject = {
+			subject_type = carthaginian_colony
+			subject = HSP
+		}
+	}
+}
+
+country_event = {
+	id = flavor_ctg_col.4
+	title = flavor_ctg_col.4.t
+	desc = flavor_ctg_col.4.d
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		tag = CTG
+		any_owned_province = {
+				colonial_region = colonial_eastern_america
+				CTG = {NOT = {has_country_flag = ctg_america} has_country_flag = trading_america}
+			}
+			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+
+
+	option = {#give them the provinces
+		name = flavor_ctg_col.4.a
+		ai_chance = { factor = 10 }
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_eastern_america
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = AME
+			add_core = AME
+
+		}
+		set_country_flag = ctg_america
+		create_subject = {
+			subject_type = carthaginian_colony
+			subject = AME
+		}
+	}
+}
+
+country_event = {
+	id = flavor_ctg_col.5
+	title = flavor_ctg_col.5.t
+	desc = flavor_ctg_col.5.d
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		tag = CTG
+		any_owned_province = {
+				colonial_region = colonial_louisiana
+				CTG = {NOT = {has_country_flag = ctg_louisiana} has_country_flag = trading_louisiana}
+			}
+			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+
+
+	option = {#give them the provinces
+		name = flavor_ctg_col.5.a
+		ai_chance = { factor = 10 }
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_louisiana
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = SKY
+			add_core = SKY
+
+		}
+		set_country_flag = ctg_louisiana
+		create_subject = {
+			subject_type = carthaginian_colony
+			subject = SKY
+		}
+	}
+}
+
+country_event = {
+	id = flavor_ctg_col.6
+	title = flavor_ctg_col.6.t
+	desc = flavor_ctg_col.6.d
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		tag = CTG
+		any_owned_province = {
+				colonial_region = colonial_mexico
+				CTG = {NOT = {has_country_flag = ctg_mexico} has_country_flag = trading_mexico}
+			}
+			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+
+
+	option = {#give them the provinces
+		name = flavor_ctg_col.6.a
+		ai_chance = { factor = 10 }
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_mexico
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = AUR
+			add_core = AUR
+
+		}
+		set_country_flag = ctg_mexico
+		create_subject = {
+			subject_type = carthaginian_colony
+			subject = AUR
+		}
+	}
+}
+
+country_event = {
+	id = flavor_ctg_col.7
+	title = flavor_ctg_col.7.t
+	desc = flavor_ctg_col.7.d
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		tag = CTG
+		any_owned_province = {
+				colonial_region = colonial_the_carribean
+				CTG = {NOT = {has_country_flag = ctg_carribean} has_country_flag = trading_carribean}
+			}
+			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+
+
+	option = {#give them the provinces
+		name = flavor_ctg_col.7.a
+		ai_chance = { factor = 10 }
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_the_carribean
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = ATL
+			add_core = ATL
+
+		}
+		set_country_flag = ctg_carribean
+		create_subject = {
+			subject_type = carthaginian_colony
+			subject = ATL
+		}
+	}
+}
+
+country_event = {
+	id = flavor_ctg_col.8
+	title = flavor_ctg_col.8.t
+	desc = flavor_ctg_col.8.d
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		tag = CTG
+		any_owned_province = {
+				colonial_region = colonial_colombia
+				CTG = {NOT = {has_country_flag = ctg_colombia} has_country_flag = trading_colombia}
+			}
+			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+
+
+	option = {#give them the provinces
+		name = flavor_ctg_col.8.a
+		ai_chance = { factor = 10 }
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_colombia
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = PLD
+			add_core = PLD
+
+		}
+		set_country_flag = ctg_colombia
+		create_subject = {
+			subject_type = carthaginian_colony
+			subject = PLD
+		}
+	}
+}
+
+country_event = {
+	id = flavor_ctg_col.9
+	title = flavor_ctg_col.9.t
+	desc = flavor_ctg_col.9.d
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		tag = CTG
+		any_owned_province = {
+				colonial_region = colonial_brazil
+				CTG = {NOT = {has_country_flag = ctg_brazila} has_country_flag = trading_brazil}
+			}
+			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+
+
+	option = {#give them the provinces
+		name = flavor_ctg_col.9.a
+		ai_chance = { factor = 10 }
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_brazil
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = LAB
+			add_core = LAB
+
+		}
+		set_country_flag = ctg_brazil
+		create_subject = {
+			subject_type = carthaginian_colony
+			subject = LAB
+		}
+	}
+}
+
+country_event = {
+	id = flavor_ctg_col.10
+	title = flavor_ctg_col.10.t
+	desc = flavor_ctg_col.10.d
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		tag = CTG
+		any_owned_province = {
+				colonial_region = colonial_peru
+				CTG = {NOT = {has_country_flag = ctg_peru} has_country_flag = trading_peru}
+			}
+			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+
+
+	option = {#give them the provinces
+		name = flavor_ctg_col.10.a
+		ai_chance = { factor = 10 }
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_peru
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = ALP
+			add_core = ALP
+
+		}
+		set_country_flag = ctg_peru
+		create_subject = {
+			subject_type = carthaginian_colony
+			subject = ALP
+		}
+	}
+}
+
+country_event = {
+	id = flavor_ctg_col.11
+	title = flavor_ctg_col.11.t
+	desc = flavor_ctg_col.11.d
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		tag = CTG
+		any_owned_province = {
+				colonial_region = colonial_la_plata
+				CTG = {NOT = {has_country_flag = ctg_plata} has_country_flag = trading_plata}
+			}
+			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+
+
+	option = {#give them the provinces
+		name = flavor_ctg_col.11.a
+		ai_chance = { factor = 10 }
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_la_plata
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = HYZ
+			add_core = HYZ
+
+		}
+		set_country_flag = ctg_plata
+		create_subject = {
+			subject_type = carthaginian_colony
+			subject = HYZ
+		}
+	}
+}
+
+country_event = {
+	id = flavor_ctg_col.12
+	title = flavor_ctg_col.12.t
+	desc = flavor_ctg_col.12.d
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		tag = CTG
+		any_owned_province = {
+				colonial_region = colonial_australia
+				CTG = {NOT = {has_country_flag = ctg_australia} has_country_flag = trading_australia}
+			}
+			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+
+
+	option = {#give them the provinces
+		name = flavor_ctg_col.12.a
+		ai_chance = { factor = 10 }
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_australia
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = RUF
+			add_core = RUF
+
+		}
+		set_country_flag = ctg_australia
+		create_subject = {
+			subject_type = carthaginian_colony
+			subject = RUF
+		}
+	}
+}
+
+country_event = {
+	id = flavor_ctg_col.13
+	title = flavor_ctg_col.13.t
+	desc = flavor_ctg_col.13.d
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		tag = CTG
+		any_owned_province = {
+				superregion = africa_superregion
+				CTG = {NOT = {has_country_flag = ctg_africa} has_country_flag = trading_africa}
+			}
+			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+
+
+	option = {#give them the provinces
+		name = flavor_ctg_col.13.a
+		ai_chance = { factor = 10 }
+		every_owned_province = {
+			limit = {
+				superregion = africa_superregion
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = ATP
+			add_core = ATP
+
+		}
+		set_country_flag = ctg_africa
+		create_subject = {
+			subject_type = carthaginian_colony
+			subject = ATP
+		}
+	}
+}
+
+country_event = {
+	id = flavor_ctg_col.14
+	title = flavor_ctg_col.14.t
+	desc = flavor_ctg_col.14.d
+	picture = COLONIZATION_eventPicture
+
+	trigger = {
+		tag = CTG
+		any_owned_province = {
+				superregion = southern_africa_superregion
+				CTG = {NOT = {has_country_flag = ctg_south_africa} has_country_flag = trading_south_africa}
+			}
+			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+
+
+	option = {#give them the provinces
+		name = flavor_ctg_col.14.a
+		ai_chance = { factor = 10 }
+		every_owned_province = {
+			limit = {
+				superregion = southern_africa_superregion
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = MRB
+			add_core = MRB
+
+		}
+		set_country_flag = ctg_south_africa
+		create_subject = {
+			subject_type = carthaginian_colony
+			subject = MRB
+		}
+	}
+}
+
+
+
+country_event = {
+	id = flavor_ctg.26
+	title = flavor_ctg.26.t
+	desc = flavor_ctg.26.d
+	picture = COLONIZATION_eventPicture
+	hidden = yes
+
+	trigger = {
+		tag = CTG
+		any_owned_province = {
+			OR = {
+				AND = {
+					colonial_region = colonial_alaska
+					has_country_flag = ctg_alaska
+				}
+				AND = {
+					superregion = africa_superregion
+					has_country_flag = ctg_africa
+				}
+				AND = {
+					colonial_region = colonial_australia
+					has_country_flag = ctg_australia
+				}
+				AND = {
+					colonial_region = colonial_brazil
+					has_country_flag = ctg_brazil
+				}
+				AND = {
+					colonial_region = colonial_la_plata
+					has_country_flag = ctg_plata
+				}
+				AND = {
+					colonial_region = colonial_colombia
+					has_country_flag = ctg_colombia
+				}
+				AND = {
+					colonial_region = colonial_peru
+					has_country_flag = ctg_peru
+				}
+				AND = {
+					colonial_region = colonial_mexico
+					has_country_flag = ctg_mexico
+				}
+				AND = {
+					colonial_region = colonial_the_carribean
+					has_country_flag = ctg_carribean
+				}
+				AND = {
+					colonial_region = colonial_canada
+					has_country_flag = ctg_canada
+				}
+				AND = {
+					colonial_region = colonial_eastern_america
+					has_country_flag = ctg_america
+				}
+				AND = {
+					colonial_region = colonial_louisiana
+					has_country_flag = ctg_louisiana
+				}
+				AND = {
+					colonial_region = colonial_california
+					has_country_flag = ctg_california
+				}
+				AND = {
+					superregion = southern_africa_superregion
+					has_country_flag = ctg_south_africa
+				}
+			}
+			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+		}
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+
+
+	option = {#give them the provinces
+		name = flavor_ctg.26.a
+		ai_chance = { factor = 10 }
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_alaska
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = HYP
+			add_core = HYP
+		}
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_canada
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = VAR
+			add_core = VAR
+		}
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_california
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = HSP
+			add_core = HSP
+		}
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_louisiana
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = SKY
+			add_core = SKY
+		}
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_the_carribean
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = ATL
+			add_core = ATL
+		}
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_mexico
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = AUR
+			add_core = AUR
+		}
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_peru
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = ALP
+			add_core = ALP
+		}
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_colombia
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = PLD
+			add_core = PLD
+		}
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_brazil
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = LAB
+			add_core = LAB
+		}
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_la_plata
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = HYZ
+			add_core = HYZ
+		}
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_australia
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = RUF
+			add_core = RUF
+		}
+		every_owned_province = {
+			limit = {
+				superregion = africa_superregion
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = MRB
+			add_core = MRB
+		}
+		every_owned_province = {
+			limit = {
+				superregion = southern_africa_superregion
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = ATP
+			add_core = ATP
+		}
 	}
 }

@@ -1,0 +1,10 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = haida
+religion = totemism
+technology_group = north_american
+capital = 2022 #Haida
+
+
+
+

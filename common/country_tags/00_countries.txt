@@ -63,7 +63,7 @@ LPT = "countries/Leptis Magna.txt"
 LBY = "countries/Libyan Confederation.txt"
 NMD = "countries/Numidia.txt"
 
-AET = "countries/Aethiopes.txt"
+ATP = "countries/Aethiopes.txt"
 MRB = "countries/Maerobia.txt"
 RUF = "countries/Rufusa.txt"
 
@@ -77,7 +77,7 @@ VAR = "countries/Varangia.txt"
 AME = "countries/America.txt"
 LAB = "countries/Labyrinthia.txt"
 PLD = "countries/Paludia.txt"
-
+ALP = "countries/Alpina.txt"
 
 
 EAA = "countries/East-Anglia.txt"
