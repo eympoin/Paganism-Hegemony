@@ -2,8 +2,8 @@ government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = dagestani
 religion = tengri_pagan_reformed
-technology_group = muslim
-capital = 2198 #Khunzah
+technology_group = eastern
+capital = 134
 
 1440.1.1 = {
 	monarch = {

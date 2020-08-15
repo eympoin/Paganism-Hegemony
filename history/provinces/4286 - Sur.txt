@@ -24,4 +24,4 @@ add_province_modifier {
   name = "shiite_minority"
   duration = 36500
 }
-autonomy = 10
+add_local_autonomy = 10

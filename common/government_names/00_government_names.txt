@@ -1875,48 +1875,6 @@ serbian_monarchy = {
 	}
 }
 
-byzantine_monarchy = {
-	rank = {
-		1 = PRINCEDOM
-		2 = KINGDOM
-		3 = EMPIRE
-	}
-
-	ruler_male = {
-		1 = DESPOT
-		2 = AUTOKRATOR
-		3 = BASILEUS
-	}
-
-	ruler_female = {
-		1 = DESPOTISSA
-		2 = AUTOKRATEIRA
-		3 = BASILISSA
-	}
-
-	consort_male = {
-		1 = DESPOT
-		2 = AUTOKRATOR
-		3 = BASILEUS
-	}
-
-	consort_female = {
-		1 = DESPOTISSA
-		2 = AUTOKRATEIRA
-		3 = BASILISSA
-	}
-
-	trigger = {
-		government = monarchy
-		OR = {
-			tag = BYZ
-			tag = TRE
-			tag = EPI
-			tag = MOE
-		}
-	}
-}
-
 arakanese_monarchy = { #Buddhist state that used Muslim titles.
 	rank = {
 		1 = EMIRATE
