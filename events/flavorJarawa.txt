@@ -175,7 +175,7 @@ country_event = {
 			ai_chance = {
 				factor = 100
 			}
-			prestige = 10
+			add_prestige = 10
 
 		}
 
@@ -279,7 +279,7 @@ country_event = {
 			}
 			LBY = {
 				inherit = FROM
-				stability = -1
+				add_stability = -1
 				if = {
 					limit = {
 						exists = TRP

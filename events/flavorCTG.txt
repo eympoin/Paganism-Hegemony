@@ -1305,9 +1305,6 @@ country_event = {
 					any_owned_province = {
 						superregion = africa_superregion
 					}
-					add_base_production = 3
-					add_base_tax = 3
-					add_base_manpower = 3
 			}
 		}
 	}
@@ -2155,8 +2152,9 @@ country_event = {
 				superregion = africa_superregion
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
+			CTG = {NOT = {has_country_flag = ctg_africa} has_country_flag = trading_africa}
 	}
-	CTG = {NOT = {has_country_flag = ctg_africa} has_country_flag = trading_africa}
+
 	mean_time_to_happen = {
 		days = 3
 	}
