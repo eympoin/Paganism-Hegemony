@@ -21,6 +21,7 @@ LUG   = "countries/Lugdunensis.txt"
 WRM   = "countries/Western Roman Empire.txt"
 ERM   = "countries/Eastern Roman Empire.txt"
 BSQ   = "countries/Basque.txt"
+MGA   = "countries/MagnaGraecia.txt"
 
 TRC   = "countries/Tarraconensis.txt"
 BAE   = "countries/Baetica.txt"
