@@ -4473,3 +4473,8 @@ opinion_draining_people_nrt = {
 	opinion = -50
 	yearly_decay = 3
 }
+
+opinion_draining_people_spq = {
+	opinion = -50
+	yearly_decay = 2
+}

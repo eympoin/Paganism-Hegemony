@@ -3,7 +3,7 @@
 owner = ORM
 controller = ORM
 culture = omani_culture
-religion = zoroastrian
+religion = sunni
 capital = "Qalhat"
 trade_goods = spices
 hre = no
@@ -22,10 +22,6 @@ estate = estate_burghers
 discovered_by = eastern
 add_province_modifier {
   name = "shiite_minority"
-  duration = 3650
+  duration = 36500
 }
-add_province_modifier {
-  name = "sunni_minority"
-  duration = 3650
-}
-add_local_autonomy = 35
+autonomy = 10
