@@ -11643,11 +11643,14 @@ Hormuz_missionary = {
 
 ibadi_minority = {
 	local_unrest = 2
+	local_missionary_strength = -0.03
 }
 
 sunni_minority = {
 	local_unrest = 2
+	local_missionary_strength = -0.03
 }
 shiite_minority = {
 	local_unrest = 2
+	local_missionary_strength = -0.03
 }

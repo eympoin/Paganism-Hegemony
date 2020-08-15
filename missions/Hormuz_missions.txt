@@ -1,0 +1,225 @@
+Hormuz_1 = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+    tag = ORM
+    NOT = { map_setup = map_setup_random }
+  }
+  End_of_Oman = {
+    icon = mission_bedouins
+    required_missions = {Stabilize_the_country}
+    position = 2
+    trigger = {
+      oman_area = {
+        type = all
+        country_or_non_sovereign_subject_holds = ORM
+      }
+    }
+    effect = {
+      4287 = {
+      add_unrest = 2
+      add_devastation = 15
+      }
+      4285 = {
+      add_unrest = 2
+      add_devastation = 15
+      }
+      403 = {
+      add_unrest = 2
+      add_devastation = 15
+      }
+    }
+  }
+  Take_Al_Haasa = {
+    icon = mission_bedouins
+    required_missions = {End_of_Oman}
+    position = 3
+    trigger = {
+      owns_or_non_sovereign_subject_of = 395
+      owns_or_non_sovereign_subject_of = 396
+    }
+    effect = {
+    add_mercantilism = 2
+    add_treasury = 300
+    395 = {
+    add_unrest = 2
+    add_devastation = 15
+    }
+    396 = {
+    add_unrest = 2
+    add_devastation = 15
+    }
+    431 = { add_permanent_claim = ROOT }
+    4327 = { add_permanent_claim = ROOT }
+    2233 = { add_permanent_claim = ROOT }
+    575 = { add_permanent_claim = ROOT }
+    }
+  }
+
+
+}
+
+#------------------------
+
+Hormuz_2 = {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+    tag = ORM
+    NOT = { map_setup = map_setup_random }
+  }
+  Stabilize_the_country = {
+    icon = mission_bedouins
+    required_missions = {}
+    position = 1
+    trigger = {
+    religious_unity = 0.80
+    }
+    effect = {
+    dhofar_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ORM
+    }
+    oman_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ORM
+    }
+
+    }
+  }
+
+  Rebuild_the_country = {
+    icon = mission_bedouins
+    required_missions = {Stabilize_the_country}
+    position = 2
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+
+  Secure_the_straits_of_hormuz = { #claim on KIraman and sindh and pars
+    icon = mission_bedouins
+    required_missions = {Take_Al_Haasa}
+    position = 4
+    trigger = {
+    owns_or_non_sovereign_subject_of = 431
+    owns_or_non_sovereign_subject_of = 4327
+    owns_or_non_sovereign_subject_of = 575
+    owns_or_non_sovereign_subject_of = 2233
+
+    }
+    effect = {
+
+    }
+  }
+
+  Control_trade= {
+    icon = mission_bedouins
+    required_missions = {Secure_the_straits_of_hormuz}
+    position = 5
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+
+  Spice_island = {
+    icon = mission_bedouins
+    required_missions = {Control_trade India_Wealth}
+    position = 6
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+
+}
+
+#------------------------------
+
+Hormuz_3 = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+    tag = ORM
+    NOT = { map_setup = map_setup_random }
+  }
+  Control_yemen = {
+    icon = mission_bedouins
+    required_missions = {Stabilize_the_country}
+    position = 2
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+
+  Take_Hejaz = {
+    icon = mission_bedouins
+    required_missions = {Control_yemen}
+    position = 3
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+
+  India_Wealth = {
+    icon = mission_bedouins
+    required_missions = {Take_Hejaz Secure_the_straits_of_hormuz}
+    position = 5
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+
+}
+
+#-----------------------------
+
+Hormuz_4 = {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+    tag = ORM
+    NOT = { map_setup = map_setup_random }
+  }
+
+
+}
+
+#---------------------------
+
+Hormuz_5 = {
+  slot = 5
+  generic = no
+  ai = yes
+  potential = {
+    tag = ORM
+    NOT = { map_setup = map_setup_random }
+  }
+
+
+}

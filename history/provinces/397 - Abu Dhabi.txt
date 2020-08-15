@@ -22,6 +22,6 @@ discovered_by = east_african
 discovered_by = eastern
 add_province_modifier {
   name = "ibadi_minority"
-  duration = 3650
+  duration = 36500
 }
-add_local_autonomy = 35
+add_local_autonomy = 10

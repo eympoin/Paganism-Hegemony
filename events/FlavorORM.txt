@@ -69,6 +69,9 @@ is_triggered_only = yes
         name = "Hormuz_missionary"
         duration = 2190
       }
+      add_government_reform = iqta
+      2999 = {change_religion = shiite}
+      4286 ={remove_province_modifier = shiite_minority}
 
       }
     option = {
@@ -81,6 +84,9 @@ is_triggered_only = yes
         name = "Hormuz_missionary"
         duration = 2190
       }
+      2999 = {change_religion = sunni}
+      add_government_reform = iqta
+      4286 ={remove_province_modifier = sunni_minority}
     }
     option = {
       name = "flavor_orm.6.f" # ibadi faith
@@ -92,5 +98,8 @@ is_triggered_only = yes
         name = "Hormuz_missionary"
         duration = 2190
       }
+      add_government_reform = iqta
+      2999 = {change_religion = ibadi}
+      4286 ={remove_province_modifier = ibadi_minority}
     }
 }
