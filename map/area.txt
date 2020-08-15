@@ -1000,7 +1000,7 @@ upper_rhineland_area = { #3 # now 'Baden'
 }
 
 alsace_area = { #3
-	75 1880 4765 
+	75 1880 4765
 }
 
 palatinate_area = { #3
@@ -1274,7 +1274,7 @@ luristan_area = { #4
 }
 
 north_kurdistan_area = { #5
-	2306 2307 4295 4296 418 
+	2306 2307 4295 4296 418
 }
 
 khuzestan_area = { #5
@@ -1419,10 +1419,10 @@ fezzan_area = { #4
 }
 
 tunisia_area = { #3
-	341  2455 2454 4837
+	341  2455 4837
 }
 byzacena_area = { #3
-	4832 4566 2473 
+	4832 4566 2473 2454
 }
 
 djerba_area = { #3

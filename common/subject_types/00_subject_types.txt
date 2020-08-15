@@ -634,6 +634,7 @@ carthaginian_colony = {
 	forcelimit_bonus = 1.0
 
 	liberty_desire_development_ratio = 0.1
+	base_liberty_desire = -20
 
 	max_government_rank = 1
 	cities_required_for_bonuses = 10

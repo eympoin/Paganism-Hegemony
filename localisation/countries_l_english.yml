@@ -1754,3 +1754,29 @@
  AFR_ADJ:0 "African"
  NMD:0 "Numidia"
  NMD_ADJ:0 "Numidian"
+ HYP:0"Hyperboera" #Alaska
+ ATL:0"Atlantis" #Caraibe
+ SKY:0"Skythia" #Louisiana
+ HSP:0"Hesperidia" #California
+ HYZ:0"Hyperzephyra" #La Plata
+ AUR:0"Auruma" #Mexico
+ VAR:0"Varangia" #Canada
+ AME:0"America" #East America
+ LAB:0"Labyrinthia" #Brazil
+ PLD:0"Paludia"
+ AET:0"Aethiopes" #Africa
+ MRB:0"Maerobia" #South Africa
+ RUF:0"Rufusa" #Rufusa
+
+ ATL_ADJ:0"Atlantean" #Caraibe
+ SKY_ADJ:0"Skythian" #Louisiana
+ HSP_ADJ:0"Hesperidian" #California
+ HYZ_ADJ:0"Hyperzephyran" #La Plata
+ AUR_ADJ:0"Auruman" #Mexico
+ VAR_ADJ:0"Varangian" #Canada
+ AME_ADJ:0"American" #East America
+ LAB_ADJ:0"Labyrinthian" #Brazil
+ PLD_ADJ:0"Paludian"
+ AET_ADJ:0"Aethiopean" #Africa
+ MRB_ADJ:0"Maerobian" #South Africa
+ RUF_ADJ:0"Rufusan" #Rufusa

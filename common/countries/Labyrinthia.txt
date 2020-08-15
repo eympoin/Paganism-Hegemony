@@ -1,0 +1,54 @@
+#Country Name: Please see filename.
+
+graphical_culture = muslimgfx
+
+color = { 39 80 58 }
+#color = { 154 168 121 } 
+
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	religious_ideas
+	naval_ideas	
+	administrative_ideas
+	offensive_ideas
+	economic_ideas
+	expansion_ideas
+}
+
+historical_units = {
+	mamluk_archer
+	muslim_cavalry_archers
+	mamluk_duel
+	mamluk_musket_charge
+	muslim_mass_infantry
+	muslim_dragoon
+	ali_bey_reformed_infantry
+}
+
+leader_names = {
+	Piratininga Tabajara Temiminó Tamoio Tabajara Caeté Tupinaé Temiminó Tupina Aricobé
+}
+
+monarch_names = {
+	"Cunhambebe #0" = 30
+	"Araribóia #0" = 10
+	"Maracajá #0" = 10
+	"Ramalho #0" = 10
+	"Italo #0" = 10
+	"Arah #0" = 10
+	"Pirijá #0" = 10
+	"Arata #0" = 10
+	"Toruí #0" = 10
+	"Yperoig #0" = 10
+	
+	"Bartira #0" = -1
+	"Guaibimpará #0" = -1
+	"Azelene #0" = -1
+	"Potira #0" = -1
+}
+
+ship_names = {
+	Bartira Cacique Guaibimpará Italo Niterói Piratininga Pirijá Potira Piquerobi Ubatuba Toruí Uruçumirim "Kari'boka"
+}
+

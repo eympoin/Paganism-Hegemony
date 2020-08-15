@@ -1,0 +1,75 @@
+#Country Name: Please see filename.
+
+graphical_culture = muslimgfx
+
+color = { 11 141 130 }
+#color = { 154 168 121 } 
+
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	religious_ideas
+	naval_ideas	
+	administrative_ideas
+	offensive_ideas
+	economic_ideas
+	expansion_ideas
+}
+
+historical_units = {
+	mamluk_archer
+	muslim_cavalry_archers
+	mamluk_duel
+	mamluk_musket_charge
+	muslim_mass_infantry
+	muslim_dragoon
+	ali_bey_reformed_infantry
+}
+
+leader_names = {
+	Aguazuque Soacha Zipacon Kankuamo Iraca Onzaga
+	Huachuri Huaman Huascar Huaypalcon Tunduma Chipatá
+	Busbanzá Saboyá Tenza Tibirita Duitama Paipa Cerinza
+	Tibana Charalá Toca
+}
+
+monarch_names = {
+	"Meicuchuca #0" = 10
+	"Saguamanchica #0" = 10
+	"Nemequene #0" = 10
+	"Tisquesusa #0" = 10
+	"Sagpipa #0" = 10
+	"Michua #0" = 10
+	"Quemuenchatocha #0" = 10
+	"Aquiminzaque #0" = 10
+	"Ah Can #0" = 0
+	"Cuxininegua #0" = 0
+	"Uzathama #0" = 0
+	"Tibacuy #0" = 0
+	"Guecha #0" = 0
+	"Mico-Chuco #0" = 0
+	"Aquimin #0" = 0
+	"Tomagata #0" = 0
+	"Tutazúa #0" = 0
+	
+	"Chia #0" = -1
+	"Quira #0" = -1
+	"Bachue #0" = -1
+}
+
+ship_names = {
+	Apo Apocatequil Ataguchu
+	"Ayar Anca" "Ayar Cachi" "Ayar Uchu"
+	Catequil Cavillace Chasca "Chasca Coyllur" Coniraya Copacati Cusco
+	Ekkeko
+	"Hanan Pacha"
+	Inti Illapa
+	Kon 
+	"Manco Capac" "Mama Ocllo" "Mama Huaco" "Mama Raua" "Mama Cura"
+	"Mama Coca" "Mama Allpa" "Mama Pacha" "Mama Quilla" "Mama Zara"
+	"Pacha Camac" Pachacuti Pariacaca Paricia
+	Supay
+	Titicaca
+	Urcaguary "Uku Pacha"
+	Viracocha
+}

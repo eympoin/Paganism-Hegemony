@@ -1,0 +1,54 @@
+#Country Name: Please see filename.
+
+graphical_culture = muslimgfx
+
+color = { 48 48 136 }
+#color = { 154 168 121 } 
+
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	religious_ideas
+	naval_ideas	
+	administrative_ideas
+	offensive_ideas
+	economic_ideas
+	expansion_ideas
+}
+
+historical_units = {
+	mamluk_archer
+	muslim_cavalry_archers
+	mamluk_duel
+	mamluk_musket_charge
+	muslim_mass_infantry
+	muslim_dragoon
+	ali_bey_reformed_infantry
+}
+
+leader_names = {
+	Kapongong Makushi Korobahado Panapi Muritaro Fararinno Kafotay Mudaukaho Waia Madinina
+}
+
+monarch_names = {
+	"Wiwakaleme #0" = 10
+	"Haubariria #0" = 10
+	"Toratora #0" = 10
+	"Amorotahe Haubariria #0" = 10
+	"Kaigouchi #0" = 10
+	"Shoko Laliwa #0" = 10
+	
+	"Arah #0" = 10
+	"Pirijá #0" = 10
+	"Arata #0" = 10
+	"Toruí #0" = 10
+	"Mbicy #0" = 10
+	
+	"Takuiba #0" = -1
+	"Twengga #0" = -1
+	"Neyawa #0" = -1
+}
+
+ship_names = {
+	Adaiahuli Aiyunbana Waia Demerara "Koyaha Maka" Hairoun Camerhogne Kayryouacou Hiwanarau Kairi Madinina
+}

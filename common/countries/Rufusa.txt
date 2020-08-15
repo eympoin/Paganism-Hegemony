@@ -1,0 +1,63 @@
+#Country Name: Please see filename.
+
+graphical_culture = muslimgfx
+
+color = { 212 186 137 }
+#color = { 154 168 121 } 
+
+historical_idea_groups = {
+	trade_ideas
+	defensive_ideas
+	religious_ideas
+	naval_ideas	
+	administrative_ideas
+	offensive_ideas
+	economic_ideas
+	expansion_ideas
+}
+
+historical_units = {
+	mamluk_archer
+	muslim_cavalry_archers
+	mamluk_duel
+	mamluk_musket_charge
+	muslim_mass_infantry
+	muslim_dragoon
+	ali_bey_reformed_infantry
+}
+monarch_names = {
+"Lucius #0" = 10
+"Tiberius #0" = 10
+"Septimus #0" = 10
+"Titus #0" = 10
+"Gaius #0" = 10
+"Faustus #0" = 10
+"Appius #0" = 10
+"Decimus #0" = 10
+"Faustus #0" = 10
+"Marcus #0" = 10
+"Sextus #0" = 10
+"Appia #0" = -5
+"Aula #0" = -5
+"Fausta #0" = -5
+"Lucia #0" = -5
+"Octavia #0" = -5
+}
+
+leader_names = {
+	"Manius Acilius Glabrio" "Titus Aebutius Elva" "Aegidius" "Gaius Antonius" "Aulus Atilius calatinus" "Aureolus" "Bonifacius" "Scipio Asiaticus" "Aulus Didius Gallus"
+	"Dexippus" "Gaius Claudius Nero" "Marcus Cornelius Barbatus" "Scipio Aemilianus Africanus" "Valens" "Publius Agrippa" "Flavius Valerius Africanus" "Titus Vinius" "Trebonius"
+}
+
+ship_names = {
+	Navis
+}
+
+army_names = {
+	"Legio I" "Legio II" "Legio III" "Legio IV" "Legio V" "Legio VI" "Legio VII"
+	"Legio VIII" "Legio IX" "Legio X" "Legio XI" "Legio XII"
+}
+
+fleet_names = {
+	"Classis Misenensis" "Classis Masselia" "Classis Narbonnenesis" "Classis Tolosa" "Classis Gallis"
+}
