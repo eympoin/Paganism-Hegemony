@@ -33,13 +33,12 @@ country_decisions = {
 			OR = {
 				AND = {
 				OR = {
-					area = lower_swabia_area
-					area = upper_swabia_area
-					area = lower_bavaria_area
-					area = upper_bavaria_area
-					area = east_bavaria_area
-					area = franconia_area
-					area = upper_franconia_area
+					province_id = 77
+					province_id = 67
+					province_id = 68
+					province_id = 65
+					province_id = 64
+					province_id = 4712
 				}
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			}
@@ -63,30 +62,12 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			NOT = { exists = EAF }
-			lower_swabia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			upper_swabia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			lower_bavaria_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			upper_bavaria_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			east_bavaria_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			franconia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			owns_or_non_sovereign_subject_of = 77
+			owns_or_non_sovereign_subject_of = 67
+			owns_or_non_sovereign_subject_of = 68
+			owns_or_non_sovereign_subject_of = 65
+			owns_or_non_sovereign_subject_of = 4712
+			owns_or_non_sovereign_subject_of = 64
 			westphalia_area = {
 				type = all
 				owned_by = ROOT

@@ -829,6 +829,10 @@ flavor_ctg.22.b:0 "We will keep this lands."
 flavor_ctg.23.t:0 "The Numidians Land"
 flavor_ctg.23.d:0 "We have conquered new territories in inland Africa. We should give them to our protectorate there."
 flavor_ctg.23.a:0 "If they are stonger, we are stronger."
+
+flavor_ctg.24.t:0 "A new trading outpost"
+flavor_ctg.24.d:0 "We have established our trading outpost in this region. It will be our main base of operation in this area. "
+flavor_ctg.24.a:0 "Our trade will flourish in this region."
 #Rome
 flavor_spqr.1.t:0 "The defenestration of Roma"
 flavor_spqr.1.d:0 "Our king, Rex Julius Publius was attacked by the Senators of the Roman Curia, they hope to take power and bring back the republic, as the monarchy seems to have brought naught but poverty and suffering upon our people. They threw him though the window of his personal quarters after a heated argument, his life hangs by a thread."

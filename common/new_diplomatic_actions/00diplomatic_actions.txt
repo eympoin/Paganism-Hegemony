@@ -360,17 +360,6 @@ demand_carthaginian_vassal = {
 			AND = {
 				FROM = {
 					capital_scope = {
-						colonial_region = colonial_australia
-					}
-				}
-				any_owned_province = {
-					has_province_modifier = carthaginian_trading_outpost
-					colonial_region = colonial_australia
-				}
-			}
-			AND = {
-				FROM = {
-					capital_scope = {
 						superregion = southern_africa_superregion
 					}
 				}

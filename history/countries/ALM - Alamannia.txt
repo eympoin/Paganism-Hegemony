@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 technology_group = western
 religion = germanic
 primary_culture = alamann
-capital = 68 # Nurnberg
+capital = 4712
 government_rank = 1
 
 1444.1.1 = {

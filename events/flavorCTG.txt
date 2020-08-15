@@ -10,8 +10,8 @@ country_event = { #a plot in the shadow
 
 
 	trigger = {
-      tag = CTG
-		}
+		tag = CTG
+	}
 	mean_time_to_happen = {
 		months = 6
 	}
@@ -20,9 +20,9 @@ country_event = { #a plot in the shadow
 	option = {
 		name = "flavor_ctg.1.a"
 		ai_chance = { factor = 75 }
-    kill_ruler = yes
+		kill_ruler = yes
 		hidden_effect = {
-			 country_event = { id = flavor_ctg.2 days = 7 }
+			country_event = { id = flavor_ctg.2 days = 7 }
 		}
 	}
 
@@ -40,9 +40,9 @@ country_event = { #republic or monarchy ?
 	option = {		# republic
 		name = "flavor_ctg.2.a"
 		ai_chance = { factor = 90 }
-    change_government = republic
-    add_government_reform = oligarchy_reform #carthaginian reform
-    random_owned_province = {
+		change_government = republic
+		add_government_reform = oligarchy_reform #carthaginian reform
+		random_owned_province = {
 			limit = {
 				is_capital = no
 			}
@@ -51,16 +51,16 @@ country_event = { #republic or monarchy ?
 				size = 2
 			}
 		}
-    add_country_modifier = {
-      name = "republic_under_construction"
-      duration = -1
-    }
+		add_country_modifier = {
+			name = "republic_under_construction"
+			duration = -1
+		}
 	}
 
-  option = {	# monarchy
+	option = {	# monarchy
 		name = "flavor_ctg.2.b"
 		ai_chance = { factor = 10 }
-    random_owned_province = {
+		random_owned_province = {
 			limit = {
 				is_capital = no
 			}
@@ -69,19 +69,19 @@ country_event = { #republic or monarchy ?
 				size = 2
 			}
 		}
-    define_ruler = {
-      name = "Gaius"
-      adm = 4
-      mil = 0
-      dip = 5
-      regency = yes
-      fixed = yes
-    }
+		define_ruler = {
+			name = "Gaius"
+			adm = 4
+			mil = 0
+			dip = 5
+			regency = yes
+			fixed = yes
+		}
 
-    add_country_modifier = {
-      name = "need_of_reforms_monarchy"
-      duration = -1
-    }
+		add_country_modifier = {
+			name = "need_of_reforms_monarchy"
+			duration = -1
+		}
 	}
 
 }
@@ -96,9 +96,9 @@ country_event = { #republic 1 fate of the military
 
 
 	trigger = {
-      tag = CTG
-			has_country_modifier = "republic_under_construction"
-		}
+		tag = CTG
+		has_country_modifier = "republic_under_construction"
+	}
 	mean_time_to_happen = {
 		months = 6
 	}
@@ -133,12 +133,12 @@ country_event = { #republic 2 trade_focus
 
 
 	trigger = {
-      tag = CTG
-			OR = {
+		tag = CTG
+		OR = {
 			has_country_modifier = army_of_citizens
 			has_country_modifier = mercenary_contracts
-			}
 		}
+	}
 	mean_time_to_happen = {
 		months = 6
 	}
@@ -180,13 +180,13 @@ country_event = { #republic 3 government centralization
 
 
 	trigger = {
-      tag = CTG
-			OR = {
+		tag = CTG
+		OR = {
 			has_country_modifier = extern_trade_focus
 			has_country_modifier = intern_trade_focus
 			has_country_modifier = balanced_approach
-			}
 		}
+	}
 	mean_time_to_happen = {
 		months = 6
 	}
@@ -224,9 +224,9 @@ country_event = { #monarchy 1 cleansing
 
 
 	trigger = {
-      tag = CTG
-			has_country_modifier = "need_of_reforms_monarchy"
-		}
+		tag = CTG
+		has_country_modifier = "need_of_reforms_monarchy"
+	}
 	mean_time_to_happen = {
 		months = 6
 	}
@@ -235,12 +235,12 @@ country_event = { #monarchy 1 cleansing
 		name = "flavor_ctg.6.a"
 		ai_chance = { factor = 50 }
 		change_estate_land_share = {
-    	estate = estate_nobles
-    	share = -15
+			estate = estate_nobles
+			share = -15
 		}
 		change_estate_land_share = {
-    	estate = estate_burghers
-    	share = -10
+			estate = estate_burghers
+			share = -10
 		}
 		add_country_modifier = {
 			name = "political_cleansing"
@@ -252,12 +252,12 @@ country_event = { #monarchy 1 cleansing
 		name = "flavor_ctg.6.b"
 		ai_chance = { factor = 50 }
 		change_estate_land_share = {
-    	estate = estate_nobles
-    	share = 10
+			estate = estate_nobles
+			share = 10
 		}
 		change_estate_land_share = {
-    	estate = estate_burghers
-    	share = 10
+			estate = estate_burghers
+			share = 10
 		}
 		add_country_modifier = {
 			name = "influenced_monarchy"
@@ -277,13 +277,13 @@ country_event = { #monarchy 2 scientific legacy
 
 
 	trigger = {
-      tag = CTG
-			OR = {
+		tag = CTG
+		OR = {
 			has_country_modifier = "political_cleansing"
 			has_country_modifier = "influenced_monarchy"
 
-			}
 		}
+	}
 	mean_time_to_happen = {
 		months = 6
 	}
@@ -329,13 +329,13 @@ country_event = { #monarchy 3 religion
 
 
 	trigger = {
-      tag = CTG
-			OR = {
+		tag = CTG
+		OR = {
 			has_country_modifier = "letters_fundings"
 			has_country_modifier = "science_funding"
 
-			}
 		}
+	}
 	mean_time_to_happen = {
 		months = 6
 	}
@@ -343,11 +343,11 @@ country_event = { #monarchy 3 religion
 	option = { #the king is a god
 		name = "flavor_ctg.8.a"
 		ai_chance = {
-		factor = 50
-		modifier = {
-			factor = 90
-			has_country_modifier = political_cleansing
-		}
+			factor = 50
+			modifier = {
+				factor = 90
+				has_country_modifier = political_cleansing
+			}
 		}
 
 		add_country_modifier = {
@@ -355,8 +355,8 @@ country_event = { #monarchy 3 religion
 			duration = -1
 		}
 		add_estate_loyalty = {
-    estate = estate_church
-    loyalty = -20
+			estate = estate_church
+			loyalty = -20
 		}
 	}
 
@@ -369,19 +369,19 @@ country_event = { #monarchy 3 religion
 			duration = -1
 		}
 		add_estate_loyalty = {
-    estate = estate_church
-    loyalty = 20
+			estate = estate_church
+			loyalty = 20
 		}
 	}
 
 	option = { #don't accept
-		name = "flavor_ctg.8.c"
-		ai_chance = { factor = 10 }
-		add_estate_loyalty = {
-    estate = estate_church
-    loyalty = -10
-		}
+	name = "flavor_ctg.8.c"
+	ai_chance = { factor = 10 }
+	add_estate_loyalty = {
+		estate = estate_church
+		loyalty = -10
 	}
+}
 }
 
 
@@ -396,12 +396,12 @@ country_event = { #monarchy 4 end elective or absolute
 
 
 	trigger = {
-      tag = CTG
-			OR = {
+		tag = CTG
+		OR = {
 			has_country_modifier = respect_the_tradtions
 			has_country_modifier = god_king
-			}
 		}
+	}
 	mean_time_to_happen = {
 		months = 6
 	}
@@ -437,407 +437,388 @@ country_event = { #monarchy 4 end elective or absolute
 
 
 country_event = {
-  id = flavor_ctg.10
-  title = flavor_ctg.10.t
-  desc = flavor_ctg.10.d
-  picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
-  fire_only_once = yes
+	id = flavor_ctg.10
+	title = flavor_ctg.10.t
+	desc = flavor_ctg.10.d
+	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	fire_only_once = yes
 	major = yes
 
-  trigger = {
-    total_development = 250
-    OR = {
-      tag = CTG
-    }
-  }
+	trigger = {
+		total_development = 250
+		OR = {
+			tag = CTG
+		}
+	}
 	mean_time_to_happen = {
 		months = 5
 	}
 
 
-  option = {#We are Roman
-    name = flavor_ctg.10.a
-    ai_chance = { factor = 60 }
-    add_legitimacy = 20
-    add_dip_power = 100
-    add_stability = 1
-    add_country_modifier = {
-      name = ctg_roman
-      duration = -1
-    }
-  }
-  option = {#Rome is long lost
-    name = flavor_ctg.10.b
-    ai_chance = { factor = 30 }
-    add_legitimacy = -15
-    add_prestige = 20
-    add_mil_power = 100
-    add_dip_power = -100
-    add_stability = -1
-    add_country_modifier = {
-      name = ctg_own_path
-      duration = -1
-    }
+	option = {#We are Roman
+		name = flavor_ctg.10.a
+		ai_chance = { factor = 60 }
+		add_legitimacy = 20
+		add_dip_power = 100
+		add_stability = 1
+		add_country_modifier = {
+			name = ctg_roman
+			duration = -1
+		}
+	}
+	option = {#Rome is long lost
+		name = flavor_ctg.10.b
+		ai_chance = { factor = 30 }
+		add_legitimacy = -15
+		add_prestige = 20
+		add_mil_power = 100
+		add_dip_power = -100
+		add_stability = -1
+		add_country_modifier = {
+			name = ctg_own_path
+			duration = -1
+		}
 
-    every_owned_province = {
-      limit = {
-        culture = african
-      }
-      change_culture = carthaginian
-    }
 		every_owned_province = {
-      limit = {
-        culture = sardinian
-      }
-      change_culture = sardinians_ctg
-    }
+			limit = {
+				culture = african
+			}
+			change_culture = carthaginian
+		}
 		every_owned_province = {
-      limit = {
-        culture = sicilian
-      }
-      change_culture = italiotes
-    }
+			limit = {
+				culture = sardinian
+			}
+			change_culture = sardinians_ctg
+		}
 		every_owned_province = {
-      limit = {
-        culture = tripolitan
-      }
-      change_culture = libyan
-    }
+			limit = {
+				culture = sicilian
+			}
+			change_culture = italiotes
+		}
 		every_owned_province = {
-      limit = {
-        culture = mauretanian
-      }
-      change_culture = mauri
-    }
-    change_primary_culture = carthaginian
-  }
+			limit = {
+				culture = tripolitan
+			}
+			change_culture = libyan
+		}
+		every_owned_province = {
+			limit = {
+				culture = mauretanian
+			}
+			change_culture = mauri
+		}
+		change_primary_culture = carthaginian
+	}
 }
 
 
 #Griko converison own path
 country_event = {
-  id = flavor_ctg.11
-  title = flavor_ctg.11.t
-  desc = flavor_ctg.11.d
-  picture = COLONIZATION_eventPicture
+	id = flavor_ctg.11
+	title = flavor_ctg.11.t
+	desc = flavor_ctg.11.d
+	picture = COLONIZATION_eventPicture
 
-  trigger = {
-    OR = {
-      tag = CTG
-    }
+	trigger = {
+		OR = {
+			tag = CTG
+		}
 		has_country_modifier = ctg_own_path
 
-    any_owned_province = {
+		any_owned_province = {
 
-			has_owner_religion = yes
-      culture = Griko
-      NOT = { nationalism	= 1 }
-      is_core = ROOT
-    }
-  }
-
-  mean_time_to_happen = {
-    years = 2
-  }
-
-  option = {#griko
-    name = flavor_ctg.11.a
-    ai_chance = { factor = 1 }
-    trigger = {
-      any_owned_province = {
 			has_owner_religion = yes
 			culture = Griko
 			NOT = { nationalism	= 1 }
 			is_core = ROOT
-      }
-    }
-    random_owned_province = {
-      limit = {
-			has_owner_religion = yes
-      culture = Griko
-      NOT = { nationalism	= 1 }
-      is_core = ROOT
-      }
-      change_culture = italiotes
-    }
-  }
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 2
+	}
+
+	option = {#griko
+		name = flavor_ctg.11.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			any_owned_province = {
+				has_owner_religion = yes
+				culture = Griko
+				NOT = { nationalism	= 1 }
+				is_core = ROOT
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_owner_religion = yes
+				culture = Griko
+				NOT = { nationalism	= 1 }
+				is_core = ROOT
+			}
+			change_culture = italiotes
+		}
+	}
 }
 
 #Sicilian converison own path
 country_event = {
-  id = flavor_ctg.12
-  title = flavor_ctg.12.t
-  desc = flavor_ctg.12.d
-  picture = COLONIZATION_eventPicture
+	id = flavor_ctg.12
+	title = flavor_ctg.12.t
+	desc = flavor_ctg.12.d
+	picture = COLONIZATION_eventPicture
 
-  trigger = {
-    OR = {
-      tag = CTG
-    }
+	trigger = {
+		OR = {
+			tag = CTG
+		}
 		has_country_modifier = ctg_own_path
 
-    any_owned_province = {
+		any_owned_province = {
 
-			has_owner_religion = yes
-      culture = sicilian
-      NOT = { nationalism	= 1 }
-      is_core = ROOT
-    }
-  }
-
-  mean_time_to_happen = {
-    months = 6
-		 }
-
-  option = {#griko
-    name = flavor_ctg.12.a
-    ai_chance = { factor = 1 }
-    trigger = {
-      any_owned_province = {
 			has_owner_religion = yes
 			culture = sicilian
 			NOT = { nationalism	= 1 }
 			is_core = ROOT
-      }
-    }
-    random_owned_province = {
-      limit = {
-			has_owner_religion = yes
-      culture = sicilian
-      NOT = { nationalism	= 1 }
-      is_core = ROOT
-      }
-      change_culture = italiotes
-    }
-  }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {#griko
+		name = flavor_ctg.12.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			any_owned_province = {
+				has_owner_religion = yes
+				culture = sicilian
+				NOT = { nationalism	= 1 }
+				is_core = ROOT
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_owner_religion = yes
+				culture = sicilian
+				NOT = { nationalism	= 1 }
+				is_core = ROOT
+			}
+			change_culture = italiotes
+		}
+	}
 }
 
 #african converison own path
 country_event = {
-  id = flavor_ctg.13
-  title = flavor_ctg.13.t
-  desc = flavor_ctg.13.d
-  picture = COLONIZATION_eventPicture
+	id = flavor_ctg.13
+	title = flavor_ctg.13.t
+	desc = flavor_ctg.13.d
+	picture = COLONIZATION_eventPicture
 
-  trigger = {
+	trigger = {
 		tag = CTG
-    OR = {
+		OR = {
 			has_country_modifier = ctg_own_path
-    }
-    any_owned_province = {
+		}
+		any_owned_province = {
 
-			has_owner_religion = yes
-      culture = african
-      NOT = { nationalism	= 1 }
-      is_core = ROOT
-    }
-  }
-
-  mean_time_to_happen = {
-    months = 6
-		 }
-
-  option = {#griko
-    name = flavor_ctg.13.a
-    ai_chance = { factor = 1 }
-    trigger = {
-      any_owned_province = {
 			has_owner_religion = yes
 			culture = african
 			NOT = { nationalism	= 1 }
 			is_core = ROOT
-      }
-    }
-    random_owned_province = {
-      limit = {
-			has_owner_religion = yes
-      culture = african
-      NOT = { nationalism	= 1 }
-      is_core = ROOT
-      }
-      change_culture = carthaginian
-    }
-  }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {#griko
+		name = flavor_ctg.13.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			any_owned_province = {
+				has_owner_religion = yes
+				culture = african
+				NOT = { nationalism	= 1 }
+				is_core = ROOT
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_owner_religion = yes
+				culture = african
+				NOT = { nationalism	= 1 }
+				is_core = ROOT
+			}
+			change_culture = carthaginian
+		}
+	}
 }
 
 #Tripolitan converison own path
 country_event = {
-  id = flavor_ctg.14
-  title = flavor_ctg.14.t
-  desc = flavor_ctg.14.d
-  picture = COLONIZATION_eventPicture
+	id = flavor_ctg.14
+	title = flavor_ctg.14.t
+	desc = flavor_ctg.14.d
+	picture = COLONIZATION_eventPicture
 
-  trigger = {
-	tag = CTG
-    OR = {
+	trigger = {
+		tag = CTG
+		OR = {
 			has_country_modifier = ctg_own_path
-    }
-    any_owned_province = {
+		}
+		any_owned_province = {
 
-			has_owner_religion = yes
-      culture = tripolitan
-      NOT = { nationalism	= 1 }
-      is_core = ROOT
-    }
-  }
-
-  mean_time_to_happen = {
-    months = 6
-		 }
-
-  option = {#griko
-    name = flavor_ctg.14.a
-    ai_chance = { factor = 1 }
-    trigger = {
-      any_owned_province = {
 			has_owner_religion = yes
 			culture = tripolitan
 			NOT = { nationalism	= 1 }
 			is_core = ROOT
-      }
-    }
-    random_owned_province = {
-      limit = {
-			has_owner_religion = yes
-      culture = tripolitan
-      NOT = { nationalism	= 1 }
-      is_core = ROOT
-      }
-      change_culture = libyan
-    }
-  }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {#griko
+		name = flavor_ctg.14.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			any_owned_province = {
+				has_owner_religion = yes
+				culture = tripolitan
+				NOT = { nationalism	= 1 }
+				is_core = ROOT
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_owner_religion = yes
+				culture = tripolitan
+				NOT = { nationalism	= 1 }
+				is_core = ROOT
+			}
+			change_culture = libyan
+		}
+	}
 }
 
 #Sardinian converison own path
 country_event = {
-  id = flavor_ctg.15
-  title = flavor_ctg.15.t
-  desc = flavor_ctg.15.d
-  picture = COLONIZATION_eventPicture
+	id = flavor_ctg.15
+	title = flavor_ctg.15.t
+	desc = flavor_ctg.15.d
+	picture = COLONIZATION_eventPicture
 
-  trigger = {
-    OR = {
-      tag = CTG
-    }
+	trigger = {
+		OR = {
+			tag = CTG
+		}
 		has_country_modifier = ctg_own_path
-    any_owned_province = {
+		any_owned_province = {
 
-			has_owner_religion = yes
-      culture = sardinian
-      NOT = { nationalism	= 1 }
-      is_core = ROOT
-    }
-  }
-
-  mean_time_to_happen = {
-    months = 6
-		 }
-
-  option = {#sardinian
-    name = flavor_ctg.15.a
-    ai_chance = { factor = 1 }
-    trigger = {
-      any_owned_province = {
 			has_owner_religion = yes
 			culture = sardinian
 			NOT = { nationalism	= 1 }
 			is_core = ROOT
-      }
-    }
-    random_owned_province = {
-      limit = {
-			has_owner_religion = yes
-      culture = sardinian
-      NOT = { nationalism	= 1 }
-      is_core = ROOT
-      }
-      change_culture = sardinians_ctg
-    }
-  }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {#sardinian
+		name = flavor_ctg.15.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			any_owned_province = {
+				has_owner_religion = yes
+				culture = sardinian
+				NOT = { nationalism	= 1 }
+				is_core = ROOT
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_owner_religion = yes
+				culture = sardinian
+				NOT = { nationalism	= 1 }
+				is_core = ROOT
+			}
+			change_culture = sardinians_ctg
+		}
+	}
 }
 
 #mauretanian converison own path
 country_event = {
-  id = flavor_ctg.16
-  title = flavor_ctg.16.t
-  desc = flavor_ctg.16.d
-  picture = COLONIZATION_eventPicture
+	id = flavor_ctg.16
+	title = flavor_ctg.16.t
+	desc = flavor_ctg.16.d
+	picture = COLONIZATION_eventPicture
 
-  trigger = {
-    OR = {
-      tag = CTG
-    }
+	trigger = {
+		OR = {
+			tag = CTG
+		}
 		has_country_modifier = ctg_own_path
-    any_owned_province = {
+		any_owned_province = {
 
-			has_owner_religion = yes
-      culture = mauretanian
-      NOT = { nationalism	= 1 }
-      is_core = ROOT
-    }
-  }
-
-  mean_time_to_happen = {
-    months = 6
-		 }
-
-  option = {#mauretanian
-    name = flavor_ctg.16.a
-    ai_chance = { factor = 1 }
-    trigger = {
-      any_owned_province = {
 			has_owner_religion = yes
 			culture = mauretanian
 			NOT = { nationalism	= 1 }
 			is_core = ROOT
-      }
-    }
-    random_owned_province = {
-      limit = {
-			has_owner_religion = yes
-      culture = mauretanian
-      NOT = { nationalism	= 1 }
-      is_core = ROOT
-      }
-      change_culture = mauri
-    }
-  }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {#mauretanian
+		name = flavor_ctg.16.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			any_owned_province = {
+				has_owner_religion = yes
+				culture = mauretanian
+				NOT = { nationalism	= 1 }
+				is_core = ROOT
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_owner_religion = yes
+				culture = mauretanian
+				NOT = { nationalism	= 1 }
+				is_core = ROOT
+			}
+			change_culture = mauri
+		}
+	}
 }
 
 #iberian own path
 country_event = {
-  id = flavor_ctg.17
-  title = flavor_ctg.17.t
-  desc = flavor_ctg.17.d
-  picture = COLONIZATION_eventPicture
+	id = flavor_ctg.17
+	title = flavor_ctg.17.t
+	desc = flavor_ctg.17.d
+	picture = COLONIZATION_eventPicture
 
-  trigger = {
-    OR = {
-      tag = CTG
-    }
+	trigger = {
+		OR = {
+			tag = CTG
+		}
 		has_country_modifier = ctg_own_path
 
-    any_owned_province = {
+		any_owned_province = {
 
-			has_owner_religion = yes
-			OR = {
-				culture = baetican
-				culture = cartaginensian
-			}
-      NOT = { nationalism	= 1 }
-      is_core = ROOT
-    }
-  }
-
-  mean_time_to_happen = {
-    	years = 2
-		 }
-
-  option = {#iberian
-    name = flavor_ctg.17.a
-    ai_chance = { factor = 1 }
-    trigger = {
-      any_owned_province = {
 			has_owner_religion = yes
 			OR = {
 				culture = baetican
@@ -845,57 +826,57 @@ country_event = {
 			}
 			NOT = { nationalism	= 1 }
 			is_core = ROOT
-      }
-    }
-    random_owned_province = {
-      limit = {
-			has_owner_religion = yes
-			OR = {
-				culture = baetican
-				culture = cartaginensian
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 2
+	}
+
+	option = {#iberian
+		name = flavor_ctg.17.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			any_owned_province = {
+				has_owner_religion = yes
+				OR = {
+					culture = baetican
+					culture = cartaginensian
+				}
+				NOT = { nationalism	= 1 }
+				is_core = ROOT
 			}
-      NOT = { nationalism	= 1 }
-      is_core = ROOT
-      }
-      change_culture = iberian
-    }
-  }
+		}
+		random_owned_province = {
+			limit = {
+				has_owner_religion = yes
+				OR = {
+					culture = baetican
+					culture = cartaginensian
+				}
+				NOT = { nationalism	= 1 }
+				is_core = ROOT
+			}
+			change_culture = iberian
+		}
+	}
 }
 
 #numidian own path
 country_event = {
-  id = flavor_ctg.18
-  title = flavor_ctg.18.t
-  desc = flavor_ctg.18.d
-  picture = COLONIZATION_eventPicture
+	id = flavor_ctg.18
+	title = flavor_ctg.18.t
+	desc = flavor_ctg.18.d
+	picture = COLONIZATION_eventPicture
 
-  trigger = {
-    OR = {
-      tag = CTG
-    }
+	trigger = {
+		OR = {
+			tag = CTG
+		}
 		has_country_modifier = ctg_own_path
 
-    any_owned_province = {
+		any_owned_province = {
 
-			has_owner_religion = yes
-			OR = {
-				culture = berber_culture
-				culture = moors
-			}
-      NOT = { nationalism	= 1 }
-      is_core = ROOT
-    }
-  }
-
-  mean_time_to_happen = {
-      years = 2
-		 }
-
-  option = {#iberian
-    name = flavor_ctg.18.a
-    ai_chance = { factor = 1 }
-    trigger = {
-      any_owned_province = {
 			has_owner_religion = yes
 			OR = {
 				culture = berber_culture
@@ -903,57 +884,57 @@ country_event = {
 			}
 			NOT = { nationalism	= 1 }
 			is_core = ROOT
-      }
-    }
-    random_owned_province = {
-      limit = {
-			has_owner_religion = yes
-			OR = {
-				culture = berber_culture
-				culture = moors
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 2
+	}
+
+	option = {#iberian
+		name = flavor_ctg.18.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			any_owned_province = {
+				has_owner_religion = yes
+				OR = {
+					culture = berber_culture
+					culture = moors
+				}
+				NOT = { nationalism	= 1 }
+				is_core = ROOT
 			}
-      NOT = { nationalism	= 1 }
-      is_core = ROOT
-      }
-      change_culture = numidian
-    }
-  }
+		}
+		random_owned_province = {
+			limit = {
+				has_owner_religion = yes
+				OR = {
+					culture = berber_culture
+					culture = moors
+				}
+				NOT = { nationalism	= 1 }
+				is_core = ROOT
+			}
+			change_culture = numidian
+		}
+	}
 }
 
 #numidia
 country_event = {
-  id = flavor_ctg.19
-  title = flavor_ctg.19.t
-  desc = flavor_ctg.19.d
-  picture = COLONIZATION_eventPicture
+	id = flavor_ctg.19
+	title = flavor_ctg.19.t
+	desc = flavor_ctg.19.d
+	picture = COLONIZATION_eventPicture
 
-  trigger = {
-    OR = {
-      tag = CTG
-    }
+	trigger = {
+		OR = {
+			tag = CTG
+		}
 		has_country_modifier = ctg_roman
 
-    any_owned_province = {
+		any_owned_province = {
 
-			has_owner_religion = yes
-			OR = {
-				culture = berber_culture
-				culture = moors
-			}
-      NOT = { nationalism	= 1 }
-      is_core = ROOT
-    }
-  }
-
-  mean_time_to_happen = {
-      years = 2
-		 }
-
-  option = {
-    name = flavor_ctg.19.a
-    ai_chance = { factor = 1 }
-    trigger = {
-      any_owned_province = {
 			has_owner_religion = yes
 			OR = {
 				culture = berber_culture
@@ -961,123 +942,142 @@ country_event = {
 			}
 			NOT = { nationalism	= 1 }
 			is_core = ROOT
-      }
-    }
-    random_owned_province = {
-      limit = {
-			has_owner_religion = yes
-			OR = {
-				culture = berber_culture
-				culture = moors
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 2
+	}
+
+	option = {
+		name = flavor_ctg.19.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			any_owned_province = {
+				has_owner_religion = yes
+				OR = {
+					culture = berber_culture
+					culture = moors
+				}
+				NOT = { nationalism	= 1 }
+				is_core = ROOT
 			}
-      NOT = { nationalism	= 1 }
-      is_core = ROOT
-      }
-      change_culture = african
-    }
-  }
+		}
+		random_owned_province = {
+			limit = {
+				has_owner_religion = yes
+				OR = {
+					culture = berber_culture
+					culture = moors
+				}
+				NOT = { nationalism	= 1 }
+				is_core = ROOT
+			}
+			change_culture = african
+		}
+	}
 }
 
 #Griko converison own path
 country_event = {
-  id = flavor_ctg.20
-  title = flavor_ctg.20.t
-  desc = flavor_ctg.20.d
-  picture = COLONIZATION_eventPicture
+	id = flavor_ctg.20
+	title = flavor_ctg.20.t
+	desc = flavor_ctg.20.d
+	picture = COLONIZATION_eventPicture
 
-  trigger = {
-    OR = {
-      tag = CTG
-    }
+	trigger = {
+		OR = {
+			tag = CTG
+		}
 		has_country_modifier = ctg_roman
 
-    any_owned_province = {
+		any_owned_province = {
 
-			has_owner_religion = yes
-      culture = Griko
-      NOT = { nationalism	= 1 }
-      is_core = ROOT
-    }
-  }
-
-  mean_time_to_happen = {
-    years = 2
-  }
-
-  option = {#griko
-    name = flavor_ctg.20.a
-    ai_chance = { factor = 1 }
-    trigger = {
-      any_owned_province = {
 			has_owner_religion = yes
 			culture = Griko
 			NOT = { nationalism	= 1 }
 			is_core = ROOT
-      }
-    }
-    random_owned_province = {
-      limit = {
-			has_owner_religion = yes
-      culture = Griko
-      NOT = { nationalism	= 1 }
-      is_core = ROOT
-      }
-      change_culture = sicilian
-    }
-  }
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 2
+	}
+
+	option = {#griko
+		name = flavor_ctg.20.a
+		ai_chance = { factor = 1 }
+		trigger = {
+			any_owned_province = {
+				has_owner_religion = yes
+				culture = Griko
+				NOT = { nationalism	= 1 }
+				is_core = ROOT
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_owner_religion = yes
+				culture = Griko
+				NOT = { nationalism	= 1 }
+				is_core = ROOT
+			}
+			change_culture = sicilian
+		}
+	}
 }
 
 
 country_event = {
-  id = flavor_ctg.21
-  title = flavor_ctg.21.t
-  desc = flavor_ctg.21.d
-  picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
-  fire_only_once = yes
+	id = flavor_ctg.21
+	title = flavor_ctg.21.t
+	desc = flavor_ctg.21.d
+	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	fire_only_once = yes
 
-  trigger = {
-    total_development = 250
-    has_country_modifier = ctg_own_path
-  }
+	trigger = {
+		total_development = 250
+		has_country_modifier = ctg_own_path
+	}
 	mean_time_to_happen = {
 		years = 10
 	}
 	major = yes
 
 
-  option = {#Embrace the phenician religion
-    name = flavor_ctg.21.a
-    ai_chance = { factor = 10 }
+	option = {#Embrace the phenician religion
+		name = flavor_ctg.21.a
+		ai_chance = { factor = 10 }
 		change_religion = phenician
-    add_legitimacy = -20
-    add_stability = -2
+		add_legitimacy = -20
+		add_stability = -2
 		add_years_of_income = -1
-    add_country_modifier = {
-      name = efforts_to_convert
-      duration = 7300
-    }
-  }
-  option = {#WTf is this
-    name = flavor_ctg.21.b
-    ai_chance = { factor = 90 }
-    add_legitimacy = 10
-    add_prestige = 10
-    add_stability = 1
+		add_country_modifier = {
+			name = efforts_to_convert
+			duration = 7300
+		}
+	}
+	option = {#WTf is this
+		name = flavor_ctg.21.b
+		ai_chance = { factor = 90 }
+		add_legitimacy = 10
+		add_prestige = 10
+		add_stability = 1
 
 
-  }
+	}
 }
 #fate of Inland Africa
 country_event = {
-  id = flavor_ctg.22
-  title = flavor_ctg.22.t
-  desc = flavor_ctg.22.d
-  picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
-  fire_only_once = yes
+	id = flavor_ctg.22
+	title = flavor_ctg.22.t
+	desc = flavor_ctg.22.d
+	picture = MERCHANTS_TALKING_eventPicture
+	fire_only_once = yes
 
-  trigger = {
-	tag = CTG
-    any_owned_province = {
+	trigger = {
+		tag = CTG
+		any_owned_province = {
 			OR = {
 				area = fezzan_area
 				area = north_saharan_area
@@ -1088,56 +1088,55 @@ country_event = {
 				area = sus_area
 			}
 		}
-  }
+	}
 	mean_time_to_happen = {
 		days = 3
 	}
 	major = yes
 
 
-  option = {#a protectorate
-    name = flavor_ctg.22.a
-    ai_chance = { factor = 10 }
+	option = {#a protectorate
+		name = flavor_ctg.22.a
+		ai_chance = { factor = 10 }
 		every_owned_province = {
 			limit = {
-			OR = {
-				area = fezzan_area
-				area = north_saharan_area
-				area = ouled_nail_area
-				area = hautes_plaines_area
-				area = tafilalt_area
-				area = marrekesh_area
-				area = sus_area
+				OR = {
+					area = fezzan_area
+					area = north_saharan_area
+					area = ouled_nail_area
+					area = hautes_plaines_area
+					area = tafilalt_area
+					area = marrekesh_area
+					area = sus_area
 				}
 			}
 			cede_province = NMD
 			add_core = NMD
 		}
-			create_subject = {
-				subject_type = carthaginian_colony
-				subject = NMD
-			}
-			set_country_flag = ctg_not_in_africa
+		create_subject = {
+			subject_type = carthaginian_colony
+			subject = NMD
 		}
-  }
-  option = {#keep to ourselves
-    name = flavor_ctg.22.b
-    ai_chance = { factor = 90 }
-    add_prestige = 10
-  }
+		set_country_flag = ctg_not_in_africa
+	}
+	option = {#keep to ourselves
+		name = flavor_ctg.22.b
+		ai_chance = { factor = 90 }
+		add_prestige = 10
+	}
 }
 
 #fate of Inland Africa
 country_event = {
-  id = flavor_ctg.23
-  title = flavor_ctg.23.t
-  desc = flavor_ctg.23.d
-  picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
-  fire_only_once = yes
+	id = flavor_ctg.23
+	title = flavor_ctg.23.t
+	desc = flavor_ctg.23.d
+	picture = COLONIZATION_eventPicture
+	fire_only_once = yes
 
-  trigger = {
-	has_country_flag = ctg_not_in_africa
-    any_owned_province = {
+	trigger = {
+		has_country_flag = ctg_not_in_africa
+		any_owned_province = {
 			OR = {
 				area = fezzan_area
 				area = north_saharan_area
@@ -1148,31 +1147,478 @@ country_event = {
 				area = sus_area
 			}
 		}
-  }
+	}
 	mean_time_to_happen = {
 		days = 3
 	}
 	major = yes
 
 
-  option = {#give them the provinces
-    name = flavor_ctg.23.a
-    ai_chance = { factor = 10 }
+	option = {#give them the provinces
+		name = flavor_ctg.23.a
+		ai_chance = { factor = 10 }
 		every_owned_province = {
 			limit = {
-			OR = {
-				area = fezzan_area
-				area = north_saharan_area
-				area = ouled_nail_area
-				area = hautes_plaines_area
-				area = tafilalt_area
-				area = marrekesh_area
-				area = sus_area
+				OR = {
+					area = fezzan_area
+					area = north_saharan_area
+					area = ouled_nail_area
+					area = hautes_plaines_area
+					area = tafilalt_area
+					area = marrekesh_area
+					area = sus_area
 				}
 			}
 			cede_province = NMD
 			set_country_flag = ctg_not_in_africa
 		}
-  }
+	}
+}
 
+
+#trading outpost
+country_event = {
+	id = flavor_ctg.24
+	title = flavor_ctg.24.t
+	desc = flavor_ctg.24.d
+	picture = HARBOUR_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = CTG
+		OR = {
+			AND = {
+				colonial_alaska = {
+					NOT = { has_country_modifier = carthaginian_trading_outpost}
+				}
+				any_owned_province = {
+					colonial_region = colonial_alaska
+				}
+			}
+			AND = {
+				colonial_louisiana = {
+					NOT = { has_country_modifier = carthaginian_trading_outpost}
+				}
+				any_owned_province = {
+					colonial_region = colonial_louisiana
+				}
+			}
+			AND = {
+				colonial_canada = {
+					NOT = { has_country_modifier = carthaginian_trading_outpost}
+				}
+				any_owned_province = {
+					colonial_region = colonial_canada
+				}
+			}
+			AND = {
+				colonial_eastern_america = {
+					NOT = { has_country_modifier = carthaginian_trading_outpost}
+				}
+				any_owned_province = {
+					colonial_region = colonial_eastern_america
+				}
+			}
+			AND = {
+				colonial_california = {
+					NOT = { has_country_modifier = carthaginian_trading_outpost}
+				}
+				any_owned_province = {
+					colonial_region = colonial_california
+				}
+			}
+			AND = {
+				colonial_mexico = {
+					NOT = { has_country_modifier = carthaginian_trading_outpost}
+				}
+				any_owned_province = {
+					colonial_region = colonial_mexico
+				}
+			}
+			AND = {
+			    colonial_colombia = {
+						NOT = { has_country_modifier = carthaginian_trading_outpost}
+					}
+					any_owned_province = {
+						colonial_region = colonial_colombia
+					}
+			}
+			AND = {
+			    colonial_the_carribean = {
+						NOT = { has_country_modifier = carthaginian_trading_outpost}
+					}
+					any_owned_province = {
+						colonial_region = colonial_the_carribean
+					}
+			}
+			AND = {
+			    colonial_peru = {
+						NOT = { has_country_modifier = carthaginian_trading_outpost}
+					}
+					any_owned_province = {
+						colonial_region = colonial_peru
+					}
+			}
+			AND = {
+			    colonial_la_plata = {
+						NOT = { has_country_modifier = carthaginian_trading_outpost}
+					}
+					any_owned_province = {
+						colonial_region = colonial_la_plata
+					}
+			}
+			AND = {
+			    colonial_brazil = {
+						NOT = { has_country_modifier = carthaginian_trading_outpost}
+					}
+					any_owned_province = {
+						colonial_region = colonial_brazil
+					}
+			}
+			AND = {
+			    colonial_australia = {
+						NOT = { has_country_modifier = carthaginian_trading_outpost}
+					}
+					any_owned_province = {
+						colonial_region = colonial_australia
+					}
+			}
+			AND = {
+			    colonial_australia = {
+						NOT = { has_country_modifier = carthaginian_trading_outpost}
+					}
+					any_owned_province = {
+						region = colonial_australia
+					}
+			}
+			AND = {
+			    southern_africa_superregion = {
+						NOT = { has_country_modifier = carthaginian_trading_outpost}
+					}
+					any_owned_province = {
+						superregion = southern_africa_superregion
+					}
+			}
+			AND = {
+			    africa_superregion = {
+						NOT = { has_country_modifier = carthaginian_trading_outpost}
+					}
+					any_owned_province = {
+						superregion = africa_superregion
+					}
+					add_base_production = 3
+					add_base_tax = 3
+					add_base_manpower = 3
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+	major = yes
+
+
+	option = {#give them the provinces
+		name = flavor_ctg.24.a
+		ai_chance = { factor = 10 }
+		if = {
+			limit = {
+				colonial_alaska = {
+					NOT = { has_country_modifier = carthaginian_trading_outpost}
+				}
+				any_owned_province = {
+					colonial_region = colonial_alaska
+				}
+			}
+			random_owned_province = {
+				limit = {
+					colonial_region = colonial_alaska
+				}
+				add_province_modifier = {
+					name = carthaginian_trading_outpost
+					duration = -1
+				}
+				add_base_production = 3
+				add_base_tax = 3
+				add_base_manpower = 3
+			}
+		}
+
+		if = {
+			limit = {
+				colonial_canada = {
+					NOT = { has_country_modifier = carthaginian_trading_outpost}
+				}
+				any_owned_province = {
+					colonial_region = colonial_canada
+				}
+			}
+			random_owned_province = {
+				limit = {
+					colonial_region = colonial_canada
+				}
+				add_province_modifier = {
+					name = carthaginian_trading_outpost
+					duration = -1
+				}
+				add_base_production = 3
+				add_base_tax = 3
+				add_base_manpower = 3
+			}
+		}
+
+		if = {
+			limit = {
+				colonial_california = {
+					NOT = { has_country_modifier = carthaginian_trading_outpost}
+				}
+				any_owned_province = {
+					colonial_region = colonial_california
+				}
+			}
+			random_owned_province = {
+				limit = {
+					colonial_region = colonial_california
+				}
+				add_province_modifier = {
+					name = carthaginian_trading_outpost
+					duration = -1
+				}
+				add_base_production = 3
+				add_base_tax = 3
+				add_base_manpower = 3
+			}
+		}
+
+		if = {
+			limit = {
+				colonial_louisiana = {
+					NOT = { has_country_modifier = carthaginian_trading_outpost}
+				}
+				any_owned_province = {
+					colonial_region = colonial_louisiana
+				}
+			}
+			random_owned_province = {
+				limit = {
+					colonial_region = colonial_louisiana
+				}
+				add_province_modifier = {
+					name = carthaginian_trading_outpost
+					duration = -1
+				}
+				add_base_production = 3
+				add_base_tax = 3
+				add_base_manpower = 3
+			}
+		}
+
+		if = {
+			limit = {
+				colonial_eastern_america = {
+					NOT = { has_country_modifier = carthaginian_trading_outpost}
+				}
+				any_owned_province = {
+					colonial_region = colonial_eastern_america
+				}
+			}
+			random_owned_province = {
+				limit = {
+					colonial_region = colonial_eastern_america
+				}
+				add_province_modifier = {
+					name = carthaginian_trading_outpost
+					duration = -1
+				}
+				add_base_production = 3
+				add_base_tax = 3
+				add_base_manpower = 3
+			}
+		}
+
+		if = {
+			limit = {
+				colonial_the_carribean = {
+					NOT = { has_country_modifier = carthaginian_trading_outpost}
+				}
+				any_owned_province = {
+					colonial_region = colonial_the_carribean
+				}
+			}
+			random_owned_province = {
+				limit = {
+					colonial_region = colonial_the_carribean
+				}
+				add_province_modifier = {
+					name = carthaginian_trading_outpost
+					duration = -1
+				}
+				add_base_production = 3
+				add_base_tax = 3
+				add_base_manpower = 3
+			}
+		}
+
+		if = {
+			limit = {
+				colonial_colombia = {
+					NOT = { has_country_modifier = carthaginian_trading_outpost}
+				}
+				any_owned_province = {
+					colonial_region = colonial_colombia
+				}
+			}
+			random_owned_province = {
+				limit = {
+					colonial_region = colonial_colombia
+				}
+				add_province_modifier = {
+					name = carthaginian_trading_outpost
+					duration = -1
+				}
+				add_base_production = 3
+				add_base_tax = 3
+				add_base_manpower = 3
+			}
+		}
+
+		if = {
+			limit = {
+				colonial_peru = {
+					NOT = { has_country_modifier = carthaginian_trading_outpost}
+				}
+				any_owned_province = {
+					colonial_region = colonial_peru
+				}
+			}
+			random_owned_province = {
+				limit = {
+					colonial_region = colonial_peru
+				}
+				add_province_modifier = {
+					name = carthaginian_trading_outpost
+					duration = -1
+				}
+				add_base_production = 3
+				add_base_tax = 3
+				add_base_manpower = 3
+			}
+		}
+
+		if = {
+			limit = {
+				colonial_brazil = {
+					NOT = { has_country_modifier = carthaginian_trading_outpost}
+				}
+				any_owned_province = {
+					colonial_region = colonial_brazil
+				}
+			}
+			random_owned_province = {
+				limit = {
+					colonial_region = colonial_brazil
+				}
+				add_province_modifier = {
+					name = carthaginian_trading_outpost
+					duration = -1
+				}
+				add_base_production = 3
+				add_base_tax = 3
+				add_base_manpower = 3
+			}
+		}
+
+		if = {
+			limit = {
+				colonial_la_plata = {
+					NOT = { has_country_modifier = carthaginian_trading_outpost}
+				}
+				any_owned_province = {
+					colonial_region = colonial_la_plata
+				}
+			}
+			random_owned_province = {
+				limit = {
+					colonial_region = colonial_la_plata
+				}
+				add_province_modifier = {
+					name = carthaginian_trading_outpost
+					duration = -1
+				}
+				add_base_production = 3
+				add_base_tax = 3
+				add_base_manpower = 3
+			}
+		}
+
+		if = {
+			limit = {
+				colonial_australia = {
+					NOT = { has_country_modifier = carthaginian_trading_outpost}
+				}
+				any_owned_province = {
+					colonial_region = colonial_australia
+				}
+			}
+			random_owned_province = {
+				limit = {
+					colonial_region = colonial_australia
+				}
+				add_province_modifier = {
+					name = carthaginian_trading_outpost
+					duration = -1
+				}
+				add_base_production = 3
+				add_base_tax = 3
+				add_base_manpower = 3
+			}
+		}
+
+		if = {
+			limit = {
+				africa_superregion = {
+					NOT = { has_country_modifier = carthaginian_trading_outpost}
+				}
+				any_owned_province = {
+					superregion = africa_superregion
+				}
+			}
+			random_owned_province = {
+				limit = {
+					superregion = africa_superregion
+				}
+				add_province_modifier = {
+					name = carthaginian_trading_outpost
+					duration = -1
+				}
+				add_base_production = 3
+				add_base_tax = 3
+				add_base_manpower = 3
+			}
+		}
+
+		if = {
+			limit = {
+				southern_africa_superregion = {
+					NOT = { has_country_modifier = carthaginian_trading_outpost}
+				}
+				any_owned_province = {
+					superregion = southern_africa_superregion
+				}
+			}
+			random_owned_province = {
+				limit = {
+					superregion = southern_africa_superregion
+				}
+				add_province_modifier = {
+					name = carthaginian_trading_outpost
+					duration = -1
+				}
+				add_base_production = 3
+				add_base_tax = 3
+				add_base_manpower = 3
+			}
+		}
+
+	}
 }

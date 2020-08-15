@@ -2632,3 +2632,6 @@ roman_ctg:0 "Roman Carthago"
 ibadi_minority:0 "Ibadi minority"
 sunni_minority:0 "Sunni minority"
 shiite_minority:0 "Shiite minority"
+
+carthaginian_trading_outpost:0 "Carthaginian Trading post"
+desc_carthaginian_trading_outpost:0 ""

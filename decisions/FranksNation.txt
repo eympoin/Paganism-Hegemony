@@ -46,6 +46,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			NOT = { exists = FRK}
+			development = 700
 			owns_core_province = 182
 			owns_core_province = 183
 			owns_core_province = 184
