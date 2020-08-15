@@ -1,7 +1,7 @@
 #4273 - Karaitan
 
-owner = NAJ
-controller = NAJ
+owner = DAW
+controller = DAW
 culture = bedouin_arabic
 religion = arabian
 capital = "Kariatan"
@@ -11,8 +11,8 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_local_autonomy = 90
-add_core = NAJ
+add_local_autonomy = 40
+add_core = DAW
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = indian
