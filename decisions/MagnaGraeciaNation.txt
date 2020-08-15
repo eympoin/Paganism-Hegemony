@@ -1,0 +1,79 @@
+country_decisions = {
+
+Magna_Graecia = {
+  major = yes
+  potential = {
+    normal_or_historical_nations = yes
+    was_never_end_game_tag_trigger = yes
+    OR = {
+      ai = no
+      is_playing_custom_nation = no
+    }
+    NOT = { exists = MGA }
+    is_colonial_nation = no
+    OR = {
+      is_former_colonial_nation = no
+      AND = {
+        is_former_colonial_nation = yes
+        ai = no
+      }
+    }
+    primary_culture = Griko
+
+
+  }
+  provinces_to_highlight = {
+    OR = {
+      province_id = 123
+      province_id = 2984
+      province_id = 4828
+      province_id = 1934
+      province_id = 1933
+      province_id = 122
+      province_id = 4802
+      province_id = 124
+      province_id = 2982
+      province_id = 4834
+    }
+    OR = {
+      NOT = { owned_by = ROOT }
+      NOT = { is_core = ROOT }
+    }
+  }
+  allow = {
+    is_free_or_tributary_trigger = yes
+    is_at_war = no
+    owns_core_province = 123
+    owns_core_province = 2984
+    owns_core_province = 4828
+    owns_core_province = 1934
+    owns_core_province = 1933
+    owns_core_province = 122
+    owns_core_province = 4802
+    owns_core_province = 124
+    owns_core_province = 2982
+    owns_core_province = 4834
+
+  }
+  effect = {
+    remove_non_electors_emperors_from_empire_effect = yes
+    if = {
+      limit = {
+        NOT = { government_rank = 3 }
+      }
+      set_government_rank = 3
+    }
+
+    add_country_modifier = {
+      name = "centralization_modifier"
+      duration = 7300
+    }
+    add_prestige = 25
+    set_country_flag = formed_MagnaGraecia_flag
+    change_tag = MGA
+  }
+  ai_will_do = {
+    factor = 0
+  }
+}
+}

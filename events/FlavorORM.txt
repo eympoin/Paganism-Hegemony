@@ -100,6 +100,6 @@ is_triggered_only = yes
       }
       add_government_reform = iqta
       2999 = {change_religion = ibadi}
-      4286 ={remove_province_modifier = ibadi_minority}
+      397 = {remove_province_modifier = ibadi_minority}
     }
 }
