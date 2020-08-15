@@ -1665,14 +1665,15 @@ country_event = {
 	title = flavor_ctg_col.1.t
 	desc = flavor_ctg_col.1.d
 	picture = COLONIZATION_eventPicture
+	fire_only_once = yes
 
 	trigger = {
 		tag = CTG
 		any_owned_province = {
 				colonial_region = colonial_alaska
-				CTG = {NOT = {has_country_flag = ctg_alaska} has_country_flag = trading_alaska}
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
-			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			CTG = {NOT = {has_country_flag = ctg_alaska} has_country_flag = trading_alaska}
 	}
 	mean_time_to_happen = {
 		days = 3
@@ -1704,14 +1705,15 @@ country_event = {
 	title = flavor_ctg_col.2.t
 	desc = flavor_ctg_col.2.d
 	picture = COLONIZATION_eventPicture
+	fire_only_once = yes
 
 	trigger = {
 		tag = CTG
 		any_owned_province = {
 				colonial_region = colonial_canada
-				CTG = {NOT = {has_country_flag = ctg_canada} has_country_flag = trading_canada}
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
-			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			CTG = {NOT = {has_country_flag = ctg_canada} has_country_flag = trading_canada}
 	}
 	mean_time_to_happen = {
 		days = 3
@@ -1742,14 +1744,15 @@ country_event = {
 	title = flavor_ctg_col.3.t
 	desc = flavor_ctg_col.3.d
 	picture = COLONIZATION_eventPicture
+	fire_only_once = yes
 
 	trigger = {
 		tag = CTG
 		any_owned_province = {
 				colonial_region = colonial_california
-				CTG = {NOT = {has_country_flag = ctg_california} has_country_flag = trading_california}
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
-			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			CTG = {NOT = {has_country_flag = ctg_california} has_country_flag = trading_california}
 	}
 	mean_time_to_happen = {
 		days = 3
@@ -1781,14 +1784,15 @@ country_event = {
 	title = flavor_ctg_col.4.t
 	desc = flavor_ctg_col.4.d
 	picture = COLONIZATION_eventPicture
+	fire_only_once = yes
 
 	trigger = {
 		tag = CTG
 		any_owned_province = {
 				colonial_region = colonial_eastern_america
-				CTG = {NOT = {has_country_flag = ctg_america} has_country_flag = trading_america}
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
-			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			CTG = {NOT = {has_country_flag = ctg_america} has_country_flag = trading_america}
 	}
 	mean_time_to_happen = {
 		days = 3
@@ -1820,14 +1824,15 @@ country_event = {
 	title = flavor_ctg_col.5.t
 	desc = flavor_ctg_col.5.d
 	picture = COLONIZATION_eventPicture
+	fire_only_once = yes
 
 	trigger = {
 		tag = CTG
 		any_owned_province = {
 				colonial_region = colonial_louisiana
-				CTG = {NOT = {has_country_flag = ctg_louisiana} has_country_flag = trading_louisiana}
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
-			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			CTG = {NOT = {has_country_flag = ctg_louisiana} has_country_flag = trading_louisiana}
 	}
 	mean_time_to_happen = {
 		days = 3
@@ -1859,14 +1864,15 @@ country_event = {
 	title = flavor_ctg_col.6.t
 	desc = flavor_ctg_col.6.d
 	picture = COLONIZATION_eventPicture
+	fire_only_once = yes
 
 	trigger = {
 		tag = CTG
 		any_owned_province = {
 				colonial_region = colonial_mexico
-				CTG = {NOT = {has_country_flag = ctg_mexico} has_country_flag = trading_mexico}
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
-			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			CTG = {NOT = {has_country_flag = ctg_mexico} has_country_flag = trading_mexico}
 	}
 	mean_time_to_happen = {
 		days = 3
@@ -1898,14 +1904,15 @@ country_event = {
 	title = flavor_ctg_col.7.t
 	desc = flavor_ctg_col.7.d
 	picture = COLONIZATION_eventPicture
+	fire_only_once = yes
 
 	trigger = {
 		tag = CTG
 		any_owned_province = {
 				colonial_region = colonial_the_carribean
-				CTG = {NOT = {has_country_flag = ctg_carribean} has_country_flag = trading_carribean}
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
-			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			CTG = {NOT = {has_country_flag = ctg_carribean} has_country_flag = trading_carribean}
 	}
 	mean_time_to_happen = {
 		days = 3
@@ -1937,14 +1944,15 @@ country_event = {
 	title = flavor_ctg_col.8.t
 	desc = flavor_ctg_col.8.d
 	picture = COLONIZATION_eventPicture
+	fire_only_once = yes
 
 	trigger = {
 		tag = CTG
 		any_owned_province = {
 				colonial_region = colonial_colombia
-				CTG = {NOT = {has_country_flag = ctg_colombia} has_country_flag = trading_colombia}
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
-			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			CTG = {NOT = {has_country_flag = ctg_colombia} has_country_flag = trading_colombia}
 	}
 	mean_time_to_happen = {
 		days = 3
@@ -1976,14 +1984,16 @@ country_event = {
 	title = flavor_ctg_col.9.t
 	desc = flavor_ctg_col.9.d
 	picture = COLONIZATION_eventPicture
+	fire_only_once = yes
 
 	trigger = {
 		tag = CTG
 		any_owned_province = {
 				colonial_region = colonial_brazil
-				CTG = {NOT = {has_country_flag = ctg_brazila} has_country_flag = trading_brazil}
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+
 			}
-			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			CTG = {NOT = {has_country_flag = ctg_brazila} has_country_flag = trading_brazil}
 	}
 	mean_time_to_happen = {
 		days = 3
@@ -2015,14 +2025,16 @@ country_event = {
 	title = flavor_ctg_col.10.t
 	desc = flavor_ctg_col.10.d
 	picture = COLONIZATION_eventPicture
+	fire_only_once = yes
 
 	trigger = {
 		tag = CTG
 		any_owned_province = {
 				colonial_region = colonial_peru
-				CTG = {NOT = {has_country_flag = ctg_peru} has_country_flag = trading_peru}
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
-			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			CTG = {NOT = {has_country_flag = ctg_peru} has_country_flag = trading_peru}
+
 	}
 	mean_time_to_happen = {
 		days = 3
@@ -2054,12 +2066,13 @@ country_event = {
 	title = flavor_ctg_col.11.t
 	desc = flavor_ctg_col.11.d
 	picture = COLONIZATION_eventPicture
+	fire_only_once = yes
 
 	trigger = {
 		tag = CTG
 		any_owned_province = {
 				colonial_region = colonial_la_plata
-				CTG = {NOT = {has_country_flag = ctg_plata} has_country_flag = trading_plata}
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
 			NOT = {has_province_modifier =  carthaginian_trading_outpost }
 	}
@@ -2093,14 +2106,16 @@ country_event = {
 	title = flavor_ctg_col.12.t
 	desc = flavor_ctg_col.12.d
 	picture = COLONIZATION_eventPicture
+	fire_only_once = yes
 
 	trigger = {
 		tag = CTG
 		any_owned_province = {
 				colonial_region = colonial_australia
-				CTG = {NOT = {has_country_flag = ctg_australia} has_country_flag = trading_australia}
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
-			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			CTG = {NOT = {has_country_flag = ctg_australia} has_country_flag = trading_australia}
+
 	}
 	mean_time_to_happen = {
 		days = 3
@@ -2132,15 +2147,16 @@ country_event = {
 	title = flavor_ctg_col.13.t
 	desc = flavor_ctg_col.13.d
 	picture = COLONIZATION_eventPicture
+	fire_only_once = yes
 
 	trigger = {
 		tag = CTG
 		any_owned_province = {
 				superregion = africa_superregion
-				CTG = {NOT = {has_country_flag = ctg_africa} has_country_flag = trading_africa}
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
-			NOT = {has_province_modifier =  carthaginian_trading_outpost }
 	}
+	CTG = {NOT = {has_country_flag = ctg_africa} has_country_flag = trading_africa}
 	mean_time_to_happen = {
 		days = 3
 	}
@@ -2171,14 +2187,16 @@ country_event = {
 	title = flavor_ctg_col.14.t
 	desc = flavor_ctg_col.14.d
 	picture = COLONIZATION_eventPicture
+	fire_only_once = yes
 
 	trigger = {
 		tag = CTG
 		any_owned_province = {
 				superregion = southern_africa_superregion
-				CTG = {NOT = {has_country_flag = ctg_south_africa} has_country_flag = trading_south_africa}
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
-			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			CTG = {NOT = {has_country_flag = ctg_south_africa} has_country_flag = trading_south_africa}
+
 	}
 	mean_time_to_happen = {
 		days = 3
