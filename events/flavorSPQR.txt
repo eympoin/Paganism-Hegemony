@@ -240,7 +240,7 @@ country_event = {#Avoiding a famine
     add_adm_power = -125
     add_dip_power = -75
     add_years_of_income = -1
-    any_neighbor_country = {
+    every_neighbor_country = {
       add_opinion = {
         who = ROOT
         modifier = opinion_draining_people_spq
@@ -593,7 +593,7 @@ country_event = {
         ruler_has_personality = cruel_personality
       }
     }
-    reverse_add_country_opinion = {
+    reverse_add_opinion = {
       who = SPQ
       modifier = Friendliness
     }
@@ -625,15 +625,12 @@ country_event = {
     ai_chance = {
       factor = 10
       modifier = {
-        factor = 10
-        modifier = {
-          factor = 20
-          NOT = { stability = 0 }
-        }
-        modifier = {
-          factor = 20
-          NOT = { prestige = 0 }
-        }
+        factor = 20
+        NOT = { stability = 0 }
+      }
+      modifier = {
+        factor = 20
+        NOT = { prestige = 0 }
       }
     }
     hidden_effect = {

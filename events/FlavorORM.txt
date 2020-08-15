@@ -1,6 +1,6 @@
 #Event n°1 : Yemen civil War------------
 
-namespace = flavor_ORM
+namespace = flavor_orm
 
 country_event = {
   id = "flavor_orm.1"
