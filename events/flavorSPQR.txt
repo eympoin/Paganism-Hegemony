@@ -1,6 +1,10 @@
 namespace = flavor_spqr
 namespace = flavor_ctgspqr
 
+#events 2X are for the monarchy
+#events with 3X are for the republic
+#events with 1X are non specific
+
 country_event = {#Defenestration
   id = flavor_spqr.1
   title = flavor_spqr.1.t
@@ -25,6 +29,10 @@ country_event = {#Defenestration
     change_government = republic
     add_government_reform = imperial_roman_curia_reform
     kill_ruler = yes
+    add_country_modifier = {
+      name = hostile_nobles_spq
+      duration = 18200
+    }
     if = {
       limit = {
         ai = no
@@ -194,6 +202,110 @@ country_event = {#The fire of Ostia
   }
 }
 
+country_event = {#Avoiding a famine
+  id = flavor_spqr.12
+  title = flavor_spqr.12.t
+  desc = flavor_spqr.12.d
+  picture = FAMINE_eventPicture
+
+  trigger = {
+    tag = SPQ
+    is_year = 1446
+  }
+
+  mean_time_to_happen = {
+    months = 12
+  }
+
+  option = {#Divert the new recruits to the fields
+    name = flavor_spqr.12.a
+    ai_chance = { factor = 50 }
+    add_adm_power = -75
+    add_yearly_manpower = -8
+    add_country_modifier = {
+      name = divert_recruits_spq
+      duration = 3650
+    }
+    custom_tooltip = effort_bear_fruit_tt
+    hidden_effect = {
+      country_event = {
+        id = flavor_spqr.121
+        days = 5263
+      }
+    }
+  }
+  option = {#Promote available lands
+    name = flavor_spqr.12.b
+    ai_chance = { factor = 30 }
+    add_adm_power = -125
+    add_dip_power = -75
+    add_years_of_income = -1
+    any_neighbor_country = {
+      add_opinion = {
+        who = ROOT
+        modifier = opinion_draining_people_spq
+      }
+    }
+    custom_tooltip = effort_bear_fruit_tt
+    hidden_effect = {
+      country_event = {
+        id = flavor_spqr.121
+        days = 5802
+      }
+    }
+  }
+  option = {#Buy grains from overseas
+    name = flavor_spqr.12.c
+    ai_chance = { factor = 15 }
+    add_years_of_income = -3
+    add_dip_power = -50
+    add_mercantilism = -3
+    custom_tooltip = effort_bear_fruit_tt
+    hidden_effect = {
+      country_event = {
+        id = flavor_spqr.121
+        days = 7300
+      }
+    }
+  }
+  option = {#Starvation cannot be avoided
+    name = flavor_spqr.12.e
+    ai_chance = { factor = 5 }
+    add_stability = -1
+    add_republican_tradition = -15
+    add_country_modifier = {
+      name = starvation
+      duration = 4380
+    }
+    hidden_effect = {
+      country_event = {
+        id = flavor_spqr.121
+        days = 10950
+      }
+    }
+  }
+}
+
+country_event = {
+  id = flavor_spqr.121
+  title = flavor_spqr.121.t
+  desc = flavor_spqr.121.d
+  picture = FARMING_eventPicture
+
+  is_triggered_only = yes
+
+  option = {
+    name = flavor_spqr.121.a
+    custom_tooltip = depop_change_tt
+    hidden_effect = {
+      remove_country_modifier = no_men_left_spq
+      add_country_modifier = {
+        name = slight_depopulation_spq
+        duration = -1
+      }
+    }
+  }
+}
 #Diplomatic events with the provinces
 
 country_event = {#Event for the provinces
@@ -221,6 +333,7 @@ country_event = {#Event for the provinces
       }
     }
     grant_independence = yes
+    add_truce_with = SPQ
     SPQ = {
       country_event = {
         id = flavor_spqr.1111
@@ -252,9 +365,10 @@ country_event = {#Event for the provinces
       set_country_flag = postponed_choice_spqr_province
       country_event = {
         id = flavor_spqr.111
-        days = 3650
+        days = 10950
       }
     }
+    add_truce_with = SPQ
     SPQ = {
       create_subject = {
         subject_type = roman_province_decen
@@ -298,6 +412,7 @@ country_event = {#Event for the provinces
         }
       }
     }
+    add_truce_with = SPQ
   }
 
   option = {#coming back
