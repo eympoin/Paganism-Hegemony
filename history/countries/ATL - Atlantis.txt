@@ -1,8 +1,8 @@
 government = monarchy
 add_government_reform = feudalism_reform
 technology_group = north_american
-religion = norse_pagan_reformed
-primary_culture = Vinlandic
+religion = animism
+primary_culture = arawak
 capital = 2573
 
 

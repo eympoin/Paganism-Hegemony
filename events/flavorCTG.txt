@@ -1687,6 +1687,8 @@ country_event = {
 			}
 			cede_province = HYP
 			add_core = HYP
+			change_culture = haida
+			change_religion = totemism
 
 		}
 		set_country_flag = ctg_alaska
@@ -1727,6 +1729,8 @@ country_event = {
 			}
 			cede_province = VAR
 			add_core = VAR
+			change_culture = Vinlandic
+			change_religion = norse_pagan_reformed
 		}
 		set_country_flag = ctg_canada
 		create_subject = {
@@ -1766,6 +1770,8 @@ country_event = {
 			}
 			cede_province = HSP
 			add_core = HSP
+			change_culture = salish
+			change_religion = totemism
 
 		}
 		set_country_flag = ctg_california
@@ -1806,6 +1812,8 @@ country_event = {
 			}
 			cede_province = AME
 			add_core = AME
+			change_culture = cherokee
+			change_religion = totemism
 
 		}
 		set_country_flag = ctg_america
@@ -1846,6 +1854,8 @@ country_event = {
 			}
 			cede_province = SKY
 			add_core = SKY
+			change_culture = osage
+			change_religion = totemism
 
 		}
 		set_country_flag = ctg_louisiana
@@ -1886,6 +1896,8 @@ country_event = {
 			}
 			cede_province = AUR
 			add_core = AUR
+			change_culture = aztek
+			change_religion = nahuatl
 
 		}
 		set_country_flag = ctg_mexico
@@ -1926,6 +1938,8 @@ country_event = {
 			}
 			cede_province = ATL
 			add_core = ATL
+			change_culture = arawak
+			change_religion = animism
 
 		}
 		set_country_flag = ctg_carribean
@@ -1966,6 +1980,8 @@ country_event = {
 			}
 			cede_province = PLD
 			add_core = PLD
+			change_culture = muisca
+			change_religion = inti
 
 		}
 		set_country_flag = ctg_colombia
@@ -2007,6 +2023,8 @@ country_event = {
 			}
 			cede_province = LAB
 			add_core = LAB
+			change_culture = tupinamba
+			change_religion = animism
 
 		}
 		set_country_flag = ctg_brazil
@@ -2048,6 +2066,8 @@ country_event = {
 			}
 			cede_province = ALP
 			add_core = ALP
+			change_culture = inca
+			change_religion = inti
 
 		}
 		set_country_flag = ctg_peru
@@ -2088,6 +2108,8 @@ country_event = {
 			}
 			cede_province = HYZ
 			add_core = HYZ
+			change_culture = mapuche
+			change_religion = animism
 
 		}
 		set_country_flag = ctg_plata
@@ -2129,6 +2151,8 @@ country_event = {
 			}
 			cede_province = RUF
 			add_core = RUF
+			change_culture = aboriginal
+			change_religion = animism
 
 		}
 		set_country_flag = ctg_australia
@@ -2170,6 +2194,8 @@ country_event = {
 			}
 			cede_province = ATP
 			add_core = ATP
+			change_culture = kongolese
+			change_religion = shamanism
 
 		}
 		set_country_flag = ctg_africa
@@ -2211,6 +2237,8 @@ country_event = {
 			}
 			cede_province = MRB
 			add_core = MRB
+			change_culture = nguni
+			change_religion = shamanism
 
 		}
 		set_country_flag = ctg_south_africa
@@ -2236,66 +2264,66 @@ country_event = {
 			OR = {
 				AND = {
 					colonial_region = colonial_alaska
-					has_country_flag = ctg_alaska
+					CTG = {has_country_flag = ctg_alaska}
 				}
 				AND = {
 					superregion = africa_superregion
-					has_country_flag = ctg_africa
+					CTG = {has_country_flag = ctg_africa}
 				}
 				AND = {
 					colonial_region = colonial_australia
-					has_country_flag = ctg_australia
+					CTG = {has_country_flag = ctg_australia}
 				}
 				AND = {
 					colonial_region = colonial_brazil
-					has_country_flag = ctg_brazil
+					CTG = {has_country_flag = ctg_brazil}
 				}
 				AND = {
 					colonial_region = colonial_la_plata
-					has_country_flag = ctg_plata
+					CTG = {has_country_flag = ctg_plata}
 				}
 				AND = {
 					colonial_region = colonial_colombia
-					has_country_flag = ctg_colombia
+					CTG = {has_country_flag = ctg_colombia}
 				}
 				AND = {
 					colonial_region = colonial_peru
-					has_country_flag = ctg_peru
+					CTG = {has_country_flag = ctg_peru}
 				}
 				AND = {
 					colonial_region = colonial_mexico
-					has_country_flag = ctg_mexico
+					CTG = {has_country_flag = ctg_mexico}
 				}
 				AND = {
 					colonial_region = colonial_the_carribean
-					has_country_flag = ctg_carribean
+					CTG = {has_country_flag = ctg_carribean}
 				}
 				AND = {
 					colonial_region = colonial_canada
-					has_country_flag = ctg_canada
+					CTG = {has_country_flag = ctg_canada}
 				}
 				AND = {
 					colonial_region = colonial_eastern_america
-					has_country_flag = ctg_america
+					CTG = {has_country_flag = ctg_america}
 				}
 				AND = {
 					colonial_region = colonial_louisiana
-					has_country_flag = ctg_louisiana
+					CTG = {has_country_flag = ctg_louisiana}
 				}
 				AND = {
 					colonial_region = colonial_california
-					has_country_flag = ctg_california
+					CTG = {has_country_flag = ctg_california}
 				}
 				AND = {
 					superregion = southern_africa_superregion
-					has_country_flag = ctg_south_africa
+					CTG = {has_country_flag = ctg_south_africa}
 				}
 			}
 			NOT = {has_province_modifier =  carthaginian_trading_outpost }
 		}
 	}
 	mean_time_to_happen = {
-		days = 3
+		days = 1
 	}
 
 
@@ -2307,6 +2335,8 @@ country_event = {
 				colonial_region = colonial_alaska
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
+			change_culture = haida
+			change_religion = totemism
 			cede_province = HYP
 			add_core = HYP
 		}
@@ -2315,6 +2345,8 @@ country_event = {
 				colonial_region = colonial_canada
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
+			change_culture = Vinlandic
+			change_religion = norse_pagan_reformed
 			cede_province = VAR
 			add_core = VAR
 		}
@@ -2323,6 +2355,8 @@ country_event = {
 				colonial_region = colonial_california
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
+			change_culture = salish
+			change_religion = totemism
 			cede_province = HSP
 			add_core = HSP
 		}
@@ -2331,14 +2365,28 @@ country_event = {
 				colonial_region = colonial_louisiana
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
+			change_culture = osage
+			change_religion = totemism
 			cede_province = SKY
 			add_core = SKY
+		}
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_eastern_america
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			change_culture = cherokee
+			change_religion = totemism
+			cede_province = AME
+			add_core = AME
 		}
 		every_owned_province = {
 			limit = {
 				colonial_region = colonial_the_carribean
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
+			change_culture = arawak
+			change_religion = animism
 			cede_province = ATL
 			add_core = ATL
 		}
@@ -2347,6 +2395,8 @@ country_event = {
 				colonial_region = colonial_mexico
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
+			change_culture = aztek
+			change_religion = nahuatl
 			cede_province = AUR
 			add_core = AUR
 		}
@@ -2355,6 +2405,8 @@ country_event = {
 				colonial_region = colonial_peru
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
+			change_culture = inca
+			change_religion = inti
 			cede_province = ALP
 			add_core = ALP
 		}
@@ -2363,6 +2415,8 @@ country_event = {
 				colonial_region = colonial_colombia
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
+			change_culture = muisca
+			change_religion = inti
 			cede_province = PLD
 			add_core = PLD
 		}
@@ -2371,6 +2425,8 @@ country_event = {
 				colonial_region = colonial_brazil
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
+			change_culture = tupinamba
+			change_religion = animism
 			cede_province = LAB
 			add_core = LAB
 		}
@@ -2379,6 +2435,8 @@ country_event = {
 				colonial_region = colonial_la_plata
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
+			change_culture = mapuche
+			change_religion = animism
 			cede_province = HYZ
 			add_core = HYZ
 		}
@@ -2387,6 +2445,8 @@ country_event = {
 				colonial_region = colonial_australia
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
+			change_culture = aboriginal
+			change_religion = animism
 			cede_province = RUF
 			add_core = RUF
 		}
@@ -2395,6 +2455,8 @@ country_event = {
 				superregion = africa_superregion
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
+			change_culture = kongolese
+			change_religion = shamanism
 			cede_province = MRB
 			add_core = MRB
 		}
@@ -2403,6 +2465,8 @@ country_event = {
 				superregion = southern_africa_superregion
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			}
+			change_culture = nguni
+			change_religion = shamanism
 			cede_province = ATP
 			add_core = ATP
 		}
