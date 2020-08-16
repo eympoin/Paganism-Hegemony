@@ -833,6 +833,63 @@ flavor_ctg.23.a:0 "If they are stonger, we are stronger."
 flavor_ctg.24.t:0 "A new trading outpost"
 flavor_ctg.24.d:0 "We have established our trading outpost in this region. It will be our main base of operation in this area. We can now start the creation of a protectorate here."
 flavor_ctg.24.a:0 "Our trade will flourish in this region."
+
+flavor_ctg_col.1.t:0 "The protectorate of Hyperboera"
+flavor_ctg_col.1.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.1.a:0 "That's a good news !"
+
+flavor_ctg_col.2.t:0 "The protectorate of Varangia"
+flavor_ctg_col.2.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.2.a:0 "That's a good news !"
+
+flavor_ctg_col.3.t:0 "The protectorate of Hesperidia"
+flavor_ctg_col.3.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.3.a:0 "That's a good news !"
+
+flavor_ctg_col.4.t:0 "The protectorate of America"
+flavor_ctg_col.4.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.4.a:0 "That's a good news !"
+
+flavor_ctg_col.5.t:0 "The protectorate of Skythia"
+flavor_ctg_col.5.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.5.a:0 "That's a good news !"
+
+flavor_ctg_col.6.t:0 "The protectorate of Auruma"
+flavor_ctg_col.6.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.6.a:0 "That's a good news !"
+
+flavor_ctg_col.7.t:0 "The protectorate of Atlantis"
+flavor_ctg_col.7.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.7.a:0 "That's a good news !"
+
+flavor_ctg_col.8.t:0 "The protectorate of Paludia"
+flavor_ctg_col.8.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.8.a:0 "That's a good news !"
+
+flavor_ctg_col.9.t:0 "The protectorate of Labyrinthia"
+flavor_ctg_col.9.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.9.a:0 "That's a good news !"
+
+flavor_ctg_col.10.t:0 "The protectorate of Alpina"
+flavor_ctg_col.10.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.10.a:0 "That's a good news !"
+
+flavor_ctg_col.11.t:0 "The protectorate of Hyperzephyra"
+flavor_ctg_col.11.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.11.a:0 "That's a good news !"
+
+flavor_ctg_col.12.t:0 "The protectorate of Rufusa"
+flavor_ctg_col.12.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.12.a:0 "That's a good news !"
+
+flavor_ctg_col.13.t:0 "The protectorate of Aethiopes"
+flavor_ctg_col.13.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.13.a:0 "That's a good news !"
+
+flavor_ctg_col.14.t:0 "The protectorate of Maerobia"
+flavor_ctg_col.14.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.14.a:0 "That's a good news !"
+
 #Rome
 flavor_spqr.1.t:0 "The defenestration of Roma"
 flavor_spqr.1.d:0 "Our king, Rex Julius Publius was attacked by the Senators of the Roman Curia, they hope to take power and bring back the republic, as the monarchy seems to have brought naught but poverty and suffering upon our people. They threw him though the window of his personal quarters after a heated argument, his life hangs by a thread."

@@ -81,3 +81,8 @@
  roman_province_cen_title_plural:0 "Roman Provinces"
  roman_province_cen_is_our:0 "§Y$NAME$§! is our Roman Province"
  roman_province_cen_long_desc:0 "A roman province is an area administered by a noble family loyal to the Senate, the military service and tradition in place make it ideal to foster an army but it can easily be integrated."
+ carthaginian_colony:0 "Carthaginian protectorate"
+ carthaginian_colony_title:0 "Carthaginian protectorate"
+ carthaginian_colony_title_plural:0 "Carthaginian protectorates"
+ carthaginian_colony_is_our:0 "§Y$NAME$§! is our Carthaginian protectorate"
+ carthaginian_colony_long_desc:0 "Carthaginian doesn't colonise like the other nations do. The only things that matters for them is trade and for that they create protectorate that are often lead by indegenous puppet kings."
