@@ -1337,6 +1337,8 @@ country_event = {
 				add_base_production = 3
 				add_base_tax = 3
 				add_base_manpower = 3
+				change_culture = owner
+				change_religion = owner
 			}
 			set_country_flag = trading_alaska
 		}
@@ -1361,6 +1363,8 @@ country_event = {
 				add_base_production = 3
 				add_base_tax = 3
 				add_base_manpower = 3
+				change_culture = owner
+				change_religion = owner
 			}
 			set_country_flag = trading_canada
 		}
@@ -1385,6 +1389,8 @@ country_event = {
 				add_base_production = 3
 				add_base_tax = 3
 				add_base_manpower = 3
+				change_culture = owner
+				change_religion = owner
 			}
 			set_country_flag = trading_california
 		}
@@ -1409,6 +1415,8 @@ country_event = {
 				add_base_production = 3
 				add_base_tax = 3
 				add_base_manpower = 3
+				change_culture = owner
+				change_religion = owner
 			}
 			set_country_flag = trading_louisiana
 		}
@@ -1433,6 +1441,8 @@ country_event = {
 				add_base_production = 3
 				add_base_tax = 3
 				add_base_manpower = 3
+				change_culture = owner
+				change_religion = owner
 			}
 			set_country_flag = trading_america
 		}
@@ -1457,6 +1467,8 @@ country_event = {
 				add_base_production = 3
 				add_base_tax = 3
 				add_base_manpower = 3
+				change_culture = owner
+				change_religion = owner
 			}
 			set_country_flag = trading_carribean
 		}
@@ -1481,6 +1493,8 @@ country_event = {
 				add_base_production = 3
 				add_base_tax = 3
 				add_base_manpower = 3
+				change_culture = owner
+				change_religion = owner
 			}
 			set_country_flag = trading_mexico
 		}
@@ -1505,6 +1519,8 @@ country_event = {
 				add_base_production = 3
 				add_base_tax = 3
 				add_base_manpower = 3
+				change_culture = owner
+				change_religion = owner
 			}
 			set_country_flag = trading_colombia
 		}
@@ -1529,6 +1545,8 @@ country_event = {
 				add_base_production = 3
 				add_base_tax = 3
 				add_base_manpower = 3
+				change_culture = owner
+				change_religion = owner
 			}
 			set_country_flag = trading_peru
 		}
@@ -1553,6 +1571,8 @@ country_event = {
 				add_base_production = 3
 				add_base_tax = 3
 				add_base_manpower = 3
+				change_culture = owner
+				change_religion = owner
 			}
 			set_country_flag = trading_brazil
 		}
@@ -1577,6 +1597,8 @@ country_event = {
 				add_base_production = 3
 				add_base_tax = 3
 				add_base_manpower = 3
+				change_culture = owner
+				change_religion = owner
 			}
 			set_country_flag = trading_plata
 		}
@@ -1601,6 +1623,8 @@ country_event = {
 				add_base_production = 3
 				add_base_tax = 3
 				add_base_manpower = 3
+				change_culture = owner
+				change_religion = owner
 			}
 			set_country_flag = trading_australia
 		}
@@ -1625,6 +1649,8 @@ country_event = {
 				add_base_production = 3
 				add_base_tax = 3
 				add_base_manpower = 3
+				change_culture = owner
+				change_religion = owner
 			}
 			set_country_flag = trading_africa
 		}
@@ -1649,6 +1675,8 @@ country_event = {
 				add_base_production = 3
 				add_base_tax = 3
 				add_base_manpower = 3
+				change_culture = owner
+				change_religion = owner
 			}
 			set_country_flag = trading_south_africa
 		}
