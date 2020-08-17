@@ -449,13 +449,13 @@ demand_carthaginian_vassal = {
 				who = FROM
 			}
 			multiply_variable = { which = ai_value value = ai_value }
-			multiply_variable = { which = ai_value value = -1 }
+			divide_variable = { which = ai_value value = 20 }
 		}
 		add_entry = {
 			name = BASE
 			export_to_variable = {
 				variable_name = ai_value
-				value = -50
+				value = 10
 			}
 		}
 		add_entry = {

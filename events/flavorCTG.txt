@@ -2505,9 +2505,160 @@ country_event = {
 			limit = {
 				superregion = southern_africa_superregion
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+				is_city = yes
 			}
 			change_culture = nguni
 			change_religion = shamanism
+			cede_province = ATP
+			add_core = ATP
+		}
+	}
+}
+
+
+
+
+country_event = {
+	id = flavor_ctg.27
+	title = flavor_ctg.27.t
+	desc = flavor_ctg.27.d
+	picture = COLONIZATION_eventPicture
+	hidden = yes
+
+	trigger = {
+		is_subject_of_type = carthaginian_colony
+		NOT = {tag = VAR}
+		NOT = {tag = ATL}
+		NOT = {tag = AME}
+		NOT = {tag = HYP}
+		NOT = {tag = HSP}
+		NOT = {tag = SKY}
+		NOT = {tag = AUR}
+		NOT = {tag = PLD}
+		NOT = {tag = ALP}
+		NOT = {tag = HYZ}
+		NOT = {tag = RUF}
+		NOT = {tag = LAB}
+		NOT = {tag = MRB}
+		NOT = {tag = ATP}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+
+	option = {#give them the provinces
+		name = flavor_ctg.27.a
+		ai_chance = { factor = 10 }
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_alaska
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = HYP
+			add_core = HYP
+		}
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_canada
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = VAR
+			add_core = VAR
+		}
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_california
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = HSP
+			add_core = HSP
+		}
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_louisiana
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = SKY
+			add_core = SKY
+		}
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_eastern_america
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = AME
+			add_core = AME
+		}
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_the_carribean
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = ATL
+			add_core = ATL
+		}
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_mexico
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = AUR
+			add_core = AUR
+		}
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_peru
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = ALP
+			add_core = ALP
+		}
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_colombia
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = PLD
+			add_core = PLD
+		}
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_brazil
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = LAB
+			add_core = LAB
+		}
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_la_plata
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = HYZ
+			add_core = HYZ
+		}
+		every_owned_province = {
+			limit = {
+				colonial_region = colonial_australia
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = RUF
+			add_core = RUF
+		}
+		every_owned_province = {
+			limit = {
+				superregion = africa_superregion
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
+			cede_province = MRB
+			add_core = MRB
+		}
+		every_owned_province = {
+			limit = {
+				superregion = southern_africa_superregion
+				NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			}
 			cede_province = ATP
 			add_core = ATP
 		}
