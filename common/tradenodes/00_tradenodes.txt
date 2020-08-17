@@ -2203,7 +2203,7 @@ flanders={
 	}
 	members={
 		1269 100 1931 4381 4382 95 98 99 96 97 4383 4770 1742 87 88 89 1743 90 1865 4769 92 1744 2974
-		91 93 94 1866 #wallonia
+		91 93 94 1866 #wallonia 4844
 	}
 }
 rheinland={
@@ -2294,11 +2294,11 @@ bordeaux={
 	180 4111 4386 4387 #poitou_area
 	173 209 210 #basque_country
 	174 175 176 4840#pyrenees_area
-	177 178 4389 #loire_area
+	177 178 4389 4841#loire_area
 	2989
 	4694 4697 195 # new for 1.30
-	167 168 1879 4385 #normandy_area
-	184 179 4776 #orleans
+	167 168 1879 4385 4845#normandy_area
+	184 179 4776 4842#orleans
 	}
 }
 champagne={
@@ -2317,7 +2317,7 @@ champagne={
 		}
 	}
 	members={
-	181 186 4390 #champagne_area
+	181 186 4390 4843#champagne_area
 	187 #lorraine_area
 	165 1867 1871 #romandie_area
 	191 192 193 1877 4392 #bourgogne_area
