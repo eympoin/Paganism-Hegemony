@@ -1758,15 +1758,19 @@
  ATL:0"Atlantis" #Caraibe
  SKY:0"Skythia" #Louisiana
  HSP:0"Hesperidia" #California
- HYZ:0"Hyperzephyra" #La Plata
+
  AUR:0"Auruma" #Mexico
  VAR:0"Varangia" #Canada
  AME:0"America" #East America
  LAB:0"Labyrinthia" #Brazil
- PLD:0"Paludia"
+ PLD:0"Paludia" #Colombia
+ HYZ:0"Hyperzephyra" #La Plata
+ ALP:0 "Alpina"
+
+
  ATP:0"Aethiopes" #Africa
  MRB:0"Maerobia" #South Africa
- RUF:0"Rufusa" #Rufusa
+ RUF:0"Rufusa" #Australia
 
  ATL_ADJ:0"Atlantean" #Caraibe
  SKY_ADJ:0"Skythian" #Louisiana
@@ -1776,10 +1780,11 @@
  VAR_ADJ:0"Varangian" #Canada
  AME_ADJ:0"American" #East America
  LAB_ADJ:0"Labyrinthian" #Brazil
- PLD_ADJ:0"Paludian"
+ PLD_ADJ:0"Paludian"#colombia
  ATP_ADJ:0"Aethiopean" #Africa
  MRB_ADJ:0"Maerobian" #South Africa
- RUF_ADJ:0"Rufusan" #Rufusa
+ RUF_ADJ:0"Rufusan" #AUstralia
+ ALP_ADJ:0 "Alpinan"
 
 MGA:0 "Magna Graecia"
 MGA_ADJ:0 "Griko"
