@@ -32,7 +32,7 @@ monarchy = {
 				austrian_archduchy_reform
 				persian_empire_decen
 				persian_empire_stable
-				satrapdom
+				satrapdom_reform
 				persian_empire_cen
 				absolute_reform
 			}
