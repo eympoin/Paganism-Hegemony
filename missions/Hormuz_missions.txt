@@ -135,7 +135,7 @@ Hormuz_2 = {
   }
 
   Spice_island = {
-    icon = mission_the_riches_of_india
+    icon = mission_dominate_persian_gulf
     required_missions = {Control_trade India_Wealth}
     position = 6
     trigger = {
