@@ -11,3 +11,4 @@
  demand_carthaginian_vassal_tooltip:0 "Demand that they become our protectorate."
  demand_carthaginian_vassal_dialog:0 "[This.GetName] demands that you become their protectorate."
  demand_carthaginian_vassal_alert_tooltip:0 "A demand that we become a protectorate"
+ outpost_in_same_region.tooltip:0 "Has a trading outpost in the same colonial region"

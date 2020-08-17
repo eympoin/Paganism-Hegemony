@@ -4,6 +4,43 @@
 
 ### Nation specific idea groups
 
+SRC_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		defensiveness = 0.1
+	}
+	bonus = {
+	 development_cost = -0.1
+	}
+	trigger = {
+		tag = SRC
+	}
+	free = yes
+	greeko-roman_syncretism = {
+	 religious_unity = 0.33
+	 num_accepted_cultures = 1
+	}
+	center_of_the_mare_nostrum = {
+		merchants = 1
+	}
+	archimedes_home = {
+		technology_cost = -0.1
+	}
+	city_of_new_ideas = {
+		global_institution_spread = 0.15
+	}
+	great_bombard = {
+		artillery_power = 0.1
+	}
+	sicilian_union = {
+		land_morale = 0.05
+		global_manpower = 0.1
+	}
+}
+heavy_fleet = {
+	heavy_ship_power = 0.1
+	heavy_ship_cost = -0.1
+}
 TLC_ideas = {
 	start = {
 		cavalry_power = 0.2
