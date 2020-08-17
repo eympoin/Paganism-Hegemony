@@ -1356,10 +1356,6 @@ country_event = {
 	option = {#Let them rot
 		name = flavor_per_cw.11.e
 		ai_chance = { factor = 4 }
-		add_country_modifier = {
-			name = "not_helping_bal"
-			duration = 1825
-		}
 		reverse_add_opinion = {
 			who = SND
 			modifier = opinion_friendliness

@@ -192,7 +192,7 @@ lot_sea = {
 
 				area = home_counties_area
 				area = east_anglia_area
-				area = east_midlands_area_name
+				area = east_midlands_area
 				area = west_midlands_area
 			}
 			NOT = { owned_by = ROOT }

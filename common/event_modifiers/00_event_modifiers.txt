@@ -11617,12 +11617,12 @@ god_king= {
 	global_missionary_strength = 0.01
 	prestige = 1
 	church_loyalty_modifier = -0.05
-	estate_church_influence_modifier = -0.1
+	church_influence_modifier = -0.1
 }
 respect_the_tradtions = {
 	tolerance_own = 2
 	church_loyalty_modifier = 0.05
-	estate_church_influence_modifier = 0.1
+	church_influence_modifier = 0.1
 }
 
 ctg_own_path = {

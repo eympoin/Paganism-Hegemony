@@ -376,7 +376,7 @@ Seaxe_Unification_3 = {
 				}
 				add_casus_belli = {
 					target = MIE
-					casus_belli = cb_vassalize_mission
+					type = cb_vassalize_mission
 					months = 300
 				}
 			}
@@ -1178,9 +1178,7 @@ BRW_4 = {
 		}
 		trigger = {
 			any_owned_province = {
-				limit = {
-					trade_goods = cloth
-				}
+				trade_goods = cloth
 				base_production = 6
 				has_building = workshop
 				has_building = textile
