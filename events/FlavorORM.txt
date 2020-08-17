@@ -26,6 +26,10 @@ country_event = {
         2333 = { arabian_rebels = 1 }
         4286 = { shiite_rebels = 1 }
         397 = { ibadi_rebels = 1 }
+        add_country_modifier = {
+    			name = "Stabilize_the_country"
+    			duration = 2190
+    			}
         }
       option = {
         name = "flavor_orm.2.bc" #Arabian Faith
@@ -38,6 +42,10 @@ country_event = {
           name = "Hormuz_missionary"
           duration = 2190
         }
+        add_country_modifier = {
+    			name = "Stabilize_the_country"
+    			duration = 2190
+    			}
       }
       option = {
         name = "flavor_orm.3.c" # Muslim
@@ -72,6 +80,10 @@ is_triggered_only = yes
       add_government_reform = iqta
       2999 = {change_religion = shiite}
       4286 ={remove_province_modifier = shiite_minority}
+      add_country_modifier = {
+        name = "Stabilize_the_country"
+        duration = 2190
+        }
 
       }
     option = {
@@ -87,6 +99,10 @@ is_triggered_only = yes
       2999 = {change_religion = sunni}
       add_government_reform = iqta
       4286 ={remove_province_modifier = sunni_minority}
+      add_country_modifier = {
+        name = "Stabilize_the_country"
+        duration = 2190
+        }
     }
     option = {
       name = "flavor_orm.6.f" # ibadi faith
@@ -101,5 +117,9 @@ is_triggered_only = yes
       add_government_reform = iqta
       2999 = {change_religion = ibadi}
       397 = {remove_province_modifier = ibadi_minority}
+      add_country_modifier = {
+        name = "Stabilize_the_country"
+        duration = 2190
+        }
     }
 }

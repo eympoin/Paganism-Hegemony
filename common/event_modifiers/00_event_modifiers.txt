@@ -11654,3 +11654,7 @@ shiite_minority = {
 	local_unrest = 2
 	local_missionary_strength = -0.03
 }
+
+Stabilize_the_country = {
+	missionary_maintenance_cost = -0.2
+}

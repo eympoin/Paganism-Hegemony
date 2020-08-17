@@ -17,6 +17,8 @@ Hormuz_1 = {
       }
     }
     effect = {
+    add_treasury = 150
+    add_prestige = 15
       4287 = {
       add_unrest = 2
       add_devastation = 15
@@ -41,7 +43,7 @@ Hormuz_1 = {
     }
     effect = {
     add_mercantilism = 2
-    add_treasury = 300
+    add_treasury = 200
     395 = {
     add_unrest = 2
     add_devastation = 15
@@ -75,7 +77,8 @@ Hormuz_2 = {
     required_missions = {}
     position = 1
     trigger = {
-    religious_unity = 0.80
+    religious_unity = 0.70
+    has_country_modifier = Stabilize_the_country
     }
     effect = {
     dhofar_area = {
@@ -99,9 +102,24 @@ Hormuz_2 = {
     required_missions = {Stabilize_the_country}
     position = 2
     trigger = {
-
+      2999 = {
+        has_building = temple
+        has_building = marketplace
+      }
+      400 ={
+        has_building = temple
+        has_building = marketplace
+      }
     }
     effect = {
+    2999 = {
+      add_base_tax = 1
+      add_base_production = 2
+    }
+    400 = {
+      add_base_tax = 1
+      add_base_production = 2
+    }
 
     }
   }
@@ -110,15 +128,25 @@ Hormuz_2 = {
     icon = mission_bedouins
     required_missions = {Take_Al_Haasa}
     position = 4
+    provinces_to_highlight = {
+      province_id = 431
+      province_id = 4327
+      province_id = 575
+      province_id = 2233
+    }
     trigger = {
-    owns_or_non_sovereign_subject_of = 431
-    owns_or_non_sovereign_subject_of = 4327
-    owns_or_non_sovereign_subject_of = 575
-    owns_or_non_sovereign_subject_of = 2233
-
+      owns_or_non_sovereign_subject_of = 431
+      owns_or_non_sovereign_subject_of = 4327
+      owns_or_non_sovereign_subject_of = 575
+      owns_or_non_sovereign_subject_of = 2233
     }
     effect = {
-
+      makran_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ORM
+      }
     }
   }
 
@@ -126,17 +154,36 @@ Hormuz_2 = {
     icon = mission_arabian_sea_trade
     required_missions = {Secure_the_straits_of_hormuz}
     position = 5
+    provinces_to_highlight = {
+      area = makran_area
+    }
     trigger = {
-
+      makran_area = {
+        type = all
+        country_or_non_sovereign_subject_holds = ORM
+      }
+      2999 = {
+        trade_share ={
+          country = ORM
+          share = 55
+        }
+      }
     }
-    effect = {
+      effect = {
+         add_mercantilism = 2
+         2999 = {
+         center_of_trade = 3
+         }
+         431 = {
+         center_of_trade = 2
+         }
 
-    }
+      }
   }
 
   Spice_island = {
     icon = mission_dominate_persian_gulf
-    required_missions = {Control_trade India_Wealth}
+    required_missions = {Control_trade}
     position = 6
     trigger = {
 
@@ -184,9 +231,21 @@ Hormuz_3 = {
 
   India_Wealth = {
     icon = mission_riches_of_golconda
-    required_missions = {Take_Hejaz Secure_the_straits_of_hormuz}
-    position = 5
+    required_missions = {Control_trade}
+    position = 6
+    provinces_to_highlight = {
+      area = saurashtra_area
+      area = south_lanka_area
+    }
     trigger = {
+    saurashtra_area = {
+      type = all
+      country_or_non_sovereign_subject_holds = ORM
+    }
+    south_lanka_area = {
+      type = all
+      country_or_non_sovereign_subject_holds = ORM
+    }
 
     }
     effect = {
