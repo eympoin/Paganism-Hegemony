@@ -1,0 +1,24 @@
+# 179 Berry
+
+owner = FRO
+controller = FRO
+add_permanent_claim = FRP
+add_permanent_claim = FRR
+add_permanent_claim = FRV
+capital = "Chateauroux"
+is_city = yes
+culture = burgond
+religion = germanic
+hre = no
+base_tax = 4
+
+base_production = 3
+trade_goods = wine
+base_manpower = 3
+add_core = FRO
+discovered_by = eastern
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+
+
