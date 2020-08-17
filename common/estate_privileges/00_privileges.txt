@@ -6793,18 +6793,21 @@ estate_nobles_indebted_privilege_spqr = {
 		tag = SPQ
 	}						#Conditions for whether it is possible for the country to have this privilege (it will not display on the list if they are false, and will be revoked if it has already been granted)
 	can_select = {
-		NOT =  { has_country_flag = nobles_curtailed_spqr }
 	} 					#Conditions for whether the country is allowed to select the privilege (with conditions for why not displayed)
 	on_granted = {} 					#Effects executed immediately upon the privilege being taken
 	can_revoke = {
-		has_country_modifier = nobles_curtailed_spqr
+		NOT = {
+			estate_territory = {
+				estate = estate_nobles
+				territory = 15
+			}
+		}
 	} 					#Conditions for whether the country can revoke the privilege
 	on_revoked = {
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = -20
 		}
-		remove_country_modifier = nobles_curtailed_spqr
 	} 					#Effects executed upon the privilege being revoked by the country
 	on_invalid = {} 					#Effects executed upon the privilege being removed due to invalidity (is_valid becomes false or the estate is removed)
 	penalties = {

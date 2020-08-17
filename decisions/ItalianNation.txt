@@ -1,0 +1,120 @@
+country_decisions = {
+
+  cutting_back_nobles_spq = {
+    potential = {
+			normal_or_historical_nations = yes
+      NOT = { has_country_flag = curtailed_roman_nobles }
+      estate_territory = {
+        estate = estate_nobles
+        territory = 30
+      }
+    }
+    allow = {
+      is_at_war = no
+      stability = 2
+      NOT = { num_of_rebel_armies	= 1 }
+      NOT = { corruption = 4 }
+    }
+    effect = {
+      change_estate_land_share = {
+        estate = estate_nobles
+        share = -5
+      }
+      change_estate_land_share = {
+        estate = estate_burghers
+        share = 1
+      }
+      change_estate_land_share = {
+        estate = estate_church
+        share = 2
+      }
+      add_stability = -1
+      random_owned_province = {
+        noble_rebels = 1
+      }
+    }
+    ai_will_do = {
+			factor = 1
+		}
+  }
+
+  curtail_the_nobles_spq = {
+    potential = {
+			normal_or_historical_nations = yes
+      NOT = { has_country_flag = curtailed_roman_nobles }
+      NOT = {
+        estate_territory = {
+          estate = estate_nobles
+          territory = 30
+        }
+      }
+    }
+    allow = {
+      is_at_war = no
+      stability = 3
+      NOT = { num_of_rebel_armies	= 1 }
+      NOT = {
+        estate_territory = {
+          estate = estate_nobles
+          territory = 30
+        }
+      }
+    }
+    effect = {
+      if = {
+        limit = {
+          has_country_modifier = hostile_nobles_spq
+        }
+        custom_tooltip = curtail_nobles_spq_tt
+      }
+      hidden_effect = {
+        if = {
+          limit = {
+            has_country_modifier = hostile_nobles_spq
+          }
+          remove_country_modifier = hostile_nobles_spq
+          add_country_modifier = {
+            name = nobles_curtailed_spqr
+            duration = -1
+          }
+        }
+        set_country_flag = curtailed_roman_nobles
+      }
+      add_stability = -2
+      random_owned_province = {
+        noble_rebels = 1
+      }
+      random_owned_province = {
+        noble_rebels = 1
+      }
+    }
+    ai_will_do = {
+			factor = 1
+		}
+  }
+
+  the_roman_debt_spq = {
+    potential = {
+      has_country_modifier = massive_indebtment_spq
+      NOT = { has_country_flag = debt_being_fixed }
+    }
+    allow = {
+      crown_land_share = 30
+      NOT = { num_of_loans = 1 }
+    }
+    effect = {
+      set_estate_privilege = estate_burghers_control_over_monetary_policy
+      change_estate_land_share = {
+        estate = estate_burghers
+        share = 20
+      }
+      custom_tooltip = effort_bear_fruit_tt
+      hidden_effect = {
+        country_event = {
+          id = flavor_spqr.131
+          days = 1825
+        }
+      }
+    }
+  }
+}

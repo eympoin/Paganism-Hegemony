@@ -2599,6 +2599,8 @@ desc_divert_recruits_spq:0 "The new recruits have been given land in the country
 opinion_draining_people_spq:0 "Encouraging emigration"
 slight_depopulation_spq:0 "Mild depopulation"
 desc_slight_depopulation_spq:0 "The population is recovering and soon the new generations will fill in for those lost in the war."
+slight_indebtment_spq:0 "Slight Indebtment"
+desc_slight_indebtment_spq:0 "Our country is heavily indebted, a few mistakes could lead us back to a sorrowful economic state, but if we continue things will sort themselves out."
 
 need_of_reforms_monarchy:0 "Need of Reforms"
 republic_under_construction:0 "Republic under construction"

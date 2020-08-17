@@ -329,6 +329,18 @@ estate_nobles =
 			}
 		}
 	}
+	#custom_name = {
+	#	desc = estate_patricians_spqr
+	#	trigger = {
+	#		OR = {
+	#			tag = WRM
+	#			tag = SPQ
+	#		}
+	#		has_country_flag = supported_the_senate
+	#		NOT = { has_country_modifier = nobles_curtailed_spqr }
+	#		NOT = { has_country_modifier = hostile_nobles_spq }
+	#	}
+	#}
 
 	color = { 200 0 50 }
 

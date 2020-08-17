@@ -11471,6 +11471,10 @@ massive_indebtment_spq = {
 	yearly_corruption = 0.1
 	interest = 1
 }
+slight_indebtment_spq = {
+	inflation_reduction = -0.03
+	yearly_corruption = 0.05
+}
 no_men_left_spq = {
 	manpower_recovery_speed = -0.8
 	global_manpower_modifier = -0.5
@@ -11503,7 +11507,8 @@ unrest_stirred_spqr = {
 	legitimacy = -0.5
 }
 nobles_curtailed_spqr = {
-	land_forcelimit_modifier = 0.1
+	land_forcelimit_modifier = -0.1
+	global_unrest = 3
 }
 roman_senators_mustering_forces = {
 	min_local_autonomy = 50
@@ -11519,6 +11524,9 @@ hostile_nobles_spq = {
 }
 divert_recruits_spq = {
 	manpower_recovery_speed = -0.2
+}
+production_bolstered_spq = {
+	trade_goods_size = 3
 }
 
 need_of_reforms_monarchy = {

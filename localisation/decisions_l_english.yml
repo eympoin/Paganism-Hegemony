@@ -264,3 +264,12 @@
 #Magna Graecia
 Magna_Graecia_title:0 "Create Magna Graecia"
 Magna_Graecia_desc:0 "The Griko people, need to be unite"
+
+#Reforming Roma
+cutting_back_nobles_spq_title:0 "Diminish noble influence"
+cutting_back_nobles_spq_desc:0 "The legacy of the Kingdom is a powerful nobility that controls most of the country, if we want to move forward they will have to be curtailed."
+curtail_the_nobles_spq_title:0 "Curtail the Roman nobles"
+curtail_the_nobles_spq_desc:0 "With the nobles weakened we can virtually push them out of the influence spheres of our nation, this will make them unhappy, but in time they will be powerless."
+curtail_nobles_spq_tt:0 "§YHostile Nobility§! will be replaced by §YNobles curtailed§!\nEffective change:\n  Leader cost: §G-30.0%§!\n  Land Maintenance Modifier: §G-20.0%§!\n  Land Forcelimit Modifier: §R-10.0%§!"
+the_roman_debt_spq_title:0 "The roman debt"
+the_roman_debt_spq_desc:0 "With the massive debt draining our coffers ever drier we cannot do anything but rely on those who have honed their financial skills over decades. Let us ask the burghers to help us out, this will make them powerful, but we have no choice."

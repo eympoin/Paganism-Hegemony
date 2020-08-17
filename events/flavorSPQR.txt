@@ -208,6 +208,8 @@ country_event = {#Avoiding a famine
   desc = flavor_spqr.12.d
   picture = FAMINE_eventPicture
 
+  fire_only_once = yes
+
   trigger = {
     tag = SPQ
     is_year = 1446
@@ -282,11 +284,12 @@ country_event = {#Avoiding a famine
         id = flavor_spqr.121
         days = 10950
       }
+      set_country_flag = starving_spq
     }
   }
 }
 
-country_event = {
+country_event = {#Fixing Depop
   id = flavor_spqr.121
   title = flavor_spqr.121.t
   desc = flavor_spqr.121.d
@@ -306,6 +309,186 @@ country_event = {
     }
   }
 }
+
+country_event = {#Small scale famine
+  id = flavor_spqr.122
+  title = flavor_spqr.122.t
+  desc = flavor_spqr.122.d
+  picture = FAMINE_eventPicture
+
+  trigger = {
+    OR = {
+      has_country_modifier = no_men_left_spq
+      has_country_modifier = slight_depopulation_spq
+    }
+  }
+
+  mean_time_to_happen = {
+    months = 60
+
+    modifier = {
+      factor = 0.2
+      has_country_modifier = no_men_left_spq
+    }
+  }
+
+  option = {#Buy grain
+    name = flavor_spqr.122.a
+    trigger = {
+      any_neighbor_country = {
+        limit = {
+          has_opinion = {
+            who = ROOT
+            value = 100
+          }
+        }
+      }
+    }
+    add_years_of_income = -1
+  }
+  option = {#Import from provinces
+    name = flavor_spqr.122.b
+    trigger = {
+      NOT = { has_country_flag = starving_spq }
+      num_of_subjects = 1
+      any_subject_country = {
+        limit = {
+          has_opinion = {
+            who = ROOT
+            value = 100
+          }
+        }
+      }
+    }
+    add_years_of_income = -0.5
+  }
+  option = {#Tax from provinces
+    name = flavor_spqr.122.c
+    trigger = {
+      NOT = { has_country_flag = starving_spq }
+      num_of_subjects = 1
+      any_subject_country = {
+        limit = {
+          NOT = { liberty_desire = 50 }
+        }
+      }
+    }
+    random_subject_country = {
+      limit = {
+        NOT = { liberty_desire = 50 }
+      }
+      add_liberty_desire = 20
+    }
+  }
+  option = {#Do nothing
+    name = flavor_spqr.122.e
+    add_prestige = -10
+    add_war_exhaustion = 3
+  }
+}
+
+country_event = {#Nobles curtailed
+  id = flavor_spqr.31
+  title = flavor_spqr.31.t
+  desc = flavor_spqr.31.d
+  picutre = NOBLE_ESTATE_eventPicture
+
+  fire_only_once = yes
+
+  trigger = {
+    has_country_modifier = nobles_curtailed_spqr
+  }
+
+  mean_time_to_happen = {
+    months = 600
+  }
+
+  option = {#Nobles no more
+    name = flavor_spqr.31.a
+    remove_country_modifier = nobles_curtailed_spqr
+  }
+}
+
+country_event = {#The debt subsides
+  id = flavor_spqr.131
+  title = flavor_spqr.131.t
+  desc = flavor_spqr.131.d
+  picture = ECONOMY_eventPicture
+
+  is_triggered_only = yes
+
+  option = {
+    name = flavor_spqr.131.a
+    hidden_effect = {
+      remove_country_modifier = massive_indebtment_spq
+      add_country_modifier = {
+        name = slight_indebtment_spq
+        duration = -1
+      }
+      country_event = {
+        id = flavor_spqr.132
+        days = 720
+      }
+    }
+    custom_tooltip = debt_subsides_tt
+  }
+}
+
+country_event = {#The economic future of Rome
+  id = flavor_spqr.132
+  title = flavor_spqr.132.t
+  desc = flavor_spqr.132.d
+  picture = ECONOMY_eventPicture
+
+  is_triggered_only = yes
+
+  option = {#trade
+    name = flavor_spqr.132.a
+    add_dip_power = -100
+    add_mercantilism = 8
+    add_country_modifier = {
+      name = extern_trade_focus
+      duration = -1
+    }
+  }
+  option = {#gemstones in rome and tarquinii
+    name = flavor_spqr.132.b
+    add_years_of_income = -2.5
+    add_mercantilism = -3
+    4836 = {
+      change_trade_goods = gemstones
+      add_base_production = 3
+    }
+    118 = {
+      change_trade_goods = gemstones
+      add_base_production = 3
+    }
+  }
+  option = {#paper in rome
+    name = flavor_spqr.132.c
+    add_years_of_income = -2.5
+    add_mercantilism = 2
+    118 = {
+      add_province_modifier = {
+        name = production_bolstered_spq
+        duration = -1
+      }
+      add_base_production = 2
+    }
+  }
+  option = {#wine in terracina
+    name = flavor_spqr.132.e
+    4732 = {
+      change_trade_goods = wine
+      add_province_modifier = {
+        name = production_bolstered_spq
+        duration = -1
+      }
+      add_base_production = 2
+    }
+  }
+}
+
 #Diplomatic events with the provinces
 
 country_event = {#Event for the provinces
@@ -595,7 +778,7 @@ country_event = {
     }
     reverse_add_opinion = {
       who = SPQ
-      modifier = Friendliness
+      modifier = opinion_friendliness
     }
   }
   option = {#Monarchy imprison them
