@@ -299,7 +299,7 @@ Seaxe_Unification_3 = {
 			}
 			trigger = {
 				dip_power = 100
-				treasury = 100
+				treasury = 50
 				reverse_has_opinion = {
 					who = EAA
 					value = 50
@@ -446,7 +446,7 @@ Seaxe_Unification_5 = {
 			provinces_to_highlight = {
 			}
 			trigger = {
-				Treasury = 200
+				Treasury = 50
 				adm_power = 100
 				dip_power = 100
 			}
