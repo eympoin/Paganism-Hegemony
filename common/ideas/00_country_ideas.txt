@@ -3,6 +3,43 @@
 # If adding new groups or ideas, make sure they are unique.
 
 ### Nation specific idea groups
+RVN_ideas = {
+	start = {
+		improve_relation_modifier = 0.15
+		idea_cost = -0.05
+	}
+	bonus = {
+	 legitimacy = 1
+	}
+	trigger = {
+		tag = RVN
+	}
+	free = yes
+	elite_infantry_rvn = {
+	 infantry_power = 0.1
+	}
+	perpetual_wars = {
+		war_exhaustion = -0.1
+	}
+	warrior_legacy = {
+		army_tradition_decay = -0.1
+	}
+	rebuild_the_countryside = {
+		development_cost = -0.05
+		build_cost = -0.1
+	}
+	queen_of_the_adriatic = {
+		global_trade_power = 0.1
+	}
+	a_new_corvus = {
+		capture_ship_chance = 0.1
+		leader_naval_shock = 1
+	}
+	agile_as_dolphin = {
+		leader_naval_manuever = 1
+	}
+}
+
 
 SRC_ideas = {
 	start = {
@@ -36,10 +73,10 @@ SRC_ideas = {
 		land_morale = 0.05
 		global_manpower = 0.1
 	}
-}
-heavy_fleet = {
-	heavy_ship_power = 0.1
-	heavy_ship_cost = -0.1
+	heavy_fleet = {
+		heavy_ship_power = 0.1
+		heavy_ship_cost = -0.1
+	}
 }
 TLC_ideas = {
 	start = {
