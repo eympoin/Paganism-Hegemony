@@ -11528,6 +11528,12 @@ divert_recruits_spq = {
 production_bolstered_spq = {
 	trade_goods_size = 3
 }
+rebuilding_the_country_spq = {
+	technology_cost = -0.15
+	advisor_cost = -0.25
+	development_cost = -0.2
+	prestige = 1
+}
 
 need_of_reforms_monarchy = {
 	global_unrest = -2

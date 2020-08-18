@@ -273,3 +273,5 @@ curtail_the_nobles_spq_desc:0 "With the nobles weakened we can virtually push th
 curtail_nobles_spq_tt:0 "§YHostile Nobility§! will be replaced by §YNobles curtailed§!\nEffective change:\n  Leader cost: §G-30.0%§!\n  Land Maintenance Modifier: §G-20.0%§!\n  Land Forcelimit Modifier: §R-10.0%§!"
 the_roman_debt_spq_title:0 "The roman debt"
 the_roman_debt_spq_desc:0 "With the massive debt draining our coffers ever drier we cannot do anything but rely on those who have honed their financial skills over decades. Let us ask the burghers to help us out, this will make them powerful, but we have no choice."
+roman_nation_title:0 "Claim the Roman title"
+roman_nation_desc:0 "With the city of Roma in our grasp we can proclaim ourselves as the heirs of the Rome of old."

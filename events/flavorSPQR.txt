@@ -42,6 +42,7 @@ country_event = {#Defenestration
     4732 = { pretender_rebels = 1 }
     custom_tooltip = SPQ_PROV_LEAVE_tt
     hidden_effect = {
+      add_republican_tradition = 25
       RVN = {
         country_event =  {
           id = flavor_spqr.111
@@ -111,7 +112,7 @@ country_event = {#Defenestration
   }
 }
 
-country_event = {#The fire of Ostia
+country_event = {#The flight of the Senator
   id = flavor_spqr.2
   title = flavor_spqr.2.t
   desc = flavor_spqr.2.d
@@ -328,7 +329,7 @@ country_event = {#Small scale famine
 
     modifier = {
       factor = 0.2
-      has_country_modifier = no_men_left_spq
+      has_country_modifier = starvation
     }
   }
 
@@ -403,6 +404,81 @@ country_event = {#Nobles curtailed
   }
 }
 
+country_event = {#Noble Unrest
+  id = flavor_spqr.32
+  title = flavor_spqr.32.t
+  desc = flavor_spqr.32.d
+  picture = BATTLE_eventPicture
+
+  trigger = {
+    has_country_modifier = hostile_nobles_spq
+    NOT = { stability = 2 }
+  }
+
+  mean_time_to_happen = {
+    months = 60
+  }
+
+  option = {#Battle
+    name = flavor_spqr.32.a
+    ai_chance = {
+      factor = 60
+    }
+    add_republican_tradition = 5
+    add_prestige = 10
+    118 = {
+      pretender_rebels = 1
+    }
+    4836 = {
+      pretender_rebels = 1
+    }
+    change_estate_land_share = {
+      estate = estate_nobles
+      share = -2
+    }
+  }
+  option = {#Negotiate
+    name = flavor_spqr.32.b
+    trigger = {
+      OR = {
+        is_at_war = no
+        war_score = 50
+      }
+    }
+    ai_chance = {
+      factor = 20
+    }
+    add_prestige = -5
+    add_republican_tradition = -10
+    change_estate_land_share = {
+      estate = estate_nobles
+      share = -1.2
+    }
+  }
+  option = {#Conceed
+    name = flavor_spqr.32.c
+    ai_chance = {
+      factor = 0.1
+      modifier = {
+        factor = 1000
+        NOT = { stability = -2 }
+      }
+      modifier = {
+        factor = 1000
+        is_at_war = yes
+        NOT = { war_score = -10 }
+      }
+    }
+    add_prestige = -15
+    add_republican_tradition = -10
+    add_stability = -1
+    change_estate_land_share = {
+      estate = estate_nobles
+      share = 4
+    }
+  }
+}
+
 country_event = {#The debt subsides
   id = flavor_spqr.131
   title = flavor_spqr.131.t
@@ -417,11 +493,11 @@ country_event = {#The debt subsides
       remove_country_modifier = massive_indebtment_spq
       add_country_modifier = {
         name = slight_indebtment_spq
-        duration = -1
+        duration = 3600
       }
       country_event = {
         id = flavor_spqr.132
-        days = 720
+        days = 7200
       }
     }
     custom_tooltip = debt_subsides_tt
@@ -483,7 +559,225 @@ country_event = {#The economic future of Rome
   }
 }
 
-#country_event pour des demandes d'aides par les bourgeois pendant la crise
+country_event = {#Helping the burghers
+  id = flavor_spqr.133
+  title = flavor_spqr.133.t
+  desc = flavor_spqr.133.d
+  picture = BANKRUPTCY_eventPicture
+
+  trigger = {
+    OR = {
+      has_country_modifier = massive_indebtment_spq
+      has_country_modifier = slight_indebtment_spq
+    }
+    has_country_flag = debt_being_fixed
+  }
+
+  mean_time_to_happen = {
+    months = 60
+  }
+
+  option = {
+    name = flavor_spqr.133.a
+    ai_chance = {
+      factor = 35
+    }
+    add_years_of_income = -3
+    add_prestige = 10
+    add_estate_loyalty = {
+      estate = estate_burghers
+      loyalty = 20
+    }
+    add_estate_influence_modifier = {
+      estate = estate_burghers
+      desc = bailed_out_burghers_spq
+      influence = -10
+      duration = 3650
+    }
+  }
+  option = {
+    name = flavor_spqr.133.b
+    ai_chance = {
+      factor = 35
+    }
+    add_years_of_income = -1.5
+    add_estate_loyalty = {
+      estate = estate_burghers
+      loyalty = 10
+    }
+  }
+  option = {
+    name = flavor_spqr.133.c
+    ai_chance = {
+      factor = 25
+    }
+    add_years_of_income = -0.5
+  }
+  option = {
+    name = flavor_spqr.133.e
+    ai_chance = {
+      factor = 5
+    }
+    add_prestige = -10
+    add_estate_loyalty = {
+      estate = estate_burghers
+      loyalty = -20
+    }
+  }
+}
+
+country_event = {#Republic but not senate
+  id = flavor_spqr.33
+  title = flavor_spqr.33.t
+  desc = flavor_spqr.33.d
+  picture = ELECTION_REPUBLICAN_eventPicture
+
+  trigger = {
+    tag = SPQ
+    government = republic
+    NOT = { has_reform = roman_curia_reform }
+    NOT = { has_reform = imperial_roman_curia_reform }
+  }
+
+  mean_time_to_happen = {
+    days = 1
+  }
+
+  option = {#the senate
+    name = flavor_spqr.33.a
+    ai_chance = {
+      factor = 100
+    }
+    add_prestige = 10
+    add_government_reform = roman_curia_reform
+  }
+  option = {#refusing
+    name = flavor_spqr.33.b
+    trigger = {
+      has_country_flag = formed_roma_flag
+    }
+    ai_chance = {
+      factor = 0
+    }
+    add_prestige = -10
+  }
+  after = {
+    if = {
+      limit = {
+        has_country_modifier = unrest_stirred_spqr
+      }
+      remove_country_modifier = unrest_stirred_spqr
+    }
+  }
+}
+
+country_event = {#Senate victorious
+  id = flavor_spqr.30
+  title = flavor_spqr.30.t
+  desc = flavor_spqr.30.d
+  picture = ADVISOR_eventPicture
+
+  fire_only_once = yes
+
+  trigger = {
+    has_country_flag = supported_the_senate
+    NOT = {
+      OR = {
+        has_country_modifier = no_men_left_spq
+        has_country_modifier = slight_depopulation_spq
+        has_country_modifier = slight_indebtment_spq
+        has_country_modifier = massive_indebtment_spq
+        has_country_modifier = wounds_of_bloody_war_spq
+        has_country_modifier = birthed_by_cw_spq
+        has_country_modifier = hostile_nobles_spq
+        has_country_modifier = nobles_curtailed_spqr
+      }
+    }
+  }
+
+  mean_time_to_happen = {
+    months = 12
+  }
+
+  option = {
+    name = flavor_spqr.30.a
+    add_stability = 1
+    add_prestige = 20
+    add_republican_tradition = 15
+    add_adm_power = 100
+    add_dip_power = 100
+    add_mil_power = 100
+    add_government_reform = roman_curia_reform
+    add_country_modifier = {
+      name = rebuilding_the_country_spq
+      duration = 7300
+    }
+    hidden_effect = {
+      clr_country_flag = debt_being_fixed
+      clr_country_flag = starving_spq
+    }
+  }
+}
+
+country_event = {#Kingdom victorious
+  title = flavor_spqr.20.t
+  desc = flavor_spqr.20.d
+  picture = GOOD_WITH_MONARCH_eventPicture
+
+  fire_only_once = yes
+
+  trigger = {
+    has_country_flag = supported_the_king
+    NOT = {
+      OR = {
+        has_country_modifier = no_men_left_spq
+        has_country_modifier = slight_depopulation_spq
+        has_country_modifier = slight_indebtment_spq
+        has_country_modifier = massive_indebtment_spq
+        has_country_modifier = wounds_of_bloody_war_spq
+        has_country_modifier = bloodthirsty_heritage_spq
+        has_country_modifier = unrest_stirred_spqr
+        has_country_modifier = nobles_curtailed_spqr
+      }
+    }
+  }
+
+  mean_time_to_happen = {
+    months = 12
+  }
+
+  option = {
+    name = flavor_spqr.20.a
+    add_stability = 1
+    add_prestige = 20
+    add_legitimacy = 15
+    add_adm_power = 100
+    add_dip_power = 100
+    add_mil_power = 100
+    add_government_reform = absolute_reform
+    set_government_rank = 3
+    add_country_modifier = {
+      name = rebuilding_the_country_spq
+      duration = 7300
+    }
+    hidden_effect = {
+      clr_country_flag = debt_being_fixed
+      clr_country_flag = starving_spq
+    }
+  }
+}
+
+country_event = {#absolute monarchy when formed #not finished
+  id = flavor_spqr.22
+  title = flavor_spqr.22.t
+  desc = flavor_spqr.22.d
+  picture = GOOD_WITH_MONARCH_eventPicture
+
+  trigger = {
+    tag = SPQ
+    tag = WRM
+  }
+}
 
 #Diplomatic events with the provinces
 
@@ -522,6 +816,9 @@ country_event = {#Event for the provinces
 
   option = {#Autonomy
     name = flavor_spqr.111.b
+    trigger = {
+      NOT = { has_country_flag = postponed_choice_spqr_province }
+    }
     ai_chance = {
       factor = 15
       modifier = {
@@ -534,10 +831,6 @@ country_event = {#Event for the provinces
           tag = URB
           tag = SIE
         }
-      }
-      modifier = {
-        factor = 0
-        has_country_flag = postponed_choice_spqr_province
       }
     }
     hidden_effect = {
@@ -561,6 +854,9 @@ country_event = {#Event for the provinces
 
   option = {#Loyal
     name = flavor_spqr.111.c
+    trigger = {
+      NOT = { has_country_flag = postponed_choice_spqr_province }
+    }
     ai_chance = {
       factor = 10
       modifier = {
@@ -575,14 +871,22 @@ country_event = {#Event for the provinces
           tag = TUS
         }
       }
+    }
+    add_truce_with = SPQ
+  }
+
+  option = {#coming back
+    name = flavor_spqr.111.e
+    trigger = {
+      has_country_flag = postponed_choice_spqr_province
+    }
+    ai_chance = {
+      factor = 0.1
       modifier = {
         factor = 60
-        has_country_flag = postponed_choice_spqr_province
         SPQ = {
           stability = 1
           NOT = { inflation = 5 }
-          prestige = 20
-          NOT = { average_unrest = 0 }
           OR = {
             NOT = { has_country_modifier = massive_indebtment_spq }
             NOT = { has_country_modifier = no_men_left_spq }
@@ -590,17 +894,8 @@ country_event = {#Event for the provinces
           }
         }
       }
-    }
-    add_truce_with = SPQ
-  }
-
-  option = {#coming back
-    name = flavor_spqr.111.e
-    ai_chance = {
-      factor = 0
       modifier = {
-        factor = 100
-        has_country_flag = postponed_choice_spqr_province
+        factor = 300
         SPQ = {
           stability = 1
           NOT = { inflation = 5 }

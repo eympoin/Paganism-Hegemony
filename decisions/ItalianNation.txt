@@ -11,7 +11,7 @@ country_decisions = {
     }
     allow = {
       is_at_war = no
-      stability = 2
+      stability = 1
       NOT = { num_of_rebel_armies	= 1 }
       NOT = { corruption = 4 }
     }
@@ -51,7 +51,7 @@ country_decisions = {
     }
     allow = {
       is_at_war = no
-      stability = 3
+      stability = 2
       NOT = { num_of_rebel_armies	= 1 }
       NOT = {
         estate_territory = {
@@ -114,7 +114,112 @@ country_decisions = {
           id = flavor_spqr.131
           days = 1825
         }
+        set_country_flag = debt_being_fixed
       }
     }
+    ai_will_do = {
+			factor = 1
+		}
+  }
+
+  roman_nation = {
+    major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_roma_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = WRM }
+			NOT = { tag = SPQ }
+			NOT = { tag = CTG }
+			NOT = { tag = HIS }		# Basque is a valid culture for both FRA and SPA
+			OR = {
+				ai = no
+				NOT = { exists = SPQ }
+			}
+			OR = {
+				primary_culture = roman
+				primary_culture = tuscan
+        primary_culture = salernian
+        primary_culture = sardinian
+			}
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 118	# Roma
+				province_id = 4836	# Tarquinii
+				province_id = 4732	# Terracina
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_at_war = no
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			NOT = { exists = SPQ }
+			owns_core_province = 118	# Roma
+		}
+		effect = {
+			118 = { #Roma
+				move_capital_effect = yes
+			}
+			change_tag = SPQ
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			lazio_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = SPQ
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							has_idea_group = default_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+      if = {
+        limit = {
+          government = monarchy
+        }
+        add_government_reform = absolute_reform
+      }
+			set_country_flag = formed_roma_flag
+		}
+    ai_will_do = {
+			factor = 1
+		}
   }
 }
