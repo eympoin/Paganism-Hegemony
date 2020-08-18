@@ -1,0 +1,331 @@
+Road_south = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = TLC
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  sedentarize_nomads = {
+    icon = mission_eastern_european_city
+    required_missions = {invade_moors}
+    position = 4
+    provinces_to_highlight = {
+    }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+  riches_Timbuktu = {
+    icon = mission_eastern_european_city
+    required_missions = {sedentarize_nomads}
+    provinces_to_highlight = {
+    }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+  improve_saharan_trade_roads = {
+    icon = mission_eastern_european_city
+    required_missions = {riches_Timbuktu}
+    provinces_to_highlight = {
+    }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+
+  conquest_of_mali = {
+    icon = mission_eastern_european_city
+    required_missions = {improve_saharan_trade_roads}
+    provinces_to_highlight = {
+    }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+}
+
+
+
+west_attack = {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = TLC
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  submit_mauretania = {
+    icon = mission_eastern_european_city
+    required_missions = {end_civil_war_jar}
+    position = 2
+    provinces_to_highlight = {
+    }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+  invade_moors = {
+    icon = mission_eastern_european_city
+    required_missions = {submit_mauretania}
+    provinces_to_highlight = {
+    }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+}
+
+civil_war_consequences = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = TLC
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  end_civil_war_jar = {
+    icon = mission_eastern_european_city
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+    }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+  punish_libyans = {
+    icon = mission_eastern_european_city
+    required_missions = {end_civil_war_jar}
+    provinces_to_highlight = {
+    }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+  integrate_romans = {
+    icon = mission_eastern_european_city
+    required_missions = {punish_libyans end_carthago}
+    provinces_to_highlight = {
+    }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+
+  masters_of_africa = {
+    icon = mission_eastern_european_city
+    required_missions = {integrate_romans invade_moors}
+    provinces_to_highlight = {
+    }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+}
+
+east_attack = {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = TLC
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  end_carthago = {
+    icon = mission_eastern_european_city
+    required_missions = {end_civil_war_jar}
+    position = 2
+    provinces_to_highlight = {
+    }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+}
+
+
+east_attack = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = TLC
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  raider_fleet = {
+    icon = mission_eastern_european_city
+    required_missions = {masters_of_africa}
+    provinces_to_highlight = {
+    }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+  crush_the_isles = {
+    icon = mission_eastern_european_city
+    required_missions = {raider_fleet}
+    provinces_to_highlight = {
+    }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+  riches_of_italy = {
+    icon = mission_eastern_european_city
+    required_missions = {crush_the_isles}
+    provinces_to_highlight = {
+    }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+}
+
+
+
+
+capital_and_pillage = {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = TLC
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  choice_capital = {
+    icon = mission_eastern_european_city
+    required_missions = {masters_of_africa}
+    position = 5
+    provinces_to_highlight = {
+    }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+
+  riches_of_hispania = {
+    icon = mission_eastern_european_city
+    required_missions = {crush_the_isles}
+    position = 7
+    provinces_to_highlight = {
+    }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+
+}
+
+egypt_and_monopol = {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = TLC
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  way_to_egypt = {
+    icon = mission_eastern_european_city
+    required_missions = {masters_of_africa}
+    position = 5
+    provinces_to_highlight = {
+    }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+
+  conquer_the_delta = {
+    icon = mission_eastern_european_city
+    required_missions = {way_to_egypt}
+    provinces_to_highlight = {
+    }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+
+  grain_monopol = {
+    icon = mission_eastern_european_city
+    required_missions = {conquer_the_delta}
+    provinces_to_highlight = {
+    }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+
+}
