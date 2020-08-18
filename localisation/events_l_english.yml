@@ -631,8 +631,8 @@ flavor_lot.2.a:0 "Submit"
 flavor_lot.2.b:0 "I am East Francia"
 
 
-flavor_lot.3.t:0 "§FROMCOUNTRY§	refuse to submit"
-flavor_lot.3.d:0 "§FROMCOUNTRY§ refuse to recognize us as the heir of East Francia"
+flavor_lot.3.t:0 "$FROMCOUNTRY$	refuse to submit"
+flavor_lot.3.d:0 "$FROMCOUNTRY$ refuse to recognize us as the heir of East Francia"
 flavor_lot.3.a:0 "If diplomacy doesn't work, war will !"
 
 flavor_lot.4.t:0 "Fate of the Dutch"
@@ -704,11 +704,11 @@ flavor_jar.4.a:0 "They are too strong for us to fight them... for now"
 flavor_jar.4.b:0 "We will never be their slaves again !"
 flavor_jar.4.c:0 "Asks our fellow Tripolitan to form a confederation to protect us from them."
 
-flavor_jar.5.t:0 " §FROMCOUNTRY§ has submit."
+flavor_jar.5.t:0 "$FROMCOUNTRY$ has submit."
 flavor_jar.5.d:0 "They accepted our demand."
 flavor_jar.5.a:0 "They are smarter than they look."
 
-flavor_jar.6.t:0 " §FROMCOUNTRY§ refuse to submit"
+flavor_jar.6.t:0 "$FROMCOUNTRY$ refuse to submit"
 flavor_jar.6.d:0 "They refused to submit, they will know our wrath."
 flavor_jar.6.a:0 "War will come soon enough"
 
@@ -717,7 +717,7 @@ flavor_jar.7.d:0 "With the Jarawa's threat on our independance, Tripoli sents us
 flavor_jar.7.a:0 "Together we are stronger."
 flavor_jar.7.b:0 "We don't need an alliance."
 
-flavor_jar.8.t:0 " §FROMCOUNTRY§ joins the confederation "
+flavor_jar.8.t:0 "$FROMCOUNTRY$ joins the confederation "
 flavor_jar.8.d:0 "After long debates, they have finally agreed on joining our confederation."
 flavor_jar.8.a:0 "Together we are stronger."
 #carthage

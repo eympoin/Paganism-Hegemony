@@ -12,7 +12,7 @@ base_manpower = 6
 capital = "Bari"
 is_city = yes # Estimated
 add_core = BAI
-
+fort_15th = yes
 extra_cost = 8
 center_of_trade = 1
 
