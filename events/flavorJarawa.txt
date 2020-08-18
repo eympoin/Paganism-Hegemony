@@ -57,7 +57,7 @@ country_event = {
 			limit = {
 				local_autonomy = 70
 			}
-			add_local_autonomy = -60
+			add_local_autonomy = -50
 		}
 		add_yearly_manpower = 4
 		add_years_of_income = 2

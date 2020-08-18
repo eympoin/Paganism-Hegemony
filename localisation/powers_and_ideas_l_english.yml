@@ -7884,3 +7884,24 @@
    archimedes_home_desc:0 "Since Antiquity with Archimedes, our city was the home of many renowned scientists."
    sicilian_union_desc:0 "With the Carthaginian-Syracusan war, the Syracusan tried to unite Sicily under their banner against the Carthaginian."
    city_of_new_ideas_desc:0 "With our position at the center of the Mediterranean, we are at the crossroad of many school of thoughts."
+
+
+   RVN_ideas:0 "Ravennate Ideas"
+   RVN_ideas_start:0 "Ravennate Traditions"
+   RVN_ideas_bonus:0 "Ravennate Ambition"
+
+   elite_infantry_rvn:0 "Elite infantery"
+   rebuild_the_countryside:0 "Rebuild the countryside"
+   queen_of_the_adriatic:0"Queen of the Adriatic"
+   perpetual_wars :0 "Perpetual war"
+   a_new_corvus:0 "A new corvus"
+   warrior_legacy:0 "Warrior's Legacy"
+   agile_as_dolphin:0 "Expert in naval Maneuver"
+
+   elite_infantry_rvn_desc:0 "The war with the Lombards turned a lot of farm boys into hardened veterans."
+   rebuild_the_countryside_desc:0 "The wars with the Lombards left the countryside destroyed. "
+   queen_of_the_adriatic_desc:0 "Ravenna earned that nickname because of its immense riches acquired through trade."
+   perpetual_wars_desc:0 "From the fall of the Empire and the Lombard Invasion to the last Roman-Lombard war, our city hasn't known a lot of peace time."
+   a_new_corvus_desc:0 "Thanks to this invention, they soon became expert at boarding ennemy ships."
+   warrior_legacy_desc:0 "Warrior's Legacy"
+   agile_as_dolphin_desc:0 "Expert in naval Maneuver"

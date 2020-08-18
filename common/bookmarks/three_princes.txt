@@ -1,0 +1,11 @@
+bookmark =
+{
+	name = "RUSSIA_NAME"
+	desc = "RUSSIA_DESC"
+	date = 1444.11.11
+	country = KIE
+	country = NOV
+	country = RSO
+	country = CUM
+	country = CUD
+}
