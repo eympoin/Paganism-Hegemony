@@ -15,4 +15,34 @@ spriteTypes = {
 		texturefile = "gfx//interface//icon_diplomacy_amromanprovince.dds"
 	}
 
+	spriteType = {
+		name = "GFX_icon_roman_provincedec"
+		texturefile = "gfx//interface//icon_roman_provincedec.dds"
+	}
+
+  spriteType = {
+		name = "GFX_icon_diplomacy_leadromanprovincedec"
+		texturefile = "gfx//interface//icon_diplomacy_leadromanprovincedec.dds"
+	}
+
+  spriteType = {
+		name = "GFX_diplomacy_amromanprovincedec"
+		texturefile = "gfx//interface//icon_diplomacy_amromanprovincedec.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_persian_satrapdom"
+		texturefile = "gfx//interface//icon_persian_satrapdom.dds"
+	}
+
+  spriteType = {
+		name = "GFX_icon_persian_leadsatrapdom"
+		texturefile = "gfx//interface//icon_persian_leadsatrapdom.dds"
+	}
+
+  spriteType = {
+		name = "GFX_icon_persian_amsatrapdom"
+		texturefile = "gfx//interface//icon_persian_amsatrapdom.dds"
+	}
+
 }
