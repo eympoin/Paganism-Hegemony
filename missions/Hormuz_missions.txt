@@ -113,11 +113,11 @@ Hormuz_2 = {
     }
     effect = {
     2999 = {
-      add_base_tax = 1
+      add_base_tax = 2
       add_base_production = 2
     }
     400 = {
-      add_base_tax = 1
+      add_base_tax = 2
       add_base_production = 2
     }
 
@@ -210,6 +210,18 @@ Hormuz_3 = {
     required_missions = {Stabilize_the_country}
     position = 2
     trigger = {
+    tihama_al_yemen_area = {
+      limit = {
+        NOT = { owned_by = ROOT }
+      }
+      add_permanent_claim = ORM
+    }
+    tihama_al_yemen_area = {
+      limit = {
+        NOT = { owned_by = ROOT }
+      }
+      add_permanent_claim = ORM
+    }
 
     }
     effect = {

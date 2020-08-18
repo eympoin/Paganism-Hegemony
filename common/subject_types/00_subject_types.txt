@@ -223,9 +223,9 @@ roman_province_cen = {
 	copy_from = default
 
 	# Graphics:
-	sprite = GFX_icon_vassal
-	diplomacy_overlord_sprite = GFX_diplomacy_leadvassal
-	diplomacy_subject_sprite = GFX_diplomacy_amvassal
+	sprite = GFX_icon_roman_province
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_leadromanprovince
+	diplomacy_subject_sprite = GFX_diplomacy_amromanprovince
 
 	# Properties:
 	can_be_integrated = yes
