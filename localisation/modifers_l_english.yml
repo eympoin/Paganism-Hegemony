@@ -3,6 +3,7 @@
  MODIFIER_SIEGE_BLOCKADE_PROGRESS:0 "Blockade Impact on Siege"
  MODIFIER_WARSCORE_COST_VS_OTHER_RELIGION:1 "War Score Cost vs Other Religions"
  MODIFIER_MERCENARY_DISCIPLINE:0 "Mercenary Discipline"
+ MODIFIER_MERCENARY_MANPOWER:0 "Mercenary Manpower Modifier"
  MODIFIER_ARTILLERY_BONUS_VS_FORT:0 "Artillery Bonus vs Fort"
  MODIFIER_DIPLOMATIC_UPKEEP:0 "Diplomatic Relations"
  MONTHLY_SPLENDOR:0 "Monthly Splendor"
