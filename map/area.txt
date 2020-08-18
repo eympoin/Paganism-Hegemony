@@ -1072,7 +1072,7 @@ northern_greece_area = { #3 #Northern Greece
 }
 
 thessalia_area = { #Thessalia Greece
-	147 4795 1853
+	147 4795 1853 4846 4849
 }
 
 thrace_area = { #5
@@ -1084,7 +1084,7 @@ bulgaria_area = { #5
 }
 
 silistria_area = {
-	4704 4706 159
+	4704 4706 159 4850 4851
 }
 
 wallachia_area = { #5
@@ -1215,7 +1215,11 @@ ankara_area = { #3
 }
 
 aegean_archipelago_area = { #4
-	164 2348 4700 4799 4801
+	2348 4700 4801 4847
+}
+
+kyklades_area = { #3
+	164 4799 4848
 }
 
 kastamonu_area = { #4

@@ -545,7 +545,7 @@ country_event = {
 	option = {
 		name = "shadow_kingdom.8.b"
 		ai_chance = {
-			factor = 20
+			factor = 10
 		}
 		trigger = {
 			has_global_flag = allied_with_leg_for_egypt
@@ -572,7 +572,7 @@ country_event = {
 	option = {
 		name = "shadow_kingdom.8.c"
 		ai_chance = {
-			factor = 10
+			factor = 0
 		}
 		trigger = {
 			has_global_flag = allied_with_leg_for_egypt
@@ -605,7 +605,7 @@ country_event = {
 	option = {
 		name = "shadow_kingdom.8.e"
 		ai_chance = {
-			factor = 20
+			factor = 0
 		}
 		trigger = {
 			NOT = {has_global_flag = allied_with_leg_for_egypt}
@@ -635,7 +635,7 @@ country_event = {
 	option = {
 		name = "shadow_kingdom.8.f"
 		ai_chance = {
-			factor = 60
+			factor = 90
 		}
 		MAK = {
 			grant_independence = yes

@@ -281,6 +281,7 @@ balkan_region = {
 		attica_area
 		thessalia_area
 		pelagonia_area
+		kyklades_area
 	}
 }
 

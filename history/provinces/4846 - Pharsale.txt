@@ -1,0 +1,19 @@
+#147 - Salonica
+
+owner = THE
+controller = THE
+culture = greek
+religion = theoi
+capital = "Pharsale"
+trade_goods = livestock
+hre = yes
+base_tax = 5
+base_production = 4
+base_manpower = 4
+is_city = yes
+add_core = THE
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = nomad_group
