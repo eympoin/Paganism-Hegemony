@@ -176,9 +176,9 @@ persian_satrapdom = {
 	copy_from = default
 
 	# Graphics:
-	sprite = GFX_icon_vassal
-	diplomacy_overlord_sprite = GFX_diplomacy_leadvassal
-	diplomacy_subject_sprite = GFX_diplomacy_amvassal
+	sprite = GFX_icon_persian_satrapdom
+	diplomacy_overlord_sprite = GFX_icon_persian_leadsatrapdom
+	diplomacy_subject_sprite = GFX_icon_persian_amsatrapdom
 
 	# Properties:
 	transfer_trade_if_merchant_republic = yes
@@ -269,9 +269,9 @@ roman_province_decen = {
 	copy_from = default
 
 	# Graphics:
-	sprite = GFX_icon_vassal
-	diplomacy_overlord_sprite = GFX_diplomacy_leadvassal
-	diplomacy_subject_sprite = GFX_diplomacy_amvassal
+	sprite = GFX_icon_roman_provincedec
+	diplomacy_overlord_sprite = GFX_icon_diplomacy_leadromanprovincedec
+	diplomacy_subject_sprite = GFX_diplomacy_amromanprovincedec
 
 	# Properties:
 	can_have_subjects_of_other_types = yes
