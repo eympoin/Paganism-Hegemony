@@ -338,10 +338,6 @@ Londinium_3 = {
 					add_permanent_claim = ROOT
 				}
 				4375 = {
-					limit = {
-					  NOT = { is_core = ROOT }
-					  NOT = { is_permanent_claim = ROOT }
-					}
 					add_permanent_claim = ROOT
 				}
 				east_anglia_area = {
