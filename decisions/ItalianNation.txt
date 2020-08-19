@@ -42,6 +42,8 @@ country_decisions = {
     potential = {
 			normal_or_historical_nations = yes
       NOT = { has_country_flag = curtailed_roman_nobles }
+      has_country_flag = supported_the_king
+      has_country_flag = supported_the_senate
       NOT = {
         estate_territory = {
           estate = estate_nobles
