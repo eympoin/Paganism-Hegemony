@@ -6820,3 +6820,115 @@ estate_nobles_indebted_privilege_spqr = {
 	on_cooldown_expires = {}			#Effect executed once the specified cooldown_years timer has run down
   ai_will_do = { factor = 1 }
 }
+
+
+
+estate_nobles_berber_chief = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+			tag = TLC
+	 	}						#Conditions for whether it is possible for the country to have this privilege (it will not display on the list if they are false, and will be revoked if it has already been granted)
+	can_select = {
+			mission_completed = invade_moors
+			any_owned_province = {
+				has_terrain = desert
+			}
+	 	}
+	benefits = {
+		global_manpower_modifier = 0.1
+	}
+	on_granted = {
+		add_yearly_manpower = 5
+		custom_tooltip = chief_autonomy_tooltip
+
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_terrain = desert
+				}
+				add_province_modifier = {
+					name = chiefs_autonomy
+					duration = -1
+				}
+			}
+		}
+	}
+	can_revoke = {  } 					#Conditions for whether the country can revoke the privilege
+	on_revoked = {
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+		custom_tooltip = chief_no_more_autonomy_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = chiefs_autonomy
+				}
+				remove_province_modifier = chiefs_autonomy
+			}
+		}
+	}
+	on_invalid = {
+		custom_tooltip = chief_no_more_autonomy_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = chiefs_autonomy
+				}
+				remove_province_modifier = chiefs_autonomy
+			}
+		}
+	}
+	penalties = {  } 					#Negative modifiers granted while the privilege is active (creates different tooltip to benefits)
+	conditional_modifier = {}
+	modifier_by_land_ownership = {  } 	#Multiplies the modifier by the % of land owned by the estate.
+	mechanics = {  } 					#Special mechanics the privilege enables
+	cooldown_years = 20 						#Time limit before which the privilege cannot be revoked
+	on_cooldown_expires = { }			#Effect executed once the specified cooldown_years timer has run down
+	ai_will_do = { factor = 0 }
+}
+
+
+estate_burghers_sponsor_roman_merchants = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+			tag = TLC
+	 	}						#Conditions for whether it is possible for the country to have this privilege (it will not display on the list if they are false, and will be revoked if it has already been granted)
+	can_select = {
+			mission_completed = integrate_romans
+			any_owned_province = {
+				culture_group = neo-roman
+			}
+	 	}
+	benefits = {
+		global_trade_power = 0.2
+	}
+	on_granted = {
+		add_mercantilism = 2
+	}
+	can_revoke = {  } 					#Conditions for whether the country can revoke the privilege
+	on_revoked = {
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -20
+		}
+	}
+	on_invalid = {
+	}
+	penalties = {  } 					#Negative modifiers granted while the privilege is active (creates different tooltip to benefits)
+	conditional_modifier = {}
+	modifier_by_land_ownership = {  } 	#Multiplies the modifier by the % of land owned by the estate.
+	mechanics = {  } 					#Special mechanics the privilege enables
+	cooldown_years = 20 						#Time limit before which the privilege cannot be revoked
+	on_cooldown_expires = { }			#Effect executed once the specified cooldown_years timer has run down
+	ai_will_do = { factor = 0 }
+}
