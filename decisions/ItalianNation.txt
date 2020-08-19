@@ -8,6 +8,8 @@ country_decisions = {
         estate = estate_nobles
         territory = 30
       }
+      has_country_flag = supported_the_king
+      has_country_flag = supported_the_senate
     }
     allow = {
       is_at_war = no
