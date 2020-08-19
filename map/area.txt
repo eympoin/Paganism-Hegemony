@@ -320,7 +320,7 @@ bourgogne_area = { #3
 }
 
 west_burgundy_area = { #3
-	191 1877 4392 4390 
+	191 1877 4392 4390
 }
 
 massif_central_area = { #5
@@ -1419,7 +1419,7 @@ cyrenaica_area = { #5
 }
 
 fezzan_area = { #4
-	2448 2449 2474 4567
+	2448 2449  4567
 }
 
 tunisia_area = { #3
@@ -1871,8 +1871,8 @@ azbin_area = { #5
     1156 2272 2273 2274 2276
 }
 
-east_azbin_area = { #3
-	2275 2277 2475
+east_azbin_area = { #4
+	2275 2277 2475 2474
 }
 
 atacora_oueme_area = { #5

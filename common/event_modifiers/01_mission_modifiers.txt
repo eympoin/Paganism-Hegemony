@@ -4561,5 +4561,13 @@ secure_our_back = {
 city_of_riches = {
   local_tax_modifier = 0.1
   province_trade_power_modifier = 0.3
-  local_institution_spread = 0.1	
+  local_institution_spread = 0.1
+}
+
+saharan_trade_monopol = {
+  caravan_power = 0.3
+}
+
+chiefs_autonomy = {
+  min_autonomy = 30
 }

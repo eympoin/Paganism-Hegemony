@@ -364,6 +364,7 @@ estate_nobles =
 		estate_nobles_monopoly_of_gems
 		estate_nobles_statutory_rights
 		estate_nobles_indebted_privilege_spqr
+		estate_nobles_berber_chief
 	}
 
 	agendas = {

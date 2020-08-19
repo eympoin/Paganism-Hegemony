@@ -25,6 +25,7 @@ east_francia_fall = {
     provinces_to_highlight = {
       culture = east-francian
       local_autonomy = 20
+      country_or_non_sovereign_subject_holds  = ROOT
     }
     trigger = {
       NOT = {
