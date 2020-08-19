@@ -108,6 +108,11 @@ country_event = {#Defenestration
       subject_type = roman_province_decen
       subject = PIS
     }
+    hidden_effect = {
+      add_truce_with = PIS
+      add_truce_with = RVN
+      add_truce_with = SIE
+    }
     set_country_flag = supported_the_king
   }
 }
@@ -645,12 +650,40 @@ country_event = {#Republic but not senate
 
   option = {#the senate
     name = flavor_spqr.33.a
+    trigger = {
+      has_country_flag = formed_roma_flag
+    }
     ai_chance = {
       factor = 100
     }
     add_prestige = 10
     add_government_reform = roman_curia_reform
   }
+
+  option = {#the senate by rebels
+    name = flavor_spqr.33.a
+    trigger = {
+      NOT = { has_country_flag = formed_roma_flag }
+    }
+    ai_chance = {
+      factor = 100
+    }
+    add_prestige = 10
+    add_government_reform = imperial_roman_curia_reform
+    hidden_effect = {
+      remove_government_reform = parliamentary_reform
+      remove_government_reform = union_of_states_reform
+      remove_government_reform = administrative_divisions_reform
+      remove_government_reform = provincial_governments_reform
+      remove_government_reform = lottery_reform
+      remove_government_reform = consolidation_of_power_reform
+      remove_government_reform = frequent_elections_reform
+      remove_government_reform = republicanism_reform
+      remove_government_reform = nepotism_reform
+      remove_government_reform = republican_authoritarianism_reform
+    }
+  }
+
   option = {#refusing
     name = flavor_spqr.33.b
     trigger = {

@@ -1168,11 +1168,7 @@ roman_curia_reform = {
 	icon = "imperial_roman_curia"
 	allow_normal_conversion = no
 	potential = {
-		OR = {
-			has_country_flag = roman_inheritor
-			tag = SPQ
-			tag = WRM
-		}
+		has_reform = roman_curia_reform
 	}
 	legacy_equivalent = roman_curia_legacy
 	valid_for_nation_designer = yes
@@ -1201,10 +1197,7 @@ imperial_roman_curia_reform = {
 	icon = "roman_curia"
 	allow_normal_conversion = no
 	potential = {
-		OR = {
-			tag = SPQ
-			tag = WRM
-		}
+		has_reform = imperial_roman_curia_reform
 	}
 	legacy_equivalent = imperial_roman_curia_legacy
 	valid_for_nation_designer = yes
