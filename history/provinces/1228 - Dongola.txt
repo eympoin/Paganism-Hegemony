@@ -1,7 +1,7 @@
 #1228 - Dongola
 
 culture = nubian
-religion = shamanism
+religion = ancient_egyptian_rl 
 capital = "Dunqula"
 owner = ABB
 controller = ABB

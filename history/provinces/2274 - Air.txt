@@ -17,6 +17,8 @@ native_hostileness = 9
 base_manpower = 1
 discovered_by = sub_saharan
 fort_15th = yes
+extra_cost = 8
+center_of_trade = 1
 
 1449.1.1 = { capital = "Agades" }
 1500.1.1 = {

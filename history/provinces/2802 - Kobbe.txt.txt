@@ -3,22 +3,13 @@
 culture = nubian 
 religion = shamanism #Fetishism
 capital = "Kobbe"
-add_core = DAR
-native_size = 50
-native_ferocity = 4
-native_hostileness = 9 
-trade_goods = unknown
+add_core = NUB
+owner = NUB
+controller = NUB
+is_city = yes
+trade_goods = grain
 hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
+base_tax = 2
+base_production = 2
+base_manpower = 2
 
-1596.1.1 = {
-	owner = DAR
-	controller = DAR
-	discovered_by = NUB
-	is_city = yes
-	discovered_by = ETH
-	trade_goods = grain
-}
-1682.1.1 = { religion = sunni }

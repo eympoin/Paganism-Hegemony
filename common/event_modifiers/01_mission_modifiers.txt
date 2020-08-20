@@ -4569,5 +4569,9 @@ saharan_trade_monopol = {
 }
 
 chiefs_autonomy = {
-  min_autonomy = 30
+  min_local_autonomy = 30
+}
+
+riches_of_africa = {
+  production_efficiency = 0.1
 }

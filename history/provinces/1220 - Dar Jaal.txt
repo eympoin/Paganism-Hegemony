@@ -1,7 +1,7 @@
 #1220 - Dar Ja'al
 
 culture = nubian
-religion = shamanism
+religion = ancient_egyptian_rl 
 capital = "Bayuda"
 owner = ABB
 controller = ABB
