@@ -5,7 +5,7 @@ unlock_cult = yemoja_cult
 unlock_cult = roog_cult
 unlock_cult = nyame_cult
 religion = shamanism #Fetishism
-primary_culture = yorumba
+primary_culture = kongolese
 capital = 1147	# Oredo
 
 
