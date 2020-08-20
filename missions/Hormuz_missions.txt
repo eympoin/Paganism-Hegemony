@@ -10,6 +10,11 @@ Hormuz_1 = {
     icon = mission_crush_delhi
     required_missions = {Stabilize_the_country}
     position = 2
+    provinces_to_highlight = {
+      OR = {
+        area = oman_area
+      }
+    }
     trigger = {
       oman_area = {
         type = all
@@ -37,6 +42,12 @@ Hormuz_1 = {
     icon = mission_unite_west_india
     required_missions = {End_of_Oman}
     position = 3
+    provinces_to_highlight = {
+      OR = {
+        province_id = 395
+        province_id = 396
+      }
+    }
     trigger = {
       owns_or_non_sovereign_subject_of = 395
       owns_or_non_sovereign_subject_of = 396
@@ -45,11 +56,13 @@ Hormuz_1 = {
     add_mercantilism = 2
     add_treasury = 200
     395 = {
-    add_unrest = 2
+    add_base_tax = -1
+    add_base_production = -1
     add_devastation = 15
     }
     396 = {
-    add_unrest = 2
+    add_base_tax = -1
+    add_base_production = -1
     add_devastation = 15
     }
     431 = { add_permanent_claim = ROOT }
@@ -129,10 +142,12 @@ Hormuz_2 = {
     required_missions = {Take_Al_Haasa}
     position = 4
     provinces_to_highlight = {
+    OR = {
       province_id = 431
       province_id = 4327
       province_id = 575
       province_id = 2233
+      }
     }
     trigger = {
       owns_or_non_sovereign_subject_of = 431
@@ -147,15 +162,24 @@ Hormuz_2 = {
         }
         add_permanent_claim = ORM
       }
+      sindh_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ORM
+      }
     }
   }
 
-  Control_trade= {
+  Control_trade = {
     icon = mission_arabian_sea_trade
     required_missions = {Secure_the_straits_of_hormuz}
     position = 5
     provinces_to_highlight = {
+    OR = {
       area = makran_area
+      area = sindh_area
+      }
     }
     trigger = {
       makran_area = {
@@ -177,14 +201,54 @@ Hormuz_2 = {
          431 = {
          center_of_trade = 2
          }
+         400 = {
+         center_of_trade = 3
+         }
+         saurashtra_area = {
+           limit = {
+             NOT = { owned_by = ROOT }
+           }
+           add_permanent_claim = ORM
+         }
+         south_lanka_area = {
+           limit = {
+             NOT = { owned_by = ROOT }
+           }
+           add_permanent_claim = ORM
+         }
 
       }
+  }
+  India_Wealth = {
+    icon = mission_riches_of_golconda
+    required_missions = {Control_trade}
+    position = 6
+    provinces_to_highlight = {
+    OR = {
+      area = saurashtra_area
+      area = south_lanka_area
+      }
+    }
+    trigger = {
+    saurashtra_area = {
+      type = all
+      country_or_non_sovereign_subject_holds = ORM
+    }
+    south_lanka_area = {
+      type = all
+      country_or_non_sovereign_subject_holds = ORM
+    }
+
+    }
+    effect = {
+
+    }
   }
 
   Spice_island = {
     icon = mission_dominate_persian_gulf
-    required_missions = {Control_trade}
-    position = 6
+    required_missions = {India_Wealth}
+    position = 7
     trigger = {
 
     }
@@ -210,22 +274,8 @@ Hormuz_3 = {
     required_missions = {Stabilize_the_country}
     position = 2
     trigger = {
-    tihama_al_yemen_area = {
-      limit = {
-        NOT = { owned_by = ROOT }
-      }
-      add_permanent_claim = ORM
-    }
-    tihama_al_yemen_area = {
-      limit = {
-        NOT = { owned_by = ROOT }
-      }
-      add_permanent_claim = ORM
-    }
-
     }
     effect = {
-
     }
   }
 
@@ -241,29 +291,7 @@ Hormuz_3 = {
     }
   }
 
-  India_Wealth = {
-    icon = mission_riches_of_golconda
-    required_missions = {Control_trade}
-    position = 6
-    provinces_to_highlight = {
-      area = saurashtra_area
-      area = south_lanka_area
-    }
-    trigger = {
-    saurashtra_area = {
-      type = all
-      country_or_non_sovereign_subject_holds = ORM
-    }
-    south_lanka_area = {
-      type = all
-      country_or_non_sovereign_subject_holds = ORM
-    }
 
-    }
-    effect = {
-
-    }
-  }
 
 }
 
