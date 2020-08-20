@@ -283,3 +283,65 @@ country_event = {
 				TLC = {country_event = { id = flavor_jar.6 }}
 		}
 	}
+
+	country_event = {
+		id = flavor_jar.9
+		title = "flavor_jar.9.t"
+		desc = "flavor_jar.9.d"
+		picture = UNIVERSITY_eventPicture
+		major = yes
+
+		is_triggered_only = yes
+
+		option = { #Ghadames 2450
+			name = "flavor_jar.9.a"
+			ai_chance = {
+				factor = 25
+			}
+			add_treasury = -300
+			2450 = {
+				add_base_tax = 4
+				add_base_production = 4
+				add_base_manpower = 4
+				move_capital_effect = yes
+			}
+			add_country_modifier = {
+				name = berber_capital
+				duration = -1
+			}
+		}
+		option = { #Carthage 341
+			name = "flavor_jar.9.b"
+			ai_chance = {
+				factor = 25
+			}
+			add_treasury = -300
+			341 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				move_capital_effect = yes
+			}
+			add_country_modifier = {
+				name = roman_capital
+				duration = -1
+			}
+		}
+		option = { #Hodna 2458
+			name = "flavor_jar.9.c"
+			ai_chance = {
+				factor = 25
+			}
+			add_treasury = -300
+			2458 = {
+				add_base_tax = 4
+				add_base_production = 4
+				add_base_manpower = 4
+				move_capital_effect = yes
+			}
+			add_country_modifier = {
+				name = mixed_capital
+				duration = -1
+			}
+		}
+	}

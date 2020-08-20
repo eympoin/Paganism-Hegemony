@@ -110,6 +110,7 @@ Road_south = {
         NOT = { is_permanent_claim = ROOT }
       }
       add_permanent_claim = ROOT
+       discover_country = TLC
     }
     }
   }
@@ -176,6 +177,7 @@ Road_south = {
           NOT = { is_permanent_claim = ROOT }
         }
         add_permanent_claim = ROOT
+        discover_country = TLC
       }
     }
   }
@@ -190,7 +192,7 @@ Road_south = {
     }
     trigger = {
     num_of_owned_provinces_with = {
-      value = 20
+      value = 25
       OR = {
         region = niger_region
       }
@@ -438,27 +440,7 @@ civil_war_consequences = {
       add_base_manpower = 1
       add_base_production = 1
     }
-    corsica_sardinia_area = {
-      limit = {
-        NOT = { is_core = ROOT }
-        NOT = { is_permanent_claim = ROOT }
-      }
-      add_permanent_claim = ROOT
-    }
-    sicily_area = {
-      limit = {
-        NOT = { is_core = ROOT }
-        NOT = { is_permanent_claim = ROOT }
-      }
-      add_permanent_claim = ROOT
-    }
-    baleares_area = {
-      limit = {
-        NOT = { is_core = ROOT }
-        NOT = { is_permanent_claim = ROOT }
-      }
-      add_permanent_claim = ROOT
-    }
+
     cyrenaica_area = {
       limit = {
         NOT = { is_core = ROOT }
@@ -531,34 +513,115 @@ east_attack = {
     provinces_to_highlight = {
     }
     trigger = {
-
+    num_of_galley = 40
+    navy_size_percentage = 0.95
     }
     effect = {
-
+    corsica_sardinia_area = {
+      limit = {
+        NOT = { is_core = ROOT }
+        NOT = { is_permanent_claim = ROOT }
+      }
+      add_permanent_claim = ROOT
+    }
+    sicily_area = {
+      limit = {
+        NOT = { is_core = ROOT }
+        NOT = { is_permanent_claim = ROOT }
+      }
+      add_permanent_claim = ROOT
+    }
+    western_sicily_area = {
+      limit = {
+        NOT = { is_core = ROOT }
+        NOT = { is_permanent_claim = ROOT }
+      }
+      add_permanent_claim = ROOT
+    }
+    baleares_area = {
+      limit = {
+        NOT = { is_core = ROOT }
+        NOT = { is_permanent_claim = ROOT }
+      }
+      add_permanent_claim = ROOT
+    }
+    add_country_modifier = {
+      name = naval_enthusiasm_mission
+      duration = 7300
+    }
     }
   }
   crush_the_isles = {
     icon = mission_eastern_european_city
     required_missions = {raider_fleet}
     provinces_to_highlight = {
+      OR = {
+        area = baleares_area
+        area = sicily_area
+        area = western_sicily_area
+        area = corsica_sardinia_area
+      }
+      NOT = {owned_by = ROOT}
     }
     trigger = {
-
+    baleares_area = {
+      type = all
+      owned_by = ROOT
+    }
+    sicily_area = {
+      type = all
+      owned_by = ROOT
+    }
+    western_sicily_area = {
+      type = all
+      owned_by = ROOT
+    }
+    corsica_sardinia_area = {
+      type = all
+      owned_by = ROOT
+    }
     }
     effect = {
-
+    add_years_of_income = 1
+    italy_region = {
+      limit = {
+        NOT = { is_core = ROOT }
+        NOT = { is_permanent_claim = ROOT }
+      }
+      add_permanent_claim = ROOT
+    }
+    iberia_region = {
+      limit = {
+        NOT = { is_core = ROOT }
+        NOT = { is_permanent_claim = ROOT }
+      }
+      add_permanent_claim = ROOT
+    }
+    add_country_modifier = {
+      name = pirate_bases
+      duration = -1
+    }
     }
   }
   riches_of_italy = {
     icon = mission_eastern_european_city
     required_missions = {crush_the_isles}
     provinces_to_highlight = {
+      region = italy_region
+      NOT = {owned_by = ROOT}
     }
     trigger = {
-
+    num_of_owned_provinces_with = {
+      value = 25
+      OR = {
+        region = italy_region
+      }
+    }
     }
     effect = {
-
+      add_years_of_income = 5
+      add_adm_power = 100
+      add_prestige = 10
     }
   }
 }
@@ -583,10 +646,10 @@ capital_and_pillage = {
     provinces_to_highlight = {
     }
     trigger = {
-
+      treasury = 300
     }
     effect = {
-
+      country_event = { id = flavor_jar.9 }
     }
   }
 
@@ -633,12 +696,21 @@ capital_and_pillage = {
     required_missions = {crush_the_isles}
     position = 7
     provinces_to_highlight = {
+      region = iberia_region
+      NOT = {owned_by = ROOT}
     }
     trigger = {
-
+    num_of_owned_provinces_with = {
+      value = 25
+      OR = {
+        region = iberia_region
+      }
+    }
     }
     effect = {
-
+      add_years_of_income = 5
+      add_adm_power = 100
+      add_prestige = 10
     }
   }
 

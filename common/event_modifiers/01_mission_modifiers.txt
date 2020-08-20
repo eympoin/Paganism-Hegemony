@@ -4575,3 +4575,26 @@ chiefs_autonomy = {
 riches_of_africa = {
   production_efficiency = 0.1
 }
+
+pirate_bases = {
+  galley_power = 0.1
+  own_coast_naval_combat_bonus = 1.0
+}
+
+berber_capital = {
+  cavalry_cost = -0.2
+  global_manpower_modifier = 0.1
+  leader_land_manuever = 1
+}
+
+roman_capital = {
+  trade_steering = 0.1
+  production_efficiency = 0.1
+  global_tax_modifier = 0.1
+}
+
+mixed_capital = {
+  trade_efficiency = 0.1
+  global_manpower_modifier = 0.1
+  num_accepted_cultures = 1	
+}
