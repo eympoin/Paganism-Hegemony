@@ -1181,7 +1181,6 @@ country_event = {
 	title = flavor_ctg.24.t
 	desc = flavor_ctg.24.d
 	picture = HARBOUR_eventPicture
-	fire_only_once = yes
 
 	trigger = {
 		tag = CTG
@@ -1329,6 +1328,7 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					colonial_region = colonial_alaska
+					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
 				add_province_modifier = {
 					name = carthaginian_trading_outpost
@@ -1355,6 +1355,7 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					colonial_region = colonial_canada
+					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
 				add_province_modifier = {
 					name = carthaginian_trading_outpost
@@ -1381,6 +1382,7 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					colonial_region = colonial_california
+					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
 				add_province_modifier = {
 					name = carthaginian_trading_outpost
@@ -1407,6 +1409,7 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					colonial_region = colonial_louisiana
+					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
 				add_province_modifier = {
 					name = carthaginian_trading_outpost
@@ -1433,6 +1436,7 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					colonial_region = colonial_eastern_america
+					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
 				add_province_modifier = {
 					name = carthaginian_trading_outpost
@@ -1459,6 +1463,7 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					colonial_region = colonial_the_carribean
+					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
 				add_province_modifier = {
 					name = carthaginian_trading_outpost
@@ -1485,6 +1490,7 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					colonial_region = colonial_mexico
+					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
 				add_province_modifier = {
 					name = carthaginian_trading_outpost
@@ -1511,6 +1517,7 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					colonial_region = colonial_colombia
+					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
 				add_province_modifier = {
 					name = carthaginian_trading_outpost
@@ -1537,6 +1544,7 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					colonial_region = colonial_peru
+					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
 				add_province_modifier = {
 					name = carthaginian_trading_outpost
@@ -1563,6 +1571,7 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					colonial_region = colonial_brazil
+					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
 				add_province_modifier = {
 					name = carthaginian_trading_outpost
@@ -1589,6 +1598,7 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					colonial_region = colonial_la_plata
+					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
 				add_province_modifier = {
 					name = carthaginian_trading_outpost
@@ -1615,6 +1625,7 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					colonial_region = colonial_australia
+					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
 				add_province_modifier = {
 					name = carthaginian_trading_outpost
@@ -1641,6 +1652,7 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					superregion = africa_superregion
+					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
 				add_province_modifier = {
 					name = carthaginian_trading_outpost
@@ -1667,6 +1679,7 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					superregion = southern_africa_superregion
+					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
 				add_province_modifier = {
 					name = carthaginian_trading_outpost

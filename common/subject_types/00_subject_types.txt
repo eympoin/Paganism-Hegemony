@@ -656,7 +656,7 @@ carthaginian_colony = {
 	}
 
 	# Subject Interactions:
-	customize_subject = yes
+	customize_subject = no
 	replace_governor = yes
 	start_colonial_war = yes
 	divert_trade = yes
@@ -664,6 +664,7 @@ carthaginian_colony = {
 	embargo_rivals = yes
 	block_settlement_growth = yes
 	allow_settlement_growth = yes
+	enforce_religion = no
 
 	# Modifiers:
 	modifier_overlord = {
