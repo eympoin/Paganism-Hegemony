@@ -1,5 +1,46 @@
 # These ideas are loaded after all country ideas, but before default idea.
 
+uralic_ideas = {
+	start = {
+		global_manpower_modifier = 0.15
+		global_tax_modifier = 0.1
+	}
+	bonus = {
+	 culture_conversion_cost = -0.3
+	}
+	trigger = {
+		OR = {
+			primary_culture = uralic
+			primary_culture = karelian
+		}
+	}
+	free = yes
+
+	ever_winter = {
+	 hostile_attrition = 1
+	}
+	tribal_council = {
+		advisor_cost = -0.1
+	}
+
+	repel_the_rus = {
+	  missionary = 1
+		global_missionary_strength = 0.02
+	}
+	siberian_frontier = {
+		may_establish_frontier = yes
+		auto_explore_adjacent_to_colony = yes
+	}
+	proud_of_our_culture = {
+		tolerance_own = 2
+	}
+	develop_fur_trade = {
+		trade_goods_size_modifier = 0.15
+	}
+	smi_living_of_the_land = {
+		land_attrition = -0.2
+	}
+}
 
 south_italian_ideas = {
 	start = {
