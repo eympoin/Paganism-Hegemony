@@ -731,12 +731,31 @@ egypt_and_monopol = {
     required_missions = {masters_of_africa}
     position = 5
     provinces_to_highlight = {
+      area = cyrenaica_area
+      NOT = {owned_by = ROOT}
     }
     trigger = {
-
+    cyrenaica_area = {
+      type = all
+      NOT = {owned_by = ROOT}
+    }
     }
     effect = {
-
+      add_mil_power = 100
+      delta_area = {
+        limit = {
+          NOT = { is_core = ROOT }
+          NOT = { is_permanent_claim = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      bahari_area = {
+        limit = {
+          NOT = { is_core = ROOT }
+          NOT = { is_permanent_claim = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 
@@ -744,12 +763,33 @@ egypt_and_monopol = {
     icon = mission_eastern_european_city
     required_missions = {way_to_egypt}
     provinces_to_highlight = {
+    OR = {
+      area = delta_area
+      area = bahari_area
+      }
+      NOT = {owned_by = ROOT}
     }
     trigger = {
+    delta_area = {
+      type = all
+      NOT = {owned_by = ROOT}
+    }
+    bahari_area = {
+      type = all
+      NOT = {owned_by = ROOT}
+    }
 
     }
     effect = {
-
+    egypt_region = {
+      limit = {
+        NOT = { is_core = ROOT }
+        NOT = { is_permanent_claim = ROOT }
+      }
+      add_permanent_claim = ROOT
+    }
+    add_dip_power = 100
+    add_years_of_income = 2
     }
   }
 
@@ -760,9 +800,33 @@ egypt_and_monopol = {
     }
     trigger = {
 
+      trading_bonus = {
+      trade_goods = grain
+      value = yes
+      }
+      production_leader = {
+      	trade_goods = grain
+      }
     }
     effect = {
+    add_years_of_income = 10
+    every_owned_province = {
+      limit = {
+        region = maghreb_region
+        trade_goods = grain
+      }
+      add_province_modifier = {
+        name = granary_of_the_mediterranean
+        duration = -1
+      }
+    }
 
+    change_price = {
+      trade_goods = grain
+      key = grain_monopol
+      value = 0.5
+      duration = -1
+      }
     }
   }
 
