@@ -4596,5 +4596,9 @@ roman_capital = {
 mixed_capital = {
   trade_efficiency = 0.1
   global_manpower_modifier = 0.1
-  num_accepted_cultures = 1	
+  num_accepted_cultures = 1
+}
+
+gems_trade = {
+	trade_goods_size = 2.0
 }
