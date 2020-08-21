@@ -1205,3 +1205,6 @@ riches_of_hispania_desc:0 ""
 way_to_egypt_desc:0 ""
 conquer_the_delta_desc:0 ""
 grain_monopol_desc:0 ""
+
+chief_autonomy_unlock_tooltip:0 "Allow the §Y Berber chieftains autonomy §! privilege for the nobles"
+sponsor_roman_merchant_unlock_tooltip:0 "Allow the §Y Sponsor Roman merchants §! privilege for the burghers"
