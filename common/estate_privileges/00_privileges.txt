@@ -6842,13 +6842,14 @@ estate_nobles_berber_chief = {
 		global_manpower_modifier = 0.1
 	}
 	on_granted = {
-		add_yearly_manpower = 5
+		add_yearly_manpower = 4
 		custom_tooltip = chief_autonomy_tooltip
 
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
 					has_terrain = desert
+					culture_group = maghrebi
 				}
 				add_province_modifier = {
 					name = chiefs_autonomy
@@ -6895,7 +6896,7 @@ estate_nobles_berber_chief = {
 
 
 estate_burghers_sponsor_roman_merchants = {
-	icon = privilege_grant_autonomy
+	icon = privilege_grant_new_world_charter
 	land_share = 5
 	max_absolutism = -5
 	loyalty = 0.05

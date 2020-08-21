@@ -720,6 +720,12 @@ flavor_jar.7.b:0 "We don't need an alliance."
 flavor_jar.8.t:0 "$FROMCOUNTRY$ joins the confederation "
 flavor_jar.8.d:0 "After long debates, they have finally agreed on joining our confederation."
 flavor_jar.8.a:0 "Together we are stronger."
+
+flavor_jar.9.t:0 "A choice of capital and a choice of culture"
+flavor_jar.9.d:0 "With our conquest of Africa and Mauretania, our population is really mixed between Romans and Imazighen. And our ancient Imazighen capital may not fit and reflect our kingdom."
+flavor_jar.9.b:0 "The Roman coast is the center of our Kingdom. We must embrace their culture."
+flavor_jar.9.a:0 "We are Imazighens not Romans. Our capital will stay where it is."
+flavor_jar.9.c:0 "Our capital will be the symbol of the Roman and Imazighen union."
 #carthage
 flavor_ctg.1.t:0 "A plot in the shadow"
 flavor_ctg.1.d:0 "The king Lucius III has many ennemies, he is a capable warrior but a poor diplomat and administrator. He is also cruel and rule its kingdom with an iron fist. Because of this many wants his death and thus many began to plot. One night the king was going to his bed and an assassin made his sleep the last one."

@@ -2647,3 +2647,21 @@ shiite_minority:0 "Shiite minority"
 
 carthaginian_trading_outpost:0 "Carthaginian Trading post"
 desc_carthaginian_trading_outpost:0 ""
+
+saharan_trade_monopol:0 "Saharan trade monopol"
+chiefs_autonomy:0 "Chieftain autonomy"
+riches_of_africa:0 "Mali's riches"
+pirate_bases:0 "Pirate bases"
+
+desc_saharan_trade_monopol:0 ""
+desc_chiefs_autonomy:0 ""
+desc_riches_of_africa:0 ""
+desc_pirate_bases:0 ""
+
+berber_capital:0 "An Imazighen capital"
+roman_capital:0 "A Roman capital"
+mixed_capital:0 "A mixed capital"
+
+desc_berber_capital:0 "Our capital is a jewel in the desert which embodies perfectly our culture."
+desc_roman_capital:0 ""
+desc_mixed_capital:0 "Our capital is the symbol of the Imazighen and Roman Union"

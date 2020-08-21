@@ -322,6 +322,9 @@ country_event = {
 				add_base_manpower = 1
 				move_capital_effect = yes
 			}
+			change_primary_culture = african
+			add_accepted_culture = moors
+			add_accepted_culture = berber_culture
 			add_country_modifier = {
 				name = roman_capital
 				duration = -1

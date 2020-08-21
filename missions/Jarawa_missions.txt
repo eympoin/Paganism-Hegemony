@@ -3,9 +3,13 @@ Road_south = {
   generic = no
   ai = yes
   potential = {
-    OR = {
-      tag = TLC
+  OR = {
+    tag = TLC
+    AND = {
+      tag = AFR
+      was_tag = TLC
     }
+  }
     NOT = { map_setup = map_setup_random }
   }
   sedentarize_nomads = {
@@ -43,7 +47,7 @@ Road_south = {
           }
         }
         1127 = {
-          cede_province = TLC
+          cede_province = ROOT
         }
       }
 
@@ -54,7 +58,7 @@ Road_south = {
         }
       }
       2474 = {
-        cede_province = TLC
+        cede_province = ROOT
       }
     }
 
@@ -65,7 +69,7 @@ Road_south = {
           }
         }
         2475 = {
-          cede_province = TLC
+          cede_province = ROOT
         }
       }
     }
@@ -110,7 +114,7 @@ Road_south = {
         NOT = { is_permanent_claim = ROOT }
       }
       add_permanent_claim = ROOT
-       discover_country = TLC
+       discover_country = ROOT
     }
     }
   }
@@ -143,19 +147,19 @@ Road_south = {
             has_building = marketplace
             has_building = workshop
             development = 20
-            owned_by = TLC
+            owned_by = ROOT
       }
       1133 = {
             has_building = marketplace
             has_building = workshop
             development = 20
-            owned_by = TLC
+            owned_by = ROOT
       }
       2274 = {
             has_building = marketplace
             has_building = workshop
             development = 15
-            owned_by = TLC
+            owned_by = ROOT
       }
     }
     effect = {
@@ -177,7 +181,7 @@ Road_south = {
           NOT = { is_permanent_claim = ROOT }
         }
         add_permanent_claim = ROOT
-        discover_country = TLC
+        discover_country = ROOT
       }
     }
   }
@@ -221,9 +225,13 @@ west_attack = {
   generic = no
   ai = yes
   potential = {
-    OR = {
-      tag = TLC
+  OR = {
+    tag = TLC
+    AND = {
+      tag = AFR
+      was_tag = TLC
     }
+  }
     NOT = { map_setup = map_setup_random }
   }
   submit_mauretania = {
@@ -335,9 +343,13 @@ civil_war_consequences = {
   generic = no
   ai = yes
   potential = {
-    OR = {
-      tag = TLC
+  OR = {
+    tag = TLC
+    AND = {
+      tag = AFR
+      was_tag = TLC
     }
+  }
     NOT = { map_setup = map_setup_random }
   }
   end_civil_war_jar = {
@@ -457,9 +469,13 @@ east_attack = {
   generic = no
   ai = yes
   potential = {
-    OR = {
-      tag = TLC
+  OR = {
+    tag = TLC
+    AND = {
+      tag = AFR
+      was_tag = TLC
     }
+  }
     NOT = { map_setup = map_setup_random }
   }
   end_carthago = {
@@ -502,9 +518,13 @@ east_attack = {
   generic = no
   ai = yes
   potential = {
-    OR = {
-      tag = TLC
+  OR = {
+    tag = TLC
+    AND = {
+      tag = AFR
+      was_tag = TLC
     }
+  }
     NOT = { map_setup = map_setup_random }
   }
   raider_fleet = {
@@ -634,9 +654,13 @@ capital_and_pillage = {
   generic = no
   ai = yes
   potential = {
-    OR = {
-      tag = TLC
+  OR = {
+    tag = TLC
+    AND = {
+      tag = AFR
+      was_tag = TLC
     }
+  }
     NOT = { map_setup = map_setup_random }
   }
   choice_capital = {
@@ -674,7 +698,7 @@ capital_and_pillage = {
             }
           }
           2932 = {
-            cede_province = TLC
+            cede_province = ROOT
           }
         }
         if = {
@@ -684,7 +708,7 @@ capital_and_pillage = {
           }
         }
         774 = {
-          cede_province = TLC
+          cede_province = ROOT
         }
       }
     }
@@ -721,9 +745,13 @@ egypt_and_monopol = {
   generic = no
   ai = yes
   potential = {
-    OR = {
-      tag = TLC
+  OR = {
+    tag = TLC
+    AND = {
+      tag = AFR
+      was_tag = TLC
     }
+  }
     NOT = { map_setup = map_setup_random }
   }
   way_to_egypt = {
