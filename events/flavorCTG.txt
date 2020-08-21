@@ -23,7 +23,7 @@ country_event = { #a plot in the shadow
 		ai_chance = { factor = 75 }
 		kill_ruler = yes
 		hidden_effect = {
-			country_event = { id = flavor_ctg.2 days = 7 }
+			country_event = { id = flavor_ctg.2 days = 14 }
 		}
 	}
 

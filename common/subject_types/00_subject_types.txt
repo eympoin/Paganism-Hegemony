@@ -668,7 +668,7 @@ carthaginian_colony = {
 
 	# Modifiers:
 	modifier_overlord = {
-		modifier = large_colonial_nation
+		modifier = large_colonial_nation_ctg
 		trigger = {
 			num_of_cities = 10
 		}

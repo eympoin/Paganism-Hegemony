@@ -841,7 +841,7 @@ flavor_ctg.24.d:0 "We have established our trading outpost in this region. It wi
 flavor_ctg.24.a:0 "Our trade will flourish in this region."
 
 flavor_ctg.28.t:0 "Carthago's unique colonization mechanic"
-flavor_ctg.28.d:0 "Carthago doesn't colonize like the other nations. The first colony in the region will become a trading outpost that you will keep, all the others in the region will be given to a special protectorate. This protectorate will have a culture and religion fitting the region. They gives you a part of their trade like a colony, but you can also divert their trade. They are more or less colonies without the tariffs system."
+flavor_ctg.28.d:0 "Carthago doesn't colonize like the other nations. The first colony in the region will become a trading outpost that you will keep, all the others in the region will be given to a special protectorate.\n This protectorate will have a culture and religion fitting the region. They gives you a part of their trade like a colony, but you can also divert their trade. They are more or less colonies without the tariffs system. Once they have ten provinces, they will give more global trade power than normal colonies (0.1 instead of 0.05 and yes normal colonies gives global trade power if you didn't know)."
 flavor_ctg.28.a:0 "That's good to know."
 
 flavor_ctg_col.1.t:0 "The protectorate of Hyperboera"

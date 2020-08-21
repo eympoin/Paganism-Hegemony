@@ -1209,6 +1209,13 @@ large_colonial_nation = {
 	land_forcelimit = 5
 }
 
+large_colonial_nation_ctg = {
+	merchants = 1
+	global_trade_power = 0.1
+	naval_forcelimit = 10
+	land_forcelimit = 5
+}
+
 march_subject = {
 	land_forcelimit = 1
 }
@@ -1703,5 +1710,5 @@ carthaginian_trading_outpost = {
 	province_trade_power_modifier = 0.2
 	local_development_cost= -0.1
 	local_sailors_modifier = 0.1
-	local_state_maintenance_modifier = -0.25	
+	local_state_maintenance_modifier = -0.25
 }
