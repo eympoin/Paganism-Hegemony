@@ -72,71 +72,6 @@ Hormuz_1 = {
     }
   }
 
-
-}
-
-#------------------------
-
-Hormuz_2 = {
-  slot = 2
-  generic = no
-  ai = yes
-  potential = {
-    tag = ORM
-    NOT = { map_setup = map_setup_random }
-  }
-  Stabilize_the_country = {
-    icon = mission_into_the_west
-    required_missions = {}
-    position = 1
-    trigger = {
-    religious_unity = 0.70
-    has_country_modifier = Stabilize_the_country
-    }
-    effect = {
-    dhofar_area = {
-        limit = {
-          NOT = { owned_by = ROOT }
-        }
-        add_permanent_claim = ORM
-    }
-    oman_area = {
-        limit = {
-          NOT = { owned_by = ROOT }
-        }
-        add_permanent_claim = ORM
-    }
-
-    }
-  }
-
-  Rebuild_the_country = {
-    icon = mission_gharbianss
-    required_missions = {Stabilize_the_country}
-    position = 2
-    trigger = {
-      2999 = {
-        has_building = temple
-        has_building = marketplace
-      }
-      400 ={
-        has_building = temple
-        has_building = marketplace
-      }
-    }
-    effect = {
-    2999 = {
-      add_base_tax = 2
-      add_base_production = 2
-    }
-    400 = {
-      add_base_tax = 2
-      add_base_production = 2
-    }
-
-    }
-  }
-
   Secure_the_straits_of_hormuz = { #claim on KIraman and sindh and pars
     icon = mission_bedouins
     required_missions = {Take_Al_Haasa}
@@ -241,6 +176,40 @@ Hormuz_2 = {
 
     }
     effect = {
+    every_owned_province = {
+      limit = {
+        trade_goods = gems
+      }
+      add_province_modifier = {
+        name = gems_trade
+        duration = -1
+      }
+    }
+
+    change_price = {
+      trade_goods = gems
+      key = gems_monopol
+      value = 0.2
+      duration = -1
+      }
+      batak_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ORM
+      }
+      north_sumatra_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ORM
+      }
+      west_java_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ORM
+      }
 
     }
   }
@@ -249,13 +218,87 @@ Hormuz_2 = {
     icon = mission_dominate_persian_gulf
     required_missions = {India_Wealth}
     position = 7
+    provinces_to_highlight = {
+    OR = {
+      area = batak_area
+      area = north_sumatra_area
+      area = west_java_area
+      }
+    }
     trigger = {
+    batak_area = {
+      type = all
+      country_or_non_sovereign_subject_holds = ORM
+    }
+    north_sumatra_area = {
+      type = all
+      country_or_non_sovereign_subject_holds = ORM
+    }
+    west_java_area = {
+      type = all
+      country_or_non_sovereign_subject_holds = ORM
+    }
 
     }
     effect = {
+    add_treasury = 200
+    add_mercantilism = 2
+    every_owned_province = {
+      limit = {
+        trade_goods = spices
+      }
+    }
+    change_price = {
+      trade_goods = spices
+      key = spices_monopol
+      value = 0.2
+      duration = -1
+      }
 
     }
   }
+
+
+}
+
+#------------------------
+
+Hormuz_2 = {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+    tag = ORM
+    NOT = { map_setup = map_setup_random }
+  }
+  Stabilize_the_country = {
+    icon = mission_into_the_west
+    required_missions = {}
+    position = 1
+    trigger = {
+    religious_unity = 0.70
+    has_country_modifier = Stabilize_the_country
+    }
+    effect = {
+    dhofar_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ORM
+    }
+    oman_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ORM
+    }
+
+    }
+  }
+
+
+
+
 
 }
 
@@ -269,13 +312,30 @@ Hormuz_3 = {
     tag = ORM
     NOT = { map_setup = map_setup_random }
   }
-  Control_yemen = {
-    icon = mission_unite_west_india
+  Rebuild_the_country = {
+    icon = mission_gharbianss
     required_missions = {Stabilize_the_country}
     position = 2
     trigger = {
+      2999 = {
+        has_building = temple
+        has_building = marketplace
+      }
+      400 ={
+        has_building = temple
+        has_building = marketplace
+      }
     }
     effect = {
+    2999 = {
+      add_base_tax = 2
+      add_base_production = 2
+    }
+    400 = {
+      add_base_tax = 2
+      add_base_production = 2
+    }
+
     }
   }
 
