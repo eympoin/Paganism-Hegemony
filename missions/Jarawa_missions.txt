@@ -9,7 +9,7 @@ Road_south = {
     NOT = { map_setup = map_setup_random }
   }
   sedentarize_nomads = {
-    icon = mission_eastern_european_city
+    icon = mission_saharan_route
     required_missions = {invade_moors}
     position = 4
     provinces_to_highlight = {
@@ -72,7 +72,7 @@ Road_south = {
 
   }
   riches_Timbuktu = {
-    icon = mission_eastern_european_city
+    icon = mission_invade_mali
     required_missions = {sedentarize_nomads}
     provinces_to_highlight = {
       OR = {
@@ -115,7 +115,7 @@ Road_south = {
     }
   }
   improve_saharan_trade_roads = {
-    icon = mission_eastern_european_city
+    icon = mission_bedouins
     required_missions = {riches_Timbuktu}
 
     provinces_to_highlight = {
@@ -184,7 +184,7 @@ Road_south = {
 
 
   conquest_of_mali = {
-    icon = mission_eastern_european_city
+    icon = mission_conquer_timbuktu
     required_missions = {improve_saharan_trade_roads}
     provinces_to_highlight = {
       region = niger_region
@@ -227,7 +227,7 @@ west_attack = {
     NOT = { map_setup = map_setup_random }
   }
   submit_mauretania = {
-    icon = mission_eastern_european_city
+    icon = mission_reconquer_ceuta
     required_missions = {end_civil_war_jar}
     position = 2
     provinces_to_highlight = {
@@ -283,7 +283,7 @@ west_attack = {
     }
   }
   invade_moors = {
-    icon = mission_eastern_european_city
+    icon = mission_moroccan_ports
     required_missions = {submit_mauretania}
     provinces_to_highlight = {
     OR = {
@@ -341,7 +341,7 @@ civil_war_consequences = {
     NOT = { map_setup = map_setup_random }
   }
   end_civil_war_jar = {
-    icon = mission_eastern_european_city
+    icon = mission_monarch_in_throne_room
     required_missions = {}
     position = 1
     provinces_to_highlight = {
@@ -360,7 +360,7 @@ civil_war_consequences = {
     }
   }
   punish_libyans = {
-    icon = mission_eastern_european_city
+    icon = mission_conquer_algiers
     required_missions = {end_civil_war_jar}
     provinces_to_highlight = {
       OR = {
@@ -386,7 +386,7 @@ civil_war_consequences = {
     }
   }
   integrate_romans = {
-    icon = mission_eastern_european_city
+    icon = mission_dominate_home_trade_node
     required_missions = {punish_libyans end_carthago submit_mauretania}
     provinces_to_highlight = {
       culture_group = neo-roman
@@ -419,7 +419,7 @@ civil_war_consequences = {
   }
 
   masters_of_africa = {
-    icon = mission_eastern_european_city
+    icon = mission_unite_home_region
     required_missions = {integrate_romans invade_moors}
     provinces_to_highlight = {
       region = maghreb_region
@@ -463,7 +463,7 @@ east_attack = {
     NOT = { map_setup = map_setup_random }
   }
   end_carthago = {
-    icon = mission_eastern_european_city
+    icon = africa_proconsulare
     required_missions = {end_civil_war_jar}
     position = 2
     provinces_to_highlight = {
@@ -508,7 +508,7 @@ east_attack = {
     NOT = { map_setup = map_setup_random }
   }
   raider_fleet = {
-    icon = mission_eastern_european_city
+    icon = mission_sponsor_piracy
     required_missions = {masters_of_africa}
     provinces_to_highlight = {
     }
@@ -552,7 +552,7 @@ east_attack = {
     }
   }
   crush_the_isles = {
-    icon = mission_eastern_european_city
+    icon = mission_seize_the_isles
     required_missions = {raider_fleet}
     provinces_to_highlight = {
       OR = {
@@ -604,7 +604,7 @@ east_attack = {
     }
   }
   riches_of_italy = {
-    icon = mission_eastern_european_city
+    icon = complete_the_risorgimento
     required_missions = {crush_the_isles}
     provinces_to_highlight = {
       region = italy_region
@@ -640,7 +640,7 @@ capital_and_pillage = {
     NOT = { map_setup = map_setup_random }
   }
   choice_capital = {
-    icon = mission_eastern_european_city
+    icon = mission_imperial_cities
     required_missions = {masters_of_africa}
     position = 5
     provinces_to_highlight = {
@@ -654,7 +654,7 @@ capital_and_pillage = {
   }
 
   another_way_east = {
-    icon = mission_eastern_european_city
+    icon = mission_reconquer_ceuta
     required_missions = {riches_Timbuktu}
     provinces_to_highlight = {
     area = kanem_area
@@ -692,7 +692,7 @@ capital_and_pillage = {
 
 
   riches_of_hispania = {
-    icon = mission_eastern_european_city
+    icon = mission_reclaim_andalucia
     required_missions = {crush_the_isles}
     position = 7
     provinces_to_highlight = {
@@ -727,7 +727,7 @@ egypt_and_monopol = {
     NOT = { map_setup = map_setup_random }
   }
   way_to_egypt = {
-    icon = mission_eastern_european_city
+    icon = mission_build_up_to_force_limit
     required_missions = {masters_of_africa}
     position = 5
     provinces_to_highlight = {
@@ -760,7 +760,7 @@ egypt_and_monopol = {
   }
 
   conquer_the_delta = {
-    icon = mission_eastern_european_city
+    icon = mission_egyptian_mamluk_soldier
     required_missions = {way_to_egypt}
     provinces_to_highlight = {
     OR = {
@@ -794,7 +794,7 @@ egypt_and_monopol = {
   }
 
   grain_monopol = {
-    icon = mission_eastern_european_city
+    icon = mission_a_million_rice_fields
     required_missions = {conquer_the_delta}
     provinces_to_highlight = {
     }

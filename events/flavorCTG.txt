@@ -2705,3 +2705,31 @@ country_event = {
 		}
 	}
 }
+
+
+country_event = { #carthage unique
+	id = flavor_ctg.28
+	title = "flavor_ctg.28.t"
+	desc = "flavor_ctg.28.d"
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+
+	trigger = {
+		tag = CTG
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+
+
+	option = {
+		name = "flavor_ctg.28.a"
+		ai_chance = { factor = 75 }
+		hidden_effect = {
+			add_prestige = 1
+		}
+	}
+
+}
