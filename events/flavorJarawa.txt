@@ -220,6 +220,7 @@ country_event = {
 				inherit = TRP
 				inherit = LBY
 				change_tag = LBY
+				override_country_name = LIBYAN_CONFEDERATION
 				add_stability = -1
 			}
 			else = {
@@ -269,6 +270,7 @@ country_event = {
 				change_tag = LBY
 			}
 			LBY = {
+				override_country_name = LIBYAN_CONFEDERATION 
 				inherit = FROM
 				add_stability = -1
 				if = {

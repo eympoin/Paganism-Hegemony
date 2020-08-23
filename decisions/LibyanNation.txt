@@ -1,0 +1,88 @@
+country_decisions = {
+
+	libyan_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_egypt_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
+			NOT = { tag = EGY }
+			NOT = { exists = LBY }
+			NOT = { has_reform = celestial_empire }
+			OR = {
+				primary_culture = tripolitan
+			}
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 354
+				province_id = 353
+				province_id = 2451
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			owns_core_province = 353
+			owns_core_province = 354
+			owns_core_province = 2451
+		}
+		effect = {
+			change_tag = LBY
+
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+			add_prestige = 25
+			if = {
+				limit = { has_reform = mamluk_government }
+				remove_government_reform = mamluk_government
+				set_legacy_government = administrative_monarchy
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			random_owned_province = {
+				add_base_tax = 1
+				add_base_production = 1
+			}
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+			}
+			maghreb_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			set_country_flag = formed_egypt_flag
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

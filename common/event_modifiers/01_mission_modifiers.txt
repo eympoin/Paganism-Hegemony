@@ -4604,3 +4604,11 @@ mixed_capital = {
 gems_trade = {
 	trade_goods_size = 2.0
 }
+
+cothon = {
+  local_ship_repair = 0.5
+  local_ship_cost = -0.2
+  navy_tradition = 1
+  naval_forcelimit = 5
+  prestige = 1
+}

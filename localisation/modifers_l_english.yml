@@ -2666,5 +2666,8 @@ desc_berber_capital:0 "Our capital is a jewel in the desert which embodies perfe
 desc_roman_capital:0 ""
 desc_mixed_capital:0 "Our capital is the symbol of the Imazighen and Roman Union"
 
+cothon:0 "Cothon"
+desc_cothon:0"The Pride of Carthago"
+
 large_colonial_nation_ctg:0 "Large colonial Nation"
 desc_large_colonial_nation_ctg:0 ""

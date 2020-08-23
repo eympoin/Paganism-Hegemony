@@ -1,0 +1,26 @@
+country_decisions = {
+
+	build_cothon = {
+		major = yes
+		potential = {
+			tag = CTG
+
+		}
+		provinces_to_highlight = {
+
+		}
+		allow = {
+			is_nomad = no
+			is_at_war = no
+			owns_core_province = 341
+			treasury = 1000
+		}
+		effect = {
+		341 = {
+			add_province_modifier = {
+				name = cothon
+				duration = -1
+			}
+		}
+	}
+}
