@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 technology_group = eastern
 primary_culture = bulgarian
 religion = theoi
-capital = 150	# Sofia
+capital = 4704
 government_rank = 1
 
 1425.1.1 = {

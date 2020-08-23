@@ -50,7 +50,10 @@ carthaginian_republic_decentralize = {
 	icon = "parliament"
 	allow_normal_conversion = no
 	potential = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		OR = {
 		has_country_modifier = army_of_citizens
 		has_country_modifier = mercenary_contracts
@@ -92,7 +95,10 @@ carthaginian_republic_centralize = {
 	icon = "parliament"
 	allow_normal_conversion = no
 	potential = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		OR = {
 		has_country_modifier = army_of_citizens
 		has_country_modifier = mercenary_contracts

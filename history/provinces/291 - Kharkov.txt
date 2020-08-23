@@ -4,8 +4,8 @@ latent_trade_goods = {
 	coal
 }
 
-owner = CHR
-controller = CHR
+owner = TUR
+controller = TUR
 culture = ryazanian
 religion = slavic
 hre = no
@@ -16,7 +16,7 @@ base_manpower = 1
 capital = "Belgorod"
 is_city = yes
 #estate = estate_cossacks
-add_core = CHR
+add_core = TUR
 
 
 

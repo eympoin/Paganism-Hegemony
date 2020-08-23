@@ -97,7 +97,10 @@ country_event = { #republic 1 fate of the military
 
 
 	trigger = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		has_country_modifier = "republic_under_construction"
 	}
 	mean_time_to_happen = {
@@ -134,7 +137,10 @@ country_event = { #republic 2 trade_focus
 
 
 	trigger = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		OR = {
 			has_country_modifier = army_of_citizens
 			has_country_modifier = mercenary_contracts
@@ -181,7 +187,10 @@ country_event = { #republic 3 government centralization
 
 
 	trigger = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		OR = {
 			has_country_modifier = extern_trade_focus
 			has_country_modifier = intern_trade_focus
@@ -225,7 +234,10 @@ country_event = { #monarchy 1 cleansing
 
 
 	trigger = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		has_country_modifier = "need_of_reforms_monarchy"
 	}
 	mean_time_to_happen = {
@@ -278,7 +290,10 @@ country_event = { #monarchy 2 scientific legacy
 
 
 	trigger = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		OR = {
 			has_country_modifier = "political_cleansing"
 			has_country_modifier = "influenced_monarchy"
@@ -330,7 +345,10 @@ country_event = { #monarchy 3 religion
 
 
 	trigger = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		OR = {
 			has_country_modifier = "letters_fundings"
 			has_country_modifier = "science_funding"
@@ -397,7 +415,10 @@ country_event = { #monarchy 4 end elective or absolute
 
 
 	trigger = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		OR = {
 			has_country_modifier = respect_the_tradtions
 			has_country_modifier = god_king
@@ -930,7 +951,10 @@ country_event = {
 
 	trigger = {
 		OR = {
+		OR = {
 			tag = CTG
+			tag = AFR
+			}
 		}
 		has_country_modifier = ctg_roman
 
@@ -1077,7 +1101,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		any_owned_province = {
 			OR = {
 				area = fezzan_area
@@ -1183,7 +1210,10 @@ country_event = {
 	picture = HARBOUR_eventPicture
 
 	trigger = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		OR = {
 			AND = {
 				NOT = {has_country_flag = trading_alaska}
@@ -1685,13 +1715,16 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		any_owned_province = {
 				colonial_region = colonial_alaska
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
 			}
-			CTG = {NOT = {has_country_flag = ctg_alaska} has_country_flag = trading_alaska}
+			ROOT = {NOT = {has_country_flag = ctg_alaska} has_country_flag = trading_alaska}
 	}
 	mean_time_to_happen = {
 		days = 3
@@ -1729,13 +1762,16 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		any_owned_province = {
 				colonial_region = colonial_canada
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
 			}
-			CTG = {NOT = {has_country_flag = ctg_canada} has_country_flag = trading_canada}
+			ROOT = {NOT = {has_country_flag = ctg_canada} has_country_flag = trading_canada}
 	}
 	mean_time_to_happen = {
 		days = 3
@@ -1772,13 +1808,16 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		any_owned_province = {
 				colonial_region = colonial_california
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
 			}
-			CTG = {NOT = {has_country_flag = ctg_california} has_country_flag = trading_california}
+			ROOT = {NOT = {has_country_flag = ctg_california} has_country_flag = trading_california}
 	}
 	mean_time_to_happen = {
 		days = 3
@@ -1816,13 +1855,16 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		any_owned_province = {
 				colonial_region = colonial_eastern_america
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
 			}
-			CTG = {NOT = {has_country_flag = ctg_america} has_country_flag = trading_america}
+			ROOT = {NOT = {has_country_flag = ctg_america} has_country_flag = trading_america}
 	}
 	mean_time_to_happen = {
 		days = 3
@@ -1860,13 +1902,16 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		any_owned_province = {
 				colonial_region = colonial_louisiana
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
 			}
-			CTG = {NOT = {has_country_flag = ctg_louisiana} has_country_flag = trading_louisiana}
+			ROOT = {NOT = {has_country_flag = ctg_louisiana} has_country_flag = trading_louisiana}
 	}
 	mean_time_to_happen = {
 		days = 3
@@ -1904,13 +1949,16 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		any_owned_province = {
 				colonial_region = colonial_mexico
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
 			}
-			CTG = {NOT = {has_country_flag = ctg_mexico} has_country_flag = trading_mexico}
+			ROOT = {NOT = {has_country_flag = ctg_mexico} has_country_flag = trading_mexico}
 	}
 	mean_time_to_happen = {
 		days = 3
@@ -1948,13 +1996,16 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		any_owned_province = {
 				colonial_region = colonial_the_carribean
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
 			}
-			CTG = {NOT = {has_country_flag = ctg_carribean} has_country_flag = trading_carribean}
+			ROOT = {NOT = {has_country_flag = ctg_carribean} has_country_flag = trading_carribean}
 	}
 	mean_time_to_happen = {
 		days = 3
@@ -1992,13 +2043,16 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		any_owned_province = {
 				colonial_region = colonial_colombia
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
 			}
-			CTG = {NOT = {has_country_flag = ctg_colombia} has_country_flag = trading_colombia}
+			ROOT = {NOT = {has_country_flag = ctg_colombia} has_country_flag = trading_colombia}
 	}
 	mean_time_to_happen = {
 		days = 3
@@ -2036,13 +2090,16 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		any_owned_province = {
 				colonial_region = colonial_brazil
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
 			}
-			CTG = {NOT = {has_country_flag = ctg_brazila} has_country_flag = trading_brazil}
+			ROOT = {NOT = {has_country_flag = ctg_brazila} has_country_flag = trading_brazil}
 	}
 	mean_time_to_happen = {
 		days = 3
@@ -2080,13 +2137,16 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		any_owned_province = {
 				colonial_region = colonial_peru
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
 			}
-			CTG = {NOT = {has_country_flag = ctg_peru} has_country_flag = trading_peru}
+			ROOT = {NOT = {has_country_flag = ctg_peru} has_country_flag = trading_peru}
 
 	}
 	mean_time_to_happen = {
@@ -2125,13 +2185,16 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		any_owned_province = {
 				colonial_region = colonial_la_plata
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
 			}
-			NOT = {has_province_modifier =  carthaginian_trading_outpost }
+			ROOT = {NOT = {has_country_flag = ctg_plata} has_country_flag = trading_plata}
 	}
 	mean_time_to_happen = {
 		days = 3
@@ -2169,13 +2232,16 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		any_owned_province = {
 				colonial_region = colonial_australia
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
 			}
-			CTG = {NOT = {has_country_flag = ctg_australia} has_country_flag = trading_australia}
+			ROOT = {NOT = {has_country_flag = ctg_australia} has_country_flag = trading_australia}
 
 	}
 	mean_time_to_happen = {
@@ -2214,13 +2280,16 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		any_owned_province = {
 				superregion = africa_superregion
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
 			}
-			CTG = {NOT = {has_country_flag = ctg_africa} has_country_flag = trading_africa}
+			ROOT = {NOT = {has_country_flag = ctg_africa} has_country_flag = trading_africa}
 	}
 
 	mean_time_to_happen = {
@@ -2259,13 +2328,16 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		any_owned_province = {
 				superregion = southern_africa_superregion
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
 			}
-			CTG = {NOT = {has_country_flag = ctg_south_africa} has_country_flag = trading_south_africa}
+			ROOT = {NOT = {has_country_flag = ctg_south_africa} has_country_flag = trading_south_africa}
 
 	}
 	mean_time_to_happen = {
@@ -2306,64 +2378,67 @@ country_event = {
 	hidden = yes
 
 	trigger = {
+	OR = {
 		tag = CTG
+		tag = AFR
+		}
 		any_owned_province = {
 			OR = {
 				AND = {
 					colonial_region = colonial_alaska
-					CTG = {has_country_flag = ctg_alaska}
+					ROOT = {has_country_flag = ctg_alaska}
 				}
 				AND = {
 					superregion = africa_superregion
-					CTG = {has_country_flag = ctg_africa}
+					ROOT = {has_country_flag = ctg_africa}
 				}
 				AND = {
 					colonial_region = colonial_australia
-					CTG = {has_country_flag = ctg_australia}
+					ROOT = {has_country_flag = ctg_australia}
 				}
 				AND = {
 					colonial_region = colonial_brazil
-					CTG = {has_country_flag = ctg_brazil}
+					ROOT = {has_country_flag = ctg_brazil}
 				}
 				AND = {
 					colonial_region = colonial_la_plata
-					CTG = {has_country_flag = ctg_plata}
+					ROOT = {has_country_flag = ctg_plata}
 				}
 				AND = {
 					colonial_region = colonial_colombia
-					CTG = {has_country_flag = ctg_colombia}
+					ROOT = {has_country_flag = ctg_colombia}
 				}
 				AND = {
 					colonial_region = colonial_peru
-					CTG = {has_country_flag = ctg_peru}
+					ROOT = {has_country_flag = ctg_peru}
 				}
 				AND = {
 					colonial_region = colonial_mexico
-					CTG = {has_country_flag = ctg_mexico}
+					ROOT = {has_country_flag = ctg_mexico}
 				}
 				AND = {
 					colonial_region = colonial_the_carribean
-					CTG = {has_country_flag = ctg_carribean}
+					ROOT = {has_country_flag = ctg_carribean}
 				}
 				AND = {
 					colonial_region = colonial_canada
-					CTG = {has_country_flag = ctg_canada}
+					ROOT = {has_country_flag = ctg_canada}
 				}
 				AND = {
 					colonial_region = colonial_eastern_america
-					CTG = {has_country_flag = ctg_america}
+					ROOT = {has_country_flag = ctg_america}
 				}
 				AND = {
 					colonial_region = colonial_louisiana
-					CTG = {has_country_flag = ctg_louisiana}
+					ROOT = {has_country_flag = ctg_louisiana}
 				}
 				AND = {
 					colonial_region = colonial_california
-					CTG = {has_country_flag = ctg_california}
+					ROOT = {has_country_flag = ctg_california}
 				}
 				AND = {
 					superregion = southern_africa_superregion
-					CTG = {has_country_flag = ctg_south_africa}
+					ROOT = {has_country_flag = ctg_south_africa}
 				}
 			}
 			NOT = {has_province_modifier =  carthaginian_trading_outpost }

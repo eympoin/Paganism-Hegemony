@@ -1,7 +1,7 @@
 #150 - Bulgaria
 
-owner = BUL
-controller = BUL
+owner = THR
+controller = THR
 culture = bulgarian
 religion = tengri_pagan_reformed
 capital = "Tarnovo"
@@ -13,6 +13,8 @@ base_manpower = 4
 estate = estate_nobles
 is_city = yes
 add_core = BUL
+add_core = THR
+add_local_autonomy = 30
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

@@ -3,7 +3,10 @@ country_decisions = {
 	build_cothon = {
 		major = yes
 		potential = {
+		OR = {
 			tag = CTG
+			tag = AFR
+			}
 
 		}
 		provinces_to_highlight = {

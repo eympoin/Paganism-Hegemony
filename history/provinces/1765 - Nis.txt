@@ -1,7 +1,7 @@
 #1765 - Sofia
 
-owner = THR
-controller = THR
+owner = MIA
+controller = MIA
 culture = bulgarian
 religion = slavic
 capital = "Serdica"
@@ -11,7 +11,7 @@ base_tax = 5
 base_production = 4
 base_manpower = 4
 is_city = yes
-add_core = THR
+add_core = MIA
 
 
 

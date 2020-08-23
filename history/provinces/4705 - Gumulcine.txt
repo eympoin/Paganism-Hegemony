@@ -1,5 +1,5 @@
-owner = BYZ
-controller = BYZ
+owner = MAC
+controller = MAC
 culture = greek
 religion = theoi
 capital = "Komotini"
@@ -9,7 +9,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 5
 is_city = yes
-add_core = BYZ
+add_core = MAC
 
 
 

@@ -2115,7 +2115,10 @@ SPQ_ideas = {
 		core_creation = -0.2
 	}
 	trigger = {
+	OR = {
 		tag=SPQ
+		tag = WRM
+		}
 	}
 	free = yes
 
