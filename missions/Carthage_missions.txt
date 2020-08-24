@@ -1,0 +1,549 @@
+base_1 = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+  OR = {
+    tag = CTG
+    was_tag = CTG
+  }
+    NOT = { map_setup = map_setup_random }
+  }
+
+  hippo_regius = {
+    icon = mission_bedouins
+    required_missions = {}
+
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+base_2 = {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+  OR = {
+    tag = CTG
+    was_tag = CTG
+  }
+    NOT = { map_setup = map_setup_random }
+  }
+
+  halt_the_jarawa = {
+    icon = mission_bedouins
+    required_missions = {}
+
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  reunite_africa = {
+    icon = mission_bedouins
+    required_missions = {halt_the_jarawa hippo_regius tackle_libya}
+
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+}
+
+base_1 = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+  OR = {
+    tag = CTG
+    was_tag = CTG
+  }
+    NOT = { map_setup = map_setup_random }
+  }
+
+  tackle_libya = {
+    icon = mission_bedouins
+    required_missions = {}
+
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+the_isles = {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+  OR = {
+    tag = CTG
+    was_tag = CTG
+  }
+    NOT = { map_setup = map_setup_random }
+  }
+  end_syracuse = {
+    icon = mission_bedouins
+    required_missions = {fleet_to_defend_our_interests}
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  secure_sardinia = {
+    icon = mission_bedouins
+    required_missions = {end_syracuse}
+
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+}
+
+
+
+roman_base_2 = {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+  OR = {
+    tag = CTG
+    was_tag = CTG
+  }
+  OR = {
+    primary_culture = african
+    has_country_modifier = ctg_roman
+  }
+    NOT = { map_setup = map_setup_random }
+  }
+
+  save_the_republic = {
+    icon = mission_bedouins
+    required_missions = {reunite_africa push_back_the_greeks}
+
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  crush_the_lombards = {
+    icon = mission_bedouins
+    required_missions = {save_the_republic}
+
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  Submit_gallian_provinces = {
+    icon = mission_bedouins
+    required_missions = {crush_the_lombards}
+
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  repel_the_franks = {
+    icon = mission_bedouins
+    required_missions = {Submit_gallian_provinces}
+
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  Save_Londinium = {
+    icon = mission_bedouins
+    required_missions = {repel_the_franks}
+
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  Rome_Reborn = {
+    icon = mission_bedouins
+    required_missions = {Save_Londinium whole_hispania}
+
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  Empero_of_east_and_west = {
+    icon = mission_bedouins
+    required_missions = {Rome_Reborn}
+
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+}
+
+
+roman_base_1 = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+  OR = {
+    tag = CTG
+    was_tag = CTG
+  }
+  OR = {
+    primary_culture = african
+    has_country_modifier = ctg_roman
+  }
+    NOT = { map_setup = map_setup_random }
+  }
+
+  repel_berber_mauretania = {
+    icon = mission_bedouins
+    required_missions = {save_the_republic}
+    position = 4
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  mediterannean_hispania = {
+    icon = mission_bedouins
+    required_missions = {repel_berber_mauretania}
+    position = 6
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  whole_hispania = {
+    icon = mission_bedouins
+    required_missions = {mediterannean_hispania}
+
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+roman_base_1 = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+  OR = {
+    tag = CTG
+    was_tag = CTG
+  }
+  OR = {
+    primary_culture = african
+    has_country_modifier = ctg_roman
+  }
+    NOT = { map_setup = map_setup_random }
+  }
+
+  push_back_the_greeks = {
+    icon = mission_bedouins
+    required_missions = {}
+    position = 2
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+
+fleet = {
+  slot = 5
+  generic = no
+  ai = yes
+  potential = {
+  OR = {
+    tag = CTG
+    was_tag = CTG
+  }
+    NOT = { map_setup = map_setup_random }
+  }
+
+  fleet_to_defend_our_interests = {
+    icon = mission_bedouins
+    required_missions = {}
+
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  first_trading_outpost = {
+    icon = mission_bedouins
+    required_missions = {fleet_to_defend_our_interests}
+
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  fleet_transition = {
+    icon = mission_bedouins
+    required_missions = {first_trading_outpost}
+
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+american_trade = {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+  OR = {
+    tag = CTG
+    was_tag = CTG
+  }
+    NOT = { map_setup = map_setup_random }
+  }
+  carribean_trade = {
+    icon = mission_bedouins
+    required_missions = {fleet_transition}
+    position = 4
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  south_american_trade = {
+    icon = mission_bedouins
+    required_missions = {carribean_trade}
+
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  inca_trade = {
+    icon = mission_bedouins
+    required_missions = {south_american_trade}
+
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  carthaginian_thalassocracy = {
+    icon = mission_bedouins
+    required_missions = {inca_trade varangian_trade indonesian_trade}
+
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+}
+
+american_trade_2 = {
+  slot = 5
+  generic = no
+  ai = yes
+  potential = {
+  OR = {
+    tag = CTG
+    was_tag = CTG
+  }
+    NOT = { map_setup = map_setup_random }
+  }
+
+  north_american_trade = {
+    icon = mission_bedouins
+    required_missions = {carribean_trade}
+    position = 5
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  varangian_trade = {
+    icon = mission_bedouins
+    required_missions = {north_american_trade}
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+}
+
+africo_asian_trade = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+  OR = {
+    tag = CTG
+    was_tag = CTG
+  }
+    NOT = { map_setup = map_setup_random }
+  }
+
+  african_trade = {
+    icon = mission_bedouins
+    required_missions = {fleet_transition}
+    position = 4
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  indian_trade = {
+    icon = mission_bedouins
+    required_missions = {african_trade}
+
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  indonesian_trade = {
+    icon = mission_bedouins
+    required_missions = {indian_trade}
+
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+}

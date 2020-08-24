@@ -99,7 +99,7 @@ country_event = { #republic 1 fate of the military
 	trigger = {
 	OR = {
 		tag = CTG
-		tag = AFR
+		was_tag = CTG
 		}
 		has_country_modifier = "republic_under_construction"
 	}
@@ -139,7 +139,7 @@ country_event = { #republic 2 trade_focus
 	trigger = {
 	OR = {
 		tag = CTG
-		tag = AFR
+		was_tag = CTG
 		}
 		OR = {
 			has_country_modifier = army_of_citizens
@@ -189,7 +189,7 @@ country_event = { #republic 3 government centralization
 	trigger = {
 	OR = {
 		tag = CTG
-		tag = AFR
+		was_tag = CTG
 		}
 		OR = {
 			has_country_modifier = extern_trade_focus
@@ -236,7 +236,7 @@ country_event = { #monarchy 1 cleansing
 	trigger = {
 	OR = {
 		tag = CTG
-		tag = AFR
+		was_tag = CTG
 		}
 		has_country_modifier = "need_of_reforms_monarchy"
 	}
@@ -292,7 +292,7 @@ country_event = { #monarchy 2 scientific legacy
 	trigger = {
 	OR = {
 		tag = CTG
-		tag = AFR
+		was_tag = CTG
 		}
 		OR = {
 			has_country_modifier = "political_cleansing"
@@ -347,7 +347,7 @@ country_event = { #monarchy 3 religion
 	trigger = {
 	OR = {
 		tag = CTG
-		tag = AFR
+		was_tag = CTG
 		}
 		OR = {
 			has_country_modifier = "letters_fundings"
@@ -417,7 +417,7 @@ country_event = { #monarchy 4 end elective or absolute
 	trigger = {
 	OR = {
 		tag = CTG
-		tag = AFR
+		was_tag = CTG
 		}
 		OR = {
 			has_country_modifier = respect_the_tradtions
@@ -942,7 +942,7 @@ country_event = {
 	}
 }
 
-#numidia
+#numidian roman path
 country_event = {
 	id = flavor_ctg.19
 	title = flavor_ctg.19.t
@@ -953,7 +953,7 @@ country_event = {
 		OR = {
 		OR = {
 			tag = CTG
-			tag = AFR
+			was_tag = CTG
 			}
 		}
 		has_country_modifier = ctg_roman
@@ -1003,7 +1003,7 @@ country_event = {
 	}
 }
 
-#Griko converison own path
+#Griko converison roman_path
 country_event = {
 	id = flavor_ctg.20
 	title = flavor_ctg.20.t
@@ -1013,6 +1013,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = CTG
+			was_tag = CTG
 		}
 		has_country_modifier = ctg_roman
 
@@ -1103,7 +1104,7 @@ country_event = {
 	trigger = {
 	OR = {
 		tag = CTG
-		tag = AFR
+		was_tag = CTG
 		}
 		any_owned_province = {
 			OR = {
@@ -1212,7 +1213,7 @@ country_event = {
 	trigger = {
 	OR = {
 		tag = CTG
-		tag = AFR
+		was_tag = CTG
 		}
 		OR = {
 			AND = {
@@ -1717,7 +1718,7 @@ country_event = {
 	trigger = {
 	OR = {
 		tag = CTG
-		tag = AFR
+		was_tag = CTG
 		}
 		any_owned_province = {
 				colonial_region = colonial_alaska
@@ -1764,7 +1765,7 @@ country_event = {
 	trigger = {
 	OR = {
 		tag = CTG
-		tag = AFR
+		was_tag = CTG
 		}
 		any_owned_province = {
 				colonial_region = colonial_canada
@@ -1810,7 +1811,7 @@ country_event = {
 	trigger = {
 	OR = {
 		tag = CTG
-		tag = AFR
+		was_tag = CTG
 		}
 		any_owned_province = {
 				colonial_region = colonial_california
@@ -1857,7 +1858,7 @@ country_event = {
 	trigger = {
 	OR = {
 		tag = CTG
-		tag = AFR
+		was_tag = CTG
 		}
 		any_owned_province = {
 				colonial_region = colonial_eastern_america
@@ -1904,7 +1905,7 @@ country_event = {
 	trigger = {
 	OR = {
 		tag = CTG
-		tag = AFR
+		was_tag = CTG
 		}
 		any_owned_province = {
 				colonial_region = colonial_louisiana
@@ -1951,7 +1952,7 @@ country_event = {
 	trigger = {
 	OR = {
 		tag = CTG
-		tag = AFR
+		was_tag = CTG
 		}
 		any_owned_province = {
 				colonial_region = colonial_mexico
@@ -1998,7 +1999,7 @@ country_event = {
 	trigger = {
 	OR = {
 		tag = CTG
-		tag = AFR
+		was_tag = CTG
 		}
 		any_owned_province = {
 				colonial_region = colonial_the_carribean
@@ -2045,7 +2046,7 @@ country_event = {
 	trigger = {
 	OR = {
 		tag = CTG
-		tag = AFR
+		was_tag = CTG
 		}
 		any_owned_province = {
 				colonial_region = colonial_colombia
@@ -2092,7 +2093,7 @@ country_event = {
 	trigger = {
 	OR = {
 		tag = CTG
-		tag = AFR
+		was_tag = CTG
 		}
 		any_owned_province = {
 				colonial_region = colonial_brazil
@@ -2139,7 +2140,7 @@ country_event = {
 	trigger = {
 	OR = {
 		tag = CTG
-		tag = AFR
+		was_tag = CTG
 		}
 		any_owned_province = {
 				colonial_region = colonial_peru
@@ -2187,7 +2188,7 @@ country_event = {
 	trigger = {
 	OR = {
 		tag = CTG
-		tag = AFR
+		was_tag = CTG
 		}
 		any_owned_province = {
 				colonial_region = colonial_la_plata
@@ -2234,7 +2235,7 @@ country_event = {
 	trigger = {
 	OR = {
 		tag = CTG
-		tag = AFR
+		was_tag = CTG
 		}
 		any_owned_province = {
 				colonial_region = colonial_australia
@@ -2282,7 +2283,7 @@ country_event = {
 	trigger = {
 	OR = {
 		tag = CTG
-		tag = AFR
+		was_tag = CTG
 		}
 		any_owned_province = {
 				superregion = africa_superregion
@@ -2330,7 +2331,7 @@ country_event = {
 	trigger = {
 	OR = {
 		tag = CTG
-		tag = AFR
+		was_tag = CTG
 		}
 		any_owned_province = {
 				superregion = southern_africa_superregion
@@ -2380,7 +2381,7 @@ country_event = {
 	trigger = {
 	OR = {
 		tag = CTG
-		tag = AFR
+		was_tag = CTG
 		}
 		any_owned_province = {
 			OR = {
