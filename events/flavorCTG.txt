@@ -500,6 +500,7 @@ country_event = {
 			name = ctg_own_path
 			duration = -1
 		}
+		swap_non_generic_missions = yes
 
 		every_owned_province = {
 			limit = {

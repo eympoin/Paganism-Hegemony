@@ -108,6 +108,7 @@ the_isles = {
   end_syracuse = {
     icon = mission_bedouins
     required_missions = {fleet_to_defend_our_interests}
+    position = 2
     provinces_to_highlight = {
 
     }
@@ -117,7 +118,7 @@ the_isles = {
     effect = {
     }
   }
-  secure_sardinia = {
+  secure_sardinia = {#and baleares
     icon = mission_bedouins
     required_missions = {end_syracuse}
 
@@ -148,12 +149,13 @@ roman_base_2 = {
     has_country_modifier = ctg_roman
   }
     NOT = { map_setup = map_setup_random }
+    NOT = {has_country_modifier = ctg_own_path}
   }
 
   save_the_republic = {
     icon = mission_bedouins
     required_missions = {reunite_africa push_back_the_greeks}
-
+    position = 4
     provinces_to_highlight = {
 
     }
@@ -258,12 +260,13 @@ roman_base_1 = {
     has_country_modifier = ctg_roman
   }
     NOT = { map_setup = map_setup_random }
+    NOT = {has_country_modifier = ctg_own_path}
   }
 
   repel_berber_mauretania = {
     icon = mission_bedouins
     required_missions = {save_the_republic}
-    position = 4
+    position = 5
     provinces_to_highlight = {
 
     }
@@ -276,7 +279,7 @@ roman_base_1 = {
   mediterannean_hispania = {
     icon = mission_bedouins
     required_missions = {repel_berber_mauretania}
-    position = 6
+    position = 7
     provinces_to_highlight = {
 
     }
@@ -302,7 +305,7 @@ roman_base_1 = {
 
 }
 
-roman_base_1 = {
+roman_base_3 = {
   slot = 3
   generic = no
   ai = yes
@@ -316,12 +319,13 @@ roman_base_1 = {
     has_country_modifier = ctg_roman
   }
     NOT = { map_setup = map_setup_random }
+    NOT = {has_country_modifier = ctg_own_path}
   }
 
   push_back_the_greeks = {
     icon = mission_bedouins
-    required_missions = {}
-    position = 2
+    required_missions = {end_syracuse}
+    position = 3
     provinces_to_highlight = {
 
     }
@@ -335,6 +339,313 @@ roman_base_1 = {
 }
 
 
+own_base_2 = {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+  OR = {
+    tag = CTG
+    was_tag = CTG
+  }
+  OR = {
+    primary_culture = carthaginian
+    has_country_modifier = ctg_own_path
+  }
+  NOT = {has_country_modifier = ctg_roman}
+    NOT = { map_setup = map_setup_random }
+  }
+
+  reclaim_african_coast = {
+    icon = mission_bedouins
+    required_missions = {reunite_africa}
+    position = 3
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  invade_baetica = {
+    icon = mission_bedouins
+    required_missions = {reclaim_african_coast}
+    position = 4
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  carthaginian_empire = {
+    icon = mission_bedouins
+    required_missions = {invade_baetica}
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  path_to_rome = {
+    icon = mission_bedouins
+    required_missions = {carthaginian_empire}
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  roma_delenda_est = {
+    icon = mission_bedouins
+    required_missions = {path_to_rome}
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  end_the_greek_monopol = {
+    icon = mission_bedouins
+    required_missions = {conquer_the_delta dido_revenge roma_delenda_est}
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  secunda_roma_delenda_est = {
+    icon = mission_bedouins
+    required_missions = {end_the_greek_monopol}
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+own_base_1 = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+  OR = {
+    tag = CTG
+    was_tag = CTG
+  }
+  OR = {
+    primary_culture = carthaginian
+    has_country_modifier = ctg_own_path
+  }
+    NOT = { map_setup = map_setup_random }
+    NOT = {has_country_modifier = ctg_roman}
+  }
+
+  prevent_further_invasions = { #invade the berbers
+    icon = mission_bedouins
+    required_missions = {reclaim_african_coast}
+    position = 4
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  way_to_egypt_ctg = {
+    icon = mission_build_up_to_force_limit
+    required_missions = {carthaginian_empire}
+    position = 6
+    provinces_to_highlight = {
+      area = cyrenaica_area
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+    cyrenaica_area = {
+      type = all
+      NOT = {owned_by = ROOT}
+    }
+    }
+    effect = {
+      add_mil_power = 100
+      delta_area = {
+        limit = {
+          NOT = { is_core = ROOT }
+          NOT = { is_permanent_claim = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      bahari_area = {
+        limit = {
+          NOT = { is_core = ROOT }
+          NOT = { is_permanent_claim = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  conquer_the_delta_ctg = {
+    icon = mission_egyptian_mamluk_soldier
+    required_missions = {way_to_egypt_ctg}
+    provinces_to_highlight = {
+    OR = {
+      area = delta_area
+      area = bahari_area
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+    delta_area = {
+      type = all
+      NOT = {owned_by = ROOT}
+    }
+    bahari_area = {
+      type = all
+      NOT = {owned_by = ROOT}
+    }
+
+    }
+    effect = {
+    egypt_region = {
+      limit = {
+        NOT = { is_core = ROOT }
+        NOT = { is_permanent_claim = ROOT }
+      }
+      add_permanent_claim = ROOT
+    }
+    add_dip_power = 100
+    add_years_of_income = 2
+    }
+  }
+
+  grain_monopol_ctg = {
+    icon = mission_a_million_rice_fields
+    required_missions = {conquer_the_delta_ctg}
+    provinces_to_highlight = {
+    }
+    trigger = {
+
+      trading_bonus = {
+      trade_goods = grain
+      value = yes
+      }
+      production_leader = {
+      	trade_goods = grain
+      }
+    }
+    effect = {
+    add_years_of_income = 10
+    every_owned_province = {
+      limit = {
+        region = maghreb_region
+        trade_goods = grain
+      }
+      add_province_modifier = {
+        name = granary_of_the_mediterranean
+        duration = -1
+      }
+    }
+
+    change_price = {
+      trade_goods = grain
+      key = grain_monopol
+      value = 0.5
+      duration = -1
+      }
+    }
+  }
+}
+
+
+own_base_3 = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+  OR = {
+    tag = CTG
+    was_tag = CTG
+  }
+  OR = {
+    primary_culture = carthaginian
+    has_country_modifier = ctg_own_path
+  }
+  NOT = {has_country_modifier = ctg_roman}
+    NOT = { map_setup = map_setup_random }
+  }
+
+  nova_carthago = { #invade Cyprus
+    icon = mission_bedouins
+    required_missions = {secure_sardinia reclaim_african_coast}
+    position = 4
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  a_way_home = { #invade Cyprus
+    icon = mission_bedouins
+    required_missions = {carthaginian_empire}
+    position = 6
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  dido_revenge = { #invade Cyprus
+    icon = mission_bedouins
+    required_missions = {a_way_home}
+    position = 6
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+    effect = {
+    }
+  }
+}
 fleet = {
   slot = 5
   generic = no
@@ -378,7 +689,7 @@ fleet = {
   fleet_transition = {
     icon = mission_bedouins
     required_missions = {first_trading_outpost}
-
+    position = 6
     provinces_to_highlight = {
 
     }
@@ -404,7 +715,7 @@ american_trade = {
   carribean_trade = {
     icon = mission_bedouins
     required_missions = {fleet_transition}
-    position = 4
+    position = 7
     provinces_to_highlight = {
 
     }
@@ -457,7 +768,7 @@ american_trade = {
 }
 
 american_trade_2 = {
-  slot = 5
+  slot = 3
   generic = no
   ai = yes
   potential = {
@@ -471,7 +782,7 @@ american_trade_2 = {
   north_american_trade = {
     icon = mission_bedouins
     required_missions = {carribean_trade}
-    position = 5
+    position = 8
     provinces_to_highlight = {
 
     }
@@ -496,7 +807,7 @@ american_trade_2 = {
 }
 
 africo_asian_trade = {
-  slot = 3
+  slot = 5
   generic = no
   ai = yes
   potential = {
