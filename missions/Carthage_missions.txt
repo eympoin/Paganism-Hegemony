@@ -776,7 +776,7 @@ fleet = {
   }
 
   fleet_to_defend_our_interests = {
-    icon = mission_bedouins
+    icon = mission_galleys_in_port
     required_missions = {}
 
     provinces_to_highlight = {
@@ -790,7 +790,7 @@ fleet = {
   }
 
   first_trading_outpost = {
-    icon = mission_bedouins
+    icon = mission_hanseatic_city
     required_missions = {fleet_to_defend_our_interests}
 
     provinces_to_highlight = {
@@ -804,7 +804,7 @@ fleet = {
   }
 
   fleet_transition = {
-    icon = mission_bedouins
+    icon = mission_establish_high_seas_navy
     required_missions = {first_trading_outpost}
     position = 6
     provinces_to_highlight = {
@@ -830,7 +830,7 @@ american_trade = {
     NOT = { map_setup = map_setup_random }
   }
   carribean_trade = {
-    icon = mission_bedouins
+    icon = mission_caribbean_cn
     required_missions = {fleet_transition}
     position = 7
     provinces_to_highlight = {
@@ -843,7 +843,7 @@ american_trade = {
     }
   }
   south_american_trade = {
-    icon = mission_bedouins
+    icon = colonize_brazil
     required_missions = {carribean_trade}
 
     provinces_to_highlight = {
@@ -856,7 +856,7 @@ american_trade = {
     }
   }
   inca_trade = {
-    icon = mission_bedouins
+    icon = mission_potosi_silver
     required_missions = {south_american_trade}
 
     provinces_to_highlight = {
@@ -870,7 +870,7 @@ american_trade = {
   }
 
   carthaginian_thalassocracy = {
-    icon = mission_bedouins
+    icon = mission_trade_company_region_abroad
     required_missions = {inca_trade varangian_trade indonesian_trade}
 
     provinces_to_highlight = {
@@ -897,7 +897,7 @@ american_trade_2 = {
   }
 
   north_american_trade = {
-    icon = mission_bedouins
+    icon = mission_colonial
     required_missions = {carribean_trade}
     position = 8
     provinces_to_highlight = {
@@ -910,7 +910,7 @@ american_trade_2 = {
     }
   }
   varangian_trade = {
-    icon = mission_bedouins
+    icon = mission_rb_colonise_canada
     required_missions = {north_american_trade}
     provinces_to_highlight = {
 
@@ -936,7 +936,7 @@ africo_asian_trade = {
   }
 
   african_trade = {
-    icon = mission_bedouins
+    icon = mission_african_gold
     required_missions = {fleet_transition}
     position = 4
     provinces_to_highlight = {
@@ -949,7 +949,7 @@ africo_asian_trade = {
     }
   }
   indian_trade = {
-    icon = mission_bedouins
+    icon = mission_portuguese_ceylon
     required_missions = {african_trade}
 
     provinces_to_highlight = {
@@ -962,7 +962,7 @@ africo_asian_trade = {
     }
   }
   indonesian_trade = {
-    icon = mission_bedouins
+    icon = mission_portuguese_malacca
     required_missions = {indian_trade}
 
     provinces_to_highlight = {
