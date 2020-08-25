@@ -270,7 +270,7 @@ roman_base_2 = {
   }
 
   save_the_republic = {
-    icon = mission_bedouins
+    icon = secure_the_republic
     required_missions = {reunite_africa push_back_the_greeks}
     position = 4
     provinces_to_highlight = {
@@ -283,7 +283,7 @@ roman_base_2 = {
     }
   }
   crush_the_lombards = {
-    icon = mission_bedouins
+    icon = confront_the_lombards
     required_missions = {save_the_republic}
 
     provinces_to_highlight = {
@@ -296,7 +296,7 @@ roman_base_2 = {
     }
   }
   Submit_gallian_provinces = {
-    icon = mission_bedouins
+    icon = mission_invade_occitania
     required_missions = {crush_the_lombards}
 
     provinces_to_highlight = {
@@ -309,7 +309,7 @@ roman_base_2 = {
     }
   }
   repel_the_franks = {
-    icon = mission_bedouins
+    icon = the_hundred_years_war
     required_missions = {Submit_gallian_provinces}
 
     provinces_to_highlight = {
@@ -322,7 +322,7 @@ roman_base_2 = {
     }
   }
   Save_Londinium = {
-    icon = mission_bedouins
+    icon = mission_rb_scottish_conquer_london
     required_missions = {repel_the_franks}
 
     provinces_to_highlight = {
@@ -335,7 +335,7 @@ roman_base_2 = {
     }
   }
   Rome_Reborn = {
-    icon = mission_bedouins
+    icon = a_real_roman_empire
     required_missions = {Save_Londinium whole_hispania}
 
     provinces_to_highlight = {
@@ -347,8 +347,8 @@ roman_base_2 = {
     effect = {
     }
   }
-  Empero_of_east_and_west = {
-    icon = mission_bedouins
+  Emperor_of_east_and_west = {
+    icon = a_roman_empire
     required_missions = {Rome_Reborn}
 
     provinces_to_highlight = {
@@ -381,7 +381,7 @@ roman_base_1 = {
   }
 
   repel_berber_mauretania = {
-    icon = mission_bedouins
+    icon = mission_moroccan_ports
     required_missions = {save_the_republic}
     position = 5
     provinces_to_highlight = {
@@ -394,7 +394,7 @@ roman_base_1 = {
     }
   }
   mediterannean_hispania = {
-    icon = mission_bedouins
+    icon = mission_dominate_genoa
     required_missions = {repel_berber_mauretania}
     position = 7
     provinces_to_highlight = {
@@ -407,7 +407,7 @@ roman_base_1 = {
     }
   }
   whole_hispania = {
-    icon = mission_bedouins
+    icon = mission_reclaim_andalucia
     required_missions = {mediterannean_hispania}
 
     provinces_to_highlight = {
@@ -440,7 +440,7 @@ roman_base_3 = {
   }
 
   push_back_the_greeks = {
-    icon = mission_bedouins
+    icon = complete_the_risorgimento
     required_missions = {end_syracuse}
     position = 3
     provinces_to_highlight = {
