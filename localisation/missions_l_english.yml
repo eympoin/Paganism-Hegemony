@@ -1208,3 +1208,18 @@ grain_monopol_desc:0 ""
 
 chief_autonomy_unlock_tooltip:0 "Allow the §Y Berber chieftains autonomy §! privilege for the nobles"
 sponsor_roman_merchant_unlock_tooltip:0 "Allow the §Y Sponsor Roman merchants §! privilege for the burghers"
+
+
+hippo_regius_title:0 "Conquest of Hippo Regius"
+halt_the_jarawa_title:0 "Halt the Jarawa"
+reunite_africa_title:0 "Reunite Africa"
+tackle_libya_title:0 "Annex Libya"
+end_syracuse_title:0 "Sicilian wars"
+secure_sardinia_title:0 "Secure the isles"
+
+hippo_regius_desc:0 ""
+halt_the_jarawa_desc:0 ""
+reunite_africa_desc:0 ""
+tackle_libya_desc:0 ""
+end_syracuse_desc:0 ""
+secure_sardinia_desc:0 ""
