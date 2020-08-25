@@ -396,7 +396,7 @@ catalonia_area = { #5
 }
 
 valencia_area = { #5
-	220 1750 4549 4550
+	220 221 1750 4549 4550
 }
 
 lower_andalucia_area = { #5
@@ -413,7 +413,7 @@ castille_area = { #5
 }
 
 toledo_area = { #5
-	219 221 2751 2754 4547
+	219  2751 2754 4547
 }
 
 asturias_area = { #4

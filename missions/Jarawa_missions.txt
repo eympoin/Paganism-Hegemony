@@ -765,7 +765,7 @@ egypt_and_monopol = {
     trigger = {
     cyrenaica_area = {
       type = all
-      NOT = {owned_by = ROOT}
+      owned_by = ROOT
     }
     }
     effect = {
@@ -800,11 +800,11 @@ egypt_and_monopol = {
     trigger = {
     delta_area = {
       type = all
-      NOT = {owned_by = ROOT}
+      owned_by = ROOT
     }
     bahari_area = {
       type = all
-      NOT = {owned_by = ROOT}
+      owned_by = ROOT
     }
 
     }

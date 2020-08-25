@@ -11,16 +11,24 @@ base_1 = {
   }
 
   hippo_regius = {
-    icon = mission_bedouins
+    icon = mission_conquer_50_development
     required_missions = {}
 
     provinces_to_highlight = {
-
+      area = kabylia_area
+      NOT = {owned_by = ROOT}
     }
 
     trigger = {
+    kabylia_area = {
+      type = all
+      owned_by = ROOT
+    }
     }
     effect = {
+      add_adm_power = 100
+      add_prestige = 10
+      add_years_of_income = 1
     }
   }
 
@@ -39,29 +47,60 @@ base_2 = {
   }
 
   halt_the_jarawa = {
-    icon = mission_bedouins
+    icon = mission_conquer_timbuktu
     required_missions = {}
 
     provinces_to_highlight = {
-
+      OR = {
+        province_id = 352
+        province_id = 2450
+      }
     }
 
     trigger = {
+    352 = {
+      owned_by = ROOT
+    }
+    2450 = {
+      owned_by = ROOT
+    }
     }
     effect = {
+    add_mil_power = 100
+    add_prestige = 10
+    add_years_of_income = 1
     }
   }
   reunite_africa = {
-    icon = mission_bedouins
+    icon = mission_empire
     required_missions = {halt_the_jarawa hippo_regius tackle_libya}
 
     provinces_to_highlight = {
-
+      OR = {
+        owned_by = LPT
+        owned_by = LBY
+        owned_by = HIP
+        owned_by = TAC
+        owned_by = TRP
+      }
     }
 
     trigger = {
+      development = 300
+      NOT = {exists = LBY}
+      NOT = {exists = TRP}
+      NOT = {exists = HIP}
+      NOT = {exists = TAC}
+      NOT = {exists = LPT}
     }
     effect = {
+    maghreb_region = {
+      limit = {
+        NOT = { is_core = ROOT }
+        NOT = { is_permanent_claim = ROOT }
+      }
+      add_permanent_claim = ROOT
+    }
     }
   }
 }
@@ -79,16 +118,32 @@ base_1 = {
   }
 
   tackle_libya = {
-    icon = mission_bedouins
+    icon = mission_control_the_barbary_coast
     required_missions = {}
 
     provinces_to_highlight = {
-
+      OR = {
+        area = tripolitania_area
+        area = djerba_area
+      }
+      NOT = {owned_by = ROOT}
     }
 
     trigger = {
+    tripolitania_area = {
+      type = all
+      owned_by = ROOT
+    }
+    djerba_area = {
+      type = all
+      owned_by = ROOT
+    }
     }
     effect = {
+
+    add_prestige = 10
+    add_years_of_income = 1
+    add_dip_power = 100
     }
   }
 
@@ -106,29 +161,91 @@ the_isles = {
     NOT = { map_setup = map_setup_random }
   }
   end_syracuse = {
-    icon = mission_bedouins
+    icon = mission_break_sicily
     required_missions = {fleet_to_defend_our_interests}
     position = 2
     provinces_to_highlight = {
-
+      OR = {
+        area = western_sicily_area
+        area = sicily_area
+      }
+      NOT = {owned_by = ROOT}
     }
 
     trigger = {
+    western_sicily_area = {
+      type = all
+      owned_by = ROOT
+    }
+    sicily_area = {
+      type = all
+      owned_by = ROOT
+    }
     }
     effect = {
+    add_prestige = 10
+    2982 ={
+    center_of_trade = 1
+    }
+    corsica_sardinia_area = {
+      limit = {
+        NOT = { is_core = ROOT }
+        NOT = { is_permanent_claim = ROOT }
+      }
+      add_permanent_claim = ROOT
+    }
+    baleares_area = {
+      limit = {
+        NOT = { is_core = ROOT }
+        NOT = { is_permanent_claim = ROOT }
+      }
+      add_permanent_claim = ROOT
+    }
+    calabria_area = {
+      limit = {
+        NOT = { is_core = ROOT }
+        NOT = { is_permanent_claim = ROOT }
+      }
+      add_permanent_claim = ROOT
+    }
     }
   }
   secure_sardinia = {#and baleares
-    icon = mission_bedouins
+    icon = mission_mediterranean_islands
     required_missions = {end_syracuse}
 
     provinces_to_highlight = {
-
+    OR = {
+      area = corsica_sardinia_area
+      area = baleares_area
+    }
+    NOT = {owned_by = ROOT}
     }
 
     trigger = {
+    corsica_sardinia_area = {
+      type = all
+      owned_by = ROOT
+    }
+    baleares_area = {
+      type = all
+      owned_by = ROOT
+    }
     }
     effect = {
+    corsica_sardinia_area = {
+      add_building = naval_battery
+    }
+    baleares_area = {
+      add_building = naval_battery
+    }
+    valencia_area = {
+      limit = {
+        NOT = { is_core = ROOT }
+        NOT = { is_permanent_claim = ROOT }
+      }
+      add_permanent_claim = ROOT
+    }
     }
   }
 }
@@ -493,7 +610,7 @@ own_base_1 = {
     trigger = {
     cyrenaica_area = {
       type = all
-      NOT = {owned_by = ROOT}
+      owned_by = ROOT
     }
     }
     effect = {
@@ -528,11 +645,11 @@ own_base_1 = {
     trigger = {
     delta_area = {
       type = all
-      NOT = {owned_by = ROOT}
+      owned_by = ROOT
     }
     bahari_area = {
       type = all
-      NOT = {owned_by = ROOT}
+      owned_by = ROOT
     }
 
     }

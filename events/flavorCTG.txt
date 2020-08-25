@@ -491,6 +491,7 @@ country_event = {
 	option = {#Rome is long lost
 		name = flavor_ctg.10.b
 		ai_chance = { factor = 30 }
+		swap_non_generic_missions = yes
 		add_legitimacy = -15
 		add_prestige = 20
 		add_mil_power = 100
@@ -500,7 +501,6 @@ country_event = {
 			name = ctg_own_path
 			duration = -1
 		}
-		swap_non_generic_missions = yes
 
 		every_owned_province = {
 			limit = {
