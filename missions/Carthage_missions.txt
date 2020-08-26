@@ -26,7 +26,7 @@ base_1 = {
     }
     }
     effect = {
-      add_adm_power = 100
+      add_adm_power = 50
       add_prestige = 10
       add_years_of_income = 1
     }
@@ -66,7 +66,7 @@ base_2 = {
     }
     }
     effect = {
-    add_mil_power = 100
+    add_mil_power = 50
     add_prestige = 10
     add_years_of_income = 1
     }
@@ -143,7 +143,7 @@ base_1 = {
 
     add_prestige = 10
     add_years_of_income = 1
-    add_dip_power = 100
+    add_dip_power = 50
     }
   }
 
@@ -784,8 +784,28 @@ fleet = {
     }
 
     trigger = {
+      navy_size_percentage = 0.99
+      num_of_galley = 25
     }
     effect = {
+      add_country_modifier = {
+        name =  naval_enthusiasm_mission
+        duration = -1
+      }
+      western_sicily_area = {
+        limit = {
+          NOT = { is_core = ROOT }
+          NOT = { is_permanent_claim = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      sicily_area = {
+        limit = {
+          NOT = { is_core = ROOT }
+          NOT = { is_permanent_claim = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 
@@ -798,8 +818,17 @@ fleet = {
     }
 
     trigger = {
+      any_owned_province = {
+        has_province_modifier = carthaginian_trading_outpost
+      }
     }
     effect = {
+    add_dip_power = 100
+
+    add_country_modifier = {
+      name = fleet_conversion
+      duration = 3650
+    }
     }
   }
 
@@ -812,8 +841,14 @@ fleet = {
     }
 
     trigger = {
+    heavy_ship_fraction = 0.4
     }
     effect = {
+    add_years_of_income = 1
+    add_country_modifier = {
+      name = develop_trade_relations
+      duration = 7300
+    }
     }
   }
 
@@ -834,12 +869,37 @@ american_trade = {
     required_missions = {fleet_transition}
     position = 7
     provinces_to_highlight = {
-
+      colonial_region = colonial_the_carribean
     }
 
     trigger = {
+    any_owned_province = {
+      has_province_modifier = carthaginian_trading_outpost
+      colonial_region = colonial_the_carribean
+    }
+    ATL = {
+      exists = yes
+      is_subject_of = ROOT
+    }
     }
     effect = {
+      random_owned_province = {
+        limit = {
+          has_province_modifier = carthaginian_trading_outpost
+          colonial_region = colonial_the_carribean
+        }
+        add_base_tax = 2
+        add_base_manpower = 2
+        add_base_production = 2
+      }
+      484 = {
+      add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = CARRIBEAN_MONOPOL
+        }
+      }
     }
   }
   south_american_trade = {
@@ -847,12 +907,65 @@ american_trade = {
     required_missions = {carribean_trade}
 
     provinces_to_highlight = {
-
+      colonial_region = colonial_colombia
+      colonial_region = colonial_mexico
     }
 
     trigger = {
+      any_owned_province = {
+        has_province_modifier = carthaginian_trading_outpost
+        colonial_region = colonial_mexico
+      }
+      any_owned_province = {
+        has_province_modifier = carthaginian_trading_outpost
+        colonial_region = colonial_colombia
+      }
+      PLD = {
+        exists = yes
+        is_subject_of = ROOT
+      }
+      AUR = {
+        exists = yes
+        is_subject_of = ROOT
+      }
+
     }
     effect = {
+
+      random_owned_province = {
+        limit = {
+          has_province_modifier = carthaginian_trading_outpost
+          colonial_region = colonial_colombia
+        }
+        add_base_tax = 2
+        add_base_manpower = 2
+        add_base_production = 2
+      }
+      random_owned_province = {
+        limit = {
+          has_province_modifier = carthaginian_trading_outpost
+          colonial_region = colonial_mexico
+        }
+        add_base_tax = 2
+        add_base_manpower = 2
+        add_base_production = 2
+      }
+      852 = {
+      add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = MEXICAN_MONOPOL
+        }
+      }
+      835 = {
+      add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = COLOMBIAN_MONOPOL
+        }
+      }
     }
   }
   inca_trade = {
@@ -860,12 +973,37 @@ american_trade = {
     required_missions = {south_american_trade}
 
     provinces_to_highlight = {
-
+      colonial_region = colonial_peru
     }
 
     trigger = {
+      any_owned_province = {
+        has_province_modifier = carthaginian_trading_outpost
+        colonial_region = colonial_peru
+      }
+      ALP = {
+        exists = yes
+        is_subject_of = ROOT
+      }
     }
     effect = {
+      random_owned_province = {
+        limit = {
+          has_province_modifier = carthaginian_trading_outpost
+          colonial_region = colonial_peru
+        }
+        add_base_tax = 2
+        add_base_manpower = 2
+        add_base_production = 2
+      }
+      809 = {
+      add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = INCA_MONOPOL
+        }
+      }
     }
   }
 
@@ -878,8 +1016,56 @@ american_trade = {
     }
 
     trigger = {
+    trade_income_percentage = 0.5
+    341 = {
+      highest_value_trade_node = yes
+    }
+
+    1298 = { # Genua
+				is_strongest_trade_power = ROOT
+			}
+			220 = {	# Valencia
+				is_strongest_trade_power = ROOT
+			}
+			224 = { #Sevilla
+				is_strongest_trade_power = ROOT
+			}
+			345 = { #Safi
+				is_strongest_trade_power = ROOT
+			}
+			358 = { #Alexandria
+				is_strongest_trade_power = ROOT
+			}
+			484 = { #Carribean
+				is_strongest_trade_power = ROOT
+			}
+
+			1139 = { #Gold Coast
+				is_strongest_trade_power = ROOT
+			}
+			504 = { #Indus
+				is_strongest_trade_power = ROOT
+			}
+			1340 = { #Ceylon
+				is_strongest_trade_power = ROOT
+			}
+			1343 = { #Bengal
+				is_strongest_trade_power = ROOT
+			}
+			1361 = { #Malacca
+				is_strongest_trade_power = ROOT
+			}
     }
     effect = {
+    add_years_of_income = 1
+    add_dip_power = 200
+    capital_scope = {
+      add_base_tax = 3
+    }
+    add_country_modifier = {
+      name = "thalassocracy"
+      duration = -1
+    }
     }
   }
 }
@@ -901,24 +1087,101 @@ american_trade_2 = {
     required_missions = {carribean_trade}
     position = 8
     provinces_to_highlight = {
-
+      colonial_region = colonial_louisiana
+      colonial_region = colonial_eastern_america
     }
 
     trigger = {
+      any_owned_province = {
+        has_province_modifier = carthaginian_trading_outpost
+        colonial_region = colonial_eastern_america
+      }
+      any_owned_province = {
+        has_province_modifier = carthaginian_trading_outpost
+        colonial_region = colonial_louisiana
+      }
+      AME = {
+        exists = yes
+        is_subject_of = ROOT
+      }
+      SKY = {
+        exists = yes
+        is_subject_of = ROOT
+      }
     }
     effect = {
+
+    random_owned_province = {
+      limit = {
+        has_province_modifier = carthaginian_trading_outpost
+        colonial_region = colonial_louisiana
+      }
+      add_base_tax = 2
+      add_base_manpower = 2
+      add_base_production = 2
+    }
+    random_owned_province = {
+      limit = {
+        has_province_modifier = carthaginian_trading_outpost
+        colonial_region = colonial_eastern_america
+      }
+      add_base_tax = 2
+      add_base_manpower = 2
+      add_base_production = 2
+    }
+    893 = {
+    add_trade_modifier = {
+        who = ROOT
+        duration = -1
+        power = 50
+        key = LOUISIANA_MONOPOL
+      }
+    }
+    957 = {
+    add_trade_modifier = {
+        who = ROOT
+        duration = -1
+        power = 50
+        key = AMERICAN_MONOPOL
+      }
+    }
     }
   }
   varangian_trade = {
     icon = mission_rb_colonise_canada
     required_missions = {north_american_trade}
     provinces_to_highlight = {
-
+      colonial_region = colonial_canada
     }
 
     trigger = {
+      any_owned_province = {
+        has_province_modifier = carthaginian_trading_outpost
+        colonial_region = colonial_canada
+      }
+      VAR = {
+        exists = yes
+        is_subject_of = ROOT
+      }
     }
     effect = {
+      random_owned_province = {
+        limit = {
+          has_province_modifier = carthaginian_trading_outpost
+          colonial_region = colonial_canada
+        }
+        add_base_tax = 2
+        add_base_manpower = 2
+        add_base_production = 2
+      }
+      1805 = {
+      add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = Varangia_MONOPOL
+        }
+      }
     }
   }
 }
@@ -940,12 +1203,64 @@ africo_asian_trade = {
     required_missions = {fleet_transition}
     position = 4
     provinces_to_highlight = {
-
+      superregion = southern_africa_superregion
+      superregion = africa_superregion
     }
 
     trigger = {
+      any_owned_province = {
+        superregion = africa_superregion
+        has_province_modifier = carthaginian_trading_outpost
+      }
+      any_owned_province = {
+        has_province_modifier = carthaginian_trading_outpost
+        superregion = southern_africa_superregion
+      }
+      AET = {
+        exists = yes
+        is_subject_of = ROOT
+      }
+      MRB = {
+        exists = yes
+        is_subject_of = ROOT
+      }
     }
     effect = {
+
+    random_owned_province = {
+      limit = {
+        has_province_modifier = carthaginian_trading_outpost
+        superregion = southern_africa_superregion
+      }
+      add_base_tax = 2
+      add_base_manpower = 2
+      add_base_production = 2
+    }
+    random_owned_province = {
+      limit = {
+        has_province_modifier = carthaginian_trading_outpost
+        superregion = africa_superregion
+      }
+      add_base_tax = 2
+      add_base_manpower = 2
+      add_base_production = 2
+    }
+    1467 = {
+    add_trade_modifier = {
+        who = ROOT
+        duration = -1
+        power = 50
+        key = GOLD_COAST_MONOPOL
+      }
+    }
+    2258 = {
+    add_trade_modifier = {
+        who = ROOT
+        duration = -1
+        power = 50
+        key = CAPE_MONOPOL
+      }
+    }
     }
   }
   indian_trade = {
@@ -953,12 +1268,42 @@ africo_asian_trade = {
     required_missions = {african_trade}
 
     provinces_to_highlight = {
-
+      is_owned_by_trade_company = no
+      superregion = india_superregion
+      owned_by = ROOT
     }
 
     trigger = {
-    }
+      num_of_owned_provinces_with = {
+          value = 20
+          superregion = india_superregion
+          is_owned_by_trade_company = yes
+        }
+      }
     effect = {
+      random_owned_province = {
+        limit = {
+          superregion = india_superregion
+          is_owned_by_trade_company = yes
+        }
+        add_base_production = 6
+      }
+      2099 = {
+      add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = COROMANDEL_MONOPOL
+        }
+      }
+      564 = {
+      add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = BENGAL_MONOPOL
+        }
+      }
     }
   }
   indonesian_trade = {
@@ -966,12 +1311,42 @@ africo_asian_trade = {
     required_missions = {indian_trade}
 
     provinces_to_highlight = {
-
+      is_owned_by_trade_company = no
+      region = indonesia_region
+      owned_by = ROOT
     }
 
     trigger = {
-    }
+      num_of_owned_provinces_with = {
+          value = 20
+          region = indonesia_region
+          is_owned_by_trade_company = yes
+        }
+      }
     effect = {
+      random_owned_province = {
+        limit = {
+          region = indonesia_region
+          is_owned_by_trade_company = yes
+        }
+        add_base_production = 6
+      }
+      628 = {
+      add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = MAJAPAHIT_MONOPOL
+        }
+      }
+      596 = {
+      add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = MALACCA_MONOPOL
+        }
+      }
     }
   }
 }

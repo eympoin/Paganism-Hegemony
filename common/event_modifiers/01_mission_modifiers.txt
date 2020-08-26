@@ -4612,3 +4612,12 @@ cothon = {
   naval_forcelimit = 5
   prestige = 1
 }
+
+develop_trade_relations = {
+colonist_placement_chance	= 0.05
+trade_steering = 0.15
+}
+
+fleet_conversion = {
+  heavy_ship_cost = -0.2
+}
