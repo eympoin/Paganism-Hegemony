@@ -7947,3 +7947,24 @@
    army_of_old_desc:0""
    nea_mare_nostrum_desc:0""
    tradition_of_engineer_desc:0""
+
+
+   CUM_ideas:0 "Cumans Ideas"
+   CUM_ideas_start:0 "Cumans Traditions"
+   CUM_ideas_bonus:0 "Cumans Ambition"
+
+   reform_the_tribe:0 "Reform the Tribe"
+   nomadic_traditions_cum:0 "Nomadic Traditions"
+   reclaim_our_empire:0 "Reclaim our Empire"
+   another_road_eastern_trade:0 "Eastern trade roads"
+   cumans_beauty:0 "Cumans' Beauty"
+   integrate_the_other_tribes:0 "Integrate the other tribes"
+   Codex_Cumanicus:0 "Codex Cumanicus"
+
+   reform_the_tribe_desc:0 ""
+   nomadic_traditions_cum_desc:0 ""
+   reclaim_our_empire_desc:0 ""
+   another_road_eastern_trade_desc:0 ""
+   cumans_beauty_desc:0 ""
+   integrate_the_other_tribes_desc:0 ""
+   Codex_Cumanicus_desc:0 ""

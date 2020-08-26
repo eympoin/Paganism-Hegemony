@@ -3,6 +3,51 @@
 # If adding new groups or ideas, make sure they are unique.
 
 ### Nation specific idea groups
+CUM_ideas = {
+	start = {
+		cavalry_power = 0.2
+		cavalry_cost = -0.25
+	}
+	bonus = {
+		core_creation = -0.1
+	}
+	trigger = {
+		tag = CUM
+	}
+	free = yes
+
+
+	reform_the_tribe = {
+		reform_progress_growth = 0.1
+		global_autonomy = -0.05
+	}
+
+	nomadic_traditions_cum = {
+		cavalry_fire = 1
+		leader_land_shock = 1
+	}
+
+	reclaim_our_empire = {
+		ae_impact = -0.2
+	}
+
+	another_road_eastern_trade = {
+		trade_efficiency = 0.15
+	}
+
+	cumans_beauty = {
+		diplomatic_reputation = 1
+	}
+
+	integrate_the_other_tribes = {
+		global_manpower_modifier = 0.2
+	}
+
+	Codex_Cumanicus = {
+		prestige = 1
+	}
+}
+
 WRM_ideas = {
 	start = {
 		administrative_efficiency = 0.1
