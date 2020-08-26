@@ -1,0 +1,376 @@
+namespace = flavor_wrm
+country_event = {#Welsh/cornish/breton
+  id = flavor_wrm.1
+  title = flavor_wrm.1.t
+  desc = flavor_wrm.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    NOT = {tag = BRN}
+    NOT = { tag = LDN}
+    culture_group = neo-roman
+    any_owned_province = {
+      religion = deii
+      OR = {
+        culture = welsh
+        culture = cornish
+        culture = breton
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_wrm.1.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+        religion = deii
+        OR = {
+          culture = welsh
+          culture = cornish
+          culture = breton
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = britannian
+    }
+  }
+}
+
+country_event = {#Scottish
+  id = flavor_wrm.2
+  title = flavor_wrm.1.t
+  desc = flavor_wrm.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+  NOT = {tag = BRN}
+  NOT = { tag = LDN}
+  culture_group = neo-roman
+    any_owned_province = {
+      religion = deii
+      OR = {
+        culture = highland_scottish
+        culture = scottish
+      }
+      NOT = { culture_group = britannian_group }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_wrm.1.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+        religion = deii
+        OR = {
+          culture = highland_scottish
+          culture = scottish
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = britannian
+    }
+  }
+}
+country_event = {#Irish
+  id = flavor_wrm.3
+  title = flavor_wrm.1.t
+  desc = flavor_wrm.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    NOT = {tag = BRN}
+    NOT = { tag = LDN}
+    culture_group = neo-roman
+    any_owned_province = {
+      religion = deii
+      culture = irish
+      NOT = { culture_group = britannian_group }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_wrm.1.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+        religion = deii
+        culture = irish
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = britannian
+    }
+  }
+}
+country_event = {#Northumbrian
+  id = flavor_wrm.4
+  title = flavor_wrm.1.t
+  desc = flavor_wrm.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    NOT = {tag = BRN}
+    NOT = { tag = LDN}
+    culture_group = neo-roman
+    any_owned_province = {
+      religion = deii
+      culture = northymbrian
+      NOT = { culture_group = britannian_group }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_wrm.1.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+        religion = deii
+        culture = northymbrian
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = britannian
+    }
+  }
+}
+country_event = {#Anglo-saxon
+  id = flavor_wrm.5
+  title = flavor_wrm.1.t
+  desc = flavor_wrm.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    NOT = {tag = BRN}
+    NOT = { tag = LDN}
+    culture_group = neo-roman
+    any_owned_province = {
+      religion = deii
+      OR = {
+        culture = angle
+        culture = seaxan
+      }
+      NOT = { culture_group = britannian_group }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_wrm.1.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+        religion = deii
+        OR = {
+          culture = angle
+          culture = seaxan
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = britannian
+    }
+  }
+}
+
+
+country_event = {#franks
+  id = flavor_wrm.6
+  title = flavor_wrm.1.t
+  desc = flavor_wrm.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    culture_group = neo-roman
+    any_owned_province = {
+      religion = deii
+      OR = {
+        culture = lingerian
+        culture = salian
+        culture = rhenan
+      }
+      NOT = { culture_group = britannian_group }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 5
+  }
+
+  option = {
+    name = flavor_wrm.1.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+        religion = deii
+        OR = {
+          culture = lingerian
+          culture = salian
+          culture = rhenan
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = franko-roman
+    }
+  }
+}
+
+country_event = {#burgond
+  id = flavor_wrm.7
+  title = flavor_wrm.1.t
+  desc = flavor_wrm.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    culture_group = neo-roman
+    any_owned_province = {
+      religion = deii
+      OR = {
+        culture = burgond
+      }
+      NOT = { culture_group = britannian_group }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 5
+  }
+
+  option = {
+    name = flavor_wrm.1.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+        religion = deii
+        OR = {
+          culture = burgond
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = lugdunian
+    }
+  }
+}
+
+
+country_event = {#Griko
+  id = flavor_wrm.8
+  title = flavor_wrm.1.t
+  desc = flavor_wrm.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    NOT = {tag  = CTG}
+    NOT = {tag  = AFR}
+    culture_group = neo-roman
+    any_owned_province = {
+      religion = deii
+      OR = {
+        culture = Griko
+      }
+      NOT = { culture_group = britannian_group }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 5
+  }
+
+  option = {
+    name = flavor_wrm.1.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+        religion = deii
+        OR = {
+          culture = Griko
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = salernian
+    }
+  }
+}
+
+country_event = {#Lombards
+  id = flavor_wrm.9
+  title = flavor_wrm.1.t
+  desc = flavor_wrm.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    culture_group = neo-roman
+    any_owned_province = {
+      religion = deii
+      OR = {
+        culture = aquileian
+        culture = lombard
+      }
+      NOT = { culture_group = britannian_group }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 3
+  }
+
+  option = {
+    name = flavor_wrm.1.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+        religion = deii
+        OR = {
+        culture = aquileian
+        culture = lombard
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = annonarian
+    }
+  }
+}

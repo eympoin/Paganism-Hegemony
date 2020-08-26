@@ -1006,3 +1006,9 @@ flavor_orm.5.e:0 "Follow the path of Muhammad"
 flavor_orm.6.f:0 "Follow the path of Jabir ibn Zayd"
 Hormuz_missionary:0 "Spread our new faith"
 Stabilize_the_country:0 "Stabilize the country"
+
+#Western Roman Empire
+
+flavor_wrm.1.t:0 "Cultural Assimilation"
+flavor_wrm.1.d:0 "With the reconquest of the Empire, we started to romanize our territory. Finally, we can say that this province is truly Roman !"
+flavor_wrm.1.a:0 "This is a happy news."
