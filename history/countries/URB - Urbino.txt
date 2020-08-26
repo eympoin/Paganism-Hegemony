@@ -69,9 +69,9 @@ add_army_professionalism = 0.05
 
 1443.2.1 = {
 	heir = {
-		name = "Federico"
-		monarch_name = "Federico III"
-		dynasty = "da Montefeltro"
+		name = "Titus"
+		monarch_name = "Titus III"
+		dynasty = "Metilius"
 		birth_date = 1422.6.7
 		death_date = 1482.9.10
 		claim = 95
@@ -83,8 +83,8 @@ add_army_professionalism = 0.05
 
 1444.7.22 = {
 	monarch = {
-		name = "Federico III"
-		dynasty = "da Montefeltro"
+		name = "Titus III"
+		dynasty = "Metilius"
 		birth_date = 1422.6.7
 		adm = 4
 		dip = 3
