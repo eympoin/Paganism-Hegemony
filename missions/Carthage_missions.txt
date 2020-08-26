@@ -86,7 +86,7 @@ base_2 = {
     }
 
     trigger = {
-      development = 300
+      total_development = 300
       NOT = {exists = LBY}
       NOT = {exists = TRP}
       NOT = {exists = HIP}
