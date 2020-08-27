@@ -9,7 +9,7 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { tag = HLR }
+			NOT = { tag = WRM }
 			NOT = { tag = GLI }
 			OR = {
 				ai = no

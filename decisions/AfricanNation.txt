@@ -13,7 +13,7 @@ country_decisions = {
 			NOT = { tag = HLR }
 			NOT = { tag = PAP }
 			NOT = { tag = EGY }
-			NOT = { tag = ARB }
+			NOT = { tag = WRM }
 			NOT = { exists = AFR }
 			NOT = { has_reform = celestial_empire }
 			OR = {

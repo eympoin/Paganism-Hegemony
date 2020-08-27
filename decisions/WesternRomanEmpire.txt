@@ -50,6 +50,9 @@ country_decisions = {
 			 }
 			 set_government_rank = 3
 		 }
+		 118 = {
+			 move_capital_effect = yes
+		 }
 
 		 add_country_modifier = {
 			 name = "centralization_modifier"
