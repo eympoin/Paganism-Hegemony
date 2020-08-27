@@ -1,6 +1,6 @@
 country_decisions = {
 
-	restore_Western_Roman_Empire = {
+	restore_Roman_Empire = {
 		major = yes
 		potential = {
 			normal_or_historical_nations = yes
@@ -10,12 +10,12 @@ country_decisions = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { tag = WRM }
 			NOT = { tag = HLR }
 			NOT = { tag = PAP }
-
-			culture_group = neo-roman
-
+			OR = {
+				culture_group = neo-roman
+				culture_group = byzantine
+				}
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -27,36 +27,49 @@ country_decisions = {
 		}
 
 		provinces_to_highlight = {
-			region = italy_region
-
+				province_id = 118 # Roma
+				province_id = 151 # Constantinople
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
 			}
 		}
 		allow = {
-    is_free_or_tributary_trigger = yes
-    is_at_war = no
-    is_nomad = no
-
-			owns_core_province = 118
-			development_in_provinces = {
-				value = 300
-				region = italy_region
+	    is_free_or_tributary_trigger = yes
+	    is_at_war = no
+	    is_nomad = no
+			OR = {
+				tag = WRM
+				tag = ERM
 			}
-			total_development = 900
+			OR = {
+				AND = {
+					tag = WRM
+					is_emperor = yes
+				}
+				AND = {
+					owns_core_province = 118
+					owns_core_province = 151
+					total_development = 2500
+					development_in_provinces = {
+						value = 1000
+							culture_group = neo-roman
+					}
+					development_in_provinces = {
+						value = 1000
+						culture_group = byzantine
+					}
+				}
+			}
 		}
 		effect = {
 		 remove_non_electors_emperors_from_empire_effect = yes
-		 change_tag = WRM
+		 change_tag = ROM
 		 if = {
 			 limit = {
 				 NOT = { government_rank = 3 }
 			 }
 			 set_government_rank = 3
-		 }
-		 118 = {
-			 move_capital_effect = yes
 		 }
 
 		 add_country_modifier = {
@@ -64,7 +77,7 @@ country_decisions = {
 			 duration = 7300
 		 }
 		 add_prestige = 25
-		 set_country_flag = formed_Western_Roman_Empire_flag
+		 set_country_flag = formed_Roman_Empire_flag
 		 south_german_region = {
 			 limit = {
 				 NOT = { owned_by = ROOT }
@@ -101,18 +114,29 @@ country_decisions = {
 			 }
 			 add_permanent_claim = ROOT
 		 }
-		 if = {
+		 balkan_region = {
 			 limit = {
-				 has_custom_ideas = no
-				 OR = {
-					 ai = no
-					 AND = {
-						 ai = yes
-						 has_idea_group = default_ideas
-					 }
-				 }
+				 NOT = { owned_by = ROOT }
 			 }
-			 country_event = { id = ideagroups.1 } #Swap Ideas
+			 add_permanent_claim = ROOT
+		 }
+		 egypt_region = {
+			 limit = {
+				 NOT = { owned_by = ROOT }
+			 }
+			 add_permanent_claim = ROOT
+		 }
+		 anatolia_region = {
+			 limit = {
+				 NOT = { owned_by = ROOT }
+			 }
+			 add_permanent_claim = ROOT
+		 }
+		 mashriq_region = {
+			 limit = {
+				 NOT = { owned_by = ROOT }
+			 }
+			 add_permanent_claim = ROOT
 		 }
 	 }
 		ai_will_do = {

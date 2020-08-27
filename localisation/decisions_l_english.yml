@@ -251,10 +251,12 @@
  restore_Western_Roman_Empire_title:0 "Reform the Western Roman Empire"
  restore_Western_Roman_Empire_desc:0 "The Western Empire is back"
 
+ restore_Roman_Empire_title:0 "Return of the Eagle"
+ restore_Roman_Empire_desc:0 "An united Roman Empire has been the dream of many since its fall. This dream is now reality."
+
  #Tamazgha
  Create_Tamazgha_title:0 "Create Tamazgha"
  Create_Tamazgha_desc:0 "All Imazighen are unite"
-
  african_nation_title:0 "Unite Africa"
  african_nation_desc:0 "Africa has been divided for too long, united nothing will stand in our way"
 
