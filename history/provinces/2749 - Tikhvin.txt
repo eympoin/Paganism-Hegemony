@@ -13,7 +13,7 @@ capital = "Tikhvin"
 is_city = yes
 add_core = NOV
 
-
+add_core = VEP
 
 discovered_by = eastern
 discovered_by = western

@@ -44,7 +44,7 @@ country_decisions = {
 				value = 300
 				region = italy_region
 			}
-			total_development = 900
+			total_development = 1000
 		}
 		effect = {
 		 remove_non_electors_emperors_from_empire_effect = yes

@@ -374,3 +374,77 @@ country_event = {#Lombards
     }
   }
 }
+
+
+country_event = {#Claim Eastern Throne
+  id = flavor_wrm.10
+  title = flavor_wrm.10.t
+  desc = flavor_wrm.10.d
+  picture = COLONIZATION_eventPicture
+
+  is_triggered_only = yes
+
+  option = { #claim eastern throne
+    name = flavor_wrm.10.a
+    ai_chance = { factor = 1 }
+  }
+  option = { #we don't need the east
+    name = flavor_wrm.10.b
+    ai_chance = { factor = 1 }
+
+  }
+}
+
+country_event = {#answer of the ERE
+  id = flavor_wrm.11
+  title = flavor_wrm.11.t
+  desc = flavor_wrm.11.d
+  picture = COLONIZATION_eventPicture
+
+  is_triggered_only = yes
+
+  option = { #if they want  the throne, they will have to fight
+    name = flavor_wrm.11.a
+    ai_chance = { factor = 1 }
+  }
+}
+
+country_event = {#To war
+  id = flavor_wrm.12
+  title = flavor_wrm.12.t
+  desc = flavor_wrm.12.d
+  picture = COLONIZATION_eventPicture
+
+  is_triggered_only = yes
+
+  option = { #war
+    name = flavor_wrm.12.a
+    ai_chance = { factor = 1 }
+  }
+  option = { #not yet
+    name = flavor_wrm.12.b
+    ai_chance = { factor = 1 }
+  }
+}
+
+country_event = {#Peace choices
+  id = flavor_wrm.13
+  title = flavor_wrm.13.t
+  desc = flavor_wrm.13.d
+  picture = COLONIZATION_eventPicture
+
+  is_triggered_only = yes
+
+  option = { #dismantle the empire
+    name = flavor_wrm.13.a
+    ai_chance = { factor = 1 }
+  }
+  option = { #force religious peace and enter the Empire
+    name = flavor_wrm.13.b
+    ai_chance = { factor = 1 }
+  }
+  option = { #take the throne (roman religion, kill the emperor and religious peace)
+    name = flavor_wrm.13.c
+    ai_chance = { factor = 1 }
+  }
+}

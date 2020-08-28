@@ -491,16 +491,17 @@ country_event = {
 	option = {#Rome is long lost
 		name = flavor_ctg.10.b
 		ai_chance = { factor = 30 }
+		change_primary_culture = carthaginian
+		add_country_modifier = {
+			name = ctg_own_path
+			duration = -1
+		}
 		swap_non_generic_missions = yes
 		add_legitimacy = -15
 		add_prestige = 20
 		add_mil_power = 100
 		add_dip_power = -100
 		add_stability = -1
-		add_country_modifier = {
-			name = ctg_own_path
-			duration = -1
-		}
 
 		every_owned_province = {
 			limit = {
@@ -532,7 +533,6 @@ country_event = {
 			}
 			change_culture = mauri
 		}
-		change_primary_culture = carthaginian
 	}
 }
 
