@@ -3,6 +3,100 @@
 # If adding new groups or ideas, make sure they are unique.
 
 ### Nation specific idea groups
+CUM_ideas = {
+	start = {
+		cavalry_power = 0.2
+		cavalry_cost = -0.25
+	}
+	bonus = {
+		core_creation = -0.1
+	}
+	trigger = {
+		tag = CUM
+	}
+	free = yes
+
+
+	reform_the_tribe = {
+		reform_progress_growth = 0.1
+		global_autonomy = -0.05
+	}
+
+	nomadic_traditions_cum = {
+		cavalry_fire = 1
+		leader_land_shock = 1
+	}
+
+	reclaim_our_empire = {
+		ae_impact = -0.2
+	}
+
+	another_road_eastern_trade = {
+		trade_efficiency = 0.15
+	}
+
+	cumans_beauty = {
+		diplomatic_reputation = 1
+	}
+
+	integrate_the_other_tribes = {
+		global_manpower_modifier = 0.2
+	}
+
+	Codex_Cumanicus = {
+		prestige = 1
+	}
+}
+
+WRM_ideas = {
+	start = {
+		administrative_efficiency = 0.1
+		army_tradition = 0.2
+	}
+	bonus = {
+		monarch_admin_power = 1
+	}
+	trigger = {
+		tag = WRM
+	}
+	free = yes
+
+
+	return_to_glory = {
+		legitimacy = 1
+		prestige = 1
+		republican_tradition = 1
+	}
+
+	reinvent_army_logistic = {
+		movement_speed = 0.1
+		leader_land_manuever = 2
+	}
+
+	lingua_romana = {
+		culture_conversion_cost = -0.2
+		diplomatic_reputation = 1
+	}
+
+	compete_with_greek_merchants = {
+		merchants = 1
+		trade_steering = 0.2
+	}
+
+	army_of_old = {
+		discipline = 0.08
+		yearly_army_professionalism = 0.01
+	}
+
+	nea_mare_nostrum = {
+		ship_durability = 0.1
+		navy_tradition = 0.1
+	}
+	tradition_of_engineer = {
+		siege_ability = 0.15
+		artillery_power = 0.1
+	}
+}
 
 carthaginian_colonial_ideas = {
 	start = {
@@ -2115,10 +2209,7 @@ SPQ_ideas = {
 		core_creation = -0.2
 	}
 	trigger = {
-	OR = {
 		tag=SPQ
-		tag = WRM
-		}
 	}
 	free = yes
 

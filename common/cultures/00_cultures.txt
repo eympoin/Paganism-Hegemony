@@ -79,6 +79,8 @@ tuscan = {
 sardinian = {
 	primary = SAR
 }
+annonarian = {
+}
 
 sicilian = {
 	primary = SIC

@@ -4612,3 +4612,41 @@ cothon = {
   naval_forcelimit = 5
   prestige = 1
 }
+
+develop_trade_relations = {
+colonist_placement_chance	= 0.05
+trade_steering = 0.15
+}
+
+fleet_conversion = {
+  heavy_ship_cost = -0.2
+}
+reconquest_of_italy = {
+  prestige = 1
+  legitimacy = 1
+  development_cost = -0.25
+}
+
+britannia_restoration = {
+  build_cost = -0.2
+  trade_steering = 0.1
+  production_efficiency = 0.1
+}
+
+rome_reborn_mod = {
+  local_development_cost = -0.25
+  local_build_cost = -0.25
+  local_tax_modifier = 0.2
+  local_production_efficiency = 0.2
+  allowed_num_of_buildings = 1
+  local_institution_spread = 0.1
+  province_trade_power_modifier = 0.3
+}
+
+emperoror_of_east_west ={
+  num_accepted_cultures = 4
+  tolerance_heretic = 3
+  religious_unity = 0.3
+  global_unrest = -1
+  legitimacy = 1
+}

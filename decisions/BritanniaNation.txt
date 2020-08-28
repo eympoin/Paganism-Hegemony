@@ -10,7 +10,7 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			NOT = { tag = BRN }
-			NOT = { tag = HLR }
+			NOT = { tag = WRM }
 			NOT = { tag = PAP }
 			OR = {
 				primary_culture = britannian

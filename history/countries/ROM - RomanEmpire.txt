@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = roman
-religion = catholic
+religion = deii
 technology_group = western
 capital = 118 # Rome

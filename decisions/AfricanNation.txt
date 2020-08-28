@@ -13,7 +13,7 @@ country_decisions = {
 			NOT = { tag = HLR }
 			NOT = { tag = PAP }
 			NOT = { tag = EGY }
-			NOT = { tag = ARB }
+			NOT = { tag = WRM }
 			NOT = { exists = AFR }
 			NOT = { has_reform = celestial_empire }
 			OR = {
@@ -51,7 +51,7 @@ country_decisions = {
 			owns_core_province = 354
 			owns_core_province = 352
 			owns_core_province = 2451
-			development = 300
+			total_development = 300
 		}
 		effect = {
 			change_tag = AFR

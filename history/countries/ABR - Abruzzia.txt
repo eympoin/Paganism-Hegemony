@@ -8,11 +8,11 @@ fixed_capital = 120
 
 1444.1.1 = {
     monarch = {
-        name = "Claudius"
-	dynasty = "Hadrianus"
+        name = "Clemens"
+	dynasty = "Pacuvius"
         birth_date = 1410.8.12
         adm = 4
-        dip = 4
-        mil = 2
+        dip = 3
+        mil = 3
     }
 }

@@ -10,10 +10,10 @@ government_rank = 1
 1444.1.1 = {
     monarch = {
         name = "Claudius"
-	dynasty = "Hadrianus"
-        birth_date = 1410.8.12
-        adm = 4
-        dip = 4
-        mil = 2
+	dynasty = "Caecia"
+        birth_date = 1413.8.12
+        adm = 3
+        dip = 2
+        mil = 3
     }
 }
