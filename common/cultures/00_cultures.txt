@@ -4651,6 +4651,19 @@ turko_semitic = { #semitic
 			Taliba Tanaz Taneen Yagana Yakta Yasmin Zaynab
 		}
 	}
+
+	Egyptian_Arabic = {
+	}
+
+	tunisian = {
+	}
+	algerian = {
+	}
+	Moroccan ={
+	}
+	Andalusian = {
+	}
+
 	omani_culture = {
 		primary = OMA
 		dynasty_names = {
@@ -4750,49 +4763,7 @@ maghrebi = {
 			Ultafa Wenza Wnissa Wrina Z'diant Z'ergha Zaghwa Zahida Zamba Zibba Zilgum Zubayda Zunagha Zwina Zwira
 		}
 	}
-	tunisian = {
-		primary = TUN
-		dynasty_names = {
-			"Hafsid" "Karamanli" "Muradid" "Husainid" "Banu Muhammad"
-		}
-		male_names = {
-			Muhammad 'Al� Ahmad Yahy� Zkariy�' 'Abd al-'Aziz 'Abd al-Mu'min Ham�da Husayn 'Usman Salih Sulaiman
-			Isma'�l Y�suf Ab� Bakr Ala ad-Din Butrus Fakhri Fayiz Hadj Hafiz Harun Hasan Hashim Ibrahim Ja'far
-			Mahir Mas'ud Murad Mustafa Qadir Rasim Salah Shadi Tahir Torgud Yunus Khalil Amud Anaba Annaber Antalas Anwa Aras
-			Asad Asaru Asirem Aszellay Atissi Awdia Awgustin August Awinagh Awlagh Awzal Aylal Ayt'ere Az'ar Az'regh Azenkwed
-			Azim Azrur Badda Badis Bagay Barakat Beddis Berkan Bezz'i Br'ir'uc Bukkus Buwayh Buxtuc Capussa Cucung Dali Fahd
-			Fath Fella Firhun Firmus Frawsen Gaia Galussa Gauda Gaya Ghani Ghanim Ghaysan Ghumer Gildun Gulusa H'emmu Haidar
-			Hamad Hashim Hiba Hiempsal Himmi Hotha Hussamaddin Ibiza Ibrahim Abraham Iccaam Ifni Ifser Ighlaf Igider Igmi Iher
-			Iken Ilyas Ilyas Immeghar Immel
-		}
-		female_names = {
-			Hikmat Inas Aesha Aisha Amira Badeea Badia Badra Bahac Bahiyya Bajila Bakka Baraah Barakah Baria Bashira Monica
-			Myassa Najiba R'uza Ra'isa Rahima Randja Rula Sadiqa Salaama Sekkura Siddiqa Silya Siman T'awes T'item Tadefi Tadla
-			Tadmut Tafrara Tafsut Tagwillult Taheyyatt Takama Taklit Talalit
-		}
-	}
-	algerian = {
-		primary = ALG
-		dynasty_names = {
-			"Beni Djellab" "Ouled Nail" "Ouled Sidi Cheikh" "Banu Rashid" "Banu Kinanah" Shammar "Ait Djennad"
-			"Ait Iraten" "Ait Idjer"
-		}
-		male_names = {
-			Muhammad 'Ali Ahmad Hasan Husayn Ibrahim Mustafa 'Abdall�h 'Abd ar-Rahm�n M�s� 'Abd al-W�hid Ab�
-			al-Hasan Sa'�d Sha'ban 'Umar Y�suf Baba Aruj Khidr Khair ad-Din Selim 'Uthm�n Yaghmuras�n 'Abd
-			Barakat Basir Dawud Faris Haidar Hashim Jabbar Jamal Junayd Najib Qasim Rahim Rash�d Safi Sakhr
-			Wahid Zahir T�shuf�n al-Karim Irgen Is'mail Ismail Isalcas Ishaq Isaac Isli Issam It'ij Itber Itri Ixfensen Ixzi
-			Izri Jaffar Jamal Kadidu Kamal Karidenna Kawsen Kenan Keraja Khalid Khanchla Khenchela Khidr Kussil Lacumaces Laweye
-			Lewnis Luki Lucius Madidu Magsen Mahtar Malik Marwan Masgaba Masgava Masinissa Masmud Masnsen Massinissa Massiva
-			Massnsen Mastan Mastanabal Matiya Matthew Maysar Maziba Mazigh Medjan Mellal Mennad Menzu Meq'wran Mez'yan Mezwar
-			Micipsa Misagenes Misibsen Mu'izz Muh'end Muhammad Muhammad Mukhtar Mula Murad Musa Moses
-		}
-		female_names = {
-			Randa Tabassum Basilie Basima Basimah Bghnat Bibya Bilqis Cala Canh'a Cantara D'r'ifa Daisha Dalal Dasi
-			Taljat Tament Tamimunt Tamrust Tanaszart Tanebdatt Tanefzawit Tanest Taninna Tarifa Tariwelt
-			Tasa Tasa'fut Taszellayt Tatbirt Tati Taweckint Tawenza Tawnat Tawzalt Tayri Tayyurt Tazdayt
-		}
-	}
+
 	berber_culture = {
 		primary = TLC
 		dynasty_names = {
