@@ -4654,3 +4654,12 @@ emperoror_of_east_west ={
 carthaginian_empire_mod = {
   merchants = 3
 }
+
+southern_road_ctg = {
+  land_maintenance_modifier = -0.1
+}
+
+hannibal_road_ctg = {
+  movement_speed = 0.1
+  land_attrition = -0.1
+}

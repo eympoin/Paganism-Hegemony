@@ -1316,6 +1316,9 @@ roma_delenda_est_desc:0 ""
 end_the_greek_monopol_desc:0 ""
 secunda_roma_delenda_est_desc:0 ""
 
+hannibal_road_ctg:0 "Took Hannibal's Road"
+southern_road_ctg:0 "Took the southern Road"
+
 GREECE_MONOPOL:0 "Greece monopol"
 ITALIAN_MONOPOL:0 "Italian monpol"
 EGYPTIAN_MONOPOL:0 "Egyptian monopol"

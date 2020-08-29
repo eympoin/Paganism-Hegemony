@@ -844,6 +844,11 @@ flavor_ctg.28.t:0 "Carthago's unique colonization mechanic"
 flavor_ctg.28.d:0 "Carthago doesn't colonize like the other nations. The first colony in the region will become a trading outpost that you will keep, all the others in the region will be given to a special protectorate.\n This protectorate will have a culture and religion fitting the region. They gives you a part of their trade like a colony, but you can also divert their trade. They are more or less colonies without the tariffs system. Once they have ten provinces, they will give more global trade power than normal colonies (0.1 instead of 0.05 and yes normal colonies gives global trade power if you didn't know)."
 flavor_ctg.28.a:0 "That's good to know."
 
+flavor_ctg.29.t:0 "Roma Delenda Est"
+flavor_ctg.29.d:0 "Now that the Carthaginian empire is restored, it is time to show the world our strength. And what is better than avenging our ancestors and destroying Rome ? To invade Rome, we have two roads possible : taking the same road as Hannibal or taking the southern road in Italy."
+flavor_ctg.29.a:0 "We will follow Hannibal footsteps."
+flavor_ctg.29.b:0 "The southern road is more logical."
+
 flavor_ctg_col.1.t:0 "The protectorate of Hyperboera"
 flavor_ctg_col.1.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
 flavor_ctg_col.1.a:0 "This is a good news !"

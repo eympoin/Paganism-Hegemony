@@ -6,10 +6,10 @@ country_event = {
 	desc = "flavor_nar.EVTDESC3"
 	picture = COURT_eventPicture
 	major = yes
-	
+
 	fire_only_once = yes
-	
-	
+
+
 	trigger = {
 		OR{
 			AND{
@@ -21,7 +21,7 @@ country_event = {
 					ai = yes
 					was_player = no
 					}
-				
+
 				}
 			AND{
 				tag = AQI
@@ -39,7 +39,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 50
 	}
-	
+
 	option = {		# unite
 		name = "flavor_nar.EVTOPTA3"
 		ai_chance = { factor = 75 }
@@ -68,13 +68,108 @@ country_event = {
 				size = 2
 			}
 		}
-		add_stability = -1	
+		add_stability = -1
 	}
 	option = {		# do not unite
 		name = "flavor_nar.EVTOPTB3"
 		ai_chance = { factor = 25 }
 		add_stability_or_adm_power = yes
-		add_prestige = 20	
-		
-	}	
+		add_prestige = 20
+
+	}
+}
+
+
+country_event = {#franks
+  id = flavor_nar.1
+  title = flavor_nar.1.t
+  desc = flavor_nar.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+		OR = {
+			tag = NAR
+			tag = AQI
+			tag = GLI
+		}
+    culture_group = neo-roman
+    any_owned_province = {
+      religion = deii
+      OR = {
+        culture = lingerian
+        culture = salian
+        culture = rhenan
+      }
+      NOT = { culture_group = britannian_group }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 5
+  }
+
+  option = {
+    name = flavor_nar.1.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+        religion = deii
+        OR = {
+          culture = lingerian
+          culture = salian
+          culture = rhenan
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = franko-roman
+    }
+  }
+}
+
+country_event = {#burgond
+  id = flavor_nar.2
+  title = flavor_nar.1.t
+  desc = flavor_nar.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      tag = NAR
+      tag = AQI
+			tag = GLI
+    }
+    culture_group = neo-roman
+    any_owned_province = {
+      religion = deii
+      OR = {
+        culture = burgond
+      }
+      NOT = { culture_group = britannian_group }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 5
+  }
+
+  option = {
+    name = flavor_nar.1.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+        religion = deii
+        OR = {
+          culture = burgond
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = lugdunian
+    }
+  }
 }

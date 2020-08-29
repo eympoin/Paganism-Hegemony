@@ -1068,7 +1068,7 @@ own_base_2 = {
       monthly_income = 150
     }
     effect = {
-    #event rome delenda est
+    country_event = {id = flavor_ctg.29}
     set_government_rank = 3
     add_mercantilism = 2
     cyprus_area = {
@@ -1121,8 +1121,10 @@ own_base_2 = {
             type = all
             owned_by = ROOT
           }
+          has_country_modifier = hannibal_road_ctg
         }
         AND = {
+
           calabria_area = {
             type = all
             owned_by = ROOT
@@ -1131,12 +1133,25 @@ own_base_2 = {
             type = all
             owned_by = ROOT
           }
+          has_country_modifier = southern_road_ctg
         }
       }
     }
     effect = {
+      if = {
+        limit = {
+          has_country_modifier = southern_road_ctg
+        }
+        remove_country_modifier = southern_road_ctg
+      }
+      if = {
+        limit = {
+          has_country_modifier = hannibal_road_ctg
+        }
+        remove_country_modifier = hannibal_road_ctg
+      }
       add_prestige = 10
-      add_years_of_income
+      add_years_of_income = 1
       lazio_area = {
         limit = {
           NOT = { is_core = ROOT }

@@ -18,6 +18,7 @@ country_decisions = {
 			OR = {
 				primary_culture = aquitain
 				primary_culture = narbonnais
+				primary_culture = lugdunian
 			}
 			is_colonial_nation = no
 			OR = {
@@ -42,9 +43,10 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			NOT = { exists = GLI }
-			france_region = {
-				type = all
-				owned_by = ROOT
+			owns_core_province = 203
+			development_in_provinces = {
+				value = 600
+				region = france_region
 			}
 		}
 		effect = {
@@ -52,10 +54,16 @@ country_decisions = {
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
-					NOT = { government_rank = 3 }
+					NOT = { government_rank = 2 }
 				}
-				set_government_rank = 3
+				set_government_rank = 2
 			}
+			france_region = {
+ 			 limit = {
+ 				 NOT = { owned_by = ROOT }
+ 			 }
+ 			 add_permanent_claim = ROOT
+ 		 }
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300

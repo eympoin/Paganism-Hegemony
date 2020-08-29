@@ -6,8 +6,10 @@ country_event = {#Welsh/cornish/breton
   picture = COLONIZATION_eventPicture
 
   trigger = {
-    NOT = {tag = BRN}
-    NOT = { tag = LDN}
+    OR = {
+      tag = WRM
+      was_tag = WRM
+    }
     culture_group = neo-roman
     any_owned_province = {
       religion = deii
@@ -44,86 +46,8 @@ country_event = {#Welsh/cornish/breton
   }
 }
 
-country_event = {#Scottish
-  id = flavor_wrm.2
-  title = flavor_wrm.1.t
-  desc = flavor_wrm.1.d
-  picture = COLONIZATION_eventPicture
 
-  trigger = {
-  NOT = {tag = BRN}
-  NOT = { tag = LDN}
-  culture_group = neo-roman
-    any_owned_province = {
-      religion = deii
-      OR = {
-        culture = highland_scottish
-        culture = scottish
-      }
-      NOT = { culture_group = britannian_group }
-      NOT = { nationalism	= 1 }
-      is_core = ROOT
-    }
-  }
 
-  mean_time_to_happen = {
-    years = 10
-  }
-
-  option = {
-    name = flavor_wrm.1.a
-    ai_chance = { factor = 1 }
-    random_owned_province = {
-      limit = {
-        religion = deii
-        OR = {
-          culture = highland_scottish
-          culture = scottish
-        }
-        NOT = { nationalism	= 1 }
-        is_core = ROOT
-      }
-      change_culture = britannian
-    }
-  }
-}
-country_event = {#Irish
-  id = flavor_wrm.3
-  title = flavor_wrm.1.t
-  desc = flavor_wrm.1.d
-  picture = COLONIZATION_eventPicture
-
-  trigger = {
-    NOT = {tag = BRN}
-    NOT = { tag = LDN}
-    culture_group = neo-roman
-    any_owned_province = {
-      religion = deii
-      culture = irish
-      NOT = { culture_group = britannian_group }
-      NOT = { nationalism	= 1 }
-      is_core = ROOT
-    }
-  }
-
-  mean_time_to_happen = {
-    years = 10
-  }
-
-  option = {
-    name = flavor_wrm.1.a
-    ai_chance = { factor = 1 }
-    random_owned_province = {
-      limit = {
-        religion = deii
-        culture = irish
-        NOT = { nationalism	= 1 }
-        is_core = ROOT
-      }
-      change_culture = britannian
-    }
-  }
-}
 country_event = {#Northumbrian
   id = flavor_wrm.4
   title = flavor_wrm.1.t
@@ -131,8 +55,10 @@ country_event = {#Northumbrian
   picture = COLONIZATION_eventPicture
 
   trigger = {
-    NOT = {tag = BRN}
-    NOT = { tag = LDN}
+    OR = {
+      tag = WRM
+      was_tag = WRM
+    }
     culture_group = neo-roman
     any_owned_province = {
       religion = deii
@@ -168,8 +94,10 @@ country_event = {#Anglo-saxon
   picture = COLONIZATION_eventPicture
 
   trigger = {
-    NOT = {tag = BRN}
-    NOT = { tag = LDN}
+    OR = {
+      tag = WRM
+      was_tag = WRM
+    }
     culture_group = neo-roman
     any_owned_province = {
       religion = deii
@@ -213,6 +141,10 @@ country_event = {#franks
   picture = COLONIZATION_eventPicture
 
   trigger = {
+    OR = {
+      tag = WRM
+      was_tag = WRM
+    }
     culture_group = neo-roman
     any_owned_province = {
       religion = deii
@@ -257,6 +189,10 @@ country_event = {#burgond
   picture = COLONIZATION_eventPicture
 
   trigger = {
+    OR = {
+      tag = WRM
+      was_tag = WRM
+    }
     culture_group = neo-roman
     any_owned_province = {
       religion = deii
@@ -298,8 +234,10 @@ country_event = {#Griko
   picture = COLONIZATION_eventPicture
 
   trigger = {
-    NOT = {tag  = CTG}
-    NOT = {tag  = AFR}
+    OR = {
+      tag = WRM
+      was_tag = WRM
+    }
     culture_group = neo-roman
     any_owned_province = {
       religion = deii
@@ -340,6 +278,10 @@ country_event = {#Lombards
   picture = COLONIZATION_eventPicture
 
   trigger = {
+    OR = {
+      tag = WRM
+      was_tag = WRM
+    }
     culture_group = neo-roman
     any_owned_province = {
       religion = deii

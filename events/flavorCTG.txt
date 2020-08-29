@@ -2819,3 +2819,83 @@ country_event = { #carthage unique
 	}
 
 }
+
+country_event = { #carthage unique
+	id = flavor_ctg.29
+	title = "flavor_ctg.29.t"
+	desc = "flavor_ctg.29.d"
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 3
+	}
+
+
+	option = {#Hannibal road
+		name = "flavor_ctg.29.a"
+		ai_chance = { factor = 75 }
+			add_country_modifier = {
+				name = hannibal_road_ctg
+				duration = -1
+			}
+			languedoc_area = {
+				 limit = {
+					 NOT = { owned_by = ROOT }
+				 }
+				 add_permanent_claim = ROOT
+			 }
+			 provence_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			liguria_area = {
+			 limit = {
+				 NOT = { owned_by = ROOT }
+			 }
+			 add_permanent_claim = ROOT
+		 }
+		 savoy_dauphine_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		piedmont_area = {
+		 limit = {
+			 NOT = { owned_by = ROOT }
+		 }
+		 add_permanent_claim = ROOT
+	 }
+	}
+
+	option = {#southern road
+		name = "flavor_ctg.29.b"
+		ai_chance = { factor = 75 }
+			add_country_modifier = {
+				name = southern_road_ctg
+				duration = -1
+			}
+			naples_area = {
+			 limit = {
+				 NOT = { owned_by = ROOT }
+			 }
+			 add_permanent_claim = ROOT
+		 }
+		 calabria_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		apulia_area = {
+		 limit = {
+			 NOT = { owned_by = ROOT }
+		 }
+		 add_permanent_claim = ROOT
+	 }
+	}
+
+}
