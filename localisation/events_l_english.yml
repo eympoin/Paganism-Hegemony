@@ -1012,7 +1012,6 @@ flavor_orm.6.f:0 "Follow the path of Jabir ibn Zayd"
 Hormuz_missionary:0 "Spread our new faith"
 Stabilize_the_country:0 "Stabilize the country"
 
-<<<<<<< HEAD
 #Event conversion culturel Medine Only pour le moment
 flavor_mda.6.t:0 "Cultural Assimilation"
 flavor_mda.6.d:0 "More and More people begin to use our custom and language"
@@ -1029,4 +1028,22 @@ flavor_mda.8.e:0 "Great News"
 flavor_wrm.1.t:0 "Cultural Assimilation"
 flavor_wrm.1.d:0 "With the reconquest of the Empire, we started to romanize our territory. Finally, we can say that this province is truly Roman !"
 flavor_wrm.1.a:0 "This is a happy news."
->>>>>>> 715c50be8179c3511dcc51b352321283b47796e9
+
+
+flavor_wrm.14.t:0 "Return of the Empire"
+flavor_wrm.14.d:0 "Rome is reborned. We can now ask the successor states to return into the Western Empire."
+flavor_wrm.14.a:0 "Rome will be whole again !"
+flavor_wrm.14.b:0 "We don't need them"
+
+flavor_wrm.15.t:0 "The Western Roman Empire ask for our submission"
+flavor_wrm.15.d:0 "The Western Roman Empire has been proclaimed again. They ask us to return in the Empire, should we accept ?"
+flavor_wrm.15.a:0 "Our place is in the Empire"
+flavor_wrm.15.b:0 "We are independant !"
+
+flavor_wrm.16.t:0 "$FROMCOUNTRY$ refuse to join the Empire"
+flavor_wrm.16.d:0 "They will learn in time."
+flavor_wrm.16.a:0 "Rome will be whole again, whether they like it or not."
+
+flavor_wrm.17.t:0 "$FROMCOUNTRY$ accept to join the Empire"
+flavor_wrm.17.d:0 "They are smarter than they look."
+flavor_wrm.17.a:0 "Rome will be whole again ! "

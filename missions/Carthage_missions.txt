@@ -1695,7 +1695,15 @@ fleet = {
     heavy_ship_fraction = 0.4
     }
     effect = {
-    add_years_of_income = 1
+    random_owned_province = {
+    limit = { has_port = yes }
+    ROOT = {
+      create_flagship = {
+          name = "Marsala"
+          type = heavy_ship
+        }
+      }
+    }
     add_country_modifier = {
       name = develop_trade_relations
       duration = 7300
