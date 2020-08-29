@@ -1,0 +1,193 @@
+namespace = flavor_mda
+namespace = flavor_RCE
+country_event = {# Egyptian/Ptolemaic/cyrenian
+  id = flavor_mda.6
+  title = flavor_mda.6.t
+  desc = flavor_mda.6.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      tag = MDA
+      tag = RCE
+    }
+    any_owned_province = {
+      religion = shiite
+      OR = {
+        culture = al_misr_arabic
+        culture = ptolemaic
+        culture = cyrenian
+      }
+      NOT = { culture_group = turko_semitic_group }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 2
+  }
+
+  option = {
+    name = flavor_mda.6.b
+    ai_chance = { factor = 1 }
+    trigger = {
+      any_owned_province = {
+        is_core = ROOT
+        religion = shiite
+        OR = {
+        culture = al_misr_arabic
+        culture = ptolemaic
+        culture = cyrenian
+        }
+        NOT = { nationalism	= 1 }
+      }
+    }
+    random_owned_province = {
+      limit = {
+        religion = shiite
+          OR = {
+          culture = al_misr_arabic
+          culture = ptolemaic
+          culture = cyrenian
+          }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = Egyptian_Arabic
+    }
+  }
+}
+
+country_event = {# berber
+  id = flavor_mda.7
+  title = flavor_mda.7.t
+  desc = flavor_mda.7.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      tag = MDA
+      tag = RCE
+    }
+    any_owned_province = {
+      religion = shiite
+      OR = {
+      culture = berber_culture
+      culture = libyan
+      culture = african
+      culture = mauretanian
+      }
+      NOT = { culture_group = turko_semitic_group }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 3
+  }
+
+    option = {
+      name = flavor_mda.7.c
+      ai_chance = { factor = 1 }
+      trigger = {
+        any_owned_province = {
+          is_core = ROOT
+          religion = shiite
+          OR = {
+          culture = berber_culture
+          culture = libyan
+          culture = african
+          culture = mauretanian
+          }
+          NOT = { nationalism	= 1 }
+        }
+      }
+      random_owned_province = {
+        limit = {
+          religion = shiite
+            OR = {
+            culture = berber_culture
+            culture = african
+            culture = mauretanian
+            culture = tripolitan
+            }
+          NOT = { nationalism	= 1 }
+          is_core = ROOT
+
+        }
+        change_culture = algerian
+        }
+
+
+      }
+  }
+
+  country_event = {# Hispania
+    id = flavor_mda.8
+    title = flavor_mda.8.t
+    desc = flavor_mda.8.d
+    picture = COLONIZATION_eventPicture
+
+    trigger = {
+      OR = {
+        tag = MDA
+        tag = RCE
+      }
+      any_owned_province = {
+        religion = shiite
+        OR = {
+        culture = baetician
+        culture = cartaginensian
+        culture = tarraconan
+        culture = lusitanian
+        culture = galician
+        }
+        NOT = { culture_group = turko_semitic_group }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+    }
+
+    mean_time_to_happen = {
+      years = 5
+    }
+
+      option = {
+        name = flavor_mda.8.e
+        ai_chance = { factor = 1 }
+        trigger = {
+          any_owned_province = {
+            is_core = ROOT
+            religion = shiite
+            OR = {
+            culture = baetician
+            culture = cartaginensian
+            culture = tarraconan
+            culture = lusitanian
+            culture = galician
+            }
+            NOT = { nationalism	= 1 }
+          }
+        }
+        random_owned_province = {
+          limit = {
+            religion = shiite
+              OR = {
+              culture = baetician
+              culture = cartaginensian
+              culture = tarraconan
+              culture = lusitanian
+              culture = galician
+              }
+            NOT = { nationalism	= 1 }
+            is_core = ROOT
+
+          }
+          change_culture = Andalusian
+          }
+
+
+        }
+    }
