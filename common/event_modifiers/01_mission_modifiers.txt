@@ -4663,3 +4663,7 @@ hannibal_road_ctg = {
   movement_speed = 0.1
   land_attrition = -0.1
 }
+
+emperor_of_east_and_west = {
+  imperial_authority = 0.2
+}

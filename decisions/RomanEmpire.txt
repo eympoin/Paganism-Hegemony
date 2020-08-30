@@ -46,6 +46,10 @@ country_decisions = {
 				AND = {
 					tag = WRM
 					is_emperor = yes
+					development_in_provinces = {
+						value = 1000
+							culture_group = neo-roman
+					}
 				}
 				AND = {
 					owns_core_province = 118

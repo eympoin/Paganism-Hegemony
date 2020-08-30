@@ -66,19 +66,11 @@ country_event = {
 		name = "flavor_cth.1.a"
 		ai_chance = {
 			factor = 100
-			modifier = {
-				factor = 0
-				is_at_war = yes
-			}
-			modifier = {
-				factor = 0
-				has_any_disaster = yes
-			}
 		}
 		221 = { #cartagena
 			add_base_tax = 3
 			add_base_production = 3
-			add_base_manpower = 2
+			add_base_manpower = 3
 			move_capital_effect = yes
 
 		}

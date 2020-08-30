@@ -1022,13 +1022,32 @@ flavor_mda.7.c:0 "Great News"
 flavor_mda.8.t:0 "Cultural Assimilation"
 flavor_mda.8.d:0 "More and More people begin to use our custom and language"
 flavor_mda.8.e:0 "Great News"
-=======
 #Western Roman Empire
 
 flavor_wrm.1.t:0 "Cultural Assimilation"
 flavor_wrm.1.d:0 "With the reconquest of the Empire, we started to romanize our territory. Finally, we can say that this province is truly Roman !"
 flavor_wrm.1.a:0 "This is a happy news."
 
+flavor_wrm.10.t:0 "Union of the Eagles"
+flavor_wrm.10.d:0 "Now that the Western Empire is back, one question remains, should the West and the East unite once again. While a lot of the Western Romans are for an union, the Greeks in the east seems opposed to such an union."
+flavor_wrm.10.a:0 "East and West must unitewhether they like it or not."
+flavor_wrm.10.b:0 "We don't need them and their weaknesses."
+
+flavor_wrm.11.t:0 "The Western Roman Empire demand an Union"
+flavor_wrm.11.d:0 "The Western Roman Empire demand us to unite with them, so they could recreate the ancient Roman Empire and have our riches."
+flavor_wrm.11.a:0 "If they want the East, they will have to fight. "
+
+
+flavor_wrm.12.t:0 "The East refuse the Union"
+flavor_wrm.12.d:0 "We will have to fight for the Eastern throne."
+flavor_wrm.12.a:0 "To war !"
+flavor_wrm.12.b:0 "We are not ready for a war."
+
+flavor_wrm.13.t:0 "The East is at our mercy."
+flavor_wrm.13.d:0 "We have defeated the Emperor of the Eastern Roman Empire, we can now choose what to do."
+flavor_wrm.13.a:0 "The Eastern Empire is weak. Deastroy it ! "
+flavor_wrm.13.b:0 "Make a gentle transition to power. "
+flavor_wrm.13.c:0 "Seize the throne ! "
 
 flavor_wrm.14.t:0 "Return of the Empire"
 flavor_wrm.14.d:0 "Rome is reborned. We can now ask the successor states to return into the Western Empire."

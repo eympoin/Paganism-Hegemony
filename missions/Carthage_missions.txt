@@ -623,7 +623,7 @@ roman_base_2 = {
         }
         add_center_of_trade_level = 1
       }
-      #event ERE
+      country_event = {id = flavor_wrm.10}
     }
   }
   Emperor_of_east_and_west = {

@@ -322,18 +322,19 @@ country_event = {#Claim Eastern Throne
   id = flavor_wrm.10
   title = flavor_wrm.10.t
   desc = flavor_wrm.10.d
-  picture = COLONIZATION_eventPicture
+  picture = HRE_eventPicture
 
   is_triggered_only = yes
 
   option = { #claim eastern throne
     name = flavor_wrm.10.a
     ai_chance = { factor = 1 }
+    emperor = { country_event = { id = flavor_wrm.11} }
   }
   option = { #we don't need the east
     name = flavor_wrm.10.b
     ai_chance = { factor = 1 }
-
+    add_prestige = 10
   }
 }
 
@@ -341,13 +342,14 @@ country_event = {#answer of the ERE
   id = flavor_wrm.11
   title = flavor_wrm.11.t
   desc = flavor_wrm.11.d
-  picture = COLONIZATION_eventPicture
+  picture = HRE_eventPicture
 
   is_triggered_only = yes
 
   option = { #if they want  the throne, they will have to fight
     name = flavor_wrm.11.a
     ai_chance = { factor = 1 }
+    WRM = { country_event = { id = flavor_wrm.12} }
   }
 }
 
@@ -355,17 +357,28 @@ country_event = {#To war
   id = flavor_wrm.12
   title = flavor_wrm.12.t
   desc = flavor_wrm.12.d
-  picture = COLONIZATION_eventPicture
+  picture = BATTLE_eventPicture
 
   is_triggered_only = yes
 
   option = { #war
     name = flavor_wrm.12.a
     ai_chance = { factor = 1 }
+    set_country_flag = defied_the_east
+    declare_war_with_cb = {
+      who = emperor
+      casus_belli = cb_fabricated_claims
+    }
   }
   option = { #not yet
     name = flavor_wrm.12.b
     ai_chance = { factor = 1 }
+    set_country_flag = defied_the_east
+    add_casus_belli = {
+      target = emperor
+      type = cb_fabricated_claims
+      months = -1
+    }
   }
 }
 
@@ -373,21 +386,68 @@ country_event = {#Peace choices
   id = flavor_wrm.13
   title = flavor_wrm.13.t
   desc = flavor_wrm.13.d
-  picture = COLONIZATION_eventPicture
+  picture = HRE_eventPicture
 
-  is_triggered_only = yes
+  fire_only_once = yes
+
+  trigger = {
+    has_country_flag = defied_the_east
+    war_with = emperor
+    war_score = 50
+    tag = WRM
+  }
+  mean_time_to_happen = {
+    days = 7
+  }
 
   option = { #dismantle the empire
     name = flavor_wrm.13.a
     ai_chance = { factor = 1 }
+    white_peace = emperor
+    add_truce_with = emperor
+    dismantle_hre = yes
+    add_prestige = 20
+    add_legitimacy = 20
+    add_adm_power = 100
+    add_dip_power = 100
+    add_mil_power = 100
   }
   option = { #force religious peace and enter the Empire
     name = flavor_wrm.13.b
     ai_chance = { factor = 1 }
+    white_peace = emperor
+    add_prestige = 20
+    add_legitimacy = 20
+    add_truce_with = emperor
+    WRM = {
+      set_in_empire = yes
+    }
+    set_hre_religion_treaty = yes
+    elector = WRM
+    add_country_modifier = {
+      name = emperor_of_east_and_west
+      duration = -1
+    }
   }
   option = { #take the throne (roman religion, kill the emperor and religious peace)
     name = flavor_wrm.13.c
     ai_chance = { factor = 1 }
+    white_peace = emperor
+    add_truce_with = emperor
+    add_stability = -2
+    WRM = {
+      set_in_empire = yes
+    }
+    set_hre_religion = deii
+    emperor = {
+      kill_ruler = yes
+    }
+    set_hre_religion_treaty = yes
+    add_imperial_influence = 50
+    add_country_modifier = {
+      name = emperor_of_east_and_west
+      duration = -1
+    }
   }
 }
 
@@ -396,7 +456,7 @@ country_event = {#WRM formation
   id = flavor_wrm.14
   title = flavor_wrm.14.t
   desc = flavor_wrm.14.d
-  picture = COLONIZATION_eventPicture
+  picture = HRE_eventPicture
 
   is_triggered_only = yes
 
@@ -406,6 +466,7 @@ country_event = {#WRM formation
     every_country = {
       limit = {
         culture_group = neo-roman
+        NOT = {tag = WRM}
       }
       country_event = { id = flavor_wrm.15}
     }
@@ -421,7 +482,7 @@ country_event = {#WRM submission
   id = flavor_wrm.15
   title = flavor_wrm.15.t
   desc = flavor_wrm.15.d
-  picture = COLONIZATION_eventPicture
+  picture = HRE_eventPicture
 
   is_triggered_only = yes
 
@@ -430,11 +491,11 @@ country_event = {#WRM submission
     ai_chance = {
     factor = 5
     modifier = {
-      factor = 80
+      factor = 90
       NOT = {
         army_strength = {
         	who = WRM
-        	value = 0.1
+        	value = 0.15
           }
         }
       }
@@ -446,7 +507,7 @@ country_event = {#WRM submission
           }
       }
       modifier = {
-        factor = 40
+        factor = 50
         NOT = {
           army_strength = {
           	who = WRM
@@ -469,7 +530,7 @@ country_event = {#WRM submission
     ai_chance = {
       factor = 95
       modifier = {
-        factor = 20
+        factor = 10
         NOT = {
           army_strength = {
           	who = WRM
@@ -485,7 +546,7 @@ country_event = {#WRM submission
           }
       }
       modifier = {
-        factor = 60
+        factor = 50
         NOT = {
           army_strength = {
           	who = WRM
@@ -529,7 +590,7 @@ country_event = {#WRM receive positive answer
 	id = flavor_wrm.17
 	title = "flavor_wrm.17.t"
 	desc = "flavor_wrm.17.d"
-	picture = BATTLE_eventPicture
+	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 
