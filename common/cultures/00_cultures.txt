@@ -12,79 +12,79 @@ neo-roman={
 
 	dynasty_names = { "Aelius" "Abronius" "Abudius" "Albinius" "Antonius" "Anneius" "Antius" "Aurelius" "Aurelianus" "Betucius" "Caecius" "Catienus" "Decimius" "Domitius"
 	"Flavius" "Gallius" "Julius" "Junius" "Livius" "Lucretius" "Marcius" "Marius" "Pompeius" "Lepidus" "Salvius" "Tarquinius" "Traianus" "Brutii" "Scipio" "Sylla" "Domitianus" "Diocletianus" "Herculius" "Velentinian"
-}
-male_names = { "Aggripa" "Appius" "Aulus" "Caeso" "Decimus" "Faustus" "Gaius" "Gnaeus" "Hostus" "Lucius" "Mamercus" "Manius" "Marcus" "Mettius" "Nonus"
-"Numerius" "Octavius" "Opiter" "Paullus" "Postumus" "Proculus" "Publius" "Quintus" "Septimus" "Sertor" "Servius" "Sectus" "Spurius" "Statius" "Tiberius"
-"Titus" "Tullus" "Vibius" "Volesus" "Vospiscus"
-}
+	}
+	male_names = { "Aggripa" "Appius" "Aulus" "Caeso" "Decimus" "Faustus" "Gaius" "Gnaeus" "Hostus" "Lucius" "Mamercus" "Manius" "Marcus" "Mettius" "Nonus"
+	"Numerius" "Octavius" "Opiter" "Paullus" "Postumus" "Proculus" "Publius" "Quintus" "Septimus" "Sertor" "Servius" "Sectus" "Spurius" "Statius" "Tiberius"
+	"Titus" "Tullus" "Vibius" "Volesus" "Vospiscus"
+	}
 
-female_names = {"Appia" "Aula" "Caesula" "Decima" "Fausta" "Gaia" "Gnaea" "Hosta" "Lucia" "Mamerca" "Mania" "Marcia" "Mettia" "Nona"
-"Numeria" "Octavia" "Paulla" "Postuma" "Procula" "Publia" "Quinta" "Septima" "Sertor" "Servia" "Sexta" "Spuria" "Statia" "Tiberia"
-"Titia" "Tulla" "Vibia" "Volusa" "Vospisca"
-}
+	female_names = {"Appia" "Aula" "Caesula" "Decima" "Fausta" "Gaia" "Gnaea" "Hosta" "Lucia" "Mamerca" "Mania" "Marcia" "Mettia" "Nona"
+	"Numeria" "Octavia" "Paulla" "Postuma" "Procula" "Publia" "Quinta" "Septima" "Sertor" "Servia" "Sexta" "Spuria" "Statia" "Tiberia"
+	"Titia" "Tulla" "Vibia" "Volusa" "Vospisca"
+	}
 
 
-narbonnais= {
-	primary = NAR
-}
-venetian = {
-	primary = VEN
-}
-lugdunian= {
-	primary = LUG
-}
-franko-roman= {
-	primary = GLI
-}
-britannian= {
-	primary = LDN
-}
-mauretanian= {
-	primary = MAU
-}
-aquitain = {
-	primary = AQI
-}
-lusitanian = {
-	primary = LUS
-}
-baetician = {
-	primary = BAE
-}
-cartaginensian = {
-	primary = CTH
-}
-tarraconan = {
-	primary = TRC
-}
-roman = {
-	primary = SPQ
-}
-salernian = {
-	primary = SLR
-}
-african = {
-	primary = CTG
-}
-tripolitan = {
-	primary = TRP
-}
+	narbonnais= {
+		primary = NAR
+	}
+	venetian = {
+		primary = VEN
+	}
+	lugdunian= {
+		primary = LUG
+	}
+	franko-roman= {
+		primary = GLI
+	}
+	britannian= {
+		primary = LDN
+	}
+	mauretanian= {
+		primary = MAU
+	}
+	aquitain = {
+		primary = AQI
+	}
+	lusitanian = {
+		primary = LUS
+	}
+	baetician = {
+		primary = BAE
+	}
+	cartaginensian = {
+		primary = CTH
+	}
+	tarraconan = {
+		primary = TRC
+	}
+	roman = {
+		primary = SPQ
+	}
+	salernian = {
+		primary = SLR
+	}
+	african = {
+		primary = CTG
+	}
+	tripolitan = {
+		primary = TRP
+	}
 
-galician = {
-	primary = GAL
-}
-tuscan = {
-	primary = TUS
-}
-sardinian = {
-	primary = SAR
-}
-annonarian = {
-}
+	galician = {
+		primary = GAL
+	}
+	tuscan = {
+		primary = TUS
+	}
+	sardinian = {
+		primary = SAR
+	}
+	annonarian = {
+	}
 
-sicilian = {
-	primary = SIC
-}
+	sicilian = {
+		primary = SIC
+	}
 
 }
 
