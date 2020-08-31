@@ -1012,21 +1012,7 @@ flavor_orm.6.f:0 "Follow the path of Jabir ibn Zayd"
 Hormuz_missionary:0 "Spread our new faith"
 Stabilize_the_country:0 "Stabilize the country"
 
-#Event conversion culturel Medine Only pour le moment
-flavor_mda.6.t:0 "Cultural Assimilation"
-flavor_mda.6.d:0 "More and More people begin to use our custom and language"
-flavor_mda.6.b:0 "Great News"
-flavor_mda.7.t:0 "Cultural Assimilation"
-flavor_mda.7.d:0 "More and More people begin to use our custom and language"
-flavor_mda.7.c:0 "Great News"
-flavor_mda.8.t:0 "Cultural Assimilation"
-flavor_mda.8.d:0 "More and More people begin to use our custom and language"
-flavor_mda.8.e:0 "Great News"
 #Western Roman Empire
-
-flavor_wrm.1.t:0 "Cultural Assimilation"
-flavor_wrm.1.d:0 "With the reconquest of the Empire, we started to romanize our territory. Finally, we can say that this province is truly Roman !"
-flavor_wrm.1.a:0 "This is a happy news."
 
 flavor_wrm.10.t:0 "Union of the Eagles"
 flavor_wrm.10.d:0 "Now that the Western Empire is back, one question remains, should the West and the East unite once again. While a lot of the Western Romans are for an union, the Greeks in the east seems opposed to such an union."
@@ -1066,3 +1052,14 @@ flavor_wrm.16.a:0 "Rome will be whole again, whether they like it or not."
 flavor_wrm.17.t:0 "$FROMCOUNTRY$ accept to join the Empire"
 flavor_wrm.17.d:0 "They are smarter than they look."
 flavor_wrm.17.a:0 "Rome will be whole again ! "
+
+#Event conversion culturel Medine Only pour le moment
+flavor_mda.6.t:0 "Cultural Assimilation"
+flavor_mda.6.d:0 "More and More people begin to use our custom and language"
+flavor_mda.6.b:0 "Great News"
+flavor_mda.7.t:0 "Cultural Assimilation"
+flavor_mda.7.d:0 "More and More people begin to use our custom and language"
+flavor_mda.7.c:0 "Great News"
+flavor_mda.8.t:0 "Cultural Assimilation"
+flavor_mda.8.d:0 "More and More people begin to use our custom and language"
+flavor_mda.8.e:0 "Great News"
