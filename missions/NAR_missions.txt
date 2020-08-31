@@ -176,7 +176,7 @@ Gallia_Unification_1 = {
 
 	Rome_Reborn_nar = {
     icon = a_real_roman_empire
-    required_missions = {offensive_against_franks_nar end_the_chaos_nar finish_the_lombards}
+    required_missions = {Gallia_united_nar end_the_chaos_nar finish_the_lombards}
 
     provinces_to_highlight = {
       province_id = 118
@@ -551,7 +551,10 @@ Italian_intervention = {
 				prestige = 75
 		}
 		effect = {
-			vassalize = SPQ
+			if = {
+				limit = {exists = SPQ}
+				vassalize = SPQ
+			}
 			add_country_modifier = {
 				name = "the_eternal_city_mod"
 				duration = -1
@@ -613,7 +616,18 @@ Italian_intervention = {
 			}
 		}
 		effect = {
-
+			add_years_of_income = 1
+			118 = {
+				add_base_tax = 1
+				add_base_manpower = 1
+				add_base_production = 1
+			}
+			italy_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 }

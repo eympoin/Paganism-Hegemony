@@ -411,7 +411,7 @@ Gallia_Unification_1 = {
 	}
 
 	offensive_against_franks = {
-		icon = mission_conquer_50_development
+		icon = the_hundred_years_war
 		required_missions = {reclaim_north_poitou end_of_the_burgonds}
 		position = 3
 		provinces_to_highlight = {
@@ -451,9 +451,9 @@ Gallia_Unification_1 = {
 
 
 	Gallia_united = {
-		icon = mission_unite_home_region
+		icon = centralize_france
 		required_missions = {offensive_against_franks }
-		position = 3
+		position = 5
 		provinces_to_highlight = {
 			region = france_region
 			OR = {
@@ -479,34 +479,60 @@ Gallia_Unification_1 = {
 	}
 
 
-	roman_gallia = {
-		icon = mission_hands_praying
-		required_missions = {Gallia_united}
-		position = 5
-		provinces_to_highlight = {
-			region = france_region
-			NOT = {religion = deii}
-		}
-		trigger = {
-			france_region = {
-				type = all
-				religion = deii
-			}
-		}
-		effect = {
-		custom_tooltip = roman_gallia_tt
-		france_region = {
-								limit = {
-								owned_by = ROOT
-								OR = {
-									culture_group = frankish
-									culture = burgond
-									}
-								}
-                change_culture = franko-roman
-            }
-			}
-	}
+
+		Rome_Reborn_aqi = {
+	    icon = a_real_roman_empire
+	    required_missions = {Gallia_united end_the_chaos finish_the_lombards_aqi}
+
+	    provinces_to_highlight = {
+	      province_id = 118
+	    }
+
+	    trigger = {
+	      total_development = 1500
+	      tag = WRM
+	    }
+	    effect = {
+	      118 = {
+	        add_province_modifier = {
+	          name = rome_reborn_mod
+	          duration = -1
+	        }
+	        add_center_of_trade_level = 1
+	      }
+	      country_event = {id = flavor_wrm.10}
+	    }
+	  }
+	  Emperor_of_east_and_west_aqi = {
+	    icon = a_roman_empire
+	    required_missions = {Rome_Reborn_aqi}
+
+	    provinces_to_highlight = {
+	     province_id = 151
+	    }
+
+	    trigger = {
+	      tag = ROM
+	      151 = {
+	        owned_by = ROOT
+	      }
+	    }
+	    effect = {
+	      add_prestige = 20
+	      add_mil_power = 100
+	      add_adm_power = 100
+	      add_dip_power = 100
+	      add_years_of_income = 1
+	      add_country_modifier = {
+	        name = emperoror_of_east_west
+	        duration = -1
+	      }
+	      add_accepted_culture = greek
+	      add_accepted_culture = anatolian
+	      add_accepted_culture = syrian
+	      add_accepted_culture = ptolemaic
+	    }
+	  }
 
 
 }
@@ -641,12 +667,24 @@ Spanish_intervention = {
 			}
 		}
 		effect = {
-		iberia_region = {
+		castille_area = {
 			limit = {
 				NOT = { owned_by = ROOT }
 			}
-			add_permanent_claim = AQI
+			add_permanent_claim = ROOT
+		}
+		toledo_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
 			}
+			add_permanent_claim = ROOT
+		}
+		basque_country = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
 			add_country_modifier = {
 				name = "protected_coast"
 				duration = 7300
@@ -654,11 +692,52 @@ Spanish_intervention = {
 		}
 	}
 
-
-	end_the_chaos = {
-		icon = mission_unite_home_region
+	solidify_the_center_aqi = {
+		icon = mission_conquer_50_development
 		required_missions = {take_the_coast}
 		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = castille_area
+				area = toledo_area
+				area = basque_country
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			castille_area = {
+				type = all
+				owned_by  = ROOT
+			}
+			toledo_area = {
+				type = all
+				owned_by  = ROOT
+			}
+			basque_country = {
+				type = all
+				owned_by  = ROOT
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+			iberia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+
+	end_the_chaos = {
+		icon = hispaniae
+		required_missions = {solidify_the_center_aqi}
+		position = 5
 
 		provinces_to_highlight = {
 			OR = {
@@ -681,6 +760,173 @@ Spanish_intervention = {
 			add_country_modifier = {
 				name = "iberian_horses"
 				duration = -1
+			}
+		}
+	}
+}
+
+Italian_intervention = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		tag = AQI
+		was_tag = AQI
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	attack_the_lombards_aqi = {
+		icon = mission_alliances
+		required_missions = {end_of_the_burgonds}
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = piedmont_area
+				area = liguria_area
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			piedmont_area = {
+				type = all
+				owned_by = ROOT
+			}
+			liguria_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+		add_years_of_income
+			add_country_modifier = {
+				name = roman_savior
+				duration = 7300
+			}
+		}
+		tuscany_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		po_valley_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+	subjugate_the_senate_aqi = {
+		icon = mission_empire
+		required_missions = {attack_the_lombards_aqi}
+		provinces_to_highlight = {
+			OR = {
+				area = tuscany_area
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+				NOT = { owned_by = SPQ }
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			tuscany_area = {
+				type = all
+				OR = {
+					owned_by  = ROOT
+					owned_by  = SPQ
+					}
+			}
+			army_strength = {
+				who = SPQ
+				value = 2
+				}
+				legitimacy = 100
+				prestige = 75
+		}
+		effect = {
+			if = {
+				limit = {exists = SPQ}
+				vassalize = SPQ
+			}
+			add_country_modifier = {
+				name = "the_eternal_city_mod"
+				duration = -1
+			}
+			emilia_romagna_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			central_italy_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			venetia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	finish_the_lombards_aqi = {
+		icon = confront_the_lombards
+		required_missions = {subjugate_the_senate_aqi}
+		provinces_to_highlight = {
+			OR = {
+				area = po_valley_area
+				area = venetia_area
+				area = emilia_romagna_area
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			po_valley_area = {
+				type = all
+				OR = {
+					owned_by  = ROOT
+					}
+			}
+			venetia_area = {
+				type = all
+				OR = {
+					owned_by  = ROOT
+					}
+			}
+			emilia_romagna_area = {
+				type = all
+				OR = {
+					owned_by  = ROOT
+					}
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+			118 = {
+				add_base_tax = 1
+				add_base_manpower = 1
+				add_base_production = 1
+			}
+			italy_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
