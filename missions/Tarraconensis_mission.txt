@@ -140,7 +140,7 @@ hispania_unification_1_trc{
 	}
 	finish_baetica_trc = {
 		icon = mission_eastern_european_city
-		required_missions = {secure_central_spain}
+		required_missions = {retake_central_spain}
 		position = 4
 		trigger = {
 			owns_or_non_sovereign_subject_of = 215

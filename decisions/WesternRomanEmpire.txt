@@ -44,7 +44,7 @@ country_decisions = {
 				value = 300
 				region = italy_region
 			}
-			total_development = 900
+			total_development = 1000
 		}
 		effect = {
 		 remove_non_electors_emperors_from_empire_effect = yes
@@ -114,6 +114,7 @@ country_decisions = {
 			 }
 			 country_event = { id = ideagroups.1 } #Swap Ideas
 		 }
+		 country_event = {id = flavor_wrm.14}
 	 }
 		ai_will_do = {
 			factor = 1

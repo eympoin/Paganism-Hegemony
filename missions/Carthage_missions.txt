@@ -623,7 +623,7 @@ roman_base_2 = {
         }
         add_center_of_trade_level = 1
       }
-      #event ERE
+      country_event = {id = flavor_wrm.10}
     }
   }
   Emperor_of_east_and_west = {
@@ -971,95 +971,341 @@ own_base_2 = {
   }
 
   reclaim_african_coast = {
-    icon = mission_bedouins
+    icon = mission_control_the_barbary_coast
     required_missions = {reunite_africa}
     position = 3
     provinces_to_highlight = {
-
+      OR = {
+        area = western_morocco_area
+        area = barbary_coast_area
+        area = algiers_area
+        area = northern_morocco_area
+      }
+      NOT = {owned_by = ROOT}
     }
 
     trigger = {
+    kabylia_area = {
+      type = all
+      owned_by = ROOT
+    }
+    barbary_coast_area = {
+      type = all
+      owned_by = ROOT
+    }
+    algiers_area = {
+      type = all
+      owned_by = ROOT
+    }
+    northern_morocco_area = {
+      type = all
+      owned_by = ROOT
+    }
     }
     effect = {
+      add_mercantilism = 1
+      334 = {
+        add_base_tax = 2
+        add_base_production = 2
+        add_base_manpower = 2
+        add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = MAURETANIAN_MONOPOL
+        }
+      }
     }
   }
 
   invade_baetica = {
-    icon = mission_bedouins
+    icon = mission_reclaim_andalucia
     required_missions = {reclaim_african_coast}
     position = 4
     provinces_to_highlight = {
-
+      area = upper_andalucia_area
+      area = lower_andalucia_area
     }
 
     trigger = {
+    upper_andalucia_area = {
+      type = all
+      owned_by = ROOT
+    }
+    lower_andalucia_area = {
+      type = all
+      owned_by = ROOT
+    }
     }
     effect = {
+    add_mercantilism = 1
+    224 = {
+      add_base_tax = 2
+      add_base_production = 2
+      add_base_manpower = 2
+      add_trade_modifier = {
+        who = ROOT
+        duration = -1
+        power = 50
+        key = IBERIAN_MONOPOL
+      }
+    }
     }
   }
 
   carthaginian_empire = {
-    icon = mission_bedouins
+    icon = mission_mare_nostrum
     required_missions = {invade_baetica}
     provinces_to_highlight = {
 
     }
 
     trigger = {
+      341 = {
+        highest_value_trade_node = yes
+      }
+      trade_income_percentage = 0.4
+      monthly_income = 150
     }
     effect = {
+    country_event = {id = flavor_ctg.29}
+    set_government_rank = 3
+    add_mercantilism = 2
+    cyprus_area = {
+      limit = {
+        NOT = { is_core = ROOT }
+        NOT = { is_permanent_claim = ROOT }
+      }
+      add_permanent_claim = ROOT
+    }
+    iberia_region = {
+      limit = {
+        NOT = { is_core = ROOT }
+        NOT = { is_permanent_claim = ROOT }
+      }
+      add_permanent_claim = ROOT
+    }
+      add_country_modifier = {
+        name = carthaginian_empire_mod
+        duration = -1
+      }
     }
   }
 
   path_to_rome = {
-    icon = mission_bedouins
+    icon = mission_assemble_an_army
     required_missions = {carthaginian_empire}
     provinces_to_highlight = {
-
+      OR = {
+        area = provence_area
+        area = languedoc_area
+        area = liguria_area
+        area = calabria_area
+        area = naples_area
+      }
+      NOT = {owned_by = ROOT}
     }
 
     trigger = {
+      OR = {
+        AND = {
+          provence_area = {
+            type = all
+            owned_by = ROOT
+          }
+          languedoc_area = {
+            type = all
+            owned_by = ROOT
+          }
+          liguria_area = {
+            type = all
+            owned_by = ROOT
+          }
+          has_country_modifier = hannibal_road_ctg
+        }
+        AND = {
+
+          calabria_area = {
+            type = all
+            owned_by = ROOT
+          }
+          naples_area = {
+            type = all
+            owned_by = ROOT
+          }
+          has_country_modifier = southern_road_ctg
+        }
+      }
     }
     effect = {
+      if = {
+        limit = {
+          has_country_modifier = southern_road_ctg
+        }
+        remove_country_modifier = southern_road_ctg
+      }
+      if = {
+        limit = {
+          has_country_modifier = hannibal_road_ctg
+        }
+        remove_country_modifier = hannibal_road_ctg
+      }
+      add_prestige = 10
+      add_years_of_income = 1
+      lazio_area = {
+        limit = {
+          NOT = { is_core = ROOT }
+          NOT = { is_permanent_claim = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      tuscany_area = {
+        limit = {
+          NOT = { is_core = ROOT }
+          NOT = { is_permanent_claim = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 
   roma_delenda_est = {
-    icon = mission_bedouins
+    icon = mission_conquer_50_development
     required_missions = {path_to_rome}
     provinces_to_highlight = {
-
+      OR = {
+        area = lazio_area
+        area = tuscany_area
+      }
+      NOT = {owned_by = ROOT}
     }
 
     trigger = {
+      lazio_area = {
+        type = all
+        owned_by = ROOT
+      }
+      tuscany_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
     effect = {
+      118 = {
+        add_base_tax = -5
+        add_base_manpower = -5
+        add_base_production = -5
+      }
+      341 = {
+        add_base_tax = 5
+        add_base_manpower = 5
+        add_base_production = 5
+      }
+      italy_region = {
+        limit = {
+          NOT = { is_core = ROOT }
+          NOT = { is_permanent_claim = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      115 = {
+        add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = ITALIAN_MONOPOL
+        }
+      }
     }
   }
 
   end_the_greek_monopol = {
-    icon = mission_bedouins
+    icon = mission_trade_company_region_abroad
     required_missions = {conquer_the_delta dido_revenge roma_delenda_est}
     provinces_to_highlight = {
 
     }
 
     trigger = {
+      358 = { #alexandria
+      	trade_share = {
+      		country = ROOT
+      		share = 50
+      	}
+      }
+      1855 = { #syria
+      	trade_share = {
+      		country = ROOT
+      		share = 50
+      	}
+      }
     }
     effect = {
+    anatolia_region = {
+      limit = {
+        NOT = { is_core = ROOT }
+        NOT = { is_permanent_claim = ROOT }
+      }
+      add_permanent_claim = ROOT
+    }
+    thrace_area = {
+      limit = {
+        NOT = { is_core = ROOT }
+        NOT = { is_permanent_claim = ROOT }
+      }
+      add_permanent_claim = ROOT
+    }
     }
   }
 
   secunda_roma_delenda_est = {
-    icon = mission_bedouins
+    icon = take_constantinople
     required_missions = {end_the_greek_monopol}
     provinces_to_highlight = {
-
+      OR = {
+        area = thrace_area
+        area = hudavendigar_area
+      }
+      NOT = {owned_by = ROOT}
     }
 
     trigger = {
+      thrace_area = {
+        type = all
+        owned_by = ROOT
+      }
+      hudavendigar_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
     effect = {
+      add_mercantilism = 2
+      151 = {
+        add_base_tax = -5
+        add_base_manpower = -5
+        add_base_production = -5
+      }
+      341 = {
+        add_base_tax = 5
+        add_base_manpower = 5
+        add_base_production = 5
+      }
+      balkan_region = {
+        limit = {
+          NOT = { is_core = ROOT }
+          NOT = { is_permanent_claim = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      151 = {
+        add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = GREECE_MONOPOL
+        }
+      }
     }
   }
 
@@ -1083,16 +1329,47 @@ own_base_1 = {
   }
 
   prevent_further_invasions = { #invade the berbers
-    icon = mission_bedouins
+    icon = mission_protect_granada
     required_missions = {reclaim_african_coast}
     position = 4
     provinces_to_highlight = {
-
+      OR = {
+        culture = moors
+        culture = berber_culture
+      }
+      NOT = {country_or_subject_holds = ROOT}
     }
 
     trigger = {
+      owns_all_provinces = {
+        OR = {
+          culture = moors
+          culture = berber
+        }
+      }
     }
     effect = {
+      add_mil_power = 100
+      add_country_modifier = {
+        name = saharan_trade_monopol
+        duration = -1
+      }
+      1132 = {
+        add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = SAHARAN_TRADE
+        }
+      }
+      2274 = {
+        add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = SAHARAN_TRADE
+        }
+      }
     }
   }
 
@@ -1130,7 +1407,7 @@ own_base_1 = {
   }
 
   conquer_the_delta_ctg = {
-    icon = mission_egyptian_mamluk_soldier
+    icon = mission_conquer_alexandria
     required_missions = {way_to_egypt_ctg}
     provinces_to_highlight = {
     OR = {
@@ -1158,8 +1435,18 @@ own_base_1 = {
       }
       add_permanent_claim = ROOT
     }
-    add_dip_power = 100
-    add_years_of_income = 2
+    add_mercantilism = 1
+    358 = {
+      add_base_tax = 1
+      add_base_production = 1
+      add_base_manpower = 1
+      add_trade_modifier = {
+        who = ROOT
+        duration = -1
+        power = 50
+        key = EGYPTIAN_MONOPOL
+      }
+    }
     }
   }
 
@@ -1219,44 +1506,111 @@ own_base_3 = {
     NOT = { map_setup = map_setup_random }
   }
 
-  nova_carthago = { #invade Cyprus
-    icon = mission_bedouins
+  nova_carthago = { #invade Carthago Nova
+    icon = mission_tear_down_spanish_strongholds
     required_missions = {secure_sardinia reclaim_african_coast}
     position = 4
     provinces_to_highlight = {
-
+    OR = {
+      area = valencia_area
+      area = catalonia_area
+      }
+      NOT = {owned_by = ROOT}
     }
 
     trigger = {
+    valencia_area = {
+      type = all
+      owned_by = ROOT
+    }
+    catalonia_area = {
+      type = all
+      owned_by = ROOT
+    }
     }
     effect = {
+    add_mercantilism = 1
+    221 = {
+      add_base_tax = 2
+      add_base_production = 2
+      add_base_manpower = 2
+      add_trade_modifier = {
+        who = ROOT
+        duration = -1
+        power = 50
+        key = VALENCIAN_MONOPOL
+      }
+    }
     }
   }
 
   a_way_home = { #invade Cyprus
-    icon = mission_bedouins
+    icon = kingdom_of_cyprus
     required_missions = {carthaginian_empire}
     position = 6
     provinces_to_highlight = {
-
+      area = cyprus_area
+      NOT = {owned_by = ROOT}
     }
 
     trigger = {
+      cyprus_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
     effect = {
+      syria_area = {
+        limit = {
+          NOT = { is_core = ROOT }
+          NOT = { is_permanent_claim = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      aleppo_area = {
+        limit = {
+          NOT = { is_core = ROOT }
+          NOT = { is_permanent_claim = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      palestine_area = {
+        limit = {
+          NOT = { is_core = ROOT }
+          NOT = { is_permanent_claim = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
   dido_revenge = { #invade Cyprus
-    icon = mission_bedouins
+    icon = mission_empire
     required_missions = {a_way_home}
     position = 6
     provinces_to_highlight = {
-
+      area = syria_area
+      NOT = {owned_by = ROOT}
     }
 
     trigger = {
+      syria_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
     effect = {
+    add_mercantilism = 1
+    1855 = {
+      add_base_tax = 2
+      add_base_production = 2
+      add_base_manpower = 2
+      add_trade_modifier = {
+        who = ROOT
+        duration = -1
+        power = 50
+        key = SYRIAN_MONOPOL
+      }
+    }
     }
   }
 }
@@ -1341,7 +1695,15 @@ fleet = {
     heavy_ship_fraction = 0.4
     }
     effect = {
-    add_years_of_income = 1
+    random_owned_province = {
+    limit = { has_port = yes }
+    ROOT = {
+      create_flagship = {
+          name = "Marsala"
+          type = heavy_ship
+        }
+      }
+    }
     add_country_modifier = {
       name = develop_trade_relations
       duration = 7300
@@ -1380,6 +1742,7 @@ american_trade = {
     }
     }
     effect = {
+      add_mercantilism = 1
       random_owned_province = {
         limit = {
           has_province_modifier = carthaginian_trading_outpost
@@ -1428,7 +1791,7 @@ american_trade = {
 
     }
     effect = {
-
+      add_mercantilism = 2
       random_owned_province = {
         limit = {
           has_province_modifier = carthaginian_trading_outpost
@@ -1484,6 +1847,7 @@ american_trade = {
       }
     }
     effect = {
+      add_mercantilism = 1
       random_owned_province = {
         limit = {
           has_province_modifier = carthaginian_trading_outpost
@@ -1607,7 +1971,7 @@ american_trade_2 = {
       }
     }
     effect = {
-
+    add_mercantilism = 2
     random_owned_province = {
       limit = {
         has_province_modifier = carthaginian_trading_outpost
@@ -1652,6 +2016,7 @@ american_trade_2 = {
     }
 
     trigger = {
+      add_mercantilism = 1
       any_owned_province = {
         has_province_modifier = carthaginian_trading_outpost
         colonial_region = colonial_canada
@@ -1723,7 +2088,7 @@ africo_asian_trade = {
       }
     }
     effect = {
-
+    add_mercantilism = 2
     random_owned_province = {
       limit = {
         has_province_modifier = carthaginian_trading_outpost
@@ -1778,6 +2143,7 @@ africo_asian_trade = {
         }
       }
     effect = {
+      add_mercantilism = 2
       random_owned_province = {
         limit = {
           superregion = india_superregion
@@ -1821,6 +2187,7 @@ africo_asian_trade = {
         }
       }
     effect = {
+      add_mercantilism = 2
       random_owned_province = {
         limit = {
           region = indonesia_region

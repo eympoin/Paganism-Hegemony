@@ -844,6 +844,11 @@ flavor_ctg.28.t:0 "Carthago's unique colonization mechanic"
 flavor_ctg.28.d:0 "Carthago doesn't colonize like the other nations. The first colony in the region will become a trading outpost that you will keep, all the others in the region will be given to a special protectorate.\n This protectorate will have a culture and religion fitting the region. They gives you a part of their trade like a colony, but you can also divert their trade. They are more or less colonies without the tariffs system. Once they have ten provinces, they will give more global trade power than normal colonies (0.1 instead of 0.05 and yes normal colonies gives global trade power if you didn't know)."
 flavor_ctg.28.a:0 "That's good to know."
 
+flavor_ctg.29.t:0 "Roma Delenda Est"
+flavor_ctg.29.d:0 "Now that the Carthaginian empire is restored, it is time to show the world our strength. And what is better than avenging our ancestors and destroying Rome ? To invade Rome, we have two roads possible : taking the same road as Hannibal or taking the southern road in Italy."
+flavor_ctg.29.a:0 "We will follow Hannibal footsteps."
+flavor_ctg.29.b:0 "The southern road is more logical."
+
 flavor_ctg_col.1.t:0 "The protectorate of Hyperboera"
 flavor_ctg_col.1.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
 flavor_ctg_col.1.a:0 "This is a good news !"
@@ -1009,9 +1014,44 @@ Stabilize_the_country:0 "Stabilize the country"
 
 #Western Roman Empire
 
-flavor_wrm.1.t:0 "Cultural Assimilation"
-flavor_wrm.1.d:0 "With the reconquest of the Empire, we started to romanize our territory. Finally, we can say that this province is truly Roman !"
-flavor_wrm.1.a:0 "This is a happy news."
+flavor_wrm.10.t:0 "Union of the Eagles"
+flavor_wrm.10.d:0 "Now that the Western Empire is back, one question remains, should the West and the East unite once again. While a lot of the Western Romans are for an union, the Greeks in the east seems opposed to such an union."
+flavor_wrm.10.a:0 "East and West must unitewhether they like it or not."
+flavor_wrm.10.b:0 "We don't need them and their weaknesses."
+
+flavor_wrm.11.t:0 "The Western Roman Empire demand an Union"
+flavor_wrm.11.d:0 "The Western Roman Empire demand us to unite with them, so they could recreate the ancient Roman Empire and have our riches."
+flavor_wrm.11.a:0 "If they want the East, they will have to fight. "
+
+
+flavor_wrm.12.t:0 "The East refuse the Union"
+flavor_wrm.12.d:0 "We will have to fight for the Eastern throne."
+flavor_wrm.12.a:0 "To war !"
+flavor_wrm.12.b:0 "We are not ready for a war."
+
+flavor_wrm.13.t:0 "The East is at our mercy."
+flavor_wrm.13.d:0 "We have defeated the Emperor of the Eastern Roman Empire, we can now choose what to do."
+flavor_wrm.13.a:0 "The Eastern Empire is weak. Deastroy it ! "
+flavor_wrm.13.b:0 "Make a gentle transition to power. "
+flavor_wrm.13.c:0 "Seize the throne ! "
+
+flavor_wrm.14.t:0 "Return of the Empire"
+flavor_wrm.14.d:0 "Rome is reborned. We can now ask the successor states to return into the Western Empire."
+flavor_wrm.14.a:0 "Rome will be whole again !"
+flavor_wrm.14.b:0 "We don't need them"
+
+flavor_wrm.15.t:0 "The Western Roman Empire ask for our submission"
+flavor_wrm.15.d:0 "The Western Roman Empire has been proclaimed again. They ask us to return in the Empire, should we accept ?"
+flavor_wrm.15.a:0 "Our place is in the Empire"
+flavor_wrm.15.b:0 "We are independant !"
+
+flavor_wrm.16.t:0 "$FROMCOUNTRY$ refuse to join the Empire"
+flavor_wrm.16.d:0 "They will learn in time."
+flavor_wrm.16.a:0 "Rome will be whole again, whether they like it or not."
+
+flavor_wrm.17.t:0 "$FROMCOUNTRY$ accept to join the Empire"
+flavor_wrm.17.d:0 "They are smarter than they look."
+flavor_wrm.17.a:0 "Rome will be whole again ! "
 
 #Event conversion culturel Medine Only pour le moment
 flavor_mda.6.t:0 "Cultural Assimilation"

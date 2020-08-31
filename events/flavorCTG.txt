@@ -491,16 +491,17 @@ country_event = {
 	option = {#Rome is long lost
 		name = flavor_ctg.10.b
 		ai_chance = { factor = 30 }
+		change_primary_culture = carthaginian
+		add_country_modifier = {
+			name = ctg_own_path
+			duration = -1
+		}
 		swap_non_generic_missions = yes
 		add_legitimacy = -15
 		add_prestige = 20
 		add_mil_power = 100
 		add_dip_power = -100
 		add_stability = -1
-		add_country_modifier = {
-			name = ctg_own_path
-			duration = -1
-		}
 
 		every_owned_province = {
 			limit = {
@@ -532,7 +533,6 @@ country_event = {
 			}
 			change_culture = mauri
 		}
-		change_primary_culture = carthaginian
 	}
 }
 
@@ -1142,6 +1142,7 @@ country_event = {
 			}
 			cede_province = NMD
 			add_core = NMD
+			remove_core = CTG
 		}
 		create_subject = {
 			subject_type = carthaginian_colony
@@ -1199,6 +1200,7 @@ country_event = {
 			}
 			cede_province = NMD
 			add_core = NMD
+			remove_core = CTG
 		}
 	}
 }
@@ -1744,6 +1746,7 @@ country_event = {
 			}
 			cede_province = HYP
 			add_core = HYP
+			remove_core = CTG
 			change_culture = haida
 			change_religion = totemism
 
@@ -1791,6 +1794,7 @@ country_event = {
 			}
 			cede_province = VAR
 			add_core = VAR
+			remove_core = CTG
 			change_culture = Vinlandic
 			change_religion = norse_pagan_reformed
 		}
@@ -1837,6 +1841,7 @@ country_event = {
 			}
 			cede_province = HSP
 			add_core = HSP
+			remove_core = CTG
 			change_culture = salish
 			change_religion = totemism
 
@@ -1884,6 +1889,7 @@ country_event = {
 			}
 			cede_province = AME
 			add_core = AME
+			remove_core = CTG
 			change_culture = cherokee
 			change_religion = totemism
 
@@ -1931,6 +1937,7 @@ country_event = {
 			}
 			cede_province = SKY
 			add_core = SKY
+			remove_core = CTG
 			change_culture = osage
 			change_religion = totemism
 
@@ -1978,6 +1985,7 @@ country_event = {
 			}
 			cede_province = AUR
 			add_core = AUR
+			remove_core = CTG
 			change_culture = aztek
 			change_religion = nahuatl
 
@@ -2025,6 +2033,7 @@ country_event = {
 			}
 			cede_province = ATL
 			add_core = ATL
+			remove_core = CTG
 			change_culture = arawak
 			change_religion = animism
 
@@ -2072,6 +2081,7 @@ country_event = {
 			}
 			cede_province = PLD
 			add_core = PLD
+			remove_core = CTG
 			change_culture = muisca
 			change_religion = inti
 
@@ -2119,6 +2129,7 @@ country_event = {
 			}
 			cede_province = LAB
 			add_core = LAB
+			remove_core = CTG
 			change_culture = tupinamba
 			change_religion = animism
 
@@ -2167,6 +2178,7 @@ country_event = {
 			}
 			cede_province = ALP
 			add_core = ALP
+			remove_core = CTG
 			change_culture = inca
 			change_religion = inti
 
@@ -2214,6 +2226,7 @@ country_event = {
 			}
 			cede_province = HYZ
 			add_core = HYZ
+			remove_core = CTG
 			change_culture = mapuche
 			change_religion = animism
 
@@ -2262,6 +2275,7 @@ country_event = {
 			}
 			cede_province = RUF
 			add_core = RUF
+			remove_core = CTG
 			change_culture = aboriginal
 			change_religion = animism
 
@@ -2310,6 +2324,7 @@ country_event = {
 			}
 			cede_province = ATP
 			add_core = ATP
+			remove_core = CTG
 			change_culture = kongolese
 			change_religion = shamanism
 
@@ -2358,6 +2373,7 @@ country_event = {
 			}
 			cede_province = MRB
 			add_core = MRB
+			remove_core = CTG
 			change_culture = nguni
 			change_religion = shamanism
 
@@ -2465,6 +2481,7 @@ country_event = {
 			change_religion = totemism
 			cede_province = HYP
 			add_core = HYP
+			remove_core = CTG
 		}
 		every_owned_province = {
 			limit = {
@@ -2476,6 +2493,7 @@ country_event = {
 			change_religion = norse_pagan_reformed
 			cede_province = VAR
 			add_core = VAR
+			remove_core = CTG
 		}
 		every_owned_province = {
 			limit = {
@@ -2487,6 +2505,7 @@ country_event = {
 			change_religion = totemism
 			cede_province = HSP
 			add_core = HSP
+			remove_core = CTG
 		}
 		every_owned_province = {
 			limit = {
@@ -2498,6 +2517,7 @@ country_event = {
 			change_religion = totemism
 			cede_province = SKY
 			add_core = SKY
+			remove_core = CTG
 		}
 		every_owned_province = {
 			limit = {
@@ -2509,6 +2529,7 @@ country_event = {
 			change_religion = totemism
 			cede_province = AME
 			add_core = AME
+			remove_core = CTG
 		}
 		every_owned_province = {
 			limit = {
@@ -2520,6 +2541,7 @@ country_event = {
 			change_religion = animism
 			cede_province = ATL
 			add_core = ATL
+			remove_core = CTG
 		}
 		every_owned_province = {
 			limit = {
@@ -2531,6 +2553,7 @@ country_event = {
 			change_religion = nahuatl
 			cede_province = AUR
 			add_core = AUR
+			remove_core = CTG
 		}
 		every_owned_province = {
 			limit = {
@@ -2542,6 +2565,7 @@ country_event = {
 			change_religion = inti
 			cede_province = ALP
 			add_core = ALP
+			remove_core = CTG
 		}
 		every_owned_province = {
 			limit = {
@@ -2553,6 +2577,7 @@ country_event = {
 			change_religion = inti
 			cede_province = PLD
 			add_core = PLD
+			remove_core = CTG
 		}
 		every_owned_province = {
 			limit = {
@@ -2564,6 +2589,7 @@ country_event = {
 			change_religion = animism
 			cede_province = LAB
 			add_core = LAB
+			remove_core = CTG
 		}
 		every_owned_province = {
 			limit = {
@@ -2575,6 +2601,7 @@ country_event = {
 			change_religion = animism
 			cede_province = HYZ
 			add_core = HYZ
+			remove_core = CTG
 		}
 		every_owned_province = {
 			limit = {
@@ -2586,6 +2613,7 @@ country_event = {
 			change_religion = animism
 			cede_province = RUF
 			add_core = RUF
+			remove_core = CTG
 		}
 		every_owned_province = {
 			limit = {
@@ -2597,6 +2625,7 @@ country_event = {
 			change_religion = shamanism
 			cede_province = MRB
 			add_core = MRB
+			remove_core = CTG
 		}
 		every_owned_province = {
 			limit = {
@@ -2608,6 +2637,7 @@ country_event = {
 			change_religion = shamanism
 			cede_province = ATP
 			add_core = ATP
+			remove_core = CTG
 		}
 	}
 }
@@ -2615,7 +2645,7 @@ country_event = {
 
 
 
-country_event = {
+country_event = { #merge colonies
 	id = flavor_ctg.27
 	title = flavor_ctg.27.t
 	desc = flavor_ctg.27.d
@@ -2786,6 +2816,86 @@ country_event = { #carthage unique
 		hidden_effect = {
 			add_prestige = 1
 		}
+	}
+
+}
+
+country_event = { #carthage unique
+	id = flavor_ctg.29
+	title = "flavor_ctg.29.t"
+	desc = "flavor_ctg.29.d"
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 3
+	}
+
+
+	option = {#Hannibal road
+		name = "flavor_ctg.29.a"
+		ai_chance = { factor = 75 }
+			add_country_modifier = {
+				name = hannibal_road_ctg
+				duration = -1
+			}
+			languedoc_area = {
+				 limit = {
+					 NOT = { owned_by = ROOT }
+				 }
+				 add_permanent_claim = ROOT
+			 }
+			 provence_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			liguria_area = {
+			 limit = {
+				 NOT = { owned_by = ROOT }
+			 }
+			 add_permanent_claim = ROOT
+		 }
+		 savoy_dauphine_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		piedmont_area = {
+		 limit = {
+			 NOT = { owned_by = ROOT }
+		 }
+		 add_permanent_claim = ROOT
+	 }
+	}
+
+	option = {#southern road
+		name = "flavor_ctg.29.b"
+		ai_chance = { factor = 75 }
+			add_country_modifier = {
+				name = southern_road_ctg
+				duration = -1
+			}
+			naples_area = {
+			 limit = {
+				 NOT = { owned_by = ROOT }
+			 }
+			 add_permanent_claim = ROOT
+		 }
+		 calabria_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		apulia_area = {
+		 limit = {
+			 NOT = { owned_by = ROOT }
+		 }
+		 add_permanent_claim = ROOT
+	 }
 	}
 
 }

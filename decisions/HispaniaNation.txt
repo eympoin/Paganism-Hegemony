@@ -31,15 +31,7 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 206
-				province_id = 210
-				province_id = 221
-				province_id = 333
-				province_id = 220
-				province_id = 2988
-				province_id = 227
-				province_id = 217
-				province_id = 225
+				region = iberia_region
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -51,30 +43,25 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
-			owns_core_province = 206
-			owns_core_province = 210
-			owns_core_province = 217
-			owns_core_province = 221
-			owns_core_province = 333
-			owns_core_province = 220
-			owns_core_province = 2988
-			owns_core_province = 227
-			owns_core_province = 225
-			iberia_region = {
-				type = all
+			owns_core_province = 219
+			development_in_provinces = {
+				value = 500
+				region = iberia_region
 			}
 		}
 		effect = {
 			change_tag = HIS
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
-				limit = { NOT = { government_rank = 3 } }
-				set_government_rank = 3
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
 			}
-			custom_tooltip = spanish_unification_effect.tooltip
-			hidden_effect = {
-				add_permanent_claim = HIS
-			}
+			iberia_region = {
+ 			 limit = {
+ 				 NOT = { owned_by = ROOT }
+ 			 }
+ 			 add_permanent_claim = ROOT
+ 		 }
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300

@@ -6,8 +6,10 @@ country_event = {#Welsh/cornish/breton
   picture = COLONIZATION_eventPicture
 
   trigger = {
-    NOT = {tag = BRN}
-    NOT = { tag = LDN}
+    OR = {
+      tag = WRM
+      was_tag = WRM
+    }
     culture_group = neo-roman
     any_owned_province = {
       religion = deii
@@ -44,86 +46,8 @@ country_event = {#Welsh/cornish/breton
   }
 }
 
-country_event = {#Scottish
-  id = flavor_wrm.2
-  title = flavor_wrm.1.t
-  desc = flavor_wrm.1.d
-  picture = COLONIZATION_eventPicture
 
-  trigger = {
-  NOT = {tag = BRN}
-  NOT = { tag = LDN}
-  culture_group = neo-roman
-    any_owned_province = {
-      religion = deii
-      OR = {
-        culture = highland_scottish
-        culture = scottish
-      }
-      NOT = { culture_group = britannian_group }
-      NOT = { nationalism	= 1 }
-      is_core = ROOT
-    }
-  }
 
-  mean_time_to_happen = {
-    years = 10
-  }
-
-  option = {
-    name = flavor_wrm.1.a
-    ai_chance = { factor = 1 }
-    random_owned_province = {
-      limit = {
-        religion = deii
-        OR = {
-          culture = highland_scottish
-          culture = scottish
-        }
-        NOT = { nationalism	= 1 }
-        is_core = ROOT
-      }
-      change_culture = britannian
-    }
-  }
-}
-country_event = {#Irish
-  id = flavor_wrm.3
-  title = flavor_wrm.1.t
-  desc = flavor_wrm.1.d
-  picture = COLONIZATION_eventPicture
-
-  trigger = {
-    NOT = {tag = BRN}
-    NOT = { tag = LDN}
-    culture_group = neo-roman
-    any_owned_province = {
-      religion = deii
-      culture = irish
-      NOT = { culture_group = britannian_group }
-      NOT = { nationalism	= 1 }
-      is_core = ROOT
-    }
-  }
-
-  mean_time_to_happen = {
-    years = 10
-  }
-
-  option = {
-    name = flavor_wrm.1.a
-    ai_chance = { factor = 1 }
-    random_owned_province = {
-      limit = {
-        religion = deii
-        culture = irish
-        NOT = { nationalism	= 1 }
-        is_core = ROOT
-      }
-      change_culture = britannian
-    }
-  }
-}
 country_event = {#Northumbrian
   id = flavor_wrm.4
   title = flavor_wrm.1.t
@@ -131,8 +55,10 @@ country_event = {#Northumbrian
   picture = COLONIZATION_eventPicture
 
   trigger = {
-    NOT = {tag = BRN}
-    NOT = { tag = LDN}
+    OR = {
+      tag = WRM
+      was_tag = WRM
+    }
     culture_group = neo-roman
     any_owned_province = {
       religion = deii
@@ -168,8 +94,10 @@ country_event = {#Anglo-saxon
   picture = COLONIZATION_eventPicture
 
   trigger = {
-    NOT = {tag = BRN}
-    NOT = { tag = LDN}
+    OR = {
+      tag = WRM
+      was_tag = WRM
+    }
     culture_group = neo-roman
     any_owned_province = {
       religion = deii
@@ -213,6 +141,10 @@ country_event = {#franks
   picture = COLONIZATION_eventPicture
 
   trigger = {
+    OR = {
+      tag = WRM
+      was_tag = WRM
+    }
     culture_group = neo-roman
     any_owned_province = {
       religion = deii
@@ -257,6 +189,10 @@ country_event = {#burgond
   picture = COLONIZATION_eventPicture
 
   trigger = {
+    OR = {
+      tag = WRM
+      was_tag = WRM
+    }
     culture_group = neo-roman
     any_owned_province = {
       religion = deii
@@ -298,8 +234,10 @@ country_event = {#Griko
   picture = COLONIZATION_eventPicture
 
   trigger = {
-    NOT = {tag  = CTG}
-    NOT = {tag  = AFR}
+    OR = {
+      tag = WRM
+      was_tag = WRM
+    }
     culture_group = neo-roman
     any_owned_province = {
       religion = deii
@@ -340,6 +278,10 @@ country_event = {#Lombards
   picture = COLONIZATION_eventPicture
 
   trigger = {
+    OR = {
+      tag = WRM
+      was_tag = WRM
+    }
     culture_group = neo-roman
     any_owned_province = {
       religion = deii
@@ -373,4 +315,290 @@ country_event = {#Lombards
       change_culture = annonarian
     }
   }
+}
+
+
+country_event = {#Claim Eastern Throne
+  id = flavor_wrm.10
+  title = flavor_wrm.10.t
+  desc = flavor_wrm.10.d
+  picture = HRE_eventPicture
+
+  is_triggered_only = yes
+
+  option = { #claim eastern throne
+    name = flavor_wrm.10.a
+    ai_chance = { factor = 1 }
+    emperor = { country_event = { id = flavor_wrm.11} }
+  }
+  option = { #we don't need the east
+    name = flavor_wrm.10.b
+    ai_chance = { factor = 1 }
+    add_prestige = 10
+  }
+}
+
+country_event = {#answer of the ERE
+  id = flavor_wrm.11
+  title = flavor_wrm.11.t
+  desc = flavor_wrm.11.d
+  picture = HRE_eventPicture
+
+  is_triggered_only = yes
+
+  option = { #if they want  the throne, they will have to fight
+    name = flavor_wrm.11.a
+    ai_chance = { factor = 1 }
+    WRM = { country_event = { id = flavor_wrm.12} }
+  }
+}
+
+country_event = {#To war
+  id = flavor_wrm.12
+  title = flavor_wrm.12.t
+  desc = flavor_wrm.12.d
+  picture = BATTLE_eventPicture
+
+  is_triggered_only = yes
+
+  option = { #war
+    name = flavor_wrm.12.a
+    ai_chance = { factor = 1 }
+    set_country_flag = defied_the_east
+    declare_war_with_cb = {
+      who = emperor
+      casus_belli = cb_fabricated_claims
+    }
+  }
+  option = { #not yet
+    name = flavor_wrm.12.b
+    ai_chance = { factor = 1 }
+    set_country_flag = defied_the_east
+    add_casus_belli = {
+      target = emperor
+      type = cb_fabricated_claims
+      months = -1
+    }
+  }
+}
+
+country_event = {#Peace choices
+  id = flavor_wrm.13
+  title = flavor_wrm.13.t
+  desc = flavor_wrm.13.d
+  picture = HRE_eventPicture
+
+  fire_only_once = yes
+
+  trigger = {
+    has_country_flag = defied_the_east
+    war_with = emperor
+    war_score = 50
+    tag = WRM
+  }
+  mean_time_to_happen = {
+    days = 7
+  }
+
+  option = { #dismantle the empire
+    name = flavor_wrm.13.a
+    ai_chance = { factor = 1 }
+    white_peace = emperor
+    add_truce_with = emperor
+    dismantle_hre = yes
+    add_prestige = 20
+    add_legitimacy = 20
+    add_adm_power = 100
+    add_dip_power = 100
+    add_mil_power = 100
+  }
+  option = { #force religious peace and enter the Empire
+    name = flavor_wrm.13.b
+    ai_chance = { factor = 1 }
+    white_peace = emperor
+    add_prestige = 20
+    add_legitimacy = 20
+    add_truce_with = emperor
+    WRM = {
+      set_in_empire = yes
+    }
+    set_hre_religion_treaty = yes
+    elector = WRM
+    add_country_modifier = {
+      name = emperor_of_east_and_west
+      duration = -1
+    }
+  }
+  option = { #take the throne (roman religion, kill the emperor and religious peace)
+    name = flavor_wrm.13.c
+    ai_chance = { factor = 1 }
+    white_peace = emperor
+    add_truce_with = emperor
+    add_stability = -2
+    WRM = {
+      set_in_empire = yes
+    }
+    set_hre_religion = deii
+    emperor = {
+      kill_ruler = yes
+    }
+    set_hre_religion_treaty = yes
+    add_imperial_influence = 50
+    add_country_modifier = {
+      name = emperor_of_east_and_west
+      duration = -1
+    }
+  }
+}
+
+
+country_event = {#WRM formation
+  id = flavor_wrm.14
+  title = flavor_wrm.14.t
+  desc = flavor_wrm.14.d
+  picture = HRE_eventPicture
+
+  is_triggered_only = yes
+
+  option = { #demand submission
+    name = flavor_wrm.14.a
+    ai_chance = { factor = 100 }
+    every_country = {
+      limit = {
+        culture_group = neo-roman
+        NOT = {tag = WRM}
+      }
+      country_event = { id = flavor_wrm.15}
+    }
+  }
+  option = { #don't neeed it
+    name = flavor_wrm.14.b
+    ai_chance = { factor = 0 }
+    add_prestige = 20
+  }
+}
+
+country_event = {#WRM submission
+  id = flavor_wrm.15
+  title = flavor_wrm.15.t
+  desc = flavor_wrm.15.d
+  picture = HRE_eventPicture
+
+  is_triggered_only = yes
+
+  option = { #submit
+    name = flavor_wrm.15.a
+    ai_chance = {
+    factor = 5
+    modifier = {
+      factor = 90
+      NOT = {
+        army_strength = {
+        	who = WRM
+        	value = 0.15
+          }
+        }
+      }
+      modifier = {
+        factor = 0
+          army_strength = {
+          	who = WRM
+          	value = 0.5
+          }
+      }
+      modifier = {
+        factor = 50
+        NOT = {
+          army_strength = {
+          	who = WRM
+          	value = 0.25
+            }
+          }
+        }
+
+    }
+    WRM = {country_event = { id = flavor_wrm.17 }}
+    WRM = {
+      create_subject = {
+          subject_type = roman_province_cen
+          subject = ROOT
+      }
+    }
+  }
+  option = { #they will have to take us by force
+    name = flavor_wrm.15.b
+    ai_chance = {
+      factor = 95
+      modifier = {
+        factor = 10
+        NOT = {
+          army_strength = {
+          	who = WRM
+          	value = 0.1
+            }
+          }
+      }
+      modifier = {
+        factor = 100
+          army_strength = {
+          	who = WRM
+          	value = 0.5
+          }
+      }
+      modifier = {
+        factor = 50
+        NOT = {
+          army_strength = {
+          	who = WRM
+          	value = 0.25
+            }
+          }
+      }
+   }
+   add_stability = 1
+   add_prestige = 20
+   WRM = {country_event = { id = flavor_wrm.16 }}
+
+  }
+}
+
+
+
+country_event = {#WRM receive negative answer
+	id = flavor_wrm.16
+	title = "flavor_wrm.16.t"
+	desc = "flavor_wrm.16.d"
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "flavor_wrm.16.a"
+		ai_chance = {
+			factor = 100
+		}
+		add_casus_belli = {
+			target = FROM
+			type = cb_vassalize_mission
+			months = -1
+		}
+	}
+
+}
+
+country_event = {#WRM receive positive answer
+	id = flavor_wrm.17
+	title = "flavor_wrm.17.t"
+	desc = "flavor_wrm.17.d"
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "flavor_wrm.17.a"
+		ai_chance = {
+			factor = 100
+		}
+		add_prestige = 10
+	}
 }
