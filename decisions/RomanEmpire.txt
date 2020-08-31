@@ -3,19 +3,18 @@ country_decisions = {
 	restore_Roman_Empire = {
 		major = yes
 		potential = {
-			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
-			NOT = { has_country_flag = formed_Western_Roman_Empire_flag }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
 			}
-			NOT = { tag = HLR }
+			NOT = { tag = ROM }
 			NOT = { tag = PAP }
 			OR = {
 				culture_group = neo-roman
 				culture_group = byzantine
-				}
+			}
+
 			is_colonial_nation = no
 			OR = {
 				is_former_colonial_nation = no
@@ -82,6 +81,19 @@ country_decisions = {
 		 }
 		 add_prestige = 25
 		 set_country_flag = formed_Roman_Empire_flag
+		 if = {
+			 limit = {
+				 has_custom_ideas = no
+				 OR = {
+					 ai = no
+					 AND = {
+						 ai = yes
+						 has_idea_group = default_ideas
+					 }
+				 }
+			 }
+			 country_event = { id = ideagroups.1 } #Swap Ideas
+		 }
 		 south_german_region = {
 			 limit = {
 				 NOT = { owned_by = ROOT }

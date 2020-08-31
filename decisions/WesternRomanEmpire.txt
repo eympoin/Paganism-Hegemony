@@ -3,7 +3,6 @@ country_decisions = {
 	restore_Western_Roman_Empire = {
 		major = yes
 		potential = {
-			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_Western_Roman_Empire_flag }
 			OR = {
@@ -11,7 +10,7 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			NOT = { tag = WRM }
-			NOT = { tag = HLR }
+			NOT = { tag = ROM }
 			NOT = { tag = PAP }
 
 			culture_group = neo-roman
