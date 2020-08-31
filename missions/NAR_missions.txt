@@ -1,10 +1,13 @@
 
 Gallia_Unification_1 = {
-	slot = 2
+	slot = 3
 	generic = no
 	ai = yes
 	potential = {
+	OR = {
 		tag = NAR
+		was_tag = NAR
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	union_of_two_thrones_nar = {
@@ -25,11 +28,11 @@ Gallia_Unification_1 = {
 		trigger = {
 			guyenne_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = NAR
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			pyrenees_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = NAR
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -37,25 +40,25 @@ Gallia_Unification_1 = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = NAR
+				add_permanent_claim = ROOT
 			}
 			west_burgundy_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = NAR
+				add_permanent_claim = ROOT
 			}
 			bourgogne_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = NAR
+				add_permanent_claim = ROOT
 			}
 			massif_central_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = NAR
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -84,13 +87,13 @@ Gallia_Unification_1 = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = NAR
+				add_permanent_claim = ROOT
 			}
 			orleans_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = NAR
+				add_permanent_claim = ROOT
 			}
 			add_country_modifier = {
 				name = "revenge_against_the_franks"
@@ -100,7 +103,7 @@ Gallia_Unification_1 = {
 	}
 
 	offensive_against_franks_nar = {
-		icon = mission_conquer_50_development
+		icon = the_hundred_years_war
 		required_missions = {reclaim_north_poitou_nar end_of_the_burgonds_nar}
 		position = 3
 		provinces_to_highlight = {
@@ -133,7 +136,7 @@ Gallia_Unification_1 = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = NAR
+				add_permanent_claim = ROOT
 			}
 			add_country_modifier = {
 				name = "romanize_the_franks"
@@ -144,9 +147,9 @@ Gallia_Unification_1 = {
 
 
 	Gallia_united_nar = {
-		icon = mission_unite_home_region
+		icon = centralize_france
 		required_missions = {offensive_against_franks_nar }
-		position = 3
+		position = 5
 		provinces_to_highlight = {
 			region = france_region
 			OR = {
@@ -158,7 +161,7 @@ Gallia_Unification_1 = {
 		trigger = {
 			france_region = {
 				type = all
-				owned_by = NAR
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -171,49 +174,71 @@ Gallia_Unification_1 = {
 		}
 	}
 
+	Rome_Reborn_nar = {
+    icon = a_real_roman_empire
+    required_missions = {offensive_against_franks_nar end_the_chaos_nar finish_the_lombards}
 
-	roman_gallia_nar = {
-		icon = mission_hands_praying
-		required_missions = {Gallia_united_nar}
-		position = 5
-		provinces_to_highlight = {
-			region = france_region
-			religion = deii
-			OR = {
-				is_city = no
-				NOT = { owned_by = ROOT }
-			}
-			has_discovered = ROOT
-		}
-		trigger = {
-			france_region = {
-				type = all
-				religion = deii
-			}
-		}
-		effect = {
-		custom_tooltip = roman_gallia_tt
-			france_region = {
-				limit = {
-				owned_by = ROOT
-					OR = {
-						culture_group = frankish
-						culture = burgond
-					}
-				}
-				change_culture = franko-roman
-			}
-		}
-	}
+    provinces_to_highlight = {
+      province_id = 118
+    }
+
+    trigger = {
+      total_development = 1500
+      tag = WRM
+    }
+    effect = {
+      118 = {
+        add_province_modifier = {
+          name = rome_reborn_mod
+          duration = -1
+        }
+        add_center_of_trade_level = 1
+      }
+      country_event = {id = flavor_wrm.10}
+    }
+  }
+  Emperor_of_east_and_west_nar = {
+    icon = a_roman_empire
+    required_missions = {Rome_Reborn_nar}
+
+    provinces_to_highlight = {
+     province_id = 151
+    }
+
+    trigger = {
+      tag = ROM
+      151 = {
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      add_prestige = 20
+      add_mil_power = 100
+      add_adm_power = 100
+      add_dip_power = 100
+      add_years_of_income = 1
+      add_country_modifier = {
+        name = emperoror_of_east_west
+        duration = -1
+      }
+      add_accepted_culture = greek
+      add_accepted_culture = anatolian
+      add_accepted_culture = syrian
+      add_accepted_culture = ptolemaic
+    }
+  }
 }
 
 
 Gallia_Unification_2 = {
-	slot = 1
+	slot = 2
 	generic = no
 	ai = yes
 	potential = {
+	OR = {
 		tag = NAR
+		was_tag = NAR
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	end_of_the_burgonds_nar = {
@@ -236,19 +261,19 @@ Gallia_Unification_2 = {
 		trigger = {
 			massif_central_area = {
 				type = all
-				owned_by  = NAR
+				owned_by  = ROOT
 			}
 			west_burgundy_area = {
 				type = all
-				owned_by  = NAR
+				owned_by  = ROOT
 			}
 			bourgogne_area = {
 				type = all
-				owned_by  = NAR
+				owned_by  = ROOT
 			}
 			savoy_dauphine_area = {
 				type = all
-				owned_by  = NAR
+				owned_by  = ROOT
 			}
 		}
 		effect = {
@@ -256,7 +281,7 @@ Gallia_Unification_2 = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = NAR
+				add_permanent_claim = ROOT
 			}
 			add_country_modifier = {
 				name = "full_elan"
@@ -267,11 +292,14 @@ Gallia_Unification_2 = {
 }
 
 Spanish_intervention_nar = {
-	slot = 3
+	slot = 4
 	generic = no
 	ai = yes
 	potential = {
+	OR = {
 		tag = NAR
+		was_tag = NAR
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	invade_catalonia = {
@@ -291,7 +319,7 @@ Spanish_intervention_nar = {
 		trigger = {
 			catalonia_area = {
 				type = all
-				owned_by  = NAR
+				owned_by  = ROOT
 			}
 		}
 		effect = {
@@ -299,13 +327,13 @@ Spanish_intervention_nar = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = NAR
+				add_permanent_claim = ROOT
 			}
 			valencia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = NAR
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -329,19 +357,31 @@ Spanish_intervention_nar = {
 		trigger = {
 			aragon_area = {
 				type = all
-				owned_by  = NAR
+				owned_by  = ROOT
 			}
 			valencia_area = {
 				type = all
-				owned_by  = NAR
+				owned_by  = ROOT
 			}
 		}
 		effect = {
-			iberia_region = {
+			castille_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = NAR
+				add_permanent_claim = ROOT
+			}
+			toledo_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			basque_country = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 			add_country_modifier = {
 				name = "protected_coast"
@@ -350,11 +390,52 @@ Spanish_intervention_nar = {
 		}
 	}
 
+	solidify_the_center = {
+		icon = mission_conquer_50_development
+		required_missions = {take_the_coast_nar}
+		position = 1
+		provinces_to_highlight = {
+			OR = {
+				area = castille_area
+				area = toledo_area
+				area = basque_country
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			castille_area = {
+				type = all
+				owned_by  = ROOT
+			}
+			toledo_area = {
+				type = all
+				owned_by  = ROOT
+			}
+			basque_country = {
+				type = all
+				owned_by  = ROOT
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+			iberia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
 
 	end_the_chaos_nar = {
-		icon = mission_unite_home_region
-		required_missions = {take_the_coast_nar}
-		position = 3
+		icon = hispaniae
+		required_missions = {solidify_the_center}
+		position = 5
 
 		provinces_to_highlight = {
 			OR = {
@@ -370,7 +451,7 @@ Spanish_intervention_nar = {
 		trigger = {
 			iberia_region = {
 				type = all
-				owned_by  = NAR
+				owned_by  = ROOT
 			}
 		}
 		effect = {
@@ -383,22 +464,25 @@ Spanish_intervention_nar = {
 }
 
 Italian_intervention = {
-	slot = 4
+	slot = 2
 	generic = no
 	ai = yes
 	potential = {
+	OR = {
 		tag = NAR
+		was_tag = NAR
+		}
 		NOT = { map_setup = map_setup_random }
 	}
-	protect_genoa = {
+	attack_the_lombards = {
 		icon = mission_alliances
-		required_missions = {}
+		required_missions = {end_of_the_burgonds_nar}
 		position = 1
 		provinces_to_highlight = {
 			OR = {
 				area = piedmont_area
+				area = liguria_area
 			}
-			owned_by = PAV
 			OR = {
 				is_city = no
 				NOT = { owned_by = ROOT }
@@ -406,26 +490,40 @@ Italian_intervention = {
 			has_discovered = ROOT
 		}
 		trigger = {
-		OR = {
-			alliance_with = GEN
-			NOT = { exists = GEN }
-
-			}
 			piedmont_area = {
 				type = all
-				NOT = { owned_by = PAV }
+				owned_by = ROOT
+			}
+			liguria_area = {
+				type = all
+				owned_by = ROOT
 			}
 		}
 		effect = {
-			vassalize = GEN
+		add_years_of_income
+			add_country_modifier = {
+				name = roman_savior
+				duration = 7300
+			}
+		}
+		tuscany_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
+		}
+		po_valley_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = ROOT
 		}
 	}
 
 
 	subjugate_the_senate = {
 		icon = mission_empire
-		required_missions = {protect_genoa}
-		position = 1
+		required_missions = {attack_the_lombards}
 		provinces_to_highlight = {
 			OR = {
 				area = tuscany_area
@@ -441,7 +539,7 @@ Italian_intervention = {
 			tuscany_area = {
 				type = all
 				OR = {
-					owned_by  = NAR
+					owned_by  = ROOT
 					owned_by  = SPQ
 					}
 			}
@@ -458,6 +556,64 @@ Italian_intervention = {
 				name = "the_eternal_city_mod"
 				duration = -1
 			}
+			emilia_romagna_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			central_italy_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			venetia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	finish_the_lombards = {
+		icon = confront_the_lombards
+		required_missions = {subjugate_the_senate}
+		provinces_to_highlight = {
+			OR = {
+				area = po_valley_area
+				area = venetia_area
+				area = emilia_romagna_area
+			}
+			OR = {
+				is_city = no
+				NOT = { owned_by = ROOT }
+			}
+			has_discovered = ROOT
+		}
+		trigger = {
+			po_valley_area = {
+				type = all
+				OR = {
+					owned_by  = ROOT
+					}
+			}
+			venetia_area = {
+				type = all
+				OR = {
+					owned_by  = ROOT
+					}
+			}
+			emilia_romagna_area = {
+				type = all
+				OR = {
+					owned_by  = ROOT
+					}
+			}
+		}
+		effect = {
+
 		}
 	}
 }
@@ -469,13 +625,16 @@ Western_mediterranean_control_mission = {
 	generic = no
 	ai = yes
 	potential = {
+	OR = {
 		tag = NAR
+		was_tag = NAR
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	island_control = {
 		icon = mission_invade_island
-		required_missions = {}
-		position = 1
+		required_missions = {invade_catalonia}
+		position = 2
 		provinces_to_highlight = {
 			OR = {
 				area = baleares_area
@@ -490,11 +649,11 @@ Western_mediterranean_control_mission = {
 		trigger = {
 			baleares_area = {
 				type = all
-				owned_by = NAR
+				owned_by = ROOT
 			}
 			corsica_sardinia_area = {
 				type = all
-				owned_by = NAR
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -502,19 +661,19 @@ Western_mediterranean_control_mission = {
 			limit = {
 				NOT = { owned_by = ROOT }
 			}
-			add_permanent_claim = NAR
+			add_permanent_claim = ROOT
 		}
 		sicily_area = {
 			limit = {
 				NOT = { owned_by = ROOT }
 			}
-			add_permanent_claim = NAR
+			add_permanent_claim = ROOT
 		}
 		western_sicily_area = {
 			limit = {
 				NOT = { owned_by = ROOT }
 			}
-			add_permanent_claim = NAR
+			add_permanent_claim = ROOT
 		}
 		}
 	}
@@ -569,15 +728,15 @@ Western_mediterranean_control_mission = {
 		trigger = {
 			western_sicily_area = {
 				type = all
-				owned_by = NAR
+				owned_by = ROOT
 			}
 			sicily_area = {
 				type = all
-				owned_by = NAR
+				owned_by = ROOT
 			}
 			tunisia_area = {
 				type = all
-				owned_by = NAR
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -585,13 +744,13 @@ Western_mediterranean_control_mission = {
 			limit = {
 				NOT = { owned_by = ROOT }
 			}
-			add_permanent_claim = NAR
+			add_permanent_claim = ROOT
 		}
 		naples_area = {
 			limit = {
 				NOT = { owned_by = ROOT }
 			}
-			add_permanent_claim = NAR
+			add_permanent_claim = ROOT
 		}
 		add_country_modifier = {
 			name = "western_mediterranean_control"
@@ -607,8 +766,11 @@ economic_nar{
 	generic = no
 	ai = yes
 	potential = {
+	OR = {
 		tag = NAR
-		NOT = { map_setup = map_setup_random }
+		was_tag = NAR
+		}
+	NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 
