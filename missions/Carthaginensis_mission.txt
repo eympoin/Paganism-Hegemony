@@ -39,6 +39,15 @@ hispania_unification_1_cth{
 		icon = mission_eastern_european_city
 		required_missions = {  } #None
 		position = 1
+		provinces_to_highlight = {
+      OR = {
+				province_id = 220
+				province_id = 4549
+				province_id = 1750
+				province_id = 221
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
 			owns_or_non_sovereign_subject_of = 220
 			owns_or_non_sovereign_subject_of = 4549
@@ -73,6 +82,12 @@ hispania_unification_1_cth{
 		icon = mission_eastern_european_city
 		required_missions = {victory_of_the_coalition_CTH a_new_navy}
 		position = 2
+		provinces_to_highlight = {
+      OR = {
+				area = catalonia_area
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
 			catalonia_area = {
 				type = all
@@ -107,6 +122,13 @@ hispania_unification_1_cth{
 		icon = mission_eastern_european_city
 		required_missions = {control_of_the_eastern_coast_cth}
 		position = 3
+		provinces_to_highlight = {
+      OR = {
+				area = aragon_area
+				area = basque_country
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
 			aragon_area = {
 				type = all
@@ -138,6 +160,13 @@ hispania_unification_1_cth{
 		icon = mission_eastern_european_city
 		required_missions = {control_the_mountains}
 		position = 5
+		provinces_to_highlight = {
+      OR = {
+				area = asturias_area
+				area = galicia_area
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
 			asturias_area = {
 				type = all
@@ -171,6 +200,13 @@ hispania_unification_2_CTH{
 		icon = mission_eastern_european_city
 		required_missions = {victory_of_the_coalition_CTH}
 		position = 2
+		provinces_to_highlight = {
+      OR = {
+				area = toledo_area
+				area = castille_area
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
 			toledo_area = {
 				type = all
@@ -202,6 +238,13 @@ hispania_unification_2_CTH{
 		icon = mission_eastern_european_city
 		required_missions = {secure_central_spain}
 		position = 4
+		provinces_to_highlight = {
+      OR = {
+				area = lower_andalucia_area
+				area = upper_andalucia_area
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
 			lower_andalucia_area = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -211,14 +254,14 @@ hispania_unification_2_CTH{
 			}
 		}
 		effect = {
-			beieras_area = {
+			leon_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			alentejo_area = {
+			extremadura_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -231,8 +274,19 @@ hispania_unification_2_CTH{
 		icon = mission_eastern_european_city
 		required_missions = {finish_baetica_cth}
 		position = 4
+		provinces_to_highlight = {
+      OR = {
+				area = leon_area
+				area = extremadura_area
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
 			leon_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			extremadura_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -245,14 +299,28 @@ hispania_unification_2_CTH{
 				}
 				add_permanent_claim = ROOT
 			}
+			beieras_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	strike_lusitania_cth = {
 		icon = mission_eastern_european_city
 		required_missions = {finish_baetica road_to_the_atlantic_cth}
 		position = 5
+		provinces_to_highlight = {
+      OR = {
+				area = beieras_area
+				area = alentejo_area
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
-			leon_area = {
+			beieras_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -262,7 +330,7 @@ hispania_unification_2_CTH{
 			}
 		}
 		effect = {
-			beieras_area = {
+			macaronesia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -287,6 +355,12 @@ hispania_unification_final{
 		icon = mission_eastern_european_city
 		required_missions = {take_galicia_cth strike_lusitania_cth}
 		position = 7
+		provinces_to_highlight = {
+      OR = {
+				region = iberia_region
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
 			iberia_region = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -318,6 +392,12 @@ expand_eastward{
 		icon = mission_eastern_european_city
 		required_missions = {control_of_the_eastern_coast_cth a_new_navy_cth}
 		position = 3
+		provinces_to_highlight = {
+      OR = {
+				area = corsica_sardinia_area
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
 			corsica_sardinia_area = {
 				type = all
@@ -352,8 +432,19 @@ expand_eastward{
 		icon = mission_eastern_european_city
 		required_missions = {a_stable_foothold_cth}
 		position = 4
+		provinces_to_highlight = {
+      OR = {
+				area = sicily_area
+				area = western_sicily_area
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
 			sicily_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			western_sicily_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -379,8 +470,19 @@ expand_eastward{
 		icon = mission_eastern_european_city
 		required_missions = { the_next_step_cth } #None
 		position = 5
+		provinces_to_highlight = {
+      OR = {
+				area = tunisia_area
+				area = byzacena_area
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
 			tunisia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			byzacena_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -464,6 +566,13 @@ expand_eastward{
 		icon = mission_eastern_european_city
 		required_missions = {a_stable_foothold}
 		position = 4
+		provinces_to_highlight = {
+      OR = {
+				area = languedoc_area
+				area = provence_area
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
 			languedoc_area = {
 				type = all
@@ -502,6 +611,13 @@ expand_eastward{
 		icon = mission_eastern_european_city
 		required_missions = { crush_narbonensis_cth } #None
 		position = 5
+		provinces_to_highlight = {
+      OR = {
+				area = liguria_area
+				area = tuscany_area
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
 			liguria_area = {
 				type = all
@@ -531,8 +647,17 @@ expand_eastward{
 		icon = mission_eastern_european_city
 		required_missions = { take_the_rich_cities_CTH } #None
 		position = 7
+		provinces_to_highlight = {
+      OR = {
+				area = lazio_area
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
-			owns_or_non_sovereign_subject_of = 118
+			lazio_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect{
 			add_adm_power	= 100
