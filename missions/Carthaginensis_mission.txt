@@ -91,7 +91,7 @@ hispania_unification_1_cth{
 		trigger = {
 			catalonia_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -132,11 +132,11 @@ hispania_unification_1_cth{
 		trigger = {
 			aragon_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			basque_country = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -170,11 +170,11 @@ hispania_unification_1_cth{
 		trigger = {
 			asturias_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			galicia_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -210,11 +210,11 @@ hispania_unification_2_CTH{
 		trigger = {
 			toledo_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			castille_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -247,10 +247,10 @@ hispania_unification_2_CTH{
     }
 		trigger = {
 			lower_andalucia_area = {
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			upper_andalucia_area = {
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -284,11 +284,11 @@ hispania_unification_2_CTH{
 		trigger = {
 			leon_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			extremadura_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -322,11 +322,11 @@ hispania_unification_2_CTH{
 		trigger = {
 			beieras_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			alentejo_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -363,7 +363,7 @@ hispania_unification_final{
     }
 		trigger = {
 			iberia_region = {
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -401,7 +401,7 @@ expand_eastward{
 		trigger = {
 			corsica_sardinia_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -442,11 +442,11 @@ expand_eastward{
 		trigger = {
 			sicily_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			western_sicily_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -480,11 +480,11 @@ expand_eastward{
 		trigger = {
 			tunisia_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			byzacena_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect{
@@ -576,11 +576,11 @@ expand_eastward{
 		trigger = {
 			languedoc_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			provence_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -621,11 +621,11 @@ expand_eastward{
 		trigger = {
 			liguria_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			tuscany_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect{
@@ -656,7 +656,7 @@ expand_eastward{
 		trigger = {
 			lazio_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect{
