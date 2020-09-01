@@ -1,117 +1,122 @@
-
 trade_empire ={
 	slot = 2
 	generic = no
 	ai = yes
 	potential = {
+	OR = {
 		tag = LUS
+		was_tag = LUS
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	dominate_sevilla = {
-	position = 1
-			icon = mission_dominate_home_trade_node
-			required_missions = { establish_high_seas_navy }
-			trigger = {
-				home_trade_node = {
-					trade_share = {
-						country = ROOT
-						share = 50
-					}
+		position = 1
+		icon = mission_dominate_home_trade_node
+		required_missions = { establish_high_seas_navy }
+		trigger = {
+			home_trade_node = {
+				trade_share = {
+					country = ROOT
+					share = 50
 				}
 			}
-			effect = {
-				add_mercantilism = 2
-				add_country_modifier = {
-					name = "dominant_trade_hub"
-					duration = 3650
-				}
+		}
+		effect = {
+			add_mercantilism = 2
+			add_country_modifier = {
+				name = "dominant_trade_hub"
+				duration = 3650
 			}
 		}
 	}
+}
 
-	hispania_unification_1 = {
-		slot = 4
-		generic = no
-		ai = yes
-		potential = {
-			tag = LUS
-			NOT = { map_setup = map_setup_random }
+hispania_unification_1 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		tag = LUS
+		was_tag = LUS
 		}
-		has_country_shield = yes
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
 
-		victory_of_the_coalition = {
-			icon = mission_eastern_european_city
-			required_missions = {  } #None
-			position = 1
-			trigger = {
-				owns_or_non_sovereign_subject_of = 229
-				owns_or_non_sovereign_subject_of = 230
-				owns_or_non_sovereign_subject_of = 218
-				owns_or_non_sovereign_subject_of = 4150
-				owns_or_non_sovereign_subject_of = 1747
-				owns_or_non_sovereign_subject_of = 216
+	victory_of_the_coalition = {
+		icon = mission_eastern_european_city
+		required_missions = {  } #None
+		position = 1
+		trigger = {
+			owns_or_non_sovereign_subject_of = 229
+			owns_or_non_sovereign_subject_of = 230
+			owns_or_non_sovereign_subject_of = 218
+			owns_or_non_sovereign_subject_of = 4150
+			owns_or_non_sovereign_subject_of = 1747
+			owns_or_non_sovereign_subject_of = 216
+		}
+		effect = {
+			add_permanent_claim = 232
+			add_permanent_claim = 231
+			galicia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
-			effect = {
-				add_permanent_claim = 232
-				add_permanent_claim = 231
-				galicia_area = {
-					limit = {
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = LUS
+			lower_andalucia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
 				}
-				lower_andalucia_area = {
-					limit = {
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = LUS
-				}
-				upper_andalucia_area = {
-					limit = {
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = LUS
-				}
-				}
+				add_permanent_claim = ROOT
 			}
-			western_control = {
-			icon = mission_eastern_european_city
-			required_missions = {victory_of_the_coalition}
-			position = 2
-			trigger = {
-				owns_or_non_sovereign_subject_of = 232
-				owns_or_non_sovereign_subject_of = 231
-				owns_or_non_sovereign_subject_of = 4558
-				owns_or_non_sovereign_subject_of = 4555
-				owns_or_non_sovereign_subject_of = 4554
-				owns_or_non_sovereign_subject_of = 206
+			upper_andalucia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
-			effect = {
+		}
+	}
+	western_control = {
+		icon = mission_eastern_european_city
+		required_missions = {victory_of_the_coalition}
+		position = 2
+		trigger = {
+			owns_or_non_sovereign_subject_of = 232
+			owns_or_non_sovereign_subject_of = 231
+			owns_or_non_sovereign_subject_of = 4558
+			owns_or_non_sovereign_subject_of = 4555
+			owns_or_non_sovereign_subject_of = 4554
+			owns_or_non_sovereign_subject_of = 206
+		}
+		effect = {
 			add_permanent_claim = 208
 			add_permanent_claim = 4553
 			asturias_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = LUS
-				}
+				add_permanent_claim = ROOT
 			}
 		}
+	}
 
-		break_the_montains = {
-			icon = mission_eastern_european_city
-			required_missions = {western_control}
-			position = 3
-			trigger = {
-				owns_or_non_sovereign_subject_of = 208
-				owns_or_non_sovereign_subject_of = 207
-				owns_or_non_sovereign_subject_of = 4552
-				owns_or_non_sovereign_subject_of = 4553
-				owns_or_non_sovereign_subject_of = 1745
-				owns_or_non_sovereign_subject_of = 1746
-			}
-			effect = {
+	break_the_montains = {
+		icon = mission_eastern_european_city
+		required_missions = {western_control}
+		position = 3
+		trigger = {
+			owns_or_non_sovereign_subject_of = 208
+			owns_or_non_sovereign_subject_of = 207
+			owns_or_non_sovereign_subject_of = 4552
+			owns_or_non_sovereign_subject_of = 4553
+			owns_or_non_sovereign_subject_of = 1745
+			owns_or_non_sovereign_subject_of = 1746
+		}
+		effect = {
 			add_permanent_claim = 209
 			add_permanent_claim = 210
 			add_permanent_claim = 2989
@@ -119,38 +124,41 @@ trade_empire ={
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-					add_permanent_claim = LUS
-				}
+				add_permanent_claim = ROOT
 			}
 		}
-
 	}
 
-	hispania_unification_2{
-		slot = 3
-		generic = no
-		ai = yes
-		potential = {
-			tag = LUS
-			NOT = { map_setup = map_setup_random }
+}
+
+hispania_unification_2{
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		tag = LUS
+		was_tag = LUS
 		}
-		has_country_shield = yes
-		finish_baetica = {
-			icon = mission_eastern_european_city
-			required_missions = {victory_of_the_coalition}
-			position = 2
-			trigger = {
-				owns_or_non_sovereign_subject_of = 4548
-				owns_or_non_sovereign_subject_of = 224
-				owns_or_non_sovereign_subject_of = 1749
-				owns_or_non_sovereign_subject_of = 226
-				owns_or_non_sovereign_subject_of = 225
-				owns_or_non_sovereign_subject_of = 4546
-				owns_or_non_sovereign_subject_of = 223
-				owns_or_non_sovereign_subject_of = 1748
-				owns_or_non_sovereign_subject_of = 222
-			}
-			effect = {
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	finish_baetica = {
+		icon = mission_eastern_european_city
+		required_missions = {victory_of_the_coalition}
+		position = 2
+		trigger = {
+			owns_or_non_sovereign_subject_of = 4548
+			owns_or_non_sovereign_subject_of = 224
+			owns_or_non_sovereign_subject_of = 1749
+			owns_or_non_sovereign_subject_of = 226
+			owns_or_non_sovereign_subject_of = 225
+			owns_or_non_sovereign_subject_of = 4546
+			owns_or_non_sovereign_subject_of = 223
+			owns_or_non_sovereign_subject_of = 1748
+			owns_or_non_sovereign_subject_of = 222
+		}
+		effect = {
 			add_permanent_claim = 221
 			add_permanent_claim = 4547
 			add_permanent_claim = 2751
@@ -159,112 +167,293 @@ trade_empire ={
 			add_permanent_claim = 220
 
 
-			}
 		}
+	}
 
-		take_cartago_nova = {
-			icon = mission_eastern_european_city
-			required_missions = {finish_baetica}
-			position = 3
-			trigger = {
+	take_cartago_nova = {
+		icon = mission_eastern_european_city
+		required_missions = {finish_baetica}
+		position = 3
+		trigger = {
 			owns_or_non_sovereign_subject_of = 221
 			owns_or_non_sovereign_subject_of = 4547
 			owns_or_non_sovereign_subject_of = 2751
 			owns_or_non_sovereign_subject_of = 1750
 			owns_or_non_sovereign_subject_of = 4549
 			owns_or_non_sovereign_subject_of = 220
-			}
-			effect = {
+		}
+		effect = {
 			add_permanent_claim = 4559
 			add_permanent_claim = 4560
 			add_permanent_claim = 333
+		}
+	}
+}
+
+hispania_unification_3{
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		tag = LUS
+		was_tag = LUS
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	take_central_hispania = {
+		icon = mission_eastern_european_city
+		required_missions = {victory_of_the_coalition}
+		position = 2
+		trigger = {
+			owns_or_non_sovereign_subject_of = 215
+			owns_or_non_sovereign_subject_of = 4551
+			owns_or_non_sovereign_subject_of = 217
+			owns_or_non_sovereign_subject_of = 219
+			owns_or_non_sovereign_subject_of = 2754
+		}
+		effect = {
+			aragon_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
-
-	hispania_unification_3{
-		slot = 5
-		generic = no
-		ai = yes
-		potential = {
-			tag = LUS
-			NOT = { map_setup = map_setup_random }
-		}
-		has_country_shield = yes
-		take_central_hispania = {
-			icon = mission_eastern_european_city
-			required_missions = {victory_of_the_coalition}
-			position = 2
-			trigger = {
-				owns_or_non_sovereign_subject_of = 215
-				owns_or_non_sovereign_subject_of = 4551
-				owns_or_non_sovereign_subject_of = 217
-				owns_or_non_sovereign_subject_of = 219
-				owns_or_non_sovereign_subject_of = 2754
-			}
-			effect = {
-				aragon_area = {
-					limit = {
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = LUS
-				}
-			}
-		}
-		strike_tarraco = {
-			icon = mission_eastern_european_city
-			required_missions = {take_central_hispania}
-			position = 3
-			trigger = {
+	strike_tarraco = {
+		icon = mission_eastern_european_city
+		required_missions = {take_central_hispania}
+		position = 3
+		trigger = {
 			aragon_area = {
-					type = all
-					country_or_non_sovereign_subject_holds = LUS
-				}
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
-			effect = {
+		}
+		effect = {
 			catalonia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = LUS
-			}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
+}
 
 
-	hispania_unification_final{
-		slot = 4
-		generic = no
-		ai = yes
-		potential = {
-			tag = LUS
-			NOT = { map_setup = map_setup_random }
+hispania_unification_final{
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		tag = LUS
+		was_tag = LUS
 		}
-		has_country_shield = yes
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
 
-			unify_hispania_lus = {
-			icon = mission_eastern_european_city
-			required_missions = {break_the_montains take_cartago_nova strike_tarraco}
-			position = 4
-			trigger = {
-				iberia_region = {
-					type = all
-					country_or_non_sovereign_subject_holds = LUS
-				}
+	unify_hispania_lus = {
+		icon = mission_eastern_european_city
+		required_missions = {break_the_montains take_cartago_nova strike_tarraco}
+		position = 4
+		trigger = {
+			iberia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
-			effect = {
+		}
+		effect = {
 			add_prestige = 20
 			add_stability = 1
-					capital_scope = {
-					add_base_tax = 2
-					add_base_production = 2
-					add_base_manpower = 2
-				}
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
 			}
 		}
 	}
 
+		Rome_Reborn_lus = {
+	    icon = a_real_roman_empire
+	    required_missions = {take_carthage_lus unify_hispania_lus the_eternal_city_lus}
+			position = 6
+	    provinces_to_highlight = {
+	      province_id = 118
+	    }
+
+	    trigger = {
+	      total_development = 1500
+	      tag = WRM
+	    }
+	    effect = {
+	      118 = {
+	        add_province_modifier = {
+	          name = rome_reborn_mod
+	          duration = -1
+	        }
+	        add_center_of_trade_level = 1
+	      }
+	      country_event = {id = flavor_wrm.10}
+	    }
+	  }
+	  Emperor_of_east_and_west_lus = {
+	    icon = a_roman_empire
+	    required_missions = {Rome_Reborn_lus}
+
+	    provinces_to_highlight = {
+	     province_id = 151
+	    }
+
+	    trigger = {
+	      tag = ROM
+	      151 = {
+	        owned_by = ROOT
+	      }
+	    }
+	    effect = {
+	      add_prestige = 20
+	      add_mil_power = 100
+	      add_adm_power = 100
+	      add_dip_power = 100
+	      add_years_of_income = 1
+	      add_country_modifier = {
+	        name = emperoror_of_east_west
+	        duration = -1
+	      }
+	      add_accepted_culture = greek
+	      add_accepted_culture = anatolian
+	      add_accepted_culture = syrian
+	      add_accepted_culture = ptolemaic
+	    }
+	  }
+}
+
+
+western_control_2{
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		tag = LUS
+		was_tag = LUS
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	take_north_mauretanian_coast_lus{
+		icon = mission_eastern_european_city
+		required_missions = { take_cartago_nova } #None
+		position = 4
+		trigger = {
+			northern_morocco_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			barbary_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			northern_morocco_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect{
+			tunisia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			byzacena_area{
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	take_carthage_lus{
+		icon = mission_eastern_european_city
+		required_missions = { take_north_mauretanian_coast_lus} #None
+		trigger = {
+			tunisia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect{
+			add_dip_power = 100
+			add_country_modifier = {
+				name = "dominant_trade_hub"
+				duration = 3650
+			}
+		}
+	}
+}
+
+western_control{
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = LUS
+			was_tag = LUS
+			}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	a_first_foot_hold_lus{
+		icon = mission_eastern_european_city
+		required_missions = { strike_tarraco } #None
+		position = 4
+		trigger = {
+			corsica_sardinia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect{
+			lazio_area = {
+				add_permanent_claim = ROOT
+			}
+			tuscany_area{
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	the_eternal_city_lus{
+		icon = mission_eastern_european_city
+		required_missions = { a_first_foot_hold_lus } #None
+		trigger = {
+			lazio_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tuscany_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect{
+			add_adm_power	= 100
+			add_dip_power	= 100
+			add_mil_power	= 100
+			add_country_modifier = {
+				name = "the_eternal_city_mod"
+				duration = -1
+			}
+		}
+	}
+}
 por_african_ambitions = {
 
 	slot = 2
@@ -272,7 +461,10 @@ por_african_ambitions = {
 	ai = yes
 
 	potential = {
+	OR = {
 		tag = LUS
+		was_tag = LUS
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -388,7 +580,10 @@ por_brazilian_ambitions = {
 	ai = yes
 
 	potential = {
+	OR = {
 		tag = LUS
+		was_tag = LUS
+		}
 		is_random_new_world = no
 		NOT = { map_setup = map_setup_random }
 	}
@@ -408,7 +603,7 @@ por_brazilian_ambitions = {
 
 		trigger = {
 			custom_trigger_tooltip = {
-			tooltip = miss_discover_brazil
+				tooltip = miss_discover_brazil
 				colonial_brazil = {
 					has_discovered = ROOT
 				}
@@ -468,7 +663,10 @@ por_east_african_ambitions = {
 	ai = yes
 
 	potential = {
+	OR = {
 		tag = LUS
+		was_tag = LUS
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -595,7 +793,7 @@ por_east_african_ambitions = {
 					has_discovered = ROOT
 				}
 				2030 = {
-					has_discovered = LUS
+					has_discovered = ROOT
 				}
 			}
 		}
@@ -622,7 +820,7 @@ por_east_african_ambitions = {
 
 		trigger = {
 			custom_trigger_tooltip = {
-			tooltip = miss_discover_malaya
+				tooltip = miss_discover_malaya
 				malaya_region = {
 					has_discovered = ROOT
 				}
@@ -680,9 +878,11 @@ por_south_africa_mission = {
 	ai = yes
 
 	potential = {
+	OR = {
 		tag = LUS
+		was_tag = LUS
+		}
 		NOT = { map_setup = map_setup_random }
-		NOT = { has_dlc = "Golden Century" }
 	}
 	has_country_shield = yes
 
@@ -732,7 +932,10 @@ por_zanzibar_mission = {
 	ai = yes
 
 	potential = {
+	OR = {
 		tag = LUS
+		was_tag = LUS
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -774,7 +977,10 @@ por_indonesia_trade_dominance = {
 	ai = yes
 
 	potential = {
+	OR = {
 		tag = LUS
+		was_tag = LUS
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -791,7 +997,7 @@ por_indonesia_trade_dominance = {
 
 		trigger = {
 			1361 = {		# Straits of Johor
-				is_strongest_trade_power = LUS
+				is_strongest_trade_power = ROOT
 			}
 		}
 
@@ -811,7 +1017,10 @@ por_hormuz_mission = {
 	ai = yes
 
 	potential = {
+	OR = {
 		tag = LUS
+		was_tag = LUS
+		}
 		NOT = { map_setup = map_setup_random }
 		NOT = { has_dlc = "Golden Century" }
 	}

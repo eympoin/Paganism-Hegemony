@@ -24,25 +24,25 @@ hispania_unification_1_gal{
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = GAL
+				add_permanent_claim = ROOT
 			}
 			castille_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = GAL
+				add_permanent_claim = ROOT
 			}
 			leon_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = GAL
+				add_permanent_claim = ROOT
 			}
 			alentejo_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = GAL
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -53,11 +53,11 @@ hispania_unification_1_gal{
 		trigger = {
 			alentejo_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = GAL
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			beieras_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = GAL
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -69,13 +69,36 @@ hispania_unification_1_gal{
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = GAL
+				add_permanent_claim = ROOT
 			}
 			upper_andalucia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = GAL
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	end_of_a_cycle = {
+		icon = mission_eastern_european_city
+		required_missions = {rex_atlantica}
+		position = 3
+		trigger = {
+			lower_andalucia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			upper_andalucia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			northern_morocco_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -98,11 +121,11 @@ hispania_unification_2_gal{
 		trigger = {
 			castille_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = GAL
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			leon_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = GAL
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -111,10 +134,45 @@ hispania_unification_2_gal{
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = GAL
+				add_permanent_claim = ROOT
 			}
+			valencia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
 
+	mediteranean_coast = {
+		icon = mission_eastern_european_city
+		required_missions = {toward_the_plains}
+		position = 3
+		trigger = {
+			toledo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			valencia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
 
+			baleares_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			corsica_sardinia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 }
@@ -147,13 +205,13 @@ hispania_unification_3_gal{
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = GAL
+				add_permanent_claim = ROOT
 			}
 			aragon_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = GAL
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -165,11 +223,11 @@ hispania_unification_3_gal{
 		trigger = {
 			aragon_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = GAL
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			basque_country = {
 				type = all
-				country_or_non_sovereign_subject_holds = GAL
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -177,7 +235,33 @@ hispania_unification_3_gal{
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = GAL
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	riches_of_taraconna = {
+		icon = mission_eastern_european_city
+		required_missions = {secure_the_pyreneus}
+		position = 3
+		trigger = {
+			catalonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			languedoc_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			pyrenees_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -195,12 +279,12 @@ hispania_unification_final_gal{
 
 	unify_hispania_gal = {
 		icon = mission_eastern_european_city
-		required_missions = {rex_atlantica toward_the_plains secure_the_pyreneus}
-		position = 3
+		required_missions = {end_of_a_cycle mediteranean_coast riches_of_taraconna}
+		position = 4
 		trigger = {
 			iberia_region = {
 				type = all
-				country_or_non_sovereign_subject_holds = GAL
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -213,9 +297,184 @@ hispania_unification_final_gal{
 			}
 		}
 	}
+
+	Rome_Reborn_gal = {
+		icon = a_real_roman_empire
+		required_missions = {annex_the_gallian unify_hispania_gal the_eternal_city_gal}
+		position = 6
+		provinces_to_highlight = {
+			province_id = 118
+		}
+
+		trigger = {
+			total_development = 1500
+			tag = WRM
+		}
+		effect = {
+			118 = {
+				add_province_modifier = {
+					name = rome_reborn_mod
+					duration = -1
+				}
+				add_center_of_trade_level = 1
+			}
+			country_event = {id = flavor_wrm.10}
+		}
+	}
+	Emperor_of_east_and_west_gal = {
+		icon = a_roman_empire
+		required_missions = {Rome_Reborn_gal}
+
+		provinces_to_highlight = {
+		 province_id = 151
+		}
+
+		trigger = {
+			tag = ROM
+			151 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_mil_power = 100
+			add_adm_power = 100
+			add_dip_power = 100
+			add_years_of_income = 1
+			add_country_modifier = {
+				name = emperoror_of_east_west
+				duration = -1
+			}
+			add_accepted_culture = greek
+			add_accepted_culture = anatolian
+			add_accepted_culture = syrian
+			add_accepted_culture = ptolemaic
+		}
+	}
 }
 
 
+western_control{
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = GAL
+			was_tag = GAL
+			}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	a_first_foot_hold_gal{
+		icon = mission_eastern_european_city
+		required_missions = { mediteranean_coast } #None
+		position = 4
+		trigger = {
+			corsica_sardinia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			baleares_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect{
+			lazio_area = {
+				add_permanent_claim = ROOT
+			}
+			tuscany_area{
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	the_eternal_city_gal{
+		icon = mission_eastern_european_city
+		required_missions = { a_first_foot_hold_gal } #None
+		trigger = {
+			lazio_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tuscany_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect{
+			add_adm_power	= 100
+			add_dip_power	= 100
+			add_mil_power	= 100
+			add_country_modifier = {
+				name = "the_eternal_city_mod"
+				duration = -1
+			}
+		}
+	}
+}
+
+
+Gallian_invasion{
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = GAL
+			was_tag = GAL
+			}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	other_side_pyrenees{
+		icon = mission_eastern_european_city
+		required_missions = { riches_of_taraconna } #None
+		position = 4
+		trigger = {
+			languedoc_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			pyrenees_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect{
+			guyenne_area = {
+				add_permanent_claim = ROOT
+			}
+			provence_area{
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	annex_the_gallian{
+		icon = mission_eastern_european_city
+		required_missions = { other_side_pyrenees } #None
+		trigger = {
+			guyenne_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			pyrenees_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect{
+			savoy_dauphine_area = {
+				add_permanent_claim = ROOT
+			}
+			liguria_area{
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
 
 spa_colonial_group = {
 	slot = 1
@@ -267,7 +526,7 @@ spa_colonial_group = {
 	spa_rb_caribbean_colony = {
 		icon = mission_iberian_conquistador
 		required_missions = { spa_rb_caribbean_discovery }
-		position = 5
+		position = 6
 		completed_by = 1493.1.1
 
 		provinces_to_highlight = {
@@ -343,7 +602,7 @@ spa_colonial_group_rnw_off = {
 	spa_rb_incans = {
 		icon = mission_iberian_conquistador
 		required_missions = { spa_rb_spanish_main }
-		position = 7
+		position = 8
 		completed_by = 1536.1.1
 
 		provinces_to_highlight = {
@@ -518,7 +777,7 @@ spa_colonial_group_two = {
 	spa_rb_spanish_main = {
 		icon = mission_establish_high_seas_navy
 		required_missions = { spa_rb_caribbean_colony }
-		position = 6
+		position = 7
 		completed_by = 1509.1.1
 
 		provinces_to_highlight = {
@@ -690,14 +949,14 @@ spa_colonial_group_two_rnw_off = {
 		}
 		is_random_new_world = no
 		NOT = { map_setup = map_setup_random }
-		
+
 	}
 	has_country_shield = yes
 
 	spa_rb_aztecs = {
 		icon = mission_iberian_conquistador
 		required_missions = { spa_rb_spanish_main }
-		position = 7
+		position = 8
 		completed_by = 1521.1.1
 
 		provinces_to_highlight = {
@@ -725,55 +984,6 @@ spa_colonial_group_two_rnw_off = {
 	}
 }
 
-spa_iberia_convert = {
-	slot = 3
-	generic = no
-	ai = yes
-	potential = {
-		OR = {
-
-			tag = GAL
-		}
-		NOT = { map_setup = map_setup_random }
-
-	}
-	has_country_shield = yes
-
-	spa_rb_iberia_christian = {
-		icon = mission_religious
-		required_missions = { spa_rb_reconquista_one }
-		position = 6
-		completed_by = 1511.1.1
-
-		provinces_to_highlight = {
-			region = iberia_region
-		}
-
-		trigger = {
-			iberia_region = {
-				type = all
-				religion_group = ROOT
-			}
-		}
-
-		effect = {
-			add_country_modifier = {
-				name = "spa_rb_christian_iberia"
-				duration = 5475
-			}
-			126 = {
-				add_permanent_claim = ROOT
-			}
-			northern_morocco_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-}
 
 spa_colonial_group_three_rnw_off = {
 	slot = 3
@@ -792,7 +1002,7 @@ spa_colonial_group_three_rnw_off = {
 	spa_rb_zapotecs = {
 		icon = mission_iberian_conquistador
 		required_missions = { spa_rb_spanish_main }
-		position = 7
+		position = 8
 		completed_by = 1530.1.1
 
 		provinces_to_highlight = {

@@ -519,6 +519,56 @@
  strike_tarraco_desc:0 "Strike Tarraco"
  unify_hispania_lus_desc:0 "Unify Hispania"
 
+ mediteranean_coast_title:0 "Mediterannean Coast"
+ end_of_a_cycle_title:0 "End of Baetica"
+ riches_of_taraconna_title:0 "Riches of Tarracona"
+ a_first_foot_hold_gal_title:0 "A first foothold"
+ the_eternal_city_gal_title:0 "The Eternal City"
+ annex_the_gallian_title:0 "Annex Gallia"
+ other_side_pyrenees_title:0 "Other side of the Pyrenees"
+
+ mediteranean_coast_desc:0 ""
+ end_of_a_cycle_desc:0 ""
+ riches_of_taraconna_desc:0 ""
+ a_first_foot_hold_gal_desc:0 ""
+ the_eternal_city_gal_desc:0 ""
+ annex_the_gallian_desc:0 ""
+ other_side_pyrenees_desc:0 ""
+
+ a_first_foot_hold_lus_title:0 "A first foothold"
+ the_eternal_city_lus_title:0 "The Eternal City"
+ take_north_mauretanian_coast_lus_title:0 "Take Mauretanian Coast"
+ take_carthage_lus_title:0 "Carthaginian monopol"
+
+ a_first_foot_hold_lus_desc:0 ""
+ the_eternal_city_lus_desc:0 ""
+ take_north_mauretanian_coast_lus_desc:0 ""
+ take_carthage_desc:0 ""
+
+ Rome_Reborn_bae_title:0 "Rome Reborn"
+ Rome_Reborn_trc_title:0 "Rome Reborn"
+ Rome_Reborn_cth_title:0 "Rome Reborn"
+ Rome_Reborn_gal_title:0 "Rome Reborn"
+ Rome_Reborn_lus_title:0 "Rome Reborn"
+
+ Rome_Reborn_bae_desc:0 ""
+ Rome_Reborn_trc_desc:0 ""
+ Rome_Reborn_cth_desc:0 ""
+ Rome_Reborn_gal_desc:0 ""
+ Rome_Reborn_lus_desc:0 ""
+
+ Emperor_of_east_and_west_bae_title:0 "Emperor of East and West"
+ Emperor_of_east_and_west_gal_title:0 "Emperor of East and West"
+ Emperor_of_east_and_west_lus_title:0 "Emperor of East and West"
+ Emperor_of_east_and_west_cth_title:0 "Emperor of East and West"
+ Emperor_of_east_and_west_trc_title:0 "Emperor of East and West"
+
+ Emperor_of_east_and_west_bae_desc:0 ""
+ Emperor_of_east_and_west_gal_desc:0 ""
+ Emperor_of_east_and_west_lus_desc:0 ""
+ Emperor_of_east_and_west_cth_desc:0 ""
+ Emperor_of_east_and_west_trc_desc:0 ""
+
 
  Submit_welsh_kingdoms_title:0"Submit the welsh states"
  Submit_welsh_kingdoms_desc:0"Submit the welsh states"

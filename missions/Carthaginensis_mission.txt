@@ -51,21 +51,21 @@ hispania_unification_1_cth{
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = CTH
+				add_permanent_claim = ROOT
 			}
 			toledo_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = CTH
+				add_permanent_claim = ROOT
 			}
 			catalonia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = CTH
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -76,7 +76,7 @@ hispania_unification_1_cth{
 		trigger = {
 			catalonia_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = CTH
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -85,21 +85,21 @@ hispania_unification_1_cth{
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = CTH
+				add_permanent_claim = ROOT
 			}
 			aragon_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = CTH
+				add_permanent_claim = ROOT
 			}
 			corsica_sardinia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = CTH
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -110,11 +110,11 @@ hispania_unification_1_cth{
 		trigger = {
 			aragon_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = CTH
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			basque_country = {
 				type = all
-				country_or_non_sovereign_subject_holds = CTH
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -123,14 +123,14 @@ hispania_unification_1_cth{
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = CTH
+				add_permanent_claim = ROOT
 			}
 			galicia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = CTH
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -141,11 +141,11 @@ hispania_unification_1_cth{
 		trigger = {
 			asturias_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = CTH
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			galicia_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = CTH
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -174,11 +174,11 @@ hispania_unification_2_CTH{
 		trigger = {
 			toledo_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = CTH
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			castille_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = CTH
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -187,14 +187,14 @@ hispania_unification_2_CTH{
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = CTH
+				add_permanent_claim = ROOT
 			}
 			upper_andalucia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = CTH
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -204,10 +204,10 @@ hispania_unification_2_CTH{
 		position = 4
 		trigger = {
 			lower_andalucia_area = {
-				country_or_non_sovereign_subject_holds = BAE
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			upper_andalucia_area = {
-				country_or_non_sovereign_subject_holds = BAE
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -216,14 +216,14 @@ hispania_unification_2_CTH{
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = TRC
+				add_permanent_claim = ROOT
 			}
 			alentejo_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = TRC
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -234,7 +234,7 @@ hispania_unification_2_CTH{
 		trigger = {
 			leon_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = CTH
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -243,7 +243,7 @@ hispania_unification_2_CTH{
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = CTH
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -254,11 +254,11 @@ hispania_unification_2_CTH{
 		trigger = {
 			leon_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = CTH
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			alentejo_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = CTH
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -267,24 +267,11 @@ hispania_unification_2_CTH{
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = CTH
+				add_permanent_claim = ROOT
 			}
 		}
 	}
 }
-
-hispania_unification_3_CTH{
-	slot = 5
-	generic = no
-	ai = yes
-	potential = {
-		tag = CTH
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
-
-}
-
 
 hispania_unification_final{
 	slot = 3
@@ -302,7 +289,7 @@ hispania_unification_final{
 		position = 7
 		trigger = {
 			iberia_region = {
-				country_or_non_sovereign_subject_holds = CTH
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -334,7 +321,7 @@ expand_eastward{
 		trigger = {
 			corsica_sardinia_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = CTH
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -343,21 +330,21 @@ expand_eastward{
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = CTH
+				add_permanent_claim = ROOT
 			}
 			languedoc_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = CTH
+				add_permanent_claim = ROOT
 			}
 			provence_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = CTH
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -368,7 +355,7 @@ expand_eastward{
 		trigger = {
 			sicily_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = CTH
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -377,14 +364,14 @@ expand_eastward{
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = CTH
+				add_permanent_claim = ROOT
 			}
 			calabria_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = CTH
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -395,7 +382,7 @@ expand_eastward{
 		trigger = {
 			tunisia_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = BAE
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect{
@@ -404,6 +391,60 @@ expand_eastward{
 				name = "dominant_trade_hub"
 				duration = -1
 			}
+		}
+	}
+
+	Rome_Reborn_cth = {
+		icon = a_real_roman_empire
+		required_missions = {unify_hispania_CTH the_true_carthago the_eternal_city_CTH}
+		position = 8
+		provinces_to_highlight = {
+			province_id = 118
+		}
+
+		trigger = {
+			total_development = 1500
+			tag = WRM
+		}
+		effect = {
+			118 = {
+				add_province_modifier = {
+					name = rome_reborn_mod
+					duration = -1
+				}
+				add_center_of_trade_level = 1
+			}
+			country_event = {id = flavor_wrm.10}
+		}
+	}
+	Emperor_of_east_and_west_cth = {
+		icon = a_roman_empire
+		required_missions = {Rome_Reborn_cth}
+
+		provinces_to_highlight = {
+		 province_id = 151
+		}
+
+		trigger = {
+			tag = ROM
+			151 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_mil_power = 100
+			add_adm_power = 100
+			add_dip_power = 100
+			add_years_of_income = 1
+			add_country_modifier = {
+				name = emperoror_of_east_west
+				duration = -1
+			}
+			add_accepted_culture = greek
+			add_accepted_culture = anatolian
+			add_accepted_culture = syrian
+			add_accepted_culture = ptolemaic
 		}
 	}
 }
@@ -426,11 +467,11 @@ expand_eastward{
 		trigger = {
 			languedoc_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = CTH
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			provence_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = CTH
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -439,21 +480,21 @@ expand_eastward{
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = CTH
+				add_permanent_claim = ROOT
 			}
 			piedmont_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = CTH
+				add_permanent_claim = ROOT
 			}
 			tuscany_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_permanent_claim = CTH
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -464,11 +505,11 @@ expand_eastward{
 		trigger = {
 			liguria_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = CTH
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			tuscany_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = CTH
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect{
@@ -476,20 +517,20 @@ expand_eastward{
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = CTH
+				add_permanent_claim = ROOT
 			}
 			central_italy_area{
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = CTH
+				add_permanent_claim = ROOT
 			}
 		}
 	}
 	the_eternal_city_CTH{
 		icon = mission_eastern_european_city
 		required_missions = { take_the_rich_cities_CTH } #None
-		position = 6
+		position = 7
 		trigger = {
 			owns_or_non_sovereign_subject_of = 118
 		}
