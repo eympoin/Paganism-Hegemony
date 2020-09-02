@@ -5,7 +5,10 @@ hispania_unification_1_gal{
 	generic = no
 	ai = yes
 	potential = {
+	OR = {
 		tag = GAL
+		was_tag = GAL
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -14,12 +17,18 @@ hispania_unification_1_gal{
 		icon = mission_eastern_european_city
 		required_missions = {  } #None
 		position = 1
+		provinces_to_highlight = {
+      OR = {
+				province_id = 4789
+				province_id = 215
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
-			owns_or_non_sovereign_subject_of = 215
+			owns_core_province = 215
+			owns_core_province = 4789
 		}
 		effect = {
-			add_permanent_claim = 232
-			add_permanent_claim = 231
 			beieras_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -50,14 +59,21 @@ hispania_unification_1_gal{
 		icon = mission_eastern_european_city
 		required_missions = {victory_of_the_coalition_gal}
 		position = 2
+		provinces_to_highlight = {
+      OR = {
+				area = beieras_area
+				area = alentejo_area
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
 			alentejo_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			beieras_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -83,14 +99,21 @@ hispania_unification_1_gal{
 		icon = mission_eastern_european_city
 		required_missions = {rex_atlantica}
 		position = 3
+		provinces_to_highlight = {
+      OR = {
+				area = lower_andalucia_area
+				area = upper_andalucia_area
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
 			lower_andalucia_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			upper_andalucia_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -110,10 +133,20 @@ hispania_unification_2_gal{
 	generic = no
 	ai = yes
 	potential = {
+	OR = {
 		tag = GAL
+		was_tag = GAL
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
+	provinces_to_highlight = {
+		OR = {
+			area = castille_area
+			area = leon_area
+		}
+		NOT = {owned_by = ROOT}
+	}
 	toward_the_plains = {
 		icon = mission_eastern_european_city
 		required_missions = {victory_of_the_coalition_gal}
@@ -121,11 +154,11 @@ hispania_unification_2_gal{
 		trigger = {
 			castille_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			leon_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -149,14 +182,21 @@ hispania_unification_2_gal{
 		icon = mission_eastern_european_city
 		required_missions = {toward_the_plains}
 		position = 3
+		provinces_to_highlight = {
+      OR = {
+				area = toledo_area
+				area = valencia_area
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
 			toledo_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			valencia_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -182,10 +222,17 @@ hispania_unification_3_gal{
 	generic = no
 	ai = yes
 	potential = {
+	OR = {
 		tag = GAL
+		was_tag = GAL
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
+	provinces_to_highlight = {
+		province_id = 208
+		NOT = {fort_level = 2}
+	}
 
 	asturias_defense = {
 		icon = mission_eastern_european_city
@@ -220,14 +267,21 @@ hispania_unification_3_gal{
 		icon = mission_eastern_european_city
 		required_missions = {victory_of_the_coalition_gal asturias_defense}
 		position = 2
+		provinces_to_highlight = {
+      OR = {
+				area = aragon_area
+				area = basque_country
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
 			aragon_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			basque_country = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -244,10 +298,16 @@ hispania_unification_3_gal{
 		icon = mission_eastern_european_city
 		required_missions = {secure_the_pyreneus}
 		position = 3
+		provinces_to_highlight = {
+      OR = {
+				area = catalonia_area
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
 			catalonia_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -272,7 +332,10 @@ hispania_unification_final_gal{
 	generic = no
 	ai = yes
 	potential = {
+	OR = {
 		tag = GAL
+		was_tag = GAL
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -281,10 +344,16 @@ hispania_unification_final_gal{
 		icon = mission_eastern_european_city
 		required_missions = {end_of_a_cycle mediteranean_coast riches_of_taraconna}
 		position = 4
+		provinces_to_highlight = {
+      OR = {
+				region = iberia_region
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
 			iberia_region = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -370,14 +439,21 @@ western_control{
 		icon = mission_eastern_european_city
 		required_missions = { mediteranean_coast } #None
 		position = 4
+		provinces_to_highlight = {
+      OR = {
+				area = corsica_sardinia_area
+				area = baleares
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
 			corsica_sardinia_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			baleares_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect{
@@ -393,14 +469,21 @@ western_control{
 	the_eternal_city_gal{
 		icon = mission_eastern_european_city
 		required_missions = { a_first_foot_hold_gal } #None
+		provinces_to_highlight = {
+      OR = {
+				area = lazio_area
+				area = tuscany_area
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
 			lazio_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			tuscany_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect{
@@ -432,14 +515,21 @@ Gallian_invasion{
 		icon = mission_eastern_european_city
 		required_missions = { riches_of_taraconna } #None
 		position = 4
+		provinces_to_highlight = {
+      OR = {
+				area = languedoc_area
+				area = pyrenees_area
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
 			languedoc_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			pyrenees_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect{
@@ -455,14 +545,21 @@ Gallian_invasion{
 	annex_the_gallian{
 		icon = mission_eastern_european_city
 		required_missions = { other_side_pyrenees } #None
+		provinces_to_highlight = {
+      OR = {
+				area = guyenne_area
+				area = provence_area
+			}
+			NOT = {owned_by = ROOT}
+    }
 		trigger = {
 			guyenne_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
-			pyrenees_area = {
+			provence_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 		effect{
@@ -481,8 +578,9 @@ spa_colonial_group = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = GAL
+	OR = {
+		tag = GAL
+		was_tag = GAL
 		}
 		is_random_new_world = no
 		NOT = { map_setup = map_setup_random }
@@ -531,7 +629,7 @@ spa_colonial_group = {
 
 		provinces_to_highlight = {
 			colonial_region = colonial_the_carribean
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { owned_by = ROOT }
 			has_discovered = yes
 		}
 
@@ -562,7 +660,7 @@ spa_colonial_group = {
 
 		provinces_to_highlight = {
 			colonial_region = colonial_la_plata
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { owned_by = ROOT }
 			has_discovered = yes
 		}
 
@@ -588,9 +686,9 @@ spa_colonial_group_rnw_off = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-
-			tag = GAL
+	OR = {
+		tag = GAL
+		was_tag = GAL
 		}
 		is_random_new_world = no
 		NOT = { map_setup = map_setup_random }
@@ -614,32 +712,32 @@ spa_colonial_group_rnw_off = {
 				province_id = 794
 				province_id = 2837
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { owned_by = ROOT }
 			has_discovered = yes
 		}
 
 		trigger = {
 			upper_peru = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			potosi_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			antisuyu_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			kuntisuyu_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			794 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			2837 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 
 		}
@@ -689,7 +787,7 @@ spa_colonial_group_rnw_off = {
 				province_id = 2821
 				province_id = 2822
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { owned_by = ROOT }
 			has_discovered = yes
 		}
 
@@ -699,30 +797,30 @@ spa_colonial_group_rnw_off = {
 			}
 			huanuco_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			cajamarca_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			quito_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			2823 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			2826 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			812 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			2821 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			2822 = {
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 
@@ -764,9 +862,9 @@ spa_colonial_group_two = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-
-			tag = GAL
+	OR = {
+		tag = GAL
+		was_tag = GAL
 		}
 		is_random_new_world = no
 		NOT = { map_setup = map_setup_random }
@@ -782,7 +880,7 @@ spa_colonial_group_two = {
 
 		provinces_to_highlight = {
 			colonial_region = colonial_colombia
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { owned_by = ROOT }
 			has_discovered = yes
 		}
 
@@ -943,9 +1041,9 @@ spa_colonial_group_two_rnw_off = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-
-			tag = GAL
+	OR = {
+		tag = GAL
+		was_tag = GAL
 		}
 		is_random_new_world = no
 		NOT = { map_setup = map_setup_random }
@@ -964,7 +1062,7 @@ spa_colonial_group_two_rnw_off = {
 				area = mexico_area
 				owned_by = AZT
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { owned_by = ROOT }
 			has_discovered = yes
 		}
 
@@ -974,7 +1072,7 @@ spa_colonial_group_two_rnw_off = {
 			}
 			mexico_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 
@@ -990,9 +1088,9 @@ spa_colonial_group_three_rnw_off = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-
-			tag = GAL
+	OR = {
+		tag = GAL
+		was_tag = GAL
 		}
 		is_random_new_world = no
 		NOT = { map_setup = map_setup_random }
@@ -1010,7 +1108,7 @@ spa_colonial_group_three_rnw_off = {
 				area = michoacan_area
 				owned_by = TAR
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { owned_by = ROOT }
 			has_discovered = yes
 		}
 
@@ -1020,7 +1118,7 @@ spa_colonial_group_three_rnw_off = {
 			}
 			michoacan_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 
