@@ -3,5 +3,13 @@ add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = eastern
 religion = suomenusko
-primary_culture = karelian
+primary_culture = uralic
 capital = 1083
+1429.1.1 = {
+	monarch = {
+		name = "Matvey II"
+		adm = 5
+		dip = 3
+		mil = 3
+	}
+}

@@ -5,3 +5,12 @@ technology_group = eastern
 religion = suomenusko
 primary_culture = karelian
 capital = 309
+
+1429.1.1 = {
+	monarch = {
+		name = "Parush"
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}
