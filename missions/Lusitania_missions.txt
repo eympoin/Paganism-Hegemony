@@ -46,7 +46,7 @@ hispania_unification_1 = {
 	has_country_shield = yes
 
 	victory_of_the_coalition = {
-		icon = mission_eastern_european_city
+		icon = mission_build_up_to_force_limit
 		required_missions = {  } #None
 		position = 1
 		provinces_to_highlight = {
@@ -96,7 +96,7 @@ hispania_unification_1 = {
 		}
 	}
 	western_control = {
-		icon = mission_eastern_european_city
+		icon = mission_have_two_subjects
 		required_missions = {victory_of_the_coalition}
 		position = 2
 		provinces_to_highlight = {
@@ -133,7 +133,7 @@ hispania_unification_1 = {
 	}
 
 	break_the_montains = {
-		icon = mission_eastern_european_city
+		icon = alpine_defenses
 		required_missions = {western_control}
 		position = 3
 		provinces_to_highlight = {
@@ -178,7 +178,7 @@ hispania_unification_2{
 	}
 	has_country_shield = yes
 	finish_baetica = {
-		icon = mission_eastern_european_city
+		icon = mission_conquer_50_development
 		required_missions = {victory_of_the_coalition}
 		position = 2
 		provinces_to_highlight = {
@@ -209,7 +209,7 @@ hispania_unification_2{
 	}
 
 	take_cartago_nova = {
-		icon = mission_eastern_european_city
+		icon = mission_portuguese_interference
 		required_missions = {finish_baetica}
 		position = 3
 		provinces_to_highlight = {
@@ -248,7 +248,7 @@ hispania_unification_3{
 	}
 	has_country_shield = yes
 	take_central_hispania = {
-		icon = mission_eastern_european_city
+		icon = mission_assemble_an_army
 		required_missions = {victory_of_the_coalition}
 		position = 2
 		provinces_to_highlight = {
@@ -319,7 +319,7 @@ hispania_unification_final{
 	has_country_shield = yes
 
 	unify_hispania_lus = {
-		icon = mission_eastern_european_city
+		icon = hispaniae
 		required_missions = {break_the_montains take_cartago_nova strike_tarraco}
 		position = 4
 		provinces_to_highlight = {
@@ -414,7 +414,7 @@ western_control_2{
 	}
 	has_country_shield = yes
 	take_north_mauretanian_coast_lus{
-		icon = mission_eastern_european_city
+		icon = mission_control_the_barbary_coast
 		required_missions = { take_cartago_nova } #None
 		position = 4
 		provinces_to_highlight = {
@@ -455,7 +455,7 @@ western_control_2{
 		}
 	}
 	take_carthage_lus{
-		icon = mission_eastern_european_city
+		icon = africa_proconsulare
 		required_missions = { take_north_mauretanian_coast_lus} #None
 		provinces_to_highlight = {
       OR = {
@@ -497,7 +497,7 @@ western_control{
 	}
 	has_country_shield = yes
 	a_first_foot_hold_lus{
-		icon = mission_eastern_european_city
+		icon = seize_sardinia
 		required_missions = { strike_tarraco } #None
 		position = 4
 		provinces_to_highlight = {
@@ -523,7 +523,7 @@ western_control{
 	}
 
 	the_eternal_city_lus{
-		icon = mission_eastern_european_city
+		icon = a_place_among_the_great_powers
 		required_missions = { a_first_foot_hold_lus } #None
 		provinces_to_highlight = {
       OR = {

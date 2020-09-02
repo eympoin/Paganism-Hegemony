@@ -802,24 +802,25 @@ Italian_intervention = {
 			}
 		}
 		effect = {
-		add_years_of_income
+		add_years_of_income = 1
 			add_country_modifier = {
 				name = roman_savior
 				duration = 7300
 			}
-		}
-		tuscany_area = {
-			limit = {
-				NOT = { owned_by = ROOT }
+			tuscany_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
-			add_permanent_claim = ROOT
-		}
-		po_valley_area = {
-			limit = {
-				NOT = { owned_by = ROOT }
+			po_valley_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
-			add_permanent_claim = ROOT
 		}
+
 	}
 	subjugate_the_senate_aqi = {
 		icon = mission_empire

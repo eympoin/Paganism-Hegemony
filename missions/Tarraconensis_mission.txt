@@ -9,7 +9,7 @@ naval_power{
 	has_country_shield = yes
 	a_new_navy = {
 		position = 1
-		icon = mission_dominate_home_trade_node
+		icon = mission_galleys_in_port
 		required_missions = { }
 		trigger = {
 			galley_fraction = 0.5
@@ -36,7 +36,7 @@ hispania_unification_1_trc{
 	has_country_shield = yes
 
 	victory_of_the_coalition_trc = {
-		icon = mission_eastern_european_city
+		icon = mission_build_up_to_force_limit
 		required_missions = {  } #None
 		position = 1
 		provinces_to_highlight = {
@@ -48,9 +48,9 @@ hispania_unification_1_trc{
 			NOT = {owned_by = ROOT}
     }
 		trigger = {
-			owns_or_non_sovereign_subject_of = 4550
-			owns_or_non_sovereign_subject_of = 2990
-			owns_or_non_sovereign_subject_of = 2755
+			owns_core_province = 4550
+			owns_core_province = 2990
+			owns_core_province = 2755
 		}
 		effect = {
 			valencia_area = {
@@ -77,7 +77,7 @@ hispania_unification_1_trc{
 		}
 	}
 	control_of_the_eastern_coast = {
-		icon = mission_eastern_european_city
+		icon = mission_portuguese_interference
 		required_missions = {victory_of_the_coalition_trc a_new_navy}
 		position = 2
 		provinces_to_highlight = {
@@ -123,7 +123,7 @@ hispania_unification_1_trc{
 	}
 
 	retake_central_spain = {
-		icon = mission_eastern_european_city
+		icon = mission_assemble_an_army
 		required_missions = {control_of_the_eastern_coast}
 		position = 3
 		provinces_to_highlight = {
@@ -161,7 +161,7 @@ hispania_unification_1_trc{
 		}
 	}
 	finish_baetica_trc = {
-		icon = mission_eastern_european_city
+		icon = mission_conquer_50_development
 		required_missions = {retake_central_spain}
 		position = 4
 		provinces_to_highlight = {
@@ -199,7 +199,7 @@ hispania_unification_1_trc{
 		}
 	}
 	strike_lusitania = {
-		icon = mission_eastern_european_city
+		icon = mission_disrupt_portuguese_trade
 		required_missions = {finish_baetica_trc road_to_the_atlantic}
 		position = 5
 		provinces_to_highlight = {
@@ -241,7 +241,7 @@ hispania_unification_2_trc{
 	}
 	has_country_shield = yes
 	recover_basque = {
-		icon = mission_eastern_european_city
+		icon = alpine_defenses
 		required_missions = {victory_of_the_coalition_trc}
 		position = 2
 		provinces_to_highlight = {
@@ -274,7 +274,7 @@ hispania_unification_2_trc{
 		}
 	}
 	road_to_the_atlantic{
-		icon = mission_eastern_european_city
+		icon = mission_cannons_firing
 		required_missions = {recover_basque retake_central_spain}
 		position = 4
 		provinces_to_highlight = {
@@ -305,7 +305,7 @@ hispania_unification_2_trc{
 		}
 	}
 	take_galicia = {
-		icon = mission_eastern_european_city
+		icon = mission_have_two_subjects
 		required_missions = {road_to_the_atlantic}
 		position = 5
 		provinces_to_highlight = {
@@ -358,7 +358,7 @@ hispania_unification_final{
 	has_country_shield = yes
 
 	unify_hispania_trc = {
-		icon = mission_eastern_european_city
+		icon = hispaniae
 		required_missions = {take_galicia strike_lusitania}
 		position = 6
 		provinces_to_highlight = {
@@ -395,7 +395,7 @@ expand_eastward{
 	has_country_shield = yes
 
 	a_stable_foothold{
-		icon = mission_eastern_european_city
+		icon = seize_sardinia
 		required_missions = {control_of_the_eastern_coast a_new_navy}
 		position = 3
 		provinces_to_highlight = {
@@ -435,7 +435,7 @@ expand_eastward{
 		}
 	}
 	the_next_step{
-		icon = mission_eastern_european_city
+		icon = mission_break_sicily
 		required_missions = {a_stable_foothold}
 		position = 4
 		provinces_to_highlight = {
@@ -480,7 +480,7 @@ expand_eastward{
 		}
 	}
 	take_carthage{
-		icon = mission_eastern_european_city
+		icon = africa_proconsulare
 		required_missions = { the_next_step } #None
 		position = 5
 		provinces_to_highlight = {
@@ -575,7 +575,7 @@ expand_eastward{
 	has_country_shield = yes
 
 	crush_narbonensis{
-		icon = mission_eastern_european_city
+		icon = develop_provence
 		required_missions = {a_stable_foothold}
 		position = 4
 		provinces_to_highlight = {
@@ -620,7 +620,7 @@ expand_eastward{
 		}
 	}
 	take_the_rich_cities_trc{
-		icon = mission_eastern_european_city
+		icon = kingdom_of_lombardy
 		required_missions = { crush_narbonensis } #None
 		position = 5
 		provinces_to_highlight = {
@@ -656,7 +656,7 @@ expand_eastward{
 		}
 	}
 	the_eternal_city_trc{
-		icon = mission_eastern_european_city
+		icon = a_place_among_the_great_powers
 		required_missions = { take_the_rich_cities_trc } #None
 		position = 6
 		provinces_to_highlight = {

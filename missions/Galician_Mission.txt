@@ -14,7 +14,7 @@ hispania_unification_1_gal{
 	has_country_shield = yes
 
 	victory_of_the_coalition_gal = {
-		icon = mission_eastern_european_city
+		icon = mission_build_up_to_force_limit
 		required_missions = {  } #None
 		position = 1
 		provinces_to_highlight = {
@@ -56,7 +56,7 @@ hispania_unification_1_gal{
 		}
 	}
 	rex_atlantica = {
-		icon = mission_eastern_european_city
+		icon = mission_invade_island
 		required_missions = {victory_of_the_coalition_gal}
 		position = 2
 		provinces_to_highlight = {
@@ -96,7 +96,7 @@ hispania_unification_1_gal{
 		}
 	}
 	end_of_a_cycle = {
-		icon = mission_eastern_european_city
+		icon = mission_conquer_50_development
 		required_missions = {rex_atlantica}
 		position = 3
 		provinces_to_highlight = {
@@ -140,17 +140,18 @@ hispania_unification_2_gal{
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-	provinces_to_highlight = {
-		OR = {
-			area = castille_area
-			area = leon_area
-		}
-		NOT = {owned_by = ROOT}
-	}
+
 	toward_the_plains = {
-		icon = mission_eastern_european_city
+		icon = mission_assemble_an_army
 		required_missions = {victory_of_the_coalition_gal}
 		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = castille_area
+				area = leon_area
+			}
+			NOT = {owned_by = ROOT}
+		}
 		trigger = {
 			castille_area = {
 				type = all
@@ -229,15 +230,15 @@ hispania_unification_3_gal{
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-	provinces_to_highlight = {
-		province_id = 208
-		NOT = {fort_level = 2}
-	}
 
 	asturias_defense = {
-		icon = mission_eastern_european_city
+		icon = alpine_fortifications
 		required_missions = {}
 		position = 1
+		provinces_to_highlight = {
+			province_id = 208
+			NOT = {fort_level = 2}
+		}
 		trigger = {
 			208 = {
 				fort_level = 2
@@ -264,7 +265,7 @@ hispania_unification_3_gal{
 	}
 
 	secure_the_pyreneus = {
-		icon = mission_eastern_european_city
+		icon = alpine_defenses
 		required_missions = {victory_of_the_coalition_gal asturias_defense}
 		position = 2
 		provinces_to_highlight = {
@@ -341,7 +342,7 @@ hispania_unification_final_gal{
 	has_country_shield = yes
 
 	unify_hispania_gal = {
-		icon = mission_eastern_european_city
+		icon = hispaniae
 		required_missions = {end_of_a_cycle mediteranean_coast riches_of_taraconna}
 		position = 4
 		provinces_to_highlight = {
@@ -436,7 +437,7 @@ western_control{
 	}
 	has_country_shield = yes
 	a_first_foot_hold_gal{
-		icon = mission_eastern_european_city
+		icon = seize_sardinia
 		required_missions = { mediteranean_coast } #None
 		position = 4
 		provinces_to_highlight = {
@@ -467,7 +468,7 @@ western_control{
 	}
 
 	the_eternal_city_gal{
-		icon = mission_eastern_european_city
+		icon = a_place_among_the_great_powers
 		required_missions = { a_first_foot_hold_gal } #None
 		provinces_to_highlight = {
       OR = {

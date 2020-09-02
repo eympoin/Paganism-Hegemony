@@ -10,7 +10,7 @@ hispania_unification_1_bae{
 	has_country_shield = yes
 
 	defeat_of_the_coalition = {
-		icon = mission_eastern_european_city
+		icon = mission_build_up_to_force_limit
 		required_missions = {  } #None
 		position = 1
 		provinces_to_highlight = {
@@ -90,7 +90,7 @@ hispania_unification_1_bae{
 		}
 	}
 	allies_needed = {
-		icon = mission_eastern_european_city
+		icon = mission_alliances
 		required_missions = { defeat_of_the_coalition } #None
 		position = 2
 		trigger = {
@@ -104,7 +104,7 @@ hispania_unification_1_bae{
 		}
 	}
 	eastern_counter_attack{
-		icon = mission_eastern_european_city
+		icon = mission_conquer_50_development
 		required_missions = { allies_needed } #None
 		position = 3
 		provinces_to_highlight = {
@@ -153,7 +153,7 @@ hispania_unification_final_bae{
 	has_country_shield = yes
 
 	unify_hispania_bae = {
-		icon = mission_eastern_european_city
+		icon = hispaniae
 		required_missions = {eastern_counter_attack western_counter_attack}
 		position = 4
 		provinces_to_highlight = {
@@ -190,7 +190,7 @@ hispania_unification_2_bae{
 	}
 	has_country_shield = yes
 	western_counter_attack{
-		icon = mission_eastern_european_city
+		icon = mission_disrupt_portuguese_trade
 		required_missions = { allies_needed } #None
 		position = 3
 		provinces_to_highlight = {
@@ -246,7 +246,7 @@ western_control{
 	}
 	has_country_shield = yes
 	a_first_foot_hold{
-		icon = mission_eastern_european_city
+		icon = seize_sardinia
 		required_missions = { eastern_counter_attack } #None
 		position = 4
 		provinces_to_highlight = {
@@ -265,6 +265,9 @@ western_control{
 			sicily_area = {
 				add_permanent_claim = ROOT
 			}
+			western_sicily_area = {
+				add_permanent_claim = ROOT
+			}
 			liguria_area{
 				add_permanent_claim = ROOT
 			}
@@ -272,7 +275,7 @@ western_control{
 	}
 
 	take_the_rich_cities{
-		icon = mission_eastern_european_city
+		icon = mission_rule_italy
 		required_missions = { a_first_foot_hold } #None
 		position = 6
 		provinces_to_highlight = {
@@ -304,7 +307,7 @@ western_control{
 
 
 	the_eternal_city{
-		icon = mission_eastern_european_city
+		icon = a_place_among_the_great_powers
 		required_missions = { invade_south_italy take_the_rich_cities } #None
 		position = 7
 		provinces_to_highlight = {
@@ -396,7 +399,7 @@ western_control_2{
 	}
 	has_country_shield = yes
 	take_north_mauretanian_coast{
-		icon = mission_eastern_european_city
+		icon = mission_control_the_barbary_coast
 		required_missions = { defeat_of_the_coalition } #None
 		position = 2
 		provinces_to_highlight = {
@@ -422,19 +425,13 @@ western_control_2{
 			}
 		}
 		effect{
-			sicily_area = {
+			tunisia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			liguria_area{
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			tuscany_area{
+			byzacena_area{
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -443,7 +440,7 @@ western_control_2{
 		}
 	}
 	take_carthage_bae{
-		icon = mission_eastern_european_city
+		icon = africa_proconsulare
 		required_missions = { a_first_foot_hold take_north_mauretanian_coast} #None
 		position = 5
 		provinces_to_highlight = {
@@ -484,7 +481,7 @@ western_control_3{
 	}
 	has_country_shield = yes
 	a_second_foot_hold{
-		icon = mission_eastern_european_city
+		icon = mission_break_sicily
 		required_missions = { a_first_foot_hold } #None
 		position = 5
 		provinces_to_highlight = {
@@ -521,7 +518,7 @@ western_control_3{
 	}
 
 	invade_south_italy{
-		icon = mission_eastern_european_city
+		icon = king_of_naples
 		required_missions = { a_second_foot_hold } #None
 		position = 6
 		provinces_to_highlight = {

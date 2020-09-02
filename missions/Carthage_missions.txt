@@ -2016,7 +2016,6 @@ american_trade_2 = {
     }
 
     trigger = {
-      add_mercantilism = 1
       any_owned_province = {
         has_province_modifier = carthaginian_trading_outpost
         colonial_region = colonial_canada
@@ -2027,6 +2026,7 @@ american_trade_2 = {
       }
     }
     effect = {
+    add_mercantilism = 1
       random_owned_province = {
         limit = {
           has_province_modifier = carthaginian_trading_outpost

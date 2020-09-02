@@ -9,7 +9,7 @@ naval_power{
 	has_country_shield = yes
 	a_new_navy_cth = {
 		position = 1
-		icon = mission_dominate_home_trade_node
+		icon = mission_galleys_in_port
 		required_missions = { }
 		trigger = {
 			galley_fraction = 0.5
@@ -36,7 +36,7 @@ hispania_unification_1_cth{
 	has_country_shield = yes
 
 	victory_of_the_coalition_CTH = {
-		icon = mission_eastern_european_city
+		icon = mission_build_up_to_force_limit
 		required_missions = {  } #None
 		position = 1
 		provinces_to_highlight = {
@@ -79,7 +79,7 @@ hispania_unification_1_cth{
 		}
 	}
 	control_of_the_eastern_coast_cth = {
-		icon = mission_eastern_european_city
+		icon = mission_portuguese_interference
 		required_missions = {victory_of_the_coalition_CTH a_new_navy}
 		position = 2
 		provinces_to_highlight = {
@@ -119,7 +119,7 @@ hispania_unification_1_cth{
 		}
 	}
 	control_the_mountains{
-		icon = mission_eastern_european_city
+		icon = alpine_defenses
 		required_missions = {control_of_the_eastern_coast_cth}
 		position = 3
 		provinces_to_highlight = {
@@ -157,7 +157,7 @@ hispania_unification_1_cth{
 		}
 	}
 	take_galicia_cth = {
-		icon = mission_eastern_european_city
+		icon = mission_have_two_subjects
 		required_missions = {control_the_mountains}
 		position = 5
 		provinces_to_highlight = {
@@ -197,7 +197,7 @@ hispania_unification_2_CTH{
 	has_country_shield = yes
 
 	secure_central_spain = {
-		icon = mission_eastern_european_city
+		icon = mission_assemble_an_army
 		required_missions = {victory_of_the_coalition_CTH}
 		position = 2
 		provinces_to_highlight = {
@@ -235,7 +235,7 @@ hispania_unification_2_CTH{
 		}
 	}
 	finish_baetica_cth = {
-		icon = mission_eastern_european_city
+		icon = mission_conquer_50_development
 		required_missions = {secure_central_spain}
 		position = 4
 		provinces_to_highlight = {
@@ -271,7 +271,7 @@ hispania_unification_2_CTH{
 		}
 	}
 	road_to_the_atlantic_cth{
-		icon = mission_eastern_european_city
+		icon = mission_cannons_firing
 		required_missions = {finish_baetica_cth}
 		position = 4
 		provinces_to_highlight = {
@@ -309,7 +309,7 @@ hispania_unification_2_CTH{
 		}
 	}
 	strike_lusitania_cth = {
-		icon = mission_eastern_european_city
+		icon = mission_disrupt_portuguese_trade
 		required_missions = {finish_baetica road_to_the_atlantic_cth}
 		position = 5
 		provinces_to_highlight = {
@@ -352,7 +352,7 @@ hispania_unification_final{
 	has_country_shield = yes
 
 	unify_hispania_CTH = {
-		icon = mission_eastern_european_city
+		icon = hispaniae
 		required_missions = {take_galicia_cth strike_lusitania_cth}
 		position = 7
 		provinces_to_highlight = {
@@ -389,7 +389,7 @@ expand_eastward{
 	has_country_shield = yes
 
 	a_stable_foothold_cth{
-		icon = mission_eastern_european_city
+		icon = seize_sardinia
 		required_missions = {control_of_the_eastern_coast_cth a_new_navy_cth}
 		position = 3
 		provinces_to_highlight = {
@@ -406,6 +406,13 @@ expand_eastward{
 		}
 		effect = {
 			sicily_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			western_sicily_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -429,7 +436,7 @@ expand_eastward{
 		}
 	}
 	the_next_step_cth{
-		icon = mission_eastern_european_city
+		icon = mission_break_sicily
 		required_missions = {a_stable_foothold_cth}
 		position = 4
 		provinces_to_highlight = {
@@ -467,7 +474,7 @@ expand_eastward{
 		}
 	}
 	the_true_carthago{
-		icon = mission_eastern_european_city
+		icon = africa_proconsulare
 		required_missions = { the_next_step_cth } #None
 		position = 5
 		provinces_to_highlight = {
@@ -563,7 +570,7 @@ expand_eastward{
 	has_country_shield = yes
 
 	crush_narbonensis_cth{
-		icon = mission_eastern_european_city
+		icon = develop_provence
 		required_missions = {a_stable_foothold}
 		position = 4
 		provinces_to_highlight = {
@@ -608,7 +615,7 @@ expand_eastward{
 		}
 	}
 	take_the_rich_cities_CTH{
-		icon = mission_eastern_european_city
+		icon = kingdom_of_lombardy
 		required_missions = { crush_narbonensis_cth } #None
 		position = 5
 		provinces_to_highlight = {
@@ -644,7 +651,7 @@ expand_eastward{
 		}
 	}
 	the_eternal_city_CTH{
-		icon = mission_eastern_european_city
+		icon = a_place_among_the_great_powers
 		required_missions = { take_the_rich_cities_CTH } #None
 		position = 7
 		provinces_to_highlight = {
