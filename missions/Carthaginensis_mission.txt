@@ -341,7 +341,8 @@ hispania_unification_2_CTH{
 			}
 		}
 		effect = {
-			add_dip_power = 50
+		add_dip_power = 100
+		add_years_of_income = 1
 			macaronesia_area = {
 				limit = {
 					NOT = { is_core = ROOT }

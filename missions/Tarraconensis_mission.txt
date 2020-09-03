@@ -16,6 +16,7 @@ naval_power{
 			navy_size_percentage = 0.9
 		}
 		effect = {
+			add_dip_power = 50
 			add_mercantilism = 2
 			add_country_modifier = {
 				name = "naval_enthusiasm_mission"
@@ -100,6 +101,8 @@ hispania_unification_1_trc{
 			}
 		}
 		effect = {
+		add_years_of_income = 1
+		add_dip_power = 100
 			toledo_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -146,6 +149,7 @@ hispania_unification_1_trc{
 			}
 		}
 		effect = {
+		add_adm_power = 50
 			lower_andalucia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -184,6 +188,8 @@ hispania_unification_1_trc{
 		}
 		}
 		effect = {
+		add_prestige = 10
+		add_dip_power = 50
 			alentejo_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -223,7 +229,7 @@ hispania_unification_1_trc{
 		}
 		effect = {
 			add_dip_power = 100
-			add_years_of_income = 1 
+			add_years_of_income = 1
 			beieras_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -261,6 +267,7 @@ hispania_unification_2_trc{
 			}
 		}
 		effect = {
+		add_mil_power = 50
 			leon_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -330,6 +337,7 @@ hispania_unification_2_trc{
 			}
 		}
 		effect = {
+			add_dip_power = 50
 			add_country_modifier = {
 				name = "through_the_atlantic"
 				duration = 5475
@@ -415,6 +423,8 @@ expand_eastward{
 			}
 		}
 		effect = {
+			add_yearly_manpower = 1
+			add_yearly_sailors = 1
 			sicily_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -600,6 +610,7 @@ expand_eastward{
 			}
 		}
 		effect = {
+			add_adm_power = 50
 			liguria_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -645,6 +656,7 @@ expand_eastward{
 			}
 		}
 		effect{
+			add_adm_power = 50
 			emilia_romagna_area = {
 				limit = {
 					NOT = { owned_by = ROOT }

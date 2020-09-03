@@ -672,6 +672,7 @@
  penta_university_title:0 "Penta-Universities"
 
  solidify_the_center_title:0 "Solidify Center Spain"
+ attack_the_lombards_title:0 "Attack the Lombards"
  finish_the_lombards_title:0 "Finish the Lombards"
  Rome_Reborn_nar_title:0 "Rome Reborn"
  Emperor_of_east_and_west_nar_title:0 "Emperor of East and West"
@@ -693,9 +694,10 @@
  pentapolis_mission_desc:0 ""
  penta_university_desc:0 ""
  solidify_the_center_desc:0 ""
+ attack_the_lombards_desc:0 ""
  finish_the_lombards_desc:0 ""
-  Rome_Reborn_nar_desc:0 ""
-  Emperor_of_east_and_west_nar_desc:0 ""
+ Rome_Reborn_nar_desc:0 ""
+ Emperor_of_east_and_west_nar_desc:0 ""
 
  protection_title:0 "Roman threat"
  first_step_of_revenge_title:0 "First step of the revenge"

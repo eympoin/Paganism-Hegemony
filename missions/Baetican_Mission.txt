@@ -97,9 +97,10 @@ hispania_unification_1_bae{
 			num_of_allies = 2
 		}
 		effect{
+			add_dip_power = 100
 			add_country_modifier = {
 				name = "influential_diplomacy"
-				duration = 5475
+				duration = 7300
 			}
 		}
 	}
@@ -130,6 +131,7 @@ hispania_unification_1_bae{
 			}
 		}
 		effect{
+			add_adm_power = 100
 			add_country_modifier = {
 				name = "western_mediterranean_control"
 				duration = 5475
@@ -226,6 +228,7 @@ hispania_unification_2_bae{
 			}
 		}
 		effect{
+			add_dip_power = 100
 			add_country_modifier = {
 				name = "through_the_atlantic"
 				duration = 5475
@@ -262,6 +265,8 @@ western_control{
 			}
 		}
 		effect{
+		add_yearly_manpower = 1
+		add_yearly_sailors = 1
 			sicily_area = {
 				add_permanent_claim = ROOT
 			}
@@ -296,6 +301,8 @@ western_control{
 			}
 		}
 		effect{
+			add_adm_power = 50
+			add_years_of_income = 1
 			emilia_romagna_area = {
 				add_permanent_claim = ROOT
 			}
@@ -425,6 +432,7 @@ western_control_2{
 			}
 		}
 		effect{
+			add_mil_power = 100
 			tunisia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -529,6 +537,7 @@ western_control_3{
 			NOT = {owned_by = ROOT}
     }
 		trigger = {
+			add_dip_power = 50
 			calabria_area = {
 				type = all
 				owned_by = ROOT
