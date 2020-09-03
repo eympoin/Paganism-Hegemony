@@ -16,6 +16,7 @@ naval_power{
 			navy_size_percentage = 0.9
 		}
 		effect = {
+			add_dip_power = 50
 			add_mercantilism = 2
 			add_country_modifier = {
 				name = "naval_enthusiasm_mission"
@@ -36,6 +37,7 @@ hispania_unification_1_cth{
 	has_country_shield = yes
 
 	victory_of_the_coalition_CTH = {
+
 		icon = mission_build_up_to_force_limit
 		required_missions = {  } #None
 		position = 1
@@ -55,6 +57,8 @@ hispania_unification_1_cth{
 			owns_or_non_sovereign_subject_of = 221
 		}
 		effect = {
+		add_years_of_income = 1
+		add_mil_power = 100
 			castille_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -95,6 +99,8 @@ hispania_unification_1_cth{
 			}
 		}
 		effect = {
+			add_years_of_income = 1
+			add_dip_power = 100
 			basque_country = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -140,6 +146,7 @@ hispania_unification_1_cth{
 			}
 		}
 		effect = {
+			add_mil_power = 50
 			asturias_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -178,6 +185,7 @@ hispania_unification_1_cth{
 			}
 		}
 		effect = {
+			add_dip_power = 50
 			add_country_modifier = {
 				name = "through_the_atlantic"
 				duration = 5475
@@ -218,6 +226,7 @@ hispania_unification_2_CTH{
 			}
 		}
 		effect = {
+		add_adm_power = 50
 			lower_andalucia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -254,6 +263,8 @@ hispania_unification_2_CTH{
 			}
 		}
 		effect = {
+		add_prestige = 10
+		add_dip_power = 50
 			leon_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -330,6 +341,7 @@ hispania_unification_2_CTH{
 			}
 		}
 		effect = {
+			add_dip_power = 50
 			macaronesia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -405,6 +417,8 @@ expand_eastward{
 			}
 		}
 		effect = {
+		add_yearly_manpower = 1
+		add_yearly_sailors = 1
 			sicily_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -495,6 +509,11 @@ expand_eastward{
 			}
 		}
 		effect{
+			capital_scope = {
+				add_base_tax = 2
+				add_base_manpower = 2
+				add_base_production = 2
+			}
 			add_dip_power = 100
 			add_country_modifier = {
 				name = "dominant_trade_hub"
@@ -591,6 +610,7 @@ expand_eastward{
 			}
 		}
 		effect = {
+			add_adm_power = 50
 			liguria_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -636,6 +656,7 @@ expand_eastward{
 			}
 		}
 		effect{
+			add_adm_power = 50
 			emilia_romagna_area = {
 				limit = {
 					NOT = { owned_by = ROOT }

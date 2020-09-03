@@ -53,6 +53,8 @@ hispania_unification_1_trc{
 			owns_core_province = 2755
 		}
 		effect = {
+		add_years_of_income = 1
+		add_mil_power = 100
 			valencia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -220,6 +222,8 @@ hispania_unification_1_trc{
 			}
 		}
 		effect = {
+			add_dip_power = 100
+			add_years_of_income = 1 
 			beieras_area = {
 				limit = {
 					NOT = { is_core = ROOT }

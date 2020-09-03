@@ -60,8 +60,8 @@ hispania_unification_1_bae{
 			owns = 230
 		}
 		effect = {
-			add_permanent_claim = 232
-			add_permanent_claim = 231
+			add_years_of_income = 1
+			add_mil_power = 100
 			beieras_area = {
 				add_permanent_claim = ROOT
 			}

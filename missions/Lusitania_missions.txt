@@ -23,10 +23,11 @@ trade_empire ={
 			}
 		}
 		effect = {
+			add_years_of_income = 2
 			add_mercantilism = 2
 			add_country_modifier = {
 				name = "dominant_trade_hub"
-				duration = 3650
+				duration = 7300
 			}
 		}
 	}
@@ -69,6 +70,8 @@ hispania_unification_1 = {
 			}
 		}
 		effect = {
+		add_years_of_income = 1
+		add_mil_power = 100
 			beieras_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -117,6 +120,8 @@ hispania_unification_1 = {
 			}
 		}
 		effect = {
+		add_prestige = 10
+		add_dip_power = 50
 		leon_area = {
 			limit = {
 				NOT = { owned_by = ROOT }
@@ -154,6 +159,7 @@ hispania_unification_1 = {
 			}
 		}
 		effect = {
+			add_mil_power = 100
 			basque_country = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -199,6 +205,8 @@ hispania_unification_2{
 			}
 		}
 		effect = {
+		add_prestige = 10
+		add_mil_power = 50
 		valencia_area = {
 			limit = {
 				NOT = { owned_by = ROOT }
@@ -225,6 +233,7 @@ hispania_unification_2{
 			}
 		}
 		effect = {
+		add_dip_power = 50
 		baleares_area = {
 			limit = {
 				NOT = { owned_by = ROOT }
@@ -269,6 +278,7 @@ hispania_unification_3{
 			}
 		}
 		effect = {
+			add_adm_power = 50
 			aragon_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -294,6 +304,7 @@ hispania_unification_3{
 			}
 		}
 		effect = {
+			add_adm_power = 50
 			catalonia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -478,7 +489,7 @@ western_control_2{
 			add_dip_power = 100
 			add_country_modifier = {
 				name = "dominant_trade_hub"
-				duration = 3650
+				duration = 7300
 			}
 		}
 	}
@@ -513,6 +524,8 @@ western_control{
 			}
 		}
 		effect{
+		add_yearly_manpower = 1
+		add_yearly_sailors = 1
 			lazio_area = {
 				add_permanent_claim = ROOT
 			}
