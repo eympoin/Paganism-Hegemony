@@ -526,6 +526,9 @@
  the_eternal_city_gal_title:0 "The Eternal City"
  annex_the_gallian_title:0 "Annex Gallia"
  other_side_pyrenees_title:0 "Other side of the Pyrenees"
+ asturias_conversion_title:0 "Convert the Asturians"
+ dominate_sevilla_gal_title:0 "Dominate Sevilla"
+ dominate_valencia_title:0 "Dominate Valencia"
 
  mediteranean_coast_desc:0 ""
  end_of_a_cycle_desc:0 ""
@@ -534,6 +537,9 @@
  the_eternal_city_gal_desc:0 ""
  annex_the_gallian_desc:0 ""
  other_side_pyrenees_desc:0 ""
+ asturias_conversion_desc:0 ""
+ dominate_sevilla_gal_desc:0 ""
+ dominate_valencia_desc:0 ""
 
  a_first_foot_hold_lus_title:0 "A first foothold"
  the_eternal_city_lus_title:0 "The Eternal City"

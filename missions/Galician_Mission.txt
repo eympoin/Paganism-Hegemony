@@ -1,6 +1,39 @@
+trade_empire ={
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		tag = GAL
+		was_tag = GAL
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	dominate_sevilla_gal = {
+		position = 1
+		icon = mission_dominate_home_trade_node
+		required_missions = { establish_high_seas_navy }
+		trigger = {
+			home_trade_node = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		effect = {
+			add_years_of_income = 2
+			add_mercantilism = 2
+			add_country_modifier = {
+				name = "dominant_trade_hub"
+				duration = 7300
+			}
+		}
+	}
+}
 
-
-hispania_unification_1_gal{
+hispania_unification_1_gal = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -134,7 +167,7 @@ hispania_unification_1_gal{
 
 }
 
-hispania_unification_2_gal{
+hispania_unification_2_gal = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -225,7 +258,7 @@ hispania_unification_2_gal{
 	}
 }
 
-hispania_unification_3_gal{
+hispania_unification_3_gal = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -338,7 +371,7 @@ hispania_unification_3_gal{
 	}
 }
 
-hispania_unification_final_gal{
+hispania_unification_final_gal = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -595,6 +628,8 @@ spa_colonial_group = {
 	OR = {
 		tag = GAL
 		was_tag = GAL
+		tag = BAE
+		was_tag = BAE
 		}
 		is_random_new_world = no
 		NOT = { map_setup = map_setup_random }
@@ -703,6 +738,8 @@ spa_colonial_group_rnw_off = {
 	OR = {
 		tag = GAL
 		was_tag = GAL
+		tag = BAE
+		was_tag = BAE
 		}
 		is_random_new_world = no
 		NOT = { map_setup = map_setup_random }
@@ -879,6 +916,8 @@ spa_colonial_group_two = {
 	OR = {
 		tag = GAL
 		was_tag = GAL
+		tag = BAE
+		was_tag = BAE
 		}
 		is_random_new_world = no
 		NOT = { map_setup = map_setup_random }
@@ -1058,6 +1097,8 @@ spa_colonial_group_two_rnw_off = {
 	OR = {
 		tag = GAL
 		was_tag = GAL
+		tag = BAE
+		was_tag = BAE
 		}
 		is_random_new_world = no
 		NOT = { map_setup = map_setup_random }
@@ -1105,6 +1146,8 @@ spa_colonial_group_three_rnw_off = {
 	OR = {
 		tag = GAL
 		was_tag = GAL
+		tag = BAE
+		was_tag = BAE
 		}
 		is_random_new_world = no
 		NOT = { map_setup = map_setup_random }
@@ -1138,6 +1181,46 @@ spa_colonial_group_three_rnw_off = {
 
 		effect = {
 			add_treasury = 800
+		}
+	}
+}
+
+conversion_asturias ={
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		tag = GAL
+		was_tag = GAL
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	asturias_conversion = {
+		icon = mission_settlers_north_america
+		required_missions = {asturias_defense}
+		position = 2
+		provinces_to_highlight = {
+			province_id = 208
+			NOT = {fort_level = 2}
+		}
+		trigger = {
+		dip_power = 100
+			asturias_area = {
+				type = all
+				religion = deii
+			}
+		}
+		effect = {
+			add_dip_power = -100
+			every_owned_province = {
+				limit = {
+					culture = asturian
+				}
+				change_culture = galician
+			}
 		}
 	}
 }

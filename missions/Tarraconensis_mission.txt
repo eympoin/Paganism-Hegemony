@@ -1,3 +1,40 @@
+trade_empire ={
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+	OR = {
+		tag = TRC
+		was_tag = TRC
+		tag = CTH
+		was_tag = CTH
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	dominate_valencia = {
+		position = 1
+		icon = mission_dominate_home_trade_node
+		required_missions = { establish_high_seas_navy }
+		trigger = {
+			home_trade_node = {
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		effect = {
+			add_years_of_income = 2
+			add_mercantilism = 2
+			add_country_modifier = {
+				name = "dominant_trade_hub"
+				duration = 7300
+			}
+		}
+	}
+}
+
 naval_power{
 	slot = 4
 	generic = no
