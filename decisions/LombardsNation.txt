@@ -19,9 +19,7 @@ country_decisions = {
 
 			OR{
 				primary_culture = lombard
-				primary_culture = ligurian
 				primary_culture = aquileian
-				primary_culture = venetian
 			}
 			is_colonial_nation = no
 			OR = {
@@ -34,12 +32,8 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				area = lombardy_area
-				area = piedmont_area
-				area = venetia_area
-				area = emilia_romagna_area
-				province_id = 2992
-				province_id = 101
+				culture = lombard
+				culture = aquileian
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -49,26 +43,16 @@ country_decisions = {
 		allow = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
-			is_nomad = no			
+			is_nomad = no
 			NOT = { exists = LOM }
-			lombardy_area = {
-				type = all
-				owned_by = ROOT
+			development_in_provinces = {
+				value = 230
+				OR = {
+					culture = lombard
+					culture = aquileian
+				}
 			}
-			piedmont_area = {
-				type = all
-				owned_by = ROOT
-			}
-			venetia_area = {
-				type = all
-				owned_by = ROOT
-			}
-			emilia_romagna_area = {
-				type = all
-				owned_by = ROOT
-			}
-			owns_core_province = 2992
-			owns_core_province = 101
+			owns_core_province = 4728
 		}
 		effect = {
 			change_tag = LOM
@@ -102,5 +86,5 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	
+
 }
