@@ -5,7 +5,7 @@ religion = theoi
 technology_group = western
 capital = 1933
 fixed_capital = 1933
-
+government_rank = 1
 1444.1.1 = {
     monarch = {
         name = "Chrysanthos"

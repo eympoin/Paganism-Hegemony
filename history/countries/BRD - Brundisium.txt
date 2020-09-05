@@ -4,7 +4,7 @@ technology_group = western
 religion = theoi
 primary_culture = Griko
 capital = 4802
-
+government_rank = 1
 1423.2.3 = {
 	monarch = {
 		name = "Alexios"

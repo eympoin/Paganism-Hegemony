@@ -1,11 +1,10 @@
 government = monarchy
 add_government_reform = feudalism_reform
-government_rank = 2
 technology_group = western
 religion = deii
 primary_culture = aquileian
 capital = 4729 # Padova
-
+government_rank = 1
 add_truce_with = SPQ
 add_truce_with = RVN
 add_truce_with = TUS

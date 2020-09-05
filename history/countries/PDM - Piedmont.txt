@@ -5,7 +5,7 @@ religion = deii
 technology_group = western
 capital = 103
 fixed_capital = 103
-
+government_rank = 1
 add_truce_with = SPQ
 add_truce_with = RVN
 add_truce_with = TUS

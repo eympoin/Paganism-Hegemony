@@ -3,9 +3,8 @@ primary_culture = lombard
 religion = deii
 technology_group = western
 capital = 4728
-add_army_professionalism = 0.05
-historical_rival = AQU
 
+government_rank = 1
 add_truce_with = SPQ
 add_truce_with = RVN
 add_truce_with = TUS

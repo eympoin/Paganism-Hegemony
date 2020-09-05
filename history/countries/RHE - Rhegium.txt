@@ -4,7 +4,7 @@ primary_culture = Griko
 religion = theoi
 technology_group = western
 capital = 123
-
+government_rank = 1
 1444.1.1 = {
     monarch = {
         name = "Pavlos"
