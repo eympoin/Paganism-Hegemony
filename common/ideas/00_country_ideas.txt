@@ -2162,8 +2162,7 @@ LOM_ideas = {
 	}
 	trigger = {
 	OR={
-		tag = LOM
-		tag = AQU
+		tag = PDM
 		tag = PAV
 		}
 	}
@@ -2199,6 +2198,53 @@ LOM_ideas = {
 		fire_damage = 0.1
 	}
 }
+
+AQU_ideas = {
+	start = {
+		infantry_power = 0.10
+		global_tax_modifier = 0.1
+	}
+	bonus = {
+		land_maintenance_modifier = -0.10
+	}
+	trigger = {
+	OR={
+		tag = AQU
+		tag = FER
+		}
+	}
+	free = yes
+
+	trade_with_the_east = {
+		trade_steering = 0.2
+	}
+
+	defend_our_independance_aqu = {
+		land_morale = 0.1
+	}
+	aquileian_crossbowmen = {
+		leader_land_fire = 1
+		infantry_fire = 1
+	}
+
+	adopt_roman_code = {
+		global_institution_spread = 0.1
+		idea_cost = -0.05
+	}
+
+	crossroad_of_culture  = {
+		num_accepted_cultures = 2
+	}
+
+	aquileian_Tremissis = {
+		inflation_reduction = 0.1
+	}
+	master_condottierri = {
+		mercenary_cost = -0.2
+		merc_maintenance_modifier = -0.2
+	}
+}
+
 
 SPQ_ideas = {
 	start = {
@@ -3174,47 +3220,6 @@ TUR_ideas = {
 	}
 	imperial_school_of_naval_engineering = {
 		global_ship_cost = -0.1
-	}
-}
-
-FER_ideas = {
-	start = {
-		light_ship_power = 0.15
-		siege_ability = 0.1
-	}
-
-	bonus = {
-		global_ship_trade_power = 0.2
-	}
-
-	trigger = {
-		tag = FER
-	}
-	free = yes		#will be added at load.
-
-	FER_papal = {
-		papal_influence = 1
-		religious_unity = 0.25
-	}
-	FER_culture = {
-		global_institution_spread = 0.1
-	}
-	FER_alfonso = {
-		artillery_power = 0.1
-	}
-	FER_margrave_of_este = {
-		diplomatic_reputation = 1
-	}
-	FER_resisting_venice = {
-		global_own_trade_power = 0.25
-	}
-	FER_este_castle = {
-		defensiveness = 0.15
-		prestige = 0.5
-	}
-	FER_ferraran_arsenal = {
-		flagship_cost = -0.5
-		leader_naval_fire = 1
 	}
 }
 

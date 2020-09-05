@@ -2,7 +2,7 @@
 
 owner = AQU
 controller = AQU
-culture = Dalmatian
+culture = aquileian
 religion = deii
 capital = "Trieste"
 trade_goods = salt #Accounted for 1/4 of the total Salt imports of Venice
