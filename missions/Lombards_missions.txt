@@ -1,0 +1,760 @@
+Lombard_Unification_1_pav = {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = PAV
+      was_tag = PAV
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  Submit_Piedmont = {
+    icon = mission_eastern_european_city
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+Lombard_Unification_2_pav = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = PAV
+      was_tag = PAV
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  Retake_Padova = {
+    icon = mission_eastern_european_city
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  King_of_the_lombards = {
+    icon = mission_eastern_european_city
+    required_missions = {Retake_Padova End_aquileian_independance Submit_Piedmont}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+
+}
+
+Lombard_Unification_3_pav = {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = PAV
+      was_tag = PAV
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  End_aquileian_independance = {
+    icon = mission_eastern_european_city
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+Lombard_Unification_1_pdm = {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = PDM
+      was_tag = PDM
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  Take_the_throne = {
+    icon = mission_eastern_european_city
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+Lombard_Unification_2_pdm = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = PDM
+      was_tag = PDM
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  take_Padova_pdm = {
+    icon = mission_eastern_european_city
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  King_of_the_lombards_pdm = {
+    icon = mission_eastern_european_city
+    required_missions = {take_Padova_pdm Take_the_throne End_aquileian_independance_pdm}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+Lombard_Unification_3_pdm = {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = PDM
+      was_tag = PDM
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  End_aquileian_independance_pdm = {
+    icon = mission_eastern_european_city
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+
+
+Lombard_Unification_1_pdv = {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = FER
+      was_tag = FER
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  Take_the_throne_pdv = {
+    icon = mission_eastern_european_city
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+Lombard_Unification_2_pdv = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = FER
+      was_tag = FER
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  Submit_Piedmont_pdv = {
+    icon = mission_eastern_european_city
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  King_of_the_lombards_pdm = {
+    icon = mission_eastern_european_city
+    required_missions = {Submit_Piedmont_pdv Take_the_throne_pdv End_aquileian_independance_pdv}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+Lombard_Unification_3_pdv = {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = FER
+      was_tag = FER
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  End_aquileian_independance_pdv = {
+    icon = mission_eastern_european_city
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+
+
+Lombard_Unification_1_aqu = {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = AQU
+      was_tag = AQU
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  Take_the_throne_aqu = {
+    icon = mission_eastern_european_city
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+Lombard_Unification_2_aqu = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = AQU
+      was_tag = AQU
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  Submit_Piedmont_aqu = {
+    icon = mission_eastern_european_city
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  King_of_the_lombards_aqu = {
+    icon = mission_eastern_european_city
+    required_missions = {take_Padova_aqu Take_the_throne_aqu Submit_Piedmont_aqu}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+Lombard_Unification_3_aqu = {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = AQU
+      was_tag = AQU
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  Take_Padova_aqu = {
+    icon = mission_eastern_european_city
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+
+lombards_italy = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = PDM
+      was_tag = PDM
+      tag = FER
+      was_tag = FER
+      tag = AQU
+      was_tag = AQU
+      tag = PAV
+      was_tag = PAV
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+
+  Lombard_Unification = {
+    icon = mission_eastern_european_city
+    required_missions = {}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  Centralize_the_realm_lom = {
+    icon = mission_eastern_european_city
+    required_missions = {Lombard_Unification}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  cultural_choice = {
+    icon = mission_eastern_european_city
+    required_missions = {Centralize_the_realm_lom}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+
+
+
+lombards_italy_2 = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = PDM
+      was_tag = PDM
+      tag = FER
+      was_tag = FER
+      tag = AQU
+      was_tag = AQU
+      tag = PAV
+      was_tag = PAV
+    }
+    OR = {
+      primary_culture = lombard
+      primary_culture = aquileian
+      }
+    NOT = { map_setup = map_setup_random }
+  }
+
+  destructor_of_rome = {
+    icon = mission_eastern_european_city
+    required_missions = {cultural_choice}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  a_new_empire = {
+    icon = mission_eastern_european_city
+    required_missions = {destructor_of_rome Fall_of_western_franks hold_on_ragusan_node}
+    position = 8
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  Emperor_of_the_Lombards = {
+    icon = mission_eastern_european_city
+    required_missions = {a_new_empire }
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+}
+
+
+lombards_roman_italy = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = PDM
+      was_tag = PDM
+      tag = FER
+      was_tag = FER
+      tag = AQU
+      was_tag = AQU
+      tag = PAV
+      was_tag = PAV
+    }
+    OR = {
+      primary_culture = roman
+      primary_culture = salernian
+      }
+    NOT = { map_setup = map_setup_random }
+  }
+
+  heir_of_Rome = {
+    icon = mission_eastern_european_city
+    required_missions = {cultural_choice}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  Rome_Reborn_lom = {
+    icon = a_real_roman_empire
+    required_missions = {heir_of_Rome}
+
+    provinces_to_highlight = {
+      province_id = 118
+    }
+
+    trigger = {
+      total_development = 1500
+      tag = WRM
+    }
+    effect = {
+      118 = {
+        add_province_modifier = {
+          name = rome_reborn_mod
+          duration = -1
+        }
+        add_center_of_trade_level = 1
+      }
+      country_event = {id = flavor_wrm.10}
+    }
+  }
+  Emperor_of_east_and_west_lom = {
+    icon = a_roman_empire
+    required_missions = {Rome_Reborn_lom}
+
+    provinces_to_highlight = {
+     province_id = 151
+    }
+
+    trigger = {
+      tag = ROM
+      151 = {
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      add_prestige = 20
+      add_mil_power = 100
+      add_adm_power = 100
+      add_dip_power = 100
+      add_years_of_income = 1
+      add_country_modifier = {
+        name = emperoror_of_east_west
+        duration = -1
+      }
+      add_accepted_culture = greek
+      add_accepted_culture = anatolian
+      add_accepted_culture = syrian
+      add_accepted_culture = ptolemaic
+    }
+  }
+}
+
+lombards_west = {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = PDM
+      was_tag = PDM
+      tag = FER
+      was_tag = FER
+      tag = AQU
+      was_tag = AQU
+      tag = PAV
+      was_tag = PAV
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+
+  Nikaian_revenge = {
+    icon = mission_eastern_european_city
+    required_missions = {Lombard_Unification}
+    position = 4
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  Secure_the_Alps = {
+    icon = mission_eastern_european_city
+    required_missions = {Nikaian_revenge}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  Burgond_throne = {
+    icon = mission_eastern_european_city
+    required_missions = {Secure_the_Alps}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  Fall_of_western_franks = {
+    icon = mission_eastern_european_city
+    required_missions = {Burgond_throne}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+lombards_west_2 = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = PDM
+      was_tag = PDM
+      tag = FER
+      was_tag = FER
+      tag = AQU
+      was_tag = AQU
+      tag = PAV
+      was_tag = PAV
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+
+  Fall_of_East_Francia = {
+    icon = mission_eastern_european_city
+    required_missions = {Secure_the_Alps}
+    position = 6
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+}
+
+
+
+lombards_east = {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = PDM
+      was_tag = PDM
+      tag = FER
+      was_tag = FER
+      tag = AQU
+      was_tag = AQU
+      tag = PAV
+      was_tag = PAV
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+
+  End_Venice_independence = {
+    icon = mission_eastern_european_city
+    required_missions = {Lombard_Unification}
+    position = 4
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  Stop_the_Horde = {
+    icon = mission_eastern_european_city
+    required_missions = {End_Venice_independence}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  Conquest_of_Pannonia = {
+    icon = mission_eastern_european_city
+    required_missions = {Stop_the_Horde}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  hold_on_ragusan_node = {
+    icon = mission_eastern_european_city
+    required_missions = {Conquest_of_Pannonia Conquest_of_Illyria}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+
+lombards_east_2 = {
+  slot = 5
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = PDM
+      was_tag = PDM
+      tag = FER
+      was_tag = FER
+      tag = AQU
+      was_tag = AQU
+      tag = PAV
+      was_tag = PAV
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+
+  Disrupt_the_ERE = {
+    icon = mission_eastern_european_city
+    required_missions = {End_Venice_independence}
+    position = 5
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  Conquest_of_Illyria = {
+    icon = mission_eastern_european_city
+    required_missions = {Disrupt_the_ERE}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+
+
+}
