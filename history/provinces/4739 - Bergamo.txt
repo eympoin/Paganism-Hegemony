@@ -1,7 +1,7 @@
 # 4739 - Bergamo
 
-owner = PAV
-controller = PAV
+owner = FER
+controller = FER
 culture = lombard 
 religion = deii
 hre = no
@@ -11,7 +11,7 @@ trade_goods = cloth
 base_manpower = 2  
 capital = "Bergamo" 
 is_city = yes
-add_core = PAV
+add_core = FER
 
 
 

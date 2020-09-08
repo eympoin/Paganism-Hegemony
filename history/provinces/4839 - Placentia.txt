@@ -1,7 +1,7 @@
 #105 - Parma
 
-owner = PDM
-controller = PDM
+owner = PAV
+controller = PAV
 culture = lombard
 religion = deii
 hre = no
@@ -12,7 +12,7 @@ base_manpower = 3
 capital = "Placentia"
 estate = estate_nobles
 is_city = yes	# Estimated
-add_core = PDM
+add_core = PAV
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

@@ -6,10 +6,10 @@ add_core = PDM
 culture = lombard
 religion = deii
 hre = no
-base_tax = 4
-base_production = 4
+base_tax = 6
+base_production = 5
 trade_goods = naval_supplies
-base_manpower = 2
+base_manpower = 3
 capital = "Albenga"
 is_city = yes # Estimated
 

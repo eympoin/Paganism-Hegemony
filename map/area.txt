@@ -458,7 +458,7 @@ macaronesia_area = { #3
 ########################################
 
 venetia_area = { #5
-	108 111 112 1774 4729
+ 111 112 1774
 }
 
 lombardy_area = { #5
@@ -479,7 +479,11 @@ tuscany_area = { #5
 }
 
 liguria_area = { #3
-	101 2992 2980 105 4839
+	101 2992 2980
+}
+
+padova_area = { #3
+	4729 108 113
 }
 
 corsica_sardinia_area = { #5
@@ -510,9 +514,14 @@ apulia_area = { #4
 	122 1933 2985 4733 4802
 }
 
-emilia_romagna_area = { #5
+emilia_romagna_area = { #3
 	color = { 24 222 66 }
-	106 113 114 4730 4829
+ 114 4730 4829
+}
+
+emilia_area = { #5
+	color = { 24 222 66 }
+	106 105 4839
 }
 
 central_italy_area = { #3

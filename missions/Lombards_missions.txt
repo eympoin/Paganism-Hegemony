@@ -14,10 +14,26 @@ Lombard_Unification_1_pav = {
     required_missions = {}
     position = 1
     provinces_to_highlight = {
-    }
+        OR = {
+          area = piedmont_area
+          area = liguria_area
+        }
+        NOT = {owned_by = ROOT}
+      }
     trigger = {
+      num_of_owned_provinces_with = {
+        value = 5
+        OR = {
+          area = liguria_area
+          area = piedmont_area
+        }
+      }
     }
     effect = {
+      add_mil_power = 100
+      add_legitimacy = 10
+      add_prestige = 10
+      add_years_of_income = 0.5
     }
   }
 
@@ -39,10 +55,26 @@ Lombard_Unification_2_pav = {
     required_missions = {}
     position = 1
     provinces_to_highlight = {
-    }
+        OR = {
+          area = padova_area
+          area = po_valley_area
+        }
+        NOT = {owned_by = ROOT}
+      }
     trigger = {
+      num_of_owned_provinces_with = {
+        value = 6
+        OR = {
+          area = padova_area
+          area = po_valley_area
+        }
+      }
     }
     effect = {
+      add_adm_power = 100
+      add_legitimacy = 10
+      add_prestige = 10
+      add_years_of_income = 0.5
     }
   }
 
@@ -52,8 +84,22 @@ Lombard_Unification_2_pav = {
     provinces_to_highlight = {
     }
     trigger = {
+      tag = LOM
     }
     effect = {
+      add_prestige = 10
+      capital_scope = {
+        add_base_tax = 2
+        add_base_production = 2
+        add_base_manpower = 2
+      }
+      italy_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+				}
+				add_permanent_claim = ROOT
+			}
     }
   }
 
@@ -76,10 +122,26 @@ Lombard_Unification_3_pav = {
     required_missions = {}
     position = 1
     provinces_to_highlight = {
-    }
+        OR = {
+          area = venetia_area
+          area = carinthia_area
+        }
+        NOT = {owned_by = ROOT}
+      }
     trigger = {
+      num_of_owned_provinces_with = {
+        value = 6
+        OR = {
+        area = venetia_area
+        area = carinthia_area
+        }
+      }
     }
     effect = {
+      add_dip_power = 100
+      add_legitimacy = 10
+      add_prestige = 10
+      add_years_of_income = 0.5
     }
   }
 
@@ -101,10 +163,26 @@ Lombard_Unification_1_pdm = {
     required_missions = {}
     position = 1
     provinces_to_highlight = {
-    }
+        OR = {
+          area = emilia_area
+          area = lombardy_area
+        }
+        NOT = {owned_by = ROOT}
+      }
     trigger = {
+      num_of_owned_provinces_with = {
+        value = 6
+        OR = {
+        area = emilia_area
+        area = lombardy_area
+        }
+      }
     }
     effect = {
+      add_adm_power = 100
+      add_legitimacy = 10
+      add_prestige = 10
+      add_years_of_income = 0.5
     }
   }
 
@@ -126,10 +204,26 @@ Lombard_Unification_2_pdm = {
     required_missions = {}
     position = 1
     provinces_to_highlight = {
-    }
+        OR = {
+          area = padova_area
+          area = po_valley_area
+        }
+        NOT = {owned_by = ROOT}
+      }
     trigger = {
+      num_of_owned_provinces_with = {
+        value = 6
+        OR = {
+          area = padova_area
+          area = po_valley_area
+        }
+      }
     }
     effect = {
+      add_mil_power = 100
+      add_legitimacy = 10
+      add_prestige = 10
+      add_years_of_income = 0.5
     }
   }
 
@@ -139,8 +233,22 @@ Lombard_Unification_2_pdm = {
     provinces_to_highlight = {
     }
     trigger = {
+      tag = LOM
     }
     effect = {
+      add_prestige = 10
+      capital_scope = {
+        add_base_tax = 2
+        add_base_production = 2
+        add_base_manpower = 2
+      }
+      italy_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+				}
+				add_permanent_claim = ROOT
+			}
     }
   }
 
@@ -162,10 +270,26 @@ Lombard_Unification_3_pdm = {
     required_missions = {}
     position = 1
     provinces_to_highlight = {
-    }
+        OR = {
+          area = venetia_area
+          area = carinthia_area
+        }
+        NOT = {owned_by = ROOT}
+      }
     trigger = {
+      num_of_owned_provinces_with = {
+        value = 6
+        OR = {
+        area = venetia_area
+        area = carinthia_area
+        }
+      }
     }
     effect = {
+      add_dip_power = 100
+      add_legitimacy = 10
+      add_prestige = 10
+      add_years_of_income = 0.5
     }
   }
 
@@ -189,10 +313,26 @@ Lombard_Unification_1_pdv = {
     required_missions = {}
     position = 1
     provinces_to_highlight = {
-    }
+        OR = {
+          area = emilia_area
+          area = lombardy_area
+        }
+        NOT = {owned_by = ROOT}
+      }
     trigger = {
+      num_of_owned_provinces_with = {
+        value = 6
+        OR = {
+        area = emilia_area
+        area = lombardy_area
+        }
+      }
     }
     effect = {
+      add_adm_power = 100
+      add_legitimacy = 10
+      add_prestige = 10
+      add_years_of_income = 0.5
     }
   }
 
@@ -214,10 +354,26 @@ Lombard_Unification_2_pdv = {
     required_missions = {}
     position = 1
     provinces_to_highlight = {
-    }
+        OR = {
+          area = piedmont_area
+          area = liguria_area
+        }
+        NOT = {owned_by = ROOT}
+      }
     trigger = {
+      num_of_owned_provinces_with = {
+        value = 5
+        OR = {
+          area = liguria_area
+          area = piedmont_area
+        }
+      }
     }
     effect = {
+      add_mil_power = 100
+      add_legitimacy = 10
+      add_prestige = 10
+      add_years_of_income = 0.5
     }
   }
 
@@ -227,8 +383,22 @@ Lombard_Unification_2_pdv = {
     provinces_to_highlight = {
     }
     trigger = {
+      tag = LOM
     }
     effect = {
+      add_prestige = 10
+      capital_scope = {
+        add_base_tax = 2
+        add_base_production = 2
+        add_base_manpower = 2
+      }
+      italy_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+				}
+				add_permanent_claim = ROOT
+			}
     }
   }
 
@@ -250,10 +420,26 @@ Lombard_Unification_3_pdv = {
     required_missions = {}
     position = 1
     provinces_to_highlight = {
-    }
+        OR = {
+          area = venetia_area
+          area = carinthia_area
+        }
+        NOT = {owned_by = ROOT}
+      }
     trigger = {
+      num_of_owned_provinces_with = {
+        value = 6
+        OR = {
+        area = venetia_area
+        area = carinthia_area
+        }
+      }
     }
     effect = {
+      add_dip_power = 100
+      add_legitimacy = 10
+      add_prestige = 10
+      add_years_of_income = 0.5
     }
   }
 
@@ -277,10 +463,26 @@ Lombard_Unification_1_aqu = {
     required_missions = {}
     position = 1
     provinces_to_highlight = {
-    }
+        OR = {
+          area = emilia_area
+          area = lombardy_area
+        }
+        NOT = {owned_by = ROOT}
+      }
     trigger = {
+      num_of_owned_provinces_with = {
+        value = 6
+        OR = {
+        area = emilia_area
+        area = lombardy_area
+        }
+      }
     }
     effect = {
+      add_adm_power = 100
+      add_legitimacy = 10
+      add_prestige = 10
+      add_years_of_income = 0.5
     }
   }
 
@@ -302,21 +504,51 @@ Lombard_Unification_2_aqu = {
     required_missions = {}
     position = 1
     provinces_to_highlight = {
-    }
+        OR = {
+          area = piedmont_area
+          area = liguria_area
+        }
+        NOT = {owned_by = ROOT}
+      }
     trigger = {
+      num_of_owned_provinces_with = {
+        value = 5
+        OR = {
+          area = liguria_area
+          area = piedmont_area
+        }
+      }
     }
     effect = {
+      add_mil_power = 100
+      add_legitimacy = 10
+      add_prestige = 10
+      add_years_of_income = 0.5
     }
   }
 
   King_of_the_lombards_aqu = {
     icon = mission_eastern_european_city
-    required_missions = {take_Padova_aqu Take_the_throne_aqu Submit_Piedmont_aqu}
+    required_missions = {Take_Padova_aqu Take_the_throne_aqu Submit_Piedmont_aqu}
     provinces_to_highlight = {
     }
     trigger = {
+      tag = LOM
     }
     effect = {
+      add_prestige = 10
+      capital_scope = {
+        add_base_tax = 2
+        add_base_production = 2
+        add_base_manpower = 2
+      }
+      italy_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+				}
+				add_permanent_claim = ROOT
+			}
     }
   }
 
@@ -338,10 +570,26 @@ Lombard_Unification_3_aqu = {
     required_missions = {}
     position = 1
     provinces_to_highlight = {
-    }
+        OR = {
+          area = padova_area
+          area = po_valley_area
+        }
+        NOT = {owned_by = ROOT}
+      }
     trigger = {
+      num_of_owned_provinces_with = {
+        value = 6
+        OR = {
+          area = padova_area
+          area = po_valley_area
+        }
+      }
     }
     effect = {
+      add_dip_power = 100
+      add_legitimacy = 10
+      add_prestige = 10
+      add_years_of_income = 0.5
     }
   }
 

@@ -1,7 +1,7 @@
 #105 - Parma
 
-owner = FER
-controller = FER
+owner = PAV
+controller = PAV
 culture = lombard
 religion = deii
 hre = no
@@ -12,7 +12,7 @@ base_manpower = 3
 capital = "Parma"
 estate = estate_nobles
 is_city = yes	# Estimated
-add_core = FER
+add_core = PAV
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
