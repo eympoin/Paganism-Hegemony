@@ -4203,7 +4203,7 @@ legitimacy = 1
 }
 
 the_only_king = {
-legitimacy = 1
+  legitimacy = 1
 }
 
 Vassalization = {
@@ -4342,7 +4342,7 @@ global_tax_modifier = 0.1
 }
 
 king_of_all_franks = {
-prestige = 1
+prestige = 0.5
 land_morale = 0.1
 }
 Sunni_missionary_strength  = {
@@ -4551,7 +4551,7 @@ lotharingian_industry = {
 }
 
 eaf_king = {
-  legitimacy = 1
+  legitimacy = 0.5
 }
 
 secure_our_back = {
@@ -4670,4 +4670,23 @@ emperor_of_east_and_west = {
 
 roman_savior = {
   diplomatic_reputation = 2
+}
+
+adriatic_monopol = {
+  global_trade_power = 0.1
+}
+
+kings_of_the_lombard = {
+  legitimacy = 0.5
+}
+
+weak_duchies = {
+  global_autonomy = -0.05
+}
+
+a_lombard_empire = {
+  prestige = 1
+  land_morale = 0.1
+  diplomatic_reputation = 1
+  diplomatic_upkeep = 1
 }

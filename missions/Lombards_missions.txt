@@ -87,6 +87,10 @@ Lombard_Unification_2_pav = {
       tag = LOM
     }
     effect = {
+    add_country_modifier = {
+      name = kings_of_the_lombard
+      duration = -1
+    }
       add_prestige = 10
       capital_scope = {
         add_base_tax = 2
@@ -236,6 +240,10 @@ Lombard_Unification_2_pdm = {
       tag = LOM
     }
     effect = {
+    add_country_modifier = {
+      name = kings_of_the_lombard
+      duration = -1
+    }
       add_prestige = 10
       capital_scope = {
         add_base_tax = 2
@@ -386,6 +394,10 @@ Lombard_Unification_2_pdv = {
       tag = LOM
     }
     effect = {
+    add_country_modifier = {
+      name = kings_of_the_lombard
+      duration = -1
+    }
       add_prestige = 10
       capital_scope = {
         add_base_tax = 2
@@ -536,6 +548,10 @@ Lombard_Unification_2_aqu = {
       tag = LOM
     }
     effect = {
+      add_country_modifier = {
+        name = kings_of_the_lombard
+        duration = -1
+      }
       add_prestige = 10
       capital_scope = {
         add_base_tax = 2
@@ -620,8 +636,15 @@ lombards_italy = {
     provinces_to_highlight = {
     }
     trigger = {
+      total_development = 400
     }
     effect = {
+      add_years_of_income = 1
+      capital_scope = {
+        add_base_tax = 1
+        add_base_production = 1
+        add_base_manpower = 1
+      }
     }
   }
 
@@ -631,8 +654,16 @@ lombards_italy = {
     provinces_to_highlight = {
     }
     trigger = {
+      NOT = { average_autonomy = 5}
+      capital_scope = {
+        development = 30
+      }
     }
     effect = {
+      add_country_modifier = {
+        name = weak_duchies
+        duration = -1
+      }
     }
   }
 
@@ -644,6 +675,7 @@ lombards_italy = {
     trigger = {
     }
     effect = {
+      #event
     }
   }
 
@@ -678,35 +710,56 @@ lombards_italy_2 = {
     icon = mission_eastern_european_city
     required_missions = {cultural_choice}
     provinces_to_highlight = {
+      province_id = 118
     }
     trigger = {
+      owns_core_province = 118
+      NOT = {exists = SPQ}
     }
     effect = {
+    add_years_of_income = 1
+    add_mil_power = 100
+    capital_scope = {
+      add_base_tax = 2
+      add_base_production = 2
+      add_base_manpower = 2
+    }
+    118 = {
+      add_base_tax = -2
+      add_base_production = -2
+      add_base_manpower = -2
+    }
     }
   }
 
   a_new_empire = {
     icon = mission_eastern_european_city
-    required_missions = {destructor_of_rome Fall_of_western_franks hold_on_ragusan_node}
+    required_missions = {destructor_of_rome Fall_of_western_franks control_of_the_east}
     position = 8
     provinces_to_highlight = {
     }
     trigger = {
+      total_development = 2000
     }
     effect = {
+      add_country_modifier = {
+        name = a_lombard_empire
+        duration = -1
+      }
+      capital_scope = {
+        add_base_tax = 2
+        add_base_production = 2
+        add_base_manpower = 2
+      }
+        if = {
+         limit = {
+           NOT = { government_rank = 3 }
+         }
+         set_government_rank = 3
+       }
     }
   }
 
-  Emperor_of_the_Lombards = {
-    icon = mission_eastern_european_city
-    required_missions = {a_new_empire }
-    provinces_to_highlight = {
-    }
-    trigger = {
-    }
-    effect = {
-    }
-  }
 }
 
 
@@ -736,10 +789,20 @@ lombards_roman_italy = {
     icon = mission_eastern_european_city
     required_missions = {cultural_choice}
     provinces_to_highlight = {
+      province_id = 118
     }
     trigger = {
+      owns_core_province = 118
+      NOT = {exists = SPQ}
     }
     effect = {
+      add_years_of_income = 1
+      118 = {
+        move_capital_effect = yes
+        add_base_tax = 2
+        add_base_production = 2
+        add_base_manpower = 2
+      }
     }
   }
 
@@ -752,7 +815,7 @@ lombards_roman_italy = {
     }
 
     trigger = {
-      total_development = 1500
+      total_development = 2000
       tag = WRM
     }
     effect = {
@@ -948,7 +1011,7 @@ lombards_east = {
     }
   }
 
-  hold_on_ragusan_node = {
+  control_of_the_east = {
     icon = mission_eastern_european_city
     required_missions = {Conquest_of_Pannonia Conquest_of_Illyria}
     provinces_to_highlight = {
@@ -996,13 +1059,45 @@ lombards_east_2 = {
     icon = mission_eastern_european_city
     required_missions = {Disrupt_the_ERE}
     provinces_to_highlight = {
-    }
+        OR = {
+          area = croatia
+          area = bosnia_area
+          area = slavonia_area
+          area = bosnia_area
+          area = east_adriatic_coast_area
+          area = rascia_area
+          area = serbia_area
+        }
+        NOT = {owned_by = ROOT}
+      }
     trigger = {
+      num_of_owned_provinces_with = {
+        value = 21
+        OR = {
+          area = croatia
+          area = bosnia_area
+          area = slavonia_area
+          area = bosnia_area
+          area = east_adriatic_coast_area
+          area = rascia_area
+          area = serbia_area
+        }
+      }
     }
     effect = {
+    add_country_modifier = {
+      name = adriatic_monopol
+      duration = -1
+    }
+      add_years_of_income = 1
+      balkan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+				}
+				add_permanent_claim = ROOT
+			}
     }
   }
-
-
 
 }
