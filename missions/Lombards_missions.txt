@@ -585,13 +585,6 @@ Lombard_Unification_3_aqu = {
     icon = mission_eastern_european_city
     required_missions = {}
     position = 1
-    provinces_to_highlight = {
-        OR = {
-          area = padova_area
-          area = po_valley_area
-        }
-        NOT = {owned_by = ROOT}
-      }
     trigger = {
       num_of_owned_provinces_with = {
         value = 6
@@ -645,6 +638,23 @@ lombards_italy = {
         add_base_production = 1
         add_base_manpower = 1
       }
+      provence_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+				}
+				add_permanent_claim = ROOT
+			}
+      carinthia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+				}
+				add_permanent_claim = ROOT
+			}
+      112 = {
+				add_permanent_claim = ROOT
+			}
     }
   }
 
@@ -879,37 +889,118 @@ lombards_west = {
     NOT = { map_setup = map_setup_random }
   }
 
-  Nikaian_revenge = {
+  Secure_the_Alps = {
     icon = mission_eastern_european_city
     required_missions = {Lombard_Unification}
     position = 4
     provinces_to_highlight = {
-    }
+        OR = {
+          area = tirol_area
+          area = switzerland_area
+        }
+        NOT = {owned_by = ROOT}
+      }
     trigger = {
+    tirol_area = {
+      type = all
+      owned_by = ROOT
+    }
+    switzerland_area = {
+      type = all
+      owned_by = ROOT
+    }
     }
     effect = {
+      add_country_modifier = {
+        name = alpine_defenses
+        duration = -1
+      }
+      provence_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      languedoc_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 
-  Secure_the_Alps = {
+  Nikaian_revenge = {
+    icon = mission_eastern_european_city
+    required_missions = {Secure_the_Alps}
+    provinces_to_highlight = {
+        OR = {
+          area = provence_area
+          area = languedoc_area
+        }
+        NOT = {owned_by = ROOT}
+      }
+    trigger = {
+      provence_area = {
+        type = all
+        owned_by = ROOT
+      }
+      languedoc_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+    add_casus_belli = {
+        type = cb_restore_personal_union
+        months = 300
+        target = BOR
+      }
+      guyenne_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      pyrenees_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+
+
+  Burgond_throne = {
     icon = mission_eastern_european_city
     required_missions = {Nikaian_revenge}
     provinces_to_highlight = {
     }
     trigger = {
+      OR = {
+        senior_union_with = BOR
+        NOT = {exists = BOR}
+        }
     }
     effect = {
+    add_dip_power = 100
+    add_country_modifier = {
+      name = two_thrones
+      dduration = -1
     }
-  }
-
-  Burgond_throne = {
-    icon = mission_eastern_european_city
-    required_missions = {Secure_the_Alps}
-    provinces_to_highlight = {
+    france_region = {
+      limit = {
+        NOT = { owned_by = ROOT }
+        NOT = {is_claim	= ROOT}
+      }
+      add_permanent_claim = ROOT
     }
-    trigger = {
-    }
-    effect = {
     }
   }
 
@@ -917,10 +1008,26 @@ lombards_west = {
     icon = mission_eastern_european_city
     required_missions = {Burgond_throne}
     provinces_to_highlight = {
-    }
+        OR = {
+          region = france_region
+        }
+        NOT = {owned_by = ROOT}
+      }
     trigger = {
+      france_region = {
+        type = all
+        owned_by = ROOT
+      }
     }
     effect = {
+    add_years_of_income = 1
+    iberia_region = {
+      limit = {
+        NOT = { owned_by = ROOT }
+        NOT = {is_claim	= ROOT}
+      }
+      add_permanent_claim = ROOT
+    }
     }
   }
 
@@ -947,12 +1054,28 @@ lombards_west_2 = {
   Fall_of_East_Francia = {
     icon = mission_eastern_european_city
     required_missions = {Secure_the_Alps}
-    position = 6
+    position = 5
     provinces_to_highlight = {
-    }
+        OR = {
+          region = south_german_region
+        }
+        NOT = {owned_by = ROOT}
+      }
     trigger = {
+      south_german_region = {
+        type = all
+        owned_by = ROOT
+      }
     }
     effect = {
+    add_years_of_income = 1
+    north_german_region = {
+      limit = {
+        NOT = { owned_by = ROOT }
+        NOT = {is_claim	= ROOT}
+      }
+      add_permanent_claim = ROOT
+    }
     }
   }
 }

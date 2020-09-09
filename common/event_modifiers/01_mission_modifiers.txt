@@ -4688,5 +4688,12 @@ a_lombard_empire = {
   prestige = 1
   land_morale = 0.1
   diplomatic_reputation = 1
+}
+
+alpine_defenses = {
+  defensiveness = 0.1
+}
+
+two_thrones = {
   diplomatic_upkeep = 1
 }
