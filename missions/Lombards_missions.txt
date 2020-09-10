@@ -10,7 +10,7 @@ Lombard_Unification_1_pav = {
     NOT = { map_setup = map_setup_random }
   }
   Submit_Piedmont = {
-    icon = mission_eastern_european_city
+    icon = confront_the_lombards
     required_missions = {}
     position = 1
     provinces_to_highlight = {
@@ -51,7 +51,7 @@ Lombard_Unification_2_pav = {
     NOT = { map_setup = map_setup_random }
   }
   Retake_Padova = {
-    icon = mission_eastern_european_city
+    icon = reclaim_the_ducal_lands
     required_missions = {}
     position = 1
     provinces_to_highlight = {
@@ -79,7 +79,7 @@ Lombard_Unification_2_pav = {
   }
 
   King_of_the_lombards = {
-    icon = mission_eastern_european_city
+    icon = kingdom_of_lombardy
     required_missions = {Retake_Padova End_aquileian_independance Submit_Piedmont}
     provinces_to_highlight = {
     }
@@ -122,7 +122,7 @@ Lombard_Unification_3_pav = {
     NOT = { map_setup = map_setup_random }
   }
   End_aquileian_independance = {
-    icon = mission_eastern_european_city
+    icon = overshadow_venice
     required_missions = {}
     position = 1
     provinces_to_highlight = {
@@ -163,7 +163,7 @@ Lombard_Unification_1_pdm = {
     NOT = { map_setup = map_setup_random }
   }
   Take_the_throne = {
-    icon = mission_eastern_european_city
+    icon = seize_lombardy
     required_missions = {}
     position = 1
     provinces_to_highlight = {
@@ -204,7 +204,7 @@ Lombard_Unification_2_pdm = {
     NOT = { map_setup = map_setup_random }
   }
   take_Padova_pdm = {
-    icon = mission_eastern_european_city
+    icon = reclaim_the_ducal_lands
     required_missions = {}
     position = 1
     provinces_to_highlight = {
@@ -232,7 +232,7 @@ Lombard_Unification_2_pdm = {
   }
 
   King_of_the_lombards_pdm = {
-    icon = mission_eastern_european_city
+    icon = kingdom_of_lombardy
     required_missions = {take_Padova_pdm Take_the_throne End_aquileian_independance_pdm}
     provinces_to_highlight = {
     }
@@ -274,7 +274,7 @@ Lombard_Unification_3_pdm = {
     NOT = { map_setup = map_setup_random }
   }
   End_aquileian_independance_pdm = {
-    icon = mission_eastern_european_city
+    icon = overshadow_venice
     required_missions = {}
     position = 1
     provinces_to_highlight = {
@@ -317,7 +317,7 @@ Lombard_Unification_1_pdv = {
     NOT = { map_setup = map_setup_random }
   }
   Take_the_throne_pdv = {
-    icon = mission_eastern_european_city
+    icon = seize_lombardy
     required_missions = {}
     position = 1
     provinces_to_highlight = {
@@ -358,7 +358,7 @@ Lombard_Unification_2_pdv = {
     NOT = { map_setup = map_setup_random }
   }
   Submit_Piedmont_pdv = {
-    icon = mission_eastern_european_city
+    icon = confront_the_lombards
     required_missions = {}
     position = 1
     provinces_to_highlight = {
@@ -386,7 +386,7 @@ Lombard_Unification_2_pdv = {
   }
 
   King_of_the_lombards_pdm = {
-    icon = mission_eastern_european_city
+    icon = kingdom_of_lombardy
     required_missions = {Submit_Piedmont_pdv Take_the_throne_pdv End_aquileian_independance_pdv}
     provinces_to_highlight = {
     }
@@ -428,7 +428,7 @@ Lombard_Unification_3_pdv = {
     NOT = { map_setup = map_setup_random }
   }
   End_aquileian_independance_pdv = {
-    icon = mission_eastern_european_city
+    icon = overshadow_venice
     required_missions = {}
     position = 1
     provinces_to_highlight = {
@@ -471,7 +471,7 @@ Lombard_Unification_1_aqu = {
     NOT = { map_setup = map_setup_random }
   }
   Take_the_throne_aqu = {
-    icon = mission_eastern_european_city
+    icon = seize_lombardy
     required_missions = {}
     position = 1
     provinces_to_highlight = {
@@ -512,7 +512,7 @@ Lombard_Unification_2_aqu = {
     NOT = { map_setup = map_setup_random }
   }
   Submit_Piedmont_aqu = {
-    icon = mission_eastern_european_city
+    icon = confront_the_lombards
     required_missions = {}
     position = 1
     provinces_to_highlight = {
@@ -540,7 +540,7 @@ Lombard_Unification_2_aqu = {
   }
 
   King_of_the_lombards_aqu = {
-    icon = mission_eastern_european_city
+    icon = kingdom_of_lombardy
     required_missions = {Take_Padova_aqu Take_the_throne_aqu Submit_Piedmont_aqu}
     provinces_to_highlight = {
     }
@@ -582,7 +582,7 @@ Lombard_Unification_3_aqu = {
     NOT = { map_setup = map_setup_random }
   }
   Take_Padova_aqu = {
-    icon = mission_eastern_european_city
+    icon = reclaim_the_ducal_lands
     required_missions = {}
     position = 1
     trigger = {
@@ -624,11 +624,12 @@ lombards_italy = {
   }
 
   Lombard_Unification = {
-    icon = mission_eastern_european_city
+    icon = mission_unite_home_region
     required_missions = {}
     provinces_to_highlight = {
     }
     trigger = {
+      has_country_modifier = kings_of_the_lombard
       total_development = 400
     }
     effect = {
@@ -659,7 +660,7 @@ lombards_italy = {
   }
 
   Centralize_the_realm_lom = {
-    icon = mission_eastern_european_city
+    icon = mission_rule_italy
     required_missions = {Lombard_Unification}
     provinces_to_highlight = {
     }
@@ -678,7 +679,7 @@ lombards_italy = {
   }
 
   cultural_choice = {
-    icon = mission_eastern_european_city
+    icon = mission_alliances
     required_missions = {Centralize_the_realm_lom}
     provinces_to_highlight = {
     }
@@ -719,7 +720,7 @@ lombards_italy_2 = {
   }
 
   destructor_of_rome = {
-    icon = mission_eastern_european_city
+    icon = mission_conquer_50_development
     required_missions = {cultural_choice}
     provinces_to_highlight = {
       province_id = 118
@@ -745,7 +746,7 @@ lombards_italy_2 = {
   }
 
   a_new_empire = {
-    icon = mission_eastern_european_city
+    icon = mission_empire
     required_missions = {destructor_of_rome Fall_of_western_franks control_of_the_east}
     position = 8
     provinces_to_highlight = {
@@ -798,7 +799,7 @@ lombards_roman_italy = {
   }
 
   heir_of_Rome = {
-    icon = mission_eastern_european_city
+    icon = mission_monarch_in_throne_room
     required_missions = {cultural_choice}
     provinces_to_highlight = {
       province_id = 118
@@ -935,7 +936,7 @@ lombards_west = {
   }
 
   Nikaian_revenge = {
-    icon = mission_eastern_european_city
+    icon = develop_provence
     required_missions = {Secure_the_Alps}
     provinces_to_highlight = {
         OR = {
@@ -980,7 +981,7 @@ lombards_west = {
 
 
   Burgond_throne = {
-    icon = mission_eastern_european_city
+    icon = secure_the_succession
     required_missions = {Nikaian_revenge}
     provinces_to_highlight = {
     }
@@ -1007,7 +1008,7 @@ lombards_west = {
   }
 
   Fall_of_western_franks = {
-    icon = mission_eastern_european_city
+    icon = centralize_france
     required_missions = {Burgond_throne}
     provinces_to_highlight = {
         OR = {
@@ -1054,7 +1055,7 @@ lombards_west_2 = {
   }
 
   Fall_of_East_Francia = {
-    icon = mission_eastern_european_city
+    icon = conquer_east_francia
     required_missions = {Secure_the_Alps}
     position = 5
     provinces_to_highlight = {
@@ -1103,7 +1104,7 @@ lombards_east = {
   }
 
   End_Venice_independence = {
-    icon = mission_eastern_european_city
+    icon = mission_control_venice
     required_missions = {Lombard_Unification}
     position = 4
     provinces_to_highlight = {
@@ -1146,7 +1147,7 @@ lombards_east = {
   }
 
   Stop_the_Horde = {
-    icon = mission_eastern_european_city
+    icon = mission_crusade_for_varna
     required_missions = {End_Venice_independence}
     provinces_to_highlight = {
       OR = {
@@ -1218,7 +1219,7 @@ lombards_east = {
   }
 
   Conquest_of_Pannonia = {
-    icon = mission_eastern_european_city
+    icon = mission_non-western_cavalry_raid
     required_missions = {Stop_the_Horde}
     rovinces_to_highlight = {
         OR = {
@@ -1246,7 +1247,7 @@ lombards_east = {
   }
 
   control_of_the_east = {
-    icon = mission_eastern_european_city
+    icon = take_constantinople
     required_missions = {Conquest_of_Pannonia Conquest_of_Illyria}
     provinces_to_highlight = {
       region = balkan_region
@@ -1293,7 +1294,7 @@ lombards_east_2 = {
   }
 
   Disrupt_the_ERE = {
-    icon = mission_eastern_european_city
+    icon = switzerland_and_the_empire
     required_missions = {End_Venice_independence}
     position = 5
     provinces_to_highlight = {
@@ -1308,7 +1309,7 @@ lombards_east_2 = {
   }
 
   Conquest_of_Illyria = {
-    icon = mission_eastern_european_city
+    icon = a.e.i.o.u.
     required_missions = {Disrupt_the_ERE}
     provinces_to_highlight = {
         OR = {
