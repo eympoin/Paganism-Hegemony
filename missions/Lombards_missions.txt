@@ -683,6 +683,8 @@ lombards_italy = {
     provinces_to_highlight = {
     }
     trigger = {
+      prestige = 50
+      dip_power = 100
     }
     effect = {
       #event
@@ -1105,10 +1107,41 @@ lombards_east = {
     required_missions = {Lombard_Unification}
     position = 4
     provinces_to_highlight = {
+      province_id = 112
     }
     trigger = {
+      owns_core_province = 112
     }
     effect = {
+      add_years_of_income = 1
+      add_dip_power = 50
+      carinthia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      inner_austria_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      austria_proper_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      112 = {
+        add_province_modifier = {
+          name = burgeoning_port
+          duration = -1
+        }
+      }
     }
   }
 
@@ -1116,21 +1149,99 @@ lombards_east = {
     icon = mission_eastern_european_city
     required_missions = {End_Venice_independence}
     provinces_to_highlight = {
+      OR = {
+        area = inner_austria_area
+        area = austria_proper_area
+        area = carinthia_area
+      }
+      OR ={
+        owned_by = SKH
+        owner = {
+          is_subject_of = SKH
+          }
+        }
     }
     trigger = {
+      NOT = {
+          inner_austria_area = {
+            owned_by = SKH
+          }
+        }
+      NOT = {
+        inner_austria_area = {
+          owner = {
+            is_subject_of = SKH
+            }
+          }
+      }
+
+      NOT = {
+          austria_proper_area = {
+            owned_by = SKH
+            }
+          }
+      NOT = {
+          austria_proper_area = {
+            owner = {
+              is_subject_of = SKH
+              }
+          }
+      }
+
+      NOT = {
+          carinthia_area = {
+            owned_by = SKH
+            }
+          }
+      NOT = {
+          carinthia_area = {
+            owner = {
+              is_subject_of = SKH
+              }
+          }
+      }
     }
     effect = {
+      add_mil_power = 50
+      add_country_modifier = {
+        name = anti_mongol_strategy
+        duration = -1
+      }
+      transdanubia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 
   Conquest_of_Pannonia = {
     icon = mission_eastern_european_city
     required_missions = {Stop_the_Horde}
-    provinces_to_highlight = {
-    }
+    rovinces_to_highlight = {
+        OR = {
+          area = transdanubia_area
+        }
+        NOT = {owned_by = ROOT}
+      }
     trigger = {
+      transdanubia_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
     effect = {
+      add_prestige = 10
+      add_mil_power = 50
+      carpathia_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 
@@ -1138,10 +1249,25 @@ lombards_east = {
     icon = mission_eastern_european_city
     required_missions = {Conquest_of_Pannonia Conquest_of_Illyria}
     provinces_to_highlight = {
+      region = balkan_region
+      NOT = {owned_by = ROOT}
     }
     trigger = {
+      owns_core_province = 151
+      num_of_owned_provinces_with = {
+        value = 55
+        OR = {
+          region = balkan_region
+        }
+      }
     }
     effect = {
+      add_years_of_income = 2
+      add_adm_power = 100
+      add_country_modifier = {
+        name = riches_of_the_east
+        duration = -1
+      }
     }
   }
 
@@ -1173,8 +1299,11 @@ lombards_east_2 = {
     provinces_to_highlight = {
     }
     trigger = {
+      treasury = 500
+      dip_power = 200
     }
     effect = {
+    #event+incident
     }
   }
 
@@ -1183,7 +1312,7 @@ lombards_east_2 = {
     required_missions = {Disrupt_the_ERE}
     provinces_to_highlight = {
         OR = {
-          area = croatia
+          area = croatia_area
           area = bosnia_area
           area = slavonia_area
           area = bosnia_area
