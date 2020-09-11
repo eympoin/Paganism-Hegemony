@@ -134,7 +134,7 @@ Lombard_Unification_3_pav = {
       }
     trigger = {
       num_of_owned_provinces_with = {
-        value = 6
+        value = 5
         OR = {
         area = venetia_area
         area = carinthia_area
@@ -1303,7 +1303,7 @@ lombards_east_2 = {
       dip_power = 200
     }
     effect = {
-    #event+incident
+      country_event = {id = flavor_lom.2}
     }
   }
 
@@ -1326,7 +1326,7 @@ lombards_east_2 = {
       num_of_owned_provinces_with = {
         value = 21
         OR = {
-          area = croatia
+          area = croatia_area
           area = bosnia_area
           area = slavonia_area
           area = bosnia_area

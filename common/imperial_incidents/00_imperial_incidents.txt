@@ -908,15 +908,39 @@ incident_trade_competitor = {
 	}
 
 	0 = { #do nothing
-		factor = 2
+		factor = 40
 	}
 
   1 = { #faster road
-    factor = 5
+    factor = 50
   }
 
 	2 = { #secure a spice road
-		factor = 1
+		factor = 10
+	}
+
+
+}
+
+
+incident_lombard_disruption = {
+	event = flavor_lom.3
+	default_option = 0
+
+	can_stop = {
+		always = no
+	}
+
+	0 = { #war with the lombards
+		factor = 50
+	}
+
+  1 = { #try diplomatic resolution
+    factor = 2
+  }
+
+	2 = { #Let the Lombards free Illyria
+		factor = 0
 	}
 
 

@@ -1,11 +1,12 @@
 namespace = flavor_lom
 
-#Lombard choice pf culture
+#Lombard choice of culture
 country_event = {
 	id = flavor_lom.1
 	title = "flavor_lom.1.t"
 	desc = "flavor_lom.1.d"
 	picture = CIVIL_WAR_eventPicture
+	major = yes
 
 	is_triggered_only = yes
 
@@ -48,4 +49,510 @@ country_event = {
 			duration = -1
 		}
 	}
+}
+
+#incident start
+country_event = {
+  id = flavor_lom.2
+  title = flavor_lom.2.t
+  desc = flavor_lom.2.d
+  picture = HRE_eventPicture
+
+  is_triggered_only = yes
+  immediate = {
+    hidden_effect = {
+      set_global_flag = lombard_disruption_incident
+    }
+  }
+
+  major = yes
+
+
+  option = { # incident
+    name = flavor_lom.2.a
+    trigger = {
+      has_dlc = "Emperor"
+    }
+    ai_chance = {
+      factor = 1
+    }
+		set_country_flag = ere_disruption
+    set_imperial_incident = incident_lombard_disruption
+  }
+
+  option = { #if not emperor
+    trigger = {
+      NOT = {has_dlc = "Emperor"}
+    }
+    name = flavor_lom.2.a
+    ai_chance = {
+      factor = 1
+    }
+		set_country_flag = ere_disruption
+    country_event = { id = flavor_lom.3 }
+  }
+}
+
+#incident
+country_event = {
+  id = flavor_lom.3
+  title = flavor_lom.3.t
+  desc = flavor_lom.3.d
+  picture = HRE_eventPicture
+
+  is_triggered_only = yes
+  immediate = {
+    hidden_effect = {
+      set_global_flag = lombard_disruption_incident
+    }
+  }
+
+  major = yes
+
+
+  option = { # war
+    name = flavor_lom.3.a
+    ai_chance = {
+      factor = 50
+    }
+		if = {
+			limit = {
+				exists = LOM
+				LOM = {
+					has_country_flag = ere_disruption
+				}
+			}
+			emperor = {
+				declare_war_with_cb = {
+					who = LOM
+					casus_belli = cb_annex
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = WRM
+				WRM = {
+					has_country_flag = ere_disruption
+				}
+			}
+			emperor = {
+				declare_war_with_cb = {
+					who = WRM
+					casus_belli = cb_annex
+				}
+			}
+		}
+
+  }
+
+  option = { #diplomacy
+    name = flavor_lom.3.b
+    ai_chance = {
+      factor = 40
+    }
+		emperor = {
+			country_event = { id = flavor_lom.4}
+		}
+  }
+
+	option = { #letting Illyria go
+    name = flavor_lom.3.b
+    ai_chance = {
+      factor = 10
+    }
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+				capital_scope = {
+					OR = {
+					area = croatia_area
+					area = bosnia_area
+					area = slavonia_area
+					area = bosnia_area
+					area = east_adriatic_coast_area
+					area = rascia_area
+					area = serbia_area
+					}
+				}
+			}
+			set_in_empire = no
+		}
+  }
+}
+
+#diplomacy
+country_event = {
+	id = flavor_lom.4
+	title = "flavor_lom.4.t"
+	desc = "flavor_lom.4.d"
+	picture = CIVIL_WAR_eventPicture
+	major = yes
+
+	is_triggered_only = yes
+
+	option = { #negotiate an alliance with Lombardia
+		name = "flavor_lom.4.a"
+		ai_chance = {
+			factor = 50
+		}
+		every_country = {
+			limit = {
+				has_country_flag = ere_disruption
+			}
+			country_event = {id = flavor_lom.5}
+		}
+	}
+
+	option = { #negotiate territory changes with the Lombards to minimize the loss
+		name = "flavor_lom.4.b"
+		ai_chance = {
+			factor = 50
+		}
+		every_country = {
+			limit = {
+				has_country_flag = ere_disruption
+			}
+			country_event = {id = flavor_lom.6}
+		}
+	}
+
+	option = { #try to fight the lombard influence in the Illyrian courts
+		name = "flavor_lom.4.c"
+		ai_chance = {
+			factor = 50
+		}
+		add_dip_power = -400
+		add_treasury = -500
+		every_country = {
+			limit = {
+				has_country_flag = ere_disruption
+			}
+			country_event = {id = flavor_lom.7}
+		}
+	}
+}
+
+#Lombard receive alliance proposition
+country_event = {
+	id = flavor_lom.5
+	title = "flavor_lom.5.t"
+	desc = "flavor_lom.5.d"
+	picture = CIVIL_WAR_eventPicture
+	major = yes
+
+	is_triggered_only = yes
+
+	option = { #accept
+		name = "flavor_lom.5.a"
+		ai_chance = {
+			factor = 50
+		}
+		create_alliance = emperor
+		create_marriage = emperor
+		4752 = {
+			cede_province = ROOT
+		}
+		1826 = {
+			cede_province = ROOT
+		}
+		131 = {
+			cede_province = ROOT
+		}
+	}
+
+	option = { #refuse
+		name = "flavor_lom.5.b"
+		ai_chance = {
+			factor = 50
+		}
+		emeperor = {
+			country_event = {id = flavor_lom.8}
+		}
+	}
+}
+
+#Lombard receive negotiation
+country_event = {
+	id = flavor_lom.6
+	title = "flavor_lom.6.t"
+	desc = "flavor_lom.6.d"
+	picture = CIVIL_WAR_eventPicture
+	major = yes
+
+	is_triggered_only = yes
+
+	option = { #accept
+		name = "flavor_lom.6.a"
+		ai_chance = {
+			factor = 50
+		}
+		add_treasury = -1000
+		4752 = {
+			cede_province = ROOT
+		}
+		4753 = {
+			cede_province = ROOT
+		}
+		4756 = {
+			cede_province = ROOT
+		}
+		1826 = {
+			cede_province = ROOT
+		}
+		1828 = {
+			cede_province = ROOT
+		}
+		131 = {
+			cede_province = ROOT
+		}
+		152 = {
+			cede_province = ROOT
+		}
+	}
+
+	option = { #refuse
+		name = "flavor_lom.6.b"
+		ai_chance = {
+			factor = 50
+		}
+		emeperor = {
+			country_event = {id = flavor_lom.8}
+		}
+	}
+}
+
+#Lombard receive the news of the emperor inning back influence in Illyria
+country_event = {
+	id = flavor_lom.7
+	title = "flavor_lom.7.t"
+	desc = "flavor_lom.7.d"
+	picture = CIVIL_WAR_eventPicture
+	major = yes
+
+	is_triggered_only = yes
+
+	option = { #war
+		name = "flavor_lom.7.a"
+		ai_chance = {
+			factor = 50
+		}
+		declare_war_with_cb = {
+			who = emperor
+			casus_belli = cb_annex
+		}
+		croatia_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = {is_claim	= ROOT}
+			}
+			add_permanent_claim = ROOT
+		}
+		bosnia_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = {is_claim	= ROOT}
+			}
+			add_permanent_claim = ROOT
+		}
+		east_adriatic_coast_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = {is_claim	= ROOT}
+			}
+			add_permanent_claim = ROOT
+		}
+		slavonia_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = {is_claim	= ROOT}
+			}
+			add_permanent_claim = ROOT
+		}
+		rascia_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = {is_claim	= ROOT}
+			}
+			add_permanent_claim = ROOT
+		}
+		serbia_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = {is_claim	= ROOT}
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+
+	option = { #we will come back stronger
+		name = "flavor_lom.7.b"
+		ai_chance = {
+			factor = 50
+		}
+		croatia_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = {is_claim	= ROOT}
+			}
+			add_permanent_claim = ROOT
+		}
+		bosnia_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = {is_claim	= ROOT}
+			}
+			add_permanent_claim = ROOT
+		}
+		east_adriatic_coast_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = {is_claim	= ROOT}
+			}
+			add_permanent_claim = ROOT
+		}
+		slavonia_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = {is_claim	= ROOT}
+			}
+			add_permanent_claim = ROOT
+		}
+		rascia_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = {is_claim	= ROOT}
+			}
+			add_permanent_claim = ROOT
+		}
+		serbia_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = {is_claim	= ROOT}
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+}
+
+
+#negotiation fail
+country_event = {
+	id = flavor_lom.8
+	title = "flavor_lom.8.t"
+	desc = "flavor_lom.8.d"
+	picture = CIVIL_WAR_eventPicture
+	major = yes
+
+	is_triggered_only = yes
+
+	option = { #it is war then
+		name = "flavor_lom.8.a"
+		ai_chance = {
+			factor = 50
+		}
+		if = {
+			limit = {
+				exists = LOM
+				LOM = {
+					has_country_flag = ere_disruption
+				}
+			}
+			emperor = {
+				declare_war_with_cb = {
+					who = LOM
+					casus_belli = cb_annex
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				exists = WRM
+				WRM = {
+					has_country_flag = ere_disruption
+				}
+			}
+			emperor = {
+				declare_war_with_cb = {
+					who = WRM
+					casus_belli = cb_annex
+				}
+			}
+		}
+	}
+
+	option = { #do nothing then
+		name = "flavor_lom.8.b"
+		ai_chance = {
+			factor = 50
+		}
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+				capital_scope = {
+					OR = {
+					area = croatia_area
+					area = bosnia_area
+					area = slavonia_area
+					area = bosnia_area
+					area = east_adriatic_coast_area
+					area = rascia_area
+					area = serbia_area
+					}
+				}
+			}
+			set_in_empire = no
+		}
+	}
+}
+
+
+country_event = {#Peace victory of Lombards
+  id = flavor_lom.9
+  title = flavor_lom.9.t
+  desc = flavor_lom.9.d
+  picture = HRE_eventPicture
+
+  fire_only_once = yes
+
+  trigger = {
+    has_country_flag = ere_disruption
+    war_with = emperor
+    war_score = 50
+  }
+  mean_time_to_happen = {
+    days = 7
+  }
+
+  option = { #free Illyria from the Empire
+    name = flavor_lom.9.a
+    ai_chance = { factor = 1 }
+    white_peace = emperor
+    add_truce_with = emperor
+    dismantle_hre = yes
+    add_prestige = 20
+    add_legitimacy = 20
+    add_adm_power = 100
+    add_dip_power = 100
+    add_mil_power = 100
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+				capital_scope = {
+					OR = {
+					area = croatia_area
+					area = bosnia_area
+					area = slavonia_area
+					area = bosnia_area
+					area = east_adriatic_coast_area
+					area = rascia_area
+					area = serbia_area
+					}
+				}
+			}
+			set_in_empire = no
+		}
+  }
 }
