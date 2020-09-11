@@ -4707,3 +4707,16 @@ riches_of_the_east = {
   trade_steering = 0.2
   trade_efficiency = 0.1
 }
+
+german_traitor = {
+  global_unrest = 2
+  global_autonomy = 0.05
+  diplomatic_reputation = -1
+}
+heir_of_rome_lom = {
+  technology_cost = -0.05
+}
+true_german = {
+  global_unrest = -2
+  legitimacy = 1
+}

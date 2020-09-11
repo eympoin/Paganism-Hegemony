@@ -1,0 +1,51 @@
+namespace = flavor_lom
+
+#Lombard choice pf culture
+country_event = {
+	id = flavor_lom.1
+	title = "flavor_lom.1.t"
+	desc = "flavor_lom.1.d"
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #heir_of_Rome
+		name = "flavor_lom.1.a"
+		ai_chance = {
+			factor = 50
+		}
+		change_primary_culture = cisalpian
+		every_owned_province = {
+			limit = {
+				OR = {
+					culture = aquileian
+					culture = lombard
+				}
+			}
+			change_culture = cisalpian
+		}
+		add_country_modifier = {
+			name = german_traitor
+			duration = 7300
+		}
+		add_dip_power = -100
+		add_country_modifier = {
+			name = heir_of_rome_lom
+			duration = -1
+		}
+		swap_non_generic_missions = yes
+	}
+
+	option = {
+		name = "flavor_lom.1.b"
+		ai_chance = {
+			factor = 50
+		}
+		add_prestige = 10
+		add_legitimacy = 10
+		add_country_modifier = {
+			name = true_german
+			duration = -1
+		}
+	}
+}

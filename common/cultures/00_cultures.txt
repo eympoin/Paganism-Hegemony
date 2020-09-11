@@ -27,6 +27,8 @@ neo-roman={
 	narbonnais= {
 		primary = NAR
 	}
+	cisalpian= {
+	}
 	venetian = {
 		primary = VEN
 	}

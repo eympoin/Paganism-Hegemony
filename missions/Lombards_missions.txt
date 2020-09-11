@@ -688,7 +688,7 @@ lombards_italy = {
       dip_power = 100
     }
     effect = {
-      #event
+      country_event = {id = flavor_lom.1}
     }
   }
 
@@ -792,8 +792,7 @@ lombards_roman_italy = {
       was_tag = PAV
     }
     OR = {
-      primary_culture = roman
-      primary_culture = salernian
+      primary_culture = cisalpian
       }
     NOT = { map_setup = map_setup_random }
   }
@@ -844,7 +843,7 @@ lombards_roman_italy = {
   }
   Emperor_of_east_and_west_lom = {
     icon = a_roman_empire
-    required_missions = {Rome_Reborn_lom}
+    required_missions = {Rome_Reborn_lom Fall_of_western_franks control_of_the_east}
 
     provinces_to_highlight = {
      province_id = 151
