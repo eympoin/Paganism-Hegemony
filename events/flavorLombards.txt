@@ -5,7 +5,7 @@ country_event = {
 	id = flavor_lom.1
 	title = "flavor_lom.1.t"
 	desc = "flavor_lom.1.d"
-	picture = CIVIL_WAR_eventPicture
+	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
 	major = yes
 
 	is_triggered_only = yes

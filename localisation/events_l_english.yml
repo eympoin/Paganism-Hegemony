@@ -1063,3 +1063,9 @@ flavor_mda.7.c:0 "Great News"
 flavor_mda.8.t:0 "Cultural Assimilation"
 flavor_mda.8.d:0 "More and More people begin to use our custom and language"
 flavor_mda.8.e:0 "Great News"
+
+
+flavor_lom.1.t:0 "A choice of legacy"
+flavor_lom.1.d:0 "Since our arrival in Italy, the Lombard culture mixed with the Roman one. We even adopted their religions. But now that the Kingdom of the Lombards is whole once again we can choose where we go. Should we become fully roman or should we keep our Germanic heritage ?"
+flavor_lom.1.a:0 "We are the rightfull heir of Rome"
+flavor_lom.1.b:0 "Our german blood remains !"
