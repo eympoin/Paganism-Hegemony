@@ -385,7 +385,7 @@ Lombard_Unification_2_pdv = {
     }
   }
 
-  King_of_the_lombards_pdm = {
+  King_of_the_lombards_pdv = {
     icon = kingdom_of_lombardy
     required_missions = {Submit_Piedmont_pdv Take_the_throne_pdv End_aquileian_independance_pdv}
     provinces_to_highlight = {
