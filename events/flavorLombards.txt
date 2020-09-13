@@ -271,7 +271,7 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		emeperor = {
+		emperor = {
 			country_event = {id = flavor_lom.8}
 		}
 	}
@@ -321,7 +321,7 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		emeperor = {
+		emperor = {
 			country_event = {id = flavor_lom.8}
 		}
 	}
