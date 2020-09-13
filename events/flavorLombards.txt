@@ -76,6 +76,8 @@ country_event = {
     ai_chance = {
       factor = 1
     }
+		add_treasury = -500
+		add_dip_power = -200
 		set_country_flag = ere_disruption
     set_imperial_incident = incident_lombard_disruption
   }
@@ -88,6 +90,8 @@ country_event = {
     ai_chance = {
       factor = 1
     }
+		add_treasury = -500
+		add_dip_power = -200
 		set_country_flag = ere_disruption
     country_event = { id = flavor_lom.3 }
   }
@@ -158,7 +162,7 @@ country_event = {
   }
 
 	option = { #letting Illyria go
-    name = flavor_lom.3.b
+    name = flavor_lom.3.c
     ai_chance = {
       factor = 10
     }
@@ -187,7 +191,7 @@ country_event = {
 	id = flavor_lom.4
 	title = "flavor_lom.4.t"
 	desc = "flavor_lom.4.d"
-	picture = CIVIL_WAR_eventPicture
+	picture = DIPLOMACY_eventPicture
 	major = yes
 
 	is_triggered_only = yes
@@ -239,7 +243,7 @@ country_event = {
 	id = flavor_lom.5
 	title = "flavor_lom.5.t"
 	desc = "flavor_lom.5.d"
-	picture = CIVIL_WAR_eventPicture
+	picture = DIPLOMACY_eventPicture
 	major = yes
 
 	is_triggered_only = yes
@@ -278,7 +282,7 @@ country_event = {
 	id = flavor_lom.6
 	title = "flavor_lom.6.t"
 	desc = "flavor_lom.6.d"
-	picture = CIVIL_WAR_eventPicture
+	picture = DIPLOMACY_eventPicture
 	major = yes
 
 	is_triggered_only = yes
@@ -289,10 +293,10 @@ country_event = {
 			factor = 50
 		}
 		add_treasury = -1000
-		4752 = {
-			cede_province = ROOT
+		emperor = {
+			add_treasury = 1000
 		}
-		4753 = {
+		4752 = {
 			cede_province = ROOT
 		}
 		4756 = {
@@ -328,7 +332,7 @@ country_event = {
 	id = flavor_lom.7
 	title = "flavor_lom.7.t"
 	desc = "flavor_lom.7.d"
-	picture = CIVIL_WAR_eventPicture
+	picture = BATTLE_eventPicture
 	major = yes
 
 	is_triggered_only = yes
@@ -442,7 +446,7 @@ country_event = {
 	id = flavor_lom.8
 	title = "flavor_lom.8.t"
 	desc = "flavor_lom.8.d"
-	picture = CIVIL_WAR_eventPicture
+	picture = BATTLE_eventPicture
 	major = yes
 
 	is_triggered_only = yes
@@ -513,7 +517,7 @@ country_event = {#Peace victory of Lombards
   id = flavor_lom.9
   title = flavor_lom.9.t
   desc = flavor_lom.9.d
-  picture = HRE_eventPicture
+  picture = SIEGE_eventPicture
 
   fire_only_once = yes
 
@@ -537,6 +541,7 @@ country_event = {#Peace victory of Lombards
     add_adm_power = 100
     add_dip_power = 100
     add_mil_power = 100
+		clr_country_flag = ere_disruption
 		every_country = {
 			limit = {
 				is_part_of_hre = yes

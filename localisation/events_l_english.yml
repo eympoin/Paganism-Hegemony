@@ -1069,3 +1069,45 @@ flavor_lom.1.t:0 "A choice of legacy"
 flavor_lom.1.d:0 "Since our arrival in Italy, the Lombard culture mixed with the Roman one. We even adopted their religions. But now that the Kingdom of the Lombards is whole once again we can choose where we go. Should we become fully roman or should we keep our Germanic heritage ?"
 flavor_lom.1.a:0 "We are the rightfull heir of Rome"
 flavor_lom.1.b:0 "Our german blood remains !"
+
+
+flavor_lom.2.t:0 "Diruption of the ERE influence in Illyria"
+flavor_lom.2.d:0 "The Empires hold over Illyria is weak. With a little work in the court of the Illyrian princes, we can win their favours to persuade them to leave the Empire."
+flavor_lom.2.a:0 "Our influence in the east will grow !"
+
+flavor_lom.3.t:0 "The Lombards disrupt our hold on Illyria !"
+flavor_lom.3.d:0 "Our influence in Illyria is weakened by the Lombards. The court of the Illyrian princes are now hostile towards us, saying that we haven't done anything for them. If we don't act, Illyria will be lost."
+flavor_lom.3.a:0 "The Lombards will pay for this with their blood. We will show the Illyrian princes who they should fear and respect."
+flavor_lom.3.b:0 "Try to ease the tensions either with the princes or with the Lombards."
+flavor_lom.3.c:0 "Illyria is useless anyway."
+
+flavor_lom.4.t:0 "Easing the tensions"
+flavor_lom.4.d:0 "To end this crisis and prevent a war, we can either negotiate with the lombards so they stop causing chaos in our lands or negotiate with the Illyrian princes."
+flavor_lom.4.a:0 "Propose an alliance with the Lombards in exchange for territories (§YRijeka, Lika, Zagreb§!)."
+flavor_lom.4.b:0 "Exhange territories in Illyria(§YRijeka, Lika, Zagreb,Varazdin,Bjelovar§!) with money."
+flavor_lom.4.c:0 "Wi will ease the tensions with the Illyrian princes"
+
+flavor_lom.5.t:0 "The emperor ask for a trade"
+flavor_lom.5.d:0 "He has noticed our interference in the Balkans politics and ask us to stop this in exchange for an alliance with him and some territories in the Balkans"
+flavor_lom.5.a:0 "Accept this deal !"
+flavor_lom.5.b:0 "We won't accept this offer."
+
+flavor_lom.6.t:0 "The emperor ask for a trade"
+flavor_lom.6.d:0 ""He has noticed our interference in the Balkans politics and offer us a trade to stop our disruption : they offer somme territories in the Balkans in exchange for gold  "
+flavor_lom.6.a:0 "Accept this deal !"
+flavor_lom.6.b:0 "We won't accept this offer."
+
+flavor_lom.7.t:0 "The emperor fights our influence in Illyria"
+flavor_lom.7.d:0 "The emperor has managed to fight our influence in the Illyrian courts. Negotiations seems at a dead end now, the only way seems to be a war now."
+flavor_lom.7.a:0 "He will have to fight our armies now !"
+flavor_lom.7.b:0 "We are not ready for a war yet."
+
+flavor_lom.8.t:0 "The Lombards refuse the deal"
+flavor_lom.8.d:0 "What sould we do now ?"
+flavor_lom.8.a:0 "It they refuse, then they will die."
+flavor_lom.8.b:0 "Let them have Illyria, it is useless anyway."
+
+flavor_lom.9.t:0 "A choice of legacy"
+flavor_lom.9.d:0 "Since our arrival in Italy, the Lombard culture mixed with the Roman one. We even adopted their religions. But now that the Kingdom of the Lombards is whole once again we can choose where we go. Should we become fully roman or should we keep our Germanic heritage ?"
+flavor_lom.9.a:0 "We are the rightfull heir of Rome"
+flavor_lom.9.b:0 "Our german blood remains !"
