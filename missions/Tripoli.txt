@@ -1,0 +1,88 @@
+Libya_1 = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = TRP
+      was_tag = TRP
+      tag = LPT
+      was_tag = LPT
+      tag = TAC
+      was_tag = TAC
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+
+  Unify_Libya = {
+    icon = confront_the_lombards
+    required_missions = {}
+    provinces_to_highlight = {
+
+      }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+
+  end_jarawa_influence = {
+    icon = confront_the_lombards
+    required_missions = {Unify_Libya}
+    provinces_to_highlight = {
+
+      }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+
+  control_carthage = {
+    icon = confront_the_lombards
+    required_missions = {end_jarawa_influence}
+    provinces_to_highlight = {
+
+      }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+
+  conquest_of_cyreanica = {
+    icon = confront_the_lombards
+    required_missions = {}
+    provinces_to_highlight = {
+
+      }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+
+  invasion_of_egypt = {
+    icon = confront_the_lombards
+    required_missions = {conquest_of_cyreanica}
+    provinces_to_highlight = {
+
+      }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+
+
+}

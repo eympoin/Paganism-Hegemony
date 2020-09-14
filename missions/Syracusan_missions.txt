@@ -1,0 +1,83 @@
+Syracusa_1 = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = SRC
+      was_tag = SRC
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  Unify_sicilian_cities = {
+    icon = confront_the_lombards
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+
+      }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+
+  carthaginian_wars = {
+    icon = confront_the_lombards
+    required_missions = {Unify_sicilian_cities}
+    provinces_to_highlight = {
+
+      }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+
+  western_mediterranean_control_src = {
+    icon = confront_the_lombards
+    required_missions = {carthaginian_wars}
+    provinces_to_highlight = {
+
+      }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+
+  Unify_the_Grikos = {
+    icon = confront_the_lombards
+    required_missions = {}
+    provinces_to_highlight = {
+
+      }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+
+  Conquest_of_Rome = {
+    icon = confront_the_lombards
+    required_missions = {Unify_the_Grikos}
+    provinces_to_highlight = {
+
+      }
+    trigger = {
+
+    }
+    effect = {
+
+    }
+  }
+
+}
