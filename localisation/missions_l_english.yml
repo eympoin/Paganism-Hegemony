@@ -1477,3 +1477,16 @@ Conquest_of_Pannonia_desc:0 ""
 Conquest_of_Illyria_desc:0 ""
 Disrupt_the_ERE_desc:0 "Disrupt the ERE influence over Illyria"
 control_of_the_east_desc:0 ""
+
+
+Unify_sicilian_cities_desc:0 ""
+carthaginian_wars_desc:0 ""
+western_mediterranean_control_src_desc:0 ""
+Unify_the_Grikos_desc:0 ""
+Conquest_of_Rome_desc:0 ""
+
+Unify_sicilian_cities_title:0 "Sicilian city states"
+carthaginian_wars_title:0 "Carthaginians Wars"
+western_mediterranean_control_src_title:0 "Western Mediterannean control"
+Unify_the_Grikos_title:0 "Unify the Grikos"
+Conquest_of_Rome_title:0 "Conquest of Rome"

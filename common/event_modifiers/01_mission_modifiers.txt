@@ -4720,3 +4720,19 @@ true_german = {
   global_unrest = -2
   legitimacy = 1
 }
+
+western_mediterranean_monopol = {
+  trade_efficiency = 0.1
+  global_trade_power = 0.1
+}
+
+unified_people = {
+  global_unrest = -2
+  stability_cost_modifier = -0.1
+  global_autonomy = -0.05
+}
+
+greek_on_roman_throne = {
+  culture_conversion_cost = -0.25
+  prestige = 1
+}

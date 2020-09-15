@@ -10,73 +10,176 @@ Syracusa_1 = {
     NOT = { map_setup = map_setup_random }
   }
   Unify_sicilian_cities = {
-    icon = confront_the_lombards
+    icon = mission_break_sicily
     required_missions = {}
     position = 1
     provinces_to_highlight = {
-
-      }
+          OR = {
+            province_id = 4793
+            province_id = 125
+          }
+          NOT = {owned_by = ROOT}
+        }
     trigger = {
-
+      owns_core_province = 125
+      owns_core_province = 4793
     }
     effect = {
+      add_adm_power = 100
+      add_legitimacy = 10
+      western_sicily_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      corsica_sardinia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
 
     }
   }
 
   carthaginian_wars = {
-    icon = confront_the_lombards
+    icon = africa_proconsulare
     required_missions = {Unify_sicilian_cities}
     provinces_to_highlight = {
-
+        OR = {
+          area = western_sicily_area
+          area = corsica_sardinia_area
+        }
+        NOT = {owned_by = ROOT}
       }
     trigger = {
-
+      num_of_owned_provinces_with = {
+        value = 5
+        OR = {
+        area = western_sicily_area
+        area = corsica_sardinia_area
+        }
+      }
     }
     effect = {
-
+      add_mil_power = 100
+      tunisia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      byzacena_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 
   western_mediterranean_control_src = {
-    icon = confront_the_lombards
+    icon = mission_mare_nostrum
     required_missions = {carthaginian_wars}
     provinces_to_highlight = {
-
+        OR = {
+          area = tunisia_area
+          area = byzacena_area
+        }
+        NOT = {owned_by = ROOT}
       }
     trigger = {
-
+      tunisia_area = {
+        type = all
+        owned_by = ROOT
+      }
+      byzacena_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
     effect = {
-
+      add_dip_power = 100
+      add_country_modifier = {
+        name = western_mediterranean_monopol
+        duration = -1
+      }
+      baleares_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 
   Unify_the_Grikos = {
-    icon = confront_the_lombards
+    icon = renaissance_city
     required_missions = {}
     provinces_to_highlight = {
-
+        culture = Griko
+        NOT = {owned_by = ROOT}
       }
     trigger = {
-
+      owns_all_provinces = {
+        culture = Griko
+      }
     }
     effect = {
-
+      add_prestige = 10
+      add_country_modifier = {
+        name = unified_people
+        duration = -1
+      }
+      lazio_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      naples_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 
   Conquest_of_Rome = {
-    icon = confront_the_lombards
+    icon = a_real_roman_empire
     required_missions = {Unify_the_Grikos}
     provinces_to_highlight = {
-
+        OR = {
+          area = lazio_area
+          area = naples_area
+        }
+        NOT = {owned_by = ROOT}
       }
     trigger = {
-
+      lazio_area = {
+        type = all
+        owned_by = ROOT
+      }
+      naples_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
     effect = {
-
+      add_years_of_income = 1
+      add_country_modifier = {
+        name = greek_on_roman_throne
+        duration = -1
+      }
     }
   }
 
