@@ -4196,6 +4196,7 @@ range = 0.1
 }
 western_mediterranean_control = {
 trade_efficiency = 0.1
+global_trade_power
 }
 
 the_eternal_city_mod = {

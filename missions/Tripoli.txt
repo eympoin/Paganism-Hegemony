@@ -15,72 +15,175 @@ Libya_1 = {
   }
 
   Unify_Libya = {
-    icon = confront_the_lombards
+    icon = mission_control_the_barbary_coast
     required_missions = {}
     provinces_to_highlight = {
-
+        OR = {
+          area = tripolitania_area
+          area = djerba_area
+        }
+        NOT = {owned_by = ROOT}
       }
     trigger = {
-
+      tripolitania_area = {
+        type = all
+        owned_by = ROOT
+      }
+      djerba_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
     effect = {
+      add_adm_power = 100
 
+      fezzan_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      north_saharan_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 
   end_jarawa_influence = {
-    icon = confront_the_lombards
+    icon = mission_bedouins
     required_missions = {Unify_Libya}
     provinces_to_highlight = {
-
+        OR = {
+          area = fezzan_area
+          area = north_saharan_area
+        }
+        NOT = {owned_by = ROOT}
       }
     trigger = {
-
+      fezzan_area = {
+        type = all
+        owned_by = ROOT
+      }
+      north_saharan_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
     effect = {
-
+      add_mil_power = 100
+      tunisia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      byzacena_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 
   control_carthage = {
-    icon = confront_the_lombards
+    icon = africa_proconsulare
     required_missions = {end_jarawa_influence}
     provinces_to_highlight = {
-
+      OR = {
+        area = tunisia_area
+        area = byzacena_area
+      }
+      NOT = {owned_by = ROOT}
       }
     trigger = {
-
+      byzacena_area = {
+        type = all
+        owned_by = ROOT
+      }
+      tunisia_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
     effect = {
-
+      add_dip_power = 100
+      add_country_modifier = {
+        name = western_mediterranean_control
+        duration = -1
+      }
     }
   }
 
   conquest_of_cyreanica = {
-    icon = confront_the_lombards
+    icon = mission_build_up_to_force_limit
     required_missions = {}
     provinces_to_highlight = {
-
+    OR = {
+      area = cyrenaica_area
+    }
+    NOT = {owned_by = ROOT}
       }
     trigger = {
-
+      cyrenaica_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
     effect = {
-
+    egypt_region = {
+      limit = {
+        NOT = { is_core = ROOT }
+        NOT = { is_permanent_claim = ROOT }
+      }
+      add_permanent_claim = ROOT
+    }
     }
   }
 
   invasion_of_egypt = {
-    icon = confront_the_lombards
+    icon = mission_egyptian_mamluk_soldier
     required_missions = {conquest_of_cyreanica}
     provinces_to_highlight = {
-
+    OR = {
+      area = delta_area
+      area = bahari_area
       }
+      NOT = {owned_by = ROOT}
+    }
     trigger = {
-
+    delta_area = {
+      type = all
+      owned_by = ROOT
+    }
+    bahari_area = {
+      type = all
+      owned_by = ROOT
     }
     effect = {
-
+    every_owned_province = {
+      limit = {
+        region = maghreb_region
+        trade_goods = grain
+      }
+      add_province_modifier = {
+        name = granary_of_the_mediterranean
+        duration = -1
+      }
+    }
+    change_price = {
+      trade_goods = grain
+      key = grain_monopol
+      value = 0.25
+      duration = -1
+      }
     }
   }
 
