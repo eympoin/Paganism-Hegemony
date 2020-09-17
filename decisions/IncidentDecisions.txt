@@ -1,0 +1,61 @@
+country_decisions = {
+	great_peasants_war_emperor_decision = {
+		major = yes
+		potential = {
+			has_global_flag = great_peasants_war_flag
+			is_emperor = yes
+		}		
+		allow = {
+			NOT = { active_imperial_incident = any }
+			custom_trigger_tooltip = {
+				tooltip = high_peasant_score_emperor_tt # need X score. current score is Y.
+				1 = {
+					OR = {
+						NOT = {
+							check_variable = {
+								which = GPW_counting_variable
+								value = -10
+							}
+						}
+						check_variable = {
+							which = GPW_counting_variable
+							value = 10
+						}
+					}
+				}
+			}
+		}		
+		effect = {
+			set_imperial_incident = incident_great_peasants_war
+		}		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	great_peasants_war_peasant_decision = {
+		major = yes
+		potential = {
+			has_global_flag = great_peasants_war_flag
+			has_reform = peasants_republic
+			is_part_of_hre = yes
+		}		
+		allow = {
+			NOT = { active_imperial_incident = any }
+			custom_trigger_tooltip = {
+				tooltip = high_peasant_score__peasant_tt # need X score. current score is Y.
+				1 = {
+					check_variable = {
+						which = GPW_counting_variable
+						value = 10
+					}
+				}
+			}
+		}		
+		effect = {
+			set_imperial_incident = incident_great_peasants_war
+		}		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
