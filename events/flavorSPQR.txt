@@ -141,6 +141,7 @@ country_event = {#The flight of the Senator
     118 = {
       add_center_of_trade_level = -1
       add_devastation = 25
+      set_province_flag = ostia_burned
     }
     random_list = {
       95 = {

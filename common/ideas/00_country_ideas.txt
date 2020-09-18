@@ -2290,7 +2290,7 @@ SPQ_ideas = {
 		legitimacy = 1
 	}
 	roma_aeterna = {
-		prestige = 1
+		prestige_decay = -0.02
 		years_of_nationalism = -5
 	}
 

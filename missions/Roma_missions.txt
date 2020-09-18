@@ -16,9 +16,21 @@ Roma_Unification_1 = {
 		required_missions = {  } #None
 		position = 1
 		trigger = {
+			OR = {
+				government = republic
+				AND = {
+					has_country_modifier = unrest_stirred_spqr
+					government = monarchy
+				}
+				is_year = 1460
+			}
 
 		}
 		effect = {
+				add_country_modifier = {
+					name = stabilize_the_country
+					duration = 7300
+				}
 			}
 	}
 
@@ -27,9 +39,32 @@ Roma_Unification_1 = {
 		required_missions = { the_revolution }
 		position = 2
 		trigger = {
+			has_country_modifier = wounds_of_bloody_war_spq
+			dip_power = 200
 		}
 		effect = {
+				add_dip_power = -200
+				remove_country_modifier = wounds_of_bloody_war_spq
+				if = {
+					limit = {
+						government = republic
+					}
+					add_country_modifier = {
+						name = birthed_by_cw_spq
+						duration = 14600
+					}
 				}
+				if = {
+					limit = {
+						government = monarchy
+					}
+					add_country_modifier = {
+						name = bloodthirsty_heritage_spq
+						duration = 14600
+					}
+				}
+
+		}
 	}
 
 	reconstruct_the_realm = {
@@ -37,18 +72,77 @@ Roma_Unification_1 = {
 		required_missions = { restore_diplomatic_relations }
 		position = 3
 		trigger = {
+			adm_power = 200
+			treasury = 500
 		}
 		effect = {
+				add_adm_power = -200
+				add_treasury = -500
+				118 = {
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
 				}
+				random_owned_province = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+				random_owned_province = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+				random_owned_province = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+				random_owned_province = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+			}
 	}
 
 	retake_former_provinces = {
 		icon = mission_eastern_european_city
 		required_missions = { reconstruct_the_realm }
+		provinces_to_highlight = {
+        OR = {
+          area = central_italy_area
+          area = lazio_area
+					area = emilia_romagna_area
+					area = tuscany_area
+        }
+        NOT = {owned_by = ROOT}
+      }
 		trigger = {
+			central_italy_area = {
+				type = all
+				owned_by = ROOT
+			}
+			lazio_area = {
+				type = all
+				owned_by = ROOT
+			}
+			emilia_romagna_area = {
+				type = all
+				owned_by = ROOT
+			}
+			tuscany_area = {
+				type = all
+				owned_by = ROOT
+			}
 		}
 		effect = {
-				}
+			add_years_of_income = 1
+			add_country_modifier = {
+				name = roman_authority_restored
+				duration = 3650
+			}
+		}
 	}
 
 	southern_city_states = {
@@ -243,29 +337,74 @@ rebuild_1 = {
 			icon = mission_eastern_european_city
 			required_missions = { the_revolution } #None
 			position = 2
+			provinces_to_highlight = {
+				province_id = 118
+			}
 			trigger = {
-
+				118 = {
+					has_building = temple
+					has_building = marketplace
+					has_building = fort_15th
+					has_building = workshop
+					has_building = dock
+				}
 			}
 			effect = {
+				add_years_of_income = 1
+				118 = {
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
 				}
+			}
 		}
 
 		make_rome_great_again = {
 			icon = mission_eastern_european_city
 			required_missions = { rebuild_the_realm }
+			provinces_to_highlight = {
+				province_id = 118
+			}
 			trigger = {
+			 118 = {
+			 		has_province_modifier = coliseus
+					has_province_modifier = circus_maximus
+					has_province_modifier = ostia_port
+					has_province_modifier = pantheon
+					has_province_modifier = aurelian_walls
+					has_province_modifier = new_forum
+			 }
+			}
+			118 = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
 			}
 			effect = {
-					}
+				add_country_modifier = {
+					name = country_of_wonders
+					duration = -1
+				}
+			}
 		}
 
 		Greatest_City = {
 			icon = mission_eastern_european_city
 			required_missions = { make_rome_great_again }
 			trigger = {
+				118 = {
+					development = 50
+				}
 			}
 			effect = {
+					118 = {
+						add_base_tax = 2
+						add_base_production = 2
+						add_base_manpower = 2
 					}
+					add_adm_power = 200
+					add_years_of_income = 2
+				}
 		}
 }
 

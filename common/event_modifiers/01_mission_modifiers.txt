@@ -4737,3 +4737,58 @@ greek_on_roman_throne = {
   culture_conversion_cost = -0.25
   prestige = 1
 }
+
+stabilize_the_country = {
+  stability_cost_modifier = -0.2
+}
+
+roman_authority_restored = {
+  global_unrest = -2
+  global_autonomy = -0.05
+}
+
+coliseus = {
+  global_unrest = -2
+  stability_cost_modifier = -0.2
+  local_development_cost = -0.05
+}
+
+circus_maximus = {
+  prestige = 1
+  cavalry_power = 0.15
+  local_development_cost = -0.05
+}
+
+new_forum = {
+  production_efficiency = 0.15
+  trade_goods_size_modifier = 0.3
+  global_institution_spread = 0.1
+  local_development_cost = -0.05
+}
+
+pantheon = {
+  missionaries = 1
+  global_missionary_strength = 0.03
+  local_development_cost = -0.05
+}
+
+ostia_port = {
+  global_trade_power = 0.15
+  trade_efficiency = 0.15
+  navy_tradition = 1
+  local_development_cost = -0.05
+}
+
+aurelian_walls = {
+  army_tradition = 1
+  local_defensiveness = 0.5
+  fort_level = 2
+  local_hostile_attrition = 5
+}
+
+country_of_wonders = {
+  build_cost = -0.15
+  development_cost = -0.1
+  prestige = 1
+  monthly_splendor = 1	
+}

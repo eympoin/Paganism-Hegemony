@@ -226,4 +226,260 @@ country_decisions = {
 			factor = 1
 		}
   }
+
+  renovate_coliseus = {
+    major = yes
+    potential = {
+    OR = {
+      tag = SPQ
+      was_tag = SPQ
+      tag = WRM
+      was_tag = WRM
+      }
+      118 = {
+        NOT = {has_province_modifier = coliseus}
+      }
+    }
+    provinces_to_highlight = {
+      province_id = 118
+    }
+    allow = {
+      is_nomad = no
+      is_at_war = no
+      owns_core_province = 118
+      treasury = 500
+    }
+    effect = {
+    add_treasury = -500
+    add_prestige = 10
+    add_legitimacy = 10
+    118 = {
+      add_province_modifier = {
+        name = coliseus
+        duration = -1
+      }
+    }
+  }
+  }
+
+  renovate_circus_maximus = {
+    major = yes
+    potential = {
+    OR = {
+      tag = SPQ
+      was_tag = SPQ
+      tag = WRM
+      was_tag = WRM
+      }
+      118 = {
+        NOT = {has_province_modifier = circus_maximus}
+      }
+    }
+    provinces_to_highlight = {
+      province_id = 118
+    }
+    allow = {
+      is_nomad = no
+      is_at_war = no
+      owns_core_province = 118
+      treasury = 500
+    }
+    effect = {
+      add_treasury = -500
+      add_prestige = 10
+      add_legitimacy = 10
+      118 = {
+        add_province_modifier = {
+          name = circus_maximus
+          duration = -1
+        }
+      }
+    }
+  }
+
+  a_new_forum = {
+    major = yes
+    potential = {
+    OR = {
+      tag = SPQ
+      was_tag = SPQ
+      tag = WRM
+      was_tag = WRM
+      }
+      118 = {
+        NOT = {has_province_modifier = new_forum}
+      }
+    }
+    provinces_to_highlight = {
+      province_id = 118
+    }
+    allow = {
+      is_nomad = no
+      is_at_war = no
+      owns_core_province = 118
+      treasury = 600
+    }
+    effect = {
+      add_treasury = -600
+      add_prestige = 10
+      add_legitimacy = 10
+      118 = {
+        add_province_modifier = {
+          name = new_forum
+          duration = -1
+        }
+      }
+    }
+  }
+
+  restore_the_pantheon = {
+    major = yes
+    potential = {
+    OR = {
+      tag = SPQ
+      was_tag = SPQ
+      tag = WRM
+      was_tag = WRM
+      }
+      118 = {
+        NOT = {has_province_modifier = pantheon}
+      }
+    }
+    provinces_to_highlight = {
+      province_id = 118
+    }
+    allow = {
+      is_nomad = no
+      is_at_war = no
+      owns_core_province = 118
+      treasury = 800
+    }
+    effect = {
+      add_treasury = -800
+      add_prestige = 10
+      add_legitimacy = 10
+      add_adm_power = 100
+      118 = {
+        add_province_modifier = {
+          name = pantheon
+          duration = -1
+        }
+      }
+    }
+  }
+
+  rebuild_ostia = {
+    major = yes
+    potential = {
+    OR = {
+      tag = SPQ
+      was_tag = SPQ
+      tag = WRM
+      was_tag = WRM
+      }
+      118 = {
+        has_province_flag = ostia_burned
+      }
+      118 = {
+        NOT = {has_province_modifier = ostia_port}
+      }
+    }
+    provinces_to_highlight = {
+      province_id = 118
+    }
+    allow = {
+      is_nomad = no
+      is_at_war = no
+      owns_core_province = 118
+      treasury = 1000
+    }
+    effect = {
+      clr_province_flag = ostia_burned
+      add_treasury = -1000
+      add_prestige = 10
+      add_legitimacy = 10
+      add_dip_power = 100
+      118 = {
+        add_center_of_trade_level = 1
+        add_province_modifier = {
+          name = ostia_port
+          duration = -1
+        }
+      }
+    }
+  }
+
+  renovate_ostia = {
+    major = yes
+    potential = {
+    OR = {
+      tag = SPQ
+      was_tag = SPQ
+      tag = WRM
+      was_tag = WRM
+      }
+      118 = {
+        NOT = {has_province_flag = ostia_burned}
+      }
+    }
+    provinces_to_highlight = {
+      province_id = 118
+    }
+    allow = {
+      is_nomad = no
+      is_at_war = no
+      owns_core_province = 118
+      treasury = 600
+    }
+    effect = {
+      add_treasury = -600
+      add_prestige = 10
+      add_legitimacy = 10
+      add_dip_power = 100
+      118 = {
+        add_center_of_trade_level = 1
+        add_province_modifier = {
+          name = ostia_port
+          duration = -1
+        }
+      }
+    }
+  }
+
+  restore_aurelian_walls = {
+    major = yes
+    potential = {
+    OR = {
+      tag = SPQ
+      was_tag = SPQ
+      tag = WRM
+      was_tag = WRM
+      }
+      118 = {
+        NOT = {has_province_modifier = aurelian_walls}
+      }
+    }
+    provinces_to_highlight = {
+      province_id = 118
+    }
+    allow = {
+      is_nomad = no
+      is_at_war = no
+      owns_core_province = 118
+      treasury = 500
+    }
+    effect = {
+      add_treasury = -500
+      add_prestige = 10
+      add_legitimacy = 10
+      add_mil_power = 100
+      118 = {
+        add_province_modifier = {
+          name = aurelian_walls
+          duration = -1
+        }
+      }
+    }
+  }
+
 }
