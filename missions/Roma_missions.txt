@@ -12,7 +12,7 @@ Roma_Unification_1 = {
 	has_country_shield = yes
 
 	the_revolution = {
-		icon = mission_eastern_european_city
+		icon = defenestrate_the_heretics
 		required_missions = {  } #None
 		position = 1
 		trigger = {
@@ -35,7 +35,7 @@ Roma_Unification_1 = {
 	}
 
 	restore_diplomatic_relations = {
-		icon = mission_eastern_european_city
+		icon = mission_alliances
 		required_missions = { the_revolution }
 		position = 2
 		trigger = {
@@ -68,7 +68,7 @@ Roma_Unification_1 = {
 	}
 
 	reconstruct_the_realm = {
-		icon = mission_eastern_european_city
+		icon = take_the_littoral
 		required_missions = { restore_diplomatic_relations }
 		position = 3
 		trigger = {
@@ -107,7 +107,7 @@ Roma_Unification_1 = {
 	}
 
 	retake_former_provinces = {
-		icon = mission_eastern_european_city
+		icon = conquer_tuscany
 		required_missions = { reconstruct_the_realm }
 		provinces_to_highlight = {
         OR = {
@@ -334,7 +334,7 @@ rebuild_1 = {
 		has_country_shield = yes
 
 		rebuild_the_realm = {
-			icon = mission_eastern_european_city
+			icon = mission_early_game_buildings
 			required_missions = { the_revolution } #None
 			position = 2
 			provinces_to_highlight = {
@@ -360,7 +360,7 @@ rebuild_1 = {
 		}
 
 		make_rome_great_again = {
-			icon = mission_eastern_european_city
+			icon = public_works
 			required_missions = { rebuild_the_realm }
 			provinces_to_highlight = {
 				province_id = 118
@@ -389,7 +389,7 @@ rebuild_1 = {
 		}
 
 		Greatest_City = {
-			icon = mission_eastern_european_city
+			icon = a_place_among_the_great_powers
 			required_missions = { make_rome_great_again }
 			trigger = {
 				118 = {
@@ -405,6 +405,25 @@ rebuild_1 = {
 					add_adm_power = 200
 					add_years_of_income = 2
 				}
+		}
+
+		reform_the_administration = {
+			icon = standardize_relazioni
+			required_missions = { reform_trade southern_city_states }
+			position = 6
+			trigger = {
+				stability = 3
+				OR = {
+					legitimacy = 100
+					republican_tradition = 100
+				}
+			}
+			effect = {
+				add_country_modifier = {
+					name = reformed_administration
+					duration = -1
+				}
+			}
 		}
 }
 
@@ -436,37 +455,55 @@ rebuild_2 = {
 		has_country_shield = yes
 
 		reform_the_army = {
-			icon = mission_eastern_european_city
+			icon = mission_assemble_an_army
 			required_missions = { rebuild_the_realm } #None
 			position = 3
 			trigger = {
-
+				manpower_percentage = 0.80
+				army_size_percentage = 0.9
+				army_professionalism = 0.25
+				army_tradition = 75
 			}
 			effect = {
+				add_country_modifier = {
+					name = reformed_army
+					duration = -1
 				}
+			}
 		}
 
 		reform_the_navy = {
-			icon = mission_eastern_european_city
+			icon = mission_establish_high_seas_navy
 			required_missions = { reform_the_army }
 			trigger = {
+				navy_size_percentage = 0.9
+				navy_tradition = 50
 			}
 			effect = {
-					}
+				add_country_modifier = {
+					name = reformed_navy
+					duration = -1
+				}
+			}
 		}
 
 		reform_trade = {
-			icon = mission_eastern_european_city
+			icon = mission_dominate_home_trade_node
 			required_missions = { reform_the_navy }
 			trigger = {
+				mercantilism = 20
 			}
 			effect = {
-					}
+				add_country_modifier = {
+					name = reformed_trade
+					duration = -1
+				}
+			}
 		}
 }
 
 
-rebuild_2 = {
+WRM_unification_3 = {
 		slot = 4
 		generic = no
 		ai = yes

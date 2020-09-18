@@ -283,3 +283,23 @@ the_roman_debt_spq_title:0 "The roman debt"
 the_roman_debt_spq_desc:0 "With the massive debt draining our coffers ever drier we cannot do anything but rely on those who have honed their financial skills over decades. Let us ask the burghers to help us out, this will make them powerful, but we have no choice."
 roman_nation_title:0 "Claim the Roman title"
 roman_nation_desc:0 "With the city of Roma in our grasp we can proclaim ourselves as the heirs of the Rome of old."
+
+restore_aurelian_walls_title:0 "Restore the Aurelian Walls"
+restore_aurelian_walls_desc:0 "The Aurelian Walls have served city well, but they are damaged and old, it is time to restore them !"
+renovate_ostia_title:0 "Renovate Ostia"
+renovate_ostia_desc:0 "The port of Ostia lost a lot of its traffic and almost fell into desuetude since the fall of the Western Roman Empire. If we want the Mediterannean to be our Mare nostrum again, we have to renovate the port and make it attractive. "
+
+rebuild_ostia_title:0 "Rebuild Ostia"
+rebuild_ostia_desc:0 "The port was burned by the King to prevent the escape of the senators. We have to rebuild it if we want to have an access to the sea."
+
+restore_the_pantheon_title:0 "Restore the Pantheon"
+restore_the_pantheon_desc:0 "The Pantheon like so many monuments of our cities was neglected these last centuries. It needs a fresh renovation in order to be the great temple it once was."
+
+renovate_circus_maximus_title:0 "Restore the Circus Maximus"
+renovate_circus_maximus_desc:0 "The Pantheon like so many monuments of our cities was neglected these last centuries. It needs a fresh renovation in order to be the great Circus it once was."
+
+renovate_coliseus_title:0 "Restore the Colosseum"
+renovate_coliseus_desc:0 "The Colosseum like so many monuments of our cities was neglected these last centuries. It needs a fresh renovation in order to be the great amphitheatre it once was."
+
+a_new_forum_title:0 "A new Forum"
+a_new_forum_desc:0 "The old forum has suffered a lot from these decades of war. A new one would be the start of a new era for ROme."
