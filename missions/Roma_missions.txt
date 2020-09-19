@@ -142,25 +142,97 @@ Roma_Unification_1 = {
 				name = roman_authority_restored
 				duration = 3650
 			}
+			apulia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+			naples_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
 		}
 	}
 
 	southern_city_states = {
 		icon = mission_eastern_european_city
 		required_missions = { retake_former_provinces }
+		provinces_to_highlight = {
+        OR = {
+          area = naples_area
+					province_id = 2985
+					province_id = 4733
+        }
+        NOT = {owned_by = ROOT}
+      }
 		trigger = {
+			owns_core_province = 4733
+			owns_core_province = 2985
+			naples_area = {
+				type = all
+				owned_by = ROOT
+			}
 		}
 		effect = {
-				}
+			add_adm_power = 50
+			calabria_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+			sicily_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+		}
 	}
 
 	fight_greek_influence = {
 		icon = mission_eastern_european_city
 		required_missions = { southern_city_states }
+		provinces_to_highlight = {
+        culture = Griko
+        NOT = {owned_by = ROOT}
+      }
 		trigger = {
+			owns_all_provinces = {
+				culture = Griko
+				}
 		}
 		effect = {
-				}
+			add_dip_power = 50
+				western_sicily_area = {
+	        limit = {
+	          NOT = { owned_by = ROOT }
+	          NOT = {is_claim	= ROOT}
+	        }
+	        add_permanent_claim = ROOT
+	      }
+				corsica_sardinia_area = {
+	        limit = {
+	          NOT = { owned_by = ROOT }
+	          NOT = {is_claim	= ROOT}
+	        }
+	        add_permanent_claim = ROOT
+	      }
+				baleares_area = {
+	        limit = {
+	          NOT = { owned_by = ROOT }
+	          NOT = {is_claim	= ROOT}
+	        }
+	        add_permanent_claim = ROOT
+	      }
+			}
 	}
 
 	recognization_of_the_ere = {
@@ -169,7 +241,8 @@ Roma_Unification_1 = {
 		trigger = {
 		}
 		effect = {
-				}
+			#event
+			}
 	}
 
 
@@ -249,30 +322,164 @@ Roma_Unification_2 = {
 			icon = mission_eastern_european_city
 			required_missions = { retake_former_provinces } #None
 			position = 5
+			provinces_to_highlight = {
+					OR = {
+	        	culture = lombard
+						culture = aquileian
+						}
+	        NOT = {owned_by = ROOT}
+	      }
 			trigger = {
-
-			}
-			effect = {
+				owns_all_provinces = {
+					OR = {
+						culture = lombard
+						culture = aquileian
+						}
+					}
 				}
+			effect = {
+				118 = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+				add_mil_power = 100
+				add_country_modifier = {
+					name = "no_barbarian_in_italy"
+					duration = -1
+				}
+				provence_area = {
+	        limit = {
+	          NOT = { owned_by = ROOT }
+	          NOT = {is_claim	= ROOT}
+	        }
+	        add_permanent_claim = ROOT
+	      }
+				languedoc_area = {
+	        limit = {
+	          NOT = { owned_by = ROOT }
+	          NOT = {is_claim	= ROOT}
+	        }
+	        add_permanent_claim = ROOT
+	      }
+				pyrenees_area = {
+	        limit = {
+	          NOT = { owned_by = ROOT }
+	          NOT = {is_claim	= ROOT}
+	        }
+	        add_permanent_claim = ROOT
+	      }
+				guyenne_area = {
+	        limit = {
+	          NOT = { owned_by = ROOT }
+	          NOT = {is_claim	= ROOT}
+	        }
+	        add_permanent_claim = ROOT
+	      }
+				savoy_dauphine_area = {
+	        limit = {
+	          NOT = { owned_by = ROOT }
+	          NOT = {is_claim	= ROOT}
+	        }
+	        add_permanent_claim = ROOT
+	      }
+				south_german_region = {
+	        limit = {
+	          NOT = { owned_by = ROOT }
+	          NOT = {is_claim	= ROOT}
+	        }
+	        add_permanent_claim = ROOT
+	      }
+			}
 		}
 
 		reclaim_gaul = {
 			icon = mission_eastern_european_city
 			required_missions = { lombard_revenge }
+			provinces_to_highlight = {
+	        OR = {
+	          area = guyenne_area
+	          area = provence_area
+						area = pyrenees_area
+						area = languedoc_area
+						area = savoy_dauphine_area
+	        }
+	        NOT = {owned_by = ROOT}
+	      }
 			trigger = {
+				guyenne_area = {
+					type = all
+					owned_by = ROOT
+				}
+				provence_area = {
+					type = all
+					owned_by = ROOT
+				}
+				pyrenees_area = {
+					type = all
+					owned_by = ROOT
+				}
+				languedoc_area = {
+					type = all
+					owned_by = ROOT
+				}
+				savoy_dauphine_area = {
+					type = all
+					owned_by = ROOT
+				}
 			}
 			effect = {
-					}
+				118 = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+				add_adm_power = 75
+				add_country_modifier = {
+					name = rich_cities_of_gaul
+					duration = -1
+				}
+				france_region = {
+	        limit = {
+	          NOT = { owned_by = ROOT }
+	          NOT = {is_claim	= ROOT}
+	        }
+	        add_permanent_claim = ROOT
+	      }
+				iberia_region = {
+	        limit = {
+	          NOT = { owned_by = ROOT }
+	          NOT = {is_claim	= ROOT}
+	        }
+	        add_permanent_claim = ROOT
+	      }
+			}
 		}
 
 		Submit_hispanian_states = {
 			icon = mission_eastern_european_city
 			required_missions = { reclaim_gaul }
 			position = 8
+			provinces_to_highlight = {
+	        OR = {
+	          region = iberia_region
+	        }
+	        NOT = {owned_by = ROOT}
+	      }
 			trigger = {
+				iberia_region = {
+					type = all
+					owned_by = ROOT
+				}
 			}
 			effect = {
-					}
+				add_years_of_income = 1
+				add_adm_power = 100
+				add_country_modifier = {
+					name = iberian_horses
+					duration = -1
+				}
+			}
 		}
 }
 
@@ -294,29 +501,130 @@ Roma_Unification_2 = {
 			icon = mission_eastern_european_city
 			required_missions = { lombard_revenge } #None
 			position = 6
+			provinces_to_highlight = {
+	        OR = {
+	          region = south_german_region
+	        }
+	        NOT = {owned_by = ROOT}
+	      }
 			trigger = {
-
+				south_german_region = {
+					type = all
+					owned_by = ROOT
+				}
 			}
 			effect = {
+				add_mil_power = 100
+				118 = {
+		      add_base_tax = 1
+		      add_base_production = 1
+		      add_base_manpower = 1
+		    }
+				north_german_region = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						NOT = {is_claim	= ROOT}
+					}
+					add_permanent_claim = ROOT
 				}
+			}
 		}
 
 		Push_back_the_Franks = {
 			icon = mission_eastern_european_city
 			required_missions = { reclaim_gaul }
+			provinces_to_highlight = {
+	        OR = {
+	          region = france_region
+	        }
+	        NOT = {owned_by = ROOT}
+	      }
 			trigger = {
+				france_region = {
+					type = all
+					owned_by = ROOT
+				}
 			}
 			effect = {
+				118 = {
+		      add_base_tax = 1
+		      add_base_production = 1
+		      add_base_manpower = 1
+		    }
+				british_isles_region = {
+					limit = {
+						NOT = { owned_by = ROOT }
+						NOT = {is_claim	= ROOT}
 					}
+					add_permanent_claim = ROOT
+				}
+			}
 		}
 
 		Save_londinium = {
 			icon = mission_eastern_european_city
 			required_missions = { Push_back_the_Franks }
-			trigger = {
-			}
-			effect = {
-					}
+			provinces_to_highlight = {
+	      OR = {
+	        area = home_counties_area
+	        area = wessex_area
+	        area = east_anglia_area
+	        area = west_midlands_area
+	        area = east_midlands_area
+	        area = wales_area
+	        area = yorkshire_area
+	        area = scottish_marches_area
+	      }
+	      NOT = {owned_by = ROOT}
+	    }
+
+	    trigger = {
+	    home_counties_area = {
+	      type = all
+	      owned_by = ROOT
+	    }
+	    wessex_area = {
+	      type = all
+	      owned_by = ROOT
+	    }
+	    east_anglia_area = {
+	      type = all
+	      owned_by = ROOT
+	    }
+	    west_midlands_area = {
+	      type = all
+	      owned_by = ROOT
+	    }
+	    east_midlands_area = {
+	      type = all
+	      owned_by = ROOT
+	    }
+	    wales_area = {
+	      type = all
+	      owned_by = ROOT
+	    }
+	    yorkshire_area = {
+	      type = all
+	      owned_by = ROOT
+	    }
+	    scottish_marches_area = {
+	      type = all
+	      owned_by = ROOT
+	    }
+	    }
+	    effect = {
+	      118 = {
+	        add_base_tax = 1
+	        add_base_production = 1
+	        add_base_manpower = 1
+	      }
+	      add_prestige = 10
+	      add_adm_power = 100
+	      add_country_modifier = {
+	        name = "britannia_restoration"
+	        duration = 7300
+	      }
+	    }
 		}
 }
 

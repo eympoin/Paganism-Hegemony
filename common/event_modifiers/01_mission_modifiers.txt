@@ -4814,3 +4814,14 @@ reformed_trade = {
 reformed_administration = {
   country_admin_power = 1
 }
+
+no_barbarian_in_italy = {
+    global_tax_modifier = 0.05
+    governing_capacity = 200
+    years_of_nationalism = -2
+}
+
+rich_cities_of_gaul = {
+  production_efficiency = 0.05
+  global_tax_modifier = 0.05
+}
