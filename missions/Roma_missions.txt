@@ -825,23 +825,112 @@ WRM_unification_3 = {
 		has_country_shield = yes
 
 		mare_nostrum = {
-			icon = mission_eastern_european_city
+			icon = mission_invade_island
 			required_missions = { fight_greek_influence }
 			position = 7
+			provinces_to_highlight = {
+	        OR = {
+	          area = corsica_sardinia_area
+	          area = western_sicily_area
+						area = baleares_area
+	        }
+	        NOT = {owned_by = ROOT}
+	      }
 			trigger = {
-
+				corsica_sardinia_area = {
+					type = all
+					owned_by = ROOT
+				}
+				western_sicily_area = {
+					type = all
+					owned_by = ROOT
+				}
+				baleares_area = {
+		      type = all
+		      owned_by = ROOT
+		    }
 			}
 			effect = {
+				add_dip_power = 50
+				add_country_modifier = {
+					name = protected_coast
+					duraton = 7300
 				}
+				tunisia_area = {
+	        limit = {
+	          NOT = { owned_by = ROOT }
+	          NOT = {is_claim	= ROOT}
+	        }
+	        add_permanent_claim = ROOT
+	      }
+				byzacena_area = {
+	        limit = {
+	          NOT = { owned_by = ROOT }
+	          NOT = {is_claim	= ROOT}
+	        }
+	        add_permanent_claim = ROOT
+	      }
+				djerba_area = {
+	        limit = {
+	          NOT = { owned_by = ROOT }
+	          NOT = {is_claim	= ROOT}
+	        }
+	        add_permanent_claim = ROOT
+	      }
+				tripolitania_area = {
+	        limit = {
+	          NOT = { owned_by = ROOT }
+	          NOT = {is_claim	= ROOT}
+	        }
+	        add_permanent_claim = ROOT
+	      }
+			}
 		}
 
 		granary_of_the_west = {
-			icon = mission_eastern_european_city
+			icon = africa_proconsulare
 			required_missions = { mare_nostrum }
+			provinces_to_highlight = {
+	        OR = {
+	          area = byzacena_area
+	          area = tunisia_area
+						area = djerba_area
+						area = tripolitania_area
+	        }
+	        NOT = {owned_by = ROOT}
+	      }
 			trigger = {
+				byzacena_area = {
+					type = all
+					owned_by = ROOT
+				}
+				tunisia_area = {
+					type = all
+					owned_by = ROOT
+				}
+				djerba_area = {
+					type = all
+					owned_by = ROOT
+				}
+				tripolitania_area = {
+					type = all
+					owned_by = ROOT
+				}
 			}
 			effect = {
-					}
+				add_dip_power = 100
+				add_country_modifier = {
+					name = achieved_mare_nostrum
+					duration = -1
+				}
+				maghreb_region = {
+	        limit = {
+	          NOT = { owned_by = ROOT }
+	          NOT = {is_claim	= ROOT}
+	        }
+	        add_permanent_claim = ROOT
+	      }
+			}
 		}
 
 }

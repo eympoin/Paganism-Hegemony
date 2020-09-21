@@ -4825,3 +4825,10 @@ rich_cities_of_gaul = {
   production_efficiency = 0.05
   global_tax_modifier = 0.05
 }
+
+
+achieved_mare_nostrum = {
+naval_morale = 0.05
+naval_maintenance_modifier = -0.05
+navy_tradition = 0.5
+}
