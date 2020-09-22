@@ -160,7 +160,7 @@ Roma_Unification_1 = {
 	}
 
 	southern_city_states = {
-		icon = mission_eastern_european_city
+		icon = renaissance_city
 		required_missions = { retake_former_provinces }
 		provinces_to_highlight = {
         OR = {
@@ -198,7 +198,7 @@ Roma_Unification_1 = {
 	}
 
 	fight_greek_influence = {
-		icon = mission_eastern_european_city
+		icon = king_of_naples
 		required_missions = { southern_city_states }
 		provinces_to_highlight = {
         culture = Griko
@@ -236,7 +236,7 @@ Roma_Unification_1 = {
 	}
 
 	recognization_of_the_ere = {
-		icon = mission_eastern_european_city
+		icon = lead_the_empire
 		required_missions = { fight_greek_influence }
 		trigger = {
 		}
@@ -319,7 +319,7 @@ Roma_Unification_2 = {
 		has_country_shield = yes
 
 		lombard_revenge = {
-			icon = mission_eastern_european_city
+			icon = confront_the_lombards
 			required_missions = { retake_former_provinces } #None
 			position = 5
 			provinces_to_highlight = {
@@ -394,7 +394,7 @@ Roma_Unification_2 = {
 		}
 
 		reclaim_gaul = {
-			icon = mission_eastern_european_city
+			icon = develop_provence
 			required_missions = { lombard_revenge }
 			provinces_to_highlight = {
 	        OR = {
@@ -457,7 +457,7 @@ Roma_Unification_2 = {
 		}
 
 		Submit_hispanian_states = {
-			icon = mission_eastern_european_city
+			icon = hispaniae
 			required_missions = { reclaim_gaul }
 			position = 8
 			provinces_to_highlight = {
@@ -498,7 +498,7 @@ Roma_Unification_2 = {
 		has_country_shield = yes
 
 		secure_northern_border = {
-			icon = mission_eastern_european_city
+			icon = danubian_power
 			required_missions = { lombard_revenge } #None
 			position = 6
 			provinces_to_highlight = {
@@ -531,7 +531,7 @@ Roma_Unification_2 = {
 		}
 
 		Push_back_the_Franks = {
-			icon = mission_eastern_european_city
+			icon = centralize_france
 			required_missions = { reclaim_gaul }
 			provinces_to_highlight = {
 	        OR = {
@@ -562,7 +562,7 @@ Roma_Unification_2 = {
 		}
 
 		Save_londinium = {
-			icon = mission_eastern_european_city
+			icon = mission_rb_scottish_conquer_london
 			required_missions = { Push_back_the_Franks }
 			provinces_to_highlight = {
 	      OR = {
@@ -763,7 +763,7 @@ rebuild_2 = {
 		has_country_shield = yes
 
 		reform_the_army = {
-			icon = mission_assemble_an_army
+			icon = give_him_back_his_legions
 			required_missions = { rebuild_the_realm } #None
 			position = 3
 			trigger = {
