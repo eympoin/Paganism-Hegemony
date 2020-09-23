@@ -239,9 +239,10 @@ Roma_Unification_1 = {
 		icon = lead_the_empire
 		required_missions = { fight_greek_influence }
 		trigger = {
+			tag = WRM
 		}
 		effect = {
-			#event
+				country_event = {id = flavor_spqr.40}
 			}
 	}
 

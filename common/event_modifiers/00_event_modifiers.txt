@@ -11672,3 +11672,13 @@ shiite_minority = {
 Stabilize_the_country = {
 	missionary_maintenance_cost = -0.2
 }
+
+great_schism = {
+	tolerance_heretic = -4
+	global_heretic_missionary_strength = 0.01
+}
+
+greeko-roman_friendship = {
+	tolerance_heretic = 4
+	global_heretic_missionary_strength = -0.03
+}
