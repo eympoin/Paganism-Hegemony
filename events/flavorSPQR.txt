@@ -1192,22 +1192,22 @@ country_event = {#ERE recognize or not WRE
 
   option = {#no
     name = flavor_spqr.40.a
-    emperor = {
+    FROM = {
       country_event = {id = flavor_spqr.42}
     }
   }
 
   option = {#yes
     name = flavor_spqr.40.b
-    emperor = {
+    FROM = {
       country_event = {id = flavor_spqr.43}
     }
   }
 
   option = {#yes but against gold
     name = flavor_spqr.40.c
-    emperor = {
-      country_event = {id = flavor_spqr.43}
+    FROM = {
+      country_event = {id = flavor_spqr.44}
     }
   }
 
