@@ -1169,7 +1169,7 @@ country_event = {#Demand recognition of the ERE
   id = flavor_spqr.40
   title = flavor_spqr.40.t
   desc = flavor_spqr.40.d
-  picture = CHURCH_ESTATE_1_eventPicture
+  picture = DIPLOMACY_eventPicture
 
   is_triggered_only = yes
 
@@ -1186,7 +1186,7 @@ country_event = {#ERE recognize or not WRE
   id = flavor_spqr.41
   title = flavor_spqr.41.t
   desc = flavor_spqr.41.d
-  picture = CHURCH_ESTATE_1_eventPicture
+  picture = DIPLOMACY_eventPicture
 
   is_triggered_only = yes
 
@@ -1217,7 +1217,7 @@ country_event = {#WRE receive negative answer
   id = flavor_spqr.42
   title = flavor_spqr.42.t
   desc = flavor_spqr.42.d
-  picture = CHURCH_ESTATE_1_eventPicture
+  picture = CIVIL_WAR_eventPicture
 
   is_triggered_only = yes
 
@@ -1243,7 +1243,7 @@ country_event = {#WRE receive positive answer
   id = flavor_spqr.43
   title = flavor_spqr.43.t
   desc = flavor_spqr.43.d
-  picture = CHURCH_ESTATE_1_eventPicture
+  picture = HRE_eventPicture
 
   is_triggered_only = yes
 
@@ -1269,7 +1269,7 @@ country_event = {#WRE receive negotiation
   id = flavor_spqr.44
   title = flavor_spqr.44.t
   desc = flavor_spqr.44.d
-  picture = CHURCH_ESTATE_1_eventPicture
+  picture = CORRUPTION_eventPicture
 
   is_triggered_only = yes
 
