@@ -1190,15 +1190,22 @@ country_event = {#ERE recognize or not WRE
 
   is_triggered_only = yes
 
-  option = {
+  option = {#no
     name = flavor_spqr.40.a
     emperor = {
       country_event = {id = flavor_spqr.42}
     }
   }
 
-  option = {
+  option = {#yes
     name = flavor_spqr.40.b
+    emperor = {
+      country_event = {id = flavor_spqr.43}
+    }
+  }
+
+  option = {#yes but against gold
+    name = flavor_spqr.40.c
     emperor = {
       country_event = {id = flavor_spqr.43}
     }
@@ -1251,6 +1258,52 @@ country_event = {#WRE receive positive answer
       }
       add_country_modifier = {
         name = greeko-roman_friendship
+        duration =-1
+      }
+    }
+  }
+}
+
+
+country_event = {#WRE receive negotiation
+  id = flavor_spqr.44
+  title = flavor_spqr.44.t
+  desc = flavor_spqr.44.d
+  picture = CHURCH_ESTATE_1_eventPicture
+
+  is_triggered_only = yes
+
+  option = {
+    name = flavor_spqr.44.a
+    add_treasury = -500
+    emperor = {
+      add_treasury = 500
+    }
+    every_country = {
+      limit = {
+        OR = {
+          culture_group = byzantine
+          culture_group = neo-roman
+        }
+      }
+      add_country_modifier = {
+        name = greeko-roman_friendship
+        duration =-1
+      }
+    }
+  }
+
+  option = {
+    name = flavor_spqr.44.b
+    every_country = {
+      limit = {
+        OR = {
+          culture_group = byzantine
+          culture_group = neo-roman
+        }
+      }
+      add_country_modifier = {
+        name = great_schism
         duration =-1
       }
     }

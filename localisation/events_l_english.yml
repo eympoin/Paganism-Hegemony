@@ -1110,3 +1110,26 @@ flavor_lom.8.b:0 "Let them have Illyria, it is useless anyway."
 flavor_lom.9.t:0 "Victory !"
 flavor_lom.9.d:0 "The emperor was weak, we managed to secure an easy victory."
 flavor_lom.9.a:0 "Illyria is now free from the Greek emperors grasp !"
+
+flavor_spqr.40.t:0 "Demand the Recognition of the East"
+flavor_spqr.40.d:0 "We are Rome, Rome reborn from the ashes and as Emperor of the Roman, we expect than our eastern brethren recognize us as such. "
+flavor_spqr.40.a:0 "Send the envoy"
+
+flavor_spqr.41.t:0 "An Empire demand recogition"
+flavor_spqr.41.d:0 "The Empire, which dares to name itself roman send us an envoy. They want one things : that we recognize them as the Emperor of the  West. Should we accept"
+flavor_spqr.41.a:0 "We are the only Romans !"
+flavor_spqr.41.b:0 "Together, we will be stronger !"
+flavor_spqr.41.c:0 "We can accept ... for a price !"
+
+flavor_spqr.42.t:0 "The East doesn't recognize us"
+flavor_spqr.42.d:0 "The Eastern Roman Empire refuses to recognize us as the Western Roman Empire. They will soon learn what it means to defy us."
+flavor_spqr.42.a:0 "Rome will be united through war then."
+
+flavor_spqr.43.t:0 "The East recognize us as the heir of the Western Roman Empire"
+flavor_spqr.43.d:0 "Our envoys came back with a wonderful news : the Eastern Roman Empire finally recognize us as the sole emperor of the West."
+flavor_spqr.43.a:0 "Rome is truly reborn today."
+
+flavor_spqr.43.t:0 "The East demand a price for recognition"
+flavor_spqr.43.d:0 "Our envoys came back with a an offer : Gold against Recognition"
+flavor_spqr.43.a:0 "A small price to pay for Glory"
+flavor_spqr.43.b:0 "It isn't worth it. The Greeks won't have our Gold !"

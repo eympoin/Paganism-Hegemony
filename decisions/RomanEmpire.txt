@@ -103,6 +103,13 @@ country_decisions = {
 				inherit = ROOT
 			}
 		 }
+
+		 if = {
+		 	limit = {
+				has_country_modifier = great_schism
+			}
+			remove_country_modifier = great_schism
+		 }
 		 south_german_region = {
 			 limit = {
 				 NOT = { owned_by = ROOT }
