@@ -388,6 +388,24 @@ country_event = {#Small scale famine
   }
 }
 
+
+country_event = {#Fixing Depop
+  id = flavor_spqr.123
+  title = flavor_spqr.123.t
+  desc = flavor_spqr.123.d
+  picture = FARMING_eventPicture
+
+  trigger = {
+    is_year = 1500
+    has_country_modifier = slight_depopulation_spq
+  }
+
+  option = {
+    name = flavor_spqr.123.a
+    remove_country_modifier = slight_depopulation_spq
+  }
+}
+
 country_event = {#Nobles curtailed
   id = flavor_spqr.31
   title = flavor_spqr.31.t
