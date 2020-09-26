@@ -1025,6 +1025,7 @@ own_base_2 = {
     provinces_to_highlight = {
       area = upper_andalucia_area
       area = lower_andalucia_area
+      NOT = {owned_by = ROOT}
     }
 
     trigger = {
@@ -1344,7 +1345,7 @@ own_base_1 = {
       owns_all_provinces = {
         OR = {
           culture = moors
-          culture = berber
+          culture = berber_culture
         }
       }
     }

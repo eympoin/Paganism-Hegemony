@@ -496,6 +496,7 @@ country_event = {
 			name = ctg_own_path
 			duration = -1
 		}
+		override_country_name = QART_HADASHT 
 		swap_non_generic_missions = yes
 		add_legitimacy = -15
 		add_prestige = 20
