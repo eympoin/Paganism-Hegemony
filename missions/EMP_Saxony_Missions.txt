@@ -622,8 +622,90 @@ norse_raids = {
     effect = {
       add_prestige = 10
       add_mil_power = 100
+      home_counties_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      east_anglia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      wessex_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      west_midlands_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      east_midlands_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
       add_country_modifier = {
         name = norsemen_legacy
+        duration = -1
+      }
+    }
+  }
+
+  reunite_with_our_brethren = {
+    position = 6
+    icon = mission_rb_rule_britannia_scottish_version
+    required_missions = { the_rest_of_scandinavia  }
+    ai_weight = {
+      factor = 5
+    }
+    ai_priority = {
+      factor = 5
+    }
+
+    provinces_to_highlight = {
+      area = home_counties_area
+      area = wessex_area
+      area = west_midlands_area
+      area = east_midlands_area
+      area = east_anglia_area
+
+      NOT = { is_core = ROOT }
+    }
+    trigger = {
+      home_counties_area = {
+        type = all
+        owned_by = ROOT
+      }
+      wessex_area = {
+        type = all
+        owned_by = ROOT
+      }
+      west_midlands_area = {
+        type = all
+        owned_by = ROOT
+      }
+      east_midlands_area = {
+        type = all
+        owned_by = ROOT
+      }
+      east_anglia_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      add_prestige = 10
+      add_adm_power = 100
+      add_country_modifier = {
+        name = Reunion
         duration = -1
       }
     }
