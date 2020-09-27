@@ -615,7 +615,7 @@ expand_eastward_trc = {
 }
 
 
-expand_eastward_trc = {
+expand_eastward_trc_2 = {
 	slot = 5
 	generic = no
 	ai = yes
