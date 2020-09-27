@@ -537,7 +537,6 @@ western_control_3 = {
 			NOT = {owned_by = ROOT}
     }
 		trigger = {
-			add_dip_power = 50
 			calabria_area = {
 				type = all
 				owned_by = ROOT
@@ -548,6 +547,7 @@ western_control_3 = {
 			}
 		}
 		effect{
+		add_dip_power = 50
 			lazio_area = {
 				limit = {
 					NOT = { owned_by = ROOT }

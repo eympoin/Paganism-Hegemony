@@ -486,7 +486,7 @@ western_control{
 		provinces_to_highlight = {
       OR = {
 				area = corsica_sardinia_area
-				area = baleares
+				area = baleares_area
 			}
 			NOT = {owned_by = ROOT}
     }

@@ -4195,8 +4195,8 @@ colonist_placement_chance = 0.03
 range = 0.1
 }
 western_mediterranean_control = {
-trade_efficiency = 0.1
-global_trade_power
+  trade_efficiency = 0.1
+  global_trade_power = 0.1
 }
 
 the_eternal_city_mod = {
