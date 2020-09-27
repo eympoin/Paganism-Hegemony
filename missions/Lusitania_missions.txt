@@ -584,7 +584,7 @@ por_african_ambitions = {
 	por_discover_african_coast = {
 		icon = mission_establish_high_seas_navy
 		required_missions = { }
-		position = 1
+		position = 2
 		completed_by = 1445.1.1
 
 		trigger = {
@@ -986,7 +986,7 @@ por_east_african_ambitions = {
 
 por_south_africa_mission = {
 
-	slot = 3
+	slot = 2
 	ai = yes
 
 	potential = {

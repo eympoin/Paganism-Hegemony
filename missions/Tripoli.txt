@@ -159,13 +159,14 @@ Libya_1 = {
       NOT = {owned_by = ROOT}
     }
     trigger = {
-    delta_area = {
-      type = all
-      owned_by = ROOT
-    }
-    bahari_area = {
-      type = all
-      owned_by = ROOT
+      delta_area = {
+        type = all
+        owned_by = ROOT
+      }
+      bahari_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
     effect = {
     every_owned_province = {

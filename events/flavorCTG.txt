@@ -496,7 +496,7 @@ country_event = {
 			name = ctg_own_path
 			duration = -1
 		}
-		override_country_name = QART_HADASHT 
+		override_country_name = QART_HADASHT
 		swap_non_generic_missions = yes
 		add_legitimacy = -15
 		add_prestige = 20
@@ -1301,7 +1301,7 @@ country_event = {
 			AND = {
 					NOT = {has_country_flag = trading_australia}
 					any_owned_province = {
-						region = colonial_australia
+						colonial_region = colonial_australia
 						NOT = { has_province_modifier = carthaginian_trading_outpost}
 					}
 			}

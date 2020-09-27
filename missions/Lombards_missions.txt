@@ -626,6 +626,7 @@ lombards_italy = {
   Lombard_Unification = {
     icon = mission_unite_home_region
     required_missions = {}
+    position = 3
     provinces_to_highlight = {
     }
     trigger = {
@@ -994,7 +995,7 @@ lombards_west = {
     add_dip_power = 100
     add_country_modifier = {
       name = two_thrones
-      dduration = -1
+      duration = -1
     }
     france_region = {
       limit = {
@@ -1220,7 +1221,7 @@ lombards_east = {
   Conquest_of_Pannonia = {
     icon = mission_non-western_cavalry_raid
     required_missions = {Stop_the_Horde}
-    rovinces_to_highlight = {
+    provinces_to_highlight = {
         OR = {
           area = transdanubia_area
         }

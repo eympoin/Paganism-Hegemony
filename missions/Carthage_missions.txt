@@ -3,10 +3,10 @@ base_1 = {
   generic = no
   ai = yes
   potential = {
-  OR = {
-    tag = CTG
-    was_tag = CTG
-  }
+    OR = {
+      tag = CTG
+      was_tag = CTG
+    }
     NOT = { map_setup = map_setup_random }
   }
 
@@ -1637,7 +1637,7 @@ fleet = {
 
     trigger = {
       navy_size_percentage = 0.99
-      num_of_galley = 25
+      num_of_galley = 15
     }
     effect = {
       add_country_modifier = {
@@ -2064,7 +2064,7 @@ africo_asian_trade = {
   african_trade = {
     icon = mission_african_gold
     required_missions = {fleet_transition}
-    position = 4
+    position = 7
     provinces_to_highlight = {
       superregion = southern_africa_superregion
       superregion = africa_superregion
