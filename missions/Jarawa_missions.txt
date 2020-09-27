@@ -530,6 +530,7 @@ east_attack_jrw_2 = {
   raider_fleet = {
     icon = mission_sponsor_piracy
     required_missions = {masters_of_africa}
+    position = 5
     provinces_to_highlight = {
     }
     trigger = {

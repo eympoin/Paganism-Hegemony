@@ -723,6 +723,7 @@ lombards_italy_2 = {
   destructor_of_rome = {
     icon = mission_conquer_50_development
     required_missions = {cultural_choice}
+    position = 6
     provinces_to_highlight = {
       province_id = 118
     }
