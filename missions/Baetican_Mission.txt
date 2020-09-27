@@ -239,7 +239,7 @@ hispania_unification_2_bae{
 
 
 
-western_control{
+western_control_bae = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -396,7 +396,7 @@ western_control{
 
 
 
-western_control_2{
+western_control_2_bae = {
 	slot = 5
 	generic = no
 	ai = yes
@@ -479,7 +479,7 @@ western_control_2{
 }
 
 
-western_control_3{
+western_control_3_bae = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -537,7 +537,6 @@ western_control_3{
 			NOT = {owned_by = ROOT}
     }
 		trigger = {
-			add_dip_power = 50
 			calabria_area = {
 				type = all
 				owned_by = ROOT
@@ -548,6 +547,7 @@ western_control_3{
 			}
 		}
 		effect{
+		add_dip_power = 50
 			lazio_area = {
 				limit = {
 					NOT = { owned_by = ROOT }

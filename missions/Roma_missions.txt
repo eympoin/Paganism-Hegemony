@@ -485,7 +485,7 @@ Roma_Unification_2 = {
 }
 
 
-Roma_Unification_2 = {
+Roma_Unification_3 = {
 		slot = 1
 		generic = no
 		ai = yes
@@ -855,7 +855,7 @@ WRM_unification_3 = {
 				add_dip_power = 50
 				add_country_modifier = {
 					name = protected_coast
-					duraton = 7300
+					duration = 7300
 				}
 				tunisia_area = {
 	        limit = {

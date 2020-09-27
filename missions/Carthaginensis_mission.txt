@@ -354,7 +354,7 @@ hispania_unification_2_CTH{
 	}
 }
 
-hispania_unification_final{
+hispania_unification_final_cth{
 	slot = 3
 	generic = no
 	ai = yes
@@ -391,7 +391,7 @@ hispania_unification_final{
 	}
 }
 
-expand_eastward{
+expand_eastward_cth{
 	slot = 4
 	generic = no
 	ai = yes
@@ -579,7 +579,7 @@ expand_eastward{
 }
 
 
-expand_eastward{
+expand_eastward_cth_2{
 	slot = 5
 	generic = no
 	ai = yes

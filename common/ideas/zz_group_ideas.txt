@@ -24,7 +24,7 @@ uralic_ideas = {
 	}
 
 	repel_the_rus = {
-	  missionary = 1
+	  missionaries = 1
 		global_missionary_strength = 0.02
 	}
 	siberian_frontier = {

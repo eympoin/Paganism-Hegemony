@@ -1,4 +1,4 @@
-trade_empire ={
+trade_empire_trc ={
 	slot = 1
 	generic = no
 	ai = yes
@@ -35,7 +35,7 @@ trade_empire ={
 	}
 }
 
-naval_power{
+naval_power_trc = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -63,7 +63,7 @@ naval_power{
 	}
 }
 
-hispania_unification_1_trc{
+hispania_unification_1_trc = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -278,7 +278,7 @@ hispania_unification_1_trc{
 	}
 }
 
-hispania_unification_2_trc{
+hispania_unification_2_trc = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -383,7 +383,7 @@ hispania_unification_2_trc{
 	}
 }
 
-hispania_unification_3_trc{
+hispania_unification_3_trc = {
 	slot = 5
 	generic = no
 	ai = yes
@@ -396,7 +396,7 @@ hispania_unification_3_trc{
 }
 
 
-hispania_unification_final{
+hispania_unification_final = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -433,7 +433,7 @@ hispania_unification_final{
 	}
 }
 
-expand_eastward{
+expand_eastward_trc = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -615,7 +615,7 @@ expand_eastward{
 }
 
 
-expand_eastward{
+expand_eastward_trc_2 = {
 	slot = 5
 	generic = no
 	ai = yes

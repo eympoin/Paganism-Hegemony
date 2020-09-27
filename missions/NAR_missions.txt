@@ -1,5 +1,5 @@
 
-Gallia_Unification_1 = {
+Gallia_Unification_1_nar = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -230,7 +230,7 @@ Gallia_Unification_1 = {
 }
 
 
-Gallia_Unification_2 = {
+Gallia_Unification_2_nar = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -463,7 +463,7 @@ Spanish_intervention_nar = {
 	}
 }
 
-Italian_intervention = {
+Italian_intervention_nar = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -477,7 +477,7 @@ Italian_intervention = {
 	attack_the_lombards = {
 		icon = mission_alliances
 		required_missions = {end_of_the_burgonds_nar}
-		position = 1
+		position = 3
 		provinces_to_highlight = {
 			OR = {
 				area = piedmont_area
@@ -500,23 +500,23 @@ Italian_intervention = {
 			}
 		}
 		effect = {
-		add_years_of_income
-			add_country_modifier = {
-				name = roman_savior
-				duration = 7300
+			add_years_of_income = 1
+				add_country_modifier = {
+					name = roman_savior
+					duration = 7300
+				}
+			tuscany_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
-		}
-		tuscany_area = {
-			limit = {
-				NOT = { owned_by = ROOT }
+			po_valley_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
-			add_permanent_claim = ROOT
-		}
-		po_valley_area = {
-			limit = {
-				NOT = { owned_by = ROOT }
-			}
-			add_permanent_claim = ROOT
 		}
 	}
 
@@ -634,7 +634,7 @@ Italian_intervention = {
 
 
 
-Western_mediterranean_control_mission = {
+Western_mediterranean_control_mission_nar = {
 	slot = 5
 	generic = no
 	ai = yes
@@ -775,7 +775,7 @@ Western_mediterranean_control_mission = {
 
 }
 
-economic_nar{
+economic_nar = {
 	slot = 1
 	generic = no
 	ai = yes
