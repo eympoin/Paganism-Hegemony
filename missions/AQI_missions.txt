@@ -306,7 +306,7 @@ economic_aqi{
 }
 
 
-Gallia_Unification_1 = {
+Gallia_Unification_1_aqi = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -538,7 +538,7 @@ Gallia_Unification_1 = {
 }
 
 
-Gallia_Unification_2 = {
+Gallia_Unification_2_aqi = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -596,7 +596,7 @@ Gallia_Unification_2 = {
 	}
 }
 
-Spanish_intervention = {
+Spanish_intervention_aqi = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -765,7 +765,7 @@ Spanish_intervention = {
 	}
 }
 
-Italian_intervention = {
+Italian_intervention_AQI = {
 	slot = 2
 	generic = no
 	ai = yes

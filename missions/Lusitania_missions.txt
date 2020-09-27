@@ -33,7 +33,7 @@ trade_empire ={
 	}
 }
 
-hispania_unification_1 = {
+hispania_unification_1_lus = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -171,7 +171,7 @@ hispania_unification_1 = {
 
 }
 
-hispania_unification_2{
+hispania_unification_2_lus = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -244,7 +244,7 @@ hispania_unification_2{
 	}
 }
 
-hispania_unification_3{
+hispania_unification_3_lus ={
 	slot = 5
 	generic = no
 	ai = yes
@@ -316,7 +316,7 @@ hispania_unification_3{
 }
 
 
-hispania_unification_final{
+hispania_unification_final_lus = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -412,7 +412,7 @@ hispania_unification_final{
 }
 
 
-western_control_2{
+western_control_2_lus = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -495,7 +495,7 @@ western_control_2{
 	}
 }
 
-western_control{
+western_control_lus ={
 	slot = 5
 	generic = no
 	ai = yes

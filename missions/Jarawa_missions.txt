@@ -220,7 +220,7 @@ Road_south = {
 }
 
 
-west_attack = {
+west_attack_jrw = {
   slot = 2
   generic = no
   ai = yes
@@ -464,7 +464,7 @@ civil_war_consequences = {
   }
 }
 
-east_attack = {
+east_attack_jrw = {
   slot = 4
   generic = no
   ai = yes
@@ -513,7 +513,7 @@ east_attack = {
 }
 
 
-east_attack = {
+east_attack_jrw_2 = {
   slot = 3
   generic = no
   ai = yes
