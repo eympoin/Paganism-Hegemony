@@ -4837,3 +4837,13 @@ Reunion = {
   global_unrest = -1
   legitimacy = 1
 }
+
+king_of_africa_mauretania = {
+  legitimacy = 1
+  prestige = 1
+  global_tax_modifier = 0.1
+}
+
+control_straight = {
+  trade_efficiency = 0.2
+}

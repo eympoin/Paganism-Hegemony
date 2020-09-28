@@ -1,0 +1,286 @@
+Mauretania_1_1 = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = MAU
+      was_tag = MAU
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  Defeat_fez = {
+    icon = mission_el_badi_palace
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+          OR = {
+            area = marrekesh_area
+            area = northern_morocco_area
+          }
+          NOT = {owned_by = ROOT}
+        }
+    trigger = {
+      num_of_owned_provinces_with = {
+        value = 8
+        OR = {
+        area = marrekesh_area
+        area = northern_morocco_area
+        area = western_morocco_area
+        }
+      }
+    }
+    effect = {
+      add_adm_power = 200
+      western_morocco_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      southern_morocco_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      sus_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      tafilalt_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      marrekesh_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      western_morocco_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  tackle_the_moors = {
+    icon = mission_imperial_cities
+    required_missions = {Defeat_fez}
+    provinces_to_highlight = {
+          OR = {
+            area = marrekesh_area
+            area = western_morocco_area
+            area = sus_area
+            area = tafilalt_area
+            area = northern_morocco_area
+          }
+          NOT = {owned_by = ROOT}
+        }
+    trigger = {
+    marrekesh_area = {
+      type = all
+      owned_by = ROOT
+    }
+    western_morocco_area = {
+      type = all
+      owned_by = ROOT
+    }
+    sus_area = {
+      type = all
+      owned_by = ROOT
+    }
+    tafilalt_area = {
+      type = all
+      owned_by = ROOT
+    }
+    northern_morocco_area = {
+      type = all
+      owned_by = ROOT
+    }
+    }
+    effect = {
+      add_mil_power = 100
+      algiers_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      barbary_coast_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      high_plains_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      ouled_nail_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      north_saharan_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  end_jarawan_domination = {
+    icon = mission_protect_granada
+    required_missions = {tackle_the_moors}
+    provinces_to_highlight = {
+          OR = {
+            area = algiers_area
+            area = barbary_coast_area
+            area = high_plains_area
+            area = ouled_nail_area
+            area = north_saharan_area
+          }
+          NOT = {owned_by = ROOT}
+        }
+    trigger = {
+      num_of_owned_provinces_with = {
+        value = 10
+        OR = {
+        area = algiers_area
+        area = barbary_coast_area
+        area = high_plains_area
+        area = ouled_nail_area
+        area = north_saharan_area
+        }
+      }
+    }
+    effect = {
+      add_dip_power = 100
+      kabylia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      tunisia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      byzacena_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  king_of_africa = {
+    icon = africa_proconsulare
+    required_missions = {end_jarawan_domination}
+    provinces_to_highlight = {
+          OR = {
+            area = byzacena_area
+            area = tunisia_area
+            area = kabylia_area
+          }
+          NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      byzacena_area = {
+        type = all
+        owned_by = ROOT
+      }
+      tunisia_area = {
+        type = all
+        owned_by = ROOT
+      }
+      kabylia_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      capital_scope = {
+        add_base_tax = 2
+        add_base_production = 2
+        add_base_manpower = 2
+      }
+      add_country_modifier = {
+        name = king_of_africa_mauretania
+        duration = -1
+      }
+      maghreb_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  other_side_of_herculean_colums = {
+    icon = mission_rb_take_gibraltar
+    required_missions = {}
+    provinces_to_highlight = {
+      OR = {
+        area = lower_andalucia_area
+        area = upper_andalucia_area
+        }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      lower_andalucia_area = {
+        type = all
+        owned_by = ROOT
+      }
+      upper_andalucia_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+    iberia_region = {
+      limit = {
+        NOT = { owned_by = ROOT }
+        NOT = {is_claim	= ROOT}
+      }
+      add_permanent_claim = ROOT
+    }
+      add_country_modifier = {
+        name = control_straight
+        duration = -1
+      }
+    }
+  }
+
+}
