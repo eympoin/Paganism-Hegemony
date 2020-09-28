@@ -372,6 +372,9 @@ country_decisions = {
   rebuild_ostia = {
     major = yes
     potential = {
+    118 = {
+      NOT = {has_province_modifier = ostia_port}
+    }
     OR = {
       tag = SPQ
       was_tag = SPQ
@@ -381,9 +384,7 @@ country_decisions = {
       118 = {
         has_province_flag = ostia_burned
       }
-      118 = {
-        NOT = {has_province_modifier = ostia_port}
-      }
+
     }
     provinces_to_highlight = {
       province_id = 118
@@ -393,6 +394,9 @@ country_decisions = {
       is_at_war = no
       owns_core_province = 118
       treasury = 1000
+      118 = {
+        NOT = {has_province_modifier = ostia_port}
+      }
     }
     effect = {
       clr_province_flag = ostia_burned
@@ -413,6 +417,9 @@ country_decisions = {
   renovate_ostia = {
     major = yes
     potential = {
+    118 = {
+      NOT = {has_province_modifier = ostia_port}
+    }
     OR = {
       tag = SPQ
       was_tag = SPQ
