@@ -40,7 +40,7 @@ Roma_Unification_1 = {
 		position = 2
 		trigger = {
 			has_country_modifier = wounds_of_bloody_war_spq
-			is_year = 1455
+			stability = 2
 			dip_power = 200
 		}
 		effect = {
