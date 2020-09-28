@@ -231,6 +231,7 @@ roman_province_cen = {
 	can_be_integrated = yes
 	overlord_can_attack = no
 	gets_help_with_rebels = yes							# Only for AI. Bidirectional.
+	takes_diplo_slot = no
 
 	max_government_rank = 2								# 0 means no limit
 
@@ -275,6 +276,7 @@ roman_province_decen = {
 
 	# Properties:
 	can_have_subjects_of_other_types = yes
+	takes_diplo_slot = no
 
 	max_government_rank = 2								# 0 means no limit
 
