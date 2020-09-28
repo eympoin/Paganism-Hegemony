@@ -123,6 +123,8 @@ country_event = {#The flight of the Senator
   desc = flavor_spqr.2.d
   picture = REVOLT_HUNGARIAN_eventPicture
 
+    fire_only_once = yes
+
   trigger = {
     tag = SPQ
     has_country_flag = supported_the_king
@@ -131,8 +133,6 @@ country_event = {#The flight of the Senator
   mean_time_to_happen = {
     months = 20
   }
-
-  fire_only_once = yes
 
   option = {#Burn the port
     name = flavor_spqr.2.a
@@ -389,7 +389,6 @@ country_event = {#Small scale famine
     add_war_exhaustion = 3
   }
 }
-
 
 country_event = {#Fixing Depop
   id = flavor_spqr.123
@@ -725,6 +724,124 @@ country_event = {#Republic but not senate
   }
 }
 
+country_event = {#Erasing the influence of the senators
+  id = flavor_spqr.200
+  title = flavor_spqr.200.t
+  desc = flavor_spqr.200.d
+  picture = BURGHER_ESTATE_UPSET_eventPicture
+
+  fire_only_once = yes
+
+  trigger = {
+    is_year = 1450
+    has_country_modifier = unrest_stirred_spqr
+  }
+
+  mean_time_to_happen = {
+    months = 60
+  }
+
+  option = {#Violent
+    name = flavor_spqr.200.a
+    ai_chance = {
+      factor = 50
+    }
+    add_stability = -1
+    add_war_exhaustion = 3
+    add_manpower = -3
+    add_years_of_income = -0.5
+    custom_tooltip = VIOLENT_PURGE_tt
+    hidden_effect = {
+      country_event = {
+        id = flavor_spqr.202
+        days = 502
+      }
+      country_event = {
+        id = flavor_spqr.202
+        days = 1602
+      }
+      country_event = {
+        id = flavor_spqr.202
+        days = 2202
+      }
+      country_event = {
+        id = flavor_spqr.201
+        days = 2564
+      }
+    }
+  }
+  option = {#Subtle
+    name = flavor_spqr.200.b
+    ai_chance = {
+      factor = 40
+    }
+    add_manpower = -3
+    add_yearly_manpower = -1
+    custom_tooltip = SUBTLE_PURGE_tt
+    hidden_effect = {
+      country_event = {
+        id = flavor_spqr.202
+        days = 2502
+      }
+      country_event = {
+        id = flavor_spqr.201
+        days = 5263
+      }
+    }
+  }
+  option = {#They are old, they'll die before us
+    name = flavor_spqr.200.c
+    ai_chance = {
+      factor = 5
+    }
+    add_prestige = -10
+    custom_tooltip = OLD_PURGE_tt
+    hidden_effect = {
+      country_event = {
+        id = flavor_spqr.201
+        days = 9263
+      }
+    }
+  }
+}
+
+country_event = {#Controversial trial
+  id = flavor_spqr.202
+  title = flavor_spqr.202.t
+  desc = flavor_spqr.202.d
+  picture = BURGHER_ESTATE_UPSET_eventPicture
+
+  is_triggered_only = yes
+
+  option = {
+    name = flavor_spqr.202.a
+    add_prestige = -5
+    118 = {
+      revolutionary_rebels = 0.5
+    }
+  }
+}
+
+country_event = {#Unrest subsides
+  id = flavor_spqr.201
+  title = flavor_spqr.201.t
+  desc = flavor_spqr.201.d
+  picture = BURGHER_ESTATE_UPSET_eventPicture
+
+  is_triggered_only = yes
+
+  option = {
+    name = flavor_spqr.201.a
+    add_stability = 1
+    remove_country_modifier = unrest_stirred_spqr
+    hidden_effect = {
+      2986 = {
+        remove_province_modifier = roman_senators_mustering_forces
+      }
+    }
+  }
+}
+
 country_event = {#Senate victorious
   id = flavor_spqr.30
   title = flavor_spqr.30.t
@@ -1017,6 +1134,140 @@ country_event = {#Coming back
   }
 }
 
+country_event = {#The tuscan war
+  id = flavor_spqr.2222
+  title = flavor_spqr.2222.t
+  desc = flavor_spqr.2222.d
+  picture = CIVIL_WAR_eventPicture
+
+  fire_only_once = yes
+
+  trigger = {
+    has_country_flag = supported_the_king
+    overlord_of = TUS
+    overlord_of = PIS
+    is_year = 1459
+  }
+
+  mean_time_to_happen = {
+    months = 60
+  }
+
+  option = {#War
+    name = flavor_spqr.2222.a
+    ai_chance = {
+      factor = 91
+    }
+    add_stability = -1
+    PIS = {
+      declare_war_with_cb = {
+        who = TUS
+        casus_belli = cb_annex
+      }
+    }
+    if = {
+      limit = {
+        overlord_of = RVN
+      }
+      RVN = {
+        join_all_offensive_wars_of = PIS
+      }
+    }
+    if = {
+      limit = {
+        overlord_of = SIE
+      }
+      SIE = {
+        join_all_offensive_wars_of = PIS
+      }
+    }
+  }
+  option = {#Reprimend
+    name = flavor_spqr.2222.b
+    ai_chance = {
+      factor = 9
+    }
+    add_prestige = -20
+    create_subject = {
+      subject_type = roman_province_decen
+      subject = TUS
+    }
+  }
+}
+
+country_event = {#Back into the fold
+  id = flavor_spqr.2233
+  title = flavor_spqr.2233.t
+  desc =  flavor_spqr.2233.d
+  picture = CONQUEST_eventPicture
+
+  fire_only_once = yes
+
+  trigger = {
+    is_at_war = NO
+    any_subject_country = {
+      government = republic
+    }
+    has_country_flag = supported_the_king
+    NOT = {
+      OR = {
+        has_country_modifier = no_men_left_spq
+        has_country_modifier = massive_indebtment_spq
+        has_country_modifier = wounds_of_bloody_war_spq
+        has_country_modifier = unrest_stirred_spqr
+        has_country_modifier = nobles_curtailed_spqr
+      }
+    }
+  }
+
+  mean_time_to_happen = {
+    months = 60
+  }
+
+  option = {#Loyal once again
+    name = flavor_spqr.2233.a
+    if = {
+      limit = {
+        overlord_of = RVN
+      }
+      create_subject = {
+        subject_type = roman_province_cen
+        subject = RVN
+      }
+    }
+    if = {
+      limit = {
+        overlord_of = PIS
+      }
+      create_subject = {
+        subject_type = roman_province_cen
+        subject = PIS
+      }
+    }
+    if = {
+      limit = {
+        overlord_of = SIE
+      }
+      create_subject = {
+        subject_type = roman_province_cen
+        subject = SIE
+      }
+    }
+    if = {
+      limit = {
+        overlord_of = TUS
+        TUS = {
+          is_subject_of_type = roman_province_decen
+        }
+      }
+      create_subject = {
+        subject_type = roman_province_cen
+        subject = TUS
+      }
+    }
+  }
+}
+
 #Events involving Carthago
 country_event = {
   id = flavor_ctgspqr.1
@@ -1125,6 +1376,12 @@ country_event = {
       who = SPQ
       modifier = opinion_friendliness
     }
+    hidden_effect = {
+      set_country_flag = killed_roman_senators
+      SPQ = {
+        country_event = { id = flavor_ctgspqr.111 }
+      }
+    }
   }
   option = {#Monarchy imprison them
     name = flavor_ctgspqr.1.f
@@ -1178,7 +1435,144 @@ country_event = {#The senators in Carthago
 
   is_triggered_only = yes
 
-  #trucbidule avec des trigger CTG = { has_country_flag = fromage }
+  option = {#Helped
+    name = flavor_ctgspqr.111.a
+    trigger = {
+      CTG = { has_country_flag = helped_roman_senators }
+    }
+    hidden_effect = {
+      country_event = {
+        id = flavor_ctgspqr.1111
+        days = 200
+      }
+    }
+  }
+  option = {#Sheltered
+    name = flavor_ctgspqr.111.b
+    trigger = {
+      CTG = { has_country_flag = sheltered_roman_senators }
+    }
+    hidden_effect = {
+      country_event = {
+        id = flavor_ctgspqr.1112
+        days = 200
+      }
+    }
+  }
+  option = {#Ignored
+    name = flavor_ctgspqr.111.c
+    trigger = {
+      CTG = { has_country_flag = ignored_roman_senators }
+    }
+    hidden_effect = {
+      country_event = {
+        id = flavor_ctgspqr.1113
+        days = 200
+      }
+    }
+  }
+  option = {#imprisonned
+    name = flavor_ctgspqr.111.e
+    trigger = {
+      CTG = { has_country_flag = imprisoned_roman_senators }
+    }
+    hidden_effect = {
+      country_event = {
+        id = flavor_ctgspqr.1114
+        days = 200
+      }
+    }
+  }
+  option = {#killed
+    name = flavor_ctgspqr.111.f
+    trigger = {
+      CTG = { has_country_flag = killed_roman_senators }
+    }
+    add_stability = 1
+  }
+}
+
+country_event = {#Helped
+  id = flavor_ctgspqr.1111
+  title = flavor_ctgspqr.1111.t
+  desc = flavor_ctgspqr.1111.d
+  picture = CORRUPTION_eventPicture
+
+  is_triggered_only = yes
+
+  option = {
+    name = flavor_ctgspqr.1111.a
+    add_prestige = -10
+    add_casus_belli = {
+      target = CTG
+      type = cb_insult
+      months = 240
+    }
+  }
+}
+
+country_event = {#Sheltered
+  id = flavor_ctgspqr.1112
+  title = flavor_ctgspqr.1112.t
+  desc = flavor_ctgspqr.1112.d
+  picture = CORRUPTION_eventPicture
+
+  is_triggered_only = yes
+
+  option = {#Ignored
+    name = flavor_ctgspqr.1112.a
+    add_prestige = -10
+    add_casus_belli = {
+      target = CTG
+      type = cb_insult
+      months = 240
+    }
+  }
+}
+
+country_event = {#Ignored
+  id = flavor_ctgspqr.1113
+  title = flavor_ctgspqr.1113.t
+  desc = flavor_ctgspqr.1113.d
+  picture = CORRUPTION_eventPicture
+
+  is_triggered_only = yes
+
+  option = {#Finance
+    name = flavor_ctgspqr.1113.a
+    add_years_of_income = -1
+    add_manpower = -3
+    add_stability = 1
+  }
+  option = {#Forget
+    name = flavor_ctgspqr.1113.b
+    add_prestige = -10
+  }
+}
+
+country_event = {#Imprisonned
+  id = flavor_ctgspqr.1114
+  title = flavor_ctgspqr.1114.t
+  desc = flavor_ctgspqr.1114.d
+  picture = CORRUPTION_eventPicture
+
+  is_triggered_only = yes
+
+  option = {
+    name = flavor_ctgspqr.1114.a
+    add_prestige = 10
+    add_stability = 1
+    hidden_effect = {
+      reverse_add_opinion = {
+        who = CTG
+        modifier = opinion_friendliness
+      }
+      add_opinion = {
+        who = CTG
+        modifier = opinion_friendliness
+      }
+    }
+  }
 }
 
 #other events demanding for cash and forces with a pulse
