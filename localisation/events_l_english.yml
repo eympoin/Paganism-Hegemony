@@ -726,6 +726,11 @@ flavor_jar.9.d:0 "With our conquest of Africa and Mauretania, our population is 
 flavor_jar.9.b:0 "The Roman coast is the center of our Kingdom. We must embrace their culture."
 flavor_jar.9.a:0 "We are Imazighens not Romans. Our capital will stay where it is."
 flavor_jar.9.c:0 "Our capital will be the symbol of the Roman and Imazighen union."
+
+flavor_jar.10.t:0 "A new Confederation  "
+flavor_jar.10.d:0 "With the end of the Jarawa civil war and the threats send to the independant roman cities of the coast, the Libyan cities decide to unite in a confederation. We were in a war with one of the city, should we continue the war against the confederation or let the city go ? "
+flavor_jar.10.a:0 "The war isn't finished !"
+flavor_jar.10.b:0 "We are not ready to face all of them."
 #carthage
 flavor_ctg.1.t:0 "A plot in the shadow"
 flavor_ctg.1.d:0 "The king Lucius III has many ennemies, he is a capable warrior but a poor diplomat and administrator. He is also cruel and rule its kingdom with an iron fist. Because of this many wants his death and thus many began to plot. One night the king was going to his bed and an assassin made his sleep the last one."

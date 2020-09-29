@@ -270,7 +270,14 @@ country_event = {
 				change_tag = LBY
 			}
 			LBY = {
-				override_country_name = LIBYAN_CONFEDERATION 
+				override_country_name = LIBYAN_CONFEDERATION
+				every_country = {
+					limit = {
+						war_with = TLC
+					}
+					white_peace = FROM
+					country_event = { id = flavor_jar.10}
+				}
 				inherit = FROM
 				add_stability = -1
 				if = {
@@ -348,5 +355,34 @@ country_event = {
 				name = mixed_capital
 				duration = -1
 			}
+		}
+	}
+
+
+	country_event = {
+		id = flavor_jar.10
+		title = "flavor_jar.10.t"
+		desc = "flavor_jar.10.d"
+		picture = DIPLOMACY_eventPicture
+		major = yes
+
+		is_triggered_only = yes
+
+		option = {#continue the war
+			name = "flavor_jar.10.a"
+			ai_chance = {
+				factor = 25
+			}
+			declare_war_with_cb = {
+			    who = LBY
+			    casus_belli = cb_annex
+			}
+		}
+		option = { #this war isn't in our interest anymore
+			name = "flavor_jar.10.b"
+			ai_chance = {
+				factor = 25
+			}
+			add_prestige = -10
 		}
 	}
