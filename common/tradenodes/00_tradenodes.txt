@@ -1345,7 +1345,7 @@ basra={
 		415 2211 4293 4294 #shahrizor_area
 		2334  #Wasteland
 		2308
-		407 411 2309 2314 4292 4823 4821#al_jazira_area
+		407 411 2309 2314 4292 4823 4821 4854#al_jazira_area
 	}
 }
 
@@ -1625,9 +1625,9 @@ alexandria={
 		1234 2322 2323 #lower_nubia_area
 		365 2315 2320 2321 #gulf_of_arabia_area
 		1233 2318 4323 #al_wahat_area
-		358 362 363 #delta_area
+		358 362 363 4852#delta_area
 		361 2316 4316 4317 4820#bahari_area
-		359 2317 4318 #vostani_area
+		359 2317 4318 4853#vostani_area
 		360 1231 2319 4319 4320 #said_area
 		356 357 2325 2326 #cyrenaica_area
 		4321 4322 #Wastelands

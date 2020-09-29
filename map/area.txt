@@ -1305,7 +1305,7 @@ al_jazira_area = { #5
 }
 
 osroene_area = {
-	4821 2308 407 4292
+	4821 2308 407 4292 4854
 }
 
 
@@ -1403,7 +1403,7 @@ al_wahat_area = { #3
 }
 
 delta_area = { #3
-	358 362 363
+	358 362 363 4852
 }
 
 bahari_area = { #4 #Lower Egypt
@@ -1412,7 +1412,7 @@ bahari_area = { #4 #Lower Egypt
 }
 
 vostani_area = { #3 #Middle Egypt
-	359 2317 4318
+	359 2317 4318 4853
 }
 
 said_area = { #5 #Upper Egypt
