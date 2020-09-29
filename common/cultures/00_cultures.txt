@@ -79,7 +79,7 @@ neo-roman={
 		primary = TUS
 	}
 	sardinian = {
-		primary = SAR
+		primary = TRR
 	}
 	annonarian = {
 	}

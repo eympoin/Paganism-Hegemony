@@ -203,11 +203,13 @@ Roma_Unification_1 = {
 		required_missions = { southern_city_states }
 		provinces_to_highlight = {
         culture = Griko
+				continent = europe
         NOT = {owned_by = ROOT}
       }
 		trigger = {
 			owns_all_provinces = {
 				culture = Griko
+				continent = europe
 				}
 		}
 		effect = {

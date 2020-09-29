@@ -124,11 +124,13 @@ Syracusa_1 = {
     required_missions = {}
     provinces_to_highlight = {
         culture = Griko
+        continent = europe
         NOT = {owned_by = ROOT}
       }
     trigger = {
       owns_all_provinces = {
         culture = Griko
+        continent = europe
       }
     }
     effect = {

@@ -2,7 +2,6 @@
 
 owner = NAR
 controller = NAR
-add_core = CAT
 capital = "Ruscino"
 is_city = yes
 culture = narbonnais
