@@ -55,15 +55,16 @@ base_2 = {
         province_id = 352
         province_id = 2450
       }
+      NOT = {owns_or_subject_of = ROOT}
     }
 
     trigger = {
-    352 = {
-      owned_by = ROOT
-    }
-    2450 = {
-      owned_by = ROOT
-    }
+      352 = {
+        owns_or_subject_of = ROOT
+      }
+      2450 = {
+        owns_or_subject_of = ROOT
+      }
     }
     effect = {
     add_mil_power = 50
