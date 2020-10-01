@@ -4566,7 +4566,7 @@ city_of_riches = {
 }
 
 saharan_trade_monopol = {
-  caravan_power = 0.3
+  caravan_power = 0.33
 }
 
 chiefs_autonomy = {
@@ -4846,4 +4846,11 @@ king_of_africa_mauretania = {
 
 control_straight = {
   trade_efficiency = 0.2
+}
+
+
+king_of_the_moors = {
+  legitimacy = 1
+  prestige = 1
+  cavalry_power = 0.1
 }

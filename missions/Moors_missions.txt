@@ -1,0 +1,244 @@
+Mauretania_1_1 = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = FEZ
+      was_tag = FEZ
+      tag = MRK
+      was_tag = MRK
+      tag = TFL
+      was_tag = TFL
+      tag = SOS
+      was_tag = SOS
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  king_of_the_moors = {
+    icon = mission_break_sicily
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+          OR = {
+            area = sus_area
+            area = western_morocco_area
+            area = southern_morocco_area
+            area = tafilalt_area
+            area = marrekesh_area
+          }
+          NOT = {owned_by = ROOT}
+        }
+    trigger = {
+      num_of_owned_provinces_with = {
+        value = 15
+        OR = {
+        area = sus_area
+        area = western_morocco_area
+        area = southern_morocco_area
+        area = tafilalt_area
+        area = marrekesh_area
+        }
+      }
+
+    }
+    effect = {
+      add_adm_power = 100
+      northern_morocco_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  deal_with_the_romans = {
+    icon = africa_proconsulare
+    required_missions = {king_of_the_moors}
+    provinces_to_highlight = {
+          OR = {
+            area = northern_morocco_area
+          }
+          NOT = {owned_by = ROOT}
+        }
+    trigger = {
+      northern_morocco_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      add_dip_power = 100
+      algiers_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      barbary_coast_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      high_plains_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      ouled_nail_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      north_saharan_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  jarawan_threat = {
+    icon = africa_proconsulare
+    required_missions = {deal_with_the_romans}
+    provinces_to_highlight = {
+          OR = {
+            area = algiers_area
+            area = barbary_coast_area
+            area = high_plains_area
+            area = ouled_nail_area
+            area = north_saharan_area
+          }
+          NOT = {owned_by = ROOT}
+        }
+    trigger = {
+      num_of_owned_provinces_with = {
+        value = 10
+        OR = {
+        area = algiers_area
+        area = barbary_coast_area
+        area = high_plains_area
+        area = ouled_nail_area
+        area = north_saharan_area
+        }
+      }
+    }
+    effect = {
+      add_mil_power = 100
+      kabylia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      tunisia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      byzacena_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  rich_cities_of_africa = {
+    icon = africa_proconsulare
+    required_missions = {jarawan_threat}
+    provinces_to_highlight = {
+          OR = {
+            area = byzacena_area
+            area = tunisia_area
+            area = kabylia_area
+          }
+          NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      byzacena_area = {
+        type = all
+        owned_by = ROOT
+      }
+      tunisia_area = {
+        type = all
+        owned_by = ROOT
+      }
+      kabylia_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      capital_scope = {
+        add_base_tax = 2
+        add_base_production = 2
+        add_base_manpower = 2
+      }
+      add_country_modifier = {
+        name = king_of_africa_mauretania #TOCHange
+        duration = -1
+      }
+      maghreb_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  other_side_of_the_sahara = {
+    icon = africa_proconsulare
+    required_missions = {}
+    provinces_to_highlight = {
+    OR = {
+				province_id = 2466
+			}
+    }
+    trigger = {
+        1110 = {
+        is_strongest_trade_power = ROOT
+      }
+      2466 = {
+          owned_by = ROOT
+          OR = {
+            province_has_center_of_trade_of_level = 2
+            has_building = marketplace
+          }
+      }
+    }
+    effect = {
+        add_country_modifier = {
+          name = saharan_trade_monopol
+          duration = -1
+        }
+        if = {
+        limit = {
+          1127 = {
+            is_empty = yes
+          }
+        }
+        1127 = {
+          cede_province = ROOT
+        }
+      }
+    }
+}
