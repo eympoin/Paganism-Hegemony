@@ -1571,3 +1571,17 @@ tackle_the_moors_desc:0 ""
 end_jarawan_domination_desc:0 ""
 king_of_africa_desc:0 ""
 other_side_of_herculean_colums_desc:0 ""
+
+
+king_of_the_moors_title:0 "King of the Moors"
+deal_with_the_romans_title:0 "End of Mauretania"
+jarawan_threat_title:0 "The Jarawa's threat"
+rich_cities_of_africa_title:0 "End the Roman presence"
+other_side_of_the_sahara_title:0 "Other side of the Sahara"
+
+
+king_of_the_moors_desc:0 ""
+deal_with_the_romans_desc:0 ""
+jarawan_threat_desc:0 ""
+rich_cities_of_africa_desc:0 ""
+other_side_of_the_sahara_desc:0 ""

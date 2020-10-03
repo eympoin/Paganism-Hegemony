@@ -16,7 +16,7 @@ Mauretania_1_1 = {
     NOT = { map_setup = map_setup_random }
   }
   king_of_the_moors = {
-    icon = mission_break_sicily
+    icon = mission_imperial_cities
     required_missions = {}
     position = 1
     provinces_to_highlight = {
@@ -55,7 +55,7 @@ Mauretania_1_1 = {
   }
 
   deal_with_the_romans = {
-    icon = africa_proconsulare
+    icon = develop_provence
     required_missions = {king_of_the_moors}
     provinces_to_highlight = {
           OR = {
@@ -110,7 +110,7 @@ Mauretania_1_1 = {
   }
 
   jarawan_threat = {
-    icon = africa_proconsulare
+    icon = mission_protect_granada
     required_missions = {deal_with_the_romans}
     provinces_to_highlight = {
           OR = {
@@ -206,7 +206,7 @@ Mauretania_1_1 = {
   }
 
   other_side_of_the_sahara = {
-    icon = africa_proconsulare
+    icon = mission_traverse_the_sahara
     required_missions = {}
     provinces_to_highlight = {
     OR = {
