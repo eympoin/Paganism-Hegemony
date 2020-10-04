@@ -1064,6 +1064,41 @@ Hormuz_missionary:0 "Spread our new faith"
 Stabilize_the_country:0 "Stabilize the country"
 
 #Western Roman Empire
+flavor_wrm.1.t:0 "Cultural Assimilation"
+flavor_wrm.1.d:0 "This province is now fully romanized !"
+flavor_wrm.1.b:0 "Great News"
+
+flavor_wrm.2.t:0 "Cultural Assimilation"
+flavor_wrm.2.d:0 "This province is now fully romanized !"
+flavor_wrm.2.b:0 "Great News"
+
+flavor_wrm.3.t:0 "Cultural Assimilation"
+flavor_wrm.3.d:0 "This province is now fully romanized !"
+flavor_wrm.3.b:0 "Great News"
+
+flavor_wrm.4.t:0 "Cultural Assimilation"
+flavor_wrm.4.d:0 "This province is now fully romanized !"
+flavor_wrm.4.b:0 "Great News"
+
+flavor_wrm.5.t:0 "Cultural Assimilation"
+flavor_wrm.5.d:0 "This province is now fully romanized !"
+flavor_wrm.5.b:0 "Great News"
+
+flavor_wrm.6.t:0 "Cultural Assimilation"
+flavor_wrm.6.d:0 "This province is now fully romanized !"
+flavor_wrm.6.b:0 "Great News"
+
+flavor_wrm.7.t:0 "Cultural Assimilation"
+flavor_wrm.7.d:0 "This province is now fully romanized !"
+flavor_wrm.7.b:0 "Great News"
+
+flavor_wrm.8.t:0 "Cultural Assimilation"
+flavor_wrm.8.d:0 "This province is now fully romanized !"
+flavor_wrm.8.b:0 "Great News"
+
+flavor_wrm.9.t:0 "Cultural Assimilation"
+flavor_wrm.9.d:0 "This province is now fully romanized !"
+flavor_wrm.9.b:0 "Great News"
 
 flavor_wrm.10.t:0 "Union of the Eagles"
 flavor_wrm.10.d:0 "Now that the Western Empire is back, one question remains, should the West and the East unite once again. While a lot of the Western Romans are for an union, the Greeks in the east seems opposed to such an union."
