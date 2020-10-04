@@ -1,0 +1,71 @@
+# Order here is the priority for taking them, if trigger is true.
+
+NAR = {
+	NOT = {
+		exists = GLI
+		is_year = 1700
+	}
+}
+
+
+CTG = {
+
+}
+
+
+BYZ = {
+	NOT = {
+		exists = ERM
+		is_year = 1600
+	}
+}
+
+
+ARM = {
+	NOT = {
+		is_year = 1600
+	}
+}
+
+PER = {
+	is_year = 1600
+}
+
+TIM = {
+	NOT = {
+		is_year = 1500
+	}
+}
+
+UEG = {
+	NOT = {
+		is_year = 1600
+	}
+}
+
+LOT = {
+
+}
+
+SAX = {
+
+}
+
+
+OKH = {
+	NOT = {
+		is_year = 1500
+	}
+}
+
+SKH = {
+	NOT = {
+		is_year = 1500
+	}
+}
+
+KIE = {
+	NOT = {
+		is_year = 1600
+	}
+}
