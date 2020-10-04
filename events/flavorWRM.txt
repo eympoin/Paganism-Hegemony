@@ -419,6 +419,7 @@ country_event = {#Peace choices
     add_prestige = 20
     add_legitimacy = 20
     add_truce_with = emperor
+    add_imperial_influence	= -100
     WRM = {
       set_in_empire = yes
     }
@@ -434,7 +435,7 @@ country_event = {#Peace choices
     ai_chance = { factor = 1 }
     white_peace = emperor
     add_truce_with = emperor
-    add_stability = -2
+    add_stability = -3
     WRM = {
       set_in_empire = yes
     }

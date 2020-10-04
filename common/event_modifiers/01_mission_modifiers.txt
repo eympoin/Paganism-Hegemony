@@ -4667,6 +4667,7 @@ hannibal_road_ctg = {
 
 emperor_of_east_and_west = {
   imperial_authority = 0.2
+  diplomatic_reputation = 2
 }
 
 roman_savior = {
