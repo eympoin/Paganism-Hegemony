@@ -3027,7 +3027,7 @@ baltic	= {
 	graphical_culture = easterngfx
 
 	old-prussian = {
-		primary = PRU
+		primary = PRT 
 	}
 	lithuanian = {
 		primary = LIT
