@@ -4855,3 +4855,15 @@ king_of_the_moors = {
   prestige = 1
   cavalry_power = 0.1
 }
+
+fighting_the_pirates = {
+  cannons_for_hunting_pirates_in_fleet = 1
+}
+
+eastern_trade_cyp = {
+  trade_steering = 0.2
+}
+
+great_mines = {
+  trade_goods_size_modifier = 0.25	
+}

@@ -1,0 +1,153 @@
+Cyprus_1_1 = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = CYP
+      was_tag = CYP
+      tag = PPO
+      was_tag = PPO
+      tag = LIM
+      was_tag = LIM
+      tag = SLS
+      was_tag = SLS
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  Unite_the_island = {
+    icon = mission_el_badi_palace
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+          OR = {
+            area = cyprus_area
+          }
+          NOT = {owned_by = ROOT}
+        }
+    trigger = {
+      cyprus_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      add_adm_power = 200
+      cukurova_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  punish_cilcian_raiders = {
+    icon = mission_imperial_cities
+    required_missions = {Unite_the_island}
+    provinces_to_highlight = {
+          OR = {
+            area = cukurova_area
+          }
+          NOT = {owned_by = ROOT}
+        }
+    trigger = {
+      cukurova_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      add_treasury = 200
+      add_country_modifier = {
+        name = fighting_the_pirates
+        duration = -1
+      }
+    }
+  }
+
+  control_east_mediterannean_trade_cities = {
+    icon = mission_protect_granada
+    required_missions = {punish_cilcian_raiders}
+    provinces_to_highlight = {
+          OR = {
+            province_id = 358
+            province_id = 1855
+            province_id = 378
+            province_id = 2313
+            province_id = 4316
+          }
+          NOT = {owned_by = ROOT}
+        }
+    trigger = {
+        owns_core_province = 358
+        owns_core_province = 1855
+        owns_core_province = 378
+        owns_core_province = 2313
+        owns_core_province = 4316
+      }
+    effect = {
+      add_country_modifier = {
+        name = eastern_trade_cyp
+        duration = -1
+      }
+      syria_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  control_the_trade = {
+    icon = africa_proconsulare
+    required_missions = {control_east_mediterannean_trade_cities}
+    provinces_to_highlight = {
+
+    }
+    trigger = {
+      has_most_province_trade_power = 2313
+      has_most_province_trade_power = 358
+    }
+    effect = {
+    1855 = {
+      add_trade_modifier = {
+        who = ROOT
+        duration = -1
+        power = 50
+        key = SYRIAN_MONOPOL
+      }
+    }
+    }
+  }
+
+  cypriot_mines = {
+    icon = mission_rb_take_gibraltar
+    required_missions = {}
+    provinces_to_highlight = {
+        OR = {
+          province_id = 4815
+        }
+        NOT = {owned_by = ROOT}
+        NOT = {base_production = 10}
+      }
+    }
+    trigger = {
+      4815 = {
+        base_production = 10
+      }
+    }
+    effect = {
+      4815 = {
+        add_province_modifier = {
+          name = great_mines
+          duration = -1
+        }
+      }
+    }
+  }
+
+}

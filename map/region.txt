@@ -337,18 +337,24 @@ maghreb_region = {
 
 mashriq_region = {
 	areas = {
-		syria_area
-		palestine_area
 		al_jazira_area
 		iraq_arabi_area
 		basra_area
+		osroene_area
+		north_kurdistan_area
+		shahrizor_area
+	}
+}
+syria_region = {
+	areas = {
+		syria_area
+		palestine_area
 		trans_jordan_area
 		syrian_desert_area
 		aleppo_area
-		osroene_area
+		cyprus_area
 	}
 }
-
 anatolia_region = {
 	areas = {
 		hudavendigar_area
@@ -357,14 +363,12 @@ anatolia_region = {
 		rum_area
 		kastamonu_area
 		erzurum_area
-		north_kurdistan_area
 		dulkadir_area
 		cukurova_area
 		ankara_area
 		aegean_archipelago_area
 		germiyan_area
-		caria_area
-		cyprus_area
+		caria_area		
 		paphlagonia_area
 	}
 }
@@ -381,7 +385,6 @@ persia_region = {
 		persian_gulf_coast
 		tabriz_area
 		khuzestan_area
-		shahrizor_area
 		mogostan_area
 	}
 }
