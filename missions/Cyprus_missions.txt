@@ -16,7 +16,7 @@ Cyprus_1_1 = {
     NOT = { map_setup = map_setup_random }
   }
   Unite_the_island = {
-    icon = mission_el_badi_palace
+    icon = kingdom_of_cyprus
     required_missions = {}
     position = 1
     provinces_to_highlight = {
@@ -44,7 +44,7 @@ Cyprus_1_1 = {
   }
 
   punish_cilcian_raiders = {
-    icon = mission_imperial_cities
+    icon = mission_end_arakan_piracy
     required_missions = {Unite_the_island}
     provinces_to_highlight = {
           OR = {
@@ -68,7 +68,7 @@ Cyprus_1_1 = {
   }
 
   control_east_mediterannean_trade_cities = {
-    icon = mission_protect_granada
+    icon = mission_rb_mediterranean_authority
     required_missions = {punish_cilcian_raiders}
     provinces_to_highlight = {
           OR = {
@@ -103,7 +103,7 @@ Cyprus_1_1 = {
   }
 
   control_the_trade = {
-    icon = africa_proconsulare
+    icon = mission_dominate_home_trade_node
     required_missions = {control_east_mediterannean_trade_cities}
     provinces_to_highlight = {
 
@@ -125,7 +125,7 @@ Cyprus_1_1 = {
   }
 
   cypriot_mines = {
-    icon = mission_rb_take_gibraltar
+    icon = mission_jawal_silver_mine
     required_missions = {}
     provinces_to_highlight = {
         OR = {
