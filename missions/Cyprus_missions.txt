@@ -124,6 +124,7 @@ Cyprus_1_1 = {
     }
   }
 
+
   cypriot_mines = {
     icon = mission_jawal_silver_mine
     required_missions = {}
@@ -134,7 +135,6 @@ Cyprus_1_1 = {
         NOT = {owned_by = ROOT}
         NOT = {base_production = 10}
       }
-    }
     trigger = {
       4815 = {
         base_production = 10
