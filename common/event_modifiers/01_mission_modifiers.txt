@@ -4865,5 +4865,19 @@ eastern_trade_cyp = {
 }
 
 great_mines = {
-  trade_goods_size_modifier = 0.25	
+  trade_goods_size_modifier = 0.25
+}
+
+accepted_christians = {
+  religious_unity = 0.2
+  tolerance_heathen = 1
+  tolerance_own = -1
+  missionary_maintenance_cost = 0.3
+}
+
+
+purged_christians = {
+  tolerance_heathen = -2
+  tolerance_own = 1
+  global_missionary_strength = 0.03
 }

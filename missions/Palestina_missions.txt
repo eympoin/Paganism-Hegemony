@@ -1,0 +1,167 @@
+Palestina_1_1 = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = PLS
+      was_tag = PLS
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  strike_the_christians = {
+    icon = kingdom_of_cyprus
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+          owned_by = KOJ
+        }
+    trigger = {
+      NOT = { exists = KOJ }
+    }
+    effect = {
+      add_mil_power = 100
+      country_event = {id = flavor_pls.1}
+    }
+  }
+
+  deal_with_christians = {
+    icon = mission_end_arakan_piracy
+    required_missions = {strike_the_christians}
+    provinces_to_highlight = {
+
+        }
+    trigger = {
+      OR = {
+        AND = {
+          has_country_modifier = accepted_christians
+          religious_unity = 0.8
+        }
+        AND = {
+          has_country_modifier = purged_christians
+          NOT = {
+            any_owned_province = {
+              religion = chalcedonian
+            }
+          }
+        }
+      }
+    }
+    effect = {
+      add_adm_power = 200
+      syria_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      aleppo_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      syrian_desert_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  control_syria = {
+    icon = mission_rb_mediterranean_authority
+    required_missions = {deal_with_christians}
+    provinces_to_highlight = {
+          OR = {
+            area = syria_area
+            area = aleppo_area
+            area = syrian_desert_area
+          }
+          NOT = {owned_by = ROOT}
+        }
+    trigger = {
+      aleppo_area = {
+        type = all
+        owned_by = ROOT
+      }
+      aleppo_area = {
+        type = all
+        owned_by = ROOT
+      }
+      syrian_desert_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      add_dip_power = 200
+        add_country_modifier = {
+          name = eastern_trade_cyp
+          duration = -1
+        }
+      }
+  }
+
+  control_the_isthmus = {
+    icon = mission_rb_mediterranean_authority
+    required_missions = {}
+    provinces_to_highlight = {
+          OR = {
+            province_id = 2315
+            province_id = 4316
+          }
+          NOT = {owned_by = ROOT}
+        }
+    trigger = {
+      owns = 2315
+      owns = 4316
+    }
+    effect = {
+        add_treasury = 100
+        add_country_modifier = {
+          name = eastern_trade_cyp
+          duration = -1
+        }
+      }
+  }
+
+
+  egyptian_riches = {
+    icon = mission_jawal_silver_mine
+    required_missions = {control_the_isthmus}
+    provinces_to_highlight = {
+          OR = {
+            area = delta_area
+            area = bahari_area
+          }
+          NOT = {owned_by = ROOT}
+        }
+    trigger = {
+      delta_area = {
+        type = all
+        owned_by = ROOT
+      }
+      bahari_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+    every_owned_province = {
+      limit = {
+        region = maghreb_region
+        trade_goods = grain
+      }
+      add_province_modifier = {
+        name = granary_of_the_mediterranean
+        duration = -1
+      }
+    }
+  }
+
+}

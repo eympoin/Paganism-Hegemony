@@ -1066,7 +1066,7 @@ Stabilize_the_country:0 "Stabilize the country"
 #Western Roman Empire
 flavor_wrm.1.t:0 "Cultural Assimilation"
 flavor_wrm.1.d:0 "This province is now fully romanized !"
-flavor_wrm.1.b:0 "Great News"
+flavor_wrm.1.a:0 "Great News"
 
 flavor_wrm.2.t:0 "Cultural Assimilation"
 flavor_wrm.2.d:0 "This province is now fully romanized !"

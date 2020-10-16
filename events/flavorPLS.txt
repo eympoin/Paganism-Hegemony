@@ -1,0 +1,43 @@
+namespace = flavor_pls
+
+palestina christian
+country_event = {
+	id = flavor_pls.1
+	title = "flavor_pls.1.t"
+	desc = "flavor_pls.1.d"
+	picture = UNIVERSITY_eventPicture
+	major = yes
+
+	is_triggered_only = yes
+
+	option = { #accept christians
+		name = "flavor_pls.1.a"
+		ai_chance = {
+			factor = 50
+		}
+		add_country_modifier = {
+			name = purged_christians
+			duration = -1
+		}
+		add_treasury = 100
+		every_owned_province = {
+			limit = {
+				religion = chalcedonian
+			}
+			add_base_tax = -2
+			add_base_manpower = -2
+			add_base_production = -2
+		}
+	}
+	option = { #purge_christians
+		name = "flavor_pls.1.b"
+		ai_chance = {
+			factor = 50
+		}
+		add_country_modifier = {
+			name = accepted_christians
+			duration = -1
+		}
+	}
+
+}
