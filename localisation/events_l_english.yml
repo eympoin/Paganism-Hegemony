@@ -1226,3 +1226,8 @@ flavor_spqr.43.t:0 "The East demand a price for recognition"
 flavor_spqr.43.d:0 "Our envoys came back with a an offer : Gold against Recognition"
 flavor_spqr.43.a:0 "A small price to pay for Glory"
 flavor_spqr.43.b:0 "It isn't worth it. The Greeks won't have our Gold !"
+
+flavor_pls.1.t:0 "Fate of the Christians"
+flavor_pls.1.d:0 "Now that the Kingdom of Jerusalem is destroyed, we must choose what to do with the followers of Jesus."
+flavor_pls.1.a:0 "They will finish on a cross."
+flavor_pls.1.b:0 "Accepting them will appease them"

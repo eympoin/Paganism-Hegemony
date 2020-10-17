@@ -1598,3 +1598,16 @@ punish_cilcian_raiders_desc:0 ""
 control_east_mediterannean_trade_cities_desc:0 ""
 control_the_trade_desc:0 ""
 cypriot_mines_desc:0 ""
+
+
+strike_the_christians_title:0 "Strike Jerusalem"
+deal_with_christians_title:0 "Deal with the Chalcedonians"
+control_syria_title:0 "Control Syria"
+control_the_isthmus_title:0 "Way to Egypt"
+egyptian_riches_title:0 "Egyptian riches"
+
+strike_the_christians_desc:0 ""
+deal_with_christians_desc:0 ""
+control_syria_desc:0 ""
+control_the_isthmus_desc:0 ""
+egyptian_riches_desc:0 ""
