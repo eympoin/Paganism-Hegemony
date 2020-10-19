@@ -11492,14 +11492,17 @@ wounds_of_bloody_war_spq = {
 	ae_impact = 0.3
 	war_exhaustion = 0.09
 	stability_cost_modifier = 0.5
+	diplomatic_upkeep = -4
 }
 bloodthirsty_heritage_spq = {
     diplomatic_reputation = -1
     ae_impact = 0.15
+		diplomatic_upkeep = -2
 }
 birthed_by_cw_spq = {
     stability_cost_modifier = 0.2
     war_exhaustion = 0.02
+		diplomatic_upkeep = -2
 }
 unrest_stirred_spqr = {
 	global_unrest = 3

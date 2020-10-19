@@ -1558,3 +1558,56 @@ reform_the_navy_desc:0 ""
 reform_trade_desc:0 ""
 mare_nostrum_desc:0 ""
 granary_of_the_west_desc:0 ""
+
+
+Defeat_fez_title:0 "Defeat Fez"
+tackle_the_moors_title:0 "Finish the Moors"
+end_jarawan_domination_title:0 "End the Jarawan threat"
+king_of_africa_title:0 "King of Mauretania"
+other_side_of_herculean_colums_title:0 "Through Herculean columns"
+
+Defeat_fez_desc:0 ""
+tackle_the_moors_desc:0 ""
+end_jarawan_domination_desc:0 ""
+king_of_africa_desc:0 ""
+other_side_of_herculean_colums_desc:0 ""
+
+
+king_of_the_moors_title:0 "King of the Moors"
+deal_with_the_romans_title:0 "End of Mauretania"
+jarawan_threat_title:0 "The Jarawa's threat"
+rich_cities_of_africa_title:0 "End the Roman presence"
+other_side_of_the_sahara_title:0 "Other side of the Sahara"
+
+
+king_of_the_moors_desc:0 ""
+deal_with_the_romans_desc:0 ""
+jarawan_threat_desc:0 ""
+rich_cities_of_africa_desc:0 ""
+other_side_of_the_sahara_desc:0 ""
+
+
+Unite_the_island_title:0 "Unite the Island"
+punish_cilcian_raiders_title:0 "Punish the Cilician Raiders"
+control_east_mediterannean_trade_cities_title:0 "Control the trading cities"
+control_the_trade_title:0 "Control eastern trade"
+cypriot_mines_title:0 "Cypriot Mines"
+
+Unite_the_island_desc:0 ""
+punish_cilcian_raiders_desc:0 ""
+control_east_mediterannean_trade_cities_desc:0 ""
+control_the_trade_desc:0 ""
+cypriot_mines_desc:0 ""
+
+
+strike_the_christians_title:0 "Strike Jerusalem"
+deal_with_christians_title:0 "Deal with the Chalcedonians"
+control_syria_title:0 "Control Syria"
+control_the_isthmus_title:0 "Way to Egypt"
+egyptian_riches_title:0 "Egyptian riches"
+
+strike_the_christians_desc:0 ""
+deal_with_christians_desc:0 ""
+control_syria_desc:0 ""
+control_the_isthmus_desc:0 ""
+egyptian_riches_desc:0 ""

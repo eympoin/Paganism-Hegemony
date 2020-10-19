@@ -55,15 +55,12 @@ base_2 = {
         province_id = 352
         province_id = 2450
       }
+      NOT = {owns_or_subject_of = ROOT}
     }
 
     trigger = {
-    352 = {
-      owned_by = ROOT
-    }
-    2450 = {
-      owned_by = ROOT
-    }
+      owns_or_subject_of = 2450
+      owns_or_subject_of = 352
     }
     effect = {
     add_mil_power = 50
@@ -931,12 +928,14 @@ roman_base_3 = {
     position = 3
     provinces_to_highlight = {
       culture = Griko
+      continent = europe
       NOT = {owned_by = ROOT}
     }
 
     trigger = {
     owns_all_provinces = {
         culture = Griko
+        continent = europe
       }
     }
     effect = {

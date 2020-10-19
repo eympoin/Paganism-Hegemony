@@ -1,0 +1,332 @@
+Ionia_1= {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = ION
+      was_tag = ION
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  invit_artist = {
+    icon = kingdom_of_cyprus
+    required_missions = {  }
+    position = 1
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  invit_philosphers = {
+    icon = kingdom_of_cyprus
+    required_missions = {invit_artist}
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  invit_scientists = {
+    icon = kingdom_of_cyprus
+    required_missions = {invit_philosphers}
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  build_universities = {
+    icon = kingdom_of_cyprus
+    required_missions = {invit_scientists}
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+Ionia_1_1 = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = ION
+      was_tag = ION
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  dev_capital = {
+    icon = kingdom_of_cyprus
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  lydian_protection = {
+    icon = kingdom_of_cyprus
+    required_missions = {dev_capital}
+    position = 1
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  dev_smyrna = {
+    icon = kingdom_of_cyprus
+    required_missions = {lydian_protection}
+    position = 1
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  to_the_isles = {
+    icon = kingdom_of_cyprus
+    required_missions = {dev_smyrna}
+    position = 1
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+
+  temple_of_artemis = {
+    icon = kingdom_of_cyprus
+    required_missions = {to_the_isles}
+    position = 1
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  trade_hegemony = {
+    icon = kingdom_of_cyprus
+    required_missions = {temple_of_artemis}
+    position = 1
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  ionan_fleet = {
+    icon = kingdom_of_cyprus
+    required_missions = {trade_hegemony}
+    position = 1
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+    beacon_of_civilization = {
+      icon = kingdom_of_cyprus
+      required_missions = {ionan_fleet}
+      position = 1
+      provinces_to_highlight = {
+          }
+      trigger = {
+      }
+      effect = {
+      }
+    }
+
+
+}
+
+
+Ionia_1_2 = {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = ION
+      was_tag = ION
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  dev_pergamon = {
+    icon = kingdom_of_cyprus
+    required_missions = {lydian_protection}
+    position = 3
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  negotiate_for_mysia = {
+    icon = kingdom_of_cyprus
+    required_missions = {dev_pergamon}
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  temple_of_zeus = {
+    icon = kingdom_of_cyprus
+    required_missions = {to_the_isles}
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+
+}
+
+Ionia_1_3 = {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = ION
+      was_tag = ION
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  dev_miletos = {
+    icon = kingdom_of_cyprus
+    required_missions = {lydian_protection}
+    position = 3
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  need_for_marble = {
+    icon = kingdom_of_cyprus
+    required_missions = {dev_miletos}
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  temple_of_helios = {
+    icon = kingdom_of_cyprus
+    required_missions = {to_the_isles}
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+
+}
+
+Ionia_1_4 = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = ION
+      was_tag = ION
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  dev_mysia = {
+    icon = kingdom_of_cyprus
+    required_missions = {negotiate_for_mysia  }
+    position = 5
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  richest_city_of_the_world = {
+    icon = kingdom_of_cyprus
+    required_missions = {dev_mysia}
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+Ionia_1_5 = {
+  slot = 5
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = ION
+      was_tag = ION
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  a_new_quarry = {
+    icon = kingdom_of_cyprus
+    required_missions = {need_for_marble}
+    position = 5
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  end_the_reign_of_pirates = {
+    icon = kingdom_of_cyprus
+    required_missions = {a_new_quarry}
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}

@@ -4566,7 +4566,7 @@ city_of_riches = {
 }
 
 saharan_trade_monopol = {
-  caravan_power = 0.3
+  caravan_power = 0.33
 }
 
 chiefs_autonomy = {
@@ -4667,6 +4667,7 @@ hannibal_road_ctg = {
 
 emperor_of_east_and_west = {
   imperial_authority = 0.2
+  diplomatic_reputation = 2
 }
 
 roman_savior = {
@@ -4836,4 +4837,47 @@ navy_tradition = 0.5
 Reunion = {
   global_unrest = -1
   legitimacy = 1
+}
+
+king_of_africa_mauretania = {
+  legitimacy = 1
+  prestige = 1
+  global_tax_modifier = 0.1
+}
+
+control_straight = {
+  trade_efficiency = 0.2
+}
+
+
+king_of_the_moors = {
+  legitimacy = 1
+  prestige = 1
+  cavalry_power = 0.1
+}
+
+fighting_the_pirates = {
+  cannons_for_hunting_pirates_in_fleet = 1
+}
+
+eastern_trade_cyp = {
+  trade_steering = 0.2
+}
+
+great_mines = {
+  trade_goods_size_modifier = 0.25
+}
+
+accepted_christians = {
+  religious_unity = 0.2
+  tolerance_heathen = 1
+  tolerance_own = -1
+  missionary_maintenance_cost = 0.3
+}
+
+
+purged_christians = {
+  tolerance_heathen = -2
+  tolerance_own = 1
+  global_missionary_strength = 0.03
 }

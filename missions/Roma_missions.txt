@@ -40,6 +40,7 @@ Roma_Unification_1 = {
 		position = 2
 		trigger = {
 			has_country_modifier = wounds_of_bloody_war_spq
+			stability = 2
 			dip_power = 200
 		}
 		effect = {
@@ -202,11 +203,13 @@ Roma_Unification_1 = {
 		required_missions = { southern_city_states }
 		provinces_to_highlight = {
         culture = Griko
+				continent = europe
         NOT = {owned_by = ROOT}
       }
 		trigger = {
 			owns_all_provinces = {
 				culture = Griko
+				continent = europe
 				}
 		}
 		effect = {

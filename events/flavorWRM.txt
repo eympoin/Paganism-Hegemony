@@ -351,6 +351,16 @@ country_event = {#answer of the ERE
     ai_chance = { factor = 1 }
     WRM = { country_event = { id = flavor_wrm.12} }
   }
+
+  option = { #it is time to unite
+    name = flavor_wrm.11.b
+    trigger = {
+      has_country_modifier = greeko-roman_friendship
+    }
+    ai_chance = { factor = 1 }
+    WRM = { country_event = { id = flavor_wrm.121} }
+  }
+
 }
 
 country_event = {#To war
@@ -379,6 +389,42 @@ country_event = {#To war
       type = cb_fabricated_claims
       months = -1
     }
+  }
+}
+
+country_event = {#Union
+  id = flavor_wrm.121
+  title = flavor_wrm.121.t
+  desc = flavor_wrm.121.d
+  picture = DIPLOMACY_eventPicture
+
+  is_triggered_only = yes
+
+  option = { #war
+    name = flavor_wrm.121.a
+    ai_chance = { factor = 1 }
+    add_stability = -1
+    create_union = emperor
+    ROOT = {
+      set_in_empire = yes
+    }
+    set_hre_religion = deii
+    emperor = {
+      kill_ruler = yes
+    }
+    set_hre_religion_treaty = yes
+    add_imperial_influence = 40
+    elector = WRM
+    add_country_modifier = {
+      name = emperor_of_east_and_west
+      duration = -1
+    }
+  }
+  option = { #not yet
+    name = flavor_wrm.121.b
+    ai_chance = { factor = 1 }
+    set_country_flag = defied_the_east
+    add_prestige = 10
   }
 }
 
@@ -419,7 +465,8 @@ country_event = {#Peace choices
     add_prestige = 20
     add_legitimacy = 20
     add_truce_with = emperor
-    WRM = {
+    add_imperial_influence	= -100
+    ROOT = {
       set_in_empire = yes
     }
     set_hre_religion_treaty = yes
@@ -434,8 +481,8 @@ country_event = {#Peace choices
     ai_chance = { factor = 1 }
     white_peace = emperor
     add_truce_with = emperor
-    add_stability = -2
-    WRM = {
+    add_stability = -3
+    ROOT = {
       set_in_empire = yes
     }
     set_hre_religion = deii
@@ -443,7 +490,7 @@ country_event = {#Peace choices
       kill_ruler = yes
     }
     set_hre_religion_treaty = yes
-    add_imperial_influence = 50
+    add_imperial_influence = 40
     add_country_modifier = {
       name = emperor_of_east_and_west
       duration = -1
@@ -467,6 +514,11 @@ country_event = {#WRM formation
       limit = {
         culture_group = neo-roman
         NOT = {tag = WRM}
+        is_colonial_nation = no
+        OR = {
+          capital_scope = {continent = europe }
+          capital_scope = {region = maghreb_region }
+        }
       }
       country_event = { id = flavor_wrm.15}
     }
