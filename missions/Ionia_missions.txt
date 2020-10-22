@@ -98,10 +98,23 @@ Ionia_1_1 = {
     required_missions = {}
     position = 1
     provinces_to_highlight = {
-        }
+      province_id = 4804
+      }
     trigger = {
+      4804 = {
+        development = 30
+      }
     }
     effect = {
+      4804 = {
+        add_building = temple
+        add_building = workshop
+        add_building = marketplace
+        add_province_modifier = {
+          name = metropolis_ionia
+          duration = -1
+        }
+      }
     }
   }
 
@@ -122,10 +135,23 @@ Ionia_1_1 = {
     required_missions = {lydian_protection}
     position = 1
     provinces_to_highlight = {
-        }
+      province_id = 318
+      }
     trigger = {
+      318 = {
+        development = 30
+      }
     }
     effect = {
+      318 = {
+        add_building = temple
+        add_building = workshop
+        add_building = marketplace
+        add_province_modifier = {
+          name = metropolis_ionia
+          duration = -1
+        }
+      }
     }
   }
 
@@ -210,10 +236,23 @@ Ionia_1_2 = {
     required_missions = {lydian_protection}
     position = 3
     provinces_to_highlight = {
-        }
+      province_id = 4803
+      }
     trigger = {
+      4803 = {
+        development = 30
+      }
     }
     effect = {
+      4803 = {
+        add_building = temple
+        add_building = workshop
+        add_building = marketplace
+        add_province_modifier = {
+          name = metropolis_ionia
+          duration = -1
+        }
+      }
     }
   }
 
@@ -258,10 +297,23 @@ Ionia_1_3 = {
     required_missions = {lydian_protection}
     position = 3
     provinces_to_highlight = {
-        }
+      province_id = 4818
+      }
     trigger = {
+      4818 = {
+        development = 30
+      }
     }
     effect = {
+      4818 = {
+        add_building = temple
+        add_building = workshop
+        add_building = marketplace
+        add_province_modifier = {
+          name = metropolis_ionia
+          duration = -1
+        }
+      }
     }
   }
 

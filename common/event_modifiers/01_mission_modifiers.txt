@@ -4898,3 +4898,9 @@ invited_scientist = {
 land_of_universities = {
   innovativeness_gain = 1
 }
+
+metropolis_ionia = {
+  local_tax_modifier = 0.2
+  local_institution_spread = 0.1
+  trade_goods_size_modifier = 0.25	
+}
