@@ -11685,3 +11685,40 @@ greeko-roman_friendship = {
 	tolerance_heretic = 4
 	global_heretic_missionary_strength = -0.03
 }
+
+ionia_0_25_cities = {
+	global_tax_modifier = 0.3
+	production_efficiency = 0.3
+	development_cost = -0.25
+	build_cost = -0.3
+	global_institution_spread = 0.3
+	country_admin_power = 1
+	country_military_power = 1
+	country_diplomatic_power = 1
+}
+
+ionia_25_40_cities = {
+	global_tax_modifier = 0.2
+	production_efficiency = 0.2
+	development_cost = -0.25
+	build_cost = -0.3
+	global_institution_spread = 0.2
+}
+
+ionia_40_60_cities = {
+		global_institution_spread = 0.2
+		development_cost = -0.1
+}
+
+ionia_60_100_cities = {
+	global_tax_modifier = -0.2
+	production_efficiency = -0.2
+}
+
+ionia_100_plus_cities = {
+	global_tax_modifier = -0.2
+	production_efficiency = -0.2
+	country_admin_power = -1
+	country_military_power = -1
+	country_diplomatic_power = -1
+}

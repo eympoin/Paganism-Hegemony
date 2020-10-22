@@ -10,44 +10,73 @@ Ionia_1= {
     NOT = { map_setup = map_setup_random }
   }
   invit_artist = {
-    icon = kingdom_of_cyprus
+    icon = continue_the_renaissance
     required_missions = {  }
     position = 1
     provinces_to_highlight = {
         }
     trigger = {
+      treasury = 200
     }
     effect = {
+      add_treasury = -200
+      add_country_modifier = {
+        name = invited_artist
+        duration = -1
+      }
     }
   }
   invit_philosphers = {
-    icon = kingdom_of_cyprus
+    icon = florentine_renaissance
     required_missions = {invit_artist}
     provinces_to_highlight = {
         }
     trigger = {
+      treasury = 300
     }
     effect = {
+    add_treasury = -300
+    add_country_modifier = {
+      name = invited_philosophers
+      duration = -1
+    }
     }
   }
   invit_scientists = {
-    icon = kingdom_of_cyprus
+    icon = personal_diplomacy
     required_missions = {invit_philosphers}
     provinces_to_highlight = {
         }
     trigger = {
+      add_treasury = -500
+      treasury = 500
     }
     effect = {
+      add_country_modifier = {
+        name = invited_scientist
+        duration = -1
+      }
     }
   }
   build_universities = {
-    icon = kingdom_of_cyprus
+    icon = mission_early_modern_university
     required_missions = {invit_scientists}
     provinces_to_highlight = {
         }
     trigger = {
+      treasury = 1000
     }
     effect = {
+      add_treasury = -1000
+      add_country_modifier = {
+        name = land_of_universities
+        duration = -1
+      }
+      random_owned_province = {add_building = university  }
+      random_owned_province = {add_building = university  }
+      random_owned_province = {add_building = university  }
+      random_owned_province = {add_building = university  }
+      random_owned_province = {add_building = university  }
     }
   }
 

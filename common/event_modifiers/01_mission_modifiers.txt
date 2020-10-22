@@ -4881,3 +4881,20 @@ purged_christians = {
   tolerance_own = 1
   global_missionary_strength = 0.03
 }
+
+invited_artist = {
+  prestige = 1
+}
+
+
+invited_philosophers = {
+  idea_cost = -0.1
+}
+
+invited_scientist = {
+  technology_cost = -0.1
+}
+
+land_of_universities = {
+  innovativeness_gain = 1
+}
