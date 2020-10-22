@@ -1,0 +1,281 @@
+namespace = flavor_ion
+
+#ionan mechanic
+country_event = {
+	id = flavor_ion.1
+	title = "flavor_ion.1.t"
+	desc = "flavor_ion.1.d"
+	picture = UNIVERSITY_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = ION
+	}
+	mean_time_to_happen = {
+		days = 3
+	}
+
+
+	option = {
+		name = "flavor_ion.1.a"
+		ai_chance = { factor = 75 }
+		hidden_effect = {
+			add_prestige = 1
+		}
+	}
+
+}
+
+
+country_event = {
+	id = flavor_ion.2
+	title = "flavor_ion.2.t"
+	desc = "flavor_ion.2.d"
+	picture = UNIVERSITY_eventPicture
+
+	trigger = {
+		num_of_provinces_in_states = 1
+		NOT = {num_of_provinces_in_states = 25 }
+		NOT = {has_country_modifier = ionia_0_25_cities}
+		tag = ION
+	}
+
+	option = {
+		name = "flavor_ion.2.a"
+		ai_chance = {
+			factor = 25
+		}
+		add_country_modifier = {
+			name = ionia_0_25_cities
+			duration = -1
+		}
+		if = {
+		limit = {
+			has_country_modifier = ionia_100_plus_cities
+			}
+			remove_country_modifier = ionia_100_plus_cities
+		}
+		if = {
+		limit = {
+			has_country_modifier = ionia_25_40_cities
+			}
+			remove_country_modifier = ionia_25_40_cities
+		}
+		if = {
+		limit = {
+			has_country_modifier = ionia_40_60_cities
+			}
+			remove_country_modifier = ionia_40_60_cities
+		}
+		if = {
+		limit = {
+			has_country_modifier = ionia_60_100_cities
+			}
+			remove_country_modifier = ionia_60_100_cities
+		}
+	}
+
+}
+
+
+country_event = {
+	id = flavor_ion.3
+	title = "flavor_ion.3.t"
+	desc = "flavor_ion.3.d"
+	picture = UNIVERSITY_eventPicture
+
+	trigger = {
+		num_of_provinces_in_states = 25
+		NOT = {num_of_provinces_in_states = 40 }
+		NOT = {has_country_modifier = ionia_25_40_cities}
+		tag = ION
+	}
+
+	option = {
+		name = "flavor_ion.3.a"
+		ai_chance = {
+			factor = 25
+		}
+		add_country_modifier = {
+			name = ionia_25_40_cities
+			duration = -1
+		}
+		if = {
+		limit = {
+			has_country_modifier = ionia_100_plus_cities
+			}
+			remove_country_modifier = ionia_100_plus_cities
+		}
+		if = {
+		limit = {
+			has_country_modifier = ionia_0_25_cities
+			}
+			remove_country_modifier = ionia_0_25_cities
+		}
+		if = {
+		limit = {
+			has_country_modifier = ionia_40_60_cities
+			}
+			remove_country_modifier = ionia_40_60_cities
+		}
+		if = {
+		limit = {
+			has_country_modifier = ionia_60_100_cities
+			}
+			remove_country_modifier = ionia_60_100_cities
+		}
+	}
+
+}
+
+
+country_event = {
+	id = flavor_ion.4
+	title = "flavor_ion.4.t"
+	desc = "flavor_ion.4.d"
+	picture = UNIVERSITY_eventPicture
+
+	trigger = {
+		num_of_provinces_in_states = 40
+		NOT = {num_of_provinces_in_states = 60 }
+		NOT = {has_country_modifier = ionia_40_60_cities}
+		tag = ION
+	}
+
+	option = {
+		name = "flavor_ion.4.a"
+		ai_chance = {
+			factor = 25
+		}
+		add_country_modifier = {
+			name = ionia_40_60_cities
+			duration = -1
+		}
+		if = {
+		limit = {
+			has_country_modifier = ionia_25_40_cities
+			}
+			remove_country_modifier = ionia_25_40_cities
+		}
+		if = {
+		limit = {
+			has_country_modifier = ionia_0_25_cities
+			}
+			remove_country_modifier = ionia_0_25_cities
+		}
+		if = {
+		limit = {
+			has_country_modifier = ionia_60_100_cities
+			}
+			remove_country_modifier = ionia_60_100_cities
+		}
+		if = {
+		limit = {
+			has_country_modifier = ionia_100_plus_cities
+			}
+			remove_country_modifier = ionia_100_plus_cities
+		}
+	}
+
+}
+
+
+country_event = {
+	id = flavor_ion.5
+	title = "flavor_ion.5.t"
+	desc = "flavor_ion.5.d"
+	picture = UNIVERSITY_eventPicture
+
+	trigger = {
+		num_of_provinces_in_states = 60
+		NOT = {num_of_provinces_in_states = 100 }
+		NOT = {has_country_modifier = ionia_60_100_cities}
+		tag = ION
+	}
+
+	option = {
+		name = "flavor_ion.5.a"
+		ai_chance = {
+			factor = 25
+		}
+		add_country_modifier = {
+			name = ionia_60_100_cities
+			duration = -1
+		}
+		if = {
+		limit = {
+			has_country_modifier = ionia_25_40_cities
+			}
+			remove_country_modifier = ionia_25_40_cities
+		}
+		if = {
+		limit = {
+			has_country_modifier = ionia_0_25_cities
+			}
+			remove_country_modifier = ionia_0_25_cities
+		}
+		if = {
+		limit = {
+			has_country_modifier = ionia_40_60_cities
+			}
+			remove_country_modifier = ionia_40_60_cities
+		}
+		if = {
+		limit = {
+			has_country_modifier = ionia_100_plus_cities
+			}
+			remove_country_modifier = ionia_100_plus_cities
+		}
+	}
+
+}
+
+
+country_event = {
+	id = flavor_ion.6
+	title = "flavor_ion.6.t"
+	desc = "flavor_ion.6.d"
+	picture = UNIVERSITY_eventPicture
+
+	trigger = {
+		num_of_provinces_in_states = 100
+		NOT = {has_country_modifier = ionia_100_plus_cities}
+		tag = ION
+	}
+
+	option = {
+		name = "flavor_ion.6.a"
+		ai_chance = {
+			factor = 25
+		}
+		add_country_modifier = {
+			name = ionia_100_plus_cities
+			duration = -1
+		}
+		if = {
+		limit = {
+			has_country_modifier = ionia_25_40_cities
+			}
+			remove_country_modifier = ionia_25_40_cities
+		}
+		if = {
+		limit = {
+			has_country_modifier = ionia_0_25_cities
+			}
+			remove_country_modifier = ionia_0_25_cities
+		}
+		if = {
+		limit = {
+			has_country_modifier = ionia_40_60_cities
+			}
+			remove_country_modifier = ionia_40_60_cities
+		}
+		if = {
+		limit = {
+			has_country_modifier = ionia_60_100_cities
+			}
+			remove_country_modifier = ionia_60_100_cities
+		}
+	}
+
+}
