@@ -115,6 +115,13 @@ Ionia_1_1 = {
           duration = -1
         }
       }
+      germiyan_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 
@@ -123,10 +130,44 @@ Ionia_1_1 = {
     required_missions = {dev_capital}
     position = 1
     provinces_to_highlight = {
+          OR = {
+            province_id = 2297
+            province_id = 4309
+            province_id = 4308
+            province_id = 322
+            }
+            NOT = {owned_by = ROOT}
         }
     trigger = {
+      4309 = {
+        owned_by = ROOT
+      }
+      4308 = {
+        owned_by = ROOT
+      }
+      2297 = {
+        owned_by = ROOT
+      }
+      322 = {
+        owned_by = ROOT
+      }
     }
     effect = {
+
+      4309 = {
+        add_building = fort_15th
+        add_country_modifier = {
+          name = ionian_defense_line_fort
+          duration = -1
+        }
+      }
+      322 = {
+        add_building = fort_15th
+        add_country_modifier = {
+          name = ionian_defense_line_fort
+          duration = -1
+        }
+      }
     }
   }
 
@@ -160,10 +201,38 @@ Ionia_1_1 = {
     required_missions = {dev_smyrna}
     position = 1
     provinces_to_highlight = {
+      OR = {
+        area = aegean_archipelago_area
+        area = south_islands_area
         }
+        NOT = {owned_by = ROOT}
+      }
     trigger = {
+      num_of_owned_provinces_with = {
+        value = 5
+        OR = {
+        area = aegean_archipelago_area
+        area = south_islands_area
+        }
+      }
+      320 = {
+        owned_by = ROOT
+      }
     }
     effect = {
+      every_owned_province = {
+        limit = {
+        OR = {
+          area = aegean_archipelago_area
+          area = south_islands_area
+          }
+        }
+        add_building = naval_battery
+      }
+      add_country_modifier = {
+        name = mediterranean_protection
+        duration = -1
+      }
     }
   }
 
@@ -173,10 +242,20 @@ Ionia_1_1 = {
     required_missions = {to_the_isles}
     position = 1
     provinces_to_highlight = {
-        }
+    }
     trigger = {
+      4804 = {
+        owned_by = ROOT
+      }
+      treasury = 500
     }
     effect = {
+      4804 = {
+          add_prvince_modifier = {
+            name = temple_of_artemis_mod
+            duration = -1
+          }
+        }
     }
   }
 
@@ -187,8 +266,16 @@ Ionia_1_1 = {
     provinces_to_highlight = {
         }
     trigger = {
+      4804 = {
+        has_most_province_trade_power = ROOT
+      }
     }
     effect = {
+      add_treasury = 500
+      add_country_modifier = {
+        name = agean_ambition
+        duration = 7300
+      }
     }
   }
 
@@ -199,8 +286,13 @@ Ionia_1_1 = {
     provinces_to_highlight = {
         }
     trigger = {
+      navy_size_percentage = 0.95
     }
     effect = {
+      add_country_modifier = {
+        name = naval_enthusiasm_mission
+        duration = -1
+      }
     }
   }
 
@@ -273,8 +365,18 @@ Ionia_1_2 = {
     provinces_to_highlight = {
         }
     trigger = {
+      4803 = {
+        owned_by = ROOT
+      }
+      treasury = 500
     }
     effect = {
+    4803 = {
+        add_prvince_modifier = {
+          name = temple_of_zeus_mod
+          duration = -1
+        }
+      }
     }
   }
 
@@ -334,8 +436,18 @@ Ionia_1_3 = {
     provinces_to_highlight = {
         }
     trigger = {
+      320 = {
+        owned_by = ROOT
+      }
+      treasury = 500
     }
     effect = {
+    320 = {
+        add_prvince_modifier = {
+          name = temple_of_helios_mod
+          duration = -1
+        }
+      }
     }
   }
 
