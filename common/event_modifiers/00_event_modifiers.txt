@@ -11698,8 +11698,8 @@ ionia_0_25_cities = {
 }
 
 ionia_25_40_cities = {
-	global_tax_modifier = 0.2
-	production_efficiency = 0.2
+	global_tax_modifier = 0.1
+	production_efficiency = 0.1
 	development_cost = -0.25
 	build_cost = -0.3
 	global_institution_spread = 0.2

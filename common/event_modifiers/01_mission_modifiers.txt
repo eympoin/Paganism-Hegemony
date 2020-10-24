@@ -4896,7 +4896,7 @@ invited_scientist = {
 }
 
 land_of_universities = {
-  innovativeness_gain = 1
+  innovativeness_gain = 0.5
 }
 
 metropolis_ionia = {
@@ -4927,4 +4927,18 @@ temple_of_helios_mod = {
 
 agean_ambition = {
 global_ship_cost = -0.33
+}
+
+megalopolis = {
+  unrest = 2
+  global_tax_modifier = 0.4
+	production_efficiency = 0.4
+}
+
+marble_quarry = {
+  trade_goods_size_modifier= 0.5
+}
+
+safe_sea = {
+  global_ship_trade_power = 0.2
 }
