@@ -94,7 +94,7 @@ Ionia_1_1 = {
     NOT = { map_setup = map_setup_random }
   }
   dev_capital = {
-    icon = kingdom_of_cyprus
+    icon = develop_provence
     required_missions = {}
     position = 1
     provinces_to_highlight = {
@@ -126,7 +126,7 @@ Ionia_1_1 = {
   }
 
   lydian_protection = {
-    icon = kingdom_of_cyprus
+    icon = fortress_of_belgrade
     required_missions = {dev_capital}
     position = 1
     provinces_to_highlight = {
@@ -172,7 +172,7 @@ Ionia_1_1 = {
   }
 
   dev_smyrna = {
-    icon = kingdom_of_cyprus
+    icon = mission_develop_cordoba
     required_missions = {lydian_protection}
     position = 1
     provinces_to_highlight = {
@@ -211,7 +211,7 @@ Ionia_1_1 = {
   }
 
   to_the_isles = {
-    icon = kingdom_of_cyprus
+    icon = mission_invade_island
     required_missions = {dev_smyrna}
     position = 1
     provinces_to_highlight = {
@@ -252,7 +252,7 @@ Ionia_1_1 = {
 
 
   temple_of_artemis = {
-    icon = kingdom_of_cyprus
+    icon = mission_amur_acquisition
     required_missions = {to_the_isles}
     position = 1
     provinces_to_highlight = {
@@ -274,7 +274,7 @@ Ionia_1_1 = {
   }
 
   trade_hegemony = {
-    icon = kingdom_of_cyprus
+    icon = mission_trade_company_region_abroad
     required_missions = {temple_of_artemis}
     position = 1
     provinces_to_highlight = {
@@ -294,7 +294,7 @@ Ionia_1_1 = {
   }
 
   ionan_fleet = {
-    icon = kingdom_of_cyprus
+    icon = mission_galleys_in_port
     required_missions = {trade_hegemony}
     position = 1
     provinces_to_highlight = {
@@ -311,7 +311,7 @@ Ionia_1_1 = {
   }
 
     beacon_of_civilization = {
-      icon = kingdom_of_cyprus
+      icon = mission_conquer_alexandria
       required_missions = {ionan_fleet}
       position = 1
       provinces_to_highlight = {
@@ -344,7 +344,7 @@ Ionia_1_2 = {
     NOT = { map_setup = map_setup_random }
   }
   dev_pergamon = {
-    icon = kingdom_of_cyprus
+    icon = develop_naples
     required_missions = {lydian_protection}
     position = 3
     provinces_to_highlight = {
@@ -369,7 +369,7 @@ Ionia_1_2 = {
   }
 
   negotiate_for_mysia = {
-    icon = kingdom_of_cyprus
+    icon = anatolian_frontier
     required_missions = {dev_pergamon}
     provinces_to_highlight = {
         }
@@ -391,7 +391,7 @@ Ionia_1_2 = {
   }
 
   temple_of_zeus = {
-    icon = kingdom_of_cyprus
+    icon = a_roman_empire
     required_missions = {to_the_isles}
     provinces_to_highlight = {
         }
@@ -426,7 +426,7 @@ Ionia_1_3 = {
     NOT = { map_setup = map_setup_random }
   }
   dev_miletos = {
-    icon = kingdom_of_cyprus
+    icon = mission_develop_nevas_port
     required_missions = {lydian_protection}
     position = 3
     provinces_to_highlight = {
@@ -458,7 +458,7 @@ Ionia_1_3 = {
   }
 
   need_for_marble = {
-    icon = kingdom_of_cyprus
+    icon = mission_conquer_50_development
     required_missions = {dev_miletos}
     provinces_to_highlight = {
       province_id = 319
@@ -476,7 +476,7 @@ Ionia_1_3 = {
   }
 
   temple_of_helios = {
-    icon = kingdom_of_cyprus
+    icon = crusader_fleet
     required_missions = {to_the_isles}
     provinces_to_highlight = {
         }
@@ -511,7 +511,7 @@ Ionia_1_4 = {
     NOT = { map_setup = map_setup_random }
   }
   dev_mysia = {
-    icon = kingdom_of_cyprus
+    icon = develop_the_po_valley
     required_missions = {negotiate_for_mysia  }
     position = 5
     provinces_to_highlight = {
@@ -526,8 +526,6 @@ Ionia_1_4 = {
         type = all
         development = 25
       }
-      }
-
     }
     effect = {
       add_treasury = 200
@@ -541,7 +539,7 @@ Ionia_1_4 = {
     }
   }
   richest_city_of_the_world = {
-    icon = kingdom_of_cyprus
+    icon = take_constantinople
     required_missions = {dev_mysia}
     provinces_to_highlight = {
       province_id = 151
@@ -573,7 +571,7 @@ Ionia_1_5 = {
     NOT = { map_setup = map_setup_random }
   }
   a_new_quarry = {
-    icon = kingdom_of_cyprus
+    icon = mission_jawal_silver_mine
     required_missions = {need_for_marble}
     position = 5
     provinces_to_highlight = {
@@ -595,7 +593,7 @@ Ionia_1_5 = {
     }
   }
   end_the_reign_of_pirates = {
-    icon = kingdom_of_cyprus
+    icon = mission_pirate_havens
     required_missions = {a_new_quarry}
     provinces_to_highlight = {
       OR = {
