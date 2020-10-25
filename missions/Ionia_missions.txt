@@ -386,7 +386,7 @@ Ionia_1_2 = {
       }
     }
     effect = {
-        #event
+        country_event = { id = flavor_ion.7 }
     }
   }
 

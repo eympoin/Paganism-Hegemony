@@ -11722,3 +11722,14 @@ ionia_100_plus_cities = {
 	country_military_power = -1
 	country_diplomatic_power = -1
 }
+
+ionan_help_byz = {
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
+}
+ionan_help_ion = {
+	country_admin_power = -1
+	country_diplomatic_power = -1
+	country_military_power = -1
+}

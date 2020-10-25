@@ -279,3 +279,242 @@ country_event = {
 	}
 
 }
+
+
+
+country_event = {#negotiation or not
+	id = flavor_ion.7
+	title = "flavor_ion.7.t"
+	desc = "flavor_ion.7.d"
+	picture = UNIVERSITY_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #negotiate
+		name = "flavor_ion.7.a"
+		ai_chance = {
+			factor = 100
+		}
+		BYZ = {
+			country_event = { id = flavor_ion.8}
+		}
+
+	}
+	option = { #war
+		name = "flavor_ion.7.b"
+		ai_chance = {
+			factor = 0
+		}
+		hudavendigar_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = {is_claim	= ROOT}
+			}
+			add_permanent_claim = ROOT
+		}
+
+	}
+
+}
+
+
+country_event = {#What BYZ wants
+	id = flavor_ion.8
+	title = "flavor_ion.8.t"
+	desc = "flavor_ion.8.d"
+	picture = UNIVERSITY_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #BYZ demand a lot of money
+		name = "flavor_ion.8.a"
+		ai_chance = {
+			factor = 25
+		}
+		ION = {
+			country_event = { id = flavor_ion.9 days = 7 }
+		}
+	}
+	option = { #money and adm/dip/mil help
+		name = "flavor_ion.8.b"
+		ai_chance = {
+			factor = 25
+		}
+		ION = {
+			country_event = { id = flavor_ion.10 days = 7 }
+		}
+	}
+
+	option = { #money and influence
+		name = "flavor_ion.8.c"
+		ai_chance = {
+			factor = 25
+		}
+		trigger = {
+			BYZ = {
+				is_emperor = yes
+			}
+		}
+		ION = {
+			country_event = { id = flavor_ion.11 days = 7 }
+		}
+	}
+	option = { #BYZ refuse
+		name = "flavor_ion.8.e"
+		ai_chance = {
+			factor = 25
+		}
+		ION = {
+			country_event = { id = flavor_ion.12 days = 7 }
+		}
+	}
+
+}
+
+
+country_event = {#negotiation lot of gold
+	id = flavor_ion.9
+	title = "flavor_ion.9.t"
+	desc = "flavor_ion.9.d"
+	picture = UNIVERSITY_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #accept
+		name = "flavor_ion.9.a"
+		ai_chance = {
+			factor = 100
+		}
+		add_treasury = -5000
+		BYZ = {add_treasury = 5000}
+		BYZ = {
+			every_owned_province = {
+				limit = {
+					area = hudavendigar_area
+				}
+				cede_province = ION
+				remove_core = BYZ
+			}
+		}
+	}
+	option = { #refuse
+		name = "flavor_ion.9.b"
+		ai_chance = {
+			factor = 0
+		}
+		hudavendigar_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = {is_claim	= ROOT}
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+}
+
+country_event = {#negotiation gold and adm/dip/mil help
+	id = flavor_ion.10
+	title = "flavor_ion.10.t"
+	desc = "flavor_ion.10.d"
+	picture = UNIVERSITY_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #accept
+		name = "flavor_ion.9.a"
+		ai_chance = {
+			factor = 100
+		}
+		add_treasury = -1000
+		BYZ = {add_treasury = 1000}
+		BYZ = {
+			add_country_modifier = {
+				name = ionan_help_byz
+				duration = 7300
+				}
+		}
+		add_country_modifier = {
+				name = ionan_help_ion
+				duration = 7300
+		}
+		BYZ = {
+			every_owned_province = {
+				limit = {
+					area = hudavendigar_area
+				}
+				cede_province = ION
+				remove_core = BYZ
+			}
+		}
+	}
+	option = { #refuse
+		name = "flavor_ion.9.b"
+		ai_chance = {
+			factor = 0
+		}
+		hudavendigar_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = {is_claim	= ROOT}
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+}
+
+country_event = {#negotiation gold and influence
+	id = flavor_ion.11
+	title = "flavor_ion.11.t"
+	desc = "flavor_ion.11.d"
+	picture = UNIVERSITY_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #accept
+		name = "flavor_ion.9.a"
+		ai_chance = {
+			factor = 100
+		}
+		add_treasury = -2500
+		BYZ = {add_treasury = 2500}
+		add_imperial_influence = 50
+	}
+	option = { #refuse
+		name = "flavor_ion.9.b"
+		ai_chance = {
+			factor = 0
+		}
+		hudavendigar_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = {is_claim	= ROOT}
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+}
+
+
+country_event = {#to war : byz refused
+	id = flavor_ion.12
+	title = "flavor_ion.12.t"
+	desc = "flavor_ion.12.d"
+	picture = UNIVERSITY_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #accept
+		name = "flavor_ion.12.a"
+		ai_chance = {
+			factor = 25
+		}
+		hudavendigar_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = {is_claim	= ROOT}
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+
+}
