@@ -5,7 +5,7 @@ country_event = {
 	id = flavor_ion.1
 	title = "flavor_ion.1.t"
 	desc = "flavor_ion.1.d"
-	picture = UNIVERSITY_eventPicture
+	picture = CITY_DEVELOPMENT_eventPicture
 	fire_only_once = yes
 
 	trigger = {
@@ -31,7 +31,7 @@ country_event = {
 	id = flavor_ion.2
 	title = "flavor_ion.2.t"
 	desc = "flavor_ion.2.d"
-	picture = UNIVERSITY_eventPicture
+	picture = CITY_DEVELOPMENT_eventPicture
 
 	trigger = {
 		num_of_provinces_in_states = 1
@@ -82,7 +82,7 @@ country_event = {
 	id = flavor_ion.3
 	title = "flavor_ion.3.t"
 	desc = "flavor_ion.3.d"
-	picture = UNIVERSITY_eventPicture
+	picture = CITY_DEVELOPMENT_eventPicture
 
 	trigger = {
 		num_of_provinces_in_states = 25
@@ -133,7 +133,7 @@ country_event = {
 	id = flavor_ion.4
 	title = "flavor_ion.4.t"
 	desc = "flavor_ion.4.d"
-	picture = UNIVERSITY_eventPicture
+	picture = CITY_DEVELOPMENT_eventPicture
 
 	trigger = {
 		num_of_provinces_in_states = 40
@@ -184,7 +184,7 @@ country_event = {
 	id = flavor_ion.5
 	title = "flavor_ion.5.t"
 	desc = "flavor_ion.5.d"
-	picture = UNIVERSITY_eventPicture
+	picture = CITY_DEVELOPMENT_eventPicture
 
 	trigger = {
 		num_of_provinces_in_states = 60
@@ -235,7 +235,7 @@ country_event = {
 	id = flavor_ion.6
 	title = "flavor_ion.6.t"
 	desc = "flavor_ion.6.d"
-	picture = UNIVERSITY_eventPicture
+	picture = CITY_DEVELOPMENT_eventPicture
 
 	trigger = {
 		num_of_provinces_in_states = 100
@@ -286,7 +286,7 @@ country_event = {#negotiation or not
 	id = flavor_ion.7
 	title = "flavor_ion.7.t"
 	desc = "flavor_ion.7.d"
-	picture = UNIVERSITY_eventPicture
+	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 
@@ -322,7 +322,7 @@ country_event = {#What BYZ wants
 	id = flavor_ion.8
 	title = "flavor_ion.8.t"
 	desc = "flavor_ion.8.d"
-	picture = UNIVERSITY_eventPicture
+	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 
@@ -376,7 +376,7 @@ country_event = {#negotiation lot of gold
 	id = flavor_ion.9
 	title = "flavor_ion.9.t"
 	desc = "flavor_ion.9.d"
-	picture = UNIVERSITY_eventPicture
+	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 
@@ -416,7 +416,7 @@ country_event = {#negotiation gold and adm/dip/mil help
 	id = flavor_ion.10
 	title = "flavor_ion.10.t"
 	desc = "flavor_ion.10.d"
-	picture = UNIVERSITY_eventPicture
+	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 
@@ -466,7 +466,7 @@ country_event = {#negotiation gold and influence
 	id = flavor_ion.11
 	title = "flavor_ion.11.t"
 	desc = "flavor_ion.11.d"
-	picture = UNIVERSITY_eventPicture
+	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 
@@ -499,7 +499,7 @@ country_event = {#to war : byz refused
 	id = flavor_ion.12
 	title = "flavor_ion.12.t"
 	desc = "flavor_ion.12.d"
-	picture = UNIVERSITY_eventPicture
+	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 

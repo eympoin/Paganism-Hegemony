@@ -1231,3 +1231,58 @@ flavor_pls.1.t:0 "Fate of the Christians"
 flavor_pls.1.d:0 "Now that the Kingdom of Jerusalem is destroyed, we must choose what to do with the followers of Jesus."
 flavor_pls.1.a:0 "They will finish on a cross."
 flavor_pls.1.b:0 "Accepting them will appease them"
+
+
+
+flavor_ion.1.t:0 "Ionian Megaopolis"
+flavor_ion.1.d:0 "Ionian unique mechanic : the more province they have the less powerful they will be. Maintaining a low number of province will give you tremendous bonuses. "
+flavor_ion.1.a:0 "Nice to know !"
+
+flavor_ion.2.t:0 "The Megolopolis"
+flavor_ion.2.d:0 "Our cities are renowned throughout the Greek world as place of riches and wonders."
+flavor_ion.2.a:0 "We shall shine !"
+
+flavor_ion.3.t:0 "Our territories grows"
+flavor_ion.3.d:0 "With our territory growing, our territory and especially our polis are harder to manage."
+flavor_ion.3.a:0 "We shall carefully expand from now."
+
+flavor_ion.4.t:0 "Our territories grows"
+flavor_ion.4.d:0 "With our territory growing, our territory and especially our polis are harder to manage."
+flavor_ion.4.a:0 "We shall carefully expand from now."
+
+flavor_ion.5.t:0 "Our territories grows"
+flavor_ion.5.d:0 "With our territory growing, our territory and especially our polis are harder to manage."
+flavor_ion.5.a:0 "We shall create some vassals."
+
+flavor_ion.6.t:0 "Our territories grows"
+flavor_ion.6.d:0 "With our territory growing, our territory and especially our polis are harder to manage."
+flavor_ion.6.a:0 "We shall create some vassals."
+
+
+flavor_ion.7.t:0 "Buyout of Mysia"
+flavor_ion.7.d:0 "Mysia has always been rich like the Ionian coast. Unifying these two coasts will give us riches. "
+flavor_ion.7.a:0 "Ask Byzantium for negotiations."
+flavor_ion.7.b:0 "We will have it through war."
+
+flavor_ion.8.t:0 "Ionia asks for Mysia"
+flavor_ion.8.d:0 "Ionia has always been rich and now they want to use these riches to buy the province of Mysia from us. Shall we accept ?"
+flavor_ion.8.a:0 "If they want it, they will have to pay !"
+flavor_ion.8.b:0 "They will have to pay and help us !"
+flavor_ion.8.c:0 "They shall support our grip over the empire !"
+flavor_ion.8.e:0 "They will have nothing !"
+
+
+flavor_ion.9.t:0 "Byzantine demands"
+flavor_ion.9.d:0 "The Byzantine asks us a lot of gold in exchange of Mysia"
+flavor_ion.9.a:0 "It's a deal then."
+flavor_ion.9.b:0 "No way !"
+
+flavor_ion.10.t:0 "Byzantine demands"
+flavor_ion.10.d:0 "The Byzantine asks us a lot of gold and support in exchange of Mysia"
+
+flavor_ion.11.t:0 "Byzantine demands"
+flavor_ion.11.d:0 "The Byzantine asks us a lot of gold and support in exchange of Mysia"
+
+flavor_ion.12.t:0 "Byzantine refuse to negotiate"
+flavor_ion.12.d:0 "They have even refused to come to the table. They will regret this."
+flavor_ion.12.a:0 "We will take it by force."
