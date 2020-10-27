@@ -4953,5 +4953,9 @@ phoenician_trading_outpost = {
 	local_sailors_modifier = 0.1
   local_ship_cost = -0.2
   ship_recruit_speed = -0.25
-  hostile_fleet_attrition = 5	
+  hostile_fleet_attrition = 5
+}
+
+deal_with_pls = {
+  global_missionary_strength = 0.02
 }

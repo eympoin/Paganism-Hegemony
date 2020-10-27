@@ -157,6 +157,7 @@ phoenicia_2= {
       }
     }
     effect = {
+      add_mercantilism = 2
       146 = {
         add_trade_modifier = {
           who = ROOT
@@ -226,11 +227,34 @@ phoenicia_3= {
     required_missions = {  }
     position = 1
     provinces_to_highlight = {
+      province_id = 382
+      OR = {
+        NOT = {country_or_subject_holds = ROOT}
+        owner = {
+							is_in_trade_league_with = ROOT
+						}
         }
+    }
     trigger = {
+      OR = {
+        owns_or_subject_of = 382
+        382 = {
+          owner = {
+  							is_in_trade_league_with = ROOT
+  						}
+          }
+        }
     }
     effect = {
-
+      add_mercantilism = 1
+      382 = {
+        add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = SYRIAN_MONOPOL
+        }
+      }
     }
   }
 
@@ -238,24 +262,55 @@ phoenicia_3= {
     icon = continue_the_renaissance
     required_missions = {damascus_influence  }
     provinces_to_highlight = {
-        }
+        area = cyprus_area
+        NOT = {country_or_subject_holds = ROOT}
+    }
     trigger = {
+      cyprus_area = {
+        type = all
+        OR = {
+          country_or_subject_holds = ROOT
+          owner = {
+    					is_in_trade_league_with = ROOT
+    				}
+          }
+      }
     }
     effect = {
-
+      add_mercantilism = 2
+      add_years_of_income = 1
+      add_dip_power = 100
     }
   }
 
   alexandria_influence = {
     icon = continue_the_renaissance
-    required_missions = {cyprus_influence  }
+    required_missions = {cyprus_influence egyptian_trade }
     position = 4
     provinces_to_highlight = {
-        }
+      province_id = 382
+      NOT = {country_or_subject_holds = ROOT}
+    }
     trigger = {
+    OR = {
+      owns_or_subject_of = 358
+        358 = {
+          owner = {
+                is_in_trade_league_with = ROOT
+              }
+          }
+        }
     }
     effect = {
-
+    358 = {
+      add_mercantilism = 1
+      add_trade_modifier = {
+        who = ROOT
+        duration = -1
+        power = 50
+        key = EGYPTIAN_MONOPOL
+      }
+    }
     }
   }
 }
@@ -276,11 +331,27 @@ phoenicia_4= {
     required_missions = {  }
     position = 1
     provinces_to_highlight = {
-        }
+      area = palestine_area
+      NOT = {owned_by = ROOT}
+    }
     trigger = {
+      palestine_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
     effect = {
-
+      add_country_modifier = {
+        name = deal_with_pls
+        duration = 7300
+      }
+      red_sea_area = {
+      limit = {
+        NOT = { owned_by = ROOT }
+        NOT = {is_claim	= ROOT}
+      }
+      add_permanent_claim = ROOT
+      }
     }
   }
 
@@ -288,11 +359,36 @@ phoenicia_4= {
     icon = continue_the_renaissance
     required_missions = {palestine_problems  }
     provinces_to_highlight = {
-        }
+      area = red_sea_area
+      NOT = {owned_by = ROOT}
+    }
     trigger = {
+      red_sea_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
     effect = {
-
+      bahari_area = {
+      limit = {
+        NOT = { owned_by = ROOT }
+        NOT = {is_claim	= ROOT}
+      }
+      add_permanent_claim = ROOT
+      }
+      delta_area = {
+      limit = {
+        NOT = { owned_by = ROOT }
+        NOT = {is_claim	= ROOT}
+      }
+      add_permanent_claim = ROOT
+      }
+    }
+    387 = {
+      add_permanent_claim = ROOT
+    }
+    1215 = {
+      add_permanent_claim = ROOT
     }
   }
 
@@ -302,9 +398,21 @@ phoenicia_4= {
     provinces_to_highlight = {
         }
     trigger = {
+      358 = {
+      trade_share = {
+          country = ROOT
+          share = 50
+        }
+      }
     }
     effect = {
-
+    add_mercantilism = 1
+    change_price = {
+      trade_goods = grain
+      key = grain_monopol
+      value = 0.25
+      duration = -1
+      }
     }
   }
 }
