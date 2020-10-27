@@ -4942,3 +4942,16 @@ marble_quarry = {
 safe_sea = {
   global_ship_trade_power = 0.2
 }
+
+traders_of_the_empire = {
+  trade_steering = 0.1
+  merchants = 2
+}
+
+phoenician_trading_outpost = {
+	province_trade_power_modifier = 0.4
+	local_sailors_modifier = 0.1
+  local_ship_cost = -0.2
+  ship_recruit_speed = -0.25
+  hostile_fleet_attrition = 5	
+}

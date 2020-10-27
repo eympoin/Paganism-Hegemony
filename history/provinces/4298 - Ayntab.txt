@@ -1,7 +1,7 @@
 #4398 - Ayntab
 
-owner = CMG
-controller = CMG
+owner = SYR
+controller = SYR
 culture = cilician
 religion = theoi
 capital = "Ayntab"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = CMG
+add_core = SYR
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

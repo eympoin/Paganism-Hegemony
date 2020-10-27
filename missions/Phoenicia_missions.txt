@@ -1,0 +1,575 @@
+phoenicia_1= {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = PHO
+      was_tag = PHO
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  syrian_threat = {
+    icon = continue_the_renaissance
+    required_missions = {  }
+    position = 1
+    provinces_to_highlight = {
+        }
+    trigger = {
+      army_strength = {
+      who = SYR
+      value = 1
+      }
+      army_size_percentage = 0.9
+
+    }
+    effect = {
+      add_mil_power = 100
+      aleppo_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  cilician_piracy = {
+    icon = continue_the_renaissance
+    required_missions = {syrian_threat  }
+    provinces_to_highlight = {
+        }
+    trigger = {
+      naval_strength = {
+        who = CIL
+        value = 1
+        }
+        navy_size_percentage = 1
+    }
+    effect = {
+      add_dip_power = 100
+      cukurova_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  ionian_rivalry = {
+    icon = continue_the_renaissance
+    required_missions = {cilician_piracy  }
+    provinces_to_highlight = {
+        }
+    trigger = {
+      OR = {
+      AND = {
+        is_rival = ION
+        trade_embargoing = ION
+        1744 = { #Antwerpen
+        	trade_share = {
+        		country = ROOT
+        		share = 15
+        	}
+        }
+      }
+      NOT = {exists = ION}
+      }
+    }
+    effect = {
+      add_years_of_income = 1
+      #event incident
+    }
+  }
+
+  byzantine_interference = {
+    icon = continue_the_renaissance
+    required_missions = {ionian_rivalry  }
+    provinces_to_highlight = {
+        }
+    trigger = {
+      #event won incident
+    }
+    effect = {
+      add_country_modifier = {
+        name = traders_of_the_empire
+        duration = -1
+      }
+    }
+  }
+
+}
+
+phoenicia_2= {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = PHO
+      was_tag = PHO
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  kretan_base = {
+    icon = continue_the_renaissance
+    required_missions = {cyprus_influence  }
+    position = 3
+    provinces_to_highlight = {
+      OR = {
+        province_id = 4791
+        province_id = 163
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      4791 = {
+        owned_by = ROOT
+      }
+      163 = {
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      136 = {
+        add_province_modifier = {
+          name = phoenician_trading_outpost
+          duration = -1
+        }
+      }
+    }
+  }
+
+  phoenician_league = {
+    icon = continue_the_renaissance
+    required_missions = {kretan_base  }
+    provinces_to_highlight = {
+        }
+    trigger = {
+    236 = {
+        OR = {
+          country_or_non_sovereign_subject_holds = root
+          owner = { is_in_trade_league_with = root }
+        }
+      }
+    }
+    effect = {
+      146 = {
+        add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = AGEAN_MONOPOL
+        }
+      }
+    }
+  }
+
+  all_for_one = {
+    icon = continue_the_renaissance
+    required_missions = {phoenician_league byzantine_interference  alexandria_influence}
+    provinces_to_highlight = {
+        }
+        trigger = {
+    			num_of_merchants = 6
+    			trade_income_percentage = 0.50
+    			is_great_power = yes
+    		}
+        effect = {
+          custom_tooltip = pho_united_league.tooltip
+    			if = {
+    				limit = {
+    					has_dlc = "Mare Nostrum"
+    				}
+    				every_country = {
+    					limit = { is_in_trade_league_with = root }
+    					ROOT = { vassalize = PREV }
+    		    }
+    	     }
+           else = {
+             every_country = {
+               limit = {
+                 if = {
+                   limit = { NOT = { has_dlc = "Mare Nostrum" } }
+                   alliance_with = ROOT
+                   num_of_cities  = 1
+                 }
+                 else = {
+                   is_in_trade_league_with = ROOT
+                   ROOT = { is_trade_league_leader = yes }
+                 }
+                 is_at_war = no
+               }
+               ROOT = { vassalize = PREV }
+             }
+        }
+      }
+    }
+}
+
+phoenicia_3= {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = PHO
+      was_tag = PHO
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  damascus_influence = {
+    icon = continue_the_renaissance
+    required_missions = {  }
+    position = 1
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+
+    }
+  }
+
+  cyprus_influence = {
+    icon = continue_the_renaissance
+    required_missions = {damascus_influence  }
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+
+    }
+  }
+
+  alexandria_influence = {
+    icon = continue_the_renaissance
+    required_missions = {cyprus_influence  }
+    position = 4
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+
+    }
+  }
+}
+
+phoenicia_4= {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = PHO
+      was_tag = PHO
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  palestine_problems = {
+    icon = continue_the_renaissance
+    required_missions = {  }
+    position = 1
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+
+    }
+  }
+
+  to_the_red_sea = {
+    icon = continue_the_renaissance
+    required_missions = {palestine_problems  }
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+
+    }
+  }
+
+  egyptian_trade = {
+    icon = continue_the_renaissance
+    required_missions = {to_the_red_sea  }
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+
+    }
+  }
+}
+phoenicia_5= {
+  slot = 5
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = PHO
+      was_tag = PHO
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+}
+phoenicia_5= {
+  slot = 5
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = PHO
+      was_tag = PHO
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  aden_strait = {
+    icon = continue_the_renaissance
+    required_missions = { to_the_red_sea }
+    position = 3
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+
+    }
+  }
+
+  socotra_base = {
+    icon = continue_the_renaissance
+    required_missions = {aden_strait  }
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+
+    }
+  }
+
+  mogadiscio_base = {
+    icon = continue_the_renaissance
+    required_missions = {socotra_base  }
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+
+    }
+  }
+  zanzibar_base = {
+    icon = continue_the_renaissance
+    required_missions = {mogadiscio_base  }
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+
+    }
+  }
+  madagascar_base = {
+    icon = continue_the_renaissance
+    required_missions = {zanzibar_base  }
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+
+    }
+  }
+}
+
+
+phoenicia_6= {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = PHO
+      was_tag = PHO
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  hormuz_control = {
+    icon = continue_the_renaissance
+    required_missions = { socotra_base  }
+    position = 5
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+
+    }
+  }
+
+  ceylan_base = {
+    icon = continue_the_renaissance
+    required_missions = {hormuz_control  }
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+
+    }
+  }
+
+  india_trade_pho = {
+    icon = continue_the_renaissance
+    required_missions = {ceylan_base  }
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+
+    }
+  }
+  control_indian_ocean = {
+    icon = continue_the_renaissance
+    required_missions = {india_trade_pho madagascar_base  }
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+
+    }
+  }
+  australia_control = {
+    icon = continue_the_renaissance
+    required_missions = {control_indian_ocean  }
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+
+    }
+  }
+}
+
+phoenicia_7= {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = PHO
+      was_tag = PHO
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  indonesia_base = {
+    icon = continue_the_renaissance
+    required_missions = { ceylan_base  }
+    position = 7
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+
+    }
+  }
+
+  indonesia_control = {
+    icon = continue_the_renaissance
+    required_missions = {indonesia_base  }
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+
+    }
+  }
+
+  phillipines_control = {
+    icon = continue_the_renaissance
+    required_missions = {indonesia_control  }
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+
+    }
+  }
+  korea_japan_base = {
+    icon = continue_the_renaissance
+    required_missions = {phillipines_control  china_control}
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+
+    }
+  }
+  korea_japan_control = {
+    icon = continue_the_renaissance
+    required_missions = {korea_japan_base  }
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+
+    }
+  }
+}
+
+
+phoenicia_7= {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = PHO
+      was_tag = PHO
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  china_base = {
+    icon = continue_the_renaissance
+    required_missions = { indonesia_base  }
+    position = 8
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+
+    }
+  }
+
+  china_control = {
+    icon = continue_the_renaissance
+    required_missions = {china_base  }
+    provinces_to_highlight = {
+        }
+    trigger = {
+    }
+    effect = {
+
+    }
+  }
+
+
+}
