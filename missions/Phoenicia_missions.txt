@@ -135,6 +135,7 @@ phoenicia_2= {
     }
     effect = {
       136 = {
+        center_of_trade = 1
         add_province_modifier = {
           name = phoenician_trading_outpost
           duration = -1
@@ -207,6 +208,17 @@ phoenicia_2= {
                ROOT = { vassalize = PREV }
              }
         }
+      }
+    }
+
+    the_lost_colony = {
+      icon = continue_the_renaissance
+      required_missions = {all_for_one  }
+      provinces_to_highlight = {
+          }
+      trigger = {
+      }
+      effect = {
       }
     }
 }
@@ -461,6 +473,10 @@ phoenicia_5= {
       add_permanent_claim = ROOT
     }
       387 = {
+        center_of_trade = 1
+        add_base_tax = 2
+        add_base_production = 2
+        add_base_manpower = 2
         add_province_modifier = {
           name = phoenician_trading_outpost
           duration = -1
@@ -489,6 +505,10 @@ phoenicia_5= {
         add_permanent_claim = ROOT
       }
       1099 = {
+        add_base_tax = 3
+        add_base_production = 3
+        add_base_manpower = 3
+        center_of_trade = 1
         add_province_modifier = {
           name = phoenician_trading_outpost
           duration = -1
@@ -524,6 +544,9 @@ phoenicia_5= {
         add_permanent_claim = ROOT
       }
       1205 = {
+        add_base_tax = 2
+        add_base_production = 2
+        add_base_manpower = 2
         add_province_modifier = {
           name = phoenician_trading_outpost
           duration = -1
@@ -573,6 +596,9 @@ phoenicia_5= {
       add_permanent_claim = ROOT
       }
       1201 = {
+        add_base_tax = 3
+        add_base_production = 3
+        add_base_manpower = 3
         add_province_modifier = {
           name = phoenician_trading_outpost
           duration = -1
@@ -666,6 +692,9 @@ phoenicia_6 = {
     effect = {
       add_mercantilism = 1
       2999 = {
+        add_base_tax = 2
+        add_base_production = 2
+        add_base_manpower = 2
         add_province_modifier = {
           name = phoenician_trading_outpost
           duration = -1
@@ -697,6 +726,9 @@ phoenicia_6 = {
     effect = {
       add_mercantilism = 1
       572 = {
+        add_base_tax = 2
+        add_base_production = 2
+        add_base_manpower = 2
         add_province_modifier = {
           name = phoenician_trading_outpost
           duration = -1
@@ -737,7 +769,7 @@ phoenicia_6 = {
           who = ROOT
           duration = -1
           power = 50
-          key = EAST_AFRICA_MONOPOL
+          key = INDIA_MONOPOL
         }
       }
       2089 = {
@@ -745,7 +777,7 @@ phoenicia_6 = {
           who = ROOT
           duration = -1
           power = 50
-          key = EAST_AFRICA_MONOPOL
+          key = INDIA_MONOPOL
         }
       }
       561 = {
@@ -753,7 +785,7 @@ phoenicia_6 = {
           who = ROOT
           duration = -1
           power = 50
-          key = EAST_AFRICA_MONOPOL
+          key = INDIA_MONOPOL
         }
       }
     }
@@ -828,11 +860,26 @@ phoenicia_7= {
     required_missions = { ceylan_base  }
     position = 7
     provinces_to_highlight = {
-        }
+      province_id = 2679
+      NOT = {owned_by = ROOT}
+    }
     trigger = {
+      2679 = {
+        owned_by = ROOT
+      }
     }
     effect = {
-
+      add_mercantilism = 1
+      2679 = {
+        add_base_tax = 3
+        add_base_production = 3
+        add_base_manpower = 3
+        center_of_trade = 1
+        add_province_modifier = {
+          name = phoenician_trading_outpost
+          duration = -1
+        }
+      }
     }
   }
 
@@ -842,9 +889,37 @@ phoenicia_7= {
     provinces_to_highlight = {
         }
     trigger = {
+      2679 = {
+      trade_share = {
+          country = ROOT
+          share = 30
+        }
+      }
+      629 = {
+      trade_share = {
+          country = ROOT
+          share = 30
+        }
+      }
     }
     effect = {
-
+      add_mercantilism = 1
+      2679 = {
+        add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = INDONESIAN_MONOPOL
+        }
+      }
+      629 = {
+        add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = INDONESIAN_MONOPOL
+        }
+      }
     }
   }
 
@@ -854,20 +929,48 @@ phoenicia_7= {
     provinces_to_highlight = {
         }
     trigger = {
+      4352 = {
+      trade_share = {
+          country = ROOT
+          share = 40
+        }
+      }
     }
     effect = {
-
+      add_mercantilism = 1
+      4352 = {
+        add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = PHILLIPINES_MONOPOL
+        }
+      }
     }
   }
   korea_japan_base = {
     icon = continue_the_renaissance
     required_missions = {phillipines_control  china_control}
     provinces_to_highlight = {
-        }
+      province_id = 2679
+      NOT = {owned_by = ROOT}
+    }
     trigger = {
+      2741 = {
+        owned_by = ROOT
+      }
     }
     effect = {
-
+      2741 = {
+        add_base_tax = 3
+        add_base_production = 3
+        add_base_manpower = 3
+        center_of_trade = 1
+        add_province_modifier = {
+          name = phoenician_trading_outpost
+          duration = -1
+        }
+      }
     }
   }
   korea_japan_control = {
@@ -876,11 +979,84 @@ phoenicia_7= {
     provinces_to_highlight = {
         }
     trigger = {
+      2741 = {
+      trade_share = {
+          country = ROOT
+          share = 30
+        }
+      }
     }
     effect = {
-
+      add_mercantilism = 1
+      2741 = {
+        add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = JAPAN_MONOPOL
+        }
+      }
     }
   }
+
+    phoenician_thalassocracy = {
+      icon = mission_trade_company_region_abroad
+      required_missions = {korea_japan_control}
+
+      provinces_to_highlight = {
+
+      }
+
+      trigger = {
+        trade_income_percentage = 0.5
+
+        151 = { # Greece
+  				is_strongest_trade_power = ROOT
+  			}
+  			4800 = {	# Anatolia
+  				is_strongest_trade_power = ROOT
+  			}
+  			1855 = { #Syria
+  				is_strongest_trade_power = ROOT
+  			}
+  			387 = { #aden
+  				is_strongest_trade_power = ROOT
+  			}
+  			358 = { #Alexandria
+  				is_strongest_trade_power = ROOT
+  			}
+  			1201 = { #Zanzibar
+  				is_strongest_trade_power = ROOT
+  			}
+
+  			572 = { #Ceylan
+  				is_strongest_trade_power = ROOT
+  			}
+  			2679 = { #Malacca
+  				is_strongest_trade_power = ROOT
+  			}
+  			561 = { #Bengal
+  				is_strongest_trade_power = ROOT
+  			}
+  			684 = { #Huangzhou
+  				is_strongest_trade_power = ROOT
+  			}
+  			2741 = { #Japan/Korea
+  				is_strongest_trade_power = ROOT
+  			}
+      }
+      effect = {
+      add_years_of_income = 1
+      add_dip_power = 200
+      capital_scope = {
+        add_base_tax = 3
+      }
+      add_country_modifier = {
+        name = "thalassocracy"
+        duration = -1
+      }
+      }
+    }
 }
 
 
@@ -900,11 +1076,26 @@ phoenicia_8= {
     required_missions = { indonesia_base  }
     position = 8
     provinces_to_highlight = {
-        }
+      area = taiwan_area
+      NOT = {owned_by = ROOT}
+    }
     trigger = {
+      taiwan_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
     effect = {
-
+      738 = {
+        center_of_trade = 1
+        add_base_tax = 3
+        add_base_production = 3
+        add_base_manpower = 3
+        add_province_modifier = {
+          name = phoenician_trading_outpost
+          duration = -1
+        }
+      }
     }
   }
 
@@ -914,11 +1105,37 @@ phoenicia_8= {
     provinces_to_highlight = {
         }
     trigger = {
+      667 = {
+      trade_share = {
+          country = ROOT
+          share = 30
+        }
+      }
+      684 = {
+      trade_share = {
+          country = ROOT
+          share = 30
+        }
+      }
     }
     effect = {
-
+      add_mercantilism = 1
+      667 = {
+        add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = CHINA_MONOPOL
+        }
+      }
+      684 = {
+        add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = CHINA_MONOPOL
+        }
+      }
     }
   }
-
-
 }
