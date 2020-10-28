@@ -4959,3 +4959,13 @@ phoenician_trading_outpost = {
 deal_with_pls = {
   global_missionary_strength = 0.02
 }
+
+pho_colonisation = {
+  colonists = 1	
+}
+
+mastery_of_the_ocean = {
+  own_coast_naval_combat_bonus = 1.0
+  naval_attrition = -0.1
+  ship_durability = 0.1
+}

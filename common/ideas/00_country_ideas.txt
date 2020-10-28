@@ -1721,8 +1721,9 @@ phoenican_ideas = {
 		 galley_power = 0.15
 	}
 
-	mercenary_tradition = {
-		 merc_maintenance_modifier = -0.1
+	to_asian_trade = {
+		 global_colonial_growth = 10
+		 range = 0.33
 	}
 
 	sea_forts = {
