@@ -464,7 +464,7 @@ phoenicia_4= {
     }
   }
 }
-phoenicia_5= {
+phoenicia_5_1= {
   slot = 5
   generic = no
   ai = yes
