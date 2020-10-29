@@ -181,6 +181,20 @@ phoenicia_2= {
     			is_great_power = yes
     		}
         effect = {
+          byzacena_area = {
+            limit = {
+              NOT = { owned_by = ROOT }
+              NOT = {is_claim	= ROOT}
+            }
+            add_permanent_claim = ROOT
+          }
+          tunisia_area = {
+            limit = {
+              NOT = { owned_by = ROOT }
+              NOT = {is_claim	= ROOT}
+            }
+            add_permanent_claim = ROOT
+          }
           custom_tooltip = pho_united_league.tooltip
     			if = {
     				limit = {
@@ -215,10 +229,32 @@ phoenicia_2= {
       icon = continue_the_renaissance
       required_missions = {all_for_one  }
       provinces_to_highlight = {
-          }
+          OR = {
+            area = tunisia_area
+            area = byzacena_area
+            }
+          NOT = {owned_by = ROOT}
+      }
       trigger = {
+        tunisia_area = {
+          type = all
+          owned_by = ROOT
+        }
+        byzacena_area = {
+          type = all
+          owned_by = ROOT
+        }
       }
       effect = {
+        add_mercantilism = 1
+        341 = {
+          add_trade_modifier = {
+            who = ROOT
+            duration = -1
+            power = 50
+            key = CARTHAGINIAN_MONOPOL
+          }
+        }
       }
     }
 }
