@@ -10,7 +10,7 @@ phoenicia_1= {
     NOT = { map_setup = map_setup_random }
   }
   syrian_threat = {
-    icon = continue_the_renaissance
+    icon = mission_build_up_to_force_limit
     required_missions = {  }
     position = 1
     provinces_to_highlight = {
@@ -36,7 +36,7 @@ phoenicia_1= {
   }
 
   cilician_piracy = {
-    icon = continue_the_renaissance
+    icon = mission_konkani_pirates
     required_missions = {syrian_threat  }
     provinces_to_highlight = {
         }
@@ -60,7 +60,7 @@ phoenicia_1= {
   }
 
   ionian_rivalry = {
-    icon = continue_the_renaissance
+    icon = reclaim_the_aegean
     required_missions = {cilician_piracy  }
     provinces_to_highlight = {
         }
@@ -86,7 +86,7 @@ phoenicia_1= {
   }
 
   byzantine_interference = {
-    icon = continue_the_renaissance
+    icon = mission_empire
     required_missions = {ionian_rivalry  }
     provinces_to_highlight = {
         }
@@ -115,7 +115,7 @@ phoenicia_2= {
     NOT = { map_setup = map_setup_random }
   }
   kretan_base = {
-    icon = continue_the_renaissance
+    icon = foothold_in_greece
     required_missions = {cyprus_influence  }
     position = 3
     provinces_to_highlight = {
@@ -145,7 +145,7 @@ phoenicia_2= {
   }
 
   phoenician_league = {
-    icon = continue_the_renaissance
+    icon = return_visby_to_the_league
     required_missions = {kretan_base  }
     provinces_to_highlight = {
         }
@@ -171,7 +171,7 @@ phoenicia_2= {
   }
 
   all_for_one = {
-    icon = continue_the_renaissance
+    icon = unite_the_league
     required_missions = {phoenician_league byzantine_interference  alexandria_influence}
     provinces_to_highlight = {
         }
@@ -226,7 +226,7 @@ phoenicia_2= {
     }
 
     the_lost_colony = {
-      icon = continue_the_renaissance
+      icon = africa_proconsulare
       required_missions = {all_for_one  }
       provinces_to_highlight = {
           OR = {
@@ -271,7 +271,7 @@ phoenicia_3= {
     NOT = { map_setup = map_setup_random }
   }
   damascus_influence = {
-    icon = continue_the_renaissance
+    icon = mission_market_place_with_asian_traders
     required_missions = {  }
     position = 1
     provinces_to_highlight = {
@@ -307,7 +307,7 @@ phoenicia_3= {
   }
 
   cyprus_influence = {
-    icon = continue_the_renaissance
+    icon = kingdom_of_cyprus
     required_missions = {damascus_influence  }
     provinces_to_highlight = {
         area = cyprus_area
@@ -332,7 +332,7 @@ phoenicia_3= {
   }
 
   alexandria_influence = {
-    icon = continue_the_renaissance
+    icon = mission_conquer_alexandria
     required_missions = {cyprus_influence egyptian_trade }
     position = 4
     provinces_to_highlight = {
@@ -375,7 +375,7 @@ phoenicia_4= {
     NOT = { map_setup = map_setup_random }
   }
   palestine_problems = {
-    icon = continue_the_renaissance
+    icon = mission_pf_cross
     required_missions = {  }
     position = 1
     provinces_to_highlight = {
@@ -404,7 +404,7 @@ phoenicia_4= {
   }
 
   to_the_red_sea = {
-    icon = continue_the_renaissance
+    icon = mission_conquer_air
     required_missions = {palestine_problems  }
     provinces_to_highlight = {
       area = red_sea_area
@@ -441,7 +441,7 @@ phoenicia_4= {
   }
 
   egyptian_trade = {
-    icon = continue_the_renaissance
+    icon = mission_egyptian_mamluk_soldier
     required_missions = {to_the_red_sea  }
     provinces_to_highlight = {
         }
@@ -488,7 +488,7 @@ phoenicia_5= {
     NOT = { map_setup = map_setup_random }
   }
   aden_strait = {
-    icon = continue_the_renaissance
+    icon = mission_conquer_aden
     required_missions = { to_the_red_sea }
     position = 3
     provinces_to_highlight = {
@@ -522,7 +522,7 @@ phoenicia_5= {
   }
 
   socotra_base = {
-    icon = continue_the_renaissance
+    icon = mission_dominate_trade_in_aden
     required_missions = {aden_strait  }
     provinces_to_highlight = {
       province_id = 1099
@@ -564,7 +564,7 @@ phoenicia_5= {
   }
 
   mogadiscio_base = {
-    icon = continue_the_renaissance
+    icon = mission_into_africa
     required_missions = {socotra_base  }
     provinces_to_highlight = {
         province_id = 1205
@@ -591,7 +591,7 @@ phoenicia_5= {
     }
   }
   zanzibar_base = {
-    icon = continue_the_renaissance
+    icon = mission_zanzibari_trade
     required_missions = {mogadiscio_base  }
     provinces_to_highlight = {
         province_id = 1201
@@ -643,7 +643,7 @@ phoenicia_5= {
     }
   }
   madagascar_base = {
-    icon = continue_the_renaissance
+    icon = mission_african_gold
     required_missions = {zanzibar_base  }
     provinces_to_highlight = {
         OR = {
@@ -713,7 +713,7 @@ phoenicia_6 = {
     NOT = { map_setup = map_setup_random }
   }
   hormuz_base = {
-    icon = continue_the_renaissance
+    icon = mission_arabian_fort
     required_missions = { socotra_base  }
     position = 5
     provinces_to_highlight = {
@@ -740,7 +740,7 @@ phoenicia_6 = {
   }
 
   ceylan_base = {
-    icon = continue_the_renaissance
+    icon = mission_rb_take_indian_coast
     required_missions = {hormuz_base  }
     provinces_to_highlight = {
       OR = {
@@ -774,7 +774,7 @@ phoenicia_6 = {
   }
 
   india_trade_pho = {
-    icon = continue_the_renaissance
+    icon = mission_rb_inland_india
     required_missions = {ceylan_base  }
     provinces_to_highlight = {
         }
@@ -827,7 +827,7 @@ phoenicia_6 = {
     }
   }
   control_indian_ocean = {
-    icon = continue_the_renaissance
+    icon = mission_south_indian_trade
     required_missions = {india_trade_pho madagascar_base  }
     provinces_to_highlight = {
       OR = {
@@ -854,7 +854,7 @@ phoenicia_6 = {
     }
   }
   australia_control = {
-    icon = continue_the_renaissance
+    icon = colonize_australia
     required_missions = {control_indian_ocean  }
     provinces_to_highlight = {
         }
@@ -892,7 +892,7 @@ phoenicia_7= {
     NOT = { map_setup = map_setup_random }
   }
   indonesia_base = {
-    icon = continue_the_renaissance
+    icon = indonesian_trade
     required_missions = { ceylan_base  }
     position = 7
     provinces_to_highlight = {
@@ -920,7 +920,7 @@ phoenicia_7= {
   }
 
   indonesia_control = {
-    icon = continue_the_renaissance
+    icon = mission_portuguese_malacca
     required_missions = {indonesia_base  }
     provinces_to_highlight = {
         }
@@ -960,7 +960,7 @@ phoenicia_7= {
   }
 
   phillipines_control = {
-    icon = continue_the_renaissance
+    icon = mission_junk_boat
     required_missions = {indonesia_control  }
     provinces_to_highlight = {
         }
@@ -985,7 +985,7 @@ phoenicia_7= {
     }
   }
   korea_japan_base = {
-    icon = continue_the_renaissance
+    icon = mission_trade_with_japan
     required_missions = {phillipines_control  china_control}
     provinces_to_highlight = {
       province_id = 2679
@@ -1010,7 +1010,7 @@ phoenicia_7= {
     }
   }
   korea_japan_control = {
-    icon = continue_the_renaissance
+    icon = mission_to_japan
     required_missions = {korea_japan_base  }
     provinces_to_highlight = {
         }
@@ -1108,7 +1108,7 @@ phoenicia_8= {
     NOT = { map_setup = map_setup_random }
   }
   china_base = {
-    icon = continue_the_renaissance
+    icon = mission_to_the_south_china_sea
     required_missions = { indonesia_base  }
     position = 8
     provinces_to_highlight = {
@@ -1136,7 +1136,7 @@ phoenicia_8= {
   }
 
   china_control = {
-    icon = continue_the_renaissance
+    icon = mission_open_up_china
     required_missions = {china_base  }
     provinces_to_highlight = {
         }
