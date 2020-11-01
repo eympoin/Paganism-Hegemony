@@ -93,7 +93,7 @@ country_event = {
 		add_treasury = -500
 		add_dip_power = -200
 		set_country_flag = ere_disruption
-    country_event = { id = flavor_lom.3 }
+    emperor = {country_event = { id = flavor_lom.3 }}
   }
 }
 

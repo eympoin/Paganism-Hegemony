@@ -867,7 +867,7 @@ incident_shadow_kingdom = {
 
 incident_slavic_nationalism= {
 	event = slavic_uprising.2
-	default_option = 0
+	default_option = 2
 
 	can_stop = {
 		always = no
@@ -942,6 +942,76 @@ incident_lombard_disruption = {
 	2 = { #Let the Lombards free Illyria
 		factor = 0
 	}
+}
+
+incident_phoenicia = {
+	event = flavor_pho.2
+	default_option = 2
+
+	can_stop = {
+		OR = {
+			NOT = { exists = PHO }
+			PHO = { is_part_of_hre = no }
+			PHO = {
+				NOT = {
+					has_reform = merchants_reform
+				}
+			}
+		}
+	}
+  0 = { #support pho
+    modifier = {
+      factor = 100
+      OR = {
+        ai_attitude = {
+          who = PHO
+          attitude = attitude_friendly
+        }
+        ai_attitude = {
+          who = PHO
+          attitude = attitude_loyal
+        }
+        ai_attitude = {
+          who = PHO
+          attitude = attitude_allied
+        }
+      }
+    }
+  }
 
 
+  1 = { # status quo
+
+  }
+  2 = { # against pho
+    modifier = {
+      factor = 100
+      OR = {
+        ai_attitude = {
+          who = PHO
+          attitude = attitude_rivalry
+        }
+        ai_attitude = {
+          who = PHO
+          attitude = attitude_hostile
+        }
+        ai_attitude = {
+          who = PHO
+          attitude = attitude_threatened
+        }
+        ai_attitude = {
+          who = PHO
+          attitude = attitude_outraged
+        }
+        ai_attitude = {
+          who = PHO
+          attitude = attitude_disloyal
+        }
+        ai_attitude = {
+          who = PHO
+          attitude = attitude_rebellious
+        }
+      }
+    }
+  }
 }

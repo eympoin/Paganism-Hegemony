@@ -69,7 +69,7 @@ phoenicia_1= {
       AND = {
         is_rival = ION
         trade_embargoing = ION
-        1744 = { #Antwerpen
+        151 = {
         	trade_share = {
         		country = ROOT
         		share = 15
@@ -81,7 +81,7 @@ phoenicia_1= {
     }
     effect = {
       add_years_of_income = 1
-      #event incident
+      country_event = { id = flavor_pho.3}
     }
   }
 
@@ -91,7 +91,13 @@ phoenicia_1= {
     provinces_to_highlight = {
         }
     trigger = {
-      #event won incident
+      NOT = {
+        has_country_modifier = phoenician_trade_prohibition
+      }
+      custom_trigger_tooltip = {
+  	     tooltip = phoenician_monopol_incident_tooltip
+         has_global_flag = phoenician_monopol_incident
+      }
     }
     effect = {
       add_country_modifier = {

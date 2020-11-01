@@ -11733,3 +11733,12 @@ ionan_help_ion = {
 	country_diplomatic_power = -1
 	country_military_power = -1
 }
+
+phoenician_trade_prohibition = {
+	trade_steering = -0.2
+	global_foreign_trade_power = -0.3
+}
+phoenician_trade_authorized = {
+	trade_steering = 0.2
+	global_foreign_trade_power = 0.3
+}
