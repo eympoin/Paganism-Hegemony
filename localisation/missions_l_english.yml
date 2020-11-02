@@ -1691,6 +1691,9 @@ phoenician_thalassocracy_title:0 "Phoenician thalassocracy"
 china_base_title:0 "Establish a colony on Taiwan"
 china_control_title:0 "Take control of Chinese trade"
 
+phoenician_monopol_incident_tooltip:0 "The Phoenician Monopol Incident has happened"
+pho_united_league.tooltip:0 "All the members of your Trade League will become your vassals."
+
 syrian_threat_desc:0 ""
 cilician_piracy_desc:0 ""
 ionian_rivalry_desc:0 ""
