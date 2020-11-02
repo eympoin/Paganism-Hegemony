@@ -1286,3 +1286,18 @@ flavor_ion.11.d:0 "The Byzantine asks us a lot of gold and support in exchange o
 flavor_ion.12.t:0 "Byzantine refuse to negotiate"
 flavor_ion.12.d:0 "They have even refused to come to the table. They will regret this."
 flavor_ion.12.a:0 "We will take it by force."
+
+flavor_pho.1.t:0 "The call of Melqart"
+flavor_pho.1.d:0 "A late night at the Library of Tyre, you stumble upon some ancient books. They spoke of the ancients gods of Phoenicia when it still dominate the trade of the Mediterannean. With our ties with Rome cut, maybe we should try to forge our new identity with Ancient Phoenicia. We can begin that by converting to their religions."
+flavor_pho.1.a:0 "It is time to bring our roots back in our world."
+flavor_pho.1.b:0 "These gods are forgotten for a good reason."
+
+flavor_pho.2.t:0 "Phoenician Monopol"
+flavor_pho.2.d:0 "The Phoenician began to establish outpost in the Agean. They want to dominate the trade there like they dominate the trade in Syria and Egypt. Ionia and several other princes wants to ban their influence from the Agean."
+flavor_pho.2.a:0 "Support Phoenicia"
+flavor_pho.2.b:0 "Status Quo"
+flavor_pho.2.c:0 "Support the Agean Princes"
+
+flavor_pho.3.t:0 "Phoenician Monopol"
+flavor_pho.3.d:0 As we establish outpost in the Agean, several princes want us out of the Agean. They even took the matter to the emperor."
+flavor_pho.3.a:0 "The Emperor will surely support us."

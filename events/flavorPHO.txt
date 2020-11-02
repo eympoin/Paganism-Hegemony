@@ -1,4 +1,4 @@
-# A plot for two thrones
+# phoenician religion
 namespace = flavor_pho
 
 country_event = {
@@ -46,7 +46,7 @@ country_event = { #phoenician monopol incident
 	id = flavor_pho.2
 	title = flavor_pho.2.t
 	desc = flavor_pho.2.d
-	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	picture = HRE_eventPicture
 	is_triggered_only = yes
 	major = yes
 
@@ -97,7 +97,7 @@ country_event = { #phoenician monopol incident start
 	id = flavor_pho.3
 	title = flavor_pho.3.t
 	desc = flavor_pho.3.d
-	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	picture = HRE_eventPicture
 	is_triggered_only = yes
 	major = yes
 
