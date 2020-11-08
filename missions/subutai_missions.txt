@@ -1,32 +1,332 @@
-subutai_tribuaries = {
+syrian_1 = {
 	slot = 1
 	generic = no
 	ai = yes
 	potential = {
-		tag = SKH
-		has_dlc = "Mandate of Heaven"
+		tag = SYR
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 
-	vassalize_the_tributaries_skh = {
+	cilician_pirates_syr = {
 		icon = mission_eastern_european_city
 		position = 1
 		required_missions = { }
 
 		trigger = {
-			is_nomad = no
 		}
 
 		effect = {
-				every_country = {
-					limit = {is_subject_of = SKH }
-					ROOT = { vassalize = PREV }
-				}
-				add_country_modifier = {
-					name = "Vassalization"
-					duration = 7300
-			}
+		}
+	}
+	phoenician_trade_syr = {
+		icon = mission_eastern_european_city
+		required_missions = {cilician_pirates_syr }
+
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+	control_palestine_syr = {
+		icon = mission_eastern_european_city
+		required_missions = {phoenician_trade_syr }
+
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+	conquest_of_egypt_syr = {
+		icon = mission_eastern_european_city
+		required_missions = {control_palestine_syr }
+
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+	riches_of_egypt = {
+		icon = mission_eastern_european_city
+		required_missions = {conquest_of_egypt_syr }
+
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+}
+
+
+syrian_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = SYR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	central_anatolia = {
+		icon = mission_eastern_european_city
+		position = 2
+		required_missions = {cilician_pirates_syr }
+
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+	palmyra_syr = {
+		icon = mission_eastern_european_city
+		required_missions = {phoenician_trade_syr }
+		position = 3
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+	fall_of_fars = {
+		icon = mission_eastern_european_city
+		required_missions = {persian_border }
+		position = 6
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+	foothold_in_arabia = {
+		icon = mission_eastern_european_city
+		required_missions = { fall_of_persia }
+		position = 8
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+	strike_the_caliphates = {
+		icon = mission_eastern_european_city
+		required_missions = {foothold_in_arabia }
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+}
+
+
+syrian_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = SYR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	empire_frontier = {
+		icon = mission_eastern_european_city
+		position = 1
+		required_missions = { }
+
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+	conquest_assyria_syr = {
+		icon = mission_eastern_european_city
+		required_missions = {empire_frontier }
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+	riches_of_babylon = {
+		icon = mission_eastern_european_city
+		required_missions = {conquest_assyria_syr }
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+	heir_of_seleucos = {
+		icon = mission_eastern_european_city
+		required_missions = {riches_of_babylon }
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+	persian_border = {
+		icon = mission_eastern_european_city
+		required_missions = {heir_of_seleucos }
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+	fall_of_ecbatana = {
+		icon = mission_eastern_european_city
+		required_missions = {persian_border }
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+	fall_of_persia = {
+		icon = mission_eastern_european_city
+		required_missions = {fall_of_ecbatana }
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+	nomadic_threat_syr = {
+		icon = mission_eastern_european_city
+		required_missions = {fall_of_persia }
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+	secure_transaxonia = {
+		icon = mission_eastern_european_city
+		required_missions = {nomadic_threat_syr }
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+}
+
+
+syrian_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = SYR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	caucasian_forts = {
+		icon = mission_eastern_european_city
+		position = 2
+		required_missions = {empire_frontier }
+
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+	free_the_kurds = {
+		icon = mission_eastern_european_city
+		required_missions = {caucasian_forts }
+
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+	azeri_tensions = {
+		icon = mission_eastern_european_city
+		required_missions = {free_the_kurds }
+
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+	fall_of_tabarestan = {
+		icon = mission_eastern_european_city
+		required_missions = {azeri_tensions persian_border}
+		position = 6
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+	road_to_india_syr = {
+		icon = mission_eastern_european_city
+		required_missions = {fall_of_persia}
+		position = 8
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+	indus_valley_syr = {
+		icon = mission_eastern_european_city
+		required_missions = {road_to_india_syr}
+
+		trigger = {
+		}
+
+		effect = {
+		}
+	}
+
+}
+
+syrian_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = SYR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	end_armenian_domination = {
+		icon = mission_eastern_european_city
+		position = 5
+		required_missions = {azeri_tensions }
+
+		trigger = {
+		}
+
+		effect = {
 		}
 	}
 }
