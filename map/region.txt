@@ -261,6 +261,8 @@ crimea_region = {
 		zaporizhia_area
 		yedisan_area
 		azov_area
+		lower_yik_area
+		nogai_area
 	}
 }
 
@@ -368,7 +370,7 @@ anatolia_region = {
 		ankara_area
 		aegean_archipelago_area
 		germiyan_area
-		caria_area		
+		caria_area
 		paphlagonia_area
 	}
 }
@@ -592,24 +594,13 @@ kongo_region = {
 
 central_asia_region = {
 	areas = {
-		nogai_area
-		transcaspia_area
-		transoxiana_area
 		kazakhstan_area
 		balchasj_area
-		khiva_area
-		ferghana_area
 		jetysuu_area
-		arys_area
-		lower_yik_area
 		syr_darya_area
-		kashgaria_area
-		tarim_basin_area
-		shanshan_area
-		kyzylkum_area
-		termez_area
 	}
 }
+
 
 south_africa_region = {
 	areas = {
@@ -711,6 +702,9 @@ tibet_region = {
 		kham_area
 		bhutan_area
 		ngari_area
+		kashgaria_area
+		tarim_basin_area
+		shanshan_area
 	}
 }
 
@@ -1354,6 +1348,20 @@ carribeans_region = {
 		00.11.30
 	}
 }
+
+
+sogdia_region = {
+	areas = {
+		transoxiana_area
+		termez_area
+		ferghana_area
+		arys_area
+		khiva_area
+		transcaspia_area
+		kyzylkum_area
+	}
+}
+
 
 #Sea Regions
 baltic_sea_region = {

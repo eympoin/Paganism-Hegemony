@@ -1283,7 +1283,7 @@ basra_area = { #4
 }
 
 luristan_area = { #4
-	413 414 2209 2210 2211
+	413  2209 2210 2211
 }
 
 north_kurdistan_area = { #5
@@ -1986,8 +1986,8 @@ transcaspia_area = {
 	437 438 439 443 2349
 }
 
-mashhad_area = { #4 - Northern Khorasan
-	2221 2235 2236 4326
+mashhad_area = { #5 - Northern Khorasan
+	2221 2235 2236 4326 427
 }
 
 herat_area = {	#3 - Eastern Khorasan
@@ -2029,7 +2029,7 @@ farsistan_area = { #4
 }
 
 iraq_e_ajam_area = { #5
-	427 428 2213 2216 4337
+ 428 2213 2216 414 4337
 }
 
 azerbaijan_area = { #5 #Southern Azerbaijan

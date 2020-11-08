@@ -1,0 +1,539 @@
+syrian_1 = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+    tag = SYR
+    NOT = { map_setup = map_setup_random }
+  }
+  has_country_shield = yes
+
+  cilician_pirates_syr = {
+    icon = mission_eastern_european_city
+    position = 1
+    required_missions = { }
+
+    provinces_to_highlight = {
+      area = cukurova_area
+      NOT = {owned_by = ROOT}
+    }
+
+    trigger = {
+    }
+
+
+    effect = {
+    }
+  }
+  phoenician_trade_syr = {
+    icon = mission_eastern_european_city
+    required_missions = {cilician_pirates_syr }
+
+    provinces_to_highlight = {
+      area = syria_area
+      NOT = {owned_by = ROOT}
+    }
+
+    trigger = {
+    }
+
+    effect = {
+    }
+  }
+  control_palestine_syr = {
+    icon = mission_eastern_european_city
+    required_missions = {phoenician_trade_syr }
+
+    provinces_to_highlight = {
+      area = palestine_area
+      NOT = {owned_by = ROOT}
+    }
+
+    trigger = {
+    }
+
+
+    effect = {
+    }
+  }
+  conquest_of_egypt_syr = {
+    icon = mission_eastern_european_city
+    required_missions = {control_palestine_syr }
+
+    provinces_to_highlight = {
+    OR = {
+      area = delta_area
+      area = bahari_area
+      }
+      NOT = {owned_by = ROOT}
+    }
+
+    trigger = {
+    }
+
+
+    effect = {
+    }
+  }
+  riches_of_egypt = {
+    icon = mission_eastern_european_city
+    required_missions = {conquest_of_egypt_syr }
+
+    provinces_to_highlight = {
+
+    }
+
+    trigger = {
+    }
+
+
+    effect = {
+    }
+  }
+}
+
+
+syrian_2 = {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+    tag = SYR
+    NOT = { map_setup = map_setup_random }
+  }
+  has_country_shield = yes
+
+  central_anatolia = {
+    icon = mission_eastern_european_city
+    position = 2
+    required_missions = {cilician_pirates_syr }
+
+    provinces_to_highlight = {
+    OR = {
+      area = karaman_area
+      area = rum_area
+      }
+      NOT = {owned_by = ROOT}
+    }
+
+    trigger = {
+    }
+
+    effect = {
+    }
+  }
+  palmyra_syr = {
+    icon = mission_eastern_european_city
+    required_missions = {phoenician_trade_syr }
+    position = 3
+    provinces_to_highlight = {
+      province_id = 405
+      NOT = {owned_by = ROOT}
+    }
+
+    trigger = {
+    }
+
+
+    effect = {
+    }
+  }
+  fall_of_fars = {
+    icon = mission_eastern_european_city
+    required_missions = {persian_border }
+    position = 6
+    provinces_to_highlight = {
+      OR = {
+        area = farsistan_area
+        area = persian_gulf_coast
+        }
+      NOT = {owned_by = ROOT}
+    }
+
+    trigger = {
+    }
+
+
+    effect = {
+    }
+  }
+  foothold_in_arabia = {
+    icon = mission_eastern_european_city
+    required_missions = { fall_of_persia }
+    position = 8
+    provinces_to_highlight = {
+      OR = {
+        area = pirate_coast_area
+        province_id = 2999
+      }
+      NOT = {owned_by = ROOT}
+    }
+
+    trigger = {
+    }
+
+
+    effect = {
+    }
+  }
+
+  strike_the_caliphates = {
+    icon = mission_eastern_european_city
+    required_missions = {foothold_in_arabia }
+    provinces_to_highlight = {
+      region = arabia_region
+      NOT = {owned_by = ROOT}
+    }
+
+    trigger = {
+    }
+
+
+    effect = {
+    }
+  }
+}
+
+
+syrian_3 = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+    tag = SYR
+    NOT = { map_setup = map_setup_random }
+  }
+  has_country_shield = yes
+
+  empire_frontier = {
+    icon = mission_eastern_european_city
+    position = 1
+    required_missions = { }
+
+    provinces_to_highlight = {
+      area = osroene_area
+      NOT = {owned_by = ROOT}
+    }
+
+    trigger = {
+    }
+
+
+    effect = {
+    }
+  }
+  conquest_assyria_syr = {
+    icon = mission_eastern_european_city
+    required_missions = {empire_frontier }
+    provinces_to_highlight = {
+      OR = {
+          area = shahrizor_area
+          area = al_jazira_area
+          }
+          NOT = {owned_by = ROOT}
+      }
+    }
+
+    trigger = {
+    }
+
+
+    effect = {
+    }
+  }
+  riches_of_babylon = {
+    icon = mission_eastern_european_city
+    required_missions = {conquest_assyria_syr }
+    provinces_to_highlight = {
+      OR = {
+          area = iraq_arabi_area
+          area = basra_area
+          }
+          NOT = {owned_by = ROOT}
+      }
+
+    trigger = {
+    }
+
+
+    effect = {
+    }
+  }
+
+  heir_of_seleucos = {
+    icon = mission_eastern_european_city
+    required_missions = {riches_of_babylon }
+    provinces_to_highlight = {
+      province_id = 410
+    }
+
+    trigger = {
+    }
+
+
+    effect = {
+    }
+  }
+
+  persian_border = {
+    icon = mission_eastern_european_city
+    required_missions = {heir_of_seleucos }
+    provinces_to_highlight = {
+      OR = {
+          area = luristan_area
+          area = khuzestan_area
+          }
+          NOT = {owned_by = ROOT}
+      }
+
+    trigger = {
+    }
+
+
+    effect = {
+    }
+  }
+
+  fall_of_ecbatana = {
+    icon = mission_eastern_european_city
+    required_missions = {persian_border }
+    provinces_to_highlight = {
+      OR = {
+          province_id = 414
+          }
+          NOT = {owned_by = ROOT}
+      }
+
+    trigger = {
+    }
+
+
+    effect = {
+    }
+  }
+
+  fall_of_persia = {
+    icon = mission_eastern_european_city
+    required_missions = {fall_of_ecbatana fall_of_fars fall_of_tabarestan }
+    provinces_to_highlight = {
+      OR = {
+          region = persia_region
+          }
+          NOT = {owned_by = ROOT}
+      }
+
+    trigger = {
+    }
+
+
+    effect = {
+    }
+  }
+
+  nomadic_threat_syr = {
+    icon = mission_eastern_european_city
+    required_missions = {fall_of_persia }
+    provinces_to_highlight = {
+      OR = {
+          area = mashhad_area
+          area = birjand_area
+          }
+          NOT = {owned_by = ROOT}
+      }
+
+    trigger = {
+    }
+
+
+    effect = {
+    }
+  }
+
+  secure_transaxonia = {
+    icon = mission_eastern_european_city
+    required_missions = {nomadic_threat_syr }
+    provinces_to_highlight = {
+      OR = {
+          region = sogdia_region
+          }
+          NOT = {owned_by = ROOT}
+      }
+
+    trigger = {
+    }
+
+
+    effect = {
+    }
+  }
+
+}
+
+
+syrian_4 = {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+    tag = SYR
+    NOT = { map_setup = map_setup_random }
+  }
+  has_country_shield = yes
+
+  caucasian_forts = {
+    icon = mission_eastern_european_city
+    position = 2
+    required_missions = {empire_frontier }
+
+    provinces_to_highlight = {
+      OR = {
+          province_id = 332
+          province_id = 2303
+          }
+          NOT = {owned_by = ROOT}
+      }
+
+    trigger = {
+    }
+
+
+    effect = {
+    }
+  }
+
+  free_the_kurds = {
+    icon = mission_eastern_european_city
+    required_missions = {caucasian_forts }
+
+    provinces_to_highlight = {
+      OR = {
+          area = north_kurdistan_area
+          }
+          NOT = {owns_or_subject_of = ROOT}
+      }
+
+    trigger = {
+    }
+
+
+    effect = {
+    }
+  }
+
+  azeri_tensions = {
+    icon = mission_eastern_european_city
+    required_missions = {free_the_kurds }
+
+    provinces_to_highlight = {
+      OR = {
+          area = tabriz_area
+          area = shirvan_area
+          }
+          NOT = {owned_by = ROOT}
+      }
+
+    trigger = {
+    }
+
+
+    effect = {
+    }
+  }
+
+  fall_of_tabarestan = {
+    icon = mission_eastern_european_city
+    required_missions = {azeri_tensions persian_border}
+    position = 6
+    provinces_to_highlight = {
+      OR = {
+          area = tabarestan_area
+          area = azerbaijan_area
+          }
+          NOT = {owned_by = ROOT}
+      }
+
+    trigger = {
+    }
+
+
+    effect = {
+    }
+  }
+
+  road_to_india_syr = {
+    icon = mission_eastern_european_city
+    required_missions = {fall_of_persia}
+    position = 8
+    provinces_to_highlight = {
+      OR = {
+          area = ghor_area
+          area = kabulistan_area
+          area = makran_area
+          area = kalat_area
+          }
+          NOT = {owned_by = ROOT}
+      }
+
+    trigger = {
+    }
+
+
+    effect = {
+    }
+  }
+
+  indus_valley_syr = {
+    icon = mission_eastern_european_city
+    required_missions = {road_to_india_syr}
+
+    provinces_to_highlight = {
+      OR = {
+          area = sindh_area
+          area = northern_sindh_area
+          area = multan_area
+          area = sind_sagar_area
+          area = lahore_area
+          }
+          NOT = {owned_by = ROOT}
+      }
+
+    trigger = {
+    }
+
+
+    effect = {
+    }
+  }
+
+}
+
+syrian_5 = {
+  slot = 5
+  generic = no
+  ai = yes
+  potential = {
+    tag = SYR
+    NOT = { map_setup = map_setup_random }
+  }
+  has_country_shield = yes
+
+  end_armenian_domination = {
+    icon = mission_eastern_european_city
+    position = 5
+    required_missions = {azeri_tensions }
+
+    provinces_to_highlight = {
+      OR = {
+          region = caucasia_region
+          }
+          NOT = {owned_by = ROOT}
+      }
+
+    trigger = {
+    }
+
+
+    effect = {
+    }
+  }
+}

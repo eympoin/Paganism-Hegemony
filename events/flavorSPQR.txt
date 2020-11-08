@@ -1205,10 +1205,6 @@ country_event = {#Back into the fold
 
   trigger = {
     is_at_war = NO
-    any_subject_country = {
-      government = republic
-    }
-    has_country_flag = supported_the_king
     NOT = {
       OR = {
         has_country_modifier = no_men_left_spq
