@@ -101,7 +101,9 @@ country_decisions = {
 				limit = {
 					is_part_of_hre = yes
 				}
-				inherit = ROOT
+				ROOT = {
+					inherit = PREV
+					}
 			}
 		 }
 

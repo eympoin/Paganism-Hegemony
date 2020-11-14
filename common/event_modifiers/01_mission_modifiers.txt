@@ -4977,3 +4977,25 @@ desert_logistic = {
 convert_the_pagans_syr = {
   global_missionary_strength = 0.03
 }
+
+protector_of_the_eastern_border = {
+  global_manpower = 5
+}
+
+
+mesopotamian_academies = {
+  idea_cost = -0.1
+}
+
+heir_of_seleucos_mod = {
+  governing_capacity = 100
+  monarch_admin_power = 1
+  legitimacy = 1
+}
+
+alexanders_legacy ={
+  governing_capacity = 100
+  fabricate_claims_cost = -0.2
+  core_creation = -0.1
+  prestige = 1
+}

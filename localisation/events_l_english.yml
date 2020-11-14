@@ -1117,10 +1117,10 @@ flavor_wrm.12.b:0 "We are not ready for a war."
 
 
 
-flavor_wrm.12.t:0 "The East accept the Union"
-flavor_wrm.12.d:0 "Our past diplomacy now beart its fruit, the emperor has accepeted to marry our two dynasties. Rome can be whole again !"
-flavor_wrm.12.a:0 "The eagle has returned !"
-flavor_wrm.12.b:0 "We don't need them."
+flavor_wrm.121.t:0 "The East accept the Union"
+flavor_wrm.121.d:0 "Our past diplomacy now beart its fruit, the emperor has accepeted to marry our two dynasties. Rome can be whole again !"
+flavor_wrm.121.a:0 "The eagle has returned !"
+flavor_wrm.121.b:0 "We don't need them."
 
 flavor_wrm.13.t:0 "The East is at our mercy."
 flavor_wrm.13.d:0 "We have defeated the Emperor of the Eastern Roman Empire, we can now choose what to do."

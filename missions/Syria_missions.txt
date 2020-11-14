@@ -376,10 +376,39 @@ syrian_3 = {
     }
 
     trigger = {
+      osroene_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
 
 
     effect = {
+      add_country_modifier = {
+        name = protector_of_the_eastern_border
+        duration = -1
+      }
+      shahrizor_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      al_jazira_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      dulkadir_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
   conquest_assyria_syr = {
@@ -394,10 +423,33 @@ syrian_3 = {
       }
 
     trigger = {
+      shahrizor_area = {
+        type = all
+        owned_by = ROOT
+      }
+      al_jazira_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
 
 
     effect = {
+      add_mil_power = 100
+      iraq_arabi_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      basra_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
   riches_of_babylon = {
@@ -412,10 +464,23 @@ syrian_3 = {
       }
 
     trigger = {
+      iraq_arabi_area = {
+        type = all
+        owned_by = ROOT
+      }
+      basra_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
 
 
     effect = {
+      add_adm_power = 100
+      add_country_modifier = {
+        name = mesopotamian_academies
+        duration = -1
+      }
     }
   }
 
@@ -427,10 +492,29 @@ syrian_3 = {
     }
 
     trigger = {
+      #is seleucid
     }
 
 
     effect = {
+      add_country_modifier = {
+        name = heir_of_seleucos_mod
+        duration = -1
+      }
+      luristan_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      khuzestan_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 
@@ -446,10 +530,37 @@ syrian_3 = {
       }
 
     trigger = {
+      luristan_area = {
+        type = all
+        owned_by = ROOT
+      }
+      khuzestan_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
-
-
     effect = {
+      iraq_e_ajam_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      persian_gulf_coast = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      farsistan_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 
@@ -464,10 +575,12 @@ syrian_3 = {
       }
 
     trigger = {
+      owns = 414
     }
 
 
     effect = {
+      #event fall of ecbatana
     }
   }
 
@@ -482,10 +595,23 @@ syrian_3 = {
       }
 
     trigger = {
+      persia_region = {
+        type = all
+        owned_by = ROOT
+      }
     }
-
-
     effect = {
+      add_country_modifier = {
+        name = alexanders_legacy
+        duration = -1
+      }
+      khorasan_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 
@@ -501,10 +627,32 @@ syrian_3 = {
       }
 
     trigger = {
+      mashhad_area = {
+        type = all
+        owned_by = ROOT
+      }
+      birjand_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
 
 
     effect = {
+      add_mil_power = 100
+      2221 = {
+        add_building = fort_15th
+      }
+      2235 = {
+        add_building = fort_15th
+      }
+      sogdia_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 
@@ -519,10 +667,30 @@ syrian_3 = {
       }
 
     trigger = {
+      sogdia_region = {
+        type = all
+        owned_by = ROOT
+      }
     }
-
-
     effect = {
+      add_country_modifier = {
+        name = lesson_from_the_nomads
+        duration = -1
+      }
+      hindusthan_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      west_india_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 

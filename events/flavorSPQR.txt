@@ -656,6 +656,7 @@ country_event = {#Republic but not senate
   title = flavor_spqr.33.t
   desc = flavor_spqr.33.d
   picture = ELECTION_REPUBLICAN_eventPicture
+  fire_only_once = yes
 
   trigger = {
     tag = SPQ
