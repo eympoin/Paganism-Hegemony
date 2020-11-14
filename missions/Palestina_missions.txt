@@ -154,7 +154,7 @@ Palestina_1_1 = {
     effect = {
     every_owned_province = {
       limit = {
-        region = maghreb_region
+        superregion = near_east_superregion
         trade_goods = grain
       }
       add_province_modifier = {

@@ -19,10 +19,32 @@ syrian_1 = {
     }
 
     trigger = {
+      cukurova_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
 
 
     effect = {
+      add_country_modifier = {
+        name = safe_sea
+        duration = -1
+      }
+      karaman_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      rum_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
   phoenician_trade_syr = {
@@ -35,9 +57,26 @@ syrian_1 = {
     }
 
     trigger = {
+      num_of_owned_provinces_with = {
+        value = 3
+        OR = {
+        area = syria_area
+        }
+      }
     }
 
     effect = {
+      add_treasury = 200
+      2313 = {
+        center_of_trade = 2
+      }
+      palestine_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
   control_palestine_syr = {
@@ -50,10 +89,31 @@ syrian_1 = {
     }
 
     trigger = {
+      cukurova_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
 
-
     effect = {
+      add_country_modifier = {
+        name = deal_with_pls
+        duration = -1
+      }
+      bahari_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      delta_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
   conquest_of_egypt_syr = {
@@ -69,10 +129,25 @@ syrian_1 = {
     }
 
     trigger = {
+      num_of_owned_provinces_with = {
+        value = 6
+        OR = {
+        area = delta_area
+        area = bahari_area
+        }
+      }
     }
 
 
     effect = {
+      add_dip_power = 100
+      egypt_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
   riches_of_egypt = {
@@ -80,14 +155,31 @@ syrian_1 = {
     required_missions = {conquest_of_egypt_syr }
 
     provinces_to_highlight = {
-
+    OR = {
+      region = egypt_region
+      }
+      NOT = {owned_by = ROOT}
     }
 
     trigger = {
+      num_of_owned_provinces_with = {
+        value = 15
+        OR = {
+        region = egypt_region
+        }
+      }
     }
-
-
     effect = {
+      every_owned_province = {
+        limit = {
+          superregion = near_east_superregion
+          trade_goods = grain
+        }
+        add_province_modifier = {
+          name = granary_of_the_mediterranean
+          duration = -1
+        }
+      }
     }
   }
 }
@@ -117,9 +209,24 @@ syrian_2 = {
     }
 
     trigger = {
+      num_of_owned_provinces_with = {
+        value = 6
+        OR = {
+        area = karaman_area
+        area = rum_area
+        }
+      }
     }
 
     effect = {
+      add_mil_power = 100
+      anatolia_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
   palmyra_syr = {
@@ -128,14 +235,21 @@ syrian_2 = {
     position = 3
     provinces_to_highlight = {
       province_id = 405
+      province_id = 4271
       NOT = {owned_by = ROOT}
     }
 
     trigger = {
+      405 = {
+        owned_by = ROOT
+      }
+      4271 = {
+        owned_by = ROOT
+      }
     }
-
-
     effect = {
+      add_dip_power = 100
+      add_treasury = 100
     }
   }
   fall_of_fars = {
@@ -151,10 +265,31 @@ syrian_2 = {
     }
 
     trigger = {
+      farsistan_area = {
+        type = all
+        owned_by = ROOT
+      }
+      persian_gulf_coast = {
+        type = all
+        owned_by = ROOT
+      }
     }
-
-
     effect = {
+      add_dip_power = 100
+      mogostan_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      kerman_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
   foothold_in_arabia = {
@@ -170,10 +305,29 @@ syrian_2 = {
     }
 
     trigger = {
+      farsistan_area = {
+        type = all
+        owned_by = ROOT
+      }
+      persian_gulf_coast = {
+        type = all
+        owned_by = ROOT
+      }
     }
 
 
     effect = {
+      add_country_modifier = {
+        name = convert_the_pagans_syr
+        duration = -1
+      }
+      arabia_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 
@@ -186,10 +340,16 @@ syrian_2 = {
     }
 
     trigger = {
+      arabia_region = {
+        type = all
+        owned_by = ROOT
+      }
     }
-
-
     effect = {
+      add_country_modifier = {
+        name = desert_logistic
+        duration = -1
+      }
     }
   }
 }
