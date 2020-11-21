@@ -11,8 +11,8 @@ india_superregion = {
 east_indies_superregion = {
 	burma_region
 	malaya_region
-	moluccas_region	
-	indonesia_region	
+	moluccas_region
+	indonesia_region
 	indo_china_region
 }
 
@@ -129,6 +129,8 @@ persia_superregion = {
 	khorasan_region
 	persia_region
 	caucasia_region
+	sogdia_region
+
 }
 
 new_world_superregion = {
@@ -164,7 +166,7 @@ west_african_sea_superregion = {
 
 east_african_sea_superregion = {
 	west_indian_ocean_region
-	arabian_sea_region 
+	arabian_sea_region
 }
 
 indian_pacific_sea_superregion = {

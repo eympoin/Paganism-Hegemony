@@ -687,12 +687,13 @@ rebuild_1 = {
 					has_province_modifier = new_forum
 			 }
 			}
-			118 = {
-				add_base_tax = 2
-				add_base_production = 2
-				add_base_manpower = 2
-			}
+
 			effect = {
+				118 = {
+					add_base_tax = 2
+					add_base_production = 2
+					add_base_manpower = 2
+				}
 				add_country_modifier = {
 					name = country_of_wonders
 					duration = -1

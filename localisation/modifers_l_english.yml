@@ -2731,18 +2731,14 @@ eastern_trade_cyp:0 "Eastern Trade"
 great_mines:0 "Great Mines"
 
 accepted_christians:0 "Accepted Christians"
-purged_christians:0 'Purged Christians'
+purged_christians:0 "Purged Christians"
 
 
-ionia_0_25_cities:0 "Ionian Magalopolis: 1-25 cities"
-
-ionia_25_40_cities:0 "Ionian Magalopolis: 25-40 cities"
-
-ionia_40_60_cities:0 "Ionian Magalopolis: 40-60 cities"
-
-ionia_60_100_cities:0 "Ionian Magalopolis: 60-100 cities"
-
-ionia_100_plus_cities:0 "Ionian Magalopolis: 100+ cities"
+ionia_0_25_cities:0 "Ionian Magalopolis:"1-25 cities"
+ionia_25_40_cities:0 "Ionian Magalopolis:"25-40 cities"
+ionia_40_60_cities:0 "Ionian Magalopolis:"40-60 cities"
+ionia_60_100_cities:0 "Ionian Magalopolis:"60-100 cities"
+ionia_100_plus_cities:0 "Ionian Magalopolis:"100+ cities"
 
 ionan_help_byz:0 "Ionian help"
 ionan_help_ion:0 "Help to the Emperor"

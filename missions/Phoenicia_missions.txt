@@ -156,7 +156,7 @@ phoenicia_2= {
     provinces_to_highlight = {
         }
     trigger = {
-    236 = {
+    146 = {
         OR = {
           country_or_non_sovereign_subject_holds = root
           owner = { is_in_trade_league_with = root }
@@ -437,7 +437,6 @@ phoenicia_4= {
       }
       add_permanent_claim = ROOT
       }
-    }
     387 = {
       add_permanent_claim = ROOT
     }

@@ -275,7 +275,7 @@ syrian_2 = {
       }
     }
     effect = {
-      add_dip_power = 100
+      add_adm_power = 100
       mogostan_area = {
         limit = {
           NOT = { owned_by = ROOT }
@@ -721,10 +721,36 @@ syrian_4 = {
       }
 
     trigger = {
+      owns = 332
+      owns = 2303
     }
 
 
     effect = {
+      2303 = {
+        add_building = fort_15th
+      }
+      add_country_modifier = {
+        name = prepare_the_armenian_wars
+        duration = 3650
+      }
+      if = {
+        limit = {
+          ARD = {
+            ai = yes
+          }
+        }
+        vassalize = ARD
+      }
+      else = {
+      north_kurdistan_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      }
     }
   }
 
@@ -740,10 +766,30 @@ syrian_4 = {
       }
 
     trigger = {
+      north_kurdistan_area = {
+        type = all
+        country_or_non_sovereign_subject_holds  = ROOT
+      }
     }
 
 
     effect = {
+      add_dip_power = 100
+      add_manpower = 5
+      shirvan_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      tabriz_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 
@@ -760,10 +806,33 @@ syrian_4 = {
       }
 
     trigger = {
+      tabriz_area = {
+        type = all
+        country_or_non_sovereign_subject_holds = ROOT
+      }
+      shirvan_area = {
+        type = all
+        country_or_non_sovereign_subject_holds = ROOT
+      }
     }
 
 
     effect = {
+      add_mil_power = 100
+      tabarestan_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      azerbaijan_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 
@@ -773,17 +842,32 @@ syrian_4 = {
     position = 6
     provinces_to_highlight = {
       OR = {
-          area = tabarestan_area
-          area = azerbaijan_area
-          }
-          NOT = {owned_by = ROOT}
-      }
-
-    trigger = {
+        area = tabarestan_area
+        area = azerbaijan_area
+        }
+      NOT = {owned_by = ROOT}
     }
 
-
+    trigger = {
+      tabarestan_area = {
+        type = all
+        owned_by = ROOT
+      }
+      azerbaijan_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
     effect = {
+      add_dip_power = 100
+      transcaspia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+
     }
   }
 
@@ -802,10 +886,66 @@ syrian_4 = {
       }
 
     trigger = {
+      ghor_area = {
+        type = all
+        owned_by = ROOT
+      }
+      kabulistan_area = {
+        type = all
+        owned_by = ROOT
+      }
+      makran_area = {
+        type = all
+        owned_by = ROOT
+      }
+      kalat_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
 
 
     effect = {
+      add_country_modifier = {
+        name = through_mountains_and_desert
+        duration = -1
+      }
+      northern_sindh_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      sindh_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      multan_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      sind_sagar_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      lahore_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+
     }
   }
 
@@ -825,10 +965,41 @@ syrian_4 = {
       }
 
     trigger = {
+      sind_sagar_area = {
+        type = all
+        owned_by = ROOT
+      }
+      sindh_area = {
+        type = all
+        owned_by = ROOT
+      }
+      northern_sindh_area = {
+        type = all
+        owned_by = ROOT
+      }
+      multan_area = {
+        type = all
+        owned_by = ROOT
+      }
+      lahore_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
 
 
     effect = {
+    add_country_modifier = {
+      name = riches_of_india
+      duration = -1
+    }
+    india_superregion = {
+      limit = {
+        NOT = { owned_by = ROOT }
+        NOT = {is_claim	= ROOT}
+      }
+      add_permanent_claim = ROOT
+    }
     }
   }
 
@@ -865,14 +1036,21 @@ syrian_5 = {
       OR = {
           region = caucasia_region
           }
-          NOT = {owned_by = ROOT}
+          NOT = {country_or_non_sovereign_subject_holds = ROOT}
       }
 
     trigger = {
+      caucasia_region = {
+        type = all
+        country_or_non_sovereign_subject_holds = ROOT
+      }
     }
-
-
     effect = {
+      add_legitimacy = 10
+      add_prestige = 20
+      add_mil_power = 100
+      add_dip_power = 100
+      add_adm_power = 100
     }
   }
 }
