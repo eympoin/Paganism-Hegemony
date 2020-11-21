@@ -4999,3 +4999,17 @@ alexanders_legacy ={
   core_creation = -0.1
   prestige = 1
 }
+
+prepare_the_armenian_wars = {
+  manpower_recovery_speed = 0.15
+  rival_border_fort_maintenance = -0.5
+  global_tax_income = 2
+}
+
+through_mountains_and_desert = {
+  supply_limit_modifier = 0.25
+}
+
+riches_of_india = {
+  global_trade_goods_size_modifier = 0.15
+}

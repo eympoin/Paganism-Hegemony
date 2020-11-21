@@ -139,6 +139,7 @@ CMG = "countries/Commagene.txt"
 ION = "countries/Ionia.txt"
 PAM = "countries/Pamphylia.txt"
 SEB = "countries/Sebasteia.txt"
+SLC = "countries/Seleucid.txt"
 
 UEG = "countries/UpperEgypt.txt"
 LEG = "countries/LowerEgypt.txt"
