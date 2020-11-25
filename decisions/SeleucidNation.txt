@@ -1,0 +1,80 @@
+country_decisions = {
+
+	seleucid_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_seleucid_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			tag = SYR
+			NOT = { has_reform = celestial_empire }
+			OR = {
+				ai = no
+				AND = {
+					ai = yes
+					num_of_cities = 3
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2313
+				province_id = 2311
+				province_id = 410
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			owns_core_province = 2313
+			owns_core_province = 2311
+			owns_core_province = 410
+			development_in_provinces = {
+				value = 350
+				OR = {
+						region = mashriq_region
+						region = syria_region
+					}
+			}
+
+		}
+		effect = {
+			change_tag = SLC
+			if = {
+				limit = {
+					has_dlc = "Dharma"
+				}
+				add_government_reform = seleucid_government
+			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
+
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+
+			361 = {
+				add_base_tax = 1
+				add_base_production = 1
+			}
+			set_country_flag = formed_seleucid_flag
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

@@ -2078,8 +2078,9 @@ seleucid_government = {
 	icon = "peacock_throne"
 	allow_normal_conversion = yes
 	potential = {
+		has_dlc = "Dharma"
 		AND = {
-			tag = SYR
+			tag = SLC
 			NOT = { map_setup = map_setup_random }
 		}
 	}

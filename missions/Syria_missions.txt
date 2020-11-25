@@ -492,7 +492,7 @@ syrian_3 = {
     }
 
     trigger = {
-      #is seleucid
+      tag = SLC
     }
 
 

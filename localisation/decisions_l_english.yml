@@ -305,3 +305,7 @@ a_new_forum_title:0 "A new Forum"
 a_new_forum_desc:0 "The old forum has suffered a lot from these decades of war. A new one would be the start of a new era for Roma."
 
 inherit_empire:0 "The emperor of the ERE will inherit all the territories of the empire when the Roman Empire is formed"
+
+#seleucid
+seleucid_nation_title:0 "Seleucos legacy"
+seleucid_nation_desc:0 "Since our ascendance on the throne of Syria, wa have always claimed to be the desscendant of the great Seleucid. Now that we have reconquer some of their lands, we can push further this claim and reform the once glorious Empire !"
