@@ -9,7 +9,7 @@ syrian_1 = {
   has_country_shield = yes
 
   cilician_pirates_syr = {
-    icon = mission_eastern_european_city
+    icon = mission_pirate_havens
     position = 1
     required_missions = { }
 
@@ -48,7 +48,7 @@ syrian_1 = {
     }
   }
   phoenician_trade_syr = {
-    icon = mission_eastern_european_city
+    icon = mission_konkani_pirates
     required_missions = {cilician_pirates_syr }
 
     provinces_to_highlight = {
@@ -80,7 +80,7 @@ syrian_1 = {
     }
   }
   control_palestine_syr = {
-    icon = mission_eastern_european_city
+    icon = jerusalem
     required_missions = {phoenician_trade_syr }
 
     provinces_to_highlight = {
@@ -117,7 +117,7 @@ syrian_1 = {
     }
   }
   conquest_of_egypt_syr = {
-    icon = mission_eastern_european_city
+    icon = mission_rb_seize_alexandria
     required_missions = {control_palestine_syr }
 
     provinces_to_highlight = {
@@ -151,7 +151,7 @@ syrian_1 = {
     }
   }
   riches_of_egypt = {
-    icon = mission_eastern_european_city
+    icon = mission_egyptian_mamluk_soldier
     required_missions = {conquest_of_egypt_syr }
 
     provinces_to_highlight = {
@@ -196,7 +196,7 @@ syrian_2 = {
   has_country_shield = yes
 
   central_anatolia = {
-    icon = mission_eastern_european_city
+    icon = anatolian_frontier
     position = 2
     required_missions = {cilician_pirates_syr }
 
@@ -230,7 +230,7 @@ syrian_2 = {
     }
   }
   palmyra_syr = {
-    icon = mission_eastern_european_city
+    icon = mission_bedouins
     required_missions = {phoenician_trade_syr }
     position = 3
     provinces_to_highlight = {
@@ -253,7 +253,7 @@ syrian_2 = {
     }
   }
   fall_of_fars = {
-    icon = mission_eastern_european_city
+    icon = mission_into_persia_1
     required_missions = {persian_border }
     position = 6
     provinces_to_highlight = {
@@ -293,7 +293,7 @@ syrian_2 = {
     }
   }
   foothold_in_arabia = {
-    icon = mission_eastern_european_city
+    icon = mission_arabian_fort
     required_missions = { fall_of_persia }
     position = 8
     provinces_to_highlight = {
@@ -332,7 +332,7 @@ syrian_2 = {
   }
 
   strike_the_caliphates = {
-    icon = mission_eastern_european_city
+    icon = mission_into_arabia
     required_missions = {foothold_in_arabia }
     provinces_to_highlight = {
       region = arabia_region
@@ -366,7 +366,7 @@ syrian_3 = {
   has_country_shield = yes
 
   empire_frontier = {
-    icon = mission_eastern_european_city
+    icon = mission_build_up_to_force_limit
     position = 1
     required_missions = { }
 
@@ -412,7 +412,7 @@ syrian_3 = {
     }
   }
   conquest_assyria_syr = {
-    icon = mission_eastern_european_city
+    icon = mission_unite_home_region
     required_missions = {empire_frontier }
     provinces_to_highlight = {
       OR = {
@@ -453,7 +453,7 @@ syrian_3 = {
     }
   }
   riches_of_babylon = {
-    icon = mission_eastern_european_city
+    icon = mission_metropolis_of_the_deccan
     required_missions = {conquest_assyria_syr }
     provinces_to_highlight = {
       OR = {
@@ -485,7 +485,7 @@ syrian_3 = {
   }
 
   heir_of_seleucos = {
-    icon = mission_eastern_european_city
+    icon = mission_monarch_in_throne_room
     required_missions = {riches_of_babylon }
     provinces_to_highlight = {
       province_id = 410
@@ -519,7 +519,7 @@ syrian_3 = {
   }
 
   persian_border = {
-    icon = mission_eastern_european_city
+    icon = mission_persian_soldiers
     required_missions = {heir_of_seleucos }
     provinces_to_highlight = {
       OR = {
@@ -565,7 +565,7 @@ syrian_3 = {
   }
 
   fall_of_ecbatana = {
-    icon = mission_eastern_european_city
+    icon = mission_into_persia_2
     required_missions = {persian_border }
     provinces_to_highlight = {
       OR = {
@@ -585,7 +585,7 @@ syrian_3 = {
   }
 
   fall_of_persia = {
-    icon = mission_eastern_european_city
+    icon = mission_persianate_empire
     required_missions = {fall_of_ecbatana fall_of_fars fall_of_tabarestan }
     provinces_to_highlight = {
       OR = {
@@ -616,7 +616,7 @@ syrian_3 = {
   }
 
   nomadic_threat_syr = {
-    icon = mission_eastern_european_city
+    icon = mission_non-western_cavalry_raid
     required_missions = {fall_of_persia }
     provinces_to_highlight = {
       OR = {
@@ -657,7 +657,7 @@ syrian_3 = {
   }
 
   secure_transaxonia = {
-    icon = mission_eastern_european_city
+    icon = mission_market_place_with_asian_traders
     required_missions = {nomadic_threat_syr }
     provinces_to_highlight = {
       OR = {
@@ -708,7 +708,7 @@ syrian_4 = {
   has_country_shield = yes
 
   caucasian_forts = {
-    icon = mission_eastern_european_city
+    icon = mission_fortify_mandu
     position = 2
     required_missions = {empire_frontier }
 
@@ -755,7 +755,7 @@ syrian_4 = {
   }
 
   free_the_kurds = {
-    icon = mission_eastern_european_city
+    icon = mission_noble_council
     required_missions = {caucasian_forts }
 
     provinces_to_highlight = {
@@ -794,7 +794,7 @@ syrian_4 = {
   }
 
   azeri_tensions = {
-    icon = mission_eastern_european_city
+    icon = mission_steppe_warriors
     required_missions = {free_the_kurds }
 
     provinces_to_highlight = {
@@ -837,7 +837,7 @@ syrian_4 = {
   }
 
   fall_of_tabarestan = {
-    icon = mission_eastern_european_city
+    icon = mission_conquer_persia
     required_missions = {azeri_tensions persian_border}
     position = 6
     provinces_to_highlight = {
@@ -872,7 +872,7 @@ syrian_4 = {
   }
 
   road_to_india_syr = {
-    icon = mission_eastern_european_city
+    icon = mission_indian_soldier_elephant
     required_missions = {fall_of_persia}
     position = 8
     provinces_to_highlight = {
@@ -950,7 +950,7 @@ syrian_4 = {
   }
 
   indus_valley_syr = {
-    icon = mission_eastern_european_city
+    icon = mission_pacify_punjab
     required_missions = {road_to_india_syr}
 
     provinces_to_highlight = {
@@ -1028,7 +1028,7 @@ syrian_5 = {
   has_country_shield = yes
 
   end_armenian_domination = {
-    icon = mission_eastern_european_city
+    icon = mission_empire
     position = 5
     required_missions = {azeri_tensions }
 
