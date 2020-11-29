@@ -1,0 +1,229 @@
+namespace = flavor_syr
+
+#The way forward
+country_event = {
+  id = flavor_syr.1
+  title = flavor_syr.1.t
+  desc = flavor_syr.1.d
+  picture = BIG_BOOK_eventPicture
+
+  fire_only_once = yes
+
+  trigger = {
+    war_with = ARM
+    has_country_flag = kurd_help
+  }
+
+  mean_time_to_happen = {
+    months = 1
+  }
+
+  option = {#The kurds help us
+    name = flavor_syr.1.a
+    add_treasury = 50
+    create_general = {
+      tradition = 60
+      culture = kurdish
+    }
+    2303 = {
+      ROOT = {
+        infantry = PREV
+      }
+      ROOT = {
+        infantry = PREV
+      }
+      ROOT = {
+        infantry = PREV
+      }
+      ROOT = {
+        infantry = PREV
+      }
+      ROOT = {
+        cavalry = PREV
+      }
+    }
+  }
+
+}
+
+
+country_event = {
+  id = flavor_syr.2
+  title = flavor_syr.2.t
+  desc = flavor_syr.2.d
+  picture = BIG_BOOK_eventPicture
+
+  fire_only_once = yes
+
+  trigger = {
+    is_at_war = no
+    has_country_flag = azeri_help
+  }
+
+  mean_time_to_happen = {
+    months = 1
+  }
+
+  option = {#Use the azeri revolts
+    name = flavor_syr.2.a
+    ARM = {
+      release = SRV
+    }
+    vassalize = SRV
+    ARM = {
+    declare_war_with_cb = {
+      who = SRV
+      casus_belli = cb_annex
+      }
+    }
+  }
+
+  option = {#don't care
+    name = flavor_syr.2.b
+    add_prestige = 10
+  }
+
+}
+
+
+country_event = {
+  id = flavor_syr.3
+  title = flavor_syr.3.t
+  desc = flavor_syr.3.d
+  picture = BIG_BOOK_eventPicture
+
+  fire_only_once = yes
+
+  trigger = {
+    OR = {
+      tag = SYR
+      was_tag = SYR
+    }
+    OR = {
+      has_country_flag = azeri_help
+      has_country_flag = kurd_help
+    }
+    SRV = {
+      is_subject_of = ROOT
+    }
+    ARD = {
+      is_subject_of = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    months = 120
+  }
+
+  option = {#We will keep them
+    name = flavor_syr.3.a
+    if = {
+      limit = {
+        SRV = {
+          is_subject_of = ROOT
+        }
+      }
+      SRV = {
+        add_country_modifier = {
+          name = betrayed_vassals
+          duration = 7300
+        }
+      }
+    }
+
+    if = {
+      limit = {
+        ARD = {
+          is_subject_of = ROOT
+        }
+      }
+      ARD = {
+        add_country_modifier = {
+          name = betrayed_vassals
+          duration = 7300
+        }
+      }
+    }
+  }
+
+  option = {#they will have more freedom
+    name = flavor_syr.3.b
+    create_march = SRV
+    create_march = ARD
+    if = {
+      limit = {
+        SRV = {
+          is_subject_of = ROOT
+        }
+      }
+      SRV = {
+        add_country_modifier = {
+          name = less_betrayed_vassals
+          duration = 7300
+        }
+      }
+    }
+
+    if = {
+      limit = {
+        ARD = {
+          is_subject_of = ROOT
+        }
+      }
+      ARD = {
+        add_country_modifier = {
+          name = less_betrayed_vassals
+          duration = 7300
+        }
+      }
+    }
+  }
+  option = {#they will have to pay for independance
+    name = flavor_syr.3.c
+    add_treasury = 100
+    SRV = {
+      grant_independence = yes
+    }
+    ARD = {
+      grant_independence = yes
+    }
+  }
+
+}
+
+
+country_event = {#fall of ecbatana
+  id = flavor_syr.4
+  title = flavor_syr.4.t
+  desc = flavor_syr.4.d
+  picture = BIG_BOOK_eventPicture
+
+  is_triggered_only = yes
+
+  mean_time_to_happen = {
+    days = 7
+  }
+
+  option = {#pillage it
+    name = flavor_syr.4.a
+    add_treasury = 100
+    414 = {
+      add_devastation = 50
+      add_base_tax = -2
+      add_base_manpower = -2
+      add_base_production = -2
+    }
+    capital_scope = {
+      add_base_tax = 2
+      add_base_manpower = 2
+      add_base_production = 2
+    }
+  }
+
+  option = {#keep it, we are the new emperor
+    name = flavor_syr.4.b
+    add_legitimacy = 20
+    add_prestige = 10
+  }
+
+}

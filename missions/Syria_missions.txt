@@ -3,7 +3,10 @@ syrian_1 = {
   generic = no
   ai = yes
   potential = {
-    tag = SYR
+    OR = {
+      tag = SYR
+      was_tag = SYR
+    }
     NOT = { map_setup = map_setup_random }
   }
   has_country_shield = yes
@@ -190,7 +193,10 @@ syrian_2 = {
   generic = no
   ai = yes
   potential = {
-    tag = SYR
+    OR = {
+      tag = SYR
+      was_tag = SYR
+    }
     NOT = { map_setup = map_setup_random }
   }
   has_country_shield = yes
@@ -360,7 +366,10 @@ syrian_3 = {
   generic = no
   ai = yes
   potential = {
-    tag = SYR
+    OR = {
+      tag = SYR
+      was_tag = SYR
+    }
     NOT = { map_setup = map_setup_random }
   }
   has_country_shield = yes
@@ -575,12 +584,14 @@ syrian_3 = {
       }
 
     trigger = {
-      owns = 414
+      414 = {
+        controlled_by  = ROOT
+        }
     }
 
 
     effect = {
-      #event fall of ecbatana
+      country_event = { id = flavor_syr.4}
     }
   }
 
@@ -702,7 +713,10 @@ syrian_4 = {
   generic = no
   ai = yes
   potential = {
-    tag = SYR
+    OR = {
+      tag = SYR
+      was_tag = SYR
+    }
     NOT = { map_setup = map_setup_random }
   }
   has_country_shield = yes
@@ -738,6 +752,8 @@ syrian_4 = {
         limit = {
           ARD = {
             ai = yes
+            exists = yes
+            is_subject = no
           }
         }
         vassalize = ARD
@@ -751,6 +767,7 @@ syrian_4 = {
         add_permanent_claim = ROOT
       }
       }
+      set_country_flag = kurd_help
     }
   }
 
@@ -790,6 +807,7 @@ syrian_4 = {
         }
         add_permanent_claim = ROOT
       }
+      set_country_flag = azeri_help
     }
   }
 
@@ -1009,7 +1027,10 @@ syrian_5_hide = {
   generic = no
   ai = yes
   potential = {
-    tag = SYR
+    OR = {
+      tag = SYR
+      was_tag = SYR
+    }
     NOT = { map_setup = map_setup_random }
   }
   has_country_shield = yes
@@ -1022,7 +1043,10 @@ syrian_5 = {
   generic = no
   ai = yes
   potential = {
-    tag = SYR
+    OR = {
+      tag = SYR
+      was_tag = SYR
+    }
     NOT = { map_setup = map_setup_random }
   }
   has_country_shield = yes
