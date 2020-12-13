@@ -1299,5 +1299,26 @@ flavor_pho.2.b:0 "Status Quo"
 flavor_pho.2.c:0 "Support the Agean Princes"
 
 flavor_pho.3.t:0 "Phoenician Monopol"
-flavor_pho.3.d:0 As we establish outpost in the Agean, several princes want us out of the Agean. They even took the matter to the emperor."
+flavor_pho.3.d:0 "As we establish outpost in the Agean, several princes want us out of the Agean. They even took the matter to the emperor."
 flavor_pho.3.a:0 "The Emperor will surely support us."
+
+flavor_syr.1.t:0 "Rally the Kurds"
+flavor_syr.1.d:0 "We stand as the liberators of the Kurds against the Armenian tyranny and they have understand that."
+flavor_syr.1.a:0 "Their helps will be appreciated"
+
+
+flavor_syr.2.t:0 "Put the king Shirvan back on his throne"
+flavor_syr.2.d:0 "The king of Shirvan saw how we liberated the Kurds from teh Armenians and ask us for help to free his kingdom. "
+flavor_syr.2.a:0 "This will weaken the Armenians even more."
+flavor_syr.2.b:0 "We don't need him"
+
+flavor_syr.3.t:0 "The Kurds and Azeris wants their independances"
+flavor_syr.3.d:0 "Now that the Armenian threat is no more, our vassals think that they don't need us. What should we do ?"
+flavor_syr.3.a:0 "If they want, their independance, they will have to fight for it !"
+flavor_syr.3.b:0 "We shall find a compromise"
+flavor_syr.3.c:0 "We don't need them"
+
+flavor_syr.4.t:0 "The fall of Ecbatana"
+flavor_syr.4.d:0 "The capital of the Persian Empire is now ours. With it, we can send a message to the world."
+flavor_syr.4.a:0 "Burn it to show that the Persian Empire is no more."
+flavor_syr.4.b:0 "Keep it, we are the new emperor here."

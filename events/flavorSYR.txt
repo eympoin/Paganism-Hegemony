@@ -1,6 +1,6 @@
 namespace = flavor_syr
 
-#The way forward
+#Rally the Kurds
 country_event = {
   id = flavor_syr.1
   title = flavor_syr.1.t
@@ -58,6 +58,7 @@ country_event = {
   trigger = {
     is_at_war = no
     has_country_flag = azeri_help
+    NOT = {truce_with	 = ARM}
   }
 
   mean_time_to_happen = {
@@ -103,11 +104,13 @@ country_event = {
       has_country_flag = azeri_help
       has_country_flag = kurd_help
     }
-    SRV = {
-      is_subject_of = ROOT
-    }
-    ARD = {
-      is_subject_of = ROOT
+    OR = {
+      SRV = {
+        is_subject_of = ROOT
+      }
+      ARD = {
+        is_subject_of = ROOT
+      }
     }
   }
 
@@ -122,13 +125,20 @@ country_event = {
         SRV = {
           is_subject_of = ROOT
         }
-      }
-      SRV = {
-        add_country_modifier = {
-          name = betrayed_vassals
-          duration = 7300
+        ARD = {
+          is_subject_of = ROOT
         }
       }
+      ARD = {
+        declare_war_with_cb = {
+          who = ROOT
+          casus_belli = cb_independence_war
+          }
+        }
+        SRV = {
+          create_alliance = ARD
+     	 	  join_all_offensive_wars_of = ARD
+     	 	}
     }
 
     if = {
@@ -136,20 +146,41 @@ country_event = {
         ARD = {
           is_subject_of = ROOT
         }
-      }
-      ARD = {
-        add_country_modifier = {
-          name = betrayed_vassals
-          duration = 7300
+        NOT = {
+          SRV = {
+            is_subject_of = ROOT
+          }
         }
       }
+      ARD = {
+        declare_war_with_cb = {
+          who = ROOT
+          casus_belli = cb_independence_war
+          }
+        }
+    }
+    if = {
+      limit = {
+        SRV = {
+          is_subject_of = ROOT
+        }
+        NOT = {
+          ARD = {
+            is_subject_of = ROOT
+          }
+        }
+      }
+      SRV = {
+        declare_war_with_cb = {
+          who = ROOT
+          casus_belli = cb_independence_war
+          }
+        }
     }
   }
 
   option = {#they will have more freedom
     name = flavor_syr.3.b
-    create_march = SRV
-    create_march = ARD
     if = {
       limit = {
         SRV = {
@@ -157,6 +188,7 @@ country_event = {
         }
       }
       SRV = {
+        create_march = SRV
         add_country_modifier = {
           name = less_betrayed_vassals
           duration = 7300
@@ -170,6 +202,7 @@ country_event = {
           is_subject_of = ROOT
         }
       }
+      create_march = ARD
       ARD = {
         add_country_modifier = {
           name = less_betrayed_vassals
@@ -181,14 +214,28 @@ country_event = {
   option = {#they will have to pay for independance
     name = flavor_syr.3.c
     add_treasury = 100
-    SRV = {
-      grant_independence = yes
+    if = {
+      limit = {
+        ARD = {
+          is_subject_of = ROOT
+        }
+      }
+      ARD = {
+        grant_independence = yes
+      }
     }
-    ARD = {
-      grant_independence = yes
+
+    if = {
+      limit = {
+        SRV = {
+          is_subject_of = ROOT
+        }
+      }
+      SRV = {
+        grant_independence = yes
+      }
     }
   }
-
 }
 
 
