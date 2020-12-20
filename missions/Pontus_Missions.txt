@@ -369,7 +369,6 @@ Pontus_3_1 = {
         }
         }
     }
-  }
 
   subjugate_lycaonia = {
     icon = mission_noble_council
@@ -396,7 +395,6 @@ Pontus_3_1 = {
         }
         }
     }
-  }
   subjugate_cilicia = {
     icon = mission_noble_council
     required_missions = {subjugate_lycaonia}
@@ -422,7 +420,6 @@ Pontus_3_1 = {
         }
         }
     }
-  }
 
   king_of_anatolia = {
     icon = mission_noble_council
@@ -743,7 +740,6 @@ Pontus_4_1 = {
         add_years_of_income = 1
       }
     }
-  }
 
   heir_of_alexander = {
     icon = mission_noble_council
@@ -786,11 +782,29 @@ Pontus_5_1 = {
     required_missions = {control_trebizond}
     position = 3
     provinces_to_highlight = {
-        }
+      OR ={
+      province_id = 4822
+      province_id = 2196
+      province_id = 462
+      province_id = 1856
+      }
+      NOT = {owned_by = ROOT}
+    }
     trigger = {
-
+      owns = 4822
+      owns = 2196
+      owns = 462
+      owns = 1856
     }
     effect = {
+      crimea_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      add_treasury = 100
 
     }
   }
@@ -799,12 +813,67 @@ Pontus_5_1 = {
     icon = mission_noble_council
     required_missions = {tackle_colchis}
     provinces_to_highlight = {
-        }
+      OR ={
+        area = crimea_area
+      }
+      NOT = {owned_by = ROOT}
+    }
     trigger = {
+    num_of_owned_provinces_with = {
+      value = 3
+      OR = {
+      area = crimea_area
+      }
+    }
 
     }
     effect = {
-
+      add_country_modifier = {
+        name = trade_with_the_nomads
+        duration = -1
+      }
+      circassia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      silistria_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      moldavia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      yedisan_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      azov_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      zaporizhia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 
@@ -812,12 +881,78 @@ Pontus_5_1 = {
     icon = mission_noble_council
     required_missions = {bospore_control}
     provinces_to_highlight = {
-        }
+      OR ={
+        area = crimea_area
+        area = zaporizhia_area
+        area = azov_area
+        area = yedisan_area
+        area = moldavia_area
+        area = silistria_area
+        area = circassia_area
+      }
+      NOT = {owned_by = ROOT}
+    }
     trigger = {
-
+      num_of_owned_provinces_with = {
+        value = 3
+        OR = {
+        area = crimea_area
+        area = zaporizhia_area
+        area = azov_area
+        area = yedisan_area
+        area = moldavia_area
+        area = silistria_area
+        area = circassia_area
+        }
+      }
     }
     effect = {
-
+      add_country_modifier = {
+        name = black_sea_trade
+        duration = -1
+      }
+      random_owned_province = {
+          limit = { has_port = yes }
+          ROOT = {
+              galley = PREV
+          }
+      }
+      random_owned_province = {
+          limit = { has_port = yes }
+          ROOT = {
+              galley = PREV
+          }
+      }
+      random_owned_province = {
+          limit = { has_port = yes }
+          ROOT = {
+              galley = PREV
+          }
+      }
+      random_owned_province = {
+          limit = { has_port = yes }
+          ROOT = {
+              galley = PREV
+          }
+      }
+      random_owned_province = {
+          limit = { has_port = yes }
+          ROOT = {
+              galley = PREV
+          }
+      }
+      random_owned_province = {
+          limit = { has_port = yes }
+          ROOT = {
+              galley = PREV
+          }
+      }
+      random_owned_province = {
+          limit = { has_port = yes }
+          ROOT = {
+              galley = PREV
+          }
+      }
     }
   }
 
@@ -826,12 +961,30 @@ Pontus_5_1 = {
     required_missions = {crush_armenia}
     position = 8
     provinces_to_highlight = {
-        }
+    region = persia_region
+    NOT = {owned_by = ROOT}
+    }
     trigger = {
-
+      num_of_owned_provinces_with = {
+        value = 20
+        OR = {
+        region = persia_region
+        }
+      }
     }
     effect = {
-
+      add_adm_power = 100
+      add_country_modifier = {
+        name = king_of_kings_pon
+        duration = -1
+      }
+      khorasan_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 }

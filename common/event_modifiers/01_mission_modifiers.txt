@@ -5023,5 +5023,24 @@ east_reunited = {
 greeko_persian_legacy = {
   num_accepted_cultures = 2
   promote_culture_cost = -0.25
-  caravan_power = 0.2	
+  caravan_power = 0.2
+}
+
+golden_fleece_mod = {
+  tax_income = 1
+}
+
+trade_with_the_nomads = {
+  cavalry_cost = -0.10
+  cavalry_power = 0.05
+}
+
+black_sea_trade = {
+  trade_steering = 0.1
+  merchants = 1
+}
+
+king_of_kings_pon = {
+  governing_capacity = 100
+  state_governing_cost = -0.2
 }
