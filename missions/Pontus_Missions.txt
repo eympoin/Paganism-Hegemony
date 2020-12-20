@@ -16,10 +16,16 @@ Pontus_1_1 = {
     provinces_to_highlight = {
         }
     trigger = {
-
+      adm_power = 100
+      treasury = 100
     }
     effect = {
-
+      add_adm_power = -100
+      add_treasury = -100
+      add_country_modifier = {
+        state_governing_cost = 0.2
+        development_cost = -0.1
+      }
     }
   }
 
@@ -28,12 +34,19 @@ Pontus_1_1 = {
     required_missions = {modernize_infrastructure}
     provinces_to_highlight = {
         }
-    trigger = {
-
-    }
-    effect = {
-
-    }
+        trigger = {
+          mil_power = 100
+          treasury = 100
+        }
+        effect = {
+          add_mil_power = -100
+          add_treasury = -100
+          add_country_modifier = {
+            land_attrition = -0.2
+            movement_speed = 0.10
+            leader_land_manuever = 1
+          }
+        }
   }
 
   modernize_trade_infrastructure = {
@@ -41,11 +54,17 @@ Pontus_1_1 = {
     required_missions = {modernize_army_logistic}
     provinces_to_highlight = {
         }
-    trigger = {
-
-    }
-    effect = {
-
+        trigger = {
+          dip_power = 100
+          treasury = 100
+        }
+        effect = {
+          add_dip_power = -100
+          add_treasury = -100
+          add_country_modifier = {
+            global_own_trade_power = 0.2
+            trade_efficiency = 0.2
+        }
     }
   }
 
@@ -54,13 +73,18 @@ Pontus_1_1 = {
     required_missions = {modernize_trade_infrastructure}
     provinces_to_highlight = {
         }
-    trigger = {
-
+        trigger = {
+          adm_power = 200
+        }
+        effect = {
+          add_dip_power = -200
+          add_country_modifier = {
+            imperial_authority_value = 0.1
+            free_city_imperial_authority = 0.1
+            imperial_mercenary_cost = -0.2
+        }
+        }
     }
-    effect = {
-
-    }
-  }
 }
 
 
@@ -82,10 +106,15 @@ Pontus_2_1 = {
     provinces_to_highlight = {
         }
     trigger = {
-
+      PPH = {
+        has_opinion =  {
+          who = ROOT
+          value = 190
+        }
+      }
     }
     effect = {
-
+      #event
     }
   }
 
@@ -93,12 +122,31 @@ Pontus_2_1 = {
     icon = mission_noble_council
     required_missions = {integrate_pph}
     provinces_to_highlight = {
-        }
+      OR = {
+          area = ankara_area
+          }
+          NOT = {owned_by = ROOT}
+      }
     trigger = {
-
+      num_of_owned_provinces_with = {
+        value = 3
+        OR = {
+        area = ankara_area
+        }
+      }
     }
     effect = {
-
+      hudavendigar_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      if = {
+        limit = { is_emperor = no }
+        emperor = { add_imperial_influence = -10}
+      }
     }
   }
 
@@ -107,12 +155,25 @@ Pontus_2_1 = {
     position = 5
     required_missions = {emperor_of_the_east}
     provinces_to_highlight = {
-        }
+      OR = {
+          area = hudavendigar_area
+          }
+          NOT = {owned_by = ROOT}
+    }
     trigger = {
-
+      hudavendigar_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
     effect = {
-
+      thrace_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 
@@ -122,23 +183,59 @@ Pontus_2_1 = {
     provinces_to_highlight = {
         }
     trigger = {
-
+      imperial_influence = 90
     }
     effect = {
-
+    if = {
+      limit = { PHR = { is_subject = no} is_emperor = yes}
+      vassalize = PHR
+      add_imperial_influence = -30
+    }
+    else = {
+      add_dip_power = 100
+    }
+    if = {
+      limit = { PSD = { is_subject = no} is_emperor = yes}
+      vassalize = PSD
+      add_imperial_influence = -30
+    }
+    else = {
+      add_dip_power = 100
+    }
+    if = {
+      limit = { LYD = { is_subject = no} is_emperor = yes}
+      vassalize = LYD
+      add_imperial_influence = -30
+    }
+    else = {
+      add_dip_power = 100
+    }
     }
   }
   subjugate_ionia = {
     icon = mission_noble_council
     required_missions = {subjugate_west_anatolia}
     provinces_to_highlight = {
+      area = germiyan_area
+      NOT = {owned_by = ROOT}
         }
-    trigger = {
-
-    }
-    effect = {
-
-    }
+        trigger = {
+          germiyan_area = {
+            type = all
+            owned_by = ROOT
+          }
+          imperial_influence = 90
+        }
+        effect = {
+        if = {
+          limit = { ION = { is_subject = no} is_emperor = yes}
+          vassalize = ION
+          add_imperial_influence = -60
+        }
+        else = {
+          add_dip_power = 100
+        }
+        }
   }
 }
 
@@ -161,10 +258,47 @@ Pontus_3_1 = {
     provinces_to_highlight = {
         }
     trigger = {
-
+      OR = {
+      alliance_with = SYR
+      alliance_with = LEG
+      alliance_with = ION
+      alliance_with = MAC
+      alliance_with = MOE
+      alliance_with = SER
+      }
     }
     effect = {
-
+      add_dip_power = 100
+      if = {
+        limit = {alliance_with = SYR}
+        add_historical_friend = SYR
+        SYR = {add_historical_friend = ROOT}
+      }
+      if = {
+        limit = {alliance_with = LEG}
+        add_historical_friend = LEG
+        LEG = {add_historical_friend = ROOT}
+      }
+      if = {
+        limit = {alliance_with = ION}
+        add_historical_friend = ION
+        ION = {add_historical_friend = ROOT}
+      }
+      if = {
+        limit = {alliance_with = MAC}
+        add_historical_friend = MAC
+        MAC = {add_historical_friend = ROOT}
+      }
+      if = {
+        limit = {alliance_with = MOE}
+        add_historical_friend = MOE
+        MOE = {add_historical_friend = ROOT}
+      }
+      if = {
+        limit = {alliance_with = SER}
+        add_historical_friend = SER
+        SER = {add_historical_friend = ROOT}
+      }
     }
   }
 
@@ -174,10 +308,16 @@ Pontus_3_1 = {
     provinces_to_highlight = {
         }
     trigger = {
-
+    has_spy_network_in = {
+      who = emperor
+      value = 50
+      }
     }
     effect = {
-
+      if = {
+        limit = { is_emperor = no }
+        emperor = { add_imperial_influence = -40}
+      }
     }
   }
 
@@ -187,10 +327,13 @@ Pontus_3_1 = {
     provinces_to_highlight = {
         }
     trigger = {
-
+      OR = {
+        is_emperor = yes
+        NOT = {imperial_influence = 10}
+      }
     }
     effect = {
-
+      #event
     }
   }
 
@@ -200,10 +343,11 @@ Pontus_3_1 = {
     provinces_to_highlight = {
         }
     trigger = {
-
+      is_emperor = yes
     }
     effect = {
-
+      add_imperial_influence = 60
+      BYZ = {elector = no}
     }
   }
   subjugate_cappadocia = {
@@ -211,11 +355,19 @@ Pontus_3_1 = {
     required_missions = {emperor_of_the_east}
     provinces_to_highlight = {
         }
-    trigger = {
-
-    }
-    effect = {
-
+        trigger = {
+          imperial_influence = 90
+        }
+        effect = {
+        if = {
+          limit = { CAP = { is_subject = no} is_emperor = yes}
+          vassalize = CAP
+          add_imperial_influence = -60
+        }
+        else = {
+          add_dip_power = 100
+        }
+        }
     }
   }
 
@@ -223,24 +375,52 @@ Pontus_3_1 = {
     icon = mission_noble_council
     required_missions = {subjugate_cappadocia}
     provinces_to_highlight = {
+    area = rum_area
+    NOT = {owned_by = ROOT}
         }
-    trigger = {
-
-    }
-    effect = {
-
+        trigger = {
+          rum_area = {
+            type = all
+            owned_by = ROOT
+          }
+          imperial_influence = 90
+        }
+        effect = {
+        if = {
+          limit = { LCA = { is_subject = no} is_emperor = yes}
+          vassalize = LCA
+          add_imperial_influence = -60
+        }
+        else = {
+          add_dip_power = 100
+        }
+        }
     }
   }
   subjugate_cilicia = {
     icon = mission_noble_council
     required_missions = {subjugate_lycaonia}
     provinces_to_highlight = {
+    area = karaman_area
+    NOT = {owned_by = ROOT}
         }
-    trigger = {
-
-    }
-    effect = {
-
+        trigger = {
+          karaman_area = {
+            type = all
+            owned_by = ROOT
+          }
+          imperial_influence = 90
+        }
+        effect = {
+        if = {
+          limit = { CIL = { is_subject = no} is_emperor = yes}
+          vassalize = CIL
+          add_imperial_influence = -60
+        }
+        else = {
+          add_dip_power = 100
+        }
+        }
     }
   }
 
@@ -248,12 +428,21 @@ Pontus_3_1 = {
     icon = mission_noble_council
     required_missions = {subjugate_cilicia subjugate_ionia crush_armenia}
     provinces_to_highlight = {
-        }
+    region = anatolia_region
+    NOT = {owned_by = ROOT}
+    }
     trigger = {
-
+      anatolia_region = {
+        type = all
+        owned_by = ROOT
+      }
     }
     effect = {
-
+      add_prestige = 10
+      add_legitimacy = 10
+      add_dip_power = 100
+      add_adm_power = 100
+      add_mil_power = 100
     }
   }
 
@@ -263,10 +452,41 @@ Pontus_3_1 = {
     provinces_to_highlight = {
         }
     trigger = {
-
+      tag = ERM
     }
     effect = {
-
+      italy_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      iberia_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      france_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      maghreb_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      add_country_modifier = {
+        name = east_reunited
+        duration = -1
+      }
     }
   }
 }
@@ -289,12 +509,16 @@ Pontus_4_1 = {
     required_missions = {}
     position = 1
     provinces_to_highlight = {
-        }
+      province_id =   330
+      NOT = {is_claim = ROOT}
+    }
     trigger = {
-
+      330 = {
+        is_claim = ROOT
+      }
     }
     effect = {
-
+      #event
     }
   }
 
@@ -302,12 +526,41 @@ Pontus_4_1 = {
     icon = mission_noble_council
     required_missions = {claim_trebizond}
     provinces_to_highlight = {
-        }
+    province_id = 330
+    NOT = {owned_by = ROOT}
+    }
     trigger = {
-
+      330 = {
+        owned_by = ROOT
+      }
     }
     effect = {
 
+      samtskhe_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      erzurum_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      imereti_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      if = {
+        limit = { is_emperor = no }
+        emperor = { add_imperial_influence = -20}
+      }
     }
   }
 
@@ -317,12 +570,27 @@ Pontus_4_1 = {
     required_missions = {emperor_of_the_east}
     provinces_to_highlight = {
         }
-    trigger = {
-
-    }
-    effect = {
-
-    }
+        trigger = {
+          imperial_influence = 60
+        }
+        effect = {
+        if = {
+          limit = { CMG = { is_subject = no} is_emperor = yes}
+          vassalize = CMG
+          add_imperial_influence = -30
+        }
+        else = {
+          add_dip_power = 100
+        }
+        if = {
+          limit = { SEB = { is_subject = no} is_emperor = yes}
+          vassalize = SEB
+          add_imperial_influence = -30
+        }
+        else = {
+          add_dip_power = 100
+        }
+      }
   }
 
   armenian_threat_pon = {
@@ -330,12 +598,50 @@ Pontus_4_1 = {
     position = 5
     required_missions = {east_duke_authority}
     provinces_to_highlight = {
+    OR = {
+        area = erzurum_area
+        area = imereti_area
+        area = samtskhe_area
         }
+        NOT = {owned_by = ROOT}
+    }
     trigger = {
-
+      erzurum_area = {
+        type = all
+        owned_by = ROOT
+      }
+      imereti_area = {
+        type = all
+        owned_by = ROOT
+      }
+      samtskhe_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
     effect = {
-
+    north_kurdistan_area = {
+      limit = {
+        NOT = { owned_by = ROOT }
+        NOT = {is_claim	= ROOT}
+      }
+      add_permanent_claim = ROOT
+    }
+    armenia_area = {
+      limit = {
+        NOT = { owned_by = ROOT }
+        NOT = {is_claim	= ROOT}
+      }
+      add_permanent_claim = ROOT
+    }
+    kartli_kakheti_area = {
+      limit = {
+        NOT = { owned_by = ROOT }
+        NOT = {is_claim	= ROOT}
+      }
+      add_permanent_claim = ROOT
+    }
+    add_imperial_influence = 10
     }
   }
 
@@ -343,24 +649,67 @@ Pontus_4_1 = {
     icon = mission_noble_council
     required_missions = {armenian_threat_pon}
     provinces_to_highlight = {
+    OR = {
+        area = armenia_area
+        area = north_kurdistan_area
+        area = kartli_kakheti_area
         }
+        NOT = {owned_by = ROOT}
+    }
     trigger = {
-
+      armenia_area = {
+        type = all
+        owned_by = ROOT
+      }
+      north_kurdistan_area = {
+        type = all
+        owned_by = ROOT
+      }
+      kartli_kakheti_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
     effect = {
-
+    persia_region = {
+      limit = {
+        NOT = { owned_by = ROOT }
+        NOT = {is_claim	= ROOT}
+      }
+      add_permanent_claim = ROOT
+    }
+    mashriq_region = {
+      limit = {
+        NOT = { owned_by = ROOT }
+        NOT = {is_claim	= ROOT}
+      }
+      add_permanent_claim = ROOT
+    }
+    add_imperial_influence = 10
     }
   }
   into_mesopotamia = {
     icon = mission_noble_council
     required_missions = {crush_armenia}
     provinces_to_highlight = {
-        }
+    region = mashriq_region
+    NOT = {owned_by = ROOT}
+    }
     trigger = {
-
+      num_of_owned_provinces_with = {
+        value = 15
+        OR = {
+        region = mashriq_region
+        }
+      }
     }
     effect = {
-
+      add_adm_power = 100
+      add_country_modifier = {
+        name = mesopotamian_academies
+        duration = -1
+      }
+      add_years_of_income = 1
     }
   }
 
@@ -368,12 +717,31 @@ Pontus_4_1 = {
     icon = mission_noble_council
     required_missions = {into_mesopotamia king_of_kings}
     provinces_to_highlight = {
+    OR = {
+        region = mashriq_region
+        region = persia_region
+        region = khorasan_area
         }
+        NOT = {owned_by = ROOT}
+    }
     trigger = {
-
+      num_of_owned_provinces_with = {
+        value = 50
+        OR = {
+        region = mashriq_region
+        region = persia_region
+        region = khorasan_area
+        }
+      }
     }
     effect = {
-
+        add_adm_power = 100
+        add_country_modifier = {
+          name = greeko_persian_legacy
+          duration = -1
+        }
+        add_years_of_income = 1
+      }
     }
   }
 
@@ -383,10 +751,20 @@ Pontus_4_1 = {
     provinces_to_highlight = {
         }
     trigger = {
-
+      total_development = 1500
     }
     effect = {
-
+      add_country_modifier = {
+        name = alexanders_legacy
+        duration = -1
+      }
+      sogdia_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 }

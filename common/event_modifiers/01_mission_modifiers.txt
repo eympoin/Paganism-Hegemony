@@ -5013,3 +5013,15 @@ through_mountains_and_desert = {
 riches_of_india = {
   global_trade_goods_size_modifier = 0.15
 }
+
+east_reunited = {
+  culture_conversion_cost = -0.1
+  legitimacy = 1
+  prestige = 1
+}
+
+greeko_persian_legacy = {
+  num_accepted_cultures = 2
+  promote_culture_cost = -0.25
+  caravan_power = 0.2	
+}
