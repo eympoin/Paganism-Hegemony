@@ -11750,3 +11750,7 @@ betrayed_vassals = {
 less_betrayed_vassals = {
 	liberty_desire = 20
 }
+
+become_emperor = {
+	diplomatic_reputation = 2
+}

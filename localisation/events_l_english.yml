@@ -1322,3 +1322,44 @@ flavor_syr.4.t:0 "The fall of Ecbatana"
 flavor_syr.4.d:0 "The capital of the Persian Empire is now ours. With it, we can send a message to the world."
 flavor_syr.4.a:0 "Burn it to show that the Persian Empire is no more."
 flavor_syr.4.b:0 "Keep it, we are the new emperor here."
+
+flavor_pon.1.t:0 "How to attack Trebizond ?"
+flavor_pon.1.d:0 "A a free city, Trebizond is defended by the Emperor Byzantium. A war with Byzantium right now would be a hard to win. We must think of ways to prevent any Byzantine interference."
+flavor_pon.1.a:0 "Ask the Ottomans to keep Byzantium busy while we attack Trebizond."
+flavor_pon.1.b:0 "Search a Trebizonian noble who craves for power to take Trebizond from within. "
+
+
+flavor_pon.2.t:0 "A worthy candidate ?"
+flavor_pon.2.d:0 "At last ! We found a Trebizonian noble who accepted to become our vassal. We just have to lend him some men and Trebizond will be ours !"
+flavor_pon.2.a:0 "He will have the power. We will have Trebizond."
+
+flavor_pon.3.t:0 "Trebizond is ours !"
+flavor_pon.3.d:0 "The noble we have hire manages to take the city with our men !"
+flavor_pon.3.a:0 "The city will prosper within our kingdom."
+
+flavor_pon.4.t:0 "Byzantium is occupied"
+flavor_pon.4.d:0 "With turkish raids in its territory, Byzantium has no time to save Trebizond. The city will now fall in our hands."
+flavor_pon.4.a:0 "The Turks proved their usefullness"
+
+flavor_pon.4.t:0 "Byzantium is occupied"
+flavor_pon.4.d:0 "With turkish raids in its territory, Byzantium has no time to save Trebizond. The city will now fall in our hands."
+flavor_pon.4.a:0 "The Turks proved their usefullness"
+
+flavor_pon.5.t:0 "Integration of Paphlagonia"
+flavor_pon.5.d:0 "Paphlagonia has been our vassal for a long time now. We can now integrate it to our kingdom."
+flavor_pon.5.a:0 "We are now one."
+flavor_pon.5.b:0 "Not yet."
+
+flavor_pon.6.t:0 "The War is won"
+flavor_pon.6.d:0 "The false emperor has been defeated in battle. We now have the legitimacy to claim the throne"
+flavor_pon.6.a:0 "Long live the Empire !"
+
+flavor_pon.7.t:0 "Coronation"
+flavor_pon.7.d:0 "The war is won and nobody can oppose our victory in the Empire."
+flavor_pon.7.a:0 "The crown is mine !"
+
+flavor_pon.8.t:0 "War for the throne"
+flavor_pon.8.d:0 "Now that we have weaken the Emperor, we can attack him to take what is rightfully ours : the throne."
+flavor_pon.8.a:0 "To war !"
+flavor_pon.8.b:0 "Not yet."
+flavor_pon.8.c:0 "Never"

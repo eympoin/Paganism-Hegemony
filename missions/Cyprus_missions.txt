@@ -109,8 +109,12 @@ Cyprus_1_1 = {
 
     }
     trigger = {
-      has_most_province_trade_power = 2313
-      has_most_province_trade_power = 358
+    2313 = {
+      has_most_province_trade_power = ROOT
+    }
+    358 = {
+      has_most_province_trade_power = ROOT
+    }
     }
     effect = {
     1855 = {

@@ -1,6 +1,4 @@
 namespace = flavor_pls
-
-palestina christian
 country_event = {
 	id = flavor_pls.1
 	title = "flavor_pls.1.t"

@@ -10,7 +10,7 @@ Pontus_1_1 = {
     NOT = { map_setup = map_setup_random }
   }
   modernize_infrastructure = {
-    icon = mission_noble_council
+    icon = mission_colonial
     required_missions = {}
     position = 1
     provinces_to_highlight = {
@@ -23,14 +23,14 @@ Pontus_1_1 = {
       add_adm_power = -100
       add_treasury = -100
       add_country_modifier = {
-        state_governing_cost = 0.2
-        development_cost = -0.1
+        name = new_infrastructure
+        duration = -1
       }
     }
   }
 
   modernize_army_logistic = {
-    icon = mission_noble_council
+    icon = mission_assemble_an_army
     required_missions = {modernize_infrastructure}
     provinces_to_highlight = {
         }
@@ -42,15 +42,14 @@ Pontus_1_1 = {
           add_mil_power = -100
           add_treasury = -100
           add_country_modifier = {
-            land_attrition = -0.2
-            movement_speed = 0.10
-            leader_land_manuever = 1
+            name = new_logistic
+            duration = -1
           }
         }
   }
 
   modernize_trade_infrastructure = {
-    icon = mission_noble_council
+    icon = mission_trade_company_region_abroad
     required_missions = {modernize_army_logistic}
     provinces_to_highlight = {
         }
@@ -62,14 +61,14 @@ Pontus_1_1 = {
           add_dip_power = -100
           add_treasury = -100
           add_country_modifier = {
-            global_own_trade_power = 0.2
-            trade_efficiency = 0.2
+            name = new_trade_infrastructure
+            duration = -1
         }
     }
   }
 
   expand_our_influence = {
-    icon = mission_noble_council
+    icon = join_the_empire
     required_missions = {modernize_trade_infrastructure}
     provinces_to_highlight = {
         }
@@ -79,9 +78,12 @@ Pontus_1_1 = {
         effect = {
           add_dip_power = -200
           add_country_modifier = {
-            imperial_authority_value = 0.1
-            free_city_imperial_authority = 0.1
-            imperial_mercenary_cost = -0.2
+            name = new_trade_infrastructure
+            duration = -1
+        }
+          add_country_modifier = {
+            name = pontic_ambassads
+            duration = -1
         }
         }
     }
@@ -100,7 +102,7 @@ Pontus_2_1 = {
     NOT = { map_setup = map_setup_random }
   }
   integrate_pph = {
-    icon = mission_noble_council
+    icon = mission_have_two_subjects
     required_missions = {}
     position = 1
     provinces_to_highlight = {
@@ -114,12 +116,12 @@ Pontus_2_1 = {
       }
     }
     effect = {
-      #event
+      country_event = { id = flavor_pon.5 }
     }
   }
 
   invade_galatia = {
-    icon = mission_noble_council
+    icon = mission_conquer_50_development
     required_missions = {integrate_pph}
     provinces_to_highlight = {
       OR = {
@@ -151,7 +153,7 @@ Pontus_2_1 = {
   }
 
   push_back_byz = {
-    icon = mission_noble_council
+    icon = mission_unite_home_region
     position = 5
     required_missions = {emperor_of_the_east}
     provinces_to_highlight = {
@@ -178,7 +180,7 @@ Pontus_2_1 = {
   }
 
   subjugate_west_anatolia = {
-    icon = mission_noble_council
+    icon = mission_arabian_fort
     required_missions = {push_back_byz}
     provinces_to_highlight = {
         }
@@ -213,7 +215,7 @@ Pontus_2_1 = {
     }
   }
   subjugate_ionia = {
-    icon = mission_noble_council
+    icon = mission_high_income
     required_missions = {subjugate_west_anatolia}
     provinces_to_highlight = {
       area = germiyan_area
@@ -252,7 +254,7 @@ Pontus_3_1 = {
     NOT = { map_setup = map_setup_random }
   }
   alliance_with_an_elector = {
-    icon = mission_noble_council
+    icon = mission_alliances
     required_missions = {}
     position = 1
     provinces_to_highlight = {
@@ -303,7 +305,7 @@ Pontus_3_1 = {
   }
 
   weaken_byz_authority = {
-    icon = mission_noble_council
+    icon = lead_the_empire
     required_missions = {alliance_with_an_elector}
     provinces_to_highlight = {
         }
@@ -322,7 +324,7 @@ Pontus_3_1 = {
   }
 
   war_for_the_throne = {
-    icon = mission_noble_council
+    icon = the_latin_empire
     required_missions = {invade_galatia weaken_byz_authority control_trebizond}
     provinces_to_highlight = {
         }
@@ -333,12 +335,12 @@ Pontus_3_1 = {
       }
     }
     effect = {
-      #event
+      country_event = { id = flavor_pon.8 }
     }
   }
 
   emperor_of_the_east = {
-    icon = mission_noble_council
+    icon = switzerland_and_the_empire
     required_missions = {war_for_the_throne}
     provinces_to_highlight = {
         }
@@ -351,7 +353,7 @@ Pontus_3_1 = {
     }
   }
   subjugate_cappadocia = {
-    icon = mission_noble_council
+    icon = alpine_fortifications
     required_missions = {emperor_of_the_east}
     provinces_to_highlight = {
         }
@@ -371,7 +373,7 @@ Pontus_3_1 = {
     }
 
   subjugate_lycaonia = {
-    icon = mission_noble_council
+    icon = pacify_the_albanian_lands
     required_missions = {subjugate_cappadocia}
     provinces_to_highlight = {
     area = rum_area
@@ -396,7 +398,7 @@ Pontus_3_1 = {
         }
     }
   subjugate_cilicia = {
-    icon = mission_noble_council
+    icon = danubian_power
     required_missions = {subjugate_lycaonia}
     provinces_to_highlight = {
     area = karaman_area
@@ -422,7 +424,7 @@ Pontus_3_1 = {
     }
 
   king_of_anatolia = {
-    icon = mission_noble_council
+    icon = anatolian_frontier
     required_missions = {subjugate_cilicia subjugate_ionia crush_armenia}
     provinces_to_highlight = {
     region = anatolia_region
@@ -444,7 +446,7 @@ Pontus_3_1 = {
   }
 
   unite_the_empire = {
-    icon = mission_noble_council
+    icon = mission_empire
     required_missions = {king_of_anatolia}
     provinces_to_highlight = {
         }
@@ -515,12 +517,12 @@ Pontus_4_1 = {
       }
     }
     effect = {
-      #event
+      country_event = { id = flavor_pon.1 }
     }
   }
 
   control_trebizond = {
-    icon = mission_noble_council
+    icon = mission_invade_island
     required_missions = {claim_trebizond}
     provinces_to_highlight = {
     province_id = 330
@@ -562,7 +564,7 @@ Pontus_4_1 = {
   }
 
   east_duke_authority = {
-    icon = mission_noble_council
+    icon = fund_the_monasteries
     position = 5
     required_missions = {emperor_of_the_east}
     provinces_to_highlight = {
@@ -591,7 +593,7 @@ Pontus_4_1 = {
   }
 
   armenian_threat_pon = {
-    icon = mission_noble_council
+    icon = mission_gunpowder_warfare
     position = 5
     required_missions = {east_duke_authority}
     provinces_to_highlight = {
@@ -643,7 +645,7 @@ Pontus_4_1 = {
   }
 
   crush_armenia = {
-    icon = mission_noble_council
+    icon = mission_persian_soldiers
     required_missions = {armenian_threat_pon}
     provinces_to_highlight = {
     OR = {
@@ -686,7 +688,7 @@ Pontus_4_1 = {
     }
   }
   into_mesopotamia = {
-    icon = mission_noble_council
+    icon = mission_into_persia_1
     required_missions = {crush_armenia}
     provinces_to_highlight = {
     region = mashriq_region
@@ -711,13 +713,13 @@ Pontus_4_1 = {
   }
 
   master_of_the_middle_east = {
-    icon = mission_noble_council
+    icon = mission_dominate_persian_gulf
     required_missions = {into_mesopotamia king_of_kings}
     provinces_to_highlight = {
     OR = {
         region = mashriq_region
         region = persia_region
-        region = khorasan_area
+        region = khorasan_region
         }
         NOT = {owned_by = ROOT}
     }
@@ -727,7 +729,7 @@ Pontus_4_1 = {
         OR = {
         region = mashriq_region
         region = persia_region
-        region = khorasan_area
+        region = khorasan_region
         }
       }
     }
@@ -742,7 +744,7 @@ Pontus_4_1 = {
     }
 
   heir_of_alexander = {
-    icon = mission_noble_council
+    icon = mission_persianate_empire
     required_missions = {master_of_the_middle_east}
     provinces_to_highlight = {
         }
@@ -778,7 +780,7 @@ Pontus_5_1 = {
     NOT = { map_setup = map_setup_random }
   }
   tackle_colchis = {
-    icon = mission_noble_council
+    icon = mission_build_up_to_force_limit
     required_missions = {control_trebizond}
     position = 3
     provinces_to_highlight = {
@@ -810,7 +812,7 @@ Pontus_5_1 = {
   }
 
   bospore_control = {
-    icon = mission_noble_council
+    icon = mission_steppe_warriors
     required_missions = {tackle_colchis}
     provinces_to_highlight = {
       OR ={
@@ -878,7 +880,7 @@ Pontus_5_1 = {
   }
 
   black_sea_control = {
-    icon = mission_noble_council
+    icon = mission_establish_high_seas_navy
     required_missions = {bospore_control}
     provinces_to_highlight = {
       OR ={
@@ -957,7 +959,7 @@ Pontus_5_1 = {
   }
 
   king_of_kings = {
-    icon = mission_noble_council
+    icon = mission_into_persia_2
     required_missions = {crush_armenia}
     position = 8
     provinces_to_highlight = {

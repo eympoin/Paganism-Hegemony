@@ -4857,7 +4857,8 @@ king_of_the_moors = {
 }
 
 fighting_the_pirates = {
-  cannons_for_hunting_pirates_in_fleet = 1
+  naval_morale = 0.1
+  galley_power = 0.1	
 }
 
 eastern_trade_cyp = {
@@ -5038,6 +5039,27 @@ trade_with_the_nomads = {
 black_sea_trade = {
   trade_steering = 0.1
   merchants = 1
+}
+
+new_infrastructure = {
+  state_governing_cost = 0.2
+  development_cost = -0.1
+}
+new_logistic = {
+  land_attrition = -0.2
+  movement_speed = 0.10
+  leader_land_manuever = 1
+}
+
+new_trade_infrastructure = {
+  global_own_trade_power = 0.2
+  trade_efficiency = 0.2
+}
+
+pontic_ambassads = {
+  imperial_authority_value = 0.1
+  free_city_imperial_authority = 0.1
+  imperial_mercenary_cost = -0.2
 }
 
 king_of_kings_pon = {

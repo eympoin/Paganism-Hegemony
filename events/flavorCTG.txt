@@ -2828,9 +2828,6 @@ country_event = { #carthage unique
 	picture = COURT_eventPicture
 
 	is_triggered_only = yes
-	mean_time_to_happen = {
-		days = 3
-	}
 
 
 	option = {#Hannibal road

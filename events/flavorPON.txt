@@ -1,0 +1,196 @@
+
+namespace = flavor_pon
+# attack Trebizond
+country_event = {
+	id = flavor_pon.1
+	title = "flavor_pon.1.t"
+	desc = "flavor_pon.1.d"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+
+
+	option = {		# aks the ottoman to threaten byz to prevent them from coming
+		name = "flavor_pon.1.a"
+		ai_chance = { factor = 100 }
+		add_treasury = -200
+		add_truce_with = BYZ
+		declare_war_with_cb = {
+		    who = TRE
+		    casus_belli = cb_annex
+		}
+		set_country_flag = pon_attack_tre
+
+		country_event = { id = flavor_pon.4}
+
+	}
+	option = {		# create a civil war there, find someone to claim trebizond
+		name = "flavor_pon.1.b"
+		ai_chance = { factor = 0 }
+		add_dip_power = -200
+		country_event = { id = flavor_pon.2 days = 60 }
+	}
+}
+
+country_event = { # we find a candidate
+	id = flavor_pon.2
+	title = flavor_pon.2.t
+	desc = flavor_pon.2.d
+	picture = CIVIL_WAR_eventPicture
+	is_triggered_only = yes
+
+
+	option = { #candidate 1
+		name = flavor_pon.2.a
+		ai_chance = { factor = 10 }
+		add_mil_power = -100
+		add_manpower = -3
+		country_event = { id = flavor_pon.3 days = 90 }
+	}
+
+}
+
+country_event = { # trebizond vassalize
+	id = flavor_pon.3
+	title = flavor_pon.3.t
+	desc = flavor_pon.3.d
+	picture = CONQUEST_eventPicture
+	is_triggered_only = yes
+
+	option = { #vassalization
+		name = flavor_pon.3.a
+		ai_chance = { factor = 10 }
+		vassalize = TRE
+	}
+
+}
+
+country_event = { # peace with byz
+	id = flavor_pon.4
+	title = flavor_pon.4.t
+	desc = flavor_pon.4.d
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+
+	option = {
+		name = flavor_pon.4.a
+		ai_chance = { factor = 10 }
+		white_peace = BYZ
+	}
+
+}
+
+country_event = { #integrate paphlagonia quicker
+	id = flavor_pon.5
+	title = flavor_pon.5.t
+	desc = flavor_pon.5.d
+	picture = HRE_eventPicture
+	trigger = {
+		is_year = 1449
+	}
+
+
+	option = {
+		name = flavor_pon.5.a
+		ai_chance = { factor = 90 }
+		add_dip_power = -360
+		inherit = PPH
+	}
+
+	option = {
+		name = flavor_pon.5.b
+		ai_chance = { factor = 10 }
+		add_prestige = 1
+	}
+
+}
+
+
+country_event = { #become emperor
+	id = flavor_pon.6
+	title = flavor_pon.6.t
+	desc = flavor_pon.6.d
+	picture = HRE_eventPicture
+	trigger = {
+		war_with = emperor
+		war_score_against = {
+			who = emperor
+			value = 75
+		}
+	}
+	major = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+
+
+	option = {
+		name = flavor_pon.6.a
+		ai_chance = { factor = 90 }
+		add_legitimacy = 100
+		add_prestige = 50
+		white_peace = emperor
+		emperor = {
+			add_legitimacy = -100
+		}
+		add_country_modifier = {
+			name = become_emperor
+			duration = 31
+		}
+		country_event = { id = flavor_pon.7 days = 30 }
+	}
+
+}
+
+country_event = { #become emperor
+	id = flavor_pon.7
+	title = flavor_pon.7.t
+	desc = flavor_pon.7.d
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+	major = yes
+
+
+	option = {
+		name = flavor_pon.7.a
+		ai_chance = { factor = 90 }
+		emperor = {
+			kill_ruler = yes
+			add_legitimacy = -100
+		}
+	}
+
+}
+
+
+country_event = { #war for the throne
+	id = flavor_pon.8
+	title = flavor_pon.8.t
+	desc = flavor_pon.8.d
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+	major = yes
+
+
+	option = {
+		name = flavor_pon.8.a #war
+		ai_chance = { factor = 100 }
+		declare_war_with_cb = {
+		    who = emperor
+		    casus_belli = cb_annex
+		}
+	}
+	option = {
+		name = flavor_pon.8.b #not yet
+		ai_chance = { factor = 0 }
+		country_event = { id = flavor_pon.8 days = 1825  }
+	}
+	option = {
+		name = flavor_pon.8.c #never
+		ai_chance = { factor = 0 }
+		emperor = {
+			add_imperial_influence = 10
+		}
+	}
+
+}

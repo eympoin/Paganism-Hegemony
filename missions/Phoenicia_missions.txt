@@ -410,38 +410,39 @@ phoenicia_4= {
   }
 
   to_the_red_sea = {
-    icon = mission_conquer_air
-    required_missions = {palestine_problems  }
-    provinces_to_highlight = {
-      area = red_sea_area
-      NOT = {owned_by = ROOT}
-    }
-    trigger = {
-      red_sea_area = {
-        type = all
-        owned_by = ROOT
+      icon = mission_conquer_air
+      required_missions = {palestine_problems  }
+      provinces_to_highlight = {
+        area = red_sea_area
+        NOT = {owned_by = ROOT}
       }
-    }
-    effect = {
-      bahari_area = {
-      limit = {
-        NOT = { owned_by = ROOT }
-        NOT = {is_claim	= ROOT}
+      trigger = {
+        red_sea_area = {
+          type = all
+          owned_by = ROOT
+        }
       }
-      add_permanent_claim = ROOT
+      effect = {
+        bahari_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+        }
+        delta_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+        }
+      387 = {
+        add_permanent_claim = ROOT
       }
-      delta_area = {
-      limit = {
-        NOT = { owned_by = ROOT }
-        NOT = {is_claim	= ROOT}
+      1215 = {
+        add_permanent_claim = ROOT
       }
-      add_permanent_claim = ROOT
-      }
-    387 = {
-      add_permanent_claim = ROOT
-    }
-    1215 = {
-      add_permanent_claim = ROOT
     }
   }
 

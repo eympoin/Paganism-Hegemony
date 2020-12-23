@@ -247,9 +247,6 @@ country_event = {#fall of ecbatana
 
   is_triggered_only = yes
 
-  mean_time_to_happen = {
-    days = 7
-  }
 
   option = {#pillage it
     name = flavor_syr.4.a
