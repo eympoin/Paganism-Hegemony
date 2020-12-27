@@ -1,0 +1,599 @@
+Bulgaria_1_1 = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = BUL
+      was_tag = BUL
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  Nomadic_legacy = {
+    icon = kingdom_of_cyprus
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+          OR = {
+            area = cyprus_area
+          }
+          NOT = {owned_by = ROOT}
+        }
+    trigger = {
+      cyprus_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      add_adm_power = 200
+      cukurova_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  Nomadic_diplomacy = {
+    icon = kingdom_of_cyprus
+    required_missions = {Nomadic_legacy}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+
+Bulgaria_2_1 = {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = BUL
+      was_tag = BUL
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  alliance_bul = {
+    icon = kingdom_of_cyprus
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  Nomadic_trade = {
+    icon = kingdom_of_cyprus
+    position = 3
+    required_missions = {Nomadic_diplomacy}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+Bulgaria_3_1 = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = BUL
+      was_tag = BUL
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  Reorganize_the_army = {
+    icon = kingdom_of_cyprus
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+      add_adm_power = 200
+      cukurova_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  Reconquest_bul = {
+    icon = kingdom_of_cyprus
+    required_missions = {Reorganize_the_army alliance_bul}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  reunited_bul = {
+    icon = kingdom_of_cyprus
+    required_missions = {Reconquest_bul}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  a_new_path = {
+    icon = kingdom_of_cyprus
+    required_missions = {Nomadic_trade reunited_bul subjuate_the_pechenegs}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+}
+
+
+Bulgaria_4_1 = {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = BUL
+      was_tag = BUL
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+   pay_off_the_debts= {
+    icon = kingdom_of_cyprus
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  subjuate_the_pechenegs = {
+    icon = kingdom_of_cyprus
+    position = 3
+    required_missions = {subjuate_the_magyars}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+Bulgaria_5_1 = {
+  slot = 5
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = BUL
+      was_tag = BUL
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+   protector_of_the_empire= {
+    icon = kingdom_of_cyprus
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  subjuate_the_magyars = {
+    icon = kingdom_of_cyprus
+    required_missions = {protector_of_the_empire}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+
+Bulgaria_2_2 = {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = BUL
+      was_tag = BUL
+    }
+    has_country_flag = nomadic_style
+    NOT = { map_setup = map_setup_random }
+  }
+   sack_Macedonia= {
+    icon = kingdom_of_cyprus
+    required_missions = {a_new_path}
+    position = 5
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  sack_greece = {
+    icon = kingdom_of_cyprus
+    required_missions = {sack_Macedonia}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  the_sack_of_constantinople = {
+    icon = kingdom_of_cyprus
+    required_missions = {sack_greece sack_the_Balkans}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  great_bulgaria = {
+    icon = kingdom_of_cyprus
+    required_missions = {the_sack_of_constantinople}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+Bulgaria_1_2 = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = BUL
+      was_tag = BUL
+    }
+    has_country_flag = nomadic_style
+    NOT = { map_setup = map_setup_random }
+  }
+   sack_the_Balkans= {
+    icon = kingdom_of_cyprus
+    required_missions = {sack_Macedonia}
+    position = 6
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+
+Bulgaria_4_2 = {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = BUL
+      was_tag = BUL
+    }
+    has_country_flag = nomadic_style
+    NOT = { map_setup = map_setup_random }
+  }
+   reconquer_old_bulgaria= {
+    icon = kingdom_of_cyprus
+    required_missions = {a_new_path}
+    position = 5
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  best_skh= {
+   icon = kingdom_of_cyprus
+   required_missions = {reconquer_old_bulgaria}
+   provinces_to_highlight = {
+   }
+   trigger = {
+   }
+   effect = {
+   }
+ }
+ best_okh = {
+  icon = kingdom_of_cyprus
+  required_missions = {best_skh}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  master_of_east_europe = {
+   icon = kingdom_of_cyprus
+   required_missions = {best_okh subdue_the_rus}
+   position = 9
+     provinces_to_highlight = {
+     }
+     trigger = {
+     }
+     effect = {
+     }
+   }
+
+}
+
+
+Bulgaria_5_2 = {
+  slot = 5
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = BUL
+      was_tag = BUL
+    }
+    has_country_flag = nomadic_style
+    NOT = { map_setup = map_setup_random }
+  }
+   to_the_volga = {
+    icon = kingdom_of_cyprus
+    required_missions = {reconquer_old_bulgaria}
+    position = 6
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  reunite_with_our_brethren= {
+   icon = kingdom_of_cyprus
+   required_missions = {to_the_volga}
+   provinces_to_highlight = {
+   }
+   trigger = {
+   }
+   effect = {
+   }
+ }
+ subdue_the_rus = {
+  icon = kingdom_of_cyprus
+  required_missions = {reunite_with_our_brethren}
+  provinces_to_highlight = {
+  }
+  trigger = {
+  }
+  effect = {
+  }
+}
+
+}
+
+
+Bulgaria_3_3 = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = BUL
+      was_tag = BUL
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+     Moldavian_protection = {
+      icon = kingdom_of_cyprus
+      required_missions = {a_new_path}
+      position = 5
+      provinces_to_highlight = {
+      }
+      trigger = {
+      }
+      effect = {
+      }
+    }
+
+    end_orda_khanate = {
+     icon = kingdom_of_cyprus
+     required_missions = {Moldavian_protection fortify_carpathian}
+     position = 8
+     provinces_to_highlight = {
+     }
+     trigger = {
+     }
+     effect = {
+     }
+   }
+
+   to_the_baltic = {
+    icon = kingdom_of_cyprus
+    required_missions = {end_orda_khanate }
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+  emperor_or_protector = {
+   icon = kingdom_of_cyprus
+   required_missions = {to_the_baltic }
+   provinces_to_highlight = {
+   }
+   trigger = {
+   }
+   effect = {
+   }
+  }
+
+}
+
+
+
+Bulgaria_2_3 = {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = BUL
+      was_tag = BUL
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+     conquer_transylvania = {
+      icon = kingdom_of_cyprus
+      required_missions = {a_new_path}
+      position = 5
+      provinces_to_highlight = {
+      }
+      trigger = {
+      }
+      effect = {
+      }
+    }
+
+    end_skh = {
+     icon = kingdom_of_cyprus
+     required_missions = {Moldavian_protection }
+     provinces_to_highlight = {
+     }
+     trigger = {
+     }
+     effect = {
+     }
+   }
+
+   fortify_carpathian = {
+    icon = kingdom_of_cyprus
+    required_missions = {end_skh }
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+}
+
+Bulgaria_1_3 = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = BUL
+      was_tag = BUL
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+     danubian_trade = {
+      icon = kingdom_of_cyprus
+      required_missions = {end_skh}
+      position = 7
+      provinces_to_highlight = {
+      }
+      trigger = {
+      }
+      effect = {
+      }
+    }
+}
+
+
+Bulgaria_4_3 = {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = BUL
+      was_tag = BUL
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+     tackle_the_turks = {
+      icon = kingdom_of_cyprus
+      required_missions = {a_new_path}
+      position = 5
+      provinces_to_highlight = {
+      }
+      trigger = {
+      }
+      effect = {
+      }
+    }
+
+    end_the_ottomans = {
+     icon = kingdom_of_cyprus
+     required_missions = {tackle_the_turks}
+     provinces_to_highlight = {
+     }
+     trigger = {
+     }
+     effect = {
+     }
+   }
+
+   theaten_armenia = {
+    icon = kingdom_of_cyprus
+    required_missions = {end_the_ottomans}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+}
