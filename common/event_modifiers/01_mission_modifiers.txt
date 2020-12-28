@@ -4858,7 +4858,7 @@ king_of_the_moors = {
 
 fighting_the_pirates = {
   naval_morale = 0.1
-  galley_power = 0.1	
+  galley_power = 0.1
 }
 
 eastern_trade_cyp = {
@@ -5065,4 +5065,45 @@ pontic_ambassads = {
 king_of_kings_pon = {
   governing_capacity = 100
   state_governing_cost = -0.2
+}
+
+bulgar_legacy = {
+  cavalry_power = 0.1
+  cavalry_cost = -0.1
+}
+
+a_new_army_bul = {
+  land_morale = 0.15
+  discipline = 0.05
+  land_maintenance_modifier = -0.2
+}
+
+new_economy_bul = {
+  global_tax_modifier = 0.2
+  inflation_reduction = 0.2
+}
+
+protector_of_the_northern_border = {
+  global_manpower = 5
+}
+the_great_moldavian_walls = {
+  local_defensiveness = 0.3
+}
+
+no_raids_to_fear = {
+  global_trade_goods_size_modifier = 0.4
+  global_tax_income = 0.2
+}
+
+civilize_dacia = {
+  global_missionary_strength = 0.03
+}
+
+carpathian_forts = {
+  local_hostile_movement_speed = -0.5
+  local_hostile_attrition = 5
+}
+control_of_fur_trade = {
+  merchants = 1
+  trade_steering = 0.2
 }

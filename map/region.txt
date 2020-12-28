@@ -89,8 +89,6 @@ north_german_region = {
 		neumark_area
 		mittelmark_area
 		vorpommern_area
-		bohemia_area
-		moravia_area
 		hinter_pommern_area
 		north_rhine_area
 		westphalia_area
@@ -126,6 +124,8 @@ south_german_region = {
 		upper_swabia_area
 		upper_rhineland_area
 		romandie_area
+		bohemia_area
+		moravia_area
 	}
 }
 
