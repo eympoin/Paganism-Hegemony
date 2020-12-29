@@ -2,7 +2,7 @@
 
 owner = HRZ# Part of the Bosnian kingdom
 controller = HRZ
-culture = serbian
+culture = croatian
 religion = slavic
 capital = "Mostar"	# Unofficial capital of Herzegovina
 trade_goods = wool

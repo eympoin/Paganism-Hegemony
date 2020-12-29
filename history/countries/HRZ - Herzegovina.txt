@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = feudalism_reform
-primary_culture = serbian
+primary_culture = croatian
 religion = theoi
 technology_group = eastern
 government_rank = 1

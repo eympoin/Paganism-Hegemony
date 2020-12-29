@@ -155,6 +155,12 @@ country_decisions = {
 			 }
 			 add_permanent_claim = ROOT
 		 }
+		 greece_region = {
+			 limit = {
+				 NOT = { owned_by = ROOT }
+			 }
+			 add_permanent_claim = ROOT
+		 }
 		 egypt_region = {
 			 limit = {
 				 NOT = { owned_by = ROOT }

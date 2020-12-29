@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 technology_group = eastern
-primary_culture = bulgarian
+primary_culture = bulgar_nomadic
 religion = theoi
 capital = 4704
 government_rank = 1

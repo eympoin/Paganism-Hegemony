@@ -2,7 +2,7 @@
 
 owner = THR
 controller = THR
-culture = bulgarian
+culture = bulgar_nomadic
 religion = tengri_pagan_reformed
 capital = "Tarnovo"
 trade_goods = iron

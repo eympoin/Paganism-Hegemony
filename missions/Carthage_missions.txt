@@ -1291,7 +1291,7 @@ own_base_2 = {
         add_base_manpower = 5
         add_base_production = 5
       }
-      balkan_region = {
+      greece_region = {
         limit = {
           NOT = { is_core = ROOT }
           NOT = { is_permanent_claim = ROOT }

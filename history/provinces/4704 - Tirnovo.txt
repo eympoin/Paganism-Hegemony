@@ -1,6 +1,6 @@
 owner = BUL
 controller = BUL
-culture = bulgarian
+culture = bulgar_nomadic
 religion = tengri_pagan_reformed
 capital = "Tarnovo"
 trade_goods = cloth

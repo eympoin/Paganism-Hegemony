@@ -1,0 +1,51 @@
+
+namespace = flavor_bul
+# a_new_path
+country_event = {
+	id = flavor_bul.1
+	title = "flavor_bul.1.t"
+	desc = "flavor_bul.1.d"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	major = yes
+
+
+	option = {		# nomadic legacy
+		name = "flavor_bul.1.a"
+		ai_chance = { factor = 50 }
+		hidden_effect = {set_country_flag = nomadic_style}
+		swap_non_generic_missions = yes
+		yedisan_area = {
+			add_core = ROOT
+		}
+		zaporizhia_area = {
+			add_core = ROOT
+		}
+		azov_area = {
+			add_core = ROOT
+		}
+	}
+	option = {	#emperor greek
+		name = "flavor_bul.1.b"
+		ai_chance = { factor = 30 }
+		hidden_effect = {set_country_flag = emperor_bulgar}
+		every_owned_province = {
+			limit = {
+				culture = bulgar_nomadic
+			}
+			change_culture = Thracian
+		}
+	}
+
+	option = {#emperor slavic
+		name = "flavor_bul.1.c"
+		ai_chance = { factor = 20 }
+		hidden_effect = {set_country_flag = emperor_bulgar}
+		every_owned_province = {
+			limit = {
+				culture = bulgar_nomadic
+			}
+			change_culture = bulgarian
+		}
+	}
+}

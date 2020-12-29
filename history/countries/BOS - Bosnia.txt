@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
-primary_culture = serbian
-add_accepted_culture = croatian
+primary_culture = croatian 
+add_accepted_culture = serbian
 religion = theoi
 technology_group = eastern
 capital = 3002	# Sarajevo

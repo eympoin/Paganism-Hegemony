@@ -3,7 +3,7 @@
 owner = CUM
 controller = CUM
 capital = "Bolgar"
-culture = cuman
+culture = bulgar_volga
 religion = tengri_pagan_reformed
 trade_goods = iron
 hre = no

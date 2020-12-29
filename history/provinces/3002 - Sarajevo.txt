@@ -2,7 +2,7 @@
 
 owner = BOS # Part of the Bosnian kingdom
 controller = BOS
-culture = serbian
+culture = croatian
 religion = slavic
 capital = "Visoki"
 trade_goods = grain

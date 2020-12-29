@@ -1061,11 +1061,11 @@ mecklenburg_area = { #5
 ########################################
 
 macedonia_area = { #5 (Macedonia)
-	148 3001 4702 4780 4796
+	148 4796 4702 1853 4849
 }
 
 morea_area = { #4 Central Greece
-	145  1773 4793 4701 4819
+	145 1773 4793 4701 4819
 }
 
 attica_area = { #Attica and Boeotia
@@ -1081,7 +1081,7 @@ northern_greece_area = { #3 #Northern Greece
 }
 
 thessalia_area = { #Thessalia Greece
-	147 4795 1853 4846 4849
+	147 4795 4846
 }
 
 thrace_area = { #5

@@ -403,7 +403,7 @@ renaissance = {
 			potential = {
 			OR = {
 				region = italy_region
-				region = balkan_region
+				region = greece_region
 				region = anatolia_region
 				region = egypt_region
 				region = mashriq_region
@@ -415,7 +415,7 @@ renaissance = {
 				is_capital = yes
 				OR = {
 				region = italy_region
-				region = balkan_region
+				region = greece_region
 				region = anatolia_region
 				region = egypt_region
 				region = mashriq_region
@@ -888,7 +888,7 @@ printing_press = {
 					religion = protestant
 					religion = reformed
 					region = italy_region
-					region = balkan_region
+					region = greece_region
 				}
 			}
 			AND = {

@@ -243,7 +243,7 @@ Bulgaria_4_1 = {
     provinces_to_highlight = {
     }
     trigger = {
-      NOT = {num_of_loans = 0}
+      NOT = {num_of_loans = 1}
     }
     effect = {
       add_adm_power = 100
@@ -276,7 +276,7 @@ Bulgaria_4_1 = {
         owned_by = ROOT
         culture = pecheneg
       }
-      change_culture = bulgarian
+      change_culture = bulgar_nomadic
       }
       yedisan_area = {
         limit = {
@@ -344,23 +344,26 @@ Bulgaria_5_1 = {
         owned_by = ROOT
         culture = hungarian
       }
-      change_culture = bulgarian
+      change_culture = bulgar_nomadic
       }
       moldavia_area = {
         limit = {
           NOT = { owned_by = ROOT }
+          NOT = {is_claim = ROOT}
         }
         add_permanent_claim = ROOT
       }
       transylvania_area = {
         limit = {
           NOT = { owned_by = ROOT }
+          NOT = {is_claim = ROOT}
         }
         add_permanent_claim = ROOT
       }
       southern_transylvania_area = {
         limit = {
           NOT = { owned_by = ROOT }
+          NOT = {is_claim = ROOT}
         }
         add_permanent_claim = ROOT
       }
@@ -380,6 +383,7 @@ Bulgaria_2_2 = {
       was_tag = BUL
     }
     has_country_flag = nomadic_style
+    NOT = {has_country_flag = emperor_bulgar}
     NOT = { map_setup = map_setup_random }
   }
    sack_Macedonia= {
@@ -387,10 +391,56 @@ Bulgaria_2_2 = {
     required_missions = {a_new_path}
     position = 5
     provinces_to_highlight = {
+      area = macedonia_area
+      NOT = {owned_by = ROOT}
     }
     trigger = {
+      macedonia_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
     effect = {
+    #event
+      macedonia_area = {
+        add_base_tax = -1
+        add_base_manpower = -1
+        add_base_production = -1
+      }
+      silistria_area = {
+        add_base_tax = 2
+        add_base_manpower = 1
+        add_base_production = 1
+      }
+      add_treasury = 500
+      morea_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim = ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      thessalia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim = ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      attica_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim = ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      balkan_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim = ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 
@@ -398,10 +448,47 @@ Bulgaria_2_2 = {
     icon = kingdom_of_cyprus
     required_missions = {sack_Macedonia}
     provinces_to_highlight = {
+      OR = {
+        area = thessalia_area
+        area = attica_area
+        area = morea_area
+        }
+      NOT = {owned_by = ROOT}
     }
     trigger = {
+      num_of_owned_provinces_with = {
+        value = 10
+        OR = {
+          area = thessalia_area
+          area = attica_area
+          area = morea_area
+          }
+      }
     }
     effect = {
+    add_treasury = 500
+    every_owned_province = {
+        limit = {
+        OR = {
+          area = thessalia_area
+          area = attica_area
+          area = morea_area
+          }
+        }
+        add_base_tax = -1
+        add_base_manpower = -1
+        add_base_production = -1
+      }
+      silistria_area = {
+        add_base_tax = 2
+        add_base_manpower = 1
+        add_base_production = 1
+      }
+      bulgaria_area = {
+        add_base_tax = 2
+        add_base_manpower = 1
+        add_base_production = 1
+      }
     }
   }
 
@@ -409,10 +496,23 @@ Bulgaria_2_2 = {
     icon = kingdom_of_cyprus
     required_missions = {sack_greece sack_the_Balkans}
     provinces_to_highlight = {
+      province_id = 151
     }
     trigger = {
+      owns = 151
     }
     effect = {
+      add_treasury = 1000
+      151 = {
+        add_base_tax = -3
+        add_base_manpower = -3
+        add_base_production = -3
+      }
+      capital_scope = {
+      add_base_tax = 4
+      add_base_manpower = 3
+      add_base_production = 3
+      }
     }
   }
 
@@ -420,10 +520,22 @@ Bulgaria_2_2 = {
     icon = kingdom_of_cyprus
     required_missions = {the_sack_of_constantinople}
     provinces_to_highlight = {
+      is_part_of_hre = yes
     }
     trigger = {
+      NOT = {
+        hre_size = 1
+      }
     }
     effect = {
+      add_adm_power = 100
+      add_dip_power = 100
+      add_mil_power = 100
+      add_years_of_income = 1
+      add_country_modifier = {
+        name = greek_slayer
+        duration = -1
+      }
     }
   }
 
@@ -439,17 +551,29 @@ Bulgaria_1_2 = {
       was_tag = BUL
     }
     has_country_flag = nomadic_style
+    NOT = {has_country_flag = emperor_bulgar}
     NOT = { map_setup = map_setup_random }
   }
-   sack_the_Balkans= {
+   conquer_the_Balkans= {
     icon = kingdom_of_cyprus
     required_missions = {sack_Macedonia}
     position = 6
     provinces_to_highlight = {
+      OR = {
+        region = balkan_region
+      }
+      NOT = {owned_by = ROOT}
     }
     trigger = {
+      num_of_owned_provinces_with = {
+      value = 30
+      area = balkan_region
+      }
     }
     effect = {
+      add_accepted_culture = serbian
+      add_treasury = 500
+      add_mil_power = 100
     }
   }
 
@@ -466,6 +590,7 @@ Bulgaria_4_2 = {
       was_tag = BUL
     }
     has_country_flag = nomadic_style
+    NOT = {has_country_flag = emperor_bulgar}
     NOT = { map_setup = map_setup_random }
   }
    reconquer_old_bulgaria= {
@@ -473,31 +598,100 @@ Bulgaria_4_2 = {
     required_missions = {a_new_path}
     position = 5
     provinces_to_highlight = {
+      OR = {
+        area = yedisan_area
+        area = zaporizhia_area
+        area = crimea_area
+        area = azov_area
+      }
+      NOT = {owned_by = ROOT}
     }
     trigger = {
+      num_of_owned_provinces_with = {
+        value = 12
+        OR = {
+          area = yedisan_area
+          area = zaporizhia_area
+          area = crimea_area
+          area = azov_area
+        }
+      }
     }
     effect = {
+      add_manpower = 5
+      add_prestige = 20
+      add_army_tradition = 10
+      carpathia_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      crimea_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      every_owned_province = {
+        limit = {
+          culture = turkish
+        }
+        change_culture = bulgar_nomadic
+      }
+      add_country_modifier = {
+        name = unite_the_tribes
+        duration = 7300
+      }
     }
   }
   best_skh= {
    icon = kingdom_of_cyprus
    required_missions = {reconquer_old_bulgaria}
    provinces_to_highlight = {
+    owned_by = SKH
    }
    trigger = {
+    NOT = {exists = SKH}
    }
    effect = {
+     add_manpower = 5
+     add_prestige = 20
+     add_army_tradition = 10
+     poland_region = {
+       limit = {
+         NOT = { owned_by = ROOT }
+         NOT = {is_claim	= ROOT}
+       }
+       add_permanent_claim = ROOT
+     }
+     add_accepted_culture = dacian
+     add_country_modifier = {
+       name = unite_the_tribes
+       duration = 7300
+     }
    }
  }
  best_okh = {
   icon = kingdom_of_cyprus
   required_missions = {best_skh}
-    provinces_to_highlight = {
+  provinces_to_highlight = {
+   owned_by = OKH
+  }
+  trigger = {
+   NOT = {exists = OKH}
+  }
+  effect = {
+    add_manpower = 5
+    add_prestige = 20
+    add_army_tradition = 10
+    add_country_modifier = {
+      name = unite_the_tribes
+      duration = 7300
     }
-    trigger = {
-    }
-    effect = {
-    }
+  }
   }
 
   master_of_east_europe = {
@@ -507,8 +701,19 @@ Bulgaria_4_2 = {
      provinces_to_highlight = {
      }
      trigger = {
+     NOT = {
+        any_country = {
+          army_size = ROOT
+        }
+      }
      }
      effect = {
+      add_army_professionalism = 0.1
+      create_general = { tradition = 100 }
+      add_country_modifier = {
+        name = great_khan
+        duration = -1
+      }
      }
    }
 
@@ -525,6 +730,7 @@ Bulgaria_5_2 = {
       was_tag = BUL
     }
     has_country_flag = nomadic_style
+    NOT = {has_country_flag = emperor_bulgar}
     NOT = { map_setup = map_setup_random }
   }
    to_the_volga = {
@@ -532,30 +738,141 @@ Bulgaria_5_2 = {
     required_missions = {reconquer_old_bulgaria}
     position = 6
     provinces_to_highlight = {
+      OR = {
+        area = lower_don_area
+        area = astrakhan_area
+      }
+      NOT = {owned_by = ROOT}
     }
     trigger = {
+      lower_don_area = {
+        type = all
+        owned_by = ROOT
+      }
+      astrakhan_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
     effect = {
+      tambov_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      kazan_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      samara_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      saratov_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      volga_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
   reunite_with_our_brethren= {
    icon = kingdom_of_cyprus
    required_missions = {to_the_volga}
    provinces_to_highlight = {
+     OR = {
+       area = volga_area
+       area = samara_area
+       area = kazan_area
+       area = saratov_area
+     }
+     NOT = {owned_by = ROOT}
    }
    trigger = {
+     volga_area = {
+       type = all
+       owned_by = ROOT
+     }
+     samara_area = {
+       type = all
+       owned_by = ROOT
+     }
+     kazan_area = {
+       type = all
+       owned_by = ROOT
+     }
+     saratov_area = {
+       type = all
+       owned_by = ROOT
+     }
    }
    effect = {
+   #event
+   russia_region = {
+     limit = {
+       NOT = { owned_by = ROOT }
+       NOT = {is_claim	= ROOT}
+     }
+     add_permanent_claim = ROOT
+   }
+   ruthenia_region = {
+     limit = {
+       NOT = { owned_by = ROOT }
+       NOT = {is_claim	= ROOT}
+     }
+     add_permanent_claim = ROOT
+   }
    }
  }
  subdue_the_rus = {
   icon = kingdom_of_cyprus
   required_missions = {reunite_with_our_brethren}
   provinces_to_highlight = {
+    OR = {
+      region = ruthenia_region
+      region = russia_region
+    }
+    NOT = {owned_by = ROOT}
   }
   trigger = {
+    num_of_owned_provinces_with = {
+      value = 50
+      OR = {
+        region = ruthenia_region
+        region = russia_region
+      }
+    }
   }
   effect = {
+  add_legitimacy = 10
+  add_splendor = 100
+  add_country_modifier = {
+    name = control_of_fur_trade
+    duration = -1
+  }
+    ural_region = {
+      limit = {
+        NOT = { owned_by = ROOT }
+        NOT = {is_claim	= ROOT}
+      }
+      add_permanent_claim = ROOT
+    }
   }
 }
 
@@ -571,6 +888,7 @@ Bulgaria_3_3 = {
       tag = BUL
       was_tag = BUL
     }
+    NOT = {has_country_flag = nomadic_style}
     NOT = { map_setup = map_setup_random }
   }
      Moldavian_protection = {
@@ -677,6 +995,7 @@ Bulgaria_2_3 = {
       tag = BUL
       was_tag = BUL
     }
+    NOT = {has_country_flag = nomadic_style}
     NOT = { map_setup = map_setup_random }
   }
      conquer_transylvania = {
@@ -784,6 +1103,7 @@ Bulgaria_1_3 = {
       tag = BUL
       was_tag = BUL
     }
+    NOT = {has_country_flag = nomadic_style}
     NOT = { map_setup = map_setup_random }
   }
      danubian_trade = {
@@ -823,6 +1143,7 @@ Bulgaria_4_3 = {
       tag = BUL
       was_tag = BUL
     }
+    NOT = {has_country_flag = nomadic_style}
     NOT = { map_setup = map_setup_random }
   }
      tackle_the_turks = {
@@ -876,9 +1197,9 @@ Bulgaria_4_3 = {
         BYZ = {
           owns = 285
         }
-        285 = {
-          cede_province = ROOT
-        }
+      }
+      285 = {
+        cede_province = ROOT
       }
      }
      if = {
@@ -886,9 +1207,9 @@ Bulgaria_4_3 = {
         BYZ = {
           owns = 2447
         }
-        2447 = {
-          cede_province = ROOT
-        }
+      }
+      2447 = {
+        cede_province = ROOT
       }
      }
      circassia_area = {
@@ -915,9 +1236,11 @@ Bulgaria_4_3 = {
     }
     trigger = {
       OR = {
-      border_distance = {
-        	who = ARM
-        	distance = 0
+      NOT ={
+        border_distance = {
+          	who = ARM
+          	distance = 1
+          }
         }
         NOT = {exists = ARM}
       }
@@ -946,6 +1269,7 @@ Bulgaria_5_3 = {
       tag = BUL
       was_tag = BUL
     }
+    NOT = {has_country_flag = nomadic_style}
     NOT = { map_setup = map_setup_random }
   }
      a_greek_among_the_greeks = {
@@ -1018,7 +1342,7 @@ Bulgaria_5_3 = {
     required_missions = {subjugate_the_rus}
     provinces_to_highlight = {
       OR = {
-        region = ruthenia_region
+        region = russia_region
       }
       NOT = {owned_by = ROOT}
     }
@@ -1026,7 +1350,7 @@ Bulgaria_5_3 = {
       num_of_owned_provinces_with = {
         value = 20
         OR = {
-        region = ruthenia_region
+        region = russia_region
         }
       }
     }

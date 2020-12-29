@@ -50,6 +50,7 @@ eastern_europe_superregion = {
 	ruthenia_region
 	carpathia_region
 	balkan_region
+	greece_region
 	crimea_region
 	ural_region
 }

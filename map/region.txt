@@ -82,7 +82,6 @@ italy_region = {
 
 north_german_region = {
 	areas = {
-		erzgebirge_area
 		south_saxony_area
 		northern_saxony_area
 		thuringia_area
@@ -126,6 +125,7 @@ south_german_region = {
 		romandie_area
 		bohemia_area
 		moravia_area
+		erzgebirge_area
 	}
 }
 
@@ -274,21 +274,27 @@ balkan_region = {
 		serbia_area
 		rascia_area
 		bulgaria_area
+		albania_area
+		silistria_area
+		slavonia_area
+		pelagonia_area
+	}
+}
+
+
+greece_region = {
+	areas = {
 		macedonia_area
 		northern_greece_area
 		morea_area
 		thrace_area
-		albania_area
-		silistria_area
-		slavonia_area
 		south_islands_area
 		attica_area
 		thessalia_area
-		pelagonia_area
 		kyklades_area
+		aegean_archipelago_area
 	}
 }
-
 carpathia_region = {
 	areas = {
 		transdanubia_area
@@ -368,7 +374,6 @@ anatolia_region = {
 		dulkadir_area
 		cukurova_area
 		ankara_area
-		aegean_archipelago_area
 		germiyan_area
 		caria_area
 		paphlagonia_area

@@ -2,7 +2,7 @@
 
 owner = MIA
 controller = MIA
-culture = bulgarian
+culture = serbian
 religion = slavic
 capital = "Vidin"
 trade_goods = grain
@@ -12,7 +12,6 @@ base_production = 2
 base_manpower = 2
 is_city = yes
 add_core = MIA
-add_core = BUL
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

@@ -5082,6 +5082,11 @@ new_economy_bul = {
   global_tax_modifier = 0.2
   inflation_reduction = 0.2
 }
+reunification_bul = {
+  stability_cost_modifier = -0.2
+  prestige = 1
+  global_tax_modifier = 0.1
+}
 
 protector_of_the_northern_border = {
   global_manpower = 5
@@ -5106,4 +5111,26 @@ carpathian_forts = {
 control_of_fur_trade = {
   merchants = 1
   trade_steering = 0.2
+}
+
+greek_slayer = {
+  infantry_shock = 1
+  cavalry_shock = 1
+  prestige = 1
+  land_morale = 0.10
+  loot_amount = 0.3
+}
+
+unite_the_tribes = {
+  cavalry_cost = -0.3
+  land_maintenance_modifier = -0.2
+  war_exhaustion = -0.10
+  global_manpower_modifier = 0.2
+}
+
+great_khan = {
+  cavalry_cost = -0.3
+  cavalry_power = 0.1
+  prestige = 1
+  global_manpower_modifier = 0.2
 }

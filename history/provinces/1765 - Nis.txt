@@ -2,7 +2,7 @@
 
 owner = MIA
 controller = MIA
-culture = bulgarian
+culture = serbian
 religion = slavic
 capital = "Serdica"
 trade_goods = copper

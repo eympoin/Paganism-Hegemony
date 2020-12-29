@@ -1251,7 +1251,10 @@ lombards_east = {
     icon = take_constantinople
     required_missions = {Conquest_of_Pannonia Conquest_of_Illyria}
     provinces_to_highlight = {
+    OR = {
       region = balkan_region
+      region = greece_region
+    }
       NOT = {owned_by = ROOT}
     }
     trigger = {
@@ -1260,6 +1263,7 @@ lombards_east = {
         value = 55
         OR = {
           region = balkan_region
+          region = greece_region
         }
       }
     }
@@ -1345,6 +1349,13 @@ lombards_east_2 = {
     }
       add_years_of_income = 1
       balkan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+				}
+				add_permanent_claim = ROOT
+			}
+      greece_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
           NOT = {is_claim	= ROOT}
