@@ -10,7 +10,7 @@ Bulgaria_1_1 = {
     NOT = { map_setup = map_setup_random }
   }
   Nomadic_legacy = {
-    icon = kingdom_of_cyprus
+    icon = mission_non-western_cavalry_raid
     required_missions = {}
     position = 1
     provinces_to_highlight = {
@@ -27,7 +27,7 @@ Bulgaria_1_1 = {
   }
 
   Nomadic_diplomacy = {
-    icon = kingdom_of_cyprus
+    icon = personal_diplomacy
     required_missions = {Nomadic_legacy}
     provinces_to_highlight = {
     }
@@ -46,6 +46,7 @@ Bulgaria_1_1 = {
     }
     effect = {
       add_dip_power = 100
+      custom_tooltip = custom_tooltip = bulgar_alliance
       random_country = {
         limit = {
           has_opinion = {
@@ -78,7 +79,7 @@ Bulgaria_2_1 = {
     NOT = { map_setup = map_setup_random }
   }
   alliance_bul = {
-    icon = kingdom_of_cyprus
+    icon = mission_alliances
     required_missions = {}
     position = 1
     provinces_to_highlight = {
@@ -93,7 +94,7 @@ Bulgaria_2_1 = {
   }
 
   Nomadic_trade = {
-    icon = kingdom_of_cyprus
+    icon = mission_asian_trader
     position = 3
     required_missions = {Nomadic_diplomacy}
     provinces_to_highlight = {
@@ -128,7 +129,7 @@ Bulgaria_3_1 = {
     NOT = { map_setup = map_setup_random }
   }
   Reorganize_the_army = {
-    icon = kingdom_of_cyprus
+    icon = mission_build_up_to_force_limit
     required_missions = {}
     position = 1
     provinces_to_highlight = {
@@ -146,7 +147,7 @@ Bulgaria_3_1 = {
   }
 
   Reconquest_bul = {
-    icon = kingdom_of_cyprus
+    icon = mission_eastern_european_city
     required_missions = {Reorganize_the_army alliance_bul pay_off_the_debts}
     provinces_to_highlight = {
       OR = {
@@ -170,7 +171,7 @@ Bulgaria_3_1 = {
   }
 
   reunited_bul = {
-    icon = kingdom_of_cyprus
+    icon = mission_unite_home_region
     required_missions = {Reconquest_bul}
     provinces_to_highlight = {
       OR = {
@@ -210,7 +211,7 @@ Bulgaria_3_1 = {
   }
 
   a_new_path = {
-    icon = kingdom_of_cyprus
+    icon = mission_monarch_in_throne_room
     required_missions = {Nomadic_trade reunited_bul subjuate_the_pechenegs}
     provinces_to_highlight = {
     }
@@ -237,7 +238,7 @@ Bulgaria_4_1 = {
     NOT = { map_setup = map_setup_random }
   }
    pay_off_the_debts = {
-    icon = kingdom_of_cyprus
+    icon = mission_war_chest
     required_missions = {}
     position = 1
     provinces_to_highlight = {
@@ -255,7 +256,7 @@ Bulgaria_4_1 = {
   }
 
   subjuate_the_pechenegs = {
-    icon = kingdom_of_cyprus
+    icon = mission_steppe_warriors
     position = 3
     required_missions = {subjuate_the_magyars}
     provinces_to_highlight = {
@@ -301,7 +302,7 @@ Bulgaria_5_1 = {
     NOT = { map_setup = map_setup_random }
   }
    protector_of_the_empire= {
-    icon = kingdom_of_cyprus
+    icon = mission_chinese_general_riding
     required_missions = {}
     position = 1
     provinces_to_highlight = {
@@ -324,7 +325,7 @@ Bulgaria_5_1 = {
   }
 
   subjuate_the_magyars = {
-    icon = kingdom_of_cyprus
+    icon = push_on_to_bulgaria
     required_missions = {protector_of_the_empire}
     provinces_to_highlight = {
       OR = {
@@ -387,7 +388,7 @@ Bulgaria_2_2 = {
     NOT = { map_setup = map_setup_random }
   }
    sack_Macedonia= {
-    icon = kingdom_of_cyprus
+    icon = mission_conquer_50_development
     required_missions = {a_new_path}
     position = 5
     provinces_to_highlight = {
@@ -445,7 +446,7 @@ Bulgaria_2_2 = {
   }
 
   sack_greece = {
-    icon = kingdom_of_cyprus
+    icon = mission_crusade_for_varna
     required_missions = {sack_Macedonia}
     provinces_to_highlight = {
       OR = {
@@ -493,7 +494,7 @@ Bulgaria_2_2 = {
   }
 
   the_sack_of_constantinople = {
-    icon = kingdom_of_cyprus
+    icon = take_constantinople
     required_missions = {sack_greece sack_the_Balkans}
     provinces_to_highlight = {
       province_id = 151
@@ -517,7 +518,7 @@ Bulgaria_2_2 = {
   }
 
   great_bulgaria = {
-    icon = kingdom_of_cyprus
+    icon = mission_empire
     required_missions = {the_sack_of_constantinople}
     provinces_to_highlight = {
       is_part_of_hre = yes
@@ -555,7 +556,7 @@ Bulgaria_1_2 = {
     NOT = { map_setup = map_setup_random }
   }
    conquer_the_Balkans= {
-    icon = kingdom_of_cyprus
+    icon = fight_bosnian_heresies
     required_missions = {sack_Macedonia}
     position = 6
     provinces_to_highlight = {
@@ -594,7 +595,7 @@ Bulgaria_4_2 = {
     NOT = { map_setup = map_setup_random }
   }
    reconquer_old_bulgaria= {
-    icon = kingdom_of_cyprus
+    icon = mission_impaled_soldies
     required_missions = {a_new_path}
     position = 5
     provinces_to_highlight = {
@@ -648,7 +649,7 @@ Bulgaria_4_2 = {
     }
   }
   best_skh= {
-   icon = kingdom_of_cyprus
+   icon = mission_conquer_romania
    required_missions = {reconquer_old_bulgaria}
    provinces_to_highlight = {
     owned_by = SKH
@@ -675,7 +676,7 @@ Bulgaria_4_2 = {
    }
  }
  best_okh = {
-  icon = kingdom_of_cyprus
+  icon = mission_partition_poland
   required_missions = {best_skh}
   provinces_to_highlight = {
    owned_by = OKH
@@ -695,7 +696,7 @@ Bulgaria_4_2 = {
   }
 
   master_of_east_europe = {
-   icon = kingdom_of_cyprus
+   icon = mission_conquer_moscow
    required_missions = {best_okh subdue_the_rus}
    position = 9
      provinces_to_highlight = {
@@ -734,7 +735,7 @@ Bulgaria_5_2 = {
     NOT = { map_setup = map_setup_random }
   }
    to_the_volga = {
-    icon = kingdom_of_cyprus
+    icon = mission_advance_to_the_dnieper
     required_missions = {reconquer_old_bulgaria}
     position = 6
     provinces_to_highlight = {
@@ -793,7 +794,7 @@ Bulgaria_5_2 = {
     }
   }
   reunite_with_our_brethren= {
-   icon = kingdom_of_cyprus
+   icon = mission_unite_the_princes
    required_missions = {to_the_volga}
    provinces_to_highlight = {
      OR = {
@@ -823,7 +824,10 @@ Bulgaria_5_2 = {
      }
    }
    effect = {
-   #event
+   add_country_modifier = {
+    name =reunification_bul
+    duration = 7300
+   }
    russia_region = {
      limit = {
        NOT = { owned_by = ROOT }
@@ -841,7 +845,7 @@ Bulgaria_5_2 = {
    }
  }
  subdue_the_rus = {
-  icon = kingdom_of_cyprus
+  icon = mission_dethrone_the_rurikovichs
   required_missions = {reunite_with_our_brethren}
   provinces_to_highlight = {
     OR = {
@@ -892,7 +896,7 @@ Bulgaria_3_3 = {
     NOT = { map_setup = map_setup_random }
   }
      Moldavian_protection = {
-      icon = kingdom_of_cyprus
+      icon = mission_sovereign_principality
       required_missions = {a_new_path}
       position = 5
       provinces_to_highlight = {
@@ -948,7 +952,7 @@ Bulgaria_3_3 = {
     }
 
     end_orda_khanate = {
-     icon = kingdom_of_cyprus
+     icon = mission_partition_poland
      required_missions = {Moldavian_protection fortify_carpathian}
      position = 8
      provinces_to_highlight = {
@@ -968,7 +972,7 @@ Bulgaria_3_3 = {
 
 
   emperor_or_protector = {
-   icon = kingdom_of_cyprus
+   icon = lead_the_empire
    required_missions = {end_orda_khanate }
    provinces_to_highlight = {
    }
@@ -999,7 +1003,7 @@ Bulgaria_2_3 = {
     NOT = { map_setup = map_setup_random }
   }
      conquer_transylvania = {
-      icon = kingdom_of_cyprus
+      icon = mission_cannons_firing
       required_missions = {a_new_path}
       position = 5
       provinces_to_highlight = {
@@ -1035,7 +1039,7 @@ Bulgaria_2_3 = {
     }
 
     end_skh = {
-     icon = kingdom_of_cyprus
+     icon = mission_conquer_romania
      required_missions = {conquer_transylvania}
      provinces_to_highlight = {
       owned_by = SKH
@@ -1053,7 +1057,7 @@ Bulgaria_2_3 = {
    }
 
    fortify_carpathian = {
-    icon = kingdom_of_cyprus
+    icon = fortress_of_belgrade
     required_missions = {end_skh }
     provinces_to_highlight = {
       OR = {
@@ -1107,7 +1111,7 @@ Bulgaria_1_3 = {
     NOT = { map_setup = map_setup_random }
   }
      danubian_trade = {
-      icon = kingdom_of_cyprus
+      icon = danubian_power
       required_missions = {end_skh}
       position = 7
       provinces_to_highlight = {
@@ -1147,7 +1151,7 @@ Bulgaria_4_3 = {
     NOT = { map_setup = map_setup_random }
   }
      tackle_the_turks = {
-      icon = kingdom_of_cyprus
+      icon = pacify_the_albanian_lands
       required_missions = {a_new_path}
       position = 5
       provinces_to_highlight = {
@@ -1183,7 +1187,7 @@ Bulgaria_4_3 = {
     }
 
     end_the_ottomans = {
-     icon = kingdom_of_cyprus
+     icon = mission_conquer_50_development
      required_missions = {tackle_the_turks}
      provinces_to_highlight = {
       owned_by = TUR
@@ -1230,7 +1234,7 @@ Bulgaria_4_3 = {
    }
 
    theaten_armenia = {
-    icon = kingdom_of_cyprus
+    icon = mission_assemble_an_army
     required_missions = {end_the_ottomans}
     provinces_to_highlight = {
     }
@@ -1273,7 +1277,7 @@ Bulgaria_5_3 = {
     NOT = { map_setup = map_setup_random }
   }
      a_greek_among_the_greeks = {
-      icon = kingdom_of_cyprus
+      icon = mission_noble_council
       required_missions = {a_new_path}
       position = 5
       provinces_to_highlight = {
@@ -1299,7 +1303,7 @@ Bulgaria_5_3 = {
     }
 
     subjugate_the_rus = {
-     icon = kingdom_of_cyprus
+     icon = mission_conquer_novgorod
      required_missions = {end_the_ottomans}
      position = 7
      provinces_to_highlight = {
@@ -1338,7 +1342,7 @@ Bulgaria_5_3 = {
    }
 
    master_of_russia = {
-    icon = kingdom_of_cyprus
+    icon = mission_dethrone_the_rurikovichs
     required_missions = {subjugate_the_rus}
     provinces_to_highlight = {
       OR = {
