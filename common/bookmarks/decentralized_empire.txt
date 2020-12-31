@@ -3,7 +3,7 @@ bookmark =
 	name = "WRE_NAME"
 	desc = "WRE_DESC"
 	date = 1444.11.11
-	
+
 	country = BYZ
 	country = MAC
 	country = SER
@@ -13,4 +13,19 @@ bookmark =
 	country = PHO
 	country = LEG
 	country = UEG
+	country = BUL
+	country = SER
+
+
+	easy_country = BYZ
+	easy_country = MAC
+	easy_country = SER
+	easy_country = PON
+	easy_country = ION
+	easy_country = SYR
+	easy_country = PHO
+	easy_country = LEG
+	easy_country = UEG
+	easy_country = SER
+	easy_country = BUL
 }

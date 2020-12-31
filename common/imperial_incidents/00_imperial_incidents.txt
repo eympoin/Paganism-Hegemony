@@ -1015,3 +1015,75 @@ incident_phoenicia = {
     }
   }
 }
+
+incident_bulgaria = {
+	event = flavor_bul.2
+	default_option = 1
+
+	can_stop = {
+		OR = {
+			NOT = { exists = PHO }
+			PHO = { is_part_of_hre = no }
+			PHO = {
+				NOT = {
+					has_reform = merchants_reform
+				}
+			}
+		}
+	}
+  0 = { #cast_out
+    modifier = {
+      factor = 100
+      OR = {
+        ai_attitude = {
+          who = BUL
+          attitude = attitude_rivalry
+        }
+        ai_attitude = {
+          who = BUL
+          attitude = attitude_hostile
+        }
+        ai_attitude = {
+          who = BUL
+          attitude = attitude_threatened
+        }
+        ai_attitude = {
+          who = BUL
+          attitude = attitude_outraged
+        }
+        ai_attitude = {
+          who = BUL
+          attitude = attitude_disloyal
+        }
+        ai_attitude = {
+          who = BUL
+          attitude = attitude_rebellious
+        }
+      }
+    }
+  }
+
+
+  1 = { # punish
+
+  }
+  2 = { # nothing
+    modifier = {
+      factor = 100
+      OR = {
+        ai_attitude = {
+          who = BUL
+          attitude = attitude_friendly
+        }
+        ai_attitude = {
+          who = BUL
+          attitude = attitude_loyal
+        }
+        ai_attitude = {
+          who = BUL
+          attitude = attitude_allied
+        }
+      }
+    }
+  }
+}

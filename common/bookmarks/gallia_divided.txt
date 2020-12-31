@@ -3,7 +3,7 @@ bookmark =
 	name = "GALLIA_NAME"
 	desc = "GALLIA_DESC"
 	date = 1444.11.11
-	
+
 	country = FRR
 	country = FRP
 	country = FRO
@@ -12,4 +12,13 @@ bookmark =
 	country = LOT
 	country = NAR
 	country = AQI
+
+	easy_country = FRR
+	easy_country = FRP
+	easy_country = FRO
+	easy_country = FRV
+	easy_country = BOR
+	easy_country = LOT
+	easy_country = NAR
+	easy_country = AQI
 }

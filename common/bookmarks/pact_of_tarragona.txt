@@ -3,10 +3,16 @@ bookmark =
 	name = "HISPANIA_NAME"
 	desc = "HISPANIA_DESC"
 	date = 1444.11.11
-	
+
 	country = BAE
 	country = GAL
 	country = TRC
 	country = CTH
 	country = LUS
+
+	easy_country = BAE
+	easy_country = GAL
+	easy_country = TRC
+	easy_country = CTH
+	easy_country = LUS
 }

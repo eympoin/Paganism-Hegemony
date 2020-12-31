@@ -49,3 +49,155 @@ country_event = {
 		}
 	}
 }
+
+
+# Sack of Thessaloniki
+country_event = {
+	id = flavor_bul.2
+	title = "flavor_bul.2.t"
+	desc = "flavor_bul.2.d"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	major = yes
+
+
+	option = {		#cast out of the Empire
+		name = "flavor_bul.2.a"
+		ai_chance = { factor = 50 }
+		add_opinion = {
+				who = BUL
+				modifier = barbarian_bul
+		}
+		BUL = {
+			set_in_empire = no
+			add_country_modifier = {
+				name = cast_out_bul
+				duration = 7300
+			}
+		}
+	}
+	option = {	#punish bulgaria
+		name = "flavor_bul.2.b"
+		ai_chance = { factor = 30 }
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+			}
+			add_opinion = {
+			    who = BUL
+			    modifier = barbarian_bul
+			}
+			BUL = {country_event = { id = flavor_bul.4 }}
+		}
+	}
+
+	option = { #this is just a raid in a war, it's quite common
+		name = "flavor_bul.2.c"
+		ai_chance = { factor = 20 }
+		add_imperial_influence = -30
+	}
+}
+
+country_event = { #bulgaria incident start
+	id = flavor_bul.3
+	title = flavor_bul.3.t
+	desc = flavor_bul.3.d
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+	major = yes
+
+
+	option = {#if emperor
+		name = flavor_bul.3.a
+		trigger = {
+      has_dlc = "Emperor"
+    }
+		ai_chance = { factor = 10 }
+		set_imperial_incident = incident_bulgaria
+	}
+
+	option = { #if not emperor
+    trigger = {
+      NOT = {has_dlc = "Emperor"}
+    }
+    name = flavor_bul.3.a
+    ai_chance = {
+      factor = 1
+    }
+    emperor = {country_event = { id = flavor_bul.2 }}
+  }
+}
+
+country_event = { #bulgaria incident start
+	id = flavor_bul.4
+	title = flavor_bul.4.t
+	desc = flavor_bul.4.d
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+	major = yes
+
+
+	option = {#accept
+		name = flavor_bul.4.a
+		ai_chance = { factor = 10 }
+		BUL = {
+			add_treasury = -1000
+		}
+		every_country = {
+			limit = {
+				NOT = {
+					border_distance = {
+						who = BUL
+						distance = 1
+					}
+				}
+				is_part_of_hre = yes
+			}
+			add_treasury = 200
+		}
+	}
+
+	option = { #refuse
+    name = flavor_bul.4.b
+    ai_chance = {factor = 1}
+		declare_war_with_cb = {
+			who = emperor
+			casus_belli = cb_annex
+		}
+		set_in_empire = no
+		add_country_modifier = {
+			name = cast_out_bul
+			duration = 7300
+		}
+  }
+}
+
+country_event = { #bulgaria protector or emperor
+	id = flavor_bul.5
+	title = flavor_bul.5.t
+	desc = flavor_bul.5.d
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+	major = yes
+
+
+	option = {#protector
+		name = flavor_bul.5.a
+		ai_chance = { factor = 50 }
+		add_country_modifier = {
+			name = protector_bul
+			duration = -1
+		}
+	}
+
+	option = { #emperor
+    name = flavor_bul.5.b
+    ai_chance = {
+      factor = 50
+    }
+		add_country_modifier = {
+			name = emperor_bul
+			duration = -1
+		}
+  }
+}

@@ -6,4 +6,12 @@ bookmark =
 	country = SPQ
 	country = PAV
 	country = AQU
+	country = PDM
+	country = FER
+
+	easy_country = SPQ
+	easy_country = PAV
+	easy_country = AQU
+	easy_country = PDM
+	easy_country = FER
 }

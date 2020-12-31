@@ -4478,3 +4478,8 @@ opinion_draining_people_spq = {
 	opinion = -50
 	yearly_decay = 2
 }
+
+barbarian_bul = {
+	opinion = -75
+	yearly_decay = 2
+}

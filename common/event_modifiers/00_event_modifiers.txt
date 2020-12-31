@@ -11795,5 +11795,23 @@ hanging_gardens = {
 great_pyramids = {
 	prestige = 0.5
 	build_cost = -0.2
-	build_time = -0.25	
+	build_time = -0.25
+}
+
+cast_out_bul = {
+	diplomatic_reputation = -2
+	ae_impact = 0.2
+}
+
+emperor_bul = {
+	diplomatic_reputation = 2
+	diplomatic_upkeep = 1
+	imperial_authority = 0.05
+	legitimacy = 1
+}
+
+protector_bul = {
+	global_manpower_modifier = 0.2
+	global_tax_income = 10
+	discipline = 0.05
 }

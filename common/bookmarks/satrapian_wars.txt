@@ -3,7 +3,7 @@ bookmark =
 	name = "PERSIA_NAME"
 	desc = "PERSIA_DESC"
 	date = 1444.11.11
-	
+
 	country = PER
 	country = ARM
 	country = BAB
@@ -13,4 +13,6 @@ bookmark =
 	country = TIM
 	country = AFG
 
+	easy_country = PER
+	easy_country = ARM
 }

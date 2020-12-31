@@ -11,4 +11,10 @@ bookmark =
 	country = EAA
 	country = MIE
 	country = NRT
+
+	easy_country = NRT
+	easy_country = LDN
+	easy_country = SEA
+	easy_country = EAA
+	easy_country = MIE
 }

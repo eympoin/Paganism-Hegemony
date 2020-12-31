@@ -12,4 +12,9 @@ bookmark =
 	country = BAV
 	country = SAX
 	country = FKN
+
+	easy_country = SAX
+	easy_country = ALM
+	easy_country = BAV
+	easy_country = FKN
 }

@@ -46,7 +46,7 @@ Bulgaria_1_1 = {
     }
     effect = {
       add_dip_power = 100
-      custom_tooltip = custom_tooltip = bulgar_alliance
+      custom_tooltip = bulgar_alliance
       random_country = {
         limit = {
           has_opinion = {
@@ -529,6 +529,7 @@ Bulgaria_2_2 = {
       }
     }
     effect = {
+      override_country_name = GREAT_BULGARIA
       add_adm_power = 100
       add_dip_power = 100
       add_mil_power = 100
@@ -793,7 +794,7 @@ Bulgaria_5_2 = {
       }
     }
   }
-  reunite_with_our_brethren= {
+  reunite_with_our_brethren_bul= {
    icon = mission_unite_the_princes
    required_missions = {to_the_volga}
    provinces_to_highlight = {
@@ -846,7 +847,7 @@ Bulgaria_5_2 = {
  }
  subdue_the_rus = {
   icon = mission_dethrone_the_rurikovichs
-  required_missions = {reunite_with_our_brethren}
+  required_missions = {reunite_with_our_brethren_bul}
   provinces_to_highlight = {
     OR = {
       region = ruthenia_region
@@ -979,7 +980,10 @@ Bulgaria_3_3 = {
    trigger = {
     legitimacy = 100
     prestige = 90
-    #culture
+    OR = {
+      primary_culture = bulgarian
+      primary_culture = Thracian
+    }
    }
    effect = {
    #event
@@ -1002,7 +1006,7 @@ Bulgaria_2_3 = {
     NOT = {has_country_flag = nomadic_style}
     NOT = { map_setup = map_setup_random }
   }
-     conquer_transylvania = {
+     conquer_transylvania_bul = {
       icon = mission_cannons_firing
       required_missions = {a_new_path}
       position = 5
@@ -1040,7 +1044,7 @@ Bulgaria_2_3 = {
 
     end_skh = {
      icon = mission_conquer_romania
-     required_missions = {conquer_transylvania}
+     required_missions = {conquer_transylvania_bul}
      provinces_to_highlight = {
       owned_by = SKH
      }

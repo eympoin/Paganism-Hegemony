@@ -7,4 +7,7 @@ bookmark =
 	country = TLC
 	country = MAU
 	country = TRP
+
+	easy_country = CTG
+	easy_country = TLC
 }
