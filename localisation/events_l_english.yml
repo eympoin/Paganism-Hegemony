@@ -1363,3 +1363,33 @@ flavor_pon.8.d:0 "Now that we have weaken the Emperor, we can attack him to take
 flavor_pon.8.a:0 "To war !"
 flavor_pon.8.b:0 "Not yet."
 flavor_pon.8.c:0 "Never"
+
+
+flavor_bul.1.t:0 "A new path"
+flavor_bul.1.d:0 "Now that our country is stabilized, we have a choice. To fully integrate the Empire as one of its denizen or to embrace our nomadic roots"
+flavor_bul.1.a:0 "We will stay true to our roots !"
+flavor_bul.1.b:0 "We are loyal to the emperor !"
+flavor_bul.1.c:0 "We will integrate ourselves in the Balkans !"
+
+
+flavor_bul.2.t:0 "Bulgarian raids"
+flavor_bul.2.d:0 "Bulgaria recently went rogue and started to raid its border. It recently sacked Macedonia and Thessaloniki. The Empire must answer to these crimes. "
+flavor_bul.2.a:0 "Bulgaria must be cast out of the Empire !"
+flavor_bul.2.b:0 "They shall pay for their crimes !"
+flavor_bul.2.c:0 "This is just a random pillage in a war. Nothing to worry about."
+
+
+flavor_bul.3.t:0 "Sack of Thessaloniki"
+flavor_bul.3.d:0 "Bulgaria recently went rogue and started to raid its border. It recently sacked Macedonia and Thessaloniki. The Empire must answer to these crimes. "
+flavor_bul.3.a:0 "Call the Imperial Diet !"
+
+flavor_bul.4.t:0 "The Empire wants to punish us."
+flavor_bul.4.d:0 "They want us to pay for what we have rightfully taken. Refusing would be dangerous and accepting outrageous."
+flavor_bul.4.a:0 "They will have their golds, for now."
+flavor_bul.4.b:0 "In their dreams !"
+
+
+flavor_bul.5.t:0 "Protector or Emperor"
+flavor_bul.5.d:0 "We have protected the Empire for centuries and destroyed numerous threat. Now we must choose if we want to continue or to become the next Emperor."
+flavor_bul.5.a:0 "Long live the Empire !"
+flavor_bul.5.b:0 "Long live our Empire !"

@@ -5,7 +5,7 @@ country_event = {
 	id = flavor_bul.1
 	title = "flavor_bul.1.t"
 	desc = "flavor_bul.1.d"
-	picture = DIPLOMACY_eventPicture
+	picture = HRE_eventPicture
 	is_triggered_only = yes
 	major = yes
 
@@ -24,6 +24,7 @@ country_event = {
 		azov_area = {
 			add_core = ROOT
 		}
+		change_religion = tengri_pagan_reformed
 	}
 	option = {	#emperor greek
 		name = "flavor_bul.1.b"
