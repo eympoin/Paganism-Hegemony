@@ -309,3 +309,6 @@ inherit_empire:0 "The emperor of the ERE will inherit all the territories of the
 #seleucid
 seleucid_nation_title:0 "Seleucos legacy"
 seleucid_nation_desc:0 "Since our ascendance on the throne of Syria, wa have always claimed to be the desscendant of the great Seleucid. Now that we have reconquer some of their lands, we can push further this claim and reform the once glorious Empire !"
+
+numidian_protectorate_title:0 "Create a Numidian Protectorate"
+numidian_protectorate_desc:0 "We have conquered the desert land of inland Africa. Our advisors debate on whether we should keep it totally under our control and administration or create some kind of protectorate there"

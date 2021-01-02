@@ -1,0 +1,94 @@
+country_decisions = {
+
+		build_cothon = {
+			major = yes
+			potential = {
+			OR = {
+				tag = CTG
+				was_tag = CTG
+				}
+				NOT = {
+				341 = {
+					has_province_modifier = cothon
+					}
+				}
+			}
+			provinces_to_highlight = {
+				province_id = 341
+			}
+			allow = {
+				is_nomad = no
+				is_at_war = no
+				owns_core_province = 341
+				treasury = 1000
+			}
+			effect = {
+			add_treasury = -1000
+			341 = {
+				add_province_modifier = {
+					name = cothon
+					duration = -1
+				}
+			}
+		}
+	}
+
+	numidian_protectorate = {
+		major = yes
+		potential = {
+		OR = {
+			tag = CTG
+			was_tag = CTG
+			}
+			has_country_flag = keep_numidia
+		}
+		provinces_to_highlight = {
+			owned_by = CTG
+			OR = {
+				area = fezzan_area
+				area = north_saharan_area
+				area = ouled_nail_area
+				area = hautes_plaines_area
+				area = tafilalt_area
+				area = marrekesh_area
+				area = sus_area
+			}
+		}
+		allow = {
+			any_owned_province = {
+				OR = {
+					area = fezzan_area
+					area = north_saharan_area
+					area = ouled_nail_area
+					area = high_plains_area
+					area = tafilalt_area
+					area = marrekesh_area
+					area = sus_area
+				}
+			}
+		}
+		effect = {
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = fezzan_area
+					area = north_saharan_area
+					area = ouled_nail_area
+					area = hautes_plaines_area
+					area = tafilalt_area
+					area = marrekesh_area
+					area = sus_area
+				}
+			}
+			cede_province = NMD
+			add_core = NMD
+			remove_core = CTG
+		}
+		create_subject = {
+			subject_type = carthaginian_colony
+			subject = NMD
+		}
+		set_country_flag = ctg_not_in_africa
+		}
+	}
+}
