@@ -3697,6 +3697,7 @@
  PROV4852:0 "Leukapsis"
  PROV4853:0 "Oxyrhynkos"
  PROV4854:0 "Carrhae"
+ PROV4855: "Jomsborg"
  test_province_name:0 "Test Province Name"
  other_province_name:0 "Other Province Name"
  rand_prov_straits_of:0 "Straits of $prov$"

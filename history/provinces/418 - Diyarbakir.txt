@@ -3,7 +3,7 @@
 owner = ARD
 controller = ARD
 culture = kurdish
-religion = mesopotamian
+religion = yazidism
 capital = "Diyar Bekir"
 trade_goods = livestock
 hre = no

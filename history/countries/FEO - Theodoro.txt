@@ -1,7 +1,7 @@
 government = republic
 add_government_reform = free_city
 government_rank = 1
-primary_culture = goths
+primary_culture = pontic_greek
 religion = theoi
 technology_group = eastern
 historical_friend = TRE

@@ -3,7 +3,7 @@
 owner = ARD
 controller = ARD
 culture = kurdish
-religion = mesopotamian
+religion = yazidism
 capital = "Hisn Kayfa"
 trade_goods = wool
 hre = no

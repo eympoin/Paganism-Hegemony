@@ -3,7 +3,7 @@
 owner = ARM
 controller = ARM
 culture = kurdish
-religion = armenian_rl
+religion = yazidism
 capital = "Bitlis"
 trade_goods = wool
 hre = no

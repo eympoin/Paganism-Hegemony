@@ -224,6 +224,13 @@
  phenician_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  phenician_rebels_army:0 "$RELIGION$ Army"
 
+ yazidism_rebels_demand:0 "Convert $COUNTRYNAME$"
+ yazidism_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ yazidism_rebels_title:0 "Religious"
+ yazidism_rebels_name:0 "$RELIGION$ Zealots"
+ yazidism_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ yazidism_rebels_army:0 "$RELIGION$ Army"
+
  norse_group:0 "Germano-norse"
  norse_group_name:0 "Germano-norse"
  germanic:0 "Germanic"
@@ -263,3 +270,5 @@
  zalmoxianism:0 "Zalmoxianism"
  Zalmoxianism_religion_desc:0 "The old religion of the Dacian named after their main god Zalmoxis"
  Illyrian_religion_desc:0 "Gods of the diverse Illyrian tribes now only present in Albania"
+ yazidism:0 "Yazidism"
+ yazidism_religion_desc:0 "Yazidism is a monotheistic ethnic religion is based on belief in one God who created the world and entrusted it into the care of seven Holy Beings, known as Angels."

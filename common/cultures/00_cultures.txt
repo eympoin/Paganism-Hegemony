@@ -2364,23 +2364,6 @@ south_slavic = {
 			"Krum" "Dulo" "Cometopuli" "Asen" "Terter" "Shishman" "Teleki"
 		}
 	}
-	albanian = {
-		primary = ALB
-		male_names = {
-			Gjergj Lek� Gjon Kostandin Lul�zim Pal Tanush Aleksand�r Karolus Filippo Adnan Agim Bashkim Besnik
-			Dardan Dhurim Drit�ro Elidon Erjon Fatmir Flamur Florin Hekuran Ilir Ismail Klodian Luigj Milaim
-			Pashko P�llumb P�rparim Pjet�r Rrok Shp�tim Tahir Viktor Xhevat Ylli Zenel Halil Ali Mustafa Qemal
-			Mehmet Ramiz Edi Demaci Edon Dukagjin Haxhi Lish�ndri Mensur Kreshnik Rahman Nxhiku Riza Rexhep
-			Sulejman Selim Sadik Bujar Nikolla Enver Ramadan
-		}
-		female_names = {
-			Gjylo Af�rdita Blerta Bora Dafina Dardana Era Fatmire Flutura Gentiana Jehona Lindita Lule Luljeta Pranvera Shpresa
-			Shqipe Teuta Venera Vera Vesa Yllka
-		}
-	}
-	dynasty_names = {
-		"Trpimirovic" "Svetoslavic" "Kosovic" "Kresimirovic" "Zrinski" "Domagojevic" "Hrvatinic" "Kotromanic" "Brankovic" "Lazarevic" "Ibrahimovic"
-	}
 }
 
 
@@ -10713,43 +10696,62 @@ chalcedonian_group = {
 		}
 	}
 }
-
+illyrian = {
+	graphical_culture = easterngfx
+	albanian = {
+		primary = ALB
+		male_names = {
+			Gjergj Lekë Gjon Kostandin Lulëzim Pal Tanush Aleksandër Karolus Filippo Adnan Agim Bashkim Besnik
+			Dardan Dhurim Dritëro Elidon Erjon Fatmir Flamur Florin Hekuran Ilir Ismail Klodian Luigj Milaim
+			Pashko Pëllumb Përparim Pjetër Rrok Shpëtim Tahir Viktor Xhevat Ylli Zenel Halil Ali Mustafa Qemal
+			Mehmet Ramiz Edi Demaci Edon Dukagjin Haxhi Lishëndri Mensur Kreshnik Rahman Nxhiku Riza Rexhep
+			Sulejman Selim Sadik Bujar Nikolla Enver Ramadan
+		}
+		female_names = {
+			Gjylo Afërdita Blerta Bora Dafina Dardana Era Fatmire Flutura Gentiana Jehona Lindita Lule Luljeta Pranvera Shpresa
+			Shqipe Teuta Venera Vera Vesa Yllka
+		}
+	}
+	dynasty_names = {
+		"Trpimirovic" "Svetoslavic" "Kosovic" "Kresimirovic" "Zrinski" "Domagojevic" "Hrvatinic" "Kotromanic" "Brankovic" "Lazarevic" "Ibrahimovic"
+	}
+}
 carthaginian_group = {
 	graphical_culture = westerngfx
 
 	dynasty_names = { "Aelius" "Abronius" "Abudius" "Albinius" "Antonius" "Anneius" "Antius" "Aurelius" "Betucius" "Caecius" "Catienus" "Decimius" "Domitius"
 	"Flavius" "Gallius" "Julius" "Junius" "Livius" "Lucretius" "Marcius" "Marius" "Pompeius" "Salvius" "Tarquinius"
-}
-male_names = { "Aggripa" "Appius" "Aulus" "Caeso" "Decimus" "Faustus" "Gaius" "Gnaeus" "Hostus" "Lucius" "Mamercus" "Manius" "Marcus" "Mettius" "Nonus"
-"Numerius" "Octavius" "Opiter" "Paullus" "Postumus" "Proculus" "Publius" "Quintus" "Septimus" "Sertor" "Servius" "Sectus" "Spurius" "Statius" "Tiberius"
-"Titus" "Tullus" "Vibius" "Volesus" "Vospiscus"
-}
+	}
+	male_names = { "Aggripa" "Appius" "Aulus" "Caeso" "Decimus" "Faustus" "Gaius" "Gnaeus" "Hostus" "Lucius" "Mamercus" "Manius" "Marcus" "Mettius" "Nonus"
+	"Numerius" "Octavius" "Opiter" "Paullus" "Postumus" "Proculus" "Publius" "Quintus" "Septimus" "Sertor" "Servius" "Sectus" "Spurius" "Statius" "Tiberius"
+	"Titus" "Tullus" "Vibius" "Volesus" "Vospiscus"
+	}
 
-female_names = {"Appia" "Aula" "Caesula" "Decima" "Fausta" "Gaia" "Gnaea" "Hosta" "Lucia" "Mamerca" "Mania" "Marcia" "Mettia" "Nona"
-"Numeria" "Octavia" "Paulla" "Postuma" "Procula" "Publia" "Quinta" "Septima" "Sertor" "Servia" "Sexta" "Spuria" "Statia" "Tiberia"
-"Titia" "Tulla" "Vibia" "Volusa" "Vospisca"
-}
+	female_names = {"Appia" "Aula" "Caesula" "Decima" "Fausta" "Gaia" "Gnaea" "Hosta" "Lucia" "Mamerca" "Mania" "Marcia" "Mettia" "Nona"
+	"Numeria" "Octavia" "Paulla" "Postuma" "Procula" "Publia" "Quinta" "Septima" "Sertor" "Servia" "Sexta" "Spuria" "Statia" "Tiberia"
+	"Titia" "Tulla" "Vibia" "Volusa" "Vospisca"
+	}
 
-carthaginian = {
-	primary = CTG
-}
+	carthaginian = {
+		primary = CTG
+	}
 
-libyan = {
-}
+	libyan = {
+	}
 
-numidian = {
-}
+	numidian = {
+	}
 
-mauri = {
-}
+	mauri = {
+	}
 
-iberian = {
-}
+	iberian = {
+	}
 
-italiotes = { #sicilian and griko
-}
-sardinians_ctg = {
-}
-roman_ctg = {
-}
+	italiotes = { #sicilian and griko
+	}
+	sardinians_ctg = {
+	}
+	roman_ctg = {
+	}
 }

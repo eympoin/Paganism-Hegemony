@@ -13,7 +13,7 @@ capital = "Qirq-Yer"
 is_city = yes
 fort_15th = yes #Qirq-Yer Fortress
 add_core = TUR
-
+add_core = BSP
 
 
 discovered_by = western

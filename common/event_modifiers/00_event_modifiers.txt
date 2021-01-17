@@ -11815,3 +11815,7 @@ protector_bul = {
 	global_tax_income = 10
 	discipline = 0.05
 }
+
+slavic_pride = {
+	local_missionary_strength = -0.02	
+}

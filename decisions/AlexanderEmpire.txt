@@ -1,0 +1,161 @@
+country_decisions = {
+
+	restore_Alexander_empire = {
+		major = yes
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_Alexander_Empire_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = AXD }
+			NOT = { tag = WRM }
+			NOT = { tag = PAP }
+
+			culture_group = byzantine
+
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				region = greece_region
+				region = anatolia_region
+				region = syria_region
+				region = mashriq_region
+				region = egypt_region
+				region = persia_region
+				region = khorasan_region
+			}
+
+
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+    is_free_or_tributary_trigger = yes
+    is_at_war = no
+    is_nomad = no
+
+			owns_core_province = 2311
+			owns_core_province = 358
+			owns_core_province = 148
+			owns_core_province = 2218
+			development_in_provinces = {
+				value = 2300
+
+				OR = {
+					region = greece_region
+					region = anatolia_region
+					region = syria_region
+					region = mashriq_region
+					region = egypt_region
+					region = persia_region
+					region = khorasan_region
+				}
+			}
+			total_development = 3000
+		}
+		effect = {
+		 change_tag = AXD
+		 if = {
+			 limit = {
+				 NOT = { government_rank = 3 }
+			 }
+			 set_government_rank = 3
+		 }
+		 118 = {
+			 move_capital_effect = yes
+		 }
+
+		 add_country_modifier = {
+			 name = "centralization_modifier"
+			 duration = 7300
+		 }
+		 add_prestige = 25
+		 set_country_flag = formed_Alexander_Empire_flag
+		 greece_region = {
+			 limit = {
+				 NOT = { owned_by = ROOT }
+			 }
+			 add_permanent_claim = ROOT
+		 }
+		 anatolia_region = {
+			 limit = {
+				 NOT = { owned_by = ROOT }
+			 }
+			 add_permanent_claim = ROOT
+		 }
+		 syria_region = {
+			 limit = {
+				 NOT = { owned_by = ROOT }
+			 }
+			 add_permanent_claim = ROOT
+		 }
+		 mashriq_region = {
+			 limit = {
+				 NOT = { owned_by = ROOT }
+			 }
+			 add_permanent_claim = ROOT
+		 }
+		 egypt_region = {
+			 limit = {
+				 NOT = { owned_by = ROOT }
+			 }
+			 add_permanent_claim = ROOT
+		 }
+		 persia_region = {
+			 limit = {
+				 NOT = { owned_by = ROOT }
+			 }
+			 add_permanent_claim = ROOT
+		 }
+		 khorasan_region = {
+			 limit = {
+				 NOT = { owned_by = ROOT }
+			 }
+			 add_permanent_claim = ROOT
+		 }
+		 hindusthan_region = {
+			 limit = {
+				 NOT = { owned_by = ROOT }
+			 }
+			 add_permanent_claim = ROOT
+		 }
+		 west_india_region = {
+			 limit = {
+				 NOT = { owned_by = ROOT }
+			 }
+			 add_permanent_claim = ROOT
+		 }
+		 if = {
+			 limit = {
+				 has_custom_ideas = no
+				 OR = {
+					 ai = no
+					 AND = {
+						 ai = yes
+						 has_idea_group = default_ideas
+					 }
+				 }
+			 }
+			 country_event = { id = ideagroups.1 } #Swap Ideas
+		 }
+	 }
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+
+}

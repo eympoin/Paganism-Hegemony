@@ -118,6 +118,8 @@ AGO = "countries/Argos.txt"
 LIM = "countries/Limassol.txt"
 PPO = "countries/Paphos.txt"
 SLS = "countries/Salamis.txt"
+BSP = "countries/Bosporus.txt"
+AXD = "countries/Alexander.txt"
 
 ORG = "countries/Organa.txt"
 IND = "countries/India.txt"

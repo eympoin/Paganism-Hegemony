@@ -5,7 +5,7 @@ elector = no
 primary_culture = serbian
 religion = theoi
 technology_group = eastern
-capital = 148
+capital = 4780
 fixed_capital = 148# Cannot move capital away from this province & no power cost to move to it
 
 1444.1.1 = {
