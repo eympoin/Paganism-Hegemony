@@ -1594,25 +1594,6 @@ pagan = {
     heretic = { OLD_ZUNIST }
   }
 
-  armenian_rl = {
-    icon = 39
-    color = { 170 170 170 }
-    country = {
-      diplomatic_reputation = 1
-      war_exhaustion = -0.02
-    }
-    country_as_secondary = {
-      diplomatic_reputation = 1
-      war_exhaustion = -0.02
-    }
-    province = {
-      local_missionary_strength = -0.01
-    }
-    can_have_secondary_religion = yes
-    heretic = { OLD_ARMENIAN }
-  }
-
-
 
   Zalmoxianism = {
     icon = 41
@@ -1951,6 +1932,24 @@ zoroastrian_group = {
     }
 
     heretic = { MAZDAKI MANICHEAN }
+  }
+
+  armenian_rl = {
+    icon = 39
+    color = { 249 190 77 }
+    country = {
+      diplomatic_reputation = 1
+      war_exhaustion = -0.02
+    }
+    country_as_secondary = {
+      diplomatic_reputation = 1
+      war_exhaustion = -0.02
+    }
+    province = {
+      local_missionary_strength = -0.01
+    }
+    can_have_secondary_religion = yes
+    heretic = { OLD_ARMENIAN }
   }
 
   yazidism = {

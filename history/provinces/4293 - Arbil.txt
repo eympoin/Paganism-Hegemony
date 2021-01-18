@@ -2,8 +2,8 @@
 
 owner = ASY
 controller = ASY
-culture = Assyrian
-religion = mesopotamian
+culture = kurdish
+religion = yazidism
 capital = "Arbil"
 trade_goods = cloth
 hre = no

@@ -2,8 +2,8 @@
 
 owner = ARM
 controller = ARM
-culture = azerbaijani
-religion = zoroastrian
+culture = kurdish
+religion = yazidism
 capital = "Marageh"
 trade_goods = wool
 hre = no
