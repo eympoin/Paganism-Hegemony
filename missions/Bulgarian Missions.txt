@@ -569,7 +569,7 @@ Bulgaria_1_2 = {
     trigger = {
       num_of_owned_provinces_with = {
       value = 30
-      area = balkan_region
+      region = balkan_region
       }
     }
     effect = {

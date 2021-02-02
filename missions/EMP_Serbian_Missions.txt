@@ -1,0 +1,1214 @@
+Serbia_1_1 = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      OR = {
+        tag = SER
+        was_tag = SER
+      }
+      OR = {
+        tag = SIR
+        was_tag = SIR
+      }
+      OR = {
+        tag = MIA
+        was_tag = MIA
+      }
+      OR = {
+        tag = RSC
+        was_tag = RSC
+      }
+      OR = {
+        tag = PEL
+        was_tag = PEL
+      }
+      OR = {
+        tag = MON
+        was_tag = MON
+      }
+      OR = {
+        tag = DRD
+        was_tag = DRD
+      }
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  croatian_brethren = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {unite_the_serbs}
+    position = 3
+    provinces_to_highlight = {
+      OR = {
+        culture = croatian
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      num_of_owned_provinces_with = {
+        value = 8
+        OR = {
+          culture = croatian
+        }
+      }
+    }
+    effect = {
+      add_accepted_culture = croatian
+      albania_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+
+    }
+  }
+  end_albanian_independance = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {croatian_brethren}
+    provinces_to_highlight = {
+      OR = {
+        culture = albanian
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      num_of_owned_provinces_with = {
+        value = 3
+        OR = {
+          culture = albanian
+        }
+      }
+    }
+    effect = {
+    #event new slavic migration
+      croatia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      east_adriatic_coast_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+  dalmatian_riches = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {end_albanian_independance}
+    provinces_to_highlight = {
+      OR = {
+        culture = Dalmatian
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      num_of_owned_provinces_with = {
+        value = 5
+        OR = {
+          culture = Dalmatian
+        }
+      }
+    }
+    effect = {
+    #event new slavic migration
+    add_treasury = 200
+    }
+  }
+  develop_the_ports = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {dalmatian_riches}
+    provinces_to_highlight = {
+      OR = {
+        area = east_adriatic_coast_area
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      any_province = {
+        limit = {
+          area = east_adriatic_coast_area
+        }
+        development = 30
+      }
+    }
+    effect = {
+      137 = {
+        add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = ADRIATIC_HEGEMONY
+        }
+      }
+      apulia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      central_italy_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+  adriatic_monopol = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {develop_the_ports}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      137 = { #Ragusa
+      	trade_share = {
+      		country = ROOT
+      		share = 50
+      	}
+      }
+    }
+    effect = {
+      emilia_romagna_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      padova_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      apulia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      venetia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+}
+
+Serbia_2_1 = {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+  OR = {
+    OR = {
+      tag = SER
+      was_tag = SER
+    }
+    OR = {
+      tag = SIR
+      was_tag = SIR
+    }
+    OR = {
+      tag = MIA
+      was_tag = MIA
+    }
+    OR = {
+      tag = RSC
+      was_tag = RSC
+    }
+    OR = {
+      tag = PEL
+      was_tag = PEL
+    }
+    OR = {
+      tag = MON
+      was_tag = MON
+    }
+    OR = {
+      tag = DRD
+      was_tag = DRD
+    }
+  }
+    NOT = { map_setup = map_setup_random }
+  }
+  serbian_hegemon = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {}
+    provinces_to_highlight = {
+    }
+    trigger = {
+
+      all_country = {
+        OR = {
+          NOT = {primary_culture = serbian}
+          AND {
+            NOT = {
+              army_strength = {
+                who = ROOT
+                value = 0.5
+                }
+              }
+          }
+        }
+      }
+    }
+    effect = {
+      serbia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      pelagonia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      rascia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      bulgaria_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+  unite_the_serbs = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {serbian_hegemon}
+    provinces_to_highlight = {
+      OR = {
+        culture = serbian
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      num_of_owned_provinces_with = {
+        value = 12
+        OR = {
+          culture = serbian
+        }
+      }
+    }
+    effect = {
+      add_prestige = 10
+      add_country_modifier = {
+        name = united_people_ser
+        duration = 7300
+      }
+    }
+  }
+  king_of_serbia = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {unite_the_serbs}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      total_development = 300
+      prestige = 50
+      legitimacy = 90
+      OR = {
+        reverse_has_opinion = {
+          	who = emperor
+          	value = 100
+        }
+        war_with = emperor
+      }
+    }
+    effect = {
+      #event serbian throne
+      macedonia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      thessalia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+  into_greece = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {king_of_serbia}
+    provinces_to_highlight = {
+      OR = {
+        area = macedonia_area
+        area = thessalia_area
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      macedonia_area = {
+        type = all
+        owned_by = ROOT
+      }
+      thessalia_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      add_country_modifier = {
+        name = greek_knowledge
+        duration = 7300
+      }
+
+  		morea_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      northern_greece_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      attica_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+  conquest_of_greece = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {into_greece}
+    provinces_to_highlight = {
+      OR = {
+        area = attica_area
+        area = northern_greece_area
+        area = morea_area
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      attica_area = {
+        type = all
+        owned_by = ROOT
+      }
+      northern_greece_area = {
+        type = all
+        owned_by = ROOT
+      }
+      morea_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      add_country_modifier = {
+        name = greek_architecture
+        duration = 7300
+      }
+      thrace_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+  city_of_world_desire = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {conquest_of_greece}
+    provinces_to_highlight = {
+      OR = {
+        area = thrace_area
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      thrace_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+    #event
+    }
+  }
+  mediterranean_power = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {city_of_world_desire adriatic_monopol}
+    position = 8
+    provinces_to_highlight = {
+    }
+    trigger = {
+      151 = { #Greece
+        trade_share = {
+          country = ROOT
+          share = 50
+        }
+      }
+      navy_size = 150
+
+    }
+    effect = {
+      add_country_modifier = {
+        name = eastern_mediterranean_monopol
+        duration = -1
+      }
+      greece_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      balkan_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+}
+
+Serbia_3_1 = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      OR = {
+        tag = SER
+        was_tag = SER
+      }
+      OR = {
+        tag = SIR
+        was_tag = SIR
+      }
+      OR = {
+        tag = MIA
+        was_tag = MIA
+      }
+      OR = {
+        tag = RSC
+        was_tag = RSC
+      }
+      OR = {
+        tag = PEL
+        was_tag = PEL
+      }
+      OR = {
+        tag = MON
+        was_tag = MON
+      }
+      OR = {
+        tag = DRD
+        was_tag = DRD
+      }
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  serbian_city_states = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {unite_the_serbs}
+    position = 3
+    provinces_to_highlight = {
+      province_id = 4173
+    }
+    trigger = {
+      OR = {
+        reverse_has_opinion = {
+          who = SIR
+          value = 180
+        }
+        NOT = {exists = SIR}
+      }
+    }
+    effect = {
+    #event
+    silistria_area = {
+      limit = {
+        NOT = { owned_by = ROOT }
+        NOT = {is_claim	= ROOT}
+      }
+      add_permanent_claim = ROOT
+    }
+    }
+  }
+  fertile_bulgaria = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {serbian_city_states}
+    provinces_to_highlight = {
+      OR = {
+        area = bulgaria_area
+        area = silistria_area
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      bulgaria_area = {
+        type = all
+        owned_by = ROOT
+      }
+      silistria_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      carpathia_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+  nomadic_threat_serbia = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {fertile_bulgaria}
+    provinces_to_highlight = {
+      OR = {
+        owned_by = SKH
+        owned_by = HUN
+        owned_by = PEC
+      }
+    }
+    trigger = {
+      NOT = {
+        exists = HUN
+        exists = PEC
+        exists = SKH
+      }
+    }
+    effect = {
+      add_country_modifier = {
+        name = no_raids_to_fear
+        duration = 7300
+      }
+      add_mil_power = 200
+    }
+  }
+  reunite_with_northerns_slavs = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {nomadic_threat_serbia}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    OR = {
+    any_country = {
+    NOT = {
+      border_distance = {
+        who = ROOT
+        distance = 1
+        }
+      }
+    }
+    culture_group = east_slavic
+    }
+    any_owned_province = { culture_group = east_slavic }
+    }
+    effect = {
+      add_dip_power = 200
+      add_prestige = 10
+      add_legitimacy = 10
+      poland_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      ruthenia_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+  nothern_trade = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {reunite_with_northerns_slavs}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      262 = {
+        trade_share = {
+          country = ROOT
+          share = 30
+        }
+      }
+      153 = {
+        trade_share = {
+          country = ROOT
+          share = 30
+        }
+      }
+      280 = {
+        trade_share = {
+          country = ROOT
+          share = 30
+        }
+      }
+    }
+    effect = {
+    280 = {
+      add_trade_modifier = {
+        who = ROOT
+        duration = -1
+        power = 50
+        key = KIEV_HEGEMONY
+      }
+    }
+    153 = {
+      add_trade_modifier = {
+        who = ROOT
+        duration = -1
+        power = 50
+        key = HUNGARY_HEGEMONY
+      }
+    }
+    262 = {
+      add_trade_modifier = {
+        who = ROOT
+        duration = -1
+        power = 50
+        key = POLAND_HEGEMONY
+      }
+    }
+    310 = {
+      add_trade_modifier = {
+        who = ROOT
+        duration = -1
+        power = 50
+        key = RUSSIA_HEGEMONY
+      }
+    }
+    }
+  }
+}
+
+Serbia_4_0 = {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      OR = {
+        tag = SER
+        was_tag = SER
+      }
+      OR = {
+        tag = SIR
+        was_tag = SIR
+      }
+      OR = {
+        tag = MIA
+        was_tag = MIA
+      }
+      OR = {
+        tag = RSC
+        was_tag = RSC
+      }
+      OR = {
+        tag = PEL
+        was_tag = PEL
+      }
+      OR = {
+        tag = MON
+        was_tag = MON
+      }
+      OR = {
+        tag = DRD
+        was_tag = DRD
+      }
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  the_great_slavic_revolt = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      has_global_flag = great_slavic_revolt
+    }
+    effect = {
+      if = {
+        limit = {
+          has_country_flag = defy_the_emperor
+        }
+        capital_scope = {
+          ROOT = {
+            infantry = PREV
+          }
+          ROOT = {
+            infantry = PREV
+          }
+          ROOT = {
+            infantry = PREV
+          }
+          ROOT = {
+            infantry = PREV
+          }
+          ROOT = {
+            infantry = PREV
+          }
+          ROOT = {
+            cavalry = PREV
+          }
+        }
+        create_general = { tradition = 90 }
+        add_country_modifier = {
+          name = support_of_the_people
+          duration = 1825
+        }
+        else = {
+          add_country_modifier = {
+            name = defying_populace
+            duration = 1825
+          }
+        }
+      }
+    }
+  }
+}
+
+Serbia_4_1 = {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      OR = {
+        tag = SER
+        was_tag = SER
+      }
+      OR = {
+        tag = SIR
+        was_tag = SIR
+      }
+      OR = {
+        tag = MIA
+        was_tag = MIA
+      }
+      OR = {
+        tag = RSC
+        was_tag = RSC
+      }
+      OR = {
+        tag = PEL
+        was_tag = PEL
+      }
+      OR = {
+        tag = MON
+        was_tag = MON
+      }
+      OR = {
+        tag = DRD
+        was_tag = DRD
+      }
+    }
+    NOT = {has_country_flag = elite_remained_in_power}
+    NOT = { map_setup = map_setup_random }
+  }
+  success_of_the_revolt = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {the_great_slavic_revolt}
+    position = 2
+    provinces_to_highlight = {
+    }
+    trigger = {
+      religion = slavic
+      is_at_war = no
+    }
+    effect = {
+      add_stability = 1
+      add_country_modifier = {
+        name = expulse_the_greeks
+        duration = 7300
+      }
+    }
+  }
+  purify_the_balkans = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {success_of_the_revolt}
+    provinces_to_highlight = {
+      region = balkan_region
+      religion = theoi
+    }
+    trigger = {
+      balkan_region = {
+        type = all
+        NOT = {religion = theoi}
+      }
+    }
+    effect = {
+      add_years_of_income = 2
+      add_country_modifier ={
+        name = greek_elite_removal
+        duration = 14600
+      }
+    }
+  }
+  defy_constantinople = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {purify_the_balkans}
+    provinces_to_highlight = {
+    }
+    trigger = {
+        capital_scope = {
+          development = 35
+          region = balkan_region
+          religion = slavic
+        }
+      }
+
+    effect = {
+      capital_scope = {
+        name = a_shining_city
+        duration = -1
+        if = {
+          limit = {
+            OR = {
+              trade_goods = grain
+              trade_goods = livestock
+              trade_goods = wool
+            }
+          }
+          change_trade_goods = cloth
+        }
+      }
+    }
+  }
+  serbian_independance = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {defy_constantinople colonize_balkans}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      is_part_of_hre = no
+    }
+    effect = {
+      set_government_rank = 3
+      add_adm_power = 100
+    }
+  }
+  pan_slavism = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {serbian_independance reunite_with_northerns_slavs}
+    position = 7
+    provinces_to_highlight = {
+    }
+    trigger = {
+      legitimacy = 100
+      prestige = 60
+    }
+    effect = {
+    #event
+    }
+  }
+}
+
+
+Serbia_4_2 = {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      OR = {
+        tag = SER
+        was_tag = SER
+      }
+      OR = {
+        tag = SIR
+        was_tag = SIR
+      }
+      OR = {
+        tag = MIA
+        was_tag = MIA
+      }
+      OR = {
+        tag = RSC
+        was_tag = RSC
+      }
+      OR = {
+        tag = PEL
+        was_tag = PEL
+      }
+      OR = {
+        tag = MON
+        was_tag = MON
+      }
+      OR = {
+        tag = DRD
+        was_tag = DRD
+      }
+    }
+    has_country_flag = elite_remained_in_power
+    NOT = {has_country_flag = defy_the_emperor}
+    NOT = { map_setup = map_setup_random }
+  }
+  failure_of_the_revolt = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {the_great_slavic_revolt}
+    position = 2
+    provinces_to_highlight = {
+    }
+    trigger = {
+      religion = theoi
+      is_at_war = no
+    }
+    effect = {
+      add_stability = 1
+      add_country_modifier = {
+        name = punish_the_revolt
+        duration = 7300
+      }
+    }
+  }
+  purify_the_kingdom = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {failure_of_the_revolt}
+    provinces_to_highlight = {
+      region = balkan_region
+      religion = slavic
+      owned_by = ROOT
+    }
+    trigger = {
+      balkan_region = {
+        type = all
+        OR = {
+          NOT = {religion = slavic}
+          NOT = {owned_by = ROOT}
+        }
+      }
+    }
+    effect = {
+      add_treasury = 500
+      add_mil_power = 200
+    }
+  }
+  no_heathen_in_the_balkans = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {purify_the_kingdom}
+    provinces_to_highlight = {
+      region = balkan_region
+      religion = slavic
+    }
+    trigger = {
+      balkan_region = {
+        type = all
+        religion = theoi
+      }
+    }
+    effect = {
+      add_country_modifier = {
+        name = balkan_police
+        duration = -1
+      }
+    }
+  }
+  serbian_allegiance = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {no_heathen_in_the_balkans}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      is_part_of_hre = yes
+      reverse_has_opinion = {
+          who = emperor
+          value = 120
+      }
+    }
+    effect = {
+      add_dip_power = 100
+      add_country_modifier = {
+        name = hand_of_the_emperor
+        duration = -1
+      }
+    }
+  }
+  a_greek_among_the_greeks_ser = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {serbian_allegiance}
+    position = 7
+    provinces_to_highlight = {
+    }
+    trigger = {
+    dominant_religion = theoi
+    is_year = 1650
+    dip_power = 200
+    }
+    effect = {
+    add_dip_power = -200
+    every_owned_province = {
+      limit = {
+        culture_group = south_slavic
+      }
+      change_culture = illyrian_greek
+    }
+    }
+  }
+}
+
+Serbia_5_1 = {
+  slot = 5
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      OR = {
+        tag = SER
+        was_tag = SER
+      }
+      OR = {
+        tag = SIR
+        was_tag = SIR
+      }
+      OR = {
+        tag = MIA
+        was_tag = MIA
+      }
+      OR = {
+        tag = RSC
+        was_tag = RSC
+      }
+      OR = {
+        tag = PEL
+        was_tag = PEL
+      }
+      OR = {
+        tag = MON
+        was_tag = MON
+      }
+      OR = {
+        tag = DRD
+        was_tag = DRD
+      }
+    }
+    NOT = { map_setup = map_setup_random }
+    NOT = {has_country_flag = elite_remained_in_power}
+  }
+  rebuild_the_country = {
+    icon = mission_non-western_cavalry_raid
+    position = 3
+    required_missions = {success_of_the_revolt}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  colonize_balkans = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {rebuild_the_country}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+}
+
+Serbia_5_2 = {
+  slot = 5
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      OR = {
+        tag = SER
+        was_tag = SER
+      }
+      OR = {
+        tag = SIR
+        was_tag = SIR
+      }
+      OR = {
+        tag = MIA
+        was_tag = MIA
+      }
+      OR = {
+        tag = RSC
+        was_tag = RSC
+      }
+      OR = {
+        tag = PEL
+        was_tag = PEL
+      }
+      OR = {
+        tag = MON
+        was_tag = MON
+      }
+      OR = {
+        tag = DRD
+        was_tag = DRD
+      }
+    }
+    NOT = { map_setup = map_setup_random }
+    has_country_flag = elite_remained_in_power
+    NOT = {has_country_flag = defy_the_emperor}
+  }
+  rebuild_the_country_2 = {
+    icon = mission_non-western_cavalry_raid
+    position = 3
+    required_missions = {failure_of_the_revolt}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  fidelize_the_populace = {
+    icon = mission_non-western_cavalry_raid
+    required_missions = {rebuild_the_country}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+}

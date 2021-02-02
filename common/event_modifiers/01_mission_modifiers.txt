@@ -5134,3 +5134,70 @@ great_khan = {
   prestige = 1
   global_manpower_modifier = 0.2
 }
+
+dalmatian_devlopment = {
+  local_development_cost = -0.2
+}
+
+united_people_ser = {
+  global_unrest = -2
+  stability_cost_modifier = -0.2
+}
+
+greek_knowledge = {
+  technology_cost = -0.05
+  idea_cost = -0.1
+}
+
+greek_architecture = {
+  development_cost = -0.1
+  build_cost = -0.2
+}
+
+
+eastern_mediterranean_monopol = {
+  trade_efficiency = 0.1
+  global_trade_power = 0.1
+  naval_forcelimit_modifier = 0.1
+  global_ship_cost = -0.1
+}
+
+support_of_the_people = {
+  land_forcelimit = 5
+  global_unrest = -2
+  land_maintenance_modifier = -0.4
+  global_manpower = 5
+}
+
+defying_populace = {
+  global_unrest = 5
+}
+expulse_the_greeks = {
+  global_missionary_strength = 0.03
+}
+
+greek_elite_removal = {
+  yearly_corruption = -0.1
+}
+
+a_shining_city = {
+  local_institution_spread = 0.2
+  local_tax_modifier = 0.2
+  local_build_cost = -0.25
+  allowed_num_of_buildings = 2
+  local_production_efficiency = 0.1
+}
+
+punish_the_revolt = {
+  global_missionary_strength = 0.03
+}
+
+balkan_police = {
+  global_missionary_strength = 0.01
+  global_unrest = -1
+}
+
+hand_of_the_emperor = {
+  global_tax_income = 5
+  global_manpower = 5
+}

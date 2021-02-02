@@ -36,6 +36,7 @@ country_event = {
       factor = 1
     }
     set_imperial_incident = incident_slavic_nationalism
+    set_global_flag = great_slavic_revolt
   }
 
   option = { #if not emperor
@@ -58,6 +59,14 @@ country_event = {
   picture = HRE_eventPicture
 
   is_triggered_only = yes
+  immediate = {
+      every_province = {
+      limit = {
+        has_province_modifier = slavic_pride
+      }
+      remove_province_modifier = annoyed_people
+    }
+  }
 
   option = { # we cannot succeed, let them leave
     ai_chance = {
@@ -322,6 +331,7 @@ country_event = {
       name = "slavic_uprising_imperial_help"
       duration = 3650
     }
+    swap_non_generic_missions = yes
     random_owned_province  = {
       limit = {
         religion = slavic
