@@ -5201,3 +5201,11 @@ hand_of_the_emperor = {
   global_tax_income = 5
   global_manpower = 5
 }
+
+second_migration = {
+  culture_conversion_cost = -0.3
+}
+
+fidelity_of_the_people = {
+  global_unrest = -2
+}
