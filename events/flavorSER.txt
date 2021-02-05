@@ -1,0 +1,307 @@
+namespace = flavor_ser
+country_event = {#bulgar
+  id = flavor_ser.1
+  title = flavor_ser.1.t
+  desc = flavor_ser.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    has_country_flag = cultural_conversion_bulgar_flag
+    OR = {
+      culture_group = south_slavic
+      AND = {
+        has_global_flag = panslavism
+        culture_group = east_slavic
+      }
+    }
+    any_owned_province = {
+      OR = {
+        has_owner_religion = yes
+        religion = slavic
+      }
+      OR = {
+        culture = bulgar_nomadic
+        culture = Thracian
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 5
+  }
+
+  option = {
+    name = flavor_ser.1.a
+    ai_chance = { factor = 1 }
+    trigger = {
+      NOT = {has_global_flag = panslavism}
+    }
+    random_owned_province = {
+      limit = {
+        OR = {
+          has_owner_religion = yes
+          religion = slavic
+        }
+        OR = {
+          culture = bulgar_nomadic
+          culture = Thracian
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = bulgarian
+    }
+  }
+  option = {
+    name = flavor_ser.1.a
+    ai_chance = { factor = 1 }
+    trigger = {
+      has_global_flag = panslavism
+    }
+    random_owned_province = {
+      limit = {
+        OR = {
+          has_owner_religion = yes
+          religion = slavic
+        }
+        OR = {
+          culture = bulgar_nomadic
+          culture = Thracian
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = bulgarian_united
+    }
+  }
+}
+
+
+country_event = {#albanian
+  id = flavor_ser.2
+  title = flavor_ser.2.t
+  desc = flavor_ser.2.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    has_country_flag = cultural_conversion_albanian_flag
+    OR = {
+      culture_group = south_slavic
+      AND = {
+        has_global_flag = panslavism
+        culture_group = east_slavic
+      }
+    }
+    any_owned_province = {
+      OR = {
+        has_owner_religion = yes
+        religion = slavic
+      }
+      OR = {
+        culture = albanian
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_ser.1.a
+    ai_chance = { factor = 1 }
+    trigger = {
+      NOT = {has_global_flag = panslavism}
+    }
+    random_owned_province = {
+      limit = {
+        OR = {
+          has_owner_religion = yes
+          religion = slavic
+        }
+        OR = {
+          culture = albanian
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = serbian
+    }
+  }
+  option = {
+    name = flavor_ser.1.a
+    ai_chance = { factor = 1 }
+    trigger = {
+      has_global_flag = panslavism
+    }
+    random_owned_province = {
+      limit = {
+        OR = {
+          has_owner_religion = yes
+          religion = slavic
+        }
+        OR = {
+          culture = albanian
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = serbian_united
+    }
+  }
+}
+
+
+country_event = {#dalmatian
+  id = flavor_ser.3
+  title = flavor_ser.3.t
+  desc = flavor_ser.3.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    has_country_flag = cultural_conversion_dalmatian_flag
+    OR = {
+      culture_group = south_slavic
+      AND = {
+        has_global_flag = panslavism
+        culture_group = east_slavic
+      }
+    }
+    any_owned_province = {
+      OR = {
+        has_owner_religion = yes
+        religion = slavic
+      }
+      OR = {
+        culture = Dalmatian
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_ser.1.a
+    ai_chance = { factor = 1 }
+    trigger = {
+      NOT = {has_global_flag = panslavism}
+    }
+    random_owned_province = {
+      limit = {
+        OR = {
+          has_owner_religion = yes
+          religion = slavic
+        }
+        OR = {
+          culture = Dalmatian
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = croatian
+    }
+  }
+  option = {
+    name = flavor_ser.1.a
+    ai_chance = { factor = 1 }
+    trigger = {
+      has_global_flag = panslavism
+    }
+    random_owned_province = {
+      limit = {
+        OR = {
+          has_owner_religion = yes
+          religion = slavic
+        }
+        OR = {
+          culture = Dalmatian
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = croatian_united
+    }
+  }
+}
+
+country_event = {#pan_slavism
+	id = flavor_ser.4
+	title = "flavor_ser.4.t"
+	desc = "flavor_ser.4.d"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+
+
+	option = {
+		name = "flavor_ser.4.a"
+		ai_chance = { factor = 100 }
+    set_global_flag = panslavism
+    change_primary_culture = serbian_united
+    every_country = {
+      limit = {
+      primary_culture = serbian
+      }
+      change_primary_culture = serbian_united
+    }
+    every_country = {
+      limit = {
+      primary_culture = croatian
+      }
+      change_primary_culture = croatian_united
+    }
+    every_country = {
+      limit = {
+      primary_culture = slovene
+      }
+      change_primary_culture = slovene_united
+    }
+    every_country = {
+      limit = {
+      primary_culture = bulgarian
+      }
+      change_primary_culture = bulgarian_united
+    }
+    every_province = {
+      limit = {
+        culture = serbian
+      }
+      change_culture = serbian_united
+    }
+
+    every_province = {
+      limit = {
+        culture = croatian
+      }
+      change_culture = croatian_united
+    }
+    every_province = {
+      limit = {
+        culture = slovene
+      }
+      change_culture = slovene_united
+    }
+    every_province = {
+      limit = {
+        culture = bulgarian
+      }
+      change_culture = bulgarian_united
+    }
+
+	}
+	option = {
+		name = "flavor_ser.4.b"
+		ai_chance = { factor = 0 }
+    add_country_modifier = {
+      name = proud_of_our_culture
+      duration = -1
+    }
+	}
+}

@@ -36,7 +36,7 @@ Serbia_1_1 = {
     NOT = { map_setup = map_setup_random }
   }
   croatian_brethren = {
-    icon = mission_non-western_cavalry_raid
+    icon = fight_bosnian_heresies
     required_missions = {unite_the_serbs}
     position = 3
     provinces_to_highlight = {
@@ -66,7 +66,7 @@ Serbia_1_1 = {
     }
   }
   end_albanian_independance = {
-    icon = mission_non-western_cavalry_raid
+    icon = pacify_the_albanian_lands
     required_missions = {croatian_brethren}
     provinces_to_highlight = {
       OR = {
@@ -83,7 +83,6 @@ Serbia_1_1 = {
       }
     }
     effect = {
-    #event new slavic migration
       croatia_area = {
         limit = {
           NOT = { owned_by = ROOT }
@@ -98,10 +97,12 @@ Serbia_1_1 = {
         }
         add_permanent_claim = ROOT
       }
+      custom_tooltip = cultural_conversion_albanian
+      set_country_flag = cultural_conversion_albanian_flag
     }
   }
   dalmatian_riches = {
-    icon = mission_non-western_cavalry_raid
+    icon = capture_adriatic_ports
     required_missions = {end_albanian_independance}
     provinces_to_highlight = {
       OR = {
@@ -118,12 +119,16 @@ Serbia_1_1 = {
       }
     }
     effect = {
-    #event new slavic migration
     add_treasury = 200
+    137 = {
+      add_center_of_trade_level = 1
+    }
+    custom_tooltip = cultural_conversion_dalmatian
+    set_country_flag = cultural_conversion_dalmatian_flag
     }
   }
   develop_the_ports = {
-    icon = mission_non-western_cavalry_raid
+    icon = develop_provence
     required_missions = {dalmatian_riches}
     provinces_to_highlight = {
       OR = {
@@ -163,7 +168,7 @@ Serbia_1_1 = {
     }
   }
   adriatic_monopol = {
-    icon = mission_non-western_cavalry_raid
+    icon = mission_sea_battles
     required_missions = {develop_the_ports}
     provinces_to_highlight = {
     }
@@ -246,7 +251,7 @@ Serbia_2_1 = {
     NOT = { map_setup = map_setup_random }
   }
   serbian_hegemon = {
-    icon = mission_non-western_cavalry_raid
+    icon = moravian_arms
     required_missions = {}
     provinces_to_highlight = {
     }
@@ -298,7 +303,7 @@ Serbia_2_1 = {
     }
   }
   unite_the_serbs = {
-    icon = mission_non-western_cavalry_raid
+    icon = fortress_of_belgrade
     required_missions = {serbian_hegemon}
     provinces_to_highlight = {
       OR = {
@@ -356,7 +361,7 @@ Serbia_2_1 = {
     }
   }
   into_greece = {
-    icon = mission_non-western_cavalry_raid
+    icon = retake_thessaly
     required_missions = {king_of_serbia}
     provinces_to_highlight = {
       OR = {
@@ -405,7 +410,7 @@ Serbia_2_1 = {
     }
   }
   conquest_of_greece = {
-    icon = mission_non-western_cavalry_raid
+    icon = foothold_in_greece
     required_missions = {into_greece}
     provinces_to_highlight = {
       OR = {
@@ -444,7 +449,7 @@ Serbia_2_1 = {
     }
   }
   city_of_world_desire = {
-    icon = mission_non-western_cavalry_raid
+    icon = take_constantinople
     required_missions = {conquest_of_greece}
     provinces_to_highlight = {
       OR = {
@@ -459,11 +464,12 @@ Serbia_2_1 = {
       }
     }
     effect = {
-    #event
+    add_treasury = 1000
+    add_adm_power = 200
     }
   }
   mediterranean_power = {
-    icon = mission_non-western_cavalry_raid
+    icon = mission_rb_mediterranean_authority
     required_missions = {city_of_world_desire adriatic_monopol}
     position = 8
     provinces_to_highlight = {
@@ -539,7 +545,7 @@ Serbia_3_1 = {
     NOT = { map_setup = map_setup_random }
   }
   serbian_city_states = {
-    icon = mission_non-western_cavalry_raid
+    icon = despot_stefans_legacy
     required_missions = {unite_the_serbs}
     position = 3
     provinces_to_highlight = {
@@ -566,7 +572,7 @@ Serbia_3_1 = {
     }
   }
   fertile_bulgaria = {
-    icon = mission_non-western_cavalry_raid
+    icon = push_on_to_bulgaria
     required_missions = {serbian_city_states}
     provinces_to_highlight = {
       OR = {
@@ -593,6 +599,8 @@ Serbia_3_1 = {
         }
         add_permanent_claim = ROOT
       }
+      custom_tooltip = cultural_conversion_bulgar
+      set_country_flag = cultural_conversion_bulgar_flag
     }
   }
   nomadic_threat_serbia = {
@@ -621,7 +629,7 @@ Serbia_3_1 = {
     }
   }
   reunite_with_northerns_slavs = {
-    icon = mission_non-western_cavalry_raid
+    icon = reissue_the_mining_code
     required_missions = {nomadic_threat_serbia}
     provinces_to_highlight = {
     }
@@ -660,7 +668,7 @@ Serbia_3_1 = {
     }
   }
   nothern_trade = {
-    icon = mission_non-western_cavalry_raid
+    icon = danubian_power
     required_missions = {reunite_with_northerns_slavs}
     provinces_to_highlight = {
     }
@@ -707,6 +715,14 @@ Serbia_3_1 = {
         duration = -1
         power = 50
         key = POLAND_HEGEMONY
+      }
+    }
+    280 = {
+      add_trade_modifier = {
+        who = ROOT
+        duration = -1
+        power = 50
+        key = KIEV_HEGEMONY
       }
     }
     310 = {
@@ -759,7 +775,7 @@ Serbia_4_0 = {
     NOT = { map_setup = map_setup_random }
   }
   the_great_slavic_revolt = {
-    icon = mission_non-western_cavalry_raid
+    icon = mission_steppe_warriors
     required_missions = {}
     provinces_to_highlight = {
     }
@@ -846,7 +862,7 @@ Serbia_4_1 = {
     NOT = { map_setup = map_setup_random }
   }
   success_of_the_revolt = {
-    icon = mission_non-western_cavalry_raid
+    icon = encroach_on_the_germans
     required_missions = {the_great_slavic_revolt}
     position = 2
     provinces_to_highlight = {
@@ -864,7 +880,7 @@ Serbia_4_1 = {
     }
   }
   purify_the_balkans = {
-    icon = mission_non-western_cavalry_raid
+    icon = tame_the_magnates
     required_missions = {success_of_the_revolt}
     provinces_to_highlight = {
       region = balkan_region
@@ -885,7 +901,7 @@ Serbia_4_1 = {
     }
   }
   defy_constantinople = {
-    icon = mission_non-western_cavalry_raid
+    icon = take_constantinople
     required_missions = {purify_the_balkans}
     provinces_to_highlight = {
     }
@@ -915,7 +931,7 @@ Serbia_4_1 = {
     }
   }
   serbian_independance = {
-    icon = mission_non-western_cavalry_raid
+    icon = emperor_and_autocrat
     required_missions = {defy_constantinople colonize_balkans}
     provinces_to_highlight = {
     }
@@ -928,7 +944,7 @@ Serbia_4_1 = {
     }
   }
   pan_slavism = {
-    icon = mission_non-western_cavalry_raid
+    icon = legacy_of_the_sclavinias
     required_missions = {serbian_independance reunite_with_northerns_slavs}
     position = 7
     provinces_to_highlight = {
@@ -938,7 +954,7 @@ Serbia_4_1 = {
       prestige = 60
     }
     effect = {
-    #event
+    country_event = { id = flavor_ser.4}
     }
   }
 }
@@ -984,7 +1000,7 @@ Serbia_4_2 = {
     NOT = { map_setup = map_setup_random }
   }
   failure_of_the_revolt = {
-    icon = mission_non-western_cavalry_raid
+    icon = promote_the_patriarchate
     required_missions = {the_great_slavic_revolt}
     position = 2
     provinces_to_highlight = {
@@ -1002,7 +1018,7 @@ Serbia_4_2 = {
     }
   }
   purify_the_kingdom = {
-    icon = mission_non-western_cavalry_raid
+    icon = defenestrate_the_heretics
     required_missions = {failure_of_the_revolt}
     provinces_to_highlight = {
       region = balkan_region
@@ -1024,7 +1040,7 @@ Serbia_4_2 = {
     }
   }
   no_heathen_in_the_balkans = {
-    icon = mission_non-western_cavalry_raid
+    icon = mission_hands_praying
     required_missions = {purify_the_kingdom}
     provinces_to_highlight = {
       region = balkan_region
@@ -1044,7 +1060,7 @@ Serbia_4_2 = {
     }
   }
   serbian_allegiance = {
-    icon = mission_non-western_cavalry_raid
+    icon = mission_have_two_subjects
     required_missions = {no_heathen_in_the_balkans}
     provinces_to_highlight = {
     }
@@ -1064,7 +1080,7 @@ Serbia_4_2 = {
     }
   }
   a_greek_among_the_greeks_ser = {
-    icon = mission_non-western_cavalry_raid
+    icon = mission_alliances
     required_missions = {serbian_allegiance}
     position = 7
     provinces_to_highlight = {
@@ -1125,7 +1141,7 @@ Serbia_5_1 = {
     NOT = {has_country_flag = elite_remained_in_power}
   }
   rebuild_the_country = {
-    icon = mission_non-western_cavalry_raid
+    icon = mission_early_game_buildings
     position = 3
     required_missions = {success_of_the_revolt}
     provinces_to_highlight = {
@@ -1152,7 +1168,7 @@ Serbia_5_1 = {
     }
   }
   colonize_balkans = {
-    icon = mission_non-western_cavalry_raid
+    icon = mission_unite_home_region
     required_missions = {rebuild_the_country}
     provinces_to_highlight = {
       NOT = {culture_group = south_slavic}
@@ -1216,7 +1232,7 @@ Serbia_5_2 = {
     NOT = {has_country_flag = defy_the_emperor}
   }
   rebuild_the_country_2 = {
-    icon = mission_non-western_cavalry_raid
+    icon = mission_early_game_buildings
     position = 3
     required_missions = {failure_of_the_revolt}
     provinces_to_highlight = {
@@ -1243,7 +1259,7 @@ Serbia_5_2 = {
     }
   }
   fidelize_the_populace = {
-    icon = mission_non-western_cavalry_raid
+    icon = feast_of_pheasants
     required_missions = {rebuild_the_country}
     provinces_to_highlight = {
       region = balkan_region

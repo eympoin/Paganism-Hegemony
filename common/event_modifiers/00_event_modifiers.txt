@@ -11817,5 +11817,12 @@ protector_bul = {
 }
 
 slavic_pride = {
-	local_missionary_strength = -0.02	
+	local_missionary_strength = -0.02
+}
+
+proud_of_our_culture = {
+	same_culture_advisor_cost = -0.5
+	culture_conversion_cost = -0.25
+	development_cost = -0.1
+	monarch_diplomatic_power = 1		
 }
