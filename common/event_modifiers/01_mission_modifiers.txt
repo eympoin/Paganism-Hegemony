@@ -4931,7 +4931,7 @@ global_ship_cost = -0.33
 }
 
 megalopolis = {
-  unrest = 2
+  global_unrest = 2
   global_tax_modifier = 0.4
 	production_efficiency = 0.4
 }

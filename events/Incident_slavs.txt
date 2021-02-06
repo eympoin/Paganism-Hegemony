@@ -64,7 +64,7 @@ country_event = {
       limit = {
         has_province_modifier = slavic_pride
       }
-      remove_province_modifier = annoyed_people
+      remove_province_modifier = slavic_pride
     }
   }
 

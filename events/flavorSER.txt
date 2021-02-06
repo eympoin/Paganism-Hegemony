@@ -305,3 +305,248 @@ country_event = {#pan_slavism
     }
 	}
 }
+
+
+country_event = {#serbian throne
+	id = flavor_ser.5
+	title = "flavor_ser.5.t"
+	desc = "flavor_ser.5.d"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+
+
+	option = {
+		name = "flavor_ser.5.a"
+		ai_chance = { factor = 100 }
+    trigger = {
+      has_won_war_against = {
+        who = emperor
+        max_years_since = 20
+      }
+    }
+    emperor = {
+      add_imperial_influence = -50
+    }
+    set_government_rank = 2
+    add_prestige = 10
+  }
+
+	option = {
+		name = "flavor_ser.5.b"
+    trigger = {
+      reverse_has_opinion = {
+          who = emperor
+          value = 100
+      }
+    }
+    emperor = {country_event = {id = flavor_ser.6}}
+	}
+}
+
+country_event = {#serbian throne
+	id = flavor_ser.6
+	title = "flavor_ser.6.t"
+	desc = "flavor_ser.6.d"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+
+
+	option = {#yes
+		name = "flavor_ser.6.a"
+    ai_chance = {
+			factor = 0
+			modifier = {
+        factor = 100
+				FROM = {
+          religion = theoi
+        }
+			}
+		 }
+     FROM = {set_country_flag = elevated_serbs country_event = {id = flavor_ser.7}}
+    }
+
+	option = {
+		name = "flavor_ser.6.b"
+    ai_chance = {
+			factor = 0
+			modifier = {
+        factor = 100
+				FROM = {
+          religion = slavic
+        }
+			}
+		 }
+    FROM = {set_country_flag = not_elevated_serbs country_event = {id = flavor_ser.7}}
+	}
+}
+
+country_event = {#serbian throne
+	id = flavor_ser.7
+	title = "flavor_ser.7.t"
+	desc = "flavor_ser.7.d"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+
+  option = {# serbia crowned
+    name = "flavor_ser.7.a"
+    ai_chance = {
+      factor = 100
+      }
+      trigger = {
+        has_country_flag = elevated_serbs
+      }
+      set_government_rank = 2
+      add_prestige = 10
+      add_legitimacy = 10
+      add_opinion = {
+       who = FROM
+       modifier = elevated_serbia
+      }
+    }
+	option = {#ok then
+		name = "flavor_ser.7.b"
+      ai_chance = {
+			factor = 100
+			}
+      trigger = {
+        has_country_flag = not_elevated_serbs
+      }
+      add_prestige = -10
+      add_legitimacy = -10
+      add_opinion = {
+        who = emperor
+        modifier = not_elevated_serbia
+        }
+    }
+
+	option = {
+		name = "flavor_ser.7.c"
+    ai_chance = {
+			factor = 0
+			}
+      trigger = {
+        has_country_flag = not_elevated_serbs
+      }
+      set_in_empire = no
+      set_government_rank = 2
+      emperor = {
+        add_opinion = {
+          who = ROOT
+          modifier = not_elevated_serbia
+        }
+      }
+	}
+}
+
+
+country_event = {#Sirmium
+	id = flavor_ser.8
+	title = "flavor_ser.8.t"
+	desc = "flavor_ser.8.d"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+
+
+	option = {#ask the emperor
+		name = "flavor_ser.8.a"
+    ai_chance = {
+			factor = 0
+		 }
+     emperor = { country_event = {id = flavor_ser.9}}
+    }
+}
+
+country_event = {#Sirmium
+	id = flavor_ser.9
+	title = "flavor_ser.9.t"
+	desc = "flavor_ser.9.d"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+
+  option = {#yes
+    name = "flavor_ser.9.a"
+    ai_chance = {
+      factor = 1
+      modifier = {
+        factor = 0
+				FROM = {
+          religion = slavic
+        }
+			}
+     }
+     FROM = {set_global_flag = sirmium_yes country_event = {id = flavor_ser.10}}
+    }
+  option = {#compromise
+  	name = "flavor_ser.9.b"
+    ai_chance = {
+  		factor = 100
+      modifier = {
+        factor = 0
+				FROM = {
+          religion = slavic
+        }
+			}
+  		}
+      FROM = {set_global_flag = sirmium_compromise country_event = {id = flavor_ser.10}}
+    }
+
+	option = {#no
+		name = "flavor_ser.9.c"
+    ai_chance = {
+			factor = 0
+      modifier = {
+        factor = 100
+				FROM = {
+          religion = slavic
+        }
+			}
+		 }
+     FROM = {set_global_flag = sirmium_no country_event = {id = flavor_ser.10}}
+    }
+}
+
+country_event = {#sirmium
+	id = flavor_ser.10
+	title = "flavor_ser.10.t"
+	desc = "flavor_ser.10.d"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+
+  option = {# sirmium integrated
+    name = "flavor_ser.10.a"
+    ai_chance = {
+      factor = 100
+      }
+      trigger = {
+        has_global_flag = sirmium_yes
+      }
+      inherit	= SIR
+    }
+	option = {#compromise
+		name = "flavor_ser.10.b"
+      ai_chance = {
+			factor = 100
+			}
+      trigger = {
+        has_global_flag = sirmium_compromise
+      }
+      create_march = SIR
+    }
+
+	option = {
+		name = "flavor_ser.10.c"
+    ai_chance = {
+			factor = 0
+			}
+      trigger = {
+        has_global_flag = sirmium_no
+      }
+      4173 = {
+        add_permanent_claim = SIR
+      }
+      add_opinion = {
+        who = emperor
+        modifier = refused_sirmium
+      }
+	}
+}

@@ -339,11 +339,21 @@ Serbia_2_1 = {
           	who = emperor
           	value = 100
         }
-        war_with = emperor
+        has_won_war_against = {
+        	who = emperor
+        	max_years_since = 20
+        }
+        NOT = {hre_size = 1}
       }
     }
     effect = {
-      #event serbian throne
+      if = {
+        limit = {
+          hre_size = 1
+        }
+        country_event = { id = flavor_ser.5}
+      }
+
       macedonia_area = {
         limit = {
           NOT = { owned_by = ROOT }
@@ -553,14 +563,24 @@ Serbia_3_1 = {
     }
     trigger = {
       OR = {
-        reverse_has_opinion = {
-          who = SIR
-          value = 180
+        AND = {
+          reverse_has_opinion = {
+            who = SIR
+            value = 180
+          }
+          prestige = 50
         }
         NOT = {exists = SIR}
+        SIR = {is_subject = yes}
       }
     }
     effect = {
+    if = {
+      limit = {
+        exists = SIR
+        SIR = {is_subject = no}
+      }
+    }
     #event
     silistria_area = {
       limit = {
@@ -915,8 +935,11 @@ Serbia_4_1 = {
 
     effect = {
       capital_scope = {
-        name = a_shining_city
-        duration = -1
+        add_province_modifier = {
+          name = a_shining_city
+          duration = -1
+          }
+        }
         if = {
           limit = {
             OR = {
@@ -929,7 +952,6 @@ Serbia_4_1 = {
         }
       }
     }
-  }
   serbian_independance = {
     icon = emperor_and_autocrat
     required_missions = {defy_constantinople colonize_balkans}

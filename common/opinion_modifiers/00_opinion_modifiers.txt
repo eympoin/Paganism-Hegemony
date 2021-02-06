@@ -4483,3 +4483,18 @@ barbarian_bul = {
 	opinion = -75
 	yearly_decay = 2
 }
+
+elevated_serbia = {
+	opinion = 100
+	yearly_decay = 2.5
+}
+
+not_elevated_serbia = {
+	opinion = -100
+	yearly_decay = 2.5
+}
+
+refused_sirmium = {
+	opinion = -100
+	yearly_decay = 2.5
+}
