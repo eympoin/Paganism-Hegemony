@@ -236,7 +236,7 @@ country_event = {#pan_slavism
 	id = flavor_ser.4
 	title = "flavor_ser.4.t"
 	desc = "flavor_ser.4.d"
-	picture = DIPLOMACY_eventPicture
+	picture = SEJM_eventPicture
 	is_triggered_only = yes
 
 
@@ -310,7 +310,24 @@ country_event = {#pan_slavism
 country_event = {#serbian throne
 	id = flavor_ser.5
 	title = "flavor_ser.5.t"
-	desc = "flavor_ser.5.d"
+	desc = {
+    trigger = {
+      has_won_war_against = {
+        who = emperor
+        max_years_since = 20
+      }
+    }
+    desc = "flavor_ser.5.d1"
+    }
+  desc = {
+      trigger = {
+        reverse_has_opinion = {
+            who = emperor
+            value = 100
+        }
+      }
+      desc = "flavor_ser.5.d2"
+      }
 	picture = DIPLOMACY_eventPicture
 	is_triggered_only = yes
 
@@ -383,8 +400,19 @@ country_event = {#serbian throne
 country_event = {#serbian throne
 	id = flavor_ser.7
 	title = "flavor_ser.7.t"
-	desc = "flavor_ser.7.d"
-	picture = DIPLOMACY_eventPicture
+  desc = {
+    trigger = {
+      has_country_flag = elevated_serbs
+    }
+	 desc = "flavor_ser.7.d1"
+   }
+   desc = {
+     trigger = {
+       has_country_flag = not_elevated_serbs
+     }
+ 	 desc = "flavor_ser.7.d2"
+    }
+	picture = HRE_eventPicture
 	is_triggered_only = yes
 
   option = {# serbia crowned
@@ -508,8 +536,25 @@ country_event = {#Sirmium
 country_event = {#sirmium
 	id = flavor_ser.10
 	title = "flavor_ser.10.t"
-	desc = "flavor_ser.10.d"
-	picture = DIPLOMACY_eventPicture
+  desc = {
+    trigger = {
+      has_global_flag = sirmium_yes
+    }
+	 desc = "flavor_ser.10.d1"
+   }
+   desc = {
+     trigger = {
+       has_global_flag = sirmium_compromise
+     }
+ 	   desc = "flavor_ser.10.d2"
+    }
+    desc = {
+      trigger = {
+        has_global_flag = sirmium_no
+      }
+  	 desc = "flavor_ser.10.d3"
+     }
+	picture = HRE_eventPicture
 	is_triggered_only = yes
 
   option = {# sirmium integrated

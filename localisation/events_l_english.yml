@@ -1393,3 +1393,59 @@ flavor_bul.5.t:0 "Protector or Emperor"
 flavor_bul.5.d:0 "We have protected the Empire for centuries and destroyed numerous threat. Now we must choose if we want to continue or to become the next Emperor."
 flavor_bul.5.a:0 "Long live the Empire !"
 flavor_bul.5.b:0 "Long live our Empire !"
+
+
+flavor_ser.1.t:0 "Cultural Assimilation"
+flavor_ser.1.d:0 "More and More people begin to use our custom and language"
+flavor_ser.1.a:0 "Great News"
+
+flavor_ser.2.t:0 "Cultural Assimilation"
+flavor_ser.2.d:0 "More and More people begin to use our custom and language"
+flavor_ser.2.a:0 "Great News"
+
+flavor_ser.3.t:0 "Cultural Assimilation"
+flavor_ser.3.d:0 "More and More people begin to use our custom and language"
+flavor_ser.3.a:0 "Great News"
+
+flavor_ser.4.t:0 "Pan-Slavism"
+flavor_ser.4.d:0 "Now that we reunited with the other slavs, we shall choose whether our culture shall bond or not.  "
+flavor_ser.4.a:0 "It is time to unify !"
+flavor_ser.4.b:0 "We will not mix ourselves with these barbarians."
+
+flavor_ser.5.t:0 "Kingdom of $COUNTRY$"
+flavor_ser.5.d1:0 "We have won against the Emperor. He will not stand aginst the formation of the Kingdom of $COUNTRY$"
+flavor_ser.5.d2:0 "We now have the influence and relation to ask for the title of Kingdom."
+flavor_ser.5.a:0 "Long live the King."
+flavor_ser.5.b:0 "Ask the emperor for an elevation !"
+
+flavor_ser.6.t:0 "$FROM$ ask for the title of Kingdom"
+flavor_ser.6.d:0 "$FROM$ have build influence and relation in the Empire and they now ask for the rank of Kingdom."
+flavor_ser.6.a:0 "They will have it."
+flavor_ser.6.b:0 "In their dreams !"
+
+
+flavor_ser.7.t:0 "The Emperor's answer"
+flavor_ser.7.d1:0 "The Emperor has accepted our request !"
+flavor_ser.7.d2:0 "The Emperor has refused our request. "
+flavor_ser.7.a:0 "Long live the King !"
+flavor_ser.7.b:0 "The Emperor will pay !"
+flavor_ser.7.c:0 "$COUNTRY$ will be a Kingdom, no matter what the Emperor thinks."
+
+
+flavor_ser.8.t:0 "Integration of Sirmium"
+flavor_ser.8.d:0 "In these last decades, we have solidify our influence over the Free city of Sirmium. We are now ready for the next step : aks the Emperor to integrate it to our country."
+flavor_ser.8.a:0 "Send the emissaries."
+
+flavor_ser.9.t:0 "$FROM$ ask for Sirmium"
+flavor_ser.9.d:0 "$FROM$ has solidify its influence over SIrmium for quite a while now, and they aks us to recognize the legitimacy of their reign over the city."
+flavor_ser.9.a:0 "They can take it."
+flavor_ser.9.b:0 "They can have it, if Sirmium retains some autonomy."
+flavor_ser.9.c:0 "In their dreams !"
+
+flavor_ser.10.t:0 "The Emperor's answer"
+flavor_ser.10.d1:0 "The Emperor has accepted our request !"
+flavor_ser.10.d2:0 "The Emperor ask for a compromise. "
+flavor_ser.10.d3:0 "The Emperor has refused our request. "
+flavor_ser.10.a:0 "The Emperor is wise."
+flavor_ser.10.b:0 "This is a good compromise."
+flavor_ser.10.c:0 "The Emperor will pay."
