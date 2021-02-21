@@ -1,0 +1,127 @@
+namespace = flavor_olympic
+namespace = flavor_oracle
+
+#olympic games
+country_event = {
+  id = flavor_olympic.1
+  title = flavor_olympic.1.t
+  desc = flavor_olympic.1.d
+  picture = COURT_eventPicture
+
+  trigger = {
+    is_year = 1445
+    culture_group = byzantine
+  }
+
+  mean_time_to_happen = {
+    years = 4
+  }
+
+  option = {#Send all the bests
+    name = flavor_olympic.1.a
+    custom_tooltip = gl_hf
+    add_treasury = -50
+    hidden_effect = {
+      random_list = {
+        75 = { country_event = {id = flavor_olympic.2  days = 30} }
+        25 = { country_event = {id = flavor_olympic.3 days = 30 } }
+      }
+    }
+
+  }
+
+  option = {#Send good athetes
+    name = flavor_olympic.1.b
+    custom_tooltip = gl_hf
+    add_treasury = -10
+    hidden_effect = {
+      random_list = {
+  			50 = { country_event = {id = flavor_olympic.2  days = 30 } }
+  			50 = { country_event = {id = flavor_olympic.3  days = 30 } }
+  		}
+    }
+  }
+
+  option = {#Send no one
+    name = flavor_olympic.1.c
+    add_prestige = -5
+  }
+
+}
+
+
+country_event = {#victory
+  id = flavor_olympic.2
+  title = flavor_olympic.2.t
+  desc = flavor_olympic.2.d
+  picture = COURT_eventPicture
+
+  is_triggered_only = yes
+
+  option = {
+    name = flavor_olympic.2.a
+    add_prestige = 15
+    add_legitimacy = 5
+  }
+}
+
+country_event = {#defeat
+  id = flavor_olympic.3
+  title = flavor_olympic.3.t
+  desc = flavor_olympic.3.d
+  picture = COURT_eventPicture
+
+  is_triggered_only = yes
+
+  option = {
+    name = flavor_olympic.3.a
+    add_prestige = 1
+  }
+
+}
+
+country_event = {
+  id = flavor_oracle.1
+  title = flavor_oracle.1.t
+  desc = flavor_oracle.1.d
+  picture = GOOD_WITH_MONARCH_eventPicture
+
+  trigger = {
+    owns_core_province = 4810
+  }
+
+  mean_time_to_happen = {
+    years = 4
+  }
+
+  option = {#demand war
+    name = flavor_oracle.1.a
+    add_country_modifier = {
+      name = oracle_call_war
+      duration = -1
+    }
+    remove_country_modifier = oracle_call_for_diplomacy
+    remove_country_modifier = oracle_call_for_internal_dev
+  }
+
+  option = {#demand internal dev
+    name = flavor_oracle.1.b
+    add_country_modifier = {
+      name = oracle_call_for_internal_dev
+      duration = -1
+    }
+    remove_country_modifier = oracle_call_for_diplomacy
+    remove_country_modifier = oracle_call_war
+  }
+
+  option = {#demand diplomacy
+    name = flavor_oracle.1.c
+    add_country_modifier = {
+      name = oracle_call_for_diplomacy
+      duration = -1
+    }
+    remove_country_modifier = oracle_call_for_internal_dev
+    remove_country_modifier = oracle_call_war
+  }
+
+}

@@ -2,7 +2,7 @@
 
 owner = BYZ
 controller = BYZ
-culture = greek
+culture = byzantine_c
 religion = theoi
 capital = "Constantinople"
 trade_goods = silk

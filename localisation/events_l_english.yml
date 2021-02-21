@@ -1418,8 +1418,8 @@ flavor_ser.5.d2:0 "We now have the influence and relation to ask for the title o
 flavor_ser.5.a:0 "Long live the King."
 flavor_ser.5.b:0 "Ask the emperor for an elevation !"
 
-flavor_ser.6.t:0 "$FROM$ ask for the title of Kingdom"
-flavor_ser.6.d:0 "$FROM$ have build influence and relation in the Empire and they now ask for the rank of Kingdom."
+flavor_ser.6.t:0 "$FROMCOUNTRY$ ask for the title of Kingdom"
+flavor_ser.6.d:0 "$FROMCOUNTRY$ have build influence and relation in the Empire and they now ask for the rank of Kingdom."
 flavor_ser.6.a:0 "They will have it."
 flavor_ser.6.b:0 "In their dreams !"
 
@@ -1436,8 +1436,8 @@ flavor_ser.8.t:0 "Integration of Sirmium"
 flavor_ser.8.d:0 "In these last decades, we have solidify our influence over the Free city of Sirmium. We are now ready for the next step : aks the Emperor to integrate it to our country."
 flavor_ser.8.a:0 "Send the emissaries."
 
-flavor_ser.9.t:0 "$FROM$ ask for Sirmium"
-flavor_ser.9.d:0 "$FROM$ has solidify its influence over SIrmium for quite a while now, and they aks us to recognize the legitimacy of their reign over the city."
+flavor_ser.9.t:0 "$FROMCOUNTRY$ ask for Sirmium"
+flavor_ser.9.d:0 "$FROMCOUNTRY$ has solidify its influence over SIrmium for quite a while now, and they aks us to recognize the legitimacy of their reign over the city."
 flavor_ser.9.a:0 "They can take it."
 flavor_ser.9.b:0 "They can have it, if Sirmium retains some autonomy."
 flavor_ser.9.c:0 "In their dreams !"
@@ -1449,3 +1449,90 @@ flavor_ser.10.d3:0 "The Emperor has refused our request. "
 flavor_ser.10.a:0 "The Emperor is wise."
 flavor_ser.10.b:0 "This is a good compromise."
 flavor_ser.10.c:0 "The Emperor will pay."
+
+
+
+flavor_athens.1.t:0 "Reexpand Greek Influence in the West"
+flavor_athens.1.d:0 "It has been a long time since our colonies in the West were taken by Rome. The Western Roman Empire has now collapsed and it is now time to retake them."
+flavor_athens.1.a:0 "To the West !"
+
+greek_everywhere: "Unlock cutural assimilation events of neo-roman culture"
+
+flavor_athens.2.t:0 "Cultural Assimilation"
+flavor_athens.2.d:0 "More and More people begin to use our custom and language"
+flavor_athens.2.a:0 "Great News"
+
+flavor_athens.4.t:0 "The Mines of Laurion"
+flavor_athens.4.d:0 "A farmer discovered tunnels in south Attica. It appears to be the Mines of Laurion. These mines enriched the city tremendously but they have been afterwards abandoned and forgotten for centuries. Maybe we should reactivate them."
+flavor_athens.4.a:0 "These mines will finance us once again !"
+flavor_athens.4.b:0 "They are probably empty now, scavenge what you can and close it."
+
+
+flavor_athens.5.t:0 "The Great Expedition"
+flavor_athens.5.d:0 "Our population is too high for what we can sustain. We have a solution to this problem : the creation of a colony in the Arabian Sea ! We now have to choose who we will send to create it. This will also be an occasion to increase our grip on eastern trade."
+flavor_athens.5.a:0 "A merchant colony will make us rich."
+flavor_athens.5.b:0 "A colony of warrior will easily defend itself."
+flavor_athens.5.c:0 "A diverse colony will be the image of its Mother City"
+
+flavor_athens.6.t:0 "The Beginning of Great Expedition"
+flavor_athens.6.d:0 "The preparation is over and we are now ready to lauch the expedition. "
+flavor_athens.6.a:0 "May the Gods be with you."
+
+flavor_athens.7.t:0 "Halt in Egypt"
+flavor_athens.7.d:0 "The expedition has now arrived in Alexandria were our Alexandrian friends resupplied it. Several people also volunteered to join our expedition."
+flavor_athens.7.a:0 "The Ptolemaic merchants will increase the trade influence of the colony."
+flavor_athens.7.b:0 "The Nubians mercenaries will protect the colony well."
+flavor_athens.7.c:0 "The Egyptians artisans will increase the riches of the colony."
+
+flavor_athens.8.t:0 "Landing point"
+flavor_athens.8.d:0 "The expedition has arrived in the Red sea, we shall choose the location of the city and try to develop our relations with the locals. "
+flavor_athens.8.a:0 "The island of Socotra will make our colony easily defendable."
+flavor_athens.8.b:0 "Mokha will grant us control over the strait of Bab-el-Mandeb."
+flavor_athens.8.c:0 "Hobyo will grant us access to the African trade."
+
+flavor_athens.9.t:0 "An Athenian colony"
+flavor_athens.9.d:0 "Today, a Greek expedition arrived in one of our province. They say, they want to establish a colony here. Should we allow it ?"
+flavor_athens.9.a:0 "In exchange of gold, we are ready to accept."
+flavor_athens.9.b:0 "They will return to the sea !"
+
+flavor_athens.10.t:0 "The Expedition has arrived !"
+flavor_athens.10.d:0 "The locals accepted the establishment of our colony in exchange of gold."
+flavor_athens.10.a:0 "This is a great day !"
+
+flavor_athens.11.t:0 "The locals wants war !"
+flavor_athens.11.d:0 "The locals refused the establishment of our colony and are now looking to destroy us."
+flavor_athens.11.a:0 "They won't take our new colony."
+
+flavor_athens.12.t:0 "Leader of the League"
+flavor_athens.12.d:0 "A lot of members of our league are seeing us as their protectors."
+flavor_athens.12.a:0 "Together we will be invicible."
+
+flavor_athens.13.t:0 "Transition of Government"
+flavor_athens.13.d:0 "Our country is growing larger and the Athenian republic is now too focused on Athens itself and not its Empire. Athenian democracy must evolve to match with the Empire."
+flavor_athens.13.a:0 "We are now stronger."
+
+ath_merchant_colony_tooltip: "The new colony will have mercantile boosts"
+ath_warrior_colony_tooltip: "The colony will have military bonus"
+ath_citizen_colony_tooltip: "The colony will have administrative bonus"
+lets_begin: "The Expedition starts"
+they_will_help_us_greatly: "It will gives bonus to the colony"
+
+flavor_olympic.1.t:0 "The Olympic Games"
+flavor_olympic.1.d:0 "The Olympic Games are here and we must choose who we will send there."
+flavor_olympic.1.a:0 "The best of the bests"
+flavor_olympic.1.b:0 "Some good Athletes"
+flavor_olympic.1.c:0 "No one"
+
+flavor_olympic.2.t:0 "Victory in the Olympic Games"
+flavor_olympic.2.d:0 "Our athletes won several olympic trial !"
+flavor_olympic.2.a:0 "The Gods were with us."
+
+flavor_olympic.3.t:0 "Defeat in the Olympic Games"
+flavor_olympic.3.d:0 "Our athletes lost in the Olympic Games."
+flavor_olympic.3.a:0 "We will win next time."
+
+flavor_oracle.1.t:0 "Control of the Oracle"
+flavor_oracle.1.d:0 "We control Delphi and with it, its influential Oracle. We can make it say what we wants"
+flavor_oracle.1.a:0 "The Oracle calls for war"
+flavor_oracle.1.b:0 "The Oracle calls for economical reforms"
+flavor_oracle.1.c:0 "The Oracle calls for diplomacy"

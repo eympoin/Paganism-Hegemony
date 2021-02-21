@@ -4498,3 +4498,8 @@ refused_sirmium = {
 	opinion = -100
 	yearly_decay = 2.5
 }
+
+influence_empeor = {
+	opinion = 200
+	yearly_decay = 0.5
+}

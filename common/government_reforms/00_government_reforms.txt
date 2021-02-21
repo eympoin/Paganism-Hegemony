@@ -1771,6 +1771,62 @@ dutch_republic_legacy = {
 	}
 }
 
+
+# Special for the Athens
+athenian_republic_legacy = {
+	# government mechanics flags go here
+	icon = "dutch_flag"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+
+	duration = 4
+
+	allow_convert = no
+
+	republican_name = no
+	royal_marriage = yes
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	nation_designer_trigger = {
+		has_dlc = "Res Publica"
+	}
+
+	republic = yes
+	modifiers = {
+		governing_capacity = 100
+		heavy_ship_power = 0.10
+		trade_efficiency = 0.10
+		global_autonomy = -0.05
+		max_absolutism = -30
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Res Publica"
+		}
+
+		states_general_mechanic = {
+			statists = {
+				naval_forcelimit_modifier = 0.10
+				global_trade_power = 0.05
+				republican_tradition = 1
+			}
+
+			orangists = {
+				land_forcelimit_modifier = 0.25
+				stability_cost_modifier = -0.10
+				republican_tradition = -1
+			}
+		}
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+
 # China
 celestial_empire_legacy = {
 	# government mechanics flags go here

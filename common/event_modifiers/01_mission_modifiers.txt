@@ -5209,3 +5209,45 @@ second_migration = {
 fidelity_of_the_people = {
   global_unrest = -2
 }
+
+master_of_the_agean = {
+    own_coast_naval_combat_bonus = 1.0
+    leader_naval_manuever = 1
+    galley_power = 0.1
+}
+
+silver_tongue = {
+  diplomatic_reputation = 2
+}
+
+world_leader = {
+  global_trade_power = 0.2
+  trade_steering = 0.2
+  global_ship_cost = -0.2
+  diplomats = 1
+  merchants = 1
+}
+
+land_efficacity = {
+  discipline = 0.025
+  land_morale = 0.05
+}
+
+beginning_of_a_new_empire = {
+  colonists = 1
+}
+
+athenian_new_base = {
+  province_trade_power_modifier = 0.2
+  local_development_cost= -0.1
+}
+
+masters_of_indian_ocean = {
+  trade_efficiency = 0.15
+  merchants = 1
+}
+
+greek_leader = {
+  same_culture_advisor_cost = -0.5
+  culture_conversion_cost = -0.1	
+}

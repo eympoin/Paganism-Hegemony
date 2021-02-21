@@ -168,6 +168,7 @@ monarchy = {
 		nepotism_reform
 		lottery_reform
 		dutch_republic
+		athenian_republic
 	}
 
 	#States General works with few others
@@ -245,6 +246,7 @@ republic = {
 		imperial_roman_curia_legacy
 		carthaginian_republic_centralize_legacy
 		carthaginian_republic_decentralize_legacy
+		athenian_republic
 	}
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {
@@ -276,6 +278,7 @@ republic = {
 				imperial_roman_curia_reform
 				carthaginian_republic_decentralize
 				carthaginian_republic_centralize
+				athenian_republic
 			}
 		}
 		republican_virtues = {
@@ -386,6 +389,7 @@ republic = {
 		pirate_republic_reform
 		protectorate_parliament_reform
 		prussian_republic_reform
+		athenian_republic
 	}
 	exclusive_reforms = {
 		roman_curia_reform
@@ -398,6 +402,7 @@ republic = {
 		military_dictatorship_reform
 		carthaginian_republic_decentralize
 		carthaginian_republic_centralize
+		athenian_republic
 	}
 	exclusive_reforms = {
 		free_city
@@ -699,6 +704,10 @@ pre_dharma_mapping = {
 	dutch_republic = {
 		government = republic
 		legacy_government = dutch_republic_legacy
+	}
+	athenian_republic = {
+		government = republic
+		legacy_government = athenian_republic_legacy
 	}
 	celestial_empire = {
 		government = monarchy

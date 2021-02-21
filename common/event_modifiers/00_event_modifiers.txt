@@ -11824,5 +11824,16 @@ proud_of_our_culture = {
 	same_culture_advisor_cost = -0.5
 	culture_conversion_cost = -0.25
 	development_cost = -0.1
-	monarch_diplomatic_power = 1		
+	monarch_diplomatic_power = 1
+}
+
+oracle_call_war = {
+	land_morale = 0.1
+}
+oracle_call_for_internal_dev = {
+	development_cost = -0.1
+}
+
+oracle_call_for_diplomacy= {
+	diplomatic_reputation = 1
 }

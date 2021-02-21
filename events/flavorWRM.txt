@@ -12,7 +12,7 @@ country_event = {#Welsh/cornish/breton
     }
     culture_group = neo-roman
     any_owned_province = {
-      religion = deii
+     has_owner_religion = yes
       OR = {
         culture = welsh
         culture = cornish
@@ -32,7 +32,7 @@ country_event = {#Welsh/cornish/breton
     ai_chance = { factor = 1 }
     random_owned_province = {
       limit = {
-        religion = deii
+       has_owner_religion = yes
         OR = {
           culture = welsh
           culture = cornish
@@ -61,7 +61,7 @@ country_event = {#Northumbrian
     }
     culture_group = neo-roman
     any_owned_province = {
-      religion = deii
+     has_owner_religion = yes
       culture = northymbrian
       NOT = { culture_group = britannian_group }
       NOT = { nationalism	= 1 }
@@ -78,7 +78,7 @@ country_event = {#Northumbrian
     ai_chance = { factor = 1 }
     random_owned_province = {
       limit = {
-        religion = deii
+       has_owner_religion = yes
         culture = northymbrian
         NOT = { nationalism	= 1 }
         is_core = ROOT
@@ -100,7 +100,7 @@ country_event = {#Anglo-saxon
     }
     culture_group = neo-roman
     any_owned_province = {
-      religion = deii
+     has_owner_religion = yes
       OR = {
         culture = angle
         culture = seaxan
@@ -120,7 +120,7 @@ country_event = {#Anglo-saxon
     ai_chance = { factor = 1 }
     random_owned_province = {
       limit = {
-        religion = deii
+       has_owner_religion = yes
         OR = {
           culture = angle
           culture = seaxan
@@ -147,7 +147,7 @@ country_event = {#franks
     }
     culture_group = neo-roman
     any_owned_province = {
-      religion = deii
+     has_owner_religion = yes
       OR = {
         culture = lingerian
         culture = salian
@@ -168,7 +168,7 @@ country_event = {#franks
     ai_chance = { factor = 1 }
     random_owned_province = {
       limit = {
-        religion = deii
+       has_owner_religion = yes
         OR = {
           culture = lingerian
           culture = salian
@@ -195,7 +195,7 @@ country_event = {#burgond
     }
     culture_group = neo-roman
     any_owned_province = {
-      religion = deii
+     has_owner_religion = yes
       OR = {
         culture = burgond
       }
@@ -214,7 +214,7 @@ country_event = {#burgond
     ai_chance = { factor = 1 }
     random_owned_province = {
       limit = {
-        religion = deii
+       has_owner_religion = yes
         OR = {
           culture = burgond
         }
@@ -240,7 +240,7 @@ country_event = {#Griko
     }
     culture_group = neo-roman
     any_owned_province = {
-      religion = deii
+     has_owner_religion = yes
       OR = {
         culture = Griko
       }
@@ -259,7 +259,7 @@ country_event = {#Griko
     ai_chance = { factor = 1 }
     random_owned_province = {
       limit = {
-        religion = deii
+       has_owner_religion = yes
         OR = {
           culture = Griko
         }
@@ -284,7 +284,7 @@ country_event = {#Lombards
     }
     culture_group = neo-roman
     any_owned_province = {
-      religion = deii
+     has_owner_religion = yes
       OR = {
         culture = aquileian
         culture = lombard
@@ -304,7 +304,7 @@ country_event = {#Lombards
     ai_chance = { factor = 1 }
     random_owned_province = {
       limit = {
-        religion = deii
+       has_owner_religion = yes
         OR = {
         culture = aquileian
         culture = lombard

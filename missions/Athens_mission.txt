@@ -1,0 +1,731 @@
+Athens_1_1 = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = ATH
+      was_tag = ATH
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+
+  reunite_griko = {
+    icon = king_of_naples
+    required_missions = {finance_a_new_fleet}
+    position = 5
+    provinces_to_highlight = {
+      OR = {
+        culture = Griko
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+        value = 8
+        culture = Griko
+      }
+    }
+    effect = {
+      add_accepted_culture = Griko
+      western_sicily_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      corsica_sardinia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      baleares_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      provence_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      liguria_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  rexpand_the_greek_influence = {
+    icon = renaissance_city
+    required_missions = {reunite_griko}
+    provinces_to_highlight = {
+      OR = {
+        area = baleares_area
+        area = liguria_area
+        area = provence_area
+        area = corsica_sardinia_area
+        area = western_sicily_area
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      provence_area = {
+        type = all
+        owned_by = ROOT
+      }
+      liguria_area = {
+        type = all
+        owned_by = ROOT
+      }
+      baleares_area = {
+        type = all
+        owned_by = ROOT
+      }
+      corsica_sardinia_area = {
+        type = all
+        owned_by = ROOT
+      }
+      western_sicily_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      country_event = {id = flavor_athens.1 }
+    }
+  }
+}
+
+Athens_2_1 = {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = ATH
+      was_tag = ATH
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+
+  cycladian_control = {
+    icon = mission_invade_island
+    required_missions = {the_great_league}
+    position = 2
+    provinces_to_highlight = {
+      OR = {
+        area = kyklades_area
+        province_id = 3003
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      kyklades_area = {
+        type = all
+        owned_by = ROOT
+      }
+      owns_core_province = 3003
+    }
+    effect = {
+      164 = {
+        add_center_of_trade_level = 1
+      }
+      aegean_archipelago_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  agean_hegemony = {
+    icon = reclaim_the_aegean
+    required_missions = {cycladian_control}
+    provinces_to_highlight = {
+      OR = {
+        area = mission_sea_battles
+        area = south_islands_area
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      aegean_archipelago_area = {
+        type = all
+        owned_by = ROOT
+      }
+      south_islands_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      add_country_modifier = {
+        name = master_of_the_agean
+        duration = -1
+      }
+    }
+  }
+  finance_a_new_fleet = {
+    icon = mission_galleys_in_port
+    required_missions = {agean_hegemony}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      treasury = 500
+    }
+    effect = {
+      build_to_forcelimit = {
+        heavy_ship = 0.1
+        light_ship = 0.3
+        galley = 0.4
+        transport = 0.2
+      }
+      random_owned_province = {
+          limit = { has_port = yes }
+          ROOT = {
+                  create_flagship = {
+                      name = "Athena's Pride"
+                      type = heavy_ship
+                  }
+          }
+      }
+      add_treasury = -500
+      create_admiral = { tradition = 80 }
+      aydin_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      calabria_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      sicily_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      apulia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+  control_of_ionia = {
+    icon = mission_conquer_50_development
+    required_missions = {finance_a_new_fleet}
+    provinces_to_highlight = {
+      OR = {
+        area = aydin_area
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      aydin_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      add_mercantilism = 5
+      add_treasury = 300
+    }
+  }
+  trade_of_the_world = {
+    icon = mission_trade_company_region_abroad
+    required_missions = {control_of_ionia}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      151 = {
+        has_most_province_trade_power = ROOT
+        highest_value_trade_node = yes
+        trade_share = {
+        		country = ROOT
+        		share = 75
+        	}
+      }
+    }
+    effect = {
+      358 = {
+        add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = ALL_TRADE_TO_GREECE
+        }
+      }
+      328 = {
+        add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = ALL_TRADE_TO_GREECE
+        }
+      }
+      2313 = {
+        add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = ALL_TRADE_TO_GREECE
+        }
+      }
+      285 = {
+        add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = ALL_TRADE_TO_GREECE
+        }
+      }
+      137 = {
+        add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = ALL_TRADE_TO_GREECE
+        }
+      }
+    }
+  }
+}
+
+Athens_3_1 = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = ATH
+      was_tag = ATH
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+
+  the_great_league = {
+    icon = mission_alliances
+    required_missions = {}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      num_of_allies = 4
+    }
+    effect = {
+      add_dip_power = 100
+      add_country_modifier = {
+        name = silver_tongue
+        duration = 7300
+      }
+      attica_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      kyklades_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  leader_of_the_league = {
+    icon = mission_monarch_in_throne_room
+    required_missions = {the_great_league}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      all_ally = {
+        OR = {
+          NOT = {
+            army_strength = {
+              who = ROOT
+              value = 0.7
+            }
+          }
+          NOT = {diplomatic_reputation = ROOT}
+        }
+      }
+    }
+    effect = {
+    country_event = {id = flavor_athens.12 }
+    }
+  }
+  athen_reborn = {
+    icon = foothold_in_greece
+    position = 5
+    required_missions = {leader_of_the_league finance_a_new_fleet Peloponnese_fall}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      total_development = 250
+    }
+    effect = {
+    country_event = {id = flavor_athens.13 }
+    }
+  }
+  battle_for_greece = {
+    icon = retake_thessaly
+    required_missions = {athen_reborn}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      NOT = {exists = MAC}
+    }
+    effect = {
+      add_mil_power = 100
+      add_country_modifier = {
+        name = greek_leader
+        duration = -1
+      }
+    }
+  }
+  influence_the_empire = {
+    icon = lead_the_empire
+    required_missions = {battle_for_greece}
+    provinces_to_highlight = {
+    }
+    trigger = {
+     treasury = 1000
+     diplomatic_reputation = 5
+    }
+    effect = {
+      if = {
+        limit = {
+          is_part_of_hre = yes
+          is_elector = no
+        }
+        elector = yes
+        reverse_add_opinion = {
+          who = emperor
+          modifier = influence_empeor
+        }
+        add_historical_friend = emperor
+        add_treasury = -1000
+      }
+      else = {
+        add_country_modifier = {
+          name = silver_tongue
+          duration = -1
+        }
+      }
+    }
+  }
+  world_influence = {
+    icon = mission_empire
+    required_missions = {influence_the_empire}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      monthly_income = 500
+      navy_size = 300
+      NOT = {great_power_rank = 4}
+    }
+    effect = {
+      add_country_modifier = {
+        name = world_leader
+        duration = -1
+      }
+    }
+  }
+}
+
+
+Athens_4_1 = {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = ATH
+      was_tag = ATH
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+
+
+  boetian_rivalry = {
+    icon = mission_build_up_to_force_limit
+    required_missions = {the_great_league}
+    position = 2
+    provinces_to_highlight = {
+      province_id = 4792
+        NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      owns_core_province = 4792
+    }
+    effect = {
+      add_mil_power = 100
+      add_manpower = 5
+    }
+  }
+  control_of_the_oracle = {
+    icon = protectors_of_christendom
+    required_missions = {boetian_rivalry}
+    provinces_to_highlight = {
+      province_id = 4810
+        NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      owns_core_province = 4810
+    }
+    effect = {
+      add_dip_power = 100
+      morea_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  Peloponnese_fall = {
+    icon = the_latin_empire
+    required_missions = {control_of_the_oracle}
+    provinces_to_highlight = {
+      area = morea_area
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      morea_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      add_country_modifier = {
+        name = land_efficacity
+        duration = -1
+      }
+    }
+  }
+
+}
+
+
+
+Athens_5_1 = {
+  slot = 5
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = ATH
+      was_tag = ATH
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+
+
+  alexandrian_friendship = {
+    icon = mission_conquer_alexandria
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+    }
+    trigger = {
+      reverse_has_opinion = {
+        who = ALX
+        value = 150
+      }
+
+    }
+    effect = {
+      egypt_region = {
+          discover_country = ROOT
+      }
+      horn_of_africa_region = {
+          discover_country = ROOT
+      }
+      arabia_region = {
+          discover_country = ROOT
+      }
+      arabian_sea_region = {
+          discover_country = ROOT
+      }
+
+    }
+  }
+  prepare_great_expedition = {
+    icon = mission_colonize_the_west
+    required_missions = {alexandrian_friendship}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      sailors = 1000
+      treasury = 500
+    }
+    effect = {
+    add_treasury = -500
+    add_sailors = -1000
+    country_event = {id = flavor_athens.5 }
+    }
+  }
+
+  a_new_empire_ath = {
+    icon = mission_colonial
+    required_missions = {prepare_great_expedition}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      any_owned_province = {
+        has_province_modifier = athenian_new_base
+      }
+    }
+    effect = {
+      create_explorer = { tradition = 90}
+      add_country_modifier = {
+        name = beginning_of_a_new_empire
+        duration = -1
+      }
+    }
+  }
+
+  arabic_trade_control = {
+    icon = mission_arabian_sea_trade
+    required_missions = {a_new_empire_ath}
+    provinces_to_highlight = {
+    OR = {
+      region = arabia_region
+      region = horn_of_africa_region
+    }
+
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      num_of_owned_provinces_with = {
+        value = 20
+        OR = {
+          region = arabia_region
+          region = horn_of_africa_region
+        }
+      }
+    }
+    effect = {
+      add_years_of_income = 0.5	
+      358 = {
+        add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = REINFORCE_LINK_COLONY
+        }
+      }
+    }
+  }
+
+  indian_trade_control = {
+    icon = mission_south_indian_trade
+    required_missions = {arabic_trade_control}
+    provinces_to_highlight = {
+    OR = {
+      region = west_india_region
+      region = horn_of_africa_region
+    }
+
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      num_of_owned_provinces_with = {
+      value = 20
+        OR = {
+          region = west_india_region
+          region = horn_of_africa_region
+        }
+      }
+    }
+    effect = {
+      add_years_of_income = 1
+    }
+  }
+
+  athenian_islands = {
+    icon = mission_indian_trade_company
+    required_missions = {indian_trade_control}
+    provinces_to_highlight = {
+      OR = {
+        area = mascarenes_area
+        area = indian_ocean_islands_area
+        area = indonesian_islands_area
+        area = lanka_area
+    		area = south_lanka_area
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      mascarenes_area = {
+        type = all
+        owned_by = ROOT
+      }
+      indian_ocean_islands_area = {
+        type = all
+        owned_by = ROOT
+      }
+      indonesian_islands_area = {
+        type = all
+        owned_by = ROOT
+      }
+      lanka_area = {
+        type = all
+        owned_by = ROOT
+      }
+      south_lanka_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      add_country_modifier = {
+        name = masters_of_indian_ocean
+        duration = -1
+      }
+      596 = {
+        add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = MASTERY_OF_INDIAN_OCEAN
+        }
+      }
+      561 = {
+        add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = MASTERY_OF_INDIAN_OCEAN
+        }
+      }
+    }
+  }
+}

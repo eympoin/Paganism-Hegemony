@@ -1,0 +1,645 @@
+namespace = flavor_athens
+
+#Reexpand Greek influence
+country_event = {
+  id = flavor_athens.1
+  title = flavor_athens.1.t
+  desc = flavor_athens.1.d
+  picture = COLONIZATION_eventPicture
+
+  is_triggered_only = yes
+
+  option = {
+    name = flavor_athens.1.a
+    custom_tooltip = greek_everywhere
+    set_country_flag = greek_influence_in_the_west
+  }
+
+}
+
+country_event = {#roman conversion
+  id = flavor_athens.2
+  title = flavor_athens.2.t
+  desc = flavor_athens.2.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      tag = WRM
+      was_tag = WRM
+    }
+    culture_group = neo-roman
+    any_owned_province = {
+     has_owner_religion = yes
+      OR = {
+        culture_group = neo-roman
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_athens.2.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+       has_owner_religion = yes
+        OR = {
+          culture_group = neo-roman
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = greek
+    }
+  }
+}
+
+#Rediscover Laurion mine
+country_event = {
+  id = flavor_athens.4
+  title = flavor_athens.4.t
+  desc = flavor_athens.4.d
+  picture = TRADEGOODS_eventPicture
+  fire_only_once = yes
+
+  trigger = {
+    is_year = 1486
+  }
+  mean_time_to_happen = {
+    years = 1
+  }
+
+  option = {
+    name = flavor_athens.4.a
+    146 = {
+      change_trade_goods = gold
+    }
+  }
+
+  option = {
+    name = flavor_athens.4.b
+    add_treasury = 200
+  }
+}
+
+
+#Great expedition
+country_event = {
+  id = flavor_athens.5
+  title = flavor_athens.5.t
+  desc = flavor_athens.5.d
+  picture = COLONIZATION_eventPicture
+  is_triggered_only = yes
+
+  option = {#merchant colony
+    name = flavor_athens.5.a
+    custom_tooltip = ath_merchant_colony_tooltip
+    set_country_flag = ath_merchant_colony
+    hidden_effect  = {
+      country_event = {id = flavor_athens.6 days = 30}
+    }
+  }
+
+  option = {#warrior colony
+    name = flavor_athens.5.b
+    custom_tooltip = ath_warrior_colony_tooltip
+    set_country_flag = ath_warrior_colony
+    hidden_effect  = {
+      country_event = {id = flavor_athens.6 days = 30}
+    }
+  }
+
+  option = {#citizen colony
+    name = flavor_athens.5.c
+    custom_tooltip = ath_citizen_colony_tooltip
+    set_country_flag = ath_citizen_colony
+    hidden_effect  = {
+      country_event = {id = flavor_athens.6 days = 30}
+    }
+  }
+}
+
+#the beginning
+country_event = {
+  id = flavor_athens.6
+  title = flavor_athens.6.t
+  desc = flavor_athens.6.d
+  picture = SHIP_SAILING_eventPicture
+  is_triggered_only = yes
+
+  option = {#may Poseidon be with us
+    name = flavor_athens.6.a
+    custom_tooltip = lets_begin
+    hidden_effect  = {
+      country_event = {id = flavor_athens.7 days = 30}
+    }
+  }
+}
+
+#arrival in egypt
+country_event = {
+  id = flavor_athens.7
+  title = flavor_athens.7.t
+  desc = flavor_athens.7.d
+  picture = DIPLOMACY_eventPicture
+  is_triggered_only = yes
+
+  option = {#invite_ptolemaic
+    name = flavor_athens.7.a
+    set_country_flag = invite_ptolemaic
+    custom_tooltip = they_will_help_us_greatly
+    hidden_effect  = {
+      country_event = {id = flavor_athens.8 days = 30}
+    }
+  }
+
+  option = {#nubian_mercenaries
+    name = flavor_athens.7.b
+    set_country_flag = invite_nubians
+    custom_tooltip = they_will_help_us_greatly
+    hidden_effect  = {
+      country_event = {id = flavor_athens.8 days = 30}
+    }
+  }
+
+  option = {#invite_egyptian_artisans
+    name = flavor_athens.7.c
+    set_country_flag = invite_egyptian_artisans
+    custom_tooltip = they_will_help_us_greatly
+    hidden_effect  = {
+      country_event = {id = flavor_athens.8 days = 30}
+    }
+  }
+}
+
+#where to land
+country_event = {
+  id = flavor_athens.8
+  title = flavor_athens.8.t
+  desc = flavor_athens.8.d
+  picture = COLONIZATION_eventPicture
+  is_triggered_only = yes
+
+  option = {#socotra
+    name = flavor_athens.8.a
+    1099 = {
+      owner = {
+        country_event = {id = flavor_athens.9}
+      }
+    }
+    set_country_flag = choose_socotra
+
+  }
+
+  option = {#mokha
+    name = flavor_athens.8.b
+    2783 = {
+      owner = {
+        country_event = {id = flavor_athens.9}
+      }
+    }
+    set_country_flag = choose_mokha
+  }
+
+  option = {#hobyo
+    name = flavor_athens.8.c
+    387 = {
+      owner = {
+        country_event = {id = flavor_athens.9}
+      }
+    }
+    set_country_flag = choose_hobyo
+  }
+}
+
+#local answer
+country_event = {
+  id = flavor_athens.9
+  title = flavor_athens.9.t
+  desc = flavor_athens.9.d
+  picture = BATTLE_eventPicture
+  is_triggered_only = yes
+
+  option = {#accept
+    name = flavor_athens.9.a
+    FROM = {
+        country_event = {id = flavor_athens.10}
+    }
+
+  }
+
+  option = {#refuse
+    name = flavor_athens.9.b
+    FROM = {
+        country_event = {id = flavor_athens.11}
+    }
+  }
+}
+
+#accept
+country_event = {
+  id = flavor_athens.10
+  title = flavor_athens.10.t
+  desc = flavor_athens.10.d
+  picture = CORRUPTION_eventPicture
+  is_triggered_only = yes
+
+  option = {#they have accepted
+    name = flavor_athens.10.a
+    add_treasury = -100
+    FROM = {
+      add_treasury = 100
+    }
+    if = {
+      limit = {
+        has_country_flag = choose_socotra
+      }
+      1099 = {
+        cede_province = ROOT
+        infantry = PREV
+        infantry = PREV
+        infantry = PREV
+        cavalry = PREV
+        transport = PREV
+        transport = PREV
+        transport = PREV
+        transport = PREV
+        transport = PREV
+        light_ship = PREV
+        light_ship = PREV
+        light_ship = PREV
+        light_ship = PREV
+        light_ship = PREV
+        add_province_modifier = {
+          name = athenian_new_base
+          duration =-1
+        }
+      }
+    }
+    if = {
+      limit = {
+        has_country_flag = choose_mokha
+      }
+      387 = {
+        cede_province = ROOT
+        infantry = PREV
+        infantry = PREV
+        infantry = PREV
+        cavalry = PREV
+        transport = PREV
+        transport = PREV
+        transport = PREV
+        transport = PREV
+        transport = PREV
+        light_ship = PREV
+        light_ship = PREV
+        light_ship = PREV
+        light_ship = PREV
+        light_ship = PREV
+        add_province_modifier = {
+          name = athenian_new_base
+          duration =-1
+        }
+      }
+    }
+
+    if = {
+      limit = {
+        has_country_flag = choose_hobyo
+      }
+      2783 = {
+        cede_province = ROOT
+        infantry = PREV
+        infantry = PREV
+        infantry = PREV
+        cavalry = PREV
+        transport = PREV
+        transport = PREV
+        transport = PREV
+        transport = PREV
+        transport = PREV
+        light_ship = PREV
+        light_ship = PREV
+        light_ship = PREV
+        light_ship = PREV
+        light_ship = PREV
+        add_province_modifier = {
+          name = athenian_new_base
+          duration =-1
+        }
+      }
+    }
+
+    if = {
+      limit = {
+        has_country_flag = invite_egyptian_artisans
+      }
+      every_owned_province = {
+        limit = {
+          has_province_modifier = athenian_new_base
+        }
+        add_base_tax = 3
+      }
+    }
+
+    if = {
+      limit = {
+        has_country_flag = invite_nubians
+      }
+      every_owned_province = {
+        limit = {
+          has_province_modifier = athenian_new_base
+        }
+        add_base_manpower = 3
+      }
+    }
+
+    if = {
+      limit = {
+        has_country_flag = invite_ptolemaic
+      }
+      every_owned_province = {
+        limit = {
+          has_province_modifier = athenian_new_base
+        }
+        add_base_production = 3
+      }
+    }
+    if = {
+      limit = {
+        has_country_flag = ath_warrior_colony
+      }
+      every_owned_province = {
+        limit = {
+          has_province_modifier = athenian_new_base
+        }
+        infantry = ROOT
+        infantry = ROOT
+        add_base_manpower = 2
+      }
+    }
+
+    if = {
+      limit = {
+        has_country_flag = ath_citizen_colony
+      }
+      every_owned_province = {
+        limit = {
+          has_province_modifier = athenian_new_base
+        }
+        change_culture = greek
+      }
+    }
+
+    if = {
+      limit = {
+        has_country_flag = ath_merchant_colony
+      }
+      every_owned_province = {
+        limit = {
+          has_province_modifier = athenian_new_base
+        }
+        add_trade_modifier = {
+            who = ROOT
+            duration = -1
+            power = 50
+            key = STRONG_MERCHANTS
+        }
+      }
+    }
+  }
+}
+
+
+country_event = {
+  id = flavor_athens.11
+  title = flavor_athens.11.t
+  desc = flavor_athens.11.d
+  picture = BATTLE_eventPicture
+  is_triggered_only = yes
+
+  option = {#they have refused
+    name = flavor_athens.11.a
+
+    if = {
+      limit = {
+        has_country_flag = choose_socotra
+      }
+      declare_war_with_cb = {
+        who = FROM
+        casus_belli = cb_annex
+        war_goal_province = 1099
+      }
+      1099 = {
+        cede_province = ROOT
+        infantry = PREV
+        infantry = PREV
+        infantry = PREV
+        cavalry = PREV
+        transport = PREV
+        transport = PREV
+        transport = PREV
+        transport = PREV
+        transport = PREV
+        light_ship = PREV
+        light_ship = PREV
+        light_ship = PREV
+        light_ship = PREV
+        light_ship = PREV
+        add_province_modifier = {
+          name = athenian_new_base
+          duration =-1
+        }
+      }
+    }
+    if = {
+      limit = {
+        has_country_flag = choose_mokha
+      }
+      declare_war_with_cb = {
+        who = FROM
+        casus_belli = cb_annex
+        war_goal_province = 387
+      }
+      387 = {
+        cede_province = ROOT
+        infantry = PREV
+        infantry = PREV
+        infantry = PREV
+        cavalry = PREV
+        transport = PREV
+        transport = PREV
+        transport = PREV
+        transport = PREV
+        transport = PREV
+        light_ship = PREV
+        light_ship = PREV
+        light_ship = PREV
+        light_ship = PREV
+        light_ship = PREV
+        add_province_modifier = {
+          name = athenian_new_base
+          duration =-1
+        }
+      }
+    }
+
+    if = {
+      limit = {
+        has_country_flag = choose_hobyo
+      }
+      declare_war_with_cb = {
+        who = FROM
+        casus_belli = cb_annex
+        war_goal_province = 2783
+      }
+      2783 = {
+        cede_province = ROOT
+        infantry = PREV
+        infantry = PREV
+        infantry = PREV
+        cavalry = PREV
+        transport = PREV
+        transport = PREV
+        transport = PREV
+        transport = PREV
+        transport = PREV
+        light_ship = PREV
+        light_ship = PREV
+        light_ship = PREV
+        light_ship = PREV
+        light_ship = PREV
+        add_province_modifier = {
+          name = athenian_new_base
+          duration =-1
+        }
+      }
+    }
+
+    if = {
+      limit = {
+        has_country_flag = invite_egyptian_artisans
+      }
+      every_owned_province = {
+        limit = {
+          has_province_modifier = athenian_new_base
+        }
+        add_base_tax = 3
+      }
+    }
+
+    if = {
+      limit = {
+        has_country_flag = invite_nubians
+      }
+      every_owned_province = {
+        limit = {
+          has_province_modifier = athenian_new_base
+        }
+        add_base_manpower = 3
+      }
+    }
+
+    if = {
+      limit = {
+        has_country_flag = invite_ptolemaic
+      }
+      every_owned_province = {
+        limit = {
+          has_province_modifier = athenian_new_base
+        }
+        add_base_production = 3
+      }
+    }
+
+    if = {
+      limit = {
+        has_country_flag = ath_warrior_colony
+      }
+      every_owned_province = {
+        limit = {
+          has_province_modifier = athenian_new_base
+        }
+        infantry = PREV
+        infantry = PREV
+        add_base_manpower = 2
+      }
+    }
+
+    if = {
+      limit = {
+        has_country_flag = ath_citizen_colony
+      }
+      every_owned_province = {
+        limit = {
+          has_province_modifier = athenian_new_base
+        }
+        change_culture = greek
+      }
+    }
+
+    if = {
+      limit = {
+        has_country_flag = ath_merchant_colony
+      }
+      every_owned_province = {
+        limit = {
+          has_province_modifier = athenian_new_base
+        }
+        add_trade_modifier = {
+            who = ROOT
+            duration = -1
+            power = 50
+            key = STRONG_MERCHANTS
+        }
+      }
+    }
+  }
+}
+
+#integrate league members
+country_event = {
+  id = flavor_athens.12
+  title = flavor_athens.12.t
+  desc = flavor_athens.12.d
+  picture = DIPLOMACY_eventPicture
+  is_triggered_only = yes
+
+  option = {
+    name = flavor_athens.12.a
+    every_ally = {
+        limit = {
+        NOT = {
+          army_strength = {
+            who = ROOT
+            value = 0.7
+          }
+        }
+      }
+      ROOT = {vassalize = PREV}
+    }
+  }
+}
+
+
+#new government
+country_event = {
+  id = flavor_athens.13
+  title = flavor_athens.13.t
+  desc = flavor_athens.13.d
+  picture = ELECTION_REPUBLICAN_eventPicture
+  is_triggered_only = yes
+
+  option = { #centralize
+		name = "flavor_athens.13.a"
+		ai_chance = { factor = 100 }
+		add_government_reform	= athenian_republic
+	}
+
+}

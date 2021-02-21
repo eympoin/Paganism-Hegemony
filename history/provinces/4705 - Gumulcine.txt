@@ -1,6 +1,6 @@
 owner = MAC
 controller = MAC
-culture = greek
+culture = byzantine_c
 religion = theoi
 capital = "Komotini"
 trade_goods = livestock
