@@ -161,12 +161,12 @@
  zunist_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  zunist_rebels_army:0 "$RELIGION$ Army"
 
- Illyrian_rebels_demand:0 "Convert $COUNTRYNAME$"
- Illyrian_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
- Illyrian_rebels_title:0 "Religious"
- Illyrian_rebels_name:0 "$RELIGION$ Zealots"
- Illyrian_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
- Illyrian_rebels_army:0 "$RELIGION$ Army"
+ illyrian_rebels_demand:0 "Convert $COUNTRYNAME$"
+ illyrian_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
+ illyrian_rebels_title:0 "Religious"
+ illyrian_rebels_name:0 "$RELIGION$ Zealots"
+ illyrian_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
+ illyrian_rebels_army:0 "$RELIGION$ Army"
 
  Zalmoxianism_rebels_demand:0 "Convert $COUNTRYNAME$"
  Zalmoxianism_rebels_demand_desc:0 "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
@@ -257,6 +257,8 @@
  phenician:0 "Canaanite"
  phenician_religion_desc:0 "A long forgotten religion reestablished by the Carthaginians/Phoenicians as a propaganda tool to unite its people under a none Roman faith. "
 
+ illyrian:0 "Illyrian"
+
  ancient_egyptian_rl:0 "Egyptian"
  ancient_egyptian_rl_religion_desc:0 "Gods who watched for Egypt since the beginning of their civilizations"
  chalcedonian:0 "Chalcedonian"
@@ -269,6 +271,6 @@
  arabian_religion_desc:0 "Represents the diverse arabian paganisms"
  zalmoxianism:0 "Zalmoxianism"
  Zalmoxianism_religion_desc:0 "The old religion of the Dacian named after their main god Zalmoxis"
- Illyrian_religion_desc:0 "Gods of the diverse Illyrian tribes now only present in Albania"
+ illyrian_religion_desc:0 "Gods of the diverse Illyrian tribes now only present in Albania"
  yazidism:0 "Yazidism"
  yazidism_religion_desc:0 "Yazidism is a monotheistic ethnic religion is based on belief in one God who created the world and entrusted it into the care of seven Holy Beings, known as Angels."

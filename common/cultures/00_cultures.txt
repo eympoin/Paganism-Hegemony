@@ -11037,7 +11037,7 @@ chalcedonian_group = {
 		}
 	}
 }
-illyrian = {
+illyrian_culture = {
 	graphical_culture = easterngfx
 	albanian = {
 		primary = ALB

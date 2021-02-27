@@ -13,7 +13,7 @@ base_manpower = 3
 is_city = yes
 estate = estate_nobles
 add_core = TLC
-add_core = ALG
+
 
 
 discovered_by = muslim

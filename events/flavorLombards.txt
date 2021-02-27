@@ -222,7 +222,7 @@ country_event = {
 		}
 	}
 
-	option = { #try to fight the lombard influence in the Illyrian courts
+	option = { #try to fight the lombard influence in the illyrian courts
 		name = "flavor_lom.4.c"
 		ai_chance = {
 			factor = 50

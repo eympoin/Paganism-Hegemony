@@ -87,6 +87,7 @@ country_event = { #integrate paphlagonia quicker
 	picture = HRE_eventPicture
 	trigger = {
 		is_year = 1449
+		tag = PON
 	}
 
 

@@ -86,7 +86,7 @@ country_event = {
         any_owned_province = {
           OR = {
             religion = slavic
-            religion = Illyrian
+            religion = illyrian
             religion = tengri_pagan_reformed
             religion = arabian
             religion = chalcedonian
@@ -115,7 +115,7 @@ country_event = {
         any_owned_province = {
           OR = {
           religion = slavic
-          religion = Illyrian
+          religion = illyrian
           religion = tengri_pagan_reformed
           religion = arabian
           religion = chalcedonian
@@ -142,7 +142,7 @@ country_event = {
         any_owned_province = {
           OR = {
           religion = slavic
-          religion = Illyrian
+          religion = illyrian
           religion = tengri_pagan_reformed
           religion = arabian
           religion = chalcedonian
@@ -186,10 +186,10 @@ country_event = {
     }
     random_owned_province  = {
       limit = {
-        religion = Illyrian
+        religion = illyrian
       }
       spawn_rebels = {
-        type = Illyrian_rebels
+        type = illyrian_rebels
         size = 2
         leader = "Stefan"
       }
@@ -253,13 +253,13 @@ country_event = {
     name = slavic_uprising.3.b
     trigger = {
       any_owned_province = {
-        religion = Illyrian
+        religion = illyrian
       }
     }
     ai_chance = {
       factor = 100
     }
-    change_religion = Illyrian
+    change_religion = illyrian
   }
   option = { #become egyptian
     name = slavic_uprising.3.h
@@ -344,10 +344,10 @@ country_event = {
     }
     random_owned_province  = {
       limit = {
-        religion = Illyrian
+        religion = illyrian
       }
       spawn_rebels = {
-        type = Illyrian_rebels
+        type = illyrian_rebels
         size = 2
         leader = "Stefan"
       }
@@ -416,14 +416,14 @@ country_event = {
     name = slavic_uprising.4.b
     trigger = {
       any_owned_province = {
-        religion = Illyrian
+        religion = illyrian
       }
     }
     ai_chance = {
       factor = 10
     }
     set_country_flag = defy_the_emperor
-    change_religion = Illyrian
+    change_religion = illyrian
     declare_war_with_cb = {
       who = emperor
       casus_belli = cb_religious_conformance
@@ -530,10 +530,10 @@ country_event = {
     }
     random_owned_province  = {
       limit = {
-        religion = Illyrian
+        religion = illyrian
       }
       spawn_rebels = {
-        type = Illyrian_rebels
+        type = illyrian_rebels
         size = 2
         leader = "Stefan"
       }
@@ -602,14 +602,14 @@ country_event = {
     name = slavic_uprising.5.b
     trigger = {
       any_owned_province = {
-        religion = Illyrian
+        religion = illyrian
       }
     }
     ai_chance = {
       factor = 10
     }
     set_country_flag = defy_the_emperor
-    change_religion = Illyrian
+    change_religion = illyrian
     declare_war_with_cb = {
       who = emperor
       casus_belli = cb_religious_conformance

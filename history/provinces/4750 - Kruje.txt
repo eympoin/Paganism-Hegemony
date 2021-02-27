@@ -1,17 +1,17 @@
-# 4750 - Krujë, Tirana, central Albania
+# 4750 - Krujï¿½, Tirana, central Albania
 
 owner = ALB
 controller = ALB
 culture = albanian
-religion = Illyrian
-capital = "Krujë"
+religion = illyrian
+capital = "Krujï¿½"
 trade_goods = wool
 hre = yes
 base_tax = 4
 base_production = 3
 base_manpower = 3
 is_city = yes
-fort_15th = yes # Krujë Castle
+fort_15th = yes # Krujï¿½ Castle
 add_core = ALB
 discovered_by = KAZ
 discovered_by = CRI

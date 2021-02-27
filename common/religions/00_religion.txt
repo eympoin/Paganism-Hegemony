@@ -1613,7 +1613,7 @@ pagan = {
     heretic = { OLD_ZALMOXIANIST }
   }
 
-  Illyrian = {
+  illyrian = {
     icon = 42
     color = { 105 105 105 }
     country = {
@@ -1628,7 +1628,7 @@ pagan = {
       local_missionary_strength = -0.01
     }
 
-    heretic = { OLD_Illyrian }
+    heretic = { OLD_illyrian }
   }
 
 
