@@ -95,6 +95,7 @@ BET = "countries/Bretland.txt"
 BRW = "countries/Brytenwalda.txt"
 
 MAC = "countries/Macedonia.txt"
+EMA = "countries/Macedonian Expedition.txt"
 DRD = "countries/Dardania.txt"
 RSC = "countries/Rascia.txt"
 RHO = "countries/Rhodos.txt"

@@ -5249,5 +5249,56 @@ masters_of_indian_ocean = {
 
 greek_leader = {
   same_culture_advisor_cost = -0.5
-  culture_conversion_cost = -0.1	
+  culture_conversion_cost = -0.1
+}
+
+hellenize_slavs = {
+  culture_conversion_cost = -0.3
+}
+
+conquerors_mac = {
+  global_supply_limit_modifier = 0.10
+  province_warscore_cost = -0.2
+  core_creation = -0.1
+}
+
+integration_of_the_league = {
+  diplomatic_annexation_cost = -0.3
+}
+
+reformed_infantry_mac = {
+  infantry_power = 0.1
+}
+
+reformed_cavalry_mac = {
+  cavalry_power = 0.1
+}
+
+reformed_siege_warfare_mac = {
+  siege_ability = 0.10
+}
+
+reformed_commanders_mac = {
+  leader_land_fire = 1
+  leader_land_manuever = 1
+  leader_land_shock = 1
+  leader_siege = 1
+}
+
+the_last_push = {
+  land_morale = 0.1
+}
+
+regional_capital = {
+  development_cost = -0.1
+  local_tax_modifier = 0.2
+  local_production_efficiency = 0.2
+}
+help_our_savior = {
+  local_unrest = -8
+}
+
+ended_raid ={
+  global_unrest = -1
+  global_tax_modifier = 0.1
 }

@@ -1,0 +1,522 @@
+Macedonia_3_1 = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = MAC
+      was_tag = MAC
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+
+  a_new_odyssey = {
+    icon = mission_coromandel_expansion
+    required_missions = {}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      is_year = 1445
+    }
+    effect = {
+    #events
+    }
+  }
+
+  integrate_pel = {
+    icon = fight_bosnian_heresies
+    required_missions = {a_new_odyssey}
+    provinces_to_highlight = {
+        OR = {
+          province_id = 3001
+          province_id = 4780
+        }
+        NOT = {owned_by = ROOT}
+      }
+      trigger = {
+        owns_core_province = 3001
+        owns_core_province = 4780
+      }
+      effect = {
+      pelagonia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      3001 = {
+        add_base_production = 2
+      }
+    }
+  }
+
+  mission_african_gold = {
+    icon = king_of_naples
+    required_missions = {integrate_pel}
+    provinces_to_highlight = {
+      OR = {
+        province_id = 1766
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      owns_core_province = 1766
+    }
+    effect = {
+      add_treasury = 100
+      albania_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      bulgaria_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  balkanic_conquest = {
+    icon = fortress_of_belgrade
+    required_missions = {gold_kosovo}
+    provinces_to_highlight = {
+      OR = {
+        region = balkan_region
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      num_of_owned_provinces_with = {
+        value = 25
+        OR = {
+          region = balkan_region
+        }
+      }
+    }
+    effect = {
+      balkan_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      add_country_modifier = {
+        name = hellenize_slavs
+        duration = 36500
+      }
+    }
+  }
+
+  regional_hegemony = {#no country stronger in Balkans/Greece
+    icon = moravian_arms
+    required_missions = {balkanic_conquest weaken_byz battle_for_greece_mac}
+    provinces_to_highlight = {
+      owner = {
+        OR = {
+          capital_scope = {region = balkan_region}
+          capital_scope = {region = greece_region}
+        }
+        NOT = {tag = MAC}
+        army_strength = {
+          who = ROOT
+          value = 0.5
+        }
+      }
+    }
+    trigger = {
+      NOT = {
+        any_country = {
+          OR = {
+            capital_scope = {region = balkan_region}
+            capital_scope = {region = greece_region}
+          }
+          NOT = {tag = MAC}
+          army_strength = {
+          	who = ROOT
+          	value = 0.5
+          }
+        }
+      }
+    }
+    effect = {
+      add_mil_power = 100
+      anatolia_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      syria_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      add_country_modifier = {
+        name = conquerors_mac
+        duration = 7300
+      }
+    }
+  }
+
+  for_glory = {#try to reform Alexander's empire
+    icon = mission_monarch_in_throne_room
+    required_missions = {regional_hegemony macedonian_league}
+    provinces_to_highlight = {
+      OR = {
+        region = anatolia_region
+        region = syria_region
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      num_of_owned_provinces_with = {
+        value = 30
+        OR = {
+          region = anatolia_region
+        }
+      }
+      num_of_owned_provinces_with = {
+        value = 15
+        OR = {
+          region = syria_region
+        }
+      }
+    }
+    effect = {
+      add_prestige = 20
+      add_legitimacy = 20
+      mashriq_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      persia_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      khorasan_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  alexander_pride = {
+    icon = mission_empire
+    required_missions = {for_glory}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      tag = AXD
+    }
+    effect = {
+      #event
+    }
+  }
+}
+
+Macedonia_2_1 = {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = MAC
+      was_tag = MAC
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  pontic_alliance = {
+    icon = mission_alliances
+    required_missions = {a_new_odyssey}
+    position = 2
+    provinces_to_highlight = {
+    }
+    trigger = {
+        alliance_with = PON
+    }
+    effect = {
+      add_dip_power = 100
+    }
+  }
+
+  prepare_for_war = {
+    icon = mission_conquer_50_development
+    required_missions = {pontic_alliance}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      army_size_percentage = 0.6
+      manpower_percentage = 0.8
+      }
+    effect = {
+      add_army_tradition = 20
+      thrace_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  weaken_byz = {
+    icon = join_the_empire
+    required_missions = {prepare_for_war gold_kosovo}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      army_strength = {
+        who = BYZ
+        value = 2
+      }
+      monthly_income = BYZ
+    }
+    effect = {
+      add_prestige = 10
+      add_stability = 1
+      hudavendigar_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+}
+
+
+Macedonia_4_1 = {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = MAC
+      was_tag = MAC
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  invade_thessaly = {
+    icon = retake_thessaly
+    required_missions = {a_new_odyssey}
+    position = 2
+    provinces_to_highlight = {
+      OR = {
+        area = thessalia_area
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      thessalia_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      northern_greece_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      capital_scope = {
+          ROOT = {
+              cavalry = PREV
+          }
+      }
+    }
+  }
+
+  conquer_epirus = {
+    icon = pacify_the_albanian_lands
+    required_missions = {invade_thessaly}
+    provinces_to_highlight = {
+      OR = {
+        area = northern_greece_area
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      northern_greece_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      attica_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  battle_for_greece_mac = {
+    icon = capture_adriatic_ports
+    required_missions = {conquer_epirus}
+    provinces_to_highlight = {
+      OR = {
+        area = attica_area
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      attica_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      #event
+    }
+  }
+
+  macedonian_league = {
+    icon = mission_have_two_subjects
+    required_missions = {battle_for_greece_mac}
+    provinces_to_highlight = {
+      OR = {
+        area = morea_area
+        area = kyklades_area
+        area = aegean_archipelago_area
+        area = south_islands_area
+      }
+      NOT = {country_or_non_sovereign_subject_holds = ROOT}
+    }
+    trigger = {
+      kyklades_area = {
+        type = all
+        country_or_non_sovereign_subject_holds = ROOT
+      }
+      morea_area = {
+        type = all
+        country_or_non_sovereign_subject_holds = ROOT
+      }
+      aegean_archipelago_area = {
+        type = all
+        country_or_non_sovereign_subject_holds = ROOT
+      }
+      south_islands_area = {
+        type = all
+        country_or_non_sovereign_subject_holds = ROOT
+      }
+    }
+    effect = {
+      add_country_modifier = {
+        name = integration_of_the_league
+        duration = 7300
+      }
+    }
+  }
+}
+
+Macedonia_5_1 = {
+  slot = 5
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = MAC
+      was_tag = MAC
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  reform_cav = {
+    icon = mission_cossack_cavalry
+    required_missions = {invade_thessaly}
+    position = 3
+    provinces_to_highlight = {
+    }
+    trigger = {
+      army_tradition = 50
+      mil_power = 100
+
+    }
+    effect = {
+      add_mil_power = -100
+      add_country_modifier = {
+        name = reformed_cavalry_mac
+        duration = -1
+      }
+    }
+  }
+
+  reform_inf = {
+    icon = mission_landsknecht_soldier
+    required_missions = {reform_cav}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      army_tradition = 50
+      mil_power = 100
+    }
+    effect = {
+      add_mil_power = -100
+      add_country_modifier = {
+        name = reformed_infantry_mac
+        duration = -1
+      }
+    }
+  }
+
+  reform_siege_warfare = {
+    icon = mission_steppe_warriors
+    required_missions = {reform_inf}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      artillery_fraction = 0.25
+      army_tradition = 50
+      mil_power = 100
+    }
+    effect = {
+      add_mil_power = -100
+      add_country_modifier = {
+        name = reformed_siege_warfare_mac
+        duration = -1
+      }
+    }
+  }
+
+  reform_command = {
+    icon = mission_italian_condottiere
+    required_missions = {reform_siege_warfare}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      army_professionalism = 0.5
+      mil_power = 100
+    }
+    effect = {
+      add_mil_power = -100
+      add_country_modifier = {
+        name = reformed_commanders_mac
+        duration = -1
+      }
+    }
+  }
+}

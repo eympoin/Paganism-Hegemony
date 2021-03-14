@@ -1919,7 +1919,7 @@ iberian	= {
 		}
 	}
 	basque = {
-		primary = NAV
+		primary = BSQ
 		dynasty_names = {
 			"de Navarra" "de Beaumont" "de Ler�n" "de Monteagudo" Escors
 			# CKII

@@ -1224,6 +1224,7 @@ country_event = {
 			AND = {
 				NOT = {has_country_flag = trading_alaska}
 				any_owned_province = {
+					is_city = yes
 					colonial_region = colonial_alaska
 					NOT = { has_province_modifier = carthaginian_trading_outpost}
 				}
@@ -1231,6 +1232,7 @@ country_event = {
 			AND = {
 				NOT = {has_country_flag = trading_louisiana}
 				any_owned_province = {
+					is_city = yes
 					colonial_region = colonial_louisiana
 					NOT = { has_province_modifier = carthaginian_trading_outpost}
 				}
@@ -1238,6 +1240,7 @@ country_event = {
 			AND = {
 				NOT = {has_country_flag = trading_canada}
 				any_owned_province = {
+					is_city = yes
 					colonial_region = colonial_canada
 					NOT = { has_province_modifier = carthaginian_trading_outpost}
 				}
@@ -1245,6 +1248,7 @@ country_event = {
 			AND = {
 				NOT = {has_country_flag = trading_america}
 				any_owned_province = {
+					is_city = yes
 					colonial_region = colonial_eastern_america
 					NOT = { has_province_modifier = carthaginian_trading_outpost}
 				}
@@ -1252,13 +1256,15 @@ country_event = {
 			AND = {
 				NOT = {has_country_flag = trading_california}
 				any_owned_province = {
+					is_city = yes
 					colonial_region = colonial_california
 					NOT = { has_province_modifier = carthaginian_trading_outpost}
 				}
 			}
 			AND = {
+				NOT = {has_country_flag = trading_mexico}
 				any_owned_province = {
-					NOT = {has_country_flag = trading_colombia}
+					is_city = yes
 					colonial_region = colonial_mexico
 					NOT = { has_province_modifier = carthaginian_trading_outpost}
 				}
@@ -1266,6 +1272,7 @@ country_event = {
 			AND = {
 					NOT = {has_country_flag = trading_colombia}
 					any_owned_province = {
+						is_city = yes
 						colonial_region = colonial_colombia
 						NOT = { has_province_modifier = carthaginian_trading_outpost}
 					}
@@ -1273,6 +1280,7 @@ country_event = {
 			AND = {
 					NOT = {has_country_flag = trading_carribean}
 					any_owned_province = {
+						is_city = yes
 						colonial_region = colonial_the_carribean
 						NOT = { has_province_modifier = carthaginian_trading_outpost}
 					}
@@ -1280,6 +1288,7 @@ country_event = {
 			AND = {
 					NOT = {has_country_flag = trading_peru}
 					any_owned_province = {
+						is_city = yes
 						colonial_region = colonial_peru
 						NOT = { has_province_modifier = carthaginian_trading_outpost}
 					}
@@ -1287,6 +1296,7 @@ country_event = {
 			AND = {
 					NOT = {has_country_flag = trading_plata}
 					any_owned_province = {
+						is_city = yes
 						colonial_region = colonial_la_plata
 						NOT = { has_province_modifier = carthaginian_trading_outpost}
 					}
@@ -1294,6 +1304,7 @@ country_event = {
 			AND = {
 					NOT = {has_country_flag = trading_brazil}
 					any_owned_province = {
+						is_city = yes
 						colonial_region = colonial_brazil
 						NOT = { has_province_modifier = carthaginian_trading_outpost}
 					}
@@ -1302,6 +1313,7 @@ country_event = {
 			AND = {
 					NOT = {has_country_flag = trading_australia}
 					any_owned_province = {
+						is_city = yes
 						colonial_region = colonial_australia
 						NOT = { has_province_modifier = carthaginian_trading_outpost}
 					}
@@ -1309,6 +1321,7 @@ country_event = {
 			AND = {
 					NOT = {has_country_flag = trading_south_africa}
 					any_owned_province = {
+						is_city = yes
 						superregion = southern_africa_superregion
 						NOT = { has_province_modifier = carthaginian_trading_outpost}
 					}
@@ -1316,6 +1329,7 @@ country_event = {
 			AND = {
 					NOT = {has_country_flag = trading_africa}
 					any_owned_province = {
+						is_city = yes
 						superregion = africa_superregion
 						NOT = { has_province_modifier = carthaginian_trading_outpost}
 					}
@@ -1337,11 +1351,13 @@ country_event = {
 					NOT = { has_country_modifier = carthaginian_trading_outpost}
 				}
 				any_owned_province = {
+					is_city = yes
 					colonial_region = colonial_alaska
 				}
 			}
 			random_owned_province = {
 				limit = {
+					is_city = yes
 					colonial_region = colonial_alaska
 					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
@@ -1364,11 +1380,13 @@ country_event = {
 					NOT = { has_country_modifier = carthaginian_trading_outpost}
 				}
 				any_owned_province = {
+					is_city = yes
 					colonial_region = colonial_canada
 				}
 			}
 			random_owned_province = {
 				limit = {
+					is_city = yes
 					colonial_region = colonial_canada
 					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
@@ -1391,11 +1409,13 @@ country_event = {
 					NOT = { has_country_modifier = carthaginian_trading_outpost}
 				}
 				any_owned_province = {
+					is_city = yes
 					colonial_region = colonial_california
 				}
 			}
 			random_owned_province = {
 				limit = {
+					is_city = yes
 					colonial_region = colonial_california
 					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
@@ -1418,11 +1438,13 @@ country_event = {
 					NOT = { has_country_modifier = carthaginian_trading_outpost}
 				}
 				any_owned_province = {
+					is_city = yes
 					colonial_region = colonial_louisiana
 				}
 			}
 			random_owned_province = {
 				limit = {
+					is_city = yes
 					colonial_region = colonial_louisiana
 					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
@@ -1445,11 +1467,13 @@ country_event = {
 					NOT = { has_country_modifier = carthaginian_trading_outpost}
 				}
 				any_owned_province = {
+					is_city = yes
 					colonial_region = colonial_eastern_america
 				}
 			}
 			random_owned_province = {
 				limit = {
+					is_city = yes
 					colonial_region = colonial_eastern_america
 					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
@@ -1472,11 +1496,13 @@ country_event = {
 					NOT = { has_country_modifier = carthaginian_trading_outpost}
 				}
 				any_owned_province = {
+					is_city = yes
 					colonial_region = colonial_the_carribean
 				}
 			}
 			random_owned_province = {
 				limit = {
+					is_city = yes
 					colonial_region = colonial_the_carribean
 					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
@@ -1499,11 +1525,13 @@ country_event = {
 					NOT = { has_country_modifier = carthaginian_trading_outpost}
 				}
 				any_owned_province = {
+					is_city = yes
 					colonial_region = colonial_mexico
 				}
 			}
 			random_owned_province = {
 				limit = {
+					is_city = yes
 					colonial_region = colonial_mexico
 					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
@@ -1526,11 +1554,13 @@ country_event = {
 					NOT = { has_country_modifier = carthaginian_trading_outpost}
 				}
 				any_owned_province = {
+					is_city = yes
 					colonial_region = colonial_colombia
 				}
 			}
 			random_owned_province = {
 				limit = {
+					is_city = yes
 					colonial_region = colonial_colombia
 					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
@@ -1553,11 +1583,13 @@ country_event = {
 					NOT = { has_country_modifier = carthaginian_trading_outpost}
 				}
 				any_owned_province = {
+					is_city = yes
 					colonial_region = colonial_peru
 				}
 			}
 			random_owned_province = {
 				limit = {
+					is_city = yes
 					colonial_region = colonial_peru
 					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
@@ -1581,10 +1613,12 @@ country_event = {
 				}
 				any_owned_province = {
 					colonial_region = colonial_brazil
+					is_city = yes
 				}
 			}
 			random_owned_province = {
 				limit = {
+					is_city = yes
 					colonial_region = colonial_brazil
 					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
@@ -1607,11 +1641,13 @@ country_event = {
 					NOT = { has_country_modifier = carthaginian_trading_outpost}
 				}
 				any_owned_province = {
+					is_city = yes
 					colonial_region = colonial_la_plata
 				}
 			}
 			random_owned_province = {
 				limit = {
+					is_city = yes
 					colonial_region = colonial_la_plata
 					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
@@ -1634,11 +1670,13 @@ country_event = {
 					NOT = { has_country_modifier = carthaginian_trading_outpost}
 				}
 				any_owned_province = {
+					is_city = yes
 					colonial_region = colonial_australia
 				}
 			}
 			random_owned_province = {
 				limit = {
+					is_city = yes
 					colonial_region = colonial_australia
 					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
@@ -1661,11 +1699,13 @@ country_event = {
 					NOT = { has_country_modifier = carthaginian_trading_outpost}
 				}
 				any_owned_province = {
+					is_city = yes
 					superregion = africa_superregion
 				}
 			}
 			random_owned_province = {
 				limit = {
+					is_city = yes
 					superregion = africa_superregion
 					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
@@ -1688,11 +1728,13 @@ country_event = {
 					NOT = { has_country_modifier = carthaginian_trading_outpost}
 				}
 				any_owned_province = {
+					is_city = yes
 					superregion = southern_africa_superregion
 				}
 			}
 			random_owned_province = {
 				limit = {
+					is_city = yes
 					superregion = southern_africa_superregion
 					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}

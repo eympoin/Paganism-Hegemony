@@ -1,0 +1,650 @@
+Macedonian_exp_3_1 = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = ASY
+      was_tag = ASY
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+
+  foothold_secured = {
+    icon = mission_conquer_50_development
+    required_missions = {}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      is_at_war = no
+      OSR = {exists = no}
+    }
+    effect = {
+    #events
+    }
+  }
+
+  conquest_of_mesopotamia = {
+    icon = mission_unite_home_region
+    required_missions = {foothold_secured}
+    provinces_to_highlight = {
+      OR = {
+        region = mashriq_region
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      num_of_owned_provinces_with = {
+        value = 18
+        OR = {
+          region = mashriq_region
+        }
+      }
+    }
+    effect = {
+    #events
+    }
+  }
+
+  prepare_the_strike = {
+    icon = mission_build_up_to_force_limit
+    required_missions = {conquest_of_mesopotamia}
+    provinces_to_highlight = {
+      OR = {
+        area = luristan_area
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      luristan_area = {
+        type = all
+        owned_by = ROOT
+      }
+      manpower_percentage = 0.9
+    }
+    effect = {
+      add_country_modifier = {
+        name = the_last_push
+        duration = 730
+      }
+      persia_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  king_of_persia_ema = {
+    icon = mission_persianate_empire
+    required_missions = {prepare_the_strike}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      owns_core_province = 414
+      NOT = {exists = PER}
+    }
+    effect = {
+      #events
+    }
+  }
+
+  stabilize_the_kingdom = {
+    icon = personal_diplomacy
+    required_missions = {king_of_persia_ema}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      #cleanse bad modif
+    }
+    effect = {
+      add_stability = 2
+    }
+  }
+
+  reunite_satrapies = {
+    icon = mission_conquer_persia
+    required_missions = {stabilize_the_kingdom}
+    provinces_to_highlight = {
+      OR = {
+        region = persia_region
+        region = khorasan_region
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      num_of_owned_provinces_with = {
+        value = 55
+        OR = {
+          region = persia_region
+          region = khorasan_region
+        }
+      }
+    }
+    effect = {
+    #events
+    }
+  }
+
+  time_to_go_home = {
+    icon = mission_establish_high_seas_navy
+    required_missions = {reunite_satrapies subjugate_armenia end_timur}
+    position = 7
+    provinces_to_highlight = {
+    }
+    trigger = {
+      prestige = 80
+    }
+    effect = {
+    #events
+    }
+  }
+
+  syrian_riches = {
+    icon = mission_arabian_fort
+    required_missions = {time_to_go_home}
+    provinces_to_highlight = {
+      OR = {
+        region = syria_region
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      num_of_owned_provinces_with = {
+        value = 15
+        OR = {
+          region = syria_region
+        }
+      }
+    }
+    effect = {
+      egypt_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      anatolia_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      2313 = {
+        add_province_modifier = {
+          name = regional_capital
+          duration = -1
+        }
+      }
+    }
+  }
+
+
+  macedonian_throne = {
+    icon = mission_monarch_in_throne_room
+    required_missions = {king_of_egypt conquest_of_asia}
+    position = 10
+    provinces_to_highlight = {
+      OR = {
+        region = greece_region
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      num_of_owned_provinces_with = {
+        value = 25
+        OR = {
+          region = greece_region
+        }
+      }
+    }
+    effect = {
+      balkan_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      148 = {
+        add_province_modifier = {
+          name = regional_capital
+          duration = -1
+        }
+      }
+    }
+  }
+
+  alexanders_pride_exp = {
+    icon = mission_empire
+    required_missions = {macedonian_throne}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      tag = AXD
+    }
+    effect = {
+      #event
+    }
+  }
+
+}
+
+Macedonian_exp_2_1 = {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = ASY
+      was_tag = ASY
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+
+  azerbaijan_help = {
+    icon = mission_crusade_for_varna
+    required_missions = {king_of_persia_ema}
+    position = 5
+    provinces_to_highlight = {
+      OR = {
+        region = shirvan_area
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      num_of_owned_provinces_with = {
+        value = 5
+        OR = {
+          region = shirvan_area
+        }
+      }
+    }
+    effect = {
+      caucasia_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      add_manpower = 5
+      every_owned_province = {
+        limit = {
+          culture = azerbaijani
+        }
+        add_country_modifier = {
+          name = help_our_savior
+          duration = 7300
+        }
+      }
+    }
+  }
+
+  subjugate_armenia = {
+    icon = mission_have_two_subjects
+    required_missions = {azerbaijan_help}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      ARM = {
+        OR = {
+          AND = {
+            NOT = {
+              army_size = 10
+            }
+            war_with = ROOT
+          }
+          exists = no
+        }
+      }
+    }
+    effect = {
+    #events create march
+    }
+  }
+
+  conquest_of_asia = {
+    icon = anatolian_frontier
+    required_missions = {syrian_riches}
+    position = 9
+    provinces_to_highlight = {
+      OR = {
+        region = anatolia_region
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      num_of_owned_provinces_with = {
+        value = 35
+        OR = {
+          region = anatolia_region
+        }
+      }
+    }
+    effect = {
+      add_adm_power = 100
+      328 = {
+        add_province_modifier = {
+          name = regional_capital
+          duration = -1
+        }
+      }
+    }
+  }
+}
+
+
+Macedonian_exp_4_1 = {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = ASY
+      was_tag = ASY
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+
+  recruit_natives = {
+    icon = mission_persian_soldiers
+    required_missions = {conquest_of_mesopotamia}
+    position = 3
+    provinces_to_highlight = {
+    }
+    trigger = {
+      dip_power = 200
+    }
+    effect = {
+    #event
+    add_manpower = 10
+    add_mil_power = 100
+    capital_scope = {
+        ROOT = {
+            infantry = PREV
+        }
+    }
+    capital_scope = {
+        ROOT = {
+            infantry = PREV
+        }
+    }
+    capital_scope = {
+        ROOT = {
+            infantry = PREV
+        }
+    }
+    capital_scope = {
+        ROOT = {
+            infantry = PREV
+        }
+    }
+    capital_scope = {
+        ROOT = {
+            cavalry = PREV
+        }
+    }
+    }
+  }
+
+  afg_allies = {
+    icon = mission_afghan_frontier
+    required_missions = {king_of_persia_ema}
+    position = 5
+    provinces_to_highlight = {
+      OR = {
+        religion = zunist
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      OR = {
+        any_owned_province = {
+          religion = zunist
+        }
+        khorasan_region = {
+          type = all
+          owned_by = ROOT
+        }
+      }
+    }
+    effect = {
+      #event priest of the sun god
+    }
+  }
+
+  end_timur = {
+    icon = mission_crusade_for_varna
+    required_missions = {afg_allies}
+    provinces_to_highlight = {
+      OR = {
+        region = sogdia_region
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      num_of_owned_provinces_with = {
+        value = 15
+        OR = {
+          region = sogdia_region
+        }
+      }
+    }
+    effect = {
+      add_adm_power = 100
+      454 = {
+        add_province_modifier = {
+          name = regional_capital
+          duration = -1
+        }
+      }
+      add_country_modifier = {
+        name = ended_raid
+        duration = 7300
+      }
+      multan_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      sindh_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      sind_sagar_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      lahore_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      northern_sindh_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  to_the_indus = {
+    icon = mission_rb_take_north_india
+    required_missions = {end_timur}
+    provinces_to_highlight = {
+      OR = {
+        area = northern_sindh_area
+        area = sind_sagar_area
+        area = sindh_area
+        area = lahore_area
+        area = multan_area
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      multan_area = {
+        type = all
+        owned_by = root
+      }
+      sind_sagar_area = {
+        type = all
+        owned_by = root
+      }
+      sindh_area = {
+        type = all
+        owned_by = root
+      }
+      northern_sindh_area = {
+        type = all
+        owned_by = root
+      }
+      lahore_area = {
+        type = all
+        owned_by = root
+      }
+    }
+    effect = {
+      add_prestige = 20
+      india_superregion = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  king_of_egypt = {
+    icon = mission_egyptian_mamluk_soldier
+    required_missions = {syrian_riches}
+    position = 9
+    provinces_to_highlight = {
+      OR = {
+        region = egypt_region
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      num_of_owned_provinces_with = {
+        value = 20
+        OR = {
+          region = egypt_region
+        }
+      }
+    }
+    effect = {
+      add_adm_power = 100
+      358 = {
+        add_province_modifier = {
+          name = regional_capital
+          duration = -1
+        }
+      }
+    }
+  }
+}
+
+Macedonian_exp_5_1 = {
+  slot = 5
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = ASY
+      was_tag = ASY
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  reform_cav_exp = {
+    icon = mission_cossack_cavalry
+    required_missions = {recruit_natives}
+    position = 4
+    provinces_to_highlight = {
+    }
+    trigger = {
+      army_tradition = 50
+      mil_power = 100
+
+    }
+    effect = {
+      add_mil_power = -100
+      add_country_modifier = {
+        name = reformed_cavalry_mac
+        duration = -1
+      }
+    }
+  }
+
+  reform_inf_exp = {
+    icon = mission_landsknecht_soldier
+    required_missions = {reform_cav}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      army_tradition = 50
+      mil_power = 100
+    }
+    effect = {
+      add_mil_power = -100
+      add_country_modifier = {
+        name = reformed_infantry_mac
+        duration = -1
+      }
+    }
+  }
+
+  reform_siege_warfare_exp = {
+    icon = mission_steppe_warriors
+    required_missions = {reform_inf}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      artillery_fraction = 0.25
+      army_tradition = 50
+      mil_power = 100
+    }
+    effect = {
+      add_mil_power = -100
+      add_country_modifier = {
+        name = reformed_siege_warfare_mac
+        duration = -1
+      }
+    }
+  }
+
+  reform_command_exp = {
+    icon = mission_italian_condottiere
+    required_missions = {reform_siege_warfare}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      army_professionalism = 0.5
+      mil_power = 100
+    }
+    effect = {
+      add_mil_power = -100
+      add_country_modifier = {
+        name = reformed_commanders_mac
+        duration = -1
+      }
+    }
+  }
+}
