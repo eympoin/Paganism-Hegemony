@@ -1,6 +1,6 @@
 government = monarchy
 primary_culture = lombard
-religion = deii
+religion = mithraic
 technology_group = western
 capital = 4728
 

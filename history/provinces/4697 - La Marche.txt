@@ -1,9 +1,9 @@
 owner = AQI
 controller = AQI
-capital = "Gu�ret"
+capital = "Guéret"
 is_city = yes
 culture = burgond
-religion = deii
+religion = mithraic
 hre = no
 base_tax = 2
 base_production = 2

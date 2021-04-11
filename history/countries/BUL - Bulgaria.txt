@@ -7,7 +7,6 @@ capital = 4704
 government_rank = 1
 add_loan = {
 	interest_modifier = 0.3
-	fixed_interest = yes
 	duration = 365
 }
 add_treasury = -73

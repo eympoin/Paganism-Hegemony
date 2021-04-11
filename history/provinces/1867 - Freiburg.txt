@@ -3,7 +3,7 @@
 owner = BOR
 controller = BOR
 culture = burgond
-religion = germanic
+religion = mithraic
 capital = "Lausanne"
 trade_goods = livestock
 hre = no

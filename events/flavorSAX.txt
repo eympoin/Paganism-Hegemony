@@ -179,7 +179,7 @@ country_event = {#Thuringian king die
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-		months = 3
+		months = 1
 	}
 	trigger = {
 		war_with = SOR
@@ -271,7 +271,7 @@ country_event = {#polabians ask help from the khanate
 	option = {#ask for help
 		name = "flavor_sax.7.a"
 		ai_chance = { factor = 5 }
-		SAX = {
+		OKH = {
 			country_event = { id = flavor_sax.13 }
 		}
 	}
@@ -328,21 +328,39 @@ country_event = {#polabians ask help from the khanate
 }
 
 country_event = {# peace polabians lose
-	id = flavor_sax.9
-	title = "flavor_sax.9.t"
-	desc = "flavor_sax.9.d"
+	id = flavor_sax.91
+	title = "flavor_sax.91.t"
+	desc = "flavor_sax.91.d"
 	picture = COUNTRY_COLLAPSE_eventPicture
 
 	fire_only_once = yes
 
 	trigger = {
 		tag = SOR
-		war_with = THU
-		NOT = {war_score = -50}
+		war_with = SAX
+		NOT = {
+			war_score_against = {
+				who = THU
+				value = -50
+				}
+			}
 	}
 	mean_time_to_happen = {
 		months = 1
 	}
+	option = {#RIP
+		name = "flavor_sax.91.a"
+		ai_chance = { factor = 0 }
+		SAX = {country_event = {id = flavor_sax.9}}
+	}
+}
+
+country_event = {# peace polabians lose
+	id = flavor_sax.9
+	title = "flavor_sax.9.t"
+	desc = "flavor_sax.9.d"
+	picture = COUNTRY_COLLAPSE_eventPicture
+	is_triggered_only = yes
 
 	option = {
 		name = "flavor_sax.9.a"
@@ -350,28 +368,31 @@ country_event = {# peace polabians lose
 		ai_chance = {
 			factor = 10
 		}
-		add_truce_with = SAX
-		white_peace = SAX
-		add_truce_with = OKH
-		white_peace = OKH
-		every_owned_province = {
-			limit = {
-				area = south_saxony_area
+		SOR = {
+			add_truce_with = SAX
+			white_peace = SAX
+			add_truce_with = OKH
+			white_peace = OKH
+			every_owned_province = {
+				limit = {
+					area = south_saxony_area
+				}
+				cede_province = THU
 			}
-			cede_province = THU
-		}
-		every_owned_province = {
-			limit = {
-				area = mittelmark_area
+			every_owned_province = {
+				limit = {
+					area = mittelmark_area
+				}
+				cede_province = THU
 			}
-			cede_province = THU
-		}
-		every_owned_province = {
-			limit = {
-				area = lusatia_area
+			every_owned_province = {
+				limit = {
+					area = lusatia_area
+				}
+				cede_province = OKH
 			}
-			cede_province = OKH
 		}
+
 		if = {
 			limit = {
 				VEL = {
@@ -423,25 +444,27 @@ country_event = {# peace polabians lose
 		ai_chance = {
 			factor = 10
 		}
-		add_truce_with = SAX
-		white_peace = SAX
-		every_owned_province = {
-			limit = {
-				area = south_saxony_area
+		SOR = {
+			add_truce_with = SAX
+			white_peace = SAX
+			every_owned_province = {
+				limit = {
+					area = south_saxony_area
+				}
+				cede_province = THU
 			}
-			cede_province = THU
-		}
-		every_owned_province = {
-			limit = {
-				area = mittelmark_area
+			every_owned_province = {
+				limit = {
+					area = mittelmark_area
+				}
+				cede_province = THU
 			}
-			cede_province = THU
-		}
-		every_owned_province = {
-			limit = {
-				area = lusatia_area
+			every_owned_province = {
+				limit = {
+					area = lusatia_area
+				}
+				cede_province = THU
 			}
-			cede_province = THU
 		}
 		if = {
 			limit = {
@@ -487,7 +510,7 @@ country_event = {# peace polabians wins against SAX
 	trigger = {
 		tag = SOR
 		war_with = THU
-		war_score = 50
+		war_score = 42
 	}
 	mean_time_to_happen = {
 		months = 1
@@ -714,74 +737,7 @@ country_event = {
     }
   }
 }
-#norse conversion
-country_event = {
-  id = flavor_sax.17
-  title = flavor_sax.17.t
-  desc = flavor_sax.17.d
-  picture = COLONIZATION_eventPicture
 
-  trigger = {
-    OR = {
-      tag = SAX
-      tag = THU
-    }
-    any_owned_province = {
-			OR = {
-      	religion = germanic
-				ROOT = {
-					has_country_flag = accepted_norse
-					}
-			}
-      OR = {
-        culture_group = scandinavian
-      }
-      NOT = { culture_group = germanic }
-      NOT = { nationalism	= 1 }
-      is_core = ROOT
-    }
-  }
-
-  mean_time_to_happen = {
-    years = 2
-  }
-
-  option = {#norse
-    name = flavor_sax.17.a
-    ai_chance = { factor = 1 }
-    trigger = {
-      any_owned_province = {
-        is_core = ROOT
-				OR = {
-	      	religion = germanic
-					ROOT = {
-						has_country_flag = accepted_norse
-						}
-				}
-        OR = {
-          culture_group = scandinavian
-        }
-        NOT = { nationalism	= 1 }
-      }
-    }
-    random_owned_province = {
-      limit = {
-			OR = {
-				religion = germanic
-				ROOT = {
-					has_country_flag = accepted_norse
-					}
-			}
-        OR = {
-          culture_group = scandinavian
-        }
-        NOT = { nationalism	= 1 }
-        is_core = ROOT
-      }
-      change_culture = norse
-    }
-  }
-}
 
 #norse faith fate
 country_event = {

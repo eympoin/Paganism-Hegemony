@@ -2,7 +2,7 @@
 owner = PDM
 controller = PDM
 culture = lombard
-religion = deii
+religion = mithraic
 hre = no
 base_tax = 3
 base_production = 4

@@ -94,7 +94,7 @@ country_event = {#franks
 		}
     culture_group = neo-roman
     any_owned_province = {
-      religion = deii
+			has_owner_religion = yes
       OR = {
         culture = lingerian
         culture = salian
@@ -115,7 +115,7 @@ country_event = {#franks
     ai_chance = { factor = 1 }
     random_owned_province = {
       limit = {
-        religion = deii
+				has_owner_religion = yes
         OR = {
           culture = lingerian
           culture = salian
@@ -143,7 +143,7 @@ country_event = {#burgond
     }
     culture_group = neo-roman
     any_owned_province = {
-      religion = deii
+			has_owner_religion = yes
       OR = {
         culture = burgond
       }
@@ -162,7 +162,7 @@ country_event = {#burgond
     ai_chance = { factor = 1 }
     random_owned_province = {
       limit = {
-        religion = deii
+				has_owner_religion = yes
         OR = {
           culture = burgond
         }

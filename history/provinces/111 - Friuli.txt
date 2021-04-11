@@ -3,7 +3,7 @@
 owner = AQU
 controller = AQU
 culture = aquileian 
-religion = deii 
+religion = mithraic
 hre = no 
 base_tax = 7
 base_production = 7

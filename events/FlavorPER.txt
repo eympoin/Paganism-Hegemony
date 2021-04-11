@@ -3227,88 +3227,44 @@ country_event = {
 	option = {#DIH
 		name = flavor_per_cw.26.a
 		trigger = {
-			DIH = {
-				NOT = { has_country_flag = loyal_satrap }
-				had_country_flag = {
-					flag = loyal_satrap
-					days = 0
-				}
-			}
+			FROM = {tag = DIH}
 		}
 		#add_prestige = 1
 	}
 	option = {#MRV
 		name = flavor_per_cw.26.b
 		trigger = {
-			MRV = {
-				NOT = { has_country_flag = loyal_satrap }
-				had_country_flag = {
-					flag = loyal_satrap
-					days = 0
-				}
-			}
+			FROM = {tag = MRV}
 		}
 	}
 	option = {#HRV
 		name = flavor_per_cw.26.c
 		trigger = {
-			HRV = {
-				NOT = { has_country_flag = loyal_satrap }
-				had_country_flag = {
-					flag = loyal_satrap
-					days = 0
-				}
-			}
+			FROM = {tag = HRV}
 		}
 	}
 	option = {#GOR
 		name = flavor_per_cw.26.e
 		trigger = {
-			GOR = {
-				NOT = { has_country_flag = loyal_satrap }
-				had_country_flag = {
-					flag = loyal_satrap
-					days = 0
-				}
-			}
+			FROM = {tag = GOR}
 		}
 	}
 	option = {#SIS
 		name = flavor_per_cw.26.f
 		trigger = {
-			SIS = {
-				NOT = { has_country_flag = loyal_satrap }
-				had_country_flag = {
-					flag = loyal_satrap
-					days = 0
-				}
-			}
+			FROM = {tag = SIS}
 		}
 	}
 	option = {#KRM
 		name = flavor_per_cw.26.g
 		trigger = {
-			KRM = {
-				NOT = { has_country_flag = loyal_satrap }
-				had_country_flag = {
-					flag = loyal_satrap
-					days = 0
-				}
-			}
+			FROM = {tag = KRM}
 		}
 	}
 	option = {#FRS
 		name = flavor_per_cw.26.h
 		trigger = {
-			FRS = {
-				NOT = {
-					has_country_flag = loyal_satrap
-				}
-				had_country_flag = {
-					flag = loyal_satrap
-					days = 0
-				}
-			}
+			FROM = {tag = KRM}
 		}
 	}
 }

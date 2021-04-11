@@ -51,8 +51,8 @@ Macedonia_3_1 = {
     }
   }
 
-  mission_african_gold = {
-    icon = king_of_naples
+  gold_kosovo = {
+    icon = mission_african_gold
     required_missions = {integrate_pel}
     provinces_to_highlight = {
       OR = {

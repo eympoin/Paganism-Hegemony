@@ -8,7 +8,7 @@ add_permanent_claim = FRV
 capital = "Chateauroux"
 is_city = yes
 culture = burgond
-religion = germanic
+religion = mithraic
 hre = no
 base_tax = 4
 

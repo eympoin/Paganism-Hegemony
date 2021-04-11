@@ -121,6 +121,7 @@ PPO = "countries/Paphos.txt"
 SLS = "countries/Salamis.txt"
 BSP = "countries/Bosporus.txt"
 AXD = "countries/Alexander.txt"
+SCL = "countries/Sclavenia.txt"
 
 ORG = "countries/Organa.txt"
 IND = "countries/India.txt"

@@ -1,10 +1,10 @@
 #101 - Liguria
 
-owner = PDM
-controller = PDM
-add_core = PDM
+owner = PAV
+controller = PAV
+add_core = PAV
 culture = lombard
-religion = deii
+religion = mithraic
 hre = no
 base_tax = 5
 base_production = 5

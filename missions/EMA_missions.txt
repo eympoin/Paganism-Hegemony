@@ -4,8 +4,8 @@ Macedonian_exp_3_1 = {
   ai = yes
   potential = {
     OR = {
-      tag = ASY
-      was_tag = ASY
+      tag = EMA
+      was_tag = EMA
     }
     NOT = { map_setup = map_setup_random }
   }
@@ -20,7 +20,13 @@ Macedonian_exp_3_1 = {
       OSR = {exists = no}
     }
     effect = {
-    #events
+      mashriq_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 
@@ -42,7 +48,9 @@ Macedonian_exp_3_1 = {
       }
     }
     effect = {
-    #events
+        add_accepted_culture = Assyrian
+      add_accepted_culture = babylonian
+      LRI = {country_event = {id = flavor_mac.21}}
     }
   }
 
@@ -53,14 +61,14 @@ Macedonian_exp_3_1 = {
       OR = {
         area = luristan_area
       }
-      NOT = {owned_by = ROOT}
+      NOT = {owns_or_subject_of = ROOT}
     }
     trigger = {
       luristan_area = {
         type = all
         owned_by = ROOT
       }
-      manpower_percentage = 0.9
+      manpower_percentage = 0.7
     }
     effect = {
       add_country_modifier = {
@@ -87,7 +95,14 @@ Macedonian_exp_3_1 = {
       NOT = {exists = PER}
     }
     effect = {
-      #events
+      country_event = {id = flavor_mac.23}
+      khorasan_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 
@@ -97,10 +112,10 @@ Macedonian_exp_3_1 = {
     provinces_to_highlight = {
     }
     trigger = {
-      #cleanse bad modif
+      stability = 3
     }
     effect = {
-      add_stability = 2
+      remove_country_modifier = solidificaton
     }
   }
 
@@ -124,7 +139,7 @@ Macedonian_exp_3_1 = {
       }
     }
     effect = {
-    #events
+    country_event = {id = flavor_mac.24}
     }
   }
 
@@ -138,7 +153,7 @@ Macedonian_exp_3_1 = {
       prestige = 80
     }
     effect = {
-    #events
+    country_event = {id = flavor_mac.30}
     }
   }
 
@@ -228,7 +243,7 @@ Macedonian_exp_3_1 = {
       tag = AXD
     }
     effect = {
-      #event
+      country_event = {id = flavor_mac.37}
     }
   }
 
@@ -240,8 +255,8 @@ Macedonian_exp_2_1 = {
   ai = yes
   potential = {
     OR = {
-      tag = ASY
-      was_tag = ASY
+      tag = EMA
+      was_tag = EMA
     }
     NOT = { map_setup = map_setup_random }
   }
@@ -252,7 +267,7 @@ Macedonian_exp_2_1 = {
     position = 5
     provinces_to_highlight = {
       OR = {
-        region = shirvan_area
+        area = shirvan_area
       }
       NOT = {owned_by = ROOT}
     }
@@ -260,7 +275,7 @@ Macedonian_exp_2_1 = {
       num_of_owned_provinces_with = {
         value = 5
         OR = {
-          region = shirvan_area
+          area = shirvan_area
         }
       }
     }
@@ -304,7 +319,7 @@ Macedonian_exp_2_1 = {
       }
     }
     effect = {
-    #events create march
+    country_event = {id = flavor_mac.35}
     }
   }
 
@@ -345,8 +360,8 @@ Macedonian_exp_4_1 = {
   ai = yes
   potential = {
     OR = {
-      tag = ASY
-      was_tag = ASY
+      tag = EMA
+      was_tag = EMA
     }
     NOT = { map_setup = map_setup_random }
   }
@@ -361,34 +376,8 @@ Macedonian_exp_4_1 = {
       dip_power = 200
     }
     effect = {
-    #event
-    add_manpower = 10
-    add_mil_power = 100
-    capital_scope = {
-        ROOT = {
-            infantry = PREV
-        }
-    }
-    capital_scope = {
-        ROOT = {
-            infantry = PREV
-        }
-    }
-    capital_scope = {
-        ROOT = {
-            infantry = PREV
-        }
-    }
-    capital_scope = {
-        ROOT = {
-            infantry = PREV
-        }
-    }
-    capital_scope = {
-        ROOT = {
-            cavalry = PREV
-        }
-    }
+    country_event = {id = flavor_mac.34}
+    add_dip_power = -200
     }
   }
 
@@ -414,7 +403,7 @@ Macedonian_exp_4_1 = {
       }
     }
     effect = {
-      #event priest of the sun god
+      country_event = {id = flavor_mac.29}
     }
   }
 
@@ -568,8 +557,8 @@ Macedonian_exp_5_1 = {
   ai = yes
   potential = {
     OR = {
-      tag = ASY
-      was_tag = ASY
+      tag = EMA
+      was_tag = EMA
     }
     NOT = { map_setup = map_setup_random }
   }
@@ -595,7 +584,7 @@ Macedonian_exp_5_1 = {
 
   reform_inf_exp = {
     icon = mission_landsknecht_soldier
-    required_missions = {reform_cav}
+    required_missions = {reform_cav_exp}
     provinces_to_highlight = {
     }
     trigger = {
@@ -613,7 +602,7 @@ Macedonian_exp_5_1 = {
 
   reform_siege_warfare_exp = {
     icon = mission_steppe_warriors
-    required_missions = {reform_inf}
+    required_missions = {reform_inf_exp}
     provinces_to_highlight = {
     }
     trigger = {
@@ -632,7 +621,7 @@ Macedonian_exp_5_1 = {
 
   reform_command_exp = {
     icon = mission_italian_condottiere
-    required_missions = {reform_siege_warfare}
+    required_missions = {reform_siege_warfare_exp}
     provinces_to_highlight = {
     }
     trigger = {

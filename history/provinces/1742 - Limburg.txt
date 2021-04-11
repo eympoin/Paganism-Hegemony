@@ -1,8 +1,8 @@
 # 1742 - Upper Guelders
 
-owner = FRR
-controller = FRR
-add_core = FRR
+owner = LOT
+controller = LOT
+add_core = LOT
 is_city = yes
 capital = "Roermond"
 culture = rhenan

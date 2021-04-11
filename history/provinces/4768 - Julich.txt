@@ -1,7 +1,7 @@
 # 4769 - Jülich
 
-owner = FRR
-controller = FRR
+owner = LOT
+controller = LOT
 culture = rhenan
 religion = germanic
 trade_goods = grain
@@ -9,7 +9,7 @@ capital = "Jülich"
 base_tax = 3
 base_production = 3
 is_city = yes
-add_core = FRR
+add_core = LOT
 base_manpower = 2
 hre = no
 add_permanent_claim = FRP

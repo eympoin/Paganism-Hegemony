@@ -1807,3 +1807,9 @@ AXD_ADJ:0 "Alexandrian"
 
 EMA:0 "Macedonian Expedition"
 EMA_ADJ:0 "Macedonian"
+
+SCL:0 "Sclavenia"
+SCL_ADJ:"Sclavenian"
+
+LEONID_EMPIRE:0 "Leonid Empire"
+LEONID_EMPIRE_ADJ:0 "Leonid"

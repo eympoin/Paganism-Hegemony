@@ -1,0 +1,1629 @@
+namespace = flavor_mac
+
+country_event = {
+	id = flavor_mac.1
+	title = flavor_mac.1.t
+	desc = flavor_mac.1.d
+	picture = MILITARY_CAMP_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = MAC
+	}
+	mean_time_to_happen = {
+		days = 60
+	}
+	major = yes
+
+
+	option = {#Great expedition
+		name = flavor_mac.1.a
+		ai_chance = {
+			factor = 50
+		}
+		set_country_flag = great_expedition_flag
+		custom_tooltip = great_exp_tt
+		hidden_effect  = {
+			BYZ = {country_event {id = flavor_mac.2 days = 30}}
+			MAC = {country_event {id = flavor_mac.7 days = 40  }}
+		}
+	}
+	option = {#WTf is this
+		name = flavor_mac.1.b
+		ai_chance = {
+			factor = 50
+		}
+		add_prestige = 1
+	}
+}
+
+country_event = {
+	id = flavor_mac.2
+	title = flavor_mac.2.t
+	desc = flavor_mac.2.d
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+
+	option = {#Emperor Benediction
+		name = flavor_mac.2.a
+		ai_chance = {
+			factor = 90
+		}
+		add_treasury = -50
+		add_manpower = -1
+		MAC = {
+		country_event {id = flavor_mac.3}
+		set_country_flag = emperor_support
+		}
+	}
+	option = {#Lol nop
+		name = flavor_mac.2.b
+		ai_chance = {
+			factor = 10
+		}
+		MAC = {country_event {id = flavor_mac.3}}
+	}
+}
+
+country_event = {
+	id = flavor_mac.3
+	title = flavor_mac.3.t
+	desc = {
+		trigger = {MAC = {has_country_flag = emperor_support}}
+		desc = flavor_mac.3.d1
+	}
+	desc = {
+		trigger = {NOT = {MAC = {has_country_flag = emperor_support}}}
+		desc = flavor_mac.3.d2
+	}
+
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+
+	option = {#Emperor Benediction
+		name = flavor_mac.3.a
+		trigger = {
+			has_country_flag = emperor_support
+		}
+		custom_tooltip = byzantine_help_tt
+		add_prestige = 5
+		SYR = {country_event {id = flavor_mac.4 days = 90}}
+	}
+	option = {
+		trigger = {
+			NOT = {has_country_flag = emperor_support}
+		}
+		name = flavor_mac.3.b
+		hidden_effect  = {SYR = {country_event {id = flavor_mac.4 days = 90}}}
+	}
+}
+
+
+country_event = {
+	id = flavor_mac.4
+	title = flavor_mac.4.t
+	desc = flavor_mac.4.d
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+
+
+	option = {#Negotiate with the expedition
+		name = flavor_mac.4.a
+		ai_chance = { factor = 100 }
+		MAC = {
+			country_event {id = flavor_mac.5}
+		}
+	}
+	option = {#Lol nop
+		name = flavor_mac.4.b
+		ai_chance = { factor = 0 }
+		add_prestige = 5
+		MAC = {
+			country_event {id = flavor_mac.8}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_mac.5
+	title = flavor_mac.5.t
+	desc = flavor_mac.5.d
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+
+
+	option = {#Accept
+		name = flavor_mac.5.a
+		ai_chance = {
+			factor = 100
+		}
+		SYR = {
+			country_event {id = flavor_mac.6}
+		}
+		MAC = {
+			country_event {id = flavor_mac.8 days = 30}
+		}
+		custom_tooltip = syrian_allies_tt
+		set_country_flag = syrian_allies
+	}
+	option = {#Lol nop
+		name = flavor_mac.5.b
+		ai_chance = {
+			factor = 0
+		}
+		add_prestige = 5
+	}
+}
+
+
+country_event = {
+	id = flavor_mac.6
+	title = flavor_mac.6.t
+	desc = flavor_mac.6.d
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+
+
+	option = {#They have accepeted
+		name = flavor_mac.6.a
+		custom_tooltip = syr_syrian_allies_tt
+	}
+}
+
+country_event = {#how big is the expedition
+	id = flavor_mac.7
+	title = flavor_mac.7.t
+	desc = flavor_mac.7.d
+	picture = LAND_MILITARY_eventPicture
+	is_triggered_only = yes
+
+
+	option = {#bring all the ressource we have
+		name = flavor_mac.7.a
+		ai_chance = {
+			factor = 60
+		}
+		custom_tooltip = large_expedition_tt
+		set_country_flag = large_expedition
+	}
+
+	option = {#medium
+		name = flavor_mac.7.b
+		ai_chance = {
+			factor = 30
+		}
+		custom_tooltip = medium_expedition_tt
+		set_country_flag = medium_expedition
+	}
+
+
+	option = {#small
+		name = flavor_mac.7.c
+		ai_chance = {
+			factor = 10
+		}
+		custom_tooltip = small_expedition_tt
+		set_country_flag = small_expedition
+	}
+}
+
+
+country_event = {
+	id = flavor_mac.8
+	title = flavor_mac.8.t
+	desc = flavor_mac.8.d
+	picture = SIEGE_eventPicture
+	is_triggered_only = yes
+
+
+	option = {#The expedition arrived
+		name = flavor_mac.8.a
+		2308 ={
+			cede_province = EMA
+			change_culture	= greek
+		}
+		switch_tag = EMA
+		EMA = {
+			hidden_effect = {country_event {id = flavor_mac.9 days = 2}}
+			define_ruler = {
+			    name = "Alexandros"
+			    dynasty = "Leonid"
+			    adm = 5
+			    dip = 4
+			    mil = 6
+			    age = 20
+			    claim = 95
+			}
+		}
+		OSR = {
+			country_event {id = flavor_mac.10}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_mac.9
+	title = flavor_mac.9.t
+	desc = flavor_mac.9.d
+	picture = FORT_eventPicture
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {#The expedition arrived
+		name = flavor_mac.9.a
+		if{
+			limit = {
+				MAC = { has_country_flag = emperor_support}
+			}
+			add_manpower = 5
+			add_treasury = 50
+			capital_scope = {
+		    ROOT = {
+		        infantry = PREV
+		    }
+			}
+			capital_scope = {
+		    ROOT = {
+		        infantry = PREV
+		    }
+			}
+		}
+
+		if{
+			limit = {
+				MAC = { has_country_flag = large_expedition}
+			}
+			add_manpower = 12
+			add_treasury = 200
+			MAC = {
+				add_treasury = -200
+				add_manpower = -12
+				add_country_modifier = {
+					name = backlash_large_expedition
+					duration = 7300
+				}
+			}
+			capital_scope = {
+		    ROOT = {
+		        infantry = PREV
+		    }
+			}
+			capital_scope = {
+		    ROOT = {
+		        infantry = PREV
+		    }
+			}
+			capital_scope = {
+		    ROOT = {
+		        infantry = PREV
+		    }
+			}
+			capital_scope = {
+		    ROOT = {
+		        infantry = PREV
+		    }
+			}
+			capital_scope = {
+		    ROOT = {
+		        infantry = PREV
+		    }
+			}
+			capital_scope = {
+		    ROOT = {
+		        infantry = PREV
+		    }
+			}
+			capital_scope = {
+		    ROOT = {
+		        infantry = PREV
+		    }
+			}
+			capital_scope = {
+		    ROOT = {
+		        infantry = PREV
+		    }
+			}
+			capital_scope = {
+		    ROOT = {
+		        cavalry = PREV
+		    }
+			}
+			capital_scope = {
+		    ROOT = {
+		        cavalry = PREV
+		    }
+			}
+			capital_scope = {
+		    ROOT = {
+		        cavalry = PREV
+		    }
+			}
+			capital_scope = {
+		    ROOT = {
+		        cavalry = PREV
+		    }
+			}
+
+			if{
+					limit = {
+						MAC = { has_country_flag = medium_expedition }
+					}
+					add_manpower = 9
+					add_treasury = 150
+					MAC = {
+						add_treasury = -150
+						add_manpower = -9
+						add_country_modifier = {
+							name = backlash_medium_expedition
+							duration = 7300
+						}
+					}
+					capital_scope = {
+				    ROOT = {
+				        infantry = PREV
+				    }
+					}
+					capital_scope = {
+				    ROOT = {
+				        infantry = PREV
+				    }
+					}
+					capital_scope = {
+				    ROOT = {
+				        infantry = PREV
+				    }
+					}
+					capital_scope = {
+				    ROOT = {
+				        infantry = PREV
+				    }
+					}
+					capital_scope = {
+				    ROOT = {
+				        infantry = PREV
+				    }
+					}
+					capital_scope = {
+				    ROOT = {
+				        infantry = PREV
+				    }
+					}
+					capital_scope = {
+				    ROOT = {
+				        cavalry = PREV
+				    }
+					}
+					capital_scope = {
+				    ROOT = {
+				        cavalry = PREV
+				    }
+					}
+					capital_scope = {
+				    ROOT = {
+				        cavalry = PREV
+				    }
+					}
+				}
+
+				if{
+						limit = {
+							MAC = { has_country_flag = small_expedition }
+						}
+						add_manpower = 6
+						add_treasury = 100
+						MAC = {
+							add_treasury = -100
+							add_manpower = -6
+							add_country_modifier = {
+								name = backlash_small_expedition
+								duration = 7300
+							}
+						}
+						capital_scope = {
+					    ROOT = {
+					        infantry = PREV
+					    }
+						}
+						capital_scope = {
+					    ROOT = {
+					        infantry = PREV
+					    }
+						}
+						capital_scope = {
+					    ROOT = {
+					        infantry = PREV
+					    }
+						}
+						capital_scope = {
+					    ROOT = {
+					        infantry = PREV
+					    }
+						}
+						capital_scope = {
+					    ROOT = {
+					        infantry = PREV
+					    }
+						}
+						capital_scope = {
+					    ROOT = {
+					        cavalry = PREV
+					    }
+						}
+					}
+			if = {
+				limit = {
+					MAC = { has_country_flag = syrian_allies }
+				}
+				set_country_flag = syrian_allies
+				create_alliance = SYR
+			}
+			declare_war_with_cb = {
+			    who = OSR
+			    casus_belli = cb_annex
+			}
+			SYR = {
+				join_all_offensive_wars_of = EMA
+			}
+			add_country_modifier = {
+				name = great_expedition
+				duration = 36500
+			}
+			EMA = {set_country_flag = great_expedition_flag}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_mac.10
+	title = flavor_mac.10.t
+	desc = flavor_mac.10.d
+	picture = SIEGE_eventPicture
+	is_triggered_only = yes
+
+
+	option = {#The expedition attack us
+		name = flavor_mac.10.a
+		add_manpower = 1
+	}
+}
+
+
+country_event = {
+	id = flavor_mac.11
+	title = flavor_mac.11.t
+	desc = flavor_mac.11.d
+	picture = CONQUEST_eventPicture
+	trigger = {
+		tag = EMA
+		war_with = OSR
+		war_score = 50
+	}
+
+
+	option = {#victory
+		name = flavor_mac.11.a
+		white_peace = OSR
+
+		if = {
+			limit = {
+				has_country_flag = syrian_allies
+			}
+			4821 = {
+				add_core = ROOT
+				cede_province = ROOT
+			}
+			4292 = {
+				cede_province = ROOT
+				change_culture= greek
+				add_base_manpower = 3
+				add_base_production = 3
+				add_base_tax = 3
+				add_core = ROOT
+			}
+			set_capital = 4292
+			add_treasury = 200
+			add_manpower = 10
+			407 = {
+				cede_province = SYR
+			}
+			2308 = {
+				change_culture	= cannanite
+				cede_province = SYR
+			}
+			4854 = {
+				cede_province = SYR
+			}
+
+		}
+		else {
+		add_accepted_culture = cannanite
+		4821 = {
+			cede_province = ROOT
+			add_core = ROOT
+		}
+			4292 = {
+				cede_province = ROOT
+				add_core = ROOT
+			}
+			407 = {
+				cede_province = ROOT
+				add_core = ROOT
+			}
+			2308 = {
+				cede_province = ROOT
+				add_core = ROOT
+			}
+			4854 = {
+				cede_province = ROOT
+				add_core = ROOT
+			}
+		}
+		ARM = {country_event {id = flavor_mac.15 days = 60}}
+	}
+}
+
+country_event = {
+	id = flavor_mac.12
+	title = flavor_mac.12.t
+	desc = flavor_mac.12.d
+	picture = CITY_VIEW_eventPicture
+	trigger = {
+		tag = EMA
+		has_country_flag = great_expedition_flag
+		any_owned_province = {
+			region = mashriq_region
+			NOT = {is_core = ROOT}
+		}
+	}
+
+	option = {#add_core
+		name = flavor_mac.12.a
+		every_owned_province = {
+			limit = {
+				region = mashriq_region
+				NOT = {is_core = ROOT}
+			}
+			add_core = ROOT
+		}
+	}
+}
+
+country_event = {#religion choice
+	id = flavor_mac.13
+	title = flavor_mac.13.t
+	desc = flavor_mac.13.d
+	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	fire_only_once = yes
+	trigger = {
+		tag = EMA
+		has_country_flag = is_king_of_kings
+	}
+	mean_time_to_happen = {
+		days = 60
+	}
+
+	option = {#zoroastrism
+		name = flavor_mac.13.a
+		ai_chance = {
+			factor = 33
+		}
+		change_religion = zoroastrian
+		add_country_modifier = {
+			name = discontent_veterans
+			duration = 7300
+		}
+	}
+
+	option = {#hellenic
+		name = flavor_mac.13.b
+		ai_chance = {
+			factor = 33
+		}
+		add_country_modifier = {
+			name = discontent_poupulace
+			duration = 7300
+		}
+	}
+
+	option = {#mithra
+		name = flavor_mac.13.c
+		ai_chance = {
+			factor = 33
+		}
+		change_religion = mithraic
+		add_country_modifier = {
+			name = discontent_populace_mid
+			duration = 7300
+		}
+	}
+}
+
+
+country_event = {#culture choice
+	id = flavor_mac.14
+	title = flavor_mac.14.t
+	desc = flavor_mac.14.d
+	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	fire_only_once = yes
+	trigger = {
+		tag = EMA
+		has_country_flag = is_king_of_kings
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {#persian
+		name = flavor_mac.14.a
+		ai_chance = {
+			factor = 50
+		}
+		change_primary_culture = persian
+		add_stability = -2
+	}
+
+	option = {#hellenic
+		name = flavor_mac.14.b
+		ai_chance = {
+			factor = 50
+		}
+		add_country_modifier = {
+			name = mass_hellenization
+			duration = 7300
+		}
+		set_country_flag = east_hellenization
+	}
+}
+
+country_event = {
+	id = flavor_mac.15
+	title = flavor_mac.15.t
+	desc = flavor_mac.15.d
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+
+	option = {#negotiate with the expedition
+		name = flavor_mac.15.a
+		ai_chance = {
+			factor = 50
+		}
+		set_country_flag = normal_demands
+		EMA = {country_event {id = flavor_mac.16 days = 30}}
+		custom_tooltip = armenia_demands_tt
+	}
+	option = {#negotiate with the expedition
+		name = flavor_mac.15.b
+		ai_chance = {
+			factor = 50
+		}
+		set_country_flag = heavy_demands
+		EMA = {country_event {id = flavor_mac.16 days = 30}}
+		custom_tooltip = armenia_demands_heavy_tt
+	}
+	option = {#no negotiation
+		name = flavor_mac.15.c
+		ai_chance = {
+			factor = 0
+		}
+		add_prestige = 10
+	}
+}
+
+#treaty of Kiphas
+country_event = {
+	id = flavor_mac.16
+	title = flavor_mac.16.t
+	desc = flavor_mac.16.d
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+
+	option = {#accept demands
+		name = flavor_mac.16.a
+		ai_chance = {
+			factor = 99
+		}
+		set_global_flag = treaty_of_kiphas
+		if = {
+			limit = {
+				ARM={has_country_flag = normal_demands}
+			}
+			set_country_flag = accept_ARM_demands
+			custom_tooltip = armenia_demands_tt
+		}
+		if = {
+			limit = {
+				ARM = {has_country_flag = heavy_demands}
+			}
+			set_country_flag = accept_ARM_demands_heavy
+			custom_tooltip = armenia_demands_heavy_tt
+		}
+		add_historical_friend = ARM
+		ARM = {country_event {id = flavor_mac.17 days = 30}}
+	}
+	option = {#refuse
+		name = flavor_mac.16.b
+		ai_chance = {
+			factor = 1
+		}
+		add_prestige = 10
+		add_historical_rival = ARM
+		ARM = {country_event {id = flavor_mac.17 days = 30}}
+	}
+}
+
+
+#treaty of Kiphas resolution
+country_event = {
+	id = flavor_mac.17
+	title = flavor_mac.17.t
+	desc = {
+		trigger = {OR = {
+			EMA = {has_country_flag = accept_ARM_demands}
+			EMA = {has_country_flag = accept_ARM_demands_heavy}
+		}}
+		desc = flavor_mac.17.d1
+	}
+	desc = {
+		trigger = {NOT = {
+			OR = {
+				EMA = {has_country_flag = accept_ARM_demands}
+				EMA = {has_country_flag = accept_ARM_demands_heavy}
+			}
+		}}
+		desc = flavor_mac.17.d2
+	}
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+
+	option = {#an alliance is born
+		name = flavor_mac.17.a
+		trigger = {
+			OR = {
+				EMA = {has_country_flag = accept_ARM_demands}
+				EMA = {has_country_flag = accept_ARM_demands_heavy}
+			}
+		}
+		add_historical_friend = EMA
+	}
+	option = {#they will regret
+		name = flavor_mac.17.b
+		trigger = {
+			NOT = {
+				OR = {
+					EMA = {has_country_flag = accept_ARM_demands}
+					EMA = {has_country_flag = accept_ARM_demands_heavy}
+				}
+			}
+		}
+		add_historical_rival = EMA
+	}
+}
+
+#EMA respect treaty
+country_event = {
+	id = flavor_mac.18
+	title = flavor_mac.18.t
+	desc = flavor_mac.18.d
+	picture = DIPLOMACY_eventPicture
+	trigger = {
+		tag = EMA
+		has_global_flag = treaty_of_kiphas
+		exists = ARM
+		OR = {
+			any_owned_province = {
+				OR = {
+					area = tabarestan_area
+					area = azerbaijan_area
+				}
+			}
+			AND = {
+				EMA = {has_country_flag = accept_ARM_demands_heavy}
+				any_owned_province = {
+					OR = {
+						area = mashhad_area
+						area = birjand_area
+						province_id = 428
+						province_id = 2216
+						province_id = 4337
+						province_id = 2213
+					}
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {#respect the treaty
+		name = flavor_mac.18.a
+		ai_chance = {
+			factor = 100
+		}
+		every_owned_province = {
+			limit = {
+			OR = {
+				area = tabarestan_area
+				area = azerbaijan_area
+			}
+			}
+			cede_province = ARM
+		}
+		if = {
+			limit = {
+				has_country_flag = accept_ARM_demands_heavy
+			}
+			every_owned_province = {
+					limit = {
+					OR = {
+						area = mashhad_area
+						area = birjand_area
+						province_id = 428
+						province_id = 2216
+						province_id = 4337
+						province_id = 2213
+					}
+				}
+				cede_province = ARM
+			}
+		}
+	}
+	option = {#they will regret
+		name = flavor_mac.18.b
+		ai_chance = {
+			factor = 0
+		}
+		add_historical_rival = ARM
+		clr_global_flag = treaty_of_kiphas
+		ARM = {country_event {id = flavor_mac.20 days = 7}}
+	}
+}
+
+
+#ARM respect treaty
+
+country_event = {
+	id = flavor_mac.19
+	title = flavor_mac.19.t
+	desc = flavor_mac.19.d
+	picture = DIPLOMACY_eventPicture
+	trigger = {
+		tag = ARM
+		exists = EMA
+		has_global_flag = treaty_of_kiphas
+		OR = {
+			any_owned_province = {
+				OR = {
+					area = luristan_area
+					area = khuzestan_area
+					area = isfahan_area
+					area = isfahan_area
+					area = farsistan_area
+					area = persian_gulf_coast
+					area = mogostan_area
+					area = kerman_area
+					province_id = 414
+				}
+			}
+			AND = {
+				EMA = {NOT = {has_country_flag = accept_ARM_demands_heavy}}
+				any_owned_province = {
+					OR = {
+						area = iraq_e_ajam_area
+						area = mashhad_area
+						area = birjand_area
+					}
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {#respect the treaty
+		name = flavor_mac.19.a
+		ai_chance = {
+			factor = 100
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = luristan_area
+					area = khuzestan_area
+					area = isfahan_area
+					area = isfahan_area
+					area = farsistan_area
+					area = persian_gulf_coast
+					area = mogostan_area
+					area = kerman_area
+					province_id = 414
+				}
+			}
+			cede_province = EMA
+		}
+		if = {
+			limit = {
+				has_country_flag = accept_ARM_demands_heavy
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = iraq_e_ajam_area
+						area = mashhad_area
+						area = birjand_area
+					}
+				}
+				cede_province = ARM
+			}
+		}
+	}
+	option = {#they will regret
+		name = flavor_mac.19.b
+		ai_chance = {
+			factor = 0
+		}
+		add_historical_rival = ARM
+		clr_global_flag = treaty_of_kiphas
+		EMA = {country_event {id = flavor_mac.20 days = 7}}
+	}
+}
+
+
+#end_of the treaty
+country_event = {
+	id = flavor_mac.20
+	title = flavor_mac.20.t
+	desc = flavor_mac.20.d
+	picture = BORDER_TENSION_eventPicture
+	is_triggered_only = yes
+
+	option = {#war
+		name = flavor_mac.20.a
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 100
+				is_at_war = no
+			}
+		}
+		if = {
+			limit = {
+				tag = EMA
+			}
+			declare_war_with_cb = {
+			    who = ARM
+			    casus_belli = cb_annex
+			}
+		}
+		if = {
+			limit = {
+				tag = ARM
+			}
+			declare_war_with_cb = {
+			    who = EMA
+			    casus_belli = cb_annex
+			}
+		}
+	}
+	option = {#not ready for war
+		name = flavor_mac.20.b
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 100
+				is_at_war = yes
+			}
+		}
+		add_prestige = -10
+	}
+}
+
+#luristan decision toward the expedition
+country_event = {
+	id = flavor_mac.21
+	title = flavor_mac.21.t
+	desc = flavor_mac.21.d
+	picture = BORDER_TENSION_eventPicture
+	is_triggered_only = yes
+
+	option = {#become vassal
+		name = flavor_mac.21.a
+		ai_chance = {
+			factor = 90
+		}
+		EMA = {vassalize = LRI}
+	}
+	option = {#war
+		name = flavor_mac.21.b
+		ai_chance = {
+			factor = 10
+		}
+		declare_war_with_cb = {
+		    who = EMA
+		    casus_belli = cb_annex
+		}
+	}
+}
+
+
+#fall of ecbatna
+country_event = {
+	id = flavor_mac.22
+	title = flavor_mac.22.t
+	desc = flavor_mac.22.d
+	picture = SIEGE_eventPicture
+	fire_only_once = yes
+	trigger = {
+		tag = EMA
+		414 = {
+			controlled_by = EMA
+			}
+	}
+
+	option = {#don't harm the city
+		name = flavor_mac.22.a
+		ai_chance = {
+			factor = 90
+		}
+		add_prestige = 10
+		add_legitimacy = 10
+	}
+	option = {#burn the city
+		name = flavor_mac.22.b
+		ai_chance = {
+			factor = 10
+		}
+		add_treasury = 200
+		414 = {add_devastation = 50}
+	}
+}
+
+#fall of Ecbatana and of the persian empire
+country_event = {
+	id = flavor_mac.23
+	title = flavor_mac.23.t
+	desc = flavor_mac.23.d
+	picture = COUNTRY_COLLAPSE_eventPicture
+	is_triggered_only = yes
+
+	option = {#at last
+		name = flavor_mac.23.a
+		override_country_name = LEONID_EMPIRE
+		add_prestige = 50
+		add_legitimacy = 20
+		remove_country_modifier = great_expedition
+		add_stability = -3
+		set_government_rank = 3
+		add_country_modifier = {
+			name = solidificaton
+			duration = -1
+		}
+		add_accepted_culture = persian
+		clr_country_flag = great_expedition_flag
+		set_country_flag = is_king_of_kings
+	}
+}
+
+
+country_event = {
+	id = flavor_mac.24
+	title = flavor_mac.24.t
+	desc = flavor_mac.24.d
+	picture = COURT_eventPicture
+	is_triggered_only = yes
+
+	option = {#keep satrapies system
+		name = flavor_mac.24.a
+		ai_chance = {
+			factor = 50
+		}
+		add_country_modifier = {
+			name = satrapy_system
+			duration = -1
+		}
+	}
+	option = {#centralize everything
+		name = flavor_mac.24.b
+		ai_chance = {
+			factor = 50
+		}
+			add_country_modifier = {
+				name = centralized_system
+				duration = -1
+			}
+	}
+}
+
+#choose capital
+country_event = {
+	id = flavor_mac.25
+	title = flavor_mac.25.t
+	desc = flavor_mac.25.d
+	picture = CITY_VIEW_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = EMA
+		has_country_flag = is_king_of_kings
+	}
+	mean_time_to_happen = {
+		years = 2
+	}
+
+	option = {#Babylon
+		name = flavor_mac.25.a
+		ai_chance = {
+			factor = 33
+		}
+		trigger = {
+			owns = 2311
+		}
+		set_capital = 2311
+	}
+	option = {#Ecbatana
+		name = flavor_mac.25.b
+		ai_chance = {
+			factor = 33
+		}
+		trigger = {
+			owns = 414
+		}
+		set_capital = 414
+	}
+	option = {#Susa
+		name = flavor_mac.25.c
+		ai_chance = {
+			factor = 33
+		}
+		trigger = {
+			owns = 4289
+		}
+		set_capital = 4289
+	}
+}
+
+country_event = {#persian
+  id = flavor_mac.26
+  title = flavor_mac.26.t
+  desc = flavor_mac.26.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      tag = EMA
+      was_tag = EMA
+    }
+		has_country_flag = east_hellenization
+    any_owned_province = {
+     has_owner_religion = yes
+      OR = {
+        culture = persian
+        culture = khorasani
+        culture = mazandarani
+				culture = elymaite
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 5
+  }
+
+  option = {
+    name = flavor_mac.26.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+       has_owner_religion = yes
+        OR = {
+				culture = persian
+				culture = khorasani
+				culture = mazandarani
+				culture = elymaite
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = greco_persian
+    }
+  }
+}
+
+country_event = {#afghan
+  id = flavor_mac.27
+  title = flavor_mac.26.t
+  desc = flavor_mac.26.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      tag = EMA
+      was_tag = EMA
+    }
+		has_country_flag = east_hellenization
+    any_owned_province = {
+     has_owner_religion = yes
+      OR = {
+        culture = afghan
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 15
+  }
+
+  option = {
+    name = flavor_mac.26.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+       has_owner_religion = yes
+        OR = {
+				culture = afghan
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = bactrian
+    }
+  }
+}
+
+country_event = {#mesopotamian
+  id = flavor_mac.28
+  title = flavor_mac.26.t
+  desc = flavor_mac.26.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      tag = EMA
+      was_tag = EMA
+    }
+		has_country_flag = east_hellenization
+    any_owned_province = {
+     has_owner_religion = yes
+      OR = {
+        culture = babylonian
+        culture = Assyrian
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_mac.26.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+       has_owner_religion = yes
+        OR = {
+				culture = persian
+				culture = khorasani
+				culture = mazandarani
+				culture = elymaite
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = mesopotamian
+    }
+  }
+}
+
+country_event = {#sun priest
+	id = flavor_mac.29
+	title = flavor_mac.29.t
+	desc = flavor_mac.29.d
+	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	is_triggered_only = yes
+
+	option = {#convert
+		name = flavor_mac.29.a
+		ai_chance = {
+			factor = 10
+		}
+		change_religion = zunist
+		add_country_modifier = {
+			name = convert_heretics
+			duration = 7300
+		}
+
+	}
+	option = {#no
+		ai_chance = {
+			factor = 90
+		}
+		name = flavor_mac.29.b
+		add_prestige = 10
+	}
+}
+
+
+country_event = {#time to go home
+	id = flavor_mac.30
+	title = flavor_mac.30.t
+	desc = flavor_mac.30.d
+	picture = BATTLE_eventPicture
+	is_triggered_only = yes
+
+	option = {#we stay here
+		name = flavor_mac.30.a
+		ai_chance = {
+			factor = 20
+		}
+		add_legitimacy = 10
+	}
+	option = {#claim macedon throne
+		name = flavor_mac.30.b
+		ai_chance = {
+			factor = 80
+		}
+		MAC = {country_event = {id = flavor_mac.31}}
+	}
+	option = {
+		name = flavor_mac.30.c
+		ai_chance = {
+			factor = 80
+		}
+		trigger = {
+			NOT = {exists = MAC}
+		}
+		macedonia_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = {is_claim	= ROOT}
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+}
+
+country_event = {#time to go home
+	id = flavor_mac.31
+	title = flavor_mac.31.t
+	desc = flavor_mac.31.d
+	picture = BATTLE_eventPicture
+	is_triggered_only = yes
+
+	option = {#Mac keep the throne
+		name = flavor_mac.31.a
+		ai_chance = {
+			factor = 70
+		}
+		set_country_flag = keep_the_throne
+		EMA = {country_event = {id = flavor_mac.32}}
+	}
+	option = {#Mc givet he throne
+		name = flavor_mac.31.b
+		ai_chance = {
+			factor = 30
+		}
+		set_country_flag = give_the_throne
+		EMA = {country_event = {id = flavor_mac.32}}
+	}
+}
+
+country_event = {#time to go home
+	id = flavor_mac.32
+	title = flavor_mac.32.t
+	desc = flavor_mac.32.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes
+
+	option = {#war
+		name = flavor_mac.32.a
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 100
+				is_at_war = no
+			}
+		}
+		trigger = {
+			MAC = {has_country_flag = keep_the_throne}
+		}
+		declare_war_with_cb = {
+				who = MAC
+				casus_belli = cb_annex
+		}
+		set_country_flag = war_for_throne_mac
+	}
+	option = {#take it
+		name = flavor_mac.32.b
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			MAC = {has_country_flag = give_the_throne}
+		}
+		create_union = MAC
+		add_country_modifier = {
+			name = overstretch_empire
+			duration = 7300
+		}
+	}
+	option = {#we stay here
+		name = flavor_mac.32.c
+		ai_chance = {
+			factor = 0
+		}
+		add_legitimacy = 10
+	}
+}
+
+country_event = {# peace
+	id = flavor_mac.33
+	title = "flavor_mac.33.t"
+	desc = "flavor_mac.33.d"
+	picture = SIEGE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EMA
+		war_with = MAC
+		has_global_flag = war_for_throne_mac
+		war_score_against = {
+			who = MAC
+			value = 50
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = "flavor_mac.33.a"
+		ai_chance = {
+			factor = 10
+		}
+		create_union = MAC
+		add_country_modifier = {
+			name = overstretch_empire
+			duration = 7300
+		}
+		add_truce_with = MAC
+		white_peace = MAC
+	}
+}
+
+country_event = {#recruit natives
+	id = flavor_mac.34
+	title = flavor_mac.34.t
+	desc = flavor_mac.34.d
+	picture = BATTLE_eventPicture
+	is_triggered_only = yes
+
+	option = {#natives
+		name = flavor_mac.34.a
+		ai_chance = {
+			factor = 50
+		}
+		capital_scope = {
+				ROOT = {
+						infantry = PREV
+				}
+		}
+		capital_scope = {
+				ROOT = {
+						infantry = PREV
+				}
+		}
+		capital_scope = {
+				ROOT = {
+						infantry = PREV
+				}
+		}
+		capital_scope = {
+				ROOT = {
+						infantry = PREV
+				}
+		}
+		capital_scope = {
+				ROOT = {
+						cavalry = PREV
+				}
+		}
+		add_country_modifier = {
+			name = natives_in_the_army
+			duration = 36500
+		}
+	}
+	option = {#no natives
+		name = flavor_mac.34.b
+		ai_chance = {
+			factor = 50
+		}
+		add_mil_power = 200
+		add_country_modifier = {
+			name = greek_army
+			duration = 36500
+		}
+	}
+
+}
+
+country_event = {#subjugate armenia
+	id = flavor_mac.35
+	title = flavor_mac.35.t
+	desc = flavor_mac.35.d
+	picture = BORDER_TENSION_eventPicture
+	is_triggered_only = yes
+
+	option = {#subjugate armenia
+		name = flavor_mac.35.a
+		ai_chance = {
+			factor = 100
+		}
+		ai_chance = {
+			factor = 100
+		}
+		ARM = {country_event = {id = flavor_mac.36}}
+	}
+	option = {#not subjugating
+		name = flavor_mac.35.b
+		ai_chance = {
+			factor = 0
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = flavor_mac.36
+	title = flavor_mac.36.t
+	desc = flavor_mac.36.d
+	picture = SIEGE_eventPicture
+	is_triggered_only = yes
+
+	option = {#accept_surrender
+		name = flavor_mac.36.a
+		ai_chance = {
+			factor = 100
+		}
+		white_peace = FROM
+		FROM = {create_march = ARM}
+	}
+	option = {#not subjugating
+		name = flavor_mac.36.b
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {#alexander's pride
+	id = flavor_mac.37
+	title = flavor_mac.37.t
+	desc = flavor_mac.37.d
+	picture = GREAT_BUILDING_eventPicture
+	is_triggered_only = yes
+
+	option = {#glorious
+		name = flavor_mac.37.a
+		ai_chance = {
+			factor = 100
+		}
+		add_country_modifier = {
+			name = the_pride_of_alexander
+			duration = -1
+		}
+	}
+
+}

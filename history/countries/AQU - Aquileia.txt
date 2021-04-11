@@ -1,6 +1,6 @@
 government = monarchy
 primary_culture = aquileian
-religion = deii
+religion = mithraic
 technology_group = western
 capital = 111	# Friuli
 government_rank = 1

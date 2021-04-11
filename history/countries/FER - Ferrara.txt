@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 technology_group = western
-religion = deii
+religion = mithraic
 primary_culture = aquileian
 capital = 4729 # Padova
 government_rank = 1

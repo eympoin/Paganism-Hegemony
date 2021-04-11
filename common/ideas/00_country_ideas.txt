@@ -3,6 +3,45 @@
 # If adding new groups or ideas, make sure they are unique.
 
 ### Nation specific idea groups
+EMA_ideas = {
+	start = {
+		army_tradition = 1
+		leader_siege = 1
+	}
+
+	bonus = {
+		governing_capacity_modifier = 0.2
+	}
+
+	trigger = {
+		tag = EMA
+	}
+	free = yes
+
+	policy_of_tolerance = {
+		global_unrest = -2
+	}
+	leonid_court = {
+		advisor_cost = -0.25
+	}
+	conquerors_legacy = {
+		leader_land_manuever = 1
+		land_morale = 0.10
+	}
+	greeko-persian_architetcure = {
+		prestige = 1
+	}
+	develop_mines = {
+		production_efficiency = 0.2
+	}
+	multicultural_empire = {
+		num_accepted_cultures = 2	
+	}
+	army_for_the_ages = {
+		discipline = 0.075
+	}
+}
+
 CUM_ideas = {
 	start = {
 		cavalry_power = 0.2
@@ -1334,7 +1373,7 @@ SAX_ideas = {
 		army_tradition = 1
 	}
 	reconquest_of_germany = {
-		province_warscore_cost = -0.2
+		province_warscore_cost = -0.1
 	}
 	recolonization_of_german_land = {
 		culture_conversion_cost = -0.33
@@ -4453,12 +4492,16 @@ BYZ_ideas = {
 	}
 	free = yes
 
-	regulations_for_mercenaries = {
-		merc_maintenance_modifier = -0.15
+	merchant_hub = {
+		merchants = 1
 	}
-	repopulation_of_countryside = {
-		global_trade_goods_size_modifier = 0.05
-		global_manpower_modifier = 0.10
+	strategiekon_lesson = {
+		shock_damage_received = -0.10
+		fire_damage_received = -0.10
+	}
+	center_of_the_world = {
+		global_institution_spread = 0.15
+		trade_steering = 0.1
 	}
 	byz_state_admin_reform = {
 		global_tax_modifier = 0.15
@@ -4466,15 +4509,12 @@ BYZ_ideas = {
 	byz_admin_power = {
 		stability_cost_modifier = -0.1
 	}
-	merchant_class = {
-		global_trade_power = 0.1
-		trade_efficiency = 0.1
+	expert_diplomats = {
+		diplomats = 1
+		spy_offence = 0.3
 	}
 	new_imperial_army = {
 		discipline = 0.05
-	}
-	ecumenical_patriarch = {
-		global_unrest = -2
 	}
 }
 
@@ -8364,7 +8404,7 @@ TEU_ideas = {
 
 BUL_ideas = {
 	start = {
-		merchants = 1
+		cavalry_cost = -0.33
 		core_creation = -0.1
 	}
 
@@ -8380,8 +8420,8 @@ BUL_ideas = {
 	bul_idea_1 = {
 		stability_cost_modifier = -0.1
 	}
-	bul_idea_2 = {
-		global_heretic_missionary_strength = 0.02
+	revenge_bul = {
+		army_tradition = 0.5
 	}
 	bul_idea_3 = {
  		global_unrest = -1
@@ -8389,7 +8429,7 @@ BUL_ideas = {
 	bul_idea_4 = {
 		infantry_cost = -0.1
 	}
-	bul_idea_5 = {
+	old_glory_bul = {
 		prestige = 1
 	}
 	bul_idea_6 = {

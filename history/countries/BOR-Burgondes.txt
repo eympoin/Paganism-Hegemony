@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = burgond
-religion = germanic
+religion = mithraic
 technology_group = western
 capital = 192
 fixed_capital = 192

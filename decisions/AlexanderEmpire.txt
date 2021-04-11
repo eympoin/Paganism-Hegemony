@@ -68,6 +68,7 @@ country_decisions = {
 		}
 		effect = {
 		 change_tag = AXD
+		 restore_country_name = yes	
 		 if = {
 			 limit = {
 				 NOT = { government_rank = 3 }

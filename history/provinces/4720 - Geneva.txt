@@ -1,7 +1,7 @@
 owner = BOR
 controller = BOR
 culture = burgond
-religion = germanic
+religion = mithraic
 capital = "Geneva"
 trade_goods = cloth
 hre = no

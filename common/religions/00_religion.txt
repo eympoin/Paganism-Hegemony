@@ -1878,6 +1878,24 @@ greco_roman_group = {
     heretic = { OLD_JUPITERIAN }
   }
 
+  mithraic = {
+    icon = 45
+    color = { 193 19 0 }
+    country = {
+      army_tradition = 0.5	
+      land_morale = 0.05
+    }
+    country_as_secondary = {
+      land_morale = 0.05
+      war_exhaustion = -0.10
+    }
+    province = {
+      local_missionary_strength = -0.01
+    }
+
+    heretic = { OLD_JUPITERIAN }
+  }
+
 }
 
 

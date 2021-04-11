@@ -1536,3 +1536,206 @@ flavor_oracle.1.d:0 "We control Delphi and with it, its influential Oracle. We c
 flavor_oracle.1.a:0 "The Oracle calls for war"
 flavor_oracle.1.b:0 "The Oracle calls for economical reforms"
 flavor_oracle.1.c:0 "The Oracle calls for diplomacy"
+
+gl_hf:0 "The Athletes will return with or without victory"
+
+flavor_mac.1.t:0 "The Great Expedition"
+flavor_mac.1.d:0 "Your son Alexandros heard about the weakness of the Persian Empire and wants to remake the exploit of his namesake and seek glory in the mountaines of Persia."
+flavor_mac.1.a:0 "Support his Expedition and ask for the Emperor blessing"
+flavor_mac.1.b:0 "He is the heir of Macedonia. He will stay here."
+great_exp_tt:0 "You will start the Great Expedition. At the end of it, you will switch to a new tag(Macedonian Expedition) in the middle East."
+
+flavor_mac.2.t:0 "The Great Macedonian Expedition"
+flavor_mac.2.d:0 "The son of the late king of Macedon, is starting to gather an expedition to invade Persia. His ego will be is doom and will surely help us. It will weaken both Macedonia and the estern neighbors of the Empire. "
+flavor_mac.2.a:0 "Support the Expedition."
+flavor_mac.2.b:0 "He won't have our support."
+
+
+flavor_mac.3.t:0 "The Emperor answer"
+flavor_mac.3.d1:0 "The Emperor give us his blessing and support !"
+flavor_mac.3.d2:0 "The Emperor won't support us."
+flavor_mac.3.a:0 "His support is appreciated."
+flavor_mac.3.b:0 "We don't nedd him."
+
+flavor_mac.4.t:0 "The Great Macedonian Expedition"
+flavor_mac.4.d:0 "The son of the late king of Macedon, has gathered an expedition to invade Persia. He is now approaching our country and we can surely propose an alliance which will help us both : Osroene in exchange of our help in the war. They will keep Nisibis as a base for operation after the war. "
+flavor_mac.4.a:0 "Propose the alliance"
+flavor_mac.4.b:0 "They are useless"
+
+
+flavor_mac.5.t:0 "Syria propose an alliance"
+flavor_mac.5.d:0 "The Syrians are asking for an agreement : against their help in our wars and Nisibis, they will keep the rest of Osroene. Should we accept ?"
+flavor_mac.5.a:0 "Their support will be beneficial"
+flavor_mac.5.b:0 "We don't need them."
+
+
+flavor_mac.6.t:0 "Macedonia has accepted"
+flavor_mac.6.d:0 "this agreement will be mutually beneficial"
+flavor_mac.6.a:0 "Good news !"
+
+
+flavor_mac.7.t:0 "The size of the expedition"
+flavor_mac.7.d:0 "Now that the expedition is decided, we must choose how much ressources we are giving to it."
+flavor_mac.7.a:0 "Give it everything !"
+flavor_mac.7.b:0 "Give it a reasonable amount of ressource."
+flavor_mac.7.c:0 "Only give what we don't need."
+
+small_expedition_tt:0 "The expedition will be relatively small"
+medium_expedition_tt:0 "The expedition will have a reasonable size"
+large_expedition_tt:0 "The expedition will be force to reckon with"
+syr_syrian_allies_tt:0 "Syria will become an ally of the Expedition but it will have to give them most of Osroene"
+syrian_allies_tt:0 "Syria will become an ally of the Expedition but it will have to give them most of Osroene"
+
+byzantine_help_tt:0 "The Emperor will give us some men and gold to support the expedition"
+
+
+flavor_mac.8.t:0 "The Expedition has arrived at the Empire border"
+flavor_mac.8.d:0 "Now that it arrived, the war can begin. Osroene will be the first to suffer the wrath of the Leonid !"
+flavor_mac.8.a:0 "For Glory !"
+
+
+flavor_mac.10.t:0 "Macedonian attack"
+flavor_mac.10.d:0 "Some Greeks gathered an army and are now marching through our territory. The war will be difficult but not impossible to win. "
+flavor_mac.10.a:0 "We will fight to our last breath !"
+
+
+flavor_mac.11.t:0 "Victory in Osroene"
+flavor_mac.11.d:0 "This is the first victory in a long series."
+flavor_mac.11.a:0 "Now to Mesopotamia !"
+
+flavor_mac.12.t:0 "Integration of Mesopotamia"
+flavor_mac.12.d:0 "These lands have been integrated to our Empire !"
+flavor_mac.12.a:0 "Good news !"
+
+flavor_mac.13.t:0 "Religious Matter"
+flavor_mac.13.d:0 "Now that we have conquered Persia, we must choose what religion we will followed. Will we blend into the population or will we impose our religion to them."
+flavor_mac.13.a:0 "Zoroaster is our prophet !"
+flavor_mac.13.b:0 "We won't forget the old ways !"
+flavor_mac.13.c:0 "Mithras is originally Perisan. He will make a good compromise."
+
+flavor_mac.14.t:0 "Cultural Matter"
+flavor_mac.14.d:0 "Now that we have conquered Persia, we must choose if we integrate the Persian elites into our Kingdom or if we stay between Greeks."
+flavor_mac.14.a:0 "Integrate the Persian elites in our Empire."
+flavor_mac.14.b:0 "We will remain Greek !"
+
+
+flavor_mac.15.t:0 "The Great Macedonian Expedition"
+flavor_mac.15.d:0 "The son of the late king of Macedon, has gathered an expedition to invade Persia. He is now approaching our country and we can surely propose an alliance against Persia "
+flavor_mac.15.a:0 "Let's make a reasonable offer !"
+flavor_mac.15.b:0 "Let's ask for heavy concession !"
+flavor_mac.15.c:0 "We don't need them !"
+armenia_demands_tt:0 "Armenia will take Azerbaijan and Tabarestan from Persia and the Macedonian Expedition will have the rest"
+armenia_demands_heavy_tt:0 "Armenia will take Azerbaijan, Tabarestan, Mashhad, Birjand and most of Iraq-e-ejam from Persia and the Macedonian Expedition will have the rest"
+
+
+flavor_mac.16.t:0 "The Treaty of Kiphas"
+flavor_mac.16.d:0 "The Armenians approached us for a treaty of alliance aginst Persia."
+flavor_mac.16.a:0 "This is a good deal !"
+flavor_mac.16.b:0 "This is unacceptable !"
+
+flavor_mac.17.t:0 "The Treaty of Kiphas"
+flavor_mac.17.d1:0 "The Macedonian has accepted our demands. The treaty of Kiphas is signed."
+flavor_mac.17.d2:0 "The Macedonian refused the deal, they will understand their mistake shorlty. "
+flavor_mac.17.a:0 "Good news !"
+flavor_mac.17.b:0 "They will regret it !"
+
+
+flavor_mac.18.t:0 "Respect the Treaty of Kiphas"
+flavor_mac.18.d:0 "These territories belongs to Armenia according the treaty of Kiphas."
+flavor_mac.18.a:0 "Let's respect the treaty"
+flavor_mac.18.b:0 "This land is ours"
+
+
+flavor_mac.19.t:0 "Respect the Treaty of Kiphas"
+flavor_mac.19.d:0 "These territories belongs to Macedonia according the treaty of Kiphas."
+flavor_mac.19.a:0 "Let's respect the treaty"
+flavor_mac.19.b:0 "This land is ours"
+
+flavor_mac.20.t:0 "$FROMCOUNTRY$ betrays the Treaty"
+flavor_mac.20.d:0 "$FROMCOUNTRY$ took lands that were rightfully ours according to the treaty of Kiphas."
+flavor_mac.20.a:0 "They will pay for this !"
+flavor_mac.20.b:0 "We are not ready for this."
+
+
+flavor_mac.21.t:0 "The Macedonian expedition demands subjugation"
+flavor_mac.21.d:0 "The Macedonians ask us to become their vassals and for a passage to Ecbatana."
+flavor_mac.21.a:0 "Their protection is valuable."
+flavor_mac.21.b:0 "They will have to fight for an access."
+
+
+flavor_mac.22.t:0 "The fall of Ecbatana"
+flavor_mac.22.d:0 "The mighty capital of the Persian Empire fell into our hands. What should we do with it ?"
+flavor_mac.22.a:0 "Keep it untouched, it will legitimize our rule."
+flavor_mac.22.b:0 "Burn it to the ground !"
+
+
+flavor_mac.23.t:0 "King of Kings"
+flavor_mac.23.d:0 "The Saffarid dynasty has fallen, we are now the only ruler of Persia."
+flavor_mac.23.a:0 "Glorious !"
+
+flavor_mac.24.t:0 "The question of the satrapy system"
+flavor_mac.24.d:0 "Now that we most of the old Persian territories are united under us, we shall see how we will administer it. Shall we use the old satrapy system or make the Empire more centralized ? "
+flavor_mac.24.a:0 "The satrapy system proved its efficiency !"
+flavor_mac.24.b:0 "Centralization will prevent a civil war."
+
+flavor_mac.25.t:0 "A capital for an Empire"
+flavor_mac.25.d:0 "The Persian Empire is united and yet we haven't choose a capital for it."
+flavor_mac.25.a:0 "Babylonia like Alexander"
+flavor_mac.25.b:0 "Ecbatana like the Saffarids"
+flavor_mac.25.c:0 "Susa the symbol of Greeko-Persian Union"
+
+flavor_mac.26.t:0 "Cultural Assimilation"
+flavor_mac.26.d:0 "More and More people begin to use our custom and language"
+flavor_mac.26.b:0 "Great News"
+
+flavor_mac.27.t:0 "Cultural Assimilation"
+flavor_mac.27.d:0 "More and More people begin to use our custom and language"
+
+flavor_mac.28.t:0 "Cultural Assimilation"
+flavor_mac.28.d:0 "More and More people begin to use our custom and language"
+
+flavor_mac.29.t:0 "A priest of the Sun"
+flavor_mac.29.d:0 "Today a priest from Afghanistan arrived in the court. He spoke of his Sun god Zun embodiement of Wisdom, power and light and how he saved Afghanistan from countless invasions."
+flavor_mac.29.a:0 "He may be right."
+flavor_mac.29.b:0 "This is nonsense."
+
+flavor_mac.30.t:0 "Time to go home"
+flavor_mac.30.d:0 "Our mission is complete and now we can look back at our homeland in Macedonia."
+flavor_mac.30.a:0 "It is our birthright !"
+flavor_mac.30.b:0 "We are good in Persia"
+flavor_mac.30.c:0 "It is our birthright !"
+
+flavor_mac.31.t:0 "The Persian expedition is back"
+flavor_mac.31.d:0 "And they want the throne"
+flavor_mac.31.b:0 "The throne is mine !"
+flavor_mac.31.a:0 "It is their birthright"
+
+
+flavor_mac.32.t:0 "Macedonia refuse to give up the throne"
+flavor_mac.32.d:0 "They refused to give us our birthright."
+flavor_mac.32.a:0 "It is war then."
+flavor_mac.32.b:0 "We don't need this."
+
+flavor_mac.33.t:0 "The throne is ours !"
+flavor_mac.33.d:0 "We have reclaimed our birthright !"
+flavor_mac.33.a:0 "Macedonia is united !"
+
+flavor_mac.34.t:0 "Natives recruitement"
+flavor_mac.34.d:0 "After the first wars against the mesopotamians, our manpower is starting to deplete. Shall we continue with a greek only army or recruit the natives to make up for our losses ?"
+flavor_mac.34.a:0 "We need more men"
+flavor_mac.34.b:0 "A greek army is superior"
+
+flavor_mac.35.t:0 "Subjugate Armenia"
+flavor_mac.35.d:0 "Armenia has lost and our hegemony in the region is growing. We could now place a client king there."
+flavor_mac.35.a:0 "Let's make a coup"
+flavor_mac.35.b:0 "Let them their mountains"
+
+flavor_mac.36.t:0 "The Leonids are demanding subjugation"
+flavor_mac.36.d:0 "We lost much of our power since the last fall of Persia and now its new ruler asked us to kneel."
+flavor_mac.36.a:0 "We have no choice ..."
+flavor_mac.36.b:0 "But war !"
+
+
+flavor_mac.37.t:0 "The pride of Alexander"
+flavor_mac.37.d:0 "We have recreated the Empire of Alexander."
+flavor_mac.37.a:0 "He shall be proud of us."

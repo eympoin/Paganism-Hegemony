@@ -1,9 +1,9 @@
 #577 - Quetta
 
-owner = SND
-controller = SND
+owner = AFG
+controller = AFG
 culture = baluchi
-religion = zoroastrian
+religion = zunist
 capital = "Quetta"
 trade_goods = grain
 hre = no
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = SND
+add_core = AFG
 add_core = BAL
 
 
