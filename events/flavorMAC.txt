@@ -7,12 +7,7 @@ country_event = {
 	picture = MILITARY_CAMP_eventPicture
 	fire_only_once = yes
 
-	trigger = {
-		tag = MAC
-	}
-	mean_time_to_happen = {
-		days = 60
-	}
+	is_triggered_only = yes
 	major = yes
 
 
@@ -1605,6 +1600,10 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
+		declare_war_with_cb = {
+				who = FROM
+				casus_belli = cb_annex
+		}
 	}
 }
 
@@ -1626,4 +1625,68 @@ country_event = {#alexander's pride
 		}
 	}
 
+}
+
+country_event = {#Greek league
+	id = flavor_mac.38
+	title = flavor_mac.38.t
+	desc = flavor_mac.38.d
+	picture = GREAT_BUILDING_eventPicture
+	is_triggered_only = yes
+
+	option = {#
+		name = flavor_mac.38.a
+		ai_chance = {
+			factor = 100
+		}
+		every_country = {
+			limit = {
+				capital_scope = {
+					OR = {
+						area = attica_area
+						area = morea_area
+						area = aegean_archipelago_area
+						area = kyklades_area
+						area = thessalia_area
+						area = northern_greece_area
+					}
+				}
+				NOT = {total_development = 100}
+			}
+			country_event = {id = flavor_mac.39}
+		}
+	}
+	option = {#we don't need this
+		name = flavor_mac.38.b
+		ai_chance = {
+			factor = 0
+		}
+
+	}
+}
+
+country_event = {#Greek league
+	id = flavor_mac.39
+	title = flavor_mac.39.t
+	desc = flavor_mac.39.d
+	picture = GREAT_BUILDING_eventPicture
+	is_triggered_only = yes
+
+	option = {#they are stronger
+		name = flavor_mac.39.a
+		ai_chance = {
+			factor = 100
+		}
+		FROM = {vassalize = ROOT}
+	}
+	option = {#no
+		name = flavor_mac.39.b
+		ai_chance = {
+			factor = 0
+		}
+		declare_war_with_cb = {
+				who = FROM
+				casus_belli = cb_annex
+		}
+	}
 }

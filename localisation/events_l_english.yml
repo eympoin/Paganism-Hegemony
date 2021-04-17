@@ -1735,7 +1735,16 @@ flavor_mac.36.d:0 "We lost much of our power since the last fall of Persia and n
 flavor_mac.36.a:0 "We have no choice ..."
 flavor_mac.36.b:0 "But war !"
 
-
 flavor_mac.37.t:0 "The pride of Alexander"
 flavor_mac.37.d:0 "We have recreated the Empire of Alexander."
 flavor_mac.37.a:0 "He shall be proud of us."
+
+flavor_mac.38.t:0 "The League of Thessaloniki"
+flavor_mac.38.d:0 "We crushed the Athenians and now our grip on Greece is strong. We could try to force them all in subjugation"
+flavor_mac.38.a:0 "They will kneel or die !"
+flavor_mac.38.b:0 "We don't need this."
+
+flavor_mac.39.t:0 "Macedonia demand subjugation"
+flavor_mac.39.d:0 "The Macedonian now control most of Greece and ask us for our subjugation"
+flavor_mac.39.a:0 "We have no choice ..."
+flavor_mac.39.b:0 "But war !"

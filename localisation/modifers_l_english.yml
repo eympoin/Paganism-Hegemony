@@ -2871,3 +2871,41 @@ greek_leader:0 "Greek Leader"
 oracle_call_war:0 "The Oracle calls for War"
 oracle_call_for_internal_dev:0 "The Oracle calls for economical reforms"
 oracle_call_for_diplomacy:0 "The Oracle calls for diplomacy"
+
+
+
+backlash_large_expedition:0 "Cost of the Expedition"
+backlash_medium_expedition:0 "Cost of the Expedition"
+backlash_small_expedition:0 "Cost of the Expedition"
+great_expedition:0 "Great Expedition"
+discontent_veterans:0 "Discontent Veterans"
+discontent_poupulace:0 "Discontent Populace"
+discontent_populace_mid:0 "Midly Discontent Populace"
+mass_hellenization:0 "Mass Hellenization"
+solidificaton:0 "Solidification"
+satrapy_system:0 "Satrapy system"
+centralized_system:0 "Centralized Administration"
+overstretch_empire:0 "Overstretch Empire"
+natives_in_the_army:0 "Natives Recruitment"
+greek_army:0 "Greek Army"
+the_pride_of_alexander:0 "Pride of Alexander"
+
+
+hellenize_slavs:0 "Hellenized Slavs"
+
+conquerors_mac:0 "Conquerors"
+
+integration_of_the_league:0 "Integrate the League"
+
+reformed_infantry_mac:0 "Reformed Infantry"
+
+reformed_cavalry_mac:0 "Reformed Cavalry"
+
+reformed_siege_warfare_mac:0 "Reformed Eingeneer Corps"
+reformed_commanders_mac:0 "Reform the Commanders Schools"
+the_last_push:0 "The last Push"
+
+regional_capital:0 "Regional capital"
+help_our_savior:0 "Help our Savior"
+
+ended_raid = "Ended Raid"
