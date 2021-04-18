@@ -5302,3 +5302,11 @@ ended_raid ={
   global_unrest = -1
   global_tax_modifier = 0.1
 }
+
+change_of_policy = {
+  imperial_authority_value = 0.1
+}
+
+anatolian_levy = {
+  global_manpower = 10
+}
