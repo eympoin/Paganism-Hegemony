@@ -3739,6 +3739,9 @@ country_event = {
 	}
 	option = {#Lose
 		name = flavor_per_cw.28.b
+		trigger = {
+			NOT = {war_score = 50}
+		}
 
 		white_peace = ABA
 		ABA = { grant_independence = yes }

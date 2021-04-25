@@ -11,7 +11,7 @@ Byzantium_1_1 = {
   }
 
   manipulate_the_horde = {
-    icon = mission_coromandel_expansion
+    icon = mission_non-western_cavalry_raid
     required_missions = {}
     provinces_to_highlight = {
     }
@@ -24,7 +24,7 @@ Byzantium_1_1 = {
   }
 
   fall_of_Osman = {
-    icon = mission_coromandel_expansion
+    icon = mission_steppe_warriors
     required_missions = {manipulate_the_horde}
     provinces_to_highlight = {
     }
@@ -38,7 +38,7 @@ Byzantium_1_1 = {
   }
 
   trigger_mongol_civil_war = {
-    icon = mission_coromandel_expansion
+    icon = mission_recruit_the_cossacks
     required_missions = {fall_of_Osman}
     provinces_to_highlight = {
     }
@@ -52,7 +52,7 @@ Byzantium_1_1 = {
   }
 
   Subjgate_border_nomads = {
-    icon = mission_coromandel_expansion
+    icon = mission_advance_to_the_dnieper
     required_missions = {trigger_mongol_civil_war}
     provinces_to_highlight = {
     }
@@ -80,7 +80,7 @@ Byzantium_2_1 = {
   }
 
   deal_with_the_slavic_revolt = {
-    icon = mission_coromandel_expansion
+    icon = fortress_of_belgrade
     required_missions = {}
     provinces_to_highlight = {
     }
@@ -109,7 +109,7 @@ Byzantium_2_1 = {
   }
 
   protect_adriatic = {
-    icon = mission_coromandel_expansion
+    icon = capture_adriatic_ports
     required_missions = {deal_with_the_slavic_revolt}
     provinces_to_highlight = {
     }
@@ -122,7 +122,7 @@ Byzantium_2_1 = {
   }
 
   secure_the_gold = {
-    icon = mission_coromandel_expansion
+    icon = mission_high_income
     required_missions = {protect_adriatic}
     provinces_to_highlight = {
     }
@@ -136,7 +136,7 @@ Byzantium_2_1 = {
   }
 
   king_of_Illyria = {
-    icon = mission_coromandel_expansion
+    icon = encroach_on_the_germans
     required_missions = {secure_the_gold}
     provinces_to_highlight = {
     }
@@ -163,7 +163,7 @@ Byzantium_3_1 = {
   }
 
   reduce_ionian_influence = {
-    icon = mission_coromandel_expansion
+    icon = mission_market_place_with_asian_traders
     required_missions = {}
     provinces_to_highlight = {
     }
@@ -179,12 +179,12 @@ Byzantium_3_1 = {
   }
 
   influence_anatolians = {
-    icon = mission_coromandel_expansion
+    icon = mission_alliances
     required_missions = {reduce_ionian_influence direct_pontus_toward_armenia}
     provinces_to_highlight = {
     }
     trigger = {
-      add_dip_power = 300
+      dip_power = 300
     }
     effect = {
       #event vassalization of anatolian states
@@ -192,7 +192,7 @@ Byzantium_3_1 = {
   }
 
   anatolian_recruitment = {
-    icon = mission_coromandel_expansion
+    icon = mission_assemble_an_army
     required_missions = {influence_anatolians}
     provinces_to_highlight = {
     }
@@ -209,7 +209,7 @@ Byzantium_3_1 = {
   }
 
   king_of_Anatolian = {
-    icon = mission_coromandel_expansion
+    icon = anatolian_frontier
     required_missions = {anatolian_recruitment}
     provinces_to_highlight = {
     }
@@ -237,7 +237,7 @@ Byzantium_4_1 = {
   }
 
   direct_pontus_toward_armenia = {
-    icon = mission_coromandel_expansion
+    icon = union_with_naples
     required_missions = {}
     provinces_to_highlight = {
     }
@@ -253,7 +253,7 @@ Byzantium_4_1 = {
   }
 
   weaken_armenia = {
-    icon = mission_coromandel_expansion
+    icon = balance_of_power
     required_missions = {direct_pontus_toward_armenia}
     provinces_to_highlight = {
     }
@@ -276,7 +276,7 @@ Byzantium_4_1 = {
   }
 
   reconquer_armenia_minor = {
-    icon = mission_coromandel_expansion
+    icon = mission_unite_home_region
     required_missions = {weaken_armenia}
     provinces_to_highlight = {
       area = erzurum_area
@@ -302,7 +302,7 @@ Byzantium_4_1 = {
   }
 
 	secure_colchis = {
-    icon = mission_coromandel_expansion
+    icon = alpine_fortifications
     required_missions = {reconquer_armenia_minor}
     provinces_to_highlight = {
       OR = {
@@ -320,7 +320,6 @@ Byzantium_4_1 = {
         is_part_of_hre = yes
       }
       1856 = {
-        type = all
         is_part_of_hre = yes
       }
     }
@@ -345,62 +344,109 @@ Byzantium_5_1 = {
   }
 
   counter_macedonian_influence_in_greece = {
-    icon = mission_coromandel_expansion
+    icon = balance_the_estates
     required_missions = {}
     provinces_to_highlight = {
     }
     trigger = {
+      alliance_with = ATH
+      treasury = 100
     }
     effect = {
-
+      add_treasury = -100
+      #event counter macedon influence
     }
   }
 
   the_argian_league = {
-    icon = mission_coromandel_expansion
+    icon = all_bases_covered
     required_missions = {counter_macedonian_influence_in_greece}
     provinces_to_highlight = {
+      province_id = 4819
     }
     trigger = {
+      OR = {
+        4819 = {
+          country_or_non_sovereign_subject_holds = ROOT
+        }
+        alliance_with = AGO
+      }
     }
     effect = {
-
+      #event argian league
     }
   }
 
   control_the_oracle = {
-    icon = mission_coromandel_expansion
+    icon = mission_have_two_subjects
     required_missions = {the_argian_league}
     provinces_to_highlight = {
+      owned_by = DLP
     }
     trigger = {
+      OR = {
+        reverse_has_opinion = {
+          who = DLP
+          value = 190
+        }
+        4810 = {
+          country_or_non_sovereign_subject_holds = ROOT
+        }
+      }
     }
     effect = {
-
+      #event get oracle event even if not owned
     }
   }
 
 	agean_sea = {
-    icon = mission_coromandel_expansion
+    icon = mission_galleys_in_port
     required_missions = {control_the_oracle}
     provinces_to_highlight = {
+      OR = {
+        area = kyklades_area
+        area = aegean_archipelago_area
+        area = south_islands_area
+      }
+      NOT = {owned_by = ROOT}
     }
     trigger = {
+      kyklades_area = {
+        type = all
+        owned_by = ROOT
+      }
+      aegean_archipelago_area = {
+        type = all
+        owned_by = ROOT
+      }
+      south_islands_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
     effect = {
-
+      151 = {
+        add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = CONTROL_OF_THE_SEA
+        }
+      }
     }
   }
 
 	king_of_greece = {
-    icon = mission_coromandel_expansion
+    icon = mission_monarch_in_throne_room
     required_missions = {agean_sea}
     provinces_to_highlight = {
     }
     trigger = {
+      imperial_influence = 50
     }
     effect = {
-
+      add_imperial_influence = -50
+      #event possibility of vassalizing greece
     }
   }
 
@@ -419,39 +465,82 @@ Byzantium_1_2 = {
   }
 
   western_threats = {
-    icon = mission_coromandel_expansion
+    icon = mission_sea_battles
     required_missions = {}
 		position = 5
     provinces_to_highlight = {
     }
     trigger = {
+        mil_power = 100
+        dip_power = 100
+        adm_power = 100
     }
     effect = {
-
+      #event greek fire
     }
   }
 
   protect_cyr = {
-    icon = mission_coromandel_expansion
+    icon = mission_pacify_the_berbers
     required_missions = {western_threats maintain_egypt}
     provinces_to_highlight = {
     }
     trigger = {
+      OR = {
+        reverse_has_opinion = {
+          who = CYR
+          value = 190
+        }
+        356 = {
+          country_or_non_sovereign_subject_holds = ROOT
+        }
+      }
     }
     effect = {
-
+      #event vassalize CYR
     }
   }
 
   divide_the_west = {
-    icon = mission_coromandel_expansion
-    required_missions = {fall_of_Osman}
+    icon = friends_in_high_places
+    required_missions = {protect_cyr}
     provinces_to_highlight = {
+      owner = {
+        total_development = 500
+        capital_scope = {
+          OR = {
+            region = france_region
+            region = iberia_region
+            region = italy_region
+            region = maghreb_region
+          }
+        }
+      }
     }
     trigger = {
+      NOT = {
+        any_country = {
+          capital_scope = {
+            OR = {
+              region = france_region
+              region = iberia_region
+              region = italy_region
+              region = maghreb_region
+            }
+          }
+        }
+        total_development = 500
+      }
     }
     effect = {
-
+      add_dip_power = 100
+      italy_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 }
@@ -469,63 +558,81 @@ Byzantium_2_2 = {
   }
 
   maintain_egypt = {
-    icon = mission_coromandel_expansion
+    icon = mission_rb_seize_alexandria
 		position = 5
     required_missions = {}
     provinces_to_highlight = {
+      region = egypt_region
+      is_part_of_hre = yes
+      owner = {is_part_of_hre = no}
     }
     trigger = {
+      NOT = {
+        any_province = {
+          region = egypt_region
+          is_part_of_hre = yes
+          owner = {is_part_of_hre = no}
+        }
+      }
     }
     effect = {
-
+      add_imperial_influence = 10
+      add_dip_power = 100
     }
   }
 
   impose_loyalty = {
-    icon = mission_coromandel_expansion
+    icon = mission_impaled_soldies
     required_missions = {maintain_egypt}
     provinces_to_highlight = {
     }
     trigger = {
+      adm_power = 200
     }
     effect = {
-
+      add_adm_power = -200
+      #event force  conversion
     }
   }
 
   guard_the_border = {
-    icon = mission_coromandel_expansion
+    icon = mission_arabian_fort
     required_missions = {impose_loyalty}
     provinces_to_highlight = {
     }
     trigger = {
+      mil_power = 200
     }
     effect = {
-
+      add_mil_power = -200
+      #event build fort and gives manpower
     }
   }
 
   the_great_eastern_road = {
-    icon = mission_coromandel_expansion
+    icon = construct_the_kiel_canal
     required_missions = {guard_the_border}
     provinces_to_highlight = {
     }
     trigger = {
+      treasury = 2000
     }
     effect = {
-
+      #event take suez and build canal
     }
   }
 
 	king_of_Egypt = {
-    icon = mission_coromandel_expansion
+    icon = mission_egyptian_mamluk_soldier
     required_missions = {the_great_eastern_road}
     provinces_to_highlight = {
     }
     trigger = {
+      imperial_influence = 50
     }
     effect = {
-
+      add_imperial_influence = -50
+      #event possibility of vassalizing egypt
     }
   }
 
@@ -544,39 +651,47 @@ Byzantium_3_2 = {
   }
 
   stop_cilician_pirates = {
-    icon = mission_coromandel_expansion
+    icon = mission_sponsor_piracy
 		position = 5
     required_missions = {}
     provinces_to_highlight = {
     }
     trigger = {
+      navy_size = 50
     }
     effect = {
-
+      #event battle of cilicia
     }
   }
 
   take_cyprus = {
-    icon = mission_coromandel_expansion
+    icon = kingdom_of_cyprus
     required_missions = {stop_cilician_pirates}
     provinces_to_highlight = {
     }
     trigger = {
+      navy_size = 75
     }
     effect = {
-
+      #event take control of cyprus
     }
   }
 
   the_syrian_border = {
-    icon = mission_coromandel_expansion
+    icon = mission_conquer_50_development
     required_missions = {take_cyprus}
     provinces_to_highlight = {
+      area = osroene_area
+      is_part_of_hre = no
     }
     trigger = {
+      osroene_area = {
+        type = all
+        is_part_of_hre = true
+      }
     }
     effect = {
-
+      #event create free osroene as a border pricne
     }
   }
 }
@@ -595,43 +710,398 @@ Byzantium_4_2 = {
   }
 
   arbiter_jerusalem = {
-    icon = mission_coromandel_expansion
+    icon = restore_the_hospitallers
 		position = 5
     required_missions = {}
     provinces_to_highlight = {
     }
     trigger = {
+      reverse_has_opinion = {
+        who = KOJ
+        value = 100
+      }
+      reverse_has_opinion = {
+        who = PLS
+        value = 100
+      }
     }
     effect = {
-
+      #event arbiter Jerusalem
     }
   }
 
   crush_the_arabs = {
-    icon = mission_coromandel_expansion
+    icon = jerusalem
     required_missions = {arbiter_jerusalem}
 		position = 7
     provinces_to_highlight = {
+      OR = {
+        owner = {tag = MDA}
+        owner = {tag = HED}
+      }
     }
+
     trigger = {
+      NOT = {exists = MDA}
+      NOT = {exists = HED}
     }
     effect = {
-
+      arabia_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
     }
   }
 
-	kking_of_syria = {
-    icon = mission_coromandel_expansion
+	 king_of_syria = {
+    icon = mission_empire
     required_missions = {crush_the_arabs the_syrian_border}
 		position = 7
     provinces_to_highlight = {
     }
     trigger = {
+      imperial_influence = 50
     }
     effect = {
-
+      add_imperial_influence = -50
+      #event possibility of vassalizing syria
     }
   }
 
+
+}
+Byzantium_3_3 = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = BYZ
+      was_tag = BYZ
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+
+    ERE_reformed = {
+      icon = a.e.i.o.u.
+  		position = 9
+      required_missions = {}
+      provinces_to_highlight = {
+      }
+      trigger = {
+        tag = ERM
+      }
+      effect = {
+        add_prestige = 20
+        add_legitimacy = 20
+      }
+    }
+  }
+
+Byzantium_2_3 = {
+    slot = 2
+    generic = no
+    ai = yes
+    potential = {
+      OR = {
+        tag = BYZ
+        was_tag = BYZ
+      }
+      NOT = { map_setup = map_setup_random }
+    }
+
+      retake_italy = {
+        icon = complete_the_risorgimento
+    		position = 10
+        required_missions = {ERE_reformed}
+        provinces_to_highlight = {
+          region = italy_region
+          NOT = {owned_by = ROOT}
+        }
+        trigger = {
+          italy_region = {
+            type = all
+            owned_by = ROOT
+          }
+        }
+        effect = {
+          118 = {
+            add_base_tax = 1
+            add_base_manpower = 1
+            add_base_production = 1
+          }
+          maghreb_region = {
+            limit = {
+              NOT = { owned_by = ROOT }
+              NOT = {is_claim	= ROOT}
+            }
+            add_permanent_claim = ROOT
+          }
+        }
+      }
+
+      retake_carthage = {
+        icon = mission_coromandel_expansion
+        required_missions = {retake_italy}
+        provinces_to_highlight = {
+          region = maghreb_region
+          NOT = {owned_by = ROOT}
+        }
+        trigger = {
+          maghreb_region = {
+            type = all
+            owned_by = ROOT
+          }
+        }
+        effect = {
+          341 = {
+            add_base_tax = 1
+            add_base_manpower = 1
+            add_base_production = 1
+          }
+          iberia_region = {
+            limit = {
+              NOT = { owned_by = ROOT }
+              NOT = {is_claim	= ROOT}
+            }
+            add_permanent_claim = ROOT
+          }
+        }
+      }
+      retake_spain = {
+        icon = mission_found_havana
+        required_missions = {retake_carthage}
+        provinces_to_highlight = {
+          region = iberia_region
+          NOT = {owned_by = ROOT}
+        }
+        trigger = {
+          iberia_region = {
+            type = all
+            owned_by = ROOT
+          }
+        }
+        effect = {
+          225 = {
+            add_base_tax = 1
+            add_base_manpower = 1
+            add_base_production = 1
+          }
+          france_region = {
+            limit = {
+              NOT = { owned_by = ROOT }
+              NOT = {is_claim	= ROOT}
+            }
+            add_permanent_claim = ROOT
+          }
+        }
+      }
+      retake_gaul = {
+        icon = centralize_france
+        required_missions = {retake_spain}
+        provinces_to_highlight = {
+          region = france_region
+          NOT = {owned_by = ROOT}
+        }
+        trigger = {
+          france_region = {
+            type = all
+            owned_by = ROOT
+          }
+        }
+        effect = {
+          203 = {
+            add_base_tax = 1
+            add_base_manpower = 1
+            add_base_production = 1
+          }
+          british_isles_region = {
+            limit = {
+              NOT = { owned_by = ROOT }
+              NOT = {is_claim	= ROOT}
+            }
+            add_permanent_claim = ROOT
+          }
+        }
+      }
+      retake_britannia = {
+        icon = defeat_the_english
+        required_missions = {retake_gaul}
+        provinces_to_highlight = {
+          region = british_isles_region
+          NOT = {owned_by = ROOT}
+        }
+        trigger = {
+          british_isles_region = {
+            type = all
+            owned_by = ROOT
+          }
+        }
+        effect = {
+          236 = {
+            add_base_tax = 1
+            add_base_manpower = 1
+            add_base_production = 1
+          }
+        }
+      }
+      SPQR_byz = {
+        icon = a_place_among_the_great_powers
+        required_missions = {retake_britannia}
+        provinces_to_highlight = {}
+
+        		trigger = {
+        			tag = ROM
+
+        		}
+        		effect = {
+        			add_prestige = 20
+        			add_mil_power = 100
+        			add_adm_power = 100
+        			add_dip_power = 100
+        			add_years_of_income = 1
+        			add_country_modifier = {
+        				name = emperoror_of_east_west
+        				duration = -1
+        			}
+        			add_accepted_culture = roman
+        			add_accepted_culture = african
+        			add_accepted_culture = narbonnais
+        			add_accepted_culture = tarraconan
+              add_accepted_culture = cartaginensian
+        		}
+      }
+}
+
+
+Byzantium_4_3 = {
+    slot = 4
+    generic = no
+    ai = yes
+    potential = {
+      OR = {
+        tag = BYZ
+        was_tag = BYZ
+      }
+      NOT = { map_setup = map_setup_random }
+    }
+
+      conquer_mesopotamia = {
+        icon = mission_build_up_to_force_limit
+    		position = 10
+        required_missions = {ERE_reformed}
+        provinces_to_highlight = {
+          region = mashriq_region
+          NOT = {owned_by = ROOT}
+        }
+        trigger = {
+          mashriq_region = {
+            type = all
+            owned_by = ROOT
+          }
+        }
+        effect = {
+          2311 = {
+            add_base_tax = 1
+            add_base_manpower = 1
+            add_base_production = 1
+          }
+          caucasia_region = {
+            limit = {
+              NOT = { owned_by = ROOT }
+              NOT = {is_claim	= ROOT}
+            }
+            add_permanent_claim = ROOT
+          }
+        }
+      }
+
+      subjugate_Armenia = {
+        icon = mission_new_army
+        required_missions = {conquer_mesopotamia}
+        provinces_to_highlight = {
+          region = caucasia_region
+          NOT = {owned_by = ROOT}
+        }
+        trigger = {
+          caucasia_region = {
+            type = all
+            owned_by = ROOT
+          }
+        }
+        effect = {
+          419 = {
+            add_base_tax = 1
+            add_base_manpower = 1
+            add_base_production = 1
+          }
+          persia_region = {
+            limit = {
+              NOT = { owned_by = ROOT }
+              NOT = {is_claim	= ROOT}
+            }
+            add_permanent_claim = ROOT
+          }
+        }
+      }
+      end_of_persia = {
+        icon = mission_persianate_empire
+        required_missions = {subjugate_Armenia}
+        provinces_to_highlight = {
+          region = persia_region
+          NOT = {owned_by = ROOT}
+        }
+        trigger = {
+          persia_region = {
+            type = all
+            owned_by = ROOT
+          }
+        }
+        effect = {
+          414 = {
+            add_base_tax = 1
+            add_base_manpower = 1
+            add_base_production = 1
+          }
+          sogdia_region = {
+            limit = {
+              NOT = { owned_by = ROOT }
+              NOT = {is_claim	= ROOT}
+            }
+            add_permanent_claim = ROOT
+          }
+          khorasan_region = {
+            limit = {
+              NOT = { owned_by = ROOT }
+              NOT = {is_claim	= ROOT}
+            }
+            add_permanent_claim = ROOT
+          }
+        }
+      }
+      control_the_silk_road = {
+        icon = mission_into_persia_2
+        required_missions = {end_of_persia}
+        provinces_to_highlight = {
+          region = sogdia_region
+          NOT = {owned_by = ROOT}
+        }
+        trigger = {
+          sogdia_region = {
+            type = all
+            owned_by = ROOT
+          }
+        }
+        effect = {
+          454 = {
+            add_base_tax = 1
+            add_base_manpower = 1
+            add_base_production = 1
+          }
+        }
+      }
 
 }
