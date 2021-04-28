@@ -33,6 +33,8 @@ monarchy = {
 				persian_empire_decen
 				persian_empire_stable
 				satrapdom_reform
+				siamese_absolutism
+				confucian_bureaucracy
 				persian_empire_cen
 				absolute_reform
 			}
@@ -52,6 +54,7 @@ monarchy = {
 				black_army_reform
 				legion_of_honor_reform
 				imperial_nobility_reform
+				uparaja_reform
 			}
 		}
 		bureaucracy = {
@@ -78,6 +81,7 @@ monarchy = {
 				revolutionary_principle_reform
 				equality_principle_reform
 				imperial_principle_reform
+				sakdina_system_reform
 			}
 		}
 		deliberative_assembly = {
@@ -262,7 +266,9 @@ republic = {
 				veche_republic
 				american_republic
 				federal_republic
-				colonial_government
+				crown_colony_government
+				private_enterprise_colony_government
+				self_governing_colony_government
 				dutch_republic
 				peasants_republic
 				revolutionary_republic_reform
@@ -274,6 +280,8 @@ republic = {
 				protectorate_parliament_reform
 				prussian_republic_reform
 				united_cantons_reform
+				kongsi_federation
+				millenarian_theocracy_reform
 				roman_curia_reform
 				imperial_roman_curia_reform
 				carthaginian_republic_decentralize
@@ -481,7 +489,52 @@ native = {
 		native_council_legacy
 	}
 	color = { 194 127 209 }
+
+	reform_levels = {
+		tribe_organization = {
+			reforms = {
+				native_chiefdom_reform
+				native_federation_reform
+				native_clan_council_reform
+				native_hereditary_reform
+			}
+		}
+
+		story_tradition = {
+			reforms = {
+				native_martial_tradition_reform
+				native_oral_tradition_reform
+				native_land_tradition_reform
+			}
+		}
+
+		agricultural_revolution = {
+			reforms = {
+				native_war_band_reform
+				native_settle_down_reform
+				native_seasonal_travel_reform
+			}
+		}
+
+		legal_basis = {
+			reforms = {
+				native_codified_power_reform
+				native_diplomatic_cermonies_reform
+				native_trading_with_foreigners_reform
+			}
+		}
+
+		national_identity = {
+			reforms = {
+				native_becomes_horde_reform
+				native_becomes_monarchy_reform
+				native_becomes_republic_reform
+				native_becomes_theocracy_reform
+			}
+		}
+	}
 }
+
 
 
 theocracy = {

@@ -4,8 +4,8 @@ Mauretania_1_1 = {
   ai = yes
   potential = {
     OR = {
-      tag = MAU
-      was_tag = MAU
+      tag = MRT
+      was_tag = MRT
     }
     NOT = { map_setup = map_setup_random }
   }

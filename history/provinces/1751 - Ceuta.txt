@@ -1,7 +1,7 @@
 #1751 - Ceuta
 
-owner = MAU
-controller = MAU
+owner = MRT
+controller = MRT
 culture = mauretanian
 religion = deii
 capital = "Cebta"
@@ -12,8 +12,8 @@ base_production = 3
 base_manpower = 1
 is_city = yes
 fort_15th = yes
-add_core = MAU
-add_core = MAU
+add_core = MRT
+add_core = MRT
 
 
 discovered_by = western

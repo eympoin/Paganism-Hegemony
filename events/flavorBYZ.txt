@@ -1,0 +1,77 @@
+
+namespace = flavor_byzmod
+# ask the horde to attack the turks
+country_event = {
+	id = flavor_byzmod.1
+	title = "flavor_byzmod.1.t"
+	desc = "flavor_byzmod.1.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# bribe them
+		name = "flavor_byzmod.1.a"
+		ai_chance = { factor = 100 }
+		add_treasury = -100
+		GOL = {country_event = {id = flavor_byzmod.2} days = 14}
+	}
+	option = {	#not needed
+		name = "flavor_byzmod.1.b"
+		ai_chance = { factor = 0 }
+	}
+
+}
+
+
+country_event = {
+	id = flavor_byzmod.2
+	title = "flavor_byzmod.2.t"
+	desc = "flavor_byzmod.2.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accept
+		name = "flavor_byzmod.1.a"
+		ai_chance = { factor = 100 }
+		set_country_flag = accepted_byz_bribe
+		add_treasury = 100
+		FROM = {country_event = {id = flavor_byzmod.3} fays = 14}
+		declare_war_with_cb = {
+			who = TUR
+			casus_belli = cb_annex
+		}
+	}
+	option = {	#not needed
+		name = "flavor_byzmod.1.b"
+		ai_chance = { factor = 0 }
+			reverse_add_opinion = {
+			who = FROM
+			modifier = opinion_declined_bribe
+		}
+		FROM = {country_event = {id = flavor_byzmod.3}}
+		set_country_flag = not_accepted_byz_bribe
+	}
+
+}
+
+country_event = {
+	id = flavor_byzmod.3
+	title = "flavor_byzmod.3.t"
+	desc = "flavor_byzmod.3.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accepted
+		name = "flavor_byzmod.3.a"
+		trigger = {
+			GOL = {has_country_flag = accepted_byz_bribe}
+		}
+
+	}
+	option = {	# refused
+		name = "flavor_byzmod.3.b"
+		trigger = {
+			GOL = {has_country_flag = not_accepted_byz_bribe}
+		}
+	}
+
+}

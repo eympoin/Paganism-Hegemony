@@ -612,6 +612,106 @@ colony = {
 }
 
 
+crown_colony = {
+	copy_from = colony
+
+	change_colonial_type = yes
+	upgrade_subject_type = yes
+	is_colony_subtype = yes
+	can_send_missionary_to_subject = yes
+
+	forcelimit_bonus = 1.0
+	forcelimit_to_overlord = 0.5
+	manpower_bonus = 1.0
+	manpower_to_overlord = 0.5
+	naval_forcelimit_bonus = 0.5
+	naval_forcelimit_to_overlord = 0.05
+	sailors_bonus = 0.5
+	sailors_to_overlord = 0.05
+
+	# Subject Interactions:
+	embargo_rivals = yes
+	support_loyalists = yes
+	subsidize_armies = yes
+	send_officers = yes
+	enforce_religion = yes
+	takeondebt = yes
+	block_settlement_growth = yes
+	allow_settlement_growth = yes
+
+	# Modifiers:
+	modifier_overlord = {
+		modifier = crown_colony_overlord
+	}
+
+	modifier_subject = {
+		modifier = crown_colony_subject
+	}
+}
+
+private_enterprise = {
+	copy_from = colony
+
+	change_colonial_type = yes
+	upgrade_subject_type = yes
+	is_colony_subtype = yes
+
+	forcelimit_bonus = 0.0
+	forcelimit_to_overlord = 0.0
+	manpower_bonus = 0.0
+	manpower_to_overlord = 0.0
+	naval_forcelimit_bonus = 1.0
+	naval_forcelimit_to_overlord = 0.5
+	sailors_bonus = 1.0
+	sailors_to_overlord = 0.5
+
+	# Subject Interactions:
+	replace_governor = no
+	block_settlement_growth = no
+	allow_settlement_growth = no
+
+	# Modifiers:
+	modifier_overlord = {
+		modifier = private_enterprise_overlord
+	}
+
+	modifier_subject = {
+		modifier = private_enterprise_subject
+	}
+}
+
+self_governing_colony = {
+	copy_from = colony
+
+	change_colonial_type = yes
+	upgrade_subject_type = yes
+	is_colony_subtype = yes
+
+	forcelimit_bonus = 0.1
+	forcelimit_to_overlord = 0.05
+	manpower_bonus = 0.1
+	manpower_to_overlord = 0.05
+	naval_forcelimit_bonus = 0.1
+	naval_forcelimit_to_overlord = 0.05
+	sailors_bonus = 0.1
+	sailors_to_overlord = 0.05
+
+	# Subject Interactions:
+	transfer_trade_power = no
+	replace_governor = no
+	block_settlement_growth = no
+	allow_settlement_growth = no
+	press_sailors = no
+
+	# Modifiers:
+	modifier_overlord = {
+		modifier = self_governing_colony_overlord
+	}
+
+	modifier_subject = {
+		modifier = self_governing_colony_subject
+	}
+}
 carthaginian_colony = {
 	copy_from = default
 
@@ -697,6 +797,8 @@ tributary_state = {
 			has_reform = celestial_empire
 			is_nomad = yes
 			religion_group = eastern
+			technology_group = chinese
+			technology_group = polynesian_tech
 		}
 	}
 
@@ -715,6 +817,7 @@ tributary_state = {
 	takes_diplo_slot = no
 	base_liberty_desire = -5
 	relative_power_class = 1
+	should_quit_wars_on_activation = no
 	can_send_tribute = yes
 	can_have_subjects_of_other_types = yes
 	uses_military_focus = no
@@ -726,6 +829,7 @@ tributary_state = {
 	can_set_mil_focus = no
 	can_send_missionary_to_subject = no
 	overlord_can_fabricate_for = no
+	does_overlord_size_count_for_warscore_cost = no
 
 	liberty_desire_development_ratio = 0.175
 	trust_on_start = 0
@@ -762,6 +866,8 @@ tributary_state = {
 	send_additional_troops = yes
 	demand_artifacts = yes
 	demand_additional_tribute = yes
+	block_settlement_growth = no
+	allow_settlement_growth = no
 	placate_rulers = no
 	knowledge_sharing = no
 	# (continuous)
@@ -794,6 +900,7 @@ tributary_state = {
 		}
 	}
 }
+
 
 # Completely scripted subject type (no code used). Add any number of these. Check common/new_diplomatic_actions for how to make visible in game.
 dummy =

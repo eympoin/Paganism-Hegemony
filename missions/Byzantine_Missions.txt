@@ -16,7 +16,7 @@ Byzantium_1_1 = {
     provinces_to_highlight = {
     }
     trigger = {
-      treasury = 200
+      treasury = 100
     }
     effect = {
       #event war against the horde

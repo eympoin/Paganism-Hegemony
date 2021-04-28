@@ -365,7 +365,7 @@ civil_war_consequences = {
     effect = {
       country_event = { id = flavor_jar.2 }
       add_casus_belli = {
-				target = MAU
+				target = MRT
 				type = cb_vassalize_mission
 				months = 240
 			}

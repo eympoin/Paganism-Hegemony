@@ -693,11 +693,11 @@ roman_base_1 = {
     effect = {
     if = {
       limit = {
-        MAU = {
+        MRT = {
           is_subject_of = ROOT
         }
       }
-      inherit = MAU
+      inherit = MRT
     }
     add_prestige = 10
     118 = {
@@ -1011,7 +1011,7 @@ own_base_2 = {
           who = ROOT
           duration = -1
           power = 50
-          key = MAURETANIAN_MONOPOL
+          key = MRTRETANIAN_MONOPOL
         }
       }
     }

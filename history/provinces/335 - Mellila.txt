@@ -1,7 +1,7 @@
 #335 - Melilla
 
-owner = MAU
-controller = MAU
+owner = MRT
+controller = MRT
 culture = mauretanian
 religion = deii
 capital = "Melilla"
@@ -11,7 +11,7 @@ base_tax = 5
 base_production = 5
 base_manpower = 3
 is_city = yes
-add_core = MAU
+add_core = MRT
 
 
 

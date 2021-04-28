@@ -6967,9 +6967,9 @@ aquileian_Tremissis_desc:0 ""
 master_condottierri_desc:0 ""
 
 
- MAU_ideas:0 "Mauretanian Ideas"
- MAU_ideas_start:0 "Mauretanian traditions"
- MAU_ideas_bonus:0 "Mauretanian Ambition"
+ MRT_ideas:0 "Mauretanian Ideas"
+ MRT_ideas_start:0 "Mauretanian traditions"
+ MRT_ideas_bonus:0 "Mauretanian Ambition"
  control_the_strait:0 "Control the strait"
  encourage_prod:0 "Boost production"
  old_limes:0 "Improve the old limes"

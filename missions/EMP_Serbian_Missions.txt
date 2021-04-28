@@ -13,8 +13,8 @@ Serbia_1_1 = {
         was_tag = SIR
       }
       OR = {
-        tag = MIA
-        was_tag = MIA
+        tag = MOA
+        was_tag = MOA
       }
       OR = {
         tag = RSC
@@ -228,8 +228,8 @@ Serbia_2_1 = {
       was_tag = SIR
     }
     OR = {
-      tag = MIA
-      was_tag = MIA
+      tag = MOA
+      was_tag = MOA
     }
     OR = {
       tag = RSC
@@ -532,8 +532,8 @@ Serbia_3_1 = {
         was_tag = SIR
       }
       OR = {
-        tag = MIA
-        was_tag = MIA
+        tag = MOA
+        was_tag = MOA
       }
       OR = {
         tag = RSC
@@ -772,8 +772,8 @@ Serbia_4_0 = {
         was_tag = SIR
       }
       OR = {
-        tag = MIA
-        was_tag = MIA
+        tag = MOA
+        was_tag = MOA
       }
       OR = {
         tag = RSC
@@ -858,8 +858,8 @@ Serbia_4_1 = {
         was_tag = SIR
       }
       OR = {
-        tag = MIA
-        was_tag = MIA
+        tag = MOA
+        was_tag = MOA
       }
       OR = {
         tag = RSC
@@ -997,8 +997,8 @@ Serbia_4_2 = {
         was_tag = SIR
       }
       OR = {
-        tag = MIA
-        was_tag = MIA
+        tag = MOA
+        was_tag = MOA
       }
       OR = {
         tag = RSC
@@ -1139,8 +1139,8 @@ Serbia_5_1 = {
         was_tag = SIR
       }
       OR = {
-        tag = MIA
-        was_tag = MIA
+        tag = MOA
+        was_tag = MOA
       }
       OR = {
         tag = RSC
@@ -1229,8 +1229,8 @@ Serbia_5_2 = {
         was_tag = SIR
       }
       OR = {
-        tag = MIA
-        was_tag = MIA
+        tag = MOA
+        was_tag = MOA
       }
       OR = {
         tag = RSC

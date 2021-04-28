@@ -598,7 +598,6 @@ negative_stability = {
 	global_unrest = -2					#-1% EXTRA revolt risk each step
 	legitimacy = 1
 	interest = -1
-	migration_cooldown = 0.1
 	devotion = 1
 	caravan_power = 0.05
 }
@@ -1216,6 +1215,36 @@ large_colonial_nation_ctg = {
 	land_forcelimit = 5
 }
 
+
+crown_colony_overlord = {
+}
+
+private_enterprise_overlord = {
+	global_tariffs = -0.05
+}
+
+self_governing_colony_overlord = {
+	global_tariffs = -0.10
+}
+
+crown_colony_subject = {
+	global_autonomy = -0.05
+	global_colonial_growth = 10
+}
+
+private_enterprise_subject = {
+	global_ship_trade_power = 0.2
+	global_trade_goods_size_modifier = 0.2
+	naval_tradition_from_trade = 0.1
+	ship_power_propagation = 0.1
+}
+
+self_governing_colony_subject = {
+	colonists = 1
+	development_cost = -0.15
+	liberty_desire = 25
+}
+
 march_subject = {
 	land_forcelimit = 1
 }
@@ -1711,4 +1740,21 @@ carthaginian_trading_outpost = {
 	local_development_cost= -0.1
 	local_sailors_modifier = 0.1
 	local_state_maintenance_modifier = -0.25
+}
+
+expanded_infrastructure = {
+	allowed_num_of_buildings = 1
+	allowed_num_of_manufactories = 1
+	local_governing_cost_increase = 50
+	local_governing_cost = 1.0
+}
+
+centralize_state = {
+	state_governing_cost_increase = -20
+	picture = "centralize_state"
+}
+
+# Applied once for each guru teaching
+guru_teaching = {
+	global_missionary_strength = -0.01
 }

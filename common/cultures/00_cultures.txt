@@ -42,7 +42,7 @@ neo-roman={
 		primary = LDN
 	}
 	mauretanian= {
-		primary = MAU
+		primary = MRT
 	}
 	aquitain = {
 		primary = AQI
@@ -2839,7 +2839,7 @@ east_slavic = {
 		Lyubech Roslavsky Turov
 	}
 	male_names = {
-		# BOHEMIAN
+		# BOHEMOAN
 		Albert Albert Albrecht Albert Ales Alexander Arnost Ernest Bavor Bedrich Frederick Benes
 		Bocek Bohuslav Boguslaw Boleslav Boleslav Bores Borijov Borijov Bretislav Bretislaus Budivoj
 		Castolov Cenek Vincent Chval Ctirad Diepold
@@ -2861,7 +2861,7 @@ east_slavic = {
 		Vsevolod Vyshata Vysheslav Yaropolk Yaroslav Jaroslav Yefimiy Yelisey Yeremey Yevstafiy
 	}
 	female_names = {
-		# BOHEMIAN
+		# BOHEMOAN
 		Adl�ta Anezka Anna Anna Barbora Bedriska Blazena Bohuslava Boleslava Bozena Bozislava
 		Dobromila Dobroslava Domaslava Dorota Dorothy Bretislava
 		Doubravka Drahom�ra Drahoslava Eliska Eufemie Euphemia Gertruda Gertrude Guta Hedvika Helena

@@ -1,6 +1,6 @@
 #############################################################
 #
-# ADVISORS FOR THE REGION 'AUSTRIA+HUNGARY+BOHEMIA+SLOVENIA'
+# ADVISORS FOR THE REGION 'AUSTRIA+HUNGARY+BOHEMOA+SLOVENIA'
 #
 #############################################################
 #############################################################
@@ -139,7 +139,7 @@ advisor = {
 
 advisor = {
 	advisor_id = 120
-	name = "Tamás Bakócz" #leading statesman of Hungary and mainly responsible for foreign policy
+	name = "Tamï¿½s Bakï¿½cz" #leading statesman of Hungary and mainly responsible for foreign policy
 	location = 153 #Pecs (assumed. Could perhaps be another location)
 	discount = yes
 	skill = 2
@@ -194,7 +194,7 @@ advisor = {
 
 advisor = {
 	advisor_id = 125
-	name = "Johannes Cuspinianus" #Johan Spießhaymer. Austrian humanist, scientist, diplomat, and historian
+	name = "Johannes Cuspinianus" #Johan Spieï¿½haymer. Austrian humanist, scientist, diplomat, and historian
 	location = 133 #Linz
 	discount = yes
 	skill = 1
@@ -229,7 +229,7 @@ advisor = {
 
 advisor = {
 	advisor_id = 128
-	name = "István Báthory" #Hungarian Governor of Transylvania
+	name = "Istvï¿½n Bï¿½thory" #Hungarian Governor of Transylvania
 	location = 153 #Pecs (assumed. Could perhaps be another location)
 	discount = yes
 	skill = 1
@@ -357,7 +357,7 @@ advisor = {
 advisor = {
 	advisor_id = 139
 	name = "Rheticus" #Georg Joachim Rheticus. Cartographer, navigational and other instrument maker
-	location = 154 #Ersekujvar (assumed Košice is in this province) 
+	location = 154 #Ersekujvar (assumed Koï¿½ice is in this province) 
 	discount = yes
 	skill = 1
 	type = naval_reformer
@@ -378,18 +378,18 @@ advisor = {
 
 advisor = {
 	advisor_id = 141
-	name = "Anton Brus" #Anton Brus von Müglitz. Arch Bishop of Prague and counter reformer
+	name = "Anton Brus" #Anton Brus von Mï¿½glitz. Arch Bishop of Prague and counter reformer
 	location = 265 #Moravia
 	discount = yes
 	skill = 1
 	type = theologian
-	date = 1552.1.1 #33 years old. Generalgroßmeister der Kreuzherren.
+	date = 1552.1.1 #33 years old. Generalgroï¿½meister der Kreuzherren.
 	death_date = 1580.8.28 #died
 }
 
 advisor = {
 	advisor_id = 142
-	name = "Moreinu ha-Rav Loew" #Rabih Judah Löw ben Bezalel, important Talmudic scholar
+	name = "Moreinu ha-Rav Loew" #Rabih Judah Lï¿½w ben Bezalel, important Talmudic scholar
 	location = 266 #Bohemia
 	discount = yes
 	skill = 3
@@ -422,7 +422,7 @@ advisor = {
 
 advisor = {
 	advisor_id = 145
-	name = "Péter Bornemisza" #Outspoken Protestant 
+	name = "Pï¿½ter Bornemisza" #Outspoken Protestant 
 	location = 153 #Pecs
 	discount = yes
 	skill = 1
@@ -433,7 +433,7 @@ advisor = {
 
 advisor = {
 	advisor_id = 146
-	name = "Vilem Rožmberk" #Wealthy Bohemian magnate with a weakness for the occult
+	name = "Vilem Roï¿½mberk" #Wealthy Bohemian magnate with a weakness for the occult
 	location = 266 #Bohemia
 	discount = yes
 	skill = 1
@@ -484,13 +484,13 @@ advisor = {
 	religion = protestant
 	skill = 1
 	type = trader
-	date = 1586.1.1 #34 years old, found the patronage of the Bohemian count Vilem Rožmberk 
+	date = 1586.1.1 #34 years old, found the patronage of the Bohemian count Vilem Roï¿½mberk 
 	death_date = 1597.1.1 #died
 }
 
 advisor = {
 	advisor_id = 151
-	name = "Karel starsí" #ze Žerotína, head of the moravian nobility during Thirty Years' War
+	name = "Karel starsï¿½" #ze ï¿½erotï¿½na, head of the moravian nobility during Thirty Years' War
 	location = 265 #Moravia
 	discount = yes
 	skill = 1
@@ -528,7 +528,7 @@ advisor = {
 	discount = yes
 	skill = 1
 	type = treasurer
-	date = 1599.1.1 #29 years old, became Bishop of Olmütz
+	date = 1599.1.1 #29 years old, became Bishop of Olmï¿½tz
 	death_date = 1636.9.19 #died
 }
 
@@ -547,7 +547,7 @@ advisor = {
 
 advisor = {
 	advisor_id = 156
-	name = "Péter Pázmány" #important figure in the Counter-Reformation in the Kingdom of Hungary
+	name = "Pï¿½ter Pï¿½zmï¿½ny" #important figure in the Counter-Reformation in the Kingdom of Hungary
 	location = 154 #Ersekujvar (Bratislava)
 	discount = yes
 	skill = 2
@@ -676,7 +676,7 @@ advisor = {
 
 advisor = {
 	advisor_id = 167
-	name = "Philipp von Hörnigk" #Philipp Wilhelm von Hörnigk, writer of 'Österreich über alles, wenn es nur will'
+	name = "Philipp von Hï¿½rnigk" #Philipp Wilhelm von Hï¿½rnigk, writer of 'ï¿½sterreich ï¿½ber alles, wenn es nur will'
 	location = 134 #Wien
 	discount = yes
 	skill = 1
@@ -698,7 +698,7 @@ advisor = {
 
 advisor = {
 	advisor_id = 169
-	name = "Weisskircher" #Hans Adam Weisskircher (Weißenkirchner). Court painter
+	name = "Weisskircher" #Hans Adam Weisskircher (Weiï¿½enkirchner). Court painter
 	location = 76 #Salzburg
 	discount = yes
 	skill = 1 
@@ -777,7 +777,7 @@ advisor = {
 
 advisor = {
 	advisor_id = 176
-	name = "Pálffy János IV" #Count Palffy Janos IV. Palantine of Hungary
+	name = "Pï¿½lffy Jï¿½nos IV" #Count Palffy Janos IV. Palantine of Hungary
 	location = 152 #Slavonia
 	discount = yes
 	skill = 2 
@@ -821,7 +821,7 @@ advisor = {
 
 advisor = {
 	advisor_id = 180
-	name = "Frantisek Kanka" #František Maxmilián Kanka. Czech architect and builder
+	name = "Frantisek Kanka" #Frantiï¿½ek Maxmiliï¿½n Kanka. Czech architect and builder
 	location = 266 #Bohemia (Prague)
 	discount = yes
 	skill = 1
@@ -832,7 +832,7 @@ advisor = {
 
 advisor = {
 	advisor_id = 181
-	name = "Jan Santini Aichel" #Jan Blažej Santini Aichel. Czech architect of the baroque
+	name = "Jan Santini Aichel" #Jan Blaï¿½ej Santini Aichel. Czech architect of the baroque
 	location = 266 #Bohemia (Prague)
 	discount = yes
 	skill = 1
@@ -891,7 +891,7 @@ advisor = {
 
 advisor = {
 	advisor_id = 186
-	name = "Josef Wenzel" #Fürst Liechtenstein. Reformed Austrian artillery
+	name = "Josef Wenzel" #Fï¿½rst Liechtenstein. Reformed Austrian artillery
 	location = 134 #Wien 
 	discount = yes
 	skill = 2
@@ -902,7 +902,7 @@ advisor = {
 
 advisor = {
 	advisor_id = 187
-	name = "Gregor Joseph Werner" #Austrian composer in the services of Paul II Anton Esterházy
+	name = "Gregor Joseph Werner" #Austrian composer in the services of Paul II Anton Esterhï¿½zy
 	location = 135 #Sopron (Is Eisenstadt located in this province?)
 	discount = yes
 	skill = 1 
@@ -937,7 +937,7 @@ advisor = {
 
 advisor = {
 	advisor_id = 190
-	name = "Joseph Harrach" #Johann Joseph Philipp Graf Harrach. Hofkriegsratspräsident.
+	name = "Joseph Harrach" #Johann Joseph Philipp Graf Harrach. Hofkriegsratsprï¿½sident.
 	location = 134 #Wien
 	discount = yes
 	skill = 1
@@ -1153,7 +1153,7 @@ advisor = {
 
 advisor = {
 	advisor_id = 209
-	name = "Anton Tomaz Linhart" #Anton Tomaž Linhart. Slovenian dramatist and historian
+	name = "Anton Tomaz Linhart" #Anton Tomaï¿½ Linhart. Slovenian dramatist and historian
 	location = 129 #Krain (Ljubljana)
 	discount = yes
 	skill = 1

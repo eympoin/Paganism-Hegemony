@@ -326,7 +326,7 @@ country_event = {
 			cede_province	= IND
 			add_core = IND
 		}
-		IND = {
+		INI = {
 			change_religion = theoi
 		}
 		504 = {
