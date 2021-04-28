@@ -1,6 +1,6 @@
 #367 - The Azores
 
-culture = berber
+culture = berber_culture
 religion = deii
 capital = "The Azores"
 trade_goods = fish

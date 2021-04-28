@@ -1,5 +1,8 @@
 #640 - Pontianak
 
+owner = SMB
+controller = SMB
+add_core = SMB
 culture = bornean
 religion = hinduism
 capital = "Pontianak"

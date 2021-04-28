@@ -1,7 +1,10 @@
 #1086 - Kaurna
 
-culture = aboriginal
-religion = animism
+add_core = KAU
+owner = KAU
+controller = KAU
+culture = yura
+religion = dreamtime
 capital = "Kaurna"
 trade_goods = unknown
 hre = no

@@ -1,7 +1,10 @@
 #2726 - Malgana
 
-culture = aboriginal
-religion = animism
+owner = MLG
+controller = MLG
+add_core = MLG
+culture = nyoongah
+religion = dreamtime
 capital = "Malgana"
 hre = no
 trade_goods = unknown

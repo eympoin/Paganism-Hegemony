@@ -820,7 +820,7 @@ East_francia_invade_wfr = {
 		provinces_to_highlight = {
 			OR = {
 				area = alsace_area
-				area = lorraine_area 
+				area = lorraine_area
 				area = palatinate_area
 				area = north_rhine_area
 				area = lower_rhineland_area
@@ -1303,7 +1303,7 @@ centralization_eaf = {
 		}
 	}
 
-	centralize_the_realm = {
+	centralize_the_realm_frk = {
 		icon = mission_hanseatic_city
 		required_missions = {choice_of_the_capital }
 		provinces_to_highlight = {
@@ -1329,7 +1329,7 @@ centralization_eaf = {
 
 	a_proud_capital = {
 		icon = develop_our_capital
-		required_missions = {centralize_the_realm }
+		required_missions = {centralize_the_realm_frk }
 		provinces_to_highlight = {
 
 		}

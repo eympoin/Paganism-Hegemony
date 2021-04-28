@@ -156,7 +156,7 @@ Athens_2_1 = {
     required_missions = {cycladian_control}
     provinces_to_highlight = {
       OR = {
-        area = mission_sea_battles
+        area = kyklades_area
         area = south_islands_area
       }
       NOT = {owned_by = ROOT}
@@ -633,7 +633,7 @@ Athens_5_1 = {
       }
     }
     effect = {
-      add_years_of_income = 0.5	
+      add_years_of_income = 0.5
       358 = {
         add_trade_modifier = {
           who = ROOT

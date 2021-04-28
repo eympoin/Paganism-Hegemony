@@ -1,7 +1,9 @@
 #1094 - Gubbi Gubbi
-
-culture = aboriginal
-religion = animism
+owner = MIA
+controller = MIA
+add_core = MIA
+culture = gamilaraay
+religion = dreamtime
 capital = "Brisbane"
 trade_goods = unknown
 hre = no

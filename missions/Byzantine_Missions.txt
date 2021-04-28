@@ -989,7 +989,7 @@ Byzantium_4_3 = {
       NOT = { map_setup = map_setup_random }
     }
 
-      conquer_mesopotamia = {
+      conquer_mesopotamia_ere = {
         icon = mission_build_up_to_force_limit
     		position = 10
         required_missions = {ERE_reformed}
@@ -1021,7 +1021,7 @@ Byzantium_4_3 = {
 
       subjugate_Armenia = {
         icon = mission_new_army
-        required_missions = {conquer_mesopotamia}
+        required_missions = {conquer_mesopotamia_ere}
         provinces_to_highlight = {
           region = caucasia_region
           NOT = {owned_by = ROOT}

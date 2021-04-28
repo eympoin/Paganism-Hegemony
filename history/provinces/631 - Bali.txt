@@ -1,8 +1,8 @@
 #631 - Bali
 
-owner = MAJ
-controller = MAJ
-add_core = MAJ
+owner = BLI
+controller = BLI
+add_core = BLI
 culture = javanese
 religion = hinduism
 capital = "Gianyar"

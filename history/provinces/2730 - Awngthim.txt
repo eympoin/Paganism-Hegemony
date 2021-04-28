@@ -1,7 +1,10 @@
 #2730 - Awngthim
 
-culture = aboriginal
-religion = animism
+owner = AWN
+controller = AWN
+add_core = AWN
+culture = paman
+religion = dreamtime
 capital = "Awngthim"
 trade_goods = unknown
 hre = no

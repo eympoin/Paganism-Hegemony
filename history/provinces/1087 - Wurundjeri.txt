@@ -1,7 +1,9 @@
 #1087 - Wurundjeri
-
-culture = aboriginal
-religion = animism
+owner = WRU
+controller = WRU
+add_core = WRU
+culture = kulin
+religion = dreamtime
 capital = "Wurundjeri"
 hre = no
 trade_goods = unknown

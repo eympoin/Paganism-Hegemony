@@ -5345,6 +5345,101 @@ land_shaped_by_fire = {
 	local_production_efficiency = 0.1
 }
 
+#Iroquois Events
+
+iroquoian_iron_fist = {
+	land_morale = 0.05
+	discipline = 0.025
+}
+
+mother_of_nations = {
+	local_autonomy = 0.05
+	culture_conversion_cost = -0.25
+	local_missionary_strength = 0.02
+}
+
+# Navajo
+
+nah_helping_hand = {
+	technology_cost = -0.05
+}
+
+nah_the_changing_girl = {
+	diplomatic_reputation = 1
+	global_unrest = -2
+}
+
+nah_pueblo_merchants = {
+	trade_efficiency = 0.1
+}
+
+# Pueblo
+
+pue_popes_rebellion = {
+	land_morale = 0.10
+	infantry_cost = -0.05
+}
+
+pue_spider_grandmother = {
+	technology_cost = -0.05
+}
+
+pue_kachinas = {
+	global_missionary_strength = 0.01
+	religion = yes
+}
+
+pue_end_of_the_revolt = {
+	global_unrest = -2
+	army_tradition = 0.5
+}
+
+# Sioux
+
+sio_foreigner_trade = {
+	production_efficiency = 0.05
+	province_trade_power_modifier = 0.05
+}
+
+sio_legacy = {
+	global_autonomy = -0.02
+	global_unrest = -1
+}
+
+sio_feast = {
+	diplomatic_upkeep = 1
+	ae_impact = -0.05
+}
+
+sio_wolf_attacks = {
+	supply_limit_modifier = -0.2
+}
+
+# Cherokee
+
+che_sacred_lake = {
+	religious_unity = 0.2
+	tolerance_own = 1
+}
+
+che_blood_revenge = {
+	local_manpower_modifier = -0.25
+}
+
+che_foreigner_trade = {
+	province_trade_power_value = 0.25
+}
+
+# Powhatan
+
+pow_first_contact = {
+	technology_cost = -0.15
+}
+
+pow_indigenous_trade_goods = {
+	local_production_efficiency = 0.25
+}
+
 
 ##################################################
 # Trade Companies

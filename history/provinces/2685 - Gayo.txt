@@ -1,8 +1,8 @@
 #2685 - Gayo
 
-owner = PSA
-controller = PSA
-culture = sumatran
+owner = ATJ
+controller = ATJ
+culture = acehnese
 religion = hinduism
 capital = "Gayo"
 trade_goods = tropical_wood
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 1
 is_city = yes
-add_core = PSA
+add_core = ATJ
 discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim

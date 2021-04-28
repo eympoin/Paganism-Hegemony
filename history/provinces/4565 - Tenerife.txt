@@ -10,7 +10,7 @@ native_size = 5
 native_ferocity = 1
 native_hostileness = 0
 religion = animism
-culture = berber
+culture = berber_culture
 
 1479.1.1 = {
 	owner = CAS

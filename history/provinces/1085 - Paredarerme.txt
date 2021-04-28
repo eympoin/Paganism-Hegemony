@@ -1,7 +1,10 @@
 #1085 - Paredarerme
 
-culture = aboriginal
-religion = animism
+add_core = PLW
+owner = PLW
+controller = PLW
+culture = palawa
+religion = dreamtime
 capital = "Paredarerme"
 hre = no
 trade_goods = unknown

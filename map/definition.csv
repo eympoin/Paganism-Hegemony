@@ -4792,10 +4792,10 @@ province;red;green;blue;x;x
 4791;50;43;20;East Cirebon;x
 4792;153;169;173;East Kendal;x
 4793;237;108;140;South Demak;x
-4946;148;48;116;East Kediri;x
+4794;148;48;116;East Kediri;x
 4795;221;84;31;Bone;x
 4796;237;99;81;Kendari;x
-4949;228;249;251;Soppeng;x
+4797;228;249;251;Soppeng;x
 4798;4;235;103;Wajo;x
 4799;15;154;146;Sambaliung;x
 4800;132;11;182;Paser;x
@@ -4940,7 +4940,6 @@ province;red;green;blue;x;x
 4939;210;80;11;Te Moana-a-Toi;x
 4940;29;216;197;Lake Tulare;x
 4941;30;216;201;Lake Cahuilla;x
-
 4942;26;139;204;Lycia;x
 4943;213;107;159;Gortyna;x
 4944;222;141;41;Thebes;x

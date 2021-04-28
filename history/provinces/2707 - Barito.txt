@@ -1,5 +1,7 @@
 #2707 - Barito
-
+owner = BNJ
+controller = BNJ
+add_core = BNJ
 culture = bornean
 religion = hinduism
 capital = "Barito"

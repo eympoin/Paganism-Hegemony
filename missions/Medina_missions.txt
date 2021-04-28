@@ -76,9 +76,8 @@ Medina_2 = {
     position = 2
     trigger = {
       manpower = 13
-    build_to_forcelimit = {
-    infantry = 0.8
-    }
+      army_size_percentage = 0.8
+
     }
       effect = {
         tihama_al_yemen_area = {

@@ -1,7 +1,9 @@
 #1090 - Eora
-
+owner = EOR
+controller = EOR
+add_core = EOR
 culture = aboriginal
-religion = animism
+religion = dreamtime
 capital = "Eora"
 trade_goods = unknown
 hre = no

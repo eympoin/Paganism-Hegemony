@@ -1,8 +1,8 @@
 #2675 - Rokan
 
-owner = PSA
-controller = PSA
-culture = sumatran
+owner = DLI
+controller = DLI
+culture = acehnese
 religion = hinduism
 capital = "Rokan"
 trade_goods = fish
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = PSA
+add_core = DLI
 
 
 
