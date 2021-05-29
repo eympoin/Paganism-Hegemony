@@ -1,5 +1,5 @@
-owner = MIA
-controller = MIA
+owner = MOA
+controller = MOA
 culture = serbian
 religion = slavic
 capital = "Pautalia"
@@ -9,7 +9,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 4
 is_city = yes
-add_core = MIA
+add_core = MOA
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

@@ -30,7 +30,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {		# accept
-		name = "flavor_byzmod.1.a"
+		name = "flavor_byzmod.2.a"
 		ai_chance = { factor = 100 }
 		set_country_flag = accepted_byz_bribe
 		add_treasury = 100
@@ -41,7 +41,7 @@ country_event = {
 		}
 	}
 	option = {	#not needed
-		name = "flavor_byzmod.1.b"
+		name = "flavor_byzmod.2.b"
 		ai_chance = { factor = 0 }
 			reverse_add_opinion = {
 			who = FROM
@@ -74,4 +74,149 @@ country_event = {
 		}
 	}
 
+}
+
+# create a border incident
+country_event = {
+	id = flavor_byzmod.4
+	title = "flavor_byzmod.4.t"
+	desc = "flavor_byzmod.4.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# create border incident
+		name = "flavor_byzmod.4.a"
+		ai_chance = { factor = 100 }
+		add_treasury = -200
+		add_dip_power = -200
+		OKH = {country_event = {id = flavor_byzmod.5 days = 30}}
+	}
+	option = {	#not needed
+		name = "flavor_byzmod.4.b"
+		ai_chance = { factor = 0 }
+	}
+
+}
+
+country_event = {
+	id = flavor_byzmod.5
+	title = "flavor_byzmod.5.t"
+	desc = "flavor_byzmod.5.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accept
+		name = "flavor_byzmod.5.a"
+		ai_chance = { factor = 100 }
+		declare_war_with_cb = {
+			who = SKH
+			casus_belli = cb_annex
+		}
+		hidden_effect = {
+			set_country_flag = okh_fooled
+			BYZ = {country_event = {id = flavor_byzmod.6 days = 30}}
+		}
+	}
+	option = {	#not needed
+		name = "flavor_byzmod.5.b"
+		ai_chance = { factor = 0 }
+		hidden_effect = {
+			BYZ = {country_event = {id = flavor_byzmod.6 days = 30}}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_byzmod.6
+	title = "flavor_byzmod.6.t"
+	desc = "flavor_byzmod.6.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accepted
+		name = "flavor_byzmod.3.a"
+		trigger = {
+			FROM = {has_country_flag = okh_fooled}
+		}
+
+	}
+	option = {	# refused
+		name = "flavor_byzmod.3.b"
+		trigger = {
+			NOT = {FROM = {has_country_flag = okh_fooled}}
+		}
+	}
+}
+
+#demand subjugation
+country_event = {
+	id = flavor_byzmod.7
+	title = "flavor_byzmod.7.t"
+	desc = "flavor_byzmod.7.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# bribe them
+		name = "flavor_byzmod.7.a"
+		ai_chance = { factor = 100 }
+		add_treasury = -200
+		add_dip_power = -200
+		PEC = {country_event = {id = flavor_byzmod.8 days = 14}}
+		HUN = {country_event = {id = flavor_byzmod.5 days = 14}}
+		CRP = {country_event = {id = flavor_byzmod.5 days = 14}}
+		CIR = {country_event = {id = flavor_byzmod.5 days = 14}}
+	}
+	option = {	#not needed
+		name = "flavor_byzmod.7.b"
+		ai_chance = { factor = 0 }
+	}
+
+}
+
+country_event = {
+	id = flavor_byzmod.8
+	title = "flavor_byzmod.8.t"
+	desc = "flavor_byzmod.8.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accept
+		name = "flavor_byzmod.8.a"
+		ai_chance = { factor = 100 }
+		set_in_empire = yes
+		set_country_flag = joined_ere
+		BYZ = {country_event = {id = flavor_byzmod.9 days = 30}}
+	}
+	option = {	#not needed
+		name = "flavor_byzmod.8.b"
+		ai_chance = { factor = 0 }
+		BYZ = {country_event = {id = flavor_byzmod.9 days = 30}}
+	}
+}
+
+country_event = {
+	id = flavor_byzmod.9
+	title = "flavor_byzmod.9.t"
+	desc = "flavor_byzmod.9.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accepted
+		name = "flavor_byzmod.9.a"
+		trigger = {
+			FROM = {has_country_flag = joined_ere}
+		}
+
+	}
+	option = {	# refused
+		name = "flavor_byzmod.9.b"
+		trigger = {
+			NOT = {FROM = {has_country_flag = joined_ere}}
+		}
+		add_casus_belli = {
+		    target = FROM
+		    type = cb_force_join_hre
+		    months = 240
+		}
+	}
 }

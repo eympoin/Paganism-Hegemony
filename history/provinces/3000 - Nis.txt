@@ -1,7 +1,7 @@
 # - Nis
 
-owner = MIA
-controller = MIA
+owner = MOA
+controller = MOA
 culture = serbian
 religion = slavic
 capital = "Nis"
@@ -12,7 +12,7 @@ base_production = 5
 base_manpower = 4
 is_city = yes
 estate = estate_nobles
-add_core = MIA
+add_core = MOA
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL
