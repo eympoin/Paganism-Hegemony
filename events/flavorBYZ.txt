@@ -382,3 +382,159 @@ country_event = {
 	}
 
 }
+
+
+#pay bandits to create chaos in ionian markets
+country_event = {
+	id = flavor_byzmod.16
+	title = "flavor_byzmod.16.t"
+	desc = "flavor_byzmod.16.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# seize the mine
+		name = "flavor_byzmod.16.a"
+		ai_chance = { factor = 100 }
+		add_treasury = -200
+		ION = {country_event = {id = flavor_byzmod.14 days = 17}}
+	}
+
+	option = {	#not needed
+		name = "flavor_byzmod.16.b"
+		ai_chance = { factor = 0 }
+	}
+}
+
+#bandits pillage markets
+country_event = {
+	id = flavor_byzmod.17
+	title = "flavor_byzmod.17.t"
+	desc = "flavor_byzmod.17.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# purge them
+		name = "flavor_byzmod.17.a"
+		ai_chance = { factor = 100 }
+		add_manpower = -1
+		151 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 3650
+				power = -50
+				key = PILLAGED
+			}
+		}
+		hidden_effect = { #find the plot
+		random = {
+				chance = 50
+				country_event = {id = flavor_byzmod.18 days = 17}
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = flavor_byzmod.18
+	title = "flavor_byzmod.18.t"
+	desc = "flavor_byzmod.18.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# expose the plot
+		name = "flavor_byzmod.18.a"
+		ai_chance = { factor = 100 }
+		BYZ = {country_event = {id = flavor_byzmod.19 days = 7}}
+	}
+}
+
+
+country_event = { #byzantine found
+	id = flavor_byzmod.19
+	title = "flavor_byzmod.19.t"
+	desc = "flavor_byzmod.19.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# deny everything
+		name = "flavor_byzmod.19.a"
+		ai_chance = { factor = 100 }
+		add_imperial_influence = -20
+		add_prestige = -20
+	}
+	option = {		# deny and negotiate with ionia for silence
+		name = "flavor_byzmod.19.a"
+		ai_chance = { factor = 100 }
+		add_treasury = -200
+		add_imperial_influence = -10
+		add_prestige = -10
+	}
+}
+
+
+#protetction of anatolia
+country_event = {
+	id = flavor_byzmod.20
+	title = "flavor_byzmod.20.t"
+	desc = "flavor_byzmod.20.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# seize the mine
+		name = "flavor_byzmod.20.a"
+		ai_chance = { factor = 100 }
+		LYD = {country_event = {id = flavor_byzmod.21 days = 17}}
+		PHR = {country_event = {id = flavor_byzmod.21 days = 17}}
+		PSD = {country_event = {id = flavor_byzmod.21 days = 17}}
+	}
+
+	option = {	#not needed
+		name = "flavor_byzmod.20.b"
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = flavor_byzmod.22
+	title = "flavor_byzmod.22.t"
+	desc = "flavor_byzmod.22.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accept
+		name = "flavor_byzmod.22.a"
+		ai_chance = { factor = 100 }
+		set_country_flag = accept_byz_protection
+		BYZ = {country_event = {id = flavor_byzmod.23 days = 30}}
+	}
+	option = {	#not needed
+		name = "flavor_byzmod.22.b"
+		ai_chance = { factor = 0 }
+		BYZ = {country_event = {id = flavor_byzmod.23 days = 30}}
+	}
+}
+
+country_event = {
+	id = flavor_byzmod.23
+	title = "flavor_byzmod.23.t"
+	desc = "flavor_byzmod.23.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accepted
+		name = "flavor_byzmod.23.a"
+		trigger = {
+			FROM = {has_country_flag = accept_byz_protection}
+		}
+		add_dip_power = -100
+		vassalize = FROM	
+	}
+	option = {	# refused
+		name = "flavor_byzmod.23.b"
+		trigger = {
+			NOT = {FROM = {has_country_flag = accept_byz_protection}}
+		}
+
+	}
+}

@@ -168,12 +168,9 @@ Byzantium_3_1 = {
     provinces_to_highlight = {
     }
     trigger = {
-      imperial_influence = 20
-      dip_power = 100
+      treasury = 100
     }
     effect = {
-      add_dip_power = -100
-      add_imperial_influence = -20
       #event ionia lose influence
     }
   }
