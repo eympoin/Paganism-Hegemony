@@ -117,7 +117,7 @@ Byzantium_2_1 = {
       dip_power = 300
     }
     effect = {
-      #event take dalmatia/corfu
+      #event take corfu
     }
   }
 

@@ -220,3 +220,165 @@ country_event = {
 		}
 	}
 }
+
+
+#adriatic pirate
+country_event = {
+	id = flavor_byzmod.10
+	title = "flavor_byzmod.10.t"
+	desc = "flavor_byzmod.10.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# demand corfu base
+		name = "flavor_byzmod.10.a"
+		ai_chance = { factor = 100 }
+		142 = {
+			owner = {country_event = {id = flavor_byzmod.11 days = 7}}
+		}
+	}
+	option = {	#give them a fleet
+		name = "flavor_byzmod.10.b"
+		ai_chance = { factor = 0 }
+		add_treasury = -100
+		add_sailors = -10
+		add_imperial_influence = 20
+	}
+	option = {	#not needed
+		name = "flavor_byzmod.10.c"
+		ai_chance = { factor = 0 }
+	}
+
+}
+
+
+country_event = {
+	id = flavor_byzmod.11
+	title = "flavor_byzmod.11.t"
+	desc = "flavor_byzmod.11.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accept
+		name = "flavor_byzmod.11.a"
+		ai_chance = { factor = 100 }
+
+		set_country_flag = gave_corfu_base
+		BYZ = {country_event = {id = flavor_byzmod.12 days = 30}}
+	}
+	option = {	#no
+		name = "flavor_byzmod.11.b"
+		ai_chance = { factor = 0 }
+		BYZ = {country_event = {id = flavor_byzmod.12 days = 30}}
+	}
+}
+
+country_event = {
+	id = flavor_byzmod.12
+	title = "flavor_byzmod.12.t"
+	desc = "flavor_byzmod.12.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accepted
+		name = "flavor_byzmod.12.a"
+		trigger = {
+			FROM = {has_country_flag = gave_corfu_base}
+		}
+		142 = {
+				cede_province = ROOT
+		}
+		add_dip_power = -300
+	}
+	option = {	# refused
+		name = "flavor_byzmod.12.b"
+		trigger = {
+			NOT = {FROM = {has_country_flag = gave_corfu_base}}
+		}
+		add_dip_power = -100
+	}
+}
+
+#miner revolt
+country_event = {
+	id = flavor_byzmod.13
+	title = "flavor_byzmod.13.t"
+	desc = "flavor_byzmod.13.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# seize the mine
+		name = "flavor_byzmod.13.a"
+		ai_chance = { factor = 100 }
+
+		add_dip_power = -150
+		add_mil_power = -150
+		1766 = {owner = {country_event = {id = flavor_byzmod.14 days = 14}}}
+	}
+	option = {	#clean the mine and let it to them
+		name = "flavor_byzmod.13.b"
+		ai_chance = { factor = 0 }
+		add_mil_power = -50
+		add_imperial_influence = 20
+	}
+	option = {	#not needed
+		name = "flavor_byzmod.13.b"
+		ai_chance = { factor = 0 }
+	}
+}
+
+#dardanian answer
+country_event = {
+	id = flavor_byzmod.14
+	title = "flavor_byzmod.14.t"
+	desc = "flavor_byzmod.14.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# OK
+		name = "flavor_byzmod.14.a"
+		ai_chance = { factor = 100 }
+
+		set_country_flag = took_mine_by_force
+		FROM = country_event = {id = flavor_byzmod.15 days = 14}
+	}
+	option = {	#clean the mine and let it to them
+		name = "flavor_byzmod.14.b"
+		ai_chance = { factor = 0 }
+		FROM = country_event = {id = flavor_byzmod.15 days = 14}
+	}
+
+}
+
+
+country_event = {
+	id = flavor_byzmod.15
+	title = "flavor_byzmod.15.t"
+	desc = "flavor_byzmod.15.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		#Dardania is ours
+		name = "flavor_byzmod.15.a"
+		ai_chance = { factor = 100 }
+		trigger = {
+			FROM = {has_country_flag = took_mine_by_force}
+		}
+		1766 = {
+				cede_province = ROOT
+		}
+
+	}
+	option = {	#to war
+		name = "flavor_byzmod.15.b"
+		ai_chance = { factor = 0 }
+		trigger = {
+			NOT = {FROM = {has_country_flag = took_mine_by_force}}
+		}
+		declare_war_with_cb = {
+			who = FROM
+			casus_belli = cb_annex
+		}
+	}
+
+}
