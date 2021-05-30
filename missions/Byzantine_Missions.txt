@@ -348,10 +348,10 @@ Byzantium_5_1 = {
     }
     trigger = {
       alliance_with = ATH
-      treasury = 100
+      treasury = 200
     }
     effect = {
-      add_treasury = -100
+      add_treasury = -200
       #event counter macedon influence
     }
   }

@@ -628,3 +628,223 @@ country_event = {
 		ai_chance = { factor = 0 }
 	}
 }
+
+country_event = {
+	id = flavor_byzmod.28
+	title = "flavor_byzmod.28.t"
+	desc = "flavor_byzmod.28.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# pay greeks to break relation with macedon
+		name = "flavor_byzmod.28.a"
+		ai_chance = { factor = 100 }
+		add_treasury = -200
+		every_country = {
+			limit = {
+				capital_scope = {
+					region = greece_region
+				}
+				NOT = {tag = MAC}
+				NOT  = {is_subject_of = MAC}
+			}
+			country_event = {id = flavor_byzmod.29 days = 7}
+		}
+	}
+
+	option = {	#not needed
+		name = "flavor_byzmod.28.b"
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = flavor_byzmod.29
+	title = "flavor_byzmod.29.t"
+	desc = "flavor_byzmod.29.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accept
+		name = "flavor_byzmod.29.a"
+		ai_chance = { factor = 100 }
+		add_treasury = 20
+		add_opinion = {
+		    who = MAC
+		    modifier = byzantine_diplomacy
+		}
+	}
+
+	option = {	#not needed
+		name = "flavor_byzmod.29.b"
+		ai_chance = { factor = 0 }
+	}
+}
+
+
+country_event = { # argian league
+	id = flavor_byzmod.30
+	title = "flavor_byzmod.30.t"
+	desc = "flavor_byzmod.30.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# pay greeks to break relation with macedon
+		name = "flavor_byzmod.30.a"
+		ai_chance = { factor = 100 }
+		set_global_flag = argian_league
+		set_country_flag = chief_argian_league
+		add_country_modifier = {
+			name = argian_league_mod
+			duration = -1
+		}
+		every_country = {
+			limit = {
+				capital_scope = {
+					region = greece_region
+				}
+				NOT = {tag = MAC}
+				NOT  = {is_subject_of = MAC}
+			}
+			country_event = {id = flavor_byzmod.31 days = 7}
+		}
+	}
+
+	option = {	#not needed
+		name = "flavor_byzmod.30.b"
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = flavor_byzmod.31
+	title = "flavor_byzmod.31.t"
+	desc = "flavor_byzmod.31.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accept
+		name = "flavor_byzmod.31.a"
+		ai_chance = { factor = 70 }
+		set_country_flag = joined_argian_league
+		country_event = {id = flavor_byzmod.32 days = 7}
+	}
+
+	option = {	#not needed
+		name = "flavor_byzmod.31.b"
+		ai_chance = { factor = 30 }
+	}
+}
+
+
+country_event = { # argian league
+	id = flavor_byzmod.32
+	title = "flavor_byzmod.32.t"
+	desc = "flavor_byzmod.32.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# pay greeks to break relation with macedon
+		name = "flavor_byzmod.32.a"
+		trigger = {
+			FROM = { has_country_flag = joined_argian_league}
+		}
+		ai_chance = { factor = 100 }
+		create_guarantee = FROM
+	}
+
+	option = {		# refused
+		name = "flavor_byzmod.32.b"
+		trigger = {
+			NOT = {FROM = { has_country_flag = joined_argian_league}}
+		}
+		ai_chance = { factor = 100 }
+	}
+
+	option = {	#not needed
+		name = "flavor_byzmod.32.c"
+		FROM = {clr_country_flag = joined_argian_league}
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = { #force player to guarantee or remove the city from the league
+	id = flavor_byzmod.33
+	title = "flavor_byzmod.33.t"
+	desc = "flavor_byzmod.33.d"
+	picture = HRE_eventPicture
+	trigger = {
+		has_country_flag = chief_argian_league
+		any_country = {
+			NOT = {guaranteed_by = PREV}
+			has_country_flag = joined_argian_league
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {		# guarantee them
+		name = "flavor_byzmod.33.a"
+		ai_chance = { factor = 70 }
+		every_country = {
+			limit = {
+				NOT = {guaranteed_by = PREV}
+				has_country_flag = joined_argian_league
+			}
+			PREV = {create_guarantee = PREV}
+		}
+	}
+
+	option = {	#remove them officially from the league
+		name = "flavor_byzmod.33.b"
+		ai_chance = { factor = 30 }
+		every_country = {
+			limit = {
+				NOT = {guaranteed_by = PREV}
+				has_country_flag = joined_argian_league
+			}
+			clr_country_flag = joined_argian_league
+		}
+		add_imperial_influence = -5
+	}
+
+	option = {	#disband the league
+		name = "flavor_byzmod.33.c"
+		ai_chance = { factor = 0 }
+		add_imperial_influence = -10
+		every_country = {
+			limit = {
+				has_country_flag = joined_argian_league
+			}
+			clr_country_flag = joined_argian_league
+		}
+		clr_country_flag = chief_argian_league
+		remove_country_modifier = argian_league_mod
+	}
+}
+
+country_event = { #remove league if no one is in
+	id = flavor_byzmod.34
+	title = "flavor_byzmod.34.t"
+	desc = "flavor_byzmod.34.d"
+	picture = HRE_eventPicture
+	trigger = {
+		has_country_flag = chief_argian_league
+		NOT = {
+			any_country = {
+				has_country_flag = joined_argian_league
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {	#disband the league
+		name = "flavor_byzmod.34.a"
+		ai_chance = { factor = 0 }
+		add_imperial_influence = -10
+		clr_country_flag = chief_argian_league
+		remove_country_modifier = argian_league_mod
+	}
+}

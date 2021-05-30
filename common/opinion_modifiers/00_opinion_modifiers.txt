@@ -4739,3 +4739,8 @@ opinion_trent = {
 	years = 10
 	yearly_decay = 2
 }
+
+byzantine_diplomacy = {
+	opinion = -100
+	yearly_decay = 2
+}

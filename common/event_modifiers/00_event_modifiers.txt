@@ -12445,3 +12445,7 @@ monument_boost = {
 shwedagon_pilgrimage = {
 	trade_efficiency = 0.15
 }
+
+argian_league_mod = {
+ diplomatic_upkeep = 5
+}
