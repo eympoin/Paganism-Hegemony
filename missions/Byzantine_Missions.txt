@@ -255,8 +255,9 @@ Byzantium_4_1 = {
     provinces_to_highlight = {
     }
     trigger = {
+      treasury = -200
       has_spy_network_in = {
-        who = PON
+        who = ARM
         value = 80
       }
     }
