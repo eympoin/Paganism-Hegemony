@@ -12449,3 +12449,8 @@ shwedagon_pilgrimage = {
 argian_league_mod = {
  diplomatic_upkeep = 5
 }
+
+greek_fire = {
+	galley_power = 0.4
+	naval_maintenance_modifier = 0.1
+}

@@ -87,7 +87,10 @@ country_event = {
   picture = GOOD_WITH_MONARCH_eventPicture
 
   trigger = {
-    owns_core_province = 4810
+    OR = {
+      owns_core_province = 4810
+      has_country_flag = control_of_the_oracle
+      }
   }
 
   mean_time_to_happen = {

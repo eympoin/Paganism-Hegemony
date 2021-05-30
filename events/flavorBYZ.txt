@@ -744,7 +744,7 @@ country_event = { # argian league
 	picture = HRE_eventPicture
 	is_triggered_only = yes
 
-	option = {		# pay greeks to break relation with macedon
+	option = {		# join officialy the league
 		name = "flavor_byzmod.32.a"
 		trigger = {
 			FROM = { has_country_flag = joined_argian_league}
@@ -763,8 +763,8 @@ country_event = { # argian league
 
 	option = {	#not needed
 		name = "flavor_byzmod.32.c"
-		FROM = {clr_country_flag = joined_argian_league}
 		ai_chance = { factor = 0 }
+		FROM = {clr_country_flag = joined_argian_league}
 	}
 }
 
@@ -846,5 +846,47 @@ country_event = { #remove league if no one is in
 		add_imperial_influence = -10
 		clr_country_flag = chief_argian_league
 		remove_country_modifier = argian_league_mod
+	}
+}
+
+country_event = { # control the oracle
+	id = flavor_byzmod.35
+	title = "flavor_byzmod.35.t"
+	desc = "flavor_byzmod.35.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# control the oracle
+		name = "flavor_byzmod.35.a"
+		set_country_flag = control_the_oracle
+	}
+
+	option = {	#not needed
+		name = "flavor_byzmod.35.b"
+		ai_chance = { factor = 0 }
+		add_prestige = 10
+	}
+}
+
+
+country_event = { # greek fire
+	id = flavor_byzmod.36
+	title = "flavor_byzmod.36.t"
+	desc = "flavor_byzmod.36.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# greek fire
+		name = "flavor_byzmod.36.a"
+		add_country_modifier = {
+			name = greek_fire
+			duration = -1
+		}
+	}
+
+	option = {	#not needed
+		name = "flavor_byzmod.36.b"
+		ai_chance = { factor = 0 }
+		add_prestige = 10
 	}
 }
