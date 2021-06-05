@@ -484,6 +484,7 @@ Byzantium_1_2 = {
     provinces_to_highlight = {
     }
     trigger = {
+    dip_power = 100
       OR = {
         reverse_has_opinion = {
           who = CYR
@@ -499,9 +500,23 @@ Byzantium_1_2 = {
     }
   }
 
+  council_of_taras = {
+    icon = mission_pacify_the_berbers
+    required_missions = {protect_cyr}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      imperial_influence = 40
+    }
+    effect = {
+      add_imperial_influence = -40
+      #event council taras
+    }
+  }
+
   divide_the_west = {
     icon = friends_in_high_places
-    required_missions = {protect_cyr}
+    required_missions = {council_of_taras}
     provinces_to_highlight = {
       owner = {
         total_development = 500

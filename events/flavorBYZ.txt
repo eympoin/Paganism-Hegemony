@@ -162,9 +162,9 @@ country_event = {
 		add_treasury = -200
 		add_dip_power = -200
 		PEC = {country_event = {id = flavor_byzmod.8 days = 14}}
-		HUN = {country_event = {id = flavor_byzmod.5 days = 14}}
-		CRP = {country_event = {id = flavor_byzmod.5 days = 14}}
-		CIR = {country_event = {id = flavor_byzmod.5 days = 14}}
+		HUN = {country_event = {id = flavor_byzmod.8 days = 14}}
+		CRP = {country_event = {id = flavor_byzmod.8 days = 14}}
+		CIR = {country_event = {id = flavor_byzmod.8 days = 14}}
 	}
 	option = {	#not needed
 		name = "flavor_byzmod.7.b"
@@ -888,5 +888,235 @@ country_event = { # greek fire
 		name = "flavor_byzmod.36.b"
 		ai_chance = { factor = 0 }
 		add_prestige = 10
+	}
+}
+
+
+country_event = {
+	id = flavor_byzmod.37
+	title = "flavor_byzmod.37.t"
+	desc = "flavor_byzmod.37.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# protect
+		name = "flavor_byzmod.37.a"
+		ai_chance = { factor = 100 }
+		CYR = {country_event = {id = flavor_byzmod.38 days = 17}}
+	}
+
+	option = {	#not needed
+		name = "flavor_byzmod.37.b"
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = flavor_byzmod.38
+	title = "flavor_byzmod.38.t"
+	desc = "flavor_byzmod.38.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accept
+		name = "flavor_byzmod.38.a"
+		ai_chance = { factor = 100 }
+		set_country_flag = accept_byz_protection
+		FROM = {country_event = {id = flavor_byzmod.39 days = 30}}
+	}
+	option = {	#not needed
+		name = "flavor_byzmod.38.b"
+		ai_chance = { factor = 0 }
+		FROM = {country_event = {id = flavor_byzmod.39 days = 30}}
+	}
+}
+
+country_event = {
+	id = flavor_byzmod.39
+	title = "flavor_byzmod.39.t"
+	desc = "flavor_byzmod.39.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accepted
+		name = "flavor_byzmod.39.a"
+		trigger = {
+			FROM = {has_country_flag = accept_byz_protection}
+		}
+		add_dip_power = -100
+		create_march = FROM
+	}
+	option = {	# refused
+		name = "flavor_byzmod.39.b"
+		trigger = {
+			NOT = {FROM = {has_country_flag = accept_byz_protection}}
+		}
+
+	}
+}
+
+
+
+#demand subjugation
+country_event = {
+	id = flavor_byzmod.40
+	title = "flavor_byzmod.40.t"
+	desc = "flavor_byzmod.40.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# bribe them
+		name = "flavor_byzmod.40.a"
+		ai_chance = { factor = 100 }
+		add_treasury = -200
+		add_dip_power = -200
+		every_country = {
+			limit = {
+				primary_culture = Griko
+			}
+			country_event = {id = flavor_byzmod.41 days = 14}
+		}
+	}
+	option = {	#not needed
+		name = "flavor_byzmod.40.b"
+		ai_chance = { factor = 0 }
+	}
+
+}
+
+country_event = {
+	id = flavor_byzmod.41
+	title = "flavor_byzmod.41.t"
+	desc = "flavor_byzmod.41.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accept
+		name = "flavor_byzmod.41.a"
+		ai_chance = { factor = 100 }
+		set_in_empire = yes
+		set_country_flag = joined_ere
+		BYZ = {country_event = {id = flavor_byzmod.42 days = 30}}
+	}
+	option = {	#not needed
+		name = "flavor_byzmod.41.b"
+		ai_chance = { factor = 0 }
+		BYZ = {country_event = {id = flavor_byzmod.42 days = 30}}
+	}
+}
+
+country_event = {
+	id = flavor_byzmod.42
+	title = "flavor_byzmod.42.t"
+	desc = "flavor_byzmod.42.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accepted
+		name = "flavor_byzmod.42.a"
+		trigger = {
+			FROM = {has_country_flag = joined_ere}
+		}
+
+	}
+	option = {	# refused
+		name = "flavor_byzmod.42.b"
+		trigger = {
+			NOT = {FROM = {has_country_flag = joined_ere}}
+		}
+		add_casus_belli = {
+		    target = FROM
+		    type = cb_force_join_hre
+		    months = 240
+		}
+	}
+}
+
+country_event = {
+	id = flavor_byzmod.43
+	title = "flavor_byzmod.43.t"
+	desc = "flavor_byzmod.43.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accepted
+		name = "flavor_byzmod.43.a"
+		add_adm_power = -200
+		set_global_flag = egyptian_repression
+		every_province = {
+			limit = {
+				is_part_of_hre = yes
+				region = egypt_region
+				religion = ancient_egyptian_rl
+			}
+			add_province_modifier = {
+				name = egyptian_repression_mod
+				duration = -1
+			}
+		}
+		every_country = {
+			limit = {
+				egypt_region = {
+					owned_by = ROOT
+				}
+			}
+			country_event = {id = flavor_byzmod.45 days = 15}
+		}
+
+	}
+	option = {	# refused
+		name = "flavor_byzmod.43.b"
+
+	}
+}
+
+country_event = {#convert
+  id = flavor_byzmod.44
+  title = flavor_byzmod.44.t
+  desc = flavor_byzmod.44.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    has_global_flag = egyptian_repression
+
+    any_owned_province = {
+			is_part_of_hre = yes
+			has_province_modifier = egyptian_repression_mod
+			region = egypt_region
+			religion = ancient_egyptian_rl
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 5
+  }
+
+  option = {
+    name = flavor_byzmod.44.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+				region = egypt_region
+			 	religion = ancient_egyptian_rl
+				is_core = ROOT
+      }
+			remove_province_modifier = egyptian_repression_mod
+      change_religion = theoi
+    }
+  }
+}
+
+country_event = {
+	id = flavor_byzmod.45
+	title = "flavor_byzmod.45.t"
+	desc = "flavor_byzmod.45.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+
+	option = {	# learn of persecution
+		name = "flavor_byzmod.45.b"
+
 	}
 }

@@ -12454,3 +12454,7 @@ greek_fire = {
 	galley_power = 0.4
 	naval_maintenance_modifier = 0.1
 }
+
+egyptian_repression_mod = {
+	local_unrest = 5	
+	}
