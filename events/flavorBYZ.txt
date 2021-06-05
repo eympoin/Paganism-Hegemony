@@ -1120,3 +1120,56 @@ country_event = {
 
 	}
 }
+
+country_event = {
+	id = flavor_byzmod.46
+	title = "flavor_byzmod.46.t"
+	desc = "flavor_byzmod.46.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accepted
+		name = "flavor_byzmod.46.a"
+		add_mil_power = -200
+		2321 = {
+			add_province_modifier = {
+				name = egyptian_border_mod
+				duration = -1
+			}
+		}
+		1231 = {
+			add_province_modifier = {
+				name = egyptian_border_mod
+				duration = -1
+			}
+		}
+
+	}
+	option = {	# refused
+		name = "flavor_byzmod.46.b"
+
+	}
+}
+
+
+country_event = {
+	id = flavor_byzmod.47
+	title = "flavor_byzmod.47.t"
+	desc = "flavor_byzmod.47.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accepted
+		name = "flavor_byzmod.47.a"
+		add_treasury = -2000
+		2315 = {
+			add_great_project = suez_canal	
+		}
+		}
+
+	}
+	option = {	# refused
+		name = "flavor_byzmod.47.b"
+
+	}
+}
