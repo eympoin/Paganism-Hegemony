@@ -684,6 +684,7 @@ Byzantium_3_2 = {
     }
     trigger = {
       navy_size = 75
+      imperial_influence = 30
     }
     effect = {
       #event take control of cyprus

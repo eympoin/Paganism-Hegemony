@@ -322,7 +322,7 @@ country_event = {
 		add_imperial_influence = 20
 	}
 	option = {	#not needed
-		name = "flavor_byzmod.13.b"
+		name = "flavor_byzmod.13.c"
 		ai_chance = { factor = 0 }
 	}
 }
@@ -1296,4 +1296,84 @@ country_event = {
 		}
 		add_imperial_influence = -20
 	}
+}
+
+#cyprus forward base
+country_event = {
+	id = flavor_byzmod.52
+	title = "flavor_byzmod.52.t"
+	desc = "flavor_byzmod.52.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# seize base
+		name = "flavor_byzmod.52.a"
+		ai_chance = { factor = 100 }
+
+		add_imperial_influence = -30
+		321 = {owner = {country_event = {id = flavor_byzmod.53 days = 14}}}
+		4967 = {owner = {country_event = {id = flavor_byzmod.53 days = 14}}}
+		4952 = {owner = {country_event = {id = flavor_byzmod.53 days = 14}}}
+	}
+
+	option = {	#not needed
+		name = "flavor_byzmod.52.b"
+		ai_chance = { factor = 0 }
+	}
+}
+
+#dardanian answer
+country_event = {
+	id = flavor_byzmod.53
+	title = "flavor_byzmod.53.t"
+	desc = "flavor_byzmod.53.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# OK
+		name = "flavor_byzmod.53.a"
+		ai_chance = { factor = 100 }
+
+		set_country_flag = took_cyprus
+		FROM = country_event = {id = flavor_byzmod.54 days = 14}
+	}
+	option = {	#clean the mine and let it to them
+		name = "flavor_byzmod.53.b"
+		ai_chance = { factor = 0 }
+		FROM = country_event = {id = flavor_byzmod.54 days = 14}
+	}
+
+}
+
+
+country_event = {
+	id = flavor_byzmod.54
+	title = "flavor_byzmod.54.t"
+	desc = "flavor_byzmod.54.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		#Dardania is ours
+		name = "flavor_byzmod.54.a"
+		ai_chance = { factor = 100 }
+		trigger = {
+			FROM = {has_country_flag = took_cyprus}
+		}
+		1766 = {
+				cede_province = ROOT
+		}
+
+	}
+	option = {	#to war
+		name = "flavor_byzmod.54.b"
+		ai_chance = { factor = 0 }
+		trigger = {
+			NOT = {FROM = {has_country_flag = took_cyprus}}
+		}
+		declare_war_with_cb = {
+			who = FROM
+			casus_belli = cb_annex
+		}
+	}
+
 }
