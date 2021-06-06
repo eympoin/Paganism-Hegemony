@@ -1163,7 +1163,7 @@ country_event = {
 		name = "flavor_byzmod.47.a"
 		add_treasury = -2000
 		2315 = {
-			add_great_project = suez_canal	
+			add_great_project = suez_canal
 		}
 		}
 
@@ -1171,5 +1171,129 @@ country_event = {
 	option = {	# refused
 		name = "flavor_byzmod.47.b"
 
+	}
+}
+
+country_event = {
+	id = flavor_byzmod.48
+	title = "flavor_byzmod.48.t"
+	desc = "flavor_byzmod.48.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# send ultimatum
+		name = "flavor_byzmod.48.a"
+		set_global_flag = cil_ultimatum
+		CIL = {country_event = {id = flavor_byzmod.49 days = 15}}
+	}
+	option = {		# negotiate
+		name = "flavor_byzmod.48.b"
+		set_global_flag = cil_negotiation
+		CIL = {country_event = {id = flavor_byzmod.50 days = 15}}
+	}
+	option = {	# do nothing
+		name = "flavor_byzmod.48.c"
+
+	}
+}
+
+country_event = {
+	id = flavor_byzmod.49
+	title = "flavor_byzmod.49.t"
+	desc = "flavor_byzmod.49.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accept ultimatum
+		name = "flavor_byzmod.49.a"
+		set_global_flag = accepted_cilicia_ultimatum
+		clr_global_flag = cilicia_piracy
+		remove_country_modifier = cilician_pirates
+		CIL = {country_event = {id = flavor_byzmod.51 days = 15}}
+		every_province = {
+			limit = {
+				has_province_modifier = cilician_piracy_mod
+			}
+			remove_province_modifier = cilician_piracy_mod
+		}
+	}
+	option = {	# refuse ultimatum
+		name = "flavor_byzmod.49.b"
+		set_global_flag = refused_cilicia
+		CIL = {country_event = {id = flavor_byzmod.51 days = 15}}
+	}
+}
+
+country_event = {
+	id = flavor_byzmod.50
+	title = "flavor_byzmod.50.t"
+	desc = "flavor_byzmod.50.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accept negotiation
+		name = "flavor_byzmod.50.a"
+		clr_global_flag = cilicia_piracy
+		remove_country_modifier = cilician_pirates
+		add_country_modifier = {
+			name = cilician_corsairs
+			duration = -1
+		}
+		CIL = {country_event = {id = flavor_byzmod.51 days = 15}}
+		every_province = {
+			limit = {
+				has_province_modifier = cilician_piracy_mod
+			}
+			remove_province_modifier = cilician_piracy_mod
+		}
+	}
+	option = {	# refuse negotiation
+		name = "flavor_byzmod.50.b"
+		set_global_flag = refused_cilicia
+		CIL = {country_event = {id = flavor_byzmod.51 days = 15}}
+	}
+}
+
+country_event = {
+	id = flavor_byzmod.51
+	title = "flavor_byzmod.51.t"
+	desc = "flavor_byzmod.51.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accept negotiation
+		name = "flavor_byzmod.51.a"
+		trigger = {
+			has_global_flag = accepted_cilicia_ultimatum
+		}
+		add_imperial_influence = 20
+	}
+	option = {		# accept negotiation
+		name = "flavor_byzmod.51.a"
+		trigger = {
+			FROM = {has_country_modifier = cilician_corsairs}
+		}
+		add_imperial_influence = 5
+		add_country_modifier = {
+			name = emperors_corsairs
+			duration  -1
+		}
+	}
+	option = {		# then its war
+		name = "flavor_byzmod.51.a"
+		trigger = {
+			has_global_flag = refused_cilicia
+		}
+		declare_war_with_cb = {
+			who = CIL
+			casus_belli = cb_annex
+		}
+	}
+	option = {		# then do nothing
+		name = "flavor_byzmod.51.a"
+		trigger = {
+			has_global_flag = refused_cilicia
+		}
+		add_imperial_influence = -20
 	}
 }

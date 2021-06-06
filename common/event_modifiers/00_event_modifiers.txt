@@ -12461,5 +12461,27 @@ egyptian_repression_mod = {
 egyptian_border_mod = {
 	fort_level = 2
 	local_defensiveness = 0.4
-	local_hostile_attrition = 5	
+	local_hostile_attrition = 5
+}
+
+cilician_piracy_mod = {
+	local_monthly_devastation = 0.1
+}
+
+cilician_piracy_mod_less = {
+	local_monthly_devastation = 0.05
+}
+
+cilician_pirates = {
+	may_perform_slave_raid_on_same_religion = yes
+}
+
+cilician_corsairs = {
+	may_perform_slave_raid = yes
+}
+
+emperors_corsairs = {
+	global_sailors = 2000
+	naval_forcelimit = 10
+	navy_tradition = 1	
 }

@@ -1,0 +1,122 @@
+
+namespace = flavor_cil
+
+# birth of cilician_piracy
+country_event = {
+	id = flavor_cil.1
+	title = "flavor_cil.1.t"
+	desc = "flavor_cil.1.d"
+	picture = HRE_eventPicture
+	trigger = {
+		tag = CIL
+		is_year = 1450
+	}
+
+
+	option = {		# embrace piracy
+		name = "flavor_cil.1.a"
+		ai_chance = { factor = 100 }
+		add_country_modifier = {
+			name = cilician_pirates
+			duration = -1
+		}
+		set_global_flag = cilicia_piracy
+		every_province = {
+			limit = {
+				OR = {
+					region = syria_region
+					area = caria_area
+				}
+				has_port = yes
+			}
+			add_province_modifier = {
+				name = cilician_piracy_mod
+				duration = -1
+			}
+		}
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+			}
+			country_event = {id = flavor_byzmod.3 days = 15}
+		}
+	}
+
+	option = {		# do nothing
+		name = "flavor_cil.1.b"
+		ai_chance = { factor = 0 }
+		every_province = {
+			limit = {
+				OR = {
+					region = syria_region
+					area = caria_area
+					area = cukurova_area
+				}
+				has_port = yes
+			}
+			add_province_modifier = {
+				name = cilician_piracy_mod
+				duration = 7300
+			}
+		}
+	}
+
+
+	option = {		# fight piracy
+		name = "flavor_cil.1.c"
+		ai_chance = { factor = 0 }
+		every_province = {
+			limit = {
+				OR = {
+					region = syria_region
+					area = caria_area
+					area = cukurova_area
+				}
+				has_port = yes
+			}
+			add_province_modifier = {
+				name = cilician_piracy_mod_less
+				duration = 7300
+			}
+		}
+	}
+}
+#end piracy
+country_event = {
+	id = flavor_cil.2
+	title = "flavor_cil.2.t"
+	desc = "flavor_cil.2.d"
+	picture = HRE_eventPicture
+	trigger = {
+		has_global_flag = cilicia_piracy
+		NOT = {exists = CIL}
+	}
+
+
+	option = {		# embrace piracy
+		name = "flavor_cil.2.a"
+		ai_chance = { factor = 50 }
+
+		clr_global_flag = cilicia_piracy
+		every_province = {
+			limit = {
+				has_province_modifier = cilician_piracy_mod
+			}
+			remove_province_modifier = cilician_piracy_mod
+		}
+	}
+}
+
+#cilicia embraced piracy
+country_event = {
+	id = flavor_cil.3
+	title = "flavor_cil.3.t"
+	desc = "flavor_cil.3.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# sound like a problem
+		name = "flavor_cil.3.a"
+	}
+
+}
