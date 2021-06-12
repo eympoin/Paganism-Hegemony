@@ -705,7 +705,18 @@ Byzantium_3_2 = {
       }
     }
     effect = {
-      #event create free osroene as a border pricne
+      4292 = {
+        add_province_modifier = {
+          name = ere_border_mod
+          duration = -1
+        }
+      }
+      407 = {
+  			add_province_modifier = {
+  				name = ere_border_mod
+  				duration = -1
+  			}
+  		}
     }
   }
 }
@@ -730,13 +741,20 @@ Byzantium_4_2 = {
     provinces_to_highlight = {
     }
     trigger = {
-      reverse_has_opinion = {
-        who = KOJ
-        value = 100
+      OR = {
+        reverse_has_opinion = {
+          who = KOJ
+          value = 100
+        }
+        NOT = {exists = KOJ}
       }
-      reverse_has_opinion = {
-        who = PLS
-        value = 100
+
+      OR = {
+        reverse_has_opinion = {
+          who = PLS
+          value = 100
+        }
+        NOT = {exists = PLS}
       }
     }
     effect = {

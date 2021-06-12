@@ -1133,13 +1133,13 @@ country_event = {
 		add_mil_power = -200
 		2321 = {
 			add_province_modifier = {
-				name = egyptian_border_mod
+				name = ere_border_mod
 				duration = -1
 			}
 		}
 		1231 = {
 			add_province_modifier = {
-				name = egyptian_border_mod
+				name = ere_border_mod
 				duration = -1
 			}
 		}
@@ -1376,4 +1376,286 @@ country_event = {
 		}
 	}
 
+}
+
+#Jerusalem
+country_event = {
+	id = flavor_byzmod.55
+	title = "flavor_byzmod.55.t"
+	desc = "flavor_byzmod.55.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# invite
+		name = "flavor_byzmod.55.a"
+		ai_chance = { factor = 100 }
+		set_global_flag = jerusalem_council
+		KOJ = country_event = {id = flavor_byzmod.56 days = 14}
+		PLS = country_event = {id = flavor_byzmod.56 days = 14}
+	}
+
+	option = {	# no need
+		name = "flavor_byzmod.55.b"
+		ai_chance = { factor = 0 }
+	}
+
+}
+
+#Jerusalem
+country_event = {
+	id = flavor_byzmod.56
+	title = "flavor_byzmod.56.t"
+	desc = "flavor_byzmod.56.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# partcipate
+		name = "flavor_byzmod.56.a"
+		ai_chance = { factor = 100 }
+		set_country_flag = joined_jerusalem_council
+		BYZ = country_event = {id = flavor_byzmod.57 days = 14}
+	}
+
+	option = {	# no
+		name = "flavor_byzmod.55.b"
+		ai_chance = { factor = 0 }
+	}
+
+}
+
+#Jerusalem
+country_event = {
+	id = flavor_byzmod.57
+	title = "flavor_byzmod.57.t"
+	desc = "flavor_byzmod.57.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		#they joined
+		name = "flavor_byzmod.57.a"
+		ai_chance = { factor = 100 }
+		trigger = {
+			FROM = {has_country_flag = joined_jerusalem_council}
+		}
+		add_imperial_influence = 1
+	}
+
+	option = {	# no
+		name = "flavor_byzmod.57.b"
+		trigger = {
+			NOT = {FROM = {has_country_flag = joined_jerusalem_council}}
+		}
+		ai_chance = { factor = 0 }
+	}
+
+}
+
+
+#start council
+country_event = {
+	id = flavor_byzmod.58
+	title = "flavor_byzmod.58.t"
+	desc = "flavor_byzmod.58.d"
+	picture = HRE_eventPicture
+	trigger = {
+		OR = {
+			KOJ = {has_country_flag = joined_jerusalem_council}
+			PLS = {has_country_flag = joined_jerusalem_council}
+		}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {		# for KOJ
+		name = "flavor_byzmod.58.a"
+		ai_chance = { factor = 20 }
+		trigger = {
+			KOJ = {has_country_flag = joined_jerusalem_council}
+		}
+		set_global_flag = koj_proposition
+		create_guarantee = KOJ
+		PLS = country_event = {id = flavor_byzmod.59 days = 14}
+	}
+
+	option = {	# For PLS
+		name = "flavor_byzmod.58.b"
+		trigger = {
+			PLS = {has_country_flag = joined_jerusalem_council}
+		}
+		ai_chance = { factor = 40 }
+		set_global_flag = pls_proposition
+		create_guarantee = PLS
+		KOJ = country_event = {id = flavor_byzmod.59 days = 14}
+	}
+
+	option = {	# compromise
+		name = "flavor_byzmod.58.c"
+		ai_chance = { factor = 40 }
+		set_global_flag = compromise_Jerusalem
+		create_guarantee = KOJ
+		create_guarantee = PLS
+		PLS = country_event = {id = flavor_byzmod.59 days = 14}
+		KOJ = country_event = {id = flavor_byzmod.59 days = 14}
+	}
+
+	option = {	# status quo
+		name = "flavor_byzmod.58.d"
+		ai_chance = { factor = 0 }
+		add_imperial_influence = -20
+		add_prestige = -20
+	}
+
+}
+
+country_event = {
+	id = flavor_byzmod.59
+	title = "flavor_byzmod.59.t"
+	desc = "flavor_byzmod.59.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+
+	option = {		#accept
+		name = "flavor_byzmod.59.a"
+		ai_chance = { factor = 100 }
+		trigger = {
+			has_global_flag = koj_proposition
+		}
+		KOJ = country_event = {id = flavor_byzmod.60 days = 14}
+	}
+
+	option = {		#accept
+		name = "flavor_byzmod.59.b"
+		ai_chance = { factor = 100 }
+		trigger = {
+			has_global_flag = pls_proposition
+		}
+		PLS = country_event = {id = flavor_byzmod.60 days = 14}
+	}
+
+	option = {		#accept
+		name = "flavor_byzmod.59.c"
+		ai_chance = { factor = 100 }
+		trigger = {
+			has_global_flag = compromise_Jerusalem
+		}
+		if = {
+			limit = {
+				tag = KOJ
+			}
+			add_treasury = 100
+			379 = {
+				add_base_tax = 2
+				add_base_manpower = 2
+				add_base_production = 2
+			}
+			380 = {
+				add_base_tax = 1
+				add_base_manpower = 1
+				add_base_production = 1
+			}
+			381 = {
+				add_base_tax = 1
+				add_base_manpower = 1
+				add_base_production = 1
+			}
+		}
+		if = {
+			limit = {
+				tag = PLS
+			}
+			4961 = {
+				change_religion = theoi
+			}
+			1854 = {
+				change_religion = theoi
+			}
+		}
+	}
+
+	option = {	#refuse
+		name = "flavor_byzmod.59.d"
+		ai_chance = { factor = 0 }
+		if = {
+			limit = {
+				tag = KOJ
+				NOT = {war_with = PLS}
+			}
+			declare_war_with_cb = {
+				who = PLS
+				casus_belli = cb_annex
+			}
+		}
+
+		if = {
+			limit = {
+				tag = PLS
+				NOT = {war_with = KOJ}
+			}
+			declare_war_with_cb = {
+				who = KOJ
+				casus_belli = cb_annex
+			}
+		}
+	}
+
+}
+
+
+country_event = {
+	id = flavor_byzmod.60
+	title = "flavor_byzmod.60.t"
+	desc = "flavor_byzmod.60.d"
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+
+	option = {		#nice
+		name = "flavor_byzmod.60.a"
+		ai_chance = { factor = 100 }
+		trigger = {
+			has_global_flag = koj_proposition
+		}
+		4961 = {
+			cede_province = KOJ
+		}
+		1854 = {
+			cede_province = KOJ
+		}
+	}
+
+	option = {		#nice
+		name = "flavor_byzmod.60.b"
+		ai_chance = { factor = 100 }
+		trigger = {
+			has_global_flag = pls_proposition
+		}
+		add_adm_power = 200
+		add_country_modifier = {
+			name = christian_persecution
+			duration = 7300
+		}
+	}
+}
+
+country_event = {
+	id = flavor_byzmod.61
+	title = "flavor_byzmod.61.t"
+	desc = "flavor_byzmod.61.d"
+	picture = HRE_eventPicture
+	trigger = {
+		has_global_flag = jerusalem_council
+		NOT = {KOJ = {has_country_flag = joined_jerusalem_council}}
+		NOT = {PLS = {has_country_flag = joined_jerusalem_council}}
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {		# for KOJ
+		name = "flavor_byzmod.61.a"
+		ai_chance = { factor = 20 }
+		add_imperial_influence = -30
+	}
 }

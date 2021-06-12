@@ -12458,7 +12458,7 @@ greek_fire = {
 egyptian_repression_mod = {
 	local_unrest = 5
 }
-egyptian_border_mod = {
+ere_border_mod = {
 	fort_level = 2
 	local_defensiveness = 0.4
 	local_hostile_attrition = 5
@@ -12483,5 +12483,9 @@ cilician_corsairs = {
 emperors_corsairs = {
 	global_sailors = 2000
 	naval_forcelimit = 10
-	navy_tradition = 1	
+	navy_tradition = 1
+}
+
+christian_persecution = {
+	global_missionary_strength = 0.3
 }
