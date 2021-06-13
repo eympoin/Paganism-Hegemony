@@ -12489,3 +12489,31 @@ emperors_corsairs = {
 christian_persecution = {
 	global_missionary_strength = 0.3
 }
+
+imperial_crisis = {
+	imperial_authority = -0.75
+}
+
+authority_egypt = {
+	imperial_authority = -0.15
+}
+
+authority_anatolia = {
+	imperial_authority = -0.15
+}
+
+authority_syria = {
+	imperial_authority = -0.15
+}
+
+authority_greece = {
+	imperial_authority = -0.15
+}
+
+authority_balkans = {
+	imperial_authority = -0.15
+}
+
+authority_restored = {
+	imperial_authority = 1
+}
