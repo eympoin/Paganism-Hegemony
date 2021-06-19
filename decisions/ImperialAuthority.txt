@@ -1,0 +1,191 @@
+country_decisions = {
+
+	authority_in_egypt = {
+		major = yes
+		potential = {
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			is_emperor = yes
+			NOT = {tag = BYZ}
+		}
+
+		provinces_to_highlight = {
+			region = egypt_region
+			is_part_of_hre = yes
+			owner = {is_part_of_hre = no}
+		}
+		allow = {
+			is_year = 1460
+			NOT = {
+				any_province = {
+					region = egypt_region
+					is_part_of_hre = yes
+					owner = {is_part_of_hre = no}
+				}
+			}
+		}
+		effect = {
+			add_imperial_influence = 20
+			set_global_flag = authority_restored_egy
+			add_country_modifier = {
+				name = authority_egypt
+				duration = -1
+			}
+	 }
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+
+	authority_in_syria = {
+		major = yes
+		potential = {
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			is_emperor = yes
+			NOT = {tag = BYZ}
+		}
+
+		provinces_to_highlight = {
+			region = egypt_region
+			is_part_of_hre = yes
+			owner = {is_part_of_hre = no}
+		}
+		allow = {
+			is_year = 1500
+			OR = {
+				AND = {
+					exists = KOJ
+				}
+				AND = {
+					NOT = {exists = KOJ}
+					NOT = {
+						any_province = {
+							religion = chalcedonian
+							is_part_of_hre = yes
+						}
+					}
+				}
+
+			}
+		}
+		effect = {
+			add_imperial_influence = 20
+			set_global_flag = authority_restored_syr
+			add_country_modifier = {
+				name = authority_syria
+				duration = -1
+			}
+	 }
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+
+	authority_in_anatolia = {
+		major = yes
+		potential = {
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			is_emperor = yes
+			NOT = {tag = BYZ}
+		}
+
+		provinces_to_highlight = {
+			owned_by = ARM
+		}
+		allow = {
+			ARM = {
+				NOT = {total_development = 100}
+			}
+		}
+		effect = {
+			add_imperial_influence = 20
+			set_global_flag = authority_restored_anatolia
+			add_country_modifier = {
+				name = authority_anatolia
+				duration = -1
+			}
+	 }
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+
+	authority_in_greece = {
+		major = yes
+		potential = {
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			is_emperor = yes
+			NOT = {tag = BYZ}
+		}
+
+		provinces_to_highlight = {
+
+		}
+		allow = {
+			151 = {
+				highest_value_trade_node = yes
+			}
+		}
+		effect = {
+			add_imperial_influence = 20
+			set_global_flag = authority_restored_gre
+			add_country_modifier = {
+				name = authority_greece
+				duration = -1
+			}
+	 }
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+
+	authority_in_balkans = {
+		major = yes
+		potential = {
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			is_emperor = yes
+			NOT = {tag = BYZ}
+		}
+
+		provinces_to_highlight = {
+
+		}
+		allow = {
+			is_year = 1510
+			OR = {
+				has_global_flag = accepted_slavs
+				NOT = {any_country = {has_country_flag = defy_the_emperor}}
+			}
+		}
+		effect = {
+			add_imperial_influence = 20
+			set_global_flag = authority_restored_balk
+			add_country_modifier = {
+				name = authority_balkans
+				duration = -1
+			}
+	 }
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+}
