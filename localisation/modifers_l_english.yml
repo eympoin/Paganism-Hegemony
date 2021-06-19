@@ -2909,3 +2909,38 @@ regional_capital:0 "Regional capital"
 help_our_savior:0 "Help our Savior"
 
 ended_raid:0"Ended Raid"
+
+argian_league_mod = {
+ diplomatic_upkeep = 5
+}
+
+greek_fire:0 "Greek Fire"
+
+egyptian_repression_mod:0 "Subdue the Egyptians"
+ere_border_mod:0 "Limes of the Empire"
+
+cilician_piracy_mod:0 "Cilician Piracy"
+
+cilician_piracy_mod_less:0 "Constrained Cilician Piracy"
+
+cilician_pirates:0 "Cilician Pirates"
+
+cilician_corsairs:0 "Cilician Corsairs"
+
+emperors_corsairs:0 "Corsairs of the Emperor"
+
+christian_persecution:0 "Persecute the Christians"
+
+imperial_crisis:0 "Imperial Crisis"
+
+authority_egypt:0 "Authority in Egypt"
+
+authority_anatolia:0 "Authority in Anatolia"
+
+authority_syria:0 "Authority in Syria"
+
+authority_greece:0 "Authority in Greece"
+
+authority_balkans:0 "Authority in the Balkans"
+
+authority_restored:0 "Authority Restored"
