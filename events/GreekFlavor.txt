@@ -1,5 +1,6 @@
 namespace = flavor_olympic
 namespace = flavor_oracle
+namespace = flavor_greek
 
 #olympic games
 country_event = {
@@ -127,4 +128,190 @@ country_event = {
     remove_country_modifier = oracle_call_war
   }
 
+}
+
+
+country_event = {#bulgarian
+  id = flavor_greek.1
+  title = flavor_greek.1.t
+  desc = flavor_greek.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    is_year = 1510
+    OR = {
+      has_global_flag = accepted_slavs
+      NOT = {any_country = {has_country_flag = defy_the_emperor}}
+    }
+    culture_group = byzantine
+    any_owned_province = {
+     has_owner_religion = yes
+      OR = {
+        culture = bulgarian
+        culture = bulgar_nomadic
+        culture = bulgarian_united
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_greek.1.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+       has_owner_religion = yes
+       OR = {
+         culture = bulgarian
+         culture = bulgar_nomadic
+         culture = bulgarian_united
+       }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = Thracian
+    }
+  }
+}
+
+country_event = {#south slavs and albaians
+  id = flavor_greek.2
+  title = flavor_greek.2.t
+  desc = flavor_greek.2.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    is_year = 1510
+    OR = {
+      has_global_flag = accepted_slavs
+      NOT = {any_country = {has_country_flag = defy_the_emperor}}
+    }
+    culture_group = byzantine
+    any_owned_province = {
+     has_owner_religion = yes
+      OR = {
+        culture = croatian
+        culture = serbian
+        culture = albanian
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_greek.2.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+       has_owner_religion = yes
+       OR = {
+         culture = croatian
+         culture = serbian
+         culture = albanian
+       }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = illyrian_greek
+    }
+  }
+}
+
+
+country_event = {#egytians
+  id = flavor_greek.3
+  title = flavor_greek.3.t
+  desc = flavor_greek.3.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    is_year = 1510
+    OR = {
+      has_global_flag = accepted_slavs
+      NOT = {any_country = {has_country_flag = defy_the_emperor}}
+    }
+    culture_group = byzantine
+    any_owned_province = {
+     has_owner_religion = yes
+      OR = {
+        culture = al_misr_arabic
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_greek.3.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+       has_owner_religion = yes
+       OR = {
+         culture = al_misr_arabic
+       }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = ptolemaic
+    }
+  }
+}
+
+country_event = {#egytians
+  id = flavor_greek.4
+  title = flavor_greek.4.t
+  desc = flavor_greek.4.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    is_year = 1510
+    OR = {
+      has_global_flag = accepted_slavs
+      NOT = {any_country = {has_country_flag = defy_the_emperor}}
+    }
+    culture_group = byzantine
+    any_owned_province = {
+     has_owner_religion = yes
+      OR = {
+        culture = canaan
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_greek.4.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+       has_owner_religion = yes
+       OR = {
+         culture = canaan
+       }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = syrian
+    }
+  }
 }
