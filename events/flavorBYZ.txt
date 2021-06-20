@@ -5,7 +5,7 @@ country_event = {
 	id = flavor_byzmod.1
 	title = "flavor_byzmod.1.t"
 	desc = "flavor_byzmod.1.d"
-	picture = HRE_eventPicture
+	picture = BORDER_TENSION_eventPicture
 	is_triggered_only = yes
 
 	option = {		# bribe them
@@ -26,7 +26,7 @@ country_event = {
 	id = flavor_byzmod.2
 	title = "flavor_byzmod.2.t"
 	desc = "flavor_byzmod.2.d"
-	picture = HRE_eventPicture
+	picture = CORRUPTION_eventPicture
 	is_triggered_only = yes
 
 	option = {		# accept
@@ -56,7 +56,14 @@ country_event = {
 country_event = {
 	id = flavor_byzmod.3
 	title = "flavor_byzmod.3.t"
-	desc = "flavor_byzmod.3.d"
+	desc = {
+		trigger = {GOL = {has_country_flag = accepted_byz_bribe}}
+		desc = flavor_byzmod.3.d1
+	}
+	desc = {
+		trigger = {	GOL = {has_country_flag = not_accepted_byz_bribe}}
+		desc = flavor_byzmod.3.d2
+	}
 	picture = HRE_eventPicture
 	is_triggered_only = yes
 
@@ -81,7 +88,7 @@ country_event = {
 	id = flavor_byzmod.4
 	title = "flavor_byzmod.4.t"
 	desc = "flavor_byzmod.4.d"
-	picture = HRE_eventPicture
+	picture = BORDER_TENSION_eventPicture
 	is_triggered_only = yes
 
 	option = {		# create border incident
@@ -102,7 +109,7 @@ country_event = {
 	id = flavor_byzmod.5
 	title = "flavor_byzmod.5.t"
 	desc = "flavor_byzmod.5.d"
-	picture = HRE_eventPicture
+	picture = BORDER_TENSION_eventPicture
 	is_triggered_only = yes
 
 	option = {		# accept
@@ -129,19 +136,26 @@ country_event = {
 country_event = {
 	id = flavor_byzmod.6
 	title = "flavor_byzmod.6.t"
-	desc = "flavor_byzmod.6.d"
+	desc = {
+		trigger = {FROM = {has_country_flag = okh_fooled}}
+		desc = flavor_byzmod.6.d1
+	}
+	desc = {
+		trigger = {	NOT = {FROM = {has_country_flag = okh_fooled}}}
+		desc = flavor_byzmod.6.d2
+	}
 	picture = HRE_eventPicture
 	is_triggered_only = yes
 
 	option = {		# accepted
-		name = "flavor_byzmod.3.a"
+		name = "flavor_byzmod.6.a"
 		trigger = {
 			FROM = {has_country_flag = okh_fooled}
 		}
 
 	}
 	option = {	# refused
-		name = "flavor_byzmod.3.b"
+		name = "flavor_byzmod.6.b"
 		trigger = {
 			NOT = {FROM = {has_country_flag = okh_fooled}}
 		}
@@ -197,7 +211,14 @@ country_event = {
 country_event = {
 	id = flavor_byzmod.9
 	title = "flavor_byzmod.9.t"
-	desc = "flavor_byzmod.9.d"
+	desc = {
+		trigger = {FROM = {has_country_flag = joined_ere}}
+		desc = flavor_byzmod.9.d1
+	}
+	desc = {
+		trigger = {	NOT = {FROM = {has_country_flag = joined_ere}}}
+		desc = flavor_byzmod.9.d2
+	}
 	picture = HRE_eventPicture
 	is_triggered_only = yes
 

@@ -1748,3 +1748,59 @@ flavor_mac.39.t:0 "Macedonia demand subjugation"
 flavor_mac.39.d:0 "The Macedonian now control most of Greece and ask us for our subjugation"
 flavor_mac.39.a:0 "We have no choice ..."
 flavor_mac.39.b:0 "But war !"
+
+
+flavor_byzmod.1.t:0 "The shadow of Osman"
+flavor_byzmod.1.d:0 "Our territories in Crimea are threatened by the Osman Khaganate, we should prevent them from attacking us there."
+flavor_byzmod.1.a:0 "Bribe another horde to attack them"
+flavor_byzmod.1.b:0 "These weaklings aren't even a threat..."
+
+
+flavor_byzmod.1.t:0 "The shadow of Osman"
+flavor_byzmod.1.d:0 "Our territories in Crimea are threatened by the Osman Khaganate, we should prevent them from attacking us there."
+flavor_byzmod.1.a:0 "Bribe another horde to attack them"
+flavor_byzmod.1.b:0 "These weaklings aren't even a threat..."
+
+flavor_byzmod.2.t:0 "An interesting offer"
+flavor_byzmod.2.d:0 "The Roman Empire in the south asked us to attack our Ottomans neighbours. This attack will be rewarded in gold and this is a good opportunity to expand."
+flavor_byzmod.2.a:0 "Osman will fall !"
+flavor_byzmod.2.b:0 "We don't need this filthy roman money"
+
+flavor_byzmod.3.t:0 "Answer of the Horde"
+flavor_byzmod.3.d1:0 "The Great Horde has accepted our offer, Osman will be weakened."
+flavor_byzmod.3.d2:0 "The Great Horde has turned down our offer to attack the Ottomans."
+flavor_byzmod.3.a:0 "Good news !"
+flavor_byzmod.3.b:0 "They will all pay..."
+
+flavor_byzmod.4.t:0 "The Mongol Threat"
+flavor_byzmod.4.d:0 "The Orda and Subutai Khanate are a threat for our territories in the Balkans. But their division is our strength. Creating a war between the two will surely be beneficial."
+flavor_byzmod.4.a:0 "It is time to create a border incident."
+flavor_byzmod.4.b:0 "We have no time for this"
+
+flavor_byzmod.5.t:0 "Border raids"
+flavor_byzmod.5.d:0 "Since the division of the White Horde, Subutai Khanate has always been a rival But last week, they crossed another line, they raided villages in our territories and refused to give any explanation."
+flavor_byzmod.5.a:0 "It is time to show them who are the best raiders."
+flavor_byzmod.5.b:0 "We have other matters to attend to."
+
+flavor_byzmod.6.t:0 "Answer of the Horde"
+flavor_byzmod.6.d1:0 "We hired some turkic troops to raid villages on the borders of the Orda Khanate. The results are wonderful. The two Khanates are now fighting each other. This will surely weakened them for the century to come."
+flavor_byzmod.6.d2:0 "We hired some turkic troops to raid villages on the borders of the Orda Khanate. The results are poor. Orda Khanate refused to make any actions against Subutai Khanate."
+flavor_byzmod.6.a:0 "Good news !"
+flavor_byzmod.6.b:0 "Orda Khanate seems rather weak"
+
+flavor_byzmod.7.t:0 "Wall of Civilization"
+flavor_byzmod.7.d:0 "Most of the dangerous mongolic threats are now in shambles. And we can expand the Empire further in the North by integrating the former buffer states in the Empire."
+flavor_byzmod.7.a:0 "They have no choice..."
+flavor_byzmod.7.b:0 "...if they want to live"
+
+flavor_byzmod.8.t:0 "The Eastern Roman Empire wants to integrate us"
+flavor_byzmod.8.d:0 "Most of the dangerous mongolic threats are now in shambles. With these threats gone, the Romans continue our expansion. And this expansion go through us. Nonetheless, joining the Empire would have some advantages... "
+flavor_byzmod.8.a:0 "Long live the Emperor !"
+flavor_byzmod.8.b:0 "We won't be a Roman puppet !"
+
+
+flavor_byzmod.9.t:0 "Answer of $FROMCOUNTRY$"
+flavor_byzmod.9.d1:0 "They are now fully integrated in the Roman Empire !"
+flavor_byzmod.9.d2:0 "How dare they refuse ?"
+flavor_byzmod.9.a:0 "Good news !"
+flavor_byzmod.9.b:0 "They will see the Roman Wrath !"
