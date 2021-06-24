@@ -1798,9 +1798,25 @@ flavor_byzmod.8.d:0 "Most of the dangerous mongolic threats are now in shambles.
 flavor_byzmod.8.a:0 "Long live the Emperor !"
 flavor_byzmod.8.b:0 "We won't be a Roman puppet !"
 
-
 flavor_byzmod.9.t:0 "Answer of $FROMCOUNTRY$"
 flavor_byzmod.9.d1:0 "They are now fully integrated in the Roman Empire !"
 flavor_byzmod.9.d2:0 "How dare they refuse ?"
 flavor_byzmod.9.a:0 "Good news !"
 flavor_byzmod.9.b:0 "They will see the Roman Wrath !"
+
+flavor_byzmod.10.t:0 "Adriatic Pirates"
+flavor_byzmod.10.d:0 "Pirates presence in the Adriatic have increased in the last decade and our subject have asked for our assistance in this battle."
+flavor_byzmod.10.a:0 "We need a base to fight them."
+flavor_byzmod.10.b:0 "Send ships and men to deal with them."
+flavor_byzmod.10.c:0 "They can defend themselves..."
+
+flavor_byzmod.11.t:0 "Byzantium asked for Corfu to deal with the Pirates"
+flavor_byzmod.11.d:0 "Byzantium is now decided to deal with these pirates. But their price is high. They want Corfu as a base to fight them. Shall we accept ?"
+flavor_byzmod.11.a:0 "As long as they protect us, we are good."
+flavor_byzmod.11.b:0 "Corfu is ours."
+
+flavor_byzmod.12.t:0 "Answer of $FROMCOUNTRY$"
+flavor_byzmod.12.d1:0 "Corfu is ours ! Pirates won't be a problem anymore"
+flavor_byzmod.12.d2:0 "How dare they refuse ?"
+flavor_byzmod.12.a:0 "Good news !"
+flavor_byzmod.12.b:0 "the pirates will be free then."

@@ -297,7 +297,14 @@ country_event = {
 country_event = {
 	id = flavor_byzmod.12
 	title = "flavor_byzmod.12.t"
-	desc = "flavor_byzmod.12.d"
+	desc = {
+		trigger = {FROM = {has_country_flag = gave_corfu_base}}
+		desc = flavor_byzmod.12.d1
+	}
+	desc = {
+		trigger = {	NOT = {FROM = {has_country_flag = gave_corfu_base}}}
+		desc = flavor_byzmod.12.d2
+	}
 	picture = HRE_eventPicture
 	is_triggered_only = yes
 
