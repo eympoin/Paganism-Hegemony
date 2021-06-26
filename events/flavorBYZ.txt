@@ -525,12 +525,12 @@ country_event = {
 	picture = HRE_eventPicture
 	is_triggered_only = yes
 
-	option = {		# seize the mine
+	option = {		# ask march
 		name = "flavor_byzmod.20.a"
 		ai_chance = { factor = 100 }
-		LYD = {country_event = {id = flavor_byzmod.21 days = 17}}
-		PHR = {country_event = {id = flavor_byzmod.21 days = 17}}
-		PSD = {country_event = {id = flavor_byzmod.21 days = 17}}
+		LYD = {country_event = {id = flavor_byzmod.22 days = 17}}
+		PHR = {country_event = {id = flavor_byzmod.22 days = 17}}
+		PSD = {country_event = {id = flavor_byzmod.22 days = 17}}
 	}
 
 	option = {	#not needed
@@ -572,7 +572,7 @@ country_event = {
 			FROM = {has_country_flag = accept_byz_protection}
 		}
 		add_dip_power = -100
-		vassalize = FROM
+		create_march = FROM
 	}
 	option = {	# refused
 		name = "flavor_byzmod.23.b"
