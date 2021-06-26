@@ -370,7 +370,7 @@ country_event = {
 		set_country_flag = took_mine_by_force
 		FROM = country_event = {id = flavor_byzmod.15 days = 14}
 	}
-	option = {	#clean the mine and let it to them
+	option = {	#no
 		name = "flavor_byzmod.14.b"
 		ai_chance = { factor = 0 }
 		FROM = country_event = {id = flavor_byzmod.15 days = 14}
@@ -382,7 +382,14 @@ country_event = {
 country_event = {
 	id = flavor_byzmod.15
 	title = "flavor_byzmod.15.t"
-	desc = "flavor_byzmod.15.d"
+	desc = {
+		trigger = {FROM = {has_country_flag = took_mine_by_force}}
+		desc = flavor_byzmod.15.d1
+	}
+	desc = {
+		trigger = {	NOT = {FROM = {has_country_flag = took_mine_by_force}}}
+		desc = flavor_byzmod.15.d2
+	}
 	picture = HRE_eventPicture
 	is_triggered_only = yes
 
@@ -408,6 +415,14 @@ country_event = {
 			casus_belli = cb_annex
 		}
 	}
+	option = {	#nothing
+		name = "flavor_byzmod.15.c"
+		ai_chance = { factor = 0 }
+		trigger = {
+			NOT = {FROM = {has_country_flag = took_mine_by_force}}
+		}
+		add_prestige = -10
+	}
 
 }
 
@@ -420,7 +435,7 @@ country_event = {
 	picture = HRE_eventPicture
 	is_triggered_only = yes
 
-	option = {		# seize the mine
+	option = {		# pillage
 		name = "flavor_byzmod.16.a"
 		ai_chance = { factor = 100 }
 		add_treasury = -200
@@ -495,8 +510,9 @@ country_event = { #byzantine found
 		name = "flavor_byzmod.19.a"
 		ai_chance = { factor = 100 }
 		add_treasury = -200
-		add_imperial_influence = -10
-		add_prestige = -10
+		ION = {
+			add_treasury = 200
+		}
 	}
 }
 
