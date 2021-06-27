@@ -654,7 +654,7 @@ country_event = {
 	picture = HRE_eventPicture
 	is_triggered_only = yes
 
-	option = {		# let a compromising letter be found by the Pontus king
+	option = {		# revolt
 		name = "flavor_byzmod.27.a"
 		ai_chance = { factor = 100 }
 		add_spy_network_from = {
@@ -711,7 +711,26 @@ country_event = {
 
 	option = {		# accept
 		name = "flavor_byzmod.29.a"
-		ai_chance = { factor = 100 }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 100
+				OR = {
+					ai_attitude = {
+						who = BYZ
+						attitude = attitude_friendly
+					}
+					ai_attitude = {
+						who = BYZ
+						attitude = attitude_loyal
+					}
+					ai_attitude = {
+						who = BYZ
+						attitude = attitude_allied
+					}
+				}
+			}
+		}
 		add_treasury = 20
 		add_opinion = {
 		    who = MAC
@@ -721,7 +740,26 @@ country_event = {
 
 	option = {	#not needed
 		name = "flavor_byzmod.29.b"
-		ai_chance = { factor = 0 }
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 100
+				OR = {
+					ai_attitude = {
+						who = MAC
+						attitude = attitude_friendly
+					}
+					ai_attitude = {
+						who = MAC
+						attitude = attitude_loyal
+					}
+					ai_attitude = {
+						who = MAC
+						attitude = attitude_allied
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -733,7 +771,7 @@ country_event = { # argian league
 	picture = HRE_eventPicture
 	is_triggered_only = yes
 
-	option = {		# pay greeks to break relation with macedon
+	option = {		# argian league
 		name = "flavor_byzmod.30.a"
 		ai_chance = { factor = 100 }
 		set_global_flag = argian_league
@@ -769,14 +807,56 @@ country_event = {
 
 	option = {		# accept
 		name = "flavor_byzmod.31.a"
-		ai_chance = { factor = 70 }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 100
+				tag = ARG
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					ai_attitude = {
+						who = BYZ
+						attitude = attitude_friendly
+					}
+					ai_attitude = {
+						who = BYZ
+						attitude = attitude_loyal
+					}
+					ai_attitude = {
+						who = BYZ
+						attitude = attitude_allied
+					}
+				}
+			}
+		}
 		set_country_flag = joined_argian_league
 		country_event = {id = flavor_byzmod.32 days = 7}
 	}
 
 	option = {	#not needed
 		name = "flavor_byzmod.31.b"
-		ai_chance = { factor = 30 }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				OR = {
+					ai_attitude = {
+						who = MAC
+						attitude = attitude_friendly
+					}
+					ai_attitude = {
+						who = MAC
+						attitude = attitude_loyal
+					}
+					ai_attitude = {
+						who = MAC
+						attitude = attitude_allied
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -784,7 +864,14 @@ country_event = {
 country_event = { # argian league
 	id = flavor_byzmod.32
 	title = "flavor_byzmod.32.t"
-	desc = "flavor_byzmod.32.d"
+	desc = {
+		trigger = {GOL = {has_country_flag = joined_argian_league}}
+		desc = flavor_byzmod.31.d1
+	}
+	desc = {
+		trigger = {	GOL = {has_country_flag = joined_argian_league}}
+		desc = flavor_byzmod.31.d2
+	}
 	picture = HRE_eventPicture
 	is_triggered_only = yes
 
@@ -808,6 +895,9 @@ country_event = { # argian league
 	option = {	#not needed
 		name = "flavor_byzmod.32.c"
 		ai_chance = { factor = 0 }
+		trigger = {
+			FROM = { has_country_flag = joined_argian_league}
+		}
 		FROM = {clr_country_flag = joined_argian_league}
 	}
 }
