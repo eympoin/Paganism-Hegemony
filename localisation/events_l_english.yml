@@ -1929,3 +1929,28 @@ flavor_byzmod.33.c:0 "Disband the league !"
 flavor_byzmod.34.t:0 "End of the Argian League"
 flavor_byzmod.34.d:0 "No one is in the league anymore, it seems the Argian league has ended."
 flavor_byzmod.34.a:0 "This is sad"
+
+flavor_byzmod.35.t:0 "Control of the Oracle"
+flavor_byzmod.35.d:0 "The Oracle of Delphi still has tremendous influence in the Empire and controlling the voice of the Pythia would give us several advantages."
+flavor_byzmod.35.a:0 "Let Apollo guide us"
+
+flavor_byzmod.36.t:0 "Greek Fire"
+flavor_byzmod.36.d:0 "Our chimist have found the recipe of Greek Fire ages ago, but our control of the Sea has been unchallenged since then. Now, we may need it to counter the western influence."
+flavor_byzmod.36.a:0 "Let's bring the fire"
+flavor_byzmod.36.b:0 "This is still useless"
+
+flavor_byzmod.37.t:0 "Protection of Cyreanica"
+flavor_byzmod.37.d:0 "Cyreanica is one of the poorest region of the Empire. Recently the Lybians and Carthaginians are becoming more and more agressive towards them. It is time to step in and prevent the fall of Cyreanica."
+flavor_byzmod.37.a:0 "We will protect them !"
+flavor_byzmod.37.b:0 "We have other things to do"
+
+flavor_byzmod.38.t:0 "Byzantium wants to protect us"
+flavor_byzmod.38.d:0 "With the Carthaginians and the Lybians threatening us more and more. Byzantium now wants "
+flavor_byzmod.38.a:0 "Vassalization is better than extinction"
+flavor_byzmod.38.b:0 "We will stay independant !"
+
+flavor_byzmod.39.t:0 "Answer of $FROMCOUNTRY$"
+flavor_byzmod.39.d1:0 "We will protect them !"
+flavor_byzmod.39.d2:0 "How dare they refuse ?"
+flavor_byzmod.39.a:0 "Good news !"
+flavor_byzmod.39.b:0 "They will regret this..."

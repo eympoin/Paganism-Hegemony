@@ -865,11 +865,11 @@ country_event = { # argian league
 	id = flavor_byzmod.32
 	title = "flavor_byzmod.32.t"
 	desc = {
-		trigger = {GOL = {has_country_flag = joined_argian_league}}
+		trigger = {FROM = {has_country_flag = joined_argian_league}}
 		desc = flavor_byzmod.31.d1
 	}
 	desc = {
-		trigger = {	GOL = {has_country_flag = joined_argian_league}}
+		trigger = {	FROM = {has_country_flag = joined_argian_league}}
 		desc = flavor_byzmod.31.d2
 	}
 	picture = HRE_eventPicture
@@ -994,12 +994,6 @@ country_event = { # control the oracle
 		name = "flavor_byzmod.35.a"
 		set_country_flag = control_the_oracle
 	}
-
-	option = {	#not needed
-		name = "flavor_byzmod.35.b"
-		ai_chance = { factor = 0 }
-		add_prestige = 10
-	}
 }
 
 
@@ -1068,7 +1062,14 @@ country_event = {
 country_event = {
 	id = flavor_byzmod.39
 	title = "flavor_byzmod.39.t"
-	desc = "flavor_byzmod.39.d"
+	desc = {
+		trigger = {FROM = {has_country_flag = accept_byz_protection}}
+		desc = flavor_byzmod.39.d1
+	}
+	desc = {
+		trigger = {	FROM = {has_country_flag = accept_byz_protection}}
+		desc = flavor_byzmod.39.d2
+	}
 	picture = HRE_eventPicture
 	is_triggered_only = yes
 
