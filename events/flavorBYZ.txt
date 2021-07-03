@@ -1208,7 +1208,8 @@ country_event = {
 	}
 	option = {	# refused
 		name = "flavor_byzmod.43.b"
-
+		add_prestige = 10
+		add_imperial_influence = 10
 	}
 }
 
