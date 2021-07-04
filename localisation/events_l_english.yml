@@ -2076,3 +2076,39 @@ flavor_byzmod.60.b:0 "A good news !"
 flavor_byzmod.61.t:0 "No one will come to the council of Jerusalem"
 flavor_byzmod.61.d:0 "Palaestina and Jerusalem have refused to join the council..."
 flavor_byzmod.61.a:0 "Damn them !"
+
+flavor_byzmod.62.t:0 "Authority in Egypt"
+flavor_byzmod.62.d:0 "Our authority in Egypt is now restored !"
+flavor_byzmod.62.a:0 "Good news !"
+
+flavor_byzmod.63.t:0 "Authority in Syria"
+flavor_byzmod.63.d:0 "Our authority in Syria is now restored !"
+flavor_byzmod.63.a:0 "Good news !"
+
+flavor_byzmod.64.t:0 "Authority in the Balkans"
+flavor_byzmod.64.d:0 "Our authority in the Balkans is now restored !"
+flavor_byzmod.64.a:0 "Good news !"
+
+flavor_byzmod.65.t:0 "Authority in Greece"
+flavor_byzmod.65.d:0 "Our authority in Greece is now restored !"
+flavor_byzmod.65.a:0 "Good news !"
+
+flavor_byzmod.66.t:0 "Authority in Anatolia"
+flavor_byzmod.66.d:0 "Our authority in Anatolia is now restored !"
+flavor_byzmod.66.a:0 "Good news !"
+
+flavor_byzmod.67.t:0 "The state of the Empire"
+flavor_byzmod.67.d:0 "This is the current state of the Empire"
+flavor_byzmod.67.a:0 "Long live the Empire !"
+
+flavor_byzmod.68.t:0 "Authority restored"
+flavor_byzmod.68.d:0 "The authority of the Emperor on the regions of the Empire is restored."
+flavor_byzmod.68.a:0 "Long live the Empire !"
+
+flavor_byzmod.69.t:0 "Imperial crisis"
+flavor_byzmod.69.d:0 "The Roman Empire has survived in the east mostly unscathed in term of borders. But the ennemy has mostly been within the Empire. The Emperors have grown weaker and the subjects were given more and more autonomy. After the coup of 1204, some of the subjects were even given a say in the inheritance of the Empire. Since then the Imperial authority has decreased tremendously. With the new external threats rising in the horizon, the future looks darker for the Empire. "
+flavor_byzmod.69.a:0 "We will endure !"
+
+flavor_byzmod.70.t:0 "The state of the Empire"
+flavor_byzmod.70.d:0 "This is the current state of the Empire"
+flavor_byzmod.70.a:0 "Long live the Empire !"

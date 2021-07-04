@@ -2108,37 +2108,6 @@ country_event = { #authority restored
 	}
 }
 
-country_event = { #authority restored
-	id = flavor_byzmod.68
-	title = "flavor_byzmod.68.t"
-	desc = "flavor_byzmod.68.d"
-	picture = HRE_eventPicture
-	trigger = {
-		is_emperor = yes
-		has_country_modifier = authority_balkans
-		has_country_modifier = authority_syria
-		has_country_modifier = authority_egypt
-		has_country_modifier = authority_anatolia
-		has_country_modifier = authority_greece
-	}
-
-	option = {
-		name = "flavor_byzmod.68.a"
-		ai_chance = { factor = 20 }
-		set_global_flag = empire_authority_restored
-		add_country_modifier = {
-			name = authority_restored
-			duration = -1
-		}
-		remove_country_modifier = imperial_crisis
-		remove_country_modifier = authority_balkans
-		remove_country_modifier = authority_syria
-		remove_country_modifier = authority_egypt
-		remove_country_modifier = authority_anatolia
-		remove_country_modifier = authority_greece
-	}
-}
-
 country_event = { #imperial_crisis
 	id = flavor_byzmod.69
 	title = "flavor_byzmod.69.t"
@@ -2155,7 +2124,6 @@ country_event = { #imperial_crisis
 	option = {
 		name = "flavor_byzmod.69.a"
 		ai_chance = { factor = 20 }
-		set_global_flag = empire_authority_restored
 		add_country_modifier = {
 			name = imperial_crisis
 			duration = -1
