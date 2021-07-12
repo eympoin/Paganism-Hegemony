@@ -94,7 +94,7 @@ country_decisions = {
 			 }
 			 add_permanent_claim = ROOT
 		 }
-		 balkans_region = {
+		 balkan_region = {
 			 limit = {
 				 NOT = { owned_by = ROOT }
 			 }

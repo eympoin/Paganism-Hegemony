@@ -368,12 +368,12 @@ country_event = {
 		ai_chance = { factor = 100 }
 
 		set_country_flag = took_mine_by_force
-		FROM = country_event = {id = flavor_byzmod.15 days = 14}
+		FROM = { country_event = {id = flavor_byzmod.15 days = 14} }
 	}
 	option = {	#no
 		name = "flavor_byzmod.14.b"
 		ai_chance = { factor = 0 }
-		FROM = country_event = {id = flavor_byzmod.15 days = 14}
+		FROM = {country_event = {id = flavor_byzmod.15 days = 14}}
 	}
 
 }
@@ -439,7 +439,7 @@ country_event = {
 		name = "flavor_byzmod.16.a"
 		ai_chance = { factor = 100 }
 		add_treasury = -200
-		ION = {country_event = {id = flavor_byzmod.14 days = 17}}
+		ION = {country_event = {id = flavor_byzmod.17 days = 17}}
 	}
 
 	option = {	#not needed
@@ -786,6 +786,7 @@ country_event = { # argian league
 					region = greece_region
 				}
 				NOT = {tag = MAC}
+				NOT = {tag = BYZ}
 				NOT  = {is_subject_of = MAC}
 			}
 			country_event = {id = flavor_byzmod.31 days = 7}
@@ -832,7 +833,7 @@ country_event = {
 			}
 		}
 		set_country_flag = joined_argian_league
-		country_event = {id = flavor_byzmod.32 days = 7}
+		FROM = {country_event = {id = flavor_byzmod.32 days = 7}}
 	}
 
 	option = {	#not needed
@@ -972,7 +973,7 @@ country_event = { #remove league if no one is in
 		}
 	}
 	mean_time_to_happen = {
-		months = 1
+		years = 1
 	}
 	option = {	#disband the league
 		name = "flavor_byzmod.34.a"
@@ -992,7 +993,7 @@ country_event = { # control the oracle
 
 	option = {		# control the oracle
 		name = "flavor_byzmod.35.a"
-		set_country_flag = control_the_oracle
+		set_country_flag = control_of_the_oracle
 	}
 }
 
@@ -1259,7 +1260,7 @@ country_event = {
 
 
 	option = {	# learn of persecution
-		name = "flavor_byzmod.45.b"
+		name = "flavor_byzmod.45.a"
 
 	}
 }
@@ -1304,13 +1305,11 @@ country_event = {
 
 	option = {		# accepted
 		name = "flavor_byzmod.47.a"
-		add_treasury = -2000
-		2315 = {
-			add_great_project = suez_canal
+			add_treasury = -10000
+			4316 = {
+				add_great_project = suez_canal
+			}
 		}
-		}
-
-	}
 	option = {	# refused
 		name = "flavor_byzmod.47.b"
 
@@ -1405,7 +1404,7 @@ country_event = {
 		desc = flavor_byzmod.51.d1
 	}
 	desc = {
-		FROM = {has_country_modifier = cilician_corsairs}
+		trigger = {NOT = {has_global_flag = accepted_cilicia_ultimatum}}
 		desc = flavor_byzmod.51.d2
 	}
 	desc = {
@@ -1489,12 +1488,12 @@ country_event = {
 		ai_chance = { factor = 100 }
 		add_treasury = 200
 		set_country_flag = took_cyprus
-		FROM = country_event = {id = flavor_byzmod.54 days = 14}
+		FROM = {country_event = {id = flavor_byzmod.54 days = 14}}
 	}
 	option = {	#
 		name = "flavor_byzmod.53.b"
 		ai_chance = { factor = 0 }
-		FROM = country_event = {id = flavor_byzmod.54 days = 14}
+		FROM = {country_event = {id = flavor_byzmod.54 days = 14}}
 	}
 
 }
@@ -1551,8 +1550,8 @@ country_event = {
 		name = "flavor_byzmod.55.a"
 		ai_chance = { factor = 100 }
 		set_global_flag = jerusalem_council
-		KOJ = country_event = {id = flavor_byzmod.56 days = 14}
-		PLS = country_event = {id = flavor_byzmod.56 days = 14}
+		KOJ = {country_event = {id = flavor_byzmod.56 days = 14}}
+		PLS = {country_event = {id = flavor_byzmod.56 days = 14}}
 	}
 
 	option = {	# no need
@@ -1574,7 +1573,7 @@ country_event = {
 		name = "flavor_byzmod.56.a"
 		ai_chance = { factor = 100 }
 		set_country_flag = joined_jerusalem_council
-		BYZ = country_event = {id = flavor_byzmod.57 days = 14}
+		BYZ = {country_event = {id = flavor_byzmod.57 days = 14}}
 	}
 
 	option = {	# no
@@ -1648,7 +1647,7 @@ country_event = {
 		}
 		set_global_flag = koj_proposition
 		create_guarantee = KOJ
-		PLS = country_event = {id = flavor_byzmod.59 days = 14}
+		PLS = {country_event = {id = flavor_byzmod.59 days = 14}}
 	}
 
 	option = {	# For PLS
@@ -1659,7 +1658,7 @@ country_event = {
 		ai_chance = { factor = 40 }
 		set_global_flag = pls_proposition
 		create_guarantee = PLS
-		KOJ = country_event = {id = flavor_byzmod.59 days = 14}
+		KOJ = {country_event = {id = flavor_byzmod.59 days = 14}}
 	}
 
 	option = {	# compromise
@@ -1668,8 +1667,8 @@ country_event = {
 		set_global_flag = compromise_Jerusalem
 		create_guarantee = KOJ
 		create_guarantee = PLS
-		PLS = country_event = {id = flavor_byzmod.59 days = 14}
-		KOJ = country_event = {id = flavor_byzmod.59 days = 14}
+		PLS = {country_event = {id = flavor_byzmod.59 days = 14}}
+		KOJ = {country_event = {id = flavor_byzmod.59 days = 14}}
 	}
 
 	option = {	# status quo
@@ -1707,7 +1706,7 @@ country_event = {
 		trigger = {
 			has_global_flag = koj_proposition
 		}
-		KOJ = country_event = {id = flavor_byzmod.60 days = 14}
+		KOJ = {country_event = {id = flavor_byzmod.60 days = 14}}
 	}
 
 	option = {		#accept
@@ -1716,7 +1715,7 @@ country_event = {
 		trigger = {
 			has_global_flag = pls_proposition
 		}
-		PLS = country_event = {id = flavor_byzmod.60 days = 14}
+		PLS = {country_event = {id = flavor_byzmod.60 days = 14}}
 	}
 
 	option = {		#accept

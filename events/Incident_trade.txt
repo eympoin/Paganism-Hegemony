@@ -8,7 +8,8 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		is_year = 1600
+		is_emperor = yes
+		adm_tech = 18
 		NOT= { 151 = { highest_value_trade_node = yes}}
 		OR = {
 			118 = { highest_value_trade_node = yes}
@@ -408,7 +409,10 @@ country_event = {
 			cede_province	= GAN
 			add_core = GAN
 		}
-		GAN = {
+		every_country= {
+			limit = {
+				tag = GAN
+			}
 			change_religion = theoi
 		}
 		4457 = {
@@ -429,15 +433,15 @@ country_event = {
 	picture = HRE_eventPicture
 
 	fire_only_once = yes
+	mean_time_to_happen = {
+		months = 1
+	}
 	trigger = {
 		is_emperor = yes
 		has_global_flag = the_empire_create_the_great_canal
-		2315 = {
-			has_great_project = suez_canal
-		}
-	}
-	mean_time_to_happen = {
-		months = 1
+		has_great_project = {
+							type = suez_canal
+			}
 	}
 
 	option = {

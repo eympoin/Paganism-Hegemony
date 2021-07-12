@@ -89,7 +89,7 @@ country_event = {
 
   trigger = {
     OR = {
-      owns_core_province = 4810
+      owns_core_province = 4962
       has_country_flag = control_of_the_oracle
       }
   }

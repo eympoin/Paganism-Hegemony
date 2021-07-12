@@ -628,7 +628,8 @@ Byzantium_2_2 = {
     provinces_to_highlight = {
     }
     trigger = {
-      treasury = 2000
+      treasury = 10000
+      adm_tech = 18
     }
     effect = {
       #event take suez and build canal
