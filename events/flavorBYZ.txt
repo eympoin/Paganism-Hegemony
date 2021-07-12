@@ -248,7 +248,7 @@ country_event = {
 	id = flavor_byzmod.10
 	title = "flavor_byzmod.10.t"
 	desc = "flavor_byzmod.10.d"
-	picture = HRE_eventPicture
+	picture = FLAGSHIP_SUNK_eventPicture
 	is_triggered_only = yes
 
 	option = {		# demand corfu base
@@ -277,7 +277,7 @@ country_event = {
 	id = flavor_byzmod.11
 	title = "flavor_byzmod.11.t"
 	desc = "flavor_byzmod.11.d"
-	picture = HRE_eventPicture
+	picture = CARIBBEAN_PIRATE_FORT_eventPicture
 	is_triggered_only = yes
 
 	option = {		# accept
@@ -305,7 +305,7 @@ country_event = {
 		trigger = {	NOT = {FROM = {has_country_flag = gave_corfu_base}}}
 		desc = flavor_byzmod.12.d2
 	}
-	picture = HRE_eventPicture
+	picture = CARIBBEAN_PIRATE_FORT_eventPicture
 	is_triggered_only = yes
 
 	option = {		# accepted
@@ -332,7 +332,7 @@ country_event = {
 	id = flavor_byzmod.13
 	title = "flavor_byzmod.13.t"
 	desc = "flavor_byzmod.13.d"
-	picture = HRE_eventPicture
+	picture = ANGRY_MOB_eventPicture
 	is_triggered_only = yes
 
 	option = {		# seize the mine
@@ -360,7 +360,7 @@ country_event = {
 	id = flavor_byzmod.14
 	title = "flavor_byzmod.14.t"
 	desc = "flavor_byzmod.14.d"
-	picture = HRE_eventPicture
+	picture = ANGRY_MOB_eventPicture
 	is_triggered_only = yes
 
 	option = {		# OK
@@ -432,7 +432,7 @@ country_event = {
 	id = flavor_byzmod.16
 	title = "flavor_byzmod.16.t"
 	desc = "flavor_byzmod.16.d"
-	picture = HRE_eventPicture
+	picture = CORRUPTION_eventPicture
 	is_triggered_only = yes
 
 	option = {		# pillage
@@ -453,7 +453,7 @@ country_event = {
 	id = flavor_byzmod.17
 	title = "flavor_byzmod.17.t"
 	desc = "flavor_byzmod.17.d"
-	picture = HRE_eventPicture
+	picture = ANGRY_MOB_eventPicture
 	is_triggered_only = yes
 
 	option = {		# purge them
@@ -522,7 +522,7 @@ country_event = {
 	id = flavor_byzmod.20
 	title = "flavor_byzmod.20.t"
 	desc = "flavor_byzmod.20.d"
-	picture = HRE_eventPicture
+	picture = DIPLOMACY_eventPicture
 	is_triggered_only = yes
 
 	option = {		# ask march
@@ -543,7 +543,7 @@ country_event = {
 	id = flavor_byzmod.22
 	title = "flavor_byzmod.22.t"
 	desc = "flavor_byzmod.22.d"
-	picture = HRE_eventPicture
+	picture = DIPLOMACY_eventPicture
 	is_triggered_only = yes
 
 	option = {		# accept
@@ -588,7 +588,7 @@ country_event = {
 	id = flavor_byzmod.24
 	title = "flavor_byzmod.24.t"
 	desc = "flavor_byzmod.24.d"
-	picture = HRE_eventPicture
+	picture = SPY_eventPicture
 	is_triggered_only = yes
 
 	option = {		# let a compromising letter be found by the Pontus king
@@ -612,7 +612,7 @@ country_event = {
 	id = flavor_byzmod.25
 	title = "flavor_byzmod.25.t"
 	desc = "flavor_byzmod.25.d"
-	picture = HRE_eventPicture
+	picture = ASSASSINATION_eventPicture
 	is_triggered_only = yes
 
 	option = {		# letter found, cut all relations
@@ -632,7 +632,7 @@ country_event = {
 	id = flavor_byzmod.26
 	title = "flavor_byzmod.26.t"
 	desc = "flavor_byzmod.26.d"
-	picture = HRE_eventPicture
+	picture = ACCUSATION_eventPicture
 	is_triggered_only = yes
 
 	option = {		# cut all relations in return
@@ -651,7 +651,7 @@ country_event = {
 	id = flavor_byzmod.27
 	title = "flavor_byzmod.27.t"
 	desc = "flavor_byzmod.27.d"
-	picture = HRE_eventPicture
+	picture = ANGRY_MOB_eventPicture
 	is_triggered_only = yes
 
 	option = {		# revolt
@@ -677,7 +677,7 @@ country_event = {
 	id = flavor_byzmod.28
 	title = "flavor_byzmod.28.t"
 	desc = "flavor_byzmod.28.d"
-	picture = HRE_eventPicture
+	picture = CORRUPTION_eventPicture
 	is_triggered_only = yes
 
 	option = {		# pay greeks to break relation with macedon
@@ -706,7 +706,7 @@ country_event = {
 	id = flavor_byzmod.29
 	title = "flavor_byzmod.29.t"
 	desc = "flavor_byzmod.29.d"
-	picture = HRE_eventPicture
+	picture = DIPLOMACY_eventPicture
 	is_triggered_only = yes
 
 	option = {		# accept
@@ -768,7 +768,7 @@ country_event = { # argian league
 	id = flavor_byzmod.30
 	title = "flavor_byzmod.30.t"
 	desc = "flavor_byzmod.30.d"
-	picture = HRE_eventPicture
+	picture = DIPLOMACY_eventPicture
 	is_triggered_only = yes
 
 	option = {		# argian league
@@ -802,7 +802,7 @@ country_event = {
 	id = flavor_byzmod.31
 	title = "flavor_byzmod.31.t"
 	desc = "flavor_byzmod.31.d"
-	picture = HRE_eventPicture
+	picture = DIPLOMACY_eventPicture
 	is_triggered_only = yes
 
 	option = {		# accept
@@ -872,7 +872,7 @@ country_event = { # argian league
 		trigger = {	FROM = {has_country_flag = joined_argian_league}}
 		desc = flavor_byzmod.31.d2
 	}
-	picture = HRE_eventPicture
+	picture = DIPLOMACY_eventPicture
 	is_triggered_only = yes
 
 	option = {		# join officialy the league
@@ -906,7 +906,7 @@ country_event = { #force player to guarantee or remove the city from the league
 	id = flavor_byzmod.33
 	title = "flavor_byzmod.33.t"
 	desc = "flavor_byzmod.33.d"
-	picture = HRE_eventPicture
+	picture = DIPLOMACY_eventPicture
 	trigger = {
 		has_country_flag = chief_argian_league
 		any_country = {
@@ -962,7 +962,7 @@ country_event = { #remove league if no one is in
 	id = flavor_byzmod.34
 	title = "flavor_byzmod.34.t"
 	desc = "flavor_byzmod.34.d"
-	picture = HRE_eventPicture
+	picture = COUNTRY_COLLAPSE_eventPicture
 	trigger = {
 		has_country_flag = chief_argian_league
 		NOT = {
@@ -987,7 +987,7 @@ country_event = { # control the oracle
 	id = flavor_byzmod.35
 	title = "flavor_byzmod.35.t"
 	desc = "flavor_byzmod.35.d"
-	picture = HRE_eventPicture
+	picture = GOOD_WITH_MONARCH_eventPicture
 	is_triggered_only = yes
 
 	option = {		# control the oracle
@@ -1001,7 +1001,7 @@ country_event = { # greek fire
 	id = flavor_byzmod.36
 	title = "flavor_byzmod.36.t"
 	desc = "flavor_byzmod.36.d"
-	picture = HRE_eventPicture
+	picture = WESTERNISATION_eventPicture
 	is_triggered_only = yes
 
 	option = {		# greek fire
@@ -1178,7 +1178,7 @@ country_event = {
 	id = flavor_byzmod.43
 	title = "flavor_byzmod.43.t"
 	desc = "flavor_byzmod.43.d"
-	picture = HRE_eventPicture
+	picture = BORDER_TENSION_eventPicture
 	is_triggered_only = yes
 
 	option = {		# accepted
@@ -1268,7 +1268,7 @@ country_event = {
 	id = flavor_byzmod.46
 	title = "flavor_byzmod.46.t"
 	desc = "flavor_byzmod.46.d"
-	picture = HRE_eventPicture
+	picture = FORT_eventPicture
 	is_triggered_only = yes
 
 	option = {		# accepted
@@ -1299,7 +1299,7 @@ country_event = {
 	id = flavor_byzmod.47
 	title = "flavor_byzmod.47.t"
 	desc = "flavor_byzmod.47.d"
-	picture = HRE_eventPicture
+	picture = HARBOUR_eventPicture
 	is_triggered_only = yes
 
 	option = {		# accepted
@@ -1321,7 +1321,7 @@ country_event = {
 	id = flavor_byzmod.48
 	title = "flavor_byzmod.48.t"
 	desc = "flavor_byzmod.48.d"
-	picture = HRE_eventPicture
+	picture = BARBARY_PIRATES_eventPicture
 	is_triggered_only = yes
 
 	option = {		# send ultimatum
@@ -1344,7 +1344,7 @@ country_event = {
 	id = flavor_byzmod.49
 	title = "flavor_byzmod.49.t"
 	desc = "flavor_byzmod.49.d"
-	picture = HRE_eventPicture
+	picture = DIPLOMACY_eventPicture
 	is_triggered_only = yes
 
 	option = {		# accept ultimatum
@@ -1371,7 +1371,7 @@ country_event = {
 	id = flavor_byzmod.50
 	title = "flavor_byzmod.50.t"
 	desc = "flavor_byzmod.50.d"
-	picture = HRE_eventPicture
+	picture = DIPLOMACY_eventPicture
 	is_triggered_only = yes
 
 	option = {		# accept negotiation
@@ -1544,7 +1544,7 @@ country_event = {
 	id = flavor_byzmod.55
 	title = "flavor_byzmod.55.t"
 	desc = "flavor_byzmod.55.d"
-	picture = HRE_eventPicture
+	picture = DIPLOMACY_eventPicture
 	is_triggered_only = yes
 
 	option = {		# invite
@@ -1624,7 +1624,7 @@ country_event = {
 	id = flavor_byzmod.58
 	title = "flavor_byzmod.58.t"
 	desc = "flavor_byzmod.58.d"
-	picture = HRE_eventPicture
+	picture = DIPLOMACY_eventPicture
 	fire_only_once = yes
 	trigger = {
 		OR = {

@@ -6,7 +6,7 @@ country_event = {
 	id = flavor_cil.1
 	title = "flavor_cil.1.t"
 	desc = "flavor_cil.1.d"
-	picture = HRE_eventPicture
+	picture = BARBARY_PIRATES_eventPicture
 	trigger = {
 		tag = CIL
 		is_year = 1450
@@ -86,7 +86,7 @@ country_event = {
 	id = flavor_cil.2
 	title = "flavor_cil.2.t"
 	desc = "flavor_cil.2.d"
-	picture = HRE_eventPicture
+	picture = BARBARY_PIRATES_eventPicture
 	trigger = {
 		has_global_flag = cilicia_piracy
 		NOT = {exists = CIL}
@@ -112,7 +112,7 @@ country_event = {
 	id = flavor_cil.3
 	title = "flavor_cil.3.t"
 	desc = "flavor_cil.3.d"
-	picture = HRE_eventPicture
+	picture = BARBARY_PIRATES_eventPicture
 	is_triggered_only = yes
 
 	option = {		# sound like a problem
