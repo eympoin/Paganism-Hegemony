@@ -19,7 +19,7 @@ Byzantium_1_1 = {
       treasury = 100
     }
     effect = {
-      #event war against the horde
+      country_event = {id = flavor_byzmod.1}
     }
   }
 
@@ -47,7 +47,7 @@ Byzantium_1_1 = {
       dip_power = 200
     }
     effect = {
-      #event mongol war
+      country_event = {id = flavor_byzmod.4}
     }
   }
 
@@ -61,7 +61,7 @@ Byzantium_1_1 = {
       OKH = {NOT = {total_development = 100}}
     }
     effect = {
-      #event subjugation Mag/PEC/CARPI/Circassia
+      country_event = {id = flavor_byzmod.7}
     }
   }
 
@@ -117,7 +117,7 @@ Byzantium_2_1 = {
       dip_power = 300
     }
     effect = {
-      #event take corfu
+      country_event = {id = flavor_byzmod.10}
     }
   }
 
@@ -131,7 +131,7 @@ Byzantium_2_1 = {
       mil_power = 150
     }
     effect = {
-      #event take dardania
+      country_event = {id = flavor_byzmod.13}
     }
   }
 
@@ -141,11 +141,10 @@ Byzantium_2_1 = {
     provinces_to_highlight = {
     }
     trigger = {
-      imperial_influence = 50
+      is_emperor = yes
     }
     effect = {
-      add_imperial_influence = -50
-      #event possibility of vassalizing balkans
+      country_event = {id = flavor_byzmod.64}
     }
   }
 }
@@ -171,7 +170,7 @@ Byzantium_3_1 = {
       treasury = 100
     }
     effect = {
-      #event ionia lose influence
+      country_event = {id = flavor_byzmod.16}
     }
   }
 
@@ -184,7 +183,7 @@ Byzantium_3_1 = {
       dip_power = 300
     }
     effect = {
-      #event vassalization of anatolian states
+      country_event = {id = flavor_byzmod.20}
     }
   }
 
@@ -211,11 +210,10 @@ Byzantium_3_1 = {
     provinces_to_highlight = {
     }
     trigger = {
-      imperial_influence = 50
+      is_emperor = yes
     }
     effect = {
-      add_imperial_influence = -50
-      #event possibility of vassalizing anatolia
+      country_event = {id = flavor_byzmod.66}
     }
   }
 
@@ -245,7 +243,7 @@ Byzantium_4_1 = {
       }
     }
     effect = {
-      #event manipulate Pontus and Armenia against each other
+      country_event = {id = flavor_byzmod.24}
     }
   }
 
@@ -262,7 +260,7 @@ Byzantium_4_1 = {
       }
     }
     effect = {
-      #events azri revolts
+      country_event = {id = flavor_byzmod.27}
       erzurum_area = {
         limit = {
           NOT = { owned_by = ROOT }
@@ -352,7 +350,7 @@ Byzantium_5_1 = {
     }
     effect = {
       add_treasury = -200
-      #event counter macedon influence
+      country_event = {id = flavor_byzmod.28}
     }
   }
 
@@ -371,7 +369,7 @@ Byzantium_5_1 = {
       }
     }
     effect = {
-      #event argian league
+      country_event = {id = flavor_byzmod.30}
     }
   }
 
@@ -393,7 +391,7 @@ Byzantium_5_1 = {
       }
     }
     effect = {
-      #event get oracle event even if not owned
+      country_event = {id = flavor_byzmod.35}
     }
   }
 
@@ -440,11 +438,10 @@ Byzantium_5_1 = {
     provinces_to_highlight = {
     }
     trigger = {
-      imperial_influence = 50
+      is_emperor = yes
     }
     effect = {
-      add_imperial_influence = -50
-      #event possibility of vassalizing greece
+      country_event = {id = flavor_byzmod.65}
     }
   }
 
@@ -474,7 +471,7 @@ Byzantium_1_2 = {
         adm_power = 100
     }
     effect = {
-      #event greek fire
+      country_event = {id = flavor_byzmod.36}
     }
   }
 
@@ -496,7 +493,7 @@ Byzantium_1_2 = {
       }
     }
     effect = {
-      #event vassalize CYR
+      country_event = {id = flavor_byzmod.37}
     }
   }
 
@@ -510,7 +507,7 @@ Byzantium_1_2 = {
     }
     effect = {
       add_imperial_influence = -40
-      #event council taras
+      country_event = {id = flavor_byzmod.40}
     }
   }
 
@@ -604,7 +601,7 @@ Byzantium_2_2 = {
     }
     effect = {
       add_adm_power = -200
-      #event force  conversion
+      country_event = {id = flavor_byzmod.43}
     }
   }
 
@@ -618,7 +615,7 @@ Byzantium_2_2 = {
     }
     effect = {
       add_mil_power = -200
-      #event build fort and gives manpower
+      country_event = {id = flavor_byzmod.46}
     }
   }
 
@@ -632,7 +629,7 @@ Byzantium_2_2 = {
       adm_tech = 18
     }
     effect = {
-      #event take suez and build canal
+      country_event = {id = flavor_byzmod.47}
     }
   }
 
@@ -642,11 +639,10 @@ Byzantium_2_2 = {
     provinces_to_highlight = {
     }
     trigger = {
-      imperial_influence = 50
+      is_emperor = yes
     }
     effect = {
-      add_imperial_influence = -50
-      #event possibility of vassalizing egypt
+      country_event = {id = flavor_byzmod.62}
     }
   }
 
@@ -674,7 +670,7 @@ Byzantium_3_2 = {
       navy_size = 50
     }
     effect = {
-      #event battle of cilicia
+      country_event = {id = flavor_byzmod.48}
     }
   }
 
@@ -688,7 +684,7 @@ Byzantium_3_2 = {
       imperial_influence = 30
     }
     effect = {
-      #event take control of cyprus
+      country_event = {id = flavor_byzmod.52}
     }
   }
 
@@ -759,7 +755,7 @@ Byzantium_4_2 = {
       }
     }
     effect = {
-      #event arbiter Jerusalem
+      country_event = {id = flavor_byzmod.55}
     }
   }
 
@@ -796,11 +792,10 @@ Byzantium_4_2 = {
     provinces_to_highlight = {
     }
     trigger = {
-      imperial_influence = 50
+      is_emperor = yes
     }
     effect = {
-      add_imperial_influence = -50
-      #event possibility of vassalizing syria
+      country_event = {id = flavor_byzmod.63}
     }
   }
 

@@ -2910,9 +2910,7 @@ help_our_savior:0 "Help our Savior"
 
 ended_raid:0"Ended Raid"
 
-argian_league_mod = {
- diplomatic_upkeep = 5
-}
+argian_league_mod:0"Argian League"
 
 greek_fire:0 "Greek Fire"
 
