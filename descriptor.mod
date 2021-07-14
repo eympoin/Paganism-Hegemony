@@ -1,4 +1,4 @@
-version="0.8"
+version="0.9"
 tags={
 	"Alternative History"
 	"Events"
@@ -8,6 +8,6 @@ tags={
 	"Trade"
 }
 picture="thumbnail.png"
-name="Paganism Hegemony v0.8: Work"
-supported_version="1.30.4"
+name="Paganism Hegemony v0.9: A broken Empire"
+supported_version="1.31.5"
 remote_file_id="2017988677"

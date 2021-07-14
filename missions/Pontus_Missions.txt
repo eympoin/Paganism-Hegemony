@@ -345,7 +345,10 @@ Pontus_3_1 = {
     provinces_to_highlight = {
         }
     trigger = {
-      is_emperor = yes
+      OR = {
+        is_emperor = yes
+        NOT = {hre_size = 1}
+      }
     }
     effect = {
       add_imperial_influence = 60

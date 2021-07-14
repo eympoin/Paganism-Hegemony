@@ -14,5 +14,4 @@ bookmark =
 	country = AFG
 
 	easy_country = PER
-	easy_country = ARM
 }

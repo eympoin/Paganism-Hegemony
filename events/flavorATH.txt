@@ -24,10 +24,6 @@ country_event = {#roman conversion
   picture = COLONIZATION_eventPicture
 
   trigger = {
-    OR = {
-      tag = WRM
-      was_tag = WRM
-    }
     culture_group = neo-roman
     any_owned_province = {
      has_owner_religion = yes
@@ -57,6 +53,11 @@ country_event = {#roman conversion
       }
       change_culture = greek
     }
+  }
+  option = {
+    name = flavor_athens.2.b
+    ai_chance = { factor = 1 }
+    add_dip_power = -75
   }
 }
 

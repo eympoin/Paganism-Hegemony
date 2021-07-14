@@ -24,8 +24,6 @@ bookmark =
 	easy_country = ION
 	easy_country = SYR
 	easy_country = PHO
-	easy_country = LEG
-	easy_country = UEG
 	easy_country = SER
 	easy_country = BUL
 }
