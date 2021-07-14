@@ -317,6 +317,23 @@ numidian_protectorate_desc:0 "We have conquered the desert land of inland Africa
 restore_Alexander_empire_title:0 "Restore Alexander Empire"
 restore_Alexander_empire_desc:0 "What was may come again."
 
-
 sclavenia_nation_title:0 "Reunite the Slavs under one banner"
 sclavenia_nation_desc:0 "After the migration, the Slavs were never really integrated in the Eastern Roman Empire. They were keep divided by their overlord. This time is over !"
+
+
+ #Eastern Roman empire
+restore_Eastern_Roman_Empire_title:0 "Reform the Eastern Roman Empire"
+restore_Eastern_Roman_Empire_desc:0 "The Eastern Empire is back"
+
+#imperial authority
+authority_in_egypt_title:0 "Authority in Egypt"
+authority_in_greece_title:0 "Authority in Greece"
+authority_in_balkans_title:0 "Authority in the Balkans"
+authority_in_anatolia_title:0 "Authority in Anatolia"
+authority_in_syria_title:0 "Authority in Syria"
+
+authority_in_egypt_desc:0 "Our authority in Anatolia is now restored !"
+authority_in_greece_desc:0 "Our authority in Anatolia is now restored !"
+authority_in_balkans_desc:0 "Our authority in Anatolia is now restored !"
+authority_in_anatolia_desc:0 "Our authority in Anatolia is now restored !"
+authority_in_syria_desc:0 "Our authority in Anatolia is now restored !"

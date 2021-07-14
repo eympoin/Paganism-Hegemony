@@ -1,6 +1,6 @@
 country_decisions = {
 
-	restore_Western_Roman_Empire = {
+	restore_Eastern_Roman_Empire = {
 		major = yes
 		potential = {
 			was_never_end_game_tag_trigger = yes
@@ -11,7 +11,7 @@ country_decisions = {
 			}
 			NOT = { tag = ERM }
 			NOT = { tag = ROM }
-			NOT = { tag = PAP }
+			NOT = { tag = WRM }
 
 			culture_group = byzantine
 			NOT = {hre_size = 1}
