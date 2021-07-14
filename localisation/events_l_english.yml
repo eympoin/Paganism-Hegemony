@@ -2112,3 +2112,37 @@ flavor_byzmod.69.a:0 "We will endure !"
 flavor_byzmod.70.t:0 "The state of the Empire"
 flavor_byzmod.70.d:0 "This is the current state of the Empire"
 flavor_byzmod.70.a:0 "Long live the Empire !"
+
+flavor_cil.1.t:0 "Cilician piracy"
+flavor_cil.1.d:0 "Cilicia has always been a heaven for pirates. Today is no exception. We must choose our piracy policy."
+flavor_cil.1.a:0 "We are pirates !"
+flavor_cil.1.a:0 "These pirates will die !"
+
+flavor_cil.1.t:0 "Cilician piracy"
+flavor_cil.1.d:0 "Cilicia has always been a heaven for pirates. Today is no exception. We must choose our politics towards them."
+flavor_cil.1.a:0 "We are pirates !"
+flavor_cil.1.a:0 "These pirates will die !"
+
+flavor_cil.2.t:0 "End Cilician piracy"
+flavor_cil.2.d:0 "Cilicia is now under an external control and cilician piracy is effectively dead."
+flavor_cil.2.a:0 "Good ridance !"
+
+flavor_cil.3.t:0 "End Cilician piracy"
+flavor_cil.3.d:0 "Cilicia has embraced piracy and is threatening the entire Empire."
+flavor_cil.3.a:0 "Sounds like a problem"
+
+flavor_greek.1.t:0 "Cultural Assimilation"
+flavor_greek.1.d:0 "The Greek influence other these lands has finally turned the inhabitants into true Greeks"
+flavor_greek.1.a:0 "This is a happy news."
+
+flavor_greek.2.t:0 "Cultural Assimilation"
+flavor_greek.2.d:0 "The Greek influence other these lands has finally turned the inhabitants into true Greeks"
+flavor_greek.2.a:0 "This is a happy news."
+
+flavor_greek.3.t:0 "Cultural Assimilation"
+flavor_greek.3.d:0 "The Greek influence other these lands has finally turned the inhabitants into true Greeks"
+flavor_greek.3.a:0 "This is a happy news."
+
+flavor_greek.4.t:0 "Cultural Assimilation"
+flavor_greek.4.d:0 "The Greek influence other these lands has finally turned the inhabitants into true Greeks"
+flavor_greek.4.a:0 "This is a happy news."
