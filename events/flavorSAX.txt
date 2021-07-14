@@ -1,6 +1,5 @@
 
 namespace = flavor_sax
-normal_or_historical_nations = yes
 
 # Thuringia attack
 country_event = {
@@ -18,7 +17,7 @@ country_event = {
 		name = "flavor_sax.1.a"
 		ai_chance = { factor = 95 }
 		THU = {
-			country_event = { id = flavor_sax.2 }
+			country_event = { id = flavor_sax.2 days=7}
 		}
 		reverse_add_opinion = {
 			who = THU
@@ -46,7 +45,6 @@ country_event = {
 	picture = IMPORTANT_STATUE_eventPicture
 
 	is_triggered_only = yes
-
 
 	option = {
 		name = "flavor_sax.8.a"
@@ -148,6 +146,7 @@ country_event = {
 
 
 	option = {#aled
+	name = "flavor_sax.5.a"
 		THU = {
 			declare_war_with_cb = {
 				who = SOR

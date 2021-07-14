@@ -340,33 +340,7 @@
  opinion_regensburg_demand_too_much:0 "Excessive Demands"
  #Addition to old Brandenburg DHE
  flavor_brapru.25.a.tt2:0 "§RBayreuth will no longer be ruled from Brandenburg.§!"
- #Saxon DHEs
- flavor_sax.4.name:0 "The Saxon Fratricidal War"
- flavor_sax.4.desc:0 "After the death of [Root.Monarch.GetTitle] [Root.Monarch.GetName]'s uncle, Friedrich of Thuringia, the Thuringian Wettin lands came under the rule of [Root.GetName]. However, an argument soon broke out between the [Root.Monarch.GetTitle] and his brother, Wilhelm, over the fair distribution of these lands. According to the Division of Altenburg, an agreement arbitrated with the help of Brandenburg and Hessen, the two brothers would be joint rulers, with [Root.Monarch.GetName] being allocated the core territories of Meissen in the east and Wilhelm given control of Thuringia.\n\nHowever, Wilhelm disputes this arrangement, demanding more land - rulership of Wittenberg, at least - threatening war otherwise."
- flavor_sax.4.A:0 "We would do anything for our dear brother."
- flavor_sax.4.B:0 "Outrageous! Let there be war!"
- flavor_sax.6.name:0 "The Saxon Princes taken Hostage" #Note: German translation should be Altenburger Prinzenraub
- flavor_sax.6.desc:1 "It appears that tensions are still running high among the Saxon and Thuringian nobility following the war between Friedrich and Wilhelm. A knight, Kunz von Kauffungen, who fought on Friedrich's side but was financially ruined by the conflict, has banded together with several disaffected Thuringian knights and hatched a plan to take the [Root.Monarch.GetTitle]'s sons hostage to gain leverage for blackmail. They were able to seize the princes but were apprehended as they sought to cross the border, with the princes returned to [Root.Capital.GetCapitalName] safely. How should we deal with the traitors?"
- flavor_sax.6.A:0 "Off with their heads!"
- flavor_sax.6.B:0 "Grant them amnesty."
- flavor_sax.7.name:0 "The Saxon Princes taken Hostage" #Note: German translation should be Altenburger Prinzenraub
- flavor_sax.7.desc:1 "It appears that tensions are still running high among the Saxon and Thuringian nobility following the war between Friedrich and Wilhelm. A knight, Kunz von Kauffungen, who fought on Friedrich's side but was financially ruined by the conflict, has banded together with several disaffected Thuringian knights and hatched a plan to take the [Root.Monarch.GetTitle]'s sons hostage to gain leverage for blackmail. The act was a success, and they were able to cross the border into [neighbour.GetUsableName], from where they have issued a demand: 200 ducats or both princes die."
- flavor_sax.7.A:0 "Pay up."
- flavor_sax.7.B:0 "We do not pay traitors."
- flavor_sax.8.name:0 "The Treaty of Leipzig"
- flavor_sax.8.desc:0 "With the death of Friedrich II, fresh succession disputes have arisen surrounding the Saxon succession, this time between [Root.Monarch.GetName] and [Root.Monarch.GetHerHis] brother Ernst. According to the deeds of Friedrich's will, Ernst should be granted the lands of Thuringia and should rule independent from his [Root.Monarch.GetSisterBrother]. However, [Root.Monarch.GetName] is in the stronger position and would be able to ignore [Root.Monarch.GetHerHis] father's will - if [Root.Monarch.GetSheHe] is willing to accept the consequences."
- flavor_sax.8.A:0 "Accept the will."
- flavor_sax.8.B:0 "The Saxon lands shall not be divided!"
- flavor_sax.9.name:0 "The Saxon Electorate"
- flavor_sax.9.desc:0 "Our brothers in Saxony no longer rule our lands, but they still hold the Electorate. Now, with our show of superiority over them - and with the goodwill of the Emperor seemingly secured - the ideal opportunity presents itself to petition for this historical wrong to be righted and for our branch of the von Wettin family to be granted Elector status."
- flavor_sax.9.desc.emperor:0 "Our brothers in Saxony no longer rule our lands, but they still hold the Electorate. Now, with our show of superiority over them - and with our authority as Emperor - the ideal opportunity presents itself to right this historical wrong and for our branch of the von Wettin family to be granted Elector status."
- flavor_sax.9.A:0 "Petition the Emperor!"
- flavor_sax.9.B:0 "The Electorate shall be ours."
- flavor_sax.9.C:0 "It is not worth it."
- flavor_sax.11.name:1 "Thuringia Requests the Saxon Electorate"
- flavor_sax.11.desc:0 "Our ally, Thuringia, has achieved superiority in the struggle between the Wettins and now controls Saxony. They request that an old wrong be put right and the Electorate that Saxony has until now controlled be transferred to them."
- flavor_sax.11.A:0 "Long live the Elector of [From.GetUsableName]!"
- flavor_sax.11.B:0 "The Electorate shall remain with Saxony."
+
  sax_grieving_death_of_sons:0 "In Grief"
  desc_sax_grieving_death_of_sons:0 "Although he knows the clock is ticking for him to produce an heir, the loss of his beloved sons make Friedrich reluctant to engage in further entanglements of the heart."
  sax_really_bad_reputation:0 "Dishonorable"
@@ -1319,19 +1293,7 @@
  new_flavour_bav.2405.opt:0 "We cannot tolerate this."
  new_flavour_bav.2406.desc:0 "Regensburg's governing body thanks us heartily for our offer, which they have no choice but to agree to. They have opened their city gates to allow our garrison to enter. The Emperor, however, is less than impressed at this arrangement."
  new_flavour_bav.2406.opt:0 "Excellent."
- #Saxony DHEs
- flavor_sax.8.A.tooltip:0 "§YSaxony§! will NOT gain a §YRestoration of Union§! Casus Belli on §YThuringia§!."
- flavor_sax.5.name:0 "The Saxon Fratricidal War Averted"
- flavor_sax.5.desc:0 "After the death of [From.Monarch.GetTitle] [From.Monarch.GetName]'s uncle, Friedrich of Thuringia, the Thuringian Wettin lands came under the rule of [From.GetName]. However, an argument soon broke out between the [From.Monarch.GetTitle] and his brother, Wilhelm, over the fair distribution of these lands. According to the Division of Altenburg, an agreement arbitrated with the help of Brandenburg and Hessen, the two brothers would be joint rulers, with Wilhelm being given control of Thuringia.\n\nHowever, Wilhelm has never been satisfied with this arrangement. By putting pressure on [From.Monarch.GetName], he has managed to renegotiate the deal so that his domains now include Wittenberg."
- flavor_sax.51.name:0 "The Saxon Fratricidal War"
- flavor_sax.51.desc:1 "After the death of [From.Monarch.GetTitle] [From.Monarch.GetName]'s uncle, Friedrich of Thuringia, the Thuringian Wettin lands came under the rule of [From.GetName]. However, an argument soon broke out between the [From.Monarch.GetTitle] and his brother, Wilhelm, over the fair distribution of these lands. According to the Division of Altenburg, an agreement arbitrated with the help of Brandenburg and Hessen, the two brothers would be joint rulers, with Wilhelm being given control of Thuringia.\n\nHowever, Wilhelm has never been satisfied with this arrangement. Faced with [From.Monarch.GetTitle] [From.Monarch.GetName]'s stubborn refusal to revisit its terms, Wilhelm has now taken up arms against his brother's rule."
- flavor_sax.51.opt:0 "Long live Duke Wilhelm!"
- flavor_sax.81.name:0 "The Treaty of Leipzig"
- flavor_sax.81.desc:0 "In accordance with Friedrich II's final will, the Saxon lands have been divided between [From.Monarch.GetName], who has taken Meissen, and [From.Monarch.GetHerHis] brother Ernst, who now rules Thuringia, with each of the two now governing their lands fully independently from the other."
- flavor_sax.81.opt:0 "Long live Duke Ernst!"
- flavor_sax.82.name:0 "The Treaty of Leipzig"
- flavor_sax.82.desc:0 "According to Friedrich II's final will, the Saxon lands were to be divided between [From.Monarch.GetName], who was to take Meissen, and [From.Monarch.GetHerHis] brother Ernst, who was to be given Thuringia. However, the dastardly [From.Monarch.GetName] has chosen not to honor the will, claiming the Friedrich had been hit by bouts of insanity in his later years. [From.Monarch.GetSheHeCap] now seeks to impose [From.Monarch.GetHerHis] illegitimate rule on us."
- flavor_sax.82.opt:0 "We shall not stand by this."
+
  #Naples DHE
  new_flavour_nap.5.B:0 "Perhaps we too should support these rebels."
  #Hungary DHE
