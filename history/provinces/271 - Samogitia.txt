@@ -1,7 +1,7 @@
 #271 - Samogitia
 
-owner = SAM
-controller = SAM
+owner = SMG
+controller = SMG
 culture = lithuanian
 religion = romuva
 capital = "Varniai"
@@ -12,7 +12,7 @@ base_production = 2
 base_manpower = 2
 is_city = yes
 estate = estate_nobles
-add_core = SAM
+add_core = SMG
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL

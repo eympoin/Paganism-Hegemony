@@ -1,7 +1,7 @@
 #4534 - Upita
 
-owner = SAM
-controller = SAM
+owner = SMG
+controller = SMG
 culture = lithuanian
 religion = romuva
 capital = "Upyte"
@@ -11,7 +11,7 @@ base_tax = 2
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = SAM
+add_core = SMG
 discovered_by = KAZ
 discovered_by = CRI
 discovered_by = GOL
@@ -21,4 +21,3 @@ discovered_by = western
 discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
-

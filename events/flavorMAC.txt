@@ -148,6 +148,9 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
+		MAC = {
+			country_event {id = flavor_mac.8 days = 30}
+		}
 		add_prestige = 5
 	}
 }
@@ -505,7 +508,7 @@ country_event = {
 			limit = {
 				has_country_flag = syrian_allies
 			}
-			4821 = {
+			4973 = {
 				add_core = ROOT
 				cede_province = ROOT
 			}
@@ -527,14 +530,14 @@ country_event = {
 				change_culture	= cannanite
 				cede_province = SYR
 			}
-			4854 = {
+			5002 = {
 				cede_province = SYR
 			}
 
 		}
 		else {
 		add_accepted_culture = cannanite
-		4821 = {
+		4973 = {
 			cede_province = ROOT
 			add_core = ROOT
 		}
@@ -550,7 +553,7 @@ country_event = {
 				cede_province = ROOT
 				add_core = ROOT
 			}
-			4854 = {
+			5002 = {
 				cede_province = ROOT
 				add_core = ROOT
 			}
