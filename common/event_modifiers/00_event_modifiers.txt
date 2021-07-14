@@ -12517,3 +12517,7 @@ authority_balkans = {
 authority_restored = {
 	imperial_authority = 1
 }
+slavic_uprising_mod = {
+	global_manpower_modifier = 0.25
+	land_morale = 0.2
+}

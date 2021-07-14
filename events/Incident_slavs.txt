@@ -301,6 +301,10 @@ country_event = {
       factor = 10
     }
     set_country_flag = defy_the_emperor
+    add_country_modifier = {
+      name = slavic_uprising_mod
+      duration = 7300
+    }
     change_religion = slavic
     declare_war_with_cb = {
       who = emperor
@@ -319,6 +323,10 @@ country_event = {
       factor = 10
     }
     set_country_flag = defy_the_emperor
+    add_country_modifier = {
+      name = slavic_uprising_mod
+      duration = 7300
+    }
     change_religion = illyrian
     declare_war_with_cb = {
       who = emperor
@@ -336,6 +344,10 @@ country_event = {
       factor = 10
     }
     set_country_flag = defy_the_emperor
+    add_country_modifier = {
+      name = slavic_uprising_mod
+      duration = 7300
+    }
     change_religion = tengri_pagan_reformed
     declare_war_with_cb = {
       who = emperor
@@ -407,6 +419,10 @@ country_event = {
       factor = 10
     }
     set_country_flag = defy_the_emperor
+    add_country_modifier = {
+      name = slavic_uprising_mod
+      duration = 7300
+    }
     change_religion = slavic
     declare_war_with_cb = {
       who = emperor
@@ -425,6 +441,10 @@ country_event = {
       factor = 10
     }
     set_country_flag = defy_the_emperor
+    add_country_modifier = {
+      name = slavic_uprising_mod
+      duration = 7300
+    }
     change_religion = illyrian
     declare_war_with_cb = {
       who = emperor
@@ -444,7 +464,16 @@ country_event = {
       factor = 10
     }
     set_country_flag = defy_the_emperor
+    add_country_modifier = {
+      name = slavic_uprising_mod
+      duration = 7300
+    }
     change_religion = tengri_pagan_reformed
+    declare_war_with_cb = {
+      who = emperor
+      casus_belli = cb_religious_conformance
+
+    }
   }
 }
 
