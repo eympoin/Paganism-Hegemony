@@ -1485,14 +1485,14 @@ country_event = {
 
 	option = {		# OK
 		name = "flavor_byzmod.53.a"
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 66 }
 		add_treasury = 200
-		set_country_flag = took_cyprus
+		set_country_flag = took_cyprus_base
 		FROM = {country_event = {id = flavor_byzmod.54 days = 14}}
 	}
 	option = {	#
 		name = "flavor_byzmod.53.b"
-		ai_chance = { factor = 0 }
+		ai_chance = { factor = 33 }
 		FROM = {country_event = {id = flavor_byzmod.54 days = 14}}
 	}
 
@@ -1506,29 +1506,55 @@ country_event = {
 	picture = HRE_eventPicture
 	is_triggered_only = yes
 	desc = {
-		trigger = {FROM = {has_country_flag = took_cyprus}}
+		trigger = {FROM = {has_country_flag = took_cyprus_base}}
 		desc = flavor_byzmod.54.d1
 	}
 	desc = {
-			trigger = {NOT = {FROM = {has_country_flag = took_cyprus}}}
+		trigger = {	NOT = {FROM = {has_country_flag = took_cyprus_base}}}
 		desc = flavor_byzmod.54.d2
 	}
 	option = {		#Cyprus is ours
 		name = "flavor_byzmod.54.a"
 		ai_chance = { factor = 100 }
 		trigger = {
-			FROM = {has_country_flag = took_cyprus}
+			FROM = {has_country_flag = took_cyprus_base}
 		}
-		1766 = {
-				cede_province = ROOT
+		if = {
+			limit = {
+				FROM = {
+					owns = 321
+				}
+			}
+			321 = {
+					cede_province = ROOT
+			}
 		}
-
+		if = {
+			limit = {
+				FROM = {
+					owns = 4952
+				}
+			}
+			4952 = {
+					cede_province = ROOT
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
+					owns = 4967
+				}
+			}
+			4967 = {
+					cede_province = ROOT
+			}
+		}
 	}
 	option = {	#to war
 		name = "flavor_byzmod.54.b"
 		ai_chance = { factor = 0 }
 		trigger = {
-			NOT = {FROM = {has_country_flag = took_cyprus}}
+			NOT = {FROM = {has_country_flag = took_cyprus_base}}
 		}
 		declare_war_with_cb = {
 			who = FROM
