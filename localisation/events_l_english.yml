@@ -522,10 +522,10 @@ flavor_sax.5.d:0 "They have declared war and their armies are moving. We don't k
 flavor_sax.5.a:0 "The war for Polabia has begun"
 
 
-flavor_sax.5.t:0 "Our king is dead"
-flavor_sax.5.d:0 "In the midst of a skirmish against the Polabians, our king was struck by an arrow. It killed him. What should we do now ?"
-flavor_sax.5.a:0 "Let a Saxon rule us (At the end of the war, Thuringia will become a personal Union under Saxony)"
-flavor_sax.5.b:0 "We shall rule ourselves"
+flavor_sax.6.t:0 "Our king is dead"
+flavor_sax.6.d:0 "In the midst of a skirmish against the Polabians, our king was struck by an arrow. It killed him. What should we do now ?"
+flavor_sax.6.a:0 "Let a Saxon rule us (At the end of the war, Thuringia will become a personal Union under Saxony)"
+flavor_sax.6.b:0 "We shall rule ourselves"
 
 flavor_sax.12.t:0 "The fate of the Thuringian throne"
 flavor_sax.12.d:0 "The king of Thuringia died in a skirmish during the war and the nobles of Thuringia decided to give us the throne as we are closely related to the dead king"
@@ -535,6 +535,10 @@ flavor_sax.7.t:0 "We are losing this war"
 flavor_sax.7.d:0 "We are not winning this war. in fact we are even losing it. But something may save us. The Khan of the Orda Khanate might help us, but asking for their help is risky. There will be a price to pay and they will learn of our weak state tehy may even backstab us."
 flavor_sax.7.a:0 "A deal with the devil"
 flavor_sax.7.b:0 "We will defend ourselves alone !"
+
+flavor_sax.8.t:0 "Thuringia calls"
+flavor_sax.8.d:0 "And we will answer !"
+flavor_sax.8.a:0 "To war !"
 
 flavor_sax.13.t:0 "The Sorbians are asking for help"
 flavor_sax.13.d:0 "The Germans are attacking the Polabians and the Slavs are losing this war. They are asking for our help, what sould we do ?"
@@ -578,9 +582,9 @@ flavor_sax.18.d:0 "The Norse and Germanic faiths have always been close but now 
 flavor_sax.18.a:0 "We shall bot hlive in harmony."
 flavor_sax.18.b:0 "They will pray our Gods or die !"
 
-flavor_sax.18.t:0 "The Franks are assimilating"
-flavor_sax.18.d:0 "With their Empire and their close ties with Romans states, the Franks started to move away from their Germanic roots. Now that the eastern franks are ruled again by true germans. They are starting to assimilate themselves."
-flavor_sax.18.a:0 "Let's see where it goes"
+flavor_sax.19.t:0 "The Franks are assimilating"
+flavor_sax.19.d:0 "With their Empire and their close ties with Romans states, the Franks started to move away from their Germanic roots. Now that the eastern franks are ruled again by true germans. They are starting to assimilate themselves."
+flavor_sax.19.a:0 "Let's see where it goes"
 
 flavor_sax.20.t:0 "Cultural Assimilation"
 flavor_sax.20.d:0 "The Scandinavian and Franks are culturally close but the Roman influence forged a new Frankish culture. Now we can say that the Franks of this province are Germans again !"
@@ -2121,7 +2125,8 @@ flavor_cil.1.a:0 "These pirates will die !"
 flavor_cil.1.t:0 "Cilician piracy"
 flavor_cil.1.d:0 "Cilicia has always been a heaven for pirates. Today is no exception. We must choose our politics towards them."
 flavor_cil.1.a:0 "We are pirates !"
-flavor_cil.1.a:0 "These pirates will die !"
+flavor_cil.1.b:0 "Nothing we can do"
+flavor_cil.1.c:0 "These pirates will die !"
 
 flavor_cil.2.t:0 "End Cilician piracy"
 flavor_cil.2.d:0 "Cilicia is now under an external control and cilician piracy is effectively dead."

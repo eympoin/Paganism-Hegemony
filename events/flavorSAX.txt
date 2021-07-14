@@ -45,14 +45,14 @@ country_event = {
 	desc = "flavor_sax.8.d"
 	picture = IMPORTANT_STATUE_eventPicture
 
-	trigger = {
-		tag = THU
-		tag = SAX
-	}
+	is_triggered_only = yes
 
 
 	option = {
 		name = "flavor_sax.8.a"
+		SAX = {
+			join_all_offensive_wars_of = THU
+		}
 	}
 }
 
@@ -164,7 +164,7 @@ country_event = {
 				}
 			}
 			SAX = {
-				join_all_offensive_wars_of = THU
+				country_event = { id = flavor_sax.8 }
 			}
 		}
 	}
@@ -192,13 +192,12 @@ country_event = {#Thuringian king die
 		}
 	}
 
-
 	option = {
 		name = "flavor_sax.6.a"
 		trigger = {
 			tag = THU
 		}
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 100 }
 		kill_ruler = yes
 		set_global_flag = sax_take_control
 	}
@@ -212,12 +211,6 @@ country_event = {#Thuringian king die
 		kill_ruler = yes
 		add_prestige = 10
 		set_global_flag = thuringia_remains_independant
-	}
-	option = {
-		name = "flavor_sax.6.c"
-		trigger = {
-			tag = SAX
-		}
 	}
 }
 
@@ -586,7 +579,7 @@ country_event = {# peace polabians wins against OKH
 	}
 
 	option = {
-		name = "flavor_sax.10.a"
+		name = "flavor_sax.11.a"
 		ai_chance = {
 			factor = 10
 		}
