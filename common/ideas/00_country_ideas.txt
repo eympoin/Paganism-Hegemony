@@ -3,6 +3,55 @@
 # If adding new groups or ideas, make sure they are unique.
 
 ### Nation specific idea groups
+ERM_ideas = {
+	start = {
+		administrative_efficiency = 0.1
+		great_project_upgrade_cost = -0.25
+	}
+	bonus = {
+		monarch_diplomatic_power = 1
+	}
+	trigger = {
+		tag = ERM
+	}
+	free = yes
+
+
+	return_to_glory_erm = {
+		legitimacy = 1
+		prestige = 1
+		republican_tradition = 1
+	}
+
+	diplomatic_games = {
+		diplomats = 1
+		spy_offence = 0.3
+	}
+
+	greek_hegemony = {
+		culture_conversion_cost = -0.3
+		diplomatic_reputation = 1
+	}
+
+	gateway_of_the_roman_world = {
+		merchants = 2
+		trade_steering = 0.2
+	}
+
+	varangian_guard = {
+		mercenary_discipline = 0.10
+		mercenary_cost = -0.3
+	}
+
+	nea_mare_nostrum_erm = {
+		ship_durability = 0.1
+		navy_tradition = 0.1
+	}
+	tradition_of_engineer_erm = {
+		siege_ability = 0.15
+		artillery_power = 0.1
+	}
+}
 
 AXD_ideas = {
 	start = {
