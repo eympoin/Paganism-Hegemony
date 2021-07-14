@@ -1362,7 +1362,7 @@ country_event = {
 	option = {	# refuse ultimatum
 		name = "flavor_byzmod.49.b"
 		set_global_flag = refused_cilicia
-		CIL = {country_event = {id = flavor_byzmod.51 days = 15}}
+		FROM = {country_event = {id = flavor_byzmod.51 days = 15}}
 	}
 }
 
@@ -1392,7 +1392,7 @@ country_event = {
 	option = {	# refuse negotiation
 		name = "flavor_byzmod.50.b"
 		set_global_flag = refused_cilicia
-		CIL = {country_event = {id = flavor_byzmod.51 days = 15}}
+		FROM = {country_event = {id = flavor_byzmod.51 days = 15}}
 	}
 }
 

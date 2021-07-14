@@ -38,7 +38,7 @@ country_event = {
 			limit = {
 				is_part_of_hre = yes
 			}
-			country_event = {id = flavor_byzmod.3 days = 15}
+			country_event = {id = flavor_cil.3 days = 15}
 		}
 	}
 
