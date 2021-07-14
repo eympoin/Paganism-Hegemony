@@ -3,6 +3,7 @@ country_decisions = {
 	authority_in_egypt = {
 		major = yes
 		potential = {
+			NOT = {has_global_flag = authority_restored_egy}
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -49,12 +50,11 @@ country_decisions = {
 			}
 			is_emperor = yes
 			NOT = {tag = BYZ}
+			NOT = {has_global_flag = authority_restored_syr}
 		}
 
 		provinces_to_highlight = {
-			region = egypt_region
-			is_part_of_hre = yes
-			owner = {is_part_of_hre = no}
+
 		}
 		allow = {
 			is_year = 1500
@@ -91,6 +91,7 @@ country_decisions = {
 	authority_in_anatolia = {
 		major = yes
 		potential = {
+			NOT = {has_global_flag = authority_restored_anatolia}
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -124,6 +125,7 @@ country_decisions = {
 	authority_in_greece = {
 		major = yes
 		potential = {
+			NOT = {has_global_flag = authority_restored_gre}
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -161,6 +163,7 @@ country_decisions = {
 	authority_in_balkans = {
 		major = yes
 		potential = {
+			NOT = {has_global_flag = authority_restored_balk}
 			OR = {
 				ai = no
 				is_playing_custom_nation = no

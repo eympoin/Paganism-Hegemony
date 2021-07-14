@@ -1985,6 +1985,10 @@ country_event = { #change for new emperor
 				has_global_flag = authority_restored_balk
 				NOT = {has_country_modifier = authority_balkans}
 			}
+			AND = {
+				NOT = {has_global_flag = empire_authority_restored}
+				NOT = {has_country_modifier = imperial_crisis}
+			}
 		}
 	}
 
