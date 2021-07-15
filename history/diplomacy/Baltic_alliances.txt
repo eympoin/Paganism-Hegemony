@@ -37,8 +37,7 @@ dependency = {
 
 union = {
 	first = LIT
-	second = SAM
+	second = SMG
 	start_date = 1444.1.1
 	end_date = 1820.1.1
 }
-

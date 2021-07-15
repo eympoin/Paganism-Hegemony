@@ -25,13 +25,13 @@ EMP_crusader_1 = {
 		position = 2
 		provinces_to_highlight = {
 			OR = {
-				province_id = 4809
+				province_id = 4961
 				province_id = 1854
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			owns = 4809
+			owns = 4961
 			owns = 1854
 			dip_power = 100
 		}

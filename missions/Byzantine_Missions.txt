@@ -243,6 +243,10 @@ Byzantium_4_1 = {
       }
     }
     effect = {
+      add_spy_network_in = {
+          who = PON
+          value = -50
+      }
       country_event = {id = flavor_byzmod.24}
     }
   }
@@ -253,13 +257,14 @@ Byzantium_4_1 = {
     provinces_to_highlight = {
     }
     trigger = {
-      treasury = -200
+      treasury = 200
       has_spy_network_in = {
         who = ARM
         value = 80
       }
     }
     effect = {
+      add_treasury = -200
       country_event = {id = flavor_byzmod.27}
       erzurum_area = {
         limit = {
@@ -358,11 +363,11 @@ Byzantium_5_1 = {
     icon = all_bases_covered
     required_missions = {counter_macedonian_influence_in_greece}
     provinces_to_highlight = {
-      province_id = 4819
+      province_id = 4971
     }
     trigger = {
       OR = {
-        4819 = {
+        4971 = {
           country_or_non_sovereign_subject_holds = ROOT
         }
         alliance_with = AGO

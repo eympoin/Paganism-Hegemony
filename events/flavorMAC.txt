@@ -220,7 +220,7 @@ country_event = {
 		name = flavor_mac.8.a
 		2308 ={
 			cede_province = EMA
-			change_culture	= greek
+			change_culture = greek
 		}
 		switch_tag = EMA
 		EMA = {
@@ -450,20 +450,22 @@ country_event = {
 					    }
 						}
 					}
+			declare_war_with_cb = {
+					who = OSR
+					casus_belli = cb_annex
+			}
 			if = {
 				limit = {
 					MAC = { has_country_flag = syrian_allies }
 				}
 				set_country_flag = syrian_allies
 				create_alliance = SYR
+				SYR = {
+					join_all_offensive_wars_of = EMA
+				}
 			}
-			declare_war_with_cb = {
-			    who = OSR
-			    casus_belli = cb_annex
-			}
-			SYR = {
-				join_all_offensive_wars_of = EMA
-			}
+
+
 			add_country_modifier = {
 				name = great_expedition
 				duration = 36500
@@ -530,13 +532,13 @@ country_event = {
 				change_culture	= cannanite
 				cede_province = SYR
 			}
-			5002 = {
+			5006 = {
 				cede_province = SYR
 			}
 
 		}
 		else {
-		add_accepted_culture = cannanite
+		add_accepted_culture = canaan
 		4973 = {
 			cede_province = ROOT
 			add_core = ROOT
@@ -553,7 +555,7 @@ country_event = {
 				cede_province = ROOT
 				add_core = ROOT
 			}
-			5002 = {
+			5006 = {
 				cede_province = ROOT
 				add_core = ROOT
 			}

@@ -1544,10 +1544,9 @@ flavor_oracle.1.c:0 "The Oracle calls for diplomacy"
 
 gl_hf:0 "The Athletes will return with or without victory"
 
-flavor_mac.1.t:0 "The Great Expedition"
-flavor_mac.1.d:0 "Your son Alexandros heard about the weakness of the Persian Empire and wants to remake the exploit of his namesake and seek glory in the mountaines of Persia."
-flavor_mac.1.a:0 "Support his Expedition and ask for the Emperor blessing"
-flavor_mac.1.b:0 "He is the heir of Macedonia. He will stay here."
+flavor_mac.1.d:0 "The Persian Empire is weak, as it fell to a decentralized rule with powerful satrapies. Everyone knows that, and it was at this moment Alexandros, the heir to the throne of Macedonia, proposed something unprecedent. He proposed to imitate the steps of Alexander the Great to expand the Hellenic culture to Persia once more and take down the Persians before they have a chance of rising up again! Accepting this would make our civilization great again, but it might also worry the Emperor, as his power would be threatened if we are successful, and our heir might die during the expedition. "
+flavor_mac.1.a:0 "We must support the Expedition and ask for the Emperor's blessing!"
+flavor_mac.1.b:0 "He is the heir of Macedonia, he must stay here for his people."
 great_exp_tt:0 "You will start the Great Expedition. At the end of it, you will switch to a new tag(Macedonian Expedition) in the middle East."
 
 flavor_mac.2.t:0 "The Great Macedonian Expedition"
@@ -1556,11 +1555,11 @@ flavor_mac.2.a:0 "Support the Expedition."
 flavor_mac.2.b:0 "He won't have our support."
 
 
-flavor_mac.3.t:0 "The Emperor answer"
+flavor_mac.3.t:0 "The Emperor's answer"
 flavor_mac.3.d1:0 "The Emperor give us his blessing and support !"
-flavor_mac.3.d2:0 "The Emperor won't support us."
+flavor_mac.3.d2:0 "After several days of waiting the emperor's response, it is a shock to learn he refused our glorious and noble expedition to expand the Hellenic culture to Persia! But it doesn't matter to our King, since the expedition will happen anyway!"
 flavor_mac.3.a:0 "His support is appreciated."
-flavor_mac.3.b:0 "We don't need him."
+flavor_mac.3.b:0 "The Emperor can rot in the Tartarus!"
 
 flavor_mac.4.t:0 "The Great Macedonian Expedition"
 flavor_mac.4.d:0 "The son of the late king of Macedon, has gathered an expedition to invade Persia. He is now approaching our country and we can surely propose an alliance which will help us both : Osroene in exchange of our help in the war. They will keep Nisibis as a base for operation after the war. "
@@ -1568,10 +1567,10 @@ flavor_mac.4.a:0 "Propose the alliance"
 flavor_mac.4.b:0 "They are useless"
 
 
-flavor_mac.5.t:0 "Syria propose an alliance"
-flavor_mac.5.d:0 "The Syrians are asking for an agreement : against their help in our wars and Nisibis, they will keep the rest of Osroene. Should we accept ?"
-flavor_mac.5.a:0 "Their support will be beneficial"
-flavor_mac.5.b:0 "We don't need them."
+flavor_mac.5.t:0 "An Alliance?"
+flavor_mac.5.d:0 "As our expedition has been sent towards our first target, which is Osroene, the Syrians began to be interested in our expedition to succeed. They sent us a letter proposing an alliance against Osroene and any future wars our expedition will start, at the condition we split Osroene between ourselves. Should we accept?"
+flavor_mac.5.a:0 "Accept their support! For Macedonia!"
+flavor_mac.5.b:0 "Alexander didn't need allies to defeat his enemies!"
 
 
 flavor_mac.6.t:0 "Macedonia has accepted"
@@ -1579,24 +1578,24 @@ flavor_mac.6.d:0 "this agreement will be mutually beneficial"
 flavor_mac.6.a:0 "Good news !"
 
 
-flavor_mac.7.t:0 "The size of the expedition"
-flavor_mac.7.d:0 "Now that the expedition is decided, we must choose how much ressources we are giving to it."
-flavor_mac.7.a:0 "Give it everything !"
-flavor_mac.7.b:0 "Give it a reasonable amount of ressource."
-flavor_mac.7.c:0 "Only give what we don't need."
+flavor_mac.7.t:0 "The Size of the Expedition"
+flavor_mac.7.d:0 "It is almost done. The expedition is almost ready, as one question remains... How much do we want to invest in the expedition? To make the expedition successful, we should give a lot of men and money to the expedition army. However, doing so might weaken us at home, both financially and militarily. Therefore, we must choose our decision wisely."
+flavor_mac.7.a:0 "Give them everything! Men, weapons, money! Everything!"
+flavor_mac.7.b:0 "Give them a reasonable amount of men and money."
+flavor_mac.7.c:0 "Give them only what isn't essential to us."
 
-small_expedition_tt:0 "The expedition will be relatively small"
-medium_expedition_tt:0 "The expedition will have a reasonable size"
-large_expedition_tt:0 "The expedition will be force to reckon with"
+small_expedition_tt:0 "Our expedition will be a weak force..."
+medium_expedition_tt:0 "Our expedition will be a respectable force."
+large_expedition_tt:0 "Our expedition will be a force to be reckoned with!"
 syr_syrian_allies_tt:0 "Syria will become an ally of the Expedition but it will have to give them most of Osroene"
 syrian_allies_tt:0 "Syria will become an ally of the Expedition but it will have to give them most of Osroene"
 
 byzantine_help_tt:0 "The Emperor will give us some men and gold to support the expedition"
 
 
-flavor_mac.8.t:0 "The Expedition has arrived at the Empire border"
-flavor_mac.8.d:0 "Now that it arrived, the war can begin. Osroene will be the first to suffer the wrath of the Leonid !"
-flavor_mac.8.a:0 "For Glory !"
+flavor_mac.8.t:0 "The Expedition has arrived at the Empire's border"
+flavor_mac.8.d:0 "Here we are, Edessa is in front of us! Osroene didn't expect any of this, the city will fall within just an hour! Osroene will be the first to suffer the wrath of our glorious expedition!"
+flavor_mac.8.a:0 "For the Gods!"
 
 
 flavor_mac.10.t:0 "Macedonian attack"
@@ -1604,9 +1603,9 @@ flavor_mac.10.d:0 "Some Greeks gathered an army and are now marching through our
 flavor_mac.10.a:0 "We will fight to our last breath !"
 
 
-flavor_mac.11.t:0 "Victory in Osroene"
-flavor_mac.11.d:0 "This is the first victory in a long series."
-flavor_mac.11.a:0 "Now to Mesopotamia !"
+flavor_mac.11.t:0 "Victory in Osroene!"
+flavor_mac.11.d:0 "We did it! Osroene is no more! Their partisans are either dead or fled to neighboring countries. Their country will be our base of operations to conquer Mesopotamia!"
+flavor_mac.11.a:0 "Time to conquer the rest!"
 
 flavor_mac.12.t:0 "Integration of Mesopotamia"
 flavor_mac.12.d:0 "These lands have been integrated to our Empire !"
@@ -1634,9 +1633,9 @@ armenia_demands_heavy_tt:0 "Armenia will take Azerbaijan, Tabarestan, Mashhad, B
 
 
 flavor_mac.16.t:0 "The Treaty of Kiphas"
-flavor_mac.16.d:0 "The Armenians approached us for a treaty of alliance aginst Persia."
-flavor_mac.16.a:0 "This is a good deal !"
-flavor_mac.16.b:0 "This is unacceptable !"
+flavor_mac.16.d:0 "Seeing our victory against Osroene in Mesopotamia, the Armenians are looking at our expedition with great interest. Like us, they do not Persia to rise from the ashes to threaten their kingdom. Which is why they propose a treaty of friendship in neutral grounds at Kiphas, in preparations of an alliance and spliting Persia in two, should a war happen. But are they truly doing this in order to weaken us, and plan to backstab us in the future? We must choose our answer carefully."
+flavor_mac.16.a:0 "A toast to our Armenian friends!"
+flavor_mac.16.b:0 "We aren't fooled by the Armenians' facade!"
 
 flavor_mac.17.t:0 "The Treaty of Kiphas"
 flavor_mac.17.d1:0 "The Macedonian has accepted our demands. The treaty of Kiphas is signed."
@@ -2133,7 +2132,7 @@ flavor_cil.2.t:0 "End Cilician piracy"
 flavor_cil.2.d:0 "Cilicia is now under an external control and cilician piracy is effectively dead."
 flavor_cil.2.a:0 "Good ridance !"
 
-flavor_cil.3.t:0 "End Cilician piracy"
+flavor_cil.3.t:0 "Cilician piracy"
 flavor_cil.3.d:0 "Cilicia has embraced piracy and is threatening the entire Empire."
 flavor_cil.3.a:0 "Sounds like a problem"
 

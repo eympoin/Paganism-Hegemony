@@ -85,6 +85,7 @@ country_event = { #integrate paphlagonia quicker
 	title = flavor_pon.5.t
 	desc = flavor_pon.5.d
 	picture = HRE_eventPicture
+	fire_only_once = yes
 	trigger = {
 		is_year = 1449
 		tag = PON

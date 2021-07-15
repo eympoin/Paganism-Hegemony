@@ -25,6 +25,7 @@ country_event = {#roman conversion
 
   trigger = {
     culture_group = neo-roman
+    any_country = {has_country_flag = greek_influence_in_the_west}
     any_owned_province = {
      has_owner_religion = yes
       OR = {

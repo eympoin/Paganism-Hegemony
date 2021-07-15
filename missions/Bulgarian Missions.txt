@@ -151,13 +151,13 @@ Bulgaria_3_1 = {
     required_missions = {Reorganize_the_army alliance_bul pay_off_the_debts}
     provinces_to_highlight = {
       OR = {
-        province_id = 4850
+        province_id = 5002
         province_id = 150
       }
       NOT = {owned_by = ROOT}
     }
     trigger = {
-      owns = 4850
+      owns = 5002
       owns = 150
     }
     effect = {
