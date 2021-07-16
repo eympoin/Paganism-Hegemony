@@ -18,7 +18,7 @@ country_event = {# Egyptian/Ptolemaic/cyrenian
         culture = ptolemaic
         culture = cyrenian
       }
-      NOT = { culture_group = turko_semitic_group }
+      NOT = { culture_group = turko_semitic }
       NOT = { nationalism	= 1 }
       is_core = ROOT
     }
@@ -78,7 +78,7 @@ country_event = {# berber
       culture = african
       culture = mauretanian
       }
-      NOT = { culture_group = turko_semitic_group }
+      NOT = { culture_group = turko_semitic }
       NOT = { nationalism	= 1 }
       is_core = ROOT
     }
@@ -144,7 +144,7 @@ country_event = {# berber
         culture = lusitanian
         culture = galician
         }
-        NOT = { culture_group = turko_semitic_group }
+        NOT = { culture_group = turko_semitic }
         NOT = { nationalism	= 1 }
         is_core = ROOT
       }

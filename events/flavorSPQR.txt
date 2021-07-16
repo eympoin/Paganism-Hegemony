@@ -892,6 +892,7 @@ country_event = {#Senate victorious
 }
 
 country_event = {#Kingdom victorious
+  id = flavor_spqr.20
   title = flavor_spqr.20.t
   desc = flavor_spqr.20.d
   picture = GOOD_WITH_MONARCH_eventPicture

@@ -98,15 +98,15 @@ Ionia_1_1 = {
     required_missions = {}
     position = 1
     provinces_to_highlight = {
-      province_id = 4804
+      province_id = 4956
       }
     trigger = {
-      4804 = {
+      4956 = {
         development = 30
       }
     }
     effect = {
-      4804 = {
+      4956 = {
         add_building = temple
         add_building = workshop
         add_building = marketplace
@@ -258,13 +258,13 @@ Ionia_1_1 = {
     provinces_to_highlight = {
     }
     trigger = {
-      4804 = {
+      4956 = {
         owned_by = ROOT
       }
       treasury = 500
     }
     effect = {
-      4804 = {
+      4956 = {
           add_province_modifier = {
             name = temple_of_artemis_mod
             duration = -1
@@ -280,7 +280,7 @@ Ionia_1_1 = {
     provinces_to_highlight = {
         }
     trigger = {
-      4804 = {
+      4956 = {
         has_most_province_trade_power = ROOT
       }
     }
@@ -348,15 +348,15 @@ Ionia_1_2 = {
     required_missions = {lydian_protection}
     position = 3
     provinces_to_highlight = {
-      province_id = 4803
+      province_id = 4955
       }
     trigger = {
-      4803 = {
+      4955 = {
         development = 30
       }
     }
     effect = {
-      4803 = {
+      4955 = {
         add_building = temple
         add_building = workshop
         add_building = marketplace
@@ -396,13 +396,13 @@ Ionia_1_2 = {
     provinces_to_highlight = {
         }
     trigger = {
-      4803 = {
+      4955 = {
         owned_by = ROOT
       }
       treasury = 500
     }
     effect = {
-    4803 = {
+    4955 = {
         add_province_modifier = {
           name = temple_of_zeus_mod
           duration = -1
@@ -430,15 +430,15 @@ Ionia_1_3 = {
     required_missions = {lydian_protection}
     position = 3
     provinces_to_highlight = {
-      province_id = 4818
+      province_id = 4970
       }
     trigger = {
-      4818 = {
+      4970 = {
         development = 30
       }
     }
     effect = {
-      4818 = {
+      4970 = {
         add_building = temple
         add_building = workshop
         add_building = marketplace

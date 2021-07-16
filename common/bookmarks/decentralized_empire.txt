@@ -6,7 +6,6 @@ bookmark =
 
 	country = BYZ
 	country = MAC
-	country = SER
 	country = PON
 	country = ION
 	country = SYR

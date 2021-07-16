@@ -4,19 +4,38 @@ namespace = flavor_greek
 
 #olympic games
 country_event = {
-  id = flavor_olympic.1
-  title = flavor_olympic.1.t
-  desc = flavor_olympic.1.d
+  id = flavor_olympic.4
+  title = flavor_olympic.4.t
+  desc = flavor_olympic.4.d
   picture = COURT_eventPicture
+  fire_only_once = yes
+  hidden = yes
+
 
   trigger = {
+    is_emperor = yes
     is_year = 1445
     culture_group = byzantine
   }
 
-  mean_time_to_happen = {
-    years = 4
+
+  option = {#Send all the bests
+    name = flavor_olympic.1.a
+    every_country = {
+      limit = {
+        culture_group = byzantine
+      }
+      country_event = {id = flavor_olympic.1}
+    }
   }
+}
+country_event = {
+  id = flavor_olympic.1
+  title = flavor_olympic.1.t
+  desc = flavor_olympic.1.d
+  picture = COURT_eventPicture
+  is_triggered_only = yes
+
 
   option = {#Send all the bests
     name = flavor_olympic.1.a
@@ -63,6 +82,9 @@ country_event = {#victory
     name = flavor_olympic.2.a
     add_prestige = 15
     add_legitimacy = 5
+    hidden_effect = {
+      country_event = {id = flavor_olympic.1 years = 4}
+    }
   }
 }
 
@@ -77,6 +99,9 @@ country_event = {#defeat
   option = {
     name = flavor_olympic.3.a
     add_prestige = 1
+    hidden_effect = {
+      country_event = {id = flavor_olympic.1 years = 4}
+    }
   }
 
 }

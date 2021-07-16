@@ -1544,6 +1544,7 @@ flavor_oracle.1.c:0 "The Oracle calls for diplomacy"
 
 gl_hf:0 "The Athletes will return with or without victory"
 
+flavor_mac.1.t:0 "The Great Macedonian Expedition"
 flavor_mac.1.d:0 "The Persian Empire is weak, as it fell to a decentralized rule with powerful satrapies. Everyone knows that, and it was at this moment Alexandros, the heir to the throne of Macedonia, proposed something unprecedent. He proposed to imitate the steps of Alexander the Great to expand the Hellenic culture to Persia once more and take down the Persians before they have a chance of rising up again! Accepting this would make our civilization great again, but it might also worry the Emperor, as his power would be threatened if we are successful, and our heir might die during the expedition. "
 flavor_mac.1.a:0 "We must support the Expedition and ask for the Emperor's blessing!"
 flavor_mac.1.b:0 "He is the heir of Macedonia, he must stay here for his people."
@@ -1633,7 +1634,7 @@ armenia_demands_heavy_tt:0 "Armenia will take Azerbaijan, Tabarestan, Mashhad, B
 
 
 flavor_mac.16.t:0 "The Treaty of Kiphas"
-flavor_mac.16.d:0 "Seeing our victory against Osroene in Mesopotamia, the Armenians are looking at our expedition with great interest. Like us, they do not Persia to rise from the ashes to threaten their kingdom. Which is why they propose a treaty of friendship in neutral grounds at Kiphas, in preparations of an alliance and spliting Persia in two, should a war happen. But are they truly doing this in order to weaken us, and plan to backstab us in the future? We must choose our answer carefully."
+flavor_mac.16.d:0 "Seeing our victory against Osroene in Mesopotamia, the Armenians are looking at our expedition with great interest. Like us, they do not want Persia to rise from the ashes to threaten their kingdom. Which is why they propose a treaty of friendship in neutral grounds at Kiphas, in preparations of an alliance and spliting Persia in two, should a war happen. But are they truly doing this in order to weaken us, and plan to backstab us in the future? We must choose our answer carefully."
 flavor_mac.16.a:0 "A toast to our Armenian friends!"
 flavor_mac.16.b:0 "We aren't fooled by the Armenians' facade!"
 
