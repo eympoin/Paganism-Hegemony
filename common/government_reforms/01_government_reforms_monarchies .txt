@@ -1060,157 +1060,6 @@ misl_confederacy_reform = {
 	}
 }
 
-persian_empire_decen = {
-	icon = "muslim"
-	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			tag = ABA
-			tag = PER
-		}
-		OR = {
-			AND = {
-				culture_group = iranian
-				}
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = persian_empire_decen
-			}
-		}
-	}
-	valid_for_nation_designer = yes
-	nation_designer_cost = 50
-	nation_designer_trigger = {
-		culture_group = iranian
-		technology_group = muslim
-		capital_scope = { region = persia_region }
-		owns = 414
-	}
-	legacy_equivalent = persian_legacy
-	fixed_rank = 3
-	maintain_dynasty = yes
-	allow_vassal_alliance = no
-	lock_level_when_selected = yes
-	government_abilities = { iqta_mechanic }
-	modifiers = {
-		vassal_income = 0.2
-		diplomatic_upkeep = 2
-		reduced_liberty_desire = -40
-	}
-}
-
-persian_empire_stable = {
-	icon = "muslim"
-	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			tag = ABA
-			tag = PER
-		}
-		OR = {
-			AND = {
-				culture_group = iranian
-				}
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = persian_empire_decen
-			}
-		}
-	}
-	valid_for_nation_designer = yes
-	nation_designer_cost = 50
-	nation_designer_trigger = {
-		culture_group = iranian
-		technology_group = muslim
-		capital_scope = { region = persia_region }
-		owns = 414
-	}
-	legacy_equivalent = persian_legacy
-	fixed_rank = 3
-	maintain_dynasty = yes
-	allow_vassal_alliance = no
-	lock_level_when_selected = yes
-	government_abilities = { iqta_mechanic }
-	modifiers = {
-		vassal_income = 0.2
-		diplomatic_upkeep = 2
-	}
-}
-
-persian_empire_cen = {
-	icon = "muslim"
-	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			tag = ABA
-			tag = PER
-		}
-		OR = {
-			AND = {
-				culture_group = iranian
-				}
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = persian_empire_cen
-			}
-		}
-	}
-	valid_for_nation_designer = yes
-	nation_designer_cost = 100
-	nation_designer_trigger = {
-		culture_group = iranian
-		technology_group = muslim
-		capital_scope = { region = persia_region }
-		owns = 414
-	}
-	legacy_equivalent = persian_legacy
-	fixed_rank = 3
-	maintain_dynasty = yes
-	allow_vassal_alliance = no
-	lock_level_when_selected = yes
-	government_abilities = { iqta_mechanic }
-	modifiers = {
-		governing_capacity = 200
-		global_autonomy = -0.1
-	}
-}
-
-satrapdom_reform = {
-	icon = "muslim"
-	allow_normal_conversion = yes
-	potential = {
-		OR = {
-			tag = DIH
-			tag = GOR
-			tag = SIS
-			tag = FRS
-			tag = ABA
-			tag = MRV
-			tag = HRV
-			tag = ELM
-			tag = LRI
-			tag = KRM
-			tag = BAL
-		}
-	}
-	nation_designer_cost = 100
-	legacy_equivalent = satrapdom_legacy
-	fixed_rank = 1
-	maintain_dynasty = yes
-	valid_for_nation_designer = yes
-	lock_level_when_selected = yes
-	nation_designer_trigger = {
-		culture_group = iranian
-		technology_group = muslim
-		capital_scope = { region = persia_region }
-	}
-	modifiers = {
-		burghers_loyalty_modifier = 0.1
-		country_admin_power = 1
-	}
-}
-
-
 rajput_kingdom = {
 	icon = "rajput_kingdom"
 	allow_normal_conversion = yes
@@ -2231,5 +2080,156 @@ seleucid_government = {
 		western_aryan = {
 			trade_efficiency = 0.05
 		}
+	}
+}
+
+
+persian_empire_decen = {
+	icon = "muslim"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = ABA
+			tag = PER
+		}
+		OR = {
+			AND = {
+				culture_group = iranian
+				}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = persian_empire_decen
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	nation_designer_trigger = {
+		culture_group = iranian
+		technology_group = muslim
+		capital_scope = { region = persia_region }
+		owns = 414
+	}
+	legacy_equivalent = persian_legacy
+	fixed_rank = 3
+	maintain_dynasty = yes
+	allow_vassal_alliance = no
+	lock_level_when_selected = yes
+	government_abilities = { iqta_mechanic }
+	modifiers = {
+		vassal_income = 0.2
+		diplomatic_upkeep = 2
+		reduced_liberty_desire = -40
+	}
+}
+
+persian_empire_stable = {
+	icon = "muslim"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = ABA
+			tag = PER
+		}
+		OR = {
+			AND = {
+				culture_group = iranian
+				}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = persian_empire_decen
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	nation_designer_trigger = {
+		culture_group = iranian
+		technology_group = muslim
+		capital_scope = { region = persia_region }
+		owns = 414
+	}
+	legacy_equivalent = persian_legacy
+	fixed_rank = 3
+	maintain_dynasty = yes
+	allow_vassal_alliance = no
+	lock_level_when_selected = yes
+	government_abilities = { iqta_mechanic }
+	modifiers = {
+		vassal_income = 0.2
+		diplomatic_upkeep = 2
+	}
+}
+
+persian_empire_cen = {
+	icon = "muslim"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = ABA
+			tag = PER
+		}
+		OR = {
+			AND = {
+				culture_group = iranian
+				}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = persian_empire_cen
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 100
+	nation_designer_trigger = {
+		culture_group = iranian
+		technology_group = muslim
+		capital_scope = { region = persia_region }
+		owns = 414
+	}
+	legacy_equivalent = persian_legacy
+	fixed_rank = 3
+	maintain_dynasty = yes
+	allow_vassal_alliance = no
+	lock_level_when_selected = yes
+	government_abilities = { iqta_mechanic }
+	modifiers = {
+		governing_capacity = 200
+		global_autonomy = -0.1
+	}
+}
+
+satrapdom_reform = {
+	icon = "muslim"
+	allow_normal_conversion = yes
+	potential = {
+		OR = {
+			tag = DIH
+			tag = GOR
+			tag = SIS
+			tag = FRS
+			tag = ABA
+			tag = MRV
+			tag = HRV
+			tag = ELM
+			tag = LRI
+			tag = KRM
+			tag = BAL
+		}
+	}
+	nation_designer_cost = 100
+	legacy_equivalent = satrapdom_legacy
+	fixed_rank = 1
+	maintain_dynasty = yes
+	valid_for_nation_designer = yes
+	lock_level_when_selected = yes
+	nation_designer_trigger = {
+		culture_group = iranian
+		technology_group = muslim
+		capital_scope = { region = persia_region }
+	}
+	modifiers = {
+		burghers_loyalty_modifier = 0.1
+		country_admin_power = 1
 	}
 }

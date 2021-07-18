@@ -834,6 +834,7 @@ country_event = {
 		}
 		set_country_flag = joined_argian_league
 		FROM = {country_event = {id = flavor_byzmod.32 days = 7}}
+		FROM = {create_guarantee = ROOT}
 	}
 
 	option = {	#not needed
@@ -867,11 +868,11 @@ country_event = { # argian league
 	title = "flavor_byzmod.32.t"
 	desc = {
 		trigger = {FROM = {has_country_flag = joined_argian_league}}
-		desc = flavor_byzmod.31.d1
+		desc = flavor_byzmod.32.d1
 	}
 	desc = {
 		trigger = {	FROM = {has_country_flag = joined_argian_league}}
-		desc = flavor_byzmod.31.d2
+		desc = flavor_byzmod.32.d2
 	}
 	picture = DIPLOMACY_eventPicture
 	is_triggered_only = yes
@@ -882,7 +883,6 @@ country_event = { # argian league
 			FROM = { has_country_flag = joined_argian_league}
 		}
 		ai_chance = { factor = 100 }
-		create_guarantee = FROM
 	}
 
 	option = {		# refused

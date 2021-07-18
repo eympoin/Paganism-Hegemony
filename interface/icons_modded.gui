@@ -77,8 +77,7 @@ guiTypes = {
 				Orientation = "UPPER_LEFT"
 
 				tooltip = ""
-				tooltipText =""
-				delayedTooltipText = ""
+				tooltipText = ""
 			}
 		}
 	}

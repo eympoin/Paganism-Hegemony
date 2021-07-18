@@ -52,6 +52,7 @@ defaults_reform = {
 	states_general_mechanic = { }
 	valid_for_nation_designer = yes
 	allow_normal_conversion = yes
+	force_conversion_gives_global_holy_war_released_modifier = no
 	start_territory_to_estates = 0.8
 	has_term_election = no
 	force_admiral_leader = no
@@ -167,6 +168,9 @@ constitutional_monarchy = {
 			has_dlc = "Common Sense"
 		}
 		has_parliament = yes
+		custom_attributes = {
+			blocked_call_diet = yes
+		}
 	}
 
 	ai = {
@@ -179,10 +183,6 @@ constitutional_monarchy = {
 			factor = 2
 			has_idea_group = innovativeness_ideas
 		}
-	}
-
-	custom_attributes = {
-		blocked_call_diet = yes
 	}
 }
 
@@ -340,7 +340,7 @@ merchant_republic = {
 		can_form_trade_league = yes
 		trade_city_reform = trading_city_legacy
 	}
-
+	
 	custom_attributes = {
 		is_merchant_republic = yes
 	}
@@ -429,7 +429,7 @@ oligarchic_republic = {
 
 	republican_name = yes
 	royal_marriage = no
-
+	
 	republic = yes
 	modifiers = {
 		global_tax_modifier = 0.05
@@ -455,11 +455,11 @@ prussian_republic = {
 	has_term_election = no
 	republican_name = yes
 	royal_marriage = no
-
+	
 	nation_designer_trigger = {
 		primary_culture =  prussian
 	}
-
+	
 	trigger = {
 		OR = {
 			is_playing_custom_nation = yes
@@ -467,7 +467,7 @@ prussian_republic = {
 			religion = reformed
 		}
 	}
-
+	
 	modifiers = {
 		war_exhaustion = -0.02
 		global_unrest = -2
@@ -475,12 +475,12 @@ prussian_republic = {
 		republican_tradition = -0.5
 		governing_capacity_modifier = -0.5
 	}
-
+	
 	conditional = {
 		allow = { has_dlc = "Rights of Man" }
 		militarised_society = yes
 	}
-
+	
 	custom_attributes = {
 		generals_become_rulers = yes
 	}
@@ -508,7 +508,7 @@ signoria = {
 		max_absolutism = -30
     	governing_capacity = 100
 	}
-
+	
 	custom_attributes = {
 		enables_nepotism = yes
 	}
@@ -522,10 +522,10 @@ pirate_republic = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
 	duration = 4
-
+	
 	republican_name = yes
 	royal_marriage = no
-
+	
 	republic = yes
 	can_form_trade_league = no
 
@@ -543,18 +543,18 @@ pirate_republic = {
 		NOT = { technology_group = south_american }
 		NOT = { technology_group = mesoamerican }
 	}
-
-	potential = {
+	
+	potential = {	
 		has_dlc = "Golden Century"
 	}
-
+	
 	factions_frame = 9
 	factions = {
 		pr_buccaneers
 		pr_smugglers
 		pr_captains
 	}
-
+	
 	modifiers = {
 		republican_tradition = -1
 		max_absolutism = -50
@@ -562,11 +562,11 @@ pirate_republic = {
 		capture_ship_chance = 0.33
 		may_perform_slave_raid_on_same_religion = yes
 	}
-
+	
 	custom_attributes = {
 		force_admiral_leader = yes
 	}
-
+	
 	ai = {
 		factor = 0
 	}
@@ -579,17 +579,17 @@ pirate_kingdom = {
 	valid_for_new_country = no
 	valid_for_nation_designer = no
 	has_term_election = no
-
-
+	
+	
 	republican_name = yes
 	royal_marriage = no
-
+	
 	republic = yes
-
-	potential = {
+	
+	potential = {	
 		has_dlc = "Golden Century"
 	}
-
+	
 	nation_designer_trigger = {
 		capital_scope = {
 			has_port = yes
@@ -599,14 +599,14 @@ pirate_kingdom = {
 			}
 		}
 	}
-
+	
 	factions_frame = 9
 	factions = {
 		pr_buccaneers
 		pr_smugglers
 		pr_captains
 	}
-
+	
 	modifiers = {
 		republican_tradition = -1
 		max_absolutism = -50
@@ -617,11 +617,11 @@ pirate_kingdom = {
 		leader_naval_fire = 1
 		may_perform_slave_raid_on_same_religion = yes
 	}
-
+	
 	custom_attributes = {
 		admirals_become_rulers = yes
 	}
-
+	
 	ai = {
 		factor = 0
 	}
@@ -635,23 +635,23 @@ war_against_the_world_government = {
 	valid_for_nation_designer = no
 	duration = 4
 	disallowed_trade_goods = { slaves }
-
+	
 	republican_name = yes
 	royal_marriage = no
-
+	
 	republic = yes
-
-	potential = {
+	
+	potential = {	
 		has_dlc = "Golden Century"
 	}
-
+	
 	factions_frame = 9
 	factions = {
 		pr_buccaneers
 		pr_smugglers
 		pr_captains
 	}
-
+	
 	modifiers = {
 		republican_tradition = -1
 		max_absolutism = -50
@@ -662,11 +662,11 @@ war_against_the_world_government = {
 		global_manpower_modifier = 0.1
 		may_perform_slave_raid_on_same_religion = yes
 	}
-
+	
 	custom_attributes = {
 		force_admiral_leader = yes
 	}
-
+	
 	ai = {
 		factor = 0
 	}
@@ -679,12 +679,12 @@ black_market_consortium_government = {
 	valid_for_new_country = no
 	valid_for_nation_designer = no
 	duration = 4
-
+	
 	republican_name = yes
 	royal_marriage = no
-
+	
 	republic = yes
-
+	
 	nation_designer_trigger = {
 		capital_scope = {
 			has_port = yes
@@ -694,14 +694,14 @@ black_market_consortium_government = {
 			}
 		}
 	}
-
+	
 	factions_frame = 9
 	factions = {
 		pr_buccaneers
 		pr_smugglers
 		pr_captains
 	}
-
+	
 	modifiers = {
 		republican_tradition = -1
 		max_absolutism = -50
@@ -711,11 +711,11 @@ black_market_consortium_government = {
 		global_foreign_trade_power = 0.3
 		may_perform_slave_raid_on_same_religion = yes
 	}
-
+	
 	custom_attributes = {
 		force_admiral_leader = yes
 	}
-
+	
 	conditional = {
 		allow = {
 			has_dlc = "Res Publica"
@@ -723,7 +723,7 @@ black_market_consortium_government = {
 		can_use_trade_post = yes
 	}
 	boost_income = yes
-
+	
 	ai = {
 		factor = 0
 	}
@@ -804,7 +804,7 @@ military_dictatorship = {
 	valid_for_new_country = yes
 	valid_for_nation_designer = yes
 	has_term_election = no
-
+	
 	republican_name = yes
 	royal_marriage = no
 	republic = yes
@@ -825,11 +825,11 @@ protectorate_parliament_legacy = {
 	valid_for_new_country = no
 	valid_for_nation_designer = no
 	has_term_election = no
-
+	
 	republican_name = yes
 	royal_marriage = no
 	republic = yes
-
+	
 	modifiers = {
 		global_autonomy = -0.05
 		land_morale = 0.05
@@ -838,12 +838,11 @@ protectorate_parliament_legacy = {
 	conditional = {
 		allow = { has_dlc = "Common Sense" }
 		has_parliament = yes
+		custom_attributes = {
+			blocked_call_diet = yes
+		}
 	}
 	has_term_election = no
-
-	custom_attributes = {
-		blocked_call_diet = yes
-	}
 }
 
 
@@ -921,10 +920,9 @@ constitutional_republic = {
 			has_dlc = "Common Sense"
 		}
 		has_parliament = yes
-	}
-
-	custom_attributes = {
-		blocked_call_diet = yes
+		custom_attributes = {
+			blocked_call_diet = yes
+		}
 	}
 
 	ai = {
@@ -1097,7 +1095,7 @@ monastic_order_government = {
 	rulers_can_be_generals = yes
 
 	royal_marriage = no
-
+	
 	rulers_can_be_generals = yes
 
 	valid_for_nation_designer = yes
@@ -1145,7 +1143,7 @@ holy_state_theocracy = {
 		manpower_recovery_speed = 0.15
 		global_autonomy = -0.2
 	}
-
+	
 	conditional = {
 		allow = {
 			has_dlc = "Common Sense"
@@ -1204,6 +1202,7 @@ steppe_horde_legacy = {
 	allow_convert = no
 	tribal = yes
 	nomad = yes
+	raze_province = yes
 
 	nation_designer_cost = 0
 	nation_designer_trigger = {
@@ -1237,6 +1236,7 @@ great_mongol_state_legacy = {
 	allow_convert = no
 	tribal = yes
 	nomad = yes
+	raze_province = yes
 
 	nation_designer_cost = 0
 	nation_designer_trigger = {
@@ -1484,15 +1484,13 @@ english_monarchy_legacy = {
 		allow = {
 			has_dlc = "Common Sense"
 		}
-
 		has_parliament = yes
+		custom_attributes = {
+			blocked_call_diet = yes
+		}
 	}
 	ai = {
 		factor = 5
-	}
-
-	custom_attributes = {
-		blocked_call_diet = yes
 	}
 }
 
@@ -2344,7 +2342,7 @@ veche_republic_legacy = {
 	allow_convert = no
 
 	boost_income = yes
-
+	
 	republican_name = yes
 	royal_marriage = no
 
@@ -2569,7 +2567,7 @@ united_cantons_legacy = {
 	republic = yes
 	modifiers = {
    		governing_capacity = -150
-		possible_dip_policy = 1
+		possible_dip_policy = 1	
 		mercenary_manpower = 0.5
 	}
 

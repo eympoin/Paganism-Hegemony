@@ -83,7 +83,7 @@ country_event = {#victory
     add_prestige = 15
     add_legitimacy = 5
     hidden_effect = {
-      country_event = {id = flavor_olympic.1 years = 4}
+      country_event = {id = flavor_olympic.1 days = 1460}
     }
   }
 }
@@ -100,7 +100,7 @@ country_event = {#defeat
     name = flavor_olympic.3.a
     add_prestige = 1
     hidden_effect = {
-      country_event = {id = flavor_olympic.1 years = 4}
+      country_event = {id = flavor_olympic.1 days = 1460}
     }
   }
 
