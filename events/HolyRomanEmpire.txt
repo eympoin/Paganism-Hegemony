@@ -1,6 +1,7 @@
 
 
 namespace = hre_event
+namespace = flavor_hre
 
 # Privilegia triggers for Emperor...
 country_event = {

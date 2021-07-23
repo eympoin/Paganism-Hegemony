@@ -578,14 +578,12 @@ Byzantium_2_2 = {
     required_missions = {}
     provinces_to_highlight = {
       region = egypt_region
-      is_part_of_hre = yes
       owner = {is_part_of_hre = no}
     }
     trigger = {
       NOT = {
         any_province = {
           region = egypt_region
-          is_part_of_hre = yes
           owner = {is_part_of_hre = no}
         }
       }

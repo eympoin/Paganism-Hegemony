@@ -68,14 +68,14 @@ country_decisions = {
 		}
 		effect = {
 		 change_tag = AXD
-		 restore_country_name = yes	
+		 restore_country_name = yes
 		 if = {
 			 limit = {
 				 NOT = { government_rank = 3 }
 			 }
 			 set_government_rank = 3
 		 }
-		 118 = {
+		 2311 = {
 			 move_capital_effect = yes
 		 }
 
