@@ -7,7 +7,7 @@ country_event = {
     desc = monument_events.1.d
 	picture = GREAT_BUILDING_eventPicture
 	goto = monument_province
-	
+
 	trigger = {
 		has_dlc = "Leviathan"
 		any_owned_province = {
@@ -19,7 +19,7 @@ country_event = {
 		}
 		NOT = { has_country_modifier = monumental_pride }
 	}
-	
+
 	 immediate = {
 		hidden_effect = {
 			random_owned_province = {
@@ -34,7 +34,7 @@ country_event = {
 			}
 		}
     }
-	
+
 	mean_time_to_happen = {
 		months = 1
 	}
@@ -64,7 +64,7 @@ country_event = {
     desc = monument_events.2.d
 	picture = ADVISOR_eventPicture
 	goto = monument_province_2
-	
+
 	trigger = {
 		has_dlc = "Leviathan"
 		any_owned_province = {
@@ -82,7 +82,7 @@ country_event = {
 		}
 		NOT = { has_country_modifier = monument_boost }
 	}
-	
+
 	 immediate = {
 		hidden_effect = {
 			random_owned_province = {
@@ -113,7 +113,7 @@ country_event = {
 			}
 		}
     }
-	
+
 	mean_time_to_happen = {
 		months = 800
 	}
@@ -137,89 +137,6 @@ country_event = {
     }
 }
 
-# Saint Peter's Basilica
-country_event = {
-    id = monument_events.3
-    title = monument_events.3.t
-    desc = monument_events.3.d
-	picture = ST_PETERS_CHURCH_eventPicture
-	goto = basilica_province
-	
-	fire_only_once = yes
-	
-	trigger = {
-		has_dlc = "Leviathan"
-		tag = PAP
-		religion = catholic
-		any_owned_province = {
-			has_great_project = {
-				type = stpeters_cathedral
-				tier = 3
-			}
-			religion = catholic
-		}
-	}
-	
-	immediate = {
-		hidden_effect = {
-			random_owned_province = {
-				limit = {
-					has_great_project = {
-						type = stpeters_cathedral
-						tier = 3
-					}
-					religion = catholic
-				}
-				save_event_target_as = basilica_province
-			}
-		}
-    }
-	
-	mean_time_to_happen = {
-		months = 180
-	}
-
-    option = { #hold a big mass
-        name = monument_events.3.a
-		add_years_of_income = -0.25
-		every_ally = {
-			limit = {
-				religion = catholic
-			}
-			add_opinion = {
-				who = ROOT
-				modifier = opinion_st_peters
-			}
-		}
-		add_estate_loyalty = {
-			estate = estate_church
-			loyalty = 10
-		}
-    }
-    option = { #church of the people
-        name = monument_events.3.b
-        event_target:basilica_province = {
-			add_unrest = -3
-		}
-		random_owned_province = {
-			limit = {
-				religion = catholic
-				NOT = {
-					has_great_project = {
-						type = stpeters_cathedral
-						tier = 3
-					}
-				}
-			}
-			add_unrest = -2
-		}
-		add_country_modifier = {
-			name = monument_church_of_the_people
-			duration = 7300
-		}
-    }
-}
-
 # Pilgrimage Shwedagon Pagoda
 country_event = {
     id = monument_events.4
@@ -227,11 +144,11 @@ country_event = {
     desc = monument_events.4.d
 	picture = SHWEDAGON_PAGON_eventPicture
 	goto = pagoda_province
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	 immediate = {
 		hidden_effect = {
 			random_owned_province = {
@@ -278,9 +195,9 @@ country_event = {
     desc = monument_events.5.d
 	picture = BUDDHA_eventPicture
 	goto = borobudur_province
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		has_dlc = "Leviathan"
 		any_owned_province = {
@@ -293,9 +210,9 @@ country_event = {
 			limit = { tag = SUN }
 			has_mission = sun_borobudur
 			mission_completed = sun_borobudur
-		}			
+		}
 	}
-	
+
 	 immediate = {
 		hidden_effect = {
 			random_owned_province = {
@@ -309,7 +226,7 @@ country_event = {
 			}
 		}
     }
-	
+
 	mean_time_to_happen = {
 		months = 180
 		modifier = {
@@ -344,7 +261,7 @@ country_event = {
 			target = MAJ
 		}
     }
-	
+
 	option = { #superiority over sunda
         name = monument_events.5.b
         trigger = { tag = MAJ exists = SUN }
@@ -355,15 +272,15 @@ country_event = {
 			}
 		}
 		add_casus_belli = {
-			type = cb_vassalize_mission 
+			type = cb_vassalize_mission
 			months = 300
 			target = SUN
 		}
     }
-	
+
 	option = { #send our advisor to take care of it
         name = monument_events.5.c
-        trigger = { 
+        trigger = {
 			NOT = {
 				OR = {
 					tag = SUN
@@ -403,9 +320,9 @@ country_event = {
 				has_mil_advisor = yes
 			}
 			remove_advisor_by_category = MIL
-		}		
+		}
     }
-	
+
     option = { #move our capital there
         name = monument_events.5.e
         if = {
@@ -428,7 +345,7 @@ country_event = {
     title = monument_events.6.t
     desc = monument_events.6.d
 	picture = GREAT_BUILDING_eventPicture
-	
+
 	hidden = yes
 
 	trigger = {
@@ -450,7 +367,7 @@ country_event = {
 			religion_group = muslim
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
@@ -473,7 +390,7 @@ country_event = {
     title = monument_events.7.t
     desc = monument_events.7.d
 	picture = GREAT_BUILDING_eventPicture
-	
+
 	hidden = yes
 
 	trigger = {
@@ -493,7 +410,7 @@ country_event = {
 		NOT = { religion_group = muslim }
 		146 = { NOT = { religion_group = muslim } }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}

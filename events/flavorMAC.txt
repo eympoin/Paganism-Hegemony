@@ -1311,10 +1311,8 @@ country_event = {#mesopotamian
       limit = {
        has_owner_religion = yes
         OR = {
-				culture = persian
-				culture = khorasani
-				culture = mazandarani
-				culture = elymaite
+				culture = babylonian
+        culture = Assyrian
         }
         NOT = { nationalism	= 1 }
         is_core = ROOT
