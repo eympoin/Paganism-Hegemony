@@ -1648,18 +1648,18 @@ flavor_mac.17.b:0 "They will pay for this!"
 
 
 flavor_mac.18.t:0 "Respecting the Treaty of Kiphas"
-flavor_mac.18.d:0 "After annexing a province from Persia, an Armenian diplomat came to our court to explain that we have taken a province that should have gone to Armenia/Macedonia according to the Treaty of Kiphas. It would be an obligation to give them the province back, but do we truly want Armenia to gain strength? Whatever we choose, we must pick carefully."
+flavor_mac.18.d:0 "After annexing a province from Persia, an Armenian diplomat came to our court to explain that we have taken a province that should have gone to Armenia according to the Treaty of Kiphas. It would be an obligation to give them the province back, but do we truly want Armenia to gain strength? Whatever we choose, we must pick carefully."
 flavor_mac.18.a:0 "We have to respect the treaty."
 flavor_mac.18.b:0 "We don't need the Armenians anymore!"
 
 
 flavor_mac.19.t:0 "Respecting the Treaty of Kiphas"
-flavor_mac.19.d:0 "After annexing a province from Persia, an Macedonian diplomat came to our court to explain that we have taken a province that should have gone to Armenia/Macedonia according to the Treaty of Kiphas. It would be an obligation to give them the province back, but do we truly want Macedonia to gain strength? Whatever we choose, we must pick carefully."
+flavor_mac.19.d:0 "After annexing a province from Persia, an Macedonian diplomat came to our court to explain that we have taken a province that should have gone to Macedonia according to the Treaty of Kiphas. It would be an obligation to give them the province back, but do we truly want Macedonia to gain strength? Whatever we choose, we must pick carefully."
 flavor_mac.19.a:0 "We have to respect the treaty."
 flavor_mac.19.b:0 "We don't need the Macedonians anymore!
 
 flavor_mac.20.t:0 "A Broken Treaty"
-flavor_mac.20.d:0 "Treachery! The Armenians/Macedonians have stolen a province that was rightfully ours according to the Treaty of Kiphas! Many ask for retribution, but are we truly ready? Whatever we choose, we must pick carefully."
+flavor_mac.20.d:0 "Treachery!  $FROMCOUNTRY$ have stolen a province that was rightfully ours according to the Treaty of Kiphas! Many ask for retribution, but are we truly ready? Whatever we choose, we must pick carefully."
 flavor_mac.20.a:0 "It's treason, then."
 flavor_mac.20.b:0 "We are not ready yet."
 

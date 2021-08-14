@@ -104,6 +104,7 @@ city = {
 	allowed_num_of_buildings = 2
 	local_sailors_modifier = 0.25
 	garrison_growth = 0.05
+	allowed_num_of_manufactories = 1
 }
 
 port = {
