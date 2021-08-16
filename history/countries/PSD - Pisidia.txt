@@ -4,8 +4,8 @@ government_rank = 1
 primary_culture = anatolian
 religion = theoi
 technology_group = eastern
-capital = 326
-fixed_capital = 326
+capital = 4311
+fixed_capital = 4311
 
 1425.7.21 = {
 	monarch = {

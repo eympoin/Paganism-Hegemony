@@ -2423,7 +2423,7 @@ norse_group{
 greco_roman_group = {
   theoi = {
     icon = 30
-    color = { 150 0 150 }
+    color = { 150 10 150 }
     country = {
       trade_efficiency = 0.1
       idea_cost = -0.1

@@ -530,7 +530,6 @@ country_event = {
 		ai_chance = { factor = 100 }
 		LYD = {country_event = {id = flavor_byzmod.22 days = 17}}
 		PHR = {country_event = {id = flavor_byzmod.22 days = 17}}
-		PSD = {country_event = {id = flavor_byzmod.22 days = 17}}
 	}
 
 	option = {	#not needed
@@ -562,7 +561,14 @@ country_event = {
 country_event = {
 	id = flavor_byzmod.23
 	title = "flavor_byzmod.23.t"
-	desc = "flavor_byzmod.23.d"
+	desc = {
+		trigger = {FROM = {has_country_flag = accept_byz_protection}}
+		desc = flavor_byzmod.23.d1
+	}
+	desc = {
+		trigger = {	NOT = {FROM = {has_country_flag = accept_byz_protection}}}
+		desc = flavor_byzmod.23.d2
+	}
 	picture = HRE_eventPicture
 	is_triggered_only = yes
 
@@ -690,6 +696,7 @@ country_event = {
 					region = greece_region
 				}
 				NOT = {tag = MAC}
+				NOT = {tag = BYZ}
 				NOT  = {is_subject_of = MAC}
 			}
 			country_event = {id = flavor_byzmod.29 days = 7}

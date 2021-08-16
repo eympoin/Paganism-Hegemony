@@ -194,6 +194,8 @@ Byzantium_3_1 = {
     }
     trigger = {
       mil_power = 300
+      NOT = {exists = LYD}
+      NOT = {exists = PHR}
     }
     effect = {
       add_mil_power = -300
@@ -372,6 +374,7 @@ Byzantium_5_1 = {
         }
         alliance_with = AGO
       }
+      diplomatic_reputation = 5
     }
     effect = {
       country_event = {id = flavor_byzmod.30}
@@ -404,33 +407,22 @@ Byzantium_5_1 = {
     icon = mission_galleys_in_port
     required_missions = {control_the_oracle}
     provinces_to_highlight = {
-      OR = {
-        area = kyklades_area
-        area = aegean_archipelago_area
-        area = south_islands_area
-      }
-      NOT = {owned_by = ROOT}
     }
     trigger = {
-      kyklades_area = {
-        type = all
-        owned_by = ROOT
-      }
-      aegean_archipelago_area = {
-        type = all
-        owned_by = ROOT
-      }
-      south_islands_area = {
-        type = all
-        owned_by = ROOT
-      }
+      num_of_galley = 100
+      151 = {
+          trade_share = {
+            country = ROOT
+            share = 25
+          }
+        }
     }
     effect = {
       151 = {
         add_trade_modifier = {
           who = ROOT
           duration = -1
-          power = 50
+          power = 100
           key = CONTROL_OF_THE_SEA
         }
       }
@@ -472,10 +464,9 @@ Byzantium_1_2 = {
     }
     trigger = {
         mil_power = 100
-        dip_power = 100
-        adm_power = 100
     }
     effect = {
+      add_mil_power = -100
       country_event = {id = flavor_byzmod.36}
     }
   }
