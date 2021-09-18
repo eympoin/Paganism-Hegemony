@@ -529,7 +529,7 @@ country_event = {
 				cede_province = SYR
 			}
 			2308 = {
-				change_culture	= cannanite
+				change_culture	= canaan
 				cede_province = SYR
 			}
 			5006 = {
@@ -1267,7 +1267,7 @@ country_event = {#afghan
       limit = {
        has_owner_religion = yes
         OR = {
-				culture = afghan
+				culture = afghani
         }
         NOT = { nationalism	= 1 }
         is_core = ROOT
