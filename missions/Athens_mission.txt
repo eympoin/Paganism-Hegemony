@@ -364,7 +364,7 @@ Athens_3_1 = {
     }
     trigger = {
       all_ally = {
-        OR = {
+        AND = {
           NOT = {
             army_strength = {
               who = ROOT
@@ -373,6 +373,9 @@ Athens_3_1 = {
           }
           NOT = {diplomatic_reputation = ROOT}
         }
+      }
+      146 = {
+        development = 30
       }
     }
     effect = {
@@ -477,11 +480,11 @@ Athens_4_1 = {
     required_missions = {the_great_league}
     position = 2
     provinces_to_highlight = {
-      province_id = 4792
+      province_id = 4944
         NOT = {owned_by = ROOT}
     }
     trigger = {
-      owns_core_province = 4792
+      owns_core_province = 4944
     }
     effect = {
       add_mil_power = 100
@@ -492,11 +495,11 @@ Athens_4_1 = {
     icon = protectors_of_christendom
     required_missions = {boetian_rivalry}
     provinces_to_highlight = {
-      province_id = 4810
+      province_id = 4962
         NOT = {owned_by = ROOT}
     }
     trigger = {
-      owns_core_province = 4810
+      owns_core_province = 4962
     }
     effect = {
       add_dip_power = 100
