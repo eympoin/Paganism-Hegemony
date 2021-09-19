@@ -126,13 +126,13 @@ phoenicia_2= {
     position = 3
     provinces_to_highlight = {
       OR = {
-        province_id = 4791
+        province_id = 4943
         province_id = 163
       }
       NOT = {owned_by = ROOT}
     }
     trigger = {
-      4791 = {
+      4943 = {
         owned_by = ROOT
       }
       163 = {
