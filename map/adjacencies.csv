@@ -91,7 +91,6 @@
 431;2999;sea;1334;3693;1091;3689;1089;Mogostan-Hormuz
 398;2999;sea;1334;3686;1080;3684;1084;Qawasim-Hormuz
 146;3003;sea;1319;-1;-1;-1;-1;Athens - Euboea
-3003;164;sea;1319;3190;1287;3191;1286;Euboea - Cyclades
 31;4152;lake;4139;3232;1827;3235;1835;Savolax - Kuusamo
 1751;226;sea;1293;-1;-1;-1;-1;Ceuta-Gibraltar
 4353;4352;sea;1397;-1;-1;-1;-1;Leyte-Cebu
@@ -114,5 +113,7 @@
 3003;4947;sea;1319;-1;-1;-1;-1;Euboea-Demetrias
 164;4951;sea;1319;-1;-1;-1;-1;Andros-Naxos
 4951;5000;sea;1319;-1;-1;-1;-1;Andros-Kea
+3003;4951;sea;1319;-1;-1;-1;-1;Euboea-Andros
+3003;4944;sea;1319;-1;-1;-1;-1;Euboea-Thebes
 4970;4999;sea;1319;-1;-1;-1;-1;Samos-Miletos
 -1;-1;;-1;-1;-1;-1;-1;-1;
