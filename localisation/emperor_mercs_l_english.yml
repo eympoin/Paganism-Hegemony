@@ -208,3 +208,4 @@
  generic_more_mercs_available_tt:0 "More mercenaries will become available for §Y10§! years."
  generic_more_mercs_available_indefinite_tt:0 "More mercenaries will become available."
  merc_norman_guard:0 "Norman Guard"
+ merc_varangian_guard:0 "Varangian Guard"

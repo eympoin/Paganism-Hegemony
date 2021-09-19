@@ -4522,6 +4522,8 @@
  DISABLE_REBEL_SUPPRESSION:0 "§YDisable Autonomous Rebel Suppression§!"
  MANAGE_REBEL_SUPPRESSION:0 "§YManage Autonomous Rebel Suppression§!"
  REBEL_SUPPRESSION_DESC:1 "Armies under orders to suppress rebels will autonomously hunt down rebel units and besiege rebel provinces."
+ MANAGE_CARPET_SIEGE:0 "§YManage Autonomous Carpet Sieging§!"
+ CARPET_SIEGE_DESC:0 "Armies under orders to carpet siege will attempt to siege any provinces under control by enemies, while avoiding combat."
  UNIT_ENABLE_DRILL:0 "Drill Army"
  UNIT_DISABLE_DRILL:0 "(drilling)"
  ENABLE_ARMY_DRILL:0 "§YEnable Army Drilling§!"
