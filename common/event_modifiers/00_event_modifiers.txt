@@ -11858,34 +11858,10 @@ temple_of_artemis = {
 	leader_land_fire = 1
 }
 
-colossus = {
-	prestige = 0.5
-	merchants = 1
-}
-
-lighthouse_of_alexandria = {
-	prestige = 0.5
-	global_trade_power = 0.1
-	trade_efficiency = 0.1
-}
-
-tomb_of_Mausolus = {
-	prestige = 0.5
-	monthly_splendor = 1
-	admiral_cost = -0.2
-	free_leader_pool = 1
-}
-
 hanging_gardens = {
 	prestige = 0.5
 	development_cost = -0.05
 	production_efficiency = 0.1
-}
-
-great_pyramids = {
-	prestige = 0.5
-	build_cost = -0.2
-	build_time = -0.25
 }
 
 cast_out_bul = {

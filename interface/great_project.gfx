@@ -273,6 +273,14 @@ spriteTypes = {
 		name = "GFX_great_project_cothon"
 		texturefile = "gfx//interface//great_projects//great_project_cothon.dds"
 	}
+	spriteType = {
+		name = "GFX_great_project_colossus"
+		texturefile = "gfx//interface//great_projects//great_project_colossus.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_lighthouse_of_alexandria"
+		texturefile = "gfx//interface//great_projects//great_project_lighthouse_of_alexandria.dds"
+	}
 
 ### CANALS ###
 
