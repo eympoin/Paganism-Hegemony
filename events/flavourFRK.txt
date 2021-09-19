@@ -1,11 +1,12 @@
 #Brittany revolution
 namespace = flavor_frp
+namespace = flavor_frk
 country_event = {
 	id = flavor_frp.2
 	title = "flavor_frp.2.t"
 	desc = "flavor_frp.2.d"
 	picture = MILITARY_CAMP_eventPicture
-	
+
 	fire_only_once = yes
 
 	trigger = {
@@ -16,11 +17,11 @@ country_event = {
 		owns = 171
 		owns = 4384
 	}
-	
+
 	mean_time_to_happen = {
 		months = 1
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			BRI = {
@@ -54,7 +55,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "flavor_frp.2.a"	#This means war.
 		ai_chance = {
@@ -73,4 +74,166 @@ country_event = {
 			factor = 0.5
 		}
 	}
+}
+
+country_event = {#burgonds
+  id = flavor_frk.1
+  title = flavor_frk.1.t
+  desc = flavor_frk.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    culture_group = frankish
+    any_owned_province = {
+     has_owner_religion = yes
+      OR = {
+        culture = burgond
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_frk.1.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+       has_owner_religion = yes
+       OR = {
+         culture = burgond
+       }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = franko-burgond
+    }
+  }
+}
+
+country_event = {#roman
+  id = flavor_frk.2
+  title = flavor_frk.2.t
+  desc = flavor_frk.2.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    culture_group = frankish
+    any_owned_province = {
+     has_owner_religion = yes
+      OR = {
+        culture = aquitain
+				culture = narbonnais
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_frk.2.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+       has_owner_religion = yes
+       OR = {
+				 culture = aquitain
+				culture = narbonnais
+       }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = occitan
+    }
+  }
+}
+
+country_event = {#roman
+  id = flavor_frk.2
+  title = flavor_frk.1.t
+  desc = flavor_frk.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    culture_group = frankish
+    any_owned_province = {
+     has_owner_religion = yes
+      OR = {
+        culture = aquitain
+				culture = narbonnais
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_frk.1.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+       has_owner_religion = yes
+       OR = {
+				 culture = aquitain
+				culture = narbonnais
+       }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = occitan
+    }
+  }
+}
+
+country_event = {#saxon
+  id = flavor_frk.3
+  title = flavor_frk.1.t
+  desc = flavor_frk.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    culture_group = frankish
+    any_owned_province = {
+     has_owner_religion = yes
+      OR = {
+        culture = saxon
+				culture = thuringian
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_frk.1.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+       has_owner_religion = yes
+       OR = {
+				 culture = saxon
+				 culture = thuringian
+       }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = north-francian
+    }
+  }
 }

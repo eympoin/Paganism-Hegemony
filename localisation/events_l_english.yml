@@ -1713,9 +1713,7 @@ flavor_mac.30.b:0 "We are good in Persia"
 flavor_mac.30.c:0 "It is our birthright !"
 
 flavor_mac.31.t:0 "Return of the Persian Expedition!"
-flavor_mac.31.d:0 "
-We received a message from someone we never expected to return. It is the Persian expedition, the one we sent centuries ago to beat Persia and hellenize it, like Alexander did a millenium ago. They actually succeeded in their task, and now, they want to unite our kingdom with their empire, so Alexander's empire is formed once more.
-As we are the ones who sent them, it would make sense to accept, but if we do, they will be the ones to gain the throne, and doing so will destabilize the Eastern Roman Empire. Should we accept, and return to the international stage? Or should we refuse and let go of the past, accepting our place in the Eastern Roman Empire, who succeeded Alexander's Empire?"
+flavor_mac.31.d:0 "We received a message from someone we never expected to return. It is the Persian expedition, the one we sent centuries ago to beat Persia and hellenize it, like Alexander did a millenium ago. They actually succeeded in their task, and now, they want to unite our kingdom with their empire, so Alexander's empire is formed once more. As we are the ones who sent them, it would make sense to accept, but if we do, they will be the ones to gain the throne, and doing so will destabilize the Eastern Roman Empire. Should we accept, and return to the international stage? Or should we refuse and let go of the past, accepting our place in the Eastern Roman Empire, who succeeded Alexander's Empire?"
 flavor_mac.31.b:0 "Never, the throne is ours! For Macedonia!"
 flavor_mac.31.a:0 "We must let them gain their birthright! For Alexander!"
 
@@ -2123,13 +2121,8 @@ flavor_byzmod.70.d:0 "This is the current state of the Empire"
 flavor_byzmod.70.a:0 "Long live the Empire !"
 
 flavor_cil.1.t:0 "Cilician piracy"
-flavor_cil.1.d:0 "Cilicia has always been a heaven for pirates. Today is no exception. We must choose our piracy policy."
-flavor_cil.1.a:0 "We are pirates !"
-flavor_cil.1.a:0 "These pirates will die !"
-
-flavor_cil.1.t:0 "Cilician piracy"
 flavor_cil.1.d:0 "Cilicia has always been a heaven for pirates. Today is no exception. We must choose our politics towards them."
-flavor_cil.1.a:0 "We are pirates !"
+flavor_cil.1:0 "We are pirates !"
 flavor_cil.1.b:0 "Nothing we can do"
 flavor_cil.1.c:0 "These pirates will die !"
 
@@ -2156,3 +2149,7 @@ flavor_greek.3.a:0 "This is a happy news."
 flavor_greek.4.t:0 "Cultural Assimilation"
 flavor_greek.4.d:0 "The Greek influence other these lands has finally turned the inhabitants into true Greeks"
 flavor_greek.4.a:0 "This is a happy news."
+
+flavor_frk.1.t:0 "Cultural Assimilation"
+flavor_frk.1.d:0 "The frankish influence other these lands has finally turned the inhabitants into true Franks"
+flavor_frk.1.a:0 "This is a happy news."

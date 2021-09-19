@@ -228,12 +228,7 @@ take_south_gallia = {
 		}
 
 		effect = {
-			every_owned_province = {
-				limit = {
-					culture = burgond
-				}
-				change_culture = franko-burgond
-			}
+			add_mil_power = 100
 			guyenne_area = {
 				limit = {
 					NOT = { owned_by = ROOT }

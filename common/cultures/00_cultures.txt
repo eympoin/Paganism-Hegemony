@@ -103,8 +103,12 @@ frankish = {
 	franko-burgond = {
 		primary = WFR
 	}
+	occitan = {
+	}
 	lingerian = {
 		primary = FRO
+	}
+	north-francian = {
 	}
 	rhenan = {
 		primary = FRR
