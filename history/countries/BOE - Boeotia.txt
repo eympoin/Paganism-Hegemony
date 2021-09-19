@@ -5,17 +5,16 @@ elector = no
 primary_culture = greek
 religion = theoi
 technology_group = eastern
-capital = 4792
-fixed_capital = 4792# Cannot move capital away from this province & no power cost to move to it
+capital = 4944
+fixed_capital = 4944# Cannot move capital away from this province & no power cost to move to it
 
 1407.2.16 = {
 	monarch = {
 		name = "Manuel"
 		dynasty = "Epimid"
-		birth_date = 1389.6.27		
+		birth_date = 1389.6.27
 		adm = 4
 		dip = 3
 		mil = 1
 	}
 }
-

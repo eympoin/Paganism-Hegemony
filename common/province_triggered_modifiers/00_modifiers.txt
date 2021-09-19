@@ -145,7 +145,7 @@ religious_center = {
 		}
 		else_if = {
 			limit = {
-				province_id = 4810
+				province_id = 4962
 			}
 			religion_group = greco_roman_group
 		}

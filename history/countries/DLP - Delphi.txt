@@ -4,8 +4,8 @@ government_rank = 1
 primary_culture = greek
 religion = theoi
 technology_group = western
-capital = 4810
-fixed_capital = 4810
+capital = 4962
+fixed_capital = 4962
 
 1444.11.11 = {
 	monarch = {

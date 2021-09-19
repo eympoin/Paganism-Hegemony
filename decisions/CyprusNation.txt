@@ -29,8 +29,8 @@ country_decisions = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 321
-				province_id = 4800
-				province_id = 4815
+				province_id = 4952
+				province_id = 4967
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -42,8 +42,8 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			owns_core_province = 321
-			owns_core_province = 4800
-			owns_core_province = 4815
+			owns_core_province = 4952
+			owns_core_province = 4967
 		}
 		effect = {
 			change_tag = CYP
