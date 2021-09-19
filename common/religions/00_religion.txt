@@ -2249,6 +2249,7 @@ east_european{
       manpower_recovery_speed = 0.1
       advisor_pool = 1
     }
+    personal_deity = yes
     heretic = { OLD_SLAVIC }
   }
   suomenusko = {
