@@ -1948,13 +1948,36 @@ merc_swiss_canton_mercenaries = {
 
 
 merc_norman_guard = {
-	regiments_per_development = 0.02
-	cavalry_weight = 0.1
+	regiments_per_development = 0.01
+	cavalry_weight = 0.2
 	cavalry_cap = 4
 	home_province = 168
 	sprites = { westerngfx_sprite_pack }
 	trigger = {
-      tag = FRP
+      OR = {
+        tag = FRP
+        was_tag = WFR
+        }
+	}
+	cost_modifier = 0.5
+	modifier = {
+		discipline = 0.05
+    land_morale = 0.2
+    shock_damage = 0.15
+	}
+}
+
+merc_varangian_guard = {
+	regiments_per_development = 0.01
+	cavalry_weight = 0.1
+	cavalry_cap = 4
+	home_province = 151
+	sprites = { westerngfx_sprite_pack }
+	trigger = {
+      OR = {
+        tag = BYZ
+        was_tag = BYZ
+        }
 	}
 	cost_modifier = 0.5
 	modifier = {
