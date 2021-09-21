@@ -281,6 +281,52 @@ spriteTypes = {
 		name = "GFX_great_project_lighthouse_of_alexandria"
 		texturefile = "gfx//interface//great_projects//great_project_lighthouse_of_alexandria.dds"
 	}
+	spriteType = {
+		name = "GFX_great_project_temple_of_artemis"
+		texturefile = "gfx//interface//great_projects//great_project_temple_of_artemis.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_clovis_grave"
+		texturefile = "gfx//interface//great_projects//great_project_clovis_grave.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_hanging_gardens"
+		texturefile = "gfx//interface//great_projects//great_project_hanging_gardens.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_zeus_temple"
+		texturefile = "gfx//interface//great_projects//great_project_zeus_temple.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_irminsul"
+		texturefile = "gfx//interface//great_projects//great_project_irminsul.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_vladimir_hill"
+		texturefile = "gfx//interface//great_projects//great_project_vladimir_hill.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_sanctuary_of_gauls"
+		texturefile = "gfx//interface//great_projects//great_project_sanctuary_of_gauls.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_pantheon"
+		texturefile = "gfx//interface//great_projects//great_project_pantheon.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_constantin_triumphal_arch"
+		texturefile = "gfx//interface//great_projects//great_project_constantin_triumphal_arch.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_coliseum"
+		texturefile = "gfx//interface//great_projects//great_project_coliseum.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_port_of_ostia"
+		texturefile = "gfx//interface//great_projects//great_project_port_of_ostia.dds"
+	}
+
 
 ### CANALS ###
 
