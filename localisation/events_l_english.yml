@@ -2153,3 +2153,20 @@ flavor_greek.4.a:0 "This is a happy news."
 flavor_frk.1.t:0 "Cultural Assimilation"
 flavor_frk.1.d:0 "The frankish influence other these lands has finally turned the inhabitants into true Franks"
 flavor_frk.1.a:0 "This is a happy news."
+
+
+flavor_cro.1.t:0 "Reward for Pannonia"
+flavor_cro.1.d:0 "We have reconquered the old province of Pannonia and returned it in the Empire. The Emperor owes us something !"
+flavor_cro.1.a:0 "Ask for Electorship"
+flavor_cro.1.b:0 "Pannonia is enough in itself"
+
+flavor_cro.2.t:0 "$FROMCOUNTRY$ ask for electorship"
+flavor_cro.2.d:0 "$FROMCOUNTRY$ has reconquered Panonia and ask to become an elector as a reward for this conquest"
+flavor_cro.2.a:0 "We will reward them"
+flavor_cro.2.b:0 "Never !"
+
+flavor_cro.3.t:0 "Answer of the Emperor"
+flavor_cro.3.d1:0 "He has accepted. We are now electors !"
+flavor_cro.3.d2:0 "He has refused...."
+flavor_cro.3.a:0 "Good news !"
+flavor_cro.3.b:0 "They will all pay..."

@@ -1,0 +1,154 @@
+Croatoa_1_1 = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = CRO
+      was_tag = CRO
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  unite_croats = {
+    icon = mission_unite_home_region
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+      culture = croatian
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      NOT = {
+        any_province = {
+          NOT = {owned_by = ROOT}
+          culture = croatian
+        }
+      }
+    }
+    effect = {
+      add_dip_power = 200
+      croatia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      east_adriatic_coast_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  invade_dalmatia = {
+    icon = capture_adriatic_ports
+    required_missions = {unite_croats}
+    provinces_to_highlight = {
+      OR = {
+        area = east_adriatic_coast_area
+        area = croatia_area
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      east_adriatic_coast_area = {
+        type = all
+        owned_by = ROOT
+      }
+      croatia_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      137 = {
+        add_center_of_trade_level = 1
+      }
+      carinthia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+      rascia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  king_of_croatia = {
+    icon = despot_stefans_legacy
+    required_missions = {invade_dalmatia}
+    provinces_to_highlight = {
+        }
+    trigger = {
+      is_elector = yes
+    }
+    effect = {
+      set_government_rank = 2
+      add_adm_power = 200
+      balkan_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  fortify_border_nomads = {
+    icon = secure_the_sava
+    required_missions = {}
+    provinces_to_highlight = {
+      OR = {
+        province_id = 152
+        province_id = 1767
+      }
+      NOT = {fort_level = 1}
+    }
+    trigger = {
+      152 = {
+        fort_level = 1
+      }
+      1767 = {
+        fort_level = 1
+      }
+    }
+    effect = {
+      add_country_modifier = {
+        name = forts_of_the_imperium
+        duration = 7300
+      }
+      transdanubia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  reconquer_panonia = {
+    icon = pacify_the_albanian_lands
+    required_missions = {fortify_border_nomads}
+    provinces_to_highlight = {
+      area = transdanubia_area
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      transdanubia_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      country_event = {id = flavor_cro.1}
+    }
+  }
+
+}

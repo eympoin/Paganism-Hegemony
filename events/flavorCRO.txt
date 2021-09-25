@@ -1,0 +1,96 @@
+namespace = flavor_cro
+country_event = {
+	id = flavor_cro.1
+	title = "flavor_cro.1.t"
+	desc = "flavor_cro.1.d"
+	picture = BORDER_TENSION_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #ask the electorship
+		name = "flavor_cro.1.a"
+		ai_chance = {
+			factor = 100
+		}
+		emperor = {country_event = {id = flavor_cro.2}}
+	}
+	option = { #do nothing
+		name = "flavor_cro.1.b"
+		ai_chance = {
+			factor = 0
+		}
+
+	}
+
+}
+
+country_event = {
+	id = flavor_cro.2
+	title = "flavor_cro.2.t"
+	desc = "flavor_cro.2.d"
+	picture = HRE_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #give it to them
+		name = "flavor_cro.2.a"
+		ai_chance = {
+			factor = 100
+		}
+		set_country_flag = croatian_elector
+		FROM = {country_event = {id = flavor_cro.3 days = 7}}
+	}
+	option = { #no
+		name = "flavor_cro.2.b"
+		ai_chance = {
+			factor = 0
+		}
+		FROM = {country_event = {id = flavor_cro.3}}
+
+	}
+
+}
+
+country_event = {
+	id = flavor_cro.3
+	title = "flavor_cro.3.t"
+	desc = {
+		trigger = {FROM = {has_country_flag = croatian_elector}}
+		desc = flavor_cro.3.d1
+	}
+	desc = {
+		trigger = {	FROM = {has_country_flag = croatian_elector}}
+		desc = flavor_cro.3.d2
+	}
+	picture = HRE_eventPicture
+	major = yes
+
+	is_triggered_only = yes
+
+	option = { # :)
+		name = "flavor_cro.3.a"
+		trigger = {
+			FROM = {has_country_flag = croatian_elector}
+		}
+		ai_chance = {
+			factor = 100
+		}
+		ROOT = {
+			elector = yes
+		}
+	}
+	option = { # :(
+		name = "flavor_cro.3.b"
+		trigger = {
+			FROM = {has_country_flag = accepted_byz_bribe}
+		}
+		ai_chance = {
+			factor = 0
+		}
+		add_opinion = {
+			who = FROM
+			modifier = revoke_elector_opinion
+		}
+	}
+
+}
