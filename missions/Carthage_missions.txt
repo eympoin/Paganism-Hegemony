@@ -20,10 +20,10 @@ base_1 = {
     }
 
     trigger = {
-    kabylia_area = {
-      type = all
-      owned_by = ROOT
-    }
+      kabylia_area = {
+        type = all
+        owned_by = ROOT
+      }
     }
     effect = {
       add_adm_power = 50

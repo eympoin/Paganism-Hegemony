@@ -326,6 +326,18 @@ spriteTypes = {
 		name = "GFX_great_project_port_of_ostia"
 		texturefile = "gfx//interface//great_projects//great_project_port_of_ostia.dds"
 	}
+	spriteType = {
+		name = "GFX_great_project_medracen"
+		texturefile = "gfx//interface//great_projects//great_project_medracen.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_library_of_alexandria"
+		texturefile = "gfx//interface//great_projects//great_project_library_of_alexandria.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_great_university_of_tolosa"
+		texturefile = "gfx//interface//great_projects//great_project_great_university_of_tolosa.dds"
+	}
 
 
 ### CANALS ###

@@ -5971,3 +5971,7 @@ absolute_rule_mod = {
 loyal_subjects_mod = {
 	governing_capacity = 100
 }
+
+forts_of_the_imperium = {
+  fort_maintenance_modifier = -0.75
+}
