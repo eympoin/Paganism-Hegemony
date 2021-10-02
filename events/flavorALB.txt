@@ -1,0 +1,109 @@
+
+namespace = flavor_alb
+
+country_event = {
+  id = flavor_alb.1
+  title = flavor_alb.1.t
+  desc = flavor_alb.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      tag = ALB
+      was_tag = ALB
+    }
+    any_owned_province = {
+      has_owner_religion = yes
+      OR = {
+        culture = serbian
+        culture = croatian
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 2
+  }
+
+  option = {#slavs
+    name = flavor_alb.1.a
+    ai_chance = { factor = 1 }
+    trigger = {
+      any_owned_province = {
+				has_owner_religion = yes
+				OR = {
+					culture = serbian
+					culture = croatian
+				}
+				NOT = { nationalism	= 1 }
+				is_core = ROOT
+      }
+    }
+    random_owned_province = {
+      limit = {
+				has_owner_religion = yes
+				OR = {
+					culture = serbian
+					culture = croatian
+				}
+				NOT = { nationalism	= 1 }
+				is_core = ROOT
+      }
+      change_culture = albanian
+    }
+  }
+}
+
+country_event = {
+  id = flavor_alb.2
+  title = flavor_alb.1.t
+  desc = flavor_alb.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      tag = ALB
+      was_tag = ALB
+    }
+    any_owned_province = {
+      has_owner_religion = yes
+      OR = {
+        culture = dalmatian
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 2
+  }
+
+  option = {#dalmatians
+    name = flavor_alb.1.a
+    ai_chance = { factor = 1 }
+    trigger = {
+      any_owned_province = {
+				has_owner_religion = yes
+				OR = {
+					culture = dalmatian
+				}
+				NOT = { nationalism	= 1 }
+				is_core = ROOT
+      }
+    }
+    random_owned_province = {
+      limit = {
+				has_owner_religion = yes
+				OR = {
+					culture = dalmatian
+				}
+				NOT = { nationalism	= 1 }
+				is_core = ROOT
+      }
+      change_culture = albanian
+    }
+  }
+}

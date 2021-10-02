@@ -5975,3 +5975,13 @@ loyal_subjects_mod = {
 forts_of_the_imperium = {
   fort_maintenance_modifier = -0.75
 }
+
+reconquer_our_lands = {
+  global_missionary_strength = 0.03
+}
+
+skanderberg_legacy = {
+  leader_land_manuever = 1
+  leader_land_shock = 1
+  leader_land_fire = 1
+}

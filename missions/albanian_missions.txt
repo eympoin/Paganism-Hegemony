@@ -1,0 +1,159 @@
+Albania_1_1 = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = ALB
+      was_tag = ALB
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  control_of_durres = {
+    icon = mission_unite_home_region
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+
+    }
+    trigger = {
+      dip_power = 200
+      reverse_has_opinion = {
+      	who = BYZ
+      	value = 150
+      }
+    }
+    effect = {
+      #event march
+    }
+  }
+
+  on_the_border = {
+    icon = mission_unite_home_region
+    required_missions = {control_of_durres}
+    provinces_to_highlight = {
+      OR = {
+        area = rascia_area
+        area = pelagonia_area
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      rascia_area = {
+        type = all
+        owned_by = ROOT
+      }
+      pelagonia_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      #event religion autonomy
+      balkan_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  unite_illyrians = {
+    icon = mission_unite_home_region
+    required_missions = {on_the_border}
+    provinces_to_highlight = {
+      OR = {
+        region = balkan_region
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      balkan_region = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      add_country_modifier = {
+        name = reconquer_our_lands
+        duration = 7300
+      }
+      central_italy_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      apulia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+  to_italia = {
+    icon = mission_unite_home_region
+    required_missions = {unite_illyrians}
+    provinces_to_highlight = {
+      OR = {
+        area = central_italy_area
+        area = apulia_area
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      central_italy_area = {
+        type = all
+        owned_by = ROOT
+      }
+      apulia_area = {
+        type = all
+        owned_by = ROOT
+      }
+    }
+    effect = {
+      add_adm_power = 200
+      add_prestige = 20
+      add_treasury = 500
+    }
+  }
+
+}
+
+Albania_2_1 = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = ALB
+      was_tag = ALB
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  skanderberg_legacy = {
+    icon = mission_unite_home_region
+    required_missions = {}
+    position = 5
+    provinces_to_highlight = {
+    }
+    trigger = {
+      mil_power = 400
+    }
+    effect = {
+      add_mil_power = -400
+      offensive_ideas = 7
+      add_country_modifier = {
+        name = skanderberg_legacy
+        duration = -1
+      }
+    }
+  }
+
+}
