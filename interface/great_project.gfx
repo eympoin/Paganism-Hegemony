@@ -350,6 +350,10 @@ spriteTypes = {
 		name = "GFX_great_project_stone_of_scone"
 		texturefile = "gfx//interface//great_projects//great_project_stone_of_scone.dds"
 	}
+	spriteType = {
+		name = "GFX_great_project_budysin_gord"
+		texturefile = "gfx//interface//great_projects//great_project_budysin_gord.dds"
+	}
 
 
 ### CANALS ###

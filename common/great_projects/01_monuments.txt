@@ -251,17 +251,9 @@ stonehenge = {
 
 	#can we build it?
 	build_trigger = {
-		OR = {
-			AND = {
-				religion_group = pagan
-				has_owner_religion = yes
-			}
-			AND = {
-				culture = english
-				OR = {
-					has_owner_culture = yes
-					has_owner_accepted_culture = yes
-				}
+		owner = {
+			capital_scope = {
+				region = british_isles_region
 			}
 		}
 	}
@@ -278,34 +270,18 @@ stonehenge = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		OR = {
-			AND = {
-				religion_group = pagan
-				has_owner_religion = yes
-			}
-			AND = {
-				culture = english
-				OR = {
-					has_owner_culture = yes
-					has_owner_accepted_culture = yes
-				}
+		owner = {
+			capital_scope = {
+				region = british_isles_region
 			}
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		OR = {
-			AND = {
-				religion_group = pagan
-				has_owner_religion = yes
-			}
-			AND = {
-				culture = english
-				OR = {
-					has_owner_culture = yes
-					has_owner_accepted_culture = yes
-				}
+		owner = {
+			capital_scope = {
+				region = british_isles_region
 			}
 		}
 	}
@@ -466,21 +442,9 @@ tower_of_london = {
 
 	#can we build it?
 	build_trigger = {
-		OR = {
-			AND = {
-				culture = normand
-				OR = {
-					has_owner_culture = yes
-					has_owner_accepted_culture = yes
-				}
-			}
-			AND = {
-				culture = english
-				OR = {
-					has_owner_culture = yes
-					has_owner_accepted_culture = yes
-				}
-			}
+		culture_group = british
+		owner = {
+			culture_group = british
 		}
 	}
 
@@ -496,41 +460,17 @@ tower_of_london = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		OR = {
-			AND = {
-				culture = normand
-				OR = {
-					has_owner_culture = yes
-					has_owner_accepted_culture = yes
-				}
-			}
-			AND = {
-				culture = english
-				OR = {
-					has_owner_culture = yes
-					has_owner_accepted_culture = yes
-				}
-			}
+		culture_group = british
+		owner = {
+			culture_group = british
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		OR = {
-			AND = {
-				culture = normand
-				OR = {
-					has_owner_culture = yes
-					has_owner_accepted_culture = yes
-				}
-			}
-			AND = {
-				culture = english
-				OR = {
-					has_owner_culture = yes
-					has_owner_accepted_culture = yes
-				}
-			}
+		culture_group = british
+		owner = {
+			culture_group = british
 		}
 	}
 
@@ -3845,12 +3785,16 @@ alhambra = {
 	build_trigger = {
 		OR = {
 			AND = {
-				religion_group = muslim
-				has_owner_religion = yes
+				culture_group = maghrebi
+				owner = {
+					culture_group = maghrebi
+				}
 			}
 			AND = {
-				religion_group = christian
-				has_owner_religion = yes
+				culture_group = neo-roman
+				owner = {
+					culture_group = neo-roman
+				}
 			}
 		}
 	}
@@ -3869,12 +3813,16 @@ alhambra = {
 	can_use_modifiers_trigger = {
 		OR = {
 			AND = {
-				religion_group = muslim
-				has_owner_religion = yes
+				culture_group = maghrebi
+				owner = {
+					culture_group = maghrebi
+				}
 			}
 			AND = {
-				religion_group = christian
-				has_owner_religion = yes
+				culture_group = neo-roman
+				owner = {
+					culture_group = neo-roman
+				}
 			}
 		}
 	}
@@ -3883,12 +3831,16 @@ alhambra = {
 	can_upgrade_trigger = {
 		OR = {
 			AND = {
-				religion_group = muslim
-				has_owner_religion = yes
+				culture_group = maghrebi
+				owner = {
+					culture_group = maghrebi
+				}
 			}
 			AND = {
-				religion_group = christian
-				has_owner_religion = yes
+				culture_group = neo-roman
+				owner = {
+					culture_group = neo-roman
+				}
 			}
 		}
 	}
@@ -8109,9 +8061,8 @@ lighthouse_of_alexandria = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			naval_attrition = -0.2
+			naval_attrition = -0.1
 			naval_morale = 0.1
-			range = 0.25
 		}
 
 		#what effects happen when this tier is achieved
@@ -8142,8 +8093,8 @@ lighthouse_of_alexandria = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			naval_attrition = -0.2
-			naval_morale = 0.1
-			range = 0.5
+			naval_morale = 0.05
+			range = 0.2
 		}
 
 		#what effects happen when this tier is achieved
@@ -8165,7 +8116,6 @@ lighthouse_of_alexandria = {
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 			trade_value = 15
-			local_institution_spread = 0.2
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -8577,8 +8527,11 @@ hanging_gardens = {
 			AND = {
 				religion = mesopotamian
 				has_owner_religion = yes
-
 			}
+			OR = {
+				tag = ERM
+				was_tag = ERM
+				}
 		}
 	}
 
@@ -10707,7 +10660,7 @@ library_of_alexandria = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			technology_cost = -0.1
+			technology_cost = -0.05
 
 		}
 
@@ -10769,7 +10722,7 @@ library_of_alexandria = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			technology_cost = -0.15
+			technology_cost = -0.1
                                                         idea_cost = -0.1
                                                         global_institution_spread = 0.15
 		}
@@ -10906,7 +10859,7 @@ great_university_of_tolosa = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			technology_cost = -0.1
+			technology_cost = -0.05
 
 		}
 
@@ -10969,9 +10922,9 @@ great_university_of_tolosa = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			technology_cost = -0.15
-                                                        country_admin_power = 1
-                                                        global_institution_spread = 0.15
+			technology_cost = -0.1
+      country_admin_power = 1
+      global_institution_spread = 0.15
 		}
 
 		#what effects happen when this tier is achieved
@@ -12360,6 +12313,196 @@ stone_of_scone = {
 			legitimacy = 1
 			land_morale = 0.05
 			infantry_shock = 1
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+}
+
+budysin_gord = {
+	# province it starts in
+	start = 60
+
+	# date built in real life (so anything built during game time will be there if you start a game after that date)
+	date = 1444.01.01 #1545.01.01 #Date the silver mine started to be exploited
+
+	#time to build
+	time = {
+		months = 0
+	}
+
+	#how much to build one
+	build_cost = 0
+
+	#can we move it?
+	can_be_moved = yes
+
+	#time to move the project one unit of distance, in days
+	move_days_per_unit_distance = 1
+
+	#tier that the project starts at when first placed in the game (be that at game start or when built by a country as the game progresses)
+	starting_tier = 0
+
+	#project type
+	type = monument
+
+	#can we build it?
+	build_trigger = {
+		culture_group = east_slavic
+		owner = {
+			culture_group = east_slavic
+		}
+	}
+
+	#what to do when it's built
+	on_built = {
+	}
+
+	#what to do when it's destroyed
+	on_destroyed = {
+	}
+
+	#can our country use it?
+	can_use_modifiers_trigger = {
+		culture_group = east_slavic
+		owner = {
+			culture_group = east_slavic
+		}
+	}
+
+	#can our country upgrade it?
+	can_upgrade_trigger = {
+		culture_group = east_slavic
+		owner = {
+			culture_group = east_slavic
+		}
+	}
+
+	#can our country keep it or is it destroyed when we get hold of it?
+	keep_trigger = {
+	}
+
+	#tier data
+	tier_0 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 0
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 0
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+
+		}
+	}
+
+	tier_1 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 120
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 1000
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			local_defensiveness = 0.1
+			fort_level = 1
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			army_tradition = 0.5
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+
+	tier_2 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 240
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 2500
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			local_defensiveness = 0.1
+			fort_level = 1
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+		army_tradition = 1
+		global_institution_spread = 0.1
+		}
+
+		#what effects happen when this tier is achieved
+		on_upgraded = {
+		}
+	}
+
+	tier_3 = {
+		#time to upgrade to this level (0 for tier 0)
+		upgrade_time = {
+			months = 480
+		}
+
+		#cost to upgrade to this level (0 for tier 0)
+		cost_to_upgrade = {
+			factor = 5000
+		}
+
+		#what modifiers are added to the province when we have this project here on this tier
+		province_modifiers = {
+			local_defensiveness = 0.2
+			fort_level = 3
+		}
+
+		#what modifiers are added to the provinces in the map area when we have this project here on this tier
+		area_modifier = {
+		}
+
+		#what modifiers are added to the country when we have this project here on this tier
+		country_modifiers = {
+			army_tradition = 1
+			global_institution_spread = 0.2
 		}
 
 		#what effects happen when this tier is achieved
