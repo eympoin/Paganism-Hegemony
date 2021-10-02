@@ -86,16 +86,13 @@ country_event = { #integrate paphlagonia quicker
 	desc = flavor_pon.5.d
 	picture = HRE_eventPicture
 	fire_only_once = yes
-	trigger = {
-		is_year = 1449
-		tag = PON
-	}
+	is_triggered_only = yes
 
 
 	option = {
 		name = flavor_pon.5.a
 		ai_chance = { factor = 90 }
-		add_dip_power = -360
+		add_dip_power = -250
 		inherit = PPH
 	}
 

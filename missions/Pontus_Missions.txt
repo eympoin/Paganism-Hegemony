@@ -16,11 +16,11 @@ Pontus_1_1 = {
     provinces_to_highlight = {
         }
     trigger = {
-      adm_power = 100
+      adm_power = 300
       treasury = 100
     }
     effect = {
-      add_adm_power = -100
+      add_adm_power = -300
       add_treasury = -100
       add_country_modifier = {
         name = new_infrastructure
@@ -35,11 +35,11 @@ Pontus_1_1 = {
     provinces_to_highlight = {
         }
         trigger = {
-          mil_power = 100
+          mil_power = 300
           treasury = 100
         }
         effect = {
-          add_mil_power = -100
+          add_mil_power = -300
           add_treasury = -100
           add_country_modifier = {
             name = new_logistic
@@ -54,11 +54,11 @@ Pontus_1_1 = {
     provinces_to_highlight = {
         }
         trigger = {
-          dip_power = 100
+          dip_power = 300
           treasury = 100
         }
         effect = {
-          add_dip_power = -100
+          add_dip_power = -300
           add_treasury = -100
           add_country_modifier = {
             name = new_trade_infrastructure
@@ -73,10 +73,10 @@ Pontus_1_1 = {
     provinces_to_highlight = {
         }
         trigger = {
-          adm_power = 200
+          adm_power = 250
         }
         effect = {
-          add_dip_power = -200
+          add_dip_power = -250
           add_country_modifier = {
             name = new_trade_infrastructure
             duration = -1
@@ -185,29 +185,29 @@ Pontus_2_1 = {
     provinces_to_highlight = {
         }
     trigger = {
-      imperial_influence = 90
+      imperial_influence = 60
     }
     effect = {
     if = {
-      limit = { PHR = { is_subject = no} is_emperor = yes}
+      limit = { PHR = { is_subject = no exists = yes} is_emperor = yes}
       vassalize = PHR
-      add_imperial_influence = -30
+      add_imperial_influence = -20
     }
     else = {
       add_dip_power = 100
     }
     if = {
-      limit = { PSD = { is_subject = no} is_emperor = yes}
+      limit = { PSD = { is_subject = no exists = yes} is_emperor = yes}
       vassalize = PSD
-      add_imperial_influence = -30
+      add_imperial_influence = -20
     }
     else = {
       add_dip_power = 100
     }
     if = {
-      limit = { LYD = { is_subject = no} is_emperor = yes}
+      limit = { LYD = { is_subject = no exists = yes} is_emperor = yes}
       vassalize = LYD
-      add_imperial_influence = -30
+      add_imperial_influence = -20
     }
     else = {
       add_dip_power = 100
@@ -226,7 +226,7 @@ Pontus_2_1 = {
             type = all
             owned_by = ROOT
           }
-          imperial_influence = 90
+          imperial_influence = 60
         }
         effect = {
         if = {
@@ -361,7 +361,7 @@ Pontus_3_1 = {
     provinces_to_highlight = {
         }
         trigger = {
-          imperial_influence = 90
+          imperial_influence = 60
         }
         effect = {
         if = {
@@ -387,7 +387,7 @@ Pontus_3_1 = {
             type = all
             owned_by = ROOT
           }
-          imperial_influence = 90
+          imperial_influence = 60
         }
         effect = {
         if = {
@@ -412,7 +412,7 @@ Pontus_3_1 = {
             type = all
             owned_by = ROOT
           }
-          imperial_influence = 90
+          imperial_influence = 60
         }
         effect = {
         if = {

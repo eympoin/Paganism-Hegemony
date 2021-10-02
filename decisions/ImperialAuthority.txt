@@ -30,9 +30,17 @@ country_decisions = {
 		effect = {
 			add_imperial_influence = 20
 			set_global_flag = authority_restored_egy
-			add_country_modifier = {
-				name = authority_egypt
-				duration = -1
+			if = {
+				limit = {
+					any_province = {
+						region = egypt_region
+						is_part_of_hre = yes
+					}
+				}
+				add_country_modifier = {
+					name = authority_egypt
+					duration = -1
+				}
 			}
 	 }
 		ai_will_do = {

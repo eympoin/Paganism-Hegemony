@@ -245,10 +245,10 @@ west_attack_jrw = {
       NOT = { owned_by  = ROOT }
     }
     trigger = {
-    northern_morocco_area = {
-      type = all
-      owned_by = ROOT
-    }
+      northern_morocco_area = {
+        type = all
+        country_or_non_sovereign_subject_holds  = ROOT
+      }
     }
     effect = {
     add_years_of_income = 1
@@ -384,11 +384,11 @@ civil_war_consequences = {
     trigger = {
       djerba_area = {
         type = all
-        owned_by = ROOT
+        country_or_non_sovereign_subject_holds  = ROOT
       }
       tripolitania_area = {
         type = all
-        owned_by = ROOT
+        country_or_non_sovereign_subject_holds  = ROOT
       }
     }
     effect = {
@@ -493,15 +493,15 @@ east_attack_jrw = {
     trigger = {
       byzacena_area = {
         type = all
-        owned_by = ROOT
+        country_or_non_sovereign_subject_holds  = ROOT
       }
       tunisia_area = {
         type = all
-        owned_by = ROOT
+        country_or_non_sovereign_subject_holds  = ROOT
       }
       kabylia_area = {
         type = all
-        owned_by = ROOT
+        country_or_non_sovereign_subject_holds  = ROOT
       }
     }
     effect = {
