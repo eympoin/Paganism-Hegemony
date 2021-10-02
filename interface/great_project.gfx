@@ -338,6 +338,18 @@ spriteTypes = {
 		name = "GFX_great_project_great_university_of_tolosa"
 		texturefile = "gfx//interface//great_projects//great_project_great_university_of_tolosa.dds"
 	}
+	spriteType = {
+		name = "GFX_great_project_marib_dam"
+		texturefile = "gfx//interface//great_projects//great_project_marib_dam.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_hippodrom"
+		texturefile = "gfx//interface//great_projects//great_project_hippodrom.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_stone_of_scone"
+		texturefile = "gfx//interface//great_projects//great_project_stone_of_scone.dds"
+	}
 
 
 ### CANALS ###
