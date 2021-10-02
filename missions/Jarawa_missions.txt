@@ -359,7 +359,7 @@ civil_war_consequences = {
     provinces_to_highlight = {
     }
     trigger = {
-      is_year = 1445
+      is_year = 1446
       NOT = { has_disaster = civil_war}
     }
     effect = {
@@ -424,7 +424,7 @@ civil_war_consequences = {
       }
     }
     effect = {
-      add_accepted_culture = carthaginian
+      add_accepted_culture = african
       add_accepted_culture = tripolitan
       custom_tooltip = sponsor_roman_merchant_unlock_tooltip
     }
