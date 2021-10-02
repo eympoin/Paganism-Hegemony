@@ -574,7 +574,7 @@ northymbria_5 = {
           development = 18
           culture_group = neo-roman
         }
-        add_claim = ROOT
+        add_permanent_claim = ROOT
       }
     }
   }
