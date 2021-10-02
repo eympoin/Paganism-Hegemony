@@ -1,7 +1,7 @@
 #248 - Lothian + Fife + Sterling
 
-owner = PCT
-controller = PCT
+owner = SCO
+controller = SCO
 culture = scottish
 religion = celt
 hre = no
@@ -11,7 +11,7 @@ trade_goods = cloth
 base_manpower = 3
 capital = "Edinburgh"
 is_city = yes
-add_core = PCT
+add_core = SCO
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman

@@ -14,3 +14,9 @@ vassal = {
 }
 
 
+vassal = {
+	first = NRT
+	second = MTH
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
