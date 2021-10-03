@@ -354,6 +354,10 @@ spriteTypes = {
 		name = "GFX_great_project_budysin_gord"
 		texturefile = "gfx//interface//great_projects//great_project_budysin_gord.dds"
 	}
+	spriteType = {
+		name = "GFX_great_project_theodosian_walls"
+		texturefile = "gfx//interface//great_projects//great_project_theodosian_walls.dds"
+	}
 
 
 ### CANALS ###

@@ -49,6 +49,7 @@ country_event = {
 				is_core = ROOT
       }
       change_culture = albanian
+      change_religion = illyrian
     }
   }
 }
@@ -98,6 +99,7 @@ country_event = {
 				is_core = ROOT
       }
       change_culture = albanian
+      change_religion = illyrian
     }
   }
 }
