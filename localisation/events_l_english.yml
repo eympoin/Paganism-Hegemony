@@ -2170,3 +2170,7 @@ flavor_cro.3.d1:0 "He has accepted. We are now electors !"
 flavor_cro.3.d2:0 "He has refused...."
 flavor_cro.3.a:0 "Good news !"
 flavor_cro.3.b:0 "They will all pay..."
+
+flavor_alb.1.t:0 "Cultural Assimilation"
+flavor_alb.1.d:0 "The albanian influence other these lands has finally turned the inhabitants into true Albanians"
+flavor_alb.1.a:0 "This is a happy news."

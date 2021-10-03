@@ -10,27 +10,31 @@ Albania_1_1 = {
     NOT = { map_setup = map_setup_random }
   }
   control_of_durres = {
-    icon = mission_unite_home_region
+    icon = capture_adriatic_ports
     required_missions = {}
     position = 1
     provinces_to_highlight = {
-
+      province_id = 4174
+      NOT = {owned_by = ROOT}
     }
     trigger = {
-      dip_power = 200
-      reverse_has_opinion = {
-      	who = BYZ
-      	value = 150
+      4174 = {
+        owned_by = ROOT
       }
     }
     effect = {
-      #event march
+      set_capital = 4174
+      4174 = {
+        add_base_tax = 1
+        add_base_manpower = 1
+        add_base_production = 1
+      }
     }
   }
 
   on_the_border = {
-    icon = mission_unite_home_region
-    required_missions = {control_of_durres}
+    icon = pacify_the_albanian_lands
+    required_missions = {}
     provinces_to_highlight = {
       OR = {
         area = rascia_area
@@ -39,17 +43,17 @@ Albania_1_1 = {
       NOT = {owned_by = ROOT}
     }
     trigger = {
-      rascia_area = {
-        type = all
-        owned_by = ROOT
-      }
-      pelagonia_area = {
-        type = all
-        owned_by = ROOT
+    num_of_owned_provinces_with = {
+      value = 6
+      OR = {
+        area = rascia_area
+        area = pelagonia_area
+        }
       }
     }
     effect = {
-      #event religion autonomy
+      create_general = { tradition = 80 }
+      add_legitimacy = 10
       balkan_region = {
         limit = {
           NOT = { owned_by = ROOT }
@@ -98,7 +102,7 @@ Albania_1_1 = {
   }
 
   to_italia = {
-    icon = mission_unite_home_region
+    icon = dalmatian_conquest
     required_missions = {unite_illyrians}
     provinces_to_highlight = {
       OR = {
@@ -138,17 +142,17 @@ Albania_2_1 = {
     NOT = { map_setup = map_setup_random }
   }
   skanderberg_legacy = {
-    icon = mission_unite_home_region
+    icon = mission_protect_albania
     required_missions = {}
     position = 5
     provinces_to_highlight = {
     }
     trigger = {
       mil_power = 400
+      offensive_ideas = 7
     }
     effect = {
       add_mil_power = -400
-      offensive_ideas = 7
       add_country_modifier = {
         name = skanderberg_legacy
         duration = -1

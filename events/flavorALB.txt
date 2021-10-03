@@ -13,7 +13,6 @@ country_event = {
       was_tag = ALB
     }
     any_owned_province = {
-      has_owner_religion = yes
       OR = {
         culture = serbian
         culture = croatian
@@ -24,7 +23,7 @@ country_event = {
   }
 
   mean_time_to_happen = {
-    years = 2
+    years = 4
   }
 
   option = {#slavs
@@ -32,7 +31,6 @@ country_event = {
     ai_chance = { factor = 1 }
     trigger = {
       any_owned_province = {
-				has_owner_religion = yes
 				OR = {
 					culture = serbian
 					culture = croatian
@@ -43,7 +41,6 @@ country_event = {
     }
     random_owned_province = {
       limit = {
-				has_owner_religion = yes
 				OR = {
 					culture = serbian
 					culture = croatian
@@ -68,7 +65,6 @@ country_event = {
       was_tag = ALB
     }
     any_owned_province = {
-      has_owner_religion = yes
       OR = {
         culture = dalmatian
       }
@@ -78,7 +74,7 @@ country_event = {
   }
 
   mean_time_to_happen = {
-    years = 2
+    years = 5
   }
 
   option = {#dalmatians
@@ -86,7 +82,6 @@ country_event = {
     ai_chance = { factor = 1 }
     trigger = {
       any_owned_province = {
-				has_owner_religion = yes
 				OR = {
 					culture = dalmatian
 				}
@@ -96,7 +91,6 @@ country_event = {
     }
     random_owned_province = {
       limit = {
-				has_owner_religion = yes
 				OR = {
 					culture = dalmatian
 				}
