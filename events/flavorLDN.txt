@@ -456,10 +456,7 @@ country_event = {#Welsh/cornish/breton
       tag = BRN
       tag = LDN
     }
-    OR = {
-      has_country_modifier = ldn_coop_spq
-      has_country_modifier = ldn_vassal_spq
-    }
+    culture_group = neo-roman
     any_owned_province = {
       religion = deii
       OR = {
@@ -506,10 +503,7 @@ country_event = {#Scottish
       tag = BRN
       tag = LDN
     }
-    OR = {
-      has_country_modifier = ldn_coop_spq
-      has_country_modifier = ldn_vassal_spq
-    }
+    culture_group = neo-roman
     any_owned_province = {
       religion = deii
       OR = {
@@ -554,10 +548,7 @@ country_event = {#Irish
       tag = BRN
       tag = LDN
     }
-    OR = {
-      has_country_modifier = ldn_coop_spq
-      has_country_modifier = ldn_vassal_spq
-    }
+    culture_group = neo-roman
     any_owned_province = {
       religion = deii
       culture = irish
@@ -568,7 +559,7 @@ country_event = {#Irish
   }
 
   mean_time_to_happen = {
-    years = 10
+    years = 5
   }
 
   option = {
@@ -596,10 +587,7 @@ country_event = {#Northumbrian
       tag = BRN
       tag = LDN
     }
-    OR = {
-      has_country_modifier = ldn_coop_spq
-      has_country_modifier = ldn_vassal_spq
-    }
+    culture_group = neo-roman
     any_owned_province = {
       religion = deii
       culture = northymbrian
@@ -610,7 +598,7 @@ country_event = {#Northumbrian
   }
 
   mean_time_to_happen = {
-    years = 10
+    years = 5
   }
 
   option = {
@@ -638,10 +626,7 @@ country_event = {#Anglo-saxon
       tag = BRN
       tag = LDN
     }
-    OR = {
-      has_country_modifier = ldn_coop_spq
-      has_country_modifier = ldn_vassal_spq
-    }
+    culture_group = neo-roman
     any_owned_province = {
       religion = deii
       OR = {
@@ -655,7 +640,7 @@ country_event = {#Anglo-saxon
   }
 
   mean_time_to_happen = {
-    years = 10
+    years = 5
   }
 
   option = {

@@ -5985,3 +5985,55 @@ skanderberg_legacy = {
   leader_land_shock = 1
   leader_land_fire = 1
 }
+
+ottoman_rise = { cavalry_power = 0.05
+}
+
+
+ottoman_horse_archers = { cavalry_cost = -0.15
+                                                        cavalry_fire = 1
+}
+
+steppe_horses = {
+  movement_speed = 0.10
+}
+
+turkmens_raiding_technics = {
+  cavalry_power = 0.05
+}
+
+steppes_under_control = {
+  administrative_efficiency = 0.05
+  global_manpower_modifier = 0.10
+}
+
+multicultural_capital = {
+  culture_conversion_cost = -0.15
+}
+
+men_of_bayezid = {
+  infantry_power = 0.05
+}
+
+united_under_bayezid = {
+  num_accepted_cultures = 2
+}
+
+legacy_of_a_great_man = {
+    prestige = 1.0
+    diplomatic_reputation = 1
+}
+
+new_building_technics = {
+  development_cost = -0.05
+}
+
+ruling_a_steppe_empire = {
+  administrative_efficiency = 0.1
+}
+
+the_conquest_of_the_world = {
+  fire_damage = 0.10
+  governing_capacity = 500
+  global_unrest = -2
+}

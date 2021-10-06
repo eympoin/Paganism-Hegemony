@@ -1205,6 +1205,7 @@ Bulgaria_4_3 = {
         BYZ = {
           owns = 285
         }
+        BYZ = {player = no}
       }
       285 = {
         cede_province = ROOT
@@ -1215,6 +1216,7 @@ Bulgaria_4_3 = {
         BYZ = {
           owns = 2447
         }
+        BYZ = {player = no}
       }
       2447 = {
         cede_province = ROOT

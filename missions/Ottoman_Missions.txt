@@ -1,0 +1,633 @@
+##BranchStart 0
+ = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = TUR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	##
+
+}
+##BranchEnd 0
+##BranchStart 1
+ ottoman_missions_1 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = TUR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	##Mission Start
+	the_fight_for_our_lands = {
+		icon = mission_cossack_cavalry
+		required_missions ={
+			the_path_of_our_ancestors
+		}
+		position = 2
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+			num_of_cavalry = 20
+		}
+		effect = {
+			nogai_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim    = ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+lower_yik_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim    = ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_end_of_the_golden_horde = {
+		icon = mission_steppe_warriors
+		required_missions ={
+			the_fight_for_our_lands
+		}
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+          area = astrakhan_area
+          area = saratov_area
+        }
+        NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			total_development = 250
+      astrakhan_area = {
+        type = all
+        owned_by = ROOT
+      }
+saratov_area = {
+        type = all
+        owned_by = ROOT
+      }
+		}
+		effect = {
+      add_country_modifier = {
+        name = ottoman_rise
+        duration = -1
+      }
+		}
+	}
+	##Mission End
+	##Mission Start
+	reign_over_the_nomads = {
+		icon = mission_chinese_general_riding
+		required_missions ={
+			the_end_of_the_golden_horde
+		}
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+            area = kazan_area
+            area = volga_area
+            area =  samara_area
+        }
+        NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			kazan_area = {
+        type = all
+        owned_by = ROOT
+      }
+volga_area = {
+        type = all
+        owned_by = ROOT
+      }
+samara_area = {
+        type = all
+        owned_by = ROOT
+      }
+		}
+		effect = {
+    add_country_modifier = {
+      name = ottoman_horse_archers
+      duration = -1
+    }
+    kazakhstan_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim    = ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+		}
+	}
+	##Mission End
+	##Mission Start
+	attack_our_ancestrals_lands = {
+		icon = mission_non-western_cavalry_raid
+		required_missions ={
+			reign_over_the_nomads
+		}
+		position = 5
+		provinces_to_highlight = {
+      region = central_asia_region
+		}
+		trigger = {
+			central_asia_region = {
+        type = all
+        owned_by = ROOT
+      }
+		}
+		effect = {
+      add_country_modifier = {
+        name = steppe_horses
+        duration = -1
+      }
+		}
+	}
+	##Mission End
+	##Mission Start
+	our_turkmens_brothers = {
+		icon = mission_central_asian_city
+		required_missions ={
+			attack_our_ancestrals_lands
+		}
+		position = 6
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns_all_provinces = {
+	culture= turkmeni
+}
+		}
+		effect = {
+      add_country_modifier = {
+        name = turkmens_raiding_technics
+        duration = -1
+      }
+		}
+	}
+	##Mission End
+	##Mission Start
+	steppes_speak_turc = {
+		icon = mission_ottoman_harem
+		required_missions ={
+			our_turkmens_brothers
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			prestige = 90
+      legitimacy = 100
+      total_development = 1000
+		}
+		effect = {
+    add_country_modifier = {
+      name = steppes_under_control
+      duration = -1
+    }
+		}
+	}
+	##Mission End
+	##
+
+}
+##BranchEnd 1
+##BranchStart 2
+ottoman_missions_2 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = TUR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	##Mission Start
+	the_path_of_our_ancestors = {
+		icon = mission_build_up_to_force_limit
+		required_missions ={
+
+		}
+		position = 1
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			army_size_percentage = 1.0
+		}
+		effect = {
+			astrakhan_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim    = ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+			saratov_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim    = ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+		}
+	}
+	##Mission End
+	##Mission Start
+	our_ceasar = {
+		icon = mission_crusade_for_varna
+		required_missions ={
+			the_path_of_our_ancestors
+		}
+		position = 2
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			NOT= { is_year = 1550 }
+      total_development = 300
+		}
+		effect = {
+			define_heir = {
+    name= bayezid
+    dynasty = ROOT
+    age = 13
+    adm = 6
+    dip = 4
+    mil = 6
+    claim = 95
+    female = no
+    no_consort_with_heir = yes
+}
+		}
+	}
+	##Mission End
+	##Mission Start
+	build_a_glorious_capital = {
+		icon = mission_eastern_european_city
+		required_missions ={
+			our_ceasar
+		}
+		position = 3
+		provinces_to_highlight = {
+			province_id = 284
+		}
+		trigger = {
+			284= { development = 30 }
+		}
+		effect = {
+      add_country_modifier = {
+        name = multicultural_capital
+        duration = -1
+      }
+      dagestan_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim    = ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+		}
+	}
+	##Mission End
+	##Mission Start
+	bayezid_the_great = {
+		icon = mission_empire
+		required_missions ={
+			build_a_glorious_capital
+		}
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = shirvan_area
+				area = dagestan_area
+
+			}
+		}
+		trigger = {
+			dagestan_area = {
+        type = all
+        owned_by = ROOT
+      }
+      shirvan_area = {
+        type = all
+        owned_by = ROOT
+      }
+      has_ruler = bayezid
+		}
+		effect = {
+      add_country_modifier = {
+        name = men_of_bayezid
+        duration = -1
+      }
+      azerbaijan_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim    = ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_emperor_of_all_turks = {
+		icon = mission_monarch_in_throne_room
+		required_missions ={
+			bayezid_the_great
+		}
+		position = 5
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			owns_all_provinces = {
+	     culture= azerbaijani
+       }
+		}
+		effect = {
+      add_country_modifier = {
+        name = united_under_bayezid
+        duration = -1
+      }
+      add_dip_power = 200
+		}
+	}
+	##Mission End
+	##Mission Start
+	greatest_of_all_times = {
+		icon = mission_weather_the_troubles
+		required_missions ={
+			the_emperor_of_all_turks
+		}
+		position = 7
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			has_ruler = bayezid
+		}
+		effect = {
+      add_country_modifier = {
+        name = legacy_of_a_great_man
+        duration = -1
+      }
+		}
+	}
+	##Mission End
+	##
+
+}
+##BranchEnd 2
+##BranchStart 3
+ottoman_missions_3 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = TUR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	##Mission Start
+	the_fall_of_Kiev = {
+		icon = fight_bosnian_heresies
+		required_missions ={
+			the_path_of_our_ancestors
+		}
+		position = 2
+		provinces_to_highlight = {
+			province_id = 280
+      NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			owns= 280
+		}
+		effect = {
+      add_country_modifier = {
+        name = new_building_technics
+        duration = -1
+      }
+		}
+	}
+	##Mission End
+	##Mission Start
+	deal_with_the_greeks = {
+		icon = mission_unite_home_region
+		required_missions = {
+			the_fall_of_Kiev
+		}
+		position = 3
+		provinces_to_highlight = {
+				area = crimea_area
+        NOT = {owned_by = ROOT}
+		}
+		trigger = {
+			crimea_area = {
+        type = all
+        owned_by = ROOT
+      }
+		}
+		effect = {
+			285= {
+        add_center_of_trade_level = 1
+        }
+        every_province = {
+  				limit = {
+  					owned_by = ROOT
+  					area = crimea_area
+  				}
+  				change_religion = ROOT
+  			}
+
+		}
+	}
+	##Mission End
+	##Mission Start
+	our_hands_are_free = {
+		icon = mission_high_income
+		required_missions ={
+			deal_with_the_greeks
+		}
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+			   province_id = 285
+         province_id = 280
+			}
+      NOT = {owned_by = ROOT}
+		}
+		trigger = {
+			owns= 285
+      owns= 280
+      total_development = 400
+		}
+		effect = {
+			ruthenia_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim    = ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      russia_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim    = ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_ashes_of_the_rurikids = {
+		icon = mission_recruit_the_cossacks
+		required_missions ={
+			our_hands_are_free
+		}
+		position = 5
+		provinces_to_highlight = {
+				OR = {
+			      province_id = 285
+            province_id = 280
+            province_id = 310
+            province_id = 308
+			}
+      NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			   owns= 280
+         owns= 295
+         owns= 310
+         owns= 308
+		}
+		effect = {
+			add_accepted_culture = ruthenian
+      add_accepted_culture = ryazanian
+		}
+	}
+	##Mission End
+	##Mission Start
+	integrate_those_who_don't_move = {
+		icon = mission_rule_ruthenia
+		required_missions ={
+			the_ashes_of_the_rurikids
+		}
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				region = ruthenia_region
+
+
+			}
+		}
+		trigger = {
+			development_in_provinces = {
+        	value = 250
+        	region = ruthenia_region
+          }
+		}
+		effect = {
+      add_country_modifier = {
+        name = new_building_technics
+        duration = -1
+      }
+      poland_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim    = ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+		}
+	}
+	##Mission End
+	##Mission Start
+	our_natural_borders = {
+		icon = mission_advance_to_the_dnieper
+		required_missions ={
+			integrate_those_who_don't_move
+		}
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				region = poland_region
+
+
+			}
+		}
+		trigger = {
+			poland_region = {
+        type = all
+        owned_by = ROOT
+      }
+		}
+		effect = {
+      add_country_modifier = {
+        name = ruling_a_steppe_empire
+        duration = -1
+      }
+		}
+	}
+	##Mission End
+	##Mission Start
+	the_terror_of_the_west = {
+		icon = mission_break_the_tatar_yoke
+		required_missions ={
+			our_natural_borders
+                                                        greatest_of_all_times
+		}
+		position = 8
+		provinces_to_highlight = {
+			##PROVINCESHIGHLIGHTCODE
+		}
+		trigger = {
+			total_development = 1500
+      prestige = 90
+      legitimacy = 100
+      max_manpower = 1000
+		}
+		effect = {
+      add_country_modifier = {
+        name = the_conquest_of_the_world
+        duration = -1
+      }
+		}
+	}
+	##Mission End
+	##
+
+}
+##BranchEnd 3
+##BranchStart 4
+ = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = TUR
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	##
+
+}
+##BranchEnd 4
