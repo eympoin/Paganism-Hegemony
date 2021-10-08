@@ -69,20 +69,30 @@ country_decisions = {
 			OR = {
 				AND = {
 					exists = KOJ
+					NOT = {exists = PLS}
 				}
 				AND = {
 					NOT = {exists = KOJ}
-					NOT = {
-						any_province = {
-							religion = chalcedonian
-							is_part_of_hre = yes
-						}
-					}
+					adm_power = 400
 				}
 
 			}
 		}
 		effect = {
+			if= {
+				limit = {
+					NOT = {exists = KOJ}
+					adm_power = 400
+				}
+				add_adm_power = -400
+				every_province = {
+					limit = {
+						is_part_of_hre = yes
+						religion = chalcedonian
+					}
+					change_religion = theoi
+				}
+			}
 			add_imperial_influence = 20
 			set_global_flag = authority_restored_syr
 			add_country_modifier = {

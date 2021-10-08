@@ -404,7 +404,7 @@ civil_war_consequences = {
       culture_group = neo-roman
       region = maghreb_region
       OR = {
-        local_autonomy = 5
+        local_autonomy = 10
         nationalism = 1
         unrest = 1
         }

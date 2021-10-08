@@ -2951,3 +2951,29 @@ forts_of_the_imperium:0 "Forts of the Empire"
 reconquer_our_lands:0 "Reconquer our Lands"
 
 skanderberg_legacy:0 "Skanderberg's Legacy"
+
+
+ottoman_rise = { cavalry_power = 0.05
+}
+
+
+ottoman_horse_archers:0 "Ottoman Horse Archers"
+steppe_horses:0 "Steppe Horses"
+
+turkmens_raiding_technics :0 "Turkmens Raiding Techniques"
+
+steppes_under_control:0 "Control of the Steppes"
+
+multicultural_capital:0 "Multicultural Capital"
+
+men_of_bayezid:0 "Men of Bayezid"
+
+united_under_bayezid:0 "United under Bayezid"
+
+legacy_of_a_great_man:0 "Legacy of Bayezid"
+
+new_building_technics:0 "New Building Techniques"
+
+ruling_a_steppe_empire:0 "Ruling an Empire"
+
+the_conquest_of_the_world:0 "Conquest of the World"

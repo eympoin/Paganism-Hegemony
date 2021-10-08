@@ -358,7 +358,22 @@ spriteTypes = {
 		name = "GFX_great_project_theodosian_walls"
 		texturefile = "gfx//interface//great_projects//great_project_theodosian_walls.dds"
 	}
-
+	spriteType = {
+		name = "GFX_great_project_ninive_great_gates"
+		texturefile = "gfx//interface//great_projects//great_project_ninive_great_gates.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_persepolis_palace"
+		texturefile = "gfx//interface//great_projects//great_project_persepolis_palace.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_gengis_tomb"
+		texturefile = "gfx//interface//great_projects//great_project_gengis_tomb.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_fire_temple_of_yazd"
+		texturefile = "gfx//interface//great_projects//great_project_fire_temple_of_yazd.dds"
+	}
 
 ### CANALS ###
 
