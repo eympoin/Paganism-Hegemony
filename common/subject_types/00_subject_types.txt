@@ -856,7 +856,7 @@ roman_province_cen = {
 
 	base_liberty_desire = 0.0
 	liberty_desire_negative_prestige = 0.5
-	liberty_desire_development_ratio = 0.20
+	liberty_desire_development_ratio = 0.05
 	pays_overlord = 1.0									# 1.0 represents the amount payed by vassals
 	forcelimit_bonus = 2.0								# 1.0 represents bonus from having a vassal
 	forcelimit_to_overlord = 0.2						# Percent of subject FL to use as base for modifiers
