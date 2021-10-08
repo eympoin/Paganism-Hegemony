@@ -5990,8 +5990,9 @@ ottoman_rise = { cavalry_power = 0.05
 }
 
 
-ottoman_horse_archers = { cavalry_cost = -0.15
-                                                        cavalry_fire = 1
+ottoman_horse_archers = {
+  cavalry_cost = -0.15
+  cavalry_fire = 1
 }
 
 steppe_horses = {
