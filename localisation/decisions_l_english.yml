@@ -313,6 +313,9 @@ seleucid_nation_desc:0 "Since our ascendance on the throne of Syria, wa have alw
 numidian_protectorate_title:0 "Create a Numidian Protectorate"
 numidian_protectorate_desc:0 "We have conquered the desert land of inland Africa. Our advisors debate on whether we should keep it totally under our control and administration or create some kind of protectorate there"
 
+alba_nation_title:0 "Unite the Scots and Picts"
+alba_nation_desc:0 "We must unite to face the invaders !"
+
 #sclavenia
 restore_Alexander_empire_title:0 "Restore Alexander Empire"
 restore_Alexander_empire_desc:0 "What was may come again."

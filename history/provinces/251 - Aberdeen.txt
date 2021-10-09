@@ -2,7 +2,7 @@
 
 owner = PCT
 controller = PCT
-culture = scottish #Mix of Highland and Lowland Scotts 
+culture = highland_scottish #Mix of Highland and Lowland Scotts 
 religion = celt
 hre = no
 base_tax = 3

@@ -4174,7 +4174,45 @@ SCO_Ideas = {
 	}
 }
 
+ALL_Ideas = {
+	start = {
+		movement_speed = 0.15
+		land_forcelimit_modifier = 0.25
+	}
 
+	bonus = {
+		legitimacy = 1
+	}
+
+	trigger = {
+	OR = {
+		tag = ALL
+		}
+	}
+	free = yes
+
+	my_heart_highland = {
+		development_cost = -0.1
+	}
+	stomach_lowland = {
+		production_efficiency = 0.1
+	}
+	loyal_dead = {
+		global_missionary_strength = 0.02
+	}
+	stand_sure = {
+		 prestige = 1
+	}
+	alba_gu_brath = {
+		land_morale = 0.15
+	}
+	love_for_poet = {
+		shock_damage = 0.15
+	}
+	hast_ye_back = {
+		manpower_recovery_speed = 0.15
+	}
+}
 HUN_ideas = {
 	start = {
 		cavalry_power = 0.20

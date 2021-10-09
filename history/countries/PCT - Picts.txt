@@ -1,10 +1,9 @@
 government = monarchy
 add_government_reform = feudalism_reform
-primary_culture = scottish
-add_accepted_culture = highland_scottish
+primary_culture = highland_scottish
 religion = celt
 technology_group = western
-capital = 248 # Edinburgh
+capital = 251 # Edinburgh
 
 1423.2.20 = {
 	monarch = {

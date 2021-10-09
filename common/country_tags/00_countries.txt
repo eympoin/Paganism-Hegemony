@@ -93,7 +93,7 @@ BRN = "countries/Britannia.txt"
 PRI = "countries/Pritani.txt"
 BET = "countries/Bretland.txt"
 BRW = "countries/Brytenwalda.txt"
-
+ALL = "countries/Alba.txt"
 MAC = "countries/Macedonia.txt"
 EMA = "countries/Macedonian Expedition.txt"
 DRD = "countries/Dardania.txt"
