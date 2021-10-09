@@ -4513,6 +4513,7 @@
  ottoman_eastern_uhlanDESCR:0 "A light cavalry unit most often equipped with a lance, pistol or saber. The Uhlans tactical advantage laid in their agility and speed and they were often employed by various European armies"
  SHOGUN_DIPLOMACY:0 "Since you're the shogun you will take this action as a representative of §Y$EMPEROR$§! and the action will only influence the relation of §Y$EMPEROR$§!."
  Tag:0 "English"
+ CARPET_SIEGE_AREAS:0 "Areas to Carpet Siege"
  FE_PLAYERS:0 "Human Players"
  NOMAD_BUILDING_LEFT:0 "There are §Y$NUM$§W buildings left to raze until we can conquer it."
  UNIT_SPLIT_HALF:0 "§YSplit in Half§!"
