@@ -374,6 +374,11 @@ spriteTypes = {
 		name = "GFX_great_project_fire_temple_of_yazd"
 		texturefile = "gfx//interface//great_projects//great_project_fire_temple_of_yazd.dds"
 	}
+	spriteType = {
+		name = "GFX_great_project_norse_crusade_castle"
+		texturefile = "gfx//interface//great_projects//great_project_norse_crusade_castle.dds"
+	}
+
 
 ### CANALS ###
 
