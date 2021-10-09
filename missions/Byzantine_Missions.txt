@@ -86,10 +86,13 @@ Byzantium_2_1 = {
     }
     trigger = {
       is_year = 1510
-      OR = {
-        has_global_flag = accepted_slavs
-        NOT = {any_country = {has_country_flag = defy_the_emperor}}
-      }
+      custom_trigger_tooltip = {
+				tooltip = slavic_revolt_won_tlt
+        OR = {
+          has_global_flag = accepted_slavs
+          NOT = {any_country = {has_country_flag = defy_the_emperor}}
+        }
+			}
     }
     effect = {
       if = {
