@@ -515,6 +515,7 @@ country_event = {#WRM formation
         culture_group = neo-roman
         NOT = {tag = WRM}
         is_colonial_nation = no
+        is_subject = no
         OR = {
           capital_scope = {continent = europe }
           capital_scope = {region = maghreb_region }
