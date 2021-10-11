@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = cuicide_reform
 government_rank = 1
 technology_group = western
 primary_culture = irish
@@ -9,7 +9,7 @@ capital = 4380	# Donegal
 1439.1.1 = {
 	monarch = {
 		name = "Neachtan"
-		dynasty = "Ó Domhnaill"
+		dynasty = "ï¿½ Domhnaill"
 		adm = 3
 		dip = 3
 		mil = 2

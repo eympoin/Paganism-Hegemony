@@ -14,7 +14,7 @@ bookmark =
 	country = UEG
 	country = BUL
 	country = SER
-
+	country = TUR
 
 	easy_country = BYZ
 	easy_country = MAC
@@ -25,4 +25,5 @@ bookmark =
 	easy_country = PHO
 	easy_country = SER
 	easy_country = BUL
+	easy_country = TUR
 }
