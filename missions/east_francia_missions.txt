@@ -1117,17 +1117,10 @@ mongol_threat = {
 		}
 		trigger = {
 			OR = {
-					OR = {
 						has_won_war_against = {
 							who = SKH
 							max_years_since = 100
 						}
-						AND = {
-							NOT = {exists = SKH}
-							NOT = {exists = OKH}
-						}
-					}
-					OR = {
 						has_won_war_against = {
 							who = OKH
 							max_years_since = 100
@@ -1136,9 +1129,7 @@ mongol_threat = {
 							NOT = {exists = SKH}
 							NOT = {exists = OKH}
 						}
-					}
-			}
-
+				}
 		}
 
 		effect = {
