@@ -9,7 +9,7 @@
 
 neo-roman={
 	graphical_culture = westerngfx
-
+	#graphical_culture = southamericagfx
 	dynasty_names = { "Aelius" "Abronius" "Abudius" "Albinius" "Antonius" "Anneius" "Antius" "Aurelius" "Aurelianus" "Betucius" "Caecius" "Catienus" "Decimius" "Domitius"
 	"Flavius" "Gallius" "Julius" "Junius" "Livius" "Lucretius" "Marcius" "Marius" "Pompeius" "Lepidus" "Salvius" "Tarquinius" "Traianus" "Brutii" "Scipio" "Sylla" "Domitianus" "Diocletianus" "Herculius" "Velentinian"
 	}

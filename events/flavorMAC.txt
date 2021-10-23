@@ -661,7 +661,6 @@ country_event = {#culture choice
 			factor = 50
 		}
 		change_primary_culture = persian
-		add_stability = -2
 	}
 
 	option = {#hellenic
@@ -673,6 +672,10 @@ country_event = {#culture choice
 			name = mass_hellenization
 			duration = 7300
 		}
+		add_stability = -2
+
+		custom_tooltip = slow_hellenization
+
 		set_country_flag = east_hellenization
 	}
 }

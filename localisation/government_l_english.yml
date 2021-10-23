@@ -353,3 +353,5 @@
  NEEDS_REGULAR_ELECTIONS:0 "Ruler must not rule for life."
  athenian_republic_legacy:0 "Athenian Republic"
  athenian_republic_legacy_desc:0 "Athenian Republic"
+ seleucid_government:0 "Seleucid Government"
+ seleucid_government_desc:0 ""
