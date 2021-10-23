@@ -67,10 +67,6 @@ country_decisions = {
 				duration = 7300
 			}
 
-			361 = {
-				add_base_tax = 1
-				add_base_production = 1
-			}
 			set_country_flag = formed_seleucid_flag
 		}
 		ai_will_do = {

@@ -468,7 +468,7 @@ country_event = {
 
 			add_country_modifier = {
 				name = great_expedition
-				duration = 36500
+				duration = 10950
 			}
 			EMA = {set_country_flag = great_expedition_flag}
 		}
@@ -661,7 +661,6 @@ country_event = {#culture choice
 			factor = 50
 		}
 		change_primary_culture = persian
-		add_stability = -2
 	}
 
 	option = {#hellenic
@@ -673,6 +672,10 @@ country_event = {#culture choice
 			name = mass_hellenization
 			duration = 7300
 		}
+		add_stability = -2
+
+		custom_tooltip = slow_hellenization
+
 		set_country_flag = east_hellenization
 	}
 }
@@ -1436,7 +1439,7 @@ country_event = {#time to go home
 		}
 		declare_war_with_cb = {
 				who = MAC
-				casus_belli = cb_annex
+				casus_belli = cb_vassalize_mission
 		}
 		set_country_flag = war_for_throne_mac
 	}

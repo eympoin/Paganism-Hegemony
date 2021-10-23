@@ -530,10 +530,16 @@ country_event = {
 		}
 		OR = {
 			BYZ = {
-				war_score = 50
+				war_score_against = {
+					who = UEG
+					value = 50
+				}
 			}
 			LEG = {
-				war_score = 50
+				war_score_against = {
+					who = LEG
+					value = 50
+				}
 			}
 		}
 	}
@@ -732,7 +738,10 @@ country_event = {
 	trigger = {
 		tag = UEG
 		war_with = BYZ
-		war_score = 40
+		war_score_against = {
+			who = BYZ
+			value = 40
+		}
 	}
 	mean_time_to_happen = {
 		months = 1

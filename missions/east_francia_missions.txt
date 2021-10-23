@@ -326,7 +326,7 @@ BAV_2 = {
 			add_mil_power = 100
 			add_country_modifier = {
 				name = eaf_king
-				duration = -1
+				duration = 7300
 			}
 		}
 	}
@@ -572,17 +572,17 @@ East_francia = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = FKN
-			tag = ALM
-			tag = BAV
-			AND = {
-				OR = {
-					tag = FRK
-					tag = EAF
+			OR = {
+				tag = FKN
+				tag = EAF
+				tag = ALM
+				tag = BAV
+				AND = {
+					OR = {
+						tag = FRK
+					}
+					was_tag = EAF
 				}
-				was_tag = FKN
-			}
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -946,7 +946,7 @@ East_francia_invade_wfr = {
 
 		add_country_modifier = {
 			name = the_only_king
-			duration = -1
+			duration = 7300
 		}
 			add_country_modifier = {
 				name = imperial_ambition
@@ -1116,27 +1116,38 @@ mongol_threat = {
 
 		}
 		trigger = {
-		army_strength = {
-			who = OKH
-			value = 2
-		}
-		army_strength = {
-			who = SKH
-			value = 2
-		}
+			OR = {
+						has_won_war_against = {
+							who = SKH
+							max_years_since = 100
+						}
+						has_won_war_against = {
+							who = OKH
+							max_years_since = 100
+						}
+						AND = {
+							NOT = {exists = SKH}
+							NOT = {exists = OKH}
+						}
+				}
 		}
 
 		effect = {
-		add_casus_belli = {
-			target = BOH
-			type = cb_vassalize_mission
-			months = 120
-		}
-		add_casus_belli = {
-			target = MVA
-			type = cb_vassalize_mission
-			months = 120
-		}
+			add_casus_belli = {
+				target = BOH
+				type = cb_vassalize_mission
+				months = 120
+			}
+			add_casus_belli = {
+				target = MVA
+				type = cb_vassalize_mission
+				months = 120
+			}
+			add_casus_belli = {
+				target = AVR
+				type = cb_vassalize_mission
+				months = 120
+			}
 		}
 	}
 

@@ -2953,8 +2953,7 @@ reconquer_our_lands:0 "Reconquer our Lands"
 skanderberg_legacy:0 "Skanderberg's Legacy"
 
 
-ottoman_rise :0 "Rise of the Ottomans"
-
+ottoman_rise:0 "Rise of the Ottomans"
 
 ottoman_horse_archers:0 "Ottoman Horse Archers"
 steppe_horses:0 "Steppe Horses"

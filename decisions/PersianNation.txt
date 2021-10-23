@@ -22,6 +22,7 @@ country_decisions = {
 			NOT = { tag = TUR }
 			NOT = { tag = BYZ }
 			NOT = { tag = ARB }
+			NOT = { tag = EMA }
 			OR = {
 				culture_group = iranian
 				primary_culture = azerbaijani

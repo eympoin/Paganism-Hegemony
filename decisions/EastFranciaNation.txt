@@ -11,6 +11,7 @@ country_decisions = {
 			}
 			NOT = { tag = FRK }
 			NOT = { tag = SAX }
+			NOT = { tag = EAF }
 			OR = {
 				ai = no
 				NOT = { exists = EAF }
@@ -68,10 +69,6 @@ country_decisions = {
 			owns_or_non_sovereign_subject_of = 65
 			owns_or_non_sovereign_subject_of = 4712
 			owns_or_non_sovereign_subject_of = 64
-			westphalia_area = {
-				type = all
-				owned_by = ROOT
-			}
 			82 = {
 				owned_by = ROOT
 			}
@@ -120,18 +117,6 @@ country_decisions = {
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300
-			}
-			south_german_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = EAF
-			}
-			north_german_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = EAF
 			}
 			add_prestige = 25
 			if = {

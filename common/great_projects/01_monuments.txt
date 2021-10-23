@@ -8516,8 +8516,8 @@ hanging_gardens = {
 				religion = mesopotamian
 				has_owner_religion = yes
 			}
-			OR = {
-				owner = {
+			owner = {
+				OR = {
 					tag = EMA
 					was_tag = EMA
 					}
@@ -8551,8 +8551,8 @@ hanging_gardens = {
 				religion = mesopotamian
 				has_owner_religion = yes
 			}
-			OR = {
-				owner = {
+			owner = {
+				OR = {
 					tag = EMA
 					was_tag = EMA
 					}
@@ -8567,8 +8567,8 @@ hanging_gardens = {
 				religion = mesopotamian
 				has_owner_religion = yes
 			}
-			OR = {
-				owner = {
+			owner = {
+				OR = {
 					tag = EMA
 					was_tag = EMA
 					}

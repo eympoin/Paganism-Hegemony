@@ -351,6 +351,7 @@
  mechanic_has_term_election_yes:0 ""
  mechanic_has_term_election_no:0 ""
  NEEDS_REGULAR_ELECTIONS:0 "Ruler must not rule for life."
+
  athenian_republic_legacy:0 "Athenian's Republic"
  athenian_republic_legacy_desc:0 ""
  athenian_republic:0 "Athenian's Republic"
@@ -370,3 +371,6 @@
  indep_cuicide_legacy_desc:0 ""
  indep_cuicide:0 "Independent Cóicide"
  indep_cuicide_desc:0 ""
+
+ seleucid_government:0 "Seleucid Government"
+ seleucid_government_desc:0 ""

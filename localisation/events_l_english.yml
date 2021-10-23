@@ -1624,7 +1624,7 @@ flavor_mac.14.t:0 "Cultural Matter"
 flavor_mac.14.d:0 "We did it... Most of Persia is under our control! Now it is time to decide what culture is the most appropriate for our empire. We could integrate the Persian elites, and eventually, reform Persia under our rule, but that will definitely anger our current elites and armies, who worked and fought for the restoration of Alexander's empire. That is why we could just keep our culture like it is, but that will definitely anger the Persian population. Therefore, we must pick our culture carefully."
 flavor_mac.14.a:0 "Integrate the Persian elites in our Empire."
 flavor_mac.14.b:0 "We will remain Greek !"
-
+slow_hellenization:0 "Your rule over the provinces will slowly hellenize the provinces"
 
 flavor_mac.15.t:0 "The Great Macedonian Expedition"
 flavor_mac.15.d:0 "Our diplomats have received news from Greece. The heir of Macedonia has gathered an expedition to invade Persia, much like Alexander a millenium ago. Our advisors suggested us to propose an alliance against Persia, but if we do, we might have to cede some territories to them, which is why some suggested to ask a heavy concession to the Macedonians. Whatever we choose, we must pick carefully."

@@ -13,7 +13,10 @@ country_decisions = {
 			NOT = { tag = WRM }
 			NOT = { tag = PAP }
 
-			culture_group = byzantine
+			OR = {
+				culture_group = byzantine
+				tag = EMA
+			}
 
 			is_colonial_nation = no
 			OR = {
