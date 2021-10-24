@@ -6016,3 +6016,7 @@ the_conquest_of_the_world = {
   governing_capacity = 500
   global_unrest = -2
 }
+
+disputed_high_king = {
+  reduced_liberty_desire = -15	
+}

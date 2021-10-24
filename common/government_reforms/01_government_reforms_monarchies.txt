@@ -1803,7 +1803,7 @@ aristocratic_court_reform = {
 
 states_general_reform = {
 	icon = "states_general"
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
 	potential = {
 		is_revolutionary = no
 	}

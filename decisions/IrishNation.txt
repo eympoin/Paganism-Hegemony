@@ -140,7 +140,7 @@ country_decisions = {
 			NOT = { tag = IRE }
 			NOT = { has_country_flag = formed_ireland_flag }
 			was_never_end_game_tag_trigger = yes
-			NOT = { has_reform = rioghacht }
+			NOT = { has_reform = rioghacht_reform }
 			NOT = { has_reform = celestial_empire }
 			culture = irish
 		}

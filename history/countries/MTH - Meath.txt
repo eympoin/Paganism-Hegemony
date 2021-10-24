@@ -18,3 +18,7 @@ capital = 373	# Dublin
 	add_ruler_personality = bold_fighter_personality
 	add_ruler_personality = naive_personality
 }
+add_country_modifier = {
+	name = disputed_high_king
+	duration = -1
+}
