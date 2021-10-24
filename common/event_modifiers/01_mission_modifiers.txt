@@ -6018,5 +6018,16 @@ the_conquest_of_the_world = {
 }
 
 disputed_high_king = {
-  reduced_liberty_desire = -15	
+  reduced_liberty_desire = -20
+}
+
+ireland_megapole = {
+  local_tax_modifier = 0.1
+  trade_goods_size_modifier = 0.25
+}
+
+disunited_clergy = {
+  global_missionary_strength = -0.02
+  church_influence_modifier = -0.3
+  tolerance_own = -2	
 }

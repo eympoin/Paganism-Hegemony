@@ -7,7 +7,7 @@ religion = celt
 capital = 4119	# Sligo
 
 # Estimated birth and death dates.
-
+add_truce_with = MTH	
 1444.1.1 = {
 	monarch = {
 		name = "Toirdhealbhach"

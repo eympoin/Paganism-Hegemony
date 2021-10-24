@@ -7,7 +7,7 @@ religion = celt
 capital = 372	# Carrickfergus
 
 
-
+add_truce_with = MTH	
 1432.1.1 = {
 	monarch = {
 		name = "Eoghan II"

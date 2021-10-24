@@ -6,7 +6,7 @@ primary_culture = irish
 religion = celt
 capital = 373	# Dublin
 
-1417.1.1 = {
+1444.1.1 = {
 	monarch = {
 		name = "Conall"
 		dynasty = "Mac Carthaigh"

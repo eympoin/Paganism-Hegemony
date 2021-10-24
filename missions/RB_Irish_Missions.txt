@@ -32,6 +32,28 @@ ire_main = {
 		}
 		effect = {
 			remove_country_modifier = disputed_high_king
+			if = {
+				limit = {
+					has_ruler = "Conall"
+				}
+				change_adm = 2
+				change_dip = 3
+				change_mil = 4
+			}
+			subarctic_islands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kingdom_of_the_isles_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	unite_the_clans = {
@@ -40,42 +62,140 @@ ire_main = {
 		provinces_to_highlight = {
 		}
 		trigger = {
-
+			tag = IRE
 		}
 		effect = {
+			add_prestige = 10
+			add_legitimacy = 10
+			#remove_privilege
+			#add_privilege
+			change_estate_land_share = {
+					estate = estate_nobles
+					share = -20
+			}
 		}
 	}
-	reduce_clans_influence = {
+	create_a_clergy = {
 		icon = mission_rb_conquer_ulster
 		required_missions = {unite_the_clans }
 		provinces_to_highlight = {
 		}
 		trigger = {
-
+			capital_scope = {
+				has_building = temple
+			}
+			373 = {
+				has_great_project = {
+					type = lia_fail
+					tier = 2
+				}
+			}
 		}
 		effect = {
+			remove_country_modifier = disunited_clergy
+			change_estate_land_share = {
+					estate = estate_church
+					share = 5
+			}
+			add_estate_loyalty = {
+			    estate = estate_church
+			    loyalty = 20
+			}
 		}
 	}
 	develop_economy = {
 		icon = mission_rb_conquer_ulster
-		required_missions = {reduce_clans_influence }
+		required_missions = {create_a_clergy }
 		provinces_to_highlight = {
+			OR = {
+				area = ulster_area
+				area = leinster_area
+				area = connacht_area
+				area = munster_area
+			}
+			NOT = {development = 10}
 		}
 		trigger = {
-
+			ulster_area = {
+				type = all
+				development = 10
+			}
+			leinster_area = {
+				type = all
+				development = 10
+			}
+			connacht_area = {
+				type = all
+				development = 10
+			}
+			munster_area = {
+				type = all
+				development = 10
+			}
 		}
 		effect = {
+			372 = {
+				change_trade_goods = cloth
+			}
+			373 = {
+				change_trade_goods = cloth
+			}
+			374 = {
+				change_trade_goods = cloth
+			}
+			4377 = {
+				change_trade_goods = copper
+			}
+			4119 = {
+				change_trade_goods = iron
+			}
 		}
 	}
 	improve_land = {
 		icon = mission_rb_conquer_ulster
-		required_missions = {develop_economy }
+		required_missions = { develop_economy }
 		provinces_to_highlight = {
+			OR = {
+				area = ulster_area
+				area = leinster_area
+				area = connacht_area
+				area = munster_area
+			}
+			NOT = {development = 20}
 		}
 		trigger = {
-
+			ulster_area = {
+				type = all
+				development = 20
+			}
+			leinster_area = {
+				type = all
+				development = 20
+			}
+			connacht_area = {
+				type = all
+				development = 20
+			}
+			munster_area = {
+				type = all
+				development = 20
+			}
 		}
 		effect = {
+			every_province = {
+				limit = {
+					OR = {
+						area = ulster_area
+						area = leinster_area
+						area = connacht_area
+						area = munster_area
+					}
+				}
+				add_province_modifier = {
+					name = ireland_megapole
+					duration = -1
+				}
+			}
 		}
 	}
 }
@@ -111,9 +231,15 @@ ire_main_conquest = {
 		provinces_to_highlight = {
 		}
 		trigger = {
-
+			has_institution = feudalism
 		}
 		effect = {
+			capital_scope = {
+				add_institution_embracement = {
+					which = renaissance
+					value = 75
+				}
+			}
 		}
 	}
 	protect_celts_brethren = {
@@ -122,42 +248,104 @@ ire_main_conquest = {
 		provinces_to_highlight = {
 		}
 		trigger = {
-
+			has_won_war_against = {
+				who = NRT
+				max_years_since = 100
+			}
 		}
 		effect = {
+			#vassalization wales
 		}
 	}
 	unite_celts = {
 		icon = mission_rb_conquer_ulster
 		required_missions = {protect_celts_brethren }
 		provinces_to_highlight = {
+			region = british_isles_region
+			religion = celt
+			NOT = {owned_by = ROOT}
 		}
 		trigger = {
-
+			NOT = {
+				any_province = {
+						region = british_isles_region
+						religion = celt
+						NOT = {owned_by = ROOT}
+				}
+			}
 		}
 		effect = {
+			#unlock cultural conversion
+			brittany_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			asturias_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	lost_celts = {
 		icon = mission_rb_conquer_ulster
 		required_missions = {unite_celts }
 		provinces_to_highlight = {
+			religion = celt
+			NOT = {owned_by = ROOT}
 		}
 		trigger = {
-
+			NOT = {
+				any_province = {
+						religion = celt
+						NOT = {owned_by = ROOT}
+				}
+			}
 		}
 		effect = {
+			france_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			iberia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	athghabhail_gallia = {
 		icon = mission_rb_conquer_ulster
 		required_missions = {lost_celts }
 		provinces_to_highlight = {
+			region = france_region
+			NOT = {owned_by = ROOT}
 		}
 		trigger = {
-
+			france_region = {
+				type = all
+				owned_by = ROOT
+			}
 		}
 		effect = {
+			#cultural conversion
+			south_german_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
@@ -165,11 +353,41 @@ ire_main_conquest = {
 		icon = mission_rb_conquer_ulster
 		required_missions = {athghabhail_gallia athghabhail_hispania }
 		provinces_to_highlight = {
+			OR = {
+				region = france_region
+				region = iberia_region
+				region = british_isles_region
+			}
+			NOT = {religion = celt}
 		}
 		trigger = {
-
+			NOT = {
+				any_province = {
+					OR = {
+						region = france_region
+						region = iberia_region
+						region = british_isles_region
+					}
+					NOT = {religion = celt}
+				}
+			}
 		}
 		effect = {
+
+			carpathia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			balkan_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 }
@@ -230,21 +448,41 @@ ire_second_conquest = {
 		provinces_to_highlight = {
 		}
 		trigger = {
-
+			num_of_heavy_ship = 20
+			navy_size = 75
 		}
 		effect = {
+			create_admiral = { tradition = 100 }	
+			every_province = {
+			 limit = {
+				 OR = {
+					 area = ulster_area
+					 area = leinster_area
+					 area = connacht_area
+					 area = munster_area
+				 }
+				 has_terrain = forest
+			 }
+			 add_province_modifier = new_farmlands
+			}
 		}
 	}
 	athghabhail_hispania = {
 		icon = mission_rb_conquer_ulster
 		position = 6
-		required_missions = {lost_celts }
+		required_missions = { lost_celts }
 		provinces_to_highlight = {
+			region = iberia_region
+			NOT = {owned_by = ROOT}
 		}
 		trigger = {
-
+			iberia_region = {
+				type = all
+				owned_by = ROOT
+			}
 		}
 		effect = {
+			#cultural conversion
 		}
 	}
 

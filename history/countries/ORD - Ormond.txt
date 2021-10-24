@@ -7,7 +7,7 @@ religion = celt
 capital = 4377	# Ormond
 
 
-
+add_truce_with = MTH	
 1420.11.24 = {
 	heir = {
 		name = "James"

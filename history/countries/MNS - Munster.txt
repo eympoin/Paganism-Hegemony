@@ -9,7 +9,7 @@ capital = 375	# Cork
 # Kings of Thomond
 
 
-
+add_truce_with = MTH	
 1444.1.1 = {
 	monarch = {
 		name = "Turlough IV"

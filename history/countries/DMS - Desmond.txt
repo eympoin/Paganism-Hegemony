@@ -8,7 +8,7 @@ capital = 4118	# Cork
 
 # Earls of Desmond
 
-
+add_truce_with = MTH	
 1430.1.1 = {
 	heir = {
 		name = "Thomas"
