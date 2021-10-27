@@ -361,15 +361,17 @@ ire_main_conquest = {
 			NOT = {religion = celt}
 		}
 		trigger = {
-			NOT = {
-				any_province = {
-					OR = {
-						region = france_region
-						region = iberia_region
-						region = british_isles_region
-					}
-					NOT = {religion = celt}
-				}
+			france_region = {
+				type = all
+				religion = celt
+			}
+			iberia_region = {
+				type = all
+				religion = celt
+			}
+			british_isles_region = {
+				type = all
+				religion = celt
 			}
 		}
 		effect = {
@@ -452,7 +454,7 @@ ire_second_conquest = {
 			navy_size = 75
 		}
 		effect = {
-			create_admiral = { tradition = 100 }	
+			create_admiral = { tradition = 100 }
 			every_province = {
 			 limit = {
 				 OR = {
@@ -463,7 +465,10 @@ ire_second_conquest = {
 				 }
 				 has_terrain = forest
 			 }
-			 add_province_modifier = new_farmlands
+			 add_province_modifier = {
+			 		name = new_farmlands
+					duration = -1
+				}
 			}
 		}
 	}
