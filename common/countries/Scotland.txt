@@ -52,17 +52,10 @@ leader_names = {
 	Playfair Paterson
 	Raeburn Randolph Ruthven
 	Selkirk Strathbogie Sinclair Stewart Seton
-	Wilkie Wishart Wemyss	
+	Wilkie Wishart Wemyss
 }
 
 monarch_names = {
-	"James #0" = 120
-	"Robert #2" = 20
-	"Henry #0" = 20
-	"Alexander #3" = 10
-	"Arthur #0" = 10
-	"Walter #0" = 10
-	"John #1" = 5
 	"Charles #0" = 5
 	"Malcolm #4" = 1
 	"Donald #3" = 1
@@ -76,26 +69,26 @@ monarch_names = {
 	"Beathan #0" = 0
 	"Bruce #0" = 0
 	"Cameron #0" = 0
-	"Cináed #0" = 0
-	"Conall #0" = 0
-	"Douglas #0" = 0
-	"Duff #0" = 0
-	"Edan #0" = 0
-	"Evander #0" = 0
-	"Fraser #0" = 0
-	"Garry #0" = 0
-	"Glen #0" = 0
-	"Ian #0" = 0
-	"Keir #0" = 0
-	"Kennedy #0" = 0
-	"Lennox #0" = 0
-	"Logan #0" = 0
+	"Cinï¿½ed #0" = 0
+	"Conall #0" = 10
+	"Douglas #0" = 10
+	"Duff #0" = 10
+	"Edan #0" = 10
+	"Evander #0" = 10
+	"Fraser #0" = 10
+	"Garry #0" = 10
+	"Glen #0" = 10
+	"Ian #0" = 10
+	"Keir #0" = 10
+	"Kennedy #0" = 10
+	"Lennox #0" = 10
+	"Logan #0" = 10
 	"Micheil #0" = 0
 	"Mungo #0" = 0
-	"Munroe #0" = 0
-	"Scott #0" = 0
-	"Wallace #0" = 0
-	"Mary #0" = -10
+	"Munroe #0" = 10
+	"Scott #0" = 10
+	"Wallace #0" = 10
+	"Mary #0" = 0
 	"Elizabeth #0" = -1
 	"Margaret  #0" = -1
 	"Euphemia #0" = -1
