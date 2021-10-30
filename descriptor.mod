@@ -1,4 +1,4 @@
-version="0.9"
+version="0.9.1"
 tags={
 	"Alternative History"
 	"Events"
@@ -8,6 +8,6 @@ tags={
 	"Trade"
 }
 picture="thumbnail.png"
-name="Paganism Hegemony v0.9: A broken Empire"
+name="Paganism Hegemony v0.9.1: The Rise of Bayezid"
 supported_version="1.31.6"
 remote_file_id="2017988677"

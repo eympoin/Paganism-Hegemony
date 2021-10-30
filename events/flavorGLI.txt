@@ -99,6 +99,7 @@ country_event = {#franks
         culture = lingerian
         culture = salian
         culture = rhenan
+				culture = occitan
       }
       NOT = { culture_group = britannian_group }
       NOT = { nationalism	= 1 }
@@ -120,6 +121,7 @@ country_event = {#franks
           culture = lingerian
           culture = salian
           culture = rhenan
+					culture = occitan
         }
         NOT = { nationalism	= 1 }
         is_core = ROOT

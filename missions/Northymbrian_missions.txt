@@ -414,7 +414,6 @@ northymbria_4 = {
       NOT = { is_core = ROOT }
     }
     trigger = {
-      owns = 1284
       owns = 370
       owns = 371
     }
