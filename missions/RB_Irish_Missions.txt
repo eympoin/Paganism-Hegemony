@@ -523,11 +523,28 @@ ire_second_colonization = {
 		position = 2
 		required_missions = { fight_off_norse }
 		provinces_to_highlight = {
+			OR = {
+				area = kingdom_of_the_isles_area
+				area = subarctic_islands_area
+			}
+			NOT = {owned_by = ROOT}
 		}
 		trigger = {
-
+			kingdom_of_the_isles_area = {
+				type = all
+				owned_by = ROOT
+			}
+			subarctic_islands_area = {
+				type = all
+				owned_by = ROOT
+			}
 		}
 		effect = {
+			create_explorer = { tradition = 80 }
+			add_country_modifier = {
+				name = to_the_ocean
+				duration = 7300
+			}
 		}
 	}
 	to_the_new_world = {
@@ -536,9 +553,18 @@ ire_second_colonization = {
 		provinces_to_highlight = {
 		}
 		trigger = {
-
+			has_idea_group = exploration_ideas
+			has_idea = quest_for_the_new_world
+			colonial_canada = {
+				has_discovered = ROOT
+			}
 		}
 		effect = {
+			add_country_modifier = {
+				name = "colonial_enthusiasm"
+				duration = 7300
+			}
+			#event
 		}
 	}
 
@@ -546,11 +572,20 @@ ire_second_colonization = {
 		icon = mission_rb_conquer_ulster
 		required_missions = {to_the_new_world }
 		provinces_to_highlight = {
+			colonial_region = colonial_canada
+			NOT = {country_or_non_sovereign_subject_holds = ROOT}
 		}
 		trigger = {
-
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				colonial_region = colonial_canada
+			}
 		}
 		effect = {
+			add_country_modifier = {
+				name = american_focus
+				duration = 36500
+			}
 		}
 	}
 
@@ -560,9 +595,25 @@ ire_second_colonization = {
 		provinces_to_highlight = {
 		}
 		trigger = {
-
+			navy_size = 300
 		}
 		effect = {
+			980 = {
+				add_trade_modifier = {
+						who = ROOT
+						duration = -1
+						power = 50
+						key = CONTROL_OF_THE_NORTH_ATLANTIC
+				}
+			}
+			968 = {
+				add_trade_modifier = {
+						who = ROOT
+						duration = -1
+						power = 50
+						key = CONTROL_OF_THE_NORTH_ATLANTIC
+				}
+			}
 		}
 	}
 
@@ -598,22 +649,36 @@ ire_second_colonization = {
 		position = 4
 		required_missions = { to_the_new_world }
 		provinces_to_highlight = {
+		province_id = 835
+		NOT = {country_or_non_sovereign_subject_holds = ROOT}
 		}
 		trigger = {
-
+			835 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 		}
 		effect = {
+			peru_region = {
+				discover_country = FRA
+			}
 		}
 	}
 	land_of_the_potato = {
 		icon = mission_rb_conquer_ulster
 		required_missions = { road_to_riches }
 		provinces_to_highlight = {
+			trade_goods = grain
+			region = peru_region
+			NOT = {owned_by = root}
 		}
 		trigger = {
-
+			any_owned_province = {
+				trade_goods = grain
+				region = peru_region
+			}
 		}
 		effect = {
+		#potato event
 		}
 	}
 }
