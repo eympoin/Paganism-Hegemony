@@ -1,0 +1,266 @@
+#Brittany revolution
+namespace = flavor_ire
+
+
+country_event = {#roman
+  id = flavor_ire.1
+  title = flavor_ire.1.t
+  desc = flavor_ire.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    culture_group = gaelic
+    any_owned_province = {
+     has_owner_religion = yes
+      OR = {
+        culture = aquitain
+				culture = narbonnais
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 5
+  }
+
+  option = {
+    name = flavor_ire.2.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+       has_owner_religion = yes
+       OR = {
+				 culture = aquitain
+				 culture = narbonnais
+				 culture = lugdunian
+				 culture = franko-roman
+       }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = gallian
+    }
+  }
+}
+
+country_event = {#english
+  id = flavor_ire.2
+  title = flavor_ire.1.t
+  desc = flavor_ire.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    culture_group = gaelic
+    any_owned_province = {
+     has_owner_religion = yes
+      OR = {
+        culture_group = british
+				culture = northymbrian
+				culture = britannian
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 5
+  }
+
+  option = {
+    name = flavor_ire.1.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+       has_owner_religion = yes
+       OR = {
+				culture_group = british
+       }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = celt_british
+    }
+  }
+}
+
+country_event = {#roman
+  id = flavor_ire.3
+  title = flavor_ire.1.t
+  desc = flavor_ire.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    culture_group = gaelic
+    any_owned_province = {
+     has_owner_religion = yes
+      OR = {
+				culture = baetician
+				culture = lusitanian
+				culture = cartaginensian
+				culture = tarraconan
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 5
+  }
+
+  option = {
+    name = flavor_ire.1.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+       has_owner_religion = yes
+       OR = {
+				culture_group = british
+       }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = celt_british
+    }
+  }
+}
+
+#protetction of anatolia
+country_event = {
+	id = flavor_ire.4
+	title = "flavor_ire.4.t"
+	desc = "flavor_ire.4.d"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+
+	option = {		# ask vassal
+		name = "flavor_ire.4.a"
+		ai_chance = { factor = 100 }
+		GWY = {country_event = {id = flavor_ire.5 days = 17}}
+		GLA = {country_event = {id = flavor_ire.5 days = 17}}
+	}
+
+	option = {	#not needed
+		name = "flavor_ire.4.b"
+		ai_chance = { factor = 0 }
+	}
+}
+#protect wales
+country_event = {
+	id = flavor_ire.5
+	title = "flavor_ire.5.t"
+	desc = "flavor_ire.5.d"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accept
+		name = "flavor_ire.5.a"
+		ai_chance = { factor = 100 }
+		set_country_flag = accept_ire_protection
+		FROM = {country_event = {id = flavor_ire.6 days = 30}}
+	}
+	option = {	#not needed
+		name = "flavor_ire.5.b"
+		ai_chance = { factor = 0 }
+		FROM = {country_event = {id = flavor_ire.6 days = 30}}
+	}
+}
+
+country_event = {
+	id = flavor_ire.6
+	title = "flavor_ire.6.t"
+	desc = {
+		trigger = {FROM = {has_country_flag = accept_ire_protection}}
+		desc = flavor_ire.6.d1
+	}
+	desc = {
+		trigger = {	NOT = {FROM = {has_country_flag = accept_ire_protection}}}
+		desc = flavor_ire.6.d2
+	}
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accepted
+		name = "flavor_ire.6.a"
+		trigger = {
+			FROM = {has_country_flag = accept_ire_protection}
+		}
+		add_dip_power = -100
+		create_march = FROM
+	}
+	option = {	# refused
+		name = "flavor_ire.6.b"
+		trigger = {
+			NOT = {FROM = {has_country_flag = accept_ire_protection}}
+		}
+
+	}
+}
+
+#invasion of Ireland
+country_event = {
+	id = flavor_ire.7
+	title = "flavor_ire.7.t"
+	desc = "flavor_ire.7.d"
+	picture = DIPLOMACY_eventPicture
+	trigger = {
+		is_year = 1445
+		tag = KOI
+	}
+
+	option = {		# For Thor !
+		name = "flavor_ire.7.a"
+
+	}
+}
+
+country_event = {
+	id = flavor_ire.8
+	title = "flavor_ire.8.t"
+	desc = "flavor_ire.8.d"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+
+	option = {		# Norse Invasion
+		name = "flavor_ire.8.a"
+
+	}
+}
+
+
+country_event = {
+	id = flavor_ire.9
+	title = "flavor_ire.9.t"
+	desc = "flavor_ire.9.d"
+	picture = DIPLOMACY_eventPicture
+	trigger = {
+		OR = {
+			religion = celts
+			religion = norse_pagan_reformed
+		}
+		colonial_canada = {
+			has_discovered = ROOT
+		}
+	}
+
+	option = {		# Vinlandic colony
+		name = "flavor_ire.9.a"
+
+	}
+}
+
+country_event = {
+	id = flavor_ire.10
+	title = "flavor_ire.10.t"
+	desc = "flavor_ire.10.d"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+
+	option = {		# malus disunited clergy
+		name = "flavor_ire.10.a"
+
+	}
+}

@@ -1576,6 +1576,13 @@ gaelic	= {
 			Stiubhart Singlear Sutherlarach
 		}
 	}
+
+	gallian = {
+
+	}
+	celt_british = {
+
+	}
 }
 
 latin = {

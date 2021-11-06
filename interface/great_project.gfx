@@ -382,6 +382,14 @@ spriteTypes = {
 		name = "GFX_great_project_lia_fail"
 		texturefile = "gfx//interface//great_projects//great_project_lia_fail.dds"
 	}
+	spriteType = {
+		name = "GFX_great_project_port_of_brest"
+		texturefile = "gfx//interface//great_projects//great_project_port_of_brest.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_great_city_of_bayezid"
+		texturefile = "gfx//interface//great_projects//great_project_great_city_of_bayezid.dds"
+	}
 
 
 ### CANALS ###

@@ -659,7 +659,7 @@ ire_second_colonization = {
 		}
 		effect = {
 			peru_region = {
-				discover_country = FRA
+				discover_country = ROOT
 			}
 		}
 	}
