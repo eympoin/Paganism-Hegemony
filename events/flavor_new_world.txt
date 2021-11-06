@@ -1,0 +1,82 @@
+namespace = flavor_nworld
+
+country_event = {
+	id = flavor_nworld.9
+	title = "flavor_nworld.9.t"
+	desc = "flavor_nworld.9.d"
+	picture = DIPLOMACY_eventPicture
+  fire_only_once = yes
+	trigger = {
+		OR = {
+			religion = celts
+			religion = norse_pagan_reformed
+		}
+		980 = {
+			has_discovered = ROOT
+		}
+	}
+
+	option = {		# help them
+		name = "flavor_nworld.9.a"
+    2573 = {
+      change_culture = Vinlandic
+      change_religion = norse_pagan_reformed
+      cede_province = ROOT
+    }
+    981 = {
+      change_culture = Vinlandic
+      change_religion = norse_pagan_reformed
+      cede_province = ROOT
+    }
+    980 = {
+      change_culture = Vinlandic
+      change_religion = norse_pagan_reformed
+      cede_province = ROOT
+    }
+    declare_war = INN
+	}
+
+  option = {		# Vinlandic independant
+		name = "flavor_nworld.9.b"
+    2573 = {
+      change_culture = Vinlandic
+      change_religion = norse_pagan_reformed
+      cede_province = VIN
+    }
+    981 = {
+      change_culture = Vinlandic
+      change_religion = norse_pagan_reformed
+      cede_province = VIN
+    }
+    980 = {
+      change_culture = Vinlandic
+      change_religion = norse_pagan_reformed
+      cede_province = VIN
+    }
+    INN = {
+      declare_war = VIN
+    }
+	}
+  option = {		# Vinlandic independant
+		name = "flavor_nworld.9.c"
+    trigger = {
+      religion = celt
+    }
+    2573 = {
+      change_culture = Vinlandic
+      change_religion = norse_pagan_reformed
+      cede_province = VIN
+    }
+    981 = {
+      change_culture = Vinlandic
+      change_religion = norse_pagan_reformed
+      cede_province = VIN
+    }
+    980 = {
+      change_culture = Vinlandic
+      change_religion = norse_pagan_reformed
+      cede_province = VIN
+    }
+    declare_war = VIN
+	}
+}
