@@ -31,7 +31,7 @@ ire_main = {
 			#won against mann
 		}
 		effect = {
-			remove_country_modifier = disputed_high_king
+			remove_country_modifier = dissension_in_the_kingdom
 			if = {
 				limit = {
 					has_ruler = "Conall"

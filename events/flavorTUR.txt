@@ -1,0 +1,49 @@
+namespace = flavor_tur
+
+
+country_event = {
+  id = flavor_tur.1
+  title = flavor_tur.1.t
+  desc = flavor_tur.1.d
+  picture = COLONIZATION_eventPicture
+  is_triggered_only = yes
+
+  option = {
+    name = flavor_tur.1.a
+    ai_chance = { factor = 1 }
+      define_heir = {
+        name= Bayezid
+        dynasty = ROOT
+        age = 13
+        adm = 6
+        dip = 4
+        mil = 6
+        claim = 95
+        female = no
+        no_consort_with_heir = yes
+    }
+    set_heir_flag = great_bayezid
+    set_global_flag = bayezid_is_born
+  }
+}
+
+country_event = {
+  id = flavor_tur.2
+  title = flavor_tur.2.t
+  desc = flavor_tur.2.d
+  picture = COLONIZATION_eventPicture
+  trigger = {
+    tag = TUR
+    war_with = ARM
+    has_ruler_flag = great_bayezid
+  }
+
+  option = {
+    name = flavor_tur.2.a
+    ai_chance = { factor = 1 }
+    add_country_modifier = {
+      name = bayezid_the_conqueror
+      duration = 1825
+    }
+  }
+}

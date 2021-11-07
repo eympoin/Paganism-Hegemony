@@ -310,7 +310,7 @@ country_event = {
 		name = "flavor_ire.10.a"
     add_country_modifier = {
       name = dissension_in_the_kingdom
-      duration = 7300
+      duration = -1
     }
 	}
 }

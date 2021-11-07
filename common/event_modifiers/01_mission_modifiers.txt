@@ -6017,10 +6017,6 @@ the_conquest_of_the_world = {
   global_unrest = -2
 }
 
-disputed_high_king = {
-  reduced_liberty_desire = -20
-}
-
 ireland_megapole = {
   local_tax_modifier = 0.1
   trade_goods_size_modifier = 0.25

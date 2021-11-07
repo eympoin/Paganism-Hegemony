@@ -14124,9 +14124,15 @@ great_city_of_bayezid = {
 	#can we build it?
 	build_trigger = {
 		OR = {
-			tag = TUR
-			was_tag = TUR
+			owner = {
+				tag = TUR
+				was_tag = TUR
 			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = HAD_BAYEZID_RULER
+			has_country_flag = bayezid_is_born
+		}
 	}
 
 	#what to do when it's built
@@ -14143,16 +14149,28 @@ great_city_of_bayezid = {
 	#can our country use it?
 	can_use_modifiers_trigger = {
 		OR = {
-			tag = TUR
-			was_tag = TUR
+			owner = {
+				tag = TUR
+				was_tag = TUR
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = HAD_BAYEZID_RULER
+			has_country_flag = bayezid_is_born
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
 		OR = {
-			tag = TUR
-			was_tag = TUR
+			owner = {
+				tag = TUR
+				was_tag = TUR
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = HAD_BAYEZID_RULER
+			has_country_flag = bayezid_is_born
 		}
 	}
 
@@ -14264,7 +14282,7 @@ great_city_of_bayezid = {
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 			local_manpower_modifier = 0.25
-			local_development_cost = -0.1	
+			local_development_cost = -0.1
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
