@@ -1,19 +1,33 @@
 namespace = flavor_ire
 
 
-country_event = {#roman
+country_event = {#gaul
   id = flavor_ire.1
   title = flavor_ire.1.t
   desc = flavor_ire.1.d
   picture = COLONIZATION_eventPicture
 
   trigger = {
-    culture_group = gaelic
+    OR = {
+      AND = {
+        culture_group = gaelic
+        NOT = {culture = irish}
+      }
+      AND = {
+        culture_group = gaelic
+        has_country_flag = irish_unlock_conversion_gallia
+      }
+    }
     any_owned_province = {
      has_owner_religion = yes
       OR = {
+        culture = salian
+        culture = rhenan
+        culture = lingerian
         culture = aquitain
-				culture = narbonnais
+        culture = narbonnais
+        culture = lugdunian
+        culture = franko-roman
       }
       NOT = { nationalism	= 1 }
       is_core = ROOT
@@ -21,20 +35,23 @@ country_event = {#roman
   }
 
   mean_time_to_happen = {
-    years = 5
+    years = 3
   }
 
   option = {
-    name = flavor_ire.2.a
+    name = flavor_ire.1.a
     ai_chance = { factor = 1 }
     random_owned_province = {
       limit = {
        has_owner_religion = yes
        OR = {
-				 culture = aquitain
-				 culture = narbonnais
-				 culture = lugdunian
-				 culture = franko-roman
+       culture = salian
+       culture = rhenan
+       culture = lingerian
+       culture = aquitain
+       culture = narbonnais
+       culture = lugdunian
+       culture = franko-roman
        }
         NOT = { nationalism	= 1 }
         is_core = ROOT
@@ -51,7 +68,16 @@ country_event = {#english
   picture = COLONIZATION_eventPicture
 
   trigger = {
-    culture_group = gaelic
+    OR = {
+      AND = {
+        culture_group = gaelic
+        NOT = {culture = irish}
+      }
+      AND = {
+        culture_group = gaelic
+        has_country_flag = irish_unlock_conversion_isle
+      }
+    }
     any_owned_province = {
      has_owner_religion = yes
       OR = {
@@ -92,7 +118,16 @@ country_event = {#roman
   picture = COLONIZATION_eventPicture
 
   trigger = {
-    culture_group = gaelic
+    OR = {
+      AND = {
+        culture_group = gaelic
+        NOT = {culture = irish}
+      }
+      AND = {
+        culture_group = gaelic
+        has_country_flag = irish_unlock_conversion_spain
+      }
+    }
     any_owned_province = {
      has_owner_religion = yes
       OR = {
@@ -127,7 +162,6 @@ country_event = {#roman
   }
 }
 
-#protetction of anatolia
 country_event = {
 	id = flavor_ire.4
 	title = "flavor_ire.4.t"

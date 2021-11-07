@@ -28,7 +28,24 @@ ire_main = {
 		provinces_to_highlight = {
 		}
 		trigger = {
-			#won against mann
+			is_year = 1446
+			NOT = {war_with = KOI}
+			ulster_area = {
+				type = all
+				country_or_subject_holds = ROOT
+			}
+			leinster_area = {
+				type = all
+				country_or_subject_holds = ROOT
+			}
+			connacht_area = {
+				type = all
+				country_or_subject_holds = ROOT
+			}
+			munster_area = {
+				type = all
+				country_or_subject_holds = ROOT
+			}
 		}
 		effect = {
 			remove_country_modifier = dissension_in_the_kingdom
@@ -67,8 +84,7 @@ ire_main = {
 		effect = {
 			add_prestige = 10
 			add_legitimacy = 10
-			#remove_privilege
-			#add_privilege
+			#privilege
 			change_estate_land_share = {
 					estate = estate_nobles
 					share = -20
@@ -254,7 +270,7 @@ ire_main_conquest = {
 			}
 		}
 		effect = {
-			#vassalization wales
+			country_event = {id = flavor_ire.4}
 		}
 	}
 	unite_celts = {
@@ -275,7 +291,6 @@ ire_main_conquest = {
 			}
 		}
 		effect = {
-			#unlock cultural conversion
 			brittany_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -290,6 +305,8 @@ ire_main_conquest = {
 				}
 				add_permanent_claim = ROOT
 			}
+			custom_tooltip = irish_conversion_isle_tt
+			set_country_flag = irish_unlock_conversion_isle
 		}
 	}
 	lost_celts = {
@@ -338,7 +355,6 @@ ire_main_conquest = {
 			}
 		}
 		effect = {
-			#cultural conversion
 			south_german_region = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -346,6 +362,8 @@ ire_main_conquest = {
 				}
 				add_permanent_claim = ROOT
 			}
+			custom_tooltip = irish_conversion_gallia_tt
+			set_country_flag = irish_unlock_conversion_gallia
 		}
 	}
 
@@ -487,7 +505,8 @@ ire_second_conquest = {
 			}
 		}
 		effect = {
-			#cultural conversion
+			custom_tooltip = irish_conversion_spain_tt
+			set_country_flag = irish_unlock_conversion_spain
 		}
 	}
 
@@ -564,7 +583,6 @@ ire_second_colonization = {
 				name = "colonial_enthusiasm"
 				duration = 7300
 			}
-			#event
 		}
 	}
 
@@ -678,7 +696,19 @@ ire_second_colonization = {
 			}
 		}
 		effect = {
-		#potato event
+		change_price = {
+			trade_goods = grain
+				key = potato_revolution
+				value = 0.5
+				duration = -1
+			}
+			4378 = {
+				change_trade_goods = grain
+			}
+			375 = {
+				change_trade_goods = grain
+			}
 		}
+
 	}
 }
