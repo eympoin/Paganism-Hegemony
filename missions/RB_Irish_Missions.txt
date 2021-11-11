@@ -23,7 +23,7 @@ ire_main = {
 	}
 	has_country_shield = yes
 	fight_off_norse = {
-		icon = mission_rb_conquer_ulster
+		icon = mission_rb_unite_the_clans
 		required_missions = { }
 		provinces_to_highlight = {
 		}
@@ -74,7 +74,7 @@ ire_main = {
 		}
 	}
 	unite_the_clans = {
-		icon = mission_rb_conquer_ulster
+		icon = mission_rb_conquer_leinster
 		required_missions = {fight_off_norse }
 		provinces_to_highlight = {
 		}
@@ -92,7 +92,7 @@ ire_main = {
 		}
 	}
 	create_a_clergy = {
-		icon = mission_rb_conquer_ulster
+		icon = mission_rb_control_state_religion
 		required_missions = {unite_the_clans }
 		provinces_to_highlight = {
 		}
@@ -120,7 +120,7 @@ ire_main = {
 		}
 	}
 	develop_economy = {
-		icon = mission_rb_conquer_ulster
+		icon = mission_rb_scottish_the_darien_scheme
 		required_missions = {create_a_clergy }
 		provinces_to_highlight = {
 			OR = {
@@ -168,7 +168,7 @@ ire_main = {
 		}
 	}
 	improve_land = {
-		icon = mission_rb_conquer_ulster
+		icon = mission_rb_scottish_the_darien_scheme
 		required_missions = { develop_economy }
 		provinces_to_highlight = {
 			OR = {
@@ -241,7 +241,7 @@ ire_main_conquest = {
 	}
 	has_country_shield = yes
 	open_to_the_exterior = {
-		icon = mission_rb_conquer_ulster
+		icon = mission_rb_scottish_north_sea_trade
 		position = 2
 		required_missions = { fight_off_norse}
 		provinces_to_highlight = {
@@ -259,7 +259,7 @@ ire_main_conquest = {
 		}
 	}
 	protect_celts_brethren = {
-		icon = mission_rb_conquer_ulster
+		icon = mission_rb_conquer_the_highlands
 		required_missions = {open_to_the_exterior }
 		provinces_to_highlight = {
 		}
@@ -274,7 +274,7 @@ ire_main_conquest = {
 		}
 	}
 	unite_celts = {
-		icon = mission_rb_conquer_ulster
+		icon = mission_rb_rule_britannia_irish_version
 		required_missions = {protect_celts_brethren }
 		provinces_to_highlight = {
 			region = british_isles_region
@@ -310,7 +310,7 @@ ire_main_conquest = {
 		}
 	}
 	lost_celts = {
-		icon = mission_rb_conquer_ulster
+		icon = mission_rb_conquer_brittany
 		required_missions = {unite_celts }
 		provinces_to_highlight = {
 			religion = celt
@@ -342,7 +342,7 @@ ire_main_conquest = {
 		}
 	}
 	athghabhail_gallia = {
-		icon = mission_rb_conquer_ulster
+		icon = centralize_france
 		required_missions = {lost_celts }
 		provinces_to_highlight = {
 			region = france_region
@@ -368,7 +368,7 @@ ire_main_conquest = {
 	}
 
 	return_of_the_celts = {
-		icon = mission_rb_conquer_ulster
+		icon = french_empire
 		required_missions = {athghabhail_gallia athghabhail_hispania }
 		provinces_to_highlight = {
 			OR = {
@@ -462,7 +462,7 @@ ire_second_conquest = {
 	}
 	has_country_shield = yes
 	build_a_navy = {
-		icon = mission_rb_conquer_ulster
+		icon = mission_rb_grow_the_channel
 		position = 3
 		required_missions = { open_to_the_exterior }
 		provinces_to_highlight = {
@@ -491,7 +491,7 @@ ire_second_conquest = {
 		}
 	}
 	athghabhail_hispania = {
-		icon = mission_rb_conquer_ulster
+		icon = hispaniae
 		position = 6
 		required_missions = { lost_celts }
 		provinces_to_highlight = {
@@ -538,7 +538,7 @@ ire_second_colonization = {
 	}
 	has_country_shield = yes
 	northern_island_bases = {
-		icon = mission_rb_conquer_ulster
+		icon = mission_rb_conquer_the_isles
 		position = 2
 		required_missions = { fight_off_norse }
 		provinces_to_highlight = {
@@ -567,7 +567,7 @@ ire_second_colonization = {
 		}
 	}
 	to_the_new_world = {
-		icon = mission_rb_conquer_ulster
+		icon = mission_rb_colonise_canada
 		required_missions = {northern_island_bases }
 		provinces_to_highlight = {
 		}
@@ -587,7 +587,7 @@ ire_second_colonization = {
 	}
 
 	a_first_colony = {
-		icon = mission_rb_conquer_ulster
+		icon = mission_rb_the_thirteen_colonies
 		required_missions = {to_the_new_world }
 		provinces_to_highlight = {
 			colonial_region = colonial_canada
@@ -608,7 +608,7 @@ ire_second_colonization = {
 	}
 
 	ireland_rule_the_waves = {
-		icon = mission_rb_conquer_ulster
+		icon = mission_rb_cod_wars
 		required_missions = {a_first_colony }
 		provinces_to_highlight = {
 		}
@@ -682,7 +682,7 @@ ire_second_colonization = {
 		}
 	}
 	land_of_the_potato = {
-		icon = mission_rb_conquer_ulster
+		icon = mission_rb_import_potatoes
 		required_missions = { road_to_riches }
 		provinces_to_highlight = {
 			trade_goods = grain

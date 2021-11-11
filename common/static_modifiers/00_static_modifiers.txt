@@ -1768,3 +1768,10 @@ centralize_state = {
 guru_teaching = {
 	global_missionary_strength = -0.01
 }
+
+cawa_regiment = {
+	shock_damage_received = -0.15
+	land_attrition = -0.25
+	reinforce_cost_modifier = 0.25
+	reinforce_speed = -0.25
+}

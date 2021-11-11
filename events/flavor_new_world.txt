@@ -1,9 +1,9 @@
 namespace = flavor_nworld
 
 country_event = {
-	id = flavor_nworld.9
-	title = "flavor_nworld.9.t"
-	desc = "flavor_nworld.9.d"
+	id = flavor_nworld.1
+	title = "flavor_nworld.1.t"
+	desc = "flavor_nworld.1.d"
 	picture = DIPLOMACY_eventPicture
   fire_only_once = yes
 	trigger = {
@@ -17,7 +17,7 @@ country_event = {
 	}
 
 	option = {		# help them
-		name = "flavor_nworld.9.a"
+		name = "flavor_nworld.1.a"
     2573 = {
       change_culture = Vinlandic
       change_religion = norse_pagan_reformed
@@ -37,7 +37,7 @@ country_event = {
 	}
 
   option = {		# Vinlandic independant
-		name = "flavor_nworld.9.b"
+		name = "flavor_nworld.1.b"
     2573 = {
       change_culture = Vinlandic
       change_religion = norse_pagan_reformed
@@ -58,7 +58,7 @@ country_event = {
     }
 	}
   option = {		# Vinlandic independant
-		name = "flavor_nworld.9.c"
+		name = "flavor_nworld.1.c"
     trigger = {
       religion = celt
     }

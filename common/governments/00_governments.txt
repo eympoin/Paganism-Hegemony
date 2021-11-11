@@ -39,7 +39,8 @@ monarchy = {
 				siamese_absolutism
 				confucian_bureaucracy
 				persian_empire_cen
-				absolute_reform
+				musa_rule
+				mossi_federal_kingdom
 			}
 		}
 		hereditary_vs_nobility = {
@@ -70,6 +71,8 @@ monarchy = {
 				penal_colonies_reform
 				liberte_reform
 				fraternite_reform
+				examination_system_reform
+				corvee_reform
 			}
 		}
 		growth_of_administration = {
@@ -149,6 +152,10 @@ monarchy = {
 		tsardom_legacy
 		holy_state_legacy
 		absolute_monarchy
+		negusa_nagast_legacy
+		solomonic_empire_legacy
+		musa_rule_legacy
+		mossi_federal_kingdom_legacy
 	}
 
 	# Each group of exclusive reforms are mutually exclusive to each other
