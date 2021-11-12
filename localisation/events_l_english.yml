@@ -2174,3 +2174,57 @@ flavor_cro.3.b:0 "They will all pay..."
 flavor_alb.1.t:0 "Cultural Assimilation"
 flavor_alb.1.d:0 "The albanian influence other these lands has finally turned the inhabitants into true Albanians"
 flavor_alb.1.a:0 "This is a happy news."
+
+flavor_ire.1.t:0 "Cultural Assimilation"
+flavor_ire.1.d:0 "The celtic influence other these lands has finally turned the inhabitants into true Celts"
+flavor_ire.1.a:0 "This is a happy news."
+
+flavor_ire.4.t:0 "Protect the Welsh"
+flavor_ire.4.d:0 "The Welshs are threatened by the Anglo-Saxons and the Norse, we shall send troops there to protect them !"
+flavor_ire.4.a:0 "They shall accept our protetcion"
+flavor_ire.4.b:0 "We don't need them and they don't need us"
+
+
+flavor_ire.5.t:0 "Irish's protection"
+flavor_ire.5.d:0 "Irish ask us to acccept their protection. Should we accept ?"
+flavor_ire.5.a:0 "Their protection is valuable"
+flavor_ire.5.b:0 "We don't need them"
+
+flavor_ire.6.t:0 "Answer of $FROMCOUNTRY$"
+flavor_ire.6.d1:0 "We will protect them !"
+flavor_ire.6.d2:0 "How dare they refuse ?"
+flavor_ire.6.a:0 "Good news !"
+flavor_ire.6.b:0 "They will regret this..."
+
+
+flavor_ire.7.t:0 "Invasion of Ireland"
+flavor_ire.7.d:0 "Troops from all Scandinavia has answered to our call for war. Ireland is weak and it is time we conquer it."
+flavor_ire.7.a:0 "For Thor !"
+
+flavor_ire.8.t:0 "Invasion of Ireland"
+flavor_ire.8.d:0 "The times are dark. A large Norse army imbarked from Mann to our Kingdom. They want to take everything we have. But we won't let them, sound the horn ! We will repell the invaders at once."
+flavor_ire.8.a:0 "May the Gods protect Ireland."
+
+flavor_ire.9.t:0 "Disunited Clergy"
+flavor_ire.9.d:0 "The Clergy was divided between all the kingdom of Ireland and was not ready for the Unification. Huge reform to the clergy would be needed for them to adapt our new reality."
+flavor_ire.9.a:0 "The reforms will be enacted !"
+
+flavor_ire.10.t:0 "Weak King"
+flavor_ire.10.d:0 "Slaine mac Cartaigh died 3 months ago and his son Conall took his place. But the young King is weak and naive and its subjects are taking advantage of this."
+flavor_ire.10.a:0 "May he grow stronger !"
+
+
+flavor_nworld.1.t:0 "The Legends of Vinland"
+flavor_nworld.1.d:0 "The Legends of Vinland are old. They speak of lands beyond the Great Ocean inhabited by strange people. This lands discovered by Norse explorers was lost to history but the story remains and it seems we have found it. There are cities here that ressembled the Norse ones and the peopele speak a weird variant of germanic languages. These people are at war with the natives of Vinland and they ask for our help against them. Should we accept ?"
+flavor_nworld.1.a:0 "Of course !"
+flavor_nworld.1.b:0 "Their problems are not ours"
+flavor_nworld.1.c:0 "We remember what their kind has done to us. They will all die !"
+
+
+flavor_tur.1.t:0 "A Great Son"
+flavor_tur.1.d:0 "My Khan, one of your child, is becoming more and more promising. He has the the intelligence of a great ruler and the ferocity of a great warrior. He is by the far the best of your possible heir."
+flavor_tur.1.a:0 "Abd the should become the heir."
+
+flavor_tur.2.t:0 "The Conquest of Armenia"
+flavor_tur.2.d:0 "Armenia has been a threat to our rule since we established us here. No more ! Bayezid will lead us to glory ! "
+flavor_tur.2.a:0 "For Bayezid !"

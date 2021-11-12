@@ -213,7 +213,7 @@ country_event = {
 		trigger = {	NOT = {FROM = {has_country_flag = accept_ire_protection}}}
 		desc = flavor_ire.6.d2
 	}
-	picture = HRE_eventPicture
+	picture = DIPLOMACY_eventPicture
 	is_triggered_only = yes
 
 	option = {		# accepted

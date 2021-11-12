@@ -14,9 +14,6 @@ capital = 373	# Dublin
 		dip = 2
 		mil = 2
 	}
-	clear_scripted_personalities = yes
-	add_ruler_personality = bold_fighter_personality
-	add_ruler_personality = naive_personality
 }
 add_country_modifier = {
 	name = disputed_high_king
