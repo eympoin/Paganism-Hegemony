@@ -157,7 +157,7 @@ country_event = {#roman
 }
 
 country_event = {#roman
-  id = flavor_frk.2
+  id = flavor_frk.3
   title = flavor_frk.1.t
   desc = flavor_frk.1.d
   picture = COLONIZATION_eventPicture

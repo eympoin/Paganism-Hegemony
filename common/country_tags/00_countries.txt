@@ -1300,6 +1300,7 @@ AGQ = "countries/Algonquin.txt"
 JMN = "countries/Jan Mayen.txt"
 ROM = "countries/RomanEmpire.txt"
 SYN = "countries/Synthetics.txt"
+ISR = "countries/Israel.txt"
 
 #Converter tags:
 #
