@@ -12489,12 +12489,12 @@ slavic_uprising_mod = {
 
 great_invasion = {
 	global_manpower = 20
-	global_tax_income = 12
-	land_forcelimit = 15
-	naval_forcelimit = 20
+	global_tax_income = 15
+	land_forcelimit = 20
+	naval_forcelimit = 25
 }
 dissension_in_the_kingdom = {
-	reduced_liberty_desire = -20
+	reduced_liberty_desire = -18
 }
 disunited_clergy = {
 	church_influence_modifier = -0.1

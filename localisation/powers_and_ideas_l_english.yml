@@ -1691,8 +1691,8 @@
  ire_abundant_harvests_desc:0 "Now that the greedy, neglectful Outsiders landlords have been driven out of Ireland, our farmers are finally able to manage their produce in peace. Blights and crop failures are addressed as matters of critical state importance rather than as peripheral concerns of an irrelevant colony."
  morrigans_revenge:0 "Morrigan's Revenge"
  morrigans_revenge_desc:0 ""
- integrate_natives:0 "Integarte the Natives"
- integrate_natives_desc:0
+ integrate_natives:0 "Integrate the Natives"
+ integrate_natives_desc:0 ""
  SON_ideas:0 "Songhai Ideas"
  SON_ideas_start:0 "Songhai Traditions"
  SON_ideas_bonus:0 "Songhai Ambition"
