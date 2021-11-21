@@ -24,7 +24,7 @@ country_event = {#Welsh/cornish/breton
   }
 
   mean_time_to_happen = {
-    years = 10
+    years = 5
   }
 
   option = {
@@ -70,7 +70,7 @@ country_event = {#Northumbrian
   }
 
   mean_time_to_happen = {
-    years = 10
+    years = 5
   }
 
   option = {
@@ -104,6 +104,7 @@ country_event = {#Anglo-saxon
       OR = {
         culture = angle
         culture = seaxan
+        culture = english
       }
       NOT = { culture_group = britannian_group }
       NOT = { nationalism	= 1 }
@@ -112,7 +113,7 @@ country_event = {#Anglo-saxon
   }
 
   mean_time_to_happen = {
-    years = 10
+    years = 5
   }
 
   option = {
@@ -124,6 +125,7 @@ country_event = {#Anglo-saxon
         OR = {
           culture = angle
           culture = seaxan
+          culture = english
         }
         NOT = { nationalism	= 1 }
         is_core = ROOT
@@ -152,6 +154,7 @@ country_event = {#franks
         culture = lingerian
         culture = salian
         culture = rhenan
+        culture = occitan
       }
       NOT = { culture_group = britannian_group }
       NOT = { nationalism	= 1 }
@@ -173,6 +176,7 @@ country_event = {#franks
           culture = lingerian
           culture = salian
           culture = rhenan
+          culture = occitan
         }
         NOT = { nationalism	= 1 }
         is_core = ROOT

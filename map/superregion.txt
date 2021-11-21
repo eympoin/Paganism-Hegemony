@@ -121,6 +121,7 @@ near_east_superregion = {
 	mashriq_region
 	arabia_region
 	egypt_region
+	syria_region
 }
 
 persia_superregion = {

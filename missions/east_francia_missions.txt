@@ -926,7 +926,7 @@ East_francia_invade_wfr = {
 	united_frk = {
 		icon = king_of_the_franks
 		position = 9
-		required_missions = { Dutchland_invasion finish_wfr }
+		required_missions = { Dutchland_invasion finish_wfr_eaf }
 		provinces_to_highlight = {
 
 		}
