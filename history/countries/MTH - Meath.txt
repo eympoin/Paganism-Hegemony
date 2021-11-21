@@ -15,10 +15,6 @@ capital = 373	# Dublin
 		mil = 2
 	}
 }
-add_country_modifier = {
-	name = disputed_high_king
-	duration = -1
-}
 
 change_estate_land_share = {
 	estate = estate_nobles

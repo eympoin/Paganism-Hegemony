@@ -2148,6 +2148,7 @@ pagan = {
   celt = {
     icon = 31
     color = { 0 250 50 }
+    center_of_religion = 373
     country = {
       infantry_power = 0.1
       land_morale = 0.05
@@ -2160,6 +2161,13 @@ pagan = {
       infantry_cost = -0.1
       leader_land_shock = 1
     }
+    will_get_center = { #Refered to even for initial CoR Spawn
+      any_owned_province = {
+        can_have_center_of_reformation_trigger = {
+          RELIGION = celt
+        }
+      }
+    }
     province = {
       local_missionary_strength = -0.01
     }
@@ -2170,6 +2178,7 @@ pagan = {
   zunist = {
     icon = 36
     color = { 255 255 0 }
+    center_of_religion = 451
     country = {
       hostile_attrition = 1
       tolerance_own = 3
@@ -2188,6 +2197,7 @@ pagan = {
   Zalmoxianism = {
     icon = 41
     color = { 103 127 127 }
+    center_of_religion = 158
     country = {
       movement_speed = 0.1
       shock_damage = 0.1
@@ -2206,6 +2216,7 @@ pagan = {
   illyrian = {
     icon = 42
     color = { 105 105 105 }
+    center_of_religion = 4175
     country = {
       galley_power = 0.1
       trade_goods_size_modifier = 0.1
@@ -2226,6 +2237,7 @@ pagan = {
   tengri_pagan_reformed = {
     icon = 27
     color = { 25 76 217 }
+    center_of_religion = 454
     country = {
       cav_to_inf_ratio = 0.25
       global_regiment_cost = -0.2
@@ -2245,6 +2257,7 @@ east_european{
   slavic = {
     icon = 33
     color = { 140 140 170 }
+    center_of_religion = 280
     country = {
       global_manpower_modifier = 0.1
       culture_conversion_cost = -0.25
@@ -2259,6 +2272,7 @@ east_european{
   suomenusko = {
     icon = 35
     color = { 120 140 0 }
+    center_of_religion = 28
     country = {
       defensiveness = 0.1
       num_accepted_cultures = 1
@@ -2277,6 +2291,7 @@ east_european{
   romuva = {
     icon = 34
     color = { 210 90 60 }
+    center_of_religion = 272
     country = {
       defensiveness = 0.1
       fort_maintenance_modifier = -0.1
@@ -2301,6 +2316,7 @@ semetic_group{
       caravan_power = 0.2
       land_attrition = -0.1
     }
+    center_of_religion = 394
     country_as_secondary = {
       caravan_power = 0.2
       land_attrition = -0.1
@@ -2320,6 +2336,7 @@ semetic_group{
       global_tax_modifier = 0.1
       stability_cost_modifier = -0.1
     }
+    center_of_religion = 4320
     country_as_secondary = {
       global_tax_modifier = 0.1
       stability_cost_modifier = -0.1
@@ -2334,6 +2351,7 @@ semetic_group{
   berber = {
     icon = 32
     color = { 136 179 20 }
+    center_of_religion = 2458
     country = {
       cavalry_power = 0.1
       caravan_power = 0.2
@@ -2349,6 +2367,7 @@ semetic_group{
   mesopotamian = {
     icon = 38
     color = { 0 38 254 }
+    center_of_religion = 2311
     country = {
       legitimacy = 0.5
       production_efficiency = 0.1
@@ -2368,6 +2387,7 @@ semetic_group{
 phenician = {
   icon = 43
   color = { 145 132 225 }
+  center_of_religion = 1855
   country = {
     legitimacy = 0.5
     galley_power = 0.2
@@ -2389,6 +2409,8 @@ norse_group{
   norse_pagan_reformed = {
     icon = 21
     color = { 191 191 191 }
+    center_of_religion = 12
+
     country = {
       may_perform_slave_raid = yes
       naval_forcelimit_modifier = 0.10
@@ -2407,6 +2429,8 @@ norse_group{
   germanic = {
     icon = 22
     color = { 133 109 77 }
+    center_of_religion = 2972
+
     country = {
       shock_damage = 0.1
       loot_amount = 0.2
@@ -2428,7 +2452,9 @@ norse_group{
 greco_roman_group = {
   theoi = {
     icon = 30
-    color = { 150 10 150 }
+    color = { 160 20 160 }
+    center_of_religion = 4962
+
     country = {
       trade_efficiency = 0.1
       idea_cost = -0.1
@@ -2451,6 +2477,7 @@ greco_roman_group = {
   deii = {
     icon = 29
     color = { 109 7 26 }
+    center_of_religion = 118 # Rome
     country = {
       discipline = 0.02
       build_cost = -0.1
@@ -2472,6 +2499,8 @@ greco_roman_group = {
   mithraic = {
     icon = 45
     color = { 193 19 0 }
+    center_of_religion = 4728
+
     country = {
       army_tradition = 0.5
       land_morale = 0.05
@@ -2498,6 +2527,8 @@ jewish_group = {
   jewish = {
     icon = 20
     color = { 153 25 102 }
+    center_of_religion = 379
+
     country = {
       tolerance_own = 2
       advisor_pool = 1
@@ -2525,6 +2556,8 @@ zoroastrian_group = {
   zoroastrian = {
     icon = 26
     color = { 127 178 51 }
+    center_of_religion = 421
+
     province = {
       local_missionary_strength = -0.02
     }
@@ -2553,6 +2586,7 @@ zoroastrian_group = {
   armenian_rl = {
     icon = 39
     color = { 249 190 77 }
+    center_of_religion = 419
     country = {
       diplomatic_reputation = 1
       war_exhaustion = -0.02
@@ -2571,6 +2605,7 @@ zoroastrian_group = {
   yazidism = {
     icon = 44
     color = { 44 0 106 }
+    center_of_religion = 2306
     province = {
       local_missionary_strength = -0.02
     }

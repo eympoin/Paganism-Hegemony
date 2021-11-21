@@ -2150,8 +2150,8 @@ flavor_greek.4.t:0 "Cultural Assimilation"
 flavor_greek.4.d:0 "The Greek influence other these lands has finally turned the inhabitants into true Greeks"
 flavor_greek.4.a:0 "This is a happy news."
 
-flavor_frk.1.t:0 "Cultural Assimilation"
-flavor_frk.1.d:0 "The frankish influence other these lands has finally turned the inhabitants into true Franks"
+flavor_frank.1.t:0 "Cultural Assimilation"
+flavor_frank.1.d:0 "The frankish influence other these lands has finally turned the inhabitants into true Franks"
 flavor_frk.1.a:0 "This is a happy news."
 
 

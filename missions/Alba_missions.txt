@@ -373,23 +373,23 @@ For_Britain = {
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					NOT = {
-						religion = celt
-					}
-				}
+		#	if = {
+			#	limit = {
+			#		NOT = {
+			#			religion = celt
+			#		}
+			#	}
 				add_country_modifier = {
 					name = "sco_religious_bonus"
 					duration = 7300
 				}
-			}
-			else = {
-				custom_tooltip = celt_reform_center_tt
-				266 = {
-					add_reform_center = celt
-				}
-				}
+			#}
+			#else = {
+  		#		custom_tooltip = celt_reform_center_tt
+  		#		266 = {
+  		#			add_reform_center = celt
+  		#		}
+			#	}
 			}
 		}
 	Time_for_tartan_and_haggis_to_shine = {

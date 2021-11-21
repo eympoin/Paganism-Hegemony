@@ -1,6 +1,6 @@
 #Brittany revolution
 namespace = flavor_frp
-namespace = flavor_frk
+namespace = flavor_frank
 country_event = {
 	id = flavor_frp.2
 	title = "flavor_frp.2.t"
@@ -77,9 +77,9 @@ country_event = {
 }
 
 country_event = {#burgonds
-  id = flavor_frk.1
-  title = flavor_frk.1.t
-  desc = flavor_frk.1.d
+  id = flavor_frank.1
+  title = flavor_frank.1.t
+  desc = flavor_frank.1.d
   picture = COLONIZATION_eventPicture
 
   trigger = {
@@ -99,7 +99,7 @@ country_event = {#burgonds
   }
 
   option = {
-    name = flavor_frk.1.a
+    name = flavor_frank.1.a
     ai_chance = { factor = 1 }
     random_owned_province = {
       limit = {
@@ -116,9 +116,9 @@ country_event = {#burgonds
 }
 
 country_event = {#roman
-  id = flavor_frk.2
-  title = flavor_frk.2.t
-  desc = flavor_frk.2.d
+  id = flavor_frank.2
+  title = flavor_frank.2.t
+  desc = flavor_frank.2.d
   picture = COLONIZATION_eventPicture
 
   trigger = {
@@ -139,7 +139,7 @@ country_event = {#roman
   }
 
   option = {
-    name = flavor_frk.2.a
+    name = flavor_frank.2.a
     ai_chance = { factor = 1 }
     random_owned_province = {
       limit = {
@@ -157,9 +157,9 @@ country_event = {#roman
 }
 
 country_event = {#roman
-  id = flavor_frk.3
-  title = flavor_frk.1.t
-  desc = flavor_frk.1.d
+  id = flavor_frank.3
+  title = flavor_frank.1.t
+  desc = flavor_frank.1.d
   picture = COLONIZATION_eventPicture
 
   trigger = {
@@ -180,7 +180,7 @@ country_event = {#roman
   }
 
   option = {
-    name = flavor_frk.1.a
+    name = flavor_frank.1.a
     ai_chance = { factor = 1 }
     random_owned_province = {
       limit = {
@@ -198,9 +198,9 @@ country_event = {#roman
 }
 
 country_event = {#saxon
-  id = flavor_frk.3
-  title = flavor_frk.1.t
-  desc = flavor_frk.1.d
+  id = flavor_frank.3
+  title = flavor_frank.1.t
+  desc = flavor_frank.1.d
   picture = COLONIZATION_eventPicture
 
   trigger = {
@@ -221,7 +221,7 @@ country_event = {#saxon
   }
 
   option = {
-    name = flavor_frk.1.a
+    name = flavor_frank.1.a
     ai_chance = { factor = 1 }
     random_owned_province = {
       limit = {
