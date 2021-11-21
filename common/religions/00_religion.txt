@@ -2152,6 +2152,10 @@ pagan = {
       infantry_power = 0.1
       land_morale = 0.05
     }
+    allowed_center_conversion = {
+      norse_pagan_reformed
+      germanic
+    }
     country_as_secondary = {
       infantry_cost = -0.1
       leader_land_shock = 1

@@ -5,7 +5,7 @@ country_event = {
   id = flavor_tur.1
   title = flavor_tur.1.t
   desc = flavor_tur.1.d
-  picture = COLONIZATION_eventPicture
+  picture = NEW_HEIR_eventPicture
   is_triggered_only = yes
 
   option = {
@@ -31,7 +31,7 @@ country_event = {
   id = flavor_tur.2
   title = flavor_tur.2.t
   desc = flavor_tur.2.d
-  picture = COLONIZATION_eventPicture
+  picture = BATTLE_eventPicture
   trigger = {
     tag = TUR
     war_with = ARM

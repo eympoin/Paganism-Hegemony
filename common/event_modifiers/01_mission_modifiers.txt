@@ -6965,3 +6965,32 @@ w_african_tax_collectors = {
 w_african_develop_modifier = {
 	development_cost = -0.1
 }
+
+Pictish-Scot_Kingdom = {
+  num_accepted_cultures = 1
+}
+Thine_be_ilka_joy_and_treasure = {
+  land_morale = 0.15
+}
+alban_iron = {
+  prestige = 0.25
+  trade_goods_size_modifier = 1
+}
+sco_religious_bonus = {
+  missionaries = 1
+  global_missionary_strength = 0.2
+}
+
+conquest_of_ireland = {
+  global_trade_power = 0.1
+  trade_efficiency = 0.1
+}
+
+The_king_man_of_Mann = {
+  diplomatic_reputation = 1
+}
+
+Celt_resurgence = {
+  global_manpower_modifier = 0.15
+  army_tradition = 1
+}
