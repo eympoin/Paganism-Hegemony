@@ -1,12 +1,12 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = rioghacht_reform
 government_rank = 1
 technology_group = western
 primary_culture = irish
 religion = celt
 capital = 373	# Dublin
 
-1417.1.1 = {
+1444.1.1 = {
 	monarch = {
 		name = "Conall"
 		dynasty = "Mac Carthaigh"
@@ -14,7 +14,9 @@ capital = 373	# Dublin
 		dip = 2
 		mil = 2
 	}
-	clear_scripted_personalities = yes
-	add_ruler_personality = bold_fighter_personality
-	add_ruler_personality = naive_personality
+}
+
+change_estate_land_share = {
+	estate = estate_nobles
+	share = 20
 }

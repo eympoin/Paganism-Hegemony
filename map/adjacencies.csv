@@ -82,6 +82,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4353;4355;sea;1402;4765;804;4761;811;Leyte-Caraga
 2700;4350;sea;1397;4708;838;4702;846;Panay-Mindoro
 4356;4350;sea;1395;-1;-1;-1;-1;Taytay-Mindoro
+4350;656;sea;1395;4695;863;4698;867;Manilla-Mindoro
 646;647;sea;1401;-1;-1;-1;-1;Ambom-Ceram
 2678;622;sea;1361;4446;618;4443;617;Banka-Palembang
 2686;4815;sea;1361;4434;664;4430;666;Bintan-Johor

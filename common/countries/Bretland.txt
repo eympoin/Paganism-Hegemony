@@ -36,6 +36,7 @@ historical_units = {
 	napoleonic_lancers
 }
 
+
 monarch_names = {
 	"Håkon #6" = 40
 	"Olav #4" = 40
@@ -50,18 +51,18 @@ monarch_names = {
 	"Torhild #0" = -1
 	"Inge #2" = 5
 	"Sigurd #2" = 5
-	"Aksel #0" = 0
-	"Alf #0" = 0
-	"Anders #0" = 0
-	"Ansgard #0" = 0
-	"Arvid #0" = 0
-	"Bernt #0" = 0
-	"Birger #0" = 0
-	"Bjørn #0" = 0
-	"Daniel #0" = 0
-	"Edvard #0" = 0
-	"Eilert #0" = 0
-	"Einar #0" = 0
+	"Aksel #0" = 5
+	"Alf #0" = 5
+	"Anders #0" = 5
+	"Ansgard #0" = 5
+	"Arvid #0" = 5
+	"Bernt #0" = 5
+	"Birger #0" = 5
+	"Bjørn #0" = 5
+	"Daniel #0" = 5
+	"Edvard #0" = 5
+	"Eilert #0" = 5
+	"Einar #0" = 5
 	"Elias #0" = 0
 	"Esben #0" = 0
 	"Folke #0" = 0

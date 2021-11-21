@@ -2901,7 +2901,7 @@ reformed_infantry_mac:0 "Reformed Infantry"
 
 reformed_cavalry_mac:0 "Reformed Cavalry"
 
-reformed_siege_warfare_mac:0 "Reformed Eingeneer Corps"
+reformed_siege_warfare_mac:0 "Reformed Engineer Corps"
 reformed_commanders_mac:0 "Reform the Commanders Schools"
 the_last_push:0 "The last Push"
 
@@ -2958,7 +2958,7 @@ ottoman_rise:0 "Rise of the Ottomans"
 ottoman_horse_archers:0 "Ottoman Horse Archers"
 steppe_horses:0 "Steppe Horses"
 
-turkmens_raiding_technics :0 "Turkmens Raiding Techniques"
+turkmens_raiding_technics:0 "Turkmens Raiding Techniques"
 
 steppes_under_control:0 "Control of the Steppes"
 
@@ -2975,3 +2975,27 @@ new_building_technics:0 "New Building Techniques"
 ruling_a_steppe_empire:0 "Ruling an Empire"
 
 the_conquest_of_the_world:0 "Conquest of the World"
+
+great_invasion:0 "The Great Invasion"
+dissension_in_the_kingdom:0 "Dissension in the Kingdom"
+
+bayezid_the_conqueror:0 "Bayezid the Conqueror"
+
+
+ireland_megapole:0 "Ireland Megapol"
+disunited_clergy:0 "Disunited Clergy"
+
+to_the_ocean:0 "To the Ocean"
+
+american_focus:0 "Emperor of the Americas"
+
+Pictish-Scot_Kingdom:0 "Pictish-Scot Kingdom"
+Thine_be_ilka_joy_and_treasure:0 "Thine be Ilka Joy and Treasure"
+alban_iron:0 "Alban Iron"
+sco_religious_bonus:0 "Religion Bonus"
+
+conquest_of_ireland:0 "Open Ireland to Trade"
+
+The_king_man_of_Mann:0 "The King Man of Mann"
+
+Celt_resurgence:0 "Celtic Resurgence"

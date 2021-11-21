@@ -679,12 +679,22 @@ rebuild_1 = {
 			}
 			trigger = {
 			 118 = {
-			 		has_province_modifier = coliseus
-					has_province_modifier = circus_maximus
-					has_province_modifier = ostia_port
-					has_province_modifier = pantheon
-					has_province_modifier = aurelian_walls
-					has_province_modifier = new_forum
+			 	has_great_project = {
+					type = coliseum
+					tier = 2
+				}
+				has_great_project = {
+					type = port_of_ostia
+					tier = 2
+				}
+				has_great_project = {
+					type = constantin_triumphal_arch
+					tier = 2
+				}
+				has_great_project = {
+					type = pantheon
+					tier = 2
+				}
 			 }
 			}
 

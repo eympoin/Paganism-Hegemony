@@ -361,7 +361,7 @@ celestial_empire = {
 		burghers_influence_modifier = -0.1
 		governing_capacity = 470
 	}
-	
+
 	ai = {
 		factor = 1000 # should always be picked if available
 	}
@@ -1599,7 +1599,7 @@ clergy_in_administration_reform = {
 	}
 	modifiers = {
 		free_adm_policy = 1
-		
+
 		brahmins_hindu_influence_modifier = 0.1
 		brahmins_hindu_loyalty_modifier = 0.05
 
@@ -1803,7 +1803,7 @@ aristocratic_court_reform = {
 
 states_general_reform = {
 	icon = "states_general"
-	allow_normal_conversion = yes
+	allow_normal_conversion = no
 	potential = {
 		is_revolutionary = no
 	}
@@ -1867,22 +1867,22 @@ general_estates_reform = {
 legislative_sejm = {
 	icon = "legislative_sejm_reform"
 	allow_normal_conversion = yes
-	
+
 	potential = {
 		has_reform = elective_monarchy
 		has_dlc = "Res Publica"
 	}
-	
+
 	trigger = {
 		has_reform = elective_monarchy
 	}
-	
+
 	modifiers = {
 		local_heir_adm = 1
 		local_heir_dip = 1
 		local_heir_mil = 1
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -1891,20 +1891,20 @@ legislative_sejm = {
 integrated_sejmiks = {
 	icon = "integrated_sejmiks_reform"
 	allow_normal_conversion = yes
-	
+
 	potential = {
 		has_reform = elective_monarchy
 		has_dlc = "Res Publica"
 	}
-	
+
 	trigger = {
 		has_reform = elective_monarchy
 	}
-	
+
 	modifiers = {
 		years_of_nationalism = -5
 	}
-	
+
 	ai = {
 		factor = 1
 	}
@@ -2072,10 +2072,10 @@ become_rev_republic_reform = {
 	icon = "become_rev_republic_reform"
 	allow_normal_conversion = yes
 
-	potential = { 
+	potential = {
 		is_revolutionary = yes
 	}
-	
+
 	trigger = {
 		has_reform = revolutionary_empire_reform
 	}
@@ -2411,5 +2411,144 @@ satrapdom_reform = {
 	modifiers = {
 		burghers_loyalty_modifier = 0.1
 		country_admin_power = 1
+	}
+}
+
+rioghacht_reform  = {
+	icon = "rioghacht"
+	allow_normal_conversion = yes
+	potential = {
+		NOT = { has_country_flag = formed_ireland_flag }
+		OR = {
+			AND = {
+				capital_scope = {
+					province_id = 373
+				}
+				culture = irish
+				NOT = { exists = IRE }
+			}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = rioghacht
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	nation_designer_trigger = {
+		culture = irish
+		capital_scope = {
+			OR = {
+				area = munster_area
+				area = connacht_area
+				area = leinster_area
+				area = ulster_area
+			}
+		}
+		owns = 373
+	}
+	legacy_equivalent = rioghacht_legacy
+	fixed_rank = 2
+	maintain_dynasty = yes
+	allow_vassal_war = yes
+	allow_vassal_alliance = yes
+	lock_level_when_selected = yes
+
+	modifiers = {
+		diplomats = 1
+		envoy_travel_time = -0.25
+		max_absolutism = 5
+	}
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+
+cuicide_reform = {
+	icon = "daimyo"
+	allow_normal_conversion = no
+	potential = {
+		NOT = { has_country_flag = formed_ireland_flag }
+		overlord = { has_reform = rioghacht_reform }
+	}
+	replacement_on_independence_war = indep_cuicide
+	legacy_equivalent = cuicide_legacy
+	fixed_rank = 1
+	maintain_dynasty = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	lock_level_when_selected = yes
+	nation_designer_trigger = {
+		culture = irish
+		capital_scope = {
+			OR = {
+				area = munster_area
+				area = connacht_area
+				area = leinster_area
+				area = ulster_area
+			}
+		}
+	}
+	modifiers = {
+		land_morale = 0.1
+		infantry_power = 0.1
+	}
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}
+
+indep_cuicide = {
+	icon = "samurai"
+	allow_normal_conversion = no
+	potential = {
+		NOT = { has_country_flag = formed_ireland_flag }
+		OR = {
+			AND = {
+				OR = {
+					is_subject = no
+					overlord = { NOT = { has_reform = rioghacht_reform } }
+				}
+				capital_scope = {
+					OR = {
+						area = munster_area
+						area = connacht_area
+						area = leinster_area
+						area = ulster_area
+					}
+				}
+				culture = irish
+			}
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = indep_cuicide
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	nation_designer_trigger = {
+		culture = irish
+		capital_scope = {
+			OR = {
+				area = munster_area
+				area = connacht_area
+				area = leinster_area
+				area = ulster_area
+			}
+		}
+	}
+	legacy_equivalent = indep_cuicide_legacy
+	maintain_dynasty = yes
+
+	modifiers = {
+		land_morale = 0.1
+		infantry_power = 0.1
+		governing_capacity = -150
+	}
+	custom_attributes = {
+		locked_government_type = yes
 	}
 }

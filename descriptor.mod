@@ -8,6 +8,6 @@ tags={
 	"Trade"
 }
 picture="thumbnail.png"
-name="Paganism Hegemony v0.9.1: The Rise of Bayezid"
+name="Paganism Hegemony v0.9.2: Morrigan's Revenge"
 supported_version="1.31.6"
 remote_file_id="2017988677"

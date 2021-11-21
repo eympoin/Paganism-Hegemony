@@ -4,6 +4,7 @@ bookmark =
 	desc = "BRITAIN_DESC"
 	date = 1444.11.11
 	country = MTH
+	country = SCO
 	country = PCT
 	country = GWY
 	country = LDN
@@ -17,4 +18,7 @@ bookmark =
 	easy_country = SEA
 	easy_country = EAA
 	easy_country = MIE
+	easy_country = PCT
+	easy_country = SCO
+        easy_country = MTH
 }

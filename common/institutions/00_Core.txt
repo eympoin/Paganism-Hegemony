@@ -15,7 +15,6 @@
 #######################################
 
 feudalism = {
-	penalty = 0.5
 	bonus = {
 		free_leader_pool = 1
 	}
@@ -58,6 +57,15 @@ feudalism = {
 					culture = omani_culture
 					culture = yemeni_culture
 					culture = swahili
+					culture = avar
+					culture = dacian
+					culture = daco-romanian
+					culture = pecheneg
+					culture = swahili
+					culture = saxon
+					culture = thuringian
+					culture = northymbrian
+					culture = danish
 					area = ningguta_area
 					area = jilin_area
 					culture_group = byzantine
@@ -67,7 +75,6 @@ feudalism = {
 					culture_group = eastern_aryan
 					culture_group = japanese_g
 					culture_group = korean_g
-					culture_group = scandinavian
 					culture_group = west_slavic
 					culture_group = western_aryan
 					province_id = 383
@@ -97,6 +104,16 @@ feudalism = {
 					government = tribal
 					government = native
 					primary_culture = bedouin_arabic
+					culture = irish
+					culture = swedish
+					culture = norwegian
+					culture = icelandic
+					culture = finnish
+					culture = karelian
+					culture = uralic
+					culture = estonian
+					culture = scottish
+					culture = highland_scottish
 					primary_culture = uyghur
 					technology_group = andean
 					technology_group = mesoamerican
@@ -267,7 +284,6 @@ feudalism = {
 #######################################
 
 renaissance = {
-	penalty = 0.5
 
 	bonus = {
 		development_cost = -0.05
@@ -601,7 +617,6 @@ renaissance = {
 # Colonising is good.. mkay.-.
 #######################################
 new_world_i = {
-	penalty = 0.5
 
 	bonus = {
 		global_prov_trade_power_modifier = 0.10
@@ -870,7 +885,6 @@ new_world_i = {
 # Printing Press
 #######################################
 printing_press = {
-	penalty = 0.5
 
 	bonus = {
 		stability_cost_modifier = -0.05
@@ -1202,7 +1216,6 @@ printing_press = {
 # Global Trade
 #######################################
 global_trade = {
-	penalty = 0.5
 
 	bonus = {
 		merchants = 1
@@ -1489,7 +1502,6 @@ global_trade = {
 # Manufactories
 #######################################
 manufactories = {
-	penalty = 0.5
 
 	bonus = {
 		global_trade_goods_size_modifier = 0.1
@@ -1980,7 +1992,6 @@ manufactories = {
 # Enlightenment
 #######################################
 enlightenment = {
-	penalty = 0.5
 
 	bonus = {
 		culture_conversion_cost = -0.25
@@ -2262,7 +2273,6 @@ enlightenment = {
 # Industrialisation
 #######################################
 industrialization = {
-	penalty = 0.5
 
 	trade_company_efficiency = 2.0
 

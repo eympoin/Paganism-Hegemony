@@ -1,4 +1,4 @@
-Mauretania_1_1 = {
+Moors_1_1 = {
   slot = 1
   generic = no
   ai = yes
