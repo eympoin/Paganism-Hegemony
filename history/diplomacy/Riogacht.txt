@@ -1,0 +1,84 @@
+
+
+vassal = {
+	first = MTH
+	second = CNN
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+
+vassal = {
+	first = MTH
+	second = SLN
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+vassal = {
+	first = MTH
+	second = MCM
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+vassal = {
+	first = MTH
+	second = LEI
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+vassal = {
+	first = MTH
+	second = ORD
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+vassal = {
+	first = MTH
+	second = FLY
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+vassal = {
+	first = MTH
+	second = DMS
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+vassal = {
+	first = MTH
+	second = TRY
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+vassal = {
+	first = MTH
+	second = TYR
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+
+vassal = {
+	first = MTH
+	second = ULS
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+
+vassal = {
+	first = MTH
+	second = ULS
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+
+vassal = {
+	first = MTH
+	second = KID
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}
+vassal = {
+	first = MTH
+	second = MNS
+	start_date = 1444.1.1
+	end_date = 1820.1.1
+}

@@ -1813,3 +1813,9 @@ SCL_ADJ:"Sclavenian"
 
 LEONID_EMPIRE:0 "Leonid Empire"
 LEONID_EMPIRE_ADJ:0 "Leonid"
+
+ALL:0 "Alba"
+ALL_ADJ:0 "Alban"
+VIN:0 "Vinland"
+VIN_ADJ:0 "Vinlandic"
+KELTIA:0 "Keltia"

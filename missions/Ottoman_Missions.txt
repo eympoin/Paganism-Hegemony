@@ -263,17 +263,7 @@ ottoman_missions_2 = {
       total_development = 300
 		}
 		effect = {
-			define_heir = {
-    name= bayezid
-    dynasty = ROOT
-    age = 13
-    adm = 6
-    dip = 4
-    mil = 6
-    claim = 95
-    female = no
-    no_consort_with_heir = yes
-}
+      country_event = {id = flavor_tur.1}
 		}
 	}
 	##Mission End
@@ -328,7 +318,7 @@ ottoman_missions_2 = {
         type = all
         owned_by = ROOT
       }
-      has_ruler = bayezid
+      has_ruler = Bayezid
 		}
 		effect = {
       add_country_modifier = {

@@ -14,6 +14,8 @@ monarchy = {
 				grand_duchy_reform
 				daimyo
 				indep_daimyo
+				cuicide_reform
+				indep_cuicide
 				elective_monarchy
 				iqta
 				ottoman_government
@@ -25,6 +27,7 @@ monarchy = {
 				feudal_theocracy
 				celestial_empire
 				shogunate
+				rioghacht_reform
 				english_monarchy
 				mandala_reform
 				revolutionary_empire_reform
@@ -36,7 +39,8 @@ monarchy = {
 				siamese_absolutism
 				confucian_bureaucracy
 				persian_empire_cen
-				absolute_reform
+				musa_rule
+				mossi_federal_kingdom
 			}
 		}
 		hereditary_vs_nobility = {
@@ -67,6 +71,8 @@ monarchy = {
 				penal_colonies_reform
 				liberte_reform
 				fraternite_reform
+				examination_system_reform
+				corvee_reform
 			}
 		}
 		growth_of_administration = {
@@ -138,11 +144,18 @@ monarchy = {
 		iqta_legacy
 		daimyo_legacy
 		shogunate_legacy
+		rioghacht_legacy
 		indep_daimyo_legacy
+		indep_cuicide_legacy
+		cuicide_legacy
 		principality_legacy
 		tsardom_legacy
 		holy_state_legacy
 		absolute_monarchy
+		negusa_nagast_legacy
+		solomonic_empire_legacy
+		musa_rule_legacy
+		mossi_federal_kingdom_legacy
 	}
 
 	# Each group of exclusive reforms are mutually exclusive to each other
@@ -198,6 +211,9 @@ monarchy = {
 	exclusive_reforms = {
 		daimyo
 		shogunate
+		rioghacht_reform
+		cuicide_reform
+		indep_cuicide
 		indep_daimyo
 		states_general_reform
 		parliamentary_reform
@@ -789,6 +805,18 @@ pre_dharma_mapping = {
 	indep_daimyo = {
 		government = monarchy
 		legacy_government = indep_daimyo_legacy
+	}
+	cuicide_reform = {
+		government = monarchy
+		legacy_government = cuicide_legacy
+	}
+	indep_cuicide = {
+		government = monarchy
+		legacy_government = indep_cuicide_legacy
+	}
+	rioghacht = {
+		government = monarchy
+		legacy_government = rioghacht_legacy
 	}
 	colonial_government = {
 		government = republic

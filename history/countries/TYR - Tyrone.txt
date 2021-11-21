@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = feudalism_reform
+add_government_reform = cuicide_reform
 government_rank = 1
 technology_group = western
 primary_culture = irish
@@ -7,7 +7,7 @@ religion = celt
 capital = 372	# Carrickfergus
 
 
-
+add_truce_with = MTH	
 1432.1.1 = {
 	monarch = {
 		name = "Eoghan II"
@@ -23,8 +23,8 @@ capital = 372	# Carrickfergus
 
 1435.1.1 = {
 	heir = {
-		name = "Einrí"
-		monarch_name = "Einrí I"
+		name = "Einrï¿½"
+		monarch_name = "Einrï¿½ I"
 		dynasty = "O'Neill"
 		birth_date = 1435.1.1
 		death_date = 1484.1.1

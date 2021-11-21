@@ -28,6 +28,31 @@ stateless_society = {
 }
 
 
+rioghacht = {
+	rank = {
+		1 = HIGH_KINGDOM
+		2 = HIGH_KINGDOM
+		3 = HIGH_KINGDOM
+	}
+
+	ruler_male = {
+		1 = HIGH_KING
+		2 = HIGH_KING
+		3 = HIGH_KING
+	}
+
+	ruler_female = {
+		1 = HIGH_QUEEN
+		2 = HIGH_QUEEN
+		3 = HIGH_QUEEN
+	}
+
+	trigger = {
+		has_reform = rioghacht_reform
+	}
+}
+
+
 islamic_caliphate = {
 	rank = {
 		3 = ISLAMIC_CALIPHATE

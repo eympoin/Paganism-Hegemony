@@ -65,6 +65,9 @@ defaults_reform = {
 	allow_draft_transport_ships = no
 	free_concentrate_development = no
 	disallowed_trade_goods = {}
+	can_customise_heir = yes
+	allow_cawa = no
+	can_change_primary_culture = yes
 }
 
 # legacy governments
@@ -340,7 +343,7 @@ merchant_republic = {
 		can_form_trade_league = yes
 		trade_city_reform = trading_city_legacy
 	}
-	
+
 	custom_attributes = {
 		is_merchant_republic = yes
 	}
@@ -429,7 +432,7 @@ oligarchic_republic = {
 
 	republican_name = yes
 	royal_marriage = no
-	
+
 	republic = yes
 	modifiers = {
 		global_tax_modifier = 0.05
@@ -455,11 +458,11 @@ prussian_republic = {
 	has_term_election = no
 	republican_name = yes
 	royal_marriage = no
-	
+
 	nation_designer_trigger = {
 		primary_culture =  prussian
 	}
-	
+
 	trigger = {
 		OR = {
 			is_playing_custom_nation = yes
@@ -467,7 +470,7 @@ prussian_republic = {
 			religion = reformed
 		}
 	}
-	
+
 	modifiers = {
 		war_exhaustion = -0.02
 		global_unrest = -2
@@ -475,12 +478,12 @@ prussian_republic = {
 		republican_tradition = -0.5
 		governing_capacity_modifier = -0.5
 	}
-	
+
 	conditional = {
 		allow = { has_dlc = "Rights of Man" }
 		militarised_society = yes
 	}
-	
+
 	custom_attributes = {
 		generals_become_rulers = yes
 	}
@@ -508,7 +511,7 @@ signoria = {
 		max_absolutism = -30
     	governing_capacity = 100
 	}
-	
+
 	custom_attributes = {
 		enables_nepotism = yes
 	}
@@ -522,10 +525,10 @@ pirate_republic = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
 	duration = 4
-	
+
 	republican_name = yes
 	royal_marriage = no
-	
+
 	republic = yes
 	can_form_trade_league = no
 
@@ -543,18 +546,18 @@ pirate_republic = {
 		NOT = { technology_group = south_american }
 		NOT = { technology_group = mesoamerican }
 	}
-	
-	potential = {	
+
+	potential = {
 		has_dlc = "Golden Century"
 	}
-	
+
 	factions_frame = 9
 	factions = {
 		pr_buccaneers
 		pr_smugglers
 		pr_captains
 	}
-	
+
 	modifiers = {
 		republican_tradition = -1
 		max_absolutism = -50
@@ -562,11 +565,11 @@ pirate_republic = {
 		capture_ship_chance = 0.33
 		may_perform_slave_raid_on_same_religion = yes
 	}
-	
+
 	custom_attributes = {
 		force_admiral_leader = yes
 	}
-	
+
 	ai = {
 		factor = 0
 	}
@@ -579,17 +582,17 @@ pirate_kingdom = {
 	valid_for_new_country = no
 	valid_for_nation_designer = no
 	has_term_election = no
-	
-	
+
+
 	republican_name = yes
 	royal_marriage = no
-	
+
 	republic = yes
-	
-	potential = {	
+
+	potential = {
 		has_dlc = "Golden Century"
 	}
-	
+
 	nation_designer_trigger = {
 		capital_scope = {
 			has_port = yes
@@ -599,14 +602,14 @@ pirate_kingdom = {
 			}
 		}
 	}
-	
+
 	factions_frame = 9
 	factions = {
 		pr_buccaneers
 		pr_smugglers
 		pr_captains
 	}
-	
+
 	modifiers = {
 		republican_tradition = -1
 		max_absolutism = -50
@@ -617,11 +620,11 @@ pirate_kingdom = {
 		leader_naval_fire = 1
 		may_perform_slave_raid_on_same_religion = yes
 	}
-	
+
 	custom_attributes = {
 		admirals_become_rulers = yes
 	}
-	
+
 	ai = {
 		factor = 0
 	}
@@ -635,23 +638,23 @@ war_against_the_world_government = {
 	valid_for_nation_designer = no
 	duration = 4
 	disallowed_trade_goods = { slaves }
-	
+
 	republican_name = yes
 	royal_marriage = no
-	
+
 	republic = yes
-	
-	potential = {	
+
+	potential = {
 		has_dlc = "Golden Century"
 	}
-	
+
 	factions_frame = 9
 	factions = {
 		pr_buccaneers
 		pr_smugglers
 		pr_captains
 	}
-	
+
 	modifiers = {
 		republican_tradition = -1
 		max_absolutism = -50
@@ -662,11 +665,11 @@ war_against_the_world_government = {
 		global_manpower_modifier = 0.1
 		may_perform_slave_raid_on_same_religion = yes
 	}
-	
+
 	custom_attributes = {
 		force_admiral_leader = yes
 	}
-	
+
 	ai = {
 		factor = 0
 	}
@@ -679,12 +682,12 @@ black_market_consortium_government = {
 	valid_for_new_country = no
 	valid_for_nation_designer = no
 	duration = 4
-	
+
 	republican_name = yes
 	royal_marriage = no
-	
+
 	republic = yes
-	
+
 	nation_designer_trigger = {
 		capital_scope = {
 			has_port = yes
@@ -694,14 +697,14 @@ black_market_consortium_government = {
 			}
 		}
 	}
-	
+
 	factions_frame = 9
 	factions = {
 		pr_buccaneers
 		pr_smugglers
 		pr_captains
 	}
-	
+
 	modifiers = {
 		republican_tradition = -1
 		max_absolutism = -50
@@ -711,11 +714,11 @@ black_market_consortium_government = {
 		global_foreign_trade_power = 0.3
 		may_perform_slave_raid_on_same_religion = yes
 	}
-	
+
 	custom_attributes = {
 		force_admiral_leader = yes
 	}
-	
+
 	conditional = {
 		allow = {
 			has_dlc = "Res Publica"
@@ -723,7 +726,7 @@ black_market_consortium_government = {
 		can_use_trade_post = yes
 	}
 	boost_income = yes
-	
+
 	ai = {
 		factor = 0
 	}
@@ -804,7 +807,7 @@ military_dictatorship = {
 	valid_for_new_country = yes
 	valid_for_nation_designer = yes
 	has_term_election = no
-	
+
 	republican_name = yes
 	royal_marriage = no
 	republic = yes
@@ -825,11 +828,11 @@ protectorate_parliament_legacy = {
 	valid_for_new_country = no
 	valid_for_nation_designer = no
 	has_term_election = no
-	
+
 	republican_name = yes
 	royal_marriage = no
 	republic = yes
-	
+
 	modifiers = {
 		global_autonomy = -0.05
 		land_morale = 0.05
@@ -1095,7 +1098,7 @@ monastic_order_government = {
 	rulers_can_be_generals = yes
 
 	royal_marriage = no
-	
+
 	rulers_can_be_generals = yes
 
 	valid_for_nation_designer = yes
@@ -1143,7 +1146,7 @@ holy_state_theocracy = {
 		manpower_recovery_speed = 0.15
 		global_autonomy = -0.2
 	}
-	
+
 	conditional = {
 		allow = {
 			has_dlc = "Common Sense"
@@ -2342,7 +2345,7 @@ veche_republic_legacy = {
 	allow_convert = no
 
 	boost_income = yes
-	
+
 	republican_name = yes
 	royal_marriage = no
 
@@ -2567,7 +2570,7 @@ united_cantons_legacy = {
 	republic = yes
 	modifiers = {
    		governing_capacity = -150
-		possible_dip_policy = 1	
+		possible_dip_policy = 1
 		mercenary_manpower = 0.5
 	}
 
@@ -2691,5 +2694,814 @@ absolute_monarchy = {
 	}
 	ai = {
 		factor = 5
+	}
+}
+
+rioghacht_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	legacy_government = yes
+	allow_normal_conversion = no
+
+	valid_for_new_country = no
+	allow_convert = no
+
+	maintain_dynasty = yes
+
+	allow_vassal_war = yes
+	allow_vassal_alliance = yes
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	nation_designer_trigger = {
+		culture = irish
+		capital_scope = {
+			OR = {
+				area = munster_area
+				area = connacht_area
+				area = leinster_area
+				area = ulster_area
+			}
+		}
+		owns = 373
+	}
+
+    fixed_rank = 2
+	monarchy = yes
+	modifiers = {
+		governing_capacity = 100
+		diplomats = 1
+		envoy_travel_time = -0.25
+		max_absolutism = 5
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+
+cuicide_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	legacy_government = yes
+	allow_normal_conversion = no
+
+	valid_for_new_country = no
+	allow_convert = no
+
+	maintain_dynasty = yes
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	nation_designer_trigger = {
+		culture = irish
+		capital_scope = {
+			OR = {
+				area = munster_area
+				area = connacht_area
+				area = leinster_area
+				area = ulster_area
+			}
+		}
+	}
+
+    fixed_rank = 1
+	monarchy = yes
+	modifiers = {
+		land_morale = 0.10
+		infantry_power = 0.10
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+indep_cuicide_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	legacy_government = yes
+	allow_normal_conversion = no
+
+	valid_for_new_country = no
+	allow_convert = no
+
+	maintain_dynasty = yes
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	nation_designer_trigger = {
+		culture = irish
+		capital_scope = {
+			OR = {
+				area = munster_area
+				area = connacht_area
+				area = leinster_area
+				area = ulster_area
+			}
+		}
+	}
+
+	monarchy = yes
+	modifiers = {
+		governing_capacity = -150
+		land_morale = 0.1
+		infantry_power = 0.1
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+
+
+sacred_kingdom_legacy = {
+	# government mechanics flags go here
+	icon = "divine_guidance_reform"
+	allow_normal_conversion = no
+
+	legacy_government = yes
+	valid_for_new_country = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	nation_designer_trigger = {
+		NOT = { religion_group = christian }
+		NOT = { religion_group = muslim }
+		NOT = { religion_group = jewish_group }
+	}
+
+
+	republic = yes
+	modifiers = {
+		tolerance_own = 2
+		max_absolutism = 25
+		legitimacy = 0.5
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+sacred_kingdom = {
+	icon = "divine_guidance_reform"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		has_dlc = "Origins"
+		religion_group = pagan
+	}
+	trigger = {
+		OR = {
+			NOT = { has_institution = enlightenment }	#Why should any enlightened person ever want to support this system?
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = sacred_kingdom
+			}
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	nation_designer_trigger = {
+		religion_group = pagan
+	}
+	legacy_equivalent = sacred_kingdom_legacy
+	maintain_dynasty = yes
+
+	removed_effect = {
+		if = {
+			limit = {
+				NOT = { has_institution = enlightenment }
+			}
+			add_stability = -2
+		}
+	}
+
+	modifiers = {
+		tolerance_own = 2
+		max_absolutism = 25
+		legitimacy = 0.5
+	}
+}
+
+negusa_nagast_legacy = {
+	icon = "chieftain"
+	allow_normal_conversion = no
+
+	legacy_government = yes
+	valid_for_new_country = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+
+
+	republic = yes
+	modifiers = {
+		move_capital_cost_modifier = -0.75
+		global_unrest = -1
+		stability_cost_modifier = -0.1
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Origins"
+		}
+		custom_attributes = {
+			has_itinerant_capital = yes
+		}
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Origins"
+		}
+		allow_cawa = yes
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+negusa_nagast = {
+	icon = "chieftain"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		OR = {
+			have_had_reform = negusa_nagast
+			tag = ETH
+		}
+	}
+	trigger = {
+		OR = {
+			have_had_reform = negusa_nagast
+			tag = ETH
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 40
+	legacy_equivalent = negusa_nagast_legacy
+
+	modifiers = {
+		move_capital_cost_modifier = -0.75
+		global_unrest = -1
+		stability_cost_modifier = -0.1
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Origins"
+		}
+		custom_attributes = {
+			has_itinerant_capital = yes
+		}
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Origins"
+		}
+		allow_cawa = yes
+	}
+}
+
+solomonic_empire_legacy = {
+	# government mechanics flags go here
+	icon = "king"
+	allow_normal_conversion = no
+
+	legacy_government = yes
+	valid_for_new_country = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	fixed_rank = 3
+
+
+	republic = yes
+	modifiers = {
+		tolerance_own = 2
+		max_absolutism = 20
+		global_unrest = -2
+		amount_of_cawa = 1
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Origins"
+		}
+		allow_cawa = yes
+	}
+
+	ai = {
+		factor = 5
+	}
+}
+solomonic_empire = {
+	icon = "king"
+	allow_normal_conversion = yes
+	lock_level_when_selected = yes
+	potential = {
+		OR = {
+			have_had_reform = solomonic_empire
+			has_country_flag = unlocked_solomid_empire_reform
+		}
+	}
+	trigger = {
+		OR = {
+			have_had_reform = solomonic_empire
+			has_country_flag = unlocked_solomid_empire_reform
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 50
+	legacy_equivalent = solomonic_empire_legacy
+	fixed_rank = 3
+
+	modifiers = {
+		tolerance_own = 2
+		max_absolutism = 20
+		global_unrest = -2
+		amount_of_cawa = 1
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Origins"
+		}
+		allow_cawa = yes
+	}
+}
+
+matrilineal_system_legacy = {
+	# government mechanics flags go here
+	icon = "british_queen"
+	allow_normal_conversion = no
+
+	legacy_government = yes
+	valid_for_new_country = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+
+	modifiers = {
+		heir_chance = -0.5
+		female_advisor_chance = 0.5
+		legitimacy = 1
+	}
+}
+matrilineal_system = {
+	icon = "british_queen"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	legacy_equivalent = matrilineal_system_legacy
+	potential = {
+		OR = {
+			primary_culture = nubian
+			have_had_reform = matrilineal_system
+		}
+	}
+	trigger = {
+		OR = {
+			primary_culture = nubian
+			have_had_reform = matrilineal_system
+		}
+	}
+	modifiers = {
+		heir_chance = -0.5
+		female_advisor_chance = 0.5
+		legitimacy = 1
+	}
+}
+
+tribal_confederacy_legacy = {
+	# government mechanics flags go here
+	icon = "native_settle_down_reform"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_government = yes
+	valid_for_new_country = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+
+	modifiers = {
+		nobles_influence_modifier = 0.15
+		nobles_loyalty_modifier = 0.1
+		global_unrest = -1
+		max_absolutism = -20
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Origins"
+		}
+		custom_attributes = {
+			has_internal_tribes = yes
+			locked_government_type = yes
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_dlc = "Origins"
+				}
+				set_estate_privilege = estate_nobles_decentralized_tribe
+			}
+		}
+	}
+}
+tribal_confederacy = {
+	icon = "native_settle_down_reform"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	lock_level_when_selected = yes
+	nation_designer_cost = 30
+	legacy_equivalent = tribal_confederacy_legacy
+
+	modifiers = {
+		nobles_influence_modifier = 0.15
+		nobles_loyalty_modifier = 0.1
+		global_unrest = -1
+		max_absolutism = -20
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Origins"
+		}
+		custom_attributes = {
+			has_internal_tribes = yes
+			locked_government_type = yes
+		}
+	}
+
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_dlc = "Origins"
+				}
+				set_estate_privilege = estate_nobles_decentralized_tribe
+			}
+		}
+	}
+
+	ai = {
+		factor = 0
+	}
+}
+
+mossi_federal_kingdom_legacy = {
+	# government mechanics flags go here
+	icon = "native_war_band_reform"
+	allow_normal_conversion = no
+	legacy_government = yes
+	valid_for_new_country = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+
+	potential = {
+		OR = {
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = mossi_federal_kingdom
+			}
+			AND = {
+				has_country_flag = msi_mossi_kingdom_event
+				tag = MSI
+			}
+		}
+	}
+
+	modifiers = {
+		nobles_influence_modifier = 0.15
+		nobles_loyalty_modifier = 0.1
+		global_unrest = -1
+		max_absolutism = -20
+	}
+
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Origins"
+				has_dlc = "Cradle of Civilization"
+			}
+		}
+		custom_attributes = {
+			has_federal_kingdoms = yes
+		}
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Cradle of Civilization"
+		}
+		government_abilities = {
+			tribal_federation_mechanic
+		}
+	}
+}
+mossi_federal_kingdom = {
+	icon = "native_war_band_reform"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	legacy_equivalent = tribal_confederacy_legacy
+
+	potential = {
+		OR = {
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = mossi_federal_kingdom
+			}
+			AND = {
+				has_country_flag = msi_mossi_kingdom_event
+				tag = MSI
+			}
+		}
+	}
+
+	modifiers = {
+		nobles_influence_modifier = 0.15
+		nobles_loyalty_modifier = 0.1
+		global_unrest = -1
+		max_absolutism = -20
+	}
+
+	effect = {
+		if = {
+			limit = {
+				has_country_flag = msi_unlocked_perma_reward
+			}
+			remove_country_modifier = msi_centralization_focus
+			add_country_modifier = {
+				name = msi_federal_kingdom_focus
+				duration = -1
+				desc = msi_federal_kingdom_focus_desc
+			}
+		}
+	}
+
+	removed_effect = {
+		if = {
+			limit = {
+				has_country_flag = msi_unlocked_perma_reward
+			}
+			remove_country_modifier = msi_federal_kingdom_focus
+			add_country_modifier = {
+				name = msi_centralization_focus
+				duration = -1
+				desc = msi_centralization_focus_desc
+			}
+		}
+	}
+
+	conditional = {
+		allow = {
+			OR = {
+				has_dlc = "Origins"
+				has_dlc = "Cradle of Civilization"
+			}
+		}
+		custom_attributes = {
+			has_federal_kingdoms = yes
+		}
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Cradle of Civilization"
+		}
+		government_abilities = {
+			tribal_federation_mechanic
+		}
+	}
+
+	ai = {
+		factor = 1
+	}
+}
+
+musa_rule_legacy = {
+	# government mechanics flags go here
+	icon = "chieftain"
+	allow_normal_conversion = no
+
+	legacy_government = yes
+	valid_for_new_country = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+
+	modifiers = {
+		advisor_pool = 1
+		stability_cost_modifier = -0.05
+		legitimacy = 0.5
+	}
+}
+musa_rule = {
+	icon = "chieftain"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	legacy_equivalent = musa_rule_legacy
+	potential = {
+		OR = {
+			tag = MAL
+			have_had_reform = musa_rule
+		}
+	}
+	trigger = {
+		OR = {
+			tag = MAL
+			have_had_reform = musa_rule
+		}
+	}
+	modifiers = {
+		advisor_pool = 1
+		stability_cost_modifier = -0.05
+		legitimacy = 0.5
+	}
+
+	ai = {
+		factor = 1
+	}
+}
+
+great_man_legacy = {
+	# government mechanics flags go here
+	icon = "chieftain"
+	allow_normal_conversion = no
+
+	legacy_government = yes
+	valid_for_new_country = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+
+	modifiers = {
+		leader_cost = -0.1
+		production_efficiency = 0.1
+	}
+}
+great_man = {
+	icon = "chieftain"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	legacy_equivalent = great_man_legacy
+	potential = {
+		OR = {
+			AND = {
+				religion = shamanism
+				capital_scope = {
+					has_terrain = jungle
+				}
+			}
+			have_had_reform = great_man
+		}
+	}
+	trigger = {
+		OR = {
+			AND = {
+				religion = shamanism
+				capital_scope = {
+					has_terrain = jungle
+				}
+			}
+			have_had_reform = great_man
+		}
+	}
+	modifiers = {
+		leader_cost = -0.1
+		production_efficiency = 0.1
+	}
+
+	ai = {
+		factor = 1
+	}
+}
+
+shaka_regime_legacy = {
+	# government mechanics flags go here
+	icon = "chieftain"
+	allow_normal_conversion = no
+
+	legacy_government = yes
+	valid_for_new_country = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+
+	modifiers = {
+		monarch_military_power = 2
+		global_unrest = -2
+		war_exhaustion = -0.02
+		governing_capacity_modifier = -0.5
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Rights of Man"
+		}
+		militarised_society = yes
+	}
+}
+shaka_regime = {
+	icon = "chieftain"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	legacy_equivalent = shaka_regime_legacy
+	potential = {
+		OR = {
+			tag = ZUL
+			have_had_reform = shaka_regime
+		}
+	}
+	trigger = {
+		OR = {
+			tag = ZUL
+			have_had_reform = shaka_regime
+		}
+	}
+	modifiers = {
+		monarch_military_power = 2
+		global_unrest = -2
+		war_exhaustion = -0.02
+		governing_capacity_modifier = -0.5
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Rights of Man"
+		}
+		militarised_society = yes
+	}
+
+	ai = {
+		factor = 1
+	}
+}
+
+feudal_tribe_legacy = {
+	# government mechanics flags go here
+	icon = "tribal_civil_society"
+	allow_normal_conversion = no
+
+	legacy_government = yes
+	valid_for_new_country = no
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	potential = {
+	}
+	trigger = {
+	}
+	modifiers = {
+		vassal_income = 0.1
+		global_tax_modifier = 0.1
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Mandate of Heaven"
+		}
+		custom_attributes = {
+			has_tributaries = yes
+		}
+	}
+}
+feudal_tribe = {
+	icon = "tribal_civil_society"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 30
+	legacy_equivalent = feudal_tribe_legacy
+	lock_level_when_selected = yes
+	potential = {
+	}
+	trigger = {
+	}
+	modifiers = {
+		vassal_income = 0.1
+		global_tax_modifier = 0.1
+	}
+
+	conditional = {
+		allow = {
+			has_dlc = "Mandate of Heaven"
+		}
+		custom_attributes = {
+			has_tributaries = yes
+		}
+	}
+
+	ai = {
+		factor = 0
 	}
 }

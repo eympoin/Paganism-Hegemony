@@ -1,0 +1,772 @@
+For_Alba = {
+    slot = 1
+    generic = no
+    ai = yes
+    potential = {
+    OR = {
+      tag = SCO
+      tag = ALL
+	    tag = PCT
+	 }
+	 NOT = { map_setup = map_setup_random }
+    }
+	Unite_the_clans = {
+	icon = mission_rb_conquer_the_highlands
+		required_missions = {  } #None
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+			lowlands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+      highlands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	Unite_the_Picts_and_Scots = {
+		icon = mission_rb_unite_the_clans
+		required_missions = { Unite_the_clans }
+		trigger = {
+      tag = ALL
+		}
+		effect = {
+			add_country_modifier = {
+				name = "Pictish-Scot_Kingdom"
+				duration = -1
+			}
+      if = {
+        limit = {
+          primary_culture = scottish
+        }
+        add_accepted_culture = highland_scottish
+      }
+      if = {
+        limit = {
+          primary_culture = highland_scottish
+        }
+        add_accepted_culture = scottish
+      }
+		}
+	}
+	One_land_one_banner_one_king  = {
+		icon = mission_rb_rein_in_the_highland_clans
+		required_missions = { Unite_the_Picts_and_Scots }
+		provinces_to_highlight = {
+      OR = {
+        area = highlands_area
+        area = lowlands_area
+      }
+			NOT = { owned_by = ROOT }
+		}
+
+		trigger = {
+      OR = {
+        highlands_area = {
+          type = all
+          owned_by = ROOT
+        }
+        lowlands_area = {
+          type = all
+          owned_by = ROOT
+        }
+      }
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "Thine_be_ilka_joy_and_treasure"
+				duration = 5475
+      }
+    }
+	}
+	Let_s_reconnect_with_the_sea = {
+		icon = mission_rb_grow_the_channel
+		required_missions = { One_land_one_banner_one_king }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 253
+				province_id = 4364
+				province_id = 369
+				province_id = 1978
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			owns_core_province = 253
+			owns_core_province = 4364
+			owns_core_province = 369
+			owns_core_province = 1978
+		}
+		effect = {
+			highlands_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_base_manpower = 1
+				}
+		}
+	}
+	Resettle_the_Isles = {
+		icon = mission_rb_conquer_the_isles
+		required_missions = { Let_s_reconnect_with_the_sea }
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 253
+					NOT = {
+						OR = {
+						culture = scottish
+						culture = highland_scottish
+						}
+					}
+				}
+				AND = {
+					province_id = 4364
+					NOT = {
+						OR = {
+						culture = scottish
+						culture = highland_scottish
+						}
+					}
+				}
+				AND = {
+					province_id = 369
+					NOT = {
+						OR = {
+						culture = scottish
+						culture = highland_scottish
+						}
+					}
+				}
+				AND = {
+					province_id = 1978
+					NOT = {
+						OR = {
+						culture = scottish
+						culture = highland_scottish
+						}
+					}
+				}
+			}
+		}
+
+		trigger = {
+			253 = {
+				OR = {
+					culture = scottish
+					culture = highland_scottish
+						}
+			}
+			4364 = {
+				OR = {
+					culture = scottish
+					culture = highland_scottish
+						}
+			}
+			369 = {
+				OR = {
+					culture = scottish
+					culture = highland_scottish
+						}
+			}
+			1978 = {
+				OR = {
+					culture = scottish
+					culture = highland_scottish
+						}
+			}
+		}
+		effect = {
+			add_prestige = 25
+			add_dip_power = 100
+		}
+	}
+	Iron_has_no_equal = {
+		icon = mission_industria_sedera
+		required_missions = { Resettle_the_Isles }
+		trigger = {
+      any_owned_province = {
+        trade_goods = iron
+        base_production = 6
+      }
+		}
+		effect = {
+      random_owned_province = {
+        limit = {
+        trade_goods = iron
+        base_production = 6
+        }
+        add_province_modifier = {
+          name = "alban_iron"
+          duration = -1
+        }
+      }
+		}
+  }
+}
+For_Britain = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+    OR = {
+      tag = SCO
+      tag = ALL
+	    tag = PCT
+	 }
+	 NOT = { map_setup = map_setup_random }
+  }
+	has_country_shield = yes
+
+	freedom_for_our_brothers = {
+		icon = mission_rb_conquer_the_highlands
+		required_missions = {  }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 246
+				province_id = 247
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			owns_core_province = 246
+			owns_core_province = 247
+		}
+		effect = {
+			lowlands_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_base_manpower = 1
+		 }
+	  }
+  }
+	The_breath_of_the_Carnyx = {
+		icon = mission_rb_into_england
+		required_missions = { freedom_for_our_brothers }
+		provinces_to_highlight = {
+      OR = {
+        area = yorkshire_area
+        area = scottish_marches_area
+      }
+      NOT = {owned_by = ROOT}
+		}
+
+		trigger = {
+      yorkshire_area = {
+				type = all
+				owned_by = ROOT
+			}
+			scottish_marches_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+
+		effect = {
+			west_midlands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_midlands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	The_Wind_of_the_North = {
+		icon = league_of_the_public_weal
+		required_missions = { The_breath_of_the_Carnyx }
+		provinces_to_highlight = {
+			OR = {
+        area = west_midlands_area
+        area = east_midlands_area
+      }
+			NOT = { owned_by = ROOT }
+		}
+
+		trigger = {
+      west_midlands_area = {
+        type = all
+        owned_by = ROOT
+      }
+      east_midlands_area = {
+        type = all
+        owned_by = ROOT
+      }
+		}
+		effect = {
+			east_anglia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			home_counties_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+      wessex_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			}
+	}
+	Like_in_Roman_times = {
+		icon = mission_rb_scottish_conquer_london
+		required_missions = { The_Wind_of_the_North }
+		provinces_to_highlight = {
+			area = home_counties_area
+			NOT = { owned_by = ROOT }
+		}
+
+		trigger = {
+			home_counties_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 50
+			add_dip_power = 50
+		}
+	}
+	The_return_of_the_druids = {
+		icon = the_land_of_moses
+		required_missions = { Like_in_Roman_times }
+
+		provinces_to_highlight = {
+			area = scottish_marches_area
+		}
+
+		trigger = {
+			scottish_marches_area = {
+				type = all
+				has_owner_religion = yes
+			}
+		}
+		effect = {
+		#	if = {
+			#	limit = {
+			#		NOT = {
+			#			religion = celt
+			#		}
+			#	}
+				add_country_modifier = {
+					name = "sco_religious_bonus"
+					duration = 7300
+				}
+			#}
+			#else = {
+  		#		custom_tooltip = celt_reform_center_tt
+  		#		266 = {
+  		#			add_reform_center = celt
+  		#		}
+			#	}
+			}
+		}
+	Time_for_tartan_and_haggis_to_shine = {
+		icon = mission_rb_rein_in_the_highland_clans
+		required_missions = { The_return_of_the_druids }
+
+		provinces_to_highlight = {
+			 owned_by = root
+  			NOT = {
+          OR = {
+  				culture = scottish
+  				culture = highland_scottish
+  			}
+  		}
+    }
+
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 25
+				OR = {
+  				culture = scottish
+  				culture = highland_scottish
+			  }
+		  }
+    }
+		effect = {
+			add_prestige = 50
+			add_dip_power = 200
+		}
+	}
+}
+For_the_Celts = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+    OR = {
+      tag = SCO
+      tag = ALL
+	    tag = PCT
+	 }
+	 NOT = { map_setup = map_setup_random }
+   }
+	has_country_shield = yes
+
+	Let_s_find_our_brothers = {
+		icon = mission_rb_into_ireland
+		required_missions = {  }
+		provinces_to_highlight = {
+			area = ulster_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			ulster_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			munster_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			connacht_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			leinster_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	The_sound_of_the_harp  = {
+		icon = mission_rb_conquer_ireland
+		required_missions = { Let_s_find_our_brothers }
+		provinces_to_highlight = {
+			OR = {
+				area = munster_area
+				area = connacht_area
+				area = leinster_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			munster_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			connacht_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			leinster_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "conquest_of_ireland"
+				duration = 7300
+			}
+		}
+	}
+	A_Gael_for_Cymru_is_better_than_a_Norsemen_or_Roman = {
+		icon = mission_alliances
+		required_missions = { The_sound_of_the_harp }
+		provinces_to_highlight = {
+			area = wales_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			wales_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			4365 = {
+				add_permanent_claim = ROOT
+			}
+	  }
+  }
+	A_King_man_for_Mann  = {
+		icon = mission_hanseatic_city
+		required_missions = { A_Gael_for_Cymru_is_better_than_a_Norsemen_or_Roman }
+		provinces_to_highlight = {
+			province_id = 4365
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			owns_core_province = 4365
+		}
+		effect = {
+			add_country_modifier = {
+				name = "The_king_man_of_Mann"
+				duration = 7300
+			}
+		}
+	}
+	The_Cornish_Leprechauns  = {
+		icon = mission_rb_conquer_wales
+		required_missions = { A_King_man_for_Mann }
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 233
+				province_id = 4373
+			}
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		trigger = {
+			OR = {
+			owns_core_province = 233
+			owns_core_province = 4373
+			}
+		}
+		effect = {
+			brittany_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+	  }
+  }
+	The_breath_of_the_white_ermine = {
+		icon = mission_rb_conquer_brittany
+		required_missions = { The_Cornish_Leprechauns }
+
+		provinces_to_highlight = {
+			area = brittany_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			brittany_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			asturias_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	There_can_be_only_one = {
+		icon = oceania_assemble_an_army
+		required_missions = { The_breath_of_the_white_ermine }
+
+		provinces_to_highlight = {
+			area = asturias_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			asturias_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 25
+			add_adm_power = 200
+		}
+	}
+	United_in_adversity = {
+		icon = mission_din_i_llahi
+		required_missions = { There_can_be_only_one }
+
+		provinces_to_highlight = {
+			owned_by = root
+			NOT = {
+			OR = {
+				culture = scottish
+				culture = highland_scottish
+				}
+			}
+		}
+
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 65
+				OR = {
+				culture = scottish
+				culture = highland_scottish
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						government_rank = 3
+					}
+				}
+				set_government_rank = 3
+			}
+			add_country_modifier = {
+				name = "Celt_resurgence"
+				duration = -1
+			}
+			override_country_name = KELTIA
+			poitou_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			pyrenees_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			basque_country = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			galicia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			normandy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			loire_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+For_America = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+    OR = {
+      tag = SCO
+      tag = ALL
+	  tag = PCT
+	 }
+	 NOT = { map_setup = map_setup_random }
+  }
+	has_country_shield = yes
+
+	Auld_Lang_Syne = {
+			icon = mission_establish_high_seas_navy
+		required_missions = { }
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = miss_discover_eastern_america
+				colonial_eastern_america = { has_discovered = ROOT }
+			}
+			custom_trigger_tooltip = {
+				tooltip = miss_discover_caribbean
+				colonial_the_carribean = { has_discovered = ROOT }
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = "the_unknown_frontier"
+				duration = 5475
+			}
+			add_dip_power = 100
+		}
+
+	}
+	A_legend_is_born   = {
+		icon = mission_settlers_north_america
+		required_missions = { Auld_Lang_Syne }
+		provinces_to_highlight = {
+			colonial_region = colonial_eastern_america
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = miss_colonize_eastern_america
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 1
+					colonial_region = colonial_eastern_america
+					is_city = yes
+				}
+			}
+		}
+
+		effect = {
+			create_conquistador = {
+				tradition = 100
+			}
+		}
+	}
+}
