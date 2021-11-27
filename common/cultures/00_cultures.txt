@@ -1,94 +1,4 @@
-# Do not change tags in here without changing every other reference to them.
-# If adding new groups or cultures, make sure they are unique.
-#
-# Union tags do not suffer from the 'same_culture_group' tax penalty.
-# Primary tags are the first choice for rebel factions seeking cultural independence.
-#
-# graphical_culture = westerngfx
-# second_graphical_culture = muslimgfx (fallback if the first does not exist)
 
-neo-roman={
-	graphical_culture = westerngfx
-	#graphical_culture = southamericagfx
-	dynasty_names = { "Aelius" "Abronius" "Abudius" "Albinius" "Antonius" "Anneius" "Antius" "Aurelius" "Aurelianus" "Betucius" "Caecius" "Catienus" "Decimius" "Domitius"
-	"Flavius" "Gallius" "Julius" "Junius" "Livius" "Lucretius" "Marcius" "Marius" "Pompeius" "Lepidus" "Salvius" "Tarquinius" "Traianus" "Brutii" "Scipio" "Sylla" "Domitianus" "Diocletianus" "Herculius" "Velentinian"
-	}
-	male_names = { "Aggripa" "Appius" "Aulus" "Caeso" "Decimus" "Faustus" "Gaius" "Gnaeus" "Hostus" "Lucius" "Mamercus" "Manius" "Marcus" "Mettius" "Nonus"
-	"Numerius" "Octavius" "Opiter" "Paullus" "Postumus" "Proculus" "Publius" "Quintus" "Septimus" "Sertor" "Servius" "Sectus" "Spurius" "Statius" "Tiberius"
-	"Titus" "Tullus" "Vibius" "Volesus" "Vospiscus"
-	}
-
-	female_names = {"Appia" "Aula" "Caesula" "Decima" "Fausta" "Gaia" "Gnaea" "Hosta" "Lucia" "Mamerca" "Mania" "Marcia" "Mettia" "Nona"
-	"Numeria" "Octavia" "Paulla" "Postuma" "Procula" "Publia" "Quinta" "Septima" "Sertor" "Servia" "Sexta" "Spuria" "Statia" "Tiberia"
-	"Titia" "Tulla" "Vibia" "Volusa" "Vospisca"
-	}
-
-
-	narbonnais= {
-		primary = NAR
-	}
-	cisalpian= {
-	}
-	venetian = {
-		primary = VEN
-	}
-	lugdunian= {
-		primary = LUG
-	}
-	franko-roman= {
-		primary = GLI
-	}
-	britannian= {
-		primary = LDN
-	}
-	mauretanian= {
-		primary = MRT
-	}
-	aquitain = {
-		primary = AQI
-	}
-	lusitanian = {
-		primary = LUS
-	}
-	baetician = {
-		primary = BAE
-	}
-	cartaginensian = {
-		primary = CTH
-	}
-	tarraconan = {
-		primary = TRC
-	}
-	roman = {
-		primary = SPQ
-	}
-	salernian = {
-		primary = SLR
-	}
-	african = {
-		primary = CTG
-	}
-	tripolitan = {
-		primary = TRP
-	}
-
-	galician = {
-		primary = GAL
-	}
-	tuscan = {
-		primary = TUS
-	}
-	sardinian = {
-		primary = TRR
-	}
-	annonarian = {
-	}
-
-	sicilian = {
-		primary = SIC
-	}
-
-}
 
 frankish = {
 	graphical_culture = westerngfx
@@ -11840,6 +11750,12 @@ Oghuz = {
 			Handan Alime K�sem H�ma
 		}
 	}
+	tatar_turk = {
+
+	}
+	caspian = {
+
+	}
 	turkmeni = {
 		primary = KHI
 		dynasty_names = {
@@ -11866,5 +11782,71 @@ Oghuz = {
 		Kirghiz
 		# CKII - KHANTY
 		"Sibirid" "Narima" "Mansi" "Khantys"
+	}
+}
+
+neo_roman={
+	graphical_culture = westerngfx
+	mauretanian= {
+		primary = MRT
+	}
+	narbonnais= {
+		primary = NAR
+	}
+	cisalpian= {
+	}
+	venetian = {
+		primary = VEN
+	}
+	lugdunian= {
+		primary = LUG
+	}
+	franko-roman= {
+		primary = GLI
+	}
+	britannian= {
+		primary = LDN
+	}
+	aquitain = {
+		primary = AQI
+	}
+	lusitanian = {
+		primary = LUS
+	}
+	baetician = {
+		primary = BAE
+	}
+	cartaginensian = {
+		primary = CTH
+	}
+	tarraconan = {
+		primary = TRC
+	}
+	roman = {
+		primary = SPQ
+	}
+	salernian = {
+		primary = SLR
+	}
+	african_roman = {
+		primary = CTG
+	}
+	tripolitan = {
+		primary = TRP
+	}
+
+	galician = {
+		primary = GAL
+	}
+	tuscan = {
+		primary = TUS
+	}
+	sardinian = {
+		primary = TRR
+	}
+	annonarian = {
+	}
+	sicilian = {
+		primary = SIC
 	}
 }

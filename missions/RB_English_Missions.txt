@@ -691,9 +691,6 @@ BRW_1 = {
 	potential = {
 		OR = {
 			tag = BRW
-			tag = SEA
-			tag = EAA
-			tag = MIE
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -837,9 +834,6 @@ BRW_2 = {
 	potential = {
 		OR = {
 			tag = BRW
-			tag = SEA
-			tag = EAA
-			tag = MIE
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -984,9 +978,6 @@ BRW_3 = {
 	potential = {
 		OR = {
 			tag = BRW
-			tag = SEA
-			tag = EAA
-			tag = MIE
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -1138,9 +1129,6 @@ BRW_4 = {
 	potential = {
 		OR = {
 			tag = BRW
-			tag = SEA
-			tag = EAA
-			tag = MIE
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -1225,9 +1213,6 @@ BRW_5 = {
 	potential = {
 		OR = {
 			tag = BRW
-			tag = SEA
-			tag = EAA
-			tag = MIE
 		}
 		NOT = { map_setup = map_setup_random }
 	}

@@ -13,7 +13,7 @@ country_decisions = {
 			NOT = { tag = ROM }
 			NOT = { tag = PAP }
 
-			culture_group = neo-roman
+			culture_group = neo_roman
 
 			is_colonial_nation = no
 			OR = {
@@ -45,7 +45,7 @@ country_decisions = {
 			}
 			development_in_provinces = {
 				value = 1000
-				culture_group = neo-roman
+				culture_group = neo_roman
 			}
 		}
 		effect = {

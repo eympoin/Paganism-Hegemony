@@ -1639,7 +1639,7 @@ country_event = {#WRE receive negative answer
       limit = {
         OR = {
           culture_group = byzantine
-          culture_group = neo-roman
+          culture_group = neo_roman
         }
       }
       add_country_modifier = {
@@ -1665,7 +1665,7 @@ country_event = {#WRE receive positive answer
       limit = {
         OR = {
           culture_group = byzantine
-          culture_group = neo-roman
+          culture_group = neo_roman
         }
       }
       add_country_modifier = {
@@ -1695,7 +1695,7 @@ country_event = {#WRE receive negotiation
       limit = {
         OR = {
           culture_group = byzantine
-          culture_group = neo-roman
+          culture_group = neo_roman
         }
       }
       add_country_modifier = {
@@ -1711,7 +1711,7 @@ country_event = {#WRE receive negotiation
       limit = {
         OR = {
           culture_group = byzantine
-          culture_group = neo-roman
+          culture_group = neo_roman
         }
       }
       add_country_modifier = {

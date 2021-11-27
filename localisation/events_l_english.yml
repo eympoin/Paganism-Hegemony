@@ -1462,7 +1462,7 @@ flavor_athens.1.t:0 "Reexpand Greek Influence in the West"
 flavor_athens.1.d:0 "It has been a long time since our colonies in the West were taken by Rome. The Western Roman Empire has now collapsed and it is now time to retake them."
 flavor_athens.1.a:0 "To the West !"
 
-greek_everywhere: "Unlock cutural assimilation events of neo-roman culture"
+greek_everywhere: "Unlock cutural assimilation events of neo_roman culture"
 
 flavor_athens.2.t:0 "Cultural Assimilation"
 flavor_athens.2.d:0 "More and More people begin to use the Greek culture and language"
@@ -2228,3 +2228,8 @@ flavor_tur.1.a:0 "Abd the should become the heir."
 flavor_tur.2.t:0 "The Conquest of Armenia"
 flavor_tur.2.d:0 "Armenia has been a threat to our rule since we established us here. No more ! Bayezid will lead us to glory ! "
 flavor_tur.2.a:0 "For Bayezid !"
+
+
+flavor_tur.3.t:0 "Cultural Assimilation"
+flavor_tur.3.d:0 "The turkish influence other these lands has finally turned the inhabitants into true Turks"
+flavor_tur.3.a:0 "This is a happy news."

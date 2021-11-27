@@ -240,7 +240,6 @@ country_event = {#northern france
 			change_culture = salian
 			}
     }
-  }
 }
 
 country_event = {#polabian
