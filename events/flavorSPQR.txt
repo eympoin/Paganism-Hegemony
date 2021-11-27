@@ -1214,6 +1214,7 @@ country_event = {#Back into the fold
         has_country_modifier = wounds_of_bloody_war_spq
         has_country_modifier = unrest_stirred_spqr
         has_country_modifier = nobles_curtailed_spqr
+        is_year = 1530
       }
     }
   }
@@ -1231,6 +1232,15 @@ country_event = {#Back into the fold
       create_subject = {
         subject_type = roman_province_cen
         subject = RVN
+      }
+    }
+    if = {
+      limit = {
+        overlord_of = URB
+      }
+      create_subject = {
+        subject_type = roman_province_cen
+        subject = URB
       }
     }
     if = {
@@ -1261,6 +1271,61 @@ country_event = {#Back into the fold
       create_subject = {
         subject_type = roman_province_cen
         subject = TUS
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          overlord_of = RVN
+        }
+      }
+      create_subject = {
+        subject_type = roman_province_cen
+        subject = RVN
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          overlord_of = PIS
+        }
+      }
+      create_subject = {
+        subject_type = roman_province_cen
+        subject = PIS
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          overlord_of = SIE
+        }
+      }
+      create_subject = {
+        subject_type = roman_province_cen
+        subject = SIE
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          overlord_of = TUS
+        }
+      }
+      create_subject = {
+        subject_type = roman_province_cen
+        subject = TUS
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          overlord_of = URB
+        }
+      }
+      create_subject = {
+        subject_type = roman_province_cen
+        subject = URB
       }
     }
   }
