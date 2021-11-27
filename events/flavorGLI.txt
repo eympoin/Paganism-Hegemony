@@ -92,7 +92,7 @@ country_event = {#franks
 			tag = AQI
 			tag = GLI
 		}
-    culture_group = neo-roman
+    culture_group = neo_roman
     any_owned_province = {
 			has_owner_religion = yes
       OR = {
@@ -143,7 +143,7 @@ country_event = {#burgond
       tag = AQI
 			tag = GLI
     }
-    culture_group = neo-roman
+    culture_group = neo_roman
     any_owned_province = {
 			has_owner_religion = yes
       OR = {

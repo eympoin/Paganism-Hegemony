@@ -61,7 +61,7 @@ leader_names = {
 }
 
 ship_names = {
-	Navis
+	"Navis" "Navis" "Navis" "Navis" "Navis" "Navis" "Navis" "Navis" "Navis" "Navis" "Navis" "Navis" "Navis" "Navis"
 }
 
 army_names = {

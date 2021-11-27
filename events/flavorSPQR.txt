@@ -232,7 +232,7 @@ country_event = {#Avoiding a famine
     name = flavor_spqr.12.a
     ai_chance = { factor = 50 }
     add_adm_power = -75
-    add_yearly_manpower = -8
+    add_manpower = -10
     add_country_modifier = {
       name = divert_recruits_spq
       duration = 3650
@@ -1704,7 +1704,7 @@ country_event = {#WRE receive negative answer
       limit = {
         OR = {
           culture_group = byzantine
-          culture_group = neo-roman
+          culture_group = neo_roman
         }
       }
       add_country_modifier = {
@@ -1730,7 +1730,7 @@ country_event = {#WRE receive positive answer
       limit = {
         OR = {
           culture_group = byzantine
-          culture_group = neo-roman
+          culture_group = neo_roman
         }
       }
       add_country_modifier = {
@@ -1760,7 +1760,7 @@ country_event = {#WRE receive negotiation
       limit = {
         OR = {
           culture_group = byzantine
-          culture_group = neo-roman
+          culture_group = neo_roman
         }
       }
       add_country_modifier = {
@@ -1776,7 +1776,7 @@ country_event = {#WRE receive negotiation
       limit = {
         OR = {
           culture_group = byzantine
-          culture_group = neo-roman
+          culture_group = neo_roman
         }
       }
       add_country_modifier = {

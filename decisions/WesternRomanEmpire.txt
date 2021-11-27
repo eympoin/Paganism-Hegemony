@@ -13,7 +13,7 @@ country_decisions = {
 			NOT = { tag = ROM }
 			NOT = { tag = PAP }
 
-			culture_group = neo-roman
+			culture_group = neo_roman
 
 			is_colonial_nation = no
 			OR = {
@@ -43,7 +43,10 @@ country_decisions = {
 				value = 300
 				region = italy_region
 			}
-			total_development = 1000
+			development_in_provinces = {
+				value = 1000
+				culture_group = neo_roman
+			}
 		}
 		effect = {
 		 remove_non_electors_emperors_from_empire_effect = yes

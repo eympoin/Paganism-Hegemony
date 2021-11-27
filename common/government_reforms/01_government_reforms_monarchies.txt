@@ -2137,7 +2137,7 @@ seleucid_government = {
 		byzantine = {
 			legitimacy = 0.25
 		}
-		neo-roman = {
+		neo_roman = {
 			discipline = 0.05
 		}
 		carpathian = {

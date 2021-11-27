@@ -689,7 +689,9 @@ BRW_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = BRW
+		OR = {
+			tag = BRW
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	seaxan_military_brw = {
@@ -830,7 +832,9 @@ BRW_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = BRW
+		OR = {
+			tag = BRW
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	unite_cornwales_brw = {
@@ -972,7 +976,9 @@ BRW_3 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = BRW
+		OR = {
+			tag = BRW
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	angle_or_seaxan_brw = {
@@ -1121,7 +1127,9 @@ BRW_4 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = BRW
+		OR = {
+			tag = BRW
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	angle_industry_brw = {
@@ -1203,7 +1211,9 @@ BRW_5 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = BRW
+		OR = {
+			tag = BRW
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	spreading_our_goods_brw = {

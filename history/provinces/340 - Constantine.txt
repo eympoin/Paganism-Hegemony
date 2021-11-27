@@ -2,7 +2,7 @@
 
 owner = HIP
 controller = HIP
-culture = african
+culture = african_roman
 religion = deii
 capital = "Constantine"
 trade_goods = grain

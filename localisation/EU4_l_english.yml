@@ -2000,6 +2000,8 @@
  CV_NOTRESEARCHED_MANEUVER_TOOLTIP_NEW:0 "§g- Improve Flanking Range by §G+$NUM$%§g (level $LEVEL$)§W"
  CV_RESEARCHED_TECH_TOOLTIP:0 "+ Researched at level $LEVEL$§!"
  CV_NOTRESEARCHED_TECH_TOOLTIP:0 "§g- Researched at level $LEVEL$§!"
+ CV_RESEARCHED_ENGAGEMENT_TOOLTIP:0 "+ Improve Naval Engagement by §G+$NUM$§! (level $LEVEL$)"
+ CV_NOTRESEARCHED_ENGAGEMENT_TOOLTIP:0 "§g- Improve Naval Engagement by §G+$NUM$§g (level $LEVEL$)§W"
  CV_TECH_BUILDINGS:0 "Buildings"
  EXISTING_BUILDINGS_MOD:0 "Buildings: $BUILDINGCOUNT|Y$"
  BEST_COMBAT_WIDTH:0 "Technology ($COUNTRY$): §G+$VAL$§!"

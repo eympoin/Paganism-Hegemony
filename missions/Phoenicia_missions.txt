@@ -140,7 +140,7 @@ phoenicia_2= {
       }
     }
     effect = {
-      136 = {
+      163 = {
         center_of_trade = 1
         add_province_modifier = {
           name = phoenician_trading_outpost
@@ -399,7 +399,7 @@ phoenicia_4= {
         name = deal_with_pls
         duration = 7300
       }
-      red_sea_area = {
+      gulf_of_arabia_area = {
       limit = {
         NOT = { owned_by = ROOT }
         NOT = {is_claim	= ROOT}
@@ -413,11 +413,11 @@ phoenicia_4= {
       icon = mission_conquer_air
       required_missions = {palestine_problems  }
       provinces_to_highlight = {
-        area = red_sea_area
+        area = gulf_of_arabia_area
         NOT = {owned_by = ROOT}
       }
       trigger = {
-        red_sea_area = {
+        gulf_of_arabia_area = {
           type = all
           owned_by = ROOT
         }

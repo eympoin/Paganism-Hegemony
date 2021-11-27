@@ -3779,9 +3779,9 @@ alhambra = {
 				}
 			}
 			AND = {
-				culture_group = neo-roman
+				culture_group = neo_roman
 				owner = {
-					culture_group = neo-roman
+					culture_group = neo_roman
 				}
 			}
 		}
@@ -3807,9 +3807,9 @@ alhambra = {
 				}
 			}
 			AND = {
-				culture_group = neo-roman
+				culture_group = neo_roman
 				owner = {
-					culture_group = neo-roman
+					culture_group = neo_roman
 				}
 			}
 		}
@@ -3825,9 +3825,9 @@ alhambra = {
 				}
 			}
 			AND = {
-				culture_group = neo-roman
+				culture_group = neo_roman
 				owner = {
-					culture_group = neo-roman
+					culture_group = neo_roman
 				}
 			}
 		}
@@ -7571,12 +7571,12 @@ cothon = {
 	build_trigger = {
 		OR = {
 			culture_group = carthaginian_group
-			culture_group = neo-roman
+			culture_group = neo_roman
 			}
 			owner = {
 				OR = {
 					culture_group = carthaginian_group
-					culture_group = neo-roman
+					culture_group = neo_roman
 					culture_group = maghrebi
 				}
 			}
@@ -7586,12 +7586,12 @@ cothon = {
 	can_use_modifiers_trigger = {
 		OR = {
 			culture_group = carthaginian_group
-			culture_group = neo-roman
+			culture_group = neo_roman
 		}
 		owner = {
 			OR = {
 				culture_group = carthaginian_group
-				culture_group = neo-roman
+				culture_group = neo_roman
 				culture_group = maghrebi
 			}
 		}
@@ -7601,13 +7601,13 @@ cothon = {
 	can_upgrade_trigger = {
 		OR = {
 			culture_group = carthaginian_group
-			culture_group = neo-roman
+			culture_group = neo_roman
 			culture_group = maghrebi
 			}
 			owner = {
 				OR = {
 					culture_group = carthaginian_group
-					culture_group = neo-roman
+					culture_group = neo_roman
 					culture_group = maghrebi
 				}
 			}
@@ -9369,9 +9369,9 @@ sanctuary_of_gauls = {
 	build_trigger = {
 		religion = deii
 		has_owner_religion = yes
-		culture_group = neo-roman
+		culture_group = neo_roman
 		owner = {
-			culture_group = neo-roman
+			culture_group = neo_roman
 		}
 	}
 
@@ -9387,9 +9387,9 @@ sanctuary_of_gauls = {
 	can_use_modifiers_trigger = {
 		religion = deii
 		has_owner_religion = yes
-		culture_group = neo-roman
+		culture_group = neo_roman
 		owner = {
-			culture_group = neo-roman
+			culture_group = neo_roman
 		}
 	}
 
@@ -9397,9 +9397,9 @@ sanctuary_of_gauls = {
 	can_upgrade_trigger = {
 		religion = deii
 		has_owner_religion = yes
-		culture_group = neo-roman
+		culture_group = neo_roman
 		owner = {
-			culture_group = neo-roman
+			culture_group = neo_roman
 		}
 	}
 
@@ -9765,9 +9765,9 @@ constantin_triumphal_arch = {
 
 	#can we build it?
 	build_trigger = {
-  	culture_group = neo-roman
+  	culture_group = neo_roman
     owner = {
-			culture_group = neo-roman
+			culture_group = neo_roman
 		}
 	}
 
@@ -9792,17 +9792,17 @@ constantin_triumphal_arch = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		culture_group = neo-roman
+		culture_group = neo_roman
 		owner = {
-			culture_group = neo-roman
+			culture_group = neo_roman
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		culture_group = neo-roman
+		culture_group = neo_roman
 		owner = {
-			culture_group = neo-roman
+			culture_group = neo_roman
 		}
 	}
 
@@ -9963,9 +9963,9 @@ coliseum = {
 
 	#can we build it?
 	build_trigger = {
-		culture_group = neo-roman
+		culture_group = neo_roman
 		owner = {
-			culture_group = neo-roman
+			culture_group = neo_roman
 			}
 	}
 
@@ -9990,17 +9990,17 @@ coliseum = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		culture_group = neo-roman
+		culture_group = neo_roman
 		owner = {
-			culture_group = neo-roman
+			culture_group = neo_roman
 			}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		culture_group = neo-roman
+		culture_group = neo_roman
 		owner = {
-			culture_group = neo-roman
+			culture_group = neo_roman
 			}
 	}
 
@@ -10161,9 +10161,9 @@ port_of_ostia = {
 
 	#can we build it?
 	build_trigger = {
-        culture_group = neo-roman
+        culture_group = neo_roman
         owner = {
-					culture_group = neo-roman
+					culture_group = neo_roman
 				}
 		}
 
@@ -10188,17 +10188,17 @@ port_of_ostia = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		culture_group = neo-roman
+		culture_group = neo_roman
 		owner = {
-			culture_group = neo-roman
+			culture_group = neo_roman
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		culture_group = neo-roman
+		culture_group = neo_roman
 		owner = {
-			culture_group = neo-roman
+			culture_group = neo_roman
 		}
 	}
 
@@ -10763,9 +10763,9 @@ great_university_of_tolosa = {
 
 	#can we build it?
 	build_trigger = {
-	  culture_group = neo-roman
+	  culture_group = neo_roman
 		owner = {
-			culture_group = neo-roman
+			culture_group = neo_roman
 		}
 	}
 
@@ -10790,17 +10790,17 @@ great_university_of_tolosa = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		culture_group = neo-roman
+		culture_group = neo_roman
 		owner = {
-			culture_group = neo-roman
+			culture_group = neo_roman
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		culture_group = neo-roman
+		culture_group = neo_roman
 		owner = {
-			culture_group = neo-roman
+			culture_group = neo_roman
 		}
 	}
 
@@ -15287,7 +15287,7 @@ sankore_madrasah = {
 	build_cost = 0
 	can_be_moved = no
 	move_days_per_unit_distance = 10
-	starting_tier = 1
+	starting_tier = 0
 	type = monument
 
 	build_trigger = {
@@ -15847,7 +15847,7 @@ malta_forts = {
 	build_cost = 0
 	can_be_moved = no
 	move_days_per_unit_distance = 10
-	starting_tier = 1
+	starting_tier = 0
 	type = monument
 
 	build_trigger = {
@@ -16285,7 +16285,7 @@ imam_hussein_al-abbas = {
 	build_cost = 0
 	can_be_moved = no
 	move_days_per_unit_distance = 10
-	starting_tier = 1
+	starting_tier = 0
 	type = monument
 
 	build_trigger = {
