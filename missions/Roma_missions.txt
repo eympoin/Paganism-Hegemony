@@ -39,32 +39,45 @@ Roma_Unification_1 = {
 		required_missions = { the_revolution }
 		position = 2
 		trigger = {
-			has_country_modifier = wounds_of_bloody_war_spq
+			OR  = {
+				custom_trigger_tooltip = {
+					tooltip = formed_roma.tooltip
+					has_country_flag = formed_roma_flag
+				}
+				has_country_modifier = wounds_of_bloody_war_spq
+			}
 			stability = 2
 			dip_power = 200
 		}
 		effect = {
-				add_dip_power = -200
-				remove_country_modifier = wounds_of_bloody_war_spq
 				if = {
 					limit = {
-						government = republic
+						has_country_modifier = wounds_of_bloody_war_spq
 					}
-					add_country_modifier = {
-						name = birthed_by_cw_spq
-						duration = 14600
+					add_dip_power = -200
+					remove_country_modifier = wounds_of_bloody_war_spq
+					if = {
+						limit = {
+							government = republic
+						}
+						add_country_modifier = {
+							name = birthed_by_cw_spq
+							duration = 14600
+						}
+					}
+					if = {
+						limit = {
+							government = monarchy
+						}
+						add_country_modifier = {
+							name = bloodthirsty_heritage_spq
+							duration = 14600
+						}
 					}
 				}
-				if = {
-					limit = {
-						government = monarchy
-					}
-					add_country_modifier = {
-						name = bloodthirsty_heritage_spq
-						duration = 14600
-					}
+				else = {
+					add_adm_power = 100
 				}
-
 		}
 	}
 
