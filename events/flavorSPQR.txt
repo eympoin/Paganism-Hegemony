@@ -454,7 +454,7 @@ country_event = {#Noble Unrest
     118 = {
       pretender_rebels = 1
     }
-    4836 = {
+    4988 = {
       pretender_rebels = 1
     }
     change_estate_land_share = {
@@ -550,7 +550,7 @@ country_event = {#The economic future of Rome
     name = flavor_spqr.132.b
     add_years_of_income = -2.5
     add_mercantilism = -3
-    4836 = {
+    4988 = {
       change_trade_goods = gems
       add_base_production = 3
     }

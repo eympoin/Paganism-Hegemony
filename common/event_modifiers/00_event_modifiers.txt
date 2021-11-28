@@ -12931,3 +12931,9 @@ third_temple_country_modifier = {
 	missionaries = 1
 	religion = yes
 }
+lack_of_provincial_gov = {
+	local_autonomy = 50
+}
+lackluster_provincial_gov = {
+	local_autonomy = 25
+}

@@ -3345,7 +3345,7 @@ TUR_ideas = {
 		cavalry_power = 0.15
 	}
 	autonmous_pashas = {
-		war_exhaustion_cost = -0.10
+		global_unrest = -2
 	}
 	lawcode_of_suleiman_01 = {
 		global_tax_modifier = 0.1
@@ -3354,7 +3354,7 @@ TUR_ideas = {
 		trade_efficiency = 0.10
 	}
 	imperial_school_of_naval_engineering = {
-		global_ship_cost = -0.1
+		caravan_power = 0.33
 	}
 }
 
@@ -11044,7 +11044,7 @@ GAL_ideas = {
 	free = yes        #will be added at load.
 
     gal_way_of_st_james = {
-		global_tax_modifier = 0.1
+			global_trade_goods_size_modifier = 0.1	
     }
     gal_la_bella = {
 		defensiveness = 0.2

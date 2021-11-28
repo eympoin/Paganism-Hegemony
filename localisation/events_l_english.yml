@@ -1708,8 +1708,8 @@ flavor_mac.29.b:0 "Send him to prison!"
 
 flavor_mac.30.t:0 "Return to our homeland"
 flavor_mac.30.d:0 "We have accomplished what Alexander did a millenium ago. Our troops are exhausted after centuries of fighting, but they are happy we have won. It is now time to return to our homeland and reclaim Alexander's empire!"
-flavor_mac.30.a:0 "It is our birthright !"
-flavor_mac.30.b:0 "We are good in Persia"
+flavor_mac.30.b:0 "It is our birthright !"
+flavor_mac.30.a:0 "We are good in Persia"
 flavor_mac.30.c:0 "It is our birthright !"
 
 flavor_mac.31.t:0 "Return of the Persian Expedition!"

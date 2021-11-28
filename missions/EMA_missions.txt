@@ -103,6 +103,11 @@ Macedonian_exp_3_1 = {
         }
         add_permanent_claim = ROOT
       }
+      remove_country_modifier = lack_of_provincial_gov
+      add_country_modifier = {
+        name = lackluster_provincial_gov
+        duration = -1
+      }
     }
   }
 
@@ -116,6 +121,7 @@ Macedonian_exp_3_1 = {
     }
     effect = {
       remove_country_modifier = solidificaton
+      remove_country_modifier = lackluster_provincial_gov
     }
   }
 
@@ -588,7 +594,7 @@ Macedonian_exp_5_1 = {
     provinces_to_highlight = {
     }
     trigger = {
-      army_tradition = 50
+      army_tradition = 75
       mil_power = 100
     }
     effect = {
