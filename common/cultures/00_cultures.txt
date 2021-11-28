@@ -1733,27 +1733,6 @@ iberian	= {
 			Montserrat N�ria Oct�via Prud�ncia Roberta Rodolfa
 		}
 	}
-	galician = {
-		primary = GAL
-		dynasty_names = {
-			Osorio Andrade
-			#CK2
-			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"
-			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
-			Z��iga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
-			"de Cabrera" "de Villena"
-		}
-		male_names = {
-			Garc�a Ordo�o Afonso Sancho Ramiro Bermudo Froila Aleixo Alvaro Anxo Baltasar Bernaldo Brais Carlos
-			Cristovo Domingos Estevo Felipe Fern�n Francisco Frederico Gonzalo Guillerme Gumersindo Henrique
-			Hermenexildo Hixinio Hugo Iago Ignacio Leandro Lope Miguel Nuno Od�n Paulo Pedro Ram�n Roi Tom�
-			Vitor Xoan Xorxe
-		}
-		female_names = {
-			Branca Iria Sabela L�a Rodolfa Sof�a Aldara Alduara Aldon�a Aldonza Beatriz Beatrice Bereng�ria Berengaria Branca
-			Blanche Ant�a Branca Carme Catarina Dores Iria L�a Margarida Mar�a Noela Rosal�a Sabela Ux�a Xoana
-		}
-	}
 	andalucian = {
 		primary = GRA
 		dynasty_names = {
@@ -11288,31 +11267,6 @@ lost_cultures_group = {
 		}
 		female_names = {
 			"Sobekkare Sobekneferu" Hatshepsut Tentamun Nitocris Neit Cleopatra Neferneferuaten Nefertiti
-		}
-	}
-	roman = { #EU Rome
-		dynasty_names = {
-			Aemilia Antonia Atilia Atia Aufidia Aurelia Caecilia Calpurnia Cassia Claudia
-			Clodia Cornelia Domitia Fabia Flavia Fulvia Furia Gabinia Galeria Horatia Julia
-			Junia Licinia Livia Lucia Mamilia Manlia Maria Memmia Nigidia Octavia Papiria Plinia
-			Postumia Pompeia Rabiria Quinctia Salvia Scribonia Sempronia Sertoria Silia Titia
-			Tullia Ulpia Valeria Vesuvia Vinicia Viridia Vitellia
-		}
-		male_names = {
-			Appius Aulus Caelus Decimus Decius Drusus Faustus Gaius Gnaeus Lucius Mamercus Manius Marcus Mettius Numerius Publius Quintus Secundus Septimus Servius Sextus Spurius Tertius Titus Tiberius Titus
-			Albinus Albus Agricola Agrippa Aratus Asina Auspex Balbus Barbatus Bibulus Brutus Bubo Buteo
-			Caesar Calvus Calvinus Cato Catulus Cethegus Cicero Cinna Cotta Crispian Curio Dama Damasus Dentatus Dives Dolabella Donatus Draco
-			Emeritus Eugenius Euphemius Falco Falx Felix Fimbria Flaccus Florus Fronto
-			Gala Galerus Gemellus Gorgonius Gracchus Gracilis Habitus Herma Hilarius Horatius
-			Ignatius Iuba Labeo Laenas Lepidus Leptis Lentulus Libo Longinus Longus Lucan Lucullus Lupius
-			Macro Martialis Marullus Maximus Memmius Mercator Messalla Montanus Murena Mus Nasica Oceanus Octavianus Opis
-			Optatus Otho Paenula Pantera Pavo Peregrinus Pertinax Petronax Pictor Pilatus Polus Prisca Primus Procyon Pulcher
-			Quarto Quiricus Regillus Remus Romanus Romulus Rufus Ruso Sabinus Salinator Scaevola Scipio Scrofa Seneca Senna
-			Severus Sorex Statius Strabo Super Superbus Tacitus Tertulus Trebonius Tibullus Tullius Ursinus Ursus Valens Varro Varus
-			Vergilius Viator Victor Vindex Virilis Vitalis Vitus Zeno Zoilus Zosimus
-		}
-		female_names = {
-			Prima Secunda Tertia Quarta Quinta Septa Septima Octava Nona Decima Undecima Duodecima
 		}
 	}
 	jan_mayenese = {
