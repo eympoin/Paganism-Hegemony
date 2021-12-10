@@ -18969,7 +18969,7 @@ port_of_tyr = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			fort_level = 3
+			fort_level = 2
 			local_ship_cost = -0.2
 		}
 
@@ -19002,7 +19002,7 @@ port_of_tyr = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			fort_level = 4
+			fort_level = 3
 			local_ship_cost = -0.25
 			local_institution_spread = 0.25
 			province_trade_power_value = 0.5
