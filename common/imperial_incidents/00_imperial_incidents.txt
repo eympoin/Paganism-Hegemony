@@ -1022,13 +1022,8 @@ incident_bulgaria = {
 
 	can_stop = {
 		OR = {
-			NOT = { exists = PHO }
-			PHO = { is_part_of_hre = no }
-			PHO = {
-				NOT = {
-					has_reform = merchants_reform
-				}
-			}
+			NOT = { exists = BUL }
+			BUL = { is_part_of_hre = no }
 		}
 	}
   0 = { #cast_out
@@ -1081,6 +1076,73 @@ incident_bulgaria = {
         }
         ai_attitude = {
           who = BUL
+          attitude = attitude_allied
+        }
+      }
+    }
+  }
+}
+
+
+incident_cil_piracy = {
+	event = cil_piracy.2
+	default_option = 1
+
+	can_stop = {
+		OR = {
+			NOT = { exists = CIL }
+			CIL = { is_part_of_hre = no }
+		}
+	}
+  1 = { #ultimatum
+    modifier = {
+      factor = 100
+      OR = {
+        ai_attitude = {
+          who = CIL
+          attitude = attitude_rivalry
+        }
+        ai_attitude = {
+          who = CIL
+          attitude = attitude_hostile
+        }
+        ai_attitude = {
+          who = CIL
+          attitude = attitude_threatened
+        }
+        ai_attitude = {
+          who = CIL
+          attitude = attitude_outraged
+        }
+        ai_attitude = {
+          who = CIL
+          attitude = attitude_disloyal
+        }
+        ai_attitude = {
+          who = CIL
+          attitude = attitude_rebellious
+        }
+      }
+    }
+  }
+
+
+  1 = { # negotiate
+  }
+  2 = { # nothing
+    modifier = {
+      factor = 100
+      OR = {
+        ai_attitude = {
+          who = CIL
+          attitude = attitude_friendly
+        }
+        ai_attitude = {
+          who = CIL
+          attitude = attitude_loyal
+        }
+        ai_attitude = {
+          who = CIL
           attitude = attitude_allied
         }
       }

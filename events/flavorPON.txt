@@ -116,6 +116,7 @@ country_event = { #become emperor
 			who = emperor
 			value = 75
 		}
+		tag = PON
 	}
 	major = yes
 	mean_time_to_happen = {
@@ -126,16 +127,7 @@ country_event = { #become emperor
 	option = {
 		name = flavor_pon.6.a
 		ai_chance = { factor = 90 }
-		add_legitimacy = 100
-		add_prestige = 50
-		white_peace = emperor
-		emperor = {
-			add_legitimacy = -100
-		}
-		add_country_modifier = {
-			name = become_emperor
-			duration = 31
-		}
+    set_emperor = yes
 		country_event = { id = flavor_pon.7 days = 30 }
 	}
 

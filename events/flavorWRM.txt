@@ -411,10 +411,7 @@ country_event = {#Union
     create_union = emperor
     ROOT = {
       set_in_empire = yes
-    }
-    set_hre_religion = deii
-    emperor = {
-      kill_ruler = yes
+      set_emperor = yes
     }
     set_hre_religion_treaty = yes
     add_imperial_influence = 40
@@ -488,10 +485,7 @@ country_event = {#Peace choices
     add_stability = -3
     ROOT = {
       set_in_empire = yes
-    }
-    set_hre_religion = deii
-    emperor = {
-      kill_ruler = yes
+      set_emperor = yes
     }
     set_hre_religion_treaty = yes
     add_imperial_influence = 40

@@ -1,0 +1,220 @@
+namespace = cil_piracy
+
+#end piracy
+country_event = {
+	id = cil_piracy.1
+	title = "cil_piracy.1.t"
+	desc = "cil_piracy.1.d"
+	picture = BARBARY_PIRATES_eventPicture
+	major = yes
+	trigger = {
+		is_emperor = yes
+		has_global_flag = cilicia_piracy
+		OR = {
+				NOT = {exists = CIL}
+				is_subject = yes
+			}
+	}
+
+	option = { # incident
+		name = cil_piracy.1.a
+		trigger = {
+			has_dlc = "Emperor"
+		}
+		ai_chance = {
+			factor = 1
+		}
+		set_imperial_incident = incident_cil_piracy
+	}
+
+	option = { #if not emperor
+		trigger = {
+			NOT = {has_dlc = "Emperor"}
+		}
+		name = cil_piracy.1.b
+		ai_chance = {
+			factor = 1
+		}
+		country_event = { id = cil_piracy.2 }
+	}
+}
+
+
+country_event = {
+	id = cil_piracy.2
+	title = "cil_piracy.2.t"
+	desc = "cil_piracy.2.d"
+	picture = BARBARY_PIRATES_eventPicture
+	is_triggered_only = yes
+
+	option = {		# send ultimatum
+		name = "cil_piracy.2.a"
+		set_global_flag = cil_ultimatum
+		CIL = {country_event = {id = cil_piracy.3 days = 15}}
+	}
+	option = {		# negotiate
+		name = "cil_piracy.2.b"
+		set_global_flag = cil_negotiation
+		CIL = {country_event = {id = cil_piracy.4 days = 15}}
+	}
+	option = {	# do nothing
+		name = "cil_piracy.2.c"
+
+	}
+}
+
+
+country_event = {
+	id = cil_piracy.3
+	title = "cil_piracy.3.t"
+	desc = "cil_piracy.3.d"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accept ultimatum
+		name = "cil_piracy.3.a"
+		set_global_flag = accepted_cilicia_ultimatum
+		clr_global_flag = cilicia_piracy
+		remove_country_modifier = cilician_pirates
+		CIL = {country_event = {id = cil_piracy.5 days = 15}}
+		every_province = {
+			limit = {
+				has_province_modifier = cilician_piracy_mod
+			}
+			remove_province_modifier = cilician_piracy_mod
+		}
+	}
+	option = {	# refuse ultimatum
+		name = "cil_piracy.3.b"
+		set_global_flag = refused_cilicia
+		FROM = {country_event = {id = cil_piracy.5 days = 15}}
+	}
+}
+
+country_event = {
+	id = cil_piracy.4
+	title = "cil_piracy.4.t"
+	desc = "cil_piracy.4.d"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accept negotiation
+		name = "cil_piracy.4.a"
+		set_global_flag = accepted_cilicia_ultimatum
+		clr_global_flag = cilicia_piracy
+		remove_country_modifier = cilician_pirates
+		add_country_modifier = {
+			name = cilician_corsairs
+			duration = -1
+		}
+		CIL = {country_event = {id = cil_piracy.5 days = 15}}
+		every_province = {
+			limit = {
+				has_province_modifier = cilician_piracy_mod
+			}
+			remove_province_modifier = cilician_piracy_mod
+		}
+	}
+	option = {	# refuse negotiation
+		name = "cil_piracy.4.b"
+		set_global_flag = refused_cilicia
+		FROM = {country_event = {id = cil_piracy.5 days = 15}}
+	}
+}
+
+country_event = {
+	id = cil_piracy.5
+	title = "cil_piracy.5.t"
+	desc = {
+		trigger = {has_global_flag = accepted_cilicia_ultimatum}
+		desc = cil_piracy.5.d1
+	}
+	desc = {
+		trigger = {has_global_flag = refused_cilicia}
+		desc = cil_piracy.5.d2
+	}
+	desc = {
+		trigger = {		has_global_flag = refused_cilicia}
+		desc = cil_piracy.5.d3
+	}
+	picture = HRE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# accept negotiation
+		name = "cil_piracy.5.a"
+		trigger = {
+			has_global_flag = accepted_cilicia_ultimatum
+		}
+		add_imperial_influence = 20
+		set_global_flag = end_cilician_piracy
+	}
+	option = {		# accept negotiation
+		name = "cil_piracy.5.b"
+		trigger = {
+			FROM = {has_country_modifier = cilician_corsairs}
+		}
+		add_imperial_influence = 5
+		add_country_modifier = {
+			name = emperors_corsairs
+			duration  -1
+		}
+		set_global_flag = end_cilician_piracy
+	}
+	option = {		# then its war
+		name = "cil_piracy.5.c"
+		trigger = {
+			has_global_flag = refused_cilicia
+		}
+		set_country_flag = war_against_cilician_piracy
+		declare_war_with_cb = {
+			who = CIL
+			casus_belli = cb_annex
+		}
+	}
+	option = {		# then do nothing
+		name = "cil_piracy.5.d"
+		trigger = {
+			has_global_flag = refused_cilicia
+		}
+		add_imperial_influence = -20
+	}
+}
+
+country_event = {
+	id = cil_piracy.6
+	title = "cil_piracy.6.t"
+	desc = "cil_piracy.6.d"
+	picture = SIEGE_eventPicture
+	major = yes
+
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = war_against_cilician_piracy
+		war_with = CIL
+		war_score_against = {
+				who = CIL
+				value = 50
+			}
+	}
+
+	option = {		# Victory
+		name = "cil_piracy.6.a"
+		add_imperial_influence = 20
+		white_peace = CIL
+		add_truce_with = CIL
+		clr_global_flag = cilicia_piracy
+		CIL = {
+			remove_country_modifier = cilician_pirates
+		}
+		every_province = {
+			limit = {
+				has_province_modifier = cilician_piracy_mod
+			}
+			remove_province_modifier = cilician_piracy_mod
+		}
+		set_global_flag = end_cilician_piracy
+	}
+
+}

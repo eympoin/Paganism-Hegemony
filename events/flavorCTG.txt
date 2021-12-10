@@ -506,7 +506,7 @@ country_event = {
 
 		every_owned_province = {
 			limit = {
-				culture = african
+				culture = african_roman
 			}
 			change_culture = carthaginian
 		}
@@ -651,7 +651,7 @@ country_event = {
 		any_owned_province = {
 
 			has_owner_religion = yes
-			culture = african
+			culture = african_roman
 			NOT = { nationalism	= 1 }
 			is_core = ROOT
 		}
@@ -667,7 +667,7 @@ country_event = {
 		trigger = {
 			any_owned_province = {
 				has_owner_religion = yes
-				culture = african
+				culture = african_roman
 				NOT = { nationalism	= 1 }
 				is_core = ROOT
 			}
@@ -675,7 +675,7 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				has_owner_religion = yes
-				culture = african
+				culture = african_roman
 				NOT = { nationalism	= 1 }
 				is_core = ROOT
 			}
@@ -1000,7 +1000,7 @@ country_event = {
 				NOT = { nationalism	= 1 }
 				is_core = ROOT
 			}
-			change_culture = african
+			change_culture = african_roman
 		}
 	}
 }

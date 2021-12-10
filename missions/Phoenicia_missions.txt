@@ -461,12 +461,18 @@ phoenicia_4= {
     }
     effect = {
     add_mercantilism = 1
-    change_price = {
-      trade_goods = grain
-      key = grain_monopol
-      value = 0.25
-      duration = -1
+    if = {
+      limit = {
+        NOT = {has_global_flag = grain_monopol_flag}
       }
+      change_price = {
+        trade_goods = grain
+        key = grain_monopol
+        value = 0.25
+        duration = -1
+      }
+      set_global_flag = grain_monopol_flag
+    }
     }
   }
 }
@@ -555,17 +561,18 @@ phoenicia_5= {
           name = phoenician_trading_outpost
           duration = -1
         }
+        add_trade_modifier = {
+          who = ROOT
+          duration = -1
+          power = 50
+          key = ARABIAN_MONOPOL
+        }
       }
       add_country_modifier = {
         name = pho_colonisation
         duration = -1
       }
-      add_trade_modifier = {
-        who = ROOT
-        duration = -1
-        power = 50
-        key = ARABIAN_MONOPOL
-      }
+
     }
   }
 

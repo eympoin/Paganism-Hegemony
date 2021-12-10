@@ -424,7 +424,7 @@ civil_war_consequences = {
       }
     }
     effect = {
-      add_accepted_culture = african
+      add_accepted_culture = african_roman
       add_accepted_culture = tripolitan
       custom_tooltip = sponsor_roman_merchant_unlock_tooltip
     }
@@ -853,7 +853,7 @@ egypt_and_monopol = {
     change_price = {
       trade_goods = grain
       key = grain_monopol
-      value = 0.5
+      value = 0.25
       duration = -1
       }
     }
