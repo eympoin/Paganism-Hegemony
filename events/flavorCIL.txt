@@ -10,7 +10,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		tag = CIL
-		is_year = 1450
+		is_year = 1479
 	}
 
 
@@ -60,12 +60,14 @@ country_event = {
 				duration = 7300
 			}
 		}
+		set_global_flag = end_cilician_piracy
 	}
 
 
 	option = {		# fight piracy
 		name = "flavor_cil.1.c"
 		ai_chance = { factor = 0 }
+		set_global_flag = end_cilician_piracy
 		every_province = {
 			limit = {
 				OR = {
@@ -89,10 +91,7 @@ country_event = {
 	desc = "flavor_cil.2.d"
 	picture = BARBARY_PIRATES_eventPicture
 	trigger = {
-		OR = {
-			tag = BYZ
-			is_emperor = yes
-		}
+		is_emperor = yes
 		has_global_flag = cilicia_piracy
 		OR = {
 				NOT = {exists = CIL}
@@ -104,8 +103,9 @@ country_event = {
 	option = {		# end
 		name = "flavor_cil.2.a"
 		ai_chance = { factor = 50 }
-
+		CIL = {remove_country_modifier = cilician_pirates}
 		clr_global_flag = cilicia_piracy
+		set_global_flag = end_cilician_piracy
 		every_province = {
 			limit = {
 				has_province_modifier = cilician_piracy_mod

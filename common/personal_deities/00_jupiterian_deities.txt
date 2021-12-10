@@ -5,7 +5,7 @@ Jupiter =
 {
 	legitimacy = 0.5
 	horde_unity = 0.5
-	republican_tradition = 0.5
+	republican_tradition = 0.25
 	global_unrest = -1
 
 	allow = { religion = deii }

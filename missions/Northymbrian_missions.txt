@@ -571,7 +571,7 @@ northymbria_5 = {
           }
           has_port = yes
           development = 18
-          culture_group = neo-roman
+          culture_group = neo_roman
         }
         add_permanent_claim = ROOT
       }

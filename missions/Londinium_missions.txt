@@ -16,7 +16,7 @@ Londinium_1 = {
 			position = 1
 			trigger = {
 				any_country = {
-					culture_group = neo-roman
+					culture_group = neo_roman
 					has_opinion = {
 						who = LDN
 						value = 100
@@ -29,7 +29,7 @@ Londinium_1 = {
 			  every_country = {
 						limit = {
 							NOT = { tag = LDN }
-							culture_group = neo-roman
+							culture_group = neo_roman
 							has_opinion = {
 									who = LDN
 									value = 100

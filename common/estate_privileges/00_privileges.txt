@@ -7276,7 +7276,7 @@ estate_burghers_sponsor_roman_merchants = {
 	can_select = {
 			mission_completed = integrate_romans
 			any_owned_province = {
-				culture_group = neo-roman
+				culture_group = neo_roman
 			}
 	 	}
 	benefits = {

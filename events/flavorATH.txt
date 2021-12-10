@@ -24,7 +24,7 @@ country_event = {#roman conversion
   picture = COLONIZATION_eventPicture
 
   trigger = {
-    culture_group = neo-roman
+    culture_group = neo_roman
     any_country = {has_country_flag = greek_influence_in_the_west}
     any_owned_province = {
       is_capital = no
@@ -34,7 +34,7 @@ country_event = {#roman conversion
         religion = mithraic
       }
       OR = {
-        culture_group = neo-roman
+        culture_group = neo_roman
       }
       NOT = { nationalism	= 1 }
       is_core = ROOT
@@ -52,7 +52,7 @@ country_event = {#roman conversion
       limit = {
        has_owner_religion = yes
         OR = {
-          culture_group = neo-roman
+          culture_group = neo_roman
         }
         NOT = { nationalism	= 1 }
         is_core = ROOT

@@ -28,6 +28,7 @@ country_event = {#Defenestration
     ai_chance = { factor = 90 }
     change_government = republic
     add_government_reform = imperial_roman_curia_reform
+    set_country_flag = 1444_rome
     kill_ruler = yes
     add_country_modifier = {
       name = hostile_nobles_spq
@@ -93,6 +94,7 @@ country_event = {#Defenestration
       name = unrest_stirred_spqr
       duration = -1
     }
+    set_country_flag = 1444_rome
     118 = { revolutionary_rebels = 1 }
     add_stability = -1
     custom_tooltip = rep_will_distance_tt
@@ -232,7 +234,7 @@ country_event = {#Avoiding a famine
     name = flavor_spqr.12.a
     ai_chance = { factor = 50 }
     add_adm_power = -75
-    add_yearly_manpower = -8
+    add_manpower = -10
     add_country_modifier = {
       name = divert_recruits_spq
       duration = 3650
@@ -454,7 +456,7 @@ country_event = {#Noble Unrest
     118 = {
       pretender_rebels = 1
     }
-    4836 = {
+    4988 = {
       pretender_rebels = 1
     }
     change_estate_land_share = {
@@ -550,7 +552,7 @@ country_event = {#The economic future of Rome
     name = flavor_spqr.132.b
     add_years_of_income = -2.5
     add_mercantilism = -3
-    4836 = {
+    4988 = {
       change_trade_goods = gems
       add_base_production = 3
     }
@@ -1206,6 +1208,7 @@ country_event = {#Back into the fold
   fire_only_once = yes
 
   trigger = {
+    has_country_flag = 1444_rome
     is_at_war = NO
     NOT = {
       OR = {
@@ -1214,6 +1217,7 @@ country_event = {#Back into the fold
         has_country_modifier = wounds_of_bloody_war_spq
         has_country_modifier = unrest_stirred_spqr
         has_country_modifier = nobles_curtailed_spqr
+        is_year = 1530
       }
     }
   }
@@ -1231,6 +1235,15 @@ country_event = {#Back into the fold
       create_subject = {
         subject_type = roman_province_cen
         subject = RVN
+      }
+    }
+    if = {
+      limit = {
+        overlord_of = URB
+      }
+      create_subject = {
+        subject_type = roman_province_cen
+        subject = URB
       }
     }
     if = {
@@ -1261,6 +1274,61 @@ country_event = {#Back into the fold
       create_subject = {
         subject_type = roman_province_cen
         subject = TUS
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          overlord_of = RVN
+        }
+      }
+      create_subject = {
+        subject_type = roman_province_cen
+        subject = RVN
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          overlord_of = PIS
+        }
+      }
+      create_subject = {
+        subject_type = roman_province_cen
+        subject = PIS
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          overlord_of = SIE
+        }
+      }
+      create_subject = {
+        subject_type = roman_province_cen
+        subject = SIE
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          overlord_of = TUS
+        }
+      }
+      create_subject = {
+        subject_type = roman_province_cen
+        subject = TUS
+      }
+    }
+    if = {
+      limit = {
+        NOT = {
+          overlord_of = URB
+        }
+      }
+      create_subject = {
+        subject_type = roman_province_cen
+        subject = URB
       }
     }
   }
@@ -1639,7 +1707,7 @@ country_event = {#WRE receive negative answer
       limit = {
         OR = {
           culture_group = byzantine
-          culture_group = neo-roman
+          culture_group = neo_roman
         }
       }
       add_country_modifier = {
@@ -1665,7 +1733,7 @@ country_event = {#WRE receive positive answer
       limit = {
         OR = {
           culture_group = byzantine
-          culture_group = neo-roman
+          culture_group = neo_roman
         }
       }
       add_country_modifier = {
@@ -1695,7 +1763,7 @@ country_event = {#WRE receive negotiation
       limit = {
         OR = {
           culture_group = byzantine
-          culture_group = neo-roman
+          culture_group = neo_roman
         }
       }
       add_country_modifier = {
@@ -1711,7 +1779,7 @@ country_event = {#WRE receive negotiation
       limit = {
         OR = {
           culture_group = byzantine
-          culture_group = neo-roman
+          culture_group = neo_roman
         }
       }
       add_country_modifier = {

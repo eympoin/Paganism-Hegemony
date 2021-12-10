@@ -3,6 +3,48 @@
 # If adding new groups or ideas, make sure they are unique.
 
 ### Nation specific idea groups
+
+HIS_ideas = {
+    start = {
+			cavalry_power = 0.2
+			trade_steering = 0.2
+    }
+
+    bonus = {
+			discipline = 0.05
+    }
+
+    trigger = {
+        tag = HIS
+    }
+
+		free = yes        #will be added at load.
+
+    hispanian_agriculture = {
+			global_trade_goods_size_modifier = 0.2
+    }
+    hispanic_armada = {
+			navy_tradition = 0.5
+			heavy_ship = 0.1
+    }
+    tercio_formation = {
+			infantry_power = 0.1
+			shock_damage_received = -0.15
+    }
+    to_the_new_world = {
+			colonists = 1
+    }
+	 	colonial_ambitions = {
+			idea_claim_colonies = yes
+    }
+    empire_of_the_seas = {
+			governing_capacity_modifier = 0.25
+    }
+    survive_time_of_troubles = {
+			liberty_desire_from_subject_development = -0.3
+    }
+}
+
 ERM_ideas = {
 	start = {
 		administrative_efficiency = 0.1
@@ -1260,6 +1302,7 @@ orda_ideas = {
 
 	heir_of_genghis = {
 		 legitimacy = 1
+     horde_unity = 1
 	}
 	bow_mastery = {
 		fire_damage = 0.1
@@ -2811,8 +2854,8 @@ WFR_ideas = {
 	}
 
 	ever_lasting_wars= {
-		army_tradition_decay = -0.1
-	army_tradition_from_battle = 0.05
+		army_tradition_decay = -0.01
+		army_tradition_from_battle = 0.05
 	}
 	franks_metallurgy = {
 		production_efficiency = 0.1
@@ -3345,7 +3388,7 @@ TUR_ideas = {
 		cavalry_power = 0.15
 	}
 	autonmous_pashas = {
-		war_exhaustion_cost = -0.10
+		global_unrest = -2
 	}
 	lawcode_of_suleiman_01 = {
 		global_tax_modifier = 0.1
@@ -3354,7 +3397,7 @@ TUR_ideas = {
 		trade_efficiency = 0.10
 	}
 	imperial_school_of_naval_engineering = {
-		global_ship_cost = -0.1
+		caravan_power = 0.33
 	}
 }
 
@@ -11044,7 +11087,7 @@ GAL_ideas = {
 	free = yes        #will be added at load.
 
     gal_way_of_st_james = {
-		global_tax_modifier = 0.1
+			global_trade_goods_size_modifier = 0.1
     }
     gal_la_bella = {
 		defensiveness = 0.2

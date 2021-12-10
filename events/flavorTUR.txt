@@ -47,3 +47,88 @@ country_event = {
     }
   }
 }
+
+
+country_event = {#russian
+  id = flavor_tur.3
+  title = flavor_tur.3.t
+  desc = flavor_tur.3.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    primary_culture = turkish
+    any_owned_province = {
+     has_owner_religion = yes
+      OR = {
+        culture = ruthenian
+        culture = byelorussian
+        culture = ryazanian
+        culture = Rostovian
+        culture = Novgorodian
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 4
+  }
+
+  option = {
+    name = flavor_tur.3.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+       has_owner_religion = yes
+       OR = {
+         culture = ruthenian
+         culture = byelorussian
+         culture = ryazanian
+         culture = Rostovian
+         culture = Novgorodian
+       }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = tatar
+    }
+  }
+}
+
+country_event = {#tatar
+  id = flavor_tur.4
+  title = flavor_tur.3.t
+  desc = flavor_tur.3.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    primary_culture = turkish
+    any_owned_province = {
+     has_owner_religion = yes
+      OR = {
+        culture_group = tatar
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 4
+  }
+
+  option = {
+    name = flavor_tur.3.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+       has_owner_religion = yes
+       culture_group = tatar
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = caspian
+    }
+  }
+}

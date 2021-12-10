@@ -10,7 +10,7 @@ country_decisions = {
 			NOT = { tag = ROM }
 			NOT = { tag = PAP }
 			OR = {
-				culture_group = neo-roman
+				culture_group = neo_roman
 				culture_group = byzantine
 			}
 
@@ -46,7 +46,7 @@ country_decisions = {
 					is_emperor = yes
 					development_in_provinces = {
 						value = 1000
-							culture_group = neo-roman
+							culture_group = neo_roman
 					}
 				}
 				AND = {
@@ -55,7 +55,7 @@ country_decisions = {
 					total_development = 2500
 					development_in_provinces = {
 						value = 1000
-							culture_group = neo-roman
+							culture_group = neo_roman
 					}
 					development_in_provinces = {
 						value = 1000

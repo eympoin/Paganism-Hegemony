@@ -2,7 +2,7 @@
 
 owner = CTG
 controller = CTG 
-culture = african
+culture = african_roman
 religion = deii
 capital = "Dougga"
 trade_goods = grain

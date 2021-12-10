@@ -179,12 +179,19 @@ Libya_1 = {
         duration = -1
       }
     }
-    change_price = {
-      trade_goods = grain
-      key = grain_monopol
-      value = 0.25
-      duration = -1
+    if = {
+      limit = {
+        NOT = {has_global_flag = grain_monopol_flag}
       }
+      change_price = {
+        trade_goods = grain
+        key = grain_monopol
+        value = 0.25
+        duration = -1
+      }
+      set_global_flag = grain_monopol_flag
+    }
+
     }
   }
 

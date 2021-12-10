@@ -75,7 +75,7 @@ country_event = {# berber
       OR = {
       culture = berber_culture
       culture = libyan
-      culture = african
+      culture = african_roman
       culture = mauretanian
       }
       NOT = { culture_group = turko_semitic }
@@ -98,7 +98,7 @@ country_event = {# berber
           OR = {
           culture = berber_culture
           culture = libyan
-          culture = african
+          culture = african_roman
           culture = mauretanian
           }
           NOT = { nationalism	= 1 }
@@ -109,7 +109,7 @@ country_event = {# berber
           religion_group = muslim
             OR = {
             culture = berber_culture
-            culture = african
+            culture = african_roman
             culture = mauretanian
             culture = tripolitan
             }

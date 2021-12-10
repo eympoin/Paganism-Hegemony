@@ -664,7 +664,10 @@ Byzantium_3_2 = {
     provinces_to_highlight = {
     }
     trigger = {
-      navy_size = 50
+      custom_trigger_tooltip = {
+        tooltip = end_cilician_piracy_tt.tooltip
+        has_global_flag = end_cilician_piracy
+        }
     }
     effect = {
       country_event = {id = flavor_byzmod.48}

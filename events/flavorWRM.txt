@@ -10,7 +10,7 @@ country_event = {#Welsh/cornish/breton
       tag = WRM
       was_tag = WRM
     }
-    culture_group = neo-roman
+    culture_group = neo_roman
     any_owned_province = {
      has_owner_religion = yes
       OR = {
@@ -59,7 +59,7 @@ country_event = {#Northumbrian
       tag = WRM
       was_tag = WRM
     }
-    culture_group = neo-roman
+    culture_group = neo_roman
     any_owned_province = {
      has_owner_religion = yes
       culture = northymbrian
@@ -98,7 +98,7 @@ country_event = {#Anglo-saxon
       tag = WRM
       was_tag = WRM
     }
-    culture_group = neo-roman
+    culture_group = neo_roman
     any_owned_province = {
      has_owner_religion = yes
       OR = {
@@ -147,7 +147,7 @@ country_event = {#franks
       tag = WRM
       was_tag = WRM
     }
-    culture_group = neo-roman
+    culture_group = neo_roman
     any_owned_province = {
      has_owner_religion = yes
       OR = {
@@ -197,7 +197,7 @@ country_event = {#burgond
       tag = WRM
       was_tag = WRM
     }
-    culture_group = neo-roman
+    culture_group = neo_roman
     any_owned_province = {
      has_owner_religion = yes
       OR = {
@@ -242,7 +242,7 @@ country_event = {#Griko
       tag = WRM
       was_tag = WRM
     }
-    culture_group = neo-roman
+    culture_group = neo_roman
     any_owned_province = {
      has_owner_religion = yes
       OR = {
@@ -286,7 +286,7 @@ country_event = {#Lombards
       tag = WRM
       was_tag = WRM
     }
-    culture_group = neo-roman
+    culture_group = neo_roman
     any_owned_province = {
      has_owner_religion = yes
       OR = {
@@ -411,10 +411,7 @@ country_event = {#Union
     create_union = emperor
     ROOT = {
       set_in_empire = yes
-    }
-    set_hre_religion = deii
-    emperor = {
-      kill_ruler = yes
+      set_emperor = yes
     }
     set_hre_religion_treaty = yes
     add_imperial_influence = 40
@@ -488,10 +485,7 @@ country_event = {#Peace choices
     add_stability = -3
     ROOT = {
       set_in_empire = yes
-    }
-    set_hre_religion = deii
-    emperor = {
-      kill_ruler = yes
+      set_emperor = yes
     }
     set_hre_religion_treaty = yes
     add_imperial_influence = 40
@@ -516,7 +510,7 @@ country_event = {#WRM formation
     ai_chance = { factor = 100 }
     every_country = {
       limit = {
-        culture_group = neo-roman
+        culture_group = neo_roman
         NOT = {tag = WRM}
         is_colonial_nation = no
         is_subject = no

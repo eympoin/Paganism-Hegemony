@@ -1,94 +1,4 @@
-# Do not change tags in here without changing every other reference to them.
-# If adding new groups or cultures, make sure they are unique.
-#
-# Union tags do not suffer from the 'same_culture_group' tax penalty.
-# Primary tags are the first choice for rebel factions seeking cultural independence.
-#
-# graphical_culture = westerngfx
-# second_graphical_culture = muslimgfx (fallback if the first does not exist)
 
-neo-roman={
-	graphical_culture = westerngfx
-	#graphical_culture = southamericagfx
-	dynasty_names = { "Aelius" "Abronius" "Abudius" "Albinius" "Antonius" "Anneius" "Antius" "Aurelius" "Aurelianus" "Betucius" "Caecius" "Catienus" "Decimius" "Domitius"
-	"Flavius" "Gallius" "Julius" "Junius" "Livius" "Lucretius" "Marcius" "Marius" "Pompeius" "Lepidus" "Salvius" "Tarquinius" "Traianus" "Brutii" "Scipio" "Sylla" "Domitianus" "Diocletianus" "Herculius" "Velentinian"
-	}
-	male_names = { "Aggripa" "Appius" "Aulus" "Caeso" "Decimus" "Faustus" "Gaius" "Gnaeus" "Hostus" "Lucius" "Mamercus" "Manius" "Marcus" "Mettius" "Nonus"
-	"Numerius" "Octavius" "Opiter" "Paullus" "Postumus" "Proculus" "Publius" "Quintus" "Septimus" "Sertor" "Servius" "Sectus" "Spurius" "Statius" "Tiberius"
-	"Titus" "Tullus" "Vibius" "Volesus" "Vospiscus"
-	}
-
-	female_names = {"Appia" "Aula" "Caesula" "Decima" "Fausta" "Gaia" "Gnaea" "Hosta" "Lucia" "Mamerca" "Mania" "Marcia" "Mettia" "Nona"
-	"Numeria" "Octavia" "Paulla" "Postuma" "Procula" "Publia" "Quinta" "Septima" "Sertor" "Servia" "Sexta" "Spuria" "Statia" "Tiberia"
-	"Titia" "Tulla" "Vibia" "Volusa" "Vospisca"
-	}
-
-
-	narbonnais= {
-		primary = NAR
-	}
-	cisalpian= {
-	}
-	venetian = {
-		primary = VEN
-	}
-	lugdunian= {
-		primary = LUG
-	}
-	franko-roman= {
-		primary = GLI
-	}
-	britannian= {
-		primary = LDN
-	}
-	mauretanian= {
-		primary = MRT
-	}
-	aquitain = {
-		primary = AQI
-	}
-	lusitanian = {
-		primary = LUS
-	}
-	baetician = {
-		primary = BAE
-	}
-	cartaginensian = {
-		primary = CTH
-	}
-	tarraconan = {
-		primary = TRC
-	}
-	roman = {
-		primary = SPQ
-	}
-	salernian = {
-		primary = SLR
-	}
-	african = {
-		primary = CTG
-	}
-	tripolitan = {
-		primary = TRP
-	}
-
-	galician = {
-		primary = GAL
-	}
-	tuscan = {
-		primary = TUS
-	}
-	sardinian = {
-		primary = TRR
-	}
-	annonarian = {
-	}
-
-	sicilian = {
-		primary = SIC
-	}
-
-}
 
 frankish = {
 	graphical_culture = westerngfx
@@ -1821,27 +1731,6 @@ iberian	= {
 		female_names = {
 			�gata �gueda Aina Anna Ant�nia Caterina Cec�lia Cristina Dolors Francesca Genoveva Isabel Joana Justina Laia
 			Montserrat N�ria Oct�via Prud�ncia Roberta Rodolfa
-		}
-	}
-	galician = {
-		primary = GAL
-		dynasty_names = {
-			Osorio Andrade
-			#CK2
-			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"
-			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
-			Z��iga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
-			"de Cabrera" "de Villena"
-		}
-		male_names = {
-			Garc�a Ordo�o Afonso Sancho Ramiro Bermudo Froila Aleixo Alvaro Anxo Baltasar Bernaldo Brais Carlos
-			Cristovo Domingos Estevo Felipe Fern�n Francisco Frederico Gonzalo Guillerme Gumersindo Henrique
-			Hermenexildo Hixinio Hugo Iago Ignacio Leandro Lope Miguel Nuno Od�n Paulo Pedro Ram�n Roi Tom�
-			Vitor Xoan Xorxe
-		}
-		female_names = {
-			Branca Iria Sabela L�a Rodolfa Sof�a Aldara Alduara Aldon�a Aldonza Beatriz Beatrice Bereng�ria Berengaria Branca
-			Blanche Ant�a Branca Carme Catarina Dores Iria L�a Margarida Mar�a Noela Rosal�a Sabela Ux�a Xoana
 		}
 	}
 	andalucian = {
@@ -11380,31 +11269,6 @@ lost_cultures_group = {
 			"Sobekkare Sobekneferu" Hatshepsut Tentamun Nitocris Neit Cleopatra Neferneferuaten Nefertiti
 		}
 	}
-	roman = { #EU Rome
-		dynasty_names = {
-			Aemilia Antonia Atilia Atia Aufidia Aurelia Caecilia Calpurnia Cassia Claudia
-			Clodia Cornelia Domitia Fabia Flavia Fulvia Furia Gabinia Galeria Horatia Julia
-			Junia Licinia Livia Lucia Mamilia Manlia Maria Memmia Nigidia Octavia Papiria Plinia
-			Postumia Pompeia Rabiria Quinctia Salvia Scribonia Sempronia Sertoria Silia Titia
-			Tullia Ulpia Valeria Vesuvia Vinicia Viridia Vitellia
-		}
-		male_names = {
-			Appius Aulus Caelus Decimus Decius Drusus Faustus Gaius Gnaeus Lucius Mamercus Manius Marcus Mettius Numerius Publius Quintus Secundus Septimus Servius Sextus Spurius Tertius Titus Tiberius Titus
-			Albinus Albus Agricola Agrippa Aratus Asina Auspex Balbus Barbatus Bibulus Brutus Bubo Buteo
-			Caesar Calvus Calvinus Cato Catulus Cethegus Cicero Cinna Cotta Crispian Curio Dama Damasus Dentatus Dives Dolabella Donatus Draco
-			Emeritus Eugenius Euphemius Falco Falx Felix Fimbria Flaccus Florus Fronto
-			Gala Galerus Gemellus Gorgonius Gracchus Gracilis Habitus Herma Hilarius Horatius
-			Ignatius Iuba Labeo Laenas Lepidus Leptis Lentulus Libo Longinus Longus Lucan Lucullus Lupius
-			Macro Martialis Marullus Maximus Memmius Mercator Messalla Montanus Murena Mus Nasica Oceanus Octavianus Opis
-			Optatus Otho Paenula Pantera Pavo Peregrinus Pertinax Petronax Pictor Pilatus Polus Prisca Primus Procyon Pulcher
-			Quarto Quiricus Regillus Remus Romanus Romulus Rufus Ruso Sabinus Salinator Scaevola Scipio Scrofa Seneca Senna
-			Severus Sorex Statius Strabo Super Superbus Tacitus Tertulus Trebonius Tibullus Tullius Ursinus Ursus Valens Varro Varus
-			Vergilius Viator Victor Vindex Virilis Vitalis Vitus Zeno Zoilus Zosimus
-		}
-		female_names = {
-			Prima Secunda Tertia Quarta Quinta Septa Septima Octava Nona Decima Undecima Duodecima
-		}
-	}
 	jan_mayenese = {
 		dynasty_names = {
 			Beliy Medved Bjorn Rawrrorr Rrrrr Grrr Gyp Qoi Styrbjorn Blomstfjellet
@@ -11840,6 +11704,12 @@ Oghuz = {
 			Handan Alime K�sem H�ma
 		}
 	}
+	tatar_turk = {
+
+	}
+	caspian = {
+
+	}
 	turkmeni = {
 		primary = KHI
 		dynasty_names = {
@@ -11866,5 +11736,71 @@ Oghuz = {
 		Kirghiz
 		# CKII - KHANTY
 		"Sibirid" "Narima" "Mansi" "Khantys"
+	}
+}
+
+neo_roman={
+	graphical_culture = westerngfx
+	mauretanian= {
+		primary = MRT
+	}
+	narbonnais= {
+		primary = NAR
+	}
+	cisalpian= {
+	}
+	venetian = {
+		primary = VEN
+	}
+	lugdunian= {
+		primary = LUG
+	}
+	franko-roman= {
+		primary = GLI
+	}
+	britannian= {
+		primary = LDN
+	}
+	aquitain = {
+		primary = AQI
+	}
+	lusitanian = {
+		primary = LUS
+	}
+	baetician = {
+		primary = BAE
+	}
+	cartaginensian = {
+		primary = CTH
+	}
+	tarraconan = {
+		primary = TRC
+	}
+	roman = {
+		primary = SPQ
+	}
+	salernian = {
+		primary = SLR
+	}
+	african_roman = {
+		primary = CTG
+	}
+	tripolitan = {
+		primary = TRP
+	}
+
+	galician = {
+		primary = GAL
+	}
+	tuscan = {
+		primary = TUS
+	}
+	sardinian = {
+		primary = TRR
+	}
+	annonarian = {
+	}
+	sicilian = {
+		primary = SIC
 	}
 }

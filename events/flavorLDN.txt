@@ -456,7 +456,7 @@ country_event = {#Welsh/cornish/breton
       tag = BRN
       tag = LDN
     }
-    culture_group = neo-roman
+    culture_group = neo_roman
     any_owned_province = {
       religion = deii
       OR = {
@@ -503,7 +503,7 @@ country_event = {#Scottish
       tag = BRN
       tag = LDN
     }
-    culture_group = neo-roman
+    culture_group = neo_roman
     any_owned_province = {
       religion = deii
       OR = {
@@ -548,7 +548,7 @@ country_event = {#Irish
       tag = BRN
       tag = LDN
     }
-    culture_group = neo-roman
+    culture_group = neo_roman
     any_owned_province = {
       religion = deii
       culture = irish
@@ -587,7 +587,7 @@ country_event = {#Northumbrian
       tag = BRN
       tag = LDN
     }
-    culture_group = neo-roman
+    culture_group = neo_roman
     any_owned_province = {
       religion = deii
       culture = northymbrian
@@ -626,7 +626,7 @@ country_event = {#Anglo-saxon
       tag = BRN
       tag = LDN
     }
-    culture_group = neo-roman
+    culture_group = neo_roman
     any_owned_province = {
       religion = deii
       OR = {

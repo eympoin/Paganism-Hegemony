@@ -263,7 +263,7 @@ roman_base_2 = {
     was_tag = CTG
   }
   OR = {
-    primary_culture = african
+    primary_culture = african_roman
     has_country_modifier = ctg_roman
   }
     NOT = { map_setup = map_setup_random }
@@ -666,7 +666,7 @@ roman_base_1 = {
     was_tag = CTG
   }
   OR = {
-    primary_culture = african
+    primary_culture = african_roman
     has_country_modifier = ctg_roman
   }
     NOT = { map_setup = map_setup_random }
@@ -915,7 +915,7 @@ roman_base_3 = {
     was_tag = CTG
   }
   OR = {
-    primary_culture = african
+    primary_culture = african_roman
     has_country_modifier = ctg_roman
   }
     NOT = { map_setup = map_setup_random }
@@ -1478,12 +1478,18 @@ own_base_1 = {
       }
     }
 
-    change_price = {
-      trade_goods = grain
-      key = grain_monopol
-      value = 0.5
-      duration = -1
+    if = {
+      limit = {
+        NOT = {has_global_flag = grain_monopol_flag}
       }
+      change_price = {
+        trade_goods = grain
+        key = grain_monopol
+        value = 0.25
+        duration = -1
+      }
+      set_global_flag = grain_monopol_flag
+    }
     }
   }
 }

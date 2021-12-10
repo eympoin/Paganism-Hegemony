@@ -1,7 +1,7 @@
 # - Kairwan
 owner = CTG
 controller = CTG 
-culture = african
+culture = african_roman
 religion = deii
 capital = "Kairwan"
 trade_goods = grain

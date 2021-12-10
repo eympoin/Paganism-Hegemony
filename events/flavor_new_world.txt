@@ -8,50 +8,89 @@ country_event = {
   fire_only_once = yes
 	trigger = {
 		OR = {
-			religion = celts
+			religion = celt
 			religion = norse_pagan_reformed
 		}
 		980 = {
 			has_discovered = ROOT
 		}
 	}
+	mean_time_to_happen = {
+		months = 1
+	}
 
 	option = {		# help them
 		name = "flavor_nworld.1.a"
     2573 = {
-      change_culture = Vinlandic
-      change_religion = norse_pagan_reformed
-      cede_province = ROOT
+			if = {
+				limit = {
+						is_city	= no
+						is_colony	= no
+				}
+				change_culture = Vinlandic
+				change_religion = norse_pagan_reformed
+				cede_province = ROOT
+			}
     }
     981 = {
-      change_culture = Vinlandic
-      change_religion = norse_pagan_reformed
-      cede_province = ROOT
+			if = {
+				limit = {
+						is_city	= no
+						is_colony	= no
+				}
+				change_culture = Vinlandic
+				change_religion = norse_pagan_reformed
+				cede_province = ROOT
+			}
     }
     980 = {
-      change_culture = Vinlandic
-      change_religion = norse_pagan_reformed
-      cede_province = ROOT
+			if = {
+				limit = {
+						is_city	= no
+						is_colony	= no
+				}
+				change_culture = Vinlandic
+				change_religion = norse_pagan_reformed
+				cede_province = ROOT
+			}
     }
     declare_war = INN
 	}
 
   option = {		# Vinlandic independant
 		name = "flavor_nworld.1.b"
-    2573 = {
-      change_culture = Vinlandic
-      change_religion = norse_pagan_reformed
-      cede_province = VIN
+    	2573 = {
+				if = {
+					limit = {
+							is_city	= no
+							is_colony	= no
+					}
+	      change_culture = Vinlandic
+	      change_religion = norse_pagan_reformed
+	      cede_province = VIN
+			}
     }
     981 = {
-      change_culture = Vinlandic
-      change_religion = norse_pagan_reformed
-      cede_province = VIN
+				if = {
+					limit = {
+							is_city	= no
+							is_colony	= no
+					}
+				change_culture = Vinlandic
+				change_religion = norse_pagan_reformed
+				cede_province = VIN
+			}
     }
     980 = {
-      change_culture = Vinlandic
-      change_religion = norse_pagan_reformed
-      cede_province = VIN
+			if = {
+				limit = {
+						is_city	= no
+						is_colony	= no
+				}
+			change_culture = Vinlandic
+			change_religion = norse_pagan_reformed
+			cede_province = VIN
+			}
     }
     INN = {
       declare_war = VIN
@@ -63,19 +102,37 @@ country_event = {
       religion = celt
     }
     2573 = {
-      change_culture = Vinlandic
-      change_religion = norse_pagan_reformed
-      cede_province = VIN
+			if = {
+				limit = {
+						is_city	= no
+						is_colony	= no
+				}
+			change_culture = Vinlandic
+			change_religion = norse_pagan_reformed
+			cede_province = VIN
+			}
     }
     981 = {
-      change_culture = Vinlandic
-      change_religion = norse_pagan_reformed
-      cede_province = VIN
+			if = {
+				limit = {
+						is_city	= no
+						is_colony	= no
+				}
+			change_culture = Vinlandic
+			change_religion = norse_pagan_reformed
+			cede_province = VIN
+			}
     }
     980 = {
-      change_culture = Vinlandic
-      change_religion = norse_pagan_reformed
-      cede_province = VIN
+			if = {
+				limit = {
+						is_city	= no
+						is_colony	= no
+				}
+			change_culture = Vinlandic
+			change_religion = norse_pagan_reformed
+			cede_province = VIN
+			}
     }
     declare_war = VIN
 	}
