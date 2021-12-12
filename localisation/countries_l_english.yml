@@ -1819,3 +1819,9 @@ ALL_ADJ:0 "Alban"
 VIN:0 "Vinland"
 VIN_ADJ:0 "Vinlandic"
 KELTIA:0 "Keltia"
+
+KRU:0 "Rus Khaganate"
+KRU_ADJ:0 "Rus"
+
+TAT:0 "Tatarstan"
+TAT_ADJ:0 "Tatar"

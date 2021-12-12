@@ -13124,8 +13124,15 @@ gengis_tomb = {
 
 	#can we build it?
 	build_trigger = {
-		religion= tengri_pagan_reformed
-		has_owner_religion = yes
+		OR = {
+			AND = {
+				religion= tengri_pagan_reformed
+				has_owner_religion = yes
+			}
+			owner = {
+				tag = KRU
+			}
+		}
 	}
 
 	#what to do when it's built
@@ -13149,14 +13156,28 @@ gengis_tomb = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		religion= tengri_pagan_reformed
-		has_owner_religion = yes
+		OR = {
+			AND = {
+				religion= tengri_pagan_reformed
+				has_owner_religion = yes
+			}
+			owner = {
+				tag = KRU
+			}
+		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-			religion= tengri_pagan_reformed
-			has_owner_religion = yes
+		OR = {
+			AND = {
+				religion= tengri_pagan_reformed
+				has_owner_religion = yes
+			}
+			owner = {
+				tag = KRU
+			}
+		}
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
@@ -13277,7 +13298,8 @@ gengis_tomb = {
 		country_modifiers = {
 			  shock_damage = 0.15
         cavalry_cost = -0.20
-        cavalry_fire = 2
+        cavalry_fire = 1
+				cavalry_shock = 1
 		}
 
 		#what effects happen when this tier is achieved

@@ -1,0 +1,100 @@
+country_decisions = {
+
+	form_rusKhaganate = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = formed_RusK_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			NOT = { tag = WRM }
+			NOT = { tag = ROM }
+			NOT = { tag = PAP }
+
+
+			tag = TUR
+			has_country_flag = mother_rus
+
+
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+
+		provinces_to_highlight = {
+			culture_group = east_slavic
+
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+    is_free_or_tributary_trigger = yes
+    is_at_war = no
+    is_nomad = no
+
+			total_development = 1000
+			development_in_provinces = {
+				value = 400
+				OR = {
+					culture_group = east_slavic
+					}
+			}
+		}
+		effect = {
+		 remove_non_electors_emperors_from_empire_effect = yes
+		 change_tag = KRU
+		 if = {
+			 limit = {
+				 NOT = { government_rank = 3 }
+			 }
+			 set_government_rank = 3
+		 }
+
+		 add_country_modifier = {
+			 name = "centralization_modifier"
+			 duration = 7300
+		 }
+		 add_prestige = 25
+		 set_country_flag = formed_RusK_flag
+		 russia_region = {
+			 limit = {
+				 NOT = { owned_by = ROOT }
+			 }
+			 add_permanent_claim = ROOT
+		 }
+		 ruthenia_region = {
+			 limit = {
+				 NOT = { owned_by = ROOT }
+			 }
+			 add_permanent_claim = ROOT
+		 }
+
+		 if = {
+			 limit = {
+				 has_custom_ideas = no
+				 OR = {
+					 ai = no
+					 AND = {
+						 ai = yes
+						 has_idea_group = default_ideas
+					 }
+				 }
+			 }
+			 country_event = { id = ideagroups.1 } #Swap Ideas
+		 }
+	 }
+		ai_will_do = {
+			factor = 1
+		}
+		ai_importance = 400
+	}
+
+}

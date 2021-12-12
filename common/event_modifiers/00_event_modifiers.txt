@@ -12485,13 +12485,16 @@ authority_restored = {
 slavic_uprising_mod = {
 	global_manpower_modifier = 0.25
 	land_morale = 0.2
+	shock_damage_received = -0.1
+	land_forcelimit = 5
+	global_tax_income = 12	
 }
 
 great_invasion = {
 	global_manpower = 25
-	global_tax_income = 18
+	global_tax_income = 100
 	land_forcelimit = 25
-	naval_forcelimit = 30
+	naval_forcelimit = 35
 }
 dissension_in_the_kingdom = {
 	reduced_liberty_desire = -25
