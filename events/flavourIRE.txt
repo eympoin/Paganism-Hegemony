@@ -102,6 +102,8 @@ country_event = {#english
        has_owner_religion = yes
        OR = {
 				culture_group = british
+        culture = northymbrian
+        culture = britannian
        }
         NOT = { nationalism	= 1 }
         is_core = ROOT
@@ -152,7 +154,10 @@ country_event = {#roman
       limit = {
        has_owner_religion = yes
        OR = {
-				culture_group = british
+         culture = baetician
+         culture = lusitanian
+         culture = cartaginensian
+         culture = tarraconan
        }
         NOT = { nationalism	= 1 }
         is_core = ROOT

@@ -484,7 +484,12 @@ tribe_becomes_republic_reform = {
 		if = {
 			limit = {
 				technology_group = nomad_group
-				religion_group = christian
+				OR = {
+					religion_group = christian
+					tag = SKH
+					tag = OKH
+					tag = TUR
+				}
 			}
 			change_technology_group = eastern
 			change_unit_type = eastern
@@ -600,7 +605,12 @@ tribe_becomes_theocracy_reform = {
 		else_if = {
 			limit = {
 				technology_group = nomad_group
-				religion_group = christian
+				OR = {
+					religion_group = christian
+					tag = SKH
+					tag = OKH
+					tag = TUR
+				}
 			}
 			change_technology_group = eastern
 			change_unit_type = eastern

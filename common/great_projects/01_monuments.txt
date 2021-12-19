@@ -1753,6 +1753,7 @@ kremlin = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
+			yearly_absolutism = 0.1	
 		}
 
 		#what effects happen when this tier is achieved
@@ -1785,6 +1786,8 @@ kremlin = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			global_regiment_cost = -0.1
+			yearly_absolutism = 0.1
+			max_absolutism = 10
 		}
 
 		#what effects happen when this tier is achieved
@@ -7736,7 +7739,9 @@ cothon = {
 		country_modifiers = {
 
 		naval_forcelimit = 20
-		navy_tradition = 2
+		navy_tradition = 1
+		naval_morale = 0.1
+		naval_attrition = -0.1
 		}
 
 		#what effects happen when this tier is achieved
@@ -8113,7 +8118,7 @@ lighthouse_of_alexandria = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			naval_attrition = -0.2
-			naval_morale = 0.2
+			naval_morale = 0.1
 			range = 0.5
 		}
 
@@ -8902,7 +8907,7 @@ zeus_temple = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			legitimacy = 2
+			legitimacy = 1
       prestige = 1.0
 			global_unrest = -1
       imperial_authority = 0.15
@@ -9925,7 +9930,7 @@ constantin_triumphal_arch = {
 			land_morale = 0.10
       prestige = 1
       prestige_from_land = 0.2
-      discipline = 0.05
+      discipline = 0.02
 		}
 
 		#what effects happen when this tier is achieved
@@ -10290,7 +10295,6 @@ port_of_ostia = {
 		country_modifiers = {
 			trade_efficiency = 0.15
       trade_steering = 0.15
-      naval_morale = 0.1
 		}
 
 		#what effects happen when this tier is achieved
@@ -10322,7 +10326,6 @@ port_of_ostia = {
 		country_modifiers = {
 			trade_efficiency = 0.2
       trade_steering = 0.15
-      naval_morale = 0.1
       development_cost = -0.05
 		}
 
@@ -10660,7 +10663,7 @@ library_of_alexandria = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			technology_cost = -0.05
+			technology_cost = -0.025
 
 		}
 
@@ -10691,7 +10694,7 @@ library_of_alexandria = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			technology_cost = -0.1
+			technology_cost = -0.05
       idea_cost = -0.1
 		}
 
@@ -10722,9 +10725,9 @@ library_of_alexandria = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			technology_cost = -0.1
-                                                        idea_cost = -0.1
-                                                        global_institution_spread = 0.15
+			technology_cost = -0.05
+      idea_cost = -0.15
+      global_institution_spread = 0.15
 		}
 
 		#what effects happen when this tier is achieved
@@ -10859,7 +10862,7 @@ great_university_of_tolosa = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			technology_cost = -0.05
+			technology_cost = -0.025
 
 		}
 
@@ -10890,8 +10893,8 @@ great_university_of_tolosa = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			technology_cost = -0.1
-                                                        global_institution_spread = 0.1
+			technology_cost = -0.05
+      global_institution_spread = 0.1
 		}
 
 		#what effects happen when this tier is achieved
@@ -10922,9 +10925,10 @@ great_university_of_tolosa = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			technology_cost = -0.1
+			technology_cost = -0.05
       country_admin_power = 1
       global_institution_spread = 0.15
+			embracement_cost = -0.25
 		}
 
 		#what effects happen when this tier is achieved
@@ -16522,130 +16526,6 @@ holy_city_kairouan = {
 	}
 }
 
-
-prague = {
-	start = 266 #Prague
-	date = 700.01.01
-	time = { months = 0	}
-	build_cost = 0
-	can_be_moved = no
-	move_days_per_unit_distance = 10
-	starting_tier = 0
-	type = monument
-
-	build_trigger = {
-		culture_group = west_slavic
-		owner = {
-			culture_group = west_slavic
-		}
-	}
-
-	on_built = {
-	}
-
-	on_destroyed = {
-	}
-
-	can_use_modifiers_trigger = {
-	}
-
-	can_upgrade_trigger = {
-		culture_group = west_slavic
-		owner = {
-			culture_group = west_slavic
-		}
-	}
-
-	keep_trigger = {
-		culture_group = west_slavic
-		owner = {
-			culture_group = west_slavic
-		}
-	}
-
-	tier_0 = {
-		upgrade_time = {
-			months = 0
-		}
-		cost_to_upgrade = {
-			factor = 0
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-		}
-		country_modifiers = {
-		}
-		on_upgraded = {
-		}
-	}
-
-	tier_1 = {
-		upgrade_time = {
-			months = 120
-		}
-		cost_to_upgrade = {
-			factor = 1000
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-		}
-		country_modifiers = {
-			imperial_authority_value = 0.05
-			tolerance_own = 0.25
-			tolerance_heretic = 0.25
-		}
-		on_upgraded = {
-		}
-	}
-
-	tier_2 = {
-		upgrade_time = {
-			months = 240
-		}
-		cost_to_upgrade = {
-			factor = 2500
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-		}
-		country_modifiers = {
-			imperial_authority_value = 0.1
-			tolerance_own = 0.25
-			tolerance_heretic = 0.25
-			papal_influence = 0.5
-			monthly_fervor_increase = 0.25
-			church_power_modifier = 0.05
-		}
-		on_upgraded = {
-		}
-	}
-
-	tier_3 = {
-		upgrade_time = {
-			months = 480
-		}
-		cost_to_upgrade = {
-			factor = 5000
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-		}
-		country_modifiers = {
-			imperial_authority_value = 0.15
-			tolerance_own = 0.5
-			tolerance_heretic = 0.5
-			papal_influence = 1
-			monthly_fervor_increase = 0.5
-			church_power_modifier = 0.1
-		}
-		on_upgraded = {
-		}
-	}
-}
 
 hampi = {
 	start = 541 #Vijayanagar
