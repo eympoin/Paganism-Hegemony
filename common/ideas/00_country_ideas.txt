@@ -3,10 +3,10 @@
 # If adding new groups or ideas, make sure they are unique.
 
 ### Nation specific idea groups
-seleucid_ideas = {
+SLC_ideas = {
 	start = {
 		global_unrest = -2
-		state_governing_cost = -0.33
+		state_governing_cost = -0.25
 	}
 	bonus = {
 		  development_cost = -0.1
@@ -39,6 +39,7 @@ seleucid_ideas = {
 
 	 true_heir_of_alexander = {
 		  prestige = 1
+			legitimacy = 1
 	}
 
 	multicultural_empire  = {
