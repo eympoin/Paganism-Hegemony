@@ -3,6 +3,54 @@
 # If adding new groups or ideas, make sure they are unique.
 
 ### Nation specific idea groups
+seleucid_ideas = {
+	start = {
+		global_unrest = -2
+		state_governing_cost = -0.33
+	}
+	bonus = {
+		  development_cost = -0.1
+		}
+	trigger = {
+		tag = SLC
+	}
+	free = yes
+
+	adaptative_army = {
+		 possible_mil_policy = 1
+     free_mil_policy = 1
+	}
+
+	great_pentapolis = {
+		 global_tax_modifier = 0.2
+     production_efficiency = 0.05
+	}
+
+	use_persian_admin = {
+		can_fabricate_for_vassals = yes
+    vassal_forcelimit_bonus = 0.2
+    diplomatic_annexation_cost = -0.2
+	}
+
+	 mercenary_armies = {
+		mercenary_discipline = 0.10
+    merc_maintenance_modifier = -0.2
+	}
+
+	 true_heir_of_alexander = {
+		  prestige = 1
+	}
+
+	multicultural_empire  = {
+		tolerance_heretic = 1
+    tolerance_heathen = 1
+	}
+
+	punish_the_nomads = {
+		fire_damage_received = -0.10
+    movement_speed = 0.10
+	}
+}
 
 HIS_ideas = {
     start = {
