@@ -370,7 +370,7 @@ ottoman_missions_2 = {
 			##PROVINCESHIGHLIGHTCODE
 		}
 		trigger = {
-			has_ruler = bayezid
+			has_ruler = Bayezid
 		}
 		effect = {
       add_country_modifier = {
@@ -582,7 +582,7 @@ ottoman_missions_3 = {
 		icon = mission_break_the_tatar_yoke
 		required_missions ={
 			our_natural_borders
-                                                        greatest_of_all_times
+      greatest_of_all_times
 		}
 		position = 8
 		provinces_to_highlight = {
@@ -592,7 +592,7 @@ ottoman_missions_3 = {
 			total_development = 1500
       prestige = 90
       legitimacy = 100
-      max_manpower = 1000
+      manpower_percentage = 1
 		}
 		effect = {
       add_country_modifier = {

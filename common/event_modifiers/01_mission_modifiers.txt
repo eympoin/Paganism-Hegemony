@@ -4775,7 +4775,7 @@ country_of_wonders = {
 
 reformed_army = {
   country_military_power = 1
-  army_tradition_decay = -0.1
+  army_tradition_decay = -0.01
   general_cost = -0.1
 }
 
@@ -5964,7 +5964,8 @@ skanderberg_legacy = {
   leader_land_fire = 1
 }
 
-ottoman_rise = { cavalry_power = 0.05
+ottoman_rise = {
+  cavalry_power = 0.05
 }
 
 
@@ -6012,8 +6013,7 @@ ruling_a_steppe_empire = {
 }
 
 the_conquest_of_the_world = {
-  fire_damage = 0.10
-  governing_capacity = 500
+  governing_capacity_modifier = 0.2
   global_unrest = -2
 }
 

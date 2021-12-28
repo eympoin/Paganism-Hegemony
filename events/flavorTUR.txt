@@ -16,7 +16,7 @@ country_event = {
         dynasty = ROOT
         age = 13
         adm = 6
-        dip = 4
+        dip = 6
         mil = 6
         claim = 95
         female = no
@@ -32,6 +32,7 @@ country_event = {
   title = flavor_tur.2.t
   desc = flavor_tur.2.d
   picture = BATTLE_eventPicture
+  fire_only_once = yes
   trigger = {
     tag = TUR
     war_with = ARM
@@ -56,16 +57,24 @@ country_event = {#russian
   picture = COLONIZATION_eventPicture
 
   trigger = {
+    has_country_flag = gogo_turks
     primary_culture = turkish
     any_owned_province = {
-     has_owner_religion = yes
       OR = {
-        culture = ruthenian
-        culture = byelorussian
-        culture = ryazanian
-        culture = Rostovian
-        culture = Novgorodian
+        AND = {
+          owner = {has_matching_religion = slavic}
+          religion = slavic
+        }
+        has_owner_religion = yes
       }
+
+       OR = {
+         culture = ruthenian
+         culture = byelorussian
+         culture = ryazanian
+         culture = russian
+         culture = novgorodian
+       }
       NOT = { nationalism	= 1 }
       is_core = ROOT
     }
@@ -80,18 +89,25 @@ country_event = {#russian
     ai_chance = { factor = 1 }
     random_owned_province = {
       limit = {
-       has_owner_religion = yes
+      OR = {
+        AND = {
+          owner = {has_matching_religion = slavic}
+          religion = slavic
+        }
+        has_owner_religion = yes
+      }
+
        OR = {
          culture = ruthenian
          culture = byelorussian
          culture = ryazanian
-         culture = Rostovian
-         culture = Novgorodian
+         culture = russian
+         culture = novgorodian
        }
         NOT = { nationalism	= 1 }
         is_core = ROOT
       }
-      change_culture = tatar
+      change_culture = tatar_turk
     }
   }
 }
@@ -103,11 +119,12 @@ country_event = {#tatar
   picture = COLONIZATION_eventPicture
 
   trigger = {
+    has_country_flag = gogo_turks
     primary_culture = turkish
     any_owned_province = {
      has_owner_religion = yes
       OR = {
-        culture_group = tatar
+        culture_group = tartar
       }
       NOT = { nationalism	= 1 }
       is_core = ROOT
@@ -124,11 +141,41 @@ country_event = {#tatar
     random_owned_province = {
       limit = {
        has_owner_religion = yes
-       culture_group = tatar
+       culture_group = tartar
         NOT = { nationalism	= 1 }
         is_core = ROOT
       }
       change_culture = caspian
     }
+  }
+}
+
+country_event = {
+  id = flavor_tur.5
+  title = flavor_tur.5.t
+  desc = flavor_tur.5.d
+  picture = DIPLOMACY_eventPicture
+  fire_only_once = yes
+  trigger = {
+    tag = TUR
+    is_nomad = no
+    any_province = {
+      culture_group = east_slavic
+    }
+  }
+
+  option = { #stay nomad
+    name = flavor_tur.5.a
+    ai_chance = { factor = 1 }
+    custom_tooltip = turkish_cultural_conversion
+    set_country_flag = gogo_turks
+  }
+  option = { #go rus
+    name = flavor_tur.5.b
+    ai_chance = { factor = 1 }
+    change_primary_culture = ruthenian
+    add_stability = -1
+    custom_tooltip = formable_rus_khaganate
+    set_country_flag = mother_rus
   }
 }

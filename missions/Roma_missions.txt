@@ -241,13 +241,6 @@ Roma_Unification_1 = {
 	        }
 	        add_permanent_claim = ROOT
 	      }
-				baleares_area = {
-	        limit = {
-	          NOT = { owned_by = ROOT }
-	          NOT = {is_claim	= ROOT}
-	        }
-	        add_permanent_claim = ROOT
-	      }
 			}
 	}
 
@@ -860,7 +853,6 @@ WRM_unification_3 = {
 	        OR = {
 	          area = corsica_sardinia_area
 	          area = western_sicily_area
-						area = baleares_area
 	        }
 	        NOT = {owned_by = ROOT}
 	      }
@@ -873,10 +865,6 @@ WRM_unification_3 = {
 					type = all
 					owned_by = ROOT
 				}
-				baleares_area = {
-		      type = all
-		      owned_by = ROOT
-		    }
 			}
 			effect = {
 				add_dip_power = 50

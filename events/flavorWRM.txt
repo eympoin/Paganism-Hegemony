@@ -146,6 +146,9 @@ country_event = {#franks
     OR = {
       tag = WRM
       was_tag = WRM
+      culture = narbonnais
+      culture = aquitain
+      culture = lugdunian
     }
     culture_group = neo_roman
     any_owned_province = {
@@ -196,6 +199,9 @@ country_event = {#burgond
     OR = {
       tag = WRM
       was_tag = WRM
+      culture = narbonnais
+      culture = aquitain
+      culture = lugdunian
     }
     culture_group = neo_roman
     any_owned_province = {
@@ -241,6 +247,11 @@ country_event = {#Griko
     OR = {
       tag = WRM
       was_tag = WRM
+      culture = roman
+      culture = salernian
+      culture = cisalpian
+      culture = tuscan
+      culture = sardinian
     }
     culture_group = neo_roman
     any_owned_province = {
@@ -285,6 +296,11 @@ country_event = {#Lombards
     OR = {
       tag = WRM
       was_tag = WRM
+      culture = roman
+      culture = salernian
+      culture = cisalpian
+      culture = tuscan
+      culture = sardinian
     }
     culture_group = neo_roman
     any_owned_province = {

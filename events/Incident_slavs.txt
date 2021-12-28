@@ -574,6 +574,10 @@ country_event = {
     name = slavic_uprising.9.a
     clr_country_flag = elite_remained_in_power
     set_country_flag = defy_the_emperor
+    add_country_modifier = {
+      name = slavic_uprising_mod
+      duration = 7300
+    }
     declare_war_with_cb = {
       who = emperor
       casus_belli = cb_religious_conformance

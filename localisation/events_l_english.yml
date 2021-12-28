@@ -2213,6 +2213,10 @@ flavor_ire.10.t:0 "Weak King"
 flavor_ire.10.d:0 "Slaine mac Cartaigh died 3 months ago and his son Conall took his place. But the young King is weak and naive and its subjects are taking advantage of this."
 flavor_ire.10.a:0 "May he grow stronger !"
 
+flavor_ire.11.t:0 "Invasion of Ireland"
+flavor_ire.11.d:0 "A large Norse army imbarked from Mann to our Ireland. Our brothers calls for our help. The ennemy is weak and the plunder guarantee."
+flavor_ire.11.a:0 "For Thor !"
+flavor_ire.11.b:0 "We have other things to do."
 
 flavor_nworld.1.t:0 "The Legends of Vinland"
 flavor_nworld.1.d:0 "The Legends of Vinland are old. They speak of lands beyond the Great Ocean inhabited by strange people. This lands discovered by Norse explorers was lost to history but the story remains and it seems we have found it. There are cities here that ressembled the Norse ones and the peopele speak a weird variant of germanic languages. These people are at war with the natives of Vinland and they ask for our help against them. Should we accept ?"
@@ -2233,6 +2237,15 @@ flavor_tur.2.a:0 "For Bayezid !"
 flavor_tur.3.t:0 "Cultural Assimilation"
 flavor_tur.3.d:0 "The turkish influence other these lands has finally turned the inhabitants into true Turks"
 flavor_tur.3.a:0 "This is a happy news."
+
+
+formable_rus_khaganate:0 "You will be able to form the Rus Khaganate"
+turkish_cultural_conversion:0 "You will unlock the cultural conversion events for the Turks. The East Slavs and Tatar provinces with no unrest and your religion will be converted to your culture group. You will also be able to form Tatarstan"
+
+flavor_tur.5.t:0 "Integration into Rus land"
+flavor_tur.5.d:0 "The more we push into the former Rus territory, the more dominant the slavic culture is in our Khaganete. We have arrived at a breaking, we must choose whether we will follow the leagcy of Oleg or the legacy of Osman."
+flavor_tur.5.a:0 "We won't betray our ancestors !"
+flavor_tur.5.b:0 "We are the true heir of the Rus !"
 
 cil_piracy.1.t:0 "Cilician pirates"
 cil_piracy.1.d:0 "Cilician coast has long been infested with pirated but it has worsened in the last decades. The princes ask us to intervene. Our spies report to us that the Doux of Cilicia is directly responsible of the increase of piracy."

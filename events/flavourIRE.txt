@@ -35,7 +35,7 @@ country_event = {#gaul
   }
 
   mean_time_to_happen = {
-    years = 3
+    years = 4
   }
 
   option = {
@@ -102,6 +102,8 @@ country_event = {#english
        has_owner_religion = yes
        OR = {
 				culture_group = british
+        culture = northymbrian
+        culture = britannian
        }
         NOT = { nationalism	= 1 }
         is_core = ROOT
@@ -152,7 +154,10 @@ country_event = {#roman
       limit = {
        has_owner_religion = yes
        OR = {
-				culture_group = british
+         culture = baetician
+         culture = lusitanian
+         culture = cartaginensian
+         culture = tarraconan
        }
         NOT = { nationalism	= 1 }
         is_core = ROOT
@@ -251,6 +256,15 @@ country_event = {
         who = MTH
         casus_belli = cb_annex
     }
+    372 = {
+      change_controller = ROOT
+    }
+    4380 = {
+      change_controller = ROOT
+    }
+    372 = {
+      change_controller = ROOT
+    }
     4121 = {
       change_controller = ROOT
       infantry = ROOT
@@ -272,8 +286,6 @@ country_event = {
       infantry = ROOT
       infantry = ROOT
       infantry = ROOT
-      infantry = ROOT
-      infantry = ROOT
       transport = ROOT
       transport = ROOT
       transport = ROOT
@@ -297,11 +309,15 @@ country_event = {
       galley = ROOT
       galley = ROOT
       galley = ROOT
+      heavy_ship = ROOT
+      heavy_ship = ROOT
+      heavy_ship = ROOT
       heavy_ship = ROOT
       heavy_ship = ROOT
       heavy_ship = ROOT
     }
     MTH = {country_event = {id = flavor_ire.8}}
+    NRT = {country_event = {id = flavor_ire.11}}
 	}
 }
 
@@ -359,5 +375,24 @@ country_event = {
     hidden_effect = {
       KOI = {country_event = {id = flavor_ire.7}}
     }
+	}
+}
+
+country_event = {
+	id = flavor_ire.11
+	title = "flavor_ire.11.t"
+	desc = "flavor_ire.11.d"
+	picture = BATTLE_eventPicture
+	is_triggered_only = yes
+
+	option = {		# Norse Invasion
+		name = "flavor_ire.11.a"
+    ai_chance = { factor = 1 }
+    join_all_offensive_wars_of = KOI
+	}
+  option = {
+		name = "flavor_ire.11.b"
+    ai_chance = { factor = 0 }
+
 	}
 }

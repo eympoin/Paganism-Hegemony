@@ -2168,9 +2168,6 @@ pagan = {
         }
       }
     }
-    province = {
-      local_missionary_strength = -0.01
-    }
     personal_deity = yes
     heretic = { OLD_CELT }
   }
@@ -2188,7 +2185,7 @@ pagan = {
       tolerance_own = 3
     }
     province = {
-      local_missionary_strength = -0.02
+      local_missionary_strength = -0.01
     }
     heretic = { OLD_ZUNIST }
   }
@@ -2206,9 +2203,6 @@ pagan = {
       movement_speed = 0.1
       shock_damage = 0.1
     }
-    province = {
-      local_missionary_strength = -0.01
-    }
 
     heretic = { OLD_ZALMOXIANIST }
   }
@@ -2225,9 +2219,6 @@ pagan = {
       galley_power = 0.1
       trade_goods_size_modifier = 0.1
     }
-    province = {
-      local_missionary_strength = -0.01
-    }
 
     heretic = { OLD_illyrian }
   }
@@ -2241,9 +2232,6 @@ pagan = {
     country = {
       cav_to_inf_ratio = 0.25
       global_regiment_cost = -0.2
-    }
-    province = {
-      local_missionary_strength = -0.01
     }
     can_have_secondary_religion = yes
     heretic = { OLD_TENGRI }
@@ -2281,9 +2269,6 @@ east_european{
       defensiveness = 0.1
       num_accepted_cultures = 1
     }
-    province = {
-      local_missionary_strength = -0.01
-    }
 
     heretic = { OLD_SUOMENUSKO }
   }
@@ -2299,9 +2284,6 @@ east_european{
     country_as_secondary = {
       fort_maintenance_modifier = -0.1
       shock_damage_received = -0.1
-    }
-    province = {
-      local_missionary_strength = -0.01
     }
 
     heretic = { OLD_ROMUVA }
@@ -2321,9 +2303,6 @@ semetic_group{
       caravan_power = 0.2
       land_attrition = -0.1
     }
-    province = {
-      local_missionary_strength = -0.01
-    }
     can_have_secondary_religion = no
 
     heretic = { OLD_ARABIAN }
@@ -2341,9 +2320,6 @@ semetic_group{
       global_tax_modifier = 0.1
       stability_cost_modifier = -0.1
     }
-    province = {
-      local_missionary_strength = -0.01
-    }
 
     heretic = { OLD_EGYPTIAN }
     personal_deity = yes
@@ -2355,9 +2331,6 @@ semetic_group{
     country = {
       cavalry_power = 0.1
       caravan_power = 0.2
-    }
-    province = {
-      local_missionary_strength = -0.01
     }
     can_have_secondary_religion = yes
 
@@ -2376,10 +2349,6 @@ semetic_group{
       legitimacy = 0.5
       production_efficiency = 0.1
     }
-    province = {
-      local_missionary_strength = -0.01
-    }
-
     heretic = { OLD_MESOPOTAMOAN }
     personal_deity = yes
   }
@@ -2395,9 +2364,6 @@ phenician = {
   country_as_secondary = {
     legitimacy = 0.5
     galley_power = 0.2
-  }
-  province = {
-    local_missionary_strength = -0.01
   }
 
   heretic = { OLD_PHENICIAN }
@@ -2419,9 +2385,6 @@ norse_group{
       merc_maintenance_modifier = -0.1
       galley_power = 0.2
     }
-    province = {
-      local_missionary_strength = -0.01
-    }
     personal_deity = yes
     heretic = { OLD_NORSE }
   }
@@ -2438,9 +2401,6 @@ norse_group{
     country_as_secondary = {
       infantry_power = 0.1
       land_forcelimit_modifier = 0.10
-    }
-    province = {
-      local_missionary_strength = -0.01
     }
 
     personal_deity = yes
@@ -2464,9 +2424,6 @@ greco_roman_group = {
       technology_cost = -0.05
       global_institution_spread = 0.1
     }
-    province = {
-      local_missionary_strength = -0.01
-    }
     hre_religion = yes
 
 
@@ -2486,9 +2443,6 @@ greco_roman_group = {
     country_as_secondary = {
       idea_cost = -0.05
       production_efficiency = 0.1
-    }
-    province = {
-      local_missionary_strength = -0.01
     }
 
 
@@ -2510,7 +2464,7 @@ greco_roman_group = {
       war_exhaustion = -0.10
     }
     province = {
-      local_missionary_strength = -0.01
+      local_missionary_strength = -0.02
     }
 
     heretic = { OLD_JUPITERIAN }
@@ -2595,9 +2549,6 @@ zoroastrian_group = {
       diplomatic_reputation = 1
       war_exhaustion = -0.02
     }
-    province = {
-      local_missionary_strength = -0.01
-    }
     can_have_secondary_religion = yes
     heretic = { OLD_ARMENIAN }
   }
@@ -2616,9 +2567,6 @@ zoroastrian_group = {
     country_as_secondary = {
       diplomatic_reputation = 1
       promote_culture_cost = -0.1
-    }
-    province = {
-      local_missionary_strength = -0.01
     }
 
     heretic = { MAZDAKI MANICHEAN }

@@ -217,7 +217,7 @@ For_Alba = {
   }
 }
 For_Britain = {
-	slot = 2
+	slot = 3
 	generic = no
 	ai = yes
 	potential = {
@@ -278,70 +278,46 @@ For_Britain = {
 		}
 
 		effect = {
-			west_midlands_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			east_midlands_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	The_Wind_of_the_North = {
-		icon = league_of_the_public_weal
-		required_missions = { The_breath_of_the_Carnyx }
-		provinces_to_highlight = {
-			OR = {
-        area = west_midlands_area
-        area = east_midlands_area
+    west_midlands_area = {
+      limit = {
+        NOT = { is_core = ROOT }
+        NOT = { is_permanent_claim = ROOT }
       }
-			NOT = { owned_by = ROOT }
-		}
-
-		trigger = {
-      west_midlands_area = {
-        type = all
-        owned_by = ROOT
+      add_permanent_claim = ROOT
+    }
+    east_midlands_area = {
+      limit = {
+        NOT = { is_core = ROOT }
+        NOT = { is_permanent_claim = ROOT }
       }
-      east_midlands_area = {
-        type = all
-        owned_by = ROOT
+      add_permanent_claim = ROOT
+    }
+    east_anglia_area = {
+      limit = {
+        NOT = { is_core = ROOT }
+        NOT = { is_permanent_claim = ROOT }
       }
+      add_permanent_claim = ROOT
+    }
+    home_counties_area = {
+      limit = {
+        NOT = { is_core = ROOT }
+        NOT = { is_permanent_claim = ROOT }
+      }
+      add_permanent_claim = ROOT
+    }
+    wessex_area = {
+      limit = {
+        NOT = { is_core = ROOT }
+        NOT = { is_permanent_claim = ROOT }
+      }
+      add_permanent_claim = ROOT
+    }
 		}
-		effect = {
-			east_anglia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			home_counties_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-      wessex_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			}
 	}
 	Like_in_Roman_times = {
 		icon = mission_rb_scottish_conquer_london
-		required_missions = { The_Wind_of_the_North }
+		required_missions = { The_breath_of_the_Carnyx }
 		provinces_to_highlight = {
 			area = home_counties_area
 			NOT = { owned_by = ROOT }
@@ -422,7 +398,7 @@ For_Britain = {
 	}
 }
 For_the_Celts = {
-	slot = 3
+	slot = 2
 	generic = no
 	ai = yes
 	potential = {
@@ -604,20 +580,19 @@ For_the_Celts = {
 		}
 	}
 	There_can_be_only_one = {
-		icon = oceania_assemble_an_army
+		icon = mission_cannons_firing
 		required_missions = { The_breath_of_the_white_ermine }
 
 		provinces_to_highlight = {
-			area = asturias_area
+			culture = asturian
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			asturias_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			owns_all_provinces = {
+        culture = asturian
+      }
 		}
 		effect = {
 			add_prestige = 25
@@ -707,7 +682,7 @@ For_the_Celts = {
 	}
 }
 For_America = {
-	slot = 4
+	slot = 5
 	generic = no
 	ai = yes
 	potential = {
@@ -769,4 +744,63 @@ For_America = {
 			}
 		}
 	}
+}
+
+
+For_Norway = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+    OR = {
+      tag = SCO
+      tag = ALL
+	  tag = PCT
+	 }
+	 NOT = { map_setup = map_setup_random }
+  }
+	has_country_shield = yes
+
+  The_breath_of_the_Breeze = {
+  		icon = mission_look_west
+  		required_missions = { freedom_for_our_brothers }
+      position = 2
+  		provinces_to_highlight = {
+        OR = {
+          area = subarctic_islands_area
+        }
+        NOT = {owned_by = ROOT}
+  		}
+
+  		trigger = {
+        faroes_area = {
+  				type = all
+  				owned_by = ROOT
+  			}
+  		}
+
+  		effect = {
+  			northern_norway = {
+  				limit = {
+  					NOT = { is_core = ROOT }
+  					NOT = { is_permanent_claim = ROOT }
+  				}
+  				add_permanent_claim = ROOT
+  			}
+  			jutland_area = {
+  				limit = {
+  					NOT = { is_core = ROOT }
+  					NOT = { is_permanent_claim = ROOT }
+  				}
+  				add_permanent_claim = ROOT
+  			}
+  			western_norway = {
+  				limit = {
+  					NOT = { is_core = ROOT }
+  					NOT = { is_permanent_claim = ROOT }
+  				}
+  				add_permanent_claim = ROOT
+  			}
+  		}
+  	}
 }
