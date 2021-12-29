@@ -819,7 +819,6 @@ country_event = {
 		}
 		else = {
 			define_ruler = {
-				dynasty = historic_dynasty # Will pick one weighted by how many rulers a family has had
 			}
 		}
 		if = {
