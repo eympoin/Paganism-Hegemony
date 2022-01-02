@@ -1753,7 +1753,7 @@ kremlin = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			yearly_absolutism = 0.1	
+			yearly_absolutism = 0.1
 		}
 
 		#what effects happen when this tier is achieved
@@ -8055,7 +8055,7 @@ lighthouse_of_alexandria = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			naval_attrition = -0.1
-			naval_morale = 0.1
+			naval_morale = 0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -8085,9 +8085,9 @@ lighthouse_of_alexandria = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			naval_attrition = -0.2
+			naval_attrition = -0.1
 			naval_morale = 0.05
-			range = 0.2
+			range = 0.25
 		}
 
 		#what effects happen when this tier is achieved
@@ -9172,8 +9172,10 @@ vladimir_hill = {
 		OR = {
 			AND = {
 				religion = slavic
-				has_owner_religion = yes
-
+				OR = {
+					has_owner_religion = yes
+					owner = {has_matching_religion = slavic}
+				}
 			}
 		}
 	}
@@ -14149,15 +14151,15 @@ great_city_of_bayezid = {
 
 	#can we build it?
 	build_trigger = {
-		OR = {
 			owner = {
-				tag = TUR
-				was_tag = TUR
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = HAD_BAYEZID_RULER
-			has_country_flag = bayezid_is_born
+				OR = {
+					tag = TUR
+					was_tag = TUR
+				}
+				custom_trigger_tooltip = {
+					tooltip = HAD_BAYEZID_RULER
+					has_country_flag = bayezid_is_born
+				}
 		}
 	}
 

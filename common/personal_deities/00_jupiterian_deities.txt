@@ -81,7 +81,7 @@ Neptune =
 Mars =
 {
 	war_exhaustion = -0.05
-	discipline = 0.05
+	discipline = 0.03
 
 	allow = { religion = deii }
 	sprite = 13

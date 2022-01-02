@@ -591,7 +591,8 @@ ottoman_missions_3 = {
 		trigger = {
 			total_development = 1500
       prestige = 90
-      legitimacy = 100
+      legitimacy_equivalent = 90
+
       manpower_percentage = 1
 		}
 		effect = {
