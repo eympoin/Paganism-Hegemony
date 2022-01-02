@@ -3,6 +3,55 @@
 # If adding new groups or ideas, make sure they are unique.
 
 ### Nation specific idea groups
+GLI_ideas = {
+	start = {
+		trade_efficiency = 0.15
+		idea_cost = -0.2
+	}
+	bonus = {
+		  discipline = 0.05
+		}
+	trigger = {
+		tag = GLI
+	}
+	free = yes
+
+	return_of_roman_influence = {
+		 global_missionary_strength = 0.03
+		 tolerance_own = 1
+	}
+
+	push_back_franks = {
+		shock_damage_received = -0.10
+		fire_damage = 0.10
+	}
+
+	a_roman_army = {
+		global_manpower_modifier = 0.25
+		army_tradition_decay = -0.01
+	}
+
+	 rebuild_gaul = {
+		build_cost = -0.1
+    global_prosperity_growth = 0.1
+		global_tax_modifier = 0.1
+	}
+
+	 heavy_wine_production  = {
+	 		global_trade_goods_size_modifier = 0.15
+			production_efficiency = 0.1
+	}
+
+	mastery_of_the_atlantic = {
+		global_ship_cost = -0.2
+		ship_durability = 0.1
+	}
+
+	establish_new_border = {
+		defensiveness = 0.25
+		garrison_size = 0.2
+	}
+}
 
 BRN_ideas = {
 	start = {
@@ -281,12 +330,12 @@ ERM_ideas = {
 
 AXD_ideas = {
 	start = {
-		leader_land_shock = 2
-		governing_capacity_modifier = 0.33
+		leader_land_shock = 1
+		leader_land_fire = 1
 	}
 
 	bonus = {
-		governing_capacity_modifier = 0.2
+		governing_capacity_modifier = 0.5
 	}
 
 	trigger = {
@@ -316,10 +365,11 @@ AXD_ideas = {
 	}
 	conquerror_of_worlds = {
 		core_creation = -0.1
+		siege_ability = 0.2
 		years_of_nationalism = -5
 	}
 	adapt_to_the_world = {
-		technology_cost = -0.05
+		technology_cost = -0.1
 		global_institution_spread = 0.2
 	}
 }
@@ -1217,6 +1267,7 @@ JOM_ideas = {
 	}
 	for_the_glory_allfather = {
 		manpower_recovery_speed = 0.1
+		extra_manpower_at_religious_war = yes
 	}
 	by_thor_name = {
 		cb_on_religious_enemies = yes
@@ -1851,7 +1902,7 @@ assyrian_ideas = {
 		province_warscore_cost = -0.2
 		}
 	bonus = {
-		state_maintenance_modifier = -0.1
+		army_tradition_from_battle = 0.5
 		}
 	trigger = {
 		tag = ASY
@@ -1866,7 +1917,7 @@ assyrian_ideas = {
 	}
 
 	fertile_land = {
-		 production_efficiency = 0.1
+		 production_efficiency = 0.15
 	}
 
 	new_strategies = {
@@ -1890,8 +1941,8 @@ assyrian_ideas = {
 
 babylonian_ideas = {
 	start = {
-		global_institution_spread = 0.1
-		global_trade_goods_size_modifier = 0.1
+		global_institution_spread = 0.25
+		global_trade_goods_size_modifier = 0.15
 		}
 	bonus = {
 		development_cost = -0.1
@@ -1903,22 +1954,26 @@ babylonian_ideas = {
 
 	integrate_the_arab_tribes = {
 		 manpower_recovery_speed = 0.1
+		 global_manpower_modifier = 0.15
 	}
 
 	land_of_the_first_cities = {
 		 global_tax_modifier = 0.15
+		 diplomatic_reputation = 1
 	}
 
 	scientific_tendancy = {
-		technology_cost = -0.05
+		technology_cost = -0.1
 	}
 
 	 building_tradition = {
 		build_cost = -0.2
+		great_project_upgrade_cost = -0.25
 	}
 
 	 a_new_code_of_law = {
 		  global_unrest = -2
+			monarch_admin_power = 1
 	}
 
 	adaptation_against_the_powder  = {
@@ -1927,6 +1982,7 @@ babylonian_ideas = {
 
 	legendary_city = {
 		prestige = 1
+		monthly_splendor = 1
 	}
 }
 
@@ -3042,7 +3098,7 @@ WFR_ideas = {
 
 	ever_lasting_wars= {
 		army_tradition_decay = -0.01
-		army_tradition_from_battle = 0.05
+		army_tradition_from_battle = 0.25
 	}
 	franks_metallurgy = {
 		production_efficiency = 0.15
