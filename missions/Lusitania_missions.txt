@@ -13,7 +13,7 @@ trade_empire ={
 	dominate_sevilla = {
 		position = 1
 		icon = mission_dominate_home_trade_node
-		required_missions = { establish_high_seas_navy }
+		required_missions = { }
 		trigger = {
 			home_trade_node = {
 				trade_share = {
@@ -27,7 +27,7 @@ trade_empire ={
 			add_mercantilism = 2
 			add_country_modifier = {
 				name = "dominant_trade_hub"
-				duration = 7300
+				duration = -1
 			}
 		}
 	}
