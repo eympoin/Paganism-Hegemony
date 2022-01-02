@@ -9204,7 +9204,10 @@ vladimir_hill = {
 		OR = {
 			AND = {
 				religion = slavic
-				has_owner_religion = yes
+				OR = {
+					has_owner_religion = yes
+					owner = {has_matching_religion = slavic}
+				}
 			}
 		}
 	}
@@ -9214,7 +9217,10 @@ vladimir_hill = {
 		OR = {
 			AND = {
 				religion = slavic
-				has_owner_religion = yes
+				OR = {
+					has_owner_religion = yes
+					owner = {has_matching_religion = slavic}
+				}
 			}
 		}
 	}
