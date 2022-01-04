@@ -3,6 +3,58 @@
 # If adding new groups or ideas, make sure they are unique.
 
 ### Nation specific idea groups
+
+AFR_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		global_trade_power = 0.2
+	}
+	bonus = {
+		  discipline = 0.05
+		}
+	trigger = {
+		tag = AFR
+	}
+	free = yes
+
+	numidian_mercenaries = {
+		 cavalry_power = 0.15
+		 mercenary_cost = -0.2
+	}
+
+	control_the_sea = {
+		galley_power = 0.2
+		global_ship_trade_power = 0.2
+	}
+
+	legacy_jarawa_wars = {
+		land_attrition = -0.10
+		backrow_artillery_damage = 0.10
+	}
+
+	 western_economic_center = {
+    global_tax_modifier = 0.1
+		production_efficiency = 0.1
+		trade_efficiency = 0.1
+	}
+
+	 perfect_naval_land_warfare  = {
+	 		global_naval_barrage_cost = -0.5
+			siege_blockade_progress = 1
+	}
+
+	expand_transaharan_trade = {
+		caravan_power = 0.33
+		merchants = 1
+	}
+
+	diplomacy_through_trade = {
+		dip_advisor_cost = -0.5
+		diplomatic_upkeep = 1
+		diplomats = 1
+	}
+}
+
 GLI_ideas = {
 	start = {
 		trade_efficiency = 0.15
@@ -2530,11 +2582,11 @@ LDN_ideas = {
 
 CTG_ideas = {
 	start = {
-		galley_power = 0.20
+		galley_power = 0.25
 		global_trade_power = 0.2
 	}
 	bonus = {
-		merchants = 1
+		placed_merchant_power = 10
 	}
 	trigger = {
 		tag = CTG
@@ -2543,7 +2595,7 @@ CTG_ideas = {
 
 	numidian_cavalry = {
 		cavalry_flanking = 0.2
-		cavalry_power = 0.1
+		cavalry_power = 0.15
 	}
 	settle_new_trading_post = {
 		range = 0.3
@@ -2556,10 +2608,10 @@ CTG_ideas = {
 	}
 	mare_nostrum_c  = {
 		global_ship_trade_power = 0.2
-		trade_steering = 0.1
+		trade_steering = 0.15
 	}
 	granary = {
-		global_trade_goods_size_modifier = 0.2
+		global_trade_goods_size_modifier = 0.25
 	}
 	canon_for_lands_and_seas = {
 		leader_land_fire = 1

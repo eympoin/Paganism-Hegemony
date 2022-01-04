@@ -118,14 +118,13 @@ CIL_ideas = {
 african_ideas = {
 	start = {
 		galley_cost = -0.2
-		trade_goods_size_modifier = 0.2
+		global_trade_goods_size_modifier = 0.15
 	}
 	bonus = {
 		trade_efficiency = 0.15
 	}
 	trigger = {
 	OR = {
-			primary_culture = african
 			primary_culture = tripolitan
 			}
 	}
