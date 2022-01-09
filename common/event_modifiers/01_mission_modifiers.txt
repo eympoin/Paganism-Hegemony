@@ -6994,3 +6994,66 @@ Celt_resurgence = {
   global_manpower_modifier = 0.15
   army_tradition = 1
 }
+
+
+better_government = {
+  governing_capacity = 100
+}
+
+mesopotamia_united_under_asshur = {
+  global_missionary_strength = 0.01
+}
+
+mesopotamia_rise_again = {
+  army_tradition = 1
+}
+
+demographic_boom = {
+  development_cost = -0.05
+}
+
+greeks_into_the_empire = {
+  governing_capacity_modifier = 0.1
+  trade_efficiency = 0.1
+}
+
+a_new_assyria = {
+  diplomatic_reputation = 1
+}
+
+ assyrian_navy = {
+  global_ship_trade_power = 0.2
+}
+
+assyrian_new_way = {
+  technology_cost = -0.05
+}
+
+begin_the_reformation = {
+  global_manpower_modifier = 0.10
+}
+
+learn_to_take_cities = {
+  leader_siege = 1
+}
+
+assyria_is_a_major_power = {
+  discipline = 0.05
+}
+
+
+we_triumph_over_our_old_foes = {
+  legitimacy = 1
+}
+
+watch_the_assyrian_lion_rise_again = {
+  land_morale = 0.1
+}
+
+sargonII_i_matched_you = {
+    country_military_power = 1
+}
+
+control_the_hearts = {
+  global_unrest = -1
+}

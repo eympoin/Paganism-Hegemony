@@ -513,7 +513,7 @@ CUM_ideas = {
 WRM_ideas = {
 	start = {
 		administrative_efficiency = 0.1
-		army_tradition = 0.2
+		army_tradition = 1
 	}
 	bonus = {
 		monarch_admin_power = 1
@@ -547,7 +547,7 @@ WRM_ideas = {
 
 	army_of_old = {
 		discipline = 0.08
-		yearly_army_professionalism = 0.01
+		drill_gain_modifier = 0.2
 	}
 
 	nea_mare_nostrum = {
@@ -1245,7 +1245,6 @@ PRT_ideas = {
 		enemy_core_creation = 0.3
 	}
 	professional_army_prt = {
-		yearly_army_professionalism = 0.01
 		army_tradition = 1
 	}
 
@@ -1954,7 +1953,7 @@ assyrian_ideas = {
 		province_warscore_cost = -0.2
 		}
 	bonus = {
-		army_tradition_from_battle = 0.5
+			army_tradition_decay = -0.02
 		}
 	trigger = {
 		tag = ASY
@@ -1974,6 +1973,7 @@ assyrian_ideas = {
 
 	new_strategies = {
 	 leader_land_shock = 1
+	 leader_land_fire = 1
  }
 
 	reconquest_of_the_old_empire = {
@@ -1981,12 +1981,13 @@ assyrian_ideas = {
 	}
 
 	a_professional_army  = {
-	  yearly_army_professionalism = 0.01
-		discipline = 0.05
+		discipline = 0.5
+		infantry_power = 0.1
 	}
 
 	Break_the_mountain_holds = {
-		leader_siege = 1
+		siege_ability = 0.2
+		artillery_power = 0.10
 	}
 }
 
@@ -11671,8 +11672,8 @@ ROM_ideas = {
 	}
 
 	a_new_roman_army = {
-		army_tradition = 0.2
-		yearly_army_professionalism = 0.01
+		army_tradition = 2
+		drill_gain_modifier = 0.2
 	}
 
 	imperator_rom = {

@@ -1,0 +1,646 @@
+##BranchStart 0
+ = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag =
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	##
+
+}
+##BranchEnd 0
+##BranchStart 1
+ assyrian_missions_1 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = ASY
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	##Mission Start
+	for_asshur = {
+		icon = mission_cossack_cavalry
+		required_missions {
+			secure_freedom
+		}
+		position = 2
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+			estate_influence = {
+				estate = estate_church
+				influence = 60
+			}
+      estate_loyalty = {
+				estate = estate_church
+				influence = 50
+			}
+		}
+		effect = {
+			add_country_modifier = {
+			    name = better_government
+			    duration = -1
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	temples_for_asshur = {
+		icon = mission_steppe_warriors
+		required_missions {
+			for_asshur
+		}
+		position = 3
+		provinces_to_highlight = {
+		}
+		trigger = {
+			temple = 12
+		}
+		effect = {
+			add_country_modifier = {
+			    name = mesopotamia_united_under_asshur
+			    duration = -1
+			}
+		}
+	}
+	assurbanipal_kingdom = {
+		icon = chinese_general_riding
+		required_missions {
+			temples_for_asshur
+		}
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4978
+	      province_id = 411
+	      province_id = 2311
+			}
+			NOT = {
+        development = 30
+			}
+		}
+		trigger = {
+			owns_core_province	= 411
+      411 = {
+				development = 30
+			}
+			owns_core_province	= 4978
+      4978 = {
+				development = 30
+			}
+			owns_core_province	= 2311
+      2311 = {
+				development = 30
+			}
+
+		}
+		effect = {
+			add_country_modifier = {
+	    name = mesopotamia_rise_again
+	    duration = -1
+			}
+		}
+	}
+
+	mesopotamia_rebirth = {
+		icon = mission_non-western_cavalry_raid
+		required_missions {
+			assurbanipal_kingdom
+		}
+		position = 5
+		provinces_to_highlight = {
+		}
+		trigger = {
+			total_development = 600
+			}
+		effect = {
+			add_country_modifier = {
+		    name = demographic_boom
+		    duration = -1
+				}
+		 }
+	}
+
+	make_the_creissent_fertile_again = {
+		icon = mission_central_asian_city
+		required_missions {
+			mesopotamia_rebirth
+		}
+		position = 6
+		provinces_to_highlight = {
+			region = mashriq_region
+		}
+		trigger = {
+			development_in_provinces = {
+				value = 400
+				region = mashriq_region
+			}
+		}
+		effect = {
+			random_owned_province = {
+        limit = {
+          region = mashriq_region
+          owned_by = ROOT
+        }
+        add_base_production = 1
+        add_base_manpower = 1
+        add_base_tax = 1
+      }
+      random_owned_province = {
+        limit = {
+          region = mashriq_region
+          owned_by = ROOT
+        }
+        add_base_production = 1
+        add_base_manpower = 1
+        add_base_tax = 1
+      }
+      random_owned_province = {
+        limit = {
+          region = mashriq_region
+          owned_by = ROOT
+        }
+        add_base_production = 1
+        add_base_manpower = 1
+        add_base_tax = 1
+      }
+      random_owned_province = {
+        limit = {
+          region = mashriq_region
+          owned_by = ROOT
+        }
+        add_base_production = 1
+        add_base_manpower = 1
+        add_base_tax = 1
+      }
+      random_owned_province = {
+        limit = {
+          region = mashriq_region
+          owned_by = ROOT
+        }
+        add_base_production = 1
+        add_base_manpower = 1
+        add_base_tax = 1
+      }
+	  }
+	}
+
+	egypt_and_phoenicia_under_asshur_eyes = {
+		icon = mission_ottoman_harem
+		required_missions {
+			make_the_creissent_fertile_again
+		}
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				region = egypt_region
+        region = syria_region
+			}
+			NOT = {owned_by = ROOT}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+	      value = 40
+	      has_building = temple
+	      OR = {
+	       region = egypt_region
+	       region = syria_region
+	      }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+	    name = control_the_hearts
+	    duration = -1
+		}
+	}
+}
+
+convert_the_greeks = {
+		icon = mission_ottoman_harem
+		required_missions {
+			egypt_and_phoenicia_under_asshur_eyes
+		}
+		position = 8
+		provinces_to_highlight = {
+			OR = {
+        NOT = {
+  				owned_by = ROOT
+  			}
+        NOT = {
+          has_owner_religion = yes
+        }
+			}
+      region = syria_region
+		}
+		trigger = {
+			syria_region = {
+				type = all
+				owned_by = ROOT
+				has_owner_religion = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+		    name = greeks_into_the_empire
+		    duration = -1
+		}
+	}
+	}
+}
+assyrians_missions_2 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = ASY
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	##Mission Start
+	secure_freedom = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+
+		}
+		position = 1
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+			num_of_allies = 2
+		}
+		effect = {
+			mashriq_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim    = ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+
+		}
+	}
+	##Mission End
+	##Mission Start
+	modern_assyria = {
+		icon = mission_crusade_for_varna
+		required_missions {
+			secure_freedom
+		}
+		position = 2
+		provinces_to_highlight = {
+		}
+		trigger = {
+			NOT= { had_recent_war = 10 }
+      #bab event
+		}
+		effect = {
+			add_country_modifier = {
+		    name = a_new_assyria
+		    duration = -1
+				}
+		  }
+		}
+	learn_to_swim = {
+		icon = mission_eastern_european_city
+		required_missions {
+			modern_assyria
+		}
+		position = 3
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+			naval_forcelimit = 30
+		}
+		effect = {
+			add_country_modifier = {
+			    name = assyrian_navy
+			    duration = -1
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	intern_reforms= {
+		icon = mission_empire
+		required_missions {
+			learn_to_swim
+		}
+		position = 4
+		provinces_to_highlight = {
+		}
+		trigger = {
+			university = 30
+		}
+		effect = {
+      add_adm_power = 100
+			add_country_modifier = {
+			    name = assyrian_new_way
+			    duration = -1
+			}
+		}
+	}
+	##Mission End
+
+}
+assyrian_missions_3 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = ASY
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	##Mission Start
+	assurbanipal_dream = {
+		icon = mission_fight_bosnian_heresies
+		required_missions {
+			secure_freedom
+		}
+		position = 2
+		provinces_to_highlight = {
+			area = iraq_arabi_area
+      NOT = {owned_by = ROOT}
+		}
+		trigger = {
+			iraq_arabi_area = {
+        type = all
+        owned_by = ROOT
+      }
+		}
+		effect = {
+		add_country_modifier = {
+			    name = begin_the_reformation
+			    duration = -1
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	mesopotamia_is_ours = {
+		icon = mission_unite_home_region
+		required_missions {
+			assurbanipal_dream
+		}
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				region = mashriq_region
+			}
+		}
+		trigger = {
+			mashriq_region = {
+        type = all
+        owned_by = ROOT
+      }
+		}
+		effect = {
+			add_country_modifier = {
+			    name = learn_to_take_cities
+			    duration = -1
+			}
+		}
+	}
+  prepare_to_strike_back = {
+    icon = mission_recruit_the_coassacks
+    required_missions {
+      mesopotamia_is_ours
+    }
+    position = 5
+    provinces_to_highlight = {
+        OR = {
+          area = luristan_area
+      }
+    }
+    trigger = {
+      luristan_area = {
+        type = all
+        owned_by = ROOT }
+    }
+    effect = {
+      khuzestan_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim    = ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+    }
+  }
+
+	break_elymais= {
+		icon = mission_high_income
+		required_missions {
+			prepare_to_strike_back
+		}
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+			   area = khuzestan_area
+			}
+		}
+		trigger = {
+			khuzestan_area = {
+        type = all
+        owned_by = ROOT }
+      }
+		effect = {
+			add_mil_power = 100
+      persia_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim    = ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+		}
+	}
+	##Mission End
+	##Mission Start
+
+	##Mission End
+	##Mission Start
+	strike_persia_heartland = {
+		icon = mission_rule_ruthenia
+		required_missions {
+			break_elymais
+		}
+		position = 6
+		provinces_to_highlight = {
+			OR = {
+				region = persia_region
+			}
+		}
+		trigger = {
+			persia_region = {
+        type = all
+        owned_by = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+			    name = assyria_is_a_major_power
+			    duration = -1
+			}
+		}
+	}
+	##Mission End
+	##Mission Start
+	prepare_to_strike_west = {
+		icon = advance_to_the_dnieper
+		required_missions {
+			strike_persia_heartland
+		}
+		position = 7
+		provinces_to_highlight = {
+		}
+		trigger = {
+			land_forcelimit = 100
+      army_size_percentage = 1.0
+      }
+		effect = {
+			syria_region = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim    = ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+	  }
+	}
+	##Mission End
+	##Mission Start
+	attack_phoenicia = {
+		icon = mission_break_the_tatar_yoke
+		required_missions {
+			prepare_to_strike_west
+		}
+		position = 8
+		provinces_to_highlight = {
+			OR = {
+				region = syria_region
+			}
+		}
+		trigger = {
+		syria_region = {
+        type = all
+        owned_by = ROOT }
+		}
+		effect ={
+			#event 
+			egypt_region = {
+	        limit = {
+	          NOT = { owned_by = ROOT }
+	          NOT = {is_claim    = ROOT}
+	        }
+	        add_permanent_claim = ROOT
+	      }
+		}
+	}
+	##Mission End
+the_fall_of_egypt = {
+		icon = advance_to_the_dnieper
+		required_missions {
+			attack_phoenicia
+		}
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+					region = egypt_region
+				}
+			}
+		trigger = {
+			land_forcelimit = 150
+      egypt_region = {
+        type = all
+        owned_by = ROOT
+				}
+      }
+		effect = {
+			add_dip_power = 100
+			add_adm_power = 100
+			add_mil_power = 100
+			add_prestige = 50
+			add_country_modifier = {
+		    name = we_triumph_over_our_old_foes
+		    duration = -1
+		}
+	}
+}
+the_empire_is_one = {
+		icon = advance_to_the_dnieper
+		required_missions {
+		the_fall_of_egypt
+		}
+		position = 7
+		provinces_to_highlight = {
+		}
+		trigger = {
+			land_forcelimit = 250
+      prestige = 90
+      legitimacy = 100
+      total_development = 2000
+      }
+		effect = {
+		add_country_modifier = {
+		    name = watch_the_assyrian_lion_rise_again
+		    duration = -1
+		}
+		anatolia_region = {
+		        limit = {
+		          NOT = { owned_by = ROOT }
+		          NOT = {is_claim    = ROOT}
+		        }
+		        add_permanent_claim = ROOT
+		      }
+		greece_region = {
+		        limit = {
+		          NOT = { owned_by = ROOT }
+		          NOT = {is_claim    = ROOT}
+		        }
+		        add_permanent_claim = ROOT
+		      }
+		}
+	}
+
+nothing_can_stop_us_now = {
+		icon = advance_to_the_dnieper
+		required_missions {
+			the_empire_is_one
+		}
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				region = anatolia_region
+        region = greece_region
+			}
+		}
+		trigger = {
+				anatolia_region = {
+	        type = all
+	        owned_by = ROOT
+				}
+	      greece_region = {
+	        type = all
+	        owned_by = ROOT
+				}
+    }
+		effect = {
+			add_country_modifier = {
+			    name = sargonII_i_matched_you
+			    duration = -1
+			}
+	}
+}
