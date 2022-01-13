@@ -26,7 +26,7 @@
 
 	##Mission Start
 	for_asshur = {
-		icon = mission_cossack_cavalry
+		icon = mission_build_up_to_force_limit
 		required_missions {
 			secure_freedom
 		}
@@ -54,7 +54,7 @@
 	##Mission End
 	##Mission Start
 	temples_for_asshur = {
-		icon = mission_steppe_warriors
+		icon = mission_central_asian_city
 		required_missions {
 			for_asshur
 		}
@@ -72,7 +72,7 @@
 		}
 	}
 	assurbanipal_kingdom = {
-		icon = chinese_general_riding
+		icon = mission_steppe_warriors
 		required_missions {
 			temples_for_asshur
 		}
@@ -111,7 +111,7 @@
 	}
 
 	mesopotamia_rebirth = {
-		icon = mission_non-western_cavalry_raid
+		icon = bohemian_crystal
 		required_missions {
 			assurbanipal_kingdom
 		}
@@ -130,7 +130,7 @@
 	}
 
 	make_the_creissent_fertile_again = {
-		icon = mission_central_asian_city
+		icon = mission_develop_alhambra
 		required_missions {
 			mesopotamia_rebirth
 		}
@@ -225,7 +225,7 @@
 }
 
 convert_the_greeks = {
-		icon = mission_ottoman_harem
+		icon = mission_hands_praying
 		required_missions {
 			egypt_and_phoenicia_under_asshur_eyes
 		}
@@ -312,7 +312,7 @@ assyrians_missions_2 = {
 		  }
 		}
 	learn_to_swim = {
-		icon = mission_eastern_european_city
+		icon = mission_invade_island
 		required_missions {
 			modern_assyria
 		}
@@ -333,7 +333,7 @@ assyrians_missions_2 = {
 	##Mission End
 	##Mission Start
 	intern_reforms= {
-		icon = mission_empire
+		icon = mission_early_modern_university
 		required_missions {
 			learn_to_swim
 		}
@@ -366,7 +366,7 @@ assyrian_missions_3 = {
 
 	##Mission Start
 	assurbanipal_dream = {
-		icon = mission_fight_bosnian_heresies
+		icon = mission_empire
 		required_missions {
 			secure_freedom
 		}
@@ -415,7 +415,7 @@ assyrian_missions_3 = {
 		}
 	}
   prepare_to_strike_back = {
-    icon = mission_recruit_the_coassacks
+    icon = mission_conquer_50_development
     required_missions {
       mesopotamia_is_ours
     }
@@ -442,7 +442,7 @@ assyrian_missions_3 = {
   }
 
 	break_elymais= {
-		icon = mission_high_income
+		icon = claim_the_borderlands
 		required_missions {
 			prepare_to_strike_back
 		}
@@ -474,7 +474,7 @@ assyrian_missions_3 = {
 	##Mission End
 	##Mission Start
 	strike_persia_heartland = {
-		icon = mission_rule_ruthenia
+		icon = mission_persianate_empire
 		required_missions {
 			break_elymais
 		}
@@ -499,7 +499,7 @@ assyrian_missions_3 = {
 	##Mission End
 	##Mission Start
 	prepare_to_strike_west = {
-		icon = advance_to_the_dnieper
+		icon = mission_assemble_an_army
 		required_missions {
 			strike_persia_heartland
 		}
@@ -539,7 +539,7 @@ assyrian_missions_3 = {
         owned_by = ROOT }
 		}
 		effect ={
-			#event 
+			#event
 			egypt_region = {
 	        limit = {
 	          NOT = { owned_by = ROOT }
@@ -551,7 +551,7 @@ assyrian_missions_3 = {
 	}
 	##Mission End
 the_fall_of_egypt = {
-		icon = advance_to_the_dnieper
+		icon = mission_into_persia_1
 		required_missions {
 			attack_phoenicia
 		}
@@ -580,7 +580,7 @@ the_fall_of_egypt = {
 	}
 }
 the_empire_is_one = {
-		icon = advance_to_the_dnieper
+		icon = unite_the_realm
 		required_missions {
 		the_fall_of_egypt
 		}
@@ -616,7 +616,7 @@ the_empire_is_one = {
 	}
 
 nothing_can_stop_us_now = {
-		icon = advance_to_the_dnieper
+		icon = league_of_the_public_weal
 		required_missions {
 			the_empire_is_one
 		}
