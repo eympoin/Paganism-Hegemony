@@ -34,9 +34,12 @@ country_decisions = {
 			}
 		}
 		allow = {
-    is_free_or_tributary_trigger = yes
-    is_at_war = no
-    is_nomad = no
+	    is_free_or_tributary_trigger = yes
+	    is_at_war = no
+	    is_nomad = no
+			NOT = {
+				exists = ERM
+			}
 
 			owns_core_province = 151
 			development_in_provinces = {
