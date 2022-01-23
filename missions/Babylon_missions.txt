@@ -1,0 +1,335 @@
+
+
+bab_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = BAB
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	bab_rebirth = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+		}
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+
+		}
+		effect = {
+
+		}
+	}
+
+  city_of_cities = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+      bab_rebirth
+		}
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+
+		}
+		effect = {
+
+		}
+	}
+  capital_of_the_world = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+      city_of_cities
+		}
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+
+		}
+		effect = {
+
+		}
+	}
+  hammurabi_code = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+      capital_of_the_world
+		}
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+
+		}
+		effect = {
+
+		}
+	}
+
+  hanging_gardens_m = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+      hammurabi_code
+		}
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+
+		}
+		effect = {
+
+		}
+	}
+}
+
+
+bab_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = BAB
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	cult_of_marduk = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+      free_at_last
+		}
+    position = 2
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+
+		}
+		effect = {
+
+		}
+	}
+
+  syncretism = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+      cult_of_marduk
+		}
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+
+		}
+		effect = {
+
+		}
+	}
+  peace_of_marduk = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+      syncretism
+		}
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+
+		}
+		effect = {
+
+		}
+	}
+  universal_religion = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+      capital_of_the_world
+		}
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+
+		}
+		effect = {
+
+		}
+	}
+
+}
+
+bab_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = BAB
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	free_at_last = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+      free_at_last
+		}
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+
+		}
+		effect = {
+
+		}
+	}
+
+  unify_lower_mes = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+      free_at_last
+		}
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+
+		}
+		effect = {
+
+		}
+	}
+  heir_of_hammurabi = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+      unify_lower_mes
+		}
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+
+		}
+		effect = {
+
+		}
+	}
+  bridgehead_in_syria = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+      heir_of_hammurabi
+		}
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+
+		}
+		effect = {
+
+		}
+	}
+
+  way_of_nabu = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+      bridgehead_in_syria
+		}
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+
+		}
+		effect = {
+
+		}
+	}
+
+  way_of_ishtar = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+      way_of_nabu
+		}
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+
+		}
+		effect = {
+
+		}
+	}
+
+  crescent_empire = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+      way_of_ishtar
+		}
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+
+		}
+		effect = {
+
+		}
+	}
+
+}
+
+
+bab_missions_3 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = BAB
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	vengeance_calls = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+      heir_of_hammurabi
+		}
+    position = 5
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+
+		}
+		effect = {
+
+		}
+	}
+
+  wrath_of_marduk = {
+		icon = mission_build_up_to_force_limit
+		required_missions {
+      vengeance_calls
+		}
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+
+		}
+		effect = {
+
+		}
+	}
+
+
+
+}
