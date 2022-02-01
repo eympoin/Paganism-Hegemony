@@ -6978,7 +6978,7 @@ alban_iron = {
 }
 sco_religious_bonus = {
   missionaries = 1
-  global_missionary_strength = 0.2
+  global_missionary_strength = 0.02
 }
 
 conquest_of_ireland = {
