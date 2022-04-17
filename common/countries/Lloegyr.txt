@@ -1,0 +1,118 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 124  0  0 }
+
+preferred_religion = reformed
+
+historical_idea_groups = {
+	administrative_ideas
+	defensive_ideas
+	exploration_ideas
+	offensive_ideas
+	economic_ideas
+	maritime_ideas
+	trade_ideas
+	innovativeness_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	gaelic_galloglaigh
+	gaelic_mercenary
+	gaelic_free_shooter
+	irish_charge
+	scottish_highlander
+	british_redcoat
+	british_hussar
+	british_square
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+leader_names = {
+	Douglas Duncan "de Dunbar" Dalzell Drummond
+	Erskine
+	Forbes Ferguson Fletcher Fleming
+	Gordon Graham Gilchrist
+	Hume Hepburn Hamilton
+	Johnstone
+	Knox Keith Kerr
+	Law Leslie Livingston Lindsay
+	MacKenzie MacDonald MacGregor Malise MacTaggart Montgomerie Maxwell Murray Maitland
+	Nasmyth
+	Ogilvy
+	Playfair Paterson
+	Raeburn Randolph Ruthven
+	Selkirk Strathbogie Sinclair Stewart Seton
+	Wilkie Wishart Wemyss
+}
+
+monarch_names = {
+	"Charles #0" = 5
+	"Malcolm #4" = 1
+	"Donald #3" = 1
+	"David #2" = 1
+	"Duncan #2" = 1
+	"Andrea #0" = 0
+	"Alan #0" = 0
+	"Ailpein #0" = 0
+	"Archibald #0" = 0
+	"Barclay #0" = 0
+	"Beathan #0" = 0
+	"Bruce #0" = 0
+	"Cameron #0" = 0
+	"Cin�ed #0" = 0
+	"Conall #0" = 10
+	"Douglas #0" = 10
+	"Duff #0" = 10
+	"Edan #0" = 10
+	"Evander #0" = 10
+	"Fraser #0" = 10
+	"Garry #0" = 10
+	"Glen #0" = 10
+	"Ian #0" = 10
+	"Keir #0" = 10
+	"Kennedy #0" = 10
+	"Lennox #0" = 10
+	"Logan #0" = 10
+	"Micheil #0" = 0
+	"Mungo #0" = 0
+	"Munroe #0" = 10
+	"Scott #0" = 10
+	"Wallace #0" = 10
+	"Mary #0" = 0
+	"Elizabeth #0" = -1
+	"Margaret  #0" = -1
+	"Euphemia #0" = -1
+	"Anabella  #0" = -1
+}
+
+ship_names = {
+	"Alexander Gaily" "Ann of Anstruther" "Ann of Caledonia" Annandale Anthony
+	Bonaventure Bosse
+	Caledonia "Christian of Bo'ness" Christopher Colomb Continent
+	David "Dogarvine of Londonderry" Dolphin "Duke of Hamilton" "Dumbarton Castle"
+	Eagle "Effenying Castle" Elizabeth Endeavour
+	Flower Fortune
+	"Good Fortune" "Great Lyon" "Great Spaniard" "Great Unicorn" Greentree
+	Hope "Hope of Bo'ness" "Hopeful Beginning"
+	Instauration
+	James "James of Anstruther" Janet "Jennet Purwyn"
+	"King's Carvel"
+	"Lamb of Glasgow" "Lamb of Leith" Lesley "Little Unicorn" Lyon
+	Margaret "Margaret of Peterhead" "Mary Willoughby" "Mary Walsingham" Mercury Michael Moriset Morton
+	"Olive Branch"
+	Pelican Phoenix "Prince Rupert" "Providence of Dundee" "Providence of Kirkcaldy"
+	Rainbow "Reid Lyon" "Rising Sun" Rothes "Royal Mary" "Royal William"
+	"Saint Andrew" Salamander Society Speedwell "Speedy Return"
+	Thistle Towaich Treasurer
+	Unicorn Union
+	Venture "Phoenix of Glasgow"
+	Wemyss "William and George" "William and Mary"
+	"Yellow Carvel"
+}

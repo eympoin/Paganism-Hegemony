@@ -638,7 +638,7 @@ ire_second_colonization = {
 }
 
 
-ire_second_colonization = {
+ire_second_colonization_1 = {
 	slot = 1
 	generic = no
 	ai = yes
