@@ -748,10 +748,15 @@ Londinium_5 = {
 				236 = {
 					has_building = temple
 					has_building = marketplace
-					has_building = fort_15th
+					fort_level = 2
 					has_building = workshop
 					has_building = dock
-					province_has_center_of_trade_of_level = 2
+					if = {
+						limit = {
+							has_dlc = "Dharma"
+						}
+						province_has_center_of_trade_of_level = 2
+					}
 				}
 			}
 			effect = {
@@ -780,7 +785,7 @@ Londinium_5 = {
 				234 = {
 					has_building = temple
 					has_building = marketplace
-					has_building = fort_15th
+					fort_level = 1
 					has_building = workshop
 					development = 15
 				}
@@ -815,7 +820,7 @@ Londinium_5 = {
 				243 = {
 					has_building = temple
 					has_building = marketplace
-					has_building = fort_15th
+					fort_level = 1
 					has_building = workshop
 					has_building = shipyard
 					development = 20
@@ -853,7 +858,7 @@ Londinium_5 = {
 					has_building = marketplace
 					has_building = temple
 					has_building = workshop
-					has_building = fort_15th
+					fort_level = 1
 					has_building = barracks
 				}
 			}
