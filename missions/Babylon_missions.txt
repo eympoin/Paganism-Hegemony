@@ -45,6 +45,7 @@ bab_missions_1 = {
 		required_missions {
       city_of_cities
 		}
+		position = 4
 		provinces_to_highlight = {
 
 		}
@@ -183,7 +184,8 @@ bab_missions_3 = {
 
 		}
 		trigger = {
-
+			num_of_allies = 2
+			prestige = 25
 		}
 		effect = {
 
@@ -196,10 +198,21 @@ bab_missions_3 = {
       free_at_last
 		}
 		provinces_to_highlight = {
-
+			OR = {
+				area = basra_area
+				area = iraq_arabi_area
+			}
+			NOT = {owned_by = ROOT}
 		}
 		trigger = {
-
+			basra_area = {
+				type = all
+				owned_by = ROOT
+			}
+			iraq_arabi_area = {
+				type = all
+				owned_by = ROOT
+			}
 		}
 		effect = {
 
@@ -211,10 +224,21 @@ bab_missions_3 = {
       unify_lower_mes
 		}
 		provinces_to_highlight = {
-
+			OR = {
+				area = al_jazira_area
+				area = shahrizor_area
+			}
+			NOT = {owned_by = ROOT}
 		}
 		trigger = {
-
+			al_jazira_area = {
+				type = all
+				owned_by = ROOT
+			}
+			shahrizor_area = {
+				type = all
+				owned_by = ROOT
+			}
 		}
 		effect = {
 
@@ -226,9 +250,21 @@ bab_missions_3 = {
       heir_of_hammurabi
 		}
 		provinces_to_highlight = {
-
+			OR = {
+				area = osroene_area
+			}
+			NOT = {owned_by = ROOT}
 		}
 		trigger = {
+			osroene_area = {
+				type = all
+				owned_by = ROOT
+			}
+			osroene_area = {
+				type = all
+				fort_level = 4
+			}
+			army_size = 60
 
 		}
 		effect = {
@@ -242,10 +278,22 @@ bab_missions_3 = {
       bridgehead_in_syria
 		}
 		provinces_to_highlight = {
-
+			OR = {
+				area = syria_area
+				area = aleppo_area
+				area = palestine_area
+			}
+			NOT = {owned_by = ROOT}
 		}
 		trigger = {
-
+			al_jazira_area = {
+				type = all
+				owned_by = ROOT
+			}
+			shahrizor_area = {
+				type = all
+				owned_by = ROOT
+			}
 		}
 		effect = {
 
@@ -261,10 +309,10 @@ bab_missions_3 = {
 
 		}
 		trigger = {
-
+			monthly_mil = 10
 		}
 		effect = {
-
+			#morale and growth
 		}
 	}
 
@@ -274,10 +322,16 @@ bab_missions_3 = {
       way_of_ishtar
 		}
 		provinces_to_highlight = {
-
+			OR = {
+				region = egypt_region
+			}
+			NOT = {owned_by = ROOT}
 		}
 		trigger = {
-
+			egypt_region = {
+				type = all
+				owned_by = ROOT
+			}
 		}
 		effect = {
 
@@ -302,7 +356,7 @@ bab_missions_3 = {
 		required_missions {
       heir_of_hammurabi
 		}
-    position = 5
+    position = 4
 		provinces_to_highlight = {
 
 		}
