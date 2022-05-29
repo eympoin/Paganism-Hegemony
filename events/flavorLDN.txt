@@ -590,7 +590,8 @@ country_event = {#Northumbrian
     culture_group = neo_roman
     any_owned_province = {
       religion = deii
-      culture = northymbrian
+      culture_group = scandinavian
+      region = british_isles_region
       NOT = { culture_group = britannian_group }
       NOT = { nationalism	= 1 }
       is_core = ROOT
@@ -607,7 +608,8 @@ country_event = {#Northumbrian
     random_owned_province = {
       limit = {
         religion = deii
-        culture = northymbrian
+        culture_group = scandinavian
+        region = british_isles_region
         NOT = { nationalism	= 1 }
         is_core = ROOT
       }
