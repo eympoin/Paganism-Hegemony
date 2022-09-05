@@ -269,7 +269,7 @@ lot_2 = {
 		trigger = {
 			75 = { #Alsace
 				trade_share = {
-					country = LOT
+					country = ROOT
 					share = 75
 				}
 			}
