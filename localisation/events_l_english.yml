@@ -736,27 +736,27 @@ flavor_jar.10.d:0 "With the end of the Jarawa civil war and the threats send to 
 flavor_jar.10.a:0 "The war isn't finished !"
 flavor_jar.10.b:0 "We are not ready to face all of them."
 #carthage
-flavor_ctg.1.t:0 "A plot in the shadow"
-flavor_ctg.1.d:0 "The king Lucius III has many ennemies, he is a capable warrior but a poor diplomat and administrator. He is also cruel and rule its kingdom with an iron fist. Because of this many wants his death and thus many began to plot. One night the king was going to his bed and an assassin made his sleep the last one."
-flavor_ctg.1.a:0 "The king is dead but what now ?"
+flavor_ctg.1.t:0 "A Plot in the Shadow"
+flavor_ctg.1.d:0 "King Lucius III has many enemies, due to his incompetence in administration and diplomacy. Not only that, he's also a cruel king who rules with an iron fist. This would be his downfall, as the king was found dead in his bed. King Lucius III had been assassinated."
+flavor_ctg.1.a:0 "The King is dead, but now what?"
 
 
 flavor_ctg.2.t:0 "Carthago's Destiny"
-flavor_ctg.2.d:0 "The king is dead but we shall now choose what we will do, who should rule us. We can form a republic like some of our neighbours but creating from scratch will be an hard task. On the other hand, this monarchy has proved that it is problematic and is in need of heavy reforms. "
-flavor_ctg.2.a:0 "The time of kings is over. Proclaim the Republic !"
-flavor_ctg.2.b:0 "We can't abandon the monarchy. Bring Lucius's son to the throne !"
+flavor_ctg.2.d:0 "The king is dead, and we need to pick who shall lead us. We could either reform our monarchy, in dire need of reforms, or we could become a republic like our neighbors, as our ancestors were in the past, but it will be an hard task. What should be our government that will lead our nation to greatness? "
+flavor_ctg.2.a:0 "The Monarchy is dead! Long Live the Republic!"
+flavor_ctg.2.b:0 "The Monarchy survives! Bring Lucius' son to the throne!"
 
 
 flavor_ctg.3.t:0 "Army of the Republic"
-flavor_ctg.3.d:0 "The old kingdoms army was based on mercenary contracts with Numidians, Sicilians or Africans. At the senate two sides are opposed, some wants to renew these mercenry contracts and making them an elite army. Other wants to make an army made of citizen and making military service mandatory."
-flavor_ctg.3.a:0 "Our citzens will make the bulk of our army."
-flavor_ctg.3.b:0 "Renew the mercenary contracts."
+flavor_ctg.3.d:0 "Our army so far was based on mercenary contracts with Numidians, Sicilians and Africans. Its main problem is to deliver their money, but also the language barrier, and lack of professionalism. There's a reason we lost the Punic Wars, after all. What some of our senators are proposing is to make military service mandatory, in order to have a professional army made of citizens, which will be more efficient. The downside is that it will make the maintenance costier and harder to maintain. What should be our army like?"
+flavor_ctg.3.a:0 "We shall have a professional army made of citizens!"
+flavor_ctg.3.b:0 "We shall renew our mercenary contracts!"
 
-flavor_ctg.4.t:0 "Trade focus"
-flavor_ctg.4.d:0 "Our trade policies are non existant since our former king was more focused on war than trade. Now that we are in power, we must choose whether we focus on attracting foreign traders to our cities or develop our internal trade and production. Maybe a mixed approach is better ?"
-flavor_ctg.4.a:0 "Focus on internal trade."
-flavor_ctg.4.b:0 "Focus on external trade"
-flavor_ctg.4.c:0 "A mixed approach"
+flavor_ctg.4.t:0 "Trade Focus"
+flavor_ctg.4.d:0 "Ever since our former king focused on war than commerce, our trade policy was pretty much non-existent. Now that we are in power, we must think of our trade policy. Should we focus on internal trading, to increase our production? Should we focus on external trading, to attract foreign traders? Or perhaps we should take a mixed approach, and have both benefits, albeit weakened?"
+flavor_ctg.4.a:0 "We shall focus on internal trade, our people first!"
+flavor_ctg.4.b:0 "We shall focus on external trade, our business first!"
+flavor_ctg.4.c:0 "We shall take a balanced approach!"
 
 flavor_ctg.5.t:0 "Seats of power"
 flavor_ctg.5.d:0 "We began as a city states, tributary to the Jarawas. But now our territories have grown and a centralized power in Carthage may not be the best to rule our empire."
