@@ -150,7 +150,7 @@ bab_missions_2 = {
   universal_religion = {
 		icon = mission_build_up_to_force_limit
 		required_missions {
-      capital_of_the_world
+      peace_of_marduk
 		}
 		provinces_to_highlight = {
 
