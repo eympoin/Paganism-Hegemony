@@ -586,7 +586,7 @@ Londinium_3 = {
 			}
 			position = 6
 			provinces_to_highlight = {
-				area = highlands_area
+				area = lowlands_area
 				NOT = { is_core = ROOT }
 			}
 			trigger = {
