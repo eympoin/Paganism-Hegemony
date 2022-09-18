@@ -5159,7 +5159,7 @@ turko_semitic = { #semitic
 		}
 	}
 	yemeni_culture = {
-		primary = ADE
+		primary = YEM
 		dynasty_names = {
 			"Rasulid" "Tahiride" "Jabrid" "al-Qasimi"
 			"Nabhani" "Yaruba" "Usfurid" "Jarwanid"
