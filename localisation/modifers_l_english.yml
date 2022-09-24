@@ -2645,7 +2645,7 @@ ibadi_minority:0 "Ibadi minority"
 sunni_minority:0 "Sunni minority"
 shiite_minority:0 "Shiite minority"
 
-carthaginian_trading_outpost:0 "Carthaginian Trading post"
+carthaginian_trading_outpost:0 "Carthaginian Trading Outpost"
 desc_carthaginian_trading_outpost:0 ""
 
 saharan_trade_monopol:0 "Saharan trade monopol"
@@ -3026,10 +3026,10 @@ learn_to_take_cities:0 "Siege Expertise"
 
 assyria_is_a_major_power:0 "Assyria's Return"
 
-we_triumph_over_our_old_foes:0 Triumph our Old Foes"
+we_triumph_over_our_old_foes:0 "Triumph our Old Foes"
 
-watch_the_assyrian_lion_rise_again "Assyrian's Lions"
+watch_the_assyrian_lion_rise_again:0 "Assyrian's Lions"
 
 sargonII_i_matched_you:0 "Military Genius"
 
-control_the_hearts "Control the Hearts"
+control_the_hearts:0 "Control the Hearts"

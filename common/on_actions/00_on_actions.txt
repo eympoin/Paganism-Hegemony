@@ -4795,3 +4795,152 @@ on_colonist_boosting_colony = {
 		}
 	}
 }
+
+
+#ROOT = converted country, FROM = country which force converts ROOT, on_action gets called on Force religion peace and Enforce Religion subject interaction
+on_force_conversion = {
+	#if = {	#Commented out for now because Catholicism has received a lot of buffs already.
+	#	limit = {
+	#		FROM = { religion = catholic }
+	#	}
+	#	if = {
+	#		limit = { ROOT = { government_rank = 3 } }
+	#		FROM = { add_papal_influence = 20 }
+	#	}
+	#	else_if = {
+	#		limit = { ROOT = { government_rank = 2 } }
+	#		FROM = { add_papal_influence = 10 }
+	#	}
+	#	else = {
+	#		FROM = { add_papal_influence = 5 }
+	#	}
+	#}
+	FROM = {
+		if = {
+			limit = { has_country_modifier = liv_protector_of_the_catholics }
+			add_papal_influence = 25
+		}
+	}
+}
+
+on_institution_embracement = {
+	if = {
+		limit = {
+			has_government_attribute = monarch_power_on_institutions
+		}
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
+}
+on_national_focus_change = {}
+on_capital_moved = {}
+
+#ROOT = province that was expanded in, FROM = country that did it
+on_expanded_infrastructure = {
+}
+
+#ROOT = province that was centralized in
+on_centralized_state = {
+	if = {
+		limit = {
+			owner = { has_government_attribute = centralize_state_no_reform_cost }
+		}
+		owner = {
+			add_adm_power = 50
+			change_government_reform_progress = 50
+		}
+	}
+	if = {
+		limit = {
+			owner = { has_government_attribute = centralize_state_development }
+		}
+		area = {
+			limit = {
+				owned_by = ROOT
+			}
+			random_list = {
+				1 = { add_base_tax = 1 }
+				1 = { add_base_production = 1 }
+				1 = { add_base_manpower = 1 }
+			}
+		}
+	}
+}
+
+#ROOT = country
+monarch_on_shipwreck = {
+}
+heir_on_shipwreck = {
+}
+consort_on_shipwreck = {
+}
+
+#ROOT = country
+on_defender_of_faith_loss = {
+	clr_country_flag = claimed_defender_of_faith_flag
+	remove_country_modifier = liv_the_livonian_defender
+	remove_country_modifier = gov_improved_defender_of_faith_mod
+	remove_country_modifier = pol_shield_against_catholicism_modifier
+}
+on_defender_of_faith_claim = {
+	set_country_flag = claimed_defender_of_faith_flag
+	if = {
+		limit = {
+			religion = catholic
+			has_country_flag = liv_proclaim_defender_of_faith
+			NOT = { has_country_modifier = liv_the_livonian_defender }
+		}
+		add_country_modifier = {
+			name = liv_the_livonian_defender
+			duration = -1
+			desc = liv_the_livonian_defender_tt
+		}
+	}
+	if = {
+		limit = {
+			has_government_attribute = improved_defender_of_faith
+		}
+		add_country_modifier = {
+			name = gov_improved_defender_of_faith_mod
+			duration = -1
+		}
+	}
+}
+on_hre_dismantled = {
+}
+on_new_age = {
+}
+
+#ROOT = province
+on_adm_exploited = {
+	if = {
+		limit = { owner = { has_government_attribute = may_not_reduce_tax_on_exploitation } }
+		random = {
+			chance = 50
+			add_base_tax = 1
+		}
+	}
+	if = {
+		limit = { owner = { has_government_attribute = may_not_reduce_tax_on_own_exploitation culture_group = ROOT } }
+		random = {
+			chance = 25
+			add_base_tax = 1
+		}
+	}
+	if = {
+		limit = { owner = { has_government_attribute = may_not_reduce_tax_on_foreign_exploitation NOT = { culture_group = ROOT } } }
+		random = {
+			chance = 50
+			add_base_tax = 1
+		}
+	}
+}
+on_dip_exploited = {
+}
+on_mil_exploited = {
+}
+on_raze = {
+}
+on_concentrate_development = {
+}

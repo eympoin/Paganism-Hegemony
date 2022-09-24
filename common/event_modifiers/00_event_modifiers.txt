@@ -7235,6 +7235,53 @@ dyn_newborn_daughter = {
 	global_unrest = 3
 }
 
+
+organised_through_bishops_aspect_modifier = {
+	build_cost = -0.1
+}
+priests_may_marry_aspect_modifier = {
+	tolerance_own = 1
+}
+adult_baptism_aspect_modifier = {
+	manpower_in_true_faith_provinces = 0.1
+}
+holy_sacraments_aspect_modifier = {
+	morale_damage = 0.05
+}
+saints_accept_prayers_aspect_modifier = {
+	army_tradition_from_battle = 1
+}
+icons_images_aspect_modifier = {
+	same_culture_advisor_cost = -0.1
+}
+legalised_divorces_aspect_modifier = {
+	reform_progress_growth = 0.1
+}
+heretics_deported_aspect_modifier = {
+	colonist_placement_chance = 0.1
+}
+parish_registers_aspect_modifier = {
+	yearly_corruption = -0.1
+}
+individual_creeds_aspect_modifier = {
+	advisor_pool = 2
+}
+allow_usury_aspect_modifier = {
+	interest = -0.5
+}
+translated_bibles_aspect_modifier = {
+	institution_spread_from_true_faith = 0.25
+}
+justified_religious_war_aspect_modifier = {
+	warscore_cost_vs_other_religion = -0.1
+}
+war_preaches_aspect_modifier = {
+	war_taxes_cost_modifier = -1
+}
+head_of_the_church_aspect_modifier = {
+	yearly_absolutism = 1
+}
+
 #Parliament Events
 withdrawn_parliamentary_seat = {
 	local_unrest = 3
@@ -12487,7 +12534,7 @@ slavic_uprising_mod = {
 	land_morale = 0.2
 	shock_damage_received = -0.1
 	land_forcelimit = 5
-	global_tax_income = 12	
+	global_tax_income = 12
 }
 
 great_invasion = {
@@ -12939,4 +12986,161 @@ lack_of_provincial_gov = {
 }
 lackluster_provincial_gov = {
 	local_autonomy = 25
+}
+
+#Norse modifiers
+rethinking_catholic_life = {
+	heir_chance = -1
+	legitimacy = -0.5
+	papal_influence = -5
+	religion = yes
+}
+
+estate_nobles_carolean_march_modifier = {
+	morale_damage_received = -0.2
+	is_carolean_modifier = yes
+}
+
+estate_nobles_carolean_charge_modifier = {
+	shock_damage = 0.15
+	is_carolean_modifier = yes
+}
+
+#Teutonic and Livonian flavor events
+
+teu_expanded_resources_marienburg = {
+	local_development_cost = -0.05
+	local_defensiveness = 0.25
+}
+
+teu_expanded_resources_bran_castle = {
+	local_development_cost = -0.45
+}
+
+teu_the_last_reyse = {
+	manpower_recovery_speed = 0.15
+	land_morale = 0.1
+	army_tradition = 1
+}
+
+teu_renewed_hanseatic_relations = {
+	naval_maintenance_modifier = -0.2
+	land_maintenance_modifier = -0.1
+	burghers_influence_modifier = 0.1
+}
+
+liv_merc_focus = {
+	merc_maintenance_modifier = -0.25
+	mercenary_manpower = 0.25
+}
+liv_marine_focus = {
+	allowed_marine_fraction = 0.33
+	global_sailors_modifier = 0.2
+}
+liv_the_administrator = {
+	build_cost = -0.25
+	production_efficiency = 0.2
+}
+liv_the_diplomat = {
+	diplomatic_reputation = 2
+	diplomatic_upkeep = 1
+}
+liv_the_general = {
+	land_morale = 0.1
+	army_tradition = 0.5
+}
+
+#Province modifiers
+estate_burghers_forest_expansion_forest = {
+	local_development_cost = -0.15
+}
+
+estate_burghers_forest_expansion_woods = {
+	local_development_cost = -0.10
+}
+
+estate_burghers_mountain_expansion_mountains = {
+	local_development_cost = -0.175
+}
+
+estate_burghers_mountain_expansion_highlands = {
+	local_development_cost = -0.10
+}
+
+estate_burghers_mountain_expansion_hills = {
+	local_development_cost = -0.125
+}
+
+estate_nobles_religious_conscription_cathedral = {
+	religion = yes
+	local_manpower_modifier = 0.33
+}
+
+estate_nobles_religious_conscription_temple = {
+	religion = yes
+	local_manpower_modifier = 0.15
+}
+
+estate_nobles_leidang_elite_conscription_mod = {
+	discipline = 0.05
+	is_marine_modifier = yes
+}
+
+estate_nobles_leidang_mass_conscription_mod = {
+	shock_damage_received = 0.1
+	fire_damage_received = 0.1
+	land_maintenance_modifier = -0.1
+	is_marine_modifier = yes
+}
+
+gov_improved_defender_of_faith_mod = {
+	improve_relation_modifier = 0.15
+	diplomatic_reputation = 1
+	tolerance_own = 2
+	religion = yes
+}
+
+gov_expanded_temple_rights_mod = {
+	local_unrest = -2
+	local_tax_modifier = 0.33
+}
+
+sca_administrative_focus = {
+	free_adm_policy = 1
+	monarch_admin_power = 1
+}
+
+sca_diplomatic_focus = {
+	free_dip_policy = 1
+	monarch_diplomatic_power = 1
+}
+
+sca_military_focus = {
+	free_mil_policy = 1
+	monarch_military_power = 1
+}
+
+sca_administrative_focus_non_heir = {
+	free_adm_policy = 1
+	country_admin_power = 1
+}
+
+sca_diplomatic_focus_non_heir = {
+	free_dip_policy = 1
+	country_diplomatic_power = 1
+}
+
+sca_military_focus_non_heir = {
+	free_mil_policy = 1
+	country_military_power = 1
+}
+
+recent_coup_modifier = { }
+
+empowered_regency_modifier = {
+	legitimacy = 1
+	stability_cost_modifier = -0.25
+	country_admin_power = 1
+	country_diplomatic_power = 1
+	country_military_power = 1
 }
