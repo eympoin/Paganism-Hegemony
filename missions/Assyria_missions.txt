@@ -1,19 +1,4 @@
-##BranchStart 0
- = {
-	slot = 1
-	generic = no
-	ai = yes
-	potential = {
-		tag =
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
 
-	##
-
-}
-##BranchEnd 0
-##BranchStart 1
  assyrian_missions_1 = {
 	slot = 2
 	generic = no
@@ -24,7 +9,7 @@
 	}
 	has_country_shield = yes
 
-	##Mission Start
+
 	for_asshur = {
 		icon = mission_build_up_to_force_limit
 		required_missions {
@@ -51,8 +36,8 @@
 			}
 		}
 	}
-	##Mission End
-	##Mission Start
+
+
 	temples_for_asshur = {
 		icon = mission_central_asian_city
 		required_missions {
@@ -266,7 +251,7 @@ assyrians_missions_2 = {
 	}
 	has_country_shield = yes
 
-	##Mission Start
+
 	secure_freedom = {
 		icon = mission_build_up_to_force_limit
 		required_missions {
@@ -290,70 +275,96 @@ assyrians_missions_2 = {
 
 		}
 	}
-	##Mission End
-	##Mission Start
-	modern_assyria = {
+
+  protect_kurds = {
+    icon = mission_fortify_mandu
+    position = 2
+    required_missions = {secure_freedom }
+
+    provinces_to_highlight = {
+    }
+
+    trigger = {
+      OR = {
+          reverse_has_opinion = {
+            who = ARD
+            value = 150
+          }
+          NOT = {exists = ARD}
+        }
+    }
+    effect = {
+      add_country_modifier = {
+        name = prepare_the_armenian_wars
+        duration = 3650
+      }
+      if = {
+        limit = {
+          ARD = {
+            ai = yes
+            exists = yes
+            is_subject = no
+          }
+        }
+        vassalize = ARD
+      }
+      else = {
+        north_kurdistan_area = {
+          limit = {
+            NOT = { owned_by = ROOT }
+            NOT = {is_claim	= ROOT}
+          }
+          add_permanent_claim = ROOT
+        }
+      }
+      set_country_flag = kurd_help
+    }
+  }
+
+  premptive_strike = {
 		icon = mission_crusade_for_varna
 		required_missions {
-			secure_freedom
+			protect_kurds
 		}
-		position = 2
-		provinces_to_highlight = {
+    provinces_to_highlight = {
+			area = tabriz_area
+      NOT = {owned_by = ROOT}
 		}
-		trigger = {
-			NOT= { had_recent_war = 10 }
-      #bab event
+    trigger = {
+			tabriz_area = {
+        type = all
+        owned_by = ROOT
+      }
 		}
 		effect = {
-			add_country_modifier = {
-		    name = a_new_assyria
-		    duration = -1
-				}
+  			 ARM = {
+            add_country_modifier = {
+              name = armenian_humiliation
+              duration = 7300
+            }
+         }
 		  }
 		}
-	learn_to_swim = {
-		icon = mission_invade_island
-		required_missions {
-			modern_assyria
-		}
-		position = 3
-		provinces_to_highlight = {
-
-		}
-		trigger = {
-			naval_forcelimit = 30
-		}
-		effect = {
-			add_country_modifier = {
-			    name = assyrian_navy
-			    duration = -1
-			}
-		}
-	}
-	##Mission End
-	##Mission Start
-	intern_reforms= {
-		icon = mission_early_modern_university
-		required_missions {
-			learn_to_swim
-		}
-		position = 4
-		provinces_to_highlight = {
-		}
-		trigger = {
-			university = 30
-		}
-		effect = {
-      add_adm_power = 100
-			add_country_modifier = {
-			    name = assyrian_new_way
-			    duration = -1
-			}
-		}
-	}
-	##Mission End
-
+    yerevans_capitulation = {
+      icon = mission_into_persia_1
+      required_missions {
+        premptive_strike
+      }
+      provinces_to_highlight = {
+        province_id = 419
+        NOT = {
+          owned_by = ROOT
+        }
+      }
+      trigger = {
+        owns = 419
+      }
+      effect = {
+        #event occupy yerevan
+      }
+    }
 }
+
 assyrian_missions_3 = {
 	slot = 4
 	generic = no
@@ -364,7 +375,7 @@ assyrian_missions_3 = {
 	}
 	has_country_shield = yes
 
-	##Mission Start
+
 	assurbanipal_dream = {
 		icon = mission_empire
 		required_missions {
@@ -388,8 +399,8 @@ assyrian_missions_3 = {
 			}
 		}
 	}
-	##Mission End
-	##Mission Start
+
+
 	mesopotamia_is_ours = {
 		icon = mission_unite_home_region
 		required_missions {
@@ -419,7 +430,6 @@ assyrian_missions_3 = {
     required_missions {
       mesopotamia_is_ours
     }
-    position = 5
     provinces_to_highlight = {
         OR = {
           area = luristan_area
@@ -468,11 +478,11 @@ assyrian_missions_3 = {
       }
 		}
 	}
-	##Mission End
-	##Mission Start
 
-	##Mission End
-	##Mission Start
+
+
+
+
 	strike_persia_heartland = {
 		icon = mission_persianate_empire
 		required_missions {
@@ -496,8 +506,8 @@ assyrian_missions_3 = {
 			}
 		}
 	}
-	##Mission End
-	##Mission Start
+
+
 	prepare_to_strike_west = {
 		icon = mission_assemble_an_army
 		required_missions {
@@ -520,8 +530,8 @@ assyrian_missions_3 = {
       }
 	  }
 	}
-	##Mission End
-	##Mission Start
+
+
 	attack_phoenicia = {
 		icon = mission_break_the_tatar_yoke
 		required_missions {
@@ -549,9 +559,9 @@ assyrian_missions_3 = {
 	      }
 		}
 	}
-	##Mission End
+
 the_fall_of_egypt = {
-		icon = mission_into_persia_1
+		icon = mission_into_persia_2
 		required_missions {
 			attack_phoenicia
 		}
@@ -638,9 +648,81 @@ nothing_can_stop_us_now = {
 				}
     }
 		effect = {
-			add_country_modifier = {
-			    name = sargonII_i_matched_you
-			    duration = -1
-			}
+  			add_country_modifier = {
+  			    name = sargonII_i_matched_you
+  			    duration = -1
+  			}
+	     }
+    }
+}
+
+asy_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = ASY
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	babylons_fall = {
+		icon = mission_arabian_fort
+		required_missions {
+      assurbanipal_dream
+		}
+    position = 3
+		provinces_to_highlight = {
+      province_id = 2311
+      NOT = {
+        owned_by = ROOT
+      }
+		}
+		trigger = {
+			owns = 2311
+		}
+		effect = {
+      #event occupy bab
+		}
+	}
+
+  ecbatanas_capture = {
+		icon = mission_conquer_persia
+		required_missions {
+      prepare_to_strike_back
+		}
+    position = 5
+		provinces_to_highlight = {
+      province_id = 414
+      NOT = {
+        owned_by = ROOT
+      }
+		}
+		trigger = {
+			owns = 414
+		}
+		effect = {
+      #event occupy ecbatana
+		}
+	}
+
+  antiochs_surrender = {
+		icon = mission_pf_soldier
+		required_missions {
+      prepare_to_strike_west
+		}
+    position = 8
+		provinces_to_highlight = {
+      province_id = 2313
+      NOT = {
+        owned_by = ROOT
+      }
+		}
+		trigger = {
+			owns = 2313
+		}
+		effect = {
+      #event occupy Antioch
+		}
 	}
 }

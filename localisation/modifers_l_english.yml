@@ -2604,6 +2604,8 @@ slight_indebtment_spq:0 "Slight Indebtment"
 desc_slight_indebtment_spq:0 "Our country is heavily indebted, a few mistakes could lead us back to a sorrowful economic state, but if we continue things will sort themselves out."
 rebuilding_the_country_spq:0 "The great rebirth"
 desc_rebuilding_the_country_spq:0 "Once again, after decades of turmoil our country has finally overcome the worst moment of its history ! May we bathe in glory as we become once again the mightiest and richest in these lands."
+balanced_funding:0 "Balanced Funding"
+desc_balanced_funding:0 "We have decided to establish a balanced funding of our scientists and scholars. While it won't give us any significant advantage, it will at least make sure we don't have any downsides of only picking one side."
 
 need_of_reforms_monarchy:0 "Need of Reforms"
 republic_under_construction:0 "Republic under Construction"
@@ -3033,3 +3035,5 @@ watch_the_assyrian_lion_rise_again:0 "Assyrian's Lions"
 sargonII_i_matched_you:0 "Military Genius"
 
 control_the_hearts:0 "Control the Hearts"
+
+armenian_humiliation:0 "Armenian Humiliation"
