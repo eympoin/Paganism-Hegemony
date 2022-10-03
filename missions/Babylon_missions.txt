@@ -11,7 +11,7 @@ bab_missions_1 = {
 	has_country_shield = yes
 
 	bab_rebirth = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_war_chest
 		required_missions {
 		}
 		provinces_to_highlight = {
@@ -32,7 +32,7 @@ bab_missions_1 = {
 	}
 
   city_of_cities = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_central_asian_city
 		required_missions {
       bab_rebirth
 		}
@@ -55,7 +55,7 @@ bab_missions_1 = {
 		}
 	}
   capital_of_the_world = {
-		icon = mission_build_up_to_force_limit
+		icon = renaissance_city
 		required_missions {
       city_of_cities
 		}
@@ -80,7 +80,7 @@ bab_missions_1 = {
 		}
 	}
   hammurabi_code = {
-		icon = mission_build_up_to_force_limit
+		icon = law_of_the_pious
 		required_missions {
       capital_of_the_world
 		}
@@ -101,7 +101,7 @@ bab_missions_1 = {
 	}
 
   hanging_gardens_m = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_city_of_gondwana
 		required_missions {
       hammurabi_code
 		}
@@ -137,7 +137,7 @@ bab_missions_2 = {
 	has_country_shield = yes
 
 	cult_of_marduk = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_plc_cultural_flowering
 		required_missions {
       free_at_last
 		}
@@ -154,7 +154,7 @@ bab_missions_2 = {
 	}
 
   syncretism = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_war_for_the_crown
 		required_missions {
       cult_of_marduk
 		}
@@ -169,7 +169,7 @@ bab_missions_2 = {
 		}
 	}
   peace_of_marduk = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_diplomatic_relation
 		required_missions {
       syncretism
 		}
@@ -197,7 +197,7 @@ bab_missions_3 = {
 	has_country_shield = yes
 
 	free_at_last = {
-		icon = mission_build_up_to_force_limit
+		icon = counter_reformation
 		required_missions {
       free_at_last
 		}
@@ -224,7 +224,7 @@ bab_missions_3 = {
 	}
 
   unify_lower_mes = {
-		icon = mission_build_up_to_force_limit
+		icon = jerusalem
 		required_missions {
       free_at_last
 		}
@@ -311,7 +311,7 @@ bab_missions_3 = {
 		}
 	}
   bridgehead_in_syria = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_arabian_fort
 		required_missions {
       heir_of_hammurabi
 		}
@@ -363,7 +363,7 @@ bab_missions_3 = {
 	}
 
   way_of_nabu = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_bedouins
 		required_missions {
       bridgehead_in_syria
 		}
@@ -398,7 +398,7 @@ bab_missions_3 = {
 	}
 
   way_of_ishtar = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_new_army
 		required_missions {
       way_of_nabu
 		}
@@ -424,7 +424,7 @@ bab_missions_3 = {
 	}
 
   crescent_empire = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_empire
 		required_missions {
       way_of_ishtar
 		}
@@ -485,7 +485,7 @@ bab_missions_4 = {
 	has_country_shield = yes
 
 	port_of_basra = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_arabian_ports
 		required_missions {
       unify_lower_mes
 		}
@@ -516,7 +516,7 @@ bab_missions_3_1 = {
 	has_country_shield = yes
 
 	vengeance_calls = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_assemble_an_army
 		required_missions {
       heir_of_hammurabi
 		}
@@ -536,7 +536,7 @@ bab_missions_3_1 = {
 	}
 
   wrath_of_marduk = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_persianate_empire
 		required_missions {
       vengeance_calls
 		}
@@ -572,7 +572,7 @@ bab_missions_4_1 = {
 	has_country_shield = yes
 
 	new_partners = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_alliances
 		required_missions {
       port_of_basra
 		}
@@ -594,7 +594,7 @@ bab_missions_4_1 = {
 		}
 	}
 	asian_trade = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_dominate_persian_gulf
 		required_missions {
       new_partners
 		}
