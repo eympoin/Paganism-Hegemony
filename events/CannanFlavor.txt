@@ -1,0 +1,84 @@
+namespace = flavor_canaan
+
+country_event = {#syrian
+  id = flavor_canaan.1
+  title = flavor_canaan.1.t
+  desc = flavor_canaan.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    culture_group = turko_semitic
+    any_owned_province = {
+     has_owner_religion = yes
+      OR = {
+        culture = syrian
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_canaan.1.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+       has_owner_religion = yes
+       OR = {
+         culture = syrian
+       }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = canaan
+    }
+  }
+}
+
+
+country_event = {#egyptiran
+  id = flavor_canaan.2
+  title = flavor_canaan.1.t
+  desc = flavor_canaan.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    culture_group = turko_semitic
+    any_owned_province = {
+     has_owner_religion = yes
+      OR = {
+        culture = ptolemaic
+        culture = cyrenian
+        culture = al_misr_arabic
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_canaan.1.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+       has_owner_religion = yes
+       OR = {
+         culture = ptolemaic
+         culture = cyrenian
+         culture = al_misr_arabic
+       }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = Egyptian_Arabic
+    }
+  }
+}

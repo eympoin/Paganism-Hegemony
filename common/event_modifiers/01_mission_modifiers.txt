@@ -8553,3 +8553,8 @@ way_of_ishtar_mod = {
   manpower_recovery_speed = 0.10
   land_morale = 0.1
 }
+
+basras_port = {
+  province_trade_power_modifier = 0.5
+  envoy_travel_time = -0.33
+}

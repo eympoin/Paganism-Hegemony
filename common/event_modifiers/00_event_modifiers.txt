@@ -13144,3 +13144,26 @@ empowered_regency_modifier = {
 	country_diplomatic_power = 1
 	country_military_power = 1
 }
+
+spoils_of_antioch = {
+	global_trade_power = 0.1
+	country_diplomatic_power = 1
+	global_tax_modifier = 0.25	
+}
+spoils_of_yerevan = {
+	land_morale = 1
+	country_military_power = 1
+	fort_maintenance_modifier = -0.10
+	defensiveness = 0.2
+}
+spoils_of_ecbatana = {
+	legitimacy = 1
+	yearly_absolutism = 0.1
+	prestige = 1
+	discipline = 0.05
+	country_admin_power = 1
+}
+
+spoils_of_babylon = {
+	technology_cost = -0.1
+}

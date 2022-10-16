@@ -497,10 +497,16 @@ bab_missions_4 = {
 			408 = {
 				has_building = dock
 				province_has_center_of_trade_of_level = 2
+				owned_by = ROOT
 			}
 		}
 		effect = {
-			#trade and relation
+			408 = {
+				add_province_modifier = {
+					name = basras_port
+					duration = -1
+				}
+			}
 		}
 	}
 }
@@ -531,7 +537,17 @@ bab_missions_3_1 = {
 
 		}
 		effect = {
-			#claim
+			persia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {is_claim    = ROOT}
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = army_enthusiasm
+				duration = 7300
+			}
 		}
 	}
 
@@ -556,7 +572,12 @@ bab_missions_3_1 = {
 			owns_core_province = 428
 		}
 		effect = {
-
+			add_legitimacy = 20
+			add_prestige = 20
+			add_country_modifier = {
+				name = king_of_kings_pon
+				duration = -1
+			}
 		}
 	}
 }
@@ -623,7 +644,11 @@ bab_missions_4_1 = {
 
 		}
 		effect = {
-		#trade bonus
+			add_years_of_income = 1
+			add_country_modifier = {
+				name = masters_of_indian_ocean
+				duration = -1
+			}
 		}
 	}
 }
