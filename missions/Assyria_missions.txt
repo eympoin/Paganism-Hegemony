@@ -549,7 +549,6 @@ assyrian_missions_3 = {
         owned_by = ROOT }
 		}
 		effect ={
-			#event
 			egypt_region = {
 	        limit = {
 	          NOT = { owned_by = ROOT }
@@ -579,6 +578,19 @@ the_fall_of_egypt = {
 				}
       }
 		effect = {
+      every_owned_province = {
+        limit = {
+          OR = {
+            region = egypt_region
+            region = mashriq_region
+          }
+          trade_goods = grain
+        }
+        add_province_modifier = {
+          name = granary_of_the_mediterranean
+          duration = -1
+        }
+      }
 			add_dip_power = 100
 			add_adm_power = 100
 			add_mil_power = 100

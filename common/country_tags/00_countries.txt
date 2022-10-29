@@ -82,6 +82,7 @@ ALP = "countries/Alpina.txt"
 
 
 EAA = "countries/East-Anglia.txt"
+DEI = "countries/Deira.txt"
 GLA = "countries/Glamorgan.txt"
 LDN = "countries/Londinium.txt"
 NRT = "countries/Northymbre.txt"
