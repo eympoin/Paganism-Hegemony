@@ -13167,3 +13167,13 @@ spoils_of_ecbatana = {
 spoils_of_babylon = {
 	technology_cost = -0.1
 }
+
+ormuz_help = {
+	range = 0.5
+	colonists = 1
+}
+
+babylons_help = {
+	global_foreign_trade_power = 0.2
+	merchants = 1
+}

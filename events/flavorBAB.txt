@@ -1,0 +1,172 @@
+namespace = flavor_bab
+#urigallu take power
+country_event = {
+	id = flavor_bab.1
+	title = "flavor_bab.1.t"
+	desc = "flavor_bab.1.d"
+	picture = SHIP_SAILING_eventPicture
+	major = yes
+	fire_only_once = yes
+	trigger = {
+		NOT = {has_country_flag = urigallu_took_control}
+		NOT = {legitimacy = 50}
+	}
+
+	option = { #raze
+		name = "flavor_bab.1.a"
+		ai_chance = {
+			factor = 100
+		}
+		change_government = theocracy
+		add_government_reform = bab_theocracy_reform
+		spawn_rebels = {
+		    size = 1
+		    leader = noble_zealot
+		    type = noble_rebels
+		}
+	}
+	option = { #keep
+		name = "flavor_bab.1.b"
+		ai_chance = {
+			factor = 0
+		}
+		spawn_rebels = {
+		    size = 1
+		    leader = noble_zealot
+		    type = mesopotamian_rebels
+		}
+		add_legitimacy = 10
+
+	}
+}
+
+
+country_event = {
+	id = flavor_bab.2
+	title = "flavor_bab.2.t"
+	desc = "flavor_bab.2.d"
+	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	major = yes
+
+	is_triggered_only = yes
+
+	option = { #alliance with hormuz
+		name = "flavor_bab.2.a"
+		ai_chance = {
+			factor = 50
+		}
+		ORM = {
+			country_event = { id = flavor_bab.3 }
+		}
+	}
+
+	option = { #we don't need them
+		name = "flavor_bab.2.b"
+		add_prestige = 1
+	}
+}
+
+
+country_event = {
+	id = flavor_bab.3
+	title = "flavor_bab.3.t"
+	desc = "flavor_bab.3.d"
+	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	major = yes
+
+	is_triggered_only = yes
+
+	option = { #accept alliance with hormuz
+		name = "flavor_bab.3.a"
+		ai_chance = {
+			factor = 50
+		}
+		FROM = {
+			country_event = { id = flavor_bab.4 }
+		}
+		set_global_flag = orm_bab_allied
+		add_country_modifier = {
+			name = "babylons_help"
+			duration = -1
+		}
+	}
+
+	option = { #we don't need them
+		name = "flavor_bab.3.b"
+		ORM = {
+			country_event = { id = flavor_bab.3 }
+		}
+		FROM = {
+			country_event = { id = flavor_bab.4 }
+		}
+	}
+}
+
+country_event = {
+	id = flavor_bab.4
+	title = "flavor_bab.4.t"
+	desc = "flavor_bab.4.d"
+	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	major = yes
+
+	is_triggered_only = yes
+
+	option = { #allied
+		name = "flavor_bab.4.a"
+		ai_chance = {
+			factor = 50
+		}
+		trigger = {
+			has_global_flag = orm_bab_allied
+		}
+		add_country_modifier = {
+			name = "ormuz_help"
+			duration = -1
+		}
+	}
+	option = { #they refused
+		name = "flavor_bab.4.b"
+		trigger = {
+			NOT = {has_global_flag = orm_bab_allied}
+		}
+		add_prestige = -1
+	}
+}
+
+country_event = {
+	id = flavor_bab.5
+	title = "flavor_bab.5.t"
+	desc = "flavor_bab.5.d"
+	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	major = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				has_country_modifier = ormuz_help
+				NOT = {alliance_with = ORM}
+			}
+			AND = {
+				has_country_modifier = babylons_help
+				NOT = {alliance_with = BAB}
+			}
+		}
+	}
+	fire_only_once = yes
+
+	option = { #break
+		name = "flavor_bab.5.a"
+		ai_chance = {
+			factor = 50
+		}
+		if = {
+			limit = { has_country_modifier = babylons_help }
+			remove_country_modifier = babylons_help
+		}
+
+		if = {
+			limit = { has_country_modifier = ormuz_help }
+			remove_country_modifier = ormuz_help
+		}
+	}
+}
