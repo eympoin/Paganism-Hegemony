@@ -40,7 +40,7 @@ country_event = {#syrian
 }
 
 
-country_event = {#egyptiran
+country_event = {#egyptian
   id = flavor_canaan.2
   title = flavor_canaan.1.t
   desc = flavor_canaan.1.d

@@ -2282,3 +2282,54 @@ cil_piracy.6.a:0 "Long live the Emperor !"
 incident_cil_piracy:0 "Cilician Piracy"
 incident_cil_piracy_emperor_alert:0 "Cilician coast has long been infested with pirated but it has worsened in the last decades. Our spies report us that the Doux of Cilicia is directly responsible of the increase of piracy. It is time to discuss this problem."
 incident_cil_piracy_member_alert:0 "Cilician coast has long been infested with pirated but it has worsened in the last decades. The Emperor spies are reporting that the Doux of Cilicia is directly responsible of the increase of piracy. It is time to discuss this problem."
+
+
+flavor_bab.1.t:0 "The Urigallus stage a coup"
+flavor_bab.1.d:0 "The Urigallus have become too powerful and our ruler is weak. They are now trying to take the power from him."
+flavor_bab.1.a:0 "The king was weak, we shall prosper under Marduk's embrace."
+flavor_bab.1.b:0 "They have no rights to do that"
+
+flavor_bab.2.t:0 "A beneficial deal ?"
+flavor_bab.2.d:0 "Ormuz has a important player in the region. Their aid would be greatly beneficial if we want to expand our influence beyond the Persian Gulf."
+flavor_bab.2.a:0 "Ask for a mutually beneficial deal : help for the development of colonies in Asia against some trade rights"
+flavor_bab.2.a:0 "We don't need them"
+
+flavor_bab.3.t:0 "Babylon ask for a deal"
+flavor_bab.3.d:0 "Babylon seek our help to develop their colony in Asia. They propose to offer some trading rights in exchange. Should we accept ?"
+flavor_bab.3.a:0 "The terms of the deal are agreable. "
+flavor_bab.3.a:0 "We don't need them."
+
+flavor_bab.4.t:0 "Ormuz answer"
+flavor_bab.4.d:0 "The Ormuzian delegation has returned with the answer."
+flavor_bab.4.a:0 "They have accepeted !"
+flavor_bab.4.b:0 "They have refused..."
+
+flavor_bab.5.t:0 "The Babylo-Ormuzian deal is broken"
+flavor_bab.5.d:0 "Our relations are not what they were before and the deal which made our fortune is now null and void."
+flavor_bab.5.a:0 "A sad ending..."
+
+flavor_canaan.1.t:0 "Cultural Assimilation"
+flavor_canaan.1.d:0 "These people are now back in the Semitic sphere of influence."
+flavor_canaan.1.a:0 "Welcome to our new citizens!"
+flavor_canaan.2.t:0 "Cultural Assimilation"
+
+
+flavor_asy.1.t:0 "Conquest of Babylon"
+flavor_asy.1.d:0 "The mighty Babylon has fallen. We have shown them who the real power of Mesopotamie is. Now, should we make an example of the city or should we take them with us toward a bright Masopotamia ? "
+flavor_asy.1.a:0 "Raze it to the ground !"
+flavor_asy.1.b:0 "We still have a use for them"
+
+flavor_asy.2.t:0 "Conquest of Yerevan"
+flavor_asy.2.d:0 "The capital of the sturdy Armenians has now fallen to our might. Their double game policy won't save them this time, should we burn the city ? "
+flavor_asy.2.a:0 "Raze it to the ground !"
+flavor_asy.2.b:0 "We still have a use for them"
+
+flavor_asy.3.t:0 "Conquest of Ecbatana"
+flavor_asy.3.d:0 "The Persian capital is now ours. The revenge for all these years of occuptation... Revenge is a dish best served cold isn't it ? "
+flavor_asy.3.a:0 "Raze it to the ground !"
+flavor_asy.3.b:0 "We still have a use for them"
+
+flavor_asy.4.t:0 "Conquest of Antioch"
+flavor_asy.4.d:0 "The capital of Greek Syria is now ours with all its riches. What should we do with it ?"
+flavor_asy.4.a:0 "Raze it to the ground !"
+flavor_asy.4.b:0 "We still have a use for them"
