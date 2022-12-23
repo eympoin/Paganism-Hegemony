@@ -734,6 +734,7 @@ theocracy = {
 			reforms = {
 				leading_clergy_reform
 				monastic_order_reform
+				bab_theocracy_reform
 				crusading_kingdom_reform
 				papacy_reform
 				holy_state_reform

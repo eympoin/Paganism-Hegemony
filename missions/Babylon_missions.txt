@@ -109,10 +109,13 @@ bab_missions_1 = {
 
 		}
 		trigger = {
-			has_great_project = {
-				type = hanging_gardens
-				tier = 3
+			2311 = {
+				has_great_project = {
+					type = hanging_gardens
+					tier = 3
+				}
 			}
+
 		}
 		effect = {
 			2311 = {
@@ -146,10 +149,13 @@ bab_missions_2 = {
 
 		}
 		trigger = {
-			#loyalty special estate
+			estate_loyalty = {
+			    estate = estate_urigallu
+			    loyalty = 60
+			}
 		}
 		effect = {
-			#unlock special privilege
+			#tooltip
 		}
 	}
 
@@ -162,10 +168,19 @@ bab_missions_2 = {
 
 		}
 		trigger = {
-			#civil war
+			#tooltip
+			has_country_flag = bab_cw
 		}
 		effect = {
-			#bonus according who won the civil war (privileges)
+			if = {
+				limit = {
+					has_country_flag = priest_victorious_bab
+				}
+				#tooltip
+			}
+			else = {
+				#tooltip
+			}
 		}
 	}
   peace_of_marduk = {
@@ -177,10 +192,17 @@ bab_missions_2 = {
 
 		}
 		trigger = {
-			# nobles and religious estate loyal after civil war
+			estate_loyalty = {
+			    estate = estate_nobles
+			    loyalty = 50
+			}
+			estate_loyalty = {
+			    estate = estate_urigallu
+			    loyalty = 50
+			}
 		}
 		effect = {
-			#remove malus from civil war
+			remove_country_modifier = bab_civil_war
 		}
 	}
 
@@ -199,7 +221,6 @@ bab_missions_3 = {
 	free_at_last = {
 		icon = counter_reformation
 		required_missions {
-      free_at_last
 		}
 		provinces_to_highlight = {
 
@@ -611,7 +632,7 @@ bab_missions_4_1 = {
 			}
 		}
 		effect = {
-			#event Hormuz
+			country_event = { id = flavor_bab.2 }
 		}
 	}
 	asian_trade = {

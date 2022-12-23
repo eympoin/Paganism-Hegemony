@@ -2285,19 +2285,19 @@ incident_cil_piracy_member_alert:0 "Cilician coast has long been infested with p
 
 
 flavor_bab.1.t:0 "The Urigallus stage a coup"
-flavor_bab.1.d:0 "The Urigallus have become too powerful and our ruler is weak. They are now trying to take the power from him."
+flavor_bab.1.d:0 "The Urigallus have become too powerful. They are now trying to take the power from the King."
 flavor_bab.1.a:0 "The king was weak, we shall prosper under Marduk's embrace."
 flavor_bab.1.b:0 "They have no rights to do that"
 
 flavor_bab.2.t:0 "A beneficial deal ?"
 flavor_bab.2.d:0 "Ormuz has a important player in the region. Their aid would be greatly beneficial if we want to expand our influence beyond the Persian Gulf."
-flavor_bab.2.a:0 "Ask for a mutually beneficial deal : help for the development of colonies in Asia against some trade rights"
-flavor_bab.2.a:0 "We don't need them"
+flavor_bab.2.a:0 "Ask for a mutually beneficial deal : colonies against trade"
+flavor_bab.2.b:0 "We don't need them"
 
 flavor_bab.3.t:0 "Babylon ask for a deal"
 flavor_bab.3.d:0 "Babylon seek our help to develop their colony in Asia. They propose to offer some trading rights in exchange. Should we accept ?"
 flavor_bab.3.a:0 "The terms of the deal are agreable. "
-flavor_bab.3.a:0 "We don't need them."
+flavor_bab.3.b:0 "We don't need them."
 
 flavor_bab.4.t:0 "Ormuz answer"
 flavor_bab.4.d:0 "The Ormuzian delegation has returned with the answer."

@@ -13177,3 +13177,13 @@ babylons_help = {
 	global_foreign_trade_power = 0.2
 	merchants = 1
 }
+
+naval_supplies_bonus_prod = {
+	local_production_efficiency = 1
+}
+
+bab_civil_war = {
+	global_unrest = 2
+	global_tax_modifier = -0.2
+	production_efficiency = -0.2	
+}

@@ -9340,3 +9340,144 @@ estate_nobles_sponsor_hussars = {
 		factor = 1
 	}
 }
+
+
+estate_urigallu_cult_of_marduk = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = {
+			tag = BAB
+	 	}						#Conditions for whether it is possible for the country to have this privilege (it will not display on the list if they are false, and will be revoked if it has already been granted)
+	can_select = {
+			mission_completed = cult_of_marduk
+
+	 	}
+	benefits = {
+		global_missionary_strength = 0.01
+		missionary_maintenance_cost = -0.2
+		tolerance_own = 1
+		tolerance_heretic = -1
+		tolerance_heathen = -1
+	}
+	on_granted = {
+
+	}
+	can_revoke = {  } 					#Conditions for whether the country can revoke the privilege
+	on_revoked = {
+		add_estate_loyalty = {
+			estate = estate_urigallu
+			loyalty = -20
+		}
+	}
+	on_invalid = {
+	}
+	penalties = {  } 					#Negative modifiers granted while the privilege is active (creates different tooltip to benefits)
+	conditional_modifier = {}
+	modifier_by_land_ownership = {  } 	#Multiplies the modifier by the % of land owned by the estate.
+	mechanics = {  } 					#Special mechanics the privilege enables
+	cooldown_years = 20 						#Time limit before which the privilege cannot be revoked
+	on_cooldown_expires = { }			#Effect executed once the specified cooldown_years timer has run down
+	ai_will_do = { factor = 0 }
+}
+
+
+estate_urigallu_syncretism = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	loyalty = -0.1
+	influence = -0.05
+	is_valid = {
+			tag = BAB
+	 	}						#Conditions for whether it is possible for the country to have this privilege (it will not display on the list if they are false, and will be revoked if it has already been granted)
+	can_select = {
+	 	}
+	benefits = {
+		tolerance_heathen = 2
+		tolerance_heretic = 2
+		global_unrest = -1
+	}
+	on_granted = {
+
+	}
+	can_revoke = {  } 					#Conditions for whether the country can revoke the privilege
+	on_revoked = {
+		add_estate_loyalty = {
+			estate = estate_urigallu
+			loyalty = -20
+		}
+	}
+	on_invalid = {
+	}
+	penalties = {  } 					#Negative modifiers granted while the privilege is active (creates different tooltip to benefits)
+	conditional_modifier = {}
+	modifier_by_land_ownership = {  } 	#Multiplies the modifier by the % of land owned by the estate.
+	mechanics = {  } 					#Special mechanics the privilege enables
+	cooldown_years = 20 						#Time limit before which the privilege cannot be revoked
+	on_cooldown_expires = { }			#Effect executed once the specified cooldown_years timer has run down
+	ai_will_do = { factor = 0 }
+}
+
+estate_nobles_royal_guards = {
+	icon = privilege_make_generous_donation
+	max_absolutism = -10
+	is_valid = {
+		tag = BAB
+		NOT = {has_country_flag = priest_victorious_bab}
+		mission_completed = syncretism
+	}
+	influence = 0.1
+	loyalty = 0.05
+	benefits = {
+		infantry_power = 0.10
+		legitimacy = 0.5
+	}
+	penalties = {
+	}
+	cooldown_years = 50
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_urigallu_light_of_marduk = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -10
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+			tag = BAB
+			has_country_flag = priest_victorious_bab
+			mission_completed = syncretism
+	 	}
+	can_select = {
+	 	}
+	benefits = {
+		idea_cost = -0.1
+		free_adm_policy = 1
+		institution_spread_from_true_faith = 0.2
+		global_tax_modifier = -0.2
+	}
+	on_granted = {
+
+	}
+	can_revoke = {  } 					#Conditions for whether the country can revoke the privilege
+	on_revoked = {
+		add_estate_loyalty = {
+			estate = estate_urigallu
+			loyalty = -20
+		}
+	}
+	on_invalid = {
+	}
+	penalties = {  } 					#Negative modifiers granted while the privilege is active (creates different tooltip to benefits)
+	conditional_modifier = {}
+	modifier_by_land_ownership = {  } 	#Multiplies the modifier by the % of land owned by the estate.
+	mechanics = {  } 					#Special mechanics the privilege enables
+	cooldown_years = 20 						#Time limit before which the privilege cannot be revoked
+	on_cooldown_expires = { }			#Effect executed once the specified cooldown_years timer has run down
+	ai_will_do = { factor = 0 }
+}

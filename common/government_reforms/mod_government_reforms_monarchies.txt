@@ -4427,7 +4427,7 @@ rioghacht_reform  = {
 			}
 			AND = {
 				is_playing_custom_nation = yes
-				have_had_reform = rioghacht
+				have_had_reform = rioghacht_reform
 			}
 		}
 	}
