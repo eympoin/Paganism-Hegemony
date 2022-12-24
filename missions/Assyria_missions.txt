@@ -20,13 +20,13 @@
 
 		}
 		trigger = {
-			estate_influence = {
-				estate = estate_church
-				influence = 60
-			}
+      estate_influence = {
+        estate = estate_church
+        influence = 60
+      }
       estate_loyalty = {
-				estate = estate_church
-				influence = 50
+					estate = estate_church
+					loyalty = 55
 			}
 		}
 		effect = {

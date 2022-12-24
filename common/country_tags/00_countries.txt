@@ -240,6 +240,7 @@ LVA = "countries/Livonia.txt"
 SMI = "countries/Sami.txt"
 KRL = "countries/Karelia.txt"
 ICE = "countries/Iceland.txt"
+LTG = "countries/Latgalia.txt"
 
 #Balkans
 ACH	= "countries/PrincipalityOfAchaia.txt"

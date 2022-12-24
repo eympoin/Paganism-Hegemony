@@ -76,7 +76,6 @@ country_event = { #republic or monarchy ?
 			mil = 0
 			dip = 5
 			regency = yes
-			fixed = yes
 		}
 
 		add_country_modifier = {

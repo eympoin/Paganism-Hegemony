@@ -2450,3 +2450,7 @@ wrath_of_marduk_desc:0 ""
 port_of_basra_desc:0 ""
 new_partners_desc:0 ""
 asian_trade_desc:0 ""
+
+unlock_privilege_cw_tooltip:0 "Unlock the Royal Guard Estate Privilege for the Nobles or the Light of Marduk Estate Privilege for the Urigallus depending of the civil war result"
+civil_war_tooltip:0 "The Urigallus have tried to take the power from the King"
+cult_of_marduk_unlock_tooltip:0 "Unlock the Cult of Marduk Estate Privilege for the Urigallus"

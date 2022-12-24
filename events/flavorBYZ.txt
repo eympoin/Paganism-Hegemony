@@ -1314,7 +1314,10 @@ country_event = {
 		name = "flavor_byzmod.47.a"
 			add_treasury = -10000
 			4316 = {
-				add_great_project = suez_canal
+				add_great_project = {
+				    type = suez_canal
+				    instant = no
+				}
 			}
 		}
 	option = {	# refused

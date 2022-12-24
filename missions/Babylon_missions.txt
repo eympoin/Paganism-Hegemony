@@ -155,7 +155,7 @@ bab_missions_2 = {
 			}
 		}
 		effect = {
-			#tooltip
+			custom_tooltip = cult_of_marduk_unlock_tooltip
 		}
 	}
 
@@ -168,19 +168,13 @@ bab_missions_2 = {
 
 		}
 		trigger = {
-			#tooltip
-			has_country_flag = bab_cw
+			custom_trigger_tooltip = {
+				tooltip = civil_war_tooltip
+				has_country_flag = bab_cw
+			}
 		}
 		effect = {
-			if = {
-				limit = {
-					has_country_flag = priest_victorious_bab
-				}
-				#tooltip
-			}
-			else = {
-				#tooltip
-			}
+			custom_tooltip = unlock_privilege_cw_tooltip
 		}
 	}
   peace_of_marduk = {

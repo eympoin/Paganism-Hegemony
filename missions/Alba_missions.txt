@@ -773,7 +773,7 @@ For_Norway = {
   		}
 
   		trigger = {
-        faroes_area = {
+        subarctic_islands_area = {
   				type = all
   				owned_by = ROOT
   			}

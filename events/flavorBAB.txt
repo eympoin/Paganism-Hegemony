@@ -4,11 +4,11 @@ country_event = {
 	id = flavor_bab.1
 	title = "flavor_bab.1.t"
 	desc = "flavor_bab.1.d"
-	picture = SHIP_SAILING_eventPicture
+	picture = CIVIL_WAR_eventPicture
 	fire_only_once = yes
 	trigger = {
 		tag = BAB
-		year = 1523
+		is_year = 1523
 	}
 	immediate = {
 		set_country_flag = bab_cw
@@ -64,7 +64,7 @@ country_event = {
 	id = flavor_bab.2
 	title = "flavor_bab.2.t"
 	desc = "flavor_bab.2.d"
-	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 
@@ -89,7 +89,7 @@ country_event = {
 	id = flavor_bab.3
 	title = "flavor_bab.3.t"
 	desc = "flavor_bab.3.d"
-	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 
@@ -120,7 +120,7 @@ country_event = {
 	id = flavor_bab.4
 	title = "flavor_bab.4.t"
 	desc = "flavor_bab.4.d"
-	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	is_triggered_only = yes
 
@@ -150,7 +150,7 @@ country_event = {
 	id = flavor_bab.5
 	title = "flavor_bab.5.t"
 	desc = "flavor_bab.5.d"
-	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	picture = ACCUSATION_eventPicture
 
 	trigger = {
 		OR = {

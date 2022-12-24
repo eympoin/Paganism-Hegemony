@@ -280,4 +280,3 @@ country_event = {#polabian
 			}
     }
   }
-}

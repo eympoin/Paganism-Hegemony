@@ -5,7 +5,7 @@ country_event = {
 	id = flavor_asy.1
 	title = "flavor_asy.1.t"
 	desc = "flavor_asy.1.d"
-	picture = SHIP_SAILING_eventPicture
+	picture = COUNTRY_COLLAPSE_eventPicture
 	major = yes
 
 	is_triggered_only = yes
@@ -47,7 +47,7 @@ country_event = {
 	id = flavor_asy.2
 	title = "flavor_asy.2.t"
 	desc = "flavor_asy.2.d"
-	picture = SHIP_SAILING_eventPicture
+	picture = COUNTRY_COLLAPSE_eventPicture
 	major = yes
 
 	is_triggered_only = yes
@@ -88,7 +88,7 @@ country_event = {
 	id = flavor_asy.3
 	title = "flavor_asy.3.t"
 	desc = "flavor_asy.3.d"
-	picture = SHIP_SAILING_eventPicture
+	picture = COUNTRY_COLLAPSE_eventPicture
 	major = yes
 
 	is_triggered_only = yes
@@ -129,7 +129,7 @@ country_event = {
 	id = flavor_asy.4
 	title = "flavor_asy.4.t"
 	desc = "flavor_asy.4.d"
-	picture = SHIP_SAILING_eventPicture
+	picture = COUNTRY_COLLAPSE_eventPicture
 	major = yes
 
 	is_triggered_only = yes
