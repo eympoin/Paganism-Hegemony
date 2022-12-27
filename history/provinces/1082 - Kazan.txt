@@ -1,7 +1,7 @@
 #1082 - Kazan
 
-owner = CUM
-controller = CUM
+owner = KAZ
+controller = KAZ
 capital = "Kazan"
 culture = cuman
 religion = tengri_pagan_reformed
@@ -12,7 +12,7 @@ base_production = 6
 base_manpower = 3
 is_city = yes
 fort_15th = yes
-add_core = CUM
+add_core = KAZ
 discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group

@@ -1,7 +1,7 @@
 #2031 - Tarki
 
-owner = ARM
-controller = ARM
+owner = HNS
+controller = HNS
 culture = dagestani
 religion = armenian_rl
 capital = "Tarku"
@@ -11,7 +11,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 3
 is_city = yes
-add_core = ARM
+add_core = HNS
 
 
 

@@ -1,7 +1,7 @@
 #475 - Bashkortostan
 
-owner = CUM
-controller = CUM
+owner = KAK
+controller = KAK
 culture = bashkir
 religion = tengri_pagan_reformed
 capital = "Bashkort"
@@ -11,8 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = CUM
-add_core = BSH
+add_core = KAK
 
 
 

@@ -1,7 +1,7 @@
 #2444 - Bashgird
 
-owner = CUM
-controller = CUM
+owner = KAK
+controller = KAK
 culture = bashkir
 religion = tengri_pagan_reformed
 capital = "Bashgird"
@@ -11,8 +11,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 is_city = yes
-add_core = CUM
-add_core = BSH
+add_core = KAK
 
 
 

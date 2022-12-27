@@ -1,7 +1,7 @@
 #4306 - Lakia
 
-owner = ARM
-controller = ARM
+owner = HNS
+controller = HNS
 culture = dagestani
 religion = armenian_rl
 capital = "Kumukh"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 is_city = yes
-add_core = ARM
+add_core = HNS
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern

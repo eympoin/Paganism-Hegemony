@@ -1,0 +1,7 @@
+government = tribal
+add_government_reform = steppe_horde
+primary_culture = circassian
+religion = tengri_pagan_reformed
+technology_group = nomad_group
+capital = 2201
+

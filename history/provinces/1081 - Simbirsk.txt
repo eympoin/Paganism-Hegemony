@@ -1,7 +1,7 @@
 #1081 - Simbirsk
 
-owner = CUM
-controller = CUM
+owner = KIP
+controller = KIP
 capital = "Bolgar"
 culture = cuman
 religion = tengri_pagan_reformed
@@ -11,9 +11,8 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = CUM
+add_core = KIP
 discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
 discovered_by = ottoman
-
