@@ -3,7 +3,7 @@
 owner = ALN
 controller = ALN
 culture = hunic
-religion = armenian_rl
+religion = tengri_pagan_reformed
 capital = "Mozdok"
 trade_goods = livestock
 hre = no
