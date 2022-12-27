@@ -1467,3 +1467,4 @@
  CANCEL_NAVAL_MISSION_DESC:0 "Cancel the current mission"
  MODIFIER_MONTHLY_PIETY_ACCELERATOR:0 "Monthly Piety Accelerator"
  CANNOT_COLONIZE_CUT_OFF:0 "The closest province ($PROVINCE$) is cut off from our capital."
+ REV_GAIN_CB_MONTHS:0 "§Y$ACTIVE$§W gains a §Y$TYPE$§W Casus Belli on §Y$PASSIVE$§W.\nThis Casus Belli will last for §G$LENGTH$§! months.\n"

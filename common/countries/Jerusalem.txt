@@ -32,19 +32,14 @@ historical_units = {
 }
 
 monarch_names = {
-	"Godfrey #1" = 60
-	"Baldwin #5" = 60
-	"Henry #2" = 40
-	"Amalric #2" = 30
-	"John #2" = 10
-	"Fulk #1" = 10
-	"Conrad #3" = 10
-	"Sibylla #1" = -5
-	"Isabella #2" = -10
-	"Melisende #1" = -5
-	"Maria #1" = -5
-	"Guy #1" = 5
-	"Hugues #1" = 5
+	"Yusef #1" = 60
+	"Ellyas #5" = 60
+	"Jirious #2" = 40
+	"Ibrahim #2" = 30
+	"Khalil #2" = 10
+	"Mikhail #1" = 10
+	"Asma #1" = -5
+	"Maryam #2" = -10
 }
 
 ship_names = {
@@ -68,20 +63,20 @@ ship_names = {
 	"The Scourge"
 }
 
-leader_names = { 
-	Bragadin 
+leader_names = {
+	Bragadin
 	Crispo
-	Doria	
+	Doria
 	Fadrigue
 	Lusignans
-	Melissinos 
+	Melissinos
 	Plethon
 	Rendis
-	Saraceno 
+	Saraceno
 	Tocco
 	Maxwell
 	Duncan Douglas Selkirk
-	Schrüder Sauerzapff Minucci Sulerzycki Stichsenstein Hagedorn Arenberg
-	"de La Barthe" "de La Ferrandie" "de La Galissonière" "de La Mothe" "de La Motte d'Airan" "de La Porte" "Le Tellier" "de Lhéry" "de Luynes"
+	Schrï¿½der Sauerzapff Minucci Sulerzycki Stichsenstein Hagedorn Arenberg
+	"de La Barthe" "de La Ferrandie" "de La Galissoniï¿½re" "de La Mothe" "de La Motte d'Airan" "de La Porte" "Le Tellier" "de Lhï¿½ry" "de Luynes"
 	"di Paesana" "Paleologi Montferrato" Pallavicini Paradisi Petrucci Pico Pignatelli "dalla Rosa" "della Rovere"
 }

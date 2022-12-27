@@ -115,7 +115,7 @@ EMP_crusader_2 = {
 	}
 	EMP_crusader_ark_of_the_covenant = {
 		icon = ark_of_the_covenant
-		required_missions = { EMP_crusader_egypt }
+		required_missions = { }
 		provinces_to_highlight = {
 			province_id = 1227
 			NOT = { controlled_by = ROOT }
@@ -283,6 +283,8 @@ EMP_crusader_3 = {
 				name = koj_greek_assimilation
 				duration = -1
 			}
+			change_primary_culture = jerusalemite
+
 			every_province = {
 				limit = {
 					owned_by = KOJ

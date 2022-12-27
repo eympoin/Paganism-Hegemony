@@ -195,7 +195,7 @@ SLC_ideas = {
 			legitimacy = 1
 	}
 
-	multicultural_empire  = {
+	multicultural_empire_SLC  = {
 		tolerance_heretic = 1
     tolerance_heathen = 1
 	}
@@ -1981,7 +1981,7 @@ assyrian_ideas = {
 	}
 
 	a_professional_army  = {
-		discipline = 0.5
+		discipline = 0.05
 		infantry_power = 0.1
 	}
 
