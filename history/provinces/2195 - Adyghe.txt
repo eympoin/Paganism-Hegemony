@@ -2,8 +2,8 @@
 
 owner = ALN
 controller = ALN
-culture = circassian
-religion = armenian_rl
+culture = alan
+religion = tengri_pagan_reformed
 capital = "Sochi"
 trade_goods = livestock
 hre = no

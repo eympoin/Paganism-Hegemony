@@ -5391,6 +5391,12 @@ iranian	= {
 	elymaite = { #a mix of persian and ancient elamite
 		primary = ELM
 	}
+	alan = {
+		primary = ALN
+	}
+	scythian = {
+		primary = SCY
+	}
 
 	khorasani = {
 		primary = KHO
@@ -5725,6 +5731,9 @@ Karluk = {
 		female_names = {
 			Tem�len B�rte Mandukhai Samar Zaufishan Mulan Aigiarn Borte Chabi Conchaka Doquez-khatum Goland Ho'elun Khultulun Kokachin Mandughai Oghul Qamish Orqina Sorghaghtani Beki Toregene
 		}
+	}
+	karluk_culture = {
+		primary = KAK
 	}
 	avar = {
 		primary = AVR
@@ -11057,6 +11066,12 @@ tartar	= {
 			Acenith Alia Amunet Andali Asanet Asenath Asenet Azenet Badiat Cena Fatima Halima
 		}
 	}
+	hunic = {
+		primary = HNS
+	}
+	khazar = {
+		primary = KHZ
+	}
 	bashkir = {
 		primary = BSH
 		dynasty_names = {
@@ -11705,6 +11720,9 @@ Oghuz = {
 		}
 	}
 	tatar_turk = {
+
+	}
+	oghuz_turk = {
 
 	}
 	caspian = {

@@ -2,7 +2,7 @@
 
 owner = OGH
 controller = OGH
-culture = nogaybak
+culture = oghuz_turk
 religion = tengri_pagan_reformed
 capital = "Bayuly"
 trade_goods = livestock

@@ -2,8 +2,8 @@
 
 owner = HNS
 controller = HNS
-culture = dagestani
-religion = armenian_rl
+culture = hunic
+religion = tengri_pagan_reformed
 capital = "Derbent"
 trade_goods = fish
 hre = no

@@ -1,9 +1,9 @@
 #2198 - Khundzia
 
-owner = AVR
-controller = AVR
-culture = dagestani
-religion = armenian_rl
+owner = HNS
+controller = HNS
+culture = hunic
+religion = tengri_pagan_reformed
 capital = "Khunzah"
 trade_goods = livestock
 hre = no
@@ -11,7 +11,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 3
 is_city = yes
-add_core = AVR
+add_core = HNS
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern

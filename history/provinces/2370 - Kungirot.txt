@@ -2,7 +2,7 @@
 
 owner = TIM
 controller = TIM
-culture = nogaybak
+culture = oghuz_turk
 religion = tengri_pagan_reformed
 capital = "Kungirot"
 trade_goods = livestock

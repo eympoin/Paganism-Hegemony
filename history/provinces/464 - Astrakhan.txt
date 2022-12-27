@@ -2,7 +2,7 @@
 
 owner = KHZ
 controller = KHZ
-culture = astrakhani
+culture = khazar
 religion = tengri_pagan_reformed
 capital = "Hajitarkhan"
 trade_goods = wool

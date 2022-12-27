@@ -2,7 +2,7 @@
 
 owner = KIP
 controller = KIP
-culture = astrakhani
+culture = khazar
 religion = tengri_pagan_reformed
 hre = no
 base_tax = 2

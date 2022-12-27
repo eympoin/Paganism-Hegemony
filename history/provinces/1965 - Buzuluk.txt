@@ -2,7 +2,7 @@
 
 owner = CUM
 controller = CUM
-culture = nogaybak
+culture = cuman
 religion = tengri_pagan_reformed
 capital = "Buzuluk"
 trade_goods = iron

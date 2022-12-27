@@ -2,7 +2,7 @@
 
 owner = ALN
 controller = ALN
-culture = dagestani
+culture = hunic
 religion = armenian_rl
 capital = "Mozdok"
 trade_goods = livestock

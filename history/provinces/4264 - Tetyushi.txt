@@ -2,7 +2,7 @@
 
 owner = KAZ
 controller = KAZ
-culture = cuman
+culture = kazani
 religion = tengri_pagan_reformed
 capital = "Tetyushi"
 trade_goods = grain

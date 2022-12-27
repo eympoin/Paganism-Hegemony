@@ -2,7 +2,7 @@
 
 owner = KAK
 controller = KAK
-culture = bashkir
+culture = karluk_culture
 religion = tengri_pagan_reformed
 capital = "Bashgird"
 trade_goods = gold

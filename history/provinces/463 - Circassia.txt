@@ -2,8 +2,8 @@
 
 owner = ALN
 controller = ALN
-culture = circassian
-religion = armenian_rl
+culture = alan
+religion = tengri_pagan_reformed
 capital = "Adyche"
 trade_goods = livestock
 hre = no
@@ -17,4 +17,3 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
-

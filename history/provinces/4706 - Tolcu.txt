@@ -1,6 +1,6 @@
 owner = SCY
 controller = SCY
-culture = bulgar_nomadic
+culture = scythian
 religion = tengri_pagan_reformed
 capital = "Tolcu"
 trade_goods = wool

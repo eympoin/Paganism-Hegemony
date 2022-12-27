@@ -2,7 +2,7 @@
 
 owner = GOL
 controller = GOL
-culture = astrakhani
+culture = khazar
 religion = tengri_pagan_reformed
 capital = "Cherny Yar"
 trade_goods = livestock

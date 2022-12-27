@@ -3,7 +3,7 @@
 owner = KAK
 controller = KAK
 capital = "Chelyaba"
-culture = bashkir
+culture = karluk_culture
 religion = tengri_pagan_reformed
 trade_goods = fur
 hre = no
