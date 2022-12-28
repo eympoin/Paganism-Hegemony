@@ -1,0 +1,779 @@
+Alania_central_path_1_ALN{
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = ALN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	Alania_return = {
+		icon = mission_build_up_to_force_limit
+		required_missions = {  } #None
+		position = 1
+		provinces_to_highlight = {
+      OR = {
+				province_id = 2201
+				province_id = 2197
+				province_id = 463
+				province_id = 2195
+			}
+			NOT = {owned_by = ROOT}
+    }
+		trigger = {
+
+			is_at_war = no
+			circassia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			owns = 2201
+			owns = 2197
+			owns = 463
+			owns = 2195
+		}
+		effect = {
+			rename_capital = "Magas"
+      adm_power_cost = 100
+      dip_power_cost = 100
+			add_mil_power = 100
+			2197 = {change_trade_goods = iron}
+      2197 = {change_trade_goods = copper}
+      #intégrer event choix
+			}
+		}
+	Lord_of_caucasus = {
+		icon = mission_alliances
+		required_missions = { Alania_return } #None
+		position = 2
+		trigger = {
+			#a décidé de rester
+		}
+		effect = {
+			1483 = {
+				add_base_tax = 2
+				add_base_production = 3
+				add_base_manpower = 1
+			}
+			capital_scope = {
+			    cossack_cavalry = ALN
+					cossack_cavalry = ALN
+					cossack_cavalry = ALN
+			}
+    astrakhan_area = {
+                  limit = {
+                      NOT = { is_core = ROOT }
+                      NOT = { is_permanent_claim = ROOT }
+                  }
+                  add_permanent_claim = ROOT
+              }
+			}
+		}
+	Scythes_legacy = {
+		icon = mission_conquer_50_development
+		required_missions = { lord_of_caucasus } #None
+		provinces_to_highlight = {
+      OR = {
+				area = astrakhan_area
+			}
+			NOT = {owned_by = ROOT}
+    }
+		trigger = {
+			astrakhan_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+    2201 = {add_building = fort_15th}
+    2195 = {add_building = fort_15th}
+    2197 = {add_center_of_trade_level = 1}
+    dagestan_area = {
+                  limit = {
+                      NOT = { is_core = ROOT }
+                      NOT = { is_permanent_claim = ROOT }
+                  }
+                  add_permanent_claim = ROOT
+              }
+   lower_don_area = {
+                  limit = {
+                      NOT = { is_core = ROOT }
+                      NOT = { is_permanent_claim = ROOT }
+                  }
+                  add_permanent_claim = ROOT
+              }
+    lower_yik_area = {
+                  limit = {
+                      NOT = { is_core = ROOT }
+                      NOT = { is_permanent_claim = ROOT }
+                  }
+                  add_permanent_claim = ROOT
+              }
+		nogai_area = {
+								limit = {
+												NOT = { is_core = ROOT }
+					              NOT = { is_permanent_claim = ROOT }
+					              }
+					      add_permanent_claim = ROOT
+		}
+		kazakhstan_area = {
+							limit = {
+										   NOT = { is_core = ROOT }
+										   NOT = { is_permanent_claim = ROOT }
+							}
+							add_permanent_claim = ROOT
+				}
+	}
+}
+#La c'est 2 path différents mais dans le même arbre
+
+	Emperor_spirituals_son{
+		icon = a_place_among_the_great_powers
+		required_missions = { Scythes_legacy }
+		position = 4
+		trigger = {
+			dagestan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			lower_don_area = {
+				type = all
+				owned_by = ROOT
+			}
+			lower_yik_area = {
+				type = all
+				owned_by = ROOT
+			}
+			alliance_with = BYZ #Event
+		}
+		effect{
+			add_adm_power	= 100
+			add_dip_power	= 100
+			add_mil_power	= 100
+				add_country_modifier = {
+					name = "emperors_grace"
+					duration = -1
+				}
+				#Modifier list +1 prestige
+				colchis_area = {
+											limit = {
+													NOT = { is_core = ROOT }
+													NOT = { is_permanent_claim = ROOT }
+											}
+											add_permanent_claim = ROOT
+									}
+			 kartli-kakheti_area = {
+											limit = {
+													NOT = { is_core = ROOT }
+													NOT = { is_permanent_claim = ROOT }
+											}
+											add_permanent_claim = ROOT
+									}
+				shirvan_area = {
+											limit = {
+													NOT = { is_core = ROOT }
+													NOT = { is_permanent_claim = ROOT }
+											}
+											add_permanent_claim = ROOT
+										armenia_area = {
+									                  limit = {
+									                      NOT = { is_core = ROOT }
+									                      NOT = { is_permanent_claim = ROOT }
+									                  }
+									                  add_permanent_claim = ROOT
+									              }
+									   tabriz_area = {
+									                  limit = {
+									                      NOT = { is_core = ROOT }
+									                      NOT = { is_permanent_claim = ROOT }
+									                  }
+									                  add_permanent_claim = ROOT
+									              }
+									    samtskhe_area = {
+									                  limit = {
+									                      NOT = { is_core = ROOT }
+									                      NOT = { is_permanent_claim = ROOT }
+									                  }
+									                  add_permanent_claim = ROOT
+									             }
+			}
+			#Ajouter event rejoindre l'Empire ou non
+		}
+	}
+	There_is_only_one_empire{
+		icon = a_place_among_the_great_powers
+		required_missions = {Emperor_spirituals_son}
+		position = 3
+		trigger = {
+				NOT = {hre_size = 0}
+			}
+		effect{
+			add_adm_power	= 300
+			add_dip_power	= 300
+			add_mil_power	= 300
+			add_country_modifier = {
+				name = "the_slayer"
+				duration = -1
+				#Modifier list +1 prestige
+				#land_morale = 0.15 #a modifier (ajout de 5% de discipline pdt x années)
+			}
+		}
+	}
+	}
+
+
+	Alania_Emperor_fate_ALN{
+		slot = 2
+		generic = no
+		ai = yes
+		potential = {
+			tag = ALN
+			NOT = { map_setup = map_setup_random }
+		}
+		has_country_shield = yes
+
+	There_is_only_one_Emperor = {
+		icon = a_real_roman_empire
+		required_missions = {Emperor_spirituals_son}
+		position = 3
+		provinces_to_highlight = {
+		}
+
+		trigger = {
+			is_emperor = yes
+		}
+		effect = {
+			add_adm_power	= 300
+			add_dip_power	= 300
+			add_mil_power	= 300
+			add_country_modifier = {
+				name = "the_great"
+				duration = -1
+				#Modifier list +1 prestige
+			#land_morale = 0.15 #a modifier (ajout de 15% de prestige pdt x années)
+			}
+		}
+	}
+	}
+
+	Zoroastrians_slayer_ALN{
+		slot = 3
+		generic = no
+		ai = yes
+		potential = {
+			tag = ALN
+			NOT = { map_setup = map_setup_random }
+		}
+		has_country_shield = yes
+
+	Zoroastrians_slayer = {
+		icon = a_real_roman_empire
+		required_missions = {Emperor_spirituals_son}
+		position = 4
+		provinces_to_highlight = {
+		}
+
+		trigger = {
+			ARM = {exists = no}
+		}
+		effect = {
+		azerbaijan_area = {
+									limit = {
+											NOT = { is_core = ROOT }
+											NOT = { is_permanent_claim = ROOT }
+									}
+									add_permanent_claim = ROOT
+							}
+	  iraq-e-ajam_area = {
+									limit = {
+											NOT = { is_core = ROOT }
+											NOT = { is_permanent_claim = ROOT }
+									}
+									add_permanent_claim = ROOT
+							}
+		tabarestan = {
+									limit = {
+											NOT = { is_core = ROOT }
+											NOT = { is_permanent_claim = ROOT }
+									}
+									add_permanent_claim = ROOT
+		}
+		mashhad_area = {
+									limit = {
+											NOT = { is_core = ROOT }
+											NOT = { is_permanent_claim = ROOT }
+									}
+																add_permanent_claim = ROOT
+														}
+								 isfahan_area = {
+																limit = {
+																		NOT = { is_core = ROOT }
+																		NOT = { is_permanent_claim = ROOT }
+																}
+																add_permanent_claim = ROOT
+														}
+									birjand_area = {
+																limit = {
+																		NOT = { is_core = ROOT }
+																		NOT = { is_permanent_claim = ROOT }
+																}
+																add_permanent_claim = ROOT
+											}
+      add_stability = 1
+		}
+	}
+	}
+	tengrist_path_ALN{
+		slot = 5
+		generic = no
+		ai = yes
+		potential = {
+			tag = ALN
+			NOT = { map_setup = map_setup_random }
+		}
+		has_country_shield = yes
+
+	A_new_way = {
+		icon = a_roman_empire
+		required_missions = {Scythes_legacy}
+
+		provinces_to_highlight = {
+		 province_id = 151
+		}
+		trigger = {
+		alliance_with = TUR #Event déjà signalé plus tôt choix entre Byz et TUR
+			}
+		effect = {
+		change_religion = tengri_pagan_reformed
+	azerbaijan_area = {
+								limit = {
+										NOT = { is_core = ROOT }
+										NOT = { is_permanent_claim = ROOT }
+								}
+								add_permanent_claim = ROOT
+						}
+	iraq-e-ajam_area = {
+								limit = {
+										NOT = { is_core = ROOT }
+										NOT = { is_permanent_claim = ROOT }
+								}
+								add_permanent_claim = ROOT
+						}
+	tabarestan = {
+								limit = {
+										NOT = { is_core = ROOT }
+										NOT = { is_permanent_claim = ROOT }
+								}
+								add_permanent_claim = ROOT
+	}
+	mashhad_area = {
+								limit = {
+										NOT = { is_core = ROOT }
+										NOT = { is_permanent_claim = ROOT }
+								}
+															add_permanent_claim = ROOT
+													}
+							 isfahan_area = {
+															limit = {
+																	NOT = { is_core = ROOT }
+																	NOT = { is_permanent_claim = ROOT }
+															}
+															add_permanent_claim = ROOT
+													}
+								birjand_area = {
+															limit = {
+																	NOT = { is_core = ROOT }
+																	NOT = { is_permanent_claim = ROOT }
+															}
+															add_permanent_claim = ROOT
+										}
+			#global_missionary_strenght = 0.04
+				}
+}
+	embrace_turk_culture{
+		icon = mission_control_the_barbary_coast
+		required_missions = { A_new_way } #None
+		position = 5
+		trigger = {
+		#A genre 10 province converti au tengrisme
+			}
+		effect{
+			add_adm_power = 200
+			add_stability = 1
+			change_primary_culture = turkish
+			#changer province
+			azov_area = {
+										limit = {
+												NOT = { is_core = ROOT }
+												NOT = { is_permanent_claim = ROOT }
+										}
+										add_permanent_claim = ROOT
+								}
+			zaporizhia_area = {
+										limit = {
+												NOT = { is_core = ROOT }
+												NOT = { is_permanent_claim = ROOT }
+										}
+										add_permanent_claim = ROOT
+								}
+			yedisan = {
+										limit = {
+												NOT = { is_core = ROOT }
+												NOT = { is_permanent_claim = ROOT }
+										}
+										add_permanent_claim = ROOT
+			sloboda_area = {
+										limit = {
+												NOT = { is_core = ROOT }
+												NOT = { is_permanent_claim = ROOT }
+										}
+																	add_permanent_claim = ROOT
+															}
+									 east_dniepr_area = {
+																	limit = {
+																			NOT = { is_core = ROOT }
+																			NOT = { is_permanent_claim = ROOT }
+																	}
+																	add_permanent_claim = ROOT
+															}
+										crimea_area = {
+																	limit = {
+																			NOT = { is_core = ROOT }
+																			NOT = { is_permanent_claim = ROOT }
+																	}
+																	add_permanent_claim = ROOT
+												}
+		}
+	}
+	}
+	only_one_khan{
+		icon = africa_proconsulare
+		required_missions = { embrace_turk_culture} #None
+		position = 6
+		trigger = {
+			TUR = {exists = no}
+			}
+		effect{
+			add_dip_power = 100
+			add_mil_power = 100
+			add_dip_power = 100
+			add_country_modifier = {
+				name = "new khan" #En gros ajouter un bonusde prestige et de moral
+				duration = 3650
+			 thrace_area = {
+											limit = {
+													NOT = { is_core = ROOT }
+													NOT = { is_permanent_claim = ROOT }
+											}
+											add_permanent_claim = ROOT
+									}
+			}
+		}
+	}
+take_the_mighty_city{
+	icon = africa_proconsulare
+	required_missions = { only_one_khan } #None
+	position = 7
+	trigger = {
+		151 = { owned_by = ROOT } #bon ?
+		}
+	effect{
+		add_dip_power = 200
+		add_mil_power = 200
+		add_dip_power = 200
+		add_stability = 1
+		}
+	}
+}
+
+
+
+to_the_east = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = ALN
+		NOT = { map_setup = map_setup_random }
+	}
+	follow_ours_brother{
+		icon = mission_break_sicily
+		required_missions = { Alania_return } #None
+		position = 5
+		trigger = {
+			nogai_area = {
+				type = all
+				owned_by = ROOT
+			}
+			kazakhstan_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect{
+			sogdia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			central_asia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	blood_flows{
+		icon = king_of_naples
+		required_missions = { to_the_east } #None
+		position = 6
+		trigger = {
+			TIM = {exists = no}
+			}
+		effect{
+		add_dip_power = 200
+		441 = {add_center_of_trade_level = 2}
+		454 = {add_center_of_trade_level = 3}
+		add_trade_modifier = {
+    who = ROOT
+    duration = 5475
+    power = 15
+    key = STRONG_MERCHANTS
+			}
+		}
+	}
+}
+
+military_tre_ALN{
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = ALN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	cavalry_revivale{
+		icon = mission_break_sicily
+		required_missions = #None
+		position = 2
+		trigger = {
+			cavalry_fraction = 0.5
+			}
+		effect{
+			calvary_cost = 0.25
+			mouvement_speed = 0.10
+			}
+		}
+	choc_cavalery{
+		icon = king_of_naples
+		required_missions = { cavalry_revivale } #None
+		position = 3
+		trigger = {
+		trade_goods_produced_amount = {
+				trade_goods = iron
+				amount = 4
+			}
+			}
+		effect{
+	cavalry_shock = 1
+	mouvement_speed = 0.10
+			}
+		}
+		The_horse_to_the_death{
+			icon = mission_break_sicily
+				required_missions = { choc_cavalery } #None
+			position = 4
+			trigger = {
+				year_is = 1530
+				has_cavalry = 10
+				#Modifier code parce c'est inventé et ajouter condition que une seule des deux dernières mission est possible
+				}
+			effect{
+				#calvary_cost = 0.25
+				#mouvement_speed = 0.10
+				#cavalry_power = 0.20
+				#army_tradition = 1
+				}
+			}
+		Fire_adaptation{
+			icon = mission_break_sicily
+				required_missions = { choc_cavalery } #None
+			position = 5
+			trigger = {
+				year_is = 1530
+				#has_cavalry = 10
+				#Modifier code parce c'est inventé et ajouter condition que une seule des deux dernières mission est possible
+				}
+			effect{
+				#artillery_cost = 0.10
+				#mouvement_speed = 0.5
+			  #artillery_fire = 1
+				#army_tradition = 1
+				}
+			}
+		}
+
+
+		economic_tre_ALN{
+			slot = 2
+			generic = no
+			ai = yes
+			potential = {
+				tag = ALN
+				NOT = { map_setup = map_setup_random }
+			}
+			has_country_shield = yes
+			sedentarization{
+				icon = mission_break_sicily
+					required_missions = { choc_cavalery } #None
+				position = 1
+				trigger = {
+					owned_region = 3
+					}
+				effect{
+					add_years_of_income = 0.5
+					build_cost = -0.1
+					development_cost = -0.2
+					state_maintenance_modifier = -0.25
+					#Ajouter du dev
+					}
+				}
+			Iron_trade{
+				icon = mission_break_sicily
+					required_missions = { choc_cavalery } #None
+				position = 2
+				trigger = {
+					year_is = 1500
+					trade_goods_produced_amount = {
+				trade_goods = iron
+				amount = 4
+					}
+				}
+				effect{
+				#Ajouter bonus de prod sur ces mines
+					}
+				}
+				Trade_master{
+					icon = mission_break_sicily
+						required_missions = { choc_cavalery } #None
+					position = 3
+					trigger = {
+						year_is = 1550
+					global_trade = 50
+						}
+					effect{
+					add_trade_modifier = {
+					    who = ROOT
+					    duration = 8475
+					    power = 20
+					    key = STRONG_MERCHANTS
+							#global_tax_modifier = -0.10
+						}
+					}
+					}
+					Early_industrialization{
+						icon = mission_break_sicily
+							required_missions = { choc_cavalery } #None
+						position = 4
+						trigger = {
+							year_is = 1650
+							manufactories = 50 #à vérifier
+							}
+						effect{
+						#remplace les vaches aux provinces : 2416, 2208, 468; 288, 1971 et 467 par autres choses de plus sexy
+							}
+						}
+			}
+
+
+			politics_tre_ALN{
+				slot = 5
+				generic = no
+				ai = yes
+				potential = {
+					tag = ALN
+					NOT = { map_setup = map_setup_random }
+				}
+				has_country_shield = yes
+				Unification_of_the_tribes{
+					icon = mission_break_sicily
+					position = 1
+					trigger = {
+					#autonomies inférieur à
+						}
+					effect{
+					add_army_tradition = 15
+					add_yearly_manpower = 0.5
+					create_general = { tradition = 75 }
+					#	manpower_recovery_speed = 0.15
+						}
+					}
+					Divin_right_or_tribal_federation{
+						icon = mission_break_sicily
+							required_missions = { Unification_of_the_tribes } #None
+						position = 2
+						trigger = {
+						year_is = 1550
+						#taille du pays supérieur à
+							}
+						effect{
+						#offre le choix entre deux gouvernement,
+							}
+						}
+						Divin_right_monarchy{
+							icon = mission_break_sicily
+								required_missions = { Divin_right_or_tribal_federation } #None
+							position = 3
+							trigger = {
+								#a débloquer l'absolutisme
+								}
+							effect{
+							#Bonus pour avoir un héritier
+							yearly_absolutism = 0.1
+							#Malus d'unrest
+								}
+							}
+							God_on_horse{
+								icon = mission_break_sicily
+									required_missions = { Divin_right_monarchy } #None
+								position = 4
+								trigger = {
+								year_is = 1700
+							  army_size_percentage = 0.9
+								}
+								effect{
+							 change_mil = 1
+							 governing_capacity = 250
+									}
+								}
+
+								#l'un ou l'autre
+								Tribal_federalism{
+									icon = mission_break_sicily
+										required_missions = { Divin_right_or_tribal_federation } #None
+									position = 3
+									trigger = {
+								#A choisis la république
+
+										}
+									effect{
+									#révolte du souverain, deviens republique mais laqeulle ?
+									#republican_tradition = 0.5
+										}
+									}
+									the_pen_stronger_than_the_spear{
+										icon = mission_break_sicily
+											required_missions = { Tribal_federalism } #None
+										position = 4
+										trigger = {
+										year_is = 1700
+									  army_size_percentage = 0.9
+											}
+										effect{
+										#change_dip = 1
+										#governing_capacity = 250
+		}

@@ -1,7 +1,7 @@
 #2421 - Ar-Chally
 
-owner = CUM
-controller = CUM
+owner = KIP
+controller = KIP
 culture = bulgar_volga
 religion = tengri_pagan_reformed
 hre = no
@@ -11,7 +11,7 @@ trade_goods = grain
 base_manpower = 2
 capital = "Ar-Chally"
 is_city = yes
-add_core = CUM
+add_core = KIP
 
 
 
