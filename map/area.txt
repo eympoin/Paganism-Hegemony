@@ -3839,14 +3839,6 @@ east_altishahr_area = {
 
 }
 
-amnok_area = {
-
-}
-
-north_korea_area = {
-
-}
-
 hejaz_area = {
 
 }
@@ -3856,10 +3848,6 @@ sarat_area = {
 }
 
 ad_dahna_area = {
-}
-
-najd_area = {
-
 }
 
 northern_england_area = {
@@ -3899,7 +3887,6 @@ gujarat_area = { }
 central_doab_area = {
 }
 
-nepalese_area = { }
 
 pomerelia_area = { }
 
