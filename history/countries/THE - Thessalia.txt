@@ -1,10 +1,10 @@
 government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
-primary_culture = greek
+primary_culture = macedonian
 religion = theoi
 technology_group = western
-capital = 147	
+capital = 147
 fixed_capital = 147 # Cannot move capital away from this province & no power cost to move to it
 
 1442.1.1 = {

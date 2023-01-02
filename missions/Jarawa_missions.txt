@@ -28,13 +28,23 @@ Road_south = {
       }
       2466 = {
           OR = {
-            province_has_center_of_trade_of_level = 2
+            if = {
+              limit = {
+                has_dlc = "Dharma"
+              }
+              province_has_center_of_trade_of_level = 2
+            }
             has_building = marketplace
           }
       }
       2450 = {
           OR = {
-            province_has_center_of_trade_of_level = 2
+            if = {
+              limit = {
+                has_dlc = "Dharma"
+              }
+              province_has_center_of_trade_of_level = 2
+            }
             has_building = marketplace
         }
       }

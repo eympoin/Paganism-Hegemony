@@ -660,9 +660,20 @@ Londinium_4 = {
 			trigger = {
 				treasury = 200
 				239 = {
-					has_building = shipyard
-					has_building = marketplace
-					has_building = workshop
+					OR = {
+						has_building = marketplace
+						has_building = trade_depot
+						has_building = stock_exchange
+					}
+					fort_level = 1
+					OR = {
+						has_building = workshop
+						has_building = counting_house
+					}
+					OR = {
+						has_building = shipyard
+						has_building = grand_shipyard
+					}
 					development = 15
 				}
 			}
@@ -746,12 +757,30 @@ Londinium_5 = {
 			position = 1
 			trigger = {
 				236 = {
-					has_building = temple
-					has_building = marketplace
-					has_building = fort_15th
-					has_building = workshop
-					has_building = dock
-					province_has_center_of_trade_of_level = 2
+					OR = {
+						has_building = temple
+						has_building = cathedral
+					}
+					OR = {
+						has_building = marketplace
+						has_building = trade_depot
+						has_building = stock_exchange
+					}
+					fort_level = 2
+					OR = {
+						has_building = workshop
+						has_building = counting_house
+					}
+					OR = {
+						has_building = shipyard
+						has_building = grand_shipyard
+					}
+					if = {
+						limit = {
+							has_dlc = "Dharma"
+						}
+						province_has_center_of_trade_of_level = 2
+					}
 				}
 			}
 			effect = {
@@ -778,10 +807,20 @@ Londinium_5 = {
 			trigger = {
 				treasury = 200
 				234 = {
-					has_building = temple
-					has_building = marketplace
-					has_building = fort_15th
-					has_building = workshop
+					OR = {
+						has_building = temple
+						has_building = cathedral
+					}
+					OR = {
+						has_building = marketplace
+						has_building = trade_depot
+						has_building = stock_exchange
+					}
+					fort_level = 2
+					OR = {
+						has_building = workshop
+						has_building = counting_house
+					}
 					development = 15
 				}
 			}
@@ -813,11 +852,24 @@ Londinium_5 = {
 			trigger = {
 				treasury = 200
 				243 = {
-					has_building = temple
-					has_building = marketplace
-					has_building = fort_15th
-					has_building = workshop
-					has_building = shipyard
+					OR = {
+						has_building = temple
+						has_building = cathedral
+					}
+					OR = {
+						has_building = marketplace
+						has_building = trade_depot
+						has_building = stock_exchange
+					}
+					fort_level = 2
+					OR = {
+						has_building = workshop
+						has_building = counting_house
+					}
+					OR = {
+						has_building = shipyard
+						has_building = grand_shipyard
+					}
 					development = 20
 				}
 			}
@@ -850,11 +902,25 @@ Londinium_5 = {
 			trigger = {
 				treasury = 200
 				245 = {
-					has_building = marketplace
+				OR = {
 					has_building = temple
+					has_building = cathedral
+				}
+				OR = {
+					has_building = marketplace
+					has_building = trade_depot
+					has_building = stock_exchange
+				}
+				fort_level = 2
+				OR = {
 					has_building = workshop
-					has_building = fort_15th
+					has_building = counting_house
+				}
+				OR = {
 					has_building = barracks
+					has_building = training_fields
+				}
+				development = 15
 				}
 			}
 			effect = {

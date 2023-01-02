@@ -32,7 +32,7 @@
  PAPAL_BULL_EXPLANATION:1 "Golden Bulls are bonuses that the Papal Controller can enact using the Curia Coffers that benefits all Catholic Countries! They last until the current Pope dies."
  JUSTIFY_TRADE_BASE:0 "The Cost for Justify Trade Conflict is based upon:\nBase Cost: $VAL|Y0$\n"
  FABRICATE_CLAIM_BASE:1 "§!The Cost for Fabricate Claim is based upon:\nBase Cost: $VAL|Y0$\n"
- FABRICATE_CLAIM_INSIDE_HRE:1 "Inside HRE: $VAL|-=1%$\n"
+ FABRICATE_CLAIM_INSIDE_HRE:1 "Inside ERE: $VAL|-=1%$\n"
  FABRICATE_ALREADY_CLAIMS:1 "Already $CLAIM|Y$ Claims: $VAL|-=1%$\n"
  FABRICATE_CLAIM_CAPPED:0 "\nCapped At $VAL|Y$ cost!"
  SPECIAL_FORCE_LIMIT:0 "We can only have $VAL|Y$ $NAME$ due to:\n$WHY$"

@@ -469,7 +469,7 @@ demand_carthaginian_vassal = {
 			name = BASE
 			export_to_variable = {
 				variable_name = ai_value
-				value = 10
+				value = -10
 			}
 		}
 		add_entry = {

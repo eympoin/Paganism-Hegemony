@@ -1,8 +1,8 @@
 #320 - Rhodes
 
 owner = RHO		# Knights of St. John Hospitaler of Jerusalem
-controller = RHO		
-culture = greek
+controller = RHO
+culture = egean
 religion = theoi
 capital = "Rhodes"
 trade_goods = wine
@@ -12,7 +12,7 @@ base_production = 5
 base_manpower = 5
 is_city = yes
 fort_15th = yes
-add_core = RHO		
+add_core = RHO
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

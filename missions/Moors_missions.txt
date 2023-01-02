@@ -220,7 +220,12 @@ Moors_1_1 = {
       2466 = {
           owned_by = ROOT
           OR = {
-            province_has_center_of_trade_of_level = 2
+            if = {
+              limit = {
+                has_dlc = "Dharma"
+              }
+              province_has_center_of_trade_of_level = 2
+            }
             has_building = marketplace
           }
       }

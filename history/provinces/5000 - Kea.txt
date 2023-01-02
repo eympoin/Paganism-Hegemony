@@ -2,7 +2,7 @@
 
 owner = NAX
 controller = NAX
-culture = greek
+culture = egean
 religion = theoi
 capital = "Kea"
 trade_goods = fish
@@ -19,4 +19,3 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
-

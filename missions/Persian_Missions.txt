@@ -672,11 +672,12 @@ per_aftermath_cw_mright = {
 			owns_all_provinces = {
 				area = ferghana_area
 			}
-			441 = { province_has_center_of_trade_of_level = 2 }
-			454 = { province_has_center_of_trade_of_level = 2 }
-			739 = { province_has_center_of_trade_of_level = 2 }
-			2124 = { province_has_center_of_trade_of_level = 2 }
-			445 = { province_has_center_of_trade_of_level = 2 }
+
+			441 = { if = {limit = {has_dlc = "Dharma"} province_has_center_of_trade_of_level = 2 } }
+			454 = { if = {limit = {has_dlc = "Dharma"} province_has_center_of_trade_of_level = 2 } }
+			739 = { if = {limit = {has_dlc = "Dharma"} province_has_center_of_trade_of_level = 2 } }
+			2124 = { if = {limit = {has_dlc = "Dharma"} province_has_center_of_trade_of_level = 2 }}
+			445 = { if = {limit = {has_dlc = "Dharma"} province_has_center_of_trade_of_level = 2 } }
 			739 = { fort_level = 2 }
 			460 = { fort_level = 2 }
 			443 = { fort_level = 2 }
