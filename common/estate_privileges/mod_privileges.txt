@@ -1,0 +1,471 @@
+
+estate_nobles_indebted_privilege_spqr = {
+	icon = privilege_give_money
+	max_absolutism = -20
+	influence = 0.1
+	is_valid = {
+		tag = SPQ
+	}						#Conditions for whether it is possible for the country to have this privilege (it will not display on the list if they are false, and will be revoked if it has already been granted)
+	can_select = {
+	} 					#Conditions for whether the country is allowed to select the privilege (with conditions for why not displayed)
+	on_granted = {} 					#Effects executed immediately upon the privilege being taken
+	can_revoke = {
+		NOT = {
+			estate_territory = {
+				estate = estate_nobles
+				territory = 15
+			}
+		}
+	} 					#Conditions for whether the country can revoke the privilege
+	on_revoked = {
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+	} 					#Effects executed upon the privilege being revoked by the country
+	on_invalid = {} 					#Effects executed upon the privilege being removed due to invalidity (is_valid becomes false or the estate is removed)
+	penalties = {
+		land_forcelimit_modifier = -0.2
+	}
+	conditional_modifier = {}
+	modifier_by_land_ownership = {} 	#Multiplies the modifier by the % of land owned by the estate.
+	mechanics = {} 					#Special mechanics the privilege enables
+	cooldown_years = 20 						#Time limit before which the privilege cannot be revoked
+	on_cooldown_expires = {}			#Effect executed once the specified cooldown_years timer has run down
+  ai_will_do = { factor = 1 }
+}
+
+
+
+estate_nobles_berber_chief = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+			tag = TLC
+	 	}						#Conditions for whether it is possible for the country to have this privilege (it will not display on the list if they are false, and will be revoked if it has already been granted)
+	can_select = {
+			mission_completed = invade_moors
+			any_owned_province = {
+				has_terrain = desert
+			}
+	 	}
+	benefits = {
+		global_manpower_modifier = 0.1
+	}
+	on_granted = {
+		add_yearly_manpower = 4
+		custom_tooltip = chief_autonomy_tooltip
+
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_terrain = desert
+					culture_group = maghrebi
+				}
+				add_province_modifier = {
+					name = chiefs_autonomy
+					duration = -1
+				}
+			}
+		}
+	}
+	can_revoke = {  } 					#Conditions for whether the country can revoke the privilege
+	on_revoked = {
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -20
+		}
+		custom_tooltip = chief_no_more_autonomy_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = chiefs_autonomy
+				}
+				remove_province_modifier = chiefs_autonomy
+			}
+		}
+	}
+	on_invalid = {
+		custom_tooltip = chief_no_more_autonomy_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = chiefs_autonomy
+				}
+				remove_province_modifier = chiefs_autonomy
+			}
+		}
+	}
+	penalties = {  } 					#Negative modifiers granted while the privilege is active (creates different tooltip to benefits)
+	conditional_modifier = {}
+	modifier_by_land_ownership = {  } 	#Multiplies the modifier by the % of land owned by the estate.
+	mechanics = {  } 					#Special mechanics the privilege enables
+	cooldown_years = 20 						#Time limit before which the privilege cannot be revoked
+	on_cooldown_expires = { }			#Effect executed once the specified cooldown_years timer has run down
+	ai_will_do = { factor = 0 }
+}
+
+
+estate_burghers_sponsor_roman_merchants = {
+	icon = privilege_grant_new_world_charter
+	land_share = 5
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+			tag = TLC
+	 	}						#Conditions for whether it is possible for the country to have this privilege (it will not display on the list if they are false, and will be revoked if it has already been granted)
+	can_select = {
+			mission_completed = integrate_romans
+			any_owned_province = {
+				culture_group = neo_roman
+			}
+	 	}
+	benefits = {
+		global_trade_power = 0.2
+	}
+	on_granted = {
+		add_mercantilism = 2
+	}
+	can_revoke = {  } 					#Conditions for whether the country can revoke the privilege
+	on_revoked = {
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -20
+		}
+	}
+	on_invalid = {
+	}
+	penalties = {  } 					#Negative modifiers granted while the privilege is active (creates different tooltip to benefits)
+	conditional_modifier = {}
+	modifier_by_land_ownership = {  } 	#Multiplies the modifier by the % of land owned by the estate.
+	mechanics = {  } 					#Special mechanics the privilege enables
+	cooldown_years = 20 						#Time limit before which the privilege cannot be revoked
+	on_cooldown_expires = { }			#Effect executed once the specified cooldown_years timer has run down
+	ai_will_do = { factor = 0 }
+}
+
+estate_urigallu_cult_of_marduk = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = {
+			tag = BAB
+	 	}						#Conditions for whether it is possible for the country to have this privilege (it will not display on the list if they are false, and will be revoked if it has already been granted)
+	can_select = {
+			mission_completed = cult_of_marduk
+
+	 	}
+	benefits = {
+		global_missionary_strength = 0.01
+		missionary_maintenance_cost = -0.2
+		tolerance_own = 1
+		tolerance_heretic = -1
+		tolerance_heathen = -1
+	}
+	on_granted = {
+
+	}
+	can_revoke = {  } 					#Conditions for whether the country can revoke the privilege
+	on_revoked = {
+		add_estate_loyalty = {
+			estate = estate_urigallu
+			loyalty = -20
+		}
+	}
+	on_invalid = {
+	}
+	penalties = {  } 					#Negative modifiers granted while the privilege is active (creates different tooltip to benefits)
+	conditional_modifier = {}
+	modifier_by_land_ownership = {  } 	#Multiplies the modifier by the % of land owned by the estate.
+	mechanics = {  } 					#Special mechanics the privilege enables
+	cooldown_years = 20 						#Time limit before which the privilege cannot be revoked
+	on_cooldown_expires = { }			#Effect executed once the specified cooldown_years timer has run down
+	ai_will_do = { factor = 0 }
+}
+
+
+estate_urigallu_syncretism = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	loyalty = -0.1
+	influence = -0.05
+	is_valid = {
+			tag = BAB
+	 	}						#Conditions for whether it is possible for the country to have this privilege (it will not display on the list if they are false, and will be revoked if it has already been granted)
+	can_select = {
+	 	}
+	benefits = {
+		tolerance_heathen = 2
+		tolerance_heretic = 2
+		global_unrest = -1
+	}
+	on_granted = {
+
+	}
+	can_revoke = {  } 					#Conditions for whether the country can revoke the privilege
+	on_revoked = {
+		add_estate_loyalty = {
+			estate = estate_urigallu
+			loyalty = -20
+		}
+	}
+	on_invalid = {
+	}
+	penalties = {  } 					#Negative modifiers granted while the privilege is active (creates different tooltip to benefits)
+	conditional_modifier = {}
+	modifier_by_land_ownership = {  } 	#Multiplies the modifier by the % of land owned by the estate.
+	mechanics = {  } 					#Special mechanics the privilege enables
+	cooldown_years = 20 						#Time limit before which the privilege cannot be revoked
+	on_cooldown_expires = { }			#Effect executed once the specified cooldown_years timer has run down
+	ai_will_do = { factor = 0 }
+}
+
+estate_nobles_royal_guards = {
+	icon = privilege_make_generous_donation
+	max_absolutism = -10
+	is_valid = {
+		tag = BAB
+		NOT = {has_country_flag = priest_victorious_bab}
+		mission_completed = syncretism
+	}
+	influence = 0.1
+	loyalty = 0.05
+	benefits = {
+		infantry_power = 0.10
+		legitimacy = 0.5
+	}
+	penalties = {
+	}
+	cooldown_years = 50
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+estate_urigallu_light_of_marduk = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -10
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+			tag = BAB
+			has_country_flag = priest_victorious_bab
+			mission_completed = syncretism
+	 	}
+	can_select = {
+	 	}
+	benefits = {
+		idea_cost = -0.1
+		free_adm_policy = 1
+		institution_spread_from_true_faith = 0.2
+		global_tax_modifier = -0.2
+	}
+	on_granted = {
+
+	}
+	can_revoke = {  } 					#Conditions for whether the country can revoke the privilege
+	on_revoked = {
+		add_estate_loyalty = {
+			estate = estate_urigallu
+			loyalty = -20
+		}
+	}
+	on_invalid = {
+	}
+	penalties = {  } 					#Negative modifiers granted while the privilege is active (creates different tooltip to benefits)
+	conditional_modifier = {}
+	modifier_by_land_ownership = {  } 	#Multiplies the modifier by the % of land owned by the estate.
+	mechanics = {  } 					#Special mechanics the privilege enables
+	cooldown_years = 20 						#Time limit before which the privilege cannot be revoked
+	on_cooldown_expires = { }			#Effect executed once the specified cooldown_years timer has run down
+	ai_will_do = { factor = 0 }
+}
+
+estate_church_clerical_ministers = {
+	icon = privilege_recruit_minister
+	max_absolutism = -5
+	influence = 0.10
+	conditional_modifier = {
+		trigger = {
+			if = {
+				limit = {
+					has_dlc = "Common Sense"
+				}
+				NOT = { religion = protestant }
+				NOT = { religion = buddhism }
+				NOT = { religion = vajrayana }
+				NOT = { religion = mahayana }
+			}
+			if = {
+				limit = {
+					has_dlc = "Emperor"
+				}
+				NOT = { religion = hussite }
+			}
+			if = {
+				limit = {
+					has_dlc = "Wealth of Nations"
+				}
+				NOT = { religion = reformed }
+			}
+			if = {
+				limit = {
+					has_dlc = "Cradle of Civilization"
+				}
+				NOT = { religion_group = muslim }
+			}
+			if = {
+				limit = {
+					has_dlc = "Mandate of Heaven"
+				}
+				NOT = { religion = confucianism }
+			}
+			if = {
+				limit = {
+					has_dlc = "Third Rome"
+				}
+				NOT = { religion = orthodox }
+			}
+			if = {
+				limit = {
+					has_dlc = "Origins"
+				}
+				NOT = { religion = jewish }
+			}
+			NOT = { religion = anglican }
+		}
+		modifier = {
+			missionary_maintenance_cost = -0.2
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_dlc = "Common Sense"
+			OR = {
+				religion = buddhism
+				religion = vajrayana
+				religion = mahayana
+			}
+		}
+		modifier = {
+			yearly_karma_decay = 0.05
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_dlc = "Common Sense"
+			religion = protestant
+		}
+		modifier = {
+			church_power_modifier = 0.1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_dlc = "Emperor"
+			religion = hussite
+		}
+		modifier = {
+			church_power_modifier = 0.1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_dlc = "Origins"
+			religion = jewish
+		}
+		modifier = {
+			church_power_modifier = 0.1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_dlc = "Wealth of Nations"
+			religion = reformed
+		}
+		modifier = {
+			monthly_fervor_increase = 0.5
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_dlc = "Cradle of Civilization"
+			religion_group = muslim
+		}
+		modifier = {
+			monthly_piety = 0.001
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_dlc = "Mandate of Heaven"
+			religion = confucianism
+		}
+		modifier = {
+			yearly_harmony = 0.25
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_dlc = "Third Rome"
+			OR = {
+				religion = orthodox
+				religion = chalcedonian
+			}
+		}
+		modifier = {
+			yearly_patriarch_authority = 0.005
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			religion = anglican
+		}
+		modifier = {
+			church_power_modifier = 0.1
+		}
+	}
+	conditional_modifier = {
+		trigger = {
+			has_government_attribute = clerical_ministers_tech_buff
+		}
+		modifier = {
+			technology_cost = -0.05
+		}
+	}
+	penalties = {
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				religion = protestant
+				religion = anglican
+			}
+			religion = protestant
+			num_of_aspects = 3
+		}
+		modifier = {
+			factor = 10
+			OR = {
+				religion = orthodox
+				religion = chalcedonian
+			}
+			has_dlc = "Third Rome"
+		}
+	}
+}

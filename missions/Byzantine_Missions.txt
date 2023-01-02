@@ -537,8 +537,8 @@ Byzantium_1_2 = {
               region = maghreb_region
             }
           }
+          total_development = 500
         }
-        total_development = 500
       }
     }
     effect = {

@@ -86,13 +86,15 @@ country_event = {
 		emperor = {
 			add_years_of_income = -4
 		}
-		2315 = {
-			add_great_project = suez_canal
+		4316 = {
+			add_great_project = {
+					type = suez_canal
+					instant = no
+			}
 		}
 	}
 
 	option = {
-
 		ai_chance = {
 			factor = 1
 		}

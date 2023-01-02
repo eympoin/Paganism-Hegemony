@@ -597,6 +597,20 @@ spriteTypes = {
 		texturefile = "gfx//interface//great_projects//great_project_zacatecas_mine_city.dds"
 	}
 
+	spriteType = {
+		name = "GFX_great_project_port_of_tyr"
+		texturefile = "gfx//interface//great_projects//great_project_port_of_tyr.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_tower_of_hercules"
+		texturefile = "gfx//interface//great_projects//great_project_tower_of_hercules.dds"
+	}
+
+	spriteType = {
+		name = "GFX_great_project_taq_kasra"
+		texturefile = "gfx//interface//great_projects//great_project_taq_kasra.dds"
+	}
 
 
 }

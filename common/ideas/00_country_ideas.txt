@@ -3,106 +3,208 @@
 # If adding new groups or ideas, make sure they are unique.
 
 ### Nation specific idea groups
-PRI_ideas = {
-    start = {
-			land_forcelimit_modifier = 0.2
-			hostile_attrition = 1
-    }
-    bonus = {
-          legitimacy = 1
-        }
-    trigger = {
-        tag = PRI
-    }
-    free = yes
 
-    iron_working = {
-         production_efficiency = 0.1
-    }
+AFR_ideas = {
+	start = {
+		diplomatic_reputation = 1
+		global_trade_power = 0.2
+	}
+	bonus = {
+		  discipline = 0.05
+		}
+	trigger = {
+		tag = AFR
+	}
+	free = yes
 
-    tattooed_warriors = {
-        land_morale = 0.15
-				may_recruit_female_generals = yes
-    }
+	numidian_mercenaries = {
+		 cavalry_power = 0.15
+		 mercenary_cost = -0.2
+	}
 
-    restore_stonehenge = {
-        global_missionary_strength = 0.02
-        local_great_project_upgrade_cost = -0.1
-    }
+	control_the_sea = {
+		galley_power = 0.2
+		global_ship_trade_power = 0.2
+	}
 
-     preserve_our_trade = {
-    	global_trade_modifier = 0.1
-    }
+	legacy_jarawa_wars = {
+		land_attrition = -0.10
+		backrow_artillery_damage = 0.10
+	}
 
-     defend_our_sea  = {
-             own_coast_naval_combat_bonus = 1.0
-    }
+	 western_economic_center = {
+    global_tax_modifier = 0.1
+		production_efficiency = 0.1
+		trade_efficiency = 0.1
+	}
 
-    pritanni_renaissance = {
-        technology_cost = -0.05
-        idea_cost = -0.05
-				female_advisor_chance = 0.5
-    }
+	 perfect_naval_land_warfare  = {
+	 		global_naval_barrage_cost = -0.5
+			siege_blockade_progress = 1
+	}
 
-    develop_the_farms = {
-        goods_trade_goods_size_modifier = 0.15
-    }
+	expand_transaharan_trade = {
+		caravan_power = 0.33
+		merchants = 1
+	}
+
+	diplomacy_through_trade = {
+		dip_advisor_cost = -0.5
+		diplomatic_upkeep = 1
+		diplomats = 1
+	}
 }
 
-LLO_ideas = {
-    start = {
-        land_morale = 0.15
-        global_missionary_strength = 0.025
-    }
-    bonus = {
-          naval_maintenance_modifier = -0.15
-        }
-    trigger = {
-        tag = LLO
-    }
-    free = yes
+GLI_ideas = {
+	start = {
+		trade_efficiency = 0.15
+		idea_cost = -0.2
+	}
+	bonus = {
+		  discipline = 0.05
+		}
+	trigger = {
+		tag = GLI
+	}
+	free = yes
 
-    a_woman_can_be_rule = {
-         may_recruit_female_generals = yes
-        female_advisor_chance = 0.5
-				advisor_pool = 1
-				free_leader_pool = 1
-    }
+	return_of_roman_influence = {
+		 global_missionary_strength = 0.03
+		 tolerance_own = 1
+	}
 
-    celt_by_the_faith = {
-        extra_manpower_at_religious_war = yes
-        manpower_in_true_faith_provinces= 0.30
-				cb_on_religious_enemies = yes
-    }
+	push_back_franks = {
+		shock_damage_received = -0.10
+		fire_damage = 0.10
+	}
 
-    celt_sea = {
-        own_coast_naval_combat_bonus = 1.0
-        allowed_marine_fraction = 0.2
-				transport_power = 0.3
-    }
+	a_roman_army = {
+		global_manpower_modifier = 0.25
+		army_tradition_decay = -0.01
+	}
 
-     celt_warrior = {
-				drill_gain_modifier = 0.33
-        drill_decay_modifier = -0.33
+	 rebuild_gaul = {
+		build_cost = -0.1
+    global_prosperity_growth = 0.1
+		global_tax_modifier = 0.1
+	}
 
-    }
+	 heavy_wine_production  = {
+	 		global_trade_goods_size_modifier = 0.15
+			production_efficiency = 0.1
+	}
 
-     pirates_of_the_isles  = {
-             privateer_efficiency = 0.5
-            rebel_support_efficiency = 0.5
-    }
+	mastery_of_the_atlantic = {
+		global_ship_cost = -0.2
+		ship_durability = 0.1
+	}
 
-    chainmail_and_claymore = {
-        infantry_shock = 1
-        shock_damage_received = -0.15
-    }
-
-    arthurian_kingdom = {
-        placed_merchant_power = 15
-        global_naval_engagement_modifier = 0.20
-    }
+	establish_new_border = {
+		defensiveness = 0.25
+		garrison_size = 0.2
+	}
 }
 
+BRN_ideas = {
+	start = {
+		global_unrest = -2
+		global_missionary_strength = 0.02
+	}
+	bonus = {
+		  discipline = 0.05
+		}
+	trigger = {
+		tag = BRN
+	}
+	free = yes
+
+	free_britannia = {
+		 land_morale = 0.10
+		 siege_blockade_progress = 1
+	}
+
+	repopulate_lands_brn = {
+		global_prosperity_growth = 0.2
+		build_cost = -0.1
+		development_cost = -0.05
+	}
+
+	return_to_romanity = {
+		same_culture_advisor_cost = -0.5
+		tolerance_own = 2
+	}
+
+	 a_new_world_to_romanize = {
+		global_colonial_growth = 20
+    range = 0.15
+	}
+
+	 control_world_trade = {
+	 		global_trade_power = 0.2
+		  global_ship_trade_power = 0.2
+	}
+
+	wood_mastery  = {
+		ship_durability = 0.1
+    heavy_ship_power = 0.15
+	}
+
+	expert_sailors = {
+		sea_repair = yes
+		naval_morale = 0.1
+		leader_naval_fire = 1
+	}
+}
+
+SLC_ideas = {
+	start = {
+		global_unrest = -2
+		state_governing_cost = -0.25
+	}
+	bonus = {
+		  development_cost = -0.1
+		}
+	trigger = {
+		tag = SLC
+	}
+	free = yes
+
+	adaptative_army = {
+		 possible_mil_policy = 1
+     free_mil_policy = 1
+	}
+
+	great_pentapolis = {
+		 global_tax_modifier = 0.2
+     production_efficiency = 0.05
+	}
+
+	use_persian_admin = {
+		can_fabricate_for_vassals = yes
+    vassal_forcelimit_bonus = 0.2
+    diplomatic_annexation_cost = -0.2
+	}
+
+	 mercenary_armies = {
+		mercenary_discipline = 0.10
+    merc_maintenance_modifier = -0.2
+	}
+
+	 true_heir_of_alexander = {
+		  prestige = 1
+			legitimacy = 1
+	}
+
+	multicultural_empire_SLC  = {
+		tolerance_heretic = 1
+    tolerance_heathen = 1
+	}
+
+	punish_the_nomads = {
+		fire_damage_received = -0.10
+    movement_speed = 0.10
+	}
+}
 TAT_ideas = {
 	start = {
 		ae_impact = -0.15
@@ -230,11 +332,11 @@ HIS_ideas = {
 
 ERM_ideas = {
 	start = {
-		administrative_efficiency = 0.15
-		great_project_upgrade_cost = -0.5
+		administrative_efficiency = 0.1
+		great_project_upgrade_cost = -0.25
 	}
 	bonus = {
-		monarch_admin_power = 1
+		monarch_diplomatic_power = 1
 	}
 	trigger = {
 		tag = ERM
@@ -251,46 +353,41 @@ ERM_ideas = {
 	diplomatic_games = {
 		diplomats = 1
 		spy_offence = 0.3
-		accept_vassalization_reasons = 5
-		rebel_support_efficiency = 0.5
 	}
 
 	greek_hegemony = {
-		culture_conversion_cost = -0.33
+		culture_conversion_cost = -0.3
 		diplomatic_reputation = 1
-		monarch_diplomatic_power = 1
 	}
 
 	gateway_of_the_roman_world = {
 		merchants = 2
 		trade_steering = 0.2
-		production_efficiency = 0.2
 	}
 
 	varangian_guard = {
-		discipline = 0.05
-		army_tradition = 1
+		mercenary_discipline = 0.10
+		mercenary_cost = -0.3
 	}
 
 	nea_mare_nostrum_erm = {
 		ship_durability = 0.1
 		navy_tradition = 0.1
-		galley_power = 0.3
 	}
 	tradition_of_engineer_erm = {
+		siege_ability = 0.15
 		artillery_power = 0.1
-		fire_damage = 0.15
 	}
 }
 
 AXD_ideas = {
 	start = {
-		leader_land_shock = 2
-		governing_capacity_modifier = 0.33
+		leader_land_shock = 1
+		leader_land_fire = 1
 	}
 
 	bonus = {
-		governing_capacity_modifier = 0.2
+		governing_capacity_modifier = 0.5
 	}
 
 	trigger = {
@@ -320,10 +417,11 @@ AXD_ideas = {
 	}
 	conquerror_of_worlds = {
 		core_creation = -0.1
+		siege_ability = 0.2
 		years_of_nationalism = -5
 	}
 	adapt_to_the_world = {
-		technology_cost = -0.05
+		technology_cost = -0.1
 		global_institution_spread = 0.2
 	}
 }
@@ -415,7 +513,7 @@ CUM_ideas = {
 WRM_ideas = {
 	start = {
 		administrative_efficiency = 0.1
-		army_tradition = 0.2
+		army_tradition = 1
 	}
 	bonus = {
 		monarch_admin_power = 1
@@ -449,7 +547,7 @@ WRM_ideas = {
 
 	army_of_old = {
 		discipline = 0.08
-		yearly_army_professionalism = 0.01
+		drill_gain_modifier = 0.2
 	}
 
 	nea_mare_nostrum = {
@@ -1147,7 +1245,6 @@ PRT_ideas = {
 		enemy_core_creation = 0.3
 	}
 	professional_army_prt = {
-		yearly_army_professionalism = 0.01
 		army_tradition = 1
 	}
 
@@ -1221,6 +1318,7 @@ JOM_ideas = {
 	}
 	for_the_glory_allfather = {
 		manpower_recovery_speed = 0.1
+		extra_manpower_at_religious_war = yes
 	}
 	by_thor_name = {
 		cb_on_religious_enemies = yes
@@ -1855,7 +1953,7 @@ assyrian_ideas = {
 		province_warscore_cost = -0.2
 		}
 	bonus = {
-		state_maintenance_modifier = -0.1
+			army_tradition_decay = -0.02
 		}
 	trigger = {
 		tag = ASY
@@ -1870,11 +1968,12 @@ assyrian_ideas = {
 	}
 
 	fertile_land = {
-		 production_efficiency = 0.1
+		 production_efficiency = 0.15
 	}
 
 	new_strategies = {
 	 leader_land_shock = 1
+	 leader_land_fire = 1
  }
 
 	reconquest_of_the_old_empire = {
@@ -1882,20 +1981,21 @@ assyrian_ideas = {
 	}
 
 	a_professional_army  = {
-	  yearly_army_professionalism = 0.01
 		discipline = 0.05
+		infantry_power = 0.1
 	}
 
 	Break_the_mountain_holds = {
-		leader_siege = 1
+		siege_ability = 0.2
+		artillery_power = 0.10
 	}
 }
 
 
 babylonian_ideas = {
 	start = {
-		global_institution_spread = 0.1
-		global_trade_goods_size_modifier = 0.1
+		global_institution_spread = 0.25
+		global_trade_goods_size_modifier = 0.15
 		}
 	bonus = {
 		development_cost = -0.1
@@ -1907,22 +2007,26 @@ babylonian_ideas = {
 
 	integrate_the_arab_tribes = {
 		 manpower_recovery_speed = 0.1
+		 global_manpower_modifier = 0.15
 	}
 
 	land_of_the_first_cities = {
 		 global_tax_modifier = 0.15
+		 diplomatic_reputation = 1
 	}
 
 	scientific_tendancy = {
-		technology_cost = -0.05
+		technology_cost = -0.1
 	}
 
 	 building_tradition = {
 		build_cost = -0.2
+		great_project_upgrade_cost = -0.25
 	}
 
 	 a_new_code_of_law = {
 		  global_unrest = -2
+			monarch_admin_power = 1
 	}
 
 	adaptation_against_the_powder  = {
@@ -1931,6 +2035,7 @@ babylonian_ideas = {
 
 	legendary_city = {
 		prestige = 1
+		monthly_splendor = 1
 	}
 }
 
@@ -1976,7 +2081,7 @@ ancient_egyptian_ideas = {
 	}
 
 	training_for_everyone  = {
-	  drill_gain_modifier = 0.25
+	  drill_gain_modifier = 0.1
 		infantry_power =  0.1
 	}
 
@@ -2441,7 +2546,6 @@ LDN_ideas = {
 	trigger = {
 		OR = {
 			tag = LDN
-			tag = BRN
 			}
 	}
 	free = yes
@@ -2479,11 +2583,11 @@ LDN_ideas = {
 
 CTG_ideas = {
 	start = {
-		galley_power = 0.20
+		galley_power = 0.25
 		global_trade_power = 0.2
 	}
 	bonus = {
-		merchants = 1
+		placed_merchant_power = 10
 	}
 	trigger = {
 		tag = CTG
@@ -2492,7 +2596,7 @@ CTG_ideas = {
 
 	numidian_cavalry = {
 		cavalry_flanking = 0.2
-		cavalry_power = 0.1
+		cavalry_power = 0.15
 	}
 	settle_new_trading_post = {
 		range = 0.3
@@ -2505,10 +2609,10 @@ CTG_ideas = {
 	}
 	mare_nostrum_c  = {
 		global_ship_trade_power = 0.2
-		trade_steering = 0.1
+		trade_steering = 0.15
 	}
 	granary = {
-		global_trade_goods_size_modifier = 0.2
+		global_trade_goods_size_modifier = 0.25
 	}
 	canon_for_lands_and_seas = {
 		leader_land_fire = 1
@@ -3047,7 +3151,7 @@ WFR_ideas = {
 
 	ever_lasting_wars= {
 		army_tradition_decay = -0.01
-		army_tradition_from_battle = 0.05
+		army_tradition_from_battle = 0.25
 	}
 	franks_metallurgy = {
 		production_efficiency = 0.15
@@ -11568,8 +11672,8 @@ ROM_ideas = {
 	}
 
 	a_new_roman_army = {
-		army_tradition = 0.2
-		yearly_army_professionalism = 0.01
+		army_tradition = 2
+		drill_gain_modifier = 0.2
 	}
 
 	imperator_rom = {

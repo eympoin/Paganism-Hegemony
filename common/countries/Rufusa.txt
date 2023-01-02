@@ -45,12 +45,12 @@ monarch_names = {
 }
 
 leader_names = {
-	"Manius Acilius Glabrio" "Titus Aebutius Elva" "Aegidius" "Gaius Antonius" "Aulus Atilius calatinus" "Aureolus" "Bonifacius" "Scipio Asiaticus" "Aulus Didius Gallus"
+	"Manius Acilius Glabrio" "Titus Aebutius Elva" "Aegidius" "Gaius Antonius" "Aulus Atilius Calatinus" "Aureolus" "Bonifacius" "Scipio Asiaticus" "Aulus Didius Gallus"
 	"Dexippus" "Gaius Claudius Nero" "Marcus Cornelius Barbatus" "Scipio Aemilianus Africanus" "Valens" "Publius Agrippa" "Flavius Valerius Africanus" "Titus Vinius" "Trebonius"
 }
 
 ship_names = {
-	Navis
+	Mars Iuppiter Minerva Pluto Neptune Hercules Rhenus Oceanus Concordia Fides Victoria
 }
 
 army_names = {

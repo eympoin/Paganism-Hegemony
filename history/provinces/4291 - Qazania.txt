@@ -1,7 +1,7 @@
 #4391 - Qazaniya
 
-owner = ASY
-controller = ASY
+owner = LRI
+controller = LRI
 culture = babylonian
 religion = mesopotamian
 capital = "Qazaniya"
@@ -11,7 +11,7 @@ base_tax = 5
 base_production = 5
 base_manpower = 4
 is_city = yes
-add_core = ASY
+add_core = LRI
 add_core = BAB
 discovered_by = east_african
 discovered_by = muslim

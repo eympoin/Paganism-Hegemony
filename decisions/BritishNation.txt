@@ -126,19 +126,6 @@ country_decisions = {
 				}
 			}
 			if = {
-				limit = {
-					mission_completed = eng_rb_spice_islands
-					has_dlc = "Rule Britannia"
-				}
-				west_bengal_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { owned_by = ROOT }
-					}
-					add_permanent_claim = GBR
-				}
-			}
-			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}

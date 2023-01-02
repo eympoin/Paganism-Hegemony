@@ -1703,7 +1703,7 @@
  HIP:0 "Hippo Regius"
  HIP_ADJ:0 "Regian"
  PNR:0 "Panormus"
- PNR_ADj:0 "Panormian"
+ PNR_ADJ:0 "Panormian"
  TRR:0 "Turris"
  TRR_ADJ:0 "Turran"
  RHE:0 "Rhegium"
@@ -1828,3 +1828,6 @@ TAT_ADJ:0 "Tatar"
 
 LLO:0 "Lloegyr"
 LLO_ADJ:0 "Lloegyrian"
+
+DEI:0 "Deira"
+DEI_ADJ:0 "Deiran"

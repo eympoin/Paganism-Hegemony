@@ -1,0 +1,16 @@
+estate_urigallu = {
+	modifier_definition = {
+		type = loyalty
+		key = urigallu_loyalty_modifier
+		trigger = {
+			has_estate = estate_urigallu
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = urigallu_influence_modifier
+		trigger = {
+			has_estate = estate_urigallu
+		}
+	}
+}

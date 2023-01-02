@@ -1,4 +1,4 @@
-version="0.9.2"
+version="0.9.3"
 tags={
 	"Alternative History"
 	"Events"
@@ -8,6 +8,6 @@ tags={
 	"Trade"
 }
 picture="thumbnail.png"
-name="Paganism Hegemony v0.9.2: Morrigan's Revenge"
-supported_version="1.33.3"
+name="Paganism Hegemony v0.9.3: Marduk's return"
+supported_version="1.34.5"
 remote_file_id="2017988677"

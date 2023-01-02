@@ -76,7 +76,6 @@ country_event = { #republic or monarchy ?
 			mil = 0
 			dip = 5
 			regency = yes
-			fixed = yes
 		}
 
 		add_country_modifier = {
@@ -1353,12 +1352,14 @@ country_event = {
 				any_owned_province = {
 					is_city = yes
 					colonial_region = colonial_alaska
+					is_island = no
 				}
 			}
 			random_owned_province = {
 				limit = {
 					is_city = yes
 					colonial_region = colonial_alaska
+					is_island = no
 					NOT = {has_province_modifier = carthaginian_trading_outpost}
 				}
 				add_province_modifier = {
@@ -1787,6 +1788,7 @@ country_event = {
 				colonial_region = colonial_alaska
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			cede_province = HYP
 			add_core = HYP
@@ -1819,6 +1821,7 @@ country_event = {
 				colonial_region = colonial_canada
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			ROOT = {NOT = {has_country_flag = ctg_canada} has_country_flag = trading_canada}
 	}
@@ -1835,6 +1838,7 @@ country_event = {
 				colonial_region = colonial_canada
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			cede_province = VAR
 			add_core = VAR
@@ -1866,6 +1870,7 @@ country_event = {
 				colonial_region = colonial_california
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			ROOT = {NOT = {has_country_flag = ctg_california} has_country_flag = trading_california}
 	}
@@ -1882,6 +1887,7 @@ country_event = {
 				colonial_region = colonial_california
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			cede_province = HSP
 			add_core = HSP
@@ -1914,6 +1920,7 @@ country_event = {
 				colonial_region = colonial_eastern_america
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			ROOT = {NOT = {has_country_flag = ctg_america} has_country_flag = trading_america}
 	}
@@ -1930,6 +1937,7 @@ country_event = {
 				colonial_region = colonial_eastern_america
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			cede_province = AME
 			add_core = AME
@@ -1962,6 +1970,7 @@ country_event = {
 				colonial_region = colonial_louisiana
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			ROOT = {NOT = {has_country_flag = ctg_louisiana} has_country_flag = trading_louisiana}
 	}
@@ -1978,6 +1987,7 @@ country_event = {
 				colonial_region = colonial_louisiana
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			cede_province = SKY
 			add_core = SKY
@@ -2010,6 +2020,7 @@ country_event = {
 				colonial_region = colonial_mexico
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			ROOT = {NOT = {has_country_flag = ctg_mexico} has_country_flag = trading_mexico}
 	}
@@ -2026,6 +2037,7 @@ country_event = {
 				colonial_region = colonial_mexico
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			cede_province = AUR
 			add_core = AUR
@@ -2106,6 +2118,7 @@ country_event = {
 				colonial_region = colonial_colombia
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			ROOT = {NOT = {has_country_flag = ctg_colombia} has_country_flag = trading_colombia}
 	}
@@ -2122,6 +2135,7 @@ country_event = {
 				colonial_region = colonial_colombia
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			cede_province = PLD
 			add_core = PLD
@@ -2154,6 +2168,7 @@ country_event = {
 				colonial_region = colonial_brazil
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			ROOT = {NOT = {has_country_flag = ctg_brazila} has_country_flag = trading_brazil}
 	}
@@ -2170,6 +2185,7 @@ country_event = {
 				colonial_region = colonial_brazil
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			cede_province = LAB
 			add_core = LAB
@@ -2202,6 +2218,7 @@ country_event = {
 				colonial_region = colonial_peru
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			ROOT = {NOT = {has_country_flag = ctg_peru} has_country_flag = trading_peru}
 
@@ -2219,6 +2236,7 @@ country_event = {
 				colonial_region = colonial_peru
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			cede_province = ALP
 			add_core = ALP
@@ -2251,6 +2269,7 @@ country_event = {
 				colonial_region = colonial_la_plata
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			ROOT = {NOT = {has_country_flag = ctg_plata} has_country_flag = trading_plata}
 	}
@@ -2267,6 +2286,7 @@ country_event = {
 				colonial_region = colonial_la_plata
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			cede_province = HYZ
 			add_core = HYZ
@@ -2299,6 +2319,7 @@ country_event = {
 				colonial_region = colonial_australia
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			ROOT = {NOT = {has_country_flag = ctg_australia} has_country_flag = trading_australia}
 
@@ -2316,6 +2337,7 @@ country_event = {
 				colonial_region = colonial_australia
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			cede_province = RUF
 			add_core = RUF
@@ -2348,6 +2370,7 @@ country_event = {
 				superregion = africa_superregion
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			ROOT = {NOT = {has_country_flag = ctg_africa} has_country_flag = trading_africa}
 	}
@@ -2365,6 +2388,7 @@ country_event = {
 				superregion = africa_superregion
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			cede_province = ATP
 			add_core = ATP
@@ -2397,6 +2421,7 @@ country_event = {
 				superregion = southern_africa_superregion
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			ROOT = {NOT = {has_country_flag = ctg_south_africa} has_country_flag = trading_south_africa}
 
@@ -2414,6 +2439,7 @@ country_event = {
 				superregion = southern_africa_superregion
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			cede_province = MRB
 			add_core = MRB
@@ -2505,6 +2531,10 @@ country_event = {
 			}
 			NOT = {has_province_modifier =  carthaginian_trading_outpost }
 			is_city = yes
+			OR = {
+				is_island = no
+				colonial_region = colonial_the_carribean
+			}
 		}
 	}
 	mean_time_to_happen = {
@@ -2520,6 +2550,7 @@ country_event = {
 				colonial_region = colonial_alaska
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			change_culture = haida
 			change_religion = totemism
@@ -2532,6 +2563,7 @@ country_event = {
 				colonial_region = colonial_canada
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			change_culture = Vinlandic
 			change_religion = norse_pagan_reformed
@@ -2544,6 +2576,7 @@ country_event = {
 				colonial_region = colonial_california
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			change_culture = salish
 			change_religion = totemism
@@ -2556,6 +2589,7 @@ country_event = {
 				colonial_region = colonial_louisiana
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			change_culture = osage
 			change_religion = totemism
@@ -2568,6 +2602,7 @@ country_event = {
 				colonial_region = colonial_eastern_america
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			change_culture = cherokee
 			change_religion = totemism
@@ -2592,6 +2627,7 @@ country_event = {
 				colonial_region = colonial_mexico
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			change_culture = aztek
 			change_religion = nahuatl
@@ -2604,6 +2640,7 @@ country_event = {
 				colonial_region = colonial_peru
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			change_culture = inca
 			change_religion = inti
@@ -2616,6 +2653,7 @@ country_event = {
 				colonial_region = colonial_colombia
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			change_culture = muisca
 			change_religion = inti
@@ -2628,6 +2666,7 @@ country_event = {
 				colonial_region = colonial_brazil
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			change_culture = tupinamba
 			change_religion = animism
@@ -2640,6 +2679,7 @@ country_event = {
 				colonial_region = colonial_la_plata
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			change_culture = mapuche
 			change_religion = animism
@@ -2652,6 +2692,7 @@ country_event = {
 				colonial_region = colonial_australia
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			change_culture = aboriginal
 			change_religion = animism
@@ -2664,6 +2705,7 @@ country_event = {
 				superregion = southern_africa_superregion
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			change_culture = nguni
 			change_religion = shamanism
@@ -2676,6 +2718,7 @@ country_event = {
 				superregion = africa_superregion
 				NOT = {has_province_modifier =  carthaginian_trading_outpost }
 				is_city = yes
+				is_island = no
 			}
 			change_culture = kongolese
 			change_religion = shamanism

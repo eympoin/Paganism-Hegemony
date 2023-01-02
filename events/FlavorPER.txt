@@ -914,7 +914,6 @@ country_event = {
 					adm = 4
 					dip = 2
 					mil = 2
-					fixed = yes
 					age = 40
 					claim = 80
 				}
@@ -1315,7 +1314,6 @@ country_event = {
 					adm = 3
 					dip = 2
 					mil = 2
-					fixed = yes
 					age = 33
 					claim = 80
 				}
@@ -1410,7 +1408,6 @@ country_event = {
 					adm = 3
 					dip = 2
 					mil = 2
-					fixed = yes
 					age = 33
 					claim = 80
 				}
@@ -2567,7 +2564,6 @@ country_event = {
 						mil = 6
 						dip = 2
 						adm = 2
-						fixed = yes
 						}
 				}
 				reverse_add_opinion = {
@@ -2612,7 +2608,6 @@ country_event = {
 						mil = 6
 						dip = 2
 						adm = 2
-						fixed = yes
 						}
 				}
 				reverse_add_opinion = {
@@ -2648,7 +2643,6 @@ country_event = {
 						mil = 6
 						dip = 2
 						adm = 2
-						fixed = yes
 						}
 				}
 				reverse_add_opinion = {

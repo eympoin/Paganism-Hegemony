@@ -1,4 +1,4 @@
-trade_empire ={
+trade_empire_lus ={
 	slot = 2
 	generic = no
 	ai = yes

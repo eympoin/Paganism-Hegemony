@@ -162,7 +162,7 @@ country_event = {#roman
         NOT = { nationalism	= 1 }
         is_core = ROOT
       }
-      change_culture = celt_british
+      change_culture = asturian
     }
   }
 }

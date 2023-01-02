@@ -1,0 +1,23 @@
+bab_theocracy_reform = {
+	icon = "soldiers"
+	allow_normal_conversion = no
+	potential = {
+		tag = BAB
+	}
+	trigger = {
+		tag = BAB
+	}
+	rulers_can_be_generals = yes
+	heirs_can_be_generals = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 75
+	modifiers = {
+		devotion = 0.5
+		embracement_cost = -0.25
+		global_institution_spread = 0.1
+		possible_policy = 1
+		innovativeness_gain = 0.1
+		urigallu_loyalty_modifier = 0.2
+		urigallu_loyalty_modifier = 0.1
+	}
+}

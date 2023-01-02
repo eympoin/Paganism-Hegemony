@@ -18,6 +18,7 @@ estate_church =
 		NOT = { has_reform = siberian_tribe }
 		NOT = { government = native }
 		NOT = { is_revolutionary_republic_trigger = yes }
+		NOT = {tag = BAB}
 		OR = {
 			NOT = { has_reform = celestial_empire }
 			has_dlc = "Mandate of Heaven"
@@ -271,6 +272,12 @@ estate_church =
 		estate_church_flexible_cults
 		estate_church_scholar_connections
 		estate_church_integrated_school
+		estate_church_anti_heresy_act
+		estate_church_lands_of_riga
+		estate_church_bishopric_of_dorpat
+		estate_church_bishopric_of_osel_wiek
+		estate_church_bishopric_of_courland
+		estate_church_bishopric_of_reval
 	}
 
 	agendas = {

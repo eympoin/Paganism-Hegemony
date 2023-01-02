@@ -18,9 +18,6 @@ east_francia_fall = {
     ai_weight = {
       factor = 5
     }
-    ai_priority = {
-      factor = 5
-    }
 
     provinces_to_highlight = {
       culture = east-francian
@@ -57,9 +54,6 @@ east_francia_fall = {
     icon = mission_cossack_cavalry
     required_missions = { end_of_east_francia }
     ai_weight = {
-      factor = 5
-    }
-    ai_priority = {
       factor = 5
     }
 
@@ -119,9 +113,6 @@ east_francia_fall = {
     ai_weight = {
       factor = 5
     }
-    ai_priority = {
-      factor = 5
-    }
 
     provinces_to_highlight = {
       OR = {
@@ -176,9 +167,6 @@ east_francia_fall = {
     ai_weight = {
       factor = 5
     }
-    ai_priority = {
-      factor = 5
-    }
 
     provinces_to_highlight = {
       OR ={
@@ -216,9 +204,6 @@ east_francia_fall = {
     icon = mission_empire
     required_missions = {revene_against_lotharingia the_rest_of_scandinavia another_khanate_to_end  }
     ai_weight = {
-      factor = 5
-    }
-    ai_priority = {
       factor = 5
     }
 
@@ -274,9 +259,6 @@ bohemia_hungary = {
     ai_weight = {
       factor = 5
     }
-    ai_priority = {
-      factor = 5
-    }
 
     provinces_to_highlight = {
       OR = {
@@ -308,9 +290,6 @@ bohemia_hungary = {
     position = 4
     required_missions = { subjugate_western_slavs  tackle_alamannia}
     ai_weight = {
-      factor = 5
-    }
-    ai_priority = {
       factor = 5
     }
 
@@ -360,9 +339,6 @@ bohemia_hungary = {
     position = 5
     required_missions = { end_of_bavaria fall_of_the_khanate}
     ai_weight = {
-      factor = 5
-    }
-    ai_priority = {
       factor = 5
     }
 
@@ -418,9 +394,6 @@ religion = {
     ai_weight = {
       factor = 5
     }
-    ai_priority = {
-      factor = 5
-    }
 
     provinces_to_highlight = {
       province_id = 2972
@@ -449,9 +422,6 @@ religion = {
     ai_weight = {
       factor = 5
     }
-    ai_priority = {
-      factor = 5
-    }
 
     provinces_to_highlight = {
     }
@@ -468,9 +438,6 @@ religion = {
     icon = mission_rb_unite_the_clans
     required_missions = {fate_of_the_norse_faith  }
     ai_weight = {
-      factor = 5
-    }
-    ai_priority = {
       factor = 5
     }
 
@@ -506,9 +473,6 @@ norse_raids = {
     icon = mission_establish_high_seas_navy
     required_missions = {  }
     ai_weight = {
-      factor = 5
-    }
-    ai_priority = {
       factor = 5
     }
 
@@ -548,9 +512,6 @@ norse_raids = {
     icon = mission_hanseatic_city
     required_missions = { punish_norse_raiders }
     ai_weight = {
-      factor = 5
-    }
-    ai_priority = {
       factor = 5
     }
 
@@ -603,9 +564,6 @@ norse_raids = {
     icon = mission_unite_home_region
     required_missions = {fate_of_the_norse_faith  }
     ai_weight = {
-      factor = 5
-    }
-    ai_priority = {
       factor = 5
     }
 
@@ -664,9 +622,6 @@ norse_raids = {
     icon = mission_rb_rule_britannia_scottish_version
     required_missions = { the_rest_of_scandinavia  }
     ai_weight = {
-      factor = 5
-    }
-    ai_priority = {
       factor = 5
     }
 
@@ -732,9 +687,6 @@ german_unification = {
     ai_weight = {
       factor = 5
     }
-    ai_priority = {
-      factor = 5
-    }
 
     provinces_to_highlight = {
     }
@@ -762,9 +714,6 @@ german_unification = {
     icon = mission_empire
     required_missions = { our_germanic_brethren }
     ai_weight = {
-      factor = 5
-    }
-    ai_priority = {
       factor = 5
     }
 
@@ -809,9 +758,6 @@ german_unification = {
     icon = mission_crusade_for_varna
     required_missions = { two_people_one_king }
     ai_weight = {
-      factor = 5
-    }
-    ai_priority = {
       factor = 5
     }
 
@@ -866,9 +812,6 @@ german_unification = {
     icon = mission_steppe_warriors
     required_missions = { the_mongol_threat }
     ai_weight = {
-      factor = 5
-    }
-    ai_priority = {
       factor = 5
     }
 

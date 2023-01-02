@@ -1,0 +1,183 @@
+namespace = flavor_bab
+#urigallu take power
+country_event = {
+	id = flavor_bab.1
+	title = "flavor_bab.1.t"
+	desc = "flavor_bab.1.d"
+	picture = CIVIL_WAR_eventPicture
+	fire_only_once = yes
+	trigger = {
+		tag = BAB
+		is_year = 1523
+	}
+	immediate = {
+		set_country_flag = bab_cw
+	}
+
+	option = { #
+		name = "flavor_bab.1.a"
+		ai_chance = {
+			factor = 100
+		}
+		change_government = theocracy
+		add_government_reform = bab_theocracy_reform
+		add_country_modifier = {
+			name = bab_civil_war
+			duration = -1
+		}
+		spawn_rebels = {
+		    size = 2
+		    leader = noble_zealot
+		    type = noble_rebels
+		}
+		set_country_flag = priest_victorious_bab
+		add_estate_loyalty = {
+		    estate = estate_nobles
+		    loyalty = -30
+		}
+	}
+	option = { #
+		name = "flavor_bab.1.b"
+		ai_chance = {
+			factor = 0
+		}
+		add_country_modifier = {
+			name = bab_civil_war
+			duration = -1
+		}
+		spawn_rebels = {
+		    size = 2
+		    leader = noble_zealot
+		    type = mesopotamian_rebels
+		}
+		add_legitimacy = 10
+		add_estate_loyalty = {
+		    estate = estate_urigallu
+		    loyalty = -30
+		}
+
+	}
+}
+
+
+country_event = {
+	id = flavor_bab.2
+	title = "flavor_bab.2.t"
+	desc = "flavor_bab.2.d"
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #alliance with hormuz
+		name = "flavor_bab.2.a"
+		ai_chance = {
+			factor = 100
+		}
+		ORM = {
+			country_event = { id = flavor_bab.3 days = 15}
+		}
+	}
+
+	option = { #we don't need them
+		name = "flavor_bab.2.b"
+		add_prestige = 1
+	}
+}
+
+
+country_event = {
+	id = flavor_bab.3
+	title = "flavor_bab.3.t"
+	desc = "flavor_bab.3.d"
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #accept alliance with hormuz
+		name = "flavor_bab.3.a"
+		ai_chance = {
+			factor = 100
+		}
+		FROM = {
+			country_event = { id = flavor_bab.4 days = 15}
+		}
+		set_global_flag = orm_bab_allied
+		add_country_modifier = {
+			name = "babylons_help"
+			duration = -1
+		}
+	}
+
+	option = { #we don't need them
+		name = "flavor_bab.3.b"
+		FROM = {
+			country_event = { id = flavor_bab.4 days = 15}
+		}
+	}
+}
+
+country_event = {
+	id = flavor_bab.4
+	title = "flavor_bab.4.t"
+	desc = "flavor_bab.4.d"
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #allied
+		name = "flavor_bab.4.a"
+		ai_chance = {
+			factor = 50
+		}
+		trigger = {
+			has_global_flag = orm_bab_allied
+		}
+		add_country_modifier = {
+			name = "ormuz_help"
+			duration = -1
+		}
+	}
+	option = { #they refused
+		name = "flavor_bab.4.b"
+		trigger = {
+			NOT = {has_global_flag = orm_bab_allied}
+		}
+		add_prestige = -1
+	}
+}
+
+country_event = {
+	id = flavor_bab.5
+	title = "flavor_bab.5.t"
+	desc = "flavor_bab.5.d"
+	picture = ACCUSATION_eventPicture
+
+	trigger = {
+		OR = {
+			AND = {
+				has_country_modifier = ormuz_help
+				NOT = {alliance_with = ORM}
+			}
+			AND = {
+				has_country_modifier = babylons_help
+				NOT = {alliance_with = BAB}
+			}
+		}
+	}
+
+	option = { #break
+		name = "flavor_bab.5.a"
+		ai_chance = {
+			factor = 50
+		}
+		if = {
+			limit = { has_country_modifier = babylons_help }
+			remove_country_modifier = babylons_help
+		}
+
+		if = {
+			limit = { has_country_modifier = ormuz_help }
+			remove_country_modifier = ormuz_help
+		}
+	}
+}
