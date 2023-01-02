@@ -2,7 +2,7 @@
 
 owner = MAC
 controller = MAC
-culture = greek
+culture = macedonian
 religion = theoi
 capital = "Amphipolis"
 trade_goods = wine

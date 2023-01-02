@@ -1,6 +1,6 @@
 owner = MAC
 controller = MAC
-culture = greek
+culture = macedonian
 religion = theoi
 capital = "Serres"
 trade_goods = grain
