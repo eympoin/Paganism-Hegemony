@@ -337,7 +337,7 @@ flavor_koj.2.t:0 "The archbishop of Jerusalem"
 flavor_koj.2.d:0 "With that the holy sepulcher is renovated, the consecration of an archbishop is a most holy task, it will bolster the populus and make every corner of this land sacred."
 flavor_koj.2.a:0 "Amin"
 flavor_koj.3.t:0 "The great drought"
-flavor_koj.3.d:0 "It has not rained in seasons now, it is not just a matter of harvests failing now, a great famine is imminent if we don't fix this. The land west is often called the granary of the Mediterannean, it is time to make it ours."
+flavor_koj.3.d:0 "It has not rained in seasons now, it is not just a matter of harvests failing now, a great famine is imminent if we don't fix this. The land west is often called the granary of the Mediterranean, it is time to make it ours."
 flavor_koj.3.a:0 "Dire times"
 flavor_koj.4.t:0 "The archbishop of Alexandria"
 flavor_koj.4.d:0 "Although Alexandria was never a chalcedonian city it has always been a city that garnered our interest, now that it is ours we shall consacrate it and in time it shall remain as one of our holy cities."
@@ -702,8 +702,8 @@ flavor_jar.3.t:0 "Fate of the African city states"
 flavor_jar.3.d:0 "These fool profits from our temporal weakness to break free. Now that we are strong again, they shall bow or die for their treachery."
 flavor_jar.3.a:0 "Demand submission"
 
-flavor_jar.4.t:0 "The Jarawas ask for submission"
-flavor_jar.4.d:0 "The Jarawas have healed their wounds caused by the civil war, and they want us to submit again. "
+flavor_jar.4.t:0 "The Jarawa ask for submission!"
+flavor_jar.4.d:0 "The Jarawa's civil war has ended, and now that they have healed their wounds, they demand us to be subjugated again! On one hand, submitting again will allow us to live another day, and prepare our independence again stronger. But on the other hand, it might cause the opposite effect, meaning refusing might be better in the long run. What should be our response? We must choose carefully, as it will define the future of Carthago."
 flavor_jar.4.a:0 "They are too strong for us to fight them... for now"
 flavor_jar.4.b:0 "We will never be their slaves again !"
 flavor_jar.4.c:0 "Asks our fellow Tripolitan to form a confederation to protect us from them."
@@ -841,8 +841,8 @@ flavor_ctg.22.d:0 "We have conquered lands of Inland Africa. Our advisors are de
 flavor_ctg.22.a:0 "Keeping this desert is worthless, create a protectorate there."
 flavor_ctg.22.b:0 "We will keep this land."
 
-flavor_ctg.23.t:0 "The Numidians Land"
-flavor_ctg.23.d:0 "We have conquered new territories in inland Africa. We should give them to our protectorate there."
+flavor_ctg.23.t:0 "The Numidian Land"
+flavor_ctg.23.d:0 "We have just annexed inland African territories, and our Numidian protectorate asked us to give it to them as we established them to take care of the Saharan Desert. Since we have no use in the desert, we shall accept their request as a gesture of goodwill."
 flavor_ctg.23.a:0 "If they are stonger, we are stronger."
 
 flavor_ctg.24.t:0 " A New Trading Outpost"
@@ -1292,7 +1292,7 @@ flavor_ion.12.d:0 "They have even refused to come to the table. They will regret
 flavor_ion.12.a:0 "We will take it by force."
 
 flavor_pho.1.t:0 "The call of Melqart"
-flavor_pho.1.d:0 "A late night at the Library of Tyre, you stumble upon some ancient books. They spoke of the ancients gods of Phoenicia when it still dominate the trade of the Mediterannean. With our ties with Rome cut, maybe we should try to forge our new identity with Ancient Phoenicia. We can begin that by converting to their religions."
+flavor_pho.1.d:0 "A late night at the Library of Tyre, you stumble upon some ancient books. They spoke of the ancients gods of Phoenicia when it still dominate the trade of the Mediterranean. With our ties with Rome cut, maybe we should try to forge our new identity with Ancient Phoenicia. We can begin that by converting to their religions."
 flavor_pho.1.a:0 "It is time to bring our roots back in our world."
 flavor_pho.1.b:0 "These gods are forgotten for a good reason."
 
@@ -1997,7 +1997,7 @@ flavor_byzmod.46.a:0 "Build the wall !"
 flavor_byzmod.46.b:0 "Not worth it"
 
 flavor_byzmod.47.t:0 "The Pelusium canal"
-flavor_byzmod.47.d:0 "The Asian trade is losing ground to the Atlantic trade and we will have to bolster the Asian trade if we want to stay competitive. Building a canal between the Red Sea and the Mediterannean could be a breaking change."
+flavor_byzmod.47.d:0 "The Asian trade is losing ground to the Atlantic trade and we will have to bolster the Asian trade if we want to stay competitive. Building a canal between the Red Sea and the Mediterranean could be a breaking change."
 flavor_byzmod.47.a:0 "Costly but worth it !"
 flavor_byzmod.47.b:0 "We have not the money..."
 
