@@ -1,0 +1,333 @@
+# Province Triggered modifiers are here.
+# These are added to provinces through the add_province_triggered_modifier effect
+#
+# Effects are fully scriptable here.
+
+
+###########################################
+# Just random test modifier
+###########################################
+test_modifier = {
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		owner = {
+			stability = 0
+		}
+	}
+
+	local_build_cost = 0.05
+
+	#Province scope
+	on_activation = {
+
+	}
+
+	on_deactivation = {
+
+	}
+
+}
+
+non_catholic_rome = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	#viewer = {
+	#}
+
+	trigger = {
+		owner = {
+			NOT = { religion = catholic }
+			OR = {
+				religion_group = christian
+				religion_group = muslim
+			}
+		}
+	}
+
+	prestige = 0.5
+	missionaries = 1
+
+	#Province scope
+	on_activation = {
+
+	}
+
+	on_deactivation = {
+
+	}
+
+}
+
+religious_center = {
+	potential = {
+	}
+
+	#viewer = {
+	#}
+
+	trigger = {
+		if = {
+			limit = {
+				province_id = 118 # Roma
+			}
+			religion = deii
+		}
+		else_if = {
+			limit = {
+				province_id = 385 # Mecca
+			}
+			OR = {
+			 religion_group = muslim
+			 religion = arabian
+			 }
+		}
+		else_if = {
+			limit = {
+				province_id = 409 # Hillah
+			}
+			religion = shiite
+		}
+		else_if = {
+			limit = {
+				province_id = 677
+			}
+			religion = vajrayana
+		}
+		else_if = {
+			limit = {
+				province_id = 2075
+			}
+			religion = sikhism
+		}
+		else_if = {
+			limit = {
+				province_id = 2095
+			}
+			religion = hinduism
+		}
+		else_if = {
+			limit = {
+				province_id = 2099
+			}
+			religion = buddhism
+		}
+		else_if = {
+			limit = {
+				province_id = 2311
+			}
+			religion = shiite
+		}
+		else_if = {
+			limit = {
+				province_id = 2221
+			}
+			religion = shiite
+		}
+		else_if = {
+			limit = {
+				province_id = 4359
+			}
+			religion = shinto
+		}
+		else_if = {
+			limit = {
+				province_id = 4720
+			}
+			OR = {
+				religion = protestant
+				religion = reformed
+			}
+		}
+		else_if = {
+			limit = {
+				province_id = 4962
+			}
+			religion_group = greco_roman_group
+		}
+		else_if = {
+			limit = {
+				province_id = 1773
+			}
+			religion_group = greco_roman_group
+		}
+		else_if = {
+			limit = {
+				province_id = 144
+			}
+			religion_group = greco_roman_group
+		}
+		else_if = {
+			limit = {
+				province_id = 361
+			}
+			religion = ancient_egyptian_rl
+		}
+		else_if = {
+			limit = {
+				province_id = 360
+			}
+			religion = ancient_egyptian_rl
+		}
+
+		else_if = {
+			limit = {
+				province_id = 2311
+			}
+			religion = mesopotamian
+		}
+		else_if = {
+			limit = {
+				province_id = 411
+			}
+			religion = mesopotamian
+		}
+		else_if = {
+			limit = {
+				province_id = 420
+			}
+			religion = armenian_rl
+		}
+		else_if = {
+			limit = {
+				province_id = 2972
+			}
+			religion = germanic
+		}
+		else_if = {
+			limit = {
+				province_id = 12
+			}
+			religion = norse_pagan_reformed
+		}
+		else_if = {
+			limit = {
+				province_id = 1
+			}
+			religion = norse_pagan_reformed
+		}
+		else_if = {
+			limit = {
+				province_id = 256
+			}
+			religion = slavic
+		}
+		else_if = {
+			limit = {
+				province_id = 280
+			}
+			religion = slavic
+		}
+		else_if = {
+			limit = {
+				province_id = 272
+			}
+			religion = romuva
+		}
+		else_if = {
+			limit = {
+				province_id = 1859
+			}
+			religion = romuva
+		}
+		else_if = {
+			limit = {
+				province_id = 1077
+			}
+			religion = suomenusko
+		}
+		else_if = {
+			limit = {
+				province_id = 346
+			}
+			religion = berber
+		}
+		else_if = {
+			limit = {
+				province_id = 451
+			}
+			religion = zunist
+		}
+	}
+
+	local_missionary_strength = -0.05
+
+	#Province scope
+	on_activation = {
+
+	}
+
+	on_deactivation = {
+
+	}
+}
+
+# Christian control of Mecca
+
+arabian_mecca = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	#viewer = {
+	#}
+
+	trigger = {
+		owner = {
+			religion_group = arabian
+		}
+	}
+
+	prestige = 0.5
+	missionaries = 1
+	tolerance_own = 1
+
+	#Province scope
+	on_activation = {
+
+	}
+
+	on_deactivation = {
+
+	}
+
+}
+
+# Jerusalem held by any Abrahamic faith
+
+jerusalem_held = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	#viewer = {
+	#}
+
+	trigger = {
+		owner = {
+			OR = {
+				religion_group = christian
+				religion_group = muslim
+				religion = jewish
+			}
+		}
+	}
+
+	prestige = 0.5
+	missionaries = 1
+	global_missionary_strength = 0.01
+
+	#Province scope
+	on_activation = {
+
+	}
+
+	on_deactivation = {
+
+	}
+
+}
