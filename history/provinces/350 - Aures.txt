@@ -18,3 +18,4 @@ discovered_by = ottoman
 
 1500.1.1 = { discovered_by = TUR }
 discovered_by = greek_tech
+discovered_by = roman_tech

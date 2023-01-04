@@ -38,3 +38,4 @@ discovered_by = muslim
 1775.2.1 = { revolt = {} controller = RUS unrest = 0 } # Pugachev is captured
 
 discovered_by = greek_tech
+discovered_by = roman_tech

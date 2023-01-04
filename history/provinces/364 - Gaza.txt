@@ -26,3 +26,4 @@ discovered_by = east_african
 1517.1.1 = { owner = TUR controller = TUR add_core = TUR } # Conquered by the Ottomans
 
 discovered_by = greek_tech
+discovered_by = roman_tech

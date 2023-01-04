@@ -19,3 +19,4 @@ discovered_by = ottoman
 extra_cost = 24
 center_of_trade = 3
 discovered_by = greek_tech
+discovered_by = roman_tech

@@ -19,3 +19,4 @@ discovered_by = nomad_group
 discovered_by = KAZ
 extra_cost = 8
 center_of_trade = 1
+discovered_by = roman_tech

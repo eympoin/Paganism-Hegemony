@@ -19,3 +19,5 @@ discovered_by = ottoman
 
 1444.1.1 = { add_core = AQU }
 discovered_by = greek_tech
+
+discovered_by = roman_tech

@@ -20,3 +20,4 @@ discovered_by = sub_saharan
 extra_cost = 8
 center_of_trade = 1
 discovered_by = greek_tech
+discovered_by = roman_tech

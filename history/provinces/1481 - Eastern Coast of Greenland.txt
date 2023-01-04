@@ -1,1 +1,3 @@
 1453.1.1 = { discovered_by = western }
+
+discovered_by = roman_tech

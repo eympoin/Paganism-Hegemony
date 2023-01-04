@@ -21,3 +21,5 @@ center_of_trade = 1
 
 fort_15th = yes
 discovered_by = greek_tech
+
+discovered_by = roman_tech

@@ -22,3 +22,5 @@ discovered_by = PLT
 discovered_by = SMO
 discovered_by = NZH
 
+
+discovered_by = roman_tech

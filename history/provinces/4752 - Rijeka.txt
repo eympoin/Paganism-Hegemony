@@ -26,3 +26,4 @@ center_of_trade = 1
 add_core = DAL
 
 discovered_by = greek_tech
+discovered_by = roman_tech

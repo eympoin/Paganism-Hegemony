@@ -256,6 +256,14 @@ groups = {
 			value = 50
 		}
 	}
+	roman_tech = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_unit_type = roman_tech
+		nation_designer_cost = {
+			value = 50
+		}
+	}
 }
 
 tables = {

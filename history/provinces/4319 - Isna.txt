@@ -22,3 +22,4 @@ discovered_by = east_african
 add_core = THB
 
 discovered_by = greek_tech
+discovered_by = roman_tech

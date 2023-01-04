@@ -21,3 +21,5 @@ discovered_by = eastern
 add_local_autonomy = 25
 
 
+
+discovered_by = roman_tech

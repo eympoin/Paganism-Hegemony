@@ -42,3 +42,4 @@ discovered_by = ottoman
 1812.12.10 = { controller = RUS }
 
 discovered_by = greek_tech
+discovered_by = roman_tech

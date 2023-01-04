@@ -43,3 +43,4 @@ discovered_by = eastern
 1798.9.8 = { revolt = {} controller = GBR }
 
 discovered_by = greek_tech
+discovered_by = roman_tech

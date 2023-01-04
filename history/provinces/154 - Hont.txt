@@ -24,3 +24,4 @@ discovered_by = GOL
 discovered_by = AST
 discovered_by = QAS
 discovered_by = greek_tech
+discovered_by = roman_tech

@@ -41,3 +41,4 @@ discovered_by = eastern
 	remove_core = ENG
 }
 discovered_by = greek_tech
+discovered_by = roman_tech

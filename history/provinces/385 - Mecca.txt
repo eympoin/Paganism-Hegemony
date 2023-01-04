@@ -47,3 +47,4 @@ add_province_triggered_modifier = arabian_mecca
 } # Mecca is returned to the Ottomans
 
 discovered_by = greek_tech
+discovered_by = roman_tech

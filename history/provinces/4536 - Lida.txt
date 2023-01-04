@@ -33,3 +33,4 @@ discovered_by = nomad_group
 } # Third Partition of Poland, tightened ice regime
 
 discovered_by = greek_tech
+discovered_by = roman_tech

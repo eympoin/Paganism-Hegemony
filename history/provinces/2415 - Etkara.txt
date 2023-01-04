@@ -34,3 +34,4 @@ discovered_by = nomad_group
 1650.1.1 = { culture = russian religion = orthodox }
 
 discovered_by = greek_tech
+discovered_by = roman_tech

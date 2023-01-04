@@ -17,3 +17,5 @@ add_core = NRT
 
 discovered_by = western
 
+
+discovered_by = roman_tech

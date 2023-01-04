@@ -20,3 +20,4 @@ discovered_by = ottoman
 
 add_local_autonomy = 25
 discovered_by = greek_tech
+discovered_by = roman_tech
