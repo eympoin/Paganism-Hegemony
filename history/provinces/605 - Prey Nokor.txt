@@ -40,3 +40,5 @@ discovered_by = ottoman
 	add_core = ANN
 	remove_core = DAI
 } # Nguyen recovered the land
+
+discovered_by = greek_tech

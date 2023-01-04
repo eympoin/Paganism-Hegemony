@@ -65,3 +65,5 @@ center_of_trade = 1
 	add_core = GBR
 	remove_core = GWA
 }
+
+discovered_by = greek_tech

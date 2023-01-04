@@ -23,3 +23,5 @@ discovered_by = east_african
 add_province_triggered_modifier = coptic_alexandria
 extra_cost = 8
 center_of_trade = 2
+
+discovered_by = greek_tech

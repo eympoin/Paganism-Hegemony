@@ -36,3 +36,5 @@ discovered_by = chinese
 	owner = BGL
 	controller = BGL
 } # British dependency
+
+discovered_by = greek_tech

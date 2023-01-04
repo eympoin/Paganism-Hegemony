@@ -40,3 +40,5 @@ discovered_by = chinese
 	controller = MAR
 } # The Maratha Empire
 1818.6.3 = { remove_core = MAR }
+
+discovered_by = greek_tech

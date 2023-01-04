@@ -29,3 +29,5 @@ discovered_by = ottoman
 	add_core = SUL
 	remove_core = BEI
 } # Ceded to the Sultanate of Sulu
+
+discovered_by = greek_tech

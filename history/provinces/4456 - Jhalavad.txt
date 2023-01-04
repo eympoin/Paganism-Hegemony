@@ -43,3 +43,4 @@ discovered_by = east_african
 1742.1.1 = {
 	capital = "Dhrangadhra"
 }
+discovered_by = greek_tech

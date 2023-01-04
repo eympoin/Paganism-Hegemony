@@ -29,3 +29,5 @@ discovered_by = ottoman
 	is_city = yes
 	trade_goods = fish
 }
+
+discovered_by = greek_tech

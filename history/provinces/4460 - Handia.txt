@@ -63,3 +63,5 @@ discovered_by = chinese
 	add_core = GBR
 	remove_core = GWA
 }
+
+discovered_by = greek_tech

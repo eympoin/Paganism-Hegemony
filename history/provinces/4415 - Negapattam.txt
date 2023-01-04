@@ -49,3 +49,4 @@ add_local_autonomy = 25
 		investor = GBR
 	}
 }
+discovered_by = greek_tech

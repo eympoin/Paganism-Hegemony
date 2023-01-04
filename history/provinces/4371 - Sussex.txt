@@ -41,3 +41,4 @@ discovered_by = eastern
 	remove_core = ENG
 	seat_in_parliament = yes
 }
+discovered_by = greek_tech

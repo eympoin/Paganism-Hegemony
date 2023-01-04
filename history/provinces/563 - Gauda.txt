@@ -93,3 +93,5 @@ center_of_trade = 2
 		investor = GBR
 	}
 } # Given to GBR by Mughal Empire (was formerly british puppet)
+
+discovered_by = greek_tech

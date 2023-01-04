@@ -22,3 +22,4 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 add_province_triggered_modifier = religious_center
+discovered_by = greek_tech

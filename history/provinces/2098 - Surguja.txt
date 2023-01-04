@@ -35,3 +35,5 @@ discovered_by = chinese
 	owner = SRG
 	controller = SRG
 }
+
+discovered_by = greek_tech

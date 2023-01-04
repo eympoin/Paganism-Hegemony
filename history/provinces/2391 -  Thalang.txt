@@ -39,3 +39,5 @@ discovered_by = ottoman
 	remove_core = LIG
 }
 1809.1.1 = { add_core = TAU }
+
+discovered_by = greek_tech

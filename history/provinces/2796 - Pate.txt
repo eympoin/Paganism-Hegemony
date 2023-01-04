@@ -23,3 +23,5 @@ center_of_trade = 1
 
 1498.4.16 = { discovered_by = POR } # Vasco Da Gama
 1600.1.1 = { discovered_by = TUR }
+
+discovered_by = greek_tech

@@ -25,3 +25,5 @@ add_province_modifier {
   duration = 36500
 }
 add_local_autonomy = 10
+
+discovered_by = greek_tech

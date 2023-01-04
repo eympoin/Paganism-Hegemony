@@ -32,3 +32,5 @@ discovered_by = ottoman
 1550.1.1 = { religion = sunni }
 1602.1.1 = { discovered_by = ENG } # English settlement
 1707.5.12 = { discovered_by = GBR }
+
+discovered_by = greek_tech

@@ -42,3 +42,5 @@ discovered_by = chinese
 	add_core = GBR
 
 } # Ceded districts
+
+discovered_by = greek_tech

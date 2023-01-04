@@ -69,3 +69,5 @@ discovered_by = chinese
 	capital = Ujjain
 	remove_core = MUG
 } # Marathas
+
+discovered_by = greek_tech

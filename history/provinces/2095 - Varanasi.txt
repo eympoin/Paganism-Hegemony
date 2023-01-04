@@ -99,3 +99,5 @@ add_province_triggered_modifier = hindu_varanasi
 	add_core = GBR
 	remove_core = ODH
 }
+
+discovered_by = greek_tech

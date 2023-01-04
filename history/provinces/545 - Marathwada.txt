@@ -77,3 +77,5 @@ center_of_trade = 2
 	controller = DEC
 	remove_core = MAR
 }
+
+discovered_by = greek_tech

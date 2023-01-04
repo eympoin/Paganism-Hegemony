@@ -42,3 +42,5 @@ add_local_autonomy = 50
 	controller = GBR
 	add_core = GBR
 } # Given to GBR by Mir Qasim
+
+discovered_by = greek_tech

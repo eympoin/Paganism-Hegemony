@@ -30,3 +30,5 @@ discovered_by = ottoman
 	remove_core = PSA
 }
 
+
+discovered_by = greek_tech

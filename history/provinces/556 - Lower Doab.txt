@@ -95,3 +95,5 @@ center_of_trade = 2
 	add_core = GBR
 	remove_core = ODH
 }
+
+discovered_by = greek_tech

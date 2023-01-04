@@ -78,3 +78,5 @@ center_of_trade = 1
 	add_core = GBR
 	remove_core = MUG
 } # Given to GBR by Mughal Empire (was formerly british puppet)
+
+discovered_by = greek_tech

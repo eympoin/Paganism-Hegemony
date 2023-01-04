@@ -75,3 +75,5 @@ discovered_by = chinese
 	controller = GBR
 	add_core = GBR
 } # Given to GBR by Mughal Empire (was formerly british puppet)
+
+discovered_by = greek_tech

@@ -61,3 +61,5 @@ discovered_by = chinese
 	remove_core = MUG
 } # Independent
 1707.5.12 = { discovered_by = GBR }
+
+discovered_by = greek_tech

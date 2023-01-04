@@ -26,3 +26,5 @@ discovered_by = chinese
 	controller = NAG
 	add_core = NAG
 } # Marathas annex the lands of the Haihayas of Ratanpur
+
+discovered_by = greek_tech

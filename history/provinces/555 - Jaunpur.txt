@@ -115,3 +115,5 @@ discovered_by = chinese
 	add_core = ODH
 	remove_core = MUG
 } # Foundation of the Oudh dynasty
+
+discovered_by = greek_tech

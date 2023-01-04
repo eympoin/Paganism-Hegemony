@@ -23,3 +23,5 @@ discovered_by = eastern
 1550.1.1 = { discovered_by = TUR }
 1588.1.1 = { revolt_risk = 7 } # Raids by Sarsa Dengel
 1589.1.1 = { revolt_risk = 0 }
+
+discovered_by = greek_tech

@@ -45,3 +45,5 @@ center_of_trade = 1
 	controller = MAR
 	remove_core = DEC
 } # Battle of Udgir
+
+discovered_by = greek_tech

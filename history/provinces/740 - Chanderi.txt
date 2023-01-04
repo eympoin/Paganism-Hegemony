@@ -93,3 +93,5 @@ discovered_by = chinese
 	add_core = GWA
 	remove_core = MUG
 }
+
+discovered_by = greek_tech

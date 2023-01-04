@@ -31,3 +31,5 @@ discovered_by = ottoman
 	remove_core = BRA
 }
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+
+discovered_by = greek_tech

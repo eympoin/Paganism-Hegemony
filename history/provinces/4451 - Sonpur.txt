@@ -43,3 +43,5 @@ discovered_by = chinese
 	controller = GBR
 	remove_core = NAG
 }
+
+discovered_by = greek_tech

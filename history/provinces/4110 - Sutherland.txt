@@ -20,3 +20,5 @@ discovered_by = ottoman
 discovered_by = eastern
 add_local_autonomy = 15
 add_nationalism = 4
+
+discovered_by = greek_tech

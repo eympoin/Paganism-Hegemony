@@ -33,3 +33,5 @@ discovered_by = chinese
 	add_core = GBR
 	remove_core = NPL
 }
+
+discovered_by = greek_tech

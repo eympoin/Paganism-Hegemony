@@ -26,3 +26,5 @@ center_of_trade = 1
 	trade_goods = gems #Pearls
 } # The Sulu Sultanate
 1521.1.1 = { discovered_by = SPA } # Ferdinand Magellan 
+
+discovered_by = greek_tech

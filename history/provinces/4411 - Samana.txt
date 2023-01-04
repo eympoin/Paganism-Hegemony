@@ -73,3 +73,5 @@ discovered_by = chinese
 	owner = PTA
 	controller = PTA
 }
+
+discovered_by = greek_tech

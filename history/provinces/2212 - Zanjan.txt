@@ -19,3 +19,4 @@ discovered_by = indian
 discovered_by = eastern
 add_core = SRV
 add_local_autonomy = 20
+discovered_by = greek_tech

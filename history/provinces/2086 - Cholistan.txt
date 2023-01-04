@@ -60,3 +60,5 @@ discovered_by = chinese
 	add_core = PUN
 	remove_core = AFG
 }
+
+discovered_by = greek_tech

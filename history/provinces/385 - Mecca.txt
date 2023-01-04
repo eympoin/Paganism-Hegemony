@@ -45,3 +45,5 @@ add_province_triggered_modifier = arabian_mecca
 	add_core = TUR
 	remove_core = NAJ
 } # Mecca is returned to the Ottomans
+
+discovered_by = greek_tech

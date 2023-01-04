@@ -12,3 +12,5 @@ discovered_by = ottoman
 1498.3.15 = { discovered_by = POR }
 1550.1.1 = { discovered_by = TUR }
 
+
+discovered_by = greek_tech

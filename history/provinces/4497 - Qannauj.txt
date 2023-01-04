@@ -73,3 +73,5 @@ center_of_trade = 1
 	controller = ODH
 	remove_core = MUG
 } # Foundation of the Oudh dynasty
+
+discovered_by = greek_tech

@@ -54,3 +54,5 @@ add_local_autonomy = 25
 		investor = DAN
 	}
 }
+
+discovered_by = greek_tech

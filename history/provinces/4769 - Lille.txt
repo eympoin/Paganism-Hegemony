@@ -21,3 +21,4 @@ fort_15th = yes
 add_permanent_claim = FRP
 add_permanent_claim = FRR
 add_permanent_claim = FRO
+discovered_by = greek_tech

@@ -31,3 +31,5 @@ discovered_by = chinese
 	controller = MYS
 	capital = "Bangalore"
 }
+
+discovered_by = greek_tech

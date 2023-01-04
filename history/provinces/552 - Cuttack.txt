@@ -78,3 +78,5 @@ center_of_trade = 1
 	add_core = GBR
 	remove_core = NAG
 } # Treaty of Deogaon
+
+discovered_by = greek_tech

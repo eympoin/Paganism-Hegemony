@@ -31,3 +31,5 @@ discovered_by = ottoman
 	is_city = yes
 	trade_goods = gold
 } # Lanfang Republic was founded by Chinese immigrants
+
+discovered_by = greek_tech

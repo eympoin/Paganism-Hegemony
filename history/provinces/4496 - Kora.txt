@@ -92,3 +92,5 @@ discovered_by = chinese
 	add_core = GBR
 	remove_core = ODH
 }
+
+discovered_by = greek_tech

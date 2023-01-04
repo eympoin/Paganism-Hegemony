@@ -4,7 +4,7 @@ government_rank = 1
 elector = no
 primary_culture = greek
 religion = theoi
-technology_group = eastern
+technology_group = greek_tech
 capital = 4944
 fixed_capital = 4944# Cannot move capital away from this province & no power cost to move to it
 

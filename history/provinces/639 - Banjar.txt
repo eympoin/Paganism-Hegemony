@@ -32,3 +32,5 @@ discovered_by = ottoman
 	religion = sunni
 	trade_goods = tropical_wood
 } # Banjar Sultanate was founded
+
+discovered_by = greek_tech

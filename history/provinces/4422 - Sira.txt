@@ -31,3 +31,5 @@ discovered_by = chinese
 	owner = MYS	#Beaten by the Mughals and sold to Mysore
 	controller = MYS
 }
+
+discovered_by = greek_tech

@@ -71,3 +71,5 @@ add_core = SRH
 	controller = GBR
 	add_core = GBR
 }
+
+discovered_by = greek_tech

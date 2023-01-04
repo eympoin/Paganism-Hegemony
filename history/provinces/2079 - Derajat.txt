@@ -50,3 +50,5 @@ discovered_by = chinese
 	controller = AFG
 	remove_core = MUG
 }
+
+discovered_by = greek_tech

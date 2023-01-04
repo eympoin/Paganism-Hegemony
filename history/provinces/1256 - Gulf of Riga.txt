@@ -8,3 +8,5 @@ discovered_by = ottoman
 
 
 
+
+discovered_by = greek_tech

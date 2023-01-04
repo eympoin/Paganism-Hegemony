@@ -75,3 +75,5 @@ discovered_by = chinese
 	controller = MEW
 
 } # British dependency
+
+discovered_by = greek_tech

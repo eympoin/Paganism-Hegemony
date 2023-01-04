@@ -47,3 +47,5 @@ discovered_by = east_african
 	controller = PRB
 	remove_core = BDA	
 }
+
+discovered_by = greek_tech

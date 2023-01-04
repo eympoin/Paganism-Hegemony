@@ -104,3 +104,5 @@ center_of_trade = 2
 	}
 }# Captured by the British
 1820.1.1 = { add_core = GBR }
+
+discovered_by = greek_tech

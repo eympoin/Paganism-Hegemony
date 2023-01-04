@@ -33,3 +33,5 @@ add_permanent_province_modifier = {
 1631.1.1 = { unrest = 7 } #Maravi invade region
 1632.1.1 = { unrest = 0 } #Maravi expelled from the region
 1750.1.1 = { trade_goods = grain } #becomes major center of cereal production to feed slaves
+
+discovered_by = greek_tech

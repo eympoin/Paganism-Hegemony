@@ -98,3 +98,5 @@ center_of_trade = 2
 	revolt = {}
 	controller = GBR
 } # British control is restored
+
+discovered_by = greek_tech

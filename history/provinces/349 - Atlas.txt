@@ -17,3 +17,4 @@ discovered_by = muslim
 discovered_by = ottoman
 discovered_by = western
 add_local_autonomy = 80
+discovered_by = greek_tech

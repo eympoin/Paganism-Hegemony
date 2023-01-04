@@ -42,3 +42,5 @@ discovered_by = ottoman
 1630.1.1 = { unrest = 0 }
 1647.1.1 = { capital = "Plered" }
 1680.1.1 = { capital = "Kartosuro" }
+
+discovered_by = greek_tech

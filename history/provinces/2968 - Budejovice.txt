@@ -55,3 +55,5 @@ discovered_by = ottoman
 	remove_core = BOH
 } # Tilly beats the Winterking. Deus Vult!
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+
+discovered_by = greek_tech

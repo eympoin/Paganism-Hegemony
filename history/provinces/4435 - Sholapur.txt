@@ -43,3 +43,5 @@ discovered_by = chinese
 	controller = MAR
 	remove_core = DEC
 } # Battle of Udgir
+
+discovered_by = greek_tech

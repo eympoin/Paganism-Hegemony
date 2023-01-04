@@ -30,3 +30,5 @@ discovered_by = ottoman
 	controller = NAG
 	add_core = NAG
 }
+
+discovered_by = greek_tech

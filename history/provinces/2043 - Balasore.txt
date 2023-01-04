@@ -79,3 +79,5 @@ discovered_by = ottoman
 	add_core = GBR
 	remove_core = NAG
 } # Treaty of Deogaon
+
+discovered_by = greek_tech

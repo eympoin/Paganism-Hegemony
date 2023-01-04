@@ -31,3 +31,5 @@ discovered_by = chinese
 	owner = DEC
 	controller = DEC
 } # Asif Jah declared himself Nizam-al-Mulk
+
+discovered_by = greek_tech

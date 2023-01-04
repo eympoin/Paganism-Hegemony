@@ -53,3 +53,5 @@ discovered_by = chinese
 	controller = HAD
 	remove_core = GWA
 } # Independent (British dependency)
+
+discovered_by = greek_tech

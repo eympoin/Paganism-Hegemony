@@ -62,3 +62,5 @@ discovered_by = indian
 1573.1.1 = { unrest = 5 } #Invasion by Oromo
 1578.1.1 = { unrest = 5 } #Invasion by Oromo
 1588.1.1 = { unrest = 5 } #Invasion by Oromo
+
+discovered_by = greek_tech

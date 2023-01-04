@@ -29,3 +29,5 @@ discovered_by = ottoman
 	controller = ATJ
 	remove_core = PSA
 }
+
+discovered_by = greek_tech

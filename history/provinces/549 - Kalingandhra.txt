@@ -70,3 +70,5 @@ center_of_trade = 1
 	add_core = GBR
 } # Northern Circars to Britain
 1823.1.1 = { remove_core = DEC } #Nizam withdraws his claims
+
+discovered_by = greek_tech

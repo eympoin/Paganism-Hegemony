@@ -36,3 +36,5 @@ discovered_by = ottoman
 	controller = QNG
 	add_core = QNG
 }
+
+discovered_by = greek_tech

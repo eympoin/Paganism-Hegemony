@@ -45,3 +45,5 @@ center_of_trade = 1
 	controller = GBR
 	remove_core = NAG
 }
+
+discovered_by = greek_tech

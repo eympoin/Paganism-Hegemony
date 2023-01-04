@@ -64,3 +64,5 @@ discovered_by = east_african
 	add_core = BDA
 	remove_core = MUG	
 }
+
+discovered_by = greek_tech

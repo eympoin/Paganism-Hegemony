@@ -76,3 +76,5 @@ center_of_trade = 1
 	owner = PTA
 	controller = PTA
 }
+
+discovered_by = greek_tech

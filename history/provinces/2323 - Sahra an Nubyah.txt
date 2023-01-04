@@ -32,3 +32,5 @@ discovered_by = east_african
 	controller = ABB
 	add_core = ABB
 } #Ottomans occupy Lower Nubia
+
+discovered_by = greek_tech

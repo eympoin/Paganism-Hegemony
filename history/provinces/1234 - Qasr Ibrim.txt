@@ -30,3 +30,5 @@ discovered_by = east_african
 	controller = TUR
 	religion = sunni #If not before
 } #Ottomans occupy Lower Nubia
+
+discovered_by = greek_tech

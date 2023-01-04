@@ -57,3 +57,5 @@ discovered_by = chinese
 	remove_core = MAR
 	remove_core = DEC
 }
+
+discovered_by = greek_tech

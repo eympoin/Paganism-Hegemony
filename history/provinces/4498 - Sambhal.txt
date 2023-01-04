@@ -82,3 +82,5 @@ discovered_by = chinese
 	controller = GBR
 	add_core = GBR
 } # Great Britain
+
+discovered_by = greek_tech

@@ -69,3 +69,5 @@ center_of_trade = 1
 		investor = GBR
 	}
 } # Treaty of Amiens
+
+discovered_by = greek_tech

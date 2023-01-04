@@ -17,3 +17,4 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 fort_15th = yes #Castiello de Lobarre
+discovered_by = greek_tech

@@ -36,3 +36,4 @@ discovered_by = NPL
 	controller = NPL
 	add_core = NPL
 }
+discovered_by = greek_tech

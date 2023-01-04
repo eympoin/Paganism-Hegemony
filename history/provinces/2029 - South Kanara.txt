@@ -50,3 +50,5 @@ discovered_by = east_african
 	owner = GBR
 	add_core = GBR
 } # Fourth Anglo-Mysore War
+
+discovered_by = greek_tech

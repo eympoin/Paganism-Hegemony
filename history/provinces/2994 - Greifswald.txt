@@ -43,3 +43,5 @@ discovered_by = ottoman
 	add_core = PRU
 	remove_core = DAN
 }
+
+discovered_by = greek_tech

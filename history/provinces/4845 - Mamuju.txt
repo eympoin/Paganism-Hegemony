@@ -29,3 +29,5 @@ discovered_by = ottoman
 	is_city = yes
 	trade_goods = tropical_wood
 } # Ternate Sultanate expanded
+
+discovered_by = greek_tech

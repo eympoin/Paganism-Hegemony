@@ -33,3 +33,5 @@ center_of_trade = 2
 	controller = ATJ
 	remove_core = POR
 }
+
+discovered_by = greek_tech

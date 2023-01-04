@@ -71,3 +71,5 @@ discovered_by = chinese
 	add_core = GBR
 }
 
+
+discovered_by = greek_tech

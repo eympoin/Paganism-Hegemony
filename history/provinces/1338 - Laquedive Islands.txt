@@ -14,3 +14,5 @@ discovered_by = chinese
 1413.1.1 = { discovered_by = MNG }
 1498.1.1 = { discovered_by = POR }
 1550.1.1 = { discovered_by = TUR }
+
+discovered_by = greek_tech

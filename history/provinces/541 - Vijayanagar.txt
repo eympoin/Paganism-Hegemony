@@ -53,3 +53,5 @@ center_of_trade = 1
 	controller = GBR
 	add_core = GBR
 }	#Ceded districts
+
+discovered_by = greek_tech

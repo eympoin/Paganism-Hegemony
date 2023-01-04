@@ -52,3 +52,5 @@ discovered_by = ottoman
 	add_core = ANN
 	remove_core = DAI
 } # Nguyen Phuc Anh annexed the Tay Son Dynasty
+
+discovered_by = greek_tech

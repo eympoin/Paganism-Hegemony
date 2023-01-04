@@ -36,3 +36,5 @@ discovered_by = ottoman
 	owner = JPR
 	controller = JPR
 }
+
+discovered_by = greek_tech

@@ -48,3 +48,5 @@ discovered_by = ottoman
 } # Tilly beats the Winterking. Deus Vult!
 1627.1.1 = { religion = catholic } # Order from Ferdinand II to reconvert to Catholicism, many Protestant leave the country
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+
+discovered_by = greek_tech

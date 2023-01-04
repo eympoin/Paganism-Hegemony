@@ -45,3 +45,5 @@ discovered_by = chinese
 	owner = MYS	
 	controller = MYS
 }
+
+discovered_by = greek_tech

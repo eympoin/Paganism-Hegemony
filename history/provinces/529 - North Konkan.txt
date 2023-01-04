@@ -61,3 +61,5 @@ center_of_trade = 1
 	add_core = GBR
 	remove_core = MAR
 } # Treaty of Salbai
+
+discovered_by = greek_tech

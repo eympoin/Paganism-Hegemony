@@ -18,4 +18,4 @@ discovered_by = muslim
 discovered_by = ottoman
 extra_cost = 8
 center_of_trade = 1
-http://dnd5e.wikidot.com/dragonborn
+discovered_by = greek_tech

@@ -75,3 +75,5 @@ discovered_by = chinese
 	owner = PUN
 	controller = PUN
 }
+
+discovered_by = greek_tech

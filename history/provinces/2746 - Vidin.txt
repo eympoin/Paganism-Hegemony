@@ -21,3 +21,4 @@ add_province_modifier = {
 	name = slavic_pride
 	duration = -1
 }
+discovered_by = greek_tech

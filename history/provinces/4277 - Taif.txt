@@ -43,3 +43,5 @@ discovered_by = east_african
 	add_core = TUR
 	remove_core = NAJ
 } # Mecca is returned to the Ottomans
+
+discovered_by = greek_tech

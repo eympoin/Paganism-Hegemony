@@ -51,3 +51,5 @@ discovered_by = ottoman
 	is_city = yes
 	trade_goods = spices
 } # Dutch control
+
+discovered_by = greek_tech

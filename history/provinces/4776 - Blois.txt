@@ -17,3 +17,4 @@ discovered_by = ottoman
 add_permanent_claim = FRP
 add_permanent_claim = FRR
 add_permanent_claim = FRV
+discovered_by = greek_tech

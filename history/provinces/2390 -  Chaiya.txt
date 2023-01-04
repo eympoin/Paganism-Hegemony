@@ -37,3 +37,5 @@ discovered_by = ottoman
 	controller = AYU
 	remove_core = LIG
 }
+
+discovered_by = greek_tech

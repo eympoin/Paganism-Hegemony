@@ -62,3 +62,5 @@ discovered_by = chinese
 	revolt = {}
 	controller = GBR
 } # British control is restored
+
+discovered_by = greek_tech

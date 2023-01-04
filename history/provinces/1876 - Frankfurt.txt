@@ -24,4 +24,4 @@ add_local_autonomy = 50
 		name = "birthplace_of_printing_press"
 		duration = -1
 	}
-}
+}discovered_by = greek_tech

@@ -46,3 +46,5 @@ discovered_by = east_african
 	controller = PTL
 	remove_core = BDA	
 }
+
+discovered_by = greek_tech

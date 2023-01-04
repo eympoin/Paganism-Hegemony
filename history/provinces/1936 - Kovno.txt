@@ -40,3 +40,5 @@ discovered_by = ottoman
 1795.10.24 = { owner = RUS controller = RUS add_core = RUS } # Annexed by Russia, third partition
 1812.6.28 = { controller = FRA } # Occupied by French troops
 1812.12.10 = { controller = RUS }
+
+discovered_by = greek_tech

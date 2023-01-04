@@ -3,7 +3,7 @@ add_government_reform = free_city
 government_rank = 1
 primary_culture = pontic_greek
 religion = theoi
-technology_group = eastern
+technology_group = greek_tech
 historical_friend = TRE
 capital = 2410	# Theodoro
 

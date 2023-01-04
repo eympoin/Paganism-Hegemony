@@ -25,3 +25,4 @@ discovered_by = chinese
 	controller = NPL
 	add_core = NPL
 }
+discovered_by = greek_tech

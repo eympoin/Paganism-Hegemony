@@ -22,3 +22,4 @@ religion = deii
 culture = lusitanian	
 trade_goods = sugar
 
+discovered_by = greek_tech

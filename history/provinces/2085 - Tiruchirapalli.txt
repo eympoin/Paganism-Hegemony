@@ -64,3 +64,4 @@ add_vaisyas_or_burghers_effect = yes
 	owner = GBR
 	add_core = GBR
 }
+discovered_by = greek_tech

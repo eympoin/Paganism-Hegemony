@@ -20,3 +20,4 @@ discovered_by = CHG
 discovered_by = OIR
 discovered_by = KAS
 add_core = KOK
+discovered_by = greek_tech

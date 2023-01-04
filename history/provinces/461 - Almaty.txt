@@ -22,3 +22,5 @@ discovered_by = ottoman
 discovered_by = CHG
 discovered_by = OIR
 discovered_by = KAS
+
+discovered_by = greek_tech

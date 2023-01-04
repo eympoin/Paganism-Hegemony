@@ -39,3 +39,5 @@ discovered_by = ottoman
 	controller = ANN
 	remove_core = DAI
 } # Nguyen Phuc Anh conquered the Tay Son Dynasty
+
+discovered_by = greek_tech

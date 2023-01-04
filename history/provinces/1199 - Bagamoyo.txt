@@ -23,3 +23,5 @@ discovered_by = central_african
 1600.1.1 = { discovered_by = TUR }
 1730.1.1 = { owner = OMA controller = OMA add_core = OMA } #Omanis restore control
 1763.1.1 = { unrest = 7 } #Kamba migrations in wake of Maasai expansion disturb region
+
+discovered_by = greek_tech

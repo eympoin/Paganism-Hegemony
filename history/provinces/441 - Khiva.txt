@@ -20,3 +20,4 @@ discovered_by = indian
 extra_cost = 8
 center_of_trade = 1
 add_core = KHI
+discovered_by = greek_tech

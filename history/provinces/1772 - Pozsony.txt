@@ -24,3 +24,4 @@ discovered_by = AST
 discovered_by = QAS
 extra_cost = 8
 center_of_trade = 1
+discovered_by = greek_tech

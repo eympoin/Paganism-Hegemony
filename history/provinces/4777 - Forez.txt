@@ -19,3 +19,4 @@ discovered_by = ottoman
 add_core = LUG
 
 add_local_autonomy = 25
+discovered_by = greek_tech

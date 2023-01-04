@@ -25,3 +25,5 @@ discovered_by = eastern
 1613.1.1 = { unrest = 0 } #Funj restore autonomy to the Abdallabi
 1706.1.1 = { unrest = 3 } #Badi III faces revolt over development of slave army at aristocrats expense
 1709.1.1 = { unrest = 0 } #Badi III faces revolt over development of slave army at aristocrats expense
+
+discovered_by = greek_tech

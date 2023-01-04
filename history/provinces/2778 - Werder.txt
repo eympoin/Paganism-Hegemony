@@ -34,3 +34,5 @@ discovered_by = ottoman
 	controller = ---
 	trade_goods = unknown
 } # Majeerteen takes over Marehan
+
+discovered_by = greek_tech

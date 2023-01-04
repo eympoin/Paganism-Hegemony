@@ -25,3 +25,5 @@ discovered_by = indian
 1550.1.1 = { discovered_by = TUR }
 
 1555.1.1 = { owner = WAR controller = WAR } #Northern part of province no longer conrolled by ADA
+
+discovered_by = greek_tech

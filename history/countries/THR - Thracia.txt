@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 government_rank = 1
 primary_culture = byzantine_c
 religion = theoi
-technology_group = eastern
+technology_group = greek_tech
 capital = 2750# Constantinople
 fixed_capital = 2750# Cannot move capital away from this province & no power cost to move to it
 
@@ -30,4 +30,3 @@ fixed_capital = 2750# Cannot move capital away from this province & no power cos
 		mil = 4
 	}
 }
-

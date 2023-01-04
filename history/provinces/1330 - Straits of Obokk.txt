@@ -12,3 +12,5 @@ discovered_by = eastern
 1421.1.1 = { discovered_by = MNG }
 1480.1.1 = { discovered_by = TUR }
 1488.1.1 = { discovered_by = POR }
+
+discovered_by = greek_tech

@@ -1,15 +1,15 @@
 #1774 - Treviso
 owner = AQU
 controller = AQU
-culture = aquileian 
+culture = aquileian
 religion = mithraic
 hre = no
 base_tax =  5
 base_production = 5
 trade_goods = paper
 base_manpower = 5
-capital = "Treviso" 
-is_city = yes	# Estimated 
+capital = "Treviso"
+is_city = yes	# Estimated
 fort_15th = yes
 discovered_by = western
 discovered_by = eastern
@@ -18,3 +18,4 @@ discovered_by = ottoman
 
 
 1444.1.1 = { add_core = AQU }
+discovered_by = greek_tech

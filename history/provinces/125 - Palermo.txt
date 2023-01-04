@@ -2,10 +2,10 @@
 
 owner = PNR
 controller = PNR
-culture = sicilian 
-religion = deii 
-hre = no 
-base_tax = 8 
+culture = sicilian
+religion = deii
+hre = no
+base_tax = 8
 base_production = 8
 trade_goods = wine
 base_manpower = 6
@@ -20,3 +20,4 @@ extra_cost = 8
 center_of_trade = 1
 
 fort_15th = yes
+discovered_by = greek_tech

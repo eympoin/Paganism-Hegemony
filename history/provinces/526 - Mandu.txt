@@ -106,3 +106,5 @@ controller = REB
 	add_core = GBR
 	remove_core = MAR
 }
+
+discovered_by = greek_tech

@@ -80,3 +80,5 @@ add_local_autonomy = 25
 	add_core = GBR
 	remove_core = MYS
 } # British
+
+discovered_by = greek_tech

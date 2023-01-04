@@ -28,3 +28,5 @@ discovered_by = ottoman
 	owner = JOH
 	controller = JOH
 }
+
+discovered_by = greek_tech

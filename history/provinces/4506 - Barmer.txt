@@ -49,3 +49,5 @@ discovered_by = chinese
 	unrest = 0
 } # Marwar independent
 1707.5.12 = { discovered_by = GBR }
+
+discovered_by = greek_tech

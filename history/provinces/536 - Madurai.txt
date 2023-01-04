@@ -91,3 +91,5 @@ center_of_trade = 1
 		investor = GBR
 	}
 } # British
+
+discovered_by = greek_tech

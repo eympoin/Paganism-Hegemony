@@ -88,3 +88,5 @@ discovered_by = ottoman
 	controller = DEC
 	remove_core = MAR
 }
+
+discovered_by = greek_tech

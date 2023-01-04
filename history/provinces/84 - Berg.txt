@@ -19,3 +19,4 @@ discovered_by = ottoman
 hre = no
 
 
+discovered_by = greek_tech

@@ -1,7 +1,7 @@
 # 171 - Vannetais
 
 owner = FRP
-controller = FRP 
+controller = FRP
 add_permanent_claim = FRO
 add_permanent_claim = FRR
 add_permanent_claim = FRV
@@ -22,3 +22,4 @@ discovered_by = muslim
 discovered_by = ottoman
 
 add_local_autonomy = 50
+discovered_by = greek_tech

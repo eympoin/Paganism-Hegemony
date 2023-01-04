@@ -80,3 +80,5 @@ center_of_trade = 2
 	owner = PUN
 	controller = PUN
 }
+
+discovered_by = greek_tech

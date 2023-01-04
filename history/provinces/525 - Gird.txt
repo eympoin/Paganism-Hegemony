@@ -85,3 +85,5 @@ discovered_by = chinese
 	controller = GWA
 	remove_core = MUG
 }
+
+discovered_by = greek_tech

@@ -70,3 +70,5 @@ center_of_trade = 2
 		investor = NED
 	}	
 }
+
+discovered_by = greek_tech

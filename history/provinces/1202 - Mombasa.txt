@@ -59,3 +59,5 @@ center_of_trade = 2
 	remove_core = OMA
 } # Al-Mazrui rebels against Omani rulers
 1759.1.1 = { unrest = 8 } # Omani attempt to restore authority fail
+
+discovered_by = greek_tech

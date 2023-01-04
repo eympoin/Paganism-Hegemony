@@ -22,3 +22,4 @@ extra_cost = 16
 center_of_trade = 2
 add_core = CHG
 add_local_autonomy = 35
+discovered_by = greek_tech

@@ -40,3 +40,4 @@ discovered_by = nomad_group
 	add_core = RUS
 	remove_core = PLC
 } # Second Partition
+discovered_by = greek_tech

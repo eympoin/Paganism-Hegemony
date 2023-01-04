@@ -46,3 +46,5 @@ add_local_autonomy = 25
 	owner = GBR
 	add_core = GBR
 }
+
+discovered_by = greek_tech

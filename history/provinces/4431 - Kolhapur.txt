@@ -32,3 +32,5 @@ discovered_by = chinese
 	controller = MAR
 	remove_core = BIJ
 } # Inheritance of Shivaj
+
+discovered_by = greek_tech

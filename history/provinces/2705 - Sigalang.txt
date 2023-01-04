@@ -22,3 +22,5 @@ discovered_by = ottoman
 1578.6.26 = { owner = BEI controller = BEI }
 1672.1.1 = { revolt = { type = revolutionary_rebels size = 2 } controller = REB } # Civil war over succession
 1673.1.1 = { revolt = {} controller = BEI }
+
+discovered_by = greek_tech
