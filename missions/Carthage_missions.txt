@@ -2084,7 +2084,7 @@ africo_asian_trade = {
         has_province_modifier = carthaginian_trading_outpost
         superregion = southern_africa_superregion
       }
-      AET = {
+      ATP = {
         exists = yes
         is_subject_of = ROOT
       }
