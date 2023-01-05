@@ -20,7 +20,6 @@ carthaginian_colony = {
 	overlord_enforce_peace_attacking = yes
 	can_transfer_in_peace = no
 	press_sailors = yes
-	forcelimit_bonus = 1.0
 
 	liberty_desire_development_ratio = 0.1
 	base_liberty_desire = -30
@@ -89,7 +88,6 @@ persian_satrapdom = {
 	liberty_desire_development_ratio = 0.25
 	liberty_desire_same_dynasty = -5.0
 	pays_overlord = 1.0
-	forcelimit_bonus = 1.0
 	forcelimit_to_overlord = 0.1
 
 	relative_power_class = 2
@@ -137,7 +135,6 @@ roman_province_cen = {
 	liberty_desire_negative_prestige = 0.5
 	liberty_desire_development_ratio = 0.05
 	pays_overlord = 1.0									# 1.0 represents the amount payed by vassals
-	forcelimit_bonus = 2.0								# 1.0 represents bonus from having a vassal
 	forcelimit_to_overlord = 0.2						# Percent of subject FL to use as base for modifiers
 
 	# Subject Interactions:
@@ -183,7 +180,6 @@ roman_province_decen = {
 	liberty_desire_negative_prestige = 0.5
 	liberty_desire_development_ratio = 0.25
 	pays_overlord = 0.5									# 1.0 represents the amount payed by vassals
-	forcelimit_bonus = 1.0								# 1.0 represents bonus from having a vassal
 	forcelimit_to_overlord = 0.1						# Percent of subject FL to use as base for modifiers
 	military_focus = 2.0								# How much the AI subject should spend etc. on army and forts. 0 should make them spend nothing. Very high values will probably not make a big difference since there will be sanity checks.
 

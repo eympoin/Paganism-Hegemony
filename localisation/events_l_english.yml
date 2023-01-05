@@ -854,9 +854,7 @@ flavor_ctg.28.d:0 "Carthago doesn't colonize like the other nations. The first c
 flavor_ctg.28.a:0 "That's good to know."
 
 flavor_ctg.29.t:0 "Roma Delenda Est"
-flavor_ctg.29.d:0 "Now that our glorious empire has been restored, we must conquer the entire Mediterranean Sea! We should start by destroying our mortal enemy, Rome, like they have done to us more than a millenium ago!
-We have two options to do so: Either we follow Hannibal's footsteps, and invade from the north, or invading from Sicily, and advance from the south.
-Both options have their advantages and downsides. The northern option will allow us to conquer Southern Gaul and Northern Italy along the way, but it will be a grueling task. The southern option is the safest and fastest road, but the Romans know this and will be better prepared. What road shall we take? After all, all roads lead to Rome..."
+flavor_ctg.29.d:0 "Now that our glorious empire has been restored, we must conquer the entire Mediterranean Sea! We should start by destroying our mortal enemy, Rome, like they have done to us more than a millenium ago! We have two options to do so: Either we follow Hannibal's footsteps, and invade from the north, or invading from Sicily, and advance from the south. Both options have their advantages and downsides. The northern option will allow us to conquer Southern Gaul and Northern Italy along the way, but it will be a grueling task. The southern option is the safest and fastest road, but the Romans know this and will be better prepared. What road shall we take? After all, all roads lead to Rome..."
 flavor_ctg.29.a:0 "We will avenge Hannibal!"
 flavor_ctg.29.b:0 "We shall attack from Sicily!"
 

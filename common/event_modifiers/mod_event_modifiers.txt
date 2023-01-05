@@ -12982,10 +12982,10 @@ third_temple_country_modifier = {
 	religion = yes
 }
 lack_of_provincial_gov = {
-	local_autonomy = 50
+	global_autonomy = 50
 }
 lackluster_provincial_gov = {
-	local_autonomy = 25
+	global_autonomy = 25
 }
 
 #Norse modifiers
@@ -13185,5 +13185,5 @@ naval_supplies_bonus_prod = {
 bab_civil_war = {
 	global_unrest = 2
 	global_tax_modifier = -0.2
-	production_efficiency = -0.2	
+	production_efficiency = -0.2
 }

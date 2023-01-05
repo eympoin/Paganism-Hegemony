@@ -4548,7 +4548,7 @@ nurnberg_throne = {
 }
 
 lotharingian_industry = {
-  trade_goods_size_modifier = 0.25
+  global_trade_goods_size_modifier = 0.25
 }
 
 eaf_king = {

@@ -379,7 +379,7 @@ demand_carthaginian_vassal = {
 					has_province_modifier = carthaginian_trading_outpost
 					superregion = southern_africa_superregion
 				}
-				has_country_flag = ctg_alaska
+				has_country_flag = ctg_south_africa
 			}
 			AND = {
 				FROM = {

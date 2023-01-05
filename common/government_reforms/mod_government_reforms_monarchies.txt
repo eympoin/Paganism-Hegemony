@@ -4550,3 +4550,43 @@ indep_cuicide = {
 		locked_government_type = yes
 	}
 }
+
+
+carthaginian_absolute_monarchy = {
+	icon = "crown"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			AND = {
+				is_playing_custom_nation = yes
+				have_had_reform = carthaginian_absolute_monarchy
+			}
+			has_unlocked_government_reform = {
+				government_reform = carthaginian_absolute_monarchy
+			}
+		}
+	}
+	trigger = {
+		has_unlocked_government_reform_tooltip = {
+			government_reform = carthaginian_absolute_monarchy
+		}
+	}
+	valid_for_nation_designer = yes
+	nation_designer_trigger = {
+		has_dlc = "Lions of the North"
+	}
+	nation_designer_cost = 40
+
+	modifiers = {
+		max_absolutism = 30
+		yearly_absolutism = 3
+		autonomy_change_time = -0.5
+		nobles_influence_modifier = -0.1
+		church_influence_modifier = -0.1
+		burghers_influence_modifier = -0.1
+	}
+
+	custom_attributes = {
+		absolutism_reduction_on_ruler_death = yes
+	}
+}
