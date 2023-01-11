@@ -8,3 +8,4 @@ discovered_by = ottoman
 discovered_by = eastern
 1507.9.1 = { discovered_by = POR } # Alfonso d'Albuquerque
 discovered_by = greek_tech
+discovered_by = steppe_tech

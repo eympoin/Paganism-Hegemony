@@ -71,3 +71,4 @@ discovered_by = chinese
 } # Marathas
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

@@ -106,3 +106,4 @@ owner = BNG
 1795.1.1 = { unrest = 6 } # Tamar revolt, Munda revolt
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

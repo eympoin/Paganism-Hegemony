@@ -1,6 +1,6 @@
 government = tribal
 add_government_reform = steppe_horde
-technology_group = nomad_group
+technology_group = steppe_tech
 primary_culture = manchu
 religion = tengri_pagan_reformed
 capital = 1048	# Hinggan

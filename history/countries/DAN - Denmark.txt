@@ -85,7 +85,8 @@ capital = 12 #Sjaelland
 		mil = 4
 		leader = {
 			name = "Hans"
-			type = general
+			type = general
+
 			fire = 2
 			shock = 2
 			manuever = 2
@@ -304,7 +305,8 @@ capital = 12 #Sjaelland
 		mil = 0
 		leader = {
 			name = "Christian IV"
-			type = general
+			type = general
+
 			fire = 3
 			shock = 3
 			manuever = 2
@@ -428,7 +430,8 @@ capital = 12 #Sjaelland
 		mil = 3
 		leader = {
 			name = "Christian V"
-			type = general
+			type = general
+
 			fire = 3
 			shock = 3
 			manuever = 3

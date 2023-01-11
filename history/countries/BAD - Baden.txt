@@ -322,7 +322,8 @@ capital = 74	# Baden
 		dynasty = "von Zähringen"		
 		leader = { 
 			name = "Ludwig-Wilhelm I"
-			type = general
+			type = general
+
 			fire = 2
 			shock = 3
 			manuever = 2

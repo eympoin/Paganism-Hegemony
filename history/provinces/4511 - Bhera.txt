@@ -22,3 +22,4 @@ discovered_by = chinese
 add_local_autonomy = 50 #Kokhars
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

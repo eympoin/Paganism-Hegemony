@@ -85,3 +85,4 @@ discovered_by = chinese
 } # Great Britain
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

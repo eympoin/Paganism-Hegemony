@@ -81,3 +81,4 @@ discovered_by = chinese
 } # Given to GBR by Mughal Empire (was formerly british puppet)
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

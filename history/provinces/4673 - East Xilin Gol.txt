@@ -33,3 +33,5 @@ add_core = CHH
 	remove_core = MCH
 } # The Qing Dynasty
 1682.1.1 = { discovered_by = SPA } #Ferdinand Verbiest
+
+discovered_by = steppe_tech

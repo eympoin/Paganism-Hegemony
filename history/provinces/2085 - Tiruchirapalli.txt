@@ -65,3 +65,4 @@ add_vaisyas_or_burghers_effect = yes
 	add_core = GBR
 }
 discovered_by = greek_tech
+discovered_by = steppe_tech

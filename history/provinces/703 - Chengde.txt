@@ -38,3 +38,5 @@ add_core = CHH
 } # The Qing Dynasty 
 #1662.1.1 = { remove_core = MNG } # The government in Taiwan surrendered
 1709.1.1 = { discovered_by = SPA }
+
+discovered_by = steppe_tech

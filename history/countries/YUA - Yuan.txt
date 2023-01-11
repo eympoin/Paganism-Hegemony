@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = celestial_empire
 government_rank = 3
-technology_group = nomad_group
+technology_group = steppe_tech
 religion = confucianism
 primary_culture = mongol
 capital = 1816

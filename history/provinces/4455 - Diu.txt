@@ -33,3 +33,4 @@ discovered_by = east_african
 	fort_16th = yes
 }
 discovered_by = greek_tech
+discovered_by = steppe_tech

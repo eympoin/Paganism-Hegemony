@@ -55,3 +55,4 @@ discovered_by = chinese
 } # Independent (British dependency)
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

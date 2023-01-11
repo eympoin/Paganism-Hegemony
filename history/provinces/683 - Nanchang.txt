@@ -35,3 +35,5 @@ discovered_by = nomad_group
 }
 1675.1.1 = { controller = MNG }
 1680.1.1 = { controller = QNG }
+
+discovered_by = steppe_tech

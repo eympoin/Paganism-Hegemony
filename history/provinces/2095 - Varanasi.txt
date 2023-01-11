@@ -101,3 +101,4 @@ add_province_triggered_modifier = hindu_varanasi
 }
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

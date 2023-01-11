@@ -32,3 +32,4 @@ discovered_by = ottoman
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
 discovered_by = greek_tech
 discovered_by = roman_tech
+discovered_by = steppe_tech

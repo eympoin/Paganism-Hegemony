@@ -69,3 +69,4 @@ center_of_trade = 2
 1818.6.3 = { remove_core = MAR }
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

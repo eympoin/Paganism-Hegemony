@@ -95,3 +95,4 @@ center_of_trade = 2
 } # Given to GBR by Mughal Empire (was formerly british puppet)
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

@@ -41,3 +41,4 @@ discovered_by = nomad_group
 1795.10.24 = { owner = RUS controller = RUS } # Third partition of Poland
 discovered_by = greek_tech
 discovered_by = roman_tech
+discovered_by = steppe_tech

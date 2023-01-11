@@ -32,3 +32,4 @@ discovered_by = chinese
 1809.1.1 = { controller = KGR }
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

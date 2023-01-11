@@ -2,5 +2,5 @@ government = tribal
 add_government_reform = steppe_horde
 primary_culture = oghuz_turk
 religion = tengri_pagan_reformed
-technology_group = nomad_group
+technology_group = steppe_tech
 capital = 465

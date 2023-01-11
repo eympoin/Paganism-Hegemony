@@ -41,3 +41,4 @@ discovered_by = chinese
 1783.1.1 = { capital = "Tehri" }
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

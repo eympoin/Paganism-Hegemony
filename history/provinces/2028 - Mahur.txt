@@ -50,3 +50,4 @@ discovered_by = chinese
 } # Asif Jah declared himself Nizam-al-Mulk
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

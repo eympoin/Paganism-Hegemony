@@ -63,3 +63,4 @@ add_core = SRH
 1784.1.1 = { capital = "Delhi" } # The Marathas install puppet
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

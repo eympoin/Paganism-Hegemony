@@ -33,3 +33,4 @@ add_province_triggered_modifier = changbai_mountain
 	remove_core = MCH
 } # The Qing Dynasty
 1709.1.1 = { discovered_by = SPA }
+discovered_by = steppe_tech

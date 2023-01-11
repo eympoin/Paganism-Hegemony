@@ -16,3 +16,5 @@ is_city = yes
 
 
 discovered_by = nomad_group
+
+discovered_by = steppe_tech

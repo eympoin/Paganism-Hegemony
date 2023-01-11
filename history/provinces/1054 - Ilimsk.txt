@@ -31,3 +31,5 @@ discovered_by = BRT
 1660.1.1 = { unrest = 0 }
 1684.1.1 = { unrest = 4 } # Yakut rebellion
 1686.1.1 = { unrest = 0 }
+
+discovered_by = steppe_tech

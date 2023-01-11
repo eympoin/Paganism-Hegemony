@@ -27,3 +27,4 @@ add_province_modifier {
 add_local_autonomy = 10
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

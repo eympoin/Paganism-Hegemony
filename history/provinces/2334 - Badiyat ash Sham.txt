@@ -10,3 +10,4 @@ discovered_by = eastern
 
 1515.1.1 = { discovered_by = POR }
 discovered_by = greek_tech
+discovered_by = steppe_tech

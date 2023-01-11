@@ -32,3 +32,5 @@ fort_15th = yes
 } # The Qing Dynasty
 1709.1.1 = { discovered_by = SPA }
 1739.1.1 = { discovered_by = RUS } # Martin Spanberg
+
+discovered_by = steppe_tech

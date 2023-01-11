@@ -20,3 +20,4 @@ add_local_autonomy = 50
 add_core = KHI
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

@@ -90,3 +90,4 @@ discovered_by = chinese
 } # Foundation of the Oudh dynasty
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

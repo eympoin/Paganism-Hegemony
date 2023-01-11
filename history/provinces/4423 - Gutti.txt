@@ -44,3 +44,4 @@ discovered_by = chinese
 } # Ceded districts
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

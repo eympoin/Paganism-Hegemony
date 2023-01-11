@@ -26,3 +26,5 @@ discovered_by = nomad_group
 	trade_goods = iron
 } # Yermak Timofeevich
 1611.1.1 = { add_core = RUS }
+
+discovered_by = steppe_tech

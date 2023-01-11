@@ -44,3 +44,4 @@ discovered_by = east_african
 	capital = "Dhrangadhra"
 }
 discovered_by = greek_tech
+discovered_by = steppe_tech

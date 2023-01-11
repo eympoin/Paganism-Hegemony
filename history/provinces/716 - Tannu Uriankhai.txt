@@ -39,3 +39,5 @@ discovered_by = nomad_group
 	add_core = QNG
 } # Outer Mongolia intergrated into Qing
 1709.1.1 = { discovered_by = SPA }
+
+discovered_by = steppe_tech

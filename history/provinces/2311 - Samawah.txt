@@ -20,3 +20,5 @@ discovered_by = east_african
 
 add_province_triggered_modifier = religious_center
 discovered_by = greek_tech
+
+discovered_by = steppe_tech

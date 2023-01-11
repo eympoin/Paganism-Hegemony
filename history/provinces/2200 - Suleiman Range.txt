@@ -13,3 +13,4 @@ discovered_by = chinese
 1707.5.12 = { discovered_by = GBR }
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

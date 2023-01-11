@@ -40,3 +40,5 @@ center_of_trade = 1
 1679.1.1 = { controller = QNG }
 1795.1.1 = { revolt_risk = 6 } # Miao rebellion
 1797.1.1 = { revolt_risk = 0 }
+
+discovered_by = steppe_tech

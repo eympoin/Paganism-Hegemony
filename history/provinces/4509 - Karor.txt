@@ -68,3 +68,4 @@ discovered_by = chinese
 } # Ahmad Shah established the Durrani empire
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

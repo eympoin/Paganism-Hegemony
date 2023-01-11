@@ -20,3 +20,4 @@ discovered_by = indian
 #fort_15th = yes #Shushtar, Dezful
 discovered_by = eastern
 discovered_by = greek_tech
+discovered_by = steppe_tech

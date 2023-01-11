@@ -45,3 +45,4 @@ discovered_by = chinese
 1818.1.1 = { revolt = { } }
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

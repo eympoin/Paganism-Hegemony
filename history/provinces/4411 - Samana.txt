@@ -75,3 +75,4 @@ discovered_by = chinese
 }
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

@@ -24,3 +24,5 @@ add_local_autonomy = 35
 1644.1.1 = { add_core = MCH remove_core = MNG } # Part of the Manchu empire
 1645.7.1 = { add_core = QNG remove_core = MCH }
 1653.1.1 = { discovered_by = NED } # Hendrick Hamel
+
+discovered_by = steppe_tech

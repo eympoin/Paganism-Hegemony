@@ -2,7 +2,7 @@ government = tribal
 add_government_reform = steppe_horde
 primary_culture = nogaybak
 religion = tengri_pagan_reformed
-technology_group = nomad_group
+technology_group = steppe_tech
 capital = 465	# Saraycik
 religious_school = hanafi_school
 

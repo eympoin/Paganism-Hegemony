@@ -55,3 +55,4 @@ center_of_trade = 1
 }	#Ceded districts
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

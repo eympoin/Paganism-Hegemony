@@ -45,3 +45,4 @@ discovered_by = chinese
 	controller = TAU
 	add_core = TAU
 }
+discovered_by = steppe_tech

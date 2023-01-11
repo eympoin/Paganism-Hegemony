@@ -65,3 +65,4 @@ discovered_by = chinese
 	remove_core = MUG
 }
 discovered_by = greek_tech
+discovered_by = steppe_tech

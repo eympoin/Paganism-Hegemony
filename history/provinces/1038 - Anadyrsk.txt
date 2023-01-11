@@ -30,3 +30,4 @@ discovered_by = KMC
 	is_city = yes
 	trade_goods = fish
 }
+discovered_by = steppe_tech

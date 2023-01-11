@@ -45,3 +45,4 @@ discovered_by = chinese
 } # Battle of Udgir
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

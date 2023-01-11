@@ -44,3 +44,4 @@ discovered_by = chinese
 #1743 Marathas take control over Nagpur kingdom
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

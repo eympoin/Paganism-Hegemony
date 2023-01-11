@@ -11,7 +11,8 @@ capital = 262 # Krakow
 1572.1.1 = {
 	leader = {
 		name = "Krzysztof Radziwill"
-		type = general
+		type = general
+
 		fire = 3
 		shock = 4
 		manuever = 4
@@ -45,7 +46,8 @@ capital = 262 # Krakow
 		mil = 6
 		leader = {
 			name = "Stefan Báthory"
-			type = general
+			type = general
+
 			fire = 3
 			shock = 5
 			manuever = 5
@@ -71,7 +73,8 @@ capital = 262 # Krakow
 1581.1.1 = {
 	leader = {
 		name = "Jan Zamojski"
-		type = general
+		type = general
+
 		fire = 2
 		shock = 4
 		manuever = 3
@@ -91,7 +94,8 @@ capital = 262 # Krakow
 		mil = 2
 		leader = {
 			name = "Zygmunt III"
-			type = general
+			type = general
+
 			fire = 3
 			shock = 4
 			manuever = 4
@@ -120,7 +124,8 @@ capital = 262 # Krakow
 1589.1.1 = {
 	leader = {
 		name = "Jan Sapieha"
-		type = general
+		type = general
+
 		fire = 2
 		shock = 2
 		manuever = 3
@@ -142,7 +147,8 @@ capital = 262 # Krakow
 		mil = 4
 		leader = {
 			name = "Wladyslaw IV"
-			type = general
+			type = general
+
 			fire = 3
 			shock = 3
 			manuever = 4
@@ -161,7 +167,8 @@ capital = 262 # Krakow
 1600.1.1 = {
 	leader = {
 		name = "Jan Karol Chodkiewicz"
-		type = general
+		type = general
+
 		fire = 3
 		shock = 5
 		manuever = 4
@@ -173,7 +180,8 @@ capital = 262 # Krakow
 1600.1.1 = {
 	leader = {
 		name = "Stanislaw Lubomirski"
-		type = general
+		type = general
+
 		fire = 3
 		shock = 3
 		manuever = 4
@@ -185,7 +193,8 @@ capital = 262 # Krakow
 1605.1.1 = {
 	leader = {
 		name = "Stanislaw Zolkiewski"
-		type = general
+		type = general
+
 		fire = 3
 		shock = 4
 		manuever = 4
@@ -211,7 +220,8 @@ capital = 262 # Krakow
 1615.1.1 = {
 	leader = {
 		name = "Krzysztof Radziwill"
-		type = general
+		type = general
+
 		fire = 2
 		shock = 2
 		manuever = 3
@@ -223,7 +233,8 @@ capital = 262 # Krakow
 1618.1.1 = {
 	leader = {
 		name = "Arend Dickmann"
-		type = admiral
+		type = admiral
+
 		fire = 3
 		shock = 4
 		manuever = 3
@@ -235,7 +246,8 @@ capital = 262 # Krakow
 1620.1.1 = {
 	leader = {
 		name = "Mikolaj Potocki"
-		type = general
+		type = general
+
 		fire = 2
 		shock = 1
 		manuever = 3
@@ -247,7 +259,8 @@ capital = 262 # Krakow
 1620.1.1 = {
 	leader = {
 		name = "Stanislaw Koniecpolski"
-		type = general
+		type = general
+
 		fire = 2
 		shock = 5
 		manuever = 5
@@ -259,7 +272,8 @@ capital = 262 # Krakow
 1621.1.1 = {
 	leader = {
 		name = "Krzysztof Arciszewski"
-		type = general
+		type = general
+
 		fire = 3
 		shock = 2
 		manuever = 5
@@ -271,7 +285,8 @@ capital = 262 # Krakow
 1630.1.1 = {
 	leader = {
 		name = "Pawel Jan Sapieha"
-		type = general
+		type = general
+
 		fire = 2
 		shock = 3
 		manuever = 5
@@ -290,7 +305,8 @@ capital = 262 # Krakow
 		mil = 4
 		leader = {
 			name = "Wladyslaw IV"
-			type = general
+			type = general
+
 			fire = 3
 			shock = 3
 			manuever = 4
@@ -331,7 +347,8 @@ capital = 262 # Krakow
 1640.1.1 = {
 	leader = {
 		name = "Jeremi Wisnowiecki"
-		type = general
+		type = general
+
 		fire = 2
 		shock = 3
 		manuever = 4
@@ -384,7 +401,8 @@ capital = 262 # Krakow
 1650.1.1 = {
 	leader = {
 		name = "von Winter"
-		type = general
+		type = general
+
 		fire = 4
 		shock = 2
 		manuever = 2
@@ -396,7 +414,8 @@ capital = 262 # Krakow
 1651.1.1 = {
 	leader = {
 		name = "Wincenty Gosiewski"
-		type = general
+		type = general
+
 		fire = 4
 		shock = 3
 		manuever = 2
@@ -408,7 +427,8 @@ capital = 262 # Krakow
 1654.1.1 = {
 	leader = {
 		name = "Stanislaw Jan Jablonowski"
-		type = general
+		type = general
+
 		fire = 3
 		shock = 3
 		manuever = 3
@@ -420,7 +440,8 @@ capital = 262 # Krakow
 1655.1.1 = {
 	leader = {
 		name = "Stefan Czarniecki"
-		type = general
+		type = general
+
 		fire = 3
 		shock = 5
 		manuever = 4
@@ -432,7 +453,8 @@ capital = 262 # Krakow
 1657.1.1 = {
 	leader = {
 		name = "Jerzy Lubomirski"
-		type = general
+		type = general
+
 		fire = 3
 		shock = 3
 		manuever = 4
@@ -444,7 +466,8 @@ capital = 262 # Krakow
 1666.1.1 = {
 	leader = {
 		name = "Ernest Denhoff"
-		type = general
+		type = general
+
 		fire = 2
 		shock = 2
 		manuever = 3
@@ -490,7 +513,8 @@ capital = 262 # Krakow
 		mil = 6
 		leader = {
 			name = "Jan III"
-			type = general
+			type = general
+
 			fire = 3
 			shock = 5
 			manuever = 3
@@ -519,7 +543,8 @@ capital = 262 # Krakow
 1680.1.1 = {
 	leader = {
 		name = "Jan Reinhold Patkul"
-		type = general
+		type = general
+
 		fire = 2
 		shock = 1
 		manuever = 4
@@ -559,7 +584,8 @@ capital = 262 # Krakow
 1700.1.1 = {
 	leader = {
 		name = "Jan Kazimierz Sapieha"
-		type = general
+		type = general
+
 		fire = 3
 		shock = 3
 		manuever = 3
@@ -598,7 +624,8 @@ capital = 262 # Krakow
 1730.1.1 = {
 	leader = {
 		name = "Michal Jan Pac"
-		type = general
+		type = general
+
 		fire = 1
 		shock = 2
 		manuever = 4
@@ -651,7 +678,8 @@ capital = 262 # Krakow
 1735.11.10 = {
 	leader = {
 		name = "Michal Radziwill"
-		type = general
+		type = general
+
 		fire = 1
 		shock = 3
 		manuever = 3
@@ -663,7 +691,8 @@ capital = 262 # Krakow
 1755.1.1 = {
 	leader = {
 		name = "Stanislaw Poniatowski"
-		type = general
+		type = general
+
 		fire = 2
 		shock = 2
 		manuever = 3
@@ -675,7 +704,8 @@ capital = 262 # Krakow
 1762.10.9 = {
 	leader = {
 		name = "Aleksander Sapieha"
-		type = general
+		type = general
+
 		fire = 2
 		shock = 2
 		manuever = 3
@@ -701,7 +731,8 @@ capital = 262 # Krakow
 1779.1.1 = {
 	leader = {
 		name = "Kazimierz Pulaski"
-		type = general
+		type = general
+
 		fire = 3
 		shock = 2
 		manuever = 3
@@ -713,7 +744,8 @@ capital = 262 # Krakow
 1789.1.1 = {
 	leader = {
 		name = "Tadeusz Kosciuszko"
-		type = general
+		type = general
+
 		fire = 3
 		shock = 4
 		manuever = 5
@@ -725,7 +757,8 @@ capital = 262 # Krakow
 1789.1.1 = {
 	leader = {
 		name = "Jozef Poniatowski"
-		type = general
+		type = general
+
 		fire = 3
 		shock = 4
 		manuever = 4

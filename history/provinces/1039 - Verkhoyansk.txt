@@ -26,3 +26,5 @@ native_hostileness = 3
 } # V. Atlasov
 1672.1.1 = { add_core = RUS }
 1700.1.1 = { trade_goods = fur }
+
+discovered_by = steppe_tech

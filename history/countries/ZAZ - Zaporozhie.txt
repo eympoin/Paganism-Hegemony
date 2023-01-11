@@ -1,6 +1,6 @@
 government = republic
 add_government_reform = cossacks_reform
-technology_group = nomad_group
+technology_group = steppe_tech
 religion = tengri_pagan_reformed
 primary_culture = ruthenian
 capital = 283	# Zaporozhia

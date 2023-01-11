@@ -37,3 +37,5 @@ discovered_by = nomad_group
 	controller = QNG
 	add_core = QNG
 } # Qinghai conquered by Qing
+
+discovered_by = steppe_tech

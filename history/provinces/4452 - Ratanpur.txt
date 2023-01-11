@@ -28,3 +28,4 @@ discovered_by = chinese
 } # Marathas annex the lands of the Haihayas of Ratanpur
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

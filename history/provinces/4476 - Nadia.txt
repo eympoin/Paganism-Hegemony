@@ -78,3 +78,4 @@ discovered_by = chinese
 1757.6.23 = { controller = GBR } # Battle of Plassey, a new Nawab is installed by the British
 
 discovered_by = greek_tech
+discovered_by = steppe_tech

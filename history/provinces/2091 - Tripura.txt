@@ -21,3 +21,5 @@ discovered_by = chinese
 
 1760.1.1 = { discovered_by = GBR }
 
+
+discovered_by = steppe_tech

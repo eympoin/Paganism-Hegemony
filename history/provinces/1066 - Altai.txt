@@ -41,3 +41,5 @@ discovered_by = KHA
 	controller = QNG
 	add_core = QNG
 }
+
+discovered_by = steppe_tech

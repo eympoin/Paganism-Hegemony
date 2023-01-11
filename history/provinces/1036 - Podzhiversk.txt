@@ -30,3 +30,5 @@ discovered_by = KMC
 	trade_goods = fur
 	is_city = yes 
 }
+
+discovered_by = steppe_tech

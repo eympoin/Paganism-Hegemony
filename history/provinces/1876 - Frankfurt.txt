@@ -26,3 +26,4 @@ add_local_autonomy = 50
 	}
 }discovered_by = greek_tech
 discovered_by = roman_tech
+discovered_by = steppe_tech

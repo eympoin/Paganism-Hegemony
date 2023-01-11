@@ -35,3 +35,5 @@ center_of_trade = 1
 	controller = QNG
 	add_core = QNG
 }
+
+discovered_by = steppe_tech

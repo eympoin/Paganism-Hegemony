@@ -33,3 +33,5 @@ discovered_by = nomad_group
 	remove_core = MCH
 } # The Qing Dynasty
 1709.1.1 = { discovered_by = SPA }
+
+discovered_by = steppe_tech

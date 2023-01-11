@@ -19,3 +19,4 @@ discovered_by = indian
 fort_15th = yes #Falak-ol-Aflak
 discovered_by = eastern
 discovered_by = greek_tech
+discovered_by = steppe_tech

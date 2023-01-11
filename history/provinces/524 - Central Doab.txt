@@ -125,3 +125,4 @@ center_of_trade = 2
 }
 
 discovered_by = greek_tech
+discovered_by = steppe_tech
