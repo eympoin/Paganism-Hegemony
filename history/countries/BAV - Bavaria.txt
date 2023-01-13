@@ -1,10 +1,10 @@
 government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
-technology_group = western
+technology_group = germanic_tech
 primary_culture = bavarian
 religion = germanic
-capital = 65	# München!
+capital = 65	# Mï¿½nchen!
 
 
 1397.1.1 = {
@@ -37,7 +37,7 @@ capital = 65	# München!
 		name = "Albrecht III"
 		dynasty = "von Wittelsbach"
 		birth_date = 1401.3.27
-		adm = 2	
+		adm = 2
 		dip = 2
 		mil = 2
     }
@@ -75,8 +75,8 @@ capital = 65	# München!
 		name = "Johann IV"
 		dynasty = "von Wittelsbach"
 		birth_date = 1438.7.3
-		adm = 1	
-		dip = 0	
+		adm = 1
+		dip = 0
 		mil = 1
 	}
 }
@@ -174,7 +174,7 @@ capital = 65	# München!
 	queen = {
 		country_of_origin = BAD
 		name = "Kunigunde"
-		dynasty = "von Zähringen"
+		dynasty = "von Zï¿½hringen"
 		birth_date = 1507.6.25
 		death_date = 1580.11.16
 		female = yes
@@ -204,8 +204,8 @@ capital = 65	# München!
 		name = "Albrecht V"
 		dynasty = "von Wittelsbach"
 		birth_date = 1528.2.28
-		adm = 2	
-		dip = 3	
+		adm = 2
+		dip = 3
 		mil = 0
 	}
 	queen = {
@@ -240,15 +240,15 @@ capital = 65	# München!
 		name = "Wilhelm V"
 		dynasty = "von Wittelsbach"
 		birth_date = 1548.9.29
-		adm = 4	
-		dip = 1	
+		adm = 4
+		dip = 1
 		mil = 1
 	}
 
 	queen = {
 		country_of_origin = LOR
 		name = "Renata"
-		dynasty = "de Vaudémont"
+		dynasty = "de Vaudï¿½mont"
 		birth_date = 1544.4.20
 		death_date = 1602.5.22
 		female = yes
@@ -277,14 +277,14 @@ capital = 65	# München!
 		name = "Maximilian I"
 		dynasty = "von Wittelsbach"
 		birth_date = 1573.4.17
-		adm = 2	
-		dip = 4	
+		adm = 2
+		dip = 4
 		mil = 0
 	}
 	queen = {
 		country_of_origin = LOR
 		name = "Elisabeth"
-		dynasty = "de Vaudémont"
+		dynasty = "de Vaudï¿½mont"
 		birth_date = 1574.10.9
 		death_date = 1635.1.4
 		female = yes
@@ -300,7 +300,7 @@ capital = 65	# München!
 	join_league = catholic
 }
 
-1623.1.1   = { elector = yes }	
+1623.1.1   = { elector = yes }
 
 1630.1.1   = { leader = { name = "Mercy"	type = general	fire = 3	shock = 3	manuever = 1	siege = 0	death_date = 1645.8.3 } }
 
@@ -334,7 +334,7 @@ capital = 65	# München!
 	}
 }
 
-1641.1.1   = { leader = { name = "Grönsfeld"	type = general	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1660.1.1 } }
+1641.1.1   = { leader = { name = "Grï¿½nsfeld"	type = general	fire = 2	shock = 2	manuever = 2	siege = 0	death_date = 1660.1.1 } }
 
 1647.3.15 = {
 	leave_league = catholic
@@ -432,7 +432,7 @@ capital = 65	# München!
 		mil = 1
 	}
 }
-	
+
 
 1706.1.1   = { elector = no }
 
@@ -578,7 +578,7 @@ capital = 65	# München!
 	queen = {
 		country_of_origin = BAD
 		name = "Karoline"
-		dynasty = "von Zähringen"
+		dynasty = "von Zï¿½hringen"
 		birth_date = 1776.6.13
 		death_date = 1841.11.13
 		female = yes

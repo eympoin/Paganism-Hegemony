@@ -27,3 +27,4 @@ discovered_by = sub_saharan
 1784.1.1 = { religion = sunni unrest = 2 } #beginning of intense conversion to Islam in region, religion of province changes to Sunni
 
 discovered_by = roman_tech
+discovered_by = germanic_tech

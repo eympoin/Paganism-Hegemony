@@ -16,3 +16,4 @@ discovered_by = western
 discovered_by = eastern
 
 discovered_by = roman_tech
+discovered_by = germanic_tech

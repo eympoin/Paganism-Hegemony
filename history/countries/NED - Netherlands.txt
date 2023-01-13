@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
-technology_group = western
+technology_group = germanic_tech
 primary_culture = dutch
 religion = germanic
 capital = 4383 #Haag
@@ -39,7 +39,7 @@ capital = 4383 #Haag
 
 1580.1.1 = { decision = enlist_privateers }
 
-1581.1.1 = { 
+1581.1.1 = {
 	government = republic
 	add_government_reform = dutch_republic
 }
@@ -245,7 +245,7 @@ capital = 4383 #Haag
 	government_rank = 1
 }
 
-1799.1.1 = { leader = { name = "David Hendrik Chassé"		type = general	fire = 2	shock = 2	manuever = 3 siege = 0	death_date = 1841.1.1 } }
+1799.1.1 = { leader = { name = "David Hendrik Chassï¿½"		type = general	fire = 2	shock = 2	manuever = 3 siege = 0	death_date = 1841.1.1 } }
 
 1805.1.1 = {
 	monarch = {
@@ -262,7 +262,7 @@ capital = 4383 #Haag
 1806.6.5 = {
 	monarch = {
 		name = "Lodewijk I"
-		dynasty = "Bonaparte" 
+		dynasty = "Bonaparte"
 		culture = sardinian #Corsican
 		religion = catholic
 		adm = 3

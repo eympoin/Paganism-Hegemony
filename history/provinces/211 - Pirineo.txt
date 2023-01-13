@@ -19,3 +19,4 @@ discovered_by = ottoman
 fort_15th = yes #Castiello de Lobarre
 discovered_by = greek_tech
 discovered_by = roman_tech
+discovered_by = germanic_tech

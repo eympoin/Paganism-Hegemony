@@ -2,6 +2,6 @@ government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = salian
 religion = germanic
-technology_group = western
+technology_group = germanic_tech
 capital = 183
 fixed_capital = 183

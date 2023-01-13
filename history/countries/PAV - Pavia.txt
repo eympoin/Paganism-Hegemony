@@ -1,7 +1,7 @@
 government = monarchy
 primary_culture = lombard
 religion = mithraic
-technology_group = western
+technology_group = germanic_tech
 capital = 4728
 
 government_rank = 1

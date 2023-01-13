@@ -1,7 +1,7 @@
 government = monarchy
 technology_group = western
 primary_culture = angle
-religion = germanic
+religion = germanic_tech
 capital = 238 # London
 add_government_reform = feudalism_reform
 government_rank = 1

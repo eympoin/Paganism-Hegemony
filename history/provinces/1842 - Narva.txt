@@ -42,3 +42,4 @@ discovered_by = eastern
 } # The Peace of Nystad
 
 discovered_by = roman_tech
+discovered_by = germanic_tech

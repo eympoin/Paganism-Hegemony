@@ -272,6 +272,46 @@ groups = {
 			value = 50
 		}
 	}
+	germanic_tech = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_unit_type = steppe_tech
+		nation_designer_cost = {
+			value = 50
+		}
+	}
+	slavic_tech = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_unit_type = steppe_tech
+		nation_designer_cost = {
+			value = 50
+		}
+	}
+	celtic_tech = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_unit_type = steppe_tech
+		nation_designer_cost = {
+			value = 50
+		}
+	}
+	persian_tech = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_unit_type = steppe_tech
+		nation_designer_cost = {
+			value = 50
+		}
+	}
+	semitic_tech = {
+		start_level = 3
+		start_cost_modifier = 0
+		nation_designer_unit_type = steppe_tech
+		nation_designer_cost = {
+			value = 50
+		}
+	}
 }
 
 tables = {

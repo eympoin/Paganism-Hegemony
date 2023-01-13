@@ -19,3 +19,4 @@ discovered_by = western
 add_local_autonomy = 80
 discovered_by = greek_tech
 discovered_by = roman_tech
+discovered_by = germanic_tech

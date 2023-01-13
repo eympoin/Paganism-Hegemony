@@ -1,7 +1,6 @@
 government = monarchy
 add_government_reform = feudalism_reform
-technology_group = western
-unit_type = western
+technology_group = germanic_tech
 primary_culture = swedish
 religion = norse_pagan_reformed
 capital = 1	#Stockholm

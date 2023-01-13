@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
-technology_group = western
+technology_group = germanic_tech
 primary_culture = burgond
 religion = germanic
 capital = 199	# Clermont
@@ -84,7 +84,7 @@ capital = 199	# Clermont
 		mil = 2
 	}
 }
-		
+
 1461.3.22 = {
 	monarch = {
 		name = "Bertrand III"
@@ -109,7 +109,7 @@ capital = 199	# Clermont
 		mil = 2
 	}
 }
-		
+
 1494.9.26 = {
 	monarch = {
 		name = "Jean III"
@@ -135,7 +135,7 @@ capital = 199	# Clermont
 		mil = 0
 	}
 }
-		
+
 1501.3.21 = {
 	monarch = {
 		name = "Anne I"
@@ -162,7 +162,7 @@ capital = 199	# Clermont
 		female = yes
 	}
 }
-		
+
 
 1524.6.1 = {
 	monarch = {

@@ -20,3 +20,4 @@ discovered_by = KAZ
 
 discovered_by = roman_tech
 discovered_by = steppe_tech
+discovered_by = germanic_tech

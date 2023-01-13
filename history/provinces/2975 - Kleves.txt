@@ -19,3 +19,4 @@ hre = no
 
 discovered_by = greek_tech
 discovered_by = roman_tech
+discovered_by = germanic_tech

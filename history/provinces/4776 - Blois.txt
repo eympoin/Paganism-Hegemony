@@ -19,3 +19,4 @@ add_permanent_claim = FRR
 add_permanent_claim = FRV
 discovered_by = greek_tech
 discovered_by = roman_tech
+discovered_by = germanic_tech

@@ -19,3 +19,4 @@ fort_15th = yes
 add_core = VEP
 discovered_by = roman_tech
 discovered_by = steppe_tech
+discovered_by = germanic_tech

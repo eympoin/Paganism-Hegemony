@@ -41,3 +41,4 @@ discovered_by = eastern
 } # Treaty of Fredrikshamn
 
 discovered_by = roman_tech
+discovered_by = germanic_tech

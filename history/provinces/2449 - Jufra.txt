@@ -20,3 +20,4 @@ add_local_autonomy = 80
 add_core = FZA
 discovered_by = greek_tech
 discovered_by = roman_tech
+discovered_by = germanic_tech

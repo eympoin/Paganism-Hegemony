@@ -2,5 +2,5 @@ government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = highland_scottish
 religion = norse_pagan_reformed
-technology_group = western
+technology_group = germanic_tech
 capital = 4365 # Mann

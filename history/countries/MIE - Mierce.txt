@@ -1,5 +1,5 @@
 government = monarchy
-technology_group = western
+technology_group = germanic_tech
 primary_culture = seaxan
 religion = germanic
 capital = 4372 # London
