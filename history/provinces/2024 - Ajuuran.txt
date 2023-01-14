@@ -30,3 +30,5 @@ discovered_by = ottoman
 1650.1.1 = { owner = MJE controller = MJE remove_core = MRE}
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

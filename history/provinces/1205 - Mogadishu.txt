@@ -34,3 +34,5 @@ center_of_trade = 2
 } #Omanis seize control of Mogadishu and Geledi
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

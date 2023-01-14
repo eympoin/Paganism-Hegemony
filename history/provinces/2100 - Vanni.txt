@@ -47,3 +47,5 @@ discovered_by = east_african
 } # Treaty of Amiens
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

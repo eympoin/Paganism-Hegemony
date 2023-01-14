@@ -3,7 +3,7 @@ add_government_reform = iqta
 primary_culture = andalucian
 religion = sunni
 add_accepted_culture = berber_culture
-technology_group = muslim
+technology_group = semitic_tech
 capital = 223	# Granada
 government_rank = 1
 religious_school = maliki_school
@@ -21,8 +21,8 @@ religious_school = maliki_school
 
 1392.1.1 = {
 	heir = {
-		name = "Yûsuf"
-		monarch_name = "Yûsuf III"
+		name = "Yï¿½suf"
+		monarch_name = "Yï¿½suf III"
 		dynasty = "Nasrid"
 		birth_date = 1376.1.1
 		death_date = 1417.1.1
@@ -35,7 +35,7 @@ religious_school = maliki_school
 
 1408.1.1 = {
 	monarch = {
-		name = "Yûsuf III"
+		name = "Yï¿½suf III"
 		dynasty = "Nasrid"
 		birth_date = 1376.1.1
 		adm = 3
@@ -47,7 +47,7 @@ religious_school = maliki_school
 #Not really then, just put him here so that Yusuf V displays as Yusuf V
 1410.12.1 = {
 	monarch = {
-		name = "Yûsuf IV"
+		name = "Yï¿½suf IV"
 		dynasty = "Nasrid"
 		birth_date = 1376.1.1
 		adm = 3
@@ -123,7 +123,7 @@ religious_school = maliki_school
 
 1462.1.1 = {
 	monarch = {
-		name = "Yûsuf V"
+		name = "Yï¿½suf V"
 		dynasty = "Nasrid"
 		adm = 1
 		dip = 0
@@ -143,7 +143,7 @@ religious_school = maliki_school
 
 1464.1.1 = {
 	monarch = {
-		name = "Alí I Muley Hacén"
+		name = "Alï¿½ I Muley Hacï¿½n"
 		dynasty = "Nasrid"
 		adm = 0
 		dip = 1
@@ -165,7 +165,7 @@ religious_school = maliki_school
 
 1483.1.1 = {
 	monarch = {
-		name = "Ali I muley Hacén"
+		name = "Ali I muley Hacï¿½n"
 		dynasty = "Nasrid"
 		adm = 2
 		dip = 0

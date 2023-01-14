@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 government_rank = 1
 primary_culture = kurdish
 religion = yazidism
-technology_group = muslim
+technology_group = persian_tech
 capital = 418
 
 1399.1.1 = {
@@ -43,7 +43,7 @@ capital = 418
 		dynasty = "Ardalan"
 		adm = 3
 		dip = 2
-		mil = 1		
+		mil = 1
 	}
 }
 

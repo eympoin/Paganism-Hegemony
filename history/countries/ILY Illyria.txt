@@ -3,5 +3,5 @@ add_government_reform = autocracy_reform
 government_rank = 1
 primary_culture = albanian
 religion = theoi
-technology_group = eastern
+technology_group = greek_tech
 capital = 4175 # Lezhe

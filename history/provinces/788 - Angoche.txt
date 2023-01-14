@@ -42,3 +42,5 @@ discovered_by = central_african
 1780.1.1 = { trade_goods = slaves } #Rise of plantations in Mascarene Is. changes trade patterns
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

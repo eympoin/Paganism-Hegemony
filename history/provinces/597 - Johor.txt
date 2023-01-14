@@ -31,3 +31,5 @@ discovered_by = ottoman
 1528.1.1 = { capital = "Kota Tingi" } # Alauddin Riayat Shah moved the capital
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

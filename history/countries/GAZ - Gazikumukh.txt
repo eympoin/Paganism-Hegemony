@@ -2,14 +2,14 @@ government = monarchy
 add_government_reform = iqta
 primary_culture = dagestani
 religion = zoroastrian
-technology_group = muslim
+technology_group = persian_tech
 capital = 4306 #Khumukh
 religious_school = shafii_school
 
 # Pulling a Hansa with the first 1st ruler ( as information before Umal-Muhammad is limited ).  Usually referred to only by their title.
 # Also with birth dates (seniority based system)
 
-1444.1.1 = {			
+1444.1.1 = {
 	monarch = {
 		name = "Shamkhal"
 		dynasty = "Kumukh"
@@ -19,7 +19,7 @@ religious_school = shafii_school
 	}
 }
 
-1494.1.1 = {			
+1494.1.1 = {
 	monarch = {
 		name = "Alibek"
 		dynasty = "Kumukh"

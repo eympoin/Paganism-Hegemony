@@ -3,7 +3,7 @@ add_government_reform = principality
 government_rank = 1
 primary_culture = novgorodian
 religion = suomenusko
-technology_group = eastern
+technology_group = slavic_tech
 capital = 312	# Beloozero
 fixed_capital = 312 # Cannot move capital away from this province & no power cost to move to it
 
@@ -28,4 +28,3 @@ fixed_capital = 312 # Cannot move capital away from this province & no power cos
 		mil = 1
 	}
 }
-

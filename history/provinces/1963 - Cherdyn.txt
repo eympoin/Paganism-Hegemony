@@ -20,3 +20,4 @@ center_of_trade = 1
 
 
 discovered_by = steppe_tech
+discovered_by = slavic_tech

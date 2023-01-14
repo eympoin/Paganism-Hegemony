@@ -35,3 +35,5 @@ discovered_by = ottoman
 1707.5.12 = { discovered_by = GBR }
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

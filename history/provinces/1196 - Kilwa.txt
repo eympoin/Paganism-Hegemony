@@ -35,3 +35,5 @@ center_of_trade = 1
 1785.1.1 = { owner = OMA controller = OMA add_core = OMA } # Oman takes over
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

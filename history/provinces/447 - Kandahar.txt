@@ -22,3 +22,5 @@ fort_15th = yes #Zorr Shaar - Qandahar is often described as the strongest fortr
 
 discovered_by = greek_tech
 discovered_by = steppe_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

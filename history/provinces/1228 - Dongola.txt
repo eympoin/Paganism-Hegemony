@@ -27,3 +27,6 @@ discovered_by = eastern
 1709.1.1 = { unrest = 0 } #Badi III faces revolt over development of slave army at aristocrats expense
 
 discovered_by = greek_tech
+discovered_by = slavic_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

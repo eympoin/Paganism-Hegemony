@@ -19,3 +19,5 @@ discovered_by = ottoman
 
 1700.1.1 = { religion = sunni }
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

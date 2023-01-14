@@ -35,3 +35,5 @@ discovered_by = indian
 1698.1.1 = { unrest = 0 }
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

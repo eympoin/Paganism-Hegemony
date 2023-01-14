@@ -40,3 +40,5 @@ center_of_trade = 1
 1757.5.6 = { owner = TAU controller = TAU } # Pegu is sacked & returned to Burmese control
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

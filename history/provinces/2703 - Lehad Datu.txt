@@ -32,3 +32,5 @@ discovered_by = ottoman
 } # Ceded to the Sultanate of Sulu
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

@@ -1,12 +1,12 @@
 government = monarchy
 add_government_reform = cuicide_reform
 government_rank = 1
-technology_group = western
+technology_group = celtic_tech
 primary_culture = irish
 religion = celt
 capital = 4120	# Kildare
 
-add_truce_with = MTH	
+add_truce_with = MTH
 
 1444.1.1 = {
 	heir = {

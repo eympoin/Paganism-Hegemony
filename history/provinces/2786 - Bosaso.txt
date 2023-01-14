@@ -24,3 +24,6 @@ discovered_by = eastern
 1730.1.1 = { owner = MJE controller = MJE }
 
 discovered_by = greek_tech
+discovered_by = slavic_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

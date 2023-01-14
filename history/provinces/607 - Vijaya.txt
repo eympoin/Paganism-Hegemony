@@ -64,3 +64,5 @@ center_of_trade = 1
 } # Nguyen Phuc Anh conquered the Tay Son Dynasty
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

@@ -37,3 +37,5 @@ center_of_trade = 1
 1600.1.1 = { unrest = 0 } #shift in trade routes to Sena & Mozambique
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

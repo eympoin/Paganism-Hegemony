@@ -64,3 +64,5 @@ discovered_by = indian
 1588.1.1 = { unrest = 5 } #Invasion by Oromo
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

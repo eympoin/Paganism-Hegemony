@@ -49,3 +49,5 @@ discovered_by = ottoman
 } # Nguyen Phuc Anh annexed the Tay Son Dynasty
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

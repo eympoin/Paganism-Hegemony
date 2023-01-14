@@ -37,3 +37,5 @@ discovered_by = ottoman
 1794.1.1 = { remove_core = AYU }
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

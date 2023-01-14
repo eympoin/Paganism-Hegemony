@@ -2,5 +2,5 @@ government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = bedouin_arabic
 religion = arabian
-technology_group = muslim
+technology_group = semitic_tech
 capital = 385 # Mecca

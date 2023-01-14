@@ -23,3 +23,5 @@ discovered_by = ottoman
 1705.1.1 = { capital = "Fashoda" } #New Shilluk center established in wake of migrations
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

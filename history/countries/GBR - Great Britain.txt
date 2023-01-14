@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = english_monarchy
-technology_group = western
+technology_group = germanic_tech
 primary_culture = english
 add_accepted_culture = scottish
 add_accepted_culture = welsh
@@ -105,7 +105,7 @@ capital = 236	# London
 
 #1718.1.1 = { leader = {	name = "Georg Byng"		type = admiral	fire = 4	shock = 4	manuever = 3	siege = 0	death_date = 1750.4.7 } } # Removed /SWÖ
 
-1725.1.1 = { 
+1725.1.1 = {
 		leader = {	name = "Edward Boscawen"	type = admiral	fire = 4	shock = 3	manuever = 5	siege = 0	death_date = 1761.1.10 } }
 
 1727.6.11 = {
@@ -259,8 +259,8 @@ capital = 236	# London
 
 1793.1.1 = { leader = {	name = "James MacDonald"	type = general	fire = 4	shock = 4	manuever = 4	siege = 0	death_date = 1830.1.1 } }
 
-1793.12.1 = { 
-	leader = { 
+1793.12.1 = {
+	leader = {
 		name = "Sidney Smith"
 		type = admiral
 
@@ -269,7 +269,7 @@ capital = 236	# London
 		manuever = 5
 		siege = 1
 		death_date = 1840.5.26
-	} 
+	}
 }
 
 1794.1.1 = { leader = { name = "Duke of Wellington"	type = general	fire = 5	shock = 5	manuever = 6	siege = 0	death_date = 1819.1.1 } }

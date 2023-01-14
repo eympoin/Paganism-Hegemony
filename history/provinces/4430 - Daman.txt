@@ -43,3 +43,5 @@ discovered_by = east_african
 1650.1.1 = { add_core = MAR }
 discovered_by = greek_tech
 discovered_by = steppe_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

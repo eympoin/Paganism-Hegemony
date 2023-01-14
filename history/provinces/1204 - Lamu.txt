@@ -50,3 +50,5 @@ discovered_by = central_african
 1781.1.1 = { unrest = 6 } #Raids by Mazrui clans in Mombasa destabilize region
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

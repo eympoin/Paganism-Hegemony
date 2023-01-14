@@ -22,3 +22,6 @@ center_of_trade = 2
 discovered_by = eastern
 
 discovered_by = greek_tech
+discovered_by = slavic_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

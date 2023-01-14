@@ -16,3 +16,6 @@ add_local_autonomy = 25
 discovered_by = east_african
 discovered_by = muslim
 
+
+discovered_by = semitic_tech
+discovered_by = persian_tech

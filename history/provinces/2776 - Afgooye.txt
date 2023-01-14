@@ -23,3 +23,5 @@ discovered_by = ottoman
 1730.1.1 = { owner = GLE controller = GLE add_core = GLE}
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

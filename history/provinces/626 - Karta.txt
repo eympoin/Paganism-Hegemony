@@ -44,3 +44,5 @@ discovered_by = ottoman
 1680.1.1 = { capital = "Kartosuro" }
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

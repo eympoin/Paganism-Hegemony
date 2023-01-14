@@ -3,7 +3,7 @@ add_government_reform = tribal_kingdom
 government_rank = 1
 primary_culture = baluchi
 religion = zoroastrian
-technology_group = muslim
+technology_group = persian_tech
 capital = 577	# Quetta
 religious_school = shafii_school
 
@@ -14,19 +14,19 @@ religious_school = shafii_school
 	name = "Kumbar"
 		dynasty = "Mirwari"
 		dip = 1
-		adm = 1 
+		adm = 1
 		mil = 1
 	}
 }
 
 #Rind kingdom:
 
-1468.1.1 = { 
+1468.1.1 = {
 	monarch = {
 	name = "Mir Chakar"
 		dynasty = "Rind"
 		dip = 2
-		adm = 1 
+		adm = 1
 		mil = 3
 	}
 }
@@ -47,7 +47,7 @@ religious_school = shafii_school
 
 1547.1.1 = { capital = 576 } # Kalat
 
-1565.1.1 = { 
+1565.1.1 = {
 	monarch = {
 	name = "Mir Shahzad"
 		dynasty = "Rind"
@@ -66,7 +66,7 @@ religious_school = shafii_school
 	name = "Kumbar"
 		dynasty = "Kambarani"
 		dip = 2
-		adm = 1 
+		adm = 1
 		mil = 2
 	}
 }
@@ -77,7 +77,7 @@ religious_school = shafii_school
 	name = "Hasan"
 		dynasty = "Kambarani"
 		dip = 2
-		adm = 1 
+		adm = 1
 		mil = 2
 	}
 }
@@ -85,11 +85,11 @@ religious_school = shafii_school
 1666.1.1 = {
 	government = monarchy
 add_government_reform = autocracy_reform
-	monarch = { 
+	monarch = {
 		name = "Ahmad I"
 		dynasty = "Kambarani"
 		dip = 2
-		adm = 2 
+		adm = 2
 		mil = 3
 	}
 } #Kingdom of Kalat
@@ -109,7 +109,7 @@ add_government_reform = autocracy_reform
 }
 
 1695.1.1 = {
-	monarch = { 
+	monarch = {
 		name = "Mir Mehrab I"
 		dynasty = "Kambarani"
 		adm = 2
@@ -133,7 +133,7 @@ add_government_reform = autocracy_reform
 }
 
 1696.1.1 = {
-	monarch = { 
+	monarch = {
 		name = "Samandar"
 		dynasty = "Kambarani"
 		adm = 1
@@ -157,7 +157,7 @@ add_government_reform = autocracy_reform
 }
 
 1713.1.1 = {
-	monarch = { 
+	monarch = {
 		name = "Ahmad II"
 		dynasty = "Kambarani"
 		adm = 1
@@ -181,7 +181,7 @@ add_government_reform = autocracy_reform
 }
 
 1715.1.1 = {
-	monarch = { 
+	monarch = {
 		name = "Mir Abdullah"
 		dynasty = "Kambarani"
 		adm = 0
@@ -205,7 +205,7 @@ add_government_reform = autocracy_reform
 }
 
 1730.1.1 = {
-	monarch = { 
+	monarch = {
 		name = "Mir Muhabbat"
 		dynasty = "Kambarani"
 		adm = 1
@@ -229,7 +229,7 @@ add_government_reform = autocracy_reform
 }
 
 1749.1.1 = {
-	monarch = { 
+	monarch = {
 		name = "Mir Muhammad Naseer I"
 		dynasty = "Kambarani"
 		adm = 2
@@ -253,7 +253,7 @@ add_government_reform = autocracy_reform
 }
 
 1794.1.1 = {
-	monarch = { 
+	monarch = {
 		name = "Mir Mahmud I"
 		dynasty = "Kambarani"
 		adm = 3

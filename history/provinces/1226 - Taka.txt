@@ -42,3 +42,6 @@ discovered_by = eastern
 1762.1.1 = { unrest = 0 } #Badi IV deposed by Muhammad Abu Likaylik
 
 discovered_by = greek_tech
+discovered_by = slavic_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

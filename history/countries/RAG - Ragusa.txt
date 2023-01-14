@@ -4,7 +4,7 @@ government_rank = 1
 mercantilism = 25
 primary_culture = Dalmatian
 religion = theoi
-technology_group = eastern
+technology_group = greek_tech
 capital = 137	# Ragusa
 fixed_capital = 137 # Cannot move capital away from this province & no power cost to move to it
 
@@ -16,4 +16,4 @@ fixed_capital = 137 # Cannot move capital away from this province & no power cos
            mil = 2
            regent = yes
       }
-} # Noble councils. 
+} # Noble councils.

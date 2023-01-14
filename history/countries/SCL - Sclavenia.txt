@@ -3,6 +3,6 @@ add_government_reform = feudalism_reform
 primary_culture = serbian
 elector = yes
 religion = slavic
-technology_group = eastern
+technology_group = slavic_tech
 capital = 4239
 government_rank = 2

@@ -1,10 +1,10 @@
 government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
-technology_group = eastern
+technology_group = slavic_tech
 religion = slavic
 primary_culture = Vistulan
-capital = 257	
+capital = 257
 
 1429.12.8 = {
 	monarch = {

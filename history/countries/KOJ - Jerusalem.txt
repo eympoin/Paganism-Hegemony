@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 
 primary_culture = canaan
 religion = chalcedonian
-technology_group = muslim
+technology_group = semitic_tech
 capital = 379 # Jerusalem
 
 1444.1.1 = {

@@ -1,6 +1,6 @@
 government = tribal
 add_government_reform = tribal_federation
-technology_group = muslim
+technology_group = semitic_tech
 primary_culture = bedouin_arabic
 religion = arabian
 capital = 392 # Deraiyah
@@ -80,7 +80,7 @@ religious_school = hanbali_school
 		mil = 2
 	}
 }
-		
+
 1500.1.1 = {
 	monarch = {
 		name = "Musa I"
@@ -269,7 +269,7 @@ religious_school = hanbali_school
 		claim = 95
 		adm = 2
 		dip = 2
-		mil = 2 
+		mil = 2
 	}
 }
 

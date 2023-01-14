@@ -61,3 +61,5 @@ discovered_by = indian
 1771.1.1 = { revolt = {} controller = ETH } #Ras Mikael deposed
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

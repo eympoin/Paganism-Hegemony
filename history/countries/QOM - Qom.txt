@@ -4,7 +4,7 @@ government_rank = 1
 primary_culture = persian
 add_accepted_culture = azerbaijani
 religion = zoroastrian
-technology_group = muslim
+technology_group = persian_tech
 capital = 2213 # Qom
 
 1442.1.1 = { #Appointed as governor of Sultaniyya, Qazvin, Rayy and Qom, but takes up tribute from Kashan, Qazvin, Sari, Isfahan, Natanz, Firuzkuh, Sultaniyya, Tarum, Azerbaijan as well.

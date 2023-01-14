@@ -20,3 +20,5 @@ discovered_by = muslim
 add_core = KOK
 
 discovered_by = steppe_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

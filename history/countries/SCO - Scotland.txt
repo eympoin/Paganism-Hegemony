@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 primary_culture = scottish
 
 religion = celt
-technology_group = western
+technology_group = celtic_tech
 capital = 249 # Edinburgh
 
 

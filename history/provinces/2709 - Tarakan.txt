@@ -29,3 +29,5 @@ discovered_by = ottoman
 	remove_core = KUT
 } # Ceded to the Sultanate of Sulu
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = babylonian
 religion = mesopotamian
-technology_group = muslim
+technology_group = semitic_tech
 capital = 2311
 
 1428.1.1 = {

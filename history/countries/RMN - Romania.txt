@@ -2,5 +2,5 @@ government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = romanian
 religion = orthodox
-technology_group = eastern
-capital = 161	# Tîrgoviste
+technology_group = slavic_tech
+capital = 161	# Tï¿½rgoviste

@@ -22,3 +22,5 @@ discovered_by = indian
 1577.1.1 = { owner = WAR controller = WAR add_core = WAR}
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

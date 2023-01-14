@@ -37,3 +37,5 @@ discovered_by = indian
 } # Adal collapse in highlands in wake of Ahmad Gran's death
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

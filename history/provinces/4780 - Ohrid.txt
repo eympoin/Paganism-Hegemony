@@ -30,3 +30,7 @@ add_province_modifier = {
 discovered_by = roman_tech
 discovered_by = steppe_tech
 discovered_by = germanic_tech
+discovered_by = celtic_tech
+discovered_by = slavic_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

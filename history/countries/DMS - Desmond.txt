@@ -1,14 +1,14 @@
 government = monarchy
 add_government_reform = cuicide_reform
 government_rank = 1
-technology_group = western
+technology_group = celtic_tech
 religion = celt
 primary_culture = irish
 capital = 4118	# Cork
 
 # Earls of Desmond
 
-add_truce_with = MTH	
+add_truce_with = MTH
 1430.1.1 = {
 	heir = {
 		name = "Thomas"

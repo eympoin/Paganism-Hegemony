@@ -37,3 +37,5 @@ discovered_by = ottoman
 } # Dutch conquered Blambangan
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

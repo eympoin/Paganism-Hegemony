@@ -25,3 +25,5 @@ discovered_by = ottoman
 1698.12.13 = { owner = OMA controller = OMA add_core = OMA remove_core = HOB } #Oman in control of Hobyo following the battle of Mombasa
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

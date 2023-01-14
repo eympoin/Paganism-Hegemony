@@ -10,3 +10,5 @@ discovered_by = east_african
 1529.6.1 = { discovered_by = FRA } # Parmentier Brothers
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

@@ -20,3 +20,5 @@ add_core = CUD
 discovered_by = roman_tech
 discovered_by = steppe_tech
 discovered_by = germanic_tech
+discovered_by = celtic_tech
+discovered_by = slavic_tech

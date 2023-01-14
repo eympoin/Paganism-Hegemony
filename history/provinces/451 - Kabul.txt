@@ -22,3 +22,5 @@ center_of_trade = 2
 add_province_triggered_modifier = religious_center
 discovered_by = greek_tech
 discovered_by = steppe_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

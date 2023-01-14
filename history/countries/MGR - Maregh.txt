@@ -3,7 +3,7 @@ add_government_reform = iqta
 government_rank = 1
 primary_culture = azerbaijani
 religion = shiite
-technology_group = muslim
+technology_group = semitic_tech
 capital = 2207 # Maregh
 
 #Maregh Khanate
@@ -33,7 +33,7 @@ capital = 2207 # Maregh
 		name = "Abdalaziz"
 		dynasty = "Mükeddem"
 		adm = 2
-		dip = 3 
+		dip = 3
 		mil = 1
 	}
 }

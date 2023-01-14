@@ -32,3 +32,5 @@ center_of_trade = 1
 1746.1.1 = { owner = MBA controller = MBA add_core = MBA } # Mazrui sultans establish dominance in region
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

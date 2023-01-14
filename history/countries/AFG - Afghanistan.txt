@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = feudalism_reform
-technology_group = muslim
+technology_group = persian_tech
 religion = zunist
 primary_culture = afghani
 capital = 451	# Kabul
@@ -135,7 +135,7 @@ capital = 451	# Kabul
 		adm = 1
 		dip = 0
 		mil = 1
-		
+
 	}
 }
 

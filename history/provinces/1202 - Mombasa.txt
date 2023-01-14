@@ -61,3 +61,5 @@ center_of_trade = 2
 1759.1.1 = { unrest = 8 } # Omani attempt to restore authority fail
 
 discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

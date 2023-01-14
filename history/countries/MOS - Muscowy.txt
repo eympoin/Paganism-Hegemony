@@ -3,7 +3,7 @@ add_government_reform = principality
 government_rank = 1
 primary_culture = russian
 religion = slavic
-technology_group = eastern
+technology_group = slavic_tech
 historical_rival = NOV
 capital = 295 # Moskva
 fixed_capital = 295 # Cannot move capital away from this province & no power cost to move to it
@@ -60,7 +60,7 @@ national_focus = ADM
 		birth_date = 1418.1.1
 		death_date = 1484.1.1
 		female = yes
-		adm = 3 
+		adm = 3
 		dip = 3
 		mil = 1
 	}
@@ -112,7 +112,7 @@ national_focus = ADM
 }
 
 1490.1.1 = {
-	leader = {	
+	leader = {
 		name = "Shenja"
 		type = general
 
@@ -120,12 +120,12 @@ national_focus = ADM
 		shock = 3
 		manuever = 4
 		siege = 0
-		death_date = 1516.1.1 
-	} 
+		death_date = 1516.1.1
+	}
 }
 
-1495.1.1 = { 
-	leader = {	
+1495.1.1 = {
+	leader = {
 		name = "Ivan Lyapun"
 		type = conquistador
 
@@ -134,11 +134,11 @@ national_focus = ADM
 		manuever = 4
 		siege = 0
 		death_date = 1505.1.1
-	} 
+	}
 }
 
 1495.1.1 = {
-	leader = {	
+	leader = {
 		name = "Repnin"
 		type = general
 
@@ -146,12 +146,12 @@ national_focus = ADM
 		shock = 2
 		manuever = 2
 		siege = 0
-		death_date = 1520.1.1 
-	} 
+		death_date = 1520.1.1
+	}
 }
 
-1495.1.1 = { 
-	leader = {	
+1495.1.1 = {
+	leader = {
 		name = "Ivan A. Chelyadnin"
 		type = general
 
@@ -159,8 +159,8 @@ national_focus = ADM
 		shock = 3
 		manuever = 2
 		siege = 0
-		death_date = 1514.1.1 
-	} 
+		death_date = 1514.1.1
+	}
 }
 
 1503.4.1 = {
