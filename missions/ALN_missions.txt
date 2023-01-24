@@ -546,7 +546,7 @@ military_tre_ALN{
 		}
 		}
 
-		military_tre_ALN_dummy{
+	military_tre_ALN_dummy{
 			slot = 1
 			generic = no
 			ai = yes
@@ -585,8 +585,7 @@ military_tre_ALN{
 						required_missions = { choc_cavalery } #None
 					trigger = {
 						year_is = 1530
-						has_cavalry = 10
-						#Modifier code parce c'est inventé et ajouter condition que une seule des deux dernières mission est possible
+						num_of_cavalry = 20
 						}
 					effect{
 						#calvary_cost = 0.25
@@ -613,8 +612,7 @@ military_tre_ALN{
 						position = 3
 					trigger = {
 						year_is = 1530
-						#has_cavalry = 10
-						#Modifier code parce c'est inventé et ajouter condition que une seule des deux dernières mission est possible
+						num_of_cavalry = 20
 						}
 					effect{
 						#artillery_cost = 0.10
@@ -640,8 +638,8 @@ military_tre_ALN{
 					required_missions = {  } #None
 				position = 1
 				trigger = {
-					owned_region = 6
-					}
+					num_of_cities = 15
+				}
 				effect{
 					add_years_of_income = 0.5
 					build_cost = -0.1
@@ -656,8 +654,8 @@ military_tre_ALN{
 				trigger = {
 					year_is = 1500
 					trade_goods_produced_amount = {
-				trade_goods = iron
-				amount = 4
+						trade_goods = iron
+						amount = 4
 					}
 				}
 				effect{
@@ -669,7 +667,7 @@ military_tre_ALN{
 						required_missions = { Iron_trade } #None
 					trigger = {
 						year_is = 1550
-					global_trade = 50
+						has_institution = global_trade
 						}
 					effect{
 					add_trade_modifier = {
@@ -686,7 +684,7 @@ military_tre_ALN{
 							required_missions = { Trade_master } #None
 						trigger = {
 							year_is = 1650
-							manufactories = 50 #à vérifier
+							has_institution = manufactories
 							}
 						effect{
 						#remplace les vaches aux provinces : 2416, 2208, 468; 288, 1971 et 467 par autres choses de plus sexy
@@ -708,8 +706,8 @@ military_tre_ALN{
 					icon = mission_break_sicily
 					position = 1
 					trigger = {
-					#autonomies inférieur à
-						}
+						NOT = {average_home_autonomy = 20}
+					}
 					effect{
 					add_army_tradition = 15
 					add_yearly_manpower = 0.5
@@ -722,67 +720,124 @@ military_tre_ALN{
 							required_missions = { Unification_of_the_tribes } #None
 						position = 2
 						trigger = {
-						year_is = 1550
-						#taille du pays supérieur à
+							year_is = 1550
+							num_of_provinces_in_states = 50
+							#taille du pays supérieur à
 							}
 						effect{
 						#offre le choix entre deux gouvernement,
 							}
 						}
-						Divin_right_monarchy{
-							icon = mission_break_sicily
-								required_missions = { Divin_right_or_tribal_federation } #None
-							position = 3
-							trigger = {
-								#a débloquer l'absolutisme
-								}
-							effect{
-							#Bonus pour avoir un héritier
-							yearly_absolutism = 0.1
-							#Malus d'unrest
-								}
-							}
-							God_on_horse{
-								icon = mission_break_sicily
-									required_missions = { Divin_right_monarchy } #None
-								position = 4
-								trigger = {
-								year_is = 1700
-							  army_size_percentage = 0.9
-								}
-								effect{
-							 change_mil = 1
-							 governing_capacity = 250
-									}
-								}
-
-								#l'un ou l'autre
-								Tribal_federalism{
-									icon = mission_break_sicily
-										required_missions = { Divin_right_or_tribal_federation } #None
-									position = 3
-									trigger = {
-								#A choisis la république
-
-										}
-									effect{
-									#révolte du souverain, deviens republique mais laqeulle ?
-									#republican_tradition = 0.5
-										}
-									}
-									the_pen_stronger_than_the_spear{
-										icon = mission_break_sicily
-											required_missions = { Tribal_federalism } #None
-										position = 4
-										trigger = {
-										year_is = 1700
-									  army_size_percentage = 0.9
-											}
-										effect{
-										#change_dip = 1
-										#governing_capacity = 250
-										}
 		}
+		political_tre_ALN_dummy{
+				slot = 5
+				generic = no
+				ai = yes
+				potential = {
+					tag = ALN
+				NOT = {	has_country_flag = republic_aln }
+				NOT = {	has_country_flag = divine_aln }
+					NOT = { map_setup = map_setup_random }
+				}
+				has_country_shield = yes
+				branching_pol_1{
+					icon = mission_unknown_mission
+					required_missions = { Divin_right_or_tribal_federation } #None
+					position = 7
+					trigger = {
+							has_country_flag = divine_aln
+							has_country_flag = republic_aln
+						}
+					effect = {
+						}
+				}
+				branching_pol_2{
+					icon = mission_unknown_mission
+					required_missions = { branching_pol_1 } #None
+					position = 8
+					trigger = {
+							has_country_flag = divine_aln
+							has_country_flag = republic_aln
+						}
+					effect = {
+						}
+				}
+		}
+
+		politics_tre_ALN_dip = {
+			slot = 5
+			generic = no
+			ai = yes
+			potential = {
+				tag = ALN
+				NOT = { map_setup = map_setup_random }
+				has_country_flag = republic_aln
+			}
+			Tribal_federalism{
+				icon = mission_break_sicily
+					required_missions = { Divin_right_or_tribal_federation } #None
+				position = 7
+				trigger = {
+					#A choisis la république
+
+					}
+				effect{
+				#révolte du souverain, deviens republique mais laqeulle ?
+				#republican_tradition = 0.5
+					}
+				}
+				the_pen_stronger_than_the_spear{
+					icon = mission_break_sicily
+						required_missions = { Tribal_federalism } #None
+					position = 8
+					trigger = {
+						year_is = 1700
+						diplomatic_reputation = 6
+					}
+					effect{
+					#change_dip = 1
+					#governing_capacity = 250
+					}
+			}
+		}
+		politics_tre_ALN_mil = {
+			slot = 5
+			generic = no
+			ai = yes
+			potential = {
+				tag = ALN
+				NOT = { map_setup = map_setup_random }
+				has_country_flag = divine_aln
+			}
+			Divin_right_monarchy{
+				icon = mission_break_sicily
+					required_missions = { Divin_right_or_tribal_federation } #None
+				position = 7
+				trigger = {
+					current_age = age_of_absolutism
+				}
+				effect{
+				#Bonus pour avoir un héritier
+				yearly_absolutism = 0.1
+				#Malus d'unrest
+					}
+				}
+				God_on_horse{
+					icon = mission_break_sicily
+						required_missions = { Divin_right_monarchy } #None
+					position = 8
+					trigger = {
+					year_is = 1700
+						has_global_modifier_value = {
+							which = cavalry_power
+							value = 0.5
+						}
+					}
+					effect{
+						 change_mil = 1
+						 governing_capacity = 250
+						}
+					}
 		}
 		Alania_Emperor_fate_ALN{
 			slot = 2

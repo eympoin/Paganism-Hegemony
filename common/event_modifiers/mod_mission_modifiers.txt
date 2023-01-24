@@ -8566,3 +8566,53 @@ basras_port = {
   province_trade_power_modifier = 0.5
   envoy_travel_time = -0.33
 }
+
+cavalry_renewal = {
+  cavalry_cost = -0.25
+  movement_speed = 0.10
+}
+iron_guard = {
+  shock_damage = 0.10
+  shock_damage_received = -0.10
+}
+fire_is_stronger_than_horses = {
+  artillery_cost = -0.15
+  artillery_power = 0.10
+  fire_damage = 0.05
+}
+to_the_end_with_cavalty = {
+  cavalry_power = 0.2
+  cavalry_cost = -0.10
+  movement_speed = 0.10
+}
+
+sedentarization_aln = {
+  development_cost = -0.1
+}
+
+iron_trade = {
+  trade_goods_size_modifier = 0.25
+}
+
+mastery_of_trade = {
+  trade_efficiency = 0.1
+  global_tax_modifier = -0.1
+}
+
+divine_right = {
+  heir_chance = 0.5
+  yearly_absolutism = 0.1
+  global_unrest = 1
+}
+
+os_bagatar = {
+  monarch_military_power = 1
+}
+
+alan_republic = {
+  republican_tradition = 0.5
+}
+
+civilized_alans = {
+  monarch_diplomatic_power = 1
+}
