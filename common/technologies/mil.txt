@@ -258,6 +258,7 @@ technology = {
 	enable = asian_arquebusier
 	enable = steppe_raiders
 	enable = ha_xiuhtecuhtli_soldier
+	enable = schoalae_palatinae
 	military_tactics 	= 	0.25
 	combat_width = 1
 }
@@ -410,6 +411,7 @@ technology = {
 	enable = pacific_hussar
 	enable = pacific_arquebusier
 	enable = greek_lancers
+	enable = roman_lancers
 
 	combat_width = 2
 }
@@ -551,6 +553,7 @@ technology = {
 	enable = aboriginal_riflemen
 	enable = pacific_riflemen
 	enable = greek_dragoons
+	enable = roman_dragoons
 }
 
 technology = {
@@ -665,6 +668,7 @@ technology = {
 	enable = high_american_dragoon
 	enable = aboriginal_dragoon
 	enable = pacific_dragoon
+	enable = equites_ignis
 }
 
 technology = {
@@ -812,6 +816,7 @@ technology = {
 	enable = british_square
 	enable = steppe_uhlans
 	enable = stratiotes
+	enable = equites_coriaceus
 }
 
 technology = {
