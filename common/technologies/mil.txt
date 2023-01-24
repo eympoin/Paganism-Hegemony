@@ -72,6 +72,13 @@ technology = {
 	#mod
 	enable = cataphract
 	enable = hippo_toxotai
+	enable = celtic_horsemen
+	enable = druzhina
+	enable = aswaran
+	enable = equites
+	enable = faris
+	enable = germanic_knights
+	enable = keshik
 }
 
 technology = {
