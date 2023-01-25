@@ -197,6 +197,7 @@ technology = {
 	enable = high_american_horsemen
 	enable = aboriginal_horseman
 	enable = pacific_horseman
+	enable = quzzaq
 
 	combat_width = 2
 }
@@ -300,6 +301,7 @@ technology = {
 	enable = aboriginal_cavalry
 	enable = pacific_island_warriors
 	enable = pacific_cavalry
+	enable = steppe_raiders_s
 }
 
 technology = {
@@ -465,6 +467,8 @@ technology = {
 	combat_width = 1
 
 	enable = chambered_demi_cannon
+	enable = steppe_carabiniers
+	enable = steppe_lancers_s
 }
 
 technology = {
@@ -669,6 +673,7 @@ technology = {
 	enable = aboriginal_dragoon
 	enable = pacific_dragoon
 	enable = equites_ignis
+	enable = steppe_mounted_rifles
 }
 
 technology = {
@@ -817,6 +822,7 @@ technology = {
 	enable = steppe_uhlans
 	enable = stratiotes
 	enable = equites_coriaceus
+	enable = steppe_uhlans_s
 }
 
 technology = {
