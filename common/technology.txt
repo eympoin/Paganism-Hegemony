@@ -275,7 +275,7 @@ groups = {
 	germanic_tech = {
 		start_level = 3
 		start_cost_modifier = 0
-		nation_designer_unit_type = steppe_tech
+		nation_designer_unit_type = germanic_tech
 		nation_designer_cost = {
 			value = 50
 		}
@@ -283,7 +283,7 @@ groups = {
 	slavic_tech = {
 		start_level = 3
 		start_cost_modifier = 0
-		nation_designer_unit_type = steppe_tech
+		nation_designer_unit_type = slavic_tech
 		nation_designer_cost = {
 			value = 50
 		}
@@ -291,7 +291,7 @@ groups = {
 	celtic_tech = {
 		start_level = 3
 		start_cost_modifier = 0
-		nation_designer_unit_type = steppe_tech
+		nation_designer_unit_type = celtic_tech
 		nation_designer_cost = {
 			value = 50
 		}
@@ -299,7 +299,7 @@ groups = {
 	persian_tech = {
 		start_level = 3
 		start_cost_modifier = 0
-		nation_designer_unit_type = steppe_tech
+		nation_designer_unit_type = persian_tech
 		nation_designer_cost = {
 			value = 50
 		}
@@ -307,7 +307,7 @@ groups = {
 	semitic_tech = {
 		start_level = 3
 		start_cost_modifier = 0
-		nation_designer_unit_type = steppe_tech
+		nation_designer_unit_type = semitic_tech
 		nation_designer_cost = {
 			value = 50
 		}
