@@ -12982,7 +12982,7 @@ third_temple_country_modifier = {
 	religion = yes
 }
 lack_of_provincial_gov = {
-	global_autonomy = 50
+	min_autonomy = 50
 }
 lackluster_provincial_gov = {
 	global_autonomy = 25

@@ -339,18 +339,6 @@ Hormuz_3 = {
     }
   }
 
-  Take_Hejaz = {
-    icon = mission_unite_the_deccan
-    required_missions = {Control_yemen}
-    position = 3
-    trigger = {
-
-    }
-    effect = {
-
-    }
-  }
-
 
 
 }
