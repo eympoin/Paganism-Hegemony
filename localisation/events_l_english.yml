@@ -423,6 +423,10 @@ slavic_uprising.9.t:0 "The rebellion has succeed"
 slavic_uprising.9.d:0 "We have defeated the Greek elites who wished to remain in power, it is time to bring the arms upon their leader : the Emperor"
 slavic_uprising.9.a:0 "To war !"
 
+slavic_uprising.10.t:0 "The Empire takes back control"
+slavic_uprising.10.d:0 "The Slavic revolt is over for now. The Empire has taken back the control of the Doux. Only time will tell if this ocntrol will remain."
+slavic_uprising.10.a:0 "May Zeus bless us."
+
 #trade incident
 incident_trade_competitor:0 "New trade competitors"
 incident_trade_competitor_emperor_alert:0 "With the discoveries of new trade routes to India comes new competitors. Western Europe don't pass through us anymore to get the diverse Indian products, and thus our trade is impoverished. We shall do something !"

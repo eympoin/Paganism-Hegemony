@@ -584,3 +584,23 @@ country_event = {
     }
   }
 }
+
+#prevent conversion before uprising
+country_event = {
+  id = slavic_uprising.10
+  title = slavic_uprising.10.t
+  desc = slavic_uprising.10.d
+  picture = HRE_eventPicture
+
+  trigger = {
+    NOT = {has_global_flag = slavic_uprising_incident}
+    is_part_of_hre = yes
+    NOT = {religion = theoi}
+  }
+
+
+  option = {
+    name = slavic_uprising.10.a
+    change_religion = theoi
+  }
+}
