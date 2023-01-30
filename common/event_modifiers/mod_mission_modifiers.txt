@@ -8568,7 +8568,7 @@ basras_port = {
 }
 
 cavalry_renewal = {
-  cavalry_cost = -0.25
+  cavalry_cost = -0.15
   movement_speed = 0.10
 }
 iron_guard = {

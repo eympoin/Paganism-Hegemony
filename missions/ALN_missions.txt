@@ -526,8 +526,10 @@ military_tre_ALN{
 			cavalry_fraction = 0.5
 			}
 		effect{
-			calvary_cost = 0.25
-			mouvement_speed = 0.10
+				add_country_modifier = {
+					name = cavalry_renewal
+					duration = -1
+				}
 			}
 		}
 	choc_cavalery{
@@ -540,8 +542,10 @@ military_tre_ALN{
 			}
 			}
 		effect{
-	cavalry_shock = 1
-	mouvement_speed = 0.10
+				add_country_modifier = {
+					name = iron_guard
+					duration = -1
+				}
 			}
 		}
 		}
@@ -566,6 +570,7 @@ military_tre_ALN{
 						has_country_flag = alan_full_cav
 					}
 					effect{
+							#tooltip
 						}
 					}
 				}
@@ -588,10 +593,10 @@ military_tre_ALN{
 						num_of_cavalry = 20
 						}
 					effect{
-						#calvary_cost = 0.25
-						#mouvement_speed = 0.10
-						#cavalry_power = 0.20
-						#army_tradition = 1
+							add_country_modifier = {
+								name = to_the_end_with_cavalty
+								duration = -1
+							}
 						}
 					}
 				}
@@ -615,10 +620,10 @@ military_tre_ALN{
 						num_of_cavalry = 20
 						}
 					effect{
-						#artillery_cost = 0.10
-						#mouvement_speed = 0.5
-					  #artillery_fire = 1
-						#army_tradition = 1
+							add_country_modifier = {
+								name = fire_is_stronger_than_horses
+								duration = -1
+							}
 						}
 					}
 				}
@@ -641,11 +646,30 @@ military_tre_ALN{
 					num_of_cities = 15
 				}
 				effect{
-					add_years_of_income = 0.5
-					build_cost = -0.1
-					development_cost = -0.2
-					state_maintenance_modifier = -0.25
-					#Ajouter du dev
+					add_country_modifier = {
+						name = sedentarization_aln
+						duration = -1
+					}
+					random_owned_province = {
+						add_base_tax = 2
+						add_base_manpower = 2
+						add_base_production = 2
+					}
+					random_owned_province = {
+						add_base_tax = 2
+						add_base_manpower = 2
+						add_base_production = 2
+					}
+					random_owned_province = {
+						add_base_tax = 2
+						add_base_manpower = 2
+						add_base_production = 2
+					}
+					random_owned_province = {
+						add_base_tax = 2
+						add_base_manpower = 2
+						add_base_production = 2
+					}
 					}
 				}
 			Iron_trade{
@@ -659,7 +683,15 @@ military_tre_ALN{
 					}
 				}
 				effect{
-				#Ajouter bonus de prod sur ces mines
+					every_owned_province = {
+						limit = {
+						trade_goods = iron
+						}
+						add_province_modifier = {
+							name = iron_trade
+							duration = -1
+						}
+					}
 					}
 				}
 				Trade_master{
@@ -687,7 +719,24 @@ military_tre_ALN{
 							has_institution = manufactories
 							}
 						effect{
-						#remplace les vaches aux provinces : 2416, 2208, 468; 288, 1971 et 467 par autres choses de plus sexy
+							2195 = {
+								change_trade_goods = wine
+							}
+							2208 = {
+								change_trade_goods = salt
+							}
+							2201 = {
+								change_trade_goods = silk
+							}
+							2197 = {
+								change_trade_goods = cloth
+							}
+							463 = {
+								change_trade_goods = glass
+							}
+							2416 = {
+								change_trade_goods = cloth
+							}
 							}
 						}
 			}
