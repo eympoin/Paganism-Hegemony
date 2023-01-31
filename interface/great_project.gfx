@@ -611,6 +611,10 @@ spriteTypes = {
 		name = "GFX_great_project_taq_kasra"
 		texturefile = "gfx//interface//great_projects//great_project_taq_kasra.dds"
 	}
+	spriteType = {
+		name = "GFX_great_project_osbagatar"
+		texturefile = "gfx//interface//great_projects//great_project_osbagatar.dds"
+	}
 
 
 }

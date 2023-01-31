@@ -3748,6 +3748,7 @@ steppe_republic = {
 	potential = {
 		religion = tengri_pagan_reformed
 	}
+	royal_marriage = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 15
 	nation_designer_trigger = {
@@ -3755,7 +3756,6 @@ steppe_republic = {
 	}
 	legacy_equivalent = steppe_republic_legacy
 	modifiers = {
-		royal_marriage = yes
 		caravan_power = 0.2
 		global_unrest = -1
 	}

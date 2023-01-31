@@ -3469,12 +3469,11 @@ steppe_republic_legacy = {
 
 	legacy_government = yes
 	valid_for_new_country = no
-
+	royal_marriage = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 15
 	republic = yes
 	modifiers = {
-		royal_marriage = yes
 		caravan_power = 0.2
 		global_unrest = -1
 	}

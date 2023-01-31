@@ -47,7 +47,7 @@ ALN_ideas = {
 	steppe_cav_caucasian_lords = {
 		movement_speed = 0.05
 		land_forcelimit_modifier = 0.1
-		cavalry_power = 0.2	
+		cavalry_power = 0.2
 	}
 }
 
@@ -250,6 +250,7 @@ SLC_ideas = {
 	punish_the_nomads = {
 		fire_damage_received = -0.10
     movement_speed = 0.10
+		cavalry_power = 0.15
 	}
 }
 TAT_ideas = {
