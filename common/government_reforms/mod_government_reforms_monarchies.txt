@@ -4550,3 +4550,31 @@ indep_cuicide = {
 		locked_government_type = yes
 	}
 }
+
+steppe_absolutism = {
+	icon = "crown"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			religion = tengri_pagan_reformed
+		}
+		AND = {
+			is_playing_custom_nation = yes
+		}
+	}
+	legacy_equivalent = steppe_absolutism_legacy
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+		max_absolutism = 20
+		army_tradition_from_battle = 0.1
+		harsh_treatment_cost = -0.2
+	}
+	custom_attributes = {
+		enables_aristocratic_idea_group = yes
+		enables_horde_idea_group = yes
+	}
+	ai = {
+		factor = 0.5 #generic
+	}
+}

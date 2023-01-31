@@ -3739,3 +3739,31 @@ carthaginian_republic_centralize = {
 	}
 	duration = 4
 }
+
+
+
+steppe_republic = {
+	icon = "parliament"
+	allow_normal_conversion = no
+	potential = {
+		religion = tengri_pagan_reformed
+	}
+	valid_for_nation_designer = yes
+	nation_designer_cost = 15
+	nation_designer_trigger = {
+		religion = tengri_pagan_reformed
+	}
+	legacy_equivalent = steppe_republic_legacy
+	modifiers = {
+		royal_marriage = yes
+		caravan_power = 0.2
+		global_unrest = -1
+	}
+
+	custom_attributes = {
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+		enables_horde_idea_group = yes
+	}
+	duration = 5
+}
