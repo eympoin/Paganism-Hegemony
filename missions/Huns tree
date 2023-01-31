@@ -1,0 +1,722 @@
+huns_independance_1_hns{
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = HNS
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	road_to_independance = {
+		icon = mission_build_up_to_force_limit
+		required_missions = {  } #None
+		position = 1
+		provinces_to_highlight = {
+      OR = {
+			}
+			NOT = {owned_by = ROOT}
+    }
+		trigger = {
+    land_forcelimit = ROOT
+		}
+		effect = {
+				create_march = HNS
+			}
+		}
+	}
+	fight_the_tyran = {
+		icon = mission_alliances
+		required_missions = { road_to_independance } #None
+		position = 2
+		trigger = {
+			#Doitavoir2soutienàl'indépendance
+		}
+		effect{
+			declare_war = ARM
+			}
+		}
+	}
+	Victory_{
+		icon = mission_conquer_50_development
+		required_missions = { fight_the_tyran } #None
+		position = 3
+		}
+    trigger = {
+    #estindépendant ou le devient je sais pas encore
+    }
+		effect{
+    define_ruler = {
+    name = "Attila II"
+    dynasty = "Moundzouk"
+    adm = 5
+    dip = 3
+    mil = 6
+    age = 20
+    claim = 100
+			shirvan_area = {
+				add_permanent_claim = ROOT
+			}
+			armenia_area = {
+				add_permanent_claim = ROOT
+			}
+			tabriz_area = {
+				add_permanent_claim = ROOT
+			}
+			kartli-kakheti_area = {
+				add_permanent_claim = ROOT
+			}
+      transcaspia_area = {
+            type = all
+            owned_by = ROOT
+          }
+          circassia_area = {
+            type = all
+            owned_by = ROOT
+          }
+          astrakhan_area{
+            type = all
+            owned_by = ROOT
+          }
+          lower_don_area = {
+            type = all
+            owned_by = ROOT
+          }
+          lower_yik_area = {
+            type = all
+            owned_by = ROOT
+          }
+          nogai_area = {
+            type = all
+            owned_by = ROOT
+            }
+}
+slay_the_tyran = {
+  icon = mission_build_up_to_force_limit
+  required_missions = { Victory } #None
+  position = 4
+  provinces_to_highlight = {
+    OR = {
+    }
+    NOT = {owned_by = ROOT}
+  }
+  trigger = {
+  shirvan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			armenia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			tabriz_area{
+				type = all
+				owned_by = ROOT
+			}
+			kartlie-kakheti_area = {
+				type = all
+				owned_by = ROOT
+			}
+  }
+  effect = {
+  add_years_of_income = 1
+  add_adm_power = 300
+  azerbaijan_area = {
+    add_permanent_claim = ROOT
+  }
+  tabarestan_area = {
+    add_permanent_claim = ROOT
+  }
+  mashhad_area = {
+    add_permanent_claim = ROOT
+  }
+  iraq-e-ajam_area = {
+    add_permanent_claim = ROOT
+    }
+    caspian_trade = {
+      icon = mission_build_up_to_force_limit
+      required_missions = {slay_the_tyran} #None
+      position = 6
+      provinces_to_highlight = {
+        OR = {
+        }
+        NOT = {owned_by = ROOT}
+      }
+      trigger = {
+      azerbaijan_area = {
+    				type = all
+    				owned_by = ROOT
+    			}
+    			tabarestan_area = {
+    				type = all
+    				owned_by = ROOT
+    			}
+    			mashhad_area{
+    				type = all
+    				owned_by = ROOT
+    			}
+    			iraq-e-ajam_area = {
+    				type = all
+    				owned_by = ROOT
+    			}
+      }
+      effect = {
+      add_years_of_income = 1
+      add_dip_power = 300
+      transcaspia_area = {
+        add_permanent_claim = ROOT
+      }
+      khiva_area = {
+        add_permanent_claim = ROOT
+      }
+      nogai_area = {
+        add_permanent_claim = ROOT
+      }
+      lower_yik_area = {
+        add_permanent_claim = ROOT
+        }
+      astrakhan_area = {
+        add_permanent_claim = ROOT
+      }
+      mare_nostrum = {
+        icon = mission_build_up_to_force_limit
+        required_missions = {caspian_trade} #None
+        position = 7
+        provinces_to_highlight = {
+          OR = {
+          }
+          NOT = {owned_by = ROOT}
+        }
+        trigger = {
+        transcaspia_area = {
+      				type = all
+      				owned_by = ROOT
+      			}
+      			khiva_area = {
+      				type = all
+      				owned_by = ROOT
+      			}
+      			nogai_area{
+      				type = all
+      				owned_by = ROOT
+      			}
+      			lower_yik_area = {
+      				type = all
+      				owned_by = ROOT
+      			}
+            astrakhan_area = {
+      				type = all
+      				owned_by = ROOT
+            }
+        }
+        effect = {
+        add_years_of_income = 1
+        add_mil_power = 300
+        add_trade_modifier = {
+    who = ROOT
+    duration = 5475
+    power = 15
+    key = STRONG_MERCHANTS
+    add_center_of_trade_level = 1 #quelle province ?
+        }
+    }
+
+
+steppes_expansion_hns{
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = HNS
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	take_back_our_steppes_hns = {
+		icon = hispaniae
+		required_missions = {Victory}
+		position = 3
+		provinces_to_highlight = {
+      OR = {
+			NOT = {owned_by = ROOT}
+    }
+		trigger = {
+    circassia_arean_area = {
+          type = all
+          owned_by = ROOT
+        }
+        astrakhan_area = {
+          type = all
+          owned_by = ROOT
+        }
+        nogai_area{
+          type = all
+          owned_by = ROOT
+        }
+        lower_don_area = {
+          type = all
+          owned_by = ROOT
+        }
+        lower_yik_area = {
+          type = all
+          owned_by = ROOT
+        }
+			}
+		}
+		effect = {
+			add_prestige = 20
+			add_stability = 1
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+        saratov_area = {
+      				type = all
+      				owned_by = ROOT
+      			}
+      			tambov_area = {
+      				type = all
+      				owned_by = ROOT
+      			}
+			}
+		}
+	}
+}
+
+to_the_east_hns{
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = HNS
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	eradicate_the_red_monster{
+		icon = mission_disrupt_portuguese_trade
+		required_missions = { caspian_trade } #None
+		position = 3
+    }
+		trigger = {
+			exists = TIM
+			}
+		}
+		effect{
+			create_general = { tradition = 100 }
+      khiva_area = {
+            type = all
+            owned_by = ROOT
+          }
+        merv_area = {
+            type = all
+            owned_by = ROOT
+            transoxiana_area = {
+          				type = all
+          				owned_by = ROOT
+          			}
+          			kyzylkum_area = {
+          				type = all
+          				owned_by = ROOT
+                  syr_darya_area = {
+                				type = all
+                				owned_by = ROOT
+                			}
+                			arys_area = {
+                				type = all
+                				owned_by = ROOT
+                			}
+          }
+			}
+		}
+	}
+}
+
+
+
+burn_those_mighty_cities = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = HNS
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	knock_knock_knock{
+		icon = seize_sardinia
+		required_missions = {  } #None
+		position = 1
+		provinces_to_highlight = {
+      OR = {
+				province_id = 151
+    }
+		trigger = {
+			151 = {controller = HNS}
+			}
+		}
+		effect{
+	  add_years_of_income = 2
+		add_legitimacy = 50
+    add_prestige = 50
+    add_stability = 1
+    add_army_tradition = 25
+    add_mil_power = 200
+    add_dip_power = 200
+    add_adm_power = 200
+			}
+		}
+	}
+
+	hello_there{
+		icon = mission_rule_italy
+		required_missions = { a_first_foot_hold } #None
+		position = 2
+		provinces_to_highlight = {
+      OR = {
+			province_id = 118
+			}
+			NOT = {owned_by = ROOT}
+    }
+		trigger = {
+    118 = {controller = HNS}
+			}
+		}
+    effect{
+	  add_years_of_income = 2
+		add_legitimacy = 50
+    add_prestige = 50
+    add_stability = 1
+    add_army_tradition = 25
+    add_mil_power = 200
+    add_dip_power = 200
+    add_adm_power = 200
+			}
+		}
+	}
+
+  burn_those_mighty_cities = {
+  	slot = 5
+  	generic = no
+  	ai = yes
+  	potential = {
+  		tag = HNS
+  		NOT = { map_setup = map_setup_random }
+  	}
+  	has_country_shield = yes
+  	knock_knock_knock{
+  		icon = seize_sardinia
+  		required_missions = {  } #None
+  		position = 1
+  		provinces_to_highlight = {
+        OR = {
+  				province_id = 151
+      }
+  		trigger = {
+  			151 = {controller = HNS}
+  			}
+  		}
+  		effect{
+  	  add_years_of_income = 2
+  		add_legitimacy = 50
+      add_prestige = 50
+      add_stability = 1
+      add_army_tradition = 25
+      add_mil_power = 200
+      add_dip_power = 200
+      add_adm_power = 200
+  			}
+  		}
+  	}
+
+  	surprise_dude{
+  		icon = mission_rule_italy
+  		required_missions = { a_first_foot_hold } #None
+  		position = 3
+  		provinces_to_highlight = {
+        OR = {
+  			province_id = 183
+  			}
+  			NOT = {owned_by = ROOT}
+      }
+  		trigger = {
+      183 = {controller = HNS}
+  			}
+  		}
+      effect{
+  	  add_years_of_income = 2
+  		add_legitimacy = 50
+      add_prestige = 50
+      add_stability = 1
+      add_army_tradition = 25
+      add_mil_power = 200
+      add_dip_power = 200
+      add_adm_power = 200
+  			}
+  		}
+  	}
+
+#Ajouter un choix entre devenir cool ou un méchant (ça permet de régler la difficulté en gros)
+
+
+military_tre_HNS{
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = HNS
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	}
+	cavalry_revivale{
+		icon = mission_break_sicily
+		required_missions = #None
+		position = 8
+    }
+		trigger = {
+			cavalry_fraction = 0.5
+			}
+		}
+		effect{
+			calvary_cost = 0.25
+			mouvement_speed = 0.10
+			}
+		}
+	}
+	choc_cavalery{
+		icon = king_of_naples
+		required_missions = { cavalry_revivale } #None
+		position = 9
+		}
+		trigger = {
+		trade_goods_produced_amount = {
+	trade_goods = iron
+	amount = 4
+}
+			}
+		}
+		effect{
+	cavalry_shock = 1
+	mouvement_speed = 0.10
+			}
+		}
+		The_horse_to_the_death{
+			icon = mission_break_sicily
+				required_missions = { choc_cavalery } #None
+			position = 9
+			}
+			trigger = {
+				year_is = 1530
+				has_cavalry = 10
+				#Modifier code parce c'est inventé et ajouter condition que une seule des deux dernières mission est possible
+				}
+			}
+			effect{
+				calvary_cost = 0.25
+				mouvement_speed = 0.10
+				cavalry_power = 0.20
+				army_tradition = 1
+				}
+			}
+		}
+		Fire_adaptation{
+			icon = mission_break_sicily
+				required_missions = { choc_cavalery } #None
+			position = 10
+			}
+			trigger = {
+				year_is = 1530
+				has_cavalry = 10
+				#Modifier code parce c'est inventé et ajouter condition que une seule des deux dernières mission est possible
+				}
+			}
+			effect{
+				artillery_cost = 0.10
+				mouvement_speed = 0.5
+			  artillery_fire = 1
+				army_tradition = 1
+				}
+			}
+		}
+
+
+		economic_tre_HNS{
+			slot = 2
+			generic = no
+			ai = yes
+			potential = {
+				tag = HNS
+				NOT = { map_setup = map_setup_random }
+			}
+			has_country_shield = yes
+			}
+			sedentarization{
+				icon = mission_break_sicily
+					required_missions = { choc_cavalery } #None
+				position = 8
+				}
+				trigger = {
+					owned_region = 3
+					}
+				}
+				effect{
+					add_years_of_income = 0.5
+					build_cost = -0.1
+					development_cost = -0.2
+					state_maintenance_modifier = -0.25
+					#Ajouter du dev
+					}
+				}
+			}
+			silk_trade{
+				icon = mission_break_sicily
+					required_missions = { choc_cavalery } #None
+				position = 9
+				}
+				trigger = {
+					year_is = 1500
+					trade_goods_produced_amount = {
+				trade_goods = silk
+				amount = 4
+					}
+				}
+				effect{
+				#Ajouter bonus de prod sur les provinces : 421, 4339, 417, 416
+					}
+				}
+				Trade_master{
+					icon = mission_break_sicily
+						required_missions = { choc_cavalery } #None
+					position = 10
+					}
+					trigger = {
+						year_is = 1550
+					global_trade = 50
+						}
+					}
+					effect{
+					add_trade_modifier = {
+    who = ROOT
+    duration = 8475
+    power = 20
+    key = STRONG_MERCHANTS
+		global_tax_modifier = -0.10
+						}
+					}
+					Early_industrialization{
+						icon = mission_break_sicily
+							required_missions = { choc_cavalery } #None
+						position = 11
+						}
+						trigger = {
+							year_is = 1650
+						manufactories = 50 #à vérifier
+							}
+						}
+						effect{
+						#remplace les vaches aux provinces : 2416, 2208, 468; 288, 1971 et 467 par autres choses de plus sexy
+							}
+						}
+			}
+
+
+			politics_tre_HNS{
+				slot = 3
+				generic = no
+				ai = yes
+				potential = {
+					tag = HNS
+					NOT = { map_setup = map_setup_random }
+				}
+				has_country_shield = yes
+				}
+				Unification_of_the_tribes{
+					icon = mission_break_sicily
+					position = 8
+					}
+					trigger = {
+					#autonomies inférieur à
+						}
+					}
+					effect{
+					add_army_tradition = 15
+					add_yearly_manpower = 0.5
+					create_general = { tradition = 75 }
+					manpower_recovery_speed = 0.15
+						}
+					}
+					Divin_right_or_tribal_federation{
+						icon = mission_break_sicily
+							required_missions = { Unification_of_the_tribes } #None
+						position = 10
+						}
+						trigger = {
+						year_is = 1550
+						#taille du pays supérieur à 400 de dev
+							}
+						}
+						effect{
+						#offre le choix entre deux gouvernement,
+							}
+						}
+						Divin_right_monarchy{
+							icon = mission_break_sicily
+								required_missions = { Divin_right_or_tribal_federation } #None
+							position = 11
+							}
+							trigger = {
+								#a débloquer l'absolutisme
+								}
+							}
+							effect{
+							#Bonus pour avoir un héritier
+							yearly_absolutism = 0.1
+							#Malus d'unrest
+								}
+							}
+							God_on_horse{
+								icon = mission_break_sicily
+									required_missions = { Divin_right_monarchy } #None
+								position = 12
+								}
+								trigger = {
+								year_is = 1700
+							  army_size_percentage = 0.9
+									}
+								}
+								effect{
+							 change_mil = 1
+							 governing_capacity = 250
+									}
+								}
+
+								#l'un ou l'autre
+								Tribal_federalism{
+									icon = mission_break_sicily
+										required_missions = { Divin_right_or_tribal_federation } #None
+									position = 13
+									}
+									trigger = {
+								#A choisis la république
+
+										}
+									}
+									effect{
+									#révolte du souverain, deviens republique mais laqeulle ?
+									republican_tradition = 0.5
+										}
+									}
+									the_pen_stronger_than_the_spear{
+										icon = mission_break_sicily
+											required_missions = { Tribal_federalism } #None
+										position = 14
+										}
+										trigger = {
+										year_is = 1700
+									  army_size_percentage = 0.9
+											}
+										}
+										effect{
+										change_dip = 1
+										governing_capacity = 250
+		}
