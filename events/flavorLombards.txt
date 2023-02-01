@@ -23,6 +23,7 @@ country_event = {
 					culture = lombard
 				}
 			}
+			change_technology_group = roman_tech	
 			change_culture = cisalpian
 		}
 		add_country_modifier = {

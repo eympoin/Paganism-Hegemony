@@ -25,6 +25,7 @@ country_event = {
 			add_core = ROOT
 		}
 		change_religion = tengri_pagan_reformed
+		change_technology_group = steppe_tech
 	}
 	option = {	#emperor greek
 		name = "flavor_bul.1.b"
@@ -42,6 +43,7 @@ country_event = {
 		name = "flavor_bul.1.c"
 		ai_chance = { factor = 20 }
 		hidden_effect = {set_country_flag = emperor_bulgar}
+		change_technology_group = slavic_tech
 		every_owned_province = {
 			limit = {
 				culture = bulgar_nomadic
