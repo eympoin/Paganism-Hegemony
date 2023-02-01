@@ -199,6 +199,7 @@ technology = {
 	enable = pacific_horseman
 	enable = quzzaq
 	enable = gens_d_armes
+	enable = hobelar
 
 	combat_width = 2
 }
@@ -304,6 +305,7 @@ technology = {
 	enable = pacific_cavalry
 	enable = steppe_raiders_s
 	enable = schwarz_reiter_g
+	enable = rioghacht_marcra
 }
 
 technology = {
@@ -417,6 +419,7 @@ technology = {
 	enable = greek_lancers
 	enable = roman_lancers
 	enable = germanic_lancers
+	enable = asturian_lancers
 
 	combat_width = 2
 }
@@ -521,6 +524,7 @@ technology = {
 	enable = pacific_swarm_cav
 	enable = germanic_hussars
 	enable = germanic_dragoons
+	enable = cymru_dragoons
 
 	combat_width = 2
 }
@@ -681,6 +685,7 @@ technology = {
 	enable = steppe_mounted_rifles
 	enable = germanic_uhlans
 	enable = germanic_carabiniers
+	enable = royal_scot_greys
 }
 
 technology = {
@@ -831,6 +836,7 @@ technology = {
 	enable = equites_coriaceus
 	enable = steppe_uhlans_s
 	enable = jagers
+	enable = marchfilwr
 }
 
 technology = {
