@@ -396,41 +396,60 @@ lot_3 = {
 
 		trigger = {
 			OR = {
-				alliance_with = FRP
-				alliance_with = FRO
-				alliance_with = FRR
-				alliance_with = FRV
-			}
-			OR = {
-				FRP = {
-					has_opinion = {
-						who = ROOT
-						value = 180
+				AND = {
+					OR = {
+						alliance_with = FRP
+						alliance_with = FRO
+						alliance_with = FRR
+						alliance_with = FRV
+					}
+					OR = {
+						FRP = {
+							has_opinion = {
+								who = ROOT
+								value = 180
+							}
+						}
+						FRO = {
+							has_opinion = {
+								who = ROOT
+								value = 180
+							}
+						}
+						FRV = {
+							has_opinion = {
+								who = ROOT
+								value = 180
+							}
+						}
+						FRR = {
+							has_opinion = {
+								who = ROOT
+								value = 180
+							}
+						}
 					}
 				}
-				FRO = {
-					has_opinion = {
-						who = ROOT
-						value = 180
-					}
-				}
-				FRV = {
-					has_opinion = {
-						who = ROOT
-						value = 180
-					}
-				}
-				FRR = {
-					has_opinion = {
-						who = ROOT
-						value = 180
-					}
+				AND = {
+					NOT = {exists = FRO}
+					NOT = {exists = FRP}
+					NOT = {exists = FRR}
+					NOT = {exists = FRV}
 				}
 			}
 		}
 
 		effect = {
-			add_dip_power = 100
+			if = {
+				limit = {
+					exists = FRR
+					exists = FRP
+					exists = FRO
+					exists = FRV
+				}
+				add_dip_power = 100
+			}
+
 			flanders_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
