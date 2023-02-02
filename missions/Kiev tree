@@ -12,10 +12,6 @@ main_parth_kie{
 		icon = mission_build_up_to_force_limit
 		required_missions = {  } #None
 		position = 1
-		provinces_to_highlight = {
-      OR = {
-			}
-			NOT = {owned_by = ROOT}
     }
 		trigger = {
 			land_forcelimit = ROOT
@@ -28,7 +24,7 @@ main_parth_kie{
 	}
 	raise_the_taxes_kie = {
 		icon = mission_alliances
-		required_missions = { raise_the_head } #None
+		required_missions = { raise_the_taxes } #None
 		position = 2
 		trigger = {
 			grown_by_development = 10 #Guilhem veut que la base tax de 3 province soient up de 2 mais j'ai pa trouvé
@@ -40,7 +36,7 @@ main_parth_kie{
 	}
 	slave's_capital_city_kie{
 		icon = mission_conquer_50_development
-		required_missions = { raise_the_taxes } #None
+		required_missions = {  } #None
 		position = 3
 		provinces_to_highlight = {
       OR = {
@@ -191,204 +187,60 @@ Vladimir's_legacy_kie{
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-	western_counter_attack{
+	Vladimir's_legacy{
 		icon = mission_disrupt_portuguese_trade
 		required_missions = { allies_needed } #None
 		position = 3
-		provinces_to_highlight = {
-      OR = {
-				area = leon_area
-				area = asturias_area
-				area = alentejo_area
-				area = beieras_area
-				area = galicia_area
-			}
-			NOT = {owned_by = ROOT}
     }
 		trigger = {
-			leon_area = {
-				type = all
-				owned_by = ROOT
-			}
-			asturias_area = {
-				type = all
-				owned_by = ROOT
-			}
-			alentejo_area = {
-				type = all
-				owned_by = ROOT
-			}
-			beieras_area = {
-				type = all
-				owned_by = ROOT
-			}
-			galicia_area = {
-				type = all
-				owned_by = ROOT
+			church = 5
 			}
 		}
 		effect{
-			add_dip_power = 100
-			add_country_modifier = {
-				name = "through_the_atlantic"
-				duration = 5475
+				global_missionary_strength = 0.03
 			}
 		}
 	}
 }
-
-
-
-western_control_bae = {
-	slot = 4
-	generic = no
-	ai = yes
-	potential = {
-		tag = BAE
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
-	a_first_foot_hold{
-		icon = seize_sardinia
-		required_missions = { eastern_counter_attack } #None
-		position = 4
-		provinces_to_highlight = {
-      OR = {
-				area = corsica_sardinia_area
-			}
-			NOT = {owned_by = ROOT}
-    }
-		trigger = {
-			corsica_sardinia_area = {
-				type = all
-				owned_by = ROOT
-			}
-		}
-		effect{
-		add_yearly_manpower = 1
-		add_yearly_sailors = 1
-			sicily_area = {
-				add_permanent_claim = ROOT
-			}
-			western_sicily_area = {
-				add_permanent_claim = ROOT
-			}
-			liguria_area{
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-
-	take_the_rich_cities{
+	the_light_in_the_fog{
 		icon = mission_rule_italy
-		required_missions = { a_first_foot_hold } #None
-		position = 6
-		provinces_to_highlight = {
-      OR = {
-				area = liguria_area
-				area = tuscany_area
-			}
-			NOT = {owned_by = ROOT}
-    }
+		required_missions = { Vladimir's_legacy } #None
+		position = 4
 		trigger = {
-			liguria_area = {
-				type = all
-				owned_by = ROOT
-			}
-			tuscany_area = {
-				type = all
-				owned_by = ROOT
-			}
+			has_construction = great_project = 280 #Guilhem veut que le monument de Vladimir soit lvl 1 = ça fonctionne ?
 		}
 		effect{
-			add_adm_power = 50
-			add_years_of_income = 1
-			emilia_romagna_area = {
-				add_permanent_claim = ROOT
-			}
-			central_italy_area{
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-
-
-	the_eternal_city{
-		icon = a_place_among_the_great_powers
-		required_missions = { invade_south_italy take_the_rich_cities } #None
-		position = 7
-		provinces_to_highlight = {
-      OR = {
-				area = lazio_area
-			}
-			NOT = {owned_by = ROOT}
-    }
-		trigger = {
-			lazio_area = {
-				type = all
-				owned_by = ROOT
-			}
-		}
-		effect{
-			add_adm_power	= 100
-			add_dip_power	= 100
-			add_mil_power	= 100
-			add_country_modifier = {
-				name = "the_eternal_city_mod"
-				duration = -1
-			}
-		}
-	}
-	Rome_Reborn_bae = {
-		icon = a_real_roman_empire
-		required_missions = {the_eternal_city}
-		provinces_to_highlight = {
-			province_id = 118
-		}
-
-		trigger = {
-			total_development = 1500
-			tag = WRM
-		}
-		effect = {
-			118 = {
-				add_province_modifier = {
-					name = rome_reborn_mod
-					duration = -1
-				}
-				add_center_of_trade_level = 1
-			}
-			country_event = {id = flavor_wrm.10}
-		}
-	}
-	Emperor_of_east_and_west_bae = {
-		icon = a_roman_empire
-		required_missions = {Rome_Reborn_bae}
-
-		provinces_to_highlight = {
-		 province_id = 151
-		}
-
-		trigger = {
-			tag = ROM
-			151 = {
-				owned_by = ROOT
-			}
-		}
-		effect = {
+			vassalize = VOL
+			vassalize = SMO	
+			vassalize = PLT
+			vassalize = CHR
 			add_prestige = 20
-			add_mil_power = 100
-			add_adm_power = 100
-			add_dip_power = 100
-			add_years_of_income = 1
-			add_country_modifier = {
-				name = emperoror_of_east_west
-				duration = -1
 			}
-			add_accepted_culture = greek
-			add_accepted_culture = anatolian
-			add_accepted_culture = syrian
-			add_accepted_culture = ptolemaic
 		}
 	}
-}
+
+
+	the_slave_needs_a_new_master{
+		icon = a_place_among_the_great_powers
+		required_missions = { the_light_in_the_fog } #None
+		position = 5
+		trigger = {
+			prestige = 70
+			legitimacy = 70
+			total_development = 300
+			treasury = 500
+			dip_power = 400
+		}
+		effect{
+			add_treasury = -500
+			add_dip_power = -400
+			#Event le grand banquet qui dans le lore on assassine les leaders des nations du RUS non soumises en fait des vassaux avec - de désir de liberté pendant 40 ans
+			vassalize = MAZ
+			vassalize = OKA
+			vassalize = RYA
+			vassalize = RSO
+			vassalize = NZH
+			create_union = NOV
+			}
+		}
+	}
