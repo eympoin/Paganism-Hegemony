@@ -14164,7 +14164,7 @@ great_city_of_bayezid = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = HAD_BAYEZID_RULER
-					has_country_flag = bayezid_is_born
+					has_global_flag = bayezid_is_born
 				}
 		}
 	}
@@ -14182,29 +14182,29 @@ great_city_of_bayezid = {
 
 	#can our country use it?
 	can_use_modifiers_trigger = {
-		OR = {
 			owner = {
-				tag = TUR
-				was_tag = TUR
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = HAD_BAYEZID_RULER
-			has_country_flag = bayezid_is_born
+				OR = {
+					tag = TUR
+					was_tag = TUR
+				}
+				custom_trigger_tooltip = {
+					tooltip = HAD_BAYEZID_RULER
+					has_global_flag = bayezid_is_born
+				}
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		OR = {
 			owner = {
-				tag = TUR
-				was_tag = TUR
-			}
-		}
-		custom_trigger_tooltip = {
-			tooltip = HAD_BAYEZID_RULER
-			has_country_flag = bayezid_is_born
+				OR = {
+					tag = TUR
+					was_tag = TUR
+				}
+				custom_trigger_tooltip = {
+					tooltip = HAD_BAYEZID_RULER
+					has_global_flag = bayezid_is_born
+				}
 		}
 	}
 
