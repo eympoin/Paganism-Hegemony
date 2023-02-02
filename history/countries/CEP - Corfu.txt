@@ -6,13 +6,3 @@ primary_culture = greek
 religion = theoi
 capital = 142
 fixed_capital = 142 # Cannot move capital away from this province & no power cost to move to it
-
-1381.1.1 = {
-	monarch = {
-		name = "Carlos I"
-		dynasty ="Dagout"
-		adm = 1
-		dip = 1
-		mil = 1
-	}
-}

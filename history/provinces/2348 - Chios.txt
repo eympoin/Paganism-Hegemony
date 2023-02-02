@@ -2,7 +2,7 @@
 
 owner = LES
 controller = LES
-culture = greek
+culture = egean
 religion = theoi
 capital = "Chios"
 trade_goods = wine

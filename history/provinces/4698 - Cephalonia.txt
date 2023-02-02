@@ -1,6 +1,6 @@
 owner = EPI
 controller = EPI
-culture = greek
+culture = epirote
 religion = theoi
 capital = "Cephalonia"
 trade_goods = wine

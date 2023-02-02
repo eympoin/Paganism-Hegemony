@@ -4548,7 +4548,7 @@ nurnberg_throne = {
 }
 
 lotharingian_industry = {
-  trade_goods_size_modifier = 0.25
+  global_trade_goods_size_modifier = 0.25
 }
 
 eaf_king = {
@@ -5276,7 +5276,7 @@ the_last_push = {
 }
 
 regional_capital = {
-  development_cost = -0.1
+  local_development_cost = -0.1
   local_tax_modifier = 0.2
   local_production_efficiency = 0.2
 }
@@ -5978,7 +5978,6 @@ ottoman_rise = {
 
 
 ottoman_horse_archers = {
-  cavalry_cost = -0.15
   cavalry_fire = 1
 }
 

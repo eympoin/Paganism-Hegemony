@@ -10,7 +10,10 @@ monarchy = {
 				nayankara_reform
 				misl_confederacy_reform
 				rajput_kingdom
+				negusa_nagast
+				solomonic_empire
 				#Specific:
+				chinese_warlord
 				grand_duchy_reform
 				daimyo
 				indep_daimyo
@@ -95,12 +98,14 @@ monarchy = {
 		bureaucracy = {
 			reforms = {
 				centralize_reform
+				centralize_empire_reform
 				decentralize_reform
 				sidhi_recruitment
 				mansabdari_reform
 				council_of_the_indies_reform
 				penal_colonies_reform
 				liberte_reform
+				egalite_reform
 				fraternite_reform
 				examination_system_reform
 				corvee_reform
@@ -145,6 +150,7 @@ monarchy = {
 				meritocratic_focus_reform
 				dakhni_culture_reform
 				zabt_reform
+				dyanstic_administration_reform
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform
 				revolutionary_principle_reform
@@ -207,11 +213,9 @@ monarchy = {
 			reforms = {
 				political_absolutism_reform
 				legislative_houses_reform
-				become_a_republic_reform
-				install_theocratic_government_reform
+				presidential_monarchy_reform
 				emperor_of_the_revolution_reform
 				enlightened_monarchy_reform
-				become_rev_republic_reform
 			}
 		}
 	}
@@ -242,7 +246,6 @@ monarchy = {
 		principality_legacy
 		tsardom_legacy
 		holy_state_legacy
-		absolute_monarchy
 		negusa_nagast_legacy
 		solomonic_empire_legacy
 		musa_rule_legacy
@@ -621,6 +624,12 @@ tribal = {
 		tribal_federation_legacy
 		steppe_horde_legacy
 		siberian_native_council
+		sacred_kingdom_legacy
+		tribal_confederacy_legacy
+		shaka_regime_legacy
+		matrilineal_system_legacy
+		feudal_tribe_legacy
+		great_man_legacy
 	}
 
 	reform_levels = {
@@ -633,6 +642,15 @@ tribal = {
 				siberian_tribe
 				gond_kingdom
 				great_mongol_state_reform
+				stateless_society
+				polynesian_kingdom
+				polynesian_tribe
+				sacred_kingdom
+				tribal_confederacy
+				shaka_regime
+				matrilineal_system
+				feudal_tribe
+				great_man
 			}
 		}
 		tribal_cultural_values = {
@@ -661,6 +679,8 @@ tribal = {
 				tribe_becomes_republic_reform
 				tribe_becomes_theocracy_reform
 				tribe_becomes_horde_reform
+				tribe_remain_tribal_reform
+				tribe_tribal_unity
 			}
 		}
 	}
@@ -714,12 +734,11 @@ native = {
 				native_becomes_monarchy_reform
 				native_becomes_republic_reform
 				native_becomes_theocracy_reform
+				native_remain_being_native_reform
 			}
 		}
 	}
 }
-
-
 
 theocracy = {
 	color = { 75 170 75 }
@@ -1006,7 +1025,7 @@ pre_dharma_mapping = {
 	}
 	trading_city = {
 		government = republic
-		legacy_government = imperial_city_legacy
+		legacy_government = imperial_city
 	}
 	ambrosian_republic = {
 		government = republic

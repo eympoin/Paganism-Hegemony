@@ -265,7 +265,18 @@ economic_aqi{
 					required_missions = { bordeaux_wine }
 					trigger = {
 					174 = {
-					province_has_center_of_trade_of_level = 3
+							if = {
+								limit = {
+									has_dlc = "Dharma"
+								}
+								province_has_center_of_trade_of_level = 3
+							}
+							else = {
+							trade_share = {
+									country = ROOT
+									share = 75
+								}
+							}
 						}
 					}
 					effect = {

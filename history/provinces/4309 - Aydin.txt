@@ -2,7 +2,7 @@
 
 owner = LYD
 controller = LYD
-culture = anatolian
+culture = ionian
 religion = theoi
 capital = "Tralles"
 trade_goods = salt #Major Ottoman Salt Work

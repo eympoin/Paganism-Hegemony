@@ -2,7 +2,7 @@
 
 owner = THE
 controller = THE
-culture = greek
+culture = macedonian
 religion = theoi
 capital = "Larissa"
 trade_goods = livestock

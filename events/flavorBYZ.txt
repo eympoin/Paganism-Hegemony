@@ -1928,7 +1928,7 @@ country_event = { #authority in syria
 		add_imperial_influence = 20
 		set_global_flag = authority_restored_syr
 		add_country_modifier = {
-			name = authority_egypt
+			name = authority_syria
 			duration = -1
 		}
 	}

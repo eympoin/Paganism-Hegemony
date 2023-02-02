@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = autocracy_reform
-primary_culture = anatolian
+primary_culture = ionian
 religion = theoi
 technology_group = greek_tech
 capital = 319

@@ -337,7 +337,7 @@ flavor_koj.2.t:0 "The archbishop of Jerusalem"
 flavor_koj.2.d:0 "With that the holy sepulcher is renovated, the consecration of an archbishop is a most holy task, it will bolster the populus and make every corner of this land sacred."
 flavor_koj.2.a:0 "Amin"
 flavor_koj.3.t:0 "The great drought"
-flavor_koj.3.d:0 "It has not rained in seasons now, it is not just a matter of harvests failing now, a great famine is imminent if we don't fix this. The land west is often called the granary of the Mediterannean, it is time to make it ours."
+flavor_koj.3.d:0 "It has not rained in seasons now, it is not just a matter of harvests failing now, a great famine is imminent if we don't fix this. The land west is often called the granary of the Mediterranean, it is time to make it ours."
 flavor_koj.3.a:0 "Dire times"
 flavor_koj.4.t:0 "The archbishop of Alexandria"
 flavor_koj.4.d:0 "Although Alexandria was never a chalcedonian city it has always been a city that garnered our interest, now that it is ours we shall consacrate it and in time it shall remain as one of our holy cities."
@@ -423,6 +423,10 @@ slavic_uprising.9.t:0 "The rebellion has succeed"
 slavic_uprising.9.d:0 "We have defeated the Greek elites who wished to remain in power, it is time to bring the arms upon their leader : the Emperor"
 slavic_uprising.9.a:0 "To war !"
 
+slavic_uprising.10.t:0 "The Empire takes back control"
+slavic_uprising.10.d:0 "The Slavic revolt is over for now. The Empire has taken back the control of the Doux. Only time will tell if this ocntrol will remain."
+slavic_uprising.10.a:0 "May Zeus bless us."
+
 #trade incident
 incident_trade_competitor:0 "New trade competitors"
 incident_trade_competitor_emperor_alert:0 "With the discoveries of new trade routes to India comes new competitors. Western Europe don't pass through us anymore to get the diverse Indian products, and thus our trade is impoverished. We shall do something !"
@@ -471,11 +475,11 @@ flavor_smi.1.a:0 "The riches of these mines is ours !"
 
 
 #Londinium
-flavor_ldn.1.t:0 "The Way Forward"
+flavor_ldn.1.t:0 "The way forward"
 flavor_ldn.1.d:0 "We are the only ones remaining in Britannia, as we are encircled by Celts, Saxons and Norses. We must decide what approach we must take to ensure our survival."
-flavor_ldn.1.a:0 "We must crush the heathens on the battlefield! To arms, my brothers!"
-flavor_ldn.1.b:0 "We must improve ourselves to make sure we remain above our enemies!"
-flavor_ldn.1.c:0 "We must ally our greatest foe to ensure our survival!"
+flavor_ldn.1.a:0 "We must crush the heathens on the battlefield! To arms, my brothers !"
+flavor_ldn.1.b:0 "We must improve ourselves to make sure we remain above our enemies !"
+flavor_ldn.1.c:0 "We must ally our greatest foe to ensure our survival !"
 flavor_ldn_affect.1.t:0 "An Unforseen Proposal"
 flavor_ldn_affect.1.d:0 "An emissary hailing from Lundinium has arrived today, their norse is a bit rough but we can discuss matters in a sufficient manner. They come with a proposal and a tribute, in exchange for this tribute they desire to make diplomacy between our countries possible, they even talk of a grand alliance to bring the germanic tribes down. But this fervor will put us on opposite sides of the battlefield on day."
 flavor_ldn_affect.1.a:0 "An uncertain ally, but an ally none the least"
@@ -483,9 +487,9 @@ flavor_ldn_affect.1.b:0 "They are one of many duchies in our domain and we shall
 flavor_ldn_affect.1.c:0 "We will take their tribute, and the emissary's head for this outraging proposal"
 flavor_ldn.2.t:0 "An Emissary from the Senate"
 flavor_ldn.2.d:0 "The Senate in Rome has sent us an emisarry bringing us news of the state of affairs in the former empire. They say that our endeavors have not gone unnoticed and that the Senate desires to have us back under their wings. Will we remain to the Senate that abandoned us centuries ago ?"
-flavor_ldn.2.a:0 "We are loyal to the Senate!"
-flavor_ldn.2.b:0 "We are brothers, and the pain shall not stain that fact!"
-flavor_ldn.2.c:0 "We are the true heirs of the Old Rome!"
+flavor_ldn.2.a:0 "We are loyal to the Senate !"
+flavor_ldn.2.b:0 "We are brothers, and the pain shall not stain that fact !"
+flavor_ldn.2.c:0 "We are the true heirs of the Old Rome !"
 flavor_ldn.3.t:0 "Cultural Assimilation"
 flavor_ldn.3.d:0 "Our decision to stray from the path laid out in front of us by Rome and instead carve our own has enabled the assimilation of the populus from the countryside, more and more people speak and behave like true Britannian's should."
 flavor_ldn.3.a:0 "Welcome to our new citizens!"
@@ -495,7 +499,7 @@ flavor_ldn.3.e:0 "Welcome to our new citizens!"
 flavor_ldn.3.f:0 "Welcome to our new citizens!"
 flavor_ldn.4.t:0 "Cultural Assimilation"
 flavor_ldn.4.d:0 "Our work towards integrating the barbarians have paid off. It was a long and grueling task, but even barbarians can become civilized."
-flavor_ldn.4.a:0 "Welcome to our new citizens!"
+flavor_ldn.4.a:0 "Welcome to our new citizens !"
 
 #Saxony
 flavor_sax.1.t:0 "Thuringia ask for help"
@@ -702,8 +706,8 @@ flavor_jar.3.t:0 "Fate of the African city states"
 flavor_jar.3.d:0 "These fool profits from our temporal weakness to break free. Now that we are strong again, they shall bow or die for their treachery."
 flavor_jar.3.a:0 "Demand submission"
 
-flavor_jar.4.t:0 "The Jarawas ask for submission"
-flavor_jar.4.d:0 "The Jarawas have healed their wounds caused by the civil war, and they want us to submit again. "
+flavor_jar.4.t:0 "The Jarawa ask for submission!"
+flavor_jar.4.d:0 "The Jarawa's civil war has ended, and now that they have healed their wounds, they demand us to be subjugated again! On one hand, submitting again will allow us to live another day, and prepare our independence again stronger. But on the other hand, it might cause the opposite effect, meaning refusing might be better in the long run. What should be our response? We must choose carefully, as it will define the future of Carthago."
 flavor_jar.4.a:0 "They are too strong for us to fight them... for now"
 flavor_jar.4.b:0 "We will never be their slaves again !"
 flavor_jar.4.c:0 "Asks our fellow Tripolitan to form a confederation to protect us from them."
@@ -841,8 +845,8 @@ flavor_ctg.22.d:0 "We have conquered lands of Inland Africa. Our advisors are de
 flavor_ctg.22.a:0 "Keeping this desert is worthless, create a protectorate there."
 flavor_ctg.22.b:0 "We will keep this land."
 
-flavor_ctg.23.t:0 "The Numidians Land"
-flavor_ctg.23.d:0 "We have conquered new territories in inland Africa. We should give them to our protectorate there."
+flavor_ctg.23.t:0 "The Numidian Land"
+flavor_ctg.23.d:0 "We have just annexed inland African territories, and our Numidian protectorate asked us to give it to them as we established them to take care of the Saharan Desert. Since we have no use in the desert, we shall accept their request as a gesture of goodwill."
 flavor_ctg.23.a:0 "If they are stonger, we are stronger."
 
 flavor_ctg.24.t:0 " A New Trading Outpost"
@@ -854,64 +858,64 @@ flavor_ctg.28.d:0 "Carthago doesn't colonize like the other nations. The first c
 flavor_ctg.28.a:0 "That's good to know."
 
 flavor_ctg.29.t:0 "Roma Delenda Est"
-flavor_ctg.29.d:0 "Now that the Carthaginian empire is restored, it is time to show the world our strength. And what is better than avenging our ancestors and destroying Rome ? To invade Rome, we have two roads possible : taking the same road as Hannibal or taking the southern road in Italy."
-flavor_ctg.29.a:0 "We will follow Hannibal footsteps."
-flavor_ctg.29.b:0 "The southern road is more logical."
+flavor_ctg.29.d:0 "Now that our glorious empire has been restored, we must conquer the entire Mediterranean Sea! We should start by destroying our mortal enemy, Rome, like they have done to us more than a millenium ago! We have two options to do so: Either we follow Hannibal's footsteps, and invade from the north, or invading from Sicily, and advance from the south. Both options have their advantages and downsides. The northern option will allow us to conquer Southern Gaul and Northern Italy along the way, but it will be a grueling task. The southern option is the safest and fastest road, but the Romans know this and will be better prepared. What road shall we take? After all, all roads lead to Rome..."
+flavor_ctg.29.a:0 "We will avenge Hannibal!"
+flavor_ctg.29.b:0 "We shall attack from Sicily!"
 
 flavor_ctg_col.1.t:0 "The protectorate of Hyperboera"
-flavor_ctg_col.1.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.1.d:0 "We have successfully established a trading outpost in this region, and developped our relations with the natives living there. These natives vowed loyalty to us by creating a protectorate that will be beneficial for our trading interest."
 flavor_ctg_col.1.a:0 "This is a good news !"
 
 flavor_ctg_col.2.t:0 "The protectorate of Varangia"
-flavor_ctg_col.2.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.2.d:0 "We have successfully established a trading outpost in this region, and developped our relations with the natives living there. These natives vowed loyalty to us by creating a protectorate that will be beneficial for our trading interest."
 flavor_ctg_col.2.a:0 "This is a good news !"
 
 flavor_ctg_col.3.t:0 "The protectorate of Hesperidia"
-flavor_ctg_col.3.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.3.d:0 "We have successfully established a trading outpost in this region, and developped our relations with the natives living there. These natives vowed loyalty to us by creating a protectorate that will be beneficial for our trading interest."
 flavor_ctg_col.3.a:0 "This is a good news !"
 
 flavor_ctg_col.4.t:0 "The protectorate of America"
-flavor_ctg_col.4.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.4.d:0 "We have successfully established a trading outpost in this region, and developped our relations with the natives living there. These natives vowed loyalty to us by creating a protectorate that will be beneficial for our trading interest."
 flavor_ctg_col.4.a:0 "This is a good news !"
 
 flavor_ctg_col.5.t:0 "The protectorate of Skythia"
-flavor_ctg_col.5.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.5.d:0 "We have successfully established a trading outpost in this region, and developped our relations with the natives living there. These natives vowed loyalty to us by creating a protectorate that will be beneficial for our trading interest."
 flavor_ctg_col.5.a:0 "This is a good news !"
 
 flavor_ctg_col.6.t:0 "The protectorate of Auruma"
-flavor_ctg_col.6.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.6.d:0 "We have successfully established a trading outpost in this region, and developped our relations with the natives living there. These natives vowed loyalty to us by creating a protectorate that will be beneficial for our trading interest."
 flavor_ctg_col.6.a:0 "This is a good news !"
 
 flavor_ctg_col.7.t:0 "The protectorate of Atlantis"
-flavor_ctg_col.7.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.7.d:0 "We have successfully established a trading outpost in this region, and developped our relations with the natives living there. These natives vowed loyalty to us by creating a protectorate that will be beneficial for our trading interest."
 flavor_ctg_col.7.a:0 "This is a good news !"
 
 flavor_ctg_col.8.t:0 "The protectorate of Paludia"
-flavor_ctg_col.8.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.8.d:0 "We have successfully established a trading outpost in this region, and developped our relations with the natives living there. These natives vowed loyalty to us by creating a protectorate that will be beneficial for our trading interest."
 flavor_ctg_col.8.a:0 "This is a good news !"
 
 flavor_ctg_col.9.t:0 "The protectorate of Labyrinthia"
-flavor_ctg_col.9.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.9.d:0 "We have successfully established a trading outpost in this region, and developped our relations with the natives living there. These natives vowed loyalty to us by creating a protectorate that will be beneficial for our trading interest."
 flavor_ctg_col.9.a:0 "This is a good news !"
 
 flavor_ctg_col.10.t:0 "The protectorate of Alpina"
-flavor_ctg_col.10.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.10.d:0 "We have successfully established a trading outpost in this region, and developped our relations with the natives living there. These natives vowed loyalty to us by creating a protectorate that will be beneficial for our trading interest."
 flavor_ctg_col.10.a:0 "This is a good news !"
 
 flavor_ctg_col.11.t:0 "The protectorate of Hyperzephyra"
-flavor_ctg_col.11.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.11.d:0 "We have successfully established a trading outpost in this region, and developped our relations with the natives living there. These natives vowed loyalty to us by creating a protectorate that will be beneficial for our trading interest."
 flavor_ctg_col.11.a:0 "This is a good news !"
 
 flavor_ctg_col.12.t:0 "The protectorate of Rufusa"
-flavor_ctg_col.12.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.12.d:0 "We have successfully established a trading outpost in this region, and developped our relations with the natives living there. These natives vowed loyalty to us by creating a protectorate that will be beneficial for our trading interest."
 flavor_ctg_col.12.a:0 "This is a good news !"
 
 flavor_ctg_col.13.t:0 "The protectorate of Aethiopes"
-flavor_ctg_col.13.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.13.d:0 "We have successfully established a trading outpost in this region, and developped our relations with the natives living there. These natives vowed loyalty to us by creating a protectorate that will be beneficial for our trading interest."
 flavor_ctg_col.13.a:0 "This is a good news !"
 
 flavor_ctg_col.14.t:0 "The protectorate of Maerobia"
-flavor_ctg_col.14.d:0 "With the establishment of our trading post here and thanks to the development of our relations with the natives, we have created a protectorate in this region. It will be beneficial for our trade interest here."
+flavor_ctg_col.14.d:0 "We have successfully established a trading outpost in this region, and developped our relations with the natives living there. These natives vowed loyalty to us by creating a protectorate that will be beneficial for our trading interest."
 flavor_ctg_col.14.a:0 "This is a good news !"
 
 #Rome
@@ -1292,7 +1296,7 @@ flavor_ion.12.d:0 "They have even refused to come to the table. They will regret
 flavor_ion.12.a:0 "We will take it by force."
 
 flavor_pho.1.t:0 "The call of Melqart"
-flavor_pho.1.d:0 "A late night at the Library of Tyre, you stumble upon some ancient books. They spoke of the ancients gods of Phoenicia when it still dominate the trade of the Mediterannean. With our ties with Rome cut, maybe we should try to forge our new identity with Ancient Phoenicia. We can begin that by converting to their religions."
+flavor_pho.1.d:0 "A late night at the Library of Tyre, you stumble upon some ancient books. They spoke of the ancients gods of Phoenicia when it still dominate the trade of the Mediterranean. With our ties with Rome cut, maybe we should try to forge our new identity with Ancient Phoenicia. We can begin that by converting to their religions."
 flavor_pho.1.a:0 "It is time to bring our roots back in our world."
 flavor_pho.1.b:0 "These gods are forgotten for a good reason."
 
@@ -1997,7 +2001,7 @@ flavor_byzmod.46.a:0 "Build the wall !"
 flavor_byzmod.46.b:0 "Not worth it"
 
 flavor_byzmod.47.t:0 "The Pelusium canal"
-flavor_byzmod.47.d:0 "The Asian trade is losing ground to the Atlantic trade and we will have to bolster the Asian trade if we want to stay competitive. Building a canal between the Red Sea and the Mediterannean could be a breaking change."
+flavor_byzmod.47.d:0 "The Asian trade is losing ground to the Atlantic trade and we will have to bolster the Asian trade if we want to stay competitive. Building a canal between the Red Sea and the Mediterranean could be a breaking change."
 flavor_byzmod.47.a:0 "Costly but worth it !"
 flavor_byzmod.47.b:0 "We have not the money..."
 

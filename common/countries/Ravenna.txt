@@ -56,7 +56,7 @@ leader_names = {
 }
 
 ship_names = {
-	Navis
+	Mars Iuppiter Minerva Pluto Neptune Hercules Rhenus Oceanus Concordia Fides Victoria
 }
 
 army_names = {

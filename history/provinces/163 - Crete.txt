@@ -2,7 +2,7 @@
 
 owner = CRT
 controller = CRT
-culture = greek
+culture = egean
 religion = theoi
 capital = "Cydonia"
 trade_goods = fish

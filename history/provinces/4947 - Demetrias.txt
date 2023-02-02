@@ -2,7 +2,7 @@
 
 owner = THE
 controller = THE
-culture = greek
+culture = macedonian
 religion = theoi
 capital = "Demetrias"
 trade_goods = fish

@@ -360,7 +360,10 @@ assyrians_missions_2 = {
         owns = 419
       }
       effect = {
-        #event occupy yerevan
+        add_country_modifier = {
+          name = yerevans_capitulation
+          duration =-1
+        }
       }
     }
 }
@@ -694,7 +697,10 @@ asy_missions_5 = {
 			owns = 2311
 		}
 		effect = {
-      #event occupy bab
+      add_country_modifier = {
+        name = babylons_fall
+        duration =-1
+      }
 		}
 	}
 
@@ -714,7 +720,10 @@ asy_missions_5 = {
 			owns = 414
 		}
 		effect = {
-      #event occupy ecbatana
+      add_country_modifier = {
+        name = ecbatanas_capture
+        duration =-1
+      }
 		}
 	}
 
@@ -734,7 +743,10 @@ asy_missions_5 = {
 			owns = 2313
 		}
 		effect = {
-      #event occupy Antioch
+      add_country_modifier = {
+        name = antiochs_surrender
+        duration =-1
+      }
 		}
 	}
 }
