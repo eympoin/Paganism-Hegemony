@@ -759,6 +759,7 @@ military_tre_ALN{
 					position = 1
 					trigger = {
 						NOT = {average_home_autonomy = 20}
+						horde_unity = 99
 					}
 					effect{
 						add_army_tradition = 15
