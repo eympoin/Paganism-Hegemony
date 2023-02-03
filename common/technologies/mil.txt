@@ -201,6 +201,8 @@ technology = {
 	enable = gens_d_armes
 	enable = hobelar
 	enable = pomestnoe_voisko
+	enable = mameluks
+	enable = amazigh_riders
 
 	combat_width = 2
 }
@@ -308,6 +310,7 @@ technology = {
 	enable = schwarz_reiter_g
 	enable = rioghacht_marcra
 	enable = rus_cossacks
+	enable = jaish_al_zahf
 }
 
 technology = {
@@ -424,6 +427,7 @@ technology = {
 	enable = asturian_lancers
 	enable = winged_hussars_sl
 	enable = novgorod_reitary
+	enable = assyrian_reiters
 
 	combat_width = 2
 }
@@ -529,6 +533,7 @@ technology = {
 	enable = germanic_hussars
 	enable = germanic_dragoons
 	enable = cymru_dragoons
+	enable = egyptian_dragoons
 
 	combat_width = 2
 }
@@ -692,6 +697,7 @@ technology = {
 	enable = royal_scot_greys
 	enable = winged_hussars_sl_advanced
 	enable = rostov_draguny
+	enable = babylonian_carabiniers
 }
 
 technology = {

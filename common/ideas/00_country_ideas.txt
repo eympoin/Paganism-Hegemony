@@ -516,7 +516,7 @@ EMA_ideas = {
 CUM_ideas = {
 	start = {
 		cavalry_power = 0.2
-		cavalry_cost = -0.25
+		cavalry_cost = -0.2
 	}
 	bonus = {
 		core_creation = -0.1
@@ -535,26 +535,33 @@ CUM_ideas = {
 	nomadic_traditions_cum = {
 		cavalry_fire = 1
 		leader_land_shock = 1
+		leader_land_fire = 1
 	}
 
 	reclaim_our_empire = {
 		ae_impact = -0.2
+		can_chain_claim = yes
 	}
 
 	another_road_eastern_trade = {
 		trade_efficiency = 0.15
+		caravan_power = 0.2
 	}
 
 	cumans_beauty = {
 		diplomatic_reputation = 1
+		reduced_liberty_desire = 10
+		spy_offence = 0.1
 	}
 
 	integrate_the_other_tribes = {
 		global_manpower_modifier = 0.2
+		stability_cost_modifier = -0.1
 	}
 
 	Codex_Cumanicus = {
 		prestige = 1
+		monthly_splendor = 1	
 	}
 }
 
