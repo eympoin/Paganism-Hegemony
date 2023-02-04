@@ -13,6 +13,8 @@ country_decisions = {
 			NOT = { exists = GBR }
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
+			NOT = { tag = BET }
+			NOT = { tag = BRW }
 			OR = {
 				culture_group = british
 			}
