@@ -1,0 +1,455 @@
+huns_independance_1 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+    OR = {
+      tag = HNS
+      was_tag = HNS
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+	has_country_shield = yes
+
+
+	road_to_independance = {
+		icon = mission_build_up_to_force_limit
+		required_missions = {  } #None
+		position = 1
+		trigger = {
+    army_size_percentage = 1
+		}
+		effect = {
+				create_march = ROOT
+				add_treasury = 100
+		}
+	}
+
+
+	fight_the_tyran = {
+		icon = mission_alliances
+		required_missions = { road_to_independance }
+		position = 2
+		trigger = {
+		liberty_desire = 50
+		}
+		effect = {
+			declare_war = ARM
+		}
+	}
+
+	Victory_upon_armenia = {
+		icon = mission_conquer_50_development
+		required_missions = { fight_the_tyran }
+		position = 3
+    trigger = {
+     419 = { controller = ROOT }
+		 }
+ 		 NOT = {controlled_by = ROOT}
+		 }
+		effect = {
+			add_treasury = 300
+			grant_independence = yes
+			shirvan_area = {
+				add_permanent_claim = ROOT
+			}
+			armenia_area = {
+				add_permanent_claim = ROOT
+			}
+			tabriz_area = {
+				add_permanent_claim = ROOT
+			}
+			kartli_kakheti_area = {
+				add_permanent_claim = ROOT
+			}
+      transcaspia_area = {
+        add_permanent_claim = ROOT
+      }
+      circassia_area = {
+        add_permanent_claim = ROOT
+      }
+      astrakhan_area{
+        add_permanent_claim = ROOT
+      }
+      lower_don_area = {
+        add_permanent_claim = ROOT
+      }
+      lower_yik_area = {
+        add_permanent_claim = ROOT
+      }
+      nogai_area = {
+        add_permanent_claim = ROOT
+      }
+			define_ruler = {
+			name = "Attila II"
+		 	dynasty = "Moundzouk"
+		 	adm = 5
+		 	dip = 3
+		 	mil = 6
+		 	age = 20
+		 	claim = 100
+		 	}
+		}
+	}
+}
+
+partie_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+    OR = {
+      tag = HNS
+      was_tag = HNS
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+	has_country_shield = yes
+
+	slay_the_tyran = {
+		icon = mission_conquer_50_development
+ 		required_missions = { Victory }
+ 		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = shirvan_area
+				area = armenia_area
+				area = tabriz_area
+				area = kartli_kakheti_area
+	 		}
+	 		NOT = {owned_by = ROOT}
+			}
+		trigger = {
+			shirvan_area = {
+	 			type = all
+	 			owned_by = ROOT
+			}
+			armenia_area = {
+	 			type = all
+	 			owned_by = ROOT
+			}
+			tabriz_area = {
+	 			type = all
+	 			owned_by = ROOT
+			}
+			kartli_kakheti_area = {
+	 			type = all
+	 			owned_by = ROOT
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+			add_adm_power = 300
+			azerbaijan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {is_claim	= ROOT}
+				}
+				add_permanent_claim = ROOT
+			}
+			tabarestan_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+			mashhad_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+			iraq_e_ajam_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+		}
+	}
+
+	Caspian_trade = {
+    icon = mission_build_up_to_force_limit
+    required_missions = { slay_the_tyran }
+    position = 6
+    trigger = {
+			azerbaijan_area = {
+    			type = all
+    			owned_by = ROOT
+		  }
+      tabarestan_area = {
+    		type = all
+    		owned_by = ROOT
+      }
+      mashhad_area = {
+    		type = all
+    		owned_by = ROOT
+      }
+      iraq_e_ajam_area = {
+    		type = all
+    		owned_by = ROOT
+      }
+		}
+    effect = {
+      add_years_of_income = 1
+      add_dip_power = 300
+      transcaspia_area = {
+        add_permanent_claim = ROOT
+      }
+      khiva_area = {
+        add_permanent_claim = ROOT
+      }
+      nogai_area = {
+        add_permanent_claim = ROOT
+      }
+      lower_yik_area = {
+        add_permanent_claim = ROOT
+      }
+      astrakhan_area = {
+        add_permanent_claim = ROOT
+      }
+		}
+	}
+
+	mare_nostrum = {
+    icon = mission_build_up_to_force_limit
+    required_missions = { caspian_trade }
+    position = 6
+    trigger = {
+      transcaspia_area = {
+      	type = all
+      	owned_by = ROOT
+      }
+      khiva_area = {
+      	type = all
+      	owned_by = ROOT
+      }
+      nogai_area = {
+      	type = all
+      	owned_by = ROOT
+      }
+      lower_yik_area = {
+      	type = all
+      	owned_by = ROOT
+      }
+      astrakhan_area = {
+      	type = all
+      	owned_by = ROOT
+      }
+		}
+    effect = {
+      add_years_of_income = 1
+      add_mil_power = 300
+      add_trade_modifier = {
+    		who = ROOT
+    		duration = 5475
+    		power = 15
+    		key = STRONG_MERCHANTS
+    		add_center_of_trade_level = 1
+				}
+		}
+	}
+}
+
+	steppes_expansion_2{
+		slot = 4
+		generic = no
+		ai = yes
+		potential = {
+	    OR = {
+	      tag = HNS
+	      was_tag = HNS
+	    }
+	    NOT = { map_setup = map_setup_random }
+	  }
+		has_country_shield = yes
+
+	take_back_our_steppes = {
+		icon = hispaniae
+		required_missions = { Victory }
+		position = 3
+		trigger = {
+    	circassia_arean_area = {
+        type = all
+        owned_by = ROOT
+      }
+      astrakhan_area = {
+        type = all
+        owned_by = ROOT
+      }
+      nogai_area = {
+        type = all
+        owned_by = ROOT
+      }
+      lower_don_area = {
+        type = all
+        owned_by = ROOT
+      }
+      lower_yik_area = {
+        type = all
+        owned_by = ROOT
+      }
+		}
+		effect = {
+			add_prestige = 20
+			add_stability = 1
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+      saratov_area = {
+      	type = all
+      	owned_by = ROOT
+      }
+      tambov_area = {
+      	type = all
+      	owned_by = ROOT
+      }
+		}
+	}
+}
+
+
+to_the_east_hns{
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+    OR = {
+      tag = HNS
+      was_tag = HNS
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+	has_country_shield = yes
+
+	eradicate_the_red_monster{
+		icon = mission_disrupt_portuguese_trade
+		required_missions = { caspian_trade }
+		position = 3
+		trigger = {
+			exists = TIM
+		}
+		effect = {
+			create_general = { tradition = 100 }
+      khiva_area = {
+          type = all
+          owned_by = ROOT
+      }
+      merv_area = {
+            type = all
+            owned_by = ROOT
+			}
+      transoxiana_area = {
+          	type = all
+          	owned_by = ROOT
+      }
+      kyzylkum_area = {
+          	type = all
+          	owned_by = ROOT
+			}
+      syr_darya_area = {
+            type = all
+            owned_by = ROOT
+      }
+      arys_area = {
+            type = all
+            owned_by = ROOT
+      }
+    }
+	}
+}
+
+
+burn_those_mighty_cities = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+    OR = {
+      tag = HNS
+      was_tag = HNS
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+	has_country_shield = yes
+
+	knock_knock_knock{
+		icon = mission_build_up_to_force_limit
+		required_missions = {  }
+		position = 8
+		provinces_to_highlight = {
+      OR = {
+				province_id = 151
+    	}
+			NOT = {Owned_by = ROOT}
+		}
+		trigger = {
+			151 = {controller = HNS}
+		}
+		effect{
+	  	add_years_of_income = 2
+			add_legitimacy = 50
+    	add_prestige = 50
+    	add_stability = 1
+    	add_army_tradition = 25
+    	add_mil_power = 200
+    	add_dip_power = 200
+    	add_adm_power = 200
+		}
+	}
+
+	hello_there{
+		icon = mission_rule_italy
+		required_missions = { a_first_foot_hold }
+		position = 9
+		provinces_to_highlight = {
+      OR = {
+				province_id = 118
+			}
+			NOT = {owned_by = ROOT}
+    }
+		trigger = {
+    	118 = {controller = HNS}
+		}
+    effect{
+	  	add_years_of_income = 2
+			add_legitimacy = 50
+    	add_prestige = 50
+    	add_stability = 1
+    	add_army_tradition = 25
+    	add_mil_power = 200
+    	add_dip_power = 200
+    	add_adm_power = 200
+		}
+	}
+
+	surprise_dude{
+  	icon = mission_rule_italy
+  	required_missions = { }
+  	position = 12
+  	provinces_to_highlight = {
+    	OR = {
+  			province_id = 183
+  		}
+  		NOT = {owned_by = ROOT}
+    }
+  	trigger = {
+    	183 = {controller = HNS}
+  	}
+    effect = {
+  	  add_years_of_income = 2
+  		add_legitimacy = 50
+      add_prestige = 50
+      add_stability = 1
+      add_army_tradition = 25
+      add_mil_power = 200
+      add_dip_power = 200
+      add_adm_power = 200
+  	}
+  }
+}
