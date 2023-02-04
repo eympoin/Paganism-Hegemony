@@ -67,31 +67,31 @@ country_decisions = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = ENG
+				add_permanent_claim = BRW
 			}
 			yorkshire_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = ENG
+				add_permanent_claim = BRW
 			}
 			east_midlands_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = ENG
+				add_permanent_claim = BRW
 			}
 			west_midlands_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = ENG
+				add_permanent_claim = BRW
 			}
 			east_anglia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = ENG
+				add_permanent_claim = BRW
 			}
 			add_country_modifier = {
 				name = "centralization_modifier"
