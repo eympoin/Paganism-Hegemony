@@ -1,0 +1,245 @@
+osef_kie{
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = KIE
+	has_country_shield = yes
+	}
+}
+osef_kie{
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = KIE
+	has_country_shield = yes
+	}
+}
+
+main_path_kie{
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = KIE
+	has_country_shield = yes
+	}
+
+	raise_the_head = {
+		icon = mission_restore_kiev
+		required_missions = {}
+		position = 1
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+			add_years_of_income = 1
+			add_prestige = 10
+		}
+	}
+
+	raise_the_taxes = {
+		icon = mission_high_income
+		required_missions = { raise_the_head }
+		position = 2
+		trigger = {
+			grown_by_development = 10
+		}
+		effect = {
+			production_efficiency = 0.1
+		}
+	}
+
+	slave's_capital_city{
+		icon = mission_novgorod_the_great
+		required_missions = { raise_the_taxes}
+		position = 3
+		provinces_to_highlight = {
+      OR = {
+				province = 280
+			}
+			NOT = {owned_by = ROOT}
+    }
+		trigger = {
+			280 = { development = 30 }
+		}
+		effect = {
+			add_prestige = 15
+		}
+	}
+
+	road_to_the_east{
+  	icon = mission_recruit_the_cossacks
+  	required_missions = { slave's_capital_city }
+  	position = 4
+  	trigger = {
+  		grown_by_development = 20
+			syria_region = {
+				type = all
+				owned_by = ROOT
+				has_owner_religion = yes
+			}
+		}
+  	effect = {
+    	add_prestige = 15
+    }
+	}
+}
+
+path_droit_kie{
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = KIE
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	raise_the_troops = {
+		icon = mission_consolidate_the_state
+		required_missions = { raise_the_head}
+		position = 2
+		trigger = {
+			treasury = 100
+		}
+		effect = {
+			zaporizhia_area = {
+				add_permanent_claim = ROOT
+				}
+			yedisan_area = {
+				add_permanent_claim = ROOT
+				}
+			azov_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	fall_of_the_scourge{
+  	icon = mission_conquer_romania
+  	required_missions = { raise_the_troops }
+  	position = 3
+  	provinces_to_highlight = {
+    	OR = {
+      	area = azov_area
+      	area = yedisan_area
+      	area = zaporizhia_area
+    	}
+    	NOT = {owned_by = ROOT}
+  	}
+  	trigger = {
+    	azov_area = {
+      	type = all
+      	owned_by = ROOT
+    	}
+    	yedisan_area = {
+      	type = all
+      	owned_by = ROOT
+    	}
+    	zaporizhia_area = {
+      	type = all
+      	owned_by = ROOT
+    	}
+  	}
+  	effect = {
+  		lower_don_area = {
+    		add_permanent_claim = ROOT
+  		}
+  		astrakhan_area = {
+    		add_permanent_claim = ROOT
+  		}
+  		lower_yik_area = {
+    		add_permanent_claim = ROOT
+    	}
+  		saratov_yik_area = {
+    		add_permanent_claim = ROOT
+    	}
+  		circassia_area = {
+    		add_permanent_claim = ROOT
+    	}
+  		dagestan_area = {
+    		add_permanen_claim = ROOT
+    	}
+  	}
+	}
+
+	the_love_of_their_kind_is_the_hate_of_the_others{
+  	icon = mission_autocratic_rule
+  	required_missions = { fall_of_the_scourge }
+  	position = 4
+  	trigger = {
+			accepted_culture = turkish
+  	}
+  	effect = {
+  		shock_damage_received = 0.10
+    }
+  }
+}
+
+path_gauche{
+		slot = 2
+		generic = no
+		ai = yes
+		potential = {
+			tag = KIE
+			NOT = { map_setup = map_setup_random }
+		}
+		has_country_shield = yes
+
+	Vladimir's_legacy{
+		icon = mission_conquer_tver
+		required_missions = { raise_the_head }
+		position = 2
+		trigger = {
+			temple = 5
+		}
+		effect = {
+			add_treasury = 100
+			global_missionary_strength = 0.3
+		}
+	}
+
+	the_light_in_the_fog{
+		icon = mission_reconquer_vologda
+		required_missions = { Vladimir's_legacy }
+		position = 3
+		trigger = {
+			has_great_project = {
+				type = vladimir's Hill
+				tier = 1
+			}
+		}
+		effect = {
+			vassalize = VOL
+			vassalize = SMO
+			vassalize = PLT
+			vassalize = CHR
+			add_prestige = 20
+		}
+	}
+
+	the_slave_needs_a_new_master_kie{
+		icon = mission_the_third_rome
+		required_missions = { the_light_in_the_fog }
+		position = 4
+		trigger = {
+			prestige = 70
+			legitimacy = 70
+			total_development = 300
+			treasury = 500
+			dip_power = 400
+		}
+		effect = {
+			add_treasury = -500
+			add_dip_power = -400
+			vassalize = MAZ
+			vassalize = OKA
+			vassalize = RYA
+			vassalize = RSO
+			vassalize = NZH
+			create_union = NOV
+		}
+	}
+}
