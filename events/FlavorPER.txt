@@ -803,15 +803,12 @@ country_event = {
 	option = {#It is a perfect occasion to reclaim the elymaite satrap
 		name = flavor_per_cw.7.a
 		ai_chance = { factor = 1 }
-		ARM = { create_guarantee = ELM }
-		LRI = { create_alliance = ELM }
-		BAB = { create_guarantee = ELM }
+		ARM = { country_event = {id = flavor_per_cw.72} }
+		LRI = { country_event = {id = flavor_per_cw.72} }
+		BAB = { country_event = {id = flavor_per_cw.72} }
+		country_event = {id = flavor_per_cw.73 days = 30}
 		4331 = { cede_province = FRS }
 		430 = { cede_province = FRS }
-		declare_war_with_cb = {
-			who = ELM
-			casus_belli = cb_vassalize_mission
-		}
 		change_variable = {
 			which = FRS_loy
 			value = 1
@@ -942,6 +939,42 @@ country_event = {
 		add_truce_with = LRI
 		add_truce_with = FRS
 		add_truce_with = ELM
+	}
+}
+
+#protection of Elymais
+country_event = {
+	id = flavor_per_cw.72
+	title = flavor_per_cw.72.t
+	desc = flavor_per_cw.72.d
+	picture = MILITARY_CAMP_eventPicture
+	is_triggered_only = yes
+	option = {#Protect
+		name = flavor_per_cw.72.a
+		ai_chance = { factor = 1 }
+		create_guarantee = ELM
+	}
+	option = {#Do not Protect
+		name = flavor_per_cw.72.a
+		ai_chance = { factor = 0 }
+		add_prestige = -10
+	}
+}
+
+#Declare_the_war
+country_event = {
+	id = flavor_per_cw.73
+	title = flavor_per_cw.73.t
+	desc = flavor_per_cw.73.d
+	picture = MILITARY_CAMP_eventPicture
+	is_triggered_only = yes
+	option = {#Protect
+		name = flavor_per_cw.72.a
+		ai_chance = { factor = 1 }
+		declare_war_with_cb = {
+			who = ELM
+			casus_belli = cb_vassalize_mission
+		}
 	}
 }
 
@@ -2399,7 +2432,7 @@ country_event = {
 			who = TAB
 			casus_belli = cb_vassalize_mission
 		}
-		ARM = { join_all_defensive_wars_of = TAB }
+		ARM = {country_event = {id = flavor_per_cw.221}}
 	}
 	option = {#Pressure Mazandaran into giving up Sari
 		name = flavor_per_cw.22.b
@@ -2450,6 +2483,25 @@ country_event = {
 		name = flavor_per_cw.22.f
 		add_years_of_income = 1
 		add_corruption = 2
+	}
+}
+
+#Armenia join the war
+country_event = {
+	id = flavor_per_cw.221
+	title = flavor_per_cw.221.t
+	desc = flavor_per_cw.221.d
+	picture = MILITARY_CAMP_eventPicture
+	is_triggered_only = yes
+	option = {#Protect
+		name = flavor_per_cw.221.a
+		ai_chance = { factor = 1 }
+		ARM = { join_all_defensive_wars_of = TAB }
+	}
+	option = {#Protect
+		name = flavor_per_cw.221.a
+		ai_chance = { factor = 0 }
+		add_prestige = -10
 	}
 }
 
