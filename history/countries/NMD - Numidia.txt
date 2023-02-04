@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = feudalism_reform
-technology_group = semitic_tech
+technology_group = numidian_tech
 religion = berber
 primary_culture = berber_culture
 capital = 2450 # Tlemcen

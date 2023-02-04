@@ -30,3 +30,5 @@ base_production = 2 base_manpower = 1 } #Collapse of mali into minor states afte
 1756.1.1 = { unrest = 9 } # Denkoro seizes power in wake of father Mamali's death, civil war
 1760.1.1 = { unrest = 0 revolt = { type = revolutionary_rebels size = 1 } controller = REB } # Bambara control lost in wake of death of Mamari Kulibali
 1769.1.1 = { revolt = {} controller = SOF } # Ngolo Diarra restores authortiy of Segu state in region
+
+discovered_by = numidian_tech

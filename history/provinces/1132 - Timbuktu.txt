@@ -39,3 +39,5 @@ center_of_trade = 2
 1770.1.1 = { unrest = 3 } # Tuareg lay seige to city, causing famine
 1771.1.1 = { unrest = 0 } # Tuareg siege resolved via negotiation
 1773.1.1 = { unrest = 2 } # Bambara overlordship restored by Ngolo Diarra, Bambara overseers appointed in city
+
+discovered_by = numidian_tech

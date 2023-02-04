@@ -23,3 +23,5 @@ discovered_by = sub_saharan
 	trade_goods = coffee
 	is_city = yes 
 } #Akan migrations, Denkyira established
+
+discovered_by = numidian_tech

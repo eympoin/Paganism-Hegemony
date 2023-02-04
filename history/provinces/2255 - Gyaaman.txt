@@ -23,3 +23,5 @@ discovered_by = sub_saharan
 	controller = ASH
 	add_core = ASH 
 } #Ashanti conquest
+
+discovered_by = numidian_tech

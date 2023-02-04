@@ -32,3 +32,5 @@ discovered_by = sub_saharan
 	is_city = yes
 	trade_goods = slaves
 } # The British take over Freetown
+
+discovered_by = numidian_tech

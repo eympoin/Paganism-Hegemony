@@ -20,3 +20,4 @@ discovered_by = sub_saharan
 	owner = SYO
 	controller = SYO
 }
+discovered_by = numidian_tech

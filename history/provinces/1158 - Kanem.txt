@@ -22,3 +22,5 @@ center_of_trade = 1
 1622.1.1 = { capital = "Mao" } #Reorganization of provincial governance shifts center of power
 1751.1.1 = { unrest = 8 } #Wadai raiders gravely disrupt local communities
 1804.1.1 = { discovered_by = SOK }
+
+discovered_by = numidian_tech

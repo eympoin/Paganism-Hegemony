@@ -24,3 +24,4 @@ discovered_by = sub_saharan
 	trade_goods = gold
 	is_city = yes 
 } #Rise of Great Fulo
+discovered_by = numidian_tech

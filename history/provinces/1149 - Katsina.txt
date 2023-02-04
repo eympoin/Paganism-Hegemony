@@ -36,3 +36,5 @@ center_of_trade = 2
 	controller = SOK
 	add_core = SOK
 } # The Fulani Empire
+
+discovered_by = numidian_tech

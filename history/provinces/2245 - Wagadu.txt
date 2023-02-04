@@ -32,3 +32,4 @@ discovered_by = sub_saharan
 	controller = SOF
 	add_core = SOF remove_core = FUL 
 } #Massa establish the Massassi dynasty, Bambara expands
+discovered_by = numidian_tech

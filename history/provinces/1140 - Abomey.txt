@@ -26,3 +26,5 @@ discovered_by = sub_saharan
 1724.1.1 = { unrest = 7 } #Agaja moves to eliminate all rivals to Dahomey power
 1727.1.1 = { unrest = 0 } #Agaja conquers last rivals to power 
 1804.1.1 = { discovered_by = SOK }
+
+discovered_by = numidian_tech

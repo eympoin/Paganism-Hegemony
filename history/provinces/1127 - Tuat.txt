@@ -41,3 +41,5 @@ native_hostileness = 9
 	controller = MOR
 	remove_core = TFL
 } #Alaouites reunifies the country
+
+discovered_by = numidian_tech

@@ -30,3 +30,5 @@ center_of_trade = 1
 1740.1.1 = { unrest = 3 } #Baga Migrations in wake of rise of Futa Jallon
 1757.1.1 = { unrest = 4 } #incursions by the Futa Jallon Fulani under Ibrahima Sory disrupt trade and cause instability
 1762.1.1 = { unrest = 0 } #Defeat of Ibhrahima Sory ends Futa Jallon threat to Kaabu
+
+discovered_by = numidian_tech

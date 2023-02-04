@@ -25,3 +25,5 @@ discovered_by = sub_saharan
 1750.1.1 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } #Baguirmi rebels in wake of Jukun invasions of Borno heartland
 1752.1.1 = { revolt = {} controller = KBO } #Baguirmi restored to Borno control
 1804.1.1 = { discovered_by = SOK }
+
+discovered_by = numidian_tech

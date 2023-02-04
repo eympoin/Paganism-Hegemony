@@ -3,5 +3,5 @@ add_government_reform = feudalism_reform
 government_rank = 1
 primary_culture =	berber_culture
 religion = berber
-technology_group = semitic_tech
+technology_group = numidian_tech
 capital = 336	# Tafilalt

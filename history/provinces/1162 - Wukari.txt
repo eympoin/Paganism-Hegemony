@@ -27,3 +27,5 @@ discovered_by = sub_saharan
 	is_city = yes
 	trade_goods = grain
 } # The Fulani Empire
+
+discovered_by = numidian_tech

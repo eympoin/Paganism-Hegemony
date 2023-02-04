@@ -30,3 +30,5 @@ center_of_trade = 1
 	owner = AIR
 	controller = AIR
 } # Songahi defeat at Tondibi leaves Tuareg free
+
+discovered_by = numidian_tech

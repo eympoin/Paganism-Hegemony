@@ -41,3 +41,5 @@ discovered_by = sub_saharan
 	add_core = SOK
 	trade_goods = ivory
 } # The Fulani Empire
+
+discovered_by = numidian_tech

@@ -22,3 +22,4 @@ discovered_by = steppe_tech
 discovered_by = germanic_tech
 discovered_by = celtic_tech
 discovered_by = slavic_tech
+discovered_by = numidian_tech

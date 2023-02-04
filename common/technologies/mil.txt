@@ -79,6 +79,7 @@ technology = {
 	enable = faris
 	enable = germanic_knights
 	enable = keshik
+	enable = numidian_riders
 }
 
 technology = {
@@ -203,6 +204,8 @@ technology = {
 	enable = pomestnoe_voisko
 	enable = mameluks
 	enable = amazigh_riders
+	enable = amazigh_riderz
+	enable = sahelians_camels
 
 	combat_width = 2
 }
@@ -311,6 +314,8 @@ technology = {
 	enable = rioghacht_marcra
 	enable = rus_cossacks
 	enable = jaish_al_zahf
+	enable = rbeb_agmar
+	enable = kahina_guards
 }
 
 technology = {
@@ -428,6 +433,8 @@ technology = {
 	enable = winged_hussars_sl
 	enable = novgorod_reitary
 	enable = assyrian_reiters
+	enable = amenkudan_agmar
+	enable = timset_agmar
 
 	combat_width = 2
 }
@@ -698,6 +705,8 @@ technology = {
 	enable = winged_hussars_sl_advanced
 	enable = rostov_draguny
 	enable = babylonian_carabiniers
+	enable = dahra_lancers
+	enable = analak_agmar
 }
 
 technology = {
@@ -851,6 +860,8 @@ technology = {
 	enable = marchfilwr
 	enable = rus_cuirassier
 	enable = bohemian_uhlans
+	enable = agallu_agmar
+	enable = anezruf_agmar
 }
 
 technology = {

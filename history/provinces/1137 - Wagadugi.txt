@@ -32,3 +32,5 @@ discovered_by = sub_saharan
 1750.1.1 = { native_size = 80 } #Era of Peace and Prosperity under Naaba Warga's successor Naaba Zombre
 1794.1.1 = { unrest = 6 } #Brutal rule of Naaba Saaga leads to internal upheaval
 1804.1.1 = { discovered_by = SOK }
+
+discovered_by = numidian_tech

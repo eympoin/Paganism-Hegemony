@@ -20,3 +20,5 @@ discovered_by = sub_saharan
 
 1481.1.1 = { discovered_by = POR } # Bartolomeu Dias
 1564.1.1 = { owner = LOA controller = LOA }
+
+discovered_by = numidian_tech

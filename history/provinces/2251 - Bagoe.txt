@@ -1,2 +1,4 @@
 # Bagoe - Wasteland province
 discovered_by = sub_saharan
+
+discovered_by = numidian_tech

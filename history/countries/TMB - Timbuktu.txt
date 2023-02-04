@@ -2,7 +2,7 @@ government = tribal
 add_government_reform = tribal_despotism
 primary_culture = tuareg
 religion = berber
-technology_group = sub_saharan
+technology_group = numidian_techs
 unlock_cult = yemoja_cult
 unlock_cult = roog_cult
 unlock_cult = nyame_cult
@@ -109,7 +109,7 @@ set_legacy_government = noble_republic
 		mil = 2
 	}
 }
-		
+
 
 #Restored
 1642.1.1 = {

@@ -9,3 +9,4 @@ discovered_by = germanic_tech
 discovered_by = celtic_tech
 discovered_by = semitic_tech
 discovered_by = persian_tech
+discovered_by = numidian_tech

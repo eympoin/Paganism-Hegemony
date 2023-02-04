@@ -31,3 +31,5 @@ discovered_by = sub_saharan
 1781.1.1 = { revolt = { type = revolutionary_rebels size = 1 } controller = REB } #Borno overlords are expelled
 1782.1.1 = { revolt = {} }
 1804.1.1 = { discovered_by = SOK }
+
+discovered_by = numidian_tech

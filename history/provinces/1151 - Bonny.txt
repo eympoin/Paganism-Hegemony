@@ -19,3 +19,5 @@ discovered_by = sub_saharan
 1472.1.1 = { discovered_by = POR } # Frenão do Pó
 1804.1.1 = { discovered_by = SOK }
 
+
+discovered_by = numidian_tech

@@ -48,3 +48,5 @@ discovered_by = sub_saharan
 	add_core = ZAF
 	remove_core = SOF
 } # The Massina Empire, recylcing the JNN tag
+
+discovered_by = numidian_tech

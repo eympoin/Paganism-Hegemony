@@ -2,7 +2,7 @@ government = theocracy
 add_government_reform = leading_clergy_reform
 primary_culture = moors
 religion = berber
-technology_group = semitic_tech
+technology_group = numidian_tech
 capital = 348 # Sus
 fixed_capital = 348 # Cannot move capital away from this province & no power cost to move to it
 

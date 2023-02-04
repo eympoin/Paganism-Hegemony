@@ -28,3 +28,5 @@ center_of_trade = 1
 1641.1.1 = { owner = NED controller = NED add_core = NED } # Captured by the Dutch
 1648.1.1 = { owner = POR controller = POR remove_core = NED } # A Brazilian-Portuguese expedition expelled the Dutch
 1650.1.1 = { trade_goods = slaves }
+
+discovered_by = numidian_tech

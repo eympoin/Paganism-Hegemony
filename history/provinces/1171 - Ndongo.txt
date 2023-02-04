@@ -38,3 +38,5 @@ center_of_trade = 1
 	revolt = { }
 	controller = POR
 }
+
+discovered_by = numidian_tech

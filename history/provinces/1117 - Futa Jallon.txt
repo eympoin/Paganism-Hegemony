@@ -30,3 +30,5 @@ discovered_by = sub_saharan
 1751.1.1 = { unrest = 0 } #Ibrahima Sory becomes Almamy, begins expansion against rival states in Kankan, Gabu and Sierra Leone
 1762.1.1 = { unrest = 12 } #Sarakan invasion of Futa Jallon leads to fall of Timbo, Sory forced into the mountains
 1776.1.1 = { unrest = 0 } #Ibrahima Sory succeeds in liberating Timbo, restoring the Futa Jallon state
+
+discovered_by = numidian_tech
