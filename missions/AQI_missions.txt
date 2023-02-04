@@ -343,11 +343,11 @@ Gallia_Unification_1_aqi = {
 		trigger = {
 			provence_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = AQI
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			languedoc_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = AQI
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -355,25 +355,25 @@ Gallia_Unification_1_aqi = {
 			limit = {
 				NOT = { owned_by = ROOT }
 			}
-			add_permanent_claim = AQI
+			add_permanent_claim = ROOT
 			}
 		west_burgundy_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					}
-			add_permanent_claim = AQI
+			add_permanent_claim = ROOT
 		}
 		bourgogne_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					}
-			add_permanent_claim = AQI
+			add_permanent_claim = ROOT
 		}
 		massif_central_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					}
-				add_permanent_claim = AQI
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -395,10 +395,10 @@ Gallia_Unification_1_aqi = {
 		}
 		trigger = {
 			180 = {
-				owned_by  = AQI
+				owned_by  = ROOT
 			}
 			4386 = {
-				owned_by  = AQI
+				owned_by  = ROOT
 			}
 		}
 		effect = {
@@ -406,13 +406,13 @@ Gallia_Unification_1_aqi = {
 			limit = {
 				NOT = { owned_by = ROOT }
 			}
-			add_permanent_claim = AQI
+			add_permanent_claim = ROOT
 			}
 			orleans_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = AQI
+				add_permanent_claim = ROOT
 				}
 			add_country_modifier = {
 				name = "revenge_against_the_franks"
@@ -451,7 +451,7 @@ Gallia_Unification_1_aqi = {
 			limit = {
 				NOT = { owned_by = ROOT }
 			}
-			add_permanent_claim = AQI
+			add_permanent_claim = ROOT
 			}
 			add_country_modifier = {
 				name = "romanize_the_franks"
@@ -476,7 +476,7 @@ Gallia_Unification_1_aqi = {
 		trigger = {
 			france_region = {
 				type = all
-				owned_by = AQI
+				owned_by = ROOT
 			}
 		}
 		effect = {
@@ -577,19 +577,19 @@ Gallia_Unification_2_aqi = {
 		trigger = {
 			massif_central_area = {
 				type = all
-				owned_by  = AQI
+				owned_by  = ROOT
 			}
 			west_burgundy_area = {
 				type = all
-				owned_by  = AQI
+				owned_by  = ROOT
 			}
 			bourgogne_area = {
 				type = all
-				owned_by  = AQI
+				owned_by  = ROOT
 			}
 			savoy_dauphine_area = {
 				type = all
-				owned_by  = AQI
+				owned_by  = ROOT
 			}
 		}
 		effect = {
@@ -597,7 +597,7 @@ Gallia_Unification_2_aqi = {
 			limit = {
 				NOT = { owned_by = ROOT }
 			}
-			add_permanent_claim = AQI
+			add_permanent_claim = ROOT
 			}
 			add_country_modifier = {
 				name = "full_elan"
@@ -632,7 +632,7 @@ Spanish_intervention_aqi = {
 		trigger = {
 			basque_country = {
 				type = all
-				owned_by  = AQI
+				owned_by  = ROOT
 			}
 		}
 		effect = {
@@ -640,13 +640,13 @@ Spanish_intervention_aqi = {
 			limit = {
 				NOT = { owned_by = ROOT }
 			}
-			add_permanent_claim = AQI
+			add_permanent_claim = ROOT
 			}
 			galicia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
-				add_permanent_claim = AQI
+				add_permanent_claim = ROOT
 				}
 		}
 	}
@@ -670,11 +670,11 @@ Spanish_intervention_aqi = {
 		trigger = {
 			asturias_area = {
 				type = all
-				owned_by  = AQI
+				owned_by  = ROOT
 			}
 			galicia_area = {
 				type = all
-				owned_by  = AQI
+				owned_by  = ROOT
 			}
 		}
 		effect = {
@@ -764,7 +764,7 @@ Spanish_intervention_aqi = {
 		trigger = {
 			iberia_region = {
 				type = all
-				owned_by  = AQI
+				owned_by  = ROOT
 			}
 		}
 		effect = {
