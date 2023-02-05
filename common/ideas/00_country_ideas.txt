@@ -561,7 +561,7 @@ CUM_ideas = {
 
 	Codex_Cumanicus = {
 		prestige = 1
-		monthly_splendor = 1	
+		monthly_splendor = 1
 	}
 }
 
@@ -8993,7 +8993,7 @@ KIE_ideas = {
 	The_great_varangue = {
 		infantry_power = 0.10
 	}
-	peasant_soldiers = {
+	peasant_soldiers_kie = {
 		global_manpower_modifier = 0.25
 		land_forcelimit_modifier = 0.10
 	}
