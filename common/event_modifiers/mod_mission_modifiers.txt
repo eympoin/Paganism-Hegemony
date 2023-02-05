@@ -8664,7 +8664,7 @@ great_army = {
 }
 
 religious_reformation = {
-  global_missionary_strength = 0.1
+  global_missionary_strength = 0.01
 }
 
 trade_league = {

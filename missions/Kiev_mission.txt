@@ -122,16 +122,18 @@ main_path{
 		trigger = {
 			monthly_income = 25
 			trade_depot = 5
-			#doitupgradetradenote
+			280 = {
+				province_has_center_of_trade_of_level = 3
+			}
 			280 = { #kiev
 				trade_share = {
-					country = NED
+					country = ROOT
 					share = 50
 				}
 			}
 			310 = { #novgorod
 				trade_share = {
-					country = NED
+					country = ROOT
 					share = 50
 				}
 			}
@@ -325,7 +327,7 @@ path_gauche{
 		position = 3
 		trigger = {
 			has_great_project = {
-				type = vladimir's Hill
+				type = vladimir_hill
 				tier = 1
 			}
 		}
@@ -370,11 +372,17 @@ path_gauche{
 		required_missions = { the_slave_needs_a_new_master }
 		position = 5
 		trigger = {
-			war_score_against = {
-				who = OKH
-				value = 50
+			OR = {
+				AND = {
+					war_score_against = {
+						who = OKH
+						value = 50
+					}
+					controls = 262
+				}
+
+				NOT = {exists  = OKH}
 			}
-			#ajouterdoitoccuperkrakow
 		}
 		effect = {
 			add_dip_power = 200
