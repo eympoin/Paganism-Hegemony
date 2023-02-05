@@ -1,7 +1,7 @@
-# amkeras_aserdas
+# peasants_soldiers
 
 type = infantry
-unit_type = numidian_tech
+unit_type = roman_tech
 
 maneuver = 1
 offensive_morale = 1
