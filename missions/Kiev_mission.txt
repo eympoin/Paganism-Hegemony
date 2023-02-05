@@ -45,7 +45,18 @@ main_path{
 		required_missions = { raise_the_head }
 		position = 2
 		trigger = {
-			grown_by_development = 10
+			280 = {
+				base_tax = 11
+			}
+			276 = {
+				base_tax = 7
+			}
+			289 = {
+				base_tax = 8
+			}
+			771 = {
+				base_tax = 6
+			}
 		}
 		effect = {
 			add_country_modifier = {
@@ -86,7 +97,7 @@ main_path{
   	position = 5
   	trigger = {
   		grown_by_development = 20
-			syria_region = {
+			crimea_region = {
 				type = all
 				owned_by = ROOT
 				has_owner_religion = yes
@@ -104,6 +115,15 @@ main_path{
 		trigger = {
 			num_of_states = 7
 			marketplace = 10
+			280 = {
+				province_has_center_of_trade_of_level = 2
+			}
+			272 = {
+				province_has_center_of_trade_of_level = 2
+			}
+			293 = {
+				province_has_center_of_trade_of_level = 2
+			}
 		}
 		effect = {
 			add_country_modifier = {
@@ -163,7 +183,21 @@ path_droit{
 		required_missions = { raise_the_head}
 		position = 2
 		trigger = {
-			add_treasury = 100
+			280 = {
+				base_manpower = 8
+			}
+			2407 = {
+				base_manpower = 6
+			}
+			1942 = {
+				base_manpower = 3
+			}
+			4247 = {
+				base_manpower = 3
+			}
+			4115 = {
+				base_manpower = 4
+			}
 		}
 		effect = {
 			add_country_modifier = {
@@ -277,11 +311,11 @@ path_droit{
 		position = 7
 		trigger = {
 			estate_influence = {
-				estate = estate_boyars
+				estate = estate_nobles
 				influence = 65
 			}
 			estate_loyalty = {
-    		estate = estate_boyars
+    		estate = estate_nobles
     		loyalty = 65
 			}
 			manpower = 60
