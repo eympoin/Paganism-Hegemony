@@ -13151,7 +13151,7 @@ spoils_of_antioch = {
 	global_tax_modifier = 0.25
 }
 spoils_of_yerevan = {
-	land_morale = 1
+	land_morale = 0.1
 	country_military_power = 1
 	fort_maintenance_modifier = -0.10
 	defensiveness = 0.2
