@@ -2377,26 +2377,22 @@ east_european{
         }
       }
       icon_mokosh = {
-        production_efficiency = 0.2
         development_cost = -0.1
-        global_manpower_modifier = 0.1
+        global_manpower_modifier = 0.2
         allow = {
           always = yes
         }
       }
       icon_dazhbog = {
-        global_prosperity_growth = 0.1
+        global_tax_modifier = 0.2
         prestige = 1
-        adm_advisor_cost = -0.5
-        monarch_lifespan = 0.1
         allow = {
           always = yes
         }
       }
       icon_veles = {
         hostile_attrition = 1
-        land_attrition = -0.10
-        manpower_recovery_speed = 0.15	
+        manpower_recovery_speed = 0.15
         allow = {
           always = yes
         }
