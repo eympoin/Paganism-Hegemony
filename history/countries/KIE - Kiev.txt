@@ -6,3 +6,14 @@ religion = slavic
 primary_culture = ruthenian
 capital = 280	# Kiev
 fixed_capital = 280 # Cannot move capital away from this province & no power cost to move to it
+
+1444.1.1 = {
+    monarch = {
+        name = "Iaroslav IV"
+	dynasty = "Rurikid "
+        birth_date = 1422.2.10
+        adm = 4
+        dip = 3
+        mil = 5
+    }
+}
