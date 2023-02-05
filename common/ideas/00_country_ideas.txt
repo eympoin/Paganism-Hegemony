@@ -8968,12 +8968,12 @@ BUL_ideas = {
 
 KIE_ideas = {
 	start = {
-		global_unrest = -1
-		global_heretic_missionary_strength = 0.01
+		shock_damage_received = -0.15
+		diplomatic_reputation = 1
 	}
 
 	bonus = {
-		land_morale = 0.1
+		governing_capacity_modifier = 0.15
 	}
 
 	trigger = {
@@ -8981,27 +8981,28 @@ KIE_ideas = {
 	}
 	free = yes
 
-	mother_of_all_cities = {
-		prestige = 1
+	Slave's_homelander = {
+		land_morale = 0.1
 	}
-	heritage_of_rus = {
-		diplomatic_reputation = 1
+	Kiev_and_the_dniepr = {
+		global_trade_power = 0.15
 	}
-	fending_off_the_invaders = {
-		defensiveness = 0.15
+	Vladmir's_memory = {
+		build_cost = -0.15
 	}
-	chernozem_land = {
-		production_efficiency = 0.1
+	The_great_varangue = {
+		infantry_power = 0.10
 	}
-	center_of_orthodox_church = {
-		global_missionary_strength = 0.01
-		tolerance_own = 1
+	peasant_soldiers = {
+		global_manpower_modifier = 0.25
+		land_forcelimit_modifier = 0.10
 	}
-	support_local_traders = {
-		merchants = 1
+	Kiev_the_beauty = {
+		prestige = 0.50
+		legitimacy = 0.50
 	}
-	centralized_rule = {
-		global_tax_modifier = 0.1
+	Wealthy_lands = {
+		development_cost = -0.1
 	}
 }
 
