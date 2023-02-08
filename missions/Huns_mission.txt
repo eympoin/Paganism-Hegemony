@@ -17,10 +17,9 @@ central_path = {
 		required_missions = {}
 		position = 1
 		trigger = {
-    army_size_percentage = 1
+    	army_size_percentage = 1
 		}
 		effect = {
-				become_march = HNS
 				add_treasury = 100
 		}
 	}
@@ -31,11 +30,13 @@ central_path = {
 		required_missions = { road_to_independance }
 		position = 2
 		trigger = {
-		liberty_desire = 50
+			liberty_desire = 50
+			any_country = {
+				is_supporting_independence_of = ROOT
+			}
 		}
 		effect = {
 			declare_war = ARM
-			num_of_allies = 2
 		}
 	}
 
@@ -131,6 +132,9 @@ central_path = {
 				type = all
 				owned_by = ROOT
 			}
+			NOT = {exists = TUR}
+			NOT = {exists = KHZ}
+			NOT = {exists = KIP}
 		}
 		effect = {
 			add_prestige = 20
@@ -560,9 +564,12 @@ droit_path = {
 			army_size = BYZ
 		}
 		effect = {
-			anatiolia_region = {
-				type = all
-				owned_by = ROOT
+			anatolia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -837,6 +844,24 @@ economic_tre_ALN{
 					trigger = {
 						year_is = 1550
 						has_institution = global_trade
+						419 = { #Yerevan
+							trade_share = {
+								country = ROOT
+								share = 50
+							}
+						}
+						464 = { #Astrakhan
+							trade_share = {
+								country = ROOT
+								share = 50
+							}
+						}
+						4341 = { #Persia
+							trade_share = {
+								country = ROOT
+								share = 25
+							}
+						}
 					}
 					effect = {
 						add_country_modifier = {
