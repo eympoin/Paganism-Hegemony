@@ -20,7 +20,12 @@ central_path = {
     	army_size_percentage = 1
 		}
 		effect = {
-				add_treasury = 100
+				add_treasury = 150
+				create_general = { tradition = 75 }
+				add_country_modifier = {
+           				name = "Huns_return"
+           				duration = 3650
+				}
 		}
 	}
 
@@ -37,6 +42,7 @@ central_path = {
 		}
 		effect = {
 			declare_war = ARM
+			add_manpower = 5
 		}
 	}
 
