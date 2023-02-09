@@ -8760,3 +8760,8 @@ tribes_assimilation = {
   culture_conversion_cost = -0.25
   num_accepted_cultures = 1
 }
+Huns_return = {
+  cavalry_power = 0.25
+  land_morale = 0.15
+  land_maintenance_modifier = -0.25
+}
