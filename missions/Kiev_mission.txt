@@ -360,9 +360,11 @@ path_gauche{
 		required_missions = { Vladimir's_legacy }
 		position = 3
 		trigger = {
-			has_great_project = {
-				type = vladimir_hill
-				tier = 1
+			280 = {
+				has_great_project = {
+					type = vladimir_hill
+					tier = 1
+				}
 			}
 		}
 		effect = {
