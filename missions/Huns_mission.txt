@@ -273,7 +273,7 @@ path_gauche = {
 			add_adm_power = 200
 			add_country_modifier = {
            name = "Defeat_Armenia"
-           duration = -1
+           duration = 3650
 			}
 			azerbaijan_area = {
 				limit = {
