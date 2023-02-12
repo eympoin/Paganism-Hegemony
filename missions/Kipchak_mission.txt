@@ -22,7 +22,7 @@ central_path = {
 		  NOT = {owned_by = ROOT}
 		}
 		trigger = {
-      circassia_area = {
+      kazan_area = {
         type = all
         owned_by = ROOT
       }
