@@ -230,6 +230,7 @@ OGH = "countries/Oghuz.txt"
 KHZ = "countries/Khazar.txt"
 SCY = "countries/Scythia.txt"
 HNS = "countries/Huns.txt"
+RSS = "countries/Rus.txt"
 
 HIM = "countries/Himyarites.txt"
 SOC   = "countries/Socotra.txt"
