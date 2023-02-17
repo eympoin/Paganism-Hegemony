@@ -366,12 +366,11 @@ path_gauche{
 					tier = 1
 				}
 			}
+			army_size = TUR
+			army_size = OKH
 		}
 		effect = {
-			vassalize = VOL
-			vassalize = SMO
-			vassalize = PLT
-			vassalize = CHR
+			country_event = {id=flavor_kie.1}
 			add_prestige = 20
 		}
 	}
