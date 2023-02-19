@@ -389,12 +389,7 @@ path_gauche{
 		effect = {
 			add_treasury = -500
 			add_dip_power = -400
-			vassalize = MAZ
-			vassalize = OKA
-			vassalize = RYA
-			vassalize = RSO
-			vassalize = NZH
-			create_union = NOV
+			country_event = { id = flavor_kie.6}
 			add_country_modifier = {
 				 name = "slave's_master"
 				 duration = 14600
