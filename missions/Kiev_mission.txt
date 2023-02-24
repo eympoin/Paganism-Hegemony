@@ -269,7 +269,14 @@ path_droit{
   	required_missions = { fall_of_the_scourge }
   	position = 4
   	trigger = {
-			accepted_culture = turkish
+			OR = {
+					accepted_culture = turkish
+					NOT = {
+						any_province = {
+							culture = turkish
+						}
+					}
+				}
   	}
   	effect = {
 			add_country_modifier = {
@@ -498,6 +505,7 @@ path_ultime{
 			all_owned_province = {
 				same_culture = 280
 			}
+			tag = RSS
 		}
 		effect = {
 			add_years_of_income = 2

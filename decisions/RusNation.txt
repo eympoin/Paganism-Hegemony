@@ -45,6 +45,7 @@ country_decisions = {
 				value = 500
 				culture_group = east_slavic
 			}
+			total_development = 500
 			owns_core_province = 280
 			owns_core_province = 310
 			owns_core_province = 4147
