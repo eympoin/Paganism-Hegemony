@@ -82,6 +82,7 @@ technology = {
 	enable = numidian_riders
 	enable = amkeras_aserdas
 	enable = peasants_soldiers
+	enable = free_warriors
 }
 
 technology = {
@@ -167,6 +168,8 @@ technology = {
 	enable = pacific_reformed_spearman
 	enable = kahina_infantry
 	enable = tolosan_limitanei
+	enable = shield_warriors
+	enable = norse_raiders
 
 	combat_width = 2
 }
@@ -277,6 +280,7 @@ technology = {
 	enable = defensive_pikes
 	enable = hispanic_cohorts
 	enable = roman_triarii
+	enable = heavy_axemen
 	military_tactics 	= 	0.25
 	combat_width = 1
 }
@@ -382,6 +386,8 @@ technology = {
 	enable = jarrawan_cohorts
 	enable = western_hastati
 	enable = tarraconese_pretorians
+	enable = defenders_of_the_rus
+	enable = northumbrian_charge_infantry
 }
 
 technology = {
@@ -483,6 +489,7 @@ technology = {
 	enable = steppe_musketeers
 	enable = carthagian_slaves
 	enable = hispanic_mercenaries
+	enable = norse_crusader
 }
 
 technology = {
@@ -604,6 +611,8 @@ technology = {
 	enable = greek_dragoons
 	enable = roman_dragoons
 	enable = timset_amkeras
+	enable = imperial_infantry
+	enable = assault_infantry
 }
 
 technology = {
@@ -732,6 +741,7 @@ technology = {
 	enable = ignis_cohorts
 	enable = luri_carabiniers
 	enable = nisaean_cavalry
+	enable = unification_warriors
 }
 
 technology = {
@@ -823,6 +833,7 @@ technology = {
 	enable = pacific_guerrillas
 	enable = anezruf_fusiliers
 	enable = reconquest_legions
+	enable = russian_riflemen
 
 	combat_width = 2
 }
@@ -949,6 +960,7 @@ technology = {
 	enable = ha_reformed_xoloti
 	enable = massinisa_regiments
 	enable = purple_coats
+	enable = danish_fire_infantry
 }
 
 technology = {

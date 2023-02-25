@@ -1,7 +1,7 @@
 # unification_warriors
 
 type = infantry
-unit_type = norse_tech
+unit_type = slavic_tech
 
 maneuver = 1
 offensive_morale = 2
