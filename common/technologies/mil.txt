@@ -83,6 +83,7 @@ technology = {
 	enable = amkeras_aserdas
 	enable = peasants_soldiers
 	enable = free_warriors
+	enable = germanic_axemen
 }
 
 technology = {
@@ -170,6 +171,7 @@ technology = {
 	enable = tolosan_limitanei
 	enable = shield_warriors
 	enable = norse_raiders
+	enable = frank_pikemen
 
 	combat_width = 2
 }
@@ -281,6 +283,7 @@ technology = {
 	enable = hispanic_cohorts
 	enable = roman_triarii
 	enable = heavy_axemen
+	enable = metzin_soldiers
 	military_tactics 	= 	0.25
 	combat_width = 1
 }
@@ -490,6 +493,8 @@ technology = {
 	enable = carthagian_slaves
 	enable = hispanic_mercenaries
 	enable = norse_crusader
+	enable = soissons_defensive_squares
+	enable = vistulian_heavy_infantry
 }
 
 technology = {
@@ -613,6 +618,7 @@ technology = {
 	enable = timset_amkeras
 	enable = imperial_infantry
 	enable = assault_infantry
+	enable = lowlands_riflemen
 }
 
 technology = {
@@ -742,6 +748,8 @@ technology = {
 	enable = luri_carabiniers
 	enable = nisaean_cavalry
 	enable = unification_warriors
+	enable = ostkolonisation_troops
+	enable = frankish_schuezengilde
 }
 
 technology = {
@@ -834,6 +842,7 @@ technology = {
 	enable = anezruf_fusiliers
 	enable = reconquest_legions
 	enable = russian_riflemen
+	enable = heirs_of_carolus
 
 	combat_width = 2
 }
@@ -961,6 +970,7 @@ technology = {
 	enable = massinisa_regiments
 	enable = purple_coats
 	enable = danish_fire_infantry
+	enable = standard_grenadiers
 }
 
 technology = {

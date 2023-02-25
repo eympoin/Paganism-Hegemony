@@ -1,7 +1,7 @@
-# danish_fire_infantry
+# standard_grenadiers
 
 type = infantry
-unit_type = germanic_tech
+unit_type = slavic_tech
 
 maneuver = 1
 offensive_morale = 4
