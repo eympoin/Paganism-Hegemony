@@ -2345,7 +2345,7 @@ east_european{
     heretic = { OLD_SLAVIC }
   }
   slavic_reformed = {
-    icon = 33
+    icon = 47
     color = { 140 140 150 }
     center_of_religion = 280
     country = {

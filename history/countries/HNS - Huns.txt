@@ -4,3 +4,16 @@ primary_culture = hunic
 religion = tengri_pagan_reformed
 technology_group = steppe_tech
 capital = 425
+historical_friend = ALN
+historical_friend = TUR
+
+1444.1.1 = {
+    monarch = {
+        name = "Balamber"
+	dynasty = "Tatra "
+        birth_date = 1408.2.10
+        adm = 4
+        dip = 2
+        mil = 6
+    }
+}

@@ -1,0 +1,333 @@
+namespace = flavor_kie
+
+
+country_event = {
+	id = flavor_kie.1
+	title = "flavor_kie.1.t"
+	desc = "flavor_kie.1.d"
+	picture = BATTLE_eventPicture
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "flavor_kie.1.a"
+		ai_chance = {
+			factor = 100
+		}
+		if = {
+			limit = {
+				PLT = {
+					is_subject = no
+					exists = yes
+				}
+			}
+			PLT = {country_event = { id = flavor_kie.2 }}
+		}
+		if = {
+			limit = {
+				CHR = {
+					is_subject = no
+					exists = yes
+				}
+			}
+			CHR = {country_event = { id = flavor_kie.2 }}
+		}
+		if = {
+			limit = {
+				VOL = {
+					OR = {
+						is_subject = no
+						is_subject_of_type_with_overlord = { who = OKH type = tributary_state }
+					}
+					exists = yes
+				}
+			}
+			VOL = {country_event = { id = flavor_kie.2 }}
+		}
+		if = {
+			limit = {
+				SMO = {
+					is_subject = no
+					exists = yes
+				}
+			}
+			SMO = {country_event = { id = flavor_kie.2 }}
+		}
+		}
+	}
+
+
+country_event = {
+	id = flavor_kie.2
+	title = "flavor_kie.2.t"
+	desc = "flavor_kie.2.d"
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #submit
+		name = "flavor_kie.2.a"
+		ai_chance = {
+			factor = 100
+		}
+			if = {
+				limit = {
+					tag = VOL
+					is_subject_of_type_with_overlord = { who = OKH type = tributary_state }
+				}
+				OKH = {country_event = { id = flavor_kie.5 }}
+			}
+			FROM = {
+				create_subject = {
+				subject_type = vassal
+				subject = ROOT
+				}
+			country_event = { id = flavor_kie.3 }
+			}
+		}
+
+		option = { #refuse
+			name = "flavor_kie.2.b"
+			ai_chance = {
+				factor = 0
+			}
+				FROM = {country_event = { id = flavor_kie.4 }}
+			}
+	}
+
+	country_event = { #accept vassals
+		id = flavor_kie.3
+		title = "flavor_kie.3.t"
+		desc = "flavor_kie.3.d"
+		picture = CONQUEST_eventPicture
+
+		is_triggered_only = yes
+
+		option = {
+			name = "flavor_kie.3.a"
+			ai_chance = {
+				factor = 100
+			}
+			add_prestige = 10
+
+		}
+
+	}
+
+	country_event = { #defiance
+		id = flavor_kie.4
+		title = "flavor_kie.4.t"
+		desc = "flavor_kie.4.d"
+		picture = BATTLE_eventPicture
+
+		is_triggered_only = yes
+
+		option = {
+			name = "flavor_kie.4.a"
+			ai_chance = {
+				factor = 100
+			}
+			ROOT = {
+			add_casus_belli = {
+				target = FROM
+				type = cb_vassalize_mission
+				months = 240
+			}
+			}
+		}
+	}
+
+	country_event = { #VOL joins Kiev, OKH not happy
+		id = flavor_kie.5
+		title = "flavor_kie.5.t"
+		desc = "flavor_kie.5.d"
+		picture = BATTLE_eventPicture
+
+		is_triggered_only = yes
+
+		option = {
+			name = "flavor_kie.5.a"
+			ai_chance = {
+				factor = 100
+			}
+			ROOT = {
+			add_casus_belli = {
+				target = VOL
+				type = cb_vassalize_mission
+				months = 240
+			}
+			}
+		}
+	}
+
+
+	country_event = { #Great Banquet
+		id = flavor_kie.6
+		title = "flavor_kie.6.t"
+		desc = "flavor_kie.6.d"
+		picture = BATTLE_eventPicture
+
+		is_triggered_only = yes
+
+		option = {
+			name = "flavor_kie.6.a"
+			ai_chance = {
+				factor = 100
+			}
+			if = {
+				limit = {
+					RSO = {
+						is_subject = no
+						exists = yes
+					}
+				}
+				RSO = {country_event = { id = flavor_kie.7 }}
+			}
+			if = {
+				limit = {
+					NOV = {
+						is_subject = no
+						exists = yes
+					}
+				}
+				NOV = {country_event = { id = flavor_kie.7 }}
+			}
+			if = {
+				limit = {
+					RYA = {
+						is_subject = no
+						exists = yes
+					}
+				}
+				RYA = {country_event = { id = flavor_kie.7 }}
+			}
+			if = {
+				limit = {
+					MOS = {
+						is_subject = no
+						exists = yes
+					}
+				}
+				MOS = {country_event = { id = flavor_kie.7 }}
+			}
+			if = {
+				limit = {
+					NZH = {
+						is_subject = no
+						exists = yes
+					}
+				}
+				NZH = {country_event = { id = flavor_kie.7 }}
+			}
+			if = {
+				limit = {
+					OKA = {
+						is_subject = no
+						exists = yes
+					}
+				}
+				OKA = {country_event = { id = flavor_kie.7 }}
+			}
+			hidden_effect = {
+				country_event = { id = flavor_kie.8 days = 60 }
+			}
+		}
+	}
+
+	country_event = {
+		id = flavor_kie.7
+		title = "flavor_kie.7.t"
+		desc = "flavor_kie.7.d"
+		picture = BATTLE_eventPicture
+
+		is_triggered_only = yes
+
+		option = { #go to the banquet
+			name = "flavor_kie.7.a"
+			ai_chance = {
+				factor = 100
+			}
+				set_country_flag = go_to_the_banquet
+			}
+
+			option = { #do not go
+				name = "flavor_kie.7.b"
+				ai_chance = {
+					factor = 0
+				}
+
+				}
+		}
+
+		country_event = { #great banquet is open
+			id = flavor_kie.8
+			title = "flavor_kie.8.t"
+			desc = "flavor_kie.8.d"
+			picture = BATTLE_eventPicture
+
+			is_triggered_only = yes
+
+			option = { #go to the banquet
+				name = "flavor_kie.8.a"
+				ai_chance = {
+					factor = 100
+				}
+					every_country = {
+						limit = {
+							has_country_flag = go_to_the_banquet
+						}
+						country_event = { id = flavor_kie.9 days = 1 }
+					}
+				}
+			}
+
+			country_event = { #it's a trap
+				id = flavor_kie.9
+				title = "flavor_kie.9.t"
+				desc = "flavor_kie.9.d"
+				picture = BATTLE_eventPicture
+
+				is_triggered_only = yes
+
+				option = { #go to the banquet
+					name = "flavor_kie.9.a"
+					ai_chance = {
+						factor = 100
+					}
+					if = {
+						limit = {
+							OR = {
+								tag  = NOV
+								tag = RSO
+							}
+						}
+						FROM = {
+							create_union = ROOT
+						}
+					}
+					else = {
+						FROM = {
+							vassalize = ROOT
+						}
+					}
+					FROM = {country_event = { id = flavor_kie.10 days = 1 }}
+				}
+		}
+
+		country_event = { #great banquet is open
+			id = flavor_kie.10
+			title = "flavor_kie.10.t"
+			desc = "flavor_kie.10.d"
+			picture = BATTLE_eventPicture
+
+			is_triggered_only = yes
+
+			option = { #Victory !
+				name = "flavor_kie.10.a"
+				ai_chance = {
+					factor = 100
+				}
+					add_prestige = 10
+				}
+			}

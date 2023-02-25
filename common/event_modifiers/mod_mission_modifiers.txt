@@ -8681,12 +8681,139 @@ money_flow_in_the_Dniepr = {
 }
 
 Vladimirs_crown = {
-  diplomatic_reputation = 2
+  diplomatic_reputation = 1
   governing_capacity = 300
   expand_administration_cost = -0.1
-  fire_damage = 0.1
+  fire_damage_received = -0.1
   manpower_recovery_speed = 0.1
   reinforce_speed = 0.10
-  local_manpower_modifier = 0.15
+  global_manpower_modifier = 0.15
   prestige = 1
+  legitimacy = 1
+}
+
+#ModifiersHuns
+
+Mare_nostrum = {
+  	caravan_power = 0.2
+    global_trade_power = 0.2
+    merchants = 1
+}
+
+Free_from_the_tyranny = {
+  	global_tax_modifier = 0.1
+    production_efficiency = 0.1
+    state_maintenance_modifier = -0.20
+    interest = -1
+    technology_cost = -0.1
+    embracement_cost = -0.1
+    global_institution_spread = 0.25
+    prestige_decay = -0.1
+    horde_unity = 1
+}
+
+Defeat_Armenia = {
+    prestige_decay = -0.1
+    horde_unity = 0.50
+    prestige_from_land = 0.10
+    army_tradition = 0.25
+    land_morale = 0.1
+}
+
+Caspian_trade = {
+    trade_steering = 0.2
+}
+
+G.O.A.T = {
+    cavalry_flanking = 0.15
+    discipline = 0.025
+    leader_land_manuever = 1
+}
+
+The_only_one = {
+    	movement_speed = 0.20
+      leader_cost = -0.50
+      governing_capacity_modifier = 0.20
+}
+
+Early_industrialization = {
+    	development_cost = -0.1
+      build_cost = -0.1
+}
+
+Rome_sacked = {
+    	all_power_cost = -0.1
+      country_admin_power = 1
+}
+
+Constantinople_sacked = {
+    	all_power_cost = -0.1
+      country_military_power = 1
+}
+
+Paris_sacked = {
+    	all_power_cost = -0.1
+      country_diplomatic_power = 1
+}
+
+tribes_assimilation = {
+  culture_conversion_cost = -0.25
+  num_accepted_cultures = 1
+}
+Huns_return = {
+  cavalry_power = 0.25
+  land_morale = 0.15
+  land_maintenance_modifier = -0.25
+}
+
+#ModifierKITPCHAK
+
+kazan_installation = {
+  horde_unity = 1
+}
+
+iron_exploitation = {
+  	global_trade_goods_size_modifier = 0.1
+    global_trade_goods_size = 0.1
+}
+
+In_another_life= {
+  mercenary_cost = -0.75
+  merc_maintenance_modifier = -0.25
+}
+
+slave's_breaker= {
+  	land_morale = 0.10
+}
+
+cohabitation_way= {
+  global_unrest = -1
+  development_cost = -0.05
+  num_accepted_cultures = 1
+}
+
+villa_sur_la_côte= {
+  merchants = 1
+  global_trade_power = 0.15
+  caravan_power = 0.2
+}
+
+Steppes_urbanization= {
+  development_cost = -0.1
+  build_cost = -0.1
+}
+
+Endless_currency= {
+  production_efficiency = 0.10
+  global_tax_modifier = 0.1
+  inflation_reduction = 0.02
+}
+
+To_the_edge_of_the_known_world= {
+  	global_institution_spread = 0.15
+    embracement_cost = -0.1
+}
+
+And_beyond= {
+  	colonists = 1
 }

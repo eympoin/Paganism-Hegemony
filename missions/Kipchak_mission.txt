@@ -1,229 +1,212 @@
-
 central_path = {
 	slot = 3
 	generic = no
 	ai = yes
 	potential = {
     OR = {
-      tag = HNS
-      was_tag = HNS
+      tag = KIP
+      was_tag = KIP
     }
   }
 	has_country_shield = yes
 
 
-	road_to_independance = {
-		icon = mission_chinese_general_riding
+	establish_in_kazan = {
+		icon = mission_conquer_moscow
 		required_missions = {}
 		position = 1
+    provinces_to_highlight = {
+		OR = {
+			area = kazan_area
+		}
+		  NOT = {owned_by = ROOT}
+		}
 		trigger = {
-    	army_size_percentage = 1
+      kazan_area = {
+        type = all
+        owned_by = ROOT
+      }
 		}
 		effect = {
-				add_treasury = 150
-				create_general = { tradition = 75 }
-				add_country_modifier = {
-           				name = "Huns_return"
-           				duration = 3650
-				}
+					set_capital = 1082
+          #ajouterchangementdeculture
+          add_country_modifier = {
+           name = "kazan_installation"
+           duration = 7200
+          }
+          add_years_of_income = 1
 		}
 	}
 
-
-	fight_the_tyran = {
-		icon = mission_crusade_for_varna
-		required_missions = { road_to_independance }
-		position = 2
-		trigger = {
-			liberty_desire = 50
-			any_country = {
-				is_supporting_independence_of = ROOT
-			}
-		}
-		effect = {
-			declare_war = ARM
-			add_manpower = 5
-		}
-	}
-
-	Victory_upon_armenia = {
-		icon = mission_monarch_in_throne_room
-		required_missions = { fight_the_tyran }
-		position = 3
+  reverse_the_tide = {
+    icon = mission_unite_home_region
+    required_missions = {establish_in_kazan}
+    position = 2
     trigger = {
-     419 = { controls = ROOT }
-		 }
-		effect = {
-			define_ruler = {
-			name = "Attila II"
-			dynasty = "Moundzouk"
-			adm = 5
-			dip = 3
-			mil = 6
-			age = 20
-			claim = 100
-			}
-			add_treasury = 300
-			stability = 1
-			grant_independence = yes
-			add_country_modifier = {
-           name = "Free_from_the_tyranny"
-           duration = 14600
-			}
-			shirvan_area = {
-				add_permanent_claim = ROOT
-			}
-			armenia_area = {
-				add_permanent_claim = ROOT
-			}
-			tabriz_area = {
-				add_permanent_claim = ROOT
-			}
-			kartli_kakheti_area = {
-				add_permanent_claim = ROOT
-			}
-      transcaspia_area = {
-        add_permanent_claim = ROOT
-      }
-      circassia_area = {
-        add_permanent_claim = ROOT
-      }
-      astrakhan_area = {
+      	alliance_with = ALN
+    }
+    effect = {
+      tambov_area = {
         add_permanent_claim = ROOT
       }
       lower_don_area = {
         add_permanent_claim = ROOT
       }
-      lower_yik_area = {
+    }
+  }
+
+  jewish_issue = {
+    icon = mission_into_the_west
+    required_missions = {reverse_the_tide}
+    position = 3
+    trigger = {
+      GOL = {
+        exists = no
+      }
+    }
+    effect = {
+      #eventlechoixdeskhazar
+    }
+  }
+
+  iron_trade_route = {
+    icon = mission_dalaskogen
+    required_missions = {jewish_issue}
+    position = 4
+    provinces_to_highlight = {
+      OR = {
+        province_id = 2418
+        province_id = 474
+        province_id = 1965
+        province_id = 4267
+        province_id = 1081
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      marketplaces = 5
+      KHZ = {
+        exists = no
+      }
+    }
+    effect = {
+      add_country_modifier = {
+       name = "iron_exploitation"
+       duration = -1
+      }
+      #ajouterbonusdeprodsurcesprovinces
+    }
+  }
+
+  turkish_fear = {
+    icon = mission_recruit_streltsy
+    required_missions = {iron_trade_route}
+    position = 5
+    trigger = {
+      is_enemy = TUR
+      army_size = TUR
+      total_development = 200
+    }
+    effect = {
+      azov_area = {
+        add_permanent_claim = ROOT
+      }
+      yedisan_area = {
+        add_permanent_claim = ROOT
+      }
+      zaporizhia_area = {
+        add_permanent_claim = ROOT
+      }
+      transcaspia_area = {
         add_permanent_claim = ROOT
       }
       nogai_area = {
         add_permanent_claim = ROOT
       }
-		}
-	}
-
-	take_back_our_steppes = {
-		icon = mission_unite_home_region
-		required_missions = { Victory_upon_armenia }
-		position = 4
-		provinces_to_highlight = {
-		OR = {
-			area = circassia_area
-			area = astrakhan_area
-			area = nogai_area
-			area = lower_don_area
-			area = lower_yik_area
-		}
-		NOT = {owned_by = ROOT}
-		}
-		trigger = {
-			circassia_area = {
-				type = all
-				owned_by = ROOT
-			}
-			astrakhan_area = {
-				type = all
-				owned_by = ROOT
-			}
-			nogai_area = {
-				type = all
-				owned_by = ROOT
-			}
-			lower_don_area = {
-				type = all
-				owned_by = ROOT
-			}
-			lower_yik_area = {
-				type = all
-				owned_by = ROOT
-			}
-			NOT = {exists = TUR}
-			NOT = {exists = KHZ}
-			NOT = {exists = KIP}
-		}
-		effect = {
-			add_prestige = 20
-			add_stability = 1
-			capital_scope = {
-				add_base_tax = 2
-				add_base_production = 2
-				add_base_manpower = 2
-			}
-			saratov_area = {
-        add_permanent_claim = ROOT
-      }
-			tambov_area = {
-        add_permanent_claim = ROOT
-      }
-			azov_area = {
-        add_permanent_claim = ROOT
-      }
-			zaporizhia_area = {
-        add_permanent_claim = ROOT
-      }
-			yedisan_area = {
-        add_permanent_claim = ROOT
-      }
-		}
-	}
-
-	steppes_master = {
-		icon = mission_control_the_ganges_delta
-		required_missions = { take_back_our_steppes }
-		position = 5
-		trigger = {
-			TUR = {
-				exists = no
-			}
-			ALN = {
-				exists = no
-			}
-			KHZ = {
-				exists = no
-			}
-			KIP = {
-				exists = no
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				 name = "The_only_one"
-				 duration = -1
-			}
-		}
-	}
-
-
-	hello_there = {
-		icon = new_st_peters_basilica
-		required_missions = {}
-		position = 9
-		provinces_to_highlight = {
-      OR = {
-				province_id = 118
-			}
-			NOT = {owned_by = ROOT}
     }
-		trigger = {
-    	118 = {controls = HNS}
-		}
+  }
+
+  ready_to_west = {
+    icon = crusader_fleet
+    required_missions = {turkish_fear}
+    position = 6
+    provinces_to_highlight = {
+    OR = {
+      area = azov_area
+      area = yedisan_area
+      area = zaporizhia_area
+    }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      azov_area = {
+        type = all
+        owned_by = ROOT
+      }
+      yedisan_area = {
+        type = all
+        owned_by = ROOT
+      }
+      zaporizhia_area = {
+        type = all
+        owned_by = ROOT
+      }
+      TUR = {
+        exists = no
+      }
+      #changerlaculture
+    }
     effect = {
-	  	add_years_of_income = 2
-			add_legitimacy = 50
-    	add_prestige = 50
-    	add_stability = 1
-    	add_army_tradition = 25
-    	add_mil_power = 200
-    	add_dip_power = 200
-    	add_adm_power = 200
-			add_country_modifier = {
-           name = "Rome_sacked"
-           duration = -1
-			}
-		}
-	}
+        stability = 1
+        moldavia_area = {
+          add_permanent_claim = ROOT
+        }
+    }
+  }
+
+   between_east_and_west = {
+    icon = mission_partition_poland
+    required_missions = {
+    ready_to_west
+    sea_view
+    and_beyond
+    }
+    position = 7
+    trigger = {
+      	adm_power = 100
+        dip_power = 100
+        mil_power = 100
+    }
+    effect = {
+      adm_power = -100
+      dip_power = -100
+      mil_power = -100
+      #ajoutuncb
+    }
+  }
+
+  familiar_place = {
+    icon = the_great_city_of_buda
+    required_missions = {jewish_issue}
+    position = 8
+    provinces_to_highlight = {
+      OR = {
+        province_id = 153
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      153 = {controls = KIP}
+    }
+    effect = {
+      add_country_modifier = {
+       name = "In_another_life"
+       duration = -1
+      }
+    }
+  }
 }
+
 
 path_gauche = {
 	slot = 2
@@ -231,72 +214,67 @@ path_gauche = {
 	ai = yes
 	potential = {
     OR = {
-      tag = HNS
-      was_tag = HNS
+      tag = KIP
+      was_tag = KIP
     }
   }
-	has_country_shield = yes
+  has_country_shield = yes
 
-	slay_the_tyran = {
-		icon = mission_steppe_warriors
- 		required_missions = { Victory_upon_armenia }
- 		position = 4
-		provinces_to_highlight = {
-			OR = {
-				area = shirvan_area
-				area = armenia_area
-				area = tabriz_area
-				area = kartli_kakheti_area
-	 		}
-	 		NOT = {owned_by = ROOT}
-			}
+  war_against_paganism = {
+		icon = mission_defeat_muscovy
+ 		required_missions = { establish_in_kazan }
+ 		position = 2
 		trigger = {
-			shirvan_area = {
-	 			type = all
-	 			owned_by = ROOT
-			}
-			armenia_area = {
-	 			type = all
-	 			owned_by = ROOT
-			}
-			tabriz_area = {
-	 			type = all
-	 			owned_by = ROOT
-			}
-			kartli_kakheti_area = {
-	 			type = all
-	 			owned_by = ROOT
-			}
+      has_opinion = {
+        who = QAS
+        value = 150
+      }
 		}
 		effect = {
-			add_years_of_income = 2
-			add_adm_power = 200
-			add_country_modifier = {
-           name = "Defeat_Armenia"
-           duration = 3650
-			}
-			azerbaijan_area = {
+			create_vassal = QAS
+			samara_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 					NOT = {is_claim	= ROOT}
 				}
 				add_permanent_claim = ROOT
 			}
-			tabarestan_area = {
+			suzdal_area = {
         limit = {
           NOT = { owned_by = ROOT }
           NOT = {is_claim	= ROOT}
         }
         add_permanent_claim = ROOT
       }
-			mashhad_area = {
+			galich_area = {
         limit = {
           NOT = { owned_by = ROOT }
           NOT = {is_claim	= ROOT}
         }
         add_permanent_claim = ROOT
       }
-			iraq_e_ajam_area = {
+			perm_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      vladmir_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      kama_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim	= ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+      ryazan_area = {
         limit = {
           NOT = { owned_by = ROOT }
           NOT = {is_claim	= ROOT}
@@ -306,196 +284,140 @@ path_gauche = {
 		}
 	}
 
-	caspian_trade = {
-    icon = mission_bedouins
-    required_missions = { slay_the_tyran }
+  break_the_slavic_wall = {
+    icon = mission_rule_ruthenia
+    required_missions = { war_against_paganism }
+    position = 3
+    provinces_to_highlight = {
+      OR = {
+        province_id = 295
+        province_id = 4147
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      owns = 295
+      owns = 4147
+      RSO = {
+        exists = no
+      }
+    }
+    effect = {
+        add_country_modifier = {
+          name = "slave's_breaker"
+          duration = -1
+        }
+    }
+  }
+
+  cohabitation_way = {
+    icon = mission_conquer_novgorod
+    required_missions = { break_the_slavic_wall }
+    position = 4
+    trigger = {
+      num_of_states = 10
+      accepted_culture = rostovian
+      has_matching_religion = slavic
+    }
+    effect = {
+        add_country_modifier = {
+          name = "cohabitation_way"
+          duration = -1
+        }
+    }
+  }
+
+  in_our_way_to_novgorod = {
+    icon = mission_novgorod_the_great
+    required_missions = { cohabitation_way }
     position = 5
-		provinces_to_highlight = {
-			OR = {
-				area = azerbaijan_area
-				area = tabarestan_area
-				area = iraq_e_ajam_area
-				area = mashhad_area
-	 		}
-	 		NOT = {owned_by = ROOT}
-			}
+    provinces_to_highlight = {
+      OR = {
+        province_id = 295
+        province_id = 4147
+        province_id = 4253
+        province_id = 308
+      }
+      NOT = {owned_by = ROOT}
+    }
     trigger = {
-			azerbaijan_area = {
-    			type = all
-    			owned_by = ROOT
-		  }
-      tabarestan_area = {
-    		type = all
-    		owned_by = ROOT
+      295 = {
+        province_has_center_of_trade_of_level = 2
       }
-      mashhad_area = {
-    		type = all
-    		owned_by = ROOT
+      4147 = {
+        province_has_center_of_trade_of_level = 2
       }
-      iraq_e_ajam_area = {
-    		type = all
-    		owned_by = ROOT
+      4253= {
+        province_has_center_of_trade_of_level = 2
       }
-		}
+      308 = {
+        province_has_center_of_trade_of_level = 2
+      }
+    }
     effect = {
-      add_years_of_income = 2
-      add_dip_power = 200
-			add_country_modifier = {
-           name = "Caspian_trade"
-           duration = 3650
-				}
-      transcaspia_area = {
-        add_permanent_claim = ROOT
-      }
-      khiva_area = {
-        add_permanent_claim = ROOT
-      }
-      nogai_area = {
-        add_permanent_claim = ROOT
-      }
-      lower_yik_area = {
-        add_permanent_claim = ROOT
-      }
-      astrakhan_area = {
-        add_permanent_claim = ROOT
-      }
-		}
-	}
+    novgorod_area = {
+     limit = {
+       NOT = { owned_by = ROOT }
+       NOT = {is_claim	= ROOT}
+     }
+     add_permanent_claim = ROOT
+    }
+    tver_area = {
+     limit = {
+       NOT = { owned_by = ROOT }
+       NOT = {is_claim	= ROOT}
+     }
+     add_permanent_claim = ROOT
+    }
+    pskov_area = {
+     limit = {
+       NOT = { owned_by = ROOT }
+       NOT = {is_claim	= ROOT}
+     }
+     add_permanent_claim = ROOT
+    }
+    south_karelia_area = {
+     limit = {
+       NOT = { owned_by = ROOT }
+       NOT = {is_claim	= ROOT}
+     }
+     add_permanent_claim = ROOT
+    }
+    beloozero_area = {
+     limit = {
+       NOT = { owned_by = ROOT }
+       NOT = {is_claim	= ROOT}
+     }
+     add_permanent_claim = ROOT
+    }
+    }
+  }
 
-	mare_nostrum = {
-    icon = renaissance_city
-    required_missions = { caspian_trade }
+  sea_view = {
+    icon = mission_protect_white_sea_trade
+    required_missions = { in_our_way_to_novgorod}
     position = 6
-		provinces_to_highlight = {
-			OR = {
-				area = transcaspia_area
-				area = khiva_area
-				area = nogai_area
-				area = lower_yik_area
-				area = astrakhan_area
-	 		}
-	 		NOT = {owned_by = ROOT}
-			}
+    provinces_to_highlight = {
+      OR = {
+        province_id = 310
+        province_id = 33
+      }
+      NOT = {owned_by = ROOT}
+    }
     trigger = {
-      transcaspia_area = {
-      	type = all
-      	owned_by = ROOT
+      owns = 310
+      owns = 33
+      RSO = {
+        exists = no
       }
-      khiva_area = {
-      	type = all
-      	owned_by = ROOT
-      }
-      nogai_area = {
-      	type = all
-      	owned_by = ROOT
-      }
-      lower_yik_area = {
-      	type = all
-      	owned_by = ROOT
-      }
-      astrakhan_area = {
-      	type = all
-      	owned_by = ROOT
-      }
-		}
+    }
     effect = {
-      add_years_of_income = 2
-      add_adm_power = 200
-			add_country_modifier = {
-           name = "Mare_nostrum"
-           duration = -1
-			}
-		}
-	}
-
-	eradicate_the_red_monster{
-		icon = mission_subdue_rajputana
-		required_missions = { mare_nostrum }
-		position = 7
-		provinces_to_highlight = {
-			OR = {
-				area = merv_area
-				area = kyzylkum_area
-				area = syr_darya_area
-				area = arys_area_yik_area
-				area = khiva_area
-	 		}
-	 		NOT = {owned_by = ROOT}
-			}
-		trigger = {
-			exists = TIM
-			war_with = TIM
-		}
-		effect = {
-			create_general = { tradition = 100 }
-			merv_area = {
-      	type = all
-      	owned_by = ROOT
-      }
-      kyzylkum_area = {
-      	type = all
-      	owned_by = ROOT
-      }
-      syr_darya_area = {
-      	type = all
-      	owned_by = ROOT
-      }
-      arys_area = {
-      	type = all
-      	owned_by = ROOT
-      }
-			khiva_area = {
-      	type = all
-      	owned_by = ROOT
-      }
-		}
-	}
-
-	the_greatest_horde_of_all_time = {
-		icon = mission_rajput_mansabdars
-		required_missions = { eradicate_the_red_monster }
-		position = 8
-		trigger = {
-			TIM = {
-				exists = no
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				 name = "G.O.A.T"
-				 duration = -1
-			}
-		}
-	}
-
-	knock_knock_knock = {
-		icon = end_the_schism
-		required_missions = {  }
-		position = 9
-		provinces_to_highlight = {
-			OR = {
-				province_id = 151
-			}
-			NOT = {Owned_by = ROOT}
-		}
-		trigger = {
-			151 = {controls = HNS}
-		}
-		effect{
-			add_years_of_income = 2
-			add_legitimacy = 50
-			add_prestige = 50
-			add_stability = 1
-			add_army_tradition = 25
-			add_mil_power = 200
-			add_dip_power = 200
-			add_adm_power = 200
-			add_country_modifier = {
-           name = "Constantinople_sacked"
-           duration = -1
-			}
-		}
-	}
+        add_country_modifier = {
+          name = "villa_sur_la_côte"
+          duration = -1
+        }
+    }
+  }
 }
 
 
@@ -505,112 +427,221 @@ droit_path = {
 	ai = yes
 	potential = {
     OR = {
-      tag = HNS
-      was_tag = HNS
+      tag = KIP
+      was_tag = KIP
     }
   }
 	has_country_shield = yes
 
+  Develop_our_infrastructure = {
+    icon = mission_seize_north_sea_trade
+    required_missions = { establish_in_kazan}
+    position = 2
+    trigger = {
+      temple = 5
+    }
+    effect = {
+      add_country_modifier = {
+           name = "Steppes_urbanization"
+           duration = -1
+      }
+    }
+  }
 
-	cross_the_don = {
+  nod_between_west_and_east = {
+    icon = mission_dominate_home_trade_node
+    required_missions = { Develop_our_infrastructure  }
+    position = 3
+    provinces_to_highlight = {
+      OR = {
+        province_id = 1082
+      }
+      NOT = {Owned_by = ROOT}
+    }
+    trigger = {
+      1082= { development = 30 }
+    }
+    effect = {
+      1082= {
+        add_center_of_trade_level = 1
+      }
+      303 = {
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 3
+			}
+    }
+  }
+
+  find_currency = {
+    icon = mission_entrepot_of_india
+    required_missions = { nod_between_west_and_east }
+    position = 4
+    provinces_to_highlight = {
+      OR = {
+        province_id = 305
+        province_id = 2444
+      }
+      NOT = {Owned_by = ROOT}
+    }
+    trigger = {
+      owns= 305
+      owns= 2444
+    }
+    effect = {
+      add_country_modifier = {
+         name = "Endless_currency"
+         duration = -1
+      }
+      #enfaireunbonusciblé
+      #ajouteruneventbignegatifdanslefuture
+    }
+  }
+
+  edge_of_the_world= {
 		icon = mission_advance_to_the_dnieper
-		required_missions = {take_back_our_steppes}
+		required_missions = { find_currency}
 		position = 5
-		provinces_to_highlight = {
+    provinces_to_highlight = {
 		OR = {
-			area = azov_area
-			area = yedisan_area
-			area = zaporizhia_area
+			area = perm_area
+      area = kama_area
 		}
-		NOT = {owned_by = ROOT}
+		  NOT = {owned_by = ROOT}
 		}
 		trigger = {
-			azov_area = {
-				type = all
-				owned_by = ROOT
-			}
-			yedisan_area = {
-				type = all
-				owned_by = ROOT
-			}
-			zaporizhia_area = {
-				type = all
-				owned_by = ROOT
-			}
-			TUR = {
-				exists = no
-			}
+      UDM = {
+        exists = no
+      }
+      perm_area = {
+        type = all
+        owned_by = ROOT
+      }
+      kama_area = {
+        type = all
+        owned_by = ROOT
+      }
 		}
 		effect = {
-			add_country_modifier = {
-				 name = "tribes_assimilation"
-				 duration = -1
-			}
-			prestige = 25
+					add_adm_power = 200
+          prestige = 20
+          add_country_modifier = {
+           name = "To_the_edge_of_the_known_world"
+           duration = -1
+          }
 		}
 	}
 
-	old_friend = {
-		icon = mission_pf_soldier
-		required_missions = {cross_the_don}
+  and_beyond= {
+		icon = mission_amur_acquisition
+		required_missions = { edge_of_the_world}
 		position = 6
-		provinces_to_highlight = {
-      OR = {
-				province_id = 2410
-				province_id = 2447
-				province_id = 284
-				province_id = 285
-			}
-			NOT = {owned_by = ROOT}
-    }
 		trigger = {
-			owns_core_province = 2410
-			owns_core_province = 285
-			owns_core_province = 2247
-			owns_core_province = 284
-			army_size = BYZ
+      has_institution = Colonialism
 		}
 		effect = {
-			anatolia_region = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-
-	empire_killer = {
-		icon = mission_pf_map_table
-		required_missions = {old_friend}
-		provinces_to_highlight = {
-      OR = {
-				province_id = 151
-			}
-			NOT = {owned_by = ROOT}
-    }
-		position = 7
-		trigger = {
-			NOT = {hre_size = 0}
-		}
-		effect = {
-			add_country_modifier = {
-			 	name = "prussian_rhine"
-			 	duration = -1
-			 } #amodifier!
+					add_dip_power = 200
+          prestige = 10
+          add_country_modifier = {
+           name = "And_beyond"
+           duration = -1
+          }
 		}
 	}
 }
 
-path_villes = {
+path_villes_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+    OR = {
+      tag = KIP
+      was_tag = KIP
+    }
+  }
+	has_country_shield = yes
+
+  knock_knock_knock = {
+    icon = end_the_schism
+    required_missions = {  }
+    position = 9
+    provinces_to_highlight = {
+      OR = {
+        province_id = 151
+      }
+      NOT = {Owned_by = ROOT}
+    }
+    trigger = {
+      151 = {controls = HNS}
+    }
+    effect{
+      add_years_of_income = 2
+      add_legitimacy = 50
+      add_prestige = 50
+      add_stability = 1
+      add_army_tradition = 25
+      add_mil_power = 200
+      add_dip_power = 200
+      add_adm_power = 200
+      add_country_modifier = {
+           name = "Constantinople_sacked"
+           duration = -1
+      }
+    }
+  }
+}
+
+path_villes_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+    OR = {
+      tag = KIP
+      was_tag = KIP
+    }
+  }
+	has_country_shield = yes
+
+  hello_there = {
+    icon = new_st_peters_basilica
+    required_missions = {}
+    position = 9
+    provinces_to_highlight = {
+      OR = {
+        province_id = 118
+      }
+      NOT = {owned_by = ROOT}
+    }
+    trigger = {
+      118 = {controls = HNS}
+    }
+    effect = {
+      add_years_of_income = 2
+      add_legitimacy = 50
+      add_prestige = 50
+      add_stability = 1
+      add_army_tradition = 25
+      add_mil_power = 200
+      add_dip_power = 200
+      add_adm_power = 200
+      add_country_modifier = {
+           name = "Rome_sacked"
+           duration = -1
+      }
+    }
+  }
+}
+
+path_villes_4 = {
 	slot = 4
 	generic = no
 	ai = yes
 	potential = {
     OR = {
-      tag = HNS
-      was_tag = HNS
+      tag = KIP
+      was_tag = KIP
     }
   }
 	has_country_shield = yes
@@ -645,12 +676,12 @@ path_villes = {
 	}
 }
 
-military_tre_ALN{
+military_tre_KIP{
 	slot = 1
 	generic = no
 	ai = yes
 	potential = {
-		tag = HNS
+		tag = KIP
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -693,7 +724,7 @@ military_tre_ALN{
 			generic = no
 			ai = yes
 			potential = {
-				tag = HNS
+				tag = KIP
 			NOT = {	has_country_flag = alan_full_cav }
 			NOT = {	has_country_flag = alan_fire_cav }
 				NOT = { map_setup = map_setup_random }
@@ -714,12 +745,12 @@ military_tre_ALN{
 			}
 		}
 
-		military_tre_ALN_full_cav = {
+		military_tre_KIP_full_cav = {
 			slot = 1
 			generic = no
 			ai = yes
 			potential = {
-				tag = HNS
+				tag = KIP
 				has_country_flag = alan_full_cav
 				NOT = { map_setup = map_setup_random }
 			}
@@ -746,7 +777,7 @@ Arbre_militaire{
 			generic = no
 			ai = yes
 			potential = {
-				tag = HNS
+				tag = KIP
 				has_country_flag = alan_fire_cav
 				NOT = { map_setup = map_setup_random }
 			}
@@ -769,12 +800,12 @@ Arbre_militaire{
 	}
 
 
-economic_tre_ALN{
+economic_tre_KIP{
 			slot = 5
 			generic = no
 			ai = yes
 			potential = {
-				tag = HNS
+				tag = KIP
 				NOT = { map_setup = map_setup_random }
 			}
 			has_country_shield = yes
@@ -863,7 +894,7 @@ economic_tre_ALN{
 								share = 50
 							}
 						}
-						4341 = { #Persia
+						441 = { #Samarcande
 							trade_share = {
 								country = ROOT
 								share = 25
@@ -916,12 +947,12 @@ economic_tre_ALN{
 		}
 
 
-			politics_tre_HNS = {
+			politics_tre_KIP = {
 				slot = 5
 				generic = no
 				ai = yes
 				potential = {
-					tag = HNS
+					tag = KIP
 					NOT = { map_setup = map_setup_random }
 				}
 				has_country_shield = yes
@@ -956,12 +987,12 @@ economic_tre_ALN{
 					}
 		}
 
-		political_tre_HNS_dummy{
+		political_tre_KIP_dummy{
 				slot = 5
 				generic = no
 				ai = yes
 				potential = {
-					tag = HNS
+					tag = KIP
 				NOT = {	has_country_flag = republic_aln }
 				NOT = {	has_country_flag = divine_aln }
 					NOT = { map_setup = map_setup_random }
@@ -991,7 +1022,7 @@ economic_tre_ALN{
 				}
 		}
 
-		politics_tre_ALN_dip = {
+		politics_tre_KIP_dip = {
 			slot = 5
 			generic = no
 			ai = yes
@@ -1031,12 +1062,12 @@ economic_tre_ALN{
 			}
 		}
 
-		politics_tre_ALN_mil = {
+		politics_tre_KIP_mil = {
 			slot = 5
 			generic = no
 			ai = yes
 			potential = {
-				tag = HNS
+				tag = KIP
 				NOT = { map_setup = map_setup_random }
 				has_country_flag = divine_aln
 			}

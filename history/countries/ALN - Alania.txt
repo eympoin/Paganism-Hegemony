@@ -6,3 +6,4 @@ technology_group = steppe_tech
 capital = 2201
 
 Legitimacy = 89
+historical_friend = HNS

@@ -1,10 +1,10 @@
-# western_hastati
+# zhayedan
 
-type = infantry
-unit_type = roman_tech
+type = cavalry
+unit_type = persian_tech
 
-maneuver = 1
-offensive_morale = 3
+maneuver = 2
+offensive_morale = 2
 defensive_morale = 3
 offensive_fire = 0
 defensive_fire = 0

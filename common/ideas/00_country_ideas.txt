@@ -51,6 +51,93 @@ ALN_ideas = {
 	}
 }
 
+#HUNS
+HNS_ideas = {
+	start = {
+		cav_to_inf_ratio = 1
+		cavalry_power = 0.15
+	}
+	bonus = {
+		  discipline = 0.05
+		}
+	trigger = {
+		tag = HNS
+	}
+	free = yes
+
+	tribal_implication = {
+		 advisor_cost = -0.1
+	}
+
+	war_is_our_religion = {
+		warscore_cost_vs_other_religion = -0.125
+	}
+
+	silk_road = {
+			placed_merchant_power = 0.1
+	}
+
+	 progressive_industrialization = {
+    	global_trade_goods_size = 1
+	}
+
+	 population's_fear  = {
+	 		global_unrest = -1
+	}
+
+	war_tradition = {
+		free_mil_policy = 1
+	}
+
+	trade_route_toll = {
+		global_own_trade_power = 0.1
+	}
+}
+
+#KIPTCHAQS
+KIP_ideas = {
+	start = {
+		cav_to_inf_ratio = 1
+		cavalry_power = 0.15
+	}
+	bonus = {
+		  discipline = 0.05
+		}
+	trigger = {
+		tag = KIP
+	}
+	free = yes
+
+	syncretism_way = {
+			religious_unity = 0.15
+	}
+
+ 	land_of_trade= {
+		placed_merchant_power = 0.1
+	}
+
+	strategic_trade_post= {
+			province_trade_power_modifier = 0.05
+	}
+
+	 art_of_war_adaptation = {
+    	artillery_power = 0.05
+	}
+
+	 local_respect  = {
+	 		global_unrest = -0.5
+			administrative_efficiency = 0.1
+	}
+
+	pathfinder = {
+			global_colonial_growth = 15
+	}
+
+	ground_wealth = {
+		global_trade_goods_size = 0.1
+	}
+}
+
 AFR_ideas = {
 	start = {
 		diplomatic_reputation = 1
