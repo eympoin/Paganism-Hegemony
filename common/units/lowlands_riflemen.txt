@@ -1,12 +1,12 @@
-# norse_crusader
+# lowlands_riflemen
 
 type = infantry
 unit_type = germanic_tech
 
 maneuver = 1
 offensive_morale = 2
-defensive_morale = 2
+defensive_morale = 3
 offensive_fire = 2
-defensive_fire = 1
-offensive_shock = 3.
+defensive_fire = 3
+offensive_shock = 3
 defensive_shock = 2
