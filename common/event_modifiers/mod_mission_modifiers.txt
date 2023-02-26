@@ -8778,7 +8778,7 @@ iron_exploitation = {
 }
 
 In_another_life= {
-  mercenary_cost = -0.75
+  mercenary_cost = -0.25
   merc_maintenance_modifier = -0.25
 }
 
@@ -8806,7 +8806,7 @@ Steppes_urbanization= {
 Endless_currency= {
   production_efficiency = 0.10
   global_tax_modifier = 0.1
-  inflation_reduction = 0.02
+  inflation_reduction = -0.02
 }
 
 To_the_edge_of_the_known_world= {

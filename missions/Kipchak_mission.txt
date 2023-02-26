@@ -43,7 +43,10 @@ central_path = {
     required_missions = {establish_in_kazan}
     position = 2
     trigger = {
-      	alliance_with = ALN
+      	OR = {
+					alliance_with = ALN
+					ALN = {exists = no}
+				}
     }
     effect = {
       tambov_area = {
@@ -59,6 +62,9 @@ central_path = {
     icon = mission_into_the_west
     required_missions = {reverse_the_tide}
     position = 3
+		provinces_to_highlight = {
+      owned_by = GOL
+    }
     trigger = {
       GOL = {
         exists = no
@@ -74,14 +80,7 @@ central_path = {
     required_missions = {jewish_issue}
     position = 4
     provinces_to_highlight = {
-      OR = {
-        province_id = 2418
-        province_id = 474
-        province_id = 1965
-        province_id = 4267
-        province_id = 1081
-      }
-      NOT = {owned_by = ROOT}
+      owned_by = KHZ
     }
     trigger = {
       marketplaces = 5
@@ -176,6 +175,7 @@ central_path = {
       	adm_power = 100
         dip_power = 100
         mil_power = 100
+				tag = CUM
     }
     effect = {
       adm_power = -100
@@ -187,7 +187,7 @@ central_path = {
 
   familiar_place = {
     icon = the_great_city_of_buda
-    required_missions = {jewish_issue}
+    required_missions = {between_east_and_west}
     position = 8
     provinces_to_highlight = {
       OR = {
@@ -231,7 +231,7 @@ path_gauche = {
       }
 		}
 		effect = {
-			create_vassal = QAS
+			vassalize = QAS
 			samara_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -316,7 +316,7 @@ path_gauche = {
     position = 4
     trigger = {
       num_of_states = 10
-      accepted_culture = rostovian
+      accepted_culture = russian
       has_matching_religion = slavic
     }
     effect = {
@@ -537,7 +537,7 @@ droit_path = {
 		required_missions = { edge_of_the_world}
 		position = 6
 		trigger = {
-      has_institution = Colonialism
+      has_institution = new_world_i
 		}
 		effect = {
 					add_dip_power = 200
@@ -688,7 +688,7 @@ military_tre_KIP{
 
 	cavalry_revival = {
 		icon = mission_break_the_tatar_yoke
-		required_missions = #None
+		required_missions =
 		position = 2
 		trigger = {
 			num_of_cavalry = 25
@@ -703,7 +703,7 @@ military_tre_KIP{
 
 	choc_cavalery = {
 		icon =	mission_cossack_cavalry
-		required_missions = { cavalry_revival } #None
+		required_missions = { cavalry_revival }
 		trigger = {
 			trade_goods_produced_amount = {
 				trade_goods = iron
@@ -733,7 +733,7 @@ military_tre_KIP{
 
 			branching_mil = {
 				icon = mission_unknown_mission
-				required_missions = { choc_cavalery } #None
+				required_missions = { choc_cavalery }
 				position = 3
 				trigger = {
 						has_country_flag = alan_fire_cav
@@ -758,7 +758,7 @@ military_tre_KIP{
 
 				The_horse_to_the_death = {
 					icon = mission_control_the_ganges_delta
-					required_missions = { choc_cavalery } #None
+					required_missions = { choc_cavalery }
 					trigger = {
 						year_is = 1530
 						num_of_cavalry = 20
@@ -784,7 +784,7 @@ Arbre_militaire{
 			has_country_shield = yes
 				Fire_adaptation = {
 					icon = mission_break_sicily
-						required_missions = { choc_cavalery } #None
+						required_missions = { choc_cavalery }
 						position = 1
 					trigger = {
 						year_is = 1530
@@ -812,7 +812,7 @@ economic_tre_KIP{
 
 		sedentarization = {
 				icon = mission_extent_yasak_to_the_east
-					required_missions = {  } #None
+					required_missions = {  }
 				position = 1
 				trigger = {
 					num_of_cities = 15
@@ -847,7 +847,7 @@ economic_tre_KIP{
 
 			silk_trade = {
 				icon = mission_dominate_persian_gulf
-				required_missions = { sedentarization } #None
+				required_missions = { sedentarization }
 				position = 2
 				trigger = {
 					year_is = 1500
@@ -877,7 +877,7 @@ economic_tre_KIP{
 
 				Trade_master = {
 					icon = the_shape_of_trades_to_come
-						required_missions = { silk_trade } #None
+						required_missions = { silk_trade }
 						position = 3
 					trigger = {
 						year_is = 1550
@@ -911,7 +911,7 @@ economic_tre_KIP{
 
 					Early_industrialization = {
 						icon = mission_industrialize_bengal
-							required_missions = { Trade_master } #None
+							required_missions = { Trade_master }
 							position = 4
 						trigger = {
 							year_is = 1650
@@ -974,7 +974,7 @@ economic_tre_KIP{
 
 					Divin_right_or_tribal_federation{
 						icon = mission_restore_kiev
-						required_missions = { Unification_of_the_tribes } #None
+						required_missions = { Unification_of_the_tribes }
 						position = 2
 						trigger = {
 							year_is = 1550
@@ -1000,7 +1000,7 @@ economic_tre_KIP{
 				has_country_shield = yes
 				branching_pol_1{
 					icon = mission_unknown_mission
-					required_missions = { Divin_right_or_tribal_federation } #None
+					required_missions = { Divin_right_or_tribal_federation }
 					position = 7
 					trigger = {
 							has_country_flag = divine_aln
@@ -1011,7 +1011,7 @@ economic_tre_KIP{
 				}
 				branching_pol_2{
 					icon = mission_unknown_mission
-					required_missions = { branching_pol_1 } #None
+					required_missions = { branching_pol_1 }
 					position = 8
 					trigger = {
 							has_country_flag = divine_aln
@@ -1033,7 +1033,7 @@ economic_tre_KIP{
 			}
 			Tribal_federalism{
 				icon = the_russian_campaign
-					required_missions = { Divin_right_or_tribal_federation } #None
+					required_missions = { Divin_right_or_tribal_federation }
 				position = 7
 				trigger = {
 					republican_tradition = 90
@@ -1047,7 +1047,7 @@ economic_tre_KIP{
 				}
 				the_pen_stronger_than_the_spear{
 					icon = mission_break_sicily
-						required_missions = { Tribal_federalism } #None
+						required_missions = { Tribal_federalism }
 					position = 8
 					trigger = {
 						year_is = 1700
@@ -1073,7 +1073,7 @@ economic_tre_KIP{
 			}
 			Divin_right_monarchy = {
 				icon = letat_cest_moi
-					required_missions = { Divin_right_or_tribal_federation } #None
+					required_missions = { Divin_right_or_tribal_federation }
 				position = 7
 				trigger = {
 					current_age = age_of_absolutism
@@ -1088,7 +1088,7 @@ economic_tre_KIP{
 
 				God_on_horse = {
 					icon = jageillonian_union
-						required_missions = { Divin_right_monarchy } #None
+						required_missions = { Divin_right_monarchy }
 					position = 8
 					trigger = {
 					year_is = 1700
