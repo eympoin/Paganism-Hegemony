@@ -86,6 +86,7 @@ technology = {
 	enable = skoutatos
 	enable = germanic_axemen
 	enable = clansmen
+	enable = armed_slaves
 
 }
 
@@ -294,6 +295,7 @@ technology = {
 	enable = kontophoros
 	enable = metzin_soldiers
 	enable = defensive_highlanders
+	enable = caucasian_mercenaries
 	military_tactics 	= 	0.25
 	combat_width = 1
 }
@@ -404,6 +406,7 @@ technology = {
 	enable = optimatoi
 	enable = celts_unifiers
 	enable = bretons_sharpshooters
+	enable = the_young_ones
 }
 
 technology = {
@@ -509,6 +512,7 @@ technology = {
 	enable = athanatoi
 	enable = soissons_defensive_squares
 	enable = vistulian_heavy_infantry
+	enable = bayezid_reformed_musketeers
 }
 
 technology = {
@@ -637,6 +641,7 @@ technology = {
 	enable = scholai
 	enable = lowlands_riflemen
 	enable = celtic_musketeers
+	enable = cumans_riflemen
 }
 
 technology = {
@@ -864,6 +869,7 @@ technology = {
 	enable = russian_riflemen
 	enable = exkoubitoi
 	enable = heirs_of_carolus
+	enable = dismounted_dragoons
 
 	combat_width = 2
 }
@@ -994,6 +1000,7 @@ technology = {
 	enable = danish_fire_infantry
 	enable = hikanatoi
 	enable = standard_grenadiers
+	enable = world_reapers
 }
 
 technology = {
