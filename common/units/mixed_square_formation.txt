@@ -1,0 +1,12 @@
+# mixed_square_formation
+
+type = infantry
+unit_type = semitic_tech
+
+maneuver = 1
+offensive_morale = 2
+defensive_morale = 3
+offensive_fire = 2
+defensive_fire = 2
+offensive_shock = 2
+defensive_shock = 2
