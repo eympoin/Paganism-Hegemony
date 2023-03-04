@@ -1,12 +1,12 @@
-# imperial_infantry
+# bayezid_reformed_musketeers
 
 type = infantry
-unit_type = slavic_tech
+unit_type = steppe_tech
 
 maneuver = 1
 offensive_morale = 2
 defensive_morale = 2
 offensive_fire = 2
 defensive_fire = 3
-offensive_shock = 3
+offensive_shock = 2
 defensive_shock = 2
