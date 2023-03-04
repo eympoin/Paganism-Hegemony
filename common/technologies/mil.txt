@@ -87,7 +87,7 @@ technology = {
 	enable = germanic_axemen
 	enable = clansmen
 	enable = armed_slaves
-	enable = persians_fighters
+	enable = persian_fighters
 	enable = middle_eastern_axemen
 
 }
@@ -184,7 +184,7 @@ technology = {
 	enable = scots_schiltron
 	enable = assyrians_lions
 	enable = arabic_archers
-	enable = armenian_mace_warriors
+	enable = armenian_mace_warrior
 	enable = ctesiphon_golden_guard
 
 	combat_width = 2
