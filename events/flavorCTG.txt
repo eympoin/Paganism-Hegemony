@@ -2344,7 +2344,7 @@ country_event = {
 			add_core = RUF
 			remove_core = CTG
 			change_culture = aboriginal
-			change_religion = animism
+			change_religion = dreamtime
 
 		}
 		set_country_flag = ctg_australia
@@ -2696,7 +2696,7 @@ country_event = {
 				is_island = no
 			}
 			change_culture = aboriginal
-			change_religion = animism
+			change_religion = dreamtime
 			cede_province = RUF
 			add_core = RUF
 			remove_core = CTG
