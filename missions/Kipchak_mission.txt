@@ -573,7 +573,7 @@ path_villes_2 = {
       NOT = {Owned_by = ROOT}
     }
     trigger = {
-      151 = {controls = HNS}
+      151 = {controls = KIP}
     }
     effect{
       add_years_of_income = 2
@@ -615,7 +615,7 @@ path_villes_3 = {
       NOT = {owned_by = ROOT}
     }
     trigger = {
-      118 = {controls = HNS}
+      118 = {controls = KIP}
     }
     effect = {
       add_years_of_income = 2
@@ -657,7 +657,7 @@ path_villes_4 = {
 			NOT = {owned_by = ROOT}
 		}
 		trigger = {
-			183 = {controls = HNS}
+			183 = {controls = KIP}
 		}
 		effect = {
 			add_years_of_income = 2
