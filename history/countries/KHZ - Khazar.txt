@@ -4,3 +4,14 @@ primary_culture = khazar
 religion = jewish
 technology_group = steppe_tech
 capital = 464
+
+1444.1.1 = {
+    monarch = {
+        name = "Rabbi"
+	dynasty = "Dayan "
+        birth_date = 1422.2.10
+        adm = 4
+        dip = 3
+        mil = 5
+    }
+}
