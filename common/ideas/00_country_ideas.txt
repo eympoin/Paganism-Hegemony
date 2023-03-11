@@ -4,6 +4,50 @@
 
 ### Nation specific idea groups
 
+#RUSSIAN
+RSS_ideas = {
+start = {
+	infantry_power = 0.15
+	prestige = 1
+}
+bonus = {
+		discipline = 0.10
+	}
+trigger = {
+	tag = RSS
+}
+free = yes
+
+dnieper_commerce = {
+trade_steering = 0.1
+}
+
+slavic_unification = {
+global_unrest = -2
+no_stability_loss_on_monarch_death = yes
+}
+
+anti_nomadic_tactics = {
+fire_damage_received = -0.15
+}
+
+reformed_slavic_fanatism = {
+global_missionary_strength = 0.02
+}
+
+land_redistribution = {
+development_cost = -0.1
+}
+
+baby_boom = {
+manpower_in_true_faith_provinces = 0.15
+}
+
+imperial_construction_edict = {
+build_cost = -0.15
+  }
+}
+
 ALN_ideas = {
 	start = {
 		cav_to_inf_ratio = 1
