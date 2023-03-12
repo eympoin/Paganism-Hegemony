@@ -1,0 +1,37 @@
+namespace = flavor_kip
+
+country_event = {
+	id = flavor_kip.1
+	title = "flavor_kip.1.t"
+	desc = "flavor_kip.1.d"
+	picture = BATTLE_eventPicture
+	major = yes
+
+fire_only_once = yes
+
+trigger = {
+  tag = KIP
+  owner = { has_country_modifier = endless_currency }
+}
+mean_time_to_happen = {
+  months = 600
+ }
+ option = {
+   name = "flavor_kip.1.a"
+   ai_chance = {
+     factor = 100
+   }
+  add_inflation = 4
+  add_corruption = 8
+  add_stability = -3
+  add_country_modifier = {
+    name = abundance_come_to_an_end
+    duration = 60
+}
+  spawn_rebels = {
+    size = 3
+    leader = noble_zealot
+    type = religious_rebels
+}
+ }
+}
