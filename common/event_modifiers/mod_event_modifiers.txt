@@ -815,3 +815,10 @@ lack_of_provincial_gov = {
 lackluster_provincial_gov = {
 	local_autonomy = 25
 }
+
+abundance_come_to_an_end = {
+global_autonomy = 0.05
+production_efficiency = -0.05
+monthly_gold_inflation_modifier = 0.3
+global_unrest = 3
+}
