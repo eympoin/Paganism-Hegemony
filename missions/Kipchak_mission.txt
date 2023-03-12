@@ -196,7 +196,7 @@ central_path = {
       NOT = {owned_by = ROOT}
     }
     trigger = {
-      153 = {controls = KIP}
+      153 = {controls = ROOT}
     }
     effect = {
       add_country_modifier = {
@@ -413,7 +413,7 @@ path_gauche = {
     }
     effect = {
         add_country_modifier = {
-          name = "villa_sur_la_côte"
+          name = "villa_sur_la_cote"
           duration = -1
         }
     }
@@ -573,7 +573,7 @@ path_villes_2 = {
       NOT = {Owned_by = ROOT}
     }
     trigger = {
-      151 = {controls = KIP}
+      151 = {controls = ROOT}
     }
     effect{
       add_years_of_income = 2
@@ -615,7 +615,7 @@ path_villes_3 = {
       NOT = {owned_by = ROOT}
     }
     trigger = {
-      118 = {controls = KIP}
+      118 = {controls = ROOT}
     }
     effect = {
       add_years_of_income = 2
@@ -657,7 +657,7 @@ path_villes_4 = {
 			NOT = {owned_by = ROOT}
 		}
 		trigger = {
-			183 = {controls = KIP}
+			183 = {controls = ROOT}
 		}
 		effect = {
 			add_years_of_income = 2
@@ -682,6 +682,7 @@ military_tre_KIP{
 	ai = yes
 	potential = {
 		tag = KIP
+		was_tag = KIP
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -725,6 +726,7 @@ military_tre_KIP{
 			ai = yes
 			potential = {
 				tag = KIP
+				was_tag = KIP
 			NOT = {	has_country_flag = alan_full_cav }
 			NOT = {	has_country_flag = alan_fire_cav }
 				NOT = { map_setup = map_setup_random }
@@ -751,6 +753,7 @@ military_tre_KIP{
 			ai = yes
 			potential = {
 				tag = KIP
+				was_tag = KIP
 				has_country_flag = alan_full_cav
 				NOT = { map_setup = map_setup_random }
 			}
@@ -760,7 +763,7 @@ military_tre_KIP{
 					icon = mission_control_the_ganges_delta
 					required_missions = { choc_cavalery }
 					trigger = {
-						year_is = 1530
+						is_year = 1530
 						num_of_cavalry = 20
 						}
 					effect{
@@ -778,6 +781,7 @@ Arbre_militaire{
 			ai = yes
 			potential = {
 				tag = KIP
+				was_tag = KIP
 				has_country_flag = alan_fire_cav
 				NOT = { map_setup = map_setup_random }
 			}
@@ -787,7 +791,7 @@ Arbre_militaire{
 						required_missions = { choc_cavalery }
 						position = 1
 					trigger = {
-						year_is = 1530
+						is_year = 1530
 						num_of_cavalry = 20
 						}
 					effect = {
@@ -806,6 +810,7 @@ economic_tre_KIP{
 			ai = yes
 			potential = {
 				tag = KIP
+				was_tag = KIP
 				NOT = { map_setup = map_setup_random }
 			}
 			has_country_shield = yes
@@ -850,7 +855,7 @@ economic_tre_KIP{
 				required_missions = { sedentarization }
 				position = 2
 				trigger = {
-					year_is = 1500
+					is_year = 1500
 					trade_goods_produced_amount = {
 						trade_goods = silk
 						amount = 4
@@ -880,7 +885,7 @@ economic_tre_KIP{
 						required_missions = { silk_trade }
 						position = 3
 					trigger = {
-						year_is = 1550
+						is_year = 1550
 						has_institution = global_trade
 						419 = { #Yerevan
 							trade_share = {
@@ -914,11 +919,14 @@ economic_tre_KIP{
 							required_missions = { Trade_master }
 							position = 4
 						trigger = {
-							year_is = 1650
+							is_year = 1650
 							has_institution = manufactories
 							workshop = 10
-							manufactory = 3
+							num_of_owned_provinces_with = {
+								has_manufactory_trigger = yes
+								value = 6
 							}
+						}
 						effect{
 							add_country_modifier = {
            			name = "Early_industrialization"
@@ -953,6 +961,7 @@ economic_tre_KIP{
 				ai = yes
 				potential = {
 					tag = KIP
+					was_tag = KIP
 					NOT = { map_setup = map_setup_random }
 				}
 				has_country_shield = yes
@@ -977,7 +986,7 @@ economic_tre_KIP{
 						required_missions = { Unification_of_the_tribes }
 						position = 2
 						trigger = {
-							year_is = 1550
+							is_year = 1550
 							num_of_provinces_in_states = 50
 							total_development = 300
 						}
@@ -993,6 +1002,7 @@ economic_tre_KIP{
 				ai = yes
 				potential = {
 					tag = KIP
+					was_tag = KIP
 				NOT = {	has_country_flag = republic_aln }
 				NOT = {	has_country_flag = divine_aln }
 					NOT = { map_setup = map_setup_random }
@@ -1050,7 +1060,7 @@ economic_tre_KIP{
 						required_missions = { Tribal_federalism }
 					position = 8
 					trigger = {
-						year_is = 1700
+						is_year = 1700
 						diplomatic_reputation = 6
 					}
 					effect{
@@ -1068,6 +1078,7 @@ economic_tre_KIP{
 			ai = yes
 			potential = {
 				tag = KIP
+				was_tag = KIP
 				NOT = { map_setup = map_setup_random }
 				has_country_flag = divine_aln
 			}
@@ -1091,7 +1102,7 @@ economic_tre_KIP{
 						required_missions = { Divin_right_monarchy }
 					position = 8
 					trigger = {
-					year_is = 1700
+					is_year = 1700
 						has_global_modifier_value = {
 							which = cavalry_power
 							value = 0.5

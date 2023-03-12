@@ -589,7 +589,7 @@ military_tre_ALN{
 					icon = mission_break_sicily
 						required_missions = { choc_cavalery } #None
 					trigger = {
-						year_is = 1530
+						is_year = 1530
 						num_of_cavalry = 20
 						}
 					effect{
@@ -616,7 +616,7 @@ military_tre_ALN{
 						required_missions = { choc_cavalery } #None
 						position = 3
 					trigger = {
-						year_is = 1530
+						is_year = 1530
 						num_of_cavalry = 20
 						}
 					effect{
@@ -676,7 +676,7 @@ military_tre_ALN{
 				icon = mission_break_sicily
 					required_missions = { sedentarization } #None
 				trigger = {
-					year_is = 1500
+					is_year = 1500
 					trade_goods_produced_amount = {
 						trade_goods = iron
 						amount = 4
@@ -698,7 +698,7 @@ military_tre_ALN{
 					icon = mission_break_sicily
 						required_missions = { Iron_trade } #None
 					trigger = {
-						year_is = 1550
+						is_year = 1550
 						has_institution = global_trade
 						}
 					effect{
@@ -718,7 +718,7 @@ military_tre_ALN{
 						icon = mission_break_sicily
 							required_missions = { Trade_master } #None
 						trigger = {
-							year_is = 1650
+							is_year = 1650
 							has_institution = manufactories
 							}
 						effect{
@@ -772,7 +772,7 @@ military_tre_ALN{
 							required_missions = { Unification_of_the_tribes } #None
 						position = 2
 						trigger = {
-							year_is = 1550
+							is_year = 1550
 							num_of_provinces_in_states = 50
 							#taille du pays supérieur à
 							}
@@ -844,7 +844,7 @@ military_tre_ALN{
 						required_missions = { Tribal_federalism } #None
 					position = 8
 					trigger = {
-						year_is = 1700
+						is_year = 1700
 						diplomatic_reputation = 6
 					}
 					effect{
@@ -883,7 +883,7 @@ military_tre_ALN{
 						required_missions = { Divin_right_monarchy } #None
 					position = 8
 					trigger = {
-					year_is = 1700
+					is_year = 1700
 						has_global_modifier_value = {
 							which = cavalry_power
 							value = 0.5

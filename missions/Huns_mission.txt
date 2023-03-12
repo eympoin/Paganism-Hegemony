@@ -64,7 +64,7 @@ central_path = {
 			claim = 100
 			}
 			add_treasury = 300
-			stability = 1
+			add_stability = 1
 			grant_independence = yes
 			add_country_modifier = {
            name = "Free_from_the_tyranny"
@@ -413,41 +413,50 @@ path_gauche = {
 		required_missions = { mare_nostrum }
 		position = 7
 		provinces_to_highlight = {
-			OR = {
-				area = merv_area
-				area = kyzylkum_area
-				area = syr_darya_area
-				area = arys_area_yik_area
-				area = khiva_area
-	 		}
-	 		NOT = {owned_by = ROOT}
-			}
+		}
 		trigger = {
-			exists = TIM
-			war_with = TIM
+			OR = {
+				NOT = {exists = TIM}
+				war_with = TIM
+				}
 		}
 		effect = {
 			create_general = { tradition = 100 }
 			merv_area = {
-      	type = all
-      	owned_by = ROOT
-      }
-      kyzylkum_area = {
-      	type = all
-      	owned_by = ROOT
-      }
-      syr_darya_area = {
-      	type = all
-      	owned_by = ROOT
-      }
-      arys_area = {
-      	type = all
-      	owned_by = ROOT
-      }
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {is_claim	= ROOT}
+				}
+				add_permanent_claim = ROOT
+			}
+			kyzylkum_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {is_claim	= ROOT}
+				}
+				add_permanent_claim = ROOT
+			}
+			syr_darya_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {is_claim	= ROOT}
+				}
+				add_permanent_claim = ROOT
+			}
+			arys_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {is_claim	= ROOT}
+				}
+				add_permanent_claim = ROOT
+			}
 			khiva_area = {
-      	type = all
-      	owned_by = ROOT
-      }
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {is_claim	= ROOT}
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 
@@ -546,7 +555,7 @@ droit_path = {
 				 name = "tribes_assimilation"
 				 duration = -1
 			}
-			prestige = 25
+			add_prestige = 25
 		}
 	}
 
@@ -645,7 +654,7 @@ path_villes = {
 	}
 }
 
-military_tre_ALN{
+military_tre_HNS{
 	slot = 1
 	generic = no
 	ai = yes
@@ -714,7 +723,7 @@ military_tre_ALN{
 			}
 		}
 
-		military_tre_ALN_full_cav = {
+		military_tre_HNS_full_cav = {
 			slot = 1
 			generic = no
 			ai = yes
@@ -729,7 +738,7 @@ military_tre_ALN{
 					icon = mission_control_the_ganges_delta
 					required_missions = { choc_cavalery } #None
 					trigger = {
-						year_is = 1530
+						is_year = 1530
 						num_of_cavalry = 20
 						}
 					effect{
@@ -756,7 +765,7 @@ Arbre_militaire{
 						required_missions = { choc_cavalery } #None
 						position = 1
 					trigger = {
-						year_is = 1530
+						is_year = 1530
 						num_of_cavalry = 20
 						}
 					effect = {
@@ -769,7 +778,7 @@ Arbre_militaire{
 	}
 
 
-economic_tre_ALN{
+economic_tre_HNS{
 			slot = 5
 			generic = no
 			ai = yes
@@ -819,7 +828,7 @@ economic_tre_ALN{
 				required_missions = { sedentarization } #None
 				position = 2
 				trigger = {
-					year_is = 1500
+					is_year = 1500
 					trade_goods_produced_amount = {
 						trade_goods = silk
 						amount = 4
@@ -849,7 +858,7 @@ economic_tre_ALN{
 						required_missions = { silk_trade } #None
 						position = 3
 					trigger = {
-						year_is = 1550
+						is_year = 1550
 						has_institution = global_trade
 						419 = { #Yerevan
 							trade_share = {
@@ -883,10 +892,13 @@ economic_tre_ALN{
 							required_missions = { Trade_master } #None
 							position = 4
 						trigger = {
-							year_is = 1650
+							is_year = 1650
 							has_institution = manufactories
 							workshop = 10
-							manufactory = 3
+							num_of_owned_provinces_with = {
+								has_manufactory_trigger = yes
+								value = 3
+							}
 							}
 						effect{
 							add_country_modifier = {
@@ -946,7 +958,7 @@ economic_tre_ALN{
 						required_missions = { Unification_of_the_tribes } #None
 						position = 2
 						trigger = {
-							year_is = 1550
+							is_year = 1550
 							num_of_provinces_in_states = 50
 							total_development = 300
 						}
@@ -991,7 +1003,7 @@ economic_tre_ALN{
 				}
 		}
 
-		politics_tre_ALN_dip = {
+		politics_tre_HNS_dip = {
 			slot = 5
 			generic = no
 			ai = yes
@@ -1019,7 +1031,7 @@ economic_tre_ALN{
 						required_missions = { Tribal_federalism } #None
 					position = 8
 					trigger = {
-						year_is = 1700
+						is_year = 1700
 						diplomatic_reputation = 6
 					}
 					effect{
@@ -1031,7 +1043,7 @@ economic_tre_ALN{
 			}
 		}
 
-		politics_tre_ALN_mil = {
+		politics_tre_HNS_mil = {
 			slot = 5
 			generic = no
 			ai = yes
@@ -1060,7 +1072,7 @@ economic_tre_ALN{
 						required_missions = { Divin_right_monarchy } #None
 					position = 8
 					trigger = {
-					year_is = 1700
+					is_year = 1700
 						has_global_modifier_value = {
 							which = cavalry_power
 							value = 0.5

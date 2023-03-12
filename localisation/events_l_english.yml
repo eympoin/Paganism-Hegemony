@@ -2383,9 +2383,9 @@ flavor_kie.7.d:0 "We just received the Kievan invitation to a banquet to celebra
 flavor_kie.7.a:0 "We fought to their side, if they wanted to kill us they could have done it then. Of course we will join !"
 flavor_kie.7.b:0 "We won together for sure but political games are the most dangerous of all. We need to be prudent, we will say to Kiev that our king is sick."
 
-flavor_kie.8.t "Let's the banquet begin"
-flavor_kie.8.d "All our brothers answered. Now they are all in our palace enjoying a good meal, without armour or weapons... What could go wrong ?"
-flavor_kie.8.a "Let them enjoy their meal... Because it's their last !"
+flavor_kie.8.t:0 "Let's the banquet begin"
+flavor_kie.8.d:0 "All our brothers answered. Now they are all in our palace enjoying a good meal, without armour or weapons... What could go wrong ?"
+flavor_kie.8.a:0 "Let them enjoy their meal... Because it's their last !"
 
 flavor_kie.10.t:0 "The peaceful Slavic unification"
 flavor_kie.10.d:0 "While everybody was eating peacefully a dozen of mad ( and armed) men entered the room, strangely there was no guards. These men did a slaughter and after they left the room we found that every Slavic king was dead. Everyone ? No, our King is still alive and we just found that all these kings said they gave their kingdoms to Kiev before dying. We will make them proud !"
