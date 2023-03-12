@@ -26,14 +26,14 @@ Magna_Graecia = {
     OR = {
       province_id = 123
       province_id = 2984
-      province_id = 4828
+      province_id = 4986
       province_id = 1934
       province_id = 1933
       province_id = 122
       province_id = 4954
       province_id = 124
       province_id = 2982
-      province_id = 4834
+      province_id = 4980
     }
     OR = {
       NOT = { owned_by = ROOT }
@@ -45,14 +45,14 @@ Magna_Graecia = {
     is_at_war = no
     owns_core_province = 123
     owns_core_province = 2984
-    owns_core_province = 4828
+    owns_core_province = 4986
     owns_core_province = 1934
     owns_core_province = 1933
     owns_core_province = 122
     owns_core_province = 4954
     owns_core_province = 124
     owns_core_province = 2982
-    owns_core_province = 4834
+    owns_core_province = 4980
 
   }
   effect = {

@@ -596,6 +596,7 @@ country_event = {
     NOT = {has_global_flag = slavic_uprising_incident}
     is_part_of_hre = yes
     NOT = {religion = theoi}
+    NOT = {religion = chalcedonian}
   }
 
 

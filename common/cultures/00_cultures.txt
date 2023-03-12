@@ -10355,3 +10355,19 @@ neo_roman={
 		primary = SIC
 	}
 }
+
+other={
+	graphical_culture = westerngfx
+	berber = {
+		primary = SIC
+	}
+	korean_new = {
+		primary = SIC
+	}
+	tibetan_new = {
+		primary = SIC
+	}
+	vietnamese_new = {
+		primary = SIC
+	}
+}

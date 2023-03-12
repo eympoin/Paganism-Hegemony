@@ -278,6 +278,7 @@ estate_church =
 		estate_church_bishopric_of_osel_wiek
 		estate_church_bishopric_of_courland
 		estate_church_bishopric_of_reval
+		estate_church_clerical_ministers
 	}
 
 	agendas = {
