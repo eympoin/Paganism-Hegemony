@@ -4,6 +4,96 @@
 
 ### Nation specific idea groups
 
+#Khazar
+KHZ_ideas = {
+start = {
+	land_morale = 0.10
+	warscore_cost_vs_other_religion = -0.20
+}
+bonus = {
+		manpower_in_true_faith_provinces= 0.10
+	}
+trigger = {
+	tag = KHZ
+}
+free = yes
+
+alone_in_the_steppe = {
+war_exhaustion = -0.10
+war_exhaustion_cost = -0.15
+}
+
+technologic_links_with_jerusalem = {
+technology_cost = -0.1
+}
+
+defensive_position = {
+local_hostile_attrition = 5
+local_fort_maintenance_modifier = -0.2
+}
+
+riders_of_david = {
+fire_damage = 0.15
+}
+
+long_distance_trading = {
+trade_range_modifier = 0.30
+global_foreign_trade_power = 0.15
+}
+
+united_in_our_faith = {
+global_unrest = -2
+}
+
+convert_the_steppe = {
+global_missionary_strength = 0.03
+  }
+}
+
+#RUSSIAN
+RSS_ideas = {
+start = {
+	infantry_power = 0.15
+	prestige = 1
+}
+bonus = {
+		discipline = 0.10
+	}
+trigger = {
+	tag = RSS
+}
+free = yes
+
+dnieper_commerce = {
+trade_steering = 0.1
+}
+
+slavic_unification = {
+global_unrest = -2
+no_stability_loss_on_monarch_death = yes
+}
+
+anti_nomadic_tactics = {
+fire_damage_received = -0.15
+}
+
+reformed_slavic_fanatism = {
+global_missionary_strength = 0.02
+}
+
+land_redistribution = {
+development_cost = -0.1
+}
+
+baby_boom = {
+manpower_in_true_faith_provinces = 0.15
+}
+
+imperial_construction_edict = {
+build_cost = -0.15
+  }
+}
+
 ALN_ideas = {
 	start = {
 		cav_to_inf_ratio = 1
