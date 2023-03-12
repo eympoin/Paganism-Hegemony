@@ -10,7 +10,7 @@ historical_friend = SIB
 
 1444.1.1 = {
     monarch = {
-        name = "Dağ Han"
+        name = "Dag Han"
 	dynasty = "Khan"
         birth_date = 1418.12.01
         adm = 2

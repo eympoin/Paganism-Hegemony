@@ -72,7 +72,7 @@ main_path{
 		position = 3
 		provinces_to_highlight = {
       OR = {
-				province = 280
+				province_id = 280
 			}
 			NOT = {owned_by = ROOT}
     }
@@ -130,7 +130,7 @@ main_path{
 				 name = "trade_league"
 				 duration = -1
 			}
-			dip_power = 200
+			add_dip_power = 200
 			add_treasury = 250
 		}
 	}
@@ -205,12 +205,24 @@ path_droit{
 				 duration = -1
 			}
 			zaporizhia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {is_claim	= ROOT}
+				}
 				add_permanent_claim = ROOT
 				}
 			yedisan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {is_claim	= ROOT}
+				}
 				add_permanent_claim = ROOT
 				}
 			azov_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {is_claim	= ROOT}
+				}
 				add_permanent_claim = ROOT
 			}
 		}
@@ -244,21 +256,45 @@ path_droit{
   	}
   	effect = {
   		lower_don_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {is_claim	= ROOT}
+				}
     		add_permanent_claim = ROOT
   		}
   		astrakhan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {is_claim	= ROOT}
+				}
     		add_permanent_claim = ROOT
   		}
   		lower_yik_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {is_claim	= ROOT}
+				}
     		add_permanent_claim = ROOT
     	}
-  		saratov_yik_area = {
+  		saratov_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {is_claim	= ROOT}
+				}
     		add_permanent_claim = ROOT
     	}
   		circassia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {is_claim	= ROOT}
+				}
     		add_permanent_claim = ROOT
     	}
   		dagestan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {is_claim	= ROOT}
+				}
     		add_permanen_claim = ROOT
     	}
   	}
@@ -337,7 +373,7 @@ path_droit{
 	}
 }
 
-path_gauche{
+path_gauche_kie = {
 		slot = 1
 		generic = no
 		ai = yes
@@ -502,9 +538,6 @@ path_ultime{
 			num_of_infantry = 40
 			num_of_cavalry = 15
 			monthly_income = 50
-			all_owned_province = {
-				same_culture = 280
-			}
 			tag = RSS
 		}
 		effect = {

@@ -102,9 +102,8 @@ ship_names = {
 }
 
 leader_names = {
-	Adam Alexander
-	Bruce Beaton Boyd
-	Cameron Campbell Cochrane Crichton Cunynghame Crawford Carnegie Colyear
+	Beaton Boyd
+	Cochrane Crichton Cunynghame Crawford Carnegie Colyear
 	Douglas Duncan "de Dunbar" Dalzell Drummond
 	Erskine
 	Forbes Ferguson Fletcher Fleming

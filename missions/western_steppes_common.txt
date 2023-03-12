@@ -1,0 +1,708 @@
+
+military_tre_steppe{
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+      tag = HNS
+      was_tag = HNS
+      tag = ALN
+      was_tag = ALN
+      tag = KIP
+      was_tag = KIP
+      tag = KHZ
+      was_tag = KHZ
+      tag = KAZ
+      was_tag = KAZ
+      tag = GOL
+      was_tag = GOL
+    }
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	cavalry_revival = {
+		icon = mission_break_the_tatar_yoke
+		required_missions = #None
+		position = 2
+		trigger = {
+			num_of_cavalry = 25
+		}
+		effect = {
+				add_country_modifier = {
+					name = cavalry_renewal
+					duration = -1
+				}
+		}
+	}
+
+	choc_cavalery = {
+		icon =	mission_cossack_cavalry
+		required_missions = { cavalry_revival } #None
+		trigger = {
+			trade_goods_produced_amount = {
+				trade_goods = iron
+				amount = 4
+			}
+		}
+		effect = {
+				add_country_modifier = {
+					name = iron_guard
+					duration = -1
+				}
+				country_event = {id=flavor_aln.1}
+		}
+	}
+}
+
+	military_tre_2_branching= {
+			slot = 1
+			generic = no
+			ai = yes
+			potential = {
+      OR = {
+        tag = HNS
+        was_tag = HNS
+        tag = ALN
+        was_tag = ALN
+        tag = KIP
+        was_tag = KIP
+        tag = KHZ
+        was_tag = KHZ
+        tag = KAZ
+        was_tag = KAZ
+        tag = GOL
+        was_tag = GOL
+      }
+			NOT = {	has_country_flag = alan_full_cav }
+			NOT = {	has_country_flag = alan_fire_cav }
+				NOT = { map_setup = map_setup_random }
+			}
+			has_country_shield = yes
+
+			branching_mil = {
+				icon = mission_unknown_mission
+				required_missions = { choc_cavalery } #None
+				position = 3
+				trigger = {
+						has_country_flag = alan_fire_cav
+						has_country_flag = alan_full_cav
+					}
+				effect = {
+							#tooltip
+				}
+			}
+		}
+
+		military_tree_full_cav = {
+			slot = 1
+			generic = no
+			ai = yes
+			potential = {
+      OR = {
+        tag = HNS
+        was_tag = HNS
+        tag = ALN
+        was_tag = ALN
+        tag = KIP
+        was_tag = KIP
+        tag = KHZ
+        was_tag = KHZ
+        tag = KAZ
+        was_tag = KAZ
+        tag = GOL
+        was_tag = GOL
+      }
+				has_country_flag = alan_full_cav
+				NOT = { map_setup = map_setup_random }
+			}
+			has_country_shield = yes
+
+				The_horse_to_the_death = {
+					icon = mission_control_the_ganges_delta
+					required_missions = { choc_cavalery } #None
+					trigger = {
+						is_year = 1530
+						num_of_cavalry = 20
+						}
+					effect{
+							add_country_modifier = {
+								name = to_the_end_with_cavalty
+								duration = -1
+							}
+					}
+				}
+			}
+
+Arbre_militaire{
+			slot = 1
+			generic = no
+			ai = yes
+			potential = {
+      OR = {
+        tag = HNS
+        was_tag = HNS
+        tag = ALN
+        was_tag = ALN
+        tag = KIP
+        was_tag = KIP
+        tag = KHZ
+        was_tag = KHZ
+        tag = KAZ
+        was_tag = KAZ
+        tag = GOL
+        was_tag = GOL
+      }
+				has_country_flag = alan_fire_cav
+				NOT = { map_setup = map_setup_random }
+			}
+			has_country_shield = yes
+				Fire_adaptation = {
+					icon = mission_break_sicily
+						required_missions = { choc_cavalery } #None
+						position = 1
+					trigger = {
+						is_year = 1530
+						num_of_cavalry = 20
+						}
+					effect = {
+							add_country_modifier = {
+								name = fire_is_stronger_than_horses
+								duration = -1
+							}
+					}
+				}
+	}
+
+
+economic_tree_steppe{
+			slot = 5
+			generic = no
+			ai = yes
+			potential = {
+      OR = {
+        tag = HNS
+        was_tag = HNS
+        tag = ALN
+        was_tag = ALN
+        tag = KIP
+        was_tag = KIP
+        tag = KHZ
+        was_tag = KHZ
+        tag = KAZ
+        was_tag = KAZ
+        tag = GOL
+        was_tag = GOL
+      }
+				NOT = { map_setup = map_setup_random }
+			}
+			has_country_shield = yes
+
+		sedentarization = {
+				icon = mission_extent_yasak_to_the_east
+					required_missions = {  } #None
+				position = 1
+				trigger = {
+					num_of_cities = 15
+				}
+				effect{
+					add_country_modifier = {
+						name = sedentarization_aln
+						duration = -1
+					}
+					random_owned_province = {
+						add_base_tax = 2
+						add_base_manpower = 2
+						add_base_production = 2
+					}
+					random_owned_province = {
+						add_base_tax = 2
+						add_base_manpower = 2
+						add_base_production = 2
+					}
+					random_owned_province = {
+						add_base_tax = 2
+						add_base_manpower = 2
+						add_base_production = 2
+					}
+					random_owned_province = {
+						add_base_tax = 2
+						add_base_manpower = 2
+						add_base_production = 2
+					}
+				}
+			}
+
+			silk_trade = {
+				icon = mission_dominate_persian_gulf
+				required_missions = { sedentarization } #None
+				position = 2
+				trigger = {
+					is_year = 1500
+					trade_goods_produced_amount = {
+						trade_goods = silk
+						amount = 4
+					}
+					425 = { #Dagestan
+						trade_share = {
+						country = ROOT
+						share = 25
+						}
+					}
+				}
+				effect = {
+					every_owned_province = {
+						limit = {
+						trade_goods = iron
+						}
+						add_province_modifier = {
+							name = iron_trade
+							duration = -1
+						}
+					}
+				}
+			}
+
+				Trade_master = {
+					icon = the_shape_of_trades_to_come
+						required_missions = { silk_trade } #None
+						position = 3
+					trigger = {
+						is_year = 1550
+						has_institution = global_trade
+						419 = { #Yerevan
+							trade_share = {
+								country = ROOT
+								share = 50
+							}
+						}
+						464 = { #Astrakhan
+							trade_share = {
+								country = ROOT
+								share = 50
+							}
+						}
+						4341 = { #Persia
+							trade_share = {
+								country = ROOT
+								share = 25
+							}
+						}
+					}
+					effect = {
+						add_country_modifier = {
+							name = mastery_of_trade
+							duration = -1
+						}
+					}
+				}
+
+					Early_industrialization = {
+						icon = mission_industrialize_bengal
+							required_missions = { Trade_master } #None
+							position = 4
+						trigger = {
+							is_year = 1650
+							has_institution = manufactories
+							workshop = 10
+							num_of_owned_provinces_with = {
+								has_manufactory_trigger = yes
+								value = 3
+							}
+							}
+						effect{
+							add_country_modifier = {
+           			name = "Early_industrialization"
+           			duration = -1
+					 		}
+							2195 = {
+								change_trade_goods = wine
+							}
+							2208 = {
+								change_trade_goods = salt
+							}
+							2201 = {
+								change_trade_goods = silk
+							}
+							2197 = {
+								change_trade_goods = cloth
+							}
+							463 = {
+								change_trade_goods = glass
+							}
+							2416 = {
+								change_trade_goods = cloth
+							}
+						}
+				}
+		}
+
+
+			politics_tree_steppe = {
+				slot = 5
+				generic = no
+				ai = yes
+				potential = {
+        OR = {
+          tag = HNS
+          was_tag = HNS
+          tag = ALN
+          was_tag = ALN
+          tag = KIP
+          was_tag = KIP
+          tag = KHZ
+          was_tag = KHZ
+          tag = KAZ
+          was_tag = KAZ
+          tag = GOL
+          was_tag = GOL
+        }
+					NOT = { map_setup = map_setup_random }
+				}
+				has_country_shield = yes
+
+				Unification_of_the_tribes{
+					icon = mission_unite_the_princes
+					position = 1
+					trigger = {
+						NOT = {average_home_autonomy = 20}
+						horde_unity = 90
+						stability = 1
+					}
+					effect{
+						add_army_tradition = 15
+						add_yearly_manpower = 0.5
+						create_general = { tradition = 75 }
+						}
+					}
+
+					Divin_right_or_tribal_federation{
+						icon = mission_restore_kiev
+						required_missions = { Unification_of_the_tribes } #None
+						position = 2
+						trigger = {
+							is_year = 1550
+							num_of_provinces_in_states = 50
+							total_development = 300
+						}
+						effect = {
+							add_stability = 1
+							country_event = {id=flavor_aln.2}
+						}
+					}
+		}
+
+		political_tree_dummy{
+				slot = 5
+				generic = no
+				ai = yes
+				potential = {
+        OR = {
+          tag = HNS
+          was_tag = HNS
+          tag = ALN
+          was_tag = ALN
+          tag = KIP
+          was_tag = KIP
+          tag = KHZ
+          was_tag = KHZ
+          tag = KAZ
+          was_tag = KAZ
+          tag = GOL
+          was_tag = GOL
+        }
+				NOT = {	has_country_flag = republic_aln }
+				NOT = {	has_country_flag = divine_aln }
+					NOT = { map_setup = map_setup_random }
+				}
+				has_country_shield = yes
+				branching_pol_1{
+					icon = mission_unknown_mission
+					required_missions = { Divin_right_or_tribal_federation } #None
+					position = 7
+					trigger = {
+							has_country_flag = divine_aln
+							has_country_flag = republic_aln
+						}
+					effect = {
+						}
+				}
+				branching_pol_2{
+					icon = mission_unknown_mission
+					required_missions = { branching_pol_1 } #None
+					position = 8
+					trigger = {
+							has_country_flag = divine_aln
+							has_country_flag = republic_aln
+						}
+					effect = {
+						}
+				}
+		}
+
+		politics_tree_dip = {
+			slot = 5
+			generic = no
+			ai = yes
+			potential = {
+      OR = {
+        tag = HNS
+        was_tag = HNS
+        tag = ALN
+        was_tag = ALN
+        tag = KIP
+        was_tag = KIP
+        tag = KHZ
+        was_tag = KHZ
+        tag = KAZ
+        was_tag = KAZ
+        tag = GOL
+        was_tag = GOL
+      }
+				NOT = { map_setup = map_setup_random }
+				has_country_flag = republic_hns
+			}
+			Tribal_federalism{
+				icon = the_russian_campaign
+					required_missions = { Divin_right_or_tribal_federation } #None
+				position = 7
+				trigger = {
+					republican_tradition = 90
+				}
+				effect{
+						add_country_modifier = {
+						 name = alan_republic
+						 duration = -1
+					 }
+					}
+				}
+				the_pen_stronger_than_the_spear{
+					icon = mission_break_sicily
+						required_missions = { Tribal_federalism } #None
+					position = 8
+					trigger = {
+						is_year = 1700
+						diplomatic_reputation = 6
+					}
+					effect{
+						add_country_modifier = {
+						 name = civilized_alans
+						 duration = -1
+					 }
+					}
+			}
+		}
+
+		politics_tree_mil = {
+			slot = 5
+			generic = no
+			ai = yes
+			potential = {
+      OR = {
+        tag = HNS
+        was_tag = HNS
+        tag = ALN
+        was_tag = ALN
+        tag = KIP
+        was_tag = KIP
+        tag = KHZ
+        was_tag = KHZ
+        tag = KAZ
+        was_tag = KAZ
+        tag = GOL
+        was_tag = GOL
+      }
+				NOT = { map_setup = map_setup_random }
+				has_country_flag = divine_aln
+			}
+			Divin_right_monarchy = {
+				icon = letat_cest_moi
+					required_missions = { Divin_right_or_tribal_federation } #None
+				position = 7
+				trigger = {
+					current_age = age_of_absolutism
+				}
+				effect = {
+						add_country_modifier = {
+							name = divine_right
+							duration = -1
+						}
+					}
+				}
+
+				God_on_horse = {
+					icon = jageillonian_union
+						required_missions = { Divin_right_monarchy } #None
+					position = 8
+					trigger = {
+					is_year = 1700
+						has_global_modifier_value = {
+							which = cavalry_power
+							value = 0.5
+						}
+					}
+					effect = {
+						add_country_modifier = {
+							 name = os_bagatar
+							 duration = -1
+						}
+					}
+				}
+		}
+
+    path_villes_2 = {
+    	slot = 2
+    	generic = no
+    	ai = yes
+    	potential = {
+        OR = {
+          tag = HNS
+          was_tag = HNS
+          tag = ALN
+          was_tag = ALN
+          tag = KIP
+          was_tag = KIP
+          tag = KHZ
+          was_tag = KHZ
+          tag = KAZ
+          was_tag = KAZ
+          tag = GOL
+          was_tag = GOL
+        }
+      }
+    	has_country_shield = yes
+
+      knock_knock_knock = {
+        icon = end_the_schism
+        required_missions = {  }
+        position = 9
+        provinces_to_highlight = {
+          OR = {
+            province_id = 151
+          }
+          NOT = {Owned_by = ROOT}
+        }
+        trigger = {
+          151 = {controls = ROOT}
+        }
+        effect{
+          add_years_of_income = 2
+          add_legitimacy = 50
+          add_prestige = 50
+          add_stability = 1
+          add_army_tradition = 25
+          add_mil_power = 200
+          add_dip_power = 200
+          add_adm_power = 200
+          add_country_modifier = {
+               name = "Constantinople_sacked"
+               duration = -1
+          }
+        }
+      }
+    }
+
+    path_villes_3 = {
+    	slot = 3
+    	generic = no
+    	ai = yes
+    	potential = {
+        OR = {
+          tag = HNS
+          was_tag = HNS
+          tag = ALN
+          was_tag = ALN
+          tag = KIP
+          was_tag = KIP
+          tag = KHZ
+          was_tag = KHZ
+          tag = KAZ
+          was_tag = KAZ
+          tag = GOL
+          was_tag = GOL
+        }
+      }
+    	has_country_shield = yes
+
+      hello_there = {
+        icon = new_st_peters_basilica
+        required_missions = {}
+        position = 9
+        provinces_to_highlight = {
+          OR = {
+            province_id = 118
+          }
+          NOT = {owned_by = ROOT}
+        }
+        trigger = {
+          118 = {controls = ROOT}
+        }
+        effect = {
+          add_years_of_income = 2
+          add_legitimacy = 50
+          add_prestige = 50
+          add_stability = 1
+          add_army_tradition = 25
+          add_mil_power = 200
+          add_dip_power = 200
+          add_adm_power = 200
+          add_country_modifier = {
+               name = "Rome_sacked"
+               duration = -1
+          }
+        }
+      }
+    }
+
+    path_villes_4 = {
+    	slot = 4
+    	generic = no
+    	ai = yes
+    	potential = {
+        OR = {
+          tag = HNS
+          was_tag = HNS
+          tag = ALN
+          was_tag = ALN
+          tag = KIP
+          was_tag = KIP
+          tag = KHZ
+          was_tag = KHZ
+          tag = KAZ
+          was_tag = KAZ
+          tag = GOL
+          was_tag = GOL
+        }
+      }
+    	has_country_shield = yes
+
+    	surprise_dude = {
+    		icon = les_invalides
+    		required_missions = { }
+    		position = 9
+    		provinces_to_highlight = {
+    			OR = {
+    				province_id = 183
+    				}
+    			NOT = {owned_by = ROOT}
+    		}
+    		trigger = {
+    			183 = {controls = ROOT}
+    		}
+    		effect = {
+    			add_years_of_income = 2
+    			add_legitimacy = 50
+    			add_prestige = 50
+    			add_stability = 1
+    			add_army_tradition = 25
+    			add_mil_power = 200
+    			add_dip_power = 200
+    			add_adm_power = 200
+    			add_country_modifier = {
+               name = "Paris_sacked"
+               duration = -1
+    			}
+    		}
+    	}
+    }
