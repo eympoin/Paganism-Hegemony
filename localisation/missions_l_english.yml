@@ -2600,3 +2600,9 @@ edge_of_the_world_title:0 " To the edge of the known world"
 edge_of_the_world_desc:0 " We reach the edge of the known world, who know what's beyond ?"
 and_beyond_title:0 " And beyond !"
 and_beyond_desc:0 " We must find out what's beyond."
+
+#ModifierAlains
+
+Alan_return:0 "Alan's return"
+Protector_of_the_faith:0 " Protector of the faith"
+Steppe's_Limes:0 "Steppe's Limes"
