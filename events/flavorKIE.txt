@@ -5,7 +5,7 @@ country_event = {
 	id = flavor_kie.1
 	title = "flavor_kie.1.t"
 	desc = "flavor_kie.1.d"
-	picture = BATTLE_eventPicture
+	picture = DIPLOMACY_eventPicture
 	major = yes
 
 	is_triggered_only = yes
@@ -62,7 +62,7 @@ country_event = {
 	id = flavor_kie.2
 	title = "flavor_kie.2.t"
 	desc = "flavor_kie.2.d"
-	picture = BATTLE_eventPicture
+	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 
@@ -166,7 +166,7 @@ country_event = {
 		id = flavor_kie.6
 		title = "flavor_kie.6.t"
 		desc = "flavor_kie.6.d"
-		picture = BATTLE_eventPicture
+		picture = FEAST_eventPicture
 
 		is_triggered_only = yes
 
@@ -239,7 +239,7 @@ country_event = {
 		id = flavor_kie.7
 		title = "flavor_kie.7.t"
 		desc = "flavor_kie.7.d"
-		picture = BATTLE_eventPicture
+		picture = FEAST_eventPicture
 
 		is_triggered_only = yes
 
@@ -264,7 +264,7 @@ country_event = {
 			id = flavor_kie.8
 			title = "flavor_kie.8.t"
 			desc = "flavor_kie.8.d"
-			picture = BATTLE_eventPicture
+			picture = FEAST_eventPicture
 
 			is_triggered_only = yes
 
@@ -286,7 +286,7 @@ country_event = {
 				id = flavor_kie.9
 				title = "flavor_kie.9.t"
 				desc = "flavor_kie.9.d"
-				picture = BATTLE_eventPicture
+				picture = CONQUEST_eventPicture
 
 				is_triggered_only = yes
 
@@ -319,7 +319,7 @@ country_event = {
 			id = flavor_kie.10
 			title = "flavor_kie.10.t"
 			desc = "flavor_kie.10.d"
-			picture = BATTLE_eventPicture
+			picture = ASSASSINATION_eventPicture
 
 			is_triggered_only = yes
 

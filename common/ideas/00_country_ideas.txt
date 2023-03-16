@@ -11,7 +11,7 @@ start = {
 	warscore_cost_vs_other_religion = -0.20
 }
 bonus = {
-		manpower_in_true_faith_provinces= 0.10
+		manpower_in_true_faith_provinces= 0.15
 	}
 trigger = {
 	tag = KHZ
