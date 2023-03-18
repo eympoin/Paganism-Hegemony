@@ -93,7 +93,6 @@ central_path_kip = {
        name = "iron_exploitation"
        duration = -1
       }
-      #ajouterbonusdeprodsurcesprovinces
     }
   }
 
@@ -153,7 +152,6 @@ central_path_kip = {
       TUR = {
         exists = no
       }
-      #changerlaculture
     }
     effect = {
         add_stability = 1
@@ -181,7 +179,6 @@ central_path_kip = {
       add_adm_power = -100
       add_dip_power = -100
       add_mil_power = -100
-      #ajoutuncb
     }
   }
 
@@ -493,8 +490,6 @@ droit_path_kip = {
          name = "Endless_currency"
          duration = -1
       }
-      #enfaireunbonusciblé
-      #ajouteruneventbignegatifdanslefuture
     }
   }
 

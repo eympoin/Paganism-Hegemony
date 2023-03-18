@@ -234,14 +234,14 @@ economic_tree_steppe{
 				}
 			}
 
-			silk_trade = {
+			silk_route_trade = {
 				icon = mission_dominate_persian_gulf
 				required_missions = { sedentarization } #None
 				position = 2
 				trigger = {
 					is_year = 1500
 					trade_goods_produced_amount = {
-						trade_goods = silk
+						trade_goods = iron
 						amount = 4
 					}
 					425 = { #Dagestan
@@ -254,7 +254,7 @@ economic_tree_steppe{
 				effect = {
 					every_owned_province = {
 						limit = {
-						trade_goods = iron
+							trade_goods = iron
 						}
 						add_province_modifier = {
 							name = iron_trade
@@ -316,24 +316,75 @@ economic_tree_steppe{
            			name = "Early_industrialization"
            			duration = -1
 					 		}
-							2195 = {
-								change_trade_goods = wine
+							if = {
+								OR = {
+									tag = ALN
+									was_tag = ALN
+									}
+									2195 = {
+										change_trade_goods = wine
+									}
+									2208 = {
+										change_trade_goods = salt
+									}
+									2201 = {
+										change_trade_goods = silk
+									}
+									2197 = {
+										change_trade_goods = cloth
+									}
+									463 = {
+										change_trade_goods = glass
+									}
+									2416 = {
+										change_trade_goods = cloth
+									}
 							}
-							2208 = {
-								change_trade_goods = salt
+							else = {
+								random_owned_province = {
+									limit = {
+										trade_goods = livestock
+										development = 10
+									}
+									change_trade_goods = glass
+								}
+								random_owned_province = {
+									limit = {
+										trade_goods = livestock
+										development = 10
+									}
+									change_trade_goods = cloth
+								}
+								random_owned_province = {
+									limit = {
+										trade_goods = livestock
+										development = 10
+									}
+									change_trade_goods = cloth
+								}
+								random_owned_province = {
+									limit = {
+										trade_goods = livestock
+										development = 15
+									}
+									change_trade_goods = silk
+								}
+								random_owned_province = {
+									limit = {
+										trade_goods = livestock
+										development = 15
+									}
+									change_trade_goods = silk
+								}
+								random_owned_province = {
+									limit = {
+										trade_goods = livestock
+										development = 15
+									}
+									change_trade_goods = silk
+								}
 							}
-							2201 = {
-								change_trade_goods = silk
-							}
-							2197 = {
-								change_trade_goods = cloth
-							}
-							463 = {
-								change_trade_goods = glass
-							}
-							2416 = {
-								change_trade_goods = cloth
-							}
+
 						}
 				}
 		}

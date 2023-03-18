@@ -2413,3 +2413,8 @@ flavor_per_cw.221.t:0 "Mazandarani is asking us to defend them"
 flavor_per_cw.221.d:0 "The Mazandarani satrap seceded long ago from the Persian Empire but it hasn't stop them from trying to reclaim it. They just launch another invasion to recover their long lost land, assuming we won't interfere. The Mazandarani are begging us to intervene, what sould we do ?"
 flavor_per_cw.221.a:0 "We will protect them !"
 flavor_per_cw.221.b:0 "They will fight alone.""
+
+
+flavor_turkic.1.t:0 "Cultural Assimilation"
+flavor_turkic.1.d:0 "These people are fellow Nomads."
+flavor_turkic.1.a:0 "This is a good news !"

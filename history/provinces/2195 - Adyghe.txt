@@ -3,7 +3,7 @@
 owner = ALN
 controller = ALN
 culture = alan
-religion = tengri_pagan_reformed
+religion = zoroastrian
 capital = "Sochi"
 trade_goods = livestock
 hre = no
