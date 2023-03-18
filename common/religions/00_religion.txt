@@ -2356,6 +2356,13 @@ east_european{
       manpower_recovery_speed = 0.1
       advisor_pool = 1
     }
+    will_get_center = { #Refered to even for initial CoR Spawn
+      any_owned_province = {
+        can_have_center_of_reformation_trigger = {
+          RELIGION = slavic_reformed
+        }
+      }
+    }
     has_patriarchs = yes		# Uses patriarch authority
 
     orthodox_icons = {

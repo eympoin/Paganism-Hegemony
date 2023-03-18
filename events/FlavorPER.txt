@@ -951,12 +951,112 @@ country_event = {
 	is_triggered_only = yes
 	option = {#Protect
 		name = flavor_per_cw.72.a
-		ai_chance = { factor = 1 }
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					is_rival = ELM
+					is_enemy = ELM
+				}
+			}
+			modifier = {
+				factor = 0.25
+				NOT = {
+					has_opinion = {
+						who = ELM
+						value = 0
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				NOT = {
+					has_opinion = {
+						who = ELM
+						value = -50
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				NOT = {
+					has_opinion = {
+						who = ELM
+						value = -75
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				NOT = {
+					has_opinion = {
+						who = ELM
+						value = -100
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				NOT = {
+					has_opinion = {
+						who = ELM
+						value = -125
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				NOT = {
+					has_opinion = {
+						who = ELM
+						value = -150
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					has_opinion = {
+						who = ELM
+						value = -175
+					}
+				}
+			}
+		}
 		create_guarantee = ELM
 	}
 	option = {#Do not Protect
-		name = flavor_per_cw.72.a
-		ai_chance = { factor = 0 }
+		name = flavor_per_cw.72.b
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NOT = { is_rival = ELM }
+				NOT = { is_enemy = ELM }
+			}
+			modifier = {
+				factor = 0.25
+				has_opinion = {
+					who = ELM
+					value = 0
+				}
+			}
+			modifier = {
+				factor = 0.25
+				has_opinion = {
+					who = ELM
+					value = 50
+				}
+			}
+			modifier = {
+				factor = 0
+				has_opinion = {
+					who = ELM
+					value = 100
+				}
+			}
+		}
 		add_prestige = -10
 	}
 }
@@ -969,7 +1069,7 @@ country_event = {
 	picture = MILITARY_CAMP_eventPicture
 	is_triggered_only = yes
 	option = {#Protect
-		name = flavor_per_cw.72.a
+		name = flavor_per_cw.73.a
 		ai_chance = { factor = 1 }
 		declare_war_with_cb = {
 			who = ELM
@@ -2495,12 +2595,112 @@ country_event = {
 	is_triggered_only = yes
 	option = {#Protect
 		name = flavor_per_cw.221.a
-		ai_chance = { factor = 1 }
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					is_rival = TAB
+					is_enemy = TAB
+				}
+			}
+			modifier = {
+				factor = 0.25
+				NOT = {
+					has_opinion = {
+						who = TAB
+						value = 0
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				NOT = {
+					has_opinion = {
+						who = TAB
+						value = -50
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				NOT = {
+					has_opinion = {
+						who = TAB
+						value = -75
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				NOT = {
+					has_opinion = {
+						who = TAB
+						value = -100
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				NOT = {
+					has_opinion = {
+						who = TAB
+						value = -125
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				NOT = {
+					has_opinion = {
+						who = TAB
+						value = -150
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					has_opinion = {
+						who = TAB
+						value = -175
+					}
+				}
+			}
+		}
 		ARM = { join_all_defensive_wars_of = TAB }
 	}
 	option = {#Protect
-		name = flavor_per_cw.221.a
-		ai_chance = { factor = 0 }
+		name = flavor_per_cw.221.b
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NOT = { is_rival = TAB }
+				NOT = { is_enemy = TAB }
+			}
+			modifier = {
+				factor = 0.25
+				has_opinion = {
+					who = TAB
+					value = 0
+				}
+			}
+			modifier = {
+				factor = 0.25
+				has_opinion = {
+					who = TAB
+					value = 50
+				}
+			}
+			modifier = {
+				factor = 0
+				has_opinion = {
+					who = TAB
+					value = 100
+				}
+			}
+		}
 		add_prestige = -10
 	}
 }

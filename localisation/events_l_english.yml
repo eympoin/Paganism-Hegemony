@@ -2391,10 +2391,25 @@ flavor_kie.10.t:0 "The peaceful Slavic unification with $FROMCOUNTRY$"
 flavor_kie.10.d:0 "While everybody was eating peacefully a dozen of mad ( and armed) men entered the room, strangely there was no guards. These men did a slaughter and after they left the room we found that every Slavic king was dead. Everyone ? No, our King is still alive and we just found that all these kings said they gave their kingdoms to Kiev before dying. We will make them proud !"
 flavor_kie.10.a:0 "What a terrible story. Happy to see ou king alive, let's carry on."
 
-flavor_kie.9.t:0 "A tragic news just came"
+flavor_kie.9.t:0 "A Tragic News"
 flavor_kie.9.d:0 "What a terrible day, our king just died at the banquet. Kievan envoys said mad men entered the room and slayed many nobles. While we cry for our beloved King the envoy said the last words of our King were to give the lead of our destinies to Kiev. We will obey to his last words !"
 flavor_kie.9.a:0 "Let's enter a new era under Kievan rule as our King wanted."
 
-flavor_kip.1.t:0 "The end of abundance"
+flavor_kip.1.t:0 "The End of Abundance"
 flavor_kip.1.d:0 "Our economic mining policie allowed us to fullfil the crown chests but today we are going to pay the price of our errors. The insane increase of gold and silver circulation in our country slowly kicked an inflation crisis, but we were too focused on funding our wars to pay attention. Now, due to the inflation, our currency value totaly crashed. Very hard times await us and we begin to hear the discontents all aroud the country arming themselves, may Tengri protect us."
 flavor_kip.1.a:0 "Let's fight this crisis and those who want to destroy our country from the inside !"
+
+
+flavor_per_cw.72.t:0 "Elymais asked us for Help"
+flavor_per_cw.72.d:0 "Persia has a lot of probleme tight now and despite thse problems, they are trying to reclaim their old satrapy of Elymais. The Elymait envoys asked us for help to defend their independance. Their main point is that a weak Persia will be beneficial to us. Should we help them ?"
+flavor_per_cw.72.a:0 "We will protect them !"
+flavor_per_cw.72.b:0 "They will fight alone."
+
+flavor_per_cw.73.t:0 "The War is Here"
+flavor_per_cw.73.d:0 "It is time to reclaim Elymais !"
+flavor_per_cw.73.a:0 "This will be easy !"
+
+flavor_per_cw.221.t:0 "Mazandarani is asking us to defend them"
+flavor_per_cw.221.d:0 "The Mazandarani satrap seceded long ago from the Persian Empire but it hasn't stop them from trying to reclaim it. They just launch another invasion to recover their long lost land, assuming we won't interfere. The Mazandarani are begging us to intervene, what sould we do ?"
+flavor_per_cw.221.a:0 "We will protect them !"
+flavor_per_cw.221.b:0 "They will fight alone.""

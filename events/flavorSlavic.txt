@@ -190,6 +190,10 @@ country_event = {
 			name = efforts_to_convert
 			duration = 7300
 		}
+    capital_scope = {
+      change_religion = slavic_reformed
+      add_reform_center = slavic_reformed
+    }
 	}
 	option = {#WTf is this
 		name = flavor_slavs.5.b
