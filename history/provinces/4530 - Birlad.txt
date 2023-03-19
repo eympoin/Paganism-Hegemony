@@ -2,7 +2,7 @@
 
 owner = PEC
 controller = PEC
-culture = daco-romanian 
+culture = daco-romanian
 religion = Zalmoxianism
 capital = "Birlad"
 trade_goods = wine
@@ -12,6 +12,7 @@ base_production = 1
 base_manpower = 1
 is_city = yes
 add_core = PEC
+discovered_by = steppe_tech
 
 
 

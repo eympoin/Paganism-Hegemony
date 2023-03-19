@@ -30,3 +30,4 @@ discovered_by = slavic_tech
 discovered_by = semitic_tech
 discovered_by = persian_tech
 discovered_by = numidian_tech
+discovered_by = steppe_tech

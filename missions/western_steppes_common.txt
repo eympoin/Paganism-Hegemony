@@ -390,7 +390,6 @@ economic_tree_steppe{
 
 						}
 				}
-		}
 
 
 			politics_tree_steppe = {

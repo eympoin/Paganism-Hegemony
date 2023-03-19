@@ -822,3 +822,18 @@ production_efficiency = -0.05
 monthly_gold_inflation_modifier = 0.3
 global_unrest = 3
 }
+
+expulse_jews = {
+	development_cost = 0.1
+	global_tax_modifier = -0.1
+	production_efficiency = -0.1
+	global_missionary_strength = 0.03
+	missionary_maintenance_cost = -0.3
+}
+
+tolerate_jews = {
+	local_unrest = -3
+	trade_goods_size_modifier = 0.3
+	local_tax_modifier = 0.3
+	local_missionary_strength = -0.1
+}

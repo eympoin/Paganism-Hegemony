@@ -63,15 +63,15 @@ central_path_kip = {
     required_missions = {reverse_the_tide}
     position = 3
 		provinces_to_highlight = {
-      owned_by = GOL
+      owned_by = KHZ
     }
     trigger = {
-      GOL = {
+      KHZ = {
         exists = no
       }
     }
     effect = {
-      #eventlechoixdeskhazar
+      country_event = {id = flavor_kip.2}
     }
   }
 

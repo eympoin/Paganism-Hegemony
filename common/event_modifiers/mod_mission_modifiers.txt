@@ -8804,8 +8804,8 @@ Steppes_urbanization= {
 }
 
 Endless_currency= {
-  production_efficiency = 0.10
-  global_tax_modifier = 0.1
+  production_efficiency = 0.15
+  global_tax_modifier = 0.25
   inflation_reduction = -0.02
 }
 
