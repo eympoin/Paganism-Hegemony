@@ -295,7 +295,7 @@ path_droit{
 					NOT = { owned_by = ROOT }
 					NOT = {is_claim	= ROOT}
 				}
-    		add_permanen_claim = ROOT
+    		add_permanent_claim = ROOT
     	}
   	}
 	}

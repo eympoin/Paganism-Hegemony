@@ -49,7 +49,7 @@ branche_central = {
 		}
 	}
 
-	cross_the_don = {
+	cross_the_don_aln = {
 		icon = mission_advance_to_the_dnieper
 		required_missions = {Alania_return}
 		position = 2
@@ -83,13 +83,13 @@ branche_central = {
 				 name = "tribes_assimilation"
 				 duration = -1
 			}
-			prestige = 25
+			add_prestige = 25
 		}
 	}
 
-	take_back_our_steppes = {
+	take_back_our_steppes_aln = {
 		icon = mission_bengal_campaign
-		required_missions = { cross_the_don }
+		required_missions = { cross_the_don_aln }
 		position = 3
 		provinces_to_highlight = {
 		OR = {
@@ -135,26 +135,46 @@ branche_central = {
 				add_base_manpower = 2
 			}
 			saratov_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
 				add_permanent_claim = ROOT
 			}
 			tambov_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
 				add_permanent_claim = ROOT
 			}
 			azov_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
 				add_permanent_claim = ROOT
 			}
 			zaporizhia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
 				add_permanent_claim = ROOT
 			}
 			yedisan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
 				add_permanent_claim = ROOT
 			}
 		}
 	}
 
-	steppes_master = {
+	steppes_master_aln = {
 		icon = mission_control_the_ganges_delta
-		required_missions = { take_back_our_steppes }
+		required_missions = { take_back_our_steppes_aln }
 		position = 4
 		trigger = {
 			TUR = {
@@ -178,9 +198,9 @@ branche_central = {
 		}
 	}
 
-	eradicate_the_red_monster{
+	eradicate_the_red_monster_aln{
 		icon = mission_subdue_rajputana
-		required_missions = { steppes_master }
+		required_missions = { steppes_master_aln }
 		position = 5
 		provinces_to_highlight = {
 			OR = {
@@ -198,32 +218,18 @@ branche_central = {
 		}
 		effect = {
 			create_general = { tradition = 100 }
-			merv_area = {
-				type = all
-				owned_by = ROOT
-			}
-			kyzylkum_area = {
-				type = all
-				owned_by = ROOT
-			}
-			syr_darya_area = {
-				type = all
-				owned_by = ROOT
-			}
-			arys_area = {
-				type = all
-				owned_by = ROOT
-			}
-			khiva_area = {
-				type = all
-				owned_by = ROOT
+			every_province = {
+					limit = {
+						owned_by = TIM
+					}
+					add_permanent_claim = ROOT
 			}
 		}
 	}
 
-	the_greatest_horde_of_all_time = {
+	the_greatest_horde_of_all_time_aln = {
 		icon = mission_rajput_mansabdars
-		required_missions = { eradicate_the_red_monster }
+		required_missions = { eradicate_the_red_monster_aln }
 		position = 6
 		trigger = {
 			TIM = {
@@ -241,9 +247,9 @@ branche_central = {
 	old_friend = {
 		icon = mission_pf_soldier
 		required_missions = {
-		the_greatest_horde_of_all_time
+		the_greatest_horde_of_all_time_aln
 		Baku_ateshgah
-		Develop_our_infrastructure
+		Develop_our_infrastructure_aln
 		}
 		position = 7
 		provinces_to_highlight = {
@@ -366,8 +372,8 @@ branche_gauche = {
 			truce_with = ARM
 		}
 		effect = {
-			stability = 1
-			prestige = 25
+			add_stability = 1
+			add_prestige = 25
 			#ajoutereventvassalisationdeshuns
 		}
 	}
@@ -476,7 +482,7 @@ branche_droite = {
 		}
 	}
 
-	iron_trade_route = {
+	iron_trade_route_aln = {
 		icon = mission_dalaskogen
 		required_missions = { Deal_with_jews}
 		position = 3
@@ -484,7 +490,7 @@ branche_droite = {
 			owned_by = KHZ
 		}
 		trigger = {
-			marketplaces = 5
+			marketplace = 5
 			trade_goods_produced_amount = {
 				trade_goods = iron
 				amount = 4
@@ -504,7 +510,7 @@ branche_droite = {
 
 	Secure_eastern_border = {
 		icon = fortress_switzerland
-		required_missions = { iron_trade_route }
+		required_missions = { iron_trade_route_aln }
 		position = 4
 		provinces_to_highlight = {
 			OR = {
@@ -524,13 +530,13 @@ branche_droite = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "Steppe's Limes"
+				name = "steppe_limes"
 				duration = -1
 			}
 		}
 	}
 
-	find_currency = {
+	find_currency_aln = {
     icon = mission_entrepot_of_india
     required_missions = { Secure_eastern_border }
     position = 2
@@ -553,9 +559,9 @@ branche_droite = {
     }
   }
 
-	Develop_our_infrastructure = {
+	Develop_our_infrastructure_aln = {
     icon = mission_seize_north_sea_trade
-    required_missions = { find_currency}
+    required_missions = { find_currency_aln}
     position = 6
     trigger = {
       temple = 5

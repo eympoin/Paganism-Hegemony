@@ -317,10 +317,13 @@ economic_tree_steppe{
            			duration = -1
 					 		}
 							if = {
-								OR = {
-									tag = ALN
-									was_tag = ALN
+								limit = {
+									OR = {
+										tag = ALN
+										was_tag = ALN
+										}
 									}
+								}
 									2195 = {
 										change_trade_goods = wine
 									}
@@ -632,10 +635,10 @@ economic_tree_steppe{
           OR = {
             province_id = 151
           }
-          NOT = {Owned_by = ROOT}
+          NOT = {controlled_by = ROOT}
         }
         trigger = {
-          151 = {controls = ROOT}
+          151 = {controlled_by = ROOT}
         }
         effect{
           add_years_of_income = 2
@@ -684,10 +687,10 @@ economic_tree_steppe{
           OR = {
             province_id = 118
           }
-          NOT = {owned_by = ROOT}
+          NOT = {controlled_by = ROOT}
         }
         trigger = {
-          118 = {controls = ROOT}
+          118 = {controlled_by = ROOT}
         }
         effect = {
           add_years_of_income = 2
@@ -736,10 +739,10 @@ economic_tree_steppe{
     			OR = {
     				province_id = 183
     				}
-    			NOT = {owned_by = ROOT}
+    			NOT = {controlled_by = ROOT}
     		}
     		trigger = {
-    			183 = {controls = ROOT}
+    			183 = {controlled_by = ROOT}
     		}
     		effect = {
     			add_years_of_income = 2

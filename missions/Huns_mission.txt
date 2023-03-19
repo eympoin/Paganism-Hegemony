@@ -412,7 +412,7 @@ path_gauche = {
 		}
 	}
 
-	mare_nostrum = {
+	mare_nostrum_hns = {
     icon = renaissance_city
     required_missions = { caspian_trade }
     position = 6
@@ -460,7 +460,7 @@ path_gauche = {
 
 	eradicate_the_red_monster{
 		icon = mission_subdue_rajputana
-		required_missions = { mare_nostrum }
+		required_missions = { mare_nostrum_hns }
 		position = 7
 		provinces_to_highlight = {
 		}
@@ -526,6 +526,7 @@ path_gauche = {
 			}
 		}
 	}
+}
 
 droit_path = {
 	slot = 4
