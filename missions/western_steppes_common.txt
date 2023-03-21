@@ -24,8 +24,7 @@ military_tre_steppe{
 
 	cavalry_revival = {
 		icon = mission_break_the_tatar_yoke
-		required_missions = #None
-		position = 2
+		required_missions = {}
 		trigger = {
 			num_of_cavalry = 25
 		}
@@ -323,7 +322,6 @@ economic_tree_steppe{
 										was_tag = ALN
 										}
 									}
-								}
 									2195 = {
 										change_trade_goods = wine
 									}
@@ -390,6 +388,7 @@ economic_tree_steppe{
 
 						}
 				}
+			}
 
 
 			politics_tree_steppe = {

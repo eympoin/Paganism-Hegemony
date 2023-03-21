@@ -56,10 +56,10 @@ country_event = {
       culture_group = Oghuz
     }
     any_owned_province = {
-      OR = {
-        culture_group = Karluk
-        culture = bashkir
-      }
+      culture_group = Karluk
+      NOT = {culture = bulgar_nomadic}
+      NOT = {culture = avar}
+      NOT = {culture = pecheneg}
       NOT = { nationalism	= 1 }
       is_core = ROOT
     }
@@ -73,20 +73,20 @@ country_event = {
     ai_chance = { factor = 1 }
     trigger = {
       any_owned_province = {
-        OR = {
-          culture_group = Karluk
-          culture = bashkir
-        }
+        culture_group = Karluk
+        NOT = {culture = bulgar_nomadic}
+        NOT = {culture = avar}
+        NOT = {culture = pecheneg}
         NOT = { nationalism	= 1 }
         is_core = ROOT
       }
     }
     random_owned_province = {
       limit = {
-        OR = {
-          culture_group = Karluk
-          culture = bashkir
-        }
+        culture_group = Karluk
+        NOT = {culture = bulgar_nomadic}
+        NOT = {culture = avar}
+        NOT = {culture = pecheneg}
         NOT = { nationalism	= 1 }
         is_core = ROOT
       }
@@ -258,6 +258,9 @@ country_event = {
         NOT = {
           culture = karluk_culture
           culture = bulgar_volga
+          culture = bulgar_nomadic
+          culture = avar
+          culture = pecheneg
         }
       NOT = { nationalism	= 1 }
       is_core = ROOT
@@ -276,6 +279,9 @@ country_event = {
           NOT = {
             culture = karluk_culture
             culture = bulgar_volga
+            culture = bulgar_nomadic
+            culture = avar
+            culture = pecheneg
           }
         NOT = { nationalism	= 1 }
         is_core = ROOT
@@ -287,6 +293,9 @@ country_event = {
           NOT = {
             culture = karluk_culture
             culture = bulgar_volga
+            culture = bulgar_nomadic
+            culture = avar
+            culture = pecheneg
           }
         NOT = { nationalism	= 1 }
         is_core = ROOT

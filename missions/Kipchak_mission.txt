@@ -101,8 +101,13 @@ central_path_kip = {
     required_missions = {iron_trade_route}
     position = 5
     trigger = {
-      is_enemy = TUR
-      army_size = TUR
+      OR = {
+				AND = {
+					is_enemy = TUR
+	      	army_size = TUR
+					}
+					NOT = {exists = TUR}
+			}
       total_development = 200
     }
     effect = {
