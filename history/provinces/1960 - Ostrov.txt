@@ -2,7 +2,7 @@
 
 owner = IGR
 controller = IGR
-culture = karelian
+culture = ingrian
 religion = suomenusko
 hre = no
 base_tax = 2

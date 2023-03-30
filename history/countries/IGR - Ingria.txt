@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 government_rank = 1
 technology_group = slavic_tech
 religion = suomenusko
-primary_culture = karelian
+primary_culture = ingrian
 capital = 274
 
 1429.1.1 = {
