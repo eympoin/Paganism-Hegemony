@@ -3,7 +3,10 @@ osef_kie{
 	generic = no
 	ai = yes
 	potential = {
-		tag = KIE
+		OR = {
+			tag = KIE
+			was_tag = KIE
+		}
 	}
 	has_country_shield = yes
 }
@@ -13,7 +16,10 @@ osef_bis{
 		generic = no
 		ai = yes
 		potential = {
-			tag = KIE
+			OR = {
+				tag = KIE
+				was_tag = KIE
+			}
 		}
 		has_country_shield = yes
 }
@@ -23,7 +29,10 @@ main_path{
 	generic = no
 	ai = yes
 	potential = {
-		tag = KIE
+		OR = {
+			tag = KIE
+			was_tag = KIE
+		}
 	}
 	has_country_shield = yes
 
@@ -174,7 +183,10 @@ path_droit{
 	generic = no
 	ai = yes
 	potential = {
-		tag = KIE
+		OR = {
+			tag = KIE
+			was_tag = KIE
+		}
 	}
 	has_country_shield = yes
 
@@ -378,7 +390,10 @@ path_gauche_kie = {
 		generic = no
 		ai = yes
 		potential = {
-			tag = KIE
+			OR = {
+				tag = KIE
+				was_tag = KIE
+			}
 		}
 		has_country_shield = yes
 
@@ -496,7 +511,10 @@ path_ultime{
 	generic = no
 	ai = yes
 	potential = {
-		tag = KIE
+		OR = {
+			tag = KIE
+			was_tag = KIE
+		}
 	}
 	has_country_shield = yes
 
