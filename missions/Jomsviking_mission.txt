@@ -1,0 +1,23 @@
+Jomsviking_1_1 = {
+  slot = 1
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = JOM
+      was_tag = JOM
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  control_of_durres = {
+    icon = capture_adriatic_ports
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+}
