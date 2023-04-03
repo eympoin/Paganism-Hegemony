@@ -9,10 +9,342 @@ Jomsviking_1_1 = {
     }
     NOT = { map_setup = map_setup_random }
   }
-  control_of_durres = {
+  valkyries_of_odin = {
     icon = capture_adriatic_ports
     required_missions = {}
     position = 1
+    provinces_to_highlight = {
+    }
+    trigger = {
+      #current_war_losses
+    }
+    effect = {
+    #more manpwoer female related bonus
+    #unique units
+    }
+  }
+  warriors_of_thor = {
+    icon = capture_adriatic_ports
+    required_missions = {}
+    provinces_to_highlight = {
+    }
+    trigger = {
+				check_variable = {
+					which = num_won_battles
+					value = 20
+			}
+      #thor's berg
+    }
+    effect = {
+      #improve schock damage
+    }
+  }
+  seidhr_of_Freya = {
+    icon = capture_adriatic_ports
+    required_missions = {}
+    provinces_to_highlight = {
+    }
+    trigger = {
+     # clergy loyalty + influence + religious unity
+    }
+    effect = {
+      #decision unlock curse ennemies or bless allies/self
+    }
+  }
+  justice_of_tyr = {
+    icon = capture_adriatic_ports
+    required_missions = {}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      #tribunal
+    }
+    effect = {
+      # stability enclined bonus
+    }
+  }
+  eyes_of_heimdall = {
+    icon = capture_adriatic_ports
+    required_missions = {}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      #fort + defender of the faith
+    }
+    effect = {
+      #unlock decision to remove fow against an ennemy
+    }
+  }
+  sailors_of_njord = {
+    icon = capture_adriatic_ports
+    required_missions = {}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      #discover all the oceans
+    }
+    effect = {
+      #attrition reduction for fleets
+    }
+  }
+  spy_of_loki = {
+    icon = capture_adriatic_ports
+    required_missions = {}
+    provinces_to_highlight = {
+    }
+    trigger = {
+     # spy network in 3 countries +
+    }
+    effect = {
+      # unlock a new diplomatic action to assassinate the king of someone else
+    }
+  }
+  freyr_prosperity = {
+    icon = capture_adriatic_ports
+    required_missions = {}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      #have the richest city of the world
+    }
+    effect = {
+     #bonus on this city
+    }
+  }
+  survive_skadi_finbullvetr = {
+    icon = capture_adriatic_ports
+    required_missions = {}
+    provinces_to_highlight = {
+    }
+    trigger = {
+      # the great icelandic volcanic eruption happenned
+    }
+    effect = {
+      # prepare for ragnarok, military bonus
+    }
+  }
+
+}
+
+
+Jomsviking_1_3 = {
+  slot = 3
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = JOM
+      was_tag = JOM
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  prepare_first_great_hjaldr = {
+    icon = capture_adriatic_ports
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  first_great_hjaldr = {
+    icon = capture_adriatic_ports
+    required_missions = {prepare_first_great_hjaldr norse_diplomacy}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  prepare_second_great_hjaldr = {
+    icon = capture_adriatic_ports
+    required_missions = {first_great_hjaldr}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  second_great_hjaldr = {
+    icon = capture_adriatic_ports
+    required_missions = {prepare_second_great_hjaldr}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  prepare_third_great_hjaldr = {
+    icon = capture_adriatic_ports
+    required_missions = {second_great_hjaldr}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  third_great_hjaldr = {
+    icon = capture_adriatic_ports
+    required_missions = {prepare_third_great_hjaldr}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  land_of_the_aesir = {
+    icon = capture_adriatic_ports
+    required_missions = {third_great_hjaldr}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+}
+Jomsviking_1_4 = {
+  slot = 4
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = JOM
+      was_tag = JOM
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  norse_diplomacy = {
+    icon = capture_adriatic_ports
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  convert_or_colonize = {
+    icon = capture_adriatic_ports
+    required_missions = {first_great_hjaldr}
+    provinces_to_highlight = {
+    }
+    position = 3
+    trigger = {
+    }
+    effect = {
+    }
+  }
+}
+
+Jomsviking_1_5 = {
+  slot = 5
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = JOM
+      was_tag = JOM
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  vinlandic_expedition = {
+    icon = capture_adriatic_ports
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  reunification_of_the_norse = {
+    icon = capture_adriatic_ports
+    required_missions = {vinlandic_expedition}
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+
+}
+
+Jomsviking_1_5_dummy = {
+  slot = 5
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = JOM
+      was_tag = JOM
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  dummy_5_3 = {
+    icon = mission_unknown_mission
+    required_missions = {reunification_of_the_norse}
+    position = 3
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+}
+
+Jomsviking_1_5_cool = {
+  slot = 5
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = JOM
+      was_tag = JOM
+    }
+    NOT = { map_setup = map_setup_random }
+    has_country_flag = trade_in_america
+  }
+  trade_natives = {
+    icon = capture_adriatic_ports
+    required_missions = {reunification_of_the_norse}
+    position = 3
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+}
+
+Jomsviking_1_5_not_cool = {
+  slot = 5
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = JOM
+      was_tag = JOM
+    }
+    NOT = { map_setup = map_setup_random }
+    has_country_flag = spread_thor_word_america
+  }
+  spread_thor_hammer = {
+    icon = capture_adriatic_ports
+    required_missions = {reunification_of_the_norse}
+    position = 3
     provinces_to_highlight = {
     }
     trigger = {
