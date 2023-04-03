@@ -37,3 +37,4 @@ add_local_autonomy = 25
 	add_core = KNG
 	remove_core = JNN 
 } #Rise of the Wattara kingdom of Seku
+discovered_by = numidian_tech

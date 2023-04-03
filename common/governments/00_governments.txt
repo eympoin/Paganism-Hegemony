@@ -21,6 +21,7 @@ monarchy = {
 				indep_cuicide
 				elective_monarchy
 				iqta
+				steppe_absolutism
 				ottoman_government
 				prussian_monarchy
 				austrian_dual_monarchy
@@ -360,6 +361,7 @@ republic = {
 		carthaginian_republic_centralize_legacy
 		carthaginian_republic_decentralize_legacy
 		athenian_republic
+		steppe_republic
 	}
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {

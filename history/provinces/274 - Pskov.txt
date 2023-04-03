@@ -2,7 +2,7 @@
 
 owner = IGR
 controller = IGR
-culture = karelian
+culture = ingrian
 religion = suomenusko
 hre = no
 base_tax = 5
@@ -23,3 +23,9 @@ discovered_by = eastern
 extra_cost = 8
 center_of_trade = 1
 
+
+discovered_by = roman_tech
+discovered_by = germanic_tech
+discovered_by = celtic_tech
+discovered_by = slavic_tech
+discovered_by = numidian_tech

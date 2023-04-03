@@ -32,3 +32,7 @@ discovered_by = ottoman
 1613.1.1 = { discovered_by = NED } # The Dutch arrived
 1631.1.1 = { unrest = 5 } # Rebellion against Mataram rule
 1636.1.1 = { unrest = 0 }
+
+discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

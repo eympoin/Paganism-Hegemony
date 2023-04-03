@@ -37,3 +37,5 @@ discovered_by = sub_saharan
 	capital = "São Paulo de Luanda"
 } # A Brazilian-Portuguese expedition expelled the Dutch
 1654.1.1 = { remove_core = NED } # The last Dutch outpost is conquered
+
+discovered_by = numidian_tech

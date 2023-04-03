@@ -29,3 +29,5 @@ center_of_trade = 1
 	add_core = QNG
 }
 1662.1.1 = { remove_core = MNG }
+
+discovered_by = steppe_tech

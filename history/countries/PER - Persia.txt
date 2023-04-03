@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = persian_empire_decen
 primary_culture = persian
 religion = zoroastrian
-technology_group = muslim
+technology_group = persian_tech
 capital = 414
 
 1400.1.1 = {

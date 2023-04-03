@@ -8,3 +8,8 @@ discovered_by = nomad_group
 discovered_by = KAS
 1622.1.1 = { discovered_by = RUS }
 
+
+discovered_by = greek_tech
+discovered_by = steppe_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

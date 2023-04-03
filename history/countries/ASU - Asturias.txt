@@ -2,5 +2,5 @@ government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = asturian
 religion = celt
-technology_group = western
+technology_group = celtic_tech
 capital = 207 #Asturias

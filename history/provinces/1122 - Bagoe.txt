@@ -25,3 +25,5 @@ add_local_autonomy = 25
 	add_core = KNG
 	remove_core = MAL
 } #Collapse of Mali after Jenné
+
+discovered_by = numidian_tech

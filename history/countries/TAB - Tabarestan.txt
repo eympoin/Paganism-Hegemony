@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = iqta
 primary_culture = mazandarani
 religion = zoroastrian
-technology_group = muslim
+technology_group = persian_tech
 capital = 426 # Mazandaran
 religious_school = jafari_school
 
@@ -91,7 +91,7 @@ religious_school = jafari_school
 		mil = 2
 	}
 }
- 
+
 1476.1.1 = {
 	monarch = {
 		name = "Hasan" #Second time
@@ -100,7 +100,7 @@ religious_school = jafari_school
 		dip = 2
 		mil = 2
 	}
-} 
+}
 
 1477.1.1 = {
 	monarch = {
@@ -177,7 +177,7 @@ religious_school = jafari_school
 	}
 }
 
-1500.1.1 = { 
+1500.1.1 = {
 	monarch = {
 		name = "Kamal al-Din II"
 		dynasty = "Marashi"
@@ -187,7 +187,7 @@ religious_school = jafari_school
 	}
 }
 
-1503.1.1 = { 
+1503.1.1 = {
 	monarch = {
 		name = "Abd al-Karim II"
 		dynasty = "Marashi"
@@ -197,7 +197,7 @@ religious_school = jafari_school
 	}
 }
 
-1526.1.1 = { 
+1526.1.1 = {
 	monarch = {
 		name = "Muhammad ibn Rustam Ruzafzun"
 		dynasty = "Marashi"
@@ -207,7 +207,7 @@ religious_school = jafari_school
 	}
 }
 
-1546.1.1 = { 
+1546.1.1 = {
 	monarch = {
 		name = "Agha Muhammad ibn Rustam Ruzafzun"
 		dynasty = "Marashi"
@@ -217,7 +217,7 @@ religious_school = jafari_school
 	}
 }
 
-1550.1.1 = { 
+1550.1.1 = {
 	monarch = {
 		name = "Abd Allah II"
 		dynasty = "Marashi"
@@ -227,7 +227,7 @@ religious_school = jafari_school
 	}
 }
 
-1561.1.1 = { 
+1561.1.1 = {
 	monarch = {
 		name = "Murad I"
 		dynasty = "Marashi"
@@ -237,7 +237,7 @@ religious_school = jafari_school
 	}
 }
 
-1576.1.1 = { 
+1576.1.1 = {
 	monarch = {
 		name = "Mir Mahmud Khan"
 		dynasty = "Marashi"
@@ -247,7 +247,7 @@ religious_school = jafari_school
 	}
 }
 
-1578.1.1 = { 
+1578.1.1 = {
 	monarch = {
 		name = "Mir Ali Khan"
 		dynasty = "Marashi"
@@ -257,7 +257,7 @@ religious_school = jafari_school
 	}
 }
 
-1579.1.1 = { 
+1579.1.1 = {
 	monarch = {
 		name = "Khayr al-Nisa"
 		dynasty = "Marashi"
@@ -268,7 +268,7 @@ religious_school = jafari_school
 	}
 }
 
-1580.1.1 = { 
+1580.1.1 = {
 	monarch = {
 		name = "Murad II"
 		dynasty = "Marashi"
@@ -281,7 +281,7 @@ religious_school = jafari_school
 
 #1596 Annexation
 
-#Paduspanids were not as significant as other dynasties at this time and so we are deprecating them. 
+#Paduspanids were not as significant as other dynasties at this time and so we are deprecating them.
 
 # 1379.5.1 = {
 	# monarch = {

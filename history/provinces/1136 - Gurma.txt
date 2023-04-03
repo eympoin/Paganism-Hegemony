@@ -31,3 +31,5 @@ discovered_by = sub_saharan
 1600.1.1 = { native_size = 25 discovered_by = MOR } 
 1700.1.1 = { native_size = 30 } # slow stabilization with rise of Gulmanceba state
 1750.1.1 = { native_size = 40 }
+
+discovered_by = numidian_tech

@@ -1,6 +1,6 @@
 government = monarchy
 add_government_reform = feudalism_reform
-technology_group = western
+technology_group = germanic_tech
 religion = germanic
 primary_culture = east-francian
 capital = 67	# Nurnberg

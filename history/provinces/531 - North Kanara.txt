@@ -46,3 +46,8 @@ center_of_trade = 1
 	add_core = GBR
 }
 1818.6.3 = { remove_core = MAR }
+
+discovered_by = greek_tech
+discovered_by = steppe_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

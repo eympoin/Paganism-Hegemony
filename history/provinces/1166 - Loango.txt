@@ -17,3 +17,5 @@ discovered_by = sub_saharan
 
 
 1481.1.1 = { discovered_by = POR } # Bartolomeu Dias
+
+discovered_by = numidian_tech

@@ -42,3 +42,8 @@ discovered_by = chinese
 	culture = marathi
 }	#Maratha expansion
 #1743 Marathas take control over Nagpur kingdom
+
+discovered_by = greek_tech
+discovered_by = steppe_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

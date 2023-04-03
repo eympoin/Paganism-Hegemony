@@ -41,3 +41,7 @@ discovered_by = ottoman
 	add_core = MTR
 	remove_core = BLM
 } # Mataram conquered Surabaya after several years of struggle
+
+discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

@@ -32,3 +32,5 @@ discovered_by = KMC
 1654.1.1 = { unrest = 3 } # Okhotsk fort burned
 1655.1.1 = { unrest = 0 }
 1668.1.1 = { add_core = RUS }
+
+discovered_by = steppe_tech

@@ -33,3 +33,7 @@ center_of_trade = 1
 1751.1.1 = { owner = MBA controller = MBA add_core = MBA remove_core = OMA } # Kilwa governors reject authority of Bu Sa'id Sultans
 1760.1.1 = { trade_goods = slaves } # Rise of slave trade with Mauritius and Reunion
 1785.1.1 = { owner = OMA controller = OMA add_core = OMA } # Oman takes over
+
+discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

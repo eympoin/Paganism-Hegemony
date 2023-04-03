@@ -3,14 +3,14 @@ add_government_reform = iqta
 government_rank = 1
 primary_culture = kurdish
 religion = zoroastrian
-technology_group = muslim
+technology_group = persian_tech
 capital = 4295 #Hisn Kayfa
 add_accepted_culture = al_suryah_arabic
 religious_school = shafii_school
 
 1378.1.1 = {
 	monarch = {
-		name = "al-‘Adil Fakhr al-Din"
+		name = "al-ï¿½Adil Fakhr al-Din"
 		dynasty = "Ayyubid"
 		adm = 2
 		dip = 2
@@ -68,4 +68,3 @@ religious_school = shafii_school
 		mil = 2
 	}
 }
-

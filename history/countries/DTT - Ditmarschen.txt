@@ -1,7 +1,7 @@
 government_rank = 1
 government = republic
-add_government_reform = peasants_republic #Achtundvierziger 
-technology_group = western
+add_government_reform = peasants_republic #Achtundvierziger
+technology_group = germanic_tech
 religion = norse_pagan_reformed
 primary_culture = hannoverian
 capital = 4141 #Ditmarschen
@@ -32,7 +32,7 @@ capital = 4141 #Ditmarschen
 		ADM = 4
 		MIL = 4
 	}
-	
+
 }
 
 

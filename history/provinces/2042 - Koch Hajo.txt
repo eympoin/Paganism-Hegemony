@@ -49,3 +49,8 @@ discovered_by = chinese
 	add_core = GBR
 	remove_core = MUG
 } # Battle of Plassey, British rule
+
+discovered_by = greek_tech
+discovered_by = steppe_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

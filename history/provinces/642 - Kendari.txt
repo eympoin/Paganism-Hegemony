@@ -60,3 +60,7 @@ discovered_by = ottoman
 		investor = NED
 	}
 } # Dutch control
+
+discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

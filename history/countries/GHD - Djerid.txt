@@ -3,7 +3,7 @@ add_government_reform = tribal_kingdom
 government_rank = 1
 primary_culture = berber_culture
 religion = berber
-technology_group = muslim
+technology_group = numidian_tech
 capital = 352	# Gafsa
 
 1440.1.1 = {

@@ -30,3 +30,7 @@ discovered_by = ottoman
 	add_core = ANN
 	remove_core = KHM
 } # Nguyen recovered the land
+
+discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

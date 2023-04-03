@@ -32,3 +32,5 @@ discovered_by = MOR
 1591.1.1 = { revolt = {} owner = MOR controller = MOR add_core = MOR } #occupied by Moroccans during march into Niger valley
 1618.1.1 = { owner = TMB controller = TMB add_core = TMB remove_core = MOR } #Moroccans no longer appoint governors, local Moroccans, the Arma, rule on their own (recycle TMB tag)
 1642.1.1 = { remove_core = SON } #Collapse of last vestiges of unity among Songhai
+
+discovered_by = numidian_tech

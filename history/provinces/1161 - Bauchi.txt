@@ -23,3 +23,5 @@ discovered_by = sub_saharan
 	add_core = SOK
 	is_city = yes
 } # The Fulani Empire
+
+discovered_by = numidian_tech

@@ -48,3 +48,8 @@ center_of_trade = 1
 	owner = GBR
 	add_core = GBR
 } #Fourth Anglo-Mysore War
+
+discovered_by = greek_tech
+discovered_by = steppe_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

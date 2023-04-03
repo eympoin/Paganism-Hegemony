@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = plutocratic_reform
 government_rank = 2
-technology_group = muslim
+technology_group = semitic_tech
 religion = zoroastrian
 primary_culture = gulf_arabic
 capital = 2999	# Ormuz Island

@@ -1,7 +1,7 @@
 government = tribal
 add_government_reform = steppe_horde
 government_rank = 1
-technology_group = nomad_group
+technology_group = steppe_tech
 religion = tengri_pagan_reformed
 secondary_religion = vajrayana
 primary_culture = mongol

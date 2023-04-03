@@ -30,3 +30,5 @@ discovered_by = sub_saharan
 	owner = AIR
 	controller = AIR
 } # Songahi defeat at Tondibi leaves Tuareg free
+
+discovered_by = numidian_tech

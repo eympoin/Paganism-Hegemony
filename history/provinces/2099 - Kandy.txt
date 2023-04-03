@@ -28,3 +28,7 @@ add_province_triggered_modifier = theravada_kotte
 	controller = GBR
 	remove_core = NED
 } # Treaty of Amiens
+
+discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

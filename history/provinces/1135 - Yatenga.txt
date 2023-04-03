@@ -28,3 +28,5 @@ discovered_by = sub_saharan
 1781.1.1 = { capital = "Wahiguya" native_size = 70 } #New capital built by Kango
 1788.1.1 = { unrest = 6 } #Civil War on death of Kango as daughter tries to inherit power
 1797.1.1 = { unrest = 0 } #Naaba Saagha restores political stability in Yatenga
+
+discovered_by = numidian_tech

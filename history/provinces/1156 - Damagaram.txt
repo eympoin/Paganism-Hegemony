@@ -19,3 +19,5 @@ discovered_by = sub_saharan
 1736.1.1 = { capital = "Zinder" } #shift of political center as a result of Mallam migrations
 1760.1.1 = { unrest = 7 } #Tuareg raids in wake of fall of Agades
 1804.1.1 = { discovered_by = SOK }
+
+discovered_by = numidian_tech

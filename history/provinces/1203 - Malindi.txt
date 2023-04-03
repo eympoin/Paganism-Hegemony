@@ -30,3 +30,7 @@ center_of_trade = 1
 1650.1.1 = { trade_goods = grain }
 1729.10.1 = { discovered_by = OMA owner = OMA controller = OMA } # Omanis establish direct control on way to occupy Mombasa
 1746.1.1 = { owner = MBA controller = MBA add_core = MBA } # Mazrui sultans establish dominance in region
+
+discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

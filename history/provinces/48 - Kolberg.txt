@@ -34,3 +34,13 @@ base_production = 4 }
 	remove_core = BRA
 }
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+
+discovered_by = greek_tech
+discovered_by = roman_tech
+discovered_by = steppe_tech
+discovered_by = germanic_tech
+discovered_by = celtic_tech
+discovered_by = slavic_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech
+discovered_by = numidian_tech

@@ -1,5 +1,5 @@
 government = monarchy
-technology_group = western
+technology_group = germanic_tech
 primary_culture = angle
 religion = germanic
 capital = 238 # London

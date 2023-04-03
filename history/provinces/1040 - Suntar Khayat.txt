@@ -30,3 +30,5 @@ discovered_by = KMC
 	trade_goods = fur
 } # Conquered by Russia
 1757.1.1 = { add_core = RUS }
+
+discovered_by = steppe_tech

@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = iqta
 primary_culture = yemeni_culture
 religion = ibadi
-technology_group = muslim
+technology_group = semitic_tech
 capital = 4280	# Taiz
 religious_school = shafii_school
 
@@ -135,8 +135,8 @@ religious_school = shafii_school
 
 1442.1.1 = {
 	heir = {
-		name = "Salâh ad-Din 'Amir"
-		monarch_name = "Salâh ad-Din 'Amir I"
+		name = "Salï¿½h ad-Din 'Amir"
+		monarch_name = "Salï¿½h ad-Din 'Amir I"
 		dynasty = "Tahirid"
 		birth_date = 1420.1.1
 		death_date = 1466.1.1

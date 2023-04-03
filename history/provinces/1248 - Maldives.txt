@@ -29,3 +29,6 @@ discovered_by = indian
 	owner = DGL
 	controller = DGL
 } # The Dutch are driven out by the British
+
+discovered_by = semitic_tech
+discovered_by = persian_tech

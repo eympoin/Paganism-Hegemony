@@ -24,3 +24,4 @@ discovered_by = sub_saharan
 	controller = KBO
 	add_core = KBO 
 } #Idris Katakarmabe retakes Kanem
+discovered_by = numidian_tech

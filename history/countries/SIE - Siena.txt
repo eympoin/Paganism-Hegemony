@@ -2,7 +2,7 @@ government = republic
 add_government_reform = oligarchy_reform
 government_rank = 1
 mercantilism = 25
-technology_group = western
+technology_group = roman_tech
 primary_culture = tuscan
 religion = deii
 capital = 117	# Siena
@@ -45,7 +45,7 @@ add_army_professionalism = 0.05
 		adm = 2
 	}
 }
-		
+
 1502.2.2 = {
 	monarch = {
 		name = "Cesare Borgia"

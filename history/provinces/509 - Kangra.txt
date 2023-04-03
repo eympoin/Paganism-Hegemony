@@ -30,3 +30,8 @@ discovered_by = chinese
 1707.5.12 = { discovered_by = GBR }
 1806.1.1 = { controller = NPL }
 1809.1.1 = { controller = KGR }
+
+discovered_by = greek_tech
+discovered_by = steppe_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

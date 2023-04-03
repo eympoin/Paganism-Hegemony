@@ -15,3 +15,5 @@ native_hostileness = 9
 discovered_by = sub_saharan
 extra_cost = 8
 center_of_trade = 1
+
+discovered_by = numidian_tech

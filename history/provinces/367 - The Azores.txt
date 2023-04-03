@@ -5,7 +5,7 @@ religion = deii
 capital = "The Azores"
 trade_goods = fish
 hre = no
-base_tax = 3 
+base_tax = 3
 base_production = 3
 base_manpower = 1
 
@@ -17,3 +17,9 @@ is_city = yes
 culture = lusitanian
 discovered_by = western
 
+discovered_by = greek_tech
+
+discovered_by = roman_tech
+discovered_by = germanic_tech
+discovered_by = celtic_tech
+discovered_by = numidian_tech

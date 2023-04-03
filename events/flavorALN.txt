@@ -1,0 +1,53 @@
+
+namespace = flavor_aln
+
+#alan military choice
+country_event = {
+  id = flavor_aln.1
+  title = flavor_aln.1.t
+  desc = flavor_aln.1.d
+  picture = COLONIZATION_eventPicture
+
+  is_triggered_only = yes
+
+  option = {#full_cav
+    name = flavor_aln.1.a
+    ai_chance = { factor = 1 }
+    set_country_flag = alan_full_cav
+    swap_non_generic_missions = yes
+  }
+  option = {#fire
+    name = flavor_aln.1.b
+    ai_chance = { factor = 1 }
+    set_country_flag = alan_fire_cav
+    swap_non_generic_missions = yes
+  }
+}
+
+#alan political choice
+
+country_event = {
+  id = flavor_aln.2
+  title = flavor_aln.2.t
+  desc = flavor_aln.2.d
+  picture = COLONIZATION_eventPicture
+
+  is_triggered_only = yes
+
+  option = {#republic
+    name = flavor_aln.2.a
+    ai_chance = { factor = 1 }
+    set_country_flag = republic_aln
+    change_government = republic
+    swap_non_generic_missions = yes
+    add_government_reform = steppe_republic
+  }
+  option = {#monarchy
+    name = flavor_aln.2.b
+    ai_chance = { factor = 1 }
+    set_country_flag = divine_aln
+    swap_non_generic_missions = yes
+    change_government = monarchy
+    add_government_reform = steppe_absolutism
+  }
+}

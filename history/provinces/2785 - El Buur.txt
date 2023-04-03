@@ -27,3 +27,7 @@ discovered_by = ottoman
 
 1555.1.1 = { owner = AJU controller = AJU } #Northern part of province no longer conrolled by ADA
 1650.1.1 = { owner = HOB controller = HOB remove_core = AJU }
+
+discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

@@ -12,6 +12,7 @@ country_event = {
       tag = ALB
       was_tag = ALB
     }
+    primary_culture = albanian
     any_owned_province = {
       OR = {
         culture = serbian
@@ -65,6 +66,7 @@ country_event = {
       tag = ALB
       was_tag = ALB
     }
+    primary_culture = albanian
     any_owned_province = {
       OR = {
         culture = dalmatian

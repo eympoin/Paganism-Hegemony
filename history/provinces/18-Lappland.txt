@@ -22,3 +22,8 @@ discovered_by = western
 	is_city = yes
 	trade_goods = fur
 }
+discovered_by = roman_tech
+discovered_by = germanic_tech
+discovered_by = celtic_tech
+discovered_by = slavic_tech
+discovered_by = numidian_tech

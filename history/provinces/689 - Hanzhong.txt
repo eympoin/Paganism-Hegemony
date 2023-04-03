@@ -39,3 +39,5 @@ discovered_by = nomad_group
 1796.1.1 = { revolt = { type = anti_tax_rebels size = 2 } controller = REB } # The White Lotus rebellion
 1800.1.1 = { revolt = {} }
 1804.1.1 = { controller = QNG }
+
+discovered_by = steppe_tech

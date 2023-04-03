@@ -3,7 +3,7 @@ add_government_reform = free_city
 primary_culture = pontic_greek
 add_accepted_culture = greek
 religion = theoi
-technology_group = eastern
+technology_group = greek_tech
 historical_friend = FEO
 capital = 330	# Trebizond
 fixed_capital = 330 # Cannot move capital away from this province & no power cost to move to it
@@ -31,7 +31,7 @@ fixed_capital = 330 # Cannot move capital away from this province & no power cos
 		mil = 1
 	}
 }
-		
+
 
 1417.10.29 = {
 	monarch = {
@@ -81,7 +81,7 @@ fixed_capital = 330 # Cannot move capital away from this province & no power cos
 		mil = 1
 	}
 }
-		
+
 
 1459.1.1 = {
 	monarch = {

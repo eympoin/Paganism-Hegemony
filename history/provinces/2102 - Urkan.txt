@@ -27,3 +27,5 @@ discovered_by = nomad_group
 	culture = russian
 	trade_goods = wool
 }
+
+discovered_by = steppe_tech

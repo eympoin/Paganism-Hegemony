@@ -4,7 +4,7 @@ government_rank = 1
 primary_culture = lithuanian
 historical_friend = LIT
 religion = romuva
-technology_group = eastern
+technology_group = slavic_tech
 capital = 1936
 
 1444.1.1 = {

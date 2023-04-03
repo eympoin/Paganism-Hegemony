@@ -1,6 +1,6 @@
 government = tribal
 add_government_reform = steppe_horde
-technology_group = nomad_group
+technology_group = steppe_tech
 religion = tengri_pagan_reformed
 primary_culture = oirats
 capital = 718
@@ -51,7 +51,8 @@ historical_rival = KHA
 		birth_date = 1393.1.1
 		leader = {
 			name = "Esen Taishi"
-			type = general
+			type = general
+
 			fire = 2
 			shock = 5
 			manuever = 5

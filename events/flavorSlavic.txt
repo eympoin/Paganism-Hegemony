@@ -1,0 +1,204 @@
+namespace = flavor_slavs
+
+country_event = {#uralic
+  id = flavor_slavs.1
+  title = flavor_slavs.1.t
+  desc = flavor_slavs.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    culture_group = east_slavic
+    any_owned_province = {
+     has_owner_religion = yes
+      OR = {
+        culture = uralic
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_slavs.1.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+       has_owner_religion = yes
+       OR = {
+         culture = uralic
+       }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = russian
+    }
+  }
+}
+
+country_event = {#karelian
+  id = flavor_slavs.2
+  title = flavor_slavs.1.t
+  desc = flavor_slavs.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    culture_group = east_slavic
+    any_owned_province = {
+     has_owner_religion = yes
+      OR = {
+        culture = karelian
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_slavs.1.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+       has_owner_religion = yes
+       OR = {
+         culture = karelian
+       }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = novgorodian
+    }
+  }
+}
+
+country_event = {#Turks
+  id = flavor_slavs.3
+  title = flavor_slavs.1.t
+  desc = flavor_slavs.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    culture_group = east_slavic
+    any_owned_province = {
+     has_owner_religion = yes
+      OR = {
+        culture = turkish
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 10
+  }
+
+  option = {
+    name = flavor_slavs.1.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+       has_owner_religion = yes
+       OR = {
+         culture = turkish
+       }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = ruthenian
+    }
+  }
+}
+
+country_event = {#nomads
+  id = flavor_slavs.4
+  title = flavor_slavs.1.t
+  desc = flavor_slavs.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    culture_group = east_slavic
+    any_owned_province = {
+     has_owner_religion = yes
+      OR = {
+        culture = mishary
+        culture = cuman
+        culture = kazani
+        culture = bulgar_volga
+        culture = khazar
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 5
+  }
+
+  option = {
+    name = flavor_slavs.1.a
+    ai_chance = { factor = 1 }
+    random_owned_province = {
+      limit = {
+       has_owner_religion = yes
+       OR = {
+         culture = mishary
+         culture = cuman
+         culture = kazani
+         culture = bulgar_volga
+         culture = khazar
+       }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = volgan
+    }
+  }
+}
+
+
+country_event = {
+	id = flavor_slavs.5
+	title = flavor_slavs.5.t
+	desc = flavor_slavs.5.d
+	picture = PROTESTANT_CATHOLIC_DEBATE_eventPicture
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	mean_time_to_happen = {
+		years = 10
+	}
+	major = yes
+
+
+	option = {#Reform the faith
+		name = flavor_slavs.5.a
+		ai_chance = { factor = 100 }
+		change_religion = slavic_reformed
+		add_legitimacy = -10
+		add_stability = -1
+		add_years_of_income = -1
+		add_country_modifier = {
+			name = efforts_to_convert
+			duration = 7300
+		}
+    capital_scope = {
+      change_religion = slavic_reformed
+      add_reform_center = slavic_reformed
+    }
+	}
+	option = {#WTf is this
+		name = flavor_slavs.5.b
+		ai_chance = { factor = 0 }
+		add_legitimacy = 10
+		add_prestige = 10
+	}
+}

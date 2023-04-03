@@ -886,7 +886,7 @@ flavor_ctg_col.6.t:0 "The protectorate of Auruma"
 flavor_ctg_col.6.d:0 "We have successfully established a trading outpost in this region, and developped our relations with the natives living there. These natives vowed loyalty to us by creating a protectorate that will be beneficial for our trading interest."
 flavor_ctg_col.6.a:0 "This is a good news !"
 
-flavor_ctg_col.7.t:0 "The protectorate of Atlantis"
+flavor_ctg_col.7.t:0 "The Protectorate of Atlantis"
 flavor_ctg_col.7.d:0 "We have successfully established a trading outpost in this region, and developped our relations with the natives living there. These natives vowed loyalty to us by creating a protectorate that will be beneficial for our trading interest."
 flavor_ctg_col.7.a:0 "This is a good news !"
 
@@ -2337,3 +2337,90 @@ flavor_asy.4.t:0 "Conquest of Antioch"
 flavor_asy.4.d:0 "The capital of Greek Syria is now ours with all its riches. What should we do with it ?"
 flavor_asy.4.a:0 "Raze it to the ground !"
 flavor_asy.4.b:0 "We still have a use for them"
+
+flavor_aln.1.t:0 "The future of our army"
+flavor_aln.1.d:0 "With the invention of fireweapons we face a choice, stay loyal to our traditions or taking full advantage of fireweapons ?"
+flavor_aln.1.a:0 "A true steppe warrior ride a horse, why should we insult our ancestores ?"
+flavor_aln.1.b:0 "If our people stick with his horses he will die with them and fade in the shadows of history, we need to change !"
+
+flavor_aln.2.t:0 "Running a modern state isn't an easy thing"
+flavor_aln.2.d:0 "Contacts with neighbouring kingdoms teached us new ways of government, should we change our political system to a more efficient one ?"
+flavor_aln.2.a:0 "In our society each free warrior has his word to say, Republic is the best way to govern our people"
+flavor_aln.2.b:0 "We lost countless occasions of expanding due to internal crisis and endless debates. We need stability and leadership, monarchy is our best option !"
+
+flavor_slavs.5.t:0 "Reform the Slavic faith ?"
+flavor_slavs.5.d:0 "With the spreading of humanism and individualism in our people religious beliefs began to change, people ask for individual practices rathan than public acts. Religion is becoming an individual thing, should we officialy adapt our religion to these changes or crush them ?"
+flavor_slavs.5.a:0 "Ask to Kyviv temple to convocate all our majors priests. We need to reform our faith if we want to keep it strong."
+flavor_slavs.5.b:0 "What did I just read ? Send the troop everywhere you see these pagan ask for such stupids changes and slay them !"
+
+flavor_kie.1.t:0 "Slavic diplomatic effort"
+flavor_kie.1.d:0 "Everywhere a Slav look he will see ennemies, nomads, norse or greeks. The only way to save or people is to stand united ! If all Slavic kingdoms join our fight we will win !"
+flavor_kie.1.a:0 "We send the Kievan call ! United we stand strong !"
+
+flavor_kie.2.t:0 "Answering the Kievan call"
+flavor_kie.2.d:0 "We just received a message from Kievan envoys asking us to sumbit to their lords and fight with them in the name of Slavic brotherhood. What should we say ?"
+flavor_kie.2.a:0 "Of course we shall join ! Our long agony is over, order the mobilization !"
+flavor_kie.2.b:0 "Being a Kievan a puppet isn't a better future than being a norse or greek puppet. A puppet is a puppet afterall, kill the envoys !"
+
+flavor_kie.3.t:0 "$FROMCOUNTRY$ is answering the call !"
+flavor_kie.3.d:0 "A Slavic envoy entered the court and announced the answer of his lord, what did he said ?"
+flavor_kie.3.a:0 "We just received a wondeful news. A new slavic state answered the call and will join the fight under our orders !"
+
+flavor_kie.4.t:0 "A sad news..."
+flavor_kie.4.d:0 "An envoy from $FROMCOUNTRY$ just entered the court but his sad face surely means a sad news will come out of his mouth. Despite the dire need of an united front, his lord said no, surely because of his greed for money and power."
+flavor_kie.4.a:0 "We will not let his people die, let's send the troop and help from themselves !"
+
+flavor_kie.5.t:0 "Kiev sends a formal insult"
+flavor_kie.5.d:0 "With Galicia Volhynia answering Kievan call they stopped to pay tribute to our mighty lord. They will pay for this insult but first we need to get back what's ours."
+flavor_kie.5.a:0 "Send our best riders to take back to reason the Galician nobility."
+
+flavor_kie.6.t:0 "The first Victory banquet"
+flavor_kie.6.d:0 "With the outstanding success of our Slavic confederation we must thank our brothers. And does anybody know a better way to show gratitude than a good banquet. But they must be careful we will not cover the loss of any material, or lives..."
+flavor_kie.6.a:0 "Send our envoys in every confederated kingdom !"
+
+flavor_kie.7.t:0 "The Kievan banquet"
+flavor_kie.7.d:0 "We just received the Kievan invitation to a banquet to celebrate our victory. But some nobles in our court say this might be a trap. Should we go ?"
+flavor_kie.7.a:0 "Of course we will join !"
+flavor_kie.7.b:0 "We need to be prudent, we will say to Kiev that our king is sick."
+
+flavor_kie.8.t:0 "Let's the banquet begin"
+flavor_kie.8.d:0 "All our brothers answered. Now they are all in our palace enjoying a good meal, without armour or weapons... What could go wrong ?"
+flavor_kie.8.a:0 "Let them enjoy their meal... Because it's their last !"
+
+flavor_kie.10.t:0 "The peaceful Slavic unification with $FROMCOUNTRY$"
+flavor_kie.10.d:0 "While everybody was eating peacefully a dozen of mad ( and armed) men entered the room, strangely there was no guards. These men did a slaughter and after they left the room we found that every Slavic king was dead. Everyone ? No, our King is still alive and we just found that all these kings said they gave their kingdoms to Kiev before dying. We will make them proud !"
+flavor_kie.10.a:0 "What a terrible story. Happy to see ou king alive, let's carry on."
+
+flavor_kie.9.t:0 "A Tragic News"
+flavor_kie.9.d:0 "What a terrible day, our king just died at the banquet. Kievan envoys said mad men entered the room and slayed many nobles. While we cry for our beloved King the envoy said the last words of our King were to give the lead of our destinies to Kiev. We will obey to his last words !"
+flavor_kie.9.a:0 "Let's enter a new era under Kievan rule as our King wanted."
+
+flavor_kip.1.t:0 "The End of Abundance"
+flavor_kip.1.d:0 "Our economic mining policie allowed us to fullfil the crown chests but today we are going to pay the price of our errors. The insane increase of gold and silver circulation in our country slowly kicked an inflation crisis, but we were too focused on funding our wars to pay attention. Now, due to the inflation, our currency value totaly crashed. Very hard times await us and we begin to hear the discontents all aroud the country arming themselves, may Tengri protect us."
+flavor_kip.1.a:0 "Let's fight this crisis and those who want to destroy our country from the inside !"
+
+
+flavor_per_cw.72.t:0 "Elymais asked us for Help"
+flavor_per_cw.72.d:0 "Persia has a lot of probleme tight now and despite thse problems, they are trying to reclaim their old satrapy of Elymais. The Elymait envoys asked us for help to defend their independance. Their main point is that a weak Persia will be beneficial to us. Should we help them ?"
+flavor_per_cw.72.a:0 "We will protect them !"
+flavor_per_cw.72.b:0 "They will fight alone."
+
+flavor_per_cw.73.t:0 "The War is Here"
+flavor_per_cw.73.d:0 "It is time to reclaim Elymais !"
+flavor_per_cw.73.a:0 "This will be easy !"
+
+flavor_per_cw.221.t:0 "Mazandarani is asking us to defend them"
+flavor_per_cw.221.d:0 "The Mazandarani satrap seceded long ago from the Persian Empire but it hasn't stop them from trying to reclaim it. They just launch another invasion to recover their long lost land, assuming we won't interfere. The Mazandarani are begging us to intervene, what sould we do ?"
+flavor_per_cw.221.a:0 "We will protect them !"
+flavor_per_cw.221.b:0 "They will fight alone.""
+
+
+flavor_turkic.1.t:0 "Cultural Assimilation"
+flavor_turkic.1.d:0 "These people are fellow Nomads."
+flavor_turkic.1.a:0 "This is a good news !"
+
+flavor_kip.2.t:0 "The Khazar Issue"
+flavor_kip.2.d:0 "It has been a long time since the Khazar have abandonned Tengri for the God of the Jews. Now than we have recovered their land and tgeir people, we must chose what to do with their religion."
+flavor_kip.2.a:0 "Their religion doesn't matter"
+flavor_kip.2.b:0 "They shall follow Tengri again !"
+flavor_kip.2.c:0 "They have heard the True Call !"

@@ -3,7 +3,7 @@ add_government_reform = iqta
 primary_culture = khorasani
 add_accepted_culture = persian
 religion = zoroastrian
-technology_group = muslim
+technology_group = persian_tech
 #capital = 446	# Herat
 capital = 2214 #Astarabad
 
@@ -86,7 +86,7 @@ capital = 2214 #Astarabad
 
 1461.1.1 = {
 	monarch = {
-		name = "Abû Sa'id"
+		name = "Abï¿½ Sa'id"
 		dynasty = "Timurid"
 		adm = 3
 		dip = 5

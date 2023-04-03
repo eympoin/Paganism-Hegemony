@@ -1,17 +1,17 @@
 #425 - Dagestan
 
-owner = ARM
-controller = ARM
-culture = dagestani
-religion = armenian_rl
+owner = HNS
+controller = HNS
+culture = hunic
+religion = tengri_pagan_reformed
 capital = "Derbent"
 trade_goods = fish
 hre = no
-base_tax = 3
+base_tax = 4
 base_production = 3
-base_manpower = 1
+base_manpower = 3
 is_city = yes
-add_core = ARM
+add_core = HNS
 
 
 
@@ -20,3 +20,8 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = nomad_group
 
+discovered_by = greek_tech
+discovered_by = steppe_tech
+discovered_by = slavic_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

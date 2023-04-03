@@ -28,3 +28,5 @@ base_production = 9 } # Repairs of the Great Wall
 	add_core = QNG
 }
 1662.1.1 = { remove_core = MNG } # The government in Taiwan surrendered
+
+discovered_by = steppe_tech

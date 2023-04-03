@@ -1,0 +1,572 @@
+osef_kie{
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = KIE
+			was_tag = KIE
+		}
+	}
+	has_country_shield = yes
+}
+
+osef_bis{
+		slot = 5
+		generic = no
+		ai = yes
+		potential = {
+			OR = {
+				tag = KIE
+				was_tag = KIE
+			}
+		}
+		has_country_shield = yes
+}
+
+main_path{
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = KIE
+			was_tag = KIE
+		}
+	}
+	has_country_shield = yes
+
+	raise_the_head = {
+		icon = mission_restore_kiev
+		required_missions = {}
+		position = 1
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+			add_years_of_income = 1
+			add_prestige = 10
+		}
+	}
+
+	raise_the_taxes = {
+		icon = mission_high_income
+		required_missions = { raise_the_head }
+		position = 2
+		trigger = {
+			280 = {
+				base_tax = 11
+			}
+			276 = {
+				base_tax = 7
+			}
+			289 = {
+				base_tax = 8
+			}
+			771 = {
+				base_tax = 6
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				 name = "kiev_development"
+				 duration = -1
+			}
+		}
+	}
+
+	slave's_capital_city{
+		icon = mission_novgorod_the_great
+		required_missions = { raise_the_taxes}
+		position = 3
+		provinces_to_highlight = {
+      OR = {
+				province_id = 280
+			}
+			NOT = {owned_by = ROOT}
+    }
+		trigger = {
+			280 = { development = 30 }
+		}
+		effect = {
+			add_prestige = 15
+			add_country_modifier = {
+				 name = "kiev_the_beauty"
+				 duration = -1
+			}
+		}
+	}
+
+	road_to_the_east{
+  	icon = mission_recruit_the_cossacks
+  	required_missions = {
+		slave's_capital_city
+ 		the_love_of_their_kind_is_the_hate_of_the_others
+		}
+  	position = 5
+  	trigger = {
+  		grown_by_development = 20
+			crimea_region = {
+				type = all
+				owned_by = ROOT
+				has_owner_religion = yes
+			}
+		}
+  	effect = {
+    	add_prestige = 15
+    }
+	}
+
+	find_prosperity = {
+		icon = mission_scandinavian_port_authority
+		required_missions = {road_to_the_east}
+		position = 6
+		trigger = {
+			num_of_states = 7
+			marketplace = 10
+			280 = {
+				province_has_center_of_trade_of_level = 2
+			}
+			272 = {
+				province_has_center_of_trade_of_level = 2
+			}
+			293 = {
+				province_has_center_of_trade_of_level = 2
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				 name = "trade_league"
+				 duration = -1
+			}
+			add_dip_power = 200
+			add_treasury = 250
+		}
+	}
+
+	rus_wealth = {
+		icon = mission_develop_nevas_port
+		required_missions = {find_prosperity}
+		position = 7
+		trigger = {
+			monthly_income = 25
+			trade_depot = 5
+			280 = {
+				province_has_center_of_trade_of_level = 3
+			}
+			280 = { #kiev
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+			310 = { #novgorod
+				trade_share = {
+					country = ROOT
+					share = 50
+				}
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+			add_prestige = 25
+			add_country_modifier = {
+				 name = "money_flow_in_the_Dniepr"
+				 duration = -1
+			}
+		}
+	}
+}
+
+path_droit{
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = KIE
+			was_tag = KIE
+		}
+	}
+	has_country_shield = yes
+
+	raise_the_troops = {
+		icon = mission_consolidate_the_state
+		required_missions = { raise_the_head}
+		position = 2
+		trigger = {
+			280 = {
+				base_manpower = 8
+			}
+			2407 = {
+				base_manpower = 6
+			}
+			1942 = {
+				base_manpower = 3
+			}
+			4247 = {
+				base_manpower = 3
+			}
+			4115 = {
+				base_manpower = 4
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				 name = "rise_soldier"
+				 duration = -1
+			}
+			zaporizhia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {is_claim	= ROOT}
+				}
+				add_permanent_claim = ROOT
+				}
+			yedisan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {is_claim	= ROOT}
+				}
+				add_permanent_claim = ROOT
+				}
+			azov_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {is_claim	= ROOT}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	fall_of_the_scourge{
+  	icon = mission_conquer_romania
+  	required_missions = { raise_the_troops }
+  	position = 3
+  	provinces_to_highlight = {
+    	OR = {
+      	area = azov_area
+      	area = yedisan_area
+      	area = zaporizhia_area
+    	}
+    	NOT = {owned_by = ROOT}
+  	}
+  	trigger = {
+    	azov_area = {
+      	type = all
+      	owned_by = ROOT
+    	}
+    	yedisan_area = {
+      	type = all
+      	owned_by = ROOT
+    	}
+    	zaporizhia_area = {
+      	type = all
+      	owned_by = ROOT
+    	}
+  	}
+  	effect = {
+  		lower_don_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {is_claim	= ROOT}
+				}
+    		add_permanent_claim = ROOT
+  		}
+  		astrakhan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {is_claim	= ROOT}
+				}
+    		add_permanent_claim = ROOT
+  		}
+  		lower_yik_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {is_claim	= ROOT}
+				}
+    		add_permanent_claim = ROOT
+    	}
+  		saratov_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {is_claim	= ROOT}
+				}
+    		add_permanent_claim = ROOT
+    	}
+  		circassia_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {is_claim	= ROOT}
+				}
+    		add_permanent_claim = ROOT
+    	}
+  		dagestan_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = {is_claim	= ROOT}
+				}
+    		add_permanent_claim = ROOT
+    	}
+  	}
+	}
+
+	the_love_of_their_kind_is_the_hate_of_the_others{
+  	icon = mission_autocratic_rule
+  	required_missions = { fall_of_the_scourge }
+  	position = 4
+  	trigger = {
+			OR = {
+					accepted_culture = turkish
+					NOT = {
+						any_province = {
+							culture = turkish
+						}
+					}
+				}
+  	}
+  	effect = {
+			add_country_modifier = {
+				 name = "for_the_people"
+				 duration = -1
+			}
+    }
+  }
+
+	the_threat_is_no_more{
+		icon = mission_dethrone_the_rurikovichs
+		required_missions = { the_love_of_their_kind_is_the_hate_of_the_others }
+		position = 5
+		trigger = {
+			owns_all_provinces = {
+				region = european_steppe
+			}
+			TUR = {
+    		exists = no
+    	}
+			ALN = {
+    		exists = no
+    	}
+			HNS = {
+    		exists = no
+    	}
+		}
+		effect = {
+			add_country_modifier = {
+					 name = "prosperity"
+					 duration = 7300
+			}
+		}
+	}
+
+	the_army_the_king_the_people{
+		icon = mission_recruit_streltsy
+		required_missions = { the_threat_is_no_more }
+		position = 7
+		trigger = {
+			estate_influence = {
+				estate = estate_nobles
+				influence = 65
+			}
+			estate_loyalty = {
+    		estate = estate_nobles
+    		loyalty = 65
+			}
+			manpower = 60
+			army_size = 100
+		}
+		effect = {
+			add_country_modifier = {
+					 name = "great_army"
+					 duration = -1
+			}
+		}
+	}
+}
+
+path_gauche_kie = {
+		slot = 1
+		generic = no
+		ai = yes
+		potential = {
+			OR = {
+				tag = KIE
+				was_tag = KIE
+			}
+		}
+		has_country_shield = yes
+
+	Vladimir's_legacy{
+		icon = mission_conquer_tver
+		required_missions = { raise_the_head }
+		position = 2
+		trigger = {
+			temple = 5
+		}
+		effect = {
+			add_treasury = 100
+			add_country_modifier = {
+           name = "vladimir_s_legacy"
+           duration = -1
+			}
+		}
+	}
+
+	the_light_in_the_fog{
+		icon = mission_reconquer_vologda
+		required_missions = { Vladimir's_legacy }
+		position = 3
+		trigger = {
+			280 = {
+				has_great_project = {
+					type = vladimir_hill
+					tier = 1
+				}
+			}
+			army_size = TUR
+			army_size = OKH
+		}
+		effect = {
+			country_event = {id=flavor_kie.1}
+			add_prestige = 20
+		}
+	}
+
+	the_slave_needs_a_new_master{
+		icon = mission_the_third_rome
+		required_missions = { the_light_in_the_fog }
+		position = 4
+		trigger = {
+			prestige = 70
+			legitimacy = 70
+			total_development = 300
+			treasury = 500
+			dip_power = 400
+		}
+		effect = {
+			add_treasury = -500
+			add_dip_power = -400
+			country_event = { id = flavor_kie.6}
+			add_country_modifier = {
+				 name = "slave's_master"
+				 duration = 14600
+			}
+		}
+	}
+
+	unification_war{
+		icon = mission_autocephalous_archbishopric
+		required_missions = { the_slave_needs_a_new_master }
+		position = 5
+		trigger = {
+			OR = {
+				AND = {
+					war_score_against = {
+						who = OKH
+						value = 50
+					}
+					controls = 262
+				}
+
+				NOT = {exists  = OKH}
+			}
+		}
+		effect = {
+			add_dip_power = 200
+			add_adm_power = 200
+			add_mil_power = 200
+			add_treasury = 300
+			add_prestige = 50
+			add_country_modifier = {
+           name = "victory_upon_the_devil"
+           duration = 3650
+			}
+		}
+	}
+
+	centralised_power{
+		icon = mission_conquer_moscow
+		required_missions = { unification_war}
+		position = 7
+		trigger = {
+			total_development = 600
+			has_institution = colonialism
+			280 = {
+				higher_development_than = 40
+			}
+		}
+		effect = {
+			add_adm_power = -200
+			add_country_modifier = {
+           name = "centralisation"
+           duration = -1
+			}
+		}
+	}
+}
+
+path_ultime{
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = KIE
+			was_tag = KIE
+		}
+	}
+	has_country_shield = yes
+
+	rebirth_of_the_faith = {
+		icon = mission_land_of_churches
+		required_missions = {
+		unification_war
+		road_to_the_east
+		}
+		position = 6
+		trigger = {
+			religious_unity = 0.95
+			temple = 25
+			prestige = 90
+			legitimacy = 90
+		}
+		effect = {
+			add_country_modifier = {
+			 name = "religious_reformation"
+			 duration = -1
+			}
+		}
+	}
+
+	Vladimirs_heirs = {
+		icon = mission_rule_ruthenia
+		required_missions = {
+		centralised_power
+		rebirth_of_the_faith
+		rus_wealth
+		the_army_the_king_the_people}
+		position = 8
+		trigger = {
+			legitimacy = 95
+			prestige = 70
+			total_development =	800
+			religious_unity = 0.95
+			army_size = 100
+			num_of_infantry = 40
+			num_of_cavalry = 15
+			monthly_income = 50
+			tag = RSS
+		}
+		effect = {
+			add_years_of_income = 2
+			add_dip_power = 300
+			add_mil_power = 300
+			add_adm_power = 300
+			add_country_modifier = {
+				 name = "Vladimirs_crown"
+				 duration = -1
+			}
+		}
+	}
+}

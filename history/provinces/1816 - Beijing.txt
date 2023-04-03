@@ -30,3 +30,5 @@ center_of_trade = 2
 	add_core = QNG
 }
 1662.1.1 = { remove_core = MNG } # The government in Taiwan surrendered
+
+discovered_by = steppe_tech

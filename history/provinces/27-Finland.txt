@@ -39,3 +39,9 @@ discovered_by = eastern
 	add_core = RUS
 	remove_core = SWE
 } # Treaty of Fredrikshamn
+
+discovered_by = roman_tech
+discovered_by = germanic_tech
+discovered_by = celtic_tech
+discovered_by = slavic_tech
+discovered_by = numidian_tech

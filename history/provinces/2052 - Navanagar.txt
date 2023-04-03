@@ -41,3 +41,8 @@ discovered_by = east_african
 	controller = NVR
 	remove_core = MUG
 } # Vassal of Gaikwads
+
+discovered_by = greek_tech
+discovered_by = steppe_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

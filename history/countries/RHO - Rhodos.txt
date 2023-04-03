@@ -1,7 +1,7 @@
 government = republic
 add_government_reform = free_city
 government_rank = 1
-technology_group = eastern
+technology_group = greek_tech
 primary_culture = egean
 religion = theoi
 capital = 320# Heraklion

@@ -3,7 +3,7 @@ add_government_reform = satrapdom_reform
 government_rank = 1
 primary_culture = khorasani
 religion = zoroastrian
-technology_group = muslim
+technology_group = persian_tech
 capital = 2214
 
 1420.1.1 = {

@@ -2,7 +2,7 @@ government = republic
 add_government_reform = free_city
 primary_culture = serbian
 religion = theoi
-technology_group = eastern
+technology_group = greek_tech
 capital = 4173
 elector=no
 government_rank = 1
@@ -16,5 +16,3 @@ government_rank = 1
 		mil = 2
 	}
 }
-
-

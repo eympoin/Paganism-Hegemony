@@ -33,3 +33,7 @@ discovered_by = chinese
 	add_core = GBR
 	remove_core = NED
 } # Treaty of Amiens
+
+discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

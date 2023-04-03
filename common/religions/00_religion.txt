@@ -2344,6 +2344,71 @@ east_european{
     personal_deity = yes
     heretic = { OLD_SLAVIC }
   }
+  slavic_reformed = {
+    icon = 47
+    color = { 140 140 150 }
+    center_of_religion = 280
+    country = {
+      global_manpower_modifier = 0.1
+      culture_conversion_cost = -0.25
+    }
+    country_as_secondary = {
+      manpower_recovery_speed = 0.1
+      advisor_pool = 1
+    }
+    will_get_center = { #Refered to even for initial CoR Spawn
+      any_owned_province = {
+        can_have_center_of_reformation_trigger = {
+          RELIGION = slavic_reformed
+        }
+      }
+    }
+    has_patriarchs = yes		# Uses patriarch authority
+
+    orthodox_icons = {
+
+      icon_svarog = {
+        fire_damage = 0.10
+        artillery_power = 0.10
+
+        allow = {
+          always = yes
+        }
+      }
+      icon_perun = {
+        infantry_power = 0.1
+        shock_damage = 0.15
+
+        allow = {
+          always = yes
+        }
+      }
+      icon_mokosh = {
+        development_cost = -0.1
+        global_manpower_modifier = 0.2
+        allow = {
+          always = yes
+        }
+      }
+      icon_dazhbog = {
+        global_tax_modifier = 0.2
+        prestige = 1
+        allow = {
+          always = yes
+        }
+      }
+      icon_veles = {
+        hostile_attrition = 1
+        manpower_recovery_speed = 0.15
+        allow = {
+          always = yes
+        }
+      }
+
+
+    }
+    heretic = { OLD_SLAVIC }
+  }
   suomenusko = {
     icon = 35
     color = { 120 140 0 }

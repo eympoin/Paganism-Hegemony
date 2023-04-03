@@ -28,3 +28,5 @@ discovered_by = sub_saharan
 1741.1.1 = { unrest = 3 } #Power vacuum in wake of failed invasion of Bambara destabilized area
 1770.1.1 = { native_size = 60 } #growth of Kong as major trade emporium between Sahel and Coast
 1804.1.1 = { discovered_by = SOK }
+
+discovered_by = numidian_tech

@@ -31,3 +31,7 @@ discovered_by = ottoman
 	religion = sunni
 	trade_goods = spices
 } # Banjar Sultanate was founded
+
+discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

@@ -49,3 +49,5 @@ discovered_by = nomad_group
 	controller = GBR
 	add_core = GBR
 } # Given to GBR by Mir Qasim
+
+discovered_by = steppe_tech

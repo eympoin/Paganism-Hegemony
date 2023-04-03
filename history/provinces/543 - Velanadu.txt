@@ -89,3 +89,8 @@ add_permanent_province_modifier = {
 	add_core = GBR
 } # Northern Circars to Britain
 1823.1.1 = { remove_core = DEC } #Nizam withdraws his claims
+
+discovered_by = greek_tech
+discovered_by = steppe_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

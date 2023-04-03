@@ -33,3 +33,5 @@ discovered_by = nomad_group
 	culture = russian
 	religion = orthodox 
 } # Yermak Timofeevich, annexed to Muscovy
+
+discovered_by = steppe_tech

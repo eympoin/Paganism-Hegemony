@@ -42,3 +42,5 @@ discovered_by = nomad_group
 } # Qinghai conquered by Qing
 1755.10.4 = { revolt_risk = 7 } # Rebellion aginst the Chinese
 1757.10.4 = { revolt_risk = 0 }
+
+discovered_by = steppe_tech

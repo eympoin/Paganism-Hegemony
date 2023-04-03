@@ -1,8 +1,8 @@
 government = tribal
 add_government_reform = steppe_horde
 primary_culture = khazak
-religion = sunni
-technology_group = nomad_group
+religion = tengri_pagan_reformed
+technology_group = steppe_tech
 historical_rival = SHY
 capital = 1969	# Sozak
 religious_school = hanafi_school

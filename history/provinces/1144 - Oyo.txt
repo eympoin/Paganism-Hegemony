@@ -30,3 +30,5 @@ discovered_by = sub_saharan
 1796.1.1 = { unrest = 8 } # Uprising against Alafin Awole
 1797.1.1 = { unrest = 3 } # Awole overthrown, Egba revolts in wake of power crisis in Oyo
 1804.1.1 = { discovered_by = SOK }
+
+discovered_by = numidian_tech

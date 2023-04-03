@@ -1,10 +1,10 @@
 government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
-technology_group = eastern
+technology_group = slavic_tech
 primary_culture = dacian
 religion = Zalmoxianism
-capital = 158 
+capital = 158
 
 
 1410.1.1 = {

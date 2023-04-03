@@ -28,3 +28,5 @@ center_of_trade = 1
 	controller = KAS
 }
 1759.1.1 = { owner = QNG controller = QNG add_core = QNG } # Part of the Manchu empire
+
+discovered_by = steppe_tech

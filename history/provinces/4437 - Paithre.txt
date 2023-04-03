@@ -74,3 +74,8 @@ discovered_by = chinese
 	controller = DEC
 	remove_core = MAR
 }
+
+discovered_by = greek_tech
+discovered_by = steppe_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

@@ -1,4 +1,4 @@
-Cornish_Unification_1 = {
+Wales_Unification_1 = {
   slot = 1
   generic = no
   ai = yes

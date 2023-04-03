@@ -1,8 +1,8 @@
 government = monarchy
-add_government_reform = autocracy_reform 
+add_government_reform = autocracy_reform
 primary_culture = armenian
 religion = zoroastrian
-technology_group = eastern
+technology_group = persian_tech
 capital = 2202	# Melikates
 government_rank = 1
 

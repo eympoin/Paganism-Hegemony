@@ -9,3 +9,7 @@ discovered_by = ottoman
 1405.1.1 = { discovered_by = MNG }
 1500.1.1 = { discovered_by = POR }
 
+
+discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

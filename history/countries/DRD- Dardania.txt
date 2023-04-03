@@ -2,7 +2,7 @@ government = republic
 add_government_reform = noble_elite_reform
 primary_culture = serbian
 religion = theoi
-technology_group = eastern
+technology_group = greek_tech
 capital = 1766# Krusevac
 
 1389.1.1 = {
@@ -13,11 +13,9 @@ capital = 1766# Krusevac
 	monarch = {
 		name = "Vukan"
 		dynasty = "Vojislavljevic"
-		birth_date = 1385.1.1		
+		birth_date = 1385.1.1
 		adm = 1
 		dip = 3
 		mil = 0
 	}
 }
-
-

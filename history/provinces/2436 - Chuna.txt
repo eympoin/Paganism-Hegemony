@@ -22,3 +22,5 @@ native_hostileness = 3
 	trade_goods = fish
 }
 1628.1.1 = { add_core = RUS }
+
+discovered_by = steppe_tech

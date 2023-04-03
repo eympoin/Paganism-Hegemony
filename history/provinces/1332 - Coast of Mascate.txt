@@ -7,3 +7,9 @@ discovered_by = eastern
 1413.1.1 = { discovered_by = MNG }
 1480.1.1 = { discovered_by = TUR }
 1488.1.1 = { discovered_by = POR }
+
+discovered_by = greek_tech
+discovered_by = steppe_tech
+discovered_by = slavic_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

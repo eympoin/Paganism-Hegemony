@@ -69,3 +69,8 @@ discovered_by = east_african
 	controller = GBR
 	add_core = GBR
 }
+
+discovered_by = greek_tech
+discovered_by = steppe_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

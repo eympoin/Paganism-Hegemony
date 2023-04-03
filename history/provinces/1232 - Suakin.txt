@@ -35,3 +35,13 @@ discovered_by = east_african
 } # Ottomans occupy Suakin
 1571.1.1 = { unrest = 8 } # Local Beja revolt against Ottoman governors
 1572.1.1 = { unrest = 0 } # Ottomans crush Beja revolt
+
+discovered_by = greek_tech
+discovered_by = roman_tech
+discovered_by = steppe_tech
+discovered_by = germanic_tech
+discovered_by = celtic_tech
+discovered_by = slavic_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech
+discovered_by = numidian_tech

@@ -25,3 +25,5 @@ native_hostileness = 3
 	is_city = yes
 	trade_goods = fur
 }
+
+discovered_by = steppe_tech

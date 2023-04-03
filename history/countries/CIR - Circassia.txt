@@ -3,7 +3,7 @@ add_government_reform = tribal_kingdom
 government_rank = 1
 primary_culture = circassian
 religion = armenian_rl
-technology_group = eastern
+technology_group = steppe_tech
 capital = 463 # Circassia
 
 # Being a confederation, there were a lot of Princes that ruled small areas with no significant leader, other than maybe Petrezok.  They banded together for defense when needed.

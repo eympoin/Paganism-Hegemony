@@ -1,0 +1,306 @@
+
+namespace = flavor_turkic
+
+country_event = {
+  id = flavor_turkic.1
+  title = flavor_turkic.1.t
+  desc = flavor_turkic.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      culture_group = Oghuz
+    }
+    any_owned_province = {
+      culture_group = tartar
+      NOT = {culture = bashkir }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 3
+  }
+  option = {#
+    name = flavor_turkic.1.a
+    ai_chance = { factor = 1 }
+    trigger = {
+      any_owned_province = {
+        culture_group = tartar
+        NOT = {culture = bashkir }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+    }
+    random_owned_province = {
+      limit = {
+        culture_group = tartar
+        NOT = {culture = bashkir }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = turkish
+    }
+  }
+}
+
+country_event = {
+  id = flavor_turkic.2
+  title = flavor_turkic.1.t
+  desc = flavor_turkic.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      culture_group = Oghuz
+    }
+    any_owned_province = {
+      culture_group = Karluk
+      NOT = {culture = bulgar_nomadic}
+      NOT = {culture = avar}
+      NOT = {culture = pecheneg}
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 2
+  }
+  option = {
+    name = flavor_turkic.1.a
+    ai_chance = { factor = 1 }
+    trigger = {
+      any_owned_province = {
+        culture_group = Karluk
+        NOT = {culture = bulgar_nomadic}
+        NOT = {culture = avar}
+        NOT = {culture = pecheneg}
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+    }
+    random_owned_province = {
+      limit = {
+        culture_group = Karluk
+        NOT = {culture = bulgar_nomadic}
+        NOT = {culture = avar}
+        NOT = {culture = pecheneg}
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = oghuz_turk
+    }
+  }
+}
+
+
+country_event = {
+  id = flavor_turkic.3
+  title = flavor_turkic.1.t
+  desc = flavor_turkic.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      culture_group = tartar
+    }
+    any_owned_province = {
+      OR = {
+        culture = turkish
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 4
+  }
+  option = {
+    name = flavor_turkic.1.a
+    ai_chance = { factor = 1 }
+    trigger = {
+      any_owned_province = {
+        OR = {
+          culture = turkish
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+    }
+    random_owned_province = {
+      limit = {
+        OR = {
+          culture = turkish
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = crimean
+    }
+  }
+}
+
+country_event = {
+  id = flavor_turkic.3
+  title = flavor_turkic.1.t
+  desc = flavor_turkic.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      culture_group = tartar
+    }
+    any_owned_province = {
+      OR = {
+        culture = oghuz_turk
+        culture = turkmeni
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 4
+  }
+  option = {
+    name = flavor_turkic.1.a
+    ai_chance = { factor = 1 }
+    trigger = {
+      any_owned_province = {
+        OR = {
+          culture = oghuz_turk
+          culture = turkmeni
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+    }
+    random_owned_province = {
+      limit = {
+        OR = {
+          culture = oghuz_turk
+          culture = turkmeni
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = nogaybak
+    }
+  }
+}
+
+country_event = {
+  id = flavor_turkic.4
+  title = flavor_turkic.1.t
+  desc = flavor_turkic.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      culture_group = tartar
+    }
+    any_owned_province = {
+      OR = {
+        culture = bulgar_volga
+        culture = karluk_culture
+      }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 4
+  }
+  option = {
+    name = flavor_turkic.1.a
+    ai_chance = { factor = 1 }
+    trigger = {
+      any_owned_province = {
+        OR = {
+        culture = bulgar_volga
+        culture = karluk_culture
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+    }
+    random_owned_province = {
+      limit = {
+        OR = {
+        culture = bulgar_volga
+        culture = karluk_culture
+        }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = cuman
+    }
+  }
+}
+
+country_event = {
+  id = flavor_turkic.5
+  title = flavor_turkic.1.t
+  desc = flavor_turkic.1.d
+  picture = COLONIZATION_eventPicture
+
+  trigger = {
+    OR = {
+      culture_group = tartar
+    }
+    any_owned_province = {
+        culture_group = Karluk
+        NOT = {
+          culture = karluk_culture
+          culture = bulgar_volga
+          culture = bulgar_nomadic
+          culture = avar
+          culture = pecheneg
+        }
+      NOT = { nationalism	= 1 }
+      is_core = ROOT
+    }
+  }
+
+  mean_time_to_happen = {
+    years = 2
+  }
+  option = {
+    name = flavor_turkic.1.a
+    ai_chance = { factor = 1 }
+    trigger = {
+      any_owned_province = {
+          culture_group = Karluk
+          NOT = {
+            culture = karluk_culture
+            culture = bulgar_volga
+            culture = bulgar_nomadic
+            culture = avar
+            culture = pecheneg
+          }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+    }
+    random_owned_province = {
+      limit = {
+          culture_group = Karluk
+          NOT = {
+            culture = karluk_culture
+            culture = bulgar_volga
+            culture = bulgar_nomadic
+            culture = avar
+            culture = pecheneg
+          }
+        NOT = { nationalism	= 1 }
+        is_core = ROOT
+      }
+      change_culture = bashkir
+    }
+  }
+}

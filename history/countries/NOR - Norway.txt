@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = norwegian
 religion = norse_pagan_reformed
-technology_group = western
+technology_group = germanic_tech
 historical_friend = DAN
 capital = 17 #Akershus
 
@@ -10,7 +10,8 @@ capital = 17 #Akershus
 1436.1.1 = {
 	leader = {
 		name = "Amund Bolt"
-		type = general 
+		type = general
+
 		fire = 1
 		shock = 2
 		manuever = 2
@@ -22,7 +23,8 @@ capital = 17 #Akershus
 1520.1.1 = {
 	leader = {
 		name = "Olav Galle"
-		type = general 
+		type = general
+
 		fire = 1
 		shock = 2
 		manuever = 2

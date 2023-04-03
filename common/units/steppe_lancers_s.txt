@@ -1,0 +1,12 @@
+# steppe_lancers_s
+
+type = cavalry
+unit_type = steppe_tech
+
+maneuver = 3
+offensive_morale = 4
+defensive_morale = 2
+offensive_fire = 1
+defensive_fire = 1
+offensive_shock = 5
+defensive_shock = 3

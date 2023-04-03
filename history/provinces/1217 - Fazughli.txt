@@ -21,3 +21,7 @@ discovered_by = ottoman
 1633.1.1 = { unrest = 6 } #Jieng migrations disrupt region
 1696.1.1 = { unrest = 3 } #Disruptions caused by Shilluk migrations from famine areas to South
 1705.1.1 = { capital = "Fashoda" } #New Shilluk center established in wake of migrations
+
+discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

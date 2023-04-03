@@ -3434,3 +3434,50 @@ feudal_tribe = {
 		factor = 0
 	}
 }
+
+steppe_absolutism_legacy = {
+	# government mechanics flags go here
+	icon = "crown"
+	legacy_government = yes
+	allow_normal_conversion = no
+
+	valid_for_new_country = no
+	allow_convert = no
+
+	maintain_dynasty = yes
+
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	nation_designer_trigger = {
+		religion = tengri_pagan_reformed
+	}
+	modifiers = {
+		max_absolutism = 20
+		army_tradition_from_battle = 0.1
+		harsh_treatment_cost = -0.2
+	}
+	ai = {
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+steppe_republic_legacy = {
+	icon = "trading_city"
+	allow_normal_conversion = no
+
+	legacy_government = yes
+	valid_for_new_country = no
+	royal_marriage = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 15
+	republic = yes
+	modifiers = {
+		caravan_power = 0.2
+		global_unrest = -1
+	}
+	ai = {
+		factor = 5
+	}
+}

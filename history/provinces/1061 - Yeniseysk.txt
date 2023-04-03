@@ -24,3 +24,5 @@ native_hostileness = 3
 	add_core = RUS
 	trade_goods = gold
 }
+
+discovered_by = steppe_tech

@@ -31,3 +31,5 @@ discovered_by = BRT
 } # Pyotr Beketov
 1678.1.1 = { add_core = RUS }
 1700.1.1 = { trade_goods = fur }
+
+discovered_by = steppe_tech

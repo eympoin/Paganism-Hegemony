@@ -28,3 +28,5 @@ discovered_by = nomad_group
 	trade_goods = salt
 	is_city = yes 
 } # Berezov founded
+
+discovered_by = steppe_tech

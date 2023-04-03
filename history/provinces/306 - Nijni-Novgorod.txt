@@ -40,3 +40,10 @@ center_of_trade = 2
 1767.1.1 = { base_tax = 9 base_production = 9 } # Legislative reform
 1773.1.1 = { unrest = 5 } # Emelian Pugachev, Cossack insurrection
 1774.9.14 = { unrest = 0 } # Pugachev is captured
+
+discovered_by = roman_tech
+discovered_by = steppe_tech
+discovered_by = germanic_tech
+discovered_by = celtic_tech
+discovered_by = slavic_tech
+discovered_by = numidian_tech

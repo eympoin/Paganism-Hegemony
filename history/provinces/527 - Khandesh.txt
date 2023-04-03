@@ -61,3 +61,8 @@ center_of_trade = 2
 	remove_core = MAR
 	remove_core = DEC
 }
+
+discovered_by = greek_tech
+discovered_by = steppe_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

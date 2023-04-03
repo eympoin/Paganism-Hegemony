@@ -33,3 +33,5 @@ discovered_by = KMC
 } # Conquered by Russia
 1740.1.1 = { capital = "Petropavlovsk" }
 1757.1.1 = { add_core = RUS }
+
+discovered_by = steppe_tech

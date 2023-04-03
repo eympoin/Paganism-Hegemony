@@ -225,7 +225,8 @@ add_army_professionalism = 0.05
 		mil = 4
 		leader = {	
 			name = "Emanuele Filiberto"
-			type = general
+			type = general
+
 			fire = 4
 			shock = 3
 			manuever = 3
@@ -253,7 +254,8 @@ add_government_reform = autocracy_reform }
 		mil = 4
 		leader = {	
 			name = "Emanuele Filiberto"
-			type = general
+			type = general
+
 			fire = 4
 			shock = 3
 			manuever = 3

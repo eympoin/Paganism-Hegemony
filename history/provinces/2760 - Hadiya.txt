@@ -29,3 +29,7 @@ discovered_by = indian
 	add_core = ETH
 	remove_core = ADA
 }
+
+discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

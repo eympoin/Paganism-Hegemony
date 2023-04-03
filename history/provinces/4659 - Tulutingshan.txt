@@ -35,3 +35,5 @@ discovered_by = nomad_group
 	religion = confucianism
 	trade_goods = fish
 } # Treaty of Nerchinsk
+
+discovered_by = steppe_tech

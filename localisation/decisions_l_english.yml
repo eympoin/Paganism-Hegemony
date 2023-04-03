@@ -116,7 +116,7 @@
  empire_of_china_desc:0 "The Chinese imperial traditions are tainted by a people who control no part of the realm of China. As the proud carrier of this legacy our [Root.Monarch.GetTitle] must be proclaimed the new [Root.GetTributaryOverlord] once we have secured the traditional capitals of the Empire."
  empire_of_china_not_in_china:0 "The current Empire of China owns no provinces in either the region of §YNorth China§!, §YSouth China§! or §YXinan§!."
  become_russian_principality_title:0 "Adopt Autocratic Administration"
- become_russian_principality_desc:0 "We need a strong ruler to guide us in these troubled times. Let us centralize our power over the Boyars and create a government in the spirit of the old Kievan Rus'."
+ become_russian_principality_desc:0 "We need a strong ruler to guide us in these troubled times. Let us centralize our power over the Boyars and create a government in the spirit of the old Kyivan Rus'."
  abolish_black_army_title:0 "Abolish the Black Army"
  abolish_black_army_desc:0 "The Black Army is a source of constant expenses and is detested by our nobility. Loyalty bought with silver can be lost just as cheaply. Let us do away with the Black Army and instead let the reliable armies of the realm fight for us."
  abolishing_black_army_tooltip:0 "§YThe Nobility§! will gain §Y15§! Influence."
@@ -357,3 +357,8 @@ form_rusKhaganate_desc:0 "The old Rus has fallen to us. And we are now the most 
 
 lloegyr_nation_title:0 "Reconquest of Celtic Lands"
 lloegyr_nation_desc:0 "For generations, the Celts have been on the defensive against Norse, Saxons, Romans and Franks. It is now time to strike back and to form a nation for the Celts : Lloegyr"
+restore_cumania_title:0 "Restore Cumania"
+restore_cumania_desc:0 "The Mongols destroyed the Great Cuman Empire, two centuries ago. It is time for it to return, to take revenge against those weaker steppe riders."
+
+rus_nation_title:0 "Restore the Rus"
+rus_nation_desc:0 "The Mongol Invasions destroyed the Rus decades ago. It was the pride of all Slavs, a shield for the civilized worlds against the Horrors of the Steppes. We are now ready to reform our glorous past. Long Live the Rus !"

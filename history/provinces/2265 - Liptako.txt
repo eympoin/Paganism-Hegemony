@@ -16,3 +16,5 @@ base_manpower = 1
 discovered_by = sub_saharan
 
 1540.1.1 = { owner = YAT controller = YAT } #Yatenga established as distinct kingdom
+
+discovered_by = numidian_tech

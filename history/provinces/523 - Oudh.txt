@@ -71,3 +71,8 @@ discovered_by = chinese
 	controller = ODH
 	remove_core = MUG
 } # Foundation of the Oudh dynasty
+
+discovered_by = greek_tech
+discovered_by = steppe_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

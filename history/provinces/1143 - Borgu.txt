@@ -33,3 +33,5 @@ discovered_by = sub_saharan
 	controller = SOK
 	add_core = SOK
 } # The Fulani Empire
+
+discovered_by = numidian_tech

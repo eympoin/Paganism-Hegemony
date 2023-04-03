@@ -1,0 +1,20 @@
+government = tribal
+add_government_reform = steppe_horde
+primary_culture = cuman
+religion = tengri_pagan_reformed
+technology_group = steppe_tech
+capital = 303
+historical_friend = ALN
+historical_friend = QAS
+historical_friend = SIB
+
+1444.1.1 = {
+    monarch = {
+        name = "Dag Han"
+	dynasty = "Khan"
+        birth_date = 1418.12.01
+        adm = 2
+        dip = 5
+        mil = 3
+    }
+}

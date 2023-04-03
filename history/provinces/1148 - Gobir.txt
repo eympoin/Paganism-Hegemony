@@ -39,3 +39,5 @@ discovered_by = sub_saharan
 } # The Fulani Empire
 1809.1.1 = { capital = "Sokoto" }
 1810.1.1 = { remove_core = HAU } # The end of the Fulani war
+
+discovered_by = numidian_tech

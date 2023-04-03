@@ -66,3 +66,7 @@ discovered_by = ottoman
 		investor = NED
 	}	
 }
+
+discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

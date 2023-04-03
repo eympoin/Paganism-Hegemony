@@ -38,3 +38,5 @@ discovered_by = sub_saharan
 1748.1.1 = { unrest = 8 } #Attempted Coup by bureaucracy against Opoku Ware
 1749.1.1 = { unrest = 0 } #Opoku Ware defeats coup attempt
 1804.1.1 = { discovered_by = SOK }
+
+discovered_by = numidian_tech

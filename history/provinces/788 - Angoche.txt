@@ -40,3 +40,7 @@ discovered_by = central_african
 1671.1.1 = { unrest = 6 } #Omani Raid
 1756.1.1 = { unrest = 3 } #Conflicts between Makua and Maravi disrupt hinterland
 1780.1.1 = { trade_goods = slaves } #Rise of plantations in Mascarene Is. changes trade patterns
+
+discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

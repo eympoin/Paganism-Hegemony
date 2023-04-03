@@ -26,3 +26,5 @@ discovered_by = sub_saharan
 1769.1.1 = { unrest = 5 } # Sira Bo Kulibali expands power base, challenging direct control from Segu in region
 1775.1.1 = { unrest = 7 } # Sira Bo Kulibali expands power base, challenging direct control from Segu in region
 1791.1.1 = { unrest = 10 } # Kaarta rebels against Segu domination, sparking civil war in wake of Ngolo Diarra's death
+
+discovered_by = numidian_tech

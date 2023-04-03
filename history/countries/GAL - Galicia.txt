@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 primary_culture = galician
 add_accepted_culture = asturian
 religion = deii
-technology_group = western
+technology_group = roman_tech
 capital = 206	# Galicia
 
 1444.1.1 = {

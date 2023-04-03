@@ -1,7 +1,7 @@
 # 2353 - Tortkara
 
-owner = NOG
-controller = NOG
+owner = KAK
+controller = KAK
 culture = khazak
 religion = tengri_pagan_reformed
 capital = "Tortkara"
@@ -12,7 +12,7 @@ base_production = 1
 base_manpower = 1
 is_city = yes
 add_core = KZH
-add_core = NOG
+add_core = KAK
 
 
 
@@ -22,8 +22,7 @@ discovered_by = nomad_group
 discovered_by = ottoman
 discovered_by = muslim
 
-
-1468.1.1 = { controller = KZH owner = KZH remove_core = NOG } # Kazakhs take over
-1622.1.1 = { discovered_by = RUS }
-1740.1.1 = { owner = ZUN controller = ZUN } # Dzungarian invasion
-1755.1.1 = { owner = KZH controller = KZH }
+discovered_by = greek_tech
+discovered_by = steppe_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

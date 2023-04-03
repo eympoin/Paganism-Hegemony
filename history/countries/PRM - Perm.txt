@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 government_rank = 1
 primary_culture = uralic
 religion = suomenusko
-technology_group = eastern
+technology_group = slavic_tech
 capital = 1963	# Cherdyn
 
 

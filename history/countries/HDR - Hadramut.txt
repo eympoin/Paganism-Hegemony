@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = iqta
 primary_culture = yemeni_culture
 religion = jewish
-technology_group = muslim
+technology_group = semitic_tech
 capital = 4283	# Shihr
 religious_school = shafii_school
 

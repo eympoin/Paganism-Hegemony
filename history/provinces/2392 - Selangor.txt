@@ -27,3 +27,7 @@ discovered_by = ottoman
 	owner = PRK
 	controller = PRK
 }
+
+discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

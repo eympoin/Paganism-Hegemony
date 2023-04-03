@@ -31,3 +31,5 @@ center_of_trade = 2
 }
 1673.12.1 = { controller = CZH } # Three Feudatories revolt
 1680.1.1 = { controller = QNG }
+
+discovered_by = steppe_tech

@@ -25,3 +25,7 @@ discovered_by = ottoman
 1550.1.1 = { discovered_by = TUR }
 
 1705.1.1 = { owner = OMA controller = OMA add_core = OMA trade_goods = grain } #Omanis seize control of Mogadishu and Geledi
+
+discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

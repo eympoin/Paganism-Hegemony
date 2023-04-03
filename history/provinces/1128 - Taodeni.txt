@@ -48,3 +48,5 @@ discovered_by = MOR
 	controller = MOR
 	remove_core = TFL
 } #Alaouites reunifies the country
+
+discovered_by = numidian_tech

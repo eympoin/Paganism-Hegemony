@@ -2,8 +2,8 @@ government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = baetician
 religion = deii
-technology_group = western
-capital = 225 
+technology_group = roman_tech
+capital = 225
 historical_rival = BAE
 
 1444.1.1 = {

@@ -26,3 +26,5 @@ discovered_by = sub_saharan
 } # Songahi defeat at Tondibi leaves Tuareg free
 1642.1.1 = { remove_core = SON } # Collapse of last vestiges of unity among Songhai
 1700.1.1 = { owner = TMB controller = TMB add_core = TMB remove_core = AIR } #Timbuktu is effectively a Tuareg tag again
+
+discovered_by = numidian_tech

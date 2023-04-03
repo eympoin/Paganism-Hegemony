@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
-technology_group = muslim
+technology_group = semitic_tech
 religion = jewish
 primary_culture = Himyarites_culture
 capital = 390	# Sana'a

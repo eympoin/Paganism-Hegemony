@@ -45,3 +45,5 @@ discovered_by = MOR
 	add_core = SOF
 	remove_core = TMB
 } #Massa establish the Massassi dynasty and Kaarta kingdom as Bambara expansion
+
+discovered_by = numidian_tech

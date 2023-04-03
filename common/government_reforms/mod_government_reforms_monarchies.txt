@@ -4551,42 +4551,30 @@ indep_cuicide = {
 	}
 }
 
-
-carthaginian_absolute_monarchy = {
+steppe_absolutism = {
 	icon = "crown"
 	allow_normal_conversion = no
 	potential = {
 		OR = {
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = carthaginian_absolute_monarchy
-			}
-			has_unlocked_government_reform = {
-				government_reform = carthaginian_absolute_monarchy
-			}
+			religion = tengri_pagan_reformed
+		}
+		AND = {
+			is_playing_custom_nation = yes
 		}
 	}
-	trigger = {
-		has_unlocked_government_reform_tooltip = {
-			government_reform = carthaginian_absolute_monarchy
-		}
-	}
+	legacy_equivalent = steppe_absolutism_legacy
 	valid_for_nation_designer = yes
-	nation_designer_trigger = {
-		has_dlc = "Lions of the North"
-	}
-	nation_designer_cost = 40
-
+	nation_designer_cost = 10
 	modifiers = {
-		max_absolutism = 30
-		yearly_absolutism = 3
-		autonomy_change_time = -0.5
-		nobles_influence_modifier = -0.1
-		church_influence_modifier = -0.1
-		burghers_influence_modifier = -0.1
+		max_absolutism = 20
+		army_tradition_from_battle = 0.1
+		harsh_treatment_cost = -0.2
 	}
-
 	custom_attributes = {
-		absolutism_reduction_on_ruler_death = yes
+		enables_aristocratic_idea_group = yes
+		enables_horde_idea_group = yes
+	}
+	ai = {
+		factor = 0.5 #generic
 	}
 }

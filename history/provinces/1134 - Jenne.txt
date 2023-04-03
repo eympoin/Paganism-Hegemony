@@ -41,3 +41,5 @@ center_of_trade = 2
 	controller = ZAF
 	add_core = ZAF
 } # The Massina Empire, recylcing the JNN tag
+
+discovered_by = numidian_tech

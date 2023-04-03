@@ -18,3 +18,12 @@ discovered_by = ottoman
 discovered_by = eastern
 extra_cost = 16
 center_of_trade = 2
+
+discovered_by = greek_tech
+discovered_by = roman_tech
+discovered_by = germanic_tech
+discovered_by = celtic_tech
+discovered_by = slavic_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech
+discovered_by = numidian_tech

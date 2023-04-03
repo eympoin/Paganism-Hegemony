@@ -8,6 +8,6 @@ tags={
 	"Trade"
 }
 picture="thumbnail.png"
-name="Paganism Hegemony v0.9.3: Marduk's return"
+name="Paganism Hegemony v0.9.4: Lord of the Steppes"
 supported_version="1.34.5"
 remote_file_id="2017988677"

@@ -32,3 +32,5 @@ discovered_by = nomad_group
 	remove_core = MCH
 } # The Qing Dynasty
 1643.1.1 = { discovered_by = RUS } # Vasily Poyarkov
+
+discovered_by = steppe_tech

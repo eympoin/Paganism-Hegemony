@@ -21,3 +21,7 @@ discovered_by = ottoman
 
 1550.1.1 = { discovered_by = TUR }
 1730.1.1 = { owner = GLE controller = GLE }
+
+discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

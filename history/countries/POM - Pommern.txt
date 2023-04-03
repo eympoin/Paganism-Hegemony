@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 government_rank = 1
 primary_culture = pommeranian
 religion = slavic
-technology_group = western
+technology_group = slavic_tech
 capital = 1858	# Stettin
 
 # Pommern-Wolgast

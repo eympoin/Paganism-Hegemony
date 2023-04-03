@@ -1,6 +1,6 @@
 government = tribal
 add_government_reform = steppe_horde
-technology_group = eastern
+technology_group = steppe_tech
 religion = tengri_pagan_reformed
 primary_culture = pecheneg
 capital = 2405 # Crimea

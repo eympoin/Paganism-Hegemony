@@ -3,7 +3,7 @@ add_government_reform = tribal_kingdom
 government_rank = 1
 primary_culture = luri
 religion = zoroastrian
-technology_group = muslim
+technology_group = persian_tech
 #capital = 4342 # Malamir
 capital = 413 #Khorramabad
 religious_school = hanafi_school
@@ -46,7 +46,7 @@ religious_school = hanafi_school
 		dynasty = "Khorshidi"
 		adm = 2
 		dip = 2
-		mil = 2	
+		mil = 2
 	}
 }
 

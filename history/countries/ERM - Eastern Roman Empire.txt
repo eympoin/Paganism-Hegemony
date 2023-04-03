@@ -2,5 +2,5 @@ government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = greek
 religion = theoi
-technology_group = eastern
+technology_group = greek_tech
 capital = 151 # Constantinople

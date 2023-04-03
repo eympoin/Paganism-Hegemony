@@ -34,3 +34,8 @@ discovered_by = chinese
 	owner = KMT
 	controller = KMT
 } #April 25, 1774 British Vassal
+
+discovered_by = greek_tech
+discovered_by = steppe_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

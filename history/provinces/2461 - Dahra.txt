@@ -19,3 +19,12 @@ discovered_by = ottoman
 discovered_by = western
 discovered_by = eastern
 add_core = MRT
+discovered_by = greek_tech
+
+discovered_by = roman_tech
+discovered_by = germanic_tech
+discovered_by = celtic_tech
+discovered_by = slavic_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech
+discovered_by = numidian_tech

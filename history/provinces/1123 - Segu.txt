@@ -37,3 +37,5 @@ discovered_by = sub_saharan
 1766.1.1 = { unrest = 0 } # Ngolo Diarra restores authortiy of Segu state, ends civil war
 1791.1.1 = { unrest = 6 } # Struggle for power in wake of death of Ngolo Diarra
 1792.1.1 = { unrest = 0 } # Monson Diarra restores order after interregnum
+
+discovered_by = numidian_tech

@@ -1,9 +1,9 @@
 #2197 - Kabardia
 
-owner = CIR
-controller = CIR
-culture = circassian
-religion = armenian_rl
+owner = ALN
+controller = ALN
+culture = alan
+religion = zoroastrian
 capital = "Nalchik"
 trade_goods = wool
 hre = no
@@ -11,7 +11,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 2
 is_city = yes
-add_core = CIR
+add_core = ALN
 
 
 
@@ -20,11 +20,12 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 discovered_by = nomad_group
-
-
-1569.1.1 = { owner = GAZ controller = GAZ } # Budai-Chopan conquest
-1801.1.18 = {
-	owner = RUS
-	controller = RUS
-	add_core = RUS
-} # Annexed by Russia
+discovered_by = greek_tech
+discovered_by = roman_tech
+discovered_by = steppe_tech
+discovered_by = germanic_tech
+discovered_by = celtic_tech
+discovered_by = slavic_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech
+discovered_by = numidian_tech

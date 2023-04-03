@@ -3,7 +3,7 @@ add_government_reform = tribal_kingdom
 government_rank = 1
 primary_culture = berber_culture
 religion = berber
-technology_group = muslim
+technology_group = numidian_tech
 capital = 2448	# Murzuk
 fixed_capital = 2448 # Cannot move capital away from this province & no power cost to move to it
 

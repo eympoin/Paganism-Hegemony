@@ -26,3 +26,5 @@ discovered_by = BRT
 	culture = russian
 }
 1657.1.1 = { add_core = RUS }
+
+discovered_by = steppe_tech

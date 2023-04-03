@@ -24,3 +24,7 @@ discovered_by = indian
 	controller = ETH
 	add_core = ETH
 }
+
+discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

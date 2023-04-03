@@ -1,9 +1,9 @@
 government = monarchy
-add_government_reform = autocracy_reform 
+add_government_reform = autocracy_reform
 primary_culture = armenian
 add_accepted_culture = azerbaijani
 religion = armenian_rl
-technology_group = muslim
+technology_group = persian_tech
 capital = 419	# Yerevan
 
 1425.1.1 = {

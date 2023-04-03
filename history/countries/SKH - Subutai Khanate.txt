@@ -4,7 +4,7 @@ primary_culture = astrakhani
 religion = tengri_pagan_reformed
 add_accepted_culture = avar
 add_accepted_culture = dacian
-technology_group = eastern
+technology_group = steppe_tech
 capital = 153
 1432.1.1 = {
 	monarch = {
@@ -15,4 +15,3 @@ capital = 153
 		mil = 4
 	}
 }
-*

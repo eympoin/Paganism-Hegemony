@@ -101,3 +101,8 @@ owner = BNG
 1780.1.1 = { unrest = 7 } # Revolt led by Tilka Manjhi
 1785.1.1 = { unrest = 2 }
 1795.1.1 = { unrest = 6 } # Tamar revolt, Munda revolt
+
+discovered_by = greek_tech
+discovered_by = steppe_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

@@ -3,6 +3,5 @@ add_government_reform = feudalism_reform
 government_rank = 1
 primary_culture = gujarati
 religion = theoi
-technology_group = eastern
+technology_group = greek_tech
 capital = 2999
-

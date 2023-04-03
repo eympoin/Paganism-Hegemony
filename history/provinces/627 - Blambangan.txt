@@ -35,3 +35,7 @@ discovered_by = ottoman
 	remove_core = BLM
 	capital = "Banyuwangi"
 } # Dutch conquered Blambangan
+
+discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

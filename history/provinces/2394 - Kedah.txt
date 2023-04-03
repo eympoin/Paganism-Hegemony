@@ -22,3 +22,7 @@ discovered_by = ottoman
 
 1516.1.1 = { discovered_by = POR } # Godinho de Eredia
 
+
+discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

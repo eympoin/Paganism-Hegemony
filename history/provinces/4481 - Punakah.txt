@@ -24,3 +24,5 @@ discovered_by = chinese
 	controller = BHU
 }
 1634.1.1 = { discovered_by = POR } 
+
+discovered_by = steppe_tech

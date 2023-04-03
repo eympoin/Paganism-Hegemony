@@ -10,3 +10,8 @@ discovered_by = nomad_group
 1405.1.1 = { discovered_by = MNG }
 1498.1.1 = { discovered_by = POR }
 
+
+discovered_by = greek_tech
+discovered_by = steppe_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

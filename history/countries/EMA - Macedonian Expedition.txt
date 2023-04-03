@@ -4,6 +4,5 @@ government_rank = 2
 elector = yes
 primary_culture = greek
 religion = theoi
-technology_group = eastern
+technology_group = greek_tech
 capital = 2308
-

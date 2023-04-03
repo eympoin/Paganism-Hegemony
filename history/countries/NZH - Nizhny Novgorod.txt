@@ -5,7 +5,7 @@ add_government_reform = principality
 government_rank = 1
 primary_culture = russian
 religion = slavic
-technology_group = eastern
+technology_group = slavic_tech
 capital = 306	# Nizhny Novgorod
 
 1350.1.1 = {

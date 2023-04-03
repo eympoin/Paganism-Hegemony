@@ -35,3 +35,7 @@ discovered_by = indian
 	add_core = ETH
 	remove_core = ADA
 } # Adal collapse in highlands in wake of Ahmad Gran's death
+
+discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

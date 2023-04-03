@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 primary_culture = syrian
 add_accepted_culture = canaan
 religion = theoi
-technology_group = muslim
+technology_group = greek_tech
 capital = 1854 # Damascus
 government_rank = 1
 

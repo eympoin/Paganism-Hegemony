@@ -1,0 +1,576 @@
+branche_central = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = ALN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	Alania_return = {
+		icon = mission_restore_kiev
+		required_missions = {  }
+		position = 1
+		provinces_to_highlight = {
+      OR = {
+				province_id = 2201
+				province_id = 2197
+				province_id = 463
+				province_id = 2195
+			}
+			NOT = {owned_by = ROOT}
+    }
+		trigger = {
+			circassia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			owns = 2201
+			owns = 2197
+			owns = 463
+			owns = 2195
+			army_size_percentage = 1
+		}
+		effect = {
+			add_treasury = 100
+			2197 = {change_trade_goods = iron}
+      2197 = {change_trade_goods = copper}
+			add_country_modifier = {
+           name = "Alan_return"
+           duration = 18250
+			}
+			define_general = {
+    		shock = 4
+    		fire = 0
+    		manuever = 4
+    		siege = 2
+			}
+		}
+	}
+
+	cross_the_don_aln = {
+		icon = mission_advance_to_the_dnieper
+		required_missions = {Alania_return}
+		position = 2
+		provinces_to_highlight = {
+		OR = {
+			area = azov_area
+			area = yedisan_area
+			area = zaporizhia_area
+		}
+		NOT = {owned_by = ROOT}
+		}
+		trigger = {
+			azov_area = {
+				type = all
+				owned_by = ROOT
+			}
+			yedisan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			zaporizhia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			TUR = {
+				exists = no
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				 name = "tribes_assimilation"
+				 duration = -1
+			}
+			add_prestige = 25
+		}
+	}
+
+	take_back_our_steppes_aln = {
+		icon = mission_bengal_campaign
+		required_missions = { cross_the_don_aln }
+		position = 3
+		provinces_to_highlight = {
+		OR = {
+			area = circassia_area
+			area = astrakhan_area
+			area = nogai_area
+			area = lower_don_area
+			area = lower_yik_area
+		}
+		NOT = {owned_by = ROOT}
+		}
+		trigger = {
+			circassia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			astrakhan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			nogai_area = {
+				type = all
+				owned_by = ROOT
+			}
+			lower_don_area = {
+				type = all
+				owned_by = ROOT
+			}
+			lower_yik_area = {
+				type = all
+				owned_by = ROOT
+			}
+			NOT = {exists = TUR}
+			NOT = {exists = KHZ}
+			NOT = {exists = KIP}
+		}
+		effect = {
+			add_prestige = 20
+			add_stability = 1
+			capital_scope = {
+				add_base_tax = 2
+				add_base_production = 2
+				add_base_manpower = 2
+			}
+			saratov_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			tambov_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			azov_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			zaporizhia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			yedisan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	steppes_master_aln = {
+		icon = mission_control_the_ganges_delta
+		required_missions = { take_back_our_steppes_aln }
+		position = 4
+		trigger = {
+			TUR = {
+				exists = no
+			}
+			ALN = {
+				exists = no
+			}
+			KHZ = {
+				exists = no
+			}
+			KIP = {
+				exists = no
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				 name = "The_only_one"
+				 duration = -1
+			}
+		}
+	}
+
+	eradicate_the_red_monster_aln{
+		icon = mission_subdue_rajputana
+		required_missions = { steppes_master_aln }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = merv_area
+				area = kyzylkum_area
+				area = syr_darya_area
+				area = arys_area_yik_area
+				area = khiva_area
+			}
+			NOT = {owned_by = ROOT}
+			}
+		trigger = {
+			exists = TIM
+			war_with = TIM
+		}
+		effect = {
+			create_general = { tradition = 100 }
+			every_province = {
+					limit = {
+						owned_by = TIM
+					}
+					add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	the_greatest_horde_of_all_time_aln = {
+		icon = mission_rajput_mansabdars
+		required_missions = { eradicate_the_red_monster_aln }
+		position = 6
+		trigger = {
+			TIM = {
+				exists = no
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				 name = "G.O.A.T"
+				 duration = -1
+			}
+		}
+	}
+
+	old_friend = {
+		icon = mission_pf_soldier
+		required_missions = {
+		the_greatest_horde_of_all_time_aln
+		Baku_ateshgah
+		Develop_our_infrastructure_aln
+		}
+		position = 7
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2410
+				province_id = 2447
+				province_id = 284
+				province_id = 285
+			}
+			NOT = {owned_by = ROOT}
+		}
+		trigger = {
+			owns_core_province = 2410
+			owns_core_province = 285
+			owns_core_province = 2247
+			owns_core_province = 284
+			army_size = BYZ
+		}
+		effect = {
+			anatolia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	empire_killer = {
+		icon = mission_pf_map_table
+		required_missions = {old_friend}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 151
+			}
+			NOT = {owned_by = ROOT}
+		}
+		position = 8
+		trigger = {
+			NOT = {hre_size = 0}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "prussian_rhine"
+				duration = -1
+			} #amodifier!
+		}
+	}
+}
+
+branche_gauche = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = ALN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	Lord_of_caucasus = {
+		icon = mission_conquer_romania
+		required_missions = { Alania_return }
+		position = 2
+		trigger = {
+			GOL = {
+            exists = no
+      }
+		}
+		effect = {
+				2197 = {
+					add_base_tax = 2
+					add_base_production = 3
+					add_base_manpower = 1
+				}
+				capital_scope = {
+			    cossack_cavalry = ALN
+					cossack_cavalry = ALN
+					cossack_cavalry = ALN
+				}
+				2201 = {add_building = fort_15th}
+	    	2195 = {add_building = fort_15th}
+	    	2197 = {add_center_of_trade_level = 1}
+    		astrakhan_area = {
+            limit = {
+            NOT = { is_core = ROOT }
+            NOT = { is_permanent_claim = ROOT }
+            }
+            add_permanent_claim = ROOT
+				}
+		}
+	}
+
+	The_enemy_of_our_enemy = {
+		icon = mission_colonise_brazil
+		required_missions = { Lord_of_caucasus }
+		position = 3
+		trigger = {
+			is_supporting_independence_of = HNS
+			HNS = {
+            exists = yes
+      }
+		}
+		effect = {
+			add_treasury = 200
+			#ajoutereventquideclenchelaguerre
+		}
+	}
+
+	Our_plan_is_on_track = {
+		icon = defenestrate_the_heretics
+		required_missions = { The_enemy_of_our_enemy }
+		position = 4
+		trigger = {
+			is_at_war = no
+			HNS = {
+						is_vassal = no
+			}
+			truce_with = ARM
+		}
+		effect = {
+			add_stability = 1
+			add_prestige = 25
+			#ajoutereventvassalisationdeshuns
+		}
+	}
+
+	Cross_the_caucassus = {
+		icon = mission_humiliate_lubeck
+		required_missions = { Our_plan_is_on_track }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				area = dagestan_area
+			}
+		}
+		trigger = {
+			HNS = {
+						is_vassal = yes
+			}
+		}
+		effect = {
+			caucasia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	Baku_ateshgah = {
+		icon = mission_fatehpur_sikri
+		required_missions = { Cross_the_caucassus }
+		position = 6
+		provinces_to_highlight = {
+			province_id = 421
+		}
+		trigger = {
+			owns = 421
+		}
+		effect = {
+			add_country_modifier = {
+				 name = "Protector_of_the_faith"
+				 duration = -1
+			}
+		}
+	}
+}
+
+
+branche_droite = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = ALN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	Deal_with_jews = {
+		icon = jerusalem
+		required_missions = { Alania_return }
+		position = 2
+		provinces_to_highlight = {
+      OR = {
+				province_id = 464
+				province_id = 466
+				province_id = 469
+				province_id = 2365
+				province_id = 2367
+			}
+			NOT = {owned_by = ROOT}
+    }
+		trigger = {
+			owns = 464
+			owns = 466
+			owns = 469
+			owns = 2365
+			owns = 2367
+			KHZ = {
+            exists = no
+      }
+		}
+		effect = {
+			add_accepted_culture = khazar
+			nogai_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim    = ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+			transcaspia_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim    = ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+			bashkiria_area = {
+        limit = {
+          NOT = { owned_by = ROOT }
+          NOT = {is_claim    = ROOT}
+        }
+        add_permanent_claim = ROOT
+      }
+		}
+	}
+
+	iron_trade_route_aln = {
+		icon = mission_dalaskogen
+		required_missions = { Deal_with_jews}
+		position = 3
+		provinces_to_highlight = {
+			owned_by = KHZ
+		}
+		trigger = {
+			marketplace = 5
+			trade_goods_produced_amount = {
+				trade_goods = iron
+				amount = 4
+			}
+			KHZ = {
+				exists = no
+			}
+		}
+		effect = {
+			add_country_modifier = {
+			 name = "iron_exploitation"
+			 duration = -1
+			}
+			#ajouterbonusdeprodsurcesprovinces
+		}
+	}
+
+	Secure_eastern_border = {
+		icon = fortress_switzerland
+		required_missions = { iron_trade_route_aln }
+		position = 4
+		provinces_to_highlight = {
+			OR = {
+				area = nogai_area
+				area = transcaspia_area
+				area = bashkiria_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			470 = {
+				fort_level = 1
+			}
+			2420 = {
+				fort_level = 1
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "steppe_limes"
+				duration = -1
+			}
+		}
+	}
+
+	find_currency_aln = {
+    icon = mission_entrepot_of_india
+    required_missions = { Secure_eastern_border }
+    position = 2
+    provinces_to_highlight = {
+      OR = {
+        province_id = 305
+        province_id = 2444
+      }
+      NOT = {Owned_by = ROOT}
+    }
+    trigger = {
+      owns= 305
+      owns= 2444
+    }
+    effect = {
+      add_country_modifier = {
+         name = "Endless_currency"
+         duration = -1
+      }
+    }
+  }
+
+	Develop_our_infrastructure_aln = {
+    icon = mission_seize_north_sea_trade
+    required_missions = { find_currency_aln}
+    position = 6
+    trigger = {
+      temple = 5
+    }
+    effect = {
+      add_country_modifier = {
+           name = "Steppes_urbanization"
+           duration = -1
+      }
+    }
+  }
+}

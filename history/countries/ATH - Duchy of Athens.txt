@@ -3,7 +3,7 @@ add_government_reform = free_city
 government_rank = 1
 primary_culture = greek
 religion = theoi
-technology_group = western
+technology_group = greek_tech
 capital = 146	#Athens
 fixed_capital = 146 # Cannot move capital away from this province & no power cost to move to it
 

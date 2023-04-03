@@ -1,0 +1,20 @@
+government = tribal
+add_government_reform = steppe_horde
+primary_culture = alan
+religion = zoroastrian
+technology_group = steppe_tech
+capital = 2201
+
+Legitimacy = 89
+historical_friend = HNS
+
+1444.1.1 = {
+    monarch = {
+        name = "Djarina"
+	dynasty = "Dudjirid"
+        birth_date = 1410.8.12
+        adm = 4
+        dip = 3
+        mil = 4
+    }
+}

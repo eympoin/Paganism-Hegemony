@@ -77,3 +77,7 @@ discovered_by = ottoman
 		investor = GBR
 	}
 } # British Bencoolen
+
+discovered_by = greek_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

@@ -4,7 +4,7 @@ government_rank = 1
 elector = yes
 primary_culture = macedonian
 religion = theoi
-technology_group = eastern
+technology_group = greek_tech
 capital = 148
 fixed_capital = 148# Cannot move capital away from this province & no power cost to move to it
 

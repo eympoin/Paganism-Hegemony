@@ -67,3 +67,8 @@ center_of_trade = 2
 1763.2.10 = {
 	controller = FRA
 } # Returned to France
+
+discovered_by = greek_tech
+discovered_by = steppe_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

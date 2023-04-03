@@ -3,5 +3,5 @@ add_government_reform = autocracy_reform
 government_rank = 1
 primary_culture = pontic_greek
 religion = theoi
-technology_group = eastern
+technology_group = greek_tech
 capital = 285

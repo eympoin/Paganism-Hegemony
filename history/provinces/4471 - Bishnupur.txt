@@ -36,3 +36,8 @@ discovered_by = chinese
 	add_core = GBR
 	capital = "Burdwan"
 } # Given to GBR by Mughal Empire (was formerly british puppet)
+
+discovered_by = greek_tech
+discovered_by = steppe_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

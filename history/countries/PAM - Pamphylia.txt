@@ -3,14 +3,14 @@ add_government_reform = noble_elite_reform
 government_rank = 1
 primary_culture = anatolian
 religion = theoi
-technology_group = eastern
+technology_group = greek_tech
 capital = 2298
 
 1415.2.16 = {
 	monarch = {
 		name = "Herakleios"
 		dynasty = "Myxares"
-		birth_date = 1396.6.27		
+		birth_date = 1396.6.27
 		adm = 3
 		dip = 3
 		mil = 3

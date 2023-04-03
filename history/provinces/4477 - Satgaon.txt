@@ -80,3 +80,8 @@ center_of_trade = 1
 }
 1756.1.1 = { controller = BNG } # Captured by Siraj-ud-daullah
 1757.6.23 = { controller = GBR } # Battle of Plassey, a new Nawab is installed by the British
+
+discovered_by = greek_tech
+discovered_by = steppe_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech

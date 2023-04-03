@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = feudalism_reform
 primary_culture = slovak
 religion = slavic
-technology_group = eastern
+technology_group = slavic_tech
 capital = 1772 # Nitra
 government_rank = 1
 

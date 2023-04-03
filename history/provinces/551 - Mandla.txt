@@ -39,3 +39,8 @@ discovered_by = chinese
 	remove_core = MUG
 } # Marathas (Bhonsle)
 1783.1.1 = { capital = "Tehri" }
+
+discovered_by = greek_tech
+discovered_by = steppe_tech
+discovered_by = semitic_tech
+discovered_by = persian_tech
