@@ -491,7 +491,7 @@ path_gauche_kie = {
 		position = 7
 		trigger = {
 			total_development = 600
-			has_institution = colonialism
+			has_institution = new_world_i
 			280 = {
 				higher_development_than = 40
 			}
