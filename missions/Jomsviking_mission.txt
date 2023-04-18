@@ -31,7 +31,7 @@ Jomsviking_1_1 = {
     trigger = {
 				check_variable = {
 					which = num_won_battles
-					value = 20
+					value = 500
 			}
       #thor's berg
     }
@@ -126,6 +126,51 @@ Jomsviking_1_1 = {
 
 }
 
+Jomsviking_1_2 = {
+  slot = 2
+  generic = no
+  ai = yes
+  potential = {
+    OR = {
+      tag = JOM
+      was_tag = JOM
+    }
+    NOT = { map_setup = map_setup_random }
+  }
+  call_allies_1 = {
+    icon = capture_adriatic_ports
+    required_missions = {}
+    position = 1
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  call_allies_2 = {
+    icon = capture_adriatic_ports
+    required_missions = {first_great_hjaldr}
+    position = 3
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+  call_allies_3 = {
+    icon = capture_adriatic_ports
+    required_missions = {second_great_hjaldr}
+    position = 5
+    provinces_to_highlight = {
+    }
+    trigger = {
+    }
+    effect = {
+    }
+  }
+}
 
 Jomsviking_1_3 = {
   slot = 3
@@ -151,7 +196,7 @@ Jomsviking_1_3 = {
   }
   first_great_hjaldr = {
     icon = capture_adriatic_ports
-    required_missions = {prepare_first_great_hjaldr norse_diplomacy}
+    required_missions = {prepare_first_great_hjaldr call_allies_1 organize_the_army_jom}
     provinces_to_highlight = {
     }
     trigger = {
@@ -171,7 +216,7 @@ Jomsviking_1_3 = {
   }
   second_great_hjaldr = {
     icon = capture_adriatic_ports
-    required_missions = {prepare_second_great_hjaldr}
+    required_missions = {prepare_second_great_hjaldr call_allies_2}
     provinces_to_highlight = {
     }
     trigger = {
@@ -191,7 +236,7 @@ Jomsviking_1_3 = {
   }
   third_great_hjaldr = {
     icon = capture_adriatic_ports
-    required_missions = {prepare_third_great_hjaldr}
+    required_missions = {prepare_third_great_hjaldr call_allies_3}
     provinces_to_highlight = {
     }
     trigger = {
@@ -221,7 +266,7 @@ Jomsviking_1_4 = {
     }
     NOT = { map_setup = map_setup_random }
   }
-  norse_diplomacy = {
+  organize_the_army_jom = {
     icon = capture_adriatic_ports
     required_missions = {}
     position = 1
