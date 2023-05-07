@@ -8,7 +8,7 @@ Svarog =
 	shock_damage = 0.1
 	republican_tradition = 0.5
 
-	allow = { religion = slavic}
+	potential = { religion = slavic}
 	sprite = 20
 
 	ai_will_do = {
@@ -29,7 +29,7 @@ Mokosh =
 	production_efficiency = 0.1
 	development_cost = -0.1
 
-	allow = { religion = slavic}
+	potential = { religion = slavic}
 	sprite = 20
 
 	ai_will_do = {
@@ -50,7 +50,7 @@ Veles =
 	global_unrest = -1
 	trade_efficiency = 0.1
 
-	allow = { religion = slavic}
+	potential = { religion = slavic}
 	sprite = 20
 
 	ai_will_do = {
@@ -83,7 +83,7 @@ Perun =
 	global_manpower_modifier = 0.1
 	discipline = 0.05
 
-	allow = { religion = slavic}
+	potential = { religion = slavic}
 	sprite = 20
 
 	ai_will_do = {
@@ -104,7 +104,7 @@ Yarilo =
 	manpower_recovery_speed = 0.2
 	global_trade_goods_size_modifier = 0.1
 
-	allow = { religion = slavic }
+	potential = { religion = slavic }
 	sprite = 20
 
 	ai_will_do = {
@@ -131,7 +131,7 @@ Stribog =
 	global_tax_modifier = 0.1
 
 
-	allow = { religion = slavic }
+	potential = { religion = slavic }
 	sprite = 20
 
 	ai_will_do = {

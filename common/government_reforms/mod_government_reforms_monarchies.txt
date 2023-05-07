@@ -763,7 +763,9 @@ prussian_monarchy = {
 
 	conditional = {
 		allow = { has_dlc = "Rights of Man" }
-		militarised_society = yes
+		government_abilities = {
+			militarization_mechanic
+		}
 	}
 }
 
@@ -1811,7 +1813,9 @@ livonian_military_monarchy = {
 
 	conditional = {
 		allow = { has_dlc = "Rights of Man" }
-		militarised_society = yes
+		government_abilities = {
+			militarization_mechanic
+		}
 	}
 }
 

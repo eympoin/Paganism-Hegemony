@@ -6659,12 +6659,12 @@ msi_west_african_hegemony = {
 
 msi_the_kingdom_federation = {
 	legitimacy = 0.75
-	yearly_tribal_allegiance = 1
+	yearly_government_power = 1
 }
 
 #permanent
 msi_federal_kingdom_focus = {
-	yearly_tribal_allegiance = 0.5
+	yearly_government_power = 0.5
 	legitimacy = 0.5
 	global_autonomy = -0.05
 	max_absolutism = -20
@@ -7396,7 +7396,7 @@ fin_white_death_descends_upon_europe = {
 	defensiveness = 0.2
 	hostile_attrition = 1
 	max_hostile_attrition = 1
-	attack_bonus_in_capital_terrain = yes
+	attack_bonus_in_capital_terrain = 1
 }
 
 fin_finnish_militarization_modifier = {

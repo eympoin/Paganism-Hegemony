@@ -410,7 +410,9 @@ prussian_republic = {
 
 	conditional = {
 		allow = { has_dlc = "Rights of Man" }
-		militarised_society = yes
+		government_abilities = {
+			militarization_mechanic
+		}
 	}
 
 	custom_attributes = {
@@ -1877,7 +1879,9 @@ prussian_monarchy_legacy = {
 
 	conditional = {
 		allow = { has_dlc = "Rights of Man" }
-		militarised_society = yes
+		government_abilities = {
+			militarization_mechanic
+		}
 	}
 
 	ai = {
@@ -3337,7 +3341,9 @@ shaka_regime_legacy = {
 		allow = {
 			has_dlc = "Rights of Man"
 		}
-		militarised_society = yes
+		government_abilities = {
+			militarization_mechanic
+		}
 	}
 }
 shaka_regime = {
@@ -3369,7 +3375,9 @@ shaka_regime = {
 		allow = {
 			has_dlc = "Rights of Man"
 		}
-		militarised_society = yes
+		government_abilities = {
+			militarization_mechanic
+		}
 	}
 
 	ai = {
