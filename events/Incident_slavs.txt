@@ -118,7 +118,7 @@ country_event = {
         }
       }
       country_event = { id = slavic_uprising.4 }
-    }#choice to remain theoi or not but declarer war on the emperor if they become slavic
+    }#choice to remain theoi or not but declare war on the emperor if they become slavic
   }
 
 
@@ -143,7 +143,7 @@ country_event = {
       }
 
       country_event = { id = slavic_uprising.5 }
-    }#choice to remain theoi or not but declarer war on the emperor if they become slavic
+    }#choice to remain theoi or not but declare war on the emperor if they become slavic
   }
 }
 
@@ -306,10 +306,12 @@ country_event = {
       duration = 7300
     }
     change_religion = slavic
-    declare_war_with_cb = {
+    add_aggressive_expansion = {
       who = emperor
-      casus_belli = cb_religious_conformance
+      value = 100
+      apply_calc = no
     }
+    form_coalition_against = emperor
   }
 
   option = { #defy the empire : become illyrian
@@ -323,15 +325,17 @@ country_event = {
       factor = 10
     }
     set_country_flag = defy_the_emperor
+    add_aggressive_expansion = {
+      who = emperor
+      value = 100
+      apply_calc = no
+    }
+    form_coalition_against = emperor
     add_country_modifier = {
       name = slavic_uprising_mod
       duration = 7300
     }
     change_religion = illyrian
-    declare_war_with_cb = {
-      who = emperor
-      casus_belli = cb_religious_conformance
-    }
   }
   option = { #become tengri_pagan_reformed
     name = slavic_uprising.4.c
@@ -344,15 +348,17 @@ country_event = {
       factor = 10
     }
     set_country_flag = defy_the_emperor
+    add_aggressive_expansion = {
+      who = emperor
+      value = 100
+      apply_calc = no
+    }
+    form_coalition_against = emperor
     add_country_modifier = {
       name = slavic_uprising_mod
       duration = 7300
     }
     change_religion = tengri_pagan_reformed
-    declare_war_with_cb = {
-      who = emperor
-      casus_belli = cb_religious_conformance
-    }
   }
 }
 
@@ -424,10 +430,12 @@ country_event = {
       duration = 7300
     }
     change_religion = slavic
-    declare_war_with_cb = {
+    add_aggressive_expansion = {
       who = emperor
-      casus_belli = cb_religious_conformance
+      value = 100
+      apply_calc = no
     }
+    form_coalition_against = emperor
   }
 
   option = { #defy the empire : become illyrian
@@ -446,11 +454,12 @@ country_event = {
       duration = 7300
     }
     change_religion = illyrian
-    declare_war_with_cb = {
+    add_aggressive_expansion = {
       who = emperor
-      casus_belli = cb_religious_conformance
-
+      value = 100
+      apply_calc = no
     }
+    form_coalition_against = emperor
   }
 
   option = { #become tengri_pagan_reformed
@@ -469,14 +478,46 @@ country_event = {
       duration = 7300
     }
     change_religion = tengri_pagan_reformed
-    declare_war_with_cb = {
+    add_aggressive_expansion = {
       who = emperor
-      casus_belli = cb_religious_conformance
-
+      value = 100
+      apply_calc = no
     }
+    form_coalition_against = emperor
   }
 }
 
+country_event = {#launch war
+  id = slavic_uprising.9
+  title = slavic_uprising.9.t
+  desc = slavic_uprising.9.d
+  picture = HRE_eventPicture
+
+  trigger = {
+    has_country_flag = defy_the_emperor
+  }
+  mean_time_to_happen = {
+    days = 2
+  }
+  fire_only_once = yes
+  option = {
+    name = slavic_uprising.9.a
+    ai_chance = {
+      factor = 1
+    }
+    declare_war_with_cb = {
+      who = emperor
+      casus_belli = cb_super_badboy
+    }
+    every_country = {
+      limit = {
+        has_country_flag = defy_the_emperor
+        is_subject = no
+      }
+      join_all_offensive_wars_of = ROOT
+    }
+  }
+}
 
 country_event = {#defeat of the emperor
   id = slavic_uprising.6
@@ -486,8 +527,11 @@ country_event = {#defeat of the emperor
 
   trigger = {
     has_country_flag = defy_the_emperor
-    war_with = emperor
-    war_score = 25
+    is_in_war = {
+        attacker_leader = ROOT
+        defender_leader = emperor
+        war_score = 25
+    }
   }
   mean_time_to_happen = {
     days = 2
@@ -498,14 +542,24 @@ country_event = {#defeat of the emperor
     ai_chance = {
       factor = 1
     }
-    clr_country_flag = defy_the_emperor
-    set_country_flag = emperors_defeat
-    emperor = {
-      add_prestige = -10
-      add_imperial_influence = -20
+    every_country = {
+      limit = {
+        has_country_flag = defy_the_emperor
+        NOT = {tag = ROOT}
+      }
+      country_event = {id = slavic_uprising.12}
     }
+    clr_country_flag = defy_the_emperor
+    white_peace = emperor
     add_prestige = 20
     add_truce_with = emperor
+    elector = no
+    set_in_empire = no
+
+    set_country_flag = emperors_defeat
+    emperor = {
+      country_event = {id = slavic_uprising.11}
+    }
   }
 }
 
@@ -517,7 +571,10 @@ country_event = { #victory_of_the_emperor
 
   trigger = {
     has_country_flag = defy_the_emperor
-    war_with = emperor
+    is_in_war = {
+        attacker_leader = ROOT
+        defender_leader = emperor
+    }
     NOT = {war_score = -25}
   }
   mean_time_to_happen = {
@@ -529,14 +586,20 @@ country_event = { #victory_of_the_emperor
     ai_chance = {
       factor = 1
     }
-    clr_country_flag = defy_the_emperor
-    emperor = {
-      country_event = {id = slavic_uprising.8}
+    every_country = {
+      limit = {
+        has_country_flag = defy_the_emperor
+      }
+      country_event = {id = slavic_uprising.13}
     }
+    clr_country_flag = defy_the_emperor
     add_prestige = -20
     white_peace = emperor
     add_truce_with = emperor
     change_religion = theoi
+    emperor = {
+      country_event = {id = slavic_uprising.8}
+    }
   }
 }
 
@@ -553,35 +616,9 @@ country_event = { #victory_of_the_emperor
     ai_chance = {
       factor = 1
     }
+    set_global_flag = slavs_lose_war
     add_prestige = 10
     add_imperial_influence = 5
-  }
-}
-
-country_event = {
-  id = slavic_uprising.9
-  title = slavic_uprising.9.t
-  desc = slavic_uprising.9.d
-  picture = HRE_eventPicture
-
-  trigger = {
-    is_force_converted = yes
-    has_country_flag = elite_remained_in_power
-  }
-
-
-  option = { #defy the empire
-    name = slavic_uprising.9.a
-    clr_country_flag = elite_remained_in_power
-    set_country_flag = defy_the_emperor
-    add_country_modifier = {
-      name = slavic_uprising_mod
-      duration = 7300
-    }
-    declare_war_with_cb = {
-      who = emperor
-      casus_belli = cb_religious_conformance
-    }
   }
 }
 
@@ -602,6 +639,68 @@ country_event = {
 
   option = {
     name = slavic_uprising.10.a
+    change_religion = theoi
+  }
+}
+
+country_event = { #defeat of the emperor
+  id = slavic_uprising.11
+  title = slavic_uprising.11.t
+  desc = slavic_uprising.11.d
+  picture = HRE_eventPicture
+
+  is_triggered_only = yes
+
+  option = {
+    name = slavic_uprising.11.a
+    ai_chance = {
+      factor = 1
+    }
+    add_prestige = -10
+    add_imperial_influence = -20
+  }
+}
+
+country_event = { #slavs victory
+  id = slavic_uprising.12
+  title = slavic_uprising.6.t
+  desc = slavic_uprising.6.d
+  picture = HRE_eventPicture
+
+  is_triggered_only = yes
+
+  option = {
+    name = slavic_uprising.6.a
+    ai_chance = {
+      factor = 1
+    }
+    clr_country_flag = defy_the_emperor
+    white_peace = emperor
+    add_prestige = 20
+    add_truce_with = emperor
+    elector = no
+    set_in_empire = no
+    set_country_flag = emperors_defeat
+  }
+}
+
+country_event = { #slavs defeat
+  id = slavic_uprising.13
+  title = slavic_uprising.7.t
+  desc = slavic_uprising.7.d
+  picture = HRE_eventPicture
+
+  is_triggered_only = yes
+
+  option = {
+    name = slavic_uprising.7.a
+    ai_chance = {
+      factor = 1
+    }
+    clr_country_flag = defy_the_emperor
+    add_prestige = -20
+    white_peace = emperor
+    add_truce_with = emperor
     change_religion = theoi
   }
 }

@@ -419,14 +419,17 @@ slavic_uprising.8.t:0 "The war is won"
 slavic_uprising.8.d:0 "We have defeated the Slavs. They shall not rule again."
 slavic_uprising.8.a:0 "Reestablish the Greek elites !"
 
-slavic_uprising.9.t:0 "The rebellion has succeed"
-slavic_uprising.9.d:0 "We have defeated the Greek elites who wished to remain in power, it is time to bring the arms upon their leader : the Emperor"
-slavic_uprising.9.a:0 "To war !"
+slavic_uprising.9.t:0 "To war !"
+slavic_uprising.9.d:0 "It's time, sharpen your blades and prepare yourselves, we are going to free ourselves from the Greek oppressors"
+slavic_uprising.9.a:0 "The Emperor will regret his decision !"
 
 slavic_uprising.10.t:0 "The Empire takes back control"
-slavic_uprising.10.d:0 "The Slavic revolt is over for now. The Empire has taken back the control of the Doux. Only time will tell if this ocntrol will remain."
+slavic_uprising.10.d:0 "The Slavic revolt is over for now. The Empire has taken back the control of the Doux. Only time will tell if this control will remain."
 slavic_uprising.10.a:0 "May Zeus bless us."
 
+slavic_uprising.11.t:0 "The war is lost...."
+slavic_uprising.11.d:0 "The Slavs and their allies have beaten us, we are no match for them. We must let choose their fates for now."
+slavic_uprising.11.a:0 "We will come back stronger"
 #trade incident
 incident_trade_competitor:0 "New trade competitors"
 incident_trade_competitor_emperor_alert:0 "With the discoveries of new trade routes to India comes new competitors. Western Europe don't pass through us anymore to get the diverse Indian products, and thus our trade is impoverished. We shall do something !"
