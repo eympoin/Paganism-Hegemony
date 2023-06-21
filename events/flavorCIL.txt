@@ -38,8 +38,12 @@ country_event = {
 		every_country = {
 			limit = {
 				is_part_of_hre = yes
+				NOT = {tag = BYZ}
 			}
 			country_event = {id = flavor_cil.3 days = 15}
+		}
+		BYZ = {
+			country_event = {id = flavor_byzmod.48 days = 15}
 		}
 	}
 

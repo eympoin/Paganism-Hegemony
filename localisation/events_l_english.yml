@@ -2126,7 +2126,7 @@ flavor_byzmod.70.a:0 "Long live the Empire !"
 
 flavor_cil.1.t:0 "Cilician piracy"
 flavor_cil.1.d:0 "Cilicia has always been a heaven for pirates. Today is no exception. We must choose our politics towards them."
-flavor_cil.1:0 "We are pirates !"
+flavor_cil.1.a:0 "We are pirates !"
 flavor_cil.1.b:0 "Nothing we can do"
 flavor_cil.1.c:0 "These pirates will die !"
 

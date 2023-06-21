@@ -670,7 +670,9 @@ Byzantium_3_2 = {
         }
     }
     effect = {
-      country_event = {id = flavor_byzmod.48}
+      add_treasury = 2000
+      add_yearly_sailors = 10
+      create_admiral = { tradition = 100 }	
     }
   }
 

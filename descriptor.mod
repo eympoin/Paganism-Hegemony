@@ -9,5 +9,5 @@ tags={
 }
 picture="thumbnail.png"
 name="Paganism Hegemony v0.9.4: Lord of the Steppes"
-supported_version="1.34.5"
+supported_version="1.35.0"
 remote_file_id="2017988677"
