@@ -904,7 +904,7 @@ katsina={
 		}
 	}
 	outgoing={
-		name="tunis"
+		name="carthago"
 		path={
 			352 341
 		}
@@ -1118,7 +1118,7 @@ astrakhan={
 		}
 	}
 	outgoing={
-		name="kiev"
+		name="kyiv"
 		path={
 			466 288 291 280
 		}
@@ -1257,7 +1257,7 @@ novgorod={
 		}
 	}
 	outgoing={
-		name="kiev"
+		name="kyiv"
 		path={
 			278 292 275 311 310
 		}
@@ -1269,7 +1269,7 @@ novgorod={
 		30 32 309 4124 33 34 1961 274 275 1960 4148 310 311 1959 2749 4260 294 1752 4243 4248 4249 301 1778 4255 295 4251 4252 307 4147 4253 308 1753 4117 4250 1754 1956 4254 312 4259 4261
 	}
 }
-kiev={
+kyiv={
 	location=280
 	inland=yes
 	outgoing={
@@ -1399,7 +1399,7 @@ alexandria={
 		}
 	}
 	outgoing={
-		name="tunis"
+		name="carthago"
 		path={
 			357 1314 1313 1306 341
 		}
@@ -1634,7 +1634,7 @@ wien={
 	}
 	inland=yes
 	outgoing={
-		name="genua"
+		name="north_italy"
 		path={
 			132 128 1769 1308 4738
 		}
@@ -1954,7 +1954,7 @@ rheinland={
 		}
 	}
 	outgoing={
-		name="genua"
+		name="north_italy"
 		path={
 			83 1760 80 188 187 186
 		}
@@ -2036,7 +2036,7 @@ sevilla={
 		57 160 101
 	}
 	outgoing={
-		name="tunis"
+		name="carthago"
 		path={
 			1293 1294 1301 339 340
 		}
@@ -2063,7 +2063,7 @@ valencia={
 		87 70 168
 	}
 	outgoing={
-		name="genua"
+		name="north_italy"
 		path={
 			213 1296 1297
 		}
@@ -2072,7 +2072,7 @@ valencia={
 		}
 	}
 	outgoing={
-		name="tunis"
+		name="carthago"
 		path={
 			1295 1301 1302 2455
 		}
@@ -2084,13 +2084,13 @@ valencia={
 		1295 197 212 213 2987 2988 220 1750 4549 4550 221 211 214 2990 4557 333 4559 4560 196 200 2753 4695 198 201 202 2991 4696
 	}
 }
-genua={
+north_italy={
 	location=1298
 	color={
 		218 215 56
 	}
 	outgoing={
-		name="tunis"
+		name="carthago"
 		path={
 			1297 1300 1302
 		}
@@ -2117,7 +2117,7 @@ ragusa={
 		56 60 86
 	}
 	outgoing={
-		name="tunis"
+		name="carthago"
 		path={
 			1310 1311 1307 1305 341
 		}
@@ -2138,7 +2138,7 @@ ragusa={
 		137 138 139 140 141 143 1766 1827 1831 3000 3002 3001 4174 4175 4176 131 1828 136 1826 4239 4750 4752 4753 4754 4755 4757 4780 122 1933 2985 4733 4954 119 120 2977 4982
 	}
 }
-tunis={
+carthago={
 	location=341
 	color={
 		146 134 57

@@ -1,0 +1,162 @@
+﻿l_english:
+ elevate_bishopric_title:0 "Elevate Bishopric to an Archbishopric"
+ elevate_bishopric_desc:0 "As a Prince-Elector of the Eastern Roman Empire we have a much greater political power than the title Bishop would normally imply. Let us make use of this influence to convince the Holy See to elevate our Bishopric to an Archbishopric."
+ pragmatic_sanction_decision_title:0 "Pragmatic Sanction"
+ pragmatic_sanction_decision_desc:0 "Our heir is a woman but the Imperial crown can only pass to a man. It would be intolerable if our dynasty should lose their hold on the crown they worked so hard to acquire due to a mere technicality. Let us use all our influence to ensure our female heir will be considered as our successor when the time comes to elect a new Emperor of the Eastern Roman Empire."
+ remove_non_electors_emperors_from_empire_effect_tooltip:0 "All owned provinces will be removed from the Eastern Roman Empire."
+ franks_nation_title:0 "Unite the Franks"
+ franks_nation_desc:0 "The Franks were divided for too long. Now it is time to unite them !"
+ gaul_nation_title:0 "Reform Gallia"
+ gaul_nation_desc:0 "A lot of Gallia has been lost to barbarians, but now it is back under roman control"
+ hispania_nation_title:0 "Unite Hispania"
+ hispania_nation_desc:0 "The peninsula was divided for too long, united nothing will stand in our way"
+ wales_nation_title:0 "Unite Wales"
+ wales_nation_desc:0 "The Lombards were divided for too long. Now it is time to unite them !"
+ lombard_nation_title:0 "Unite the Lombards"
+ lombard_nation_desc:0 "The Lombards were divided for too long. Now it is time to unite them !"
+ britannian_nation_title:0 "Recreate Britannia"
+ britannian_nation_desc:0 "Rejoice, as Recuperatio Britannica has succeeded, and Britannia is back in Roman hands!"
+ bretland_nation_title:0 "Control Bretland"
+ bretland_nation_desc:0 "Since the first waves of invasions, the norse presence grew in Bretland"
+ brytenwalda_nation_title:0 "Form Brytenwalda"
+ brytenwalda_nation_desc:0 "The Angle and Seaxan people are now united, we shall protect our ancestral lands !"
+ pritani_nation_title:0 "Reclaim Pritani"
+ britannian_nation_desc:0 "We were the first inhabitants of Pritani and now is the time to reclaim it !"
+ stop_shadow_kingdom_title:0 "Reign in Egypt"
+ dacian_nation_title:0 "Unite the Dacians"
+ dacian_nation_desc:0 "The nomadic tribes times is no more, it is time to unite the Dacians under one banner and free them from the invaders"
+ white_horde_nation_title:0"Reform the White Horde"
+ white_horde_nation_desc:0"The White Horde or Horde of the west has been divided for too long, it is time to reform it !"
+ polabian_nation_title:0 "Unite the Polabians"
+ polabian_nation_desc:0 "The Polabians need to be united if we want to survive the attacks of the our neighbors."
+ danish_nation_title:0 "Unite the Danes"
+ danish_nation_desc:0 "The Danes need to be united if we want to survive the struggles of the future."
+ west_francia_nation_title:0 "Reform West Francia"
+ west_francia_nation_desc:0 "The Kingdom of West Francia was divided for too long. Now is the time to unite the 4 kingdoms into one : West Francia !"
+ east_francia_nation_title:0 "Reform East Francia"
+ east_francia_nation_desc:0 "The Kingdom of East Francia was divided for too long. Now is the time to unite it again !"
+ illyrian_nation_title:0 "Reform the old province of Illyria"
+ illyrian_nation_desc:0 "Following the slavic migrations, the province of Illyria was fractured into multiple states. It is time to reform it."
+ swedish_nation_title:0 "Unite the Swedes"
+ swedish_nation_desc:0 "The former Swedish coalition failed to protect us against the Sami, it is time to form a coalation of our own."
+ norwegian_nation_title:0 "Unite the Norwegians"
+ norwegian_nation_desc:0 "The Norwegians need to be united if we want to survive the struggles of the future."
+ #Arabia
+ ArabianPagans_title:0 "Form Ardu-Alaliha"
+ ArabianPagans_desc:0 "All Arabs are under one country and respect the old way"
+
+ #Western Roman empire
+ restore_Western_Roman_Empire_title:0 "Reform the Western Roman Empire"
+ restore_Western_Roman_Empire_desc:0 "The Western Empire is back"
+
+ restore_Roman_Empire_title:0 "Return of the Eagle"
+ restore_Roman_Empire_desc:0 "An united Roman Empire has been the dream of many since its fall. This dream is now reality."
+
+ #Tamazgha
+ Create_Tamazgha_title:0 "Create Tamazgha"
+ Create_Tamazgha_desc:0 "All Imazighen are unite"
+ african_nation_title:0 "Unite Africa"
+ african_nation_desc:0 "Africa has been divided for too long, united nothing will stand in our way"
+
+ libyan_nation_title:0 "Unite Libya"
+ libyan_nation_desc:0 "Libya has been divided for too long, united nothing will stand in our way"
+
+ build_cothon_title:0 "Rebuild the Cothon"
+ build_cothon_desc:0 "The Cothon was once the pride of Carthago, rebuilding it will show to the World that we embrace our heritage."
+
+ cyprus_nation_title:0 "Unite Cyprus"
+ cyprus_nation_desc:0 "Cyprus has been divided for too long, united nothing will stand in our way"
+
+#Magna Graecia
+Magna_Graecia_title:0 "Create Magna Graecia"
+Magna_Graecia_desc:0 "The Griko people, need to be unite"
+
+#Reforming Roma
+cutting_back_nobles_spq_title:0 "Diminish noble influence"
+cutting_back_nobles_spq_desc:0 "The legacy of the Kingdom is a powerful nobility that controls most of the country, if we want to move forward they will have to be curtailed."
+curtail_the_nobles_spq_title:0 "Curtail the Roman nobles"
+curtail_the_nobles_spq_desc:0 "With the nobles weakened we can virtually push them out of the influence spheres of our nation, this will make them unhappy, but in time they will be powerless."
+curtail_nobles_spq_tt:0 "§YHostile Nobility§! will be replaced by §YNobles curtailed§!\nEffective change:\n  Leader cost: §G-30.0%§!\n  Land Maintenance Modifier: §G-20.0%§!\n  Land Forcelimit Modifier: §R-10.0%§!"
+the_roman_debt_spq_title:0 "The roman debt"
+the_roman_debt_spq_desc:0 "With the massive debt draining our coffers ever drier we cannot do anything but rely on those who have honed their financial skills over decades. Let us ask the burghers to help us out, this will make them powerful, but we have no choice."
+roman_nation_title:0 "Claim the Roman title"
+roman_nation_desc:0 "With the city of Roma in our grasp we can proclaim ourselves as the heirs of the Rome of old."
+
+restore_aurelian_walls_title:0 "Restore the Aurelian Walls"
+restore_aurelian_walls_desc:0 "The Aurelian Walls have served city well, but they are damaged and old, it is time to restore them !"
+renovate_ostia_title:0 "Renovate Ostia"
+renovate_ostia_desc:0 "The port of Ostia lost a lot of its traffic and almost fell into desuetude since the fall of the Western Roman Empire. If we want the Mediterranean to be our Mare nostrum again, we have to renovate the port and make it attractive. "
+
+rebuild_ostia_title:0 "Rebuild Ostia"
+rebuild_ostia_desc:0 "The port was burned by the King to prevent the escape of the senators. We have to rebuild it if we want to have an access to the sea."
+
+restore_the_pantheon_title:0 "Restore the Pantheon"
+restore_the_pantheon_desc:0 "The Pantheon like so many monuments of our cities was neglected these last centuries. It needs a fresh renovation in order to be the great temple it once was."
+
+renovate_circus_maximus_title:0 "Restore the Circus Maximus"
+renovate_circus_maximus_desc:0 "The Pantheon like so many monuments of our cities was neglected these last centuries. It needs a fresh renovation in order to be the great Circus it once was."
+
+renovate_coliseus_title:0 "Restore the Colosseum"
+renovate_coliseus_desc:0 "The Colosseum like so many monuments of our cities was neglected these last centuries. It needs a fresh renovation in order to be the great amphitheatre it once was."
+
+a_new_forum_title:0 "A new Forum"
+a_new_forum_desc:0 "The old forum has suffered a lot from these decades of war. A new one would be the start of a new era for Roma."
+
+inherit_empire:0 "The emperor of the ERE will inherit all the territories of the empire when the Roman Empire is formed"
+
+#seleucid
+seleucid_nation_title:0 "Seleucos legacy"
+seleucid_nation_desc:0 "Since our ascendance on the throne of Syria, wa have always claimed to be the desscendant of the great Seleucid. Now that we have reconquer some of their lands, we can push further this claim and reform the once glorious Empire !"
+
+numidian_protectorate_title:0 "Create a Numidian Protectorate"
+numidian_protectorate_desc:0 "After much consideration, keeping and developping the Saharan Desert for ourselves is costier than we thought. We shall establish a Numidian Protectorate to focus on our coasts."
+
+alba_nation_title:0 "Unite the Scots and Picts"
+alba_nation_desc:0 "We must unite to face the invaders !"
+
+#sclavenia
+restore_Alexander_empire_title:0 "Restore Alexander Empire"
+restore_Alexander_empire_desc:0 "What was may come again."
+
+sclavenia_nation_title:0 "Reunite the Slavs under one banner"
+sclavenia_nation_desc:0 "After the migration, the Slavs were never really integrated in the Eastern Roman Empire. They were keep divided by their overlord. This time is over !"
+
+
+ #Eastern Roman empire
+restore_Eastern_Roman_Empire_title:0 "Reform the Eastern Roman Empire"
+restore_Eastern_Roman_Empire_desc:0 "The Eastern Empire is back"
+
+#imperial authority
+authority_in_egypt_title:0 "Authority in Egypt"
+authority_in_greece_title:0 "Authority in Greece"
+authority_in_balkans_title:0 "Authority in the Balkans"
+authority_in_anatolia_title:0 "Authority in Anatolia"
+authority_in_syria_title:0 "Authority in Syria"
+
+authority_in_egypt_desc:0 "Our authority in Anatolia is now restored !"
+authority_in_greece_desc:0 "Our authority in Anatolia is now restored !"
+authority_in_balkans_desc:0 "Our authority in Anatolia is now restored !"
+authority_in_anatolia_desc:0 "Our authority in Anatolia is now restored !"
+authority_in_syria_desc:0 "Our authority in Anatolia is now restored !"
+
+unite_ireland_title:0 "Unite Ireland"
+unite_ireland_desc:0 ""
+
+united_ireland_title:0 "Ireland is United"
+united_ireland_desc:0 ""
+
+unite_ireland_cuicide_title:0 "Ireland is United"
+unite_ireland_cuicide_desc:0 ""
+
+form_tatarstan_title:0 "Unite the Tatar"
+form_tatarstan_desc:0 "Since the decline of the Golden Hord, the Tatar have been divided. It is high time to unite them them under one banner. Europe will fear us once more !"
+form_rusKhaganate_title:0 "Form the Rus Khaganate"
+form_rusKhaganate_desc:0 "The old Rus has fallen to us. And we are now the most legitimate heir of its legacy. The Rus is dead, long live the Rus !"
+
+lloegyr_nation_title:0 "Reconquest of Celtic Lands"
+lloegyr_nation_desc:0 "For generations, the Celts have been on the defensive against Norse, Saxons, Romans and Franks. It is now time to strike back and to form a nation for the Celts : Lloegyr"
+restore_cumania_title:0 "Restore Cumania"
+restore_cumania_desc:0 "The Mongols destroyed the Great Cuman Empire, two centuries ago. It is time for it to return, to take revenge against those weaker steppe riders."
+
+rus_nation_title:0 "Restore the Rus"
+rus_nation_desc:0 "The Mongol Invasions destroyed the Rus decades ago. It was the pride of all Slavs, a shield for the civilized worlds against the Horrors of the Steppes. We are now ready to reform our glorous past. Long Live the Rus !"

@@ -1,0 +1,783 @@
+﻿l_english:
+ restoration_of_kiev:0 "The Restoration of Kyiv"
+ desc_restoration_of_kiev:0 "Kyiv is being restored to its former glory. Our investment in the city allows us to develop its infrastructure even further."
+ iberian_horses:0 "Iberian horses"
+ protected_coast:0 "Protected coast"
+ gallia_united:0 "United Gallia"
+ romanize_the_franks:0 "Romanize the Franks"
+ revenge_against_the_franks:0 "Revenge against the Franks"
+ best_wine:0 "Finest Wine"
+ new_farmlands:0 "New Farmlands"
+ bois_des_landes:0 "Bois des Landes"
+ Vassalization:0 "Vassalization"
+ the_only_king:0 "The only King"
+ the_eternal_city_mod:0 "The Eternal City"
+ western_mediterranean_control:0 "Western Mediterranean control"
+ through_the_atlantic:0 "Through the Atlantic"
+ asturias_stronghold:0 "Asturians Stronghold"
+ desc_iberian_horses:0 "Iberian horses"
+ desc_protected_coast:0 "Protected coast"
+ desc_gallia_united:0 "United Gallia"
+ desc_romanize_the_franks:0 "Romanize the Franks"
+ desc_revenge_against_the_franks:0 "Revenge against the Franks"
+ desc_best_wine:0 "Finest Wine"
+ desc_new_farmlands:0 "New Farmlands"
+ desc_bois_des_landes:0 "Bois des Landes"
+ desc_Vassalization:0 "Vassalization"
+ desc_the_only_king:0 "The only King"
+ desc_the_eternal_city_mod:0 "The Eternal City"
+ desc_western_mediterranean_control:0 "Western Mediterranean control"
+ desc_through_the_atlantic:0 "Through the Atlantic"
+ desc_asturias_stronghold:0 "Asturians Stronghold"
+ the_pentapolis:0 "The Pentapolis"
+ the_penta_universities:0 "Penta-Universities"
+ education_focus:0 "Education focus"
+ mediterranean_protection:0 "Mediterranean protection"
+ mountainous_fort:0 "Mountainous forts"
+ navy_emphasis:0 "Navy Emphasis"
+ lorraine_mines:0 "Lorraine mines"
+ protected_mountains_passage:0 "Protected mountain passage"
+ merchant_from_all_europe:0 "Merchant from all Europe"
+ finest_iron:0 "Finest Iron"
+ selected_breed:0 "Selective breeding"
+ flanders_industry:0 "Flanders industry"
+ great_temple:0 "Great temple of Reims"
+ coal_development:0 "Coal development"
+ norman_guard:0 "Norman Guard"
+ accept_the_celts:0 "Accept the celts"
+ frp_city_of_light:0 "City of Light"
+ chateau_loire:0 "Château de la Loire"
+ biggest_shipyard:0 "Saint Nazaire shipyard"
+ repopulation:0 "Repopulation"
+ norman_base:0 "Base of the Norman Guard"
+ south_rich_cities:0 "Riches of southern Gallia"
+ king_of_all_franks:0 "King of all franks"
+ Sunni_missionary_strength:0 "missionary strength"
+ burdigala_port:0 "Port of Burdigala"
+ control_of_champagne_and_bourgogne_fairs:0 "Control of all the fairs"
+
+persian_pressure:0 "Persian pressure"
+desc_persian_pressure:0 ""
+not_helping_bal:0 "Didn't helped our Baluch brethren"
+desc_not_helping_bal:0 "Didn't helped our Baluch brethren"
+# Persian Mission Rewards
+per_seat_of_satrap:0 "Seat of a satrap"
+desc_per_seat_of_satrap:0 "This city is the seat of a Satrap, a talented administator overseeing the surrounding areas."
+per_rebuilding_country:0 "Rebuilding the country"
+desc_per_rebuilding_country:0 "Now that the civil war is over the effort can be shifted towards mending the wounds accumulated by our aging empire."
+per_elm_trading:0 "Elymaite trading"
+desc_per_elm_trading:0 "The reconquest of Elymais has opened up new trade routes in mesopotamia and eased up the control of the persian gulf."
+per_zealotry:0 "Zoroastrian zealotry"
+desc_per_zealotry:0 "The reconquest of Baluchistan and its forcefully converted populus has invigored our missionary with purpose."
+per_ind_steer:0 "Persian ventures in India"
+desc_per_ind_steer:0 "The riches of India can be found both on land and on sea, now that we control trade routes into India we must divert the trade from the arabia peninsula."
+per_silk_road:0 "The persian silk road"
+desc_per_silk_road:0 "The silk road is being heavily invested into, turning it back to its former glory."
+
+
+#Kingdom of Jerusalem Mission Rewards
+koj_cannan_settlers:0 "Cannanite settlers"
+desc_koj_cannan_settlers:0 "The tribes of cannan have been left to live in desolate lands and desert, as we claim new and fertile land on the cost huge influx of settlers easying the integration of newly conquered provinces."
+koj_seat_of_bishop:0 "Seat of a consecrated archbishop"
+desc_koj_seat_of_bishop:0 "An archbishop consecrated in the holy sepulcher resides in this city. The land is blessed by his presence and the populus is invigored by the cantiques he recites."
+koj_the_great_drought:0 "Great famine"
+desc_koj_the_great_drought:0 "A great famine broke out following an unforseen drought, the land and the people are dying, nothing comes out of the ground as if the land was cursed."
+koj_desperate_army:0 "The force of Desperation"
+desc_koj_desperate_army:0 "Desparation slowly fills the ranks of the soldiers, they are fighting for the survival of their brethren back at home. They are fearsome in battle, but their morale is as empty as their stomachs."
+koj_greek_assimilation:0 "Greek assimilation"
+desc_koj_greek_assimilation:0 "We have integrated the greek language and customs into our own, make it easier to trade and discuss philosophy and science with the west."
+#Hejaz
+South_Arabia_integrate:0 "South Arabia integrate"
+desc_South_Arabia_integrate:0 ""
+Prepare_for_War:0 "Prepare for War"
+desc_Prepare_for_War:0 ""
+Hegemony_in_hormuz:0 "Hegemony in Hormuz"
+desc_Hegemony_in_hormuz:0 ""
+
+#al Haasa
+conversion_of_mecca:0 "Conversion of Mecca"
+desc_conversion_of_mecca:0 ""
+construction_modifier_haasa:0 "Construction modifier Haasa"
+desc_construction_modifier_haasa:0 ""
+Accept_Ibadi_faith:0 "Accept heretics"
+desc_Accept_Ibadi_faith:0 ""
+
+#slavic uprising
+slavic_uprising_imperial_help:0"Slavic uprising with Imperial Help"
+slavic_uprising:0 "Slavic Uprising"
+
+desc_slavic_uprising_imperial_help:0""
+desc_slavic_uprising:0 ""
+
+#Londinium
+dip_approach_ldn:0 "A Diplomatic Approach"
+desc_dip_approach_ldn:0 "Whereas our history and traditions are those of warriors we chose to extand our hand and reach out to other kindgoms, the time where we can rely only on romans is well and truly over."
+mil_approach_ldn:0 "The Great Recuperatio"
+desc_mil_approach_ldn:0 "We follow our ancestors in their footsteps, we march onwards to the battlefield, may we bathe in glory and in the blood of our ennemies."
+adm_approach_ldn:0 "Inward Focus"
+desc_adm_approach_ldn:0 "Rome once was the center of science, trade and administration of the Empire, but it is now a shadow of its former self. Now it is time for Londinium to shine as bright as Rome once did."
+ldn_londinium_rebuilt:0 "The Great City of Londinium"
+desc_ldn_londinium_rebuilt:0 "The great city of Londinium has risen back from the ashes, its influence now reaches across the channel and everyone in the mainland envy the culture and architecture of this city."
+ldn_integrate_land:0 "Reintegrating our Lost Lands"
+desc_ldn_integrate_land:0 "Reintegrating our lost lands will take time, but since we have already owned them once it should be easier."
+ldn_glevum_shipyard:0 "The Glevum Shipyard"
+desc_ldn_glevum_shipyard:0 "The city of Glevum lies on the banks of a river, downstream from the vast forests of Cornovii and its vast supply of building materials for ships."
+ldn_eboracum_university:0 "The Eboracum University"
+desc_ldn_eboracum_university:0 "The city of Eboracum was renovated and a great university has been build at the center of it. Great minds are attracted to this place."
+ldn_colonial_vigor:0 "Colonial Vigor"
+desc_ldn_colonial_vigor:0 "The news that our settlers have made it across the ocean has bolstered the morale of our sailors and many are looking to make a new life across the waves."
+ldn_rival_spq:0 "Opposing Rome"
+desc_ldn_rival_spq:0 "Britannia stands alone as it always as, no Emperor but a true britannian can rule over these isles."
+ldn_coop_spq:0 "Cooperating with Rome"
+desc_ldn_coop_spq:0 "Rome has helped us in the past, even if we are no longer part of their empire we can still cooperate as brethrens."
+ldn_vassal_spq:0 "Roman Subject"
+desc_ldn_vassal_spq:0 "The empire of old cannot be reborn if we do not put the mistakes of old to rest. We are but a part of the Empire, and the Senate is the only authority we bend to."
+
+
+#Northumbria
+nrt_push_south:0 "Relentless push south"
+desc_nrt_push_south:0 "Our push southward is now unstoppable, our troops chase down the remnants of the germanic forces like animals in the plains."
+nrt_shocking_force:0 "Shocking force"
+desc_nrt_shocking_force:0 "Our troops sweap across the battlefield and break every ennemy lines in the way, their advance is unrelenting and unstoppable."
+nrt_purge_germanics:0 "State syncretism"
+desc_nrt_purge_germanics:0 "Our rites are similar to those of many others, it is time for them to accept our worship as we will with theirs."
+nrt_assimilation:0 "Cultural assimilation"
+desc_nrt_assimilation:0 "We may be conquerors we are not ruthless invaders, we shall rule over Bretland and its people equally, and in time they will become true nords."
+nrt_purge:0 "Non-nordics purged"
+desc_nrt_purge:0 "This land is ours and our brothers back at home are reading ships to come join us and inhabit these lands, the former inhabitants will be replaced in blood."
+nrt_expatriation:0 "Non-nordics expelled"
+desc_nrt_expatriation:0 "The true people of Bretlands are the nords, but killing the former inhabitants is pointless, making them work across the waves is better."
+nrt_migration_affect:0 "En-masse migration"
+desc_nrt_migration_affect:0 "Many fled this place to find a lusher place to live, it will take time for the population to recover."
+nrt_purged_populus:0 "Purged Populus"
+desc_nrt_purged_populus:0 "The inhabitants of this place have been butchered by settlers, the land is ravaged and not enough people live here to work the fields efficiently."
+nrt_colonial_port:0 "Nordic colonial port"
+desc_nrt_colonial_port:0 "This port is the major port in charge of building most of the boats going across the ocean."
+vinlandic_traders:0 "Vinlandic Traders"
+desc_vinlandic_traders:0 ""
+great_hall_nrt:0 "Great Assembly Hall"
+desc_great_hall_nrt:0 "A great hall is a meeting place for the Jarls and Kings of various countries, it is where most of the diplomacy regarding this country takes place."
+germano_norse_cooperation_nrt:0 "Germano-norse Cooperation"
+desc_germano_norse_cooperation_nrt:0 "A treaty based on the cooperation of two states in the matter of military and administration, this is a one of a kind treaty between the proud Nords and the savage Franks."
+germano_norse_cooperation_frk:0 "Germano-norse Cooperation"
+desc_germano_norse_cooperation_frk:0 "A treaty based on the cooperation of two states in the matter of military and administration, this is a one of a kind treaty between the savage Nords and the proud Franks."
+
+#Anglo-saxon/brytenwalda
+unified_the_anglosaxon:0 "Unified the Angloseaxan"
+desc_unified_the_anglosaxon:0 "The germanic people in these lands are now ruled by one king, no longer are we splintered across borders, now we are strong !"
+angle_court_brw:0 "Angle court"
+desc_angle_court_brw:0 "The Angle culture is mostly represented in court, this makes their productivity and talent with crafting shine in the eyes of all."
+seaxan_court_brw:0 "Seaxan court"
+desc_seaxan_court_brw:0 "The Seanxan culture is mostly represented in court, their willpower and good health make them an example to all the Germans in Brytenwalda."
+angleseaxan_court_brw:0 "AngleSeaxan court"
+desc_angleseaxan_court_brw:0 "Both cultures are present in court, we have the productive angle leading the economy while the brave seaxan lead the army, together they bring us glory."
+angle_loom_brw:0 "Angle loom"
+desc_angle_loom_brw:0 "The Angle loom is an ingenious tool that is highly efficient and rather easy to use."
+regional_capital_brw:0 "Regional capital"
+desc_regional_capital_brw:0 "This city was declared as a regional capital, centralising the surrounding area."
+great_register_census_brw:0 "Great census registers"
+desc_great_register_census_brw:0 "Great census registers are being kept and maintained by officials, making the ressources of the kingdom well known and easy to allocate."
+early_industry_brw:0 "Early industry"
+desc_early_industry_brw:0 "An early form of industry has developed."
+naval_impetus_brw:0 "Naval impetus"
+desc_naval_impetus_brw:0 "The focus on navy makes the prodution in this province highly demanded."
+changed_goods_brw:0 "Changed production"
+desc_changed_goods_brw:0 "The local production was switched by the state, it will take time to adapt to this new production."
+
+#Saxon + Lotharingia
+anti_mongol_strategy:0 "Anti-mongol strategy"
+desc_anti_mongol_strategy:0 "We have learn how to counter these countless horse archers"
+lesson_from_the_nomads:0 "Lesson from the nomads"
+desc_lesson_from_the_nomads:0  "We have learn a lot from these nomadic warriors"
+norsemen_legacy:0 "Norsmen legacy"
+desc_norsemen_legacy:0  ""
+rhenish_trade:0 "Rhenish trade"
+desc_rhenish_trade:0 ""
+nurnberg_throne:0 "Nürnberg Throne"
+desc_nurnberg_throne:0 "The Throne of the East Francian Kings"
+lotharingian_industry:0"Lotharingian industry"
+desc_lotharingian_industry:0 ""
+lorraine_iron:0 "Lorraine Iron"
+
+attract_american_trade:0 "American trade"
+desc_attract_american_trade:0 ""
+rhenish_trade:0 "Rhenish trade"
+desc_rhenish_trade:0 ""
+baltic_gates:0 "The Baltic Gates"
+desc_baltic_gates:0 ""
+Sanctuary_of_Irminsul:0 "Sanctuary of Irminsul"
+desc_Sanctuary_of_Irminsul:0 ""
+eaf_king:0 "King of East Francia"
+desc_eaf_king:0 ""
+secure_our_back:0 "Secure our back"
+desc_secure_our_back:0 ""
+city_of_riches:0 "City of Riches"
+desc_city_of_riches:0 ""
+
+Irminsul_capital:0 "Capital at Irminsul"
+Konstanz_capital:0 "Capital at Konstanz"
+nurnberg_capital:0 "Capital at Nürnberg"
+Munchen_capital:0 "Capital at München"
+desc_Irminsul_capital:0 "Our capital is located just next to the Sanctuary of Irminsul"
+desc_Konstanz_capital:0 "The trading city of Konstanz is our capital"
+desc_nurnberg_capital:0 "The prestigious city of Nürnberg is our capital"
+desc_Munchen_capital:0 "The banking city of München is our capital"
+#Italian countries
+no_men_left_spq:0 "Severe depopulation"
+desc_no_men_left_spq:0 "The Bloody War left our country with not even enough men to work the fields, we cannot hire more men in the army lest we face a famine unlike any other."
+wounds_of_bloody_war_spq:0 "Wounds of the Bloody War"
+desc_wounds_of_bloody_war_spq:0 "Blood was shed and massacres took place, and we were ruthless, cities, villages, nothing was spared, everything burned if it resisted. Words of our misdeeds have spread across the Mediterranean, and many consider us as animals. We have to be careful, both internally and externally."
+massive_indebtment_spq:0 "Massive indebtment"
+desc_massive_indebtment_spq:0 "With the coffers empty during the war we resorted to borrowing from nobles all across our kingdom and neighboring provinces. After all is done we are left with a spiralling debt and bankruptcy my be looming if nothing is done."
+bloodthirsty_heritage_spq:0 "Bloodthirsty Heritage"
+desc_bloodthirsty_heritage_spq:0 "We are deemed as dangerous by many surrounding kingdoms because of what we did during the Bloody War, it will take time for our reputation to recover."
+birthed_by_cw_spq:0 "Birthed from a Civil War"
+desc_birthed_by_cw_spq:0 "Our country was birthed by a civil war, we might have the support of those with power but the country remains unstable and our people are tired of conflicts. May peace reign in our times."
+nobles_curtailed_spqr:0 "Nobles curtailed"
+desc_nobles_curtailed_spqr:0 ""
+unrest_stirred_spqr:0 "Senatorial Unrest"
+desc_unrest_stirred_spqr:0 "Unrest is stirred by the remnants of the Senate, the debate on wether or not the monarchy is legitimate destabilizes our country."
+roman_senators_mustering_forces:0 "Roman senators control"
+desc_roman_senators_mustering_forces:0 "The roman senators are mustering their forces and training troops to reinstate the Senate in Roma."
+sheltering_roman_senators_ctg:0 "Roman Senatorial advisors"
+desc_sheltering_roman_senators_ctg:0 "The roman senators are being protected in our court, their knowledge on republican matters are a great help for our fledgling republic. But they might one day ask up to help them retake Roma."
+hostile_nobles_spq:0 "Hostile nobility"
+desc_hostile_nobles_spq:0 "With our ascension to power the position of the nobles feel threatened and they regard our government as illegitimate, they will try to burden us even further and they might rebel before we know it."
+divert_recruits_spq:0 "Diverting army recruits"
+desc_divert_recruits_spq:0 "The new recruits have been given land in the countryside to work and live off in hopes to quell a coming famine."
+opinion_draining_people_spq:0 "Encouraging emigration"
+slight_depopulation_spq:0 "Mild depopulation"
+desc_slight_depopulation_spq:0 "The population is recovering and soon the new generations will fill in for those lost in the war."
+slight_indebtment_spq:0 "Slight Indebtment"
+desc_slight_indebtment_spq:0 "Our country is heavily indebted, a few mistakes could lead us back to a sorrowful economic state, but if we continue things will sort themselves out."
+rebuilding_the_country_spq:0 "The great rebirth"
+desc_rebuilding_the_country_spq:0 "Once again, after decades of turmoil our country has finally overcome the worst moment of its history ! May we bathe in glory as we become once again the mightiest and richest in these lands."
+balanced_funding:0 "Balanced Funding"
+desc_balanced_funding:0 "We have decided to establish a balanced funding of our scientists and scholars. While it won't give us any significant advantage, it will at least make sure we don't have any downsides of only picking one side."
+
+need_of_reforms_monarchy:0 "Need of Reforms"
+republic_under_construction:0 "Republic under Construction"
+army_of_citizens:0 "Army of Citizens"
+mercenary_contracts:0 "Mercenary contracts renewed"
+intern_trade_focus:0 "Intern Focused Trading Policy"
+extern_trade_focus:0 "External Focused Trading Policy"
+balanced_approach:0 "Balanced Trading Policy"
+
+desc_need_of_reforms_monarchy:0 ""
+desc_republic_under_construction:0 "Even though the Carthage of the Old was a Republic, it has been a millenia since those days, and we need to figure out how our republic will work, which causes corruption in our administration."
+desc_army_of_citizens:0 "We have chosen to make an army based on professionalism, by recruiting our citizens. While it makes maintaining those armies harder, it will make them more competent in fighting our enemies."
+desc_mercenary_contracts:0 ""
+desc_intern_trade_focus:0 ""
+desc_extern_trade_focus:0 ""
+desc_balanced_approach:0 "We have chosen to have a balanced trading policy, which has reduced benefits from both internal and external trade, but has the advantage of having none of the downsides of an internal or external focused trading policy."
+
+desc_carthago_aeterna:0 ""
+desc_political_cleansing:0 ""
+desc_influenced_monarchy:0 ""
+desc_cience_funding:0 ""
+desc_etters_fundings:0 ""
+desc_god_king:0 ""
+desc_respect_the_tradtions:0 ""
+desc_ctg_own_path:0 "We shall no longer let anyone decide our destiny! We are Carthaginians, and we will reclaim our empire! "
+desc_roman_ctg:0 ""
+
+
+carthago_aeterna:0 "Carthago Aeterna"
+political_cleansing:0 "The Cleansing"
+influenced_monarchy:0 "Weak Monarchy"
+science_funding:0 "Science Funding"
+letters_fundings:0 "Letters Funding"
+god_king:0 "God King"
+respect_the_tradtions:0 "Influential Church"
+ctg_own_path:0 "Our Own Path"
+ctg_roman:0 "A True Roman"
+desc_ctg_roman:0 "We have been offered to return to our Phoenician roots, but we refused it. This culture and their gods are long dead, and we are proud to be Romans!"
+ibadi_minority:0 "Ibadi minority"
+sunni_minority:0 "Sunni minority"
+shiite_minority:0 "Shiite minority"
+
+carthaginian_trading_outpost:0 "Carthaginian Trading Outpost"
+desc_carthaginian_trading_outpost:0 ""
+
+saharan_trade_monopol:0 "Saharan Trade Monopol"
+chiefs_autonomy:0 "Chieftain autonomy"
+riches_of_africa:0 "Mali's riches"
+pirate_bases:0 "Pirate bases"
+
+desc_saharan_trade_monopol:0 "We have full control of the Saharan Desert! Anyone wanting to cross it will have to pay tariffs to us, which allows us to gain huge supplies of goods and money!"
+desc_chiefs_autonomy:0 ""
+desc_riches_of_africa:0 ""
+desc_pirate_bases:0 ""
+
+berber_capital:0 "An Imazighen capital"
+roman_capital:0 "A Roman capital"
+mixed_capital:0 "A mixed capital"
+
+desc_berber_capital:0 "Our capital is a jewel in the desert which embodies perfectly our culture."
+desc_roman_capital:0 ""
+desc_mixed_capital:0 "Our capital is the symbol of the Imazighen and Roman Union"
+
+cothon:0 "Cothon"
+desc_cothon:0"The Pride of Carthago"
+
+large_colonial_nation_ctg:0 "Large colonial Nation"
+desc_large_colonial_nation_ctg:0 ""
+efforts_to_convert:0 "Efforts to convert"
+desc_efforts_to_convert:0 "We have chosen to reestablish our ancient faith, but many of our people still believe in the Roman Gods, which creates high tensions, and they even refuse to pay their taxes as a sign of protest. We have to convert them fast if we don't want our nation to fall into chaos."
+
+fleet_conversion:0 "Fleet Transition"
+reconquest_of_italy:0 "Reconquest of Italy"
+britannia_restoration:0 "Restoration of Britannia"
+rome_reborn_mod:0 "Rome Reborn"
+emperoror_of_east_west:0 "Return of teh Eagle"
+carthaginian_empire_mod:0 "Carthaginian Empire"
+southern_road_ctg:0 "Southern Road"
+hannibal_road_ctg:0 "Hannibal's Road"
+emperor_of_east_and_west:0 "Emperor of the East"
+roman_savior:0 "Savior of Rome"
+
+desc_hannibal_road_ctg:0 "More than a millenium ago, our greatest general Hannibal Barca went on with his armies to invade the city of Rome itself, from Southern Iberia all the way to Northern Italy! He could have taken the city and allowed us to win the Second Punic War if it weren't from those greedy politicians who feared him! This time, we shall avenge him and finish what he started!"
+desc_carthaginian_empire_mod:0 "After a long work, we have successfully restored our empire! Merchants from around the Mediterranean Sea and the world are sailing to our ports, making us the strongest trading power in the entire world!"
+
+adriatic_monopol:0 "Adriatic Hegemony"
+kings_of_the_lombard:0 "King of the Lombards"
+weak_duchies:0 "Weak Nobility"
+a_lombard_empire:0 "Lombard Empire"
+alpine_defenses:0 "Alpine Defenses"
+two_thrones:0 "Two Throne"
+burgeoning_port:0 "Burgeoning Port"
+riches_of_the_east:0 "Riches of the East"
+german_traitor:0 "Germanic revolts"
+heir_of_rome_lom:0 "Heir of Rome"
+true_german:0 "True German"
+
+western_mediterranean_monopol:0 "West Mediterranean Monopol"
+unified_people:0 "Unified People"
+greek_on_roman_throne:0 "A Greek Rome"
+
+stabilize_the_country:0 "Stabilize the country"
+
+roman_authority_restored:0 "Roman authority Restored"
+coliseus:0 "Colosseum"
+circus_maximus:0 "Circus Maximus"
+new_forum:0 "Neo Forum"
+pantheon:0 "Pantheon"
+ostia_port:0 "Port of Ostia"
+aurelian_walls:0 "Aurelian Walls"
+country_of_wonders:0 "City of Wonders"
+reformed_army:0 "Reformed Army"
+reformed_navy:0 "Reformed Navy"
+reformed_trade:0 "Reformed Trade"
+reformed_administration:0 "Reformed Administration"
+no_barbarian_in_italy:0 "No Barbarian in Italy"
+rich_cities_of_gaul:0 "Rich cities of Gallia"
+achieved_mare_nostrum:0 "Mare Nostrum"
+great_schism:0 "Great Schism"
+greeko-roman_friendship:0 "Greeko-Roman friendship"
+
+king_of_africa_mauretania:0 "King of Mauretania"
+control_straight:0 "Control the Herculean Columns"
+
+fighting_the_pirates:0 "Fight Cilician Pirates"
+eastern_trade_cyp:0 "Eastern Trade"
+great_mines:0 "Great Mines"
+
+accepted_christians:0 "Accepted Christians"
+purged_christians:0 "Purged Christians"
+
+
+ionia_0_25_cities:0 "Ionian Magalopolis:"1-25 cities"
+ionia_25_40_cities:0 "Ionian Magalopolis:"25-40 cities"
+ionia_40_60_cities:0 "Ionian Magalopolis:"40-60 cities"
+ionia_60_100_cities:0 "Ionian Magalopolis:"60-100 cities"
+ionia_100_plus_cities:0 "Ionian Magalopolis:"100+ cities"
+
+ionan_help_byz:0 "Ionian help"
+ionan_help_ion:0 "Help to the Emperor"
+invited_artist:0 "Patron of Artists"
+invited_philosophers:0 "Patron of Philosophers"
+invited_scientist:0 "Patron of Science"
+land_of_universities:0 "Land of Universities"
+
+metropolis_ionia:0 "Ionian Metropolis"
+
+ionian_defense_line_fort:0 "Ionian Defense Line"
+
+temple_of_artemis_mod:0 "Temple of Artemis"
+
+temple_of_zeus_mod:0 "Temple of Zeus"
+
+temple_of_helios_mod:0 "Temple of Helios"
+
+agean_ambition:0 "Agean Ambition"
+
+megalopolis:0 "Megalopolis"
+
+marble_quarry:0 "Marble Quarry"
+
+safe_sea:0 "Safe Seas"
+
+phoenician_trade_prohibition:0 "Phoenician Trade Ban"
+phoenician_trade_authorized:0 "Supported Phoenician domination"
+
+traders_of_the_empire:0 "Traders of the Empire"
+
+phoenician_trading_outpost:0 "Phoenician Trading Outpost"
+deal_with_pls:0 "Deal with the Followers of the Christ"
+pho_colonisation:0 "Colonial Ambitions"
+mastery_of_the_ocean:0 "Mastery of the Ocean"
+
+betrayed_vassals:0 "Betrayed vassals"
+less_betrayed_vassals:0 "Unsatisfied vassals"
+
+become_emperor:0 "The next Emperor"
+
+desert_logistic:0 "Desert logistic"
+
+convert_the_pagans_syr:0 "Convert the Pagans"
+protector_of_the_eastern_border:0 "Protector of the East"
+mesopotamian_academies:0 "Mesopotamian Academies"
+heir_of_seleucos_mod:0 "Heir of Seleucos"
+alexanders_legacy:0 "Alexander's legacy"
+prepare_the_armenian_wars:0 "Prepare the Armenians wars"
+through_mountains_and_desert:0 "Through mountains and deserts"
+riches_of_india:0 "Riches of India"
+east_reunited:0 "The East reunited"
+
+greeko_persian_legacy:0 "Greeko-persian legacy"
+golden_fleece_mod:0 "The Golden Fleece"
+trade_with_the_nomads:0 "Trade with the Nomads"
+black_sea_trade:0 "Black sea trade"
+
+new_infrastructure:0 "New infrastructure"
+new_logistic:0 "New logistic"
+new_trade_infrastructure:0 "New trade infrastructure"
+pontic_ambassads:0 "Pontic ambassads"
+king_of_kings_pon:0 "King of kings"
+
+statue_of_zeus:0 "Statue of Zeus"
+temple_of_artemis:0 "Temple of Artemis"
+colossus:0 "Colossus"
+lighthouse_of_alexandria:0 "Lighthouse of Alexandria"
+tomb_of_Mausolus:0 "Tomb of Mausolus"
+hanging_gardens:0 "Hanging Gardens"
+great_pyramids:0 "Great Pyramids"
+
+bulgar_legacy:0 "Bulgar's legacy"
+
+a_new_army_bul:0 "A new army"
+new_economy_bul:0 "New Economy"
+reunification_bul:0 "Reunification"
+protector_of_the_northern_border:0 "Protector of the Northern border"
+the_great_moldavian_walls:0 "The Great Moldavian Walls"
+no_raids_to_fear:0 "No raids to fear"
+civilize_dacia:0 "Civilize Dacia"
+carpathian_forts:0 "Carpathian Forts"
+control_of_fur_trade:0 "Control the Fur Trade"
+greek_slayer:0 "Greek Slayer"
+unite_the_tribes:0 "Unite the Tribes"
+great_khan:0 "Great Khan"
+
+cast_out_bul:0 "Cast out of the Empire"
+
+emperor_bul:0 "Bulgarian Emperor"
+
+protector_bul:0 "Protector of the Empire"
+
+slavic_pride:0 "Slavic pride"
+
+
+
+dalmatian_devlopment:0 "Dalmatian Development"
+united_people_ser:0 "United People"
+greek_knowledge:0 "Greek Knowledge"
+greek_architecture:0 "Greek Architecture"
+eastern_mediterranean_monopol:0 "Eastern Mediterranean Monopol"
+support_of_the_people:0 "Support of the People"
+defying_populace:0 "Defying Populace"
+expulse_the_greeks:0 "Expel the Greeks"
+greek_elite_removal:0 "No more Corrupt Elite"
+a_shining_city:0 "A shining City"
+punish_the_revolt:0 "Punish the Revolt"
+balkan_police:0 "Balkan Police"
+hand_of_the_emperor:0 "Hand of the Emperor"
+second_migration:0 "Second Migration"
+fidelity_of_the_people:0 "Fidelity of the People"
+
+barbarian_bul:0 "Barbarians"
+elevated_serbia:0 "Accepted Elevation"
+not_elevated_serbia:0 "Refused Elevation"
+refused_sirmium:0 "Refused Sirmium Integration"
+
+proud_of_our_culture:0 "Proud of our culture"
+
+master_of_the_agean:0 "Master of the Aegean"
+silver_tongue:0 "Silver Tongue"
+world_leader:0 "World Leader"
+land_efficacity:0 "A Land Army"
+beginning_of_a_new_empire:0 "Start of a new Empire"
+athenian_new_base:0 "The First Colony"
+masters_of_indian_ocean:0 "Master of the Indian Ocean"
+greek_leader:0 "Greek Leader"
+
+oracle_call_war:0 "The Oracle calls for War"
+oracle_call_for_internal_dev:0 "The Oracle calls for economical reforms"
+oracle_call_for_diplomacy:0 "The Oracle calls for diplomacy"
+
+
+
+backlash_large_expedition:0 "Cost of the Expedition"
+backlash_medium_expedition:0 "Cost of the Expedition"
+backlash_small_expedition:0 "Cost of the Expedition"
+great_expedition:0 "Great Expedition"
+discontent_veterans:0 "Discontent Veterans"
+discontent_poupulace:0 "Discontent Populace"
+discontent_populace_mid:0 "Midly Discontent Populace"
+mass_hellenization:0 "Mass Hellenization"
+solidificaton:0 "Solidification"
+satrapy_system:0 "Satrapy system"
+centralized_system:0 "Centralized Administration"
+overstretch_empire:0 "Overstretch Empire"
+natives_in_the_army:0 "Natives Recruitment"
+greek_army:0 "Greek Army"
+the_pride_of_alexander:0 "Pride of Alexander"
+
+
+hellenize_slavs:0 "Hellenized Slavs"
+
+conquerors_mac:0 "Conquerors"
+
+integration_of_the_league:0 "Integrate the League"
+
+reformed_infantry_mac:0 "Reformed Infantry"
+
+reformed_cavalry_mac:0 "Reformed Cavalry"
+
+reformed_siege_warfare_mac:0 "Reformed Engineer Corps"
+reformed_commanders_mac:0 "Reform the Commanders Schools"
+the_last_push:0 "The last Push"
+
+regional_capital:0 "Regional capital"
+help_our_savior:0 "Help our Savior"
+
+ended_raid:0"Ended Raid"
+anatolian_levy:0 "Anatolian Levies"
+
+argian_league_mod:0"Argian League"
+
+greek_fire:0 "Greek Fire"
+
+egyptian_repression_mod:0 "Subdue the Egyptians"
+ere_border_mod:0 "Limes of the Empire"
+
+cilician_piracy_mod:0 "Cilician Piracy"
+
+cilician_piracy_mod_less:0 "Constrained Cilician Piracy"
+
+cilician_pirates:0 "Cilician Pirates"
+
+cilician_corsairs:0 "Cilician Corsairs"
+
+emperors_corsairs:0 "Corsairs of the Emperor"
+
+christian_persecution:0 "Persecute the Christians"
+
+imperial_crisis:0 "Imperial Crisis"
+
+authority_egypt:0 "Authority in Egypt"
+
+authority_anatolia:0 "Authority in Anatolia"
+
+authority_syria:0 "Authority in Syria"
+
+authority_greece:0 "Authority in Greece"
+
+authority_balkans:0 "Authority in the Balkans"
+
+authority_restored:0 "Authority Restored"
+
+slavic_uprising_mod:0 "Slavic Uprising"
+
+forts_of_the_imperium:0 "Forts of the Empire"
+
+reconquer_our_lands:0 "Reconquer our Lands"
+
+skanderberg_legacy:0 "Skanderberg's Legacy"
+
+
+ottoman_rise:0 "Rise of the Ottomans"
+
+ottoman_horse_archers:0 "Ottoman Horse Archers"
+steppe_horses:0 "Steppe Horses"
+
+turkmens_raiding_technics:0 "Turkmens Raiding Techniques"
+
+steppes_under_control:0 "Control of the Steppes"
+
+multicultural_capital:0 "Multicultural Capital"
+
+men_of_bayezid:0 "Men of Bayezid"
+
+united_under_bayezid:0 "United under Bayezid"
+
+legacy_of_a_great_man:0 "Legacy of Bayezid"
+
+new_building_technics:0 "New Building Techniques"
+
+ruling_a_steppe_empire:0 "Ruling an Empire"
+
+the_conquest_of_the_world:0 "Conquest of the World"
+
+great_invasion:0 "The Great Invasion"
+dissension_in_the_kingdom:0 "Dissension in the Kingdom"
+
+bayezid_the_conqueror:0 "Bayezid the Conqueror"
+
+
+ireland_megapole:0 "Ireland Megapol"
+disunited_clergy:0 "Disunited Clergy"
+
+to_the_ocean:0 "To the Ocean"
+
+american_focus:0 "Emperor of the Americas"
+
+Pictish-Scot_Kingdom:0 "Pictish-Scot Kingdom"
+Thine_be_ilka_joy_and_treasure:0 "Thine be Ilka Joy and Treasure"
+alban_iron:0 "Alban Iron"
+sco_religious_bonus:0 "Religion Bonus"
+
+conquest_of_ireland:0 "Open Ireland to Trade"
+
+The_king_man_of_Mann:0 "The King Man of Mann"
+
+Celt_resurgence:0 "Celtic Resurgence"
+
+lackluster_provincial_gov:0 "Lackluster Provincial Administration"
+lack_of_provincial_gov:0 "Lack of Provincial Administration"
+slavic_zeal:0 "Religious Zeal"
+
+
+better_government:0 "Improved Administration"
+mesopotamia_united_under_asshur:0 "Under Ashur's Eyes"
+
+mesopotamia_rise_again:0 "Assyria's Rise"
+
+demographic_boom:0 "Demographic Boom"
+
+greeks_into_the_empire:0 "Greek Merchant Class"
+
+a_new_assyria:0 "A new Assyria"
+
+assyrian_navy:0 "Assyrian Navy"
+
+assyrian_new_way:0 "Center of Knowledge"
+
+begin_the_reformation:0 "Ashur's Call"
+
+learn_to_take_cities:0 "Siege Expertise"
+
+assyria_is_a_major_power:0 "Assyria's Return"
+
+we_triumph_over_our_old_foes:0 "Triumph our Old Foes"
+
+watch_the_assyrian_lion_rise_again:0 "Assyrian's Lions"
+
+sargonII_i_matched_you:0 "Military Genius"
+
+control_the_hearts:0 "Control the Hearts"
+
+armenian_humiliation:0 "Armenian Humiliation"
+
+babylons_rebirth_mod:0 "Babylon's Rebirth"
+
+babylon_urbanization:0 "Megalopolis"
+capital_of_the_world_mod:0 "Capital of the World"
+
+hammurabi_code_mod:0 "Code of Hammurabi"
+city_of_wonders:0 "City of Wonders"
+
+babylons_return:0 "Babylon's return"
+
+babylons_influence:0 "Mesopotamian influence"
+assyrians_strategies:0 "Assyrian Strategies"
+
+syrian_invasion:0 "Syrian Invasion"
+
+babylons_tolerance:0 "Policy of Tolerance"
+
+way_of_ishtar_mod:0 "Ishtar's Benediction"
+
+urigallu_loyalty_modifier:0 "Urigallu's loyalty"
+urigallu_influence_modifier:0 "Urigallu's influence"
+
+
+spoils_of_antioch:0 "Spoils of Antioch"
+spoils_of_yerevan:0 "Spoils of Yerevan"
+spoils_of_ecbatana:0 "Spoils of Ecbatana"
+spoils_of_babylon:0 "Spoils of Babylon"
+
+ormuz_help:0 "Ormuzian Help"
+babylons_help:0 "Babylonian Help"
+
+basras_port:0 "port of Basra"
+bab_civil_war:0 "Babylonian Civil War"
+develop_trade_relations:0 "Develop Trade Relations"*
+
+
+cavalry_renewal:0 "Cavalry Renewal"
+iron_guard:0 "Iron Guard"
+fire_is_stronger_than_horses:0 "Fire is stronger than Horses"
+to_the_end_with_cavalty:0 "To the End with Cavalry"
+sedentarization_aln:0 "Sedentarization"
+iron_trade:0 "Iron Trade"
+mastery_of_trade:0 "Mastery of Trade"
+divine_right:0 "Divine Right"
+os_bagatar:0 "Os-Bagatar"
+alan_republic:0 "Alan Republic"
+civilized_alans:0 "Cradle of Civilisation"
+kiev_development:0 "Kyiv Development"
+kiev_the_beauty:0 "Kyiv, the Beauty"
+rise_soldier:0 "Rise Soldiers"
+for_the_people:0 "For the People"
+vladimir_s_legacy:0 "Vladimir's Legacy"
+slave's_master:0 "Master of the Slavs"
+victory_upon_the_devil:0 "Victory upon the Devil"
+centralisation:0 "Centralisation"
+prosperity:0 "Prosperity"
+great_army:0 "Great Army"
+religious_reformation:0 "Religious Reformation"
+trade_league:0 "Trade League"
+money_flow_in_the_Dniepr:0 "Money flow in the Dniepr"
+Vladimirs_crown:0 "Vladimir's Crown"
+Mare_nostrum:0 "Mare Nostrum"
+Free_from_the_tyranny:0 "Free from the Tyranny"
+Defeat_Armenia:0 "Defeat Armenia"
+Caspian_trade:0 "caspian Trade"
+G.O.A.T:0 "G.O.A.T"
+The_only_one:0 "the Only One"
+Early_industrialization:0 "Early Industrialization"
+Rome_sacked:0 "Sack of Rome"
+Constantinople_sacked:0 "Sack of Constantinople"
+Paris_sacked:0 "Sack of Paris"
+tribes_assimilation:0 "Assimilation of the Tribes"
+Huns_return:0 "The Return of the Huns"
+kazan_installation:0 "Installation in Kazan"
+iron_exploitation:0 "Iron Exploitation"
+In_another_life:0 "In another Life"
+slave's_breaker:0 "Slavs Breaker"
+cohabitation_way:0"Cohabitation"
+villa_sur_la_cote:0 "Access to Baltic Trade"
+Steppes_urbanization:0 "Steppes Urbanization"
+Endless_currency:0 "Endless Currency"
+To_the_edge_of_the_known_world:0 "To the Edge of the Known World"
+And_beyond:0 "And Beyond !"
+
+#ModifierAlains
+
+Alan_return:0 "Alan's return"
+Protector_of_the_faith:0 " Protector of the faith"
+steppe_limes:0 "Steppe's Limes"
+abundance_come_to_an_end:0 "End of Abundance"
+
+tolerate_jews:0 "Tolerance"
+expulse_jews:0 "Expel the Jews"

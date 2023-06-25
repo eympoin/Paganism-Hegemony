@@ -1,0 +1,21 @@
+﻿l_english:
+ estate_nobles_indebted_privilege_spqr:0 "Indebted to the nobles"
+ estate_nobles_indebted_privilege_spqr_desc:0 ""
+ estate_burghers_sponsor_roman_merchants:0 "Sponsor Roman merchants"
+ estate_burghers_sponsor_roman_merchants_desc:0 ""
+ estate_nobles_berber_chief:0 "Berber chieftains autonomy"
+ estate_nobles_berber_chief_desc:0 ""
+ chief_no_more_autonomy_tooltip:0 "Remove §YChieftain autonomy§ modifier on every province "
+ chief_autonomy_tooltip:0 "Add the §YChieftain autonomy§! modifier on every desert province in Maghrebi culture group : §R30% minimum local autonomy §"
+
+ estate_urigallu_syncretism:0 "Sponsored Syncretism"
+ estate_urigallu_syncretism_desc:0 ""
+
+ estate_urigallu_cult_of_marduk:0 "Faith Monopol"
+ estate_urigallu_cult_of_marduk_desc:0 ""
+
+ estate_urigallu_light_of_marduk:0 "Light of Marduk"
+ estate_urigallu_light_of_marduk_desc:0 ""
+
+ estate_nobles_royal_guards:0 "Babylonian Royal Guard"
+ estate_nobles_royal_guards_desc:0 ""
