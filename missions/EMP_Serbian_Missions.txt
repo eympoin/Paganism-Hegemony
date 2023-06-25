@@ -958,7 +958,10 @@ Serbia_4_1 = {
     provinces_to_highlight = {
     }
     trigger = {
-      is_part_of_hre = no
+      balkan_region = {
+        type = all
+        NOT = {is_part_of_hre = no}
+      }
     }
     effect = {
       set_government_rank = 3
