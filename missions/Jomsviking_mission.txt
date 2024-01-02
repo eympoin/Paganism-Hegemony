@@ -301,7 +301,7 @@ Jomsviking_1_5 = {
     }
     NOT = { map_setup = map_setup_random }
   }
-  vinlandic_expedition = {
+  vinlandic_sagas = {
     icon = capture_adriatic_ports
     required_missions = {}
     position = 1
@@ -312,9 +312,9 @@ Jomsviking_1_5 = {
     effect = {
     }
   }
-  reunification_of_the_norse = {
+  launch_the_expedition = {
     icon = capture_adriatic_ports
-    required_missions = {vinlandic_expedition}
+    required_missions = {vinlandic_legend}
     provinces_to_highlight = {
     }
     trigger = {
@@ -323,48 +323,9 @@ Jomsviking_1_5 = {
     }
   }
 
-}
-
-Jomsviking_1_5_dummy = {
-  slot = 5
-  generic = no
-  ai = yes
-  potential = {
-    OR = {
-      tag = JOM
-      was_tag = JOM
-    }
-    NOT = { map_setup = map_setup_random }
-  }
-  dummy_5_3 = {
-    icon = mission_unknown_mission
-    required_missions = {reunification_of_the_norse}
-    position = 3
-    provinces_to_highlight = {
-    }
-    trigger = {
-    }
-    effect = {
-    }
-  }
-}
-
-Jomsviking_1_5_cool = {
-  slot = 5
-  generic = no
-  ai = yes
-  potential = {
-    OR = {
-      tag = JOM
-      was_tag = JOM
-    }
-    NOT = { map_setup = map_setup_random }
-    has_country_flag = trade_in_america
-  }
-  trade_natives = {
+  arrival_vinland = {
     icon = capture_adriatic_ports
-    required_missions = {reunification_of_the_norse}
-    position = 3
+    required_missions = {launch_the_expedition}
     provinces_to_highlight = {
     }
     trigger = {
@@ -372,24 +333,10 @@ Jomsviking_1_5_cool = {
     effect = {
     }
   }
-}
 
-Jomsviking_1_5_not_cool = {
-  slot = 5
-  generic = no
-  ai = yes
-  potential = {
-    OR = {
-      tag = JOM
-      was_tag = JOM
-    }
-    NOT = { map_setup = map_setup_random }
-    has_country_flag = spread_thor_word_america
-  }
-  spread_thor_hammer = {
+  dominance_vinland = {
     icon = capture_adriatic_ports
-    required_missions = {reunification_of_the_norse}
-    position = 3
+    required_missions = {arrival_vinland}
     provinces_to_highlight = {
     }
     trigger = {
@@ -397,4 +344,5 @@ Jomsviking_1_5_not_cool = {
     effect = {
     }
   }
+
 }
