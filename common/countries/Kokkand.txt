@@ -20,7 +20,7 @@ historical_units = {
 	persian_cavalry_charge
 	shaybani
 	persian_shamshir
-	qizilbash_cavalry
+	
 	tofongchis_musketeer
 	topchis_artillery
 	afsharid_reformed

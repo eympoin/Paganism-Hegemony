@@ -19,7 +19,7 @@ historical_units = {
 	persian_footsoldier
 	persian_cavalry_charge
 	persian_shamshir
-	qizilbash_cavalry
+	
 	tofongchis_musketeer
 	topchis_artillery
 	afsharid_reformed
@@ -43,7 +43,7 @@ monarch_names = { #Shared with Persia
 	"Sadiq #0" = 10
 	"Hassan #0" = 10
 	"Teymur #0" = 5
-	"Murtuzaqulu #0 Khân" = 10
+	"Murtuzaqulu #0 Khï¿½n" = 10
 	"Kazim #0" = 10
 	"Haji #0" = 10
 	"Iskender #0" = 10

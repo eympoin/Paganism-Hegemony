@@ -19,7 +19,7 @@ historical_units = {
 	persian_footsoldier
 	persian_cavalry_charge
 	persian_shamshir
-	qizilbash_cavalry
+	
 	tofongchis_musketeer
 	topchis_artillery
 	afsharid_reformed
@@ -31,10 +31,10 @@ historical_units = {
 
 monarch_names = {
 	"Umur #1" = 20
-	"Cüneyd #0" = 20
+	"Cï¿½neyd #0" = 20
 	"Musa #0" = 20
 	"Isa #1" = 15
-	"Abdülkadir #1" = 15
+	"Abdï¿½lkadir #1" = 15
 	"Muhammed #1" = 15
 	"Ali #0" = 10
 	"Ibrahim #0" = 10
@@ -51,10 +51,10 @@ monarch_names = {
 	"Korkud #0" = 0
 	"Murad #0" = 0
 	"Seyfettin #0" = 0
-	"Süleyman #0" = 0
+	"Sï¿½leyman #0" = 0
 	"Davud #0" = 0
 	"Hasan #0" = 0
-	"Hüseyin #0" = 0
+	"Hï¿½seyin #0" = 0
 	"Yakub #0" = 0
 	"Yusuf #0" = 0
 	
@@ -69,7 +69,7 @@ monarch_names = {
 	"Safiye #0" = -1
 	"Umut #0" = -1
 	"Ziynet #0" = -1
-	"Zübeyde #0" = -1
+	"Zï¿½beyde #0" = -1
 }
 
 leader_names = {
@@ -79,26 +79,26 @@ leader_names = {
 	Mansur
 	Alemdar Amasyali Ayas
 	Bali Barbaros Bayram
-	Cezzar Çandarli Çelebi Cerrah Çerkes Civan Çuhadar
+	Cezzar ï¿½andarli ï¿½elebi Cerrah ï¿½erkes Civan ï¿½uhadar
 	Damad Dervis Defterdar
-	Gedik Gazi Gümülcineli Gürcü
+	Gedik Gazi Gï¿½mï¿½lcineli Gï¿½rcï¿½
 	Hadim Hekimoglu Hersekli
-	Köprülü Kemal Küçük Koca Karamanli Köse Kara Kanijeli Kemankes Kaymak Kavalali
+	Kï¿½prï¿½lï¿½ Kemal Kï¿½ï¿½ï¿½k Koca Karamanli Kï¿½se Kara Kanijeli Kemankes Kaymak Kavalali
 	Ishak Izzed
 	Lala Lefkeli
-	Malkoç Müezzinzade
+	Malkoï¿½ Mï¿½ezzinzade
 	Nevsehirli Nisanci
-	Oruç Uluç Osmancikli Ohrili Oflu
+	Oruï¿½ Uluï¿½ Osmancikli Ohrili Oflu
 	Rumi
 	Piri Pargali Piyale Pehlivan
 	Salih Sokullu Sari Silahdar Semiz Serdar
 	Topal Tayyar Turgut Tarhuncu
 	Veli
-	Yemisçi
+	Yemisï¿½i
 }
 
 ship_names = {
-	"Temür Yaman" Bayezid Candaroglu Isfendiyar Süleyman 
-	Kastamonu Tosya Saraydüzü Devrekani Agli Daday Bozkuri
-	Küre Arac Kargi Hanönü
+	"Temï¿½r Yaman" Bayezid Candaroglu Isfendiyar Sï¿½leyman 
+	Kastamonu Tosya Saraydï¿½zï¿½ Devrekani Agli Daday Bozkuri
+	Kï¿½re Arac Kargi Hanï¿½nï¿½
 }
