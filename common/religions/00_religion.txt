@@ -33,8 +33,6 @@ christian = {
 			advisor_pool = 1
 		}
 
-		hre_religion = yes
-
 		on_convert = {
 			change_religion = catholic
 			add_prestige = -100
