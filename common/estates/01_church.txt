@@ -287,6 +287,10 @@ estate_church =
 	estate_church_religious_delegation
 	estate_church_institutionalized_clergy
 	estate_church_donation_right
+	estate_church_fund_dar_al_hadith
+	estate_church_fund_madrasas
+	estate_church_sponsor_waqf_payments
+	estate_church_muslim_integration
 	}
 
 	agendas = {

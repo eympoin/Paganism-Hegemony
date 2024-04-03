@@ -276,6 +276,7 @@ WAL	= "countries/Wallachia.txt"
 HUN	= "countries/Hungary.txt"
 SLO = "countries/Slovakia.txt"
 TUR	= "countries/Ottomans.txt"
+LAE	= "countries/Latin Empire.txt"
 
 #British Isles
 CNN = "countries/Connacht.txt"
@@ -301,6 +302,8 @@ FLY = "countries/Faly.txt"
 MCM = "countries/MacCarthy.txt" #Kingdom of Desmond
 KOI = "countries/Mann.txt"
 LOI = "countries/TheIsles.txt"
+EIC	= "countries/EastIndiaCompany.txt"
+AVE = "countries/AngevinEmpire.txt"
 
 #Colonies
 BRZ	= "countries/Brazil.txt"
@@ -600,6 +603,7 @@ TBR = "countries/Tabriz.txt"
 BSR = "countries/Basra.txt"
 MGR = "countries/Maregh.txt"
 QOM = "countries/Qom.txt"
+ERS = "countries/Eranshahr.txt"
 
 #Americas
 AZT = "countries/Aztec.txt"
